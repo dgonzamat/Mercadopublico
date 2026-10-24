@@ -102,6 +102,7 @@
   },
   "documents": [
     {
+      "role": "contexto",
       "src": "/pursue/aztec-1948-context.jpg",
       "type": "image",
       "title": "Contexto · Aztec (Nuevo México)",
@@ -111,6 +112,7 @@
       "fallbackUrl": "https://commons.wikimedia.org/wiki/File%3AAztec%20New%20Mexico%20City%20Hall.jpg"
     },
     {
+      "role": "documento",
       "src": "https://vault.fbi.gov/hottel_guy/Guy%20Hottel%20Part%201%20of%201/view",
       "type": "link",
       "title": "Hottel Memo",

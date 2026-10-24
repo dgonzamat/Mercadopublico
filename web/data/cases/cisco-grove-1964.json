@@ -78,6 +78,7 @@
   },
   "documents": [
     {
+      "role": "documento",
       "src": "/pursue/cisco-grove-1964-blue-book.pdf",
       "type": "pdf",
       "title": "Expediente de Project Blue Book · «Sacto Area», 4 de septiembre de 1964",
@@ -89,6 +90,7 @@
       "fallbackUrl": "https://archive.org/details/1964-09-9421270-SactoArea-California"
     },
     {
+      "role": "contexto",
       "src": "/pursue/cisco-grove-1964-context.jpg",
       "type": "image",
       "title": "Contexto · el Bosque Nacional de Tahoe (California), zona de Cisco Grove",

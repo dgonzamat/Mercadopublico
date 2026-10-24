@@ -97,6 +97,7 @@
   ],
   "documents": [
     {
+      "role": "documento",
       "src": "https://archive.org/details/CanadaUFO/Canada%20-%20FOIA%20Part%2017%20-%20Pages%204801-5100/page/n34/mode/1up",
       "type": "link",
       "title": "Télex del RCC Halifax del 5 de octubre de 1967 y mensajes de la búsqueda submarina (RG 77, vol. 310), págs. 35–44 de la parte 17",
@@ -106,6 +107,7 @@
       "source": "Consejo Nacional de Investigación de Canadá, RG 77, vol. 310 (Library and Archives Canada), vía archive.org"
     },
     {
+      "role": "contexto",
       "src": "/pursue/shag-harbour-1967-context.jpg",
       "type": "image",
       "title": "Contexto · Shag Harbour (Nueva Escocia, Canadá)",

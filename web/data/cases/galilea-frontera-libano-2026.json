@@ -135,6 +135,7 @@
   },
   "documents": [
     {
+      "role": "documento",
       "src": "https://www.jns.org/news/israel-news/idf-suspicious-aerial-target-that-set-off-sirens-likely-balloon-like-object",
       "type": "link",
       "title": "Comunicado de las FDI del 13 de octubre de 2026, reproducido por JNS",
@@ -144,6 +145,7 @@
       "source": "Fuerzas de Defensa de Israel, vía JNS"
     },
     {
+      "role": "contexto",
       "src": "/pursue/galilea-frontera-libano-2026-aldea.jpg",
       "type": "image",
       "title": "Contexto · Entrada de Arab el-Aramsha, junto a la frontera con el Líbano",

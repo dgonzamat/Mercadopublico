@@ -86,6 +86,7 @@
   },
   "documents": [
     {
+      "role": "documento",
       "src": "https://www.memurlar.net/haber/101086/ufo-iddiasindaki-goruntuler-tubitak-tarafindan-suphe-ile-karsilandi.html",
       "type": "link",
       "title": "Anadolu Ajansı · el examen preliminar de las cintas por el Observatorio Nacional del TÜBİTAK (5 de febrero de 2008)",
@@ -95,6 +96,7 @@
       "source": "Anadolu Ajansı, vía Memurlar.net (5 feb 2008), en turco"
     },
     {
+      "role": "contexto",
       "src": "/pursue/kumburgaz-2007-context.jpg",
       "type": "image",
       "title": "Contexto · Kumburgaz (Estambul), la costa desde donde se grabó el vídeo de 2007",

@@ -47,6 +47,7 @@
   "category": "incident",
   "documents": [
     {
+      "role": "prueba",
       "src": "https://www.dvidshub.net/video/embed/1010263",
       "type": "video",
       "title": "FBI-UAP-PR001 — 'Triangle-Orbs', nov 2021: luz única que se resuelve en múltiples luces con rotación errática",
@@ -56,6 +57,7 @@
       "fallbackUrl": "https://www.dvidshub.net/video/1010263"
     },
     {
+      "role": "prueba",
       "src": "https://www.dvidshub.net/video/embed/1010264",
       "type": "video",
       "title": "FBI-UAP-PR002 — 'Red Orb Rotation', mar 2022: dos luces rojas estacionarias, una rota alrededor de la otra",
@@ -65,6 +67,7 @@
       "fallbackUrl": "https://www.dvidshub.net/video/1010264"
     },
     {
+      "role": "prueba",
       "src": "https://www.dvidshub.net/video/embed/1010267",
       "type": "video",
       "title": "FBI-UAP-PR003 — 'Orbs Over the Pond', oct 2024: esfera 'plasma-like' estática ~45 min, autenticada por el gobierno",
@@ -74,6 +77,7 @@
       "fallbackUrl": "https://www.dvidshub.net/video/1010267"
     },
     {
+      "role": "prueba",
       "src": "https://www.dvidshub.net/video/embed/1010269",
       "type": "video",
       "title": "FBI-UAP-PR004 — jul 2025: dos esferas rojas con núcleo de 'plasma' blanco, vuelo en formación, dos testigos",
@@ -83,6 +87,7 @@
       "fallbackUrl": "https://www.dvidshub.net/video/1010269"
     },
     {
+      "role": "documento",
       "src": "/pursue/FBI-UAP-D004_FD-1057-02_Northeastern-US_2024.pdf",
       "type": "pdf",
       "title": "FBI-UAP-D004 — FD-1057-02, observaciones UAP en el noreste de EE.UU. (2024)",
@@ -92,6 +97,7 @@
       "fallbackUrl": "https://www.war.gov/medialink/ufo/061226/release_03/documents/FBI-UAP-D004_FD-1057-02_Northeastern-US_2024.pdf"
     },
     {
+      "role": "documento",
       "src": "/pursue/FBI-UAP-D005_FD-1057-04_Northeastern-US_2024.pdf",
       "type": "pdf",
       "title": "FBI-UAP-D005 — FD-1057-04, observaciones UAP en el noreste de EE.UU. (2024)",
@@ -101,6 +107,7 @@
       "fallbackUrl": "https://www.war.gov/medialink/ufo/061226/release_03/documents/FBI-UAP-D005_FD-1057-04_Northeastern-US_2024.pdf"
     },
     {
+      "role": "documento",
       "src": "/pursue/FBI-UAP-D006_FD-1057-05_Northeastern-US_2024.pdf",
       "type": "pdf",
       "title": "FBI-UAP-D006 — FD-1057-05, observaciones UAP en el noreste de EE.UU. (2024)",
@@ -110,6 +117,7 @@
       "fallbackUrl": "https://www.war.gov/medialink/ufo/061226/release_03/documents/FBI-UAP-D006_FD-1057-05_Northeastern-US_2024.pdf"
     },
     {
+      "role": "documento",
       "src": "/pursue/FBI-UAP-D007_FD-1057-06_Northeastern-US_2024.pdf",
       "type": "pdf",
       "title": "FBI-UAP-D007 — FD-1057-06, observaciones UAP en el noreste de EE.UU. (2024)",
@@ -119,6 +127,7 @@
       "fallbackUrl": "https://www.war.gov/medialink/ufo/061226/release_03/documents/FBI-UAP-D007_FD-1057-06_Northeastern-US_2024.pdf"
     },
     {
+      "role": "documento",
       "src": "/pursue/FBI-UAP-D008_FD-1057-07_Northeastern-US_2024.pdf",
       "type": "pdf",
       "title": "FBI-UAP-D008 — FD-1057-07, observaciones UAP en el noreste de EE.UU. (2024)",
@@ -128,6 +137,7 @@
       "fallbackUrl": "https://www.war.gov/medialink/ufo/061226/release_03/documents/FBI-UAP-D008_FD-1057-07_Northeastern-US_2024.pdf"
     },
     {
+      "role": "documento",
       "src": "/pursue/FBI-UAP-D009_FD-302-67_Northeastern-Orb-Sighting_2026.pdf",
       "type": "pdf",
       "title": "FBI-UAP-D009 — FD-302-67, entrevista 'Northeastern Orb Sighting' (2026)",
@@ -137,6 +147,7 @@
       "fallbackUrl": "https://www.war.gov/medialink/ufo/061226/release_03/documents/FBI-UAP-D009_FD-302-67_Northeastern-Orb-Sighting_2026.pdf"
     },
     {
+      "role": "documento",
       "src": "/pursue/FBI-UAP-D010_FD-302-71_Northeastern-Orb-Sighting_2026.pdf",
       "type": "pdf",
       "title": "FBI-UAP-D010 — FD-302-71, entrevista 'Northeastern Orb Sighting' (2026)",

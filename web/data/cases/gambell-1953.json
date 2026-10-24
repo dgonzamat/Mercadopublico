@@ -35,6 +35,7 @@
   "category": "incident",
   "documents": [
     {
+      "role": "documento",
       "src": "/pursue/DOW-UAP-D162-Air_Intelligence_Information_Report_Alaska-1953.pdf",
       "type": "pdf",
       "title": "DOW-UAP-D162 — Informe de inteligencia aérea IR 5004-42-53, «Light Observed West of Gambell»",

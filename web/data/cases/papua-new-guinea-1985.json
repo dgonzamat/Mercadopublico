@@ -32,6 +32,7 @@
   "summary_en": "DOS-UAP-D1 (first PURSUE release) is a cable dated January 28, 1985 from the U.S. Embassy in Port Moresby to USCINCPAC. Papua New Guinea's intelligence service had asked about reports from the night of January 24: fast-moving objects with lights, contrails and noise that frightened residents of Wewak. The report the NIO gave credence to came from an Air Niugini pilot who, just after taking off from Wewak, detected by radar high, fast traffic over Angoram; ground witnesses saw contrails of one aircraft at 19:00 and of six to eight at 22:00. The embassy had no record of U.S. flights and called the information 'very sketchy'.",
   "documents": [
     {
+      "role": "documento",
       "src": "/pursue/dos-uap-d1-cable-1-papua-new-guinea-january-1985.pdf",
       "type": "pdf",
       "title": "DOS-UAP-D1 — cable de la embajada de EE.UU. en Port Moresby a USCINCPAC (28 ene 1985)",

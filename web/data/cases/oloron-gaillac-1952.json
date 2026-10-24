@@ -74,6 +74,7 @@
   },
   "documents": [
     {
+      "role": "documento",
       "src": "https://ufology.patrickgross.org/attic/1952-10-17-oloron-dr.htm",
       "type": "link",
       "title": "Carta de un médico de Oloron sobre el «cigarro» y los «platillos» del 17 de octubre de 1952 (27 nov 1952)",
@@ -83,6 +84,7 @@
       "source": "Patrick Gross, «The attic» (ufology.patrickgross.org)"
     },
     {
+      "role": "contexto",
       "src": "/pursue/oloron-gaillac-1952-context.jpg",
       "type": "image",
       "title": "Contexto · Oloron-Sainte-Marie (Francia), donde cayeron los 'cabellos de ángel' de 1952",

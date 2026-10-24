@@ -108,6 +108,7 @@
   },
   "documents": [
     {
+      "role": "documento",
       "src": "https://elibrary.sansad.in/server/api/core/bitstreams/c1ef668b-0358-4a03-bea3-bf148107f5c7/content",
       "type": "link",
       "title": "Lok Sabha, pregunta no oral n.º 562, «Mysterious UFO over Indo-China border», respondida el 26 de noviembre de 2012",
@@ -117,6 +118,7 @@
       "source": "Lok Sabha, Parlamento de la India (Digital Library, elibrary.sansad.in)"
     },
     {
+      "role": "contexto",
       "src": "/pursue/ladakh-itbp-2012-context.jpg",
       "type": "image",
       "title": "Contexto · el lago Pangong Tso, en Ladakh (India), donde la ITBP registró las luces",

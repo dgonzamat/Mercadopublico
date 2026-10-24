@@ -32,6 +32,7 @@
   "category": "incident",
   "documents": [
     {
+      "role": "prueba",
       "src": "https://www.dvidshub.net/video/embed/843620",
       "type": "video",
       "title": "'Navy 2021 Flyby video' — encuentro fugaz de un aviador naval con un objeto no identificado, exhibido ante el Congreso (17 may 2022)",

@@ -75,6 +75,7 @@
   ],
   "documents": [
     {
+      "role": "documento",
       "src": "https://thecounty.me/2016/09/21/community/how-much-of-1976-ufo-abduction-is-true/",
       "type": "link",
       "title": "The County, 21 sep 2016 · Chuck Rak: la abducción «no ocurrió»",
@@ -84,6 +85,7 @@
       "source": "The County (Presque Isle, Maine), 21 sep 2016"
     },
     {
+      "role": "contexto",
       "src": "/pursue/allagash-1976-context.jpg",
       "type": "image",
       "title": "Contexto · la Reserva Fluvial de Allagash (Maine)",

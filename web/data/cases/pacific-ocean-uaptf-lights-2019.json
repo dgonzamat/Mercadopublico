@@ -41,6 +41,7 @@
   "category": "incident",
   "documents": [
     {
+      "role": "prueba",
       "src": "https://www.dvidshub.net/video/embed/1017805",
       "type": "video",
       "title": "DOW-UAP-PR123 — captura secundaria de un display de sensor IR, 1 min 4 s",
@@ -50,6 +51,7 @@
       "fallbackUrl": "https://www.dvidshub.net/video/1017805"
     },
     {
+      "role": "prueba",
       "src": "https://www.dvidshub.net/video/embed/1017806",
       "type": "video",
       "title": "DOW-UAP-PR124 — captura secundaria de un display de sensor IR, 53 s",
@@ -59,6 +61,7 @@
       "fallbackUrl": "https://www.dvidshub.net/video/1017806"
     },
     {
+      "role": "prueba",
       "src": "https://www.dvidshub.net/video/embed/1017788",
       "type": "video",
       "title": "DOW-UAP-PR125 — captura secundaria de un display de sensor IR, 28 s",
@@ -68,6 +71,7 @@
       "fallbackUrl": "https://www.dvidshub.net/video/1017788"
     },
     {
+      "role": "prueba",
       "src": "https://www.dvidshub.net/video/embed/1017790",
       "type": "video",
       "title": "DOW-UAP-PR126 — grabación de mano de un militar en condiciones de poca luz: varias fuentes de luz aparentes, 2 min 32 s",
@@ -77,6 +81,7 @@
       "fallbackUrl": "https://www.dvidshub.net/video/1017790"
     },
     {
+      "role": "prueba",
       "src": "https://www.dvidshub.net/video/embed/1017791",
       "type": "video",
       "title": "DOW-UAP-PR127 — grabación de mano de un militar, cámara persigue una fuente de luz aparente, 2 min 29 s",

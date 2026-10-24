@@ -121,6 +121,7 @@
   ],
   "documents": [
     {
+      "role": "contexto",
       "src": "/pursue/harare-airport-2008-context.jpg",
       "type": "image",
       "title": "Contexto · el aeropuerto internacional de Harare (Zimbabue)",
@@ -130,6 +131,7 @@
       "fallbackUrl": "https://commons.wikimedia.org/wiki/File%3AHarare%20International%20Airport.jpg"
     },
     {
+      "role": "documento",
       "src": "/pursue/CIA-UAP-017_Placement_on_High_Alert_Due_to_Perceived_Aggressive_Foreign_Posturing.pdf",
       "type": "pdf",
       "title": "CIA-UAP-017 — alerta alta por postura agresiva extranjera percibida (Harare, 2008)",

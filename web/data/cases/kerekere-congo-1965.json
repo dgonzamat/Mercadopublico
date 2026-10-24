@@ -87,6 +87,7 @@
   ],
   "documents": [
     {
+      "role": "documento",
       "src": "/pursue/exploitation-report-congo-kerekere-1965.pdf",
       "type": "pdf",
       "title": "Informe de explotación del fragmento metálico recuperado en el Congo (1965), desclasificado en 1992, 10 págs.",
@@ -96,6 +97,7 @@
       "fallbackUrl": "https://archive.org/download/NSAUFO/Exploitation%20Report%20Congo.pdf"
     },
     {
+      "role": "documento",
       "src": "/pursue/USG-UAP-D002-Interagency_Correspondence_Concerning_Space_Fragments-1962_1964.pdf",
       "type": "pdf",
       "title": "USG-UAP-D002 — Carpeta «Space Vehicle Fragments – Responsibilities and Procedures» (Biblioteca LBJ, 1962–1964)",

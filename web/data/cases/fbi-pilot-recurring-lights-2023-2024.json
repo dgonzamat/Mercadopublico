@@ -35,6 +35,7 @@
   "category": "incident",
   "documents": [
     {
+      "role": "documento",
       "src": "/pursue/FBI-UAP-D024_FD-302_Airborne-Lights-and-Triangle_2002_2023-2024.pdf",
       "type": "pdf",
       "title": "FBI-UAP-D024 — FD-302, declaración de piloto sobre luces recurrentes (2023-2024) y triángulo en Bagram (2002)",
@@ -44,6 +45,7 @@
       "fallbackUrl": "https://www.war.gov/medialink/ufo/080726/release_05/documents/FBI-UAP-D024_FD-302_Airborne-Lights-and-Triangle_2002_2023-2024.pdf"
     },
     {
+      "role": "prueba",
       "src": "/pursue/FBI-UAP-D025_Digital-Rendering_Airborne-Triangle_2002.jpg",
       "type": "image",
       "title": "FBI-UAP-D025 — representación digital del triángulo sobre Bagram (2002)",

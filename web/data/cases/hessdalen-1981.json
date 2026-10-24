@@ -76,6 +76,7 @@
   "name_en": "Hessdalen lights",
   "documents": [
     {
+      "role": "documento",
       "src": "https://old.hessdalen.org/reports/hpreport84.shtml",
       "type": "link",
       "title": "Project Hessdalen 1984 · informe técnico final (Erling Strand, 5 de enero de 1985)",
@@ -85,6 +86,7 @@
       "source": "Project Hessdalen (old.hessdalen.org) · © Project Hessdalen"
     },
     {
+      "role": "contexto",
       "src": "/pursue/hessdalen-1981-context.jpg",
       "type": "image",
       "title": "Contexto · el valle de Hessdalen (Noruega), donde se estudian las luces desde 1981",

@@ -89,6 +89,7 @@
   },
   "documents": [
     {
+      "role": "documento",
       "src": "http://www.ufo-information.de/images/PDF/Artikel/Greifswald_Abschlussbericht.pdf",
       "type": "link",
       "title": "Cartas de la Oficina Federal de Tecnología de Defensa (14 nov 1994) y de la embajada de Suecia (8 nov 1994) a Werner Walter, reproducidas en el informe de Dennis Kirstein, pp. 17-18",
@@ -98,6 +99,7 @@
       "source": "Dennis Kirstein, «Die Greifswaldlichter» (ufo-information.de, 2014), pp. 17-18"
     },
     {
+      "role": "contexto",
       "src": "/pursue/greifswald-1990-context.jpg",
       "type": "image",
       "title": "Contexto · Greifswald (Alemania), junto a cuya bahía se vieron las luces de 1990",

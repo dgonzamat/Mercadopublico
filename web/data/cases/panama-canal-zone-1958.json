@@ -99,6 +99,7 @@
   },
   "documents": [
     {
+      "role": "documento",
       "src": "/pursue/panama-canal-zone-1958-bluebook-extracto.pdf",
       "type": "pdf",
       "title": "Project Blue Book · tarjeta, análisis de Hoffman e informe IR-4-58 de la Zona del Canal (extracto)",
@@ -110,6 +111,7 @@
       "fallbackUrl": "https://archive.org/details/1958-03-6963741-PanamaCanalZone"
     },
     {
+      "role": "contexto",
       "src": "/pursue/panama-canal-zone-1958-context.jpg",
       "type": "image",
       "title": "Contexto · el Canal de Panamá (esclusas), en cuya Zona el radar militar detectó el objeto",

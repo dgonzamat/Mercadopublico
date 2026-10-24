@@ -25,6 +25,7 @@
   "probability": 35,
   "documents": [
     {
+      "role": "documento",
       "src": "/pursue/331_120752_german_armament_foo-fighters_1944-1945.pdf",
       "type": "pdf",
       "title": "SHAEF / Air Ministry — mensajes sobre 'night phenomena (foo-fighters)', flak rockets y el 415th Night Fighter Squadron (1944-1945)",
@@ -34,6 +35,7 @@
       "fallbackUrl": "https://www.war.gov/medialink/ufo/release_1/331_120752_numeric_files_1944–1945_37153_german_armament_equipment_documents.pdf"
     },
     {
+      "role": "documento",
       "src": "/pursue/65_hs1-101634279_100-de-26505_krasuski_1944.pdf",
       "type": "pdf",
       "title": "FBI (nov 1957) — entrevista a Wladyslaw Krasuski: vehículo circular ascendente, Alemania 1944",

@@ -24,6 +24,7 @@
   "summary_en": "Apollo 11's Technical Crew Debriefing (Jul 31, 1969), declassified in the first PURSUE tranche (NASA-UAP-D4), records observations by Armstrong, Collins and Aldrin: a noticeable object about a day from the Moon, 'little flashes' inside the cabin, and a 'fairly bright light source' in lunar orbit, first ascribed to a 'possible laser' and later, if no one owned up to beaming a laser at the Moon, to 'more probably a reflection off a lake' on Earth. The crew reached no conclusion about the object, though Collins suspected it came from the spacecraft itself, and the flashes are the known cosmic-ray phenomenon.",
   "documents": [
     {
+      "role": "documento",
       "src": "/pursue/nasa-uap-d4-apollo-11-technical-crew-debriefing-1969.pdf",
       "type": "pdf",
       "title": "NASA-UAP-D4 — Apollo 11 Technical Crew Debriefing (31 jul 1969)",

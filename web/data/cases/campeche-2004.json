@@ -114,6 +114,7 @@
   ],
   "documents": [
     {
+      "role": "contexto",
       "src": "/pursue/campeche-2004-c26-metroliner-fam.jpg",
       "type": "image",
       "title": "Ilustración de un Fairchild C-26 Metroliner en librea de la Fuerza Aérea Mexicana — el tipo de aeronave que registró el material FLIR",
@@ -123,6 +124,7 @@
       "fallbackUrl": "https://commons.wikimedia.org/wiki/File:Fairchild_C-26_Metroliner_FAM.jpg"
     },
     {
+      "role": "contexto",
       "src": "/pursue/campeche-2004-context.jpg",
       "type": "image",
       "title": "Contexto · Campeche (México), zona del vídeo FLIR de la Fuerza Aérea Mexicana",
@@ -133,6 +135,7 @@
     }
   ],
   "featuredDoc": {
+    "role": "documento",
     "label": "Análisis del video infrarrojo de Campeche (Skeptical Inquirer, 2004)",
     "label_en": "Analysis of the Campeche infrared video (Skeptical Inquirer, 2004)",
     "url": "https://skepticalinquirer.org/2004/09/the-campeche-mexico-infrared-ufo-video/",

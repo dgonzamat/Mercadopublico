@@ -104,6 +104,7 @@
     "indet": 0.18
   },
   "primaryDocument": {
+    "role": "contexto",
     "url": "https://commons.wikimedia.org/wiki/Special:FilePath/Aeropuerto_Internacional_Teniente_Luis_Candelaria_(Bariloche).JPG?width=800",
     "alt": "Aeropuerto Internacional Teniente Luis Candelaria de Bariloche, Argentina.",
     "caption": "Aeropuerto Internacional Teniente Luis Candelaria de Bariloche, destino del vuelo AR 674 de Aerolíneas Argentinas implicado en el avistamiento de 1995.",
@@ -124,6 +125,7 @@
   },
   "documents": [
     {
+      "role": "documento",
       "src": "/pursue/255_413270_ufos_and_defense_what_should_we_prepare_for.pdf",
       "type": "pdf",
       "title": "«UFO's and Defense: What Should We Prepare For» — informe COMETA (1999) + carta de Carol Rosin",

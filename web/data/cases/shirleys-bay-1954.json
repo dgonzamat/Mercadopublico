@@ -130,6 +130,7 @@
   "evidenceReviewed": "2026-10-12",
   "documents": [
     {
+      "role": "contexto",
       "src": "/pursue/shirleys-bay-1954-context.jpg",
       "type": "image",
       "title": "Contexto · letrero a la entrada de la zona restringida de Shirleys Bay, cerca de Ottawa, donde funcionó la estación de Project Magnet (foto de 2010)",
@@ -139,6 +140,7 @@
       "fallbackUrl": "https://commons.wikimedia.org/wiki/File:Shirleys_Bay_sign.jpg"
     },
     {
+      "role": "documento",
       "src": "https://mysteriesofcanada.com/canada/wilbert-smith/",
       "type": "link",
       "title": "Project Magnet / Second Storey · programas UFO del gobierno (Canadá)",

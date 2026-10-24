@@ -100,6 +100,7 @@
   ],
   "documents": [
     {
+      "role": "documento",
       "src": "/pursue/cash-landrum-1980-army-ig.pdf",
       "type": "pdf",
       "title": "Inspección General del Ejército de EE. UU. (1982): solicitud FOIA de Whiting, carta de entrega del inspector general, respuesta al congresista Wyden y memorando del teniente coronel Sarran, 7 págs.",
@@ -111,6 +112,7 @@
       "fallbackUrl": "https://app.box.com/s/w8uvmyulh1s4lbent7oh"
     },
     {
+      "role": "contexto",
       "src": "/pursue/cash-landrum-1980-context.jpg",
       "type": "image",
       "title": "Contexto · helicópteros CH-47 Chinook, del tipo que escoltaba al objeto según los testigos",

@@ -89,6 +89,7 @@
   ],
   "documents": [
     {
+      "role": "documento",
       "src": "/pursue/deception-island-1965-dos-airgram.pdf",
       "type": "pdf",
       "title": "Aerograma A-208 de la embajada de EE. UU. en Buenos Aires, «Celestial Body Observed over Antarctica» (4 de septiembre de 1965), 1 pág.",
@@ -100,6 +101,7 @@
       "fallbackUrl": "https://archive.org/details/NSAUFO"
     },
     {
+      "role": "contexto",
       "src": "/pursue/deception-island-1965-context.jpg",
       "type": "image",
       "title": "Contexto · isla Decepción (Antártida), la caldera volcánica donde tres bases informaron de luces en 1965",

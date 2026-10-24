@@ -75,6 +75,7 @@
   ],
   "documents": [
     {
+      "role": "documento",
       "src": "https://nuforc.org/sighting/?id=33261",
       "type": "link",
       "title": "NUFORC, informe S33261 · «Bright blue flashes in the sky and zigzagging light - 1994»",
@@ -84,6 +85,7 @@
       "source": "National UFO Reporting Center (texto leído en la copia de su base de datos en Hugging Face, arieltunontdf/nuforc_reports.CSV)"
     },
     {
+      "role": "contexto",
       "src": "/pursue/orcas-island-1994-context.jpg",
       "type": "image",
       "title": "Contexto · Orcas Island (Washington)",

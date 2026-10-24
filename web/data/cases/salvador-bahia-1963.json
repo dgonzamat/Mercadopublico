@@ -38,6 +38,7 @@
   "category": "incident",
   "documents": [
     {
+      "role": "documento",
       "src": "/pursue/EOP-UAP-D001_NASC-Inquiry-into-Bahia-Brazil-Incident_November-13-1963.pdf",
       "type": "pdf",
       "title": "EOP-UAP-D001 — Monitoreo FBIS de Radio Tupi (Río de Janeiro), la emisión original (8 nov 1963)",
@@ -47,6 +48,7 @@
       "fallbackUrl": "https://www.war.gov/medialink/ufo/080726/release_05/documents/EOP-UAP-D001_NASC-Inquiry-into-Bahia-Brazil-Incident_November-13-1963.pdf"
     },
     {
+      "role": "documento",
       "src": "/pursue/DOSUAPD001_DiplomaticCable_Brazil_November141963.pdf",
       "type": "pdf",
       "title": "DOSUAPD001 — Cable diplomático, Río de Janeiro a Washington (14 nov 1963)",
@@ -56,6 +58,7 @@
       "fallbackUrl": "https://www.war.gov/medialink/ufo/080726/release_05/documents/DOSUAPD001_DiplomaticCable_Brazil_November141963.pdf"
     },
     {
+      "role": "documento",
       "src": "/pursue/DOSUAPD002_DiplomaticCable_Brazil_November201963.pdf",
       "type": "pdf",
       "title": "DOSUAPD002 — Airgrama de seguimiento, 'Negative Report on UFO' (20 nov 1963)",
@@ -65,6 +68,7 @@
       "fallbackUrl": "https://www.war.gov/medialink/ufo/080726/release_05/documents/DOSUAPD002_DiplomaticCable_Brazil_November201963.pdf"
     },
     {
+      "role": "documento",
       "src": "/pursue/EOP-UAP-D002-Memo_on_Interagency_Coordination_for_the_Recovery_of_Foreign_Materiel-May_1963.pdf",
       "type": "pdf",
       "title": "EOP-UAP-D002 — Memorando de R. W. Hale a Welsh sobre las objeciones de Arnold Frutkin, de la NASA, al «project» de fragmentos (29 may 1963)",
@@ -76,6 +80,7 @@
       "fallbackUrl": "https://www.war.gov/medialink/ufo/release-07/documents/EOP-UAP-D002-Memo_on_Interagency_Coordination_for_the_Recovery_of_Foreign_Materiel-May_1963.pdf"
     },
     {
+      "role": "documento",
       "src": "/pursue/USG-UAP-D002-Interagency_Correspondence_Concerning_Space_Fragments-1962_1964.pdf",
       "type": "pdf",
       "title": "USG-UAP-D002 — Carpeta «Space Vehicle Fragments – Responsibilities and Procedures» (Biblioteca LBJ, 1962–1964)",

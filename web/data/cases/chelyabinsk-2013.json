@@ -73,6 +73,7 @@
   },
   "documents": [
     {
+      "role": "prueba",
       "src": "/pursue/Chelyabinsk-2013-meteor-trace.jpg",
       "type": "image",
       "title": "Meteoro de Cheliábinsk · rastro de vapor tras la entrada atmosférica (15 feb 2013)",

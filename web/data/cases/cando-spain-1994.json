@@ -76,6 +76,7 @@
   },
   "documents": [
     {
+      "role": "documento",
       "src": "https://articles.adsabs.harvard.edu/pdf/1998M%26PS...33...57D",
       "type": "link",
       "title": "Docobo, Spalding, Ceplecha, Díaz-Fierros, Tamazian y Onda, «Investigation of a bright flying object over northwest Spain, 1994 January 18», Meteoritics & Planetary Science 33 (1998)",
@@ -85,6 +86,7 @@
       "source": "Meteoritics & Planetary Science · NASA ADS"
     },
     {
+      "role": "contexto",
       "src": "/pursue/cando-spain-1994-context.jpg",
       "type": "image",
       "title": "Contexto · Cando (Galicia, España), donde cayó el objeto que dejó el cráter",

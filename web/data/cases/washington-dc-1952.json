@@ -24,6 +24,7 @@
   "summary_en": "On the weekends of 19 and 26 July 1952, radar controllers at Washington National Airport tracked unidentified returns over the capital, some near lights seen by airline pilots, and the USAF sent F-94 fighters that found nothing conclusive. The episode triggered the largest Air Force press conference since the war. The analyses by ATIC (1952) and the Condon Report (1968) attributed the returns to anomalous propagation from temperature inversions and the lights to stars and meteors, although Ruppelt wrote in 1956 that both episodes were still carried as unknowns.",
   "documents": [
     {
+      "role": "documento",
       "src": "/pursue/59_64634_711.5612_1952.pdf",
       "type": "pdf",
       "title": "Memo SECRET del Depto. de Estado (28 jul 1952) — Nitze pregunta por los platillos; evaluación de Samford en el IAC",
@@ -117,6 +118,7 @@
     }
   ],
   "primaryDocument": {
+    "role": "documento",
     "url": "https://commons.wikimedia.org/wiki/Special:FilePath/General_Samford_Press_Conference,_July_29,_1952.pdf?page=1&width=600",
     "alt": "Primera página del acta de la conferencia de prensa del Mayor General John Samford, USAF Director de Inteligencia, 29 de julio de 1952.",
     "caption": "Acta de la conferencia de prensa del Mayor Gral. John Samford, USAF — 29 de julio 1952, Pentágono. La conferencia más grande del Departamento de Defensa desde la Segunda Guerra Mundial.",

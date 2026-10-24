@@ -81,6 +81,7 @@
   ],
   "documents": [
     {
+      "role": "documento",
       "src": "https://wikileaks.org/plusd/cables/1975ALGIER00638_b.html",
       "type": "link",
       "title": "Cable 1975ALGIER00638 de la embajada de EE. UU. en Argel, 7 de marzo de 1975",
@@ -90,6 +91,7 @@
       "source": "Departamento de Estado de EE. UU. (NARA, telegramas electrónicos de 1975), vía WikiLeaks PlusD"
     },
     {
+      "role": "contexto",
       "src": "/pursue/algeria-min-defense-1975-context.jpg",
       "type": "image",
       "title": "Contexto · Argel (Argelia), sede del Ministerio de Defensa Nacional",

@@ -97,6 +97,7 @@
   ],
   "documents": [
     {
+      "role": "documento",
       "src": "https://www.cnes-geipan.fr/fr/cas/1965-07-00050",
       "type": "link",
       "title": "GEIPAN (CNES), ficha del caso 1965-07-00050, con el acta de la gendarmería n.º 445",
@@ -106,6 +107,7 @@
       "source": "GEIPAN · Centre national d'études spatiales (CNES)"
     },
     {
+      "role": "contexto",
       "src": "/pursue/valensole-1965-context.jpg",
       "type": "image",
       "title": "Contexto · Valensole (Provenza), donde Maurice Masse vio aterrizar el objeto",

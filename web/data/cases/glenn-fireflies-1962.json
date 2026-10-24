@@ -80,6 +80,7 @@
   },
   "documents": [
     {
+      "role": "contexto",
       "src": "/pursue/NASA-Friendship7-Glenn-Mercury-Atlas6-1962.jpg",
       "type": "image",
       "title": "Friendship 7 · cámara a bordo, John Glenn (Mercury-Atlas 6, febrero de 1962)",
@@ -89,6 +90,7 @@
       "fallbackUrl": "https://images.nasa.gov/details/s62-00303"
     },
     {
+      "role": "documento",
       "src": "/pursue/NASA-UAP-D015_Astronaut-Scientific-Debriefings_1962-1963.pdf",
       "type": "pdf",
       "title": "NASA-UAP-D015 — Astronaut Scientific Debriefings (era Mercury, 1962-1963)",

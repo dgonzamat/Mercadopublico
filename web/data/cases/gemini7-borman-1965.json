@@ -25,6 +25,7 @@
   "summary_en": "In December 1965, during the Gemini 7 mission, astronaut Frank Borman reported an unidentified object ('bogey') to Houston; with Jim Lovell he also described 'hundreds of little particles' and a 'brilliant body' against the black background of space. A document re-released by PURSUE in 2026 bears the handwritten note 'UFO Sighting by Borman'.",
   "documents": [
     {
+      "role": "documento",
       "src": "/pursue/255_t_763_r1b_transcripts.pdf",
       "type": "pdf",
       "title": "Transcripción primaria GT-7 (cinta T-00763) — comentario PAO del vuelo Gemini 7/6 (dic 1965)",
@@ -34,6 +35,7 @@
       "fallbackUrl": "https://www.war.gov/medialink/ufo/release_1/255_t_763_r1b_transcripts.pdf"
     },
     {
+      "role": "documento",
       "src": "/pursue/NASA-UAP-D021_Gemini-7-Technical-Debriefing_1965.pdf",
       "type": "pdf",
       "title": "NASA-UAP-D021 — Gemini 7, debriefing técnico (1965)",

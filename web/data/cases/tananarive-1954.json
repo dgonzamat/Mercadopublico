@@ -74,6 +74,7 @@
   ],
   "documents": [
     {
+      "role": "contexto",
       "src": "/pursue/tananarive-1954-context.jpg",
       "type": "image",
       "title": "Contexto · Antananarivo (Madagascar)",

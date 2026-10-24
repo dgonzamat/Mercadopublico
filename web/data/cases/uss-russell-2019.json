@@ -80,6 +80,7 @@
   ],
   "documents": [
     {
+      "role": "prueba",
       "src": "https://www.dvidshub.net/video/embed/843593",
       "type": "video",
       "title": "Video mostrado por Scott Bray ante el Congreso (17 may 2022): objetos hostigando buques de la Marina, luego reclasificados como sistemas no tripulados",
@@ -89,6 +90,7 @@
       "fallbackUrl": "https://www.dvidshub.net/video/843593"
     },
     {
+      "role": "contexto",
       "src": "/pursue/uss-russell-2019-context.jpg",
       "type": "image",
       "title": "Contexto · el USS Russell (DDG-59), buque del vídeo de la 'pirámide' de 2019",

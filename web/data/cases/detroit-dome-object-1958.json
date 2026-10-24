@@ -31,6 +31,7 @@
   "summary_en": "An FBI memorandum dated April 17, 1958 (field-office file 100-DE-18221, Serial 844), declassified in the first PURSUE tranche (May 8, 2026), records the call of a 23-year-old Detroit man who described a 'circular object with a crystal-type dome' and recommends forwarding the information 'to proper air force authorities'. It is a typical case from the flow of citizen sightings the FBI channeled to the Air Force: a single witness, a structured description but no instrumental corroboration, and the routine administrative referral. Its value is documentary (how a report was processed) more than probative.",
   "documents": [
     {
+      "role": "documento",
       "src": "/pursue/65_hs1-101634279_100-de-18221_serial_844.pdf",
       "type": "pdf",
       "title": "Memo FBI 100-DE-18221 · Serial 844 (17 abr 1958) — avistamiento de Detroit",

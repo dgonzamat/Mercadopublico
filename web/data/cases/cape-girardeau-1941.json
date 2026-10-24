@@ -32,6 +32,7 @@
   "category": "incident",
   "documents": [
     {
+      "role": "contexto",
       "src": "/pursue/cape-girardeau-1941-context.jpg",
       "type": "image",
       "title": "Contexto · el Marquette Hotel, Cape Girardeau, Misuri (edificio de 1928)",

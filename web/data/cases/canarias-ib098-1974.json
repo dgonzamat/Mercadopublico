@@ -65,6 +65,7 @@
   },
   "documents": [
     {
+      "role": "documento",
       "src": "/pursue/canarias-1974-expediente-741124.pdf",
       "type": "pdf",
       "title": "Expediente 741124 del Ejército del Aire (extracto, 15 págs.): revisión del MOA de 1994, informe del escuadrón de radar, informe y propuesta del juez instructor y mapa",

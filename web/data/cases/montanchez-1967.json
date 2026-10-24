@@ -62,6 +62,7 @@
   },
   "documents": [
     {
+      "role": "documento",
       "src": "/pursue/montanchez-1967-expediente-670603.pdf",
       "type": "pdf",
       "title": "Expediente 670603 del Ejército del Aire (extracto, 13 págs.): ficha del MOA, informe del Mando de la Defensa Aérea y transcripción de la cinta",

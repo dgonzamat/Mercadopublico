@@ -34,6 +34,7 @@
   "category": "incident",
   "documents": [
     {
+      "role": "documento",
       "src": "/pursue/DOW-UAP-D179_Unresolved_UAP_Report_Catalina_Island-1952.pdf",
       "type": "pdf",
       "title": "DOW-UAP-D179 — Informe de inteligencia aérea MAFB-1 del 807.º Grupo de Base Aérea, base aérea de March (28 ago 1952)",

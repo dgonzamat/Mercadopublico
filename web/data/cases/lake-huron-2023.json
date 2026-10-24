@@ -137,6 +137,7 @@
   },
   "documents": [
     {
+      "role": "contexto",
       "src": "/pursue/lake-huron-2023-context.jpg",
       "type": "image",
       "title": "Contexto · el lago Hurón, sobre el que un F-16 derribó un objeto en febrero de 2023",
@@ -146,6 +147,7 @@
       "fallbackUrl": "https://commons.wikimedia.org/wiki/File%3ALake%20Huron%20in%20winter.jpg"
     },
     {
+      "role": "prueba",
       "src": "https://www.dvidshub.net/video/embed/1007784",
       "type": "video",
       "title": "DOW-UAP-PR071 — video infrarrojo del derribo con F-16 sobre el Lago Hurón (12 feb 2023)",

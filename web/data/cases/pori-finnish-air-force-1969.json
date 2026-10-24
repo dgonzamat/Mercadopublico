@@ -72,6 +72,7 @@
   },
   "documents": [
     {
+      "role": "contexto",
       "src": "/pursue/pori-1969-fouga-magister-fm49.jpg",
       "type": "image",
       "title": "Fouga Magister FM-49 de la Fuerza Aérea finlandesa en Tampere-Pirkkala (1982), el modelo de reactor de entrenamiento que persiguió los objetos en Pori. Imagen de contexto, no del suceso.",

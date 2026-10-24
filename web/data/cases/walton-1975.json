@@ -84,6 +84,7 @@
   ],
   "documents": [
     {
+      "role": "documento",
       "src": "https://archive.org/details/AFU_19751100_APRO_Bulletin_v24_n5",
       "type": "link",
       "title": "«The A.P.R.O. Bulletin», vol. 24, n.º 5 (noviembre de 1975): el caso Walton",
@@ -93,6 +94,7 @@
       "source": "Aerial Phenomena Research Organization (APRO), vía archive.org"
     },
     {
+      "role": "contexto",
       "src": "/pursue/walton-1975-context.jpg",
       "type": "image",
       "title": "Contexto · Snowflake (Arizona), cerca de donde desapareció Travis Walton",

@@ -42,6 +42,7 @@
   "category": "incident",
   "documents": [
     {
+      "role": "prueba",
       "src": "https://www.dvidshub.net/video/embed/1014123",
       "type": "video",
       "title": "Sensor IR sobre el Golfo de América; la AARO explica el mecanismo físico del parpadeo térmico (8 s)",

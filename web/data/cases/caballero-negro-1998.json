@@ -96,6 +96,7 @@
   ],
   "documents": [
     {
+      "role": "prueba",
       "src": "/pursue/caballero-negro-1998-sts088-724-66.jpg",
       "type": "image",
       "title": "STS088-724-66 · el objeto sobre el borde de la Tierra (11 dic 1998)",
@@ -107,6 +108,7 @@
       "fallbackUrl": "https://commons.wikimedia.org/wiki/File:Black_Knight_Satellite.jpg"
     },
     {
+      "role": "prueba",
       "src": "/pursue/caballero-negro-1998-sts088-724-70.jpg",
       "type": "image",
       "title": "STS088-724-70 · el mismo objeto, un minuto y medio después",
@@ -118,6 +120,7 @@
       "fallbackUrl": "https://commons.wikimedia.org/wiki/File:Black_Knight_Satellite_(STS088-724-70).jpg"
     },
     {
+      "role": "documento",
       "src": "/pursue/caballero-negro-1998-sts88-mission-report-extracto.pdf",
       "type": "pdf",
       "title": "Informe de la misión STS-88 (extracto: portada y páginas de las caminatas)",

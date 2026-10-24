@@ -110,6 +110,7 @@
   "evidenceReviewed": "2026-10-12",
   "documents": [
     {
+      "role": "documento",
       "src": "https://arxiv.org/pdf/2208.11215",
       "type": "link",
       "title": "Zhilyaev, Petukhov y Reshetnyk, «Unidentified aerial phenomena I. Observations of events» (Observatorio Astronómico Principal de la NASU, arXiv:2208.11215, v2 de septiembre de 2022)",
@@ -119,6 +120,7 @@
       "source": "arXiv (Observatorio Astronómico Principal, Academia Nacional de Ciencias de Ucrania)"
     },
     {
+      "role": "contexto",
       "src": "/pursue/ukraine-mao-uap-2022-context.jpg",
       "type": "image",
       "title": "Contexto · Kyiv (Ucrania), sede del Observatorio Astronómico Principal (NASU)",

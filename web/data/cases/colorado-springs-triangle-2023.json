@@ -36,6 +36,7 @@
   "category": "incident",
   "documents": [
     {
+      "role": "documento",
       "src": "/pursue/FBI-UAP-D026_FD-302_Dark-Translucent-Triangle_2023.pdf",
       "type": "pdf",
       "title": "FBI-UAP-D026 — FD-302, declaración del testigo (enero 2026)",
@@ -45,6 +46,7 @@
       "fallbackUrl": "https://www.war.gov/medialink/ufo/080726/release_05/documents/FBI-UAP-D026_FD-302_Dark-Translucent-Triangle_2023.pdf"
     },
     {
+      "role": "documento",
       "src": "/pursue/FBI-UAP-D027_Digital-Rendering_Dark-Translucent-Triangle_2023.pdf",
       "type": "pdf",
       "title": "FBI-UAP-D027 — representación digital del objeto",

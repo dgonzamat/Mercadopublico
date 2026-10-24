@@ -63,6 +63,7 @@
   },
   "documents": [
     {
+      "role": "documento",
       "src": "/pursue/usagre-1993-expediente-931011.pdf",
       "type": "pdf",
       "title": "Expediente 931011 del Ejército del Aire (extracto, 5 págs.): resumen del MOA, juicio del general jefe del Mando Aéreo del Estrecho, juicio del oficial informador y mapa",

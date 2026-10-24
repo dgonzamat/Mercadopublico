@@ -87,6 +87,7 @@
   },
   "documents": [
     {
+      "role": "documento",
       "src": "/pursue/coyne-1973-army-da2496.jpg",
       "type": "image",
       "title": "Formulario de disposición del Ejército (DA Form 2496) «Near Midair Collision with UFO Report», 23 de noviembre de 1973, firmado por los cuatro tripulantes",
@@ -98,6 +99,7 @@
       "fallbackUrl": "https://www.nicap.org/docs/coynefoiadoc1.jpg"
     },
     {
+      "role": "contexto",
       "src": "/pursue/coyne-1973-context.png",
       "type": "image",
       "title": "Contexto · un Bell UH-1 Iroquois, el tipo de helicóptero del caso Coyne",

@@ -53,6 +53,7 @@
   ],
   "documents": [
     {
+      "role": "prueba",
       "src": "https://www.dvidshub.net/video/embed/1023409",
       "type": "video",
       "title": "LLE-UAP-PR001 · Colorado, octubre de 2023, 1 min 19 s grabados por un agente de policía local (PURSUE Release 06)",
@@ -62,6 +63,7 @@
       "fallbackUrl": "https://www.dvidshub.net/video/1023409/lle-uap-pr001-unresolved-uap-report-colorado-2023"
     },
     {
+      "role": "prueba",
       "src": "https://www.dvidshub.net/video/embed/1023412",
       "type": "video",
       "title": "LLE-UAP-PR002 · Colorado, octubre de 2023, 15 s grabados por un agente de policía local (PURSUE Release 06)",
@@ -71,6 +73,7 @@
       "fallbackUrl": "https://www.dvidshub.net/video/1023412/lle-uap-pr002-unresolved-uap-report-colorado-october-2023"
     },
     {
+      "role": "prueba",
       "src": "https://www.dvidshub.net/video/embed/1023414",
       "type": "video",
       "title": "LLE-UAP-PR003 · Colorado, octubre de 2023, 27 s grabados por un agente de policía local (PURSUE Release 06)",
@@ -80,6 +83,7 @@
       "fallbackUrl": "https://www.dvidshub.net/video/1023414/lle-uap-pr003-unresolved-uap-report-colorado-october-2023"
     },
     {
+      "role": "prueba",
       "src": "https://www.dvidshub.net/video/embed/1023416",
       "type": "video",
       "title": "LLE-UAP-PR004 · Colorado, octubre de 2023, 1 min 42 s grabados por un agente de policía local (PURSUE Release 06)",
@@ -89,6 +93,7 @@
       "fallbackUrl": "https://www.dvidshub.net/video/1023416/lle-uap-pr004-unresolved-uap-report-colorado-october-2023"
     },
     {
+      "role": "documento",
       "src": "/pursue/LLE-UAP-D001_colorado-2023-transcript.pdf",
       "type": "pdf",
       "title": "LLE-UAP-D001 · transcripción de la narración del agente mientras grababa, con las tachaduras (b)(7)(A) y (b)(7)(C) de la FOIA (PURSUE Release 06)",

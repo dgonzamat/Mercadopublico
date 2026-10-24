@@ -71,6 +71,7 @@
   },
   "documents": [
     {
+      "role": "contexto",
       "src": "/pursue/rs33-magenta-1933-context.jpg",
       "type": "image",
       "title": "Contexto · Magenta (Lombardía, Italia)",

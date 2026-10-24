@@ -65,6 +65,7 @@
   },
   "documents": [
     {
+      "role": "documento",
       "src": "https://www.delpher.nl/nl/kranten/view?identifier=ddd:010377151:mpeg21:a0122&coll=ddd",
       "type": "link",
       "title": "De Waarheid, 31 de octubre de 1980, «Ufologen mogen speuren op de departementen»: la oficina NOVOBO sobre «la sonada denuncia sobre el aeródromo de Soesterberg»",
@@ -74,6 +75,7 @@
       "source": "De Waarheid (31 oct 1980), vía Delpher (Biblioteca Real de los Países Bajos)"
     },
     {
+      "role": "contexto",
       "src": "/pursue/soesterberg-1979-context.jpg",
       "type": "image",
       "title": "Contexto · la base aérea de Soesterberg (Países Bajos)",

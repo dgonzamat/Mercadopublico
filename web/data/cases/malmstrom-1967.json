@@ -105,6 +105,7 @@
   "name_en": "Malmstrom ICBM shutdown",
   "documents": [
     {
+      "role": "documento",
       "src": "/pursue/malmstrom-1967-341smw-history.pdf",
       "type": "pdf",
       "title": "Historia de la 341.ª Ala de Misiles Estratégicos, enero–marzo de 1967 (extracto) y respuesta FOIA de 2001",
@@ -116,6 +117,7 @@
       "fallbackUrl": "https://documents.theblackvault.com/documents/ufos/malmstromufo.pdf"
     },
     {
+      "role": "contexto",
       "src": "/pursue/malmstrom-1967-context.jpg",
       "type": "image",
       "title": "Contexto · la base aérea de Malmstrom (Montana), sede del apagón de misiles Minuteman",

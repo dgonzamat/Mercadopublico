@@ -79,6 +79,7 @@
   "name_en": "El Taire / Bermejo crash",
   "documents": [
     {
+      "role": "documento",
       "src": "https://wikileaks.org/plusd/cables/1978LAPAZ03804_d.html",
       "type": "link",
       "title": "Cable 1978LAPAZ03804 de la embajada de EE. UU. en La Paz, «Report of fallen space object» (15 de mayo de 1978)",
@@ -88,6 +89,7 @@
       "source": "Departamento de Estado de EE. UU. (NARA, telegramas electrónicos de 1978), vía WikiLeaks PlusD"
     },
     {
+      "role": "contexto",
       "src": "/pursue/bolivia-el-taire-1978-context.jpg",
       "type": "image",
       "title": "Contexto · Bermejo (Tarija, Bolivia), cerca del cerro El Taire",

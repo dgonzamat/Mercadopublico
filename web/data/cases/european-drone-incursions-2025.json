@@ -119,6 +119,7 @@
   },
   "documents": [
     {
+      "role": "documento",
       "src": "https://politi.dk/rigspolitiet/nyhedsliste/politiet-har-styrket-indsatsen-paa-droneomraadet/2026/06/25",
       "type": "link",
       "title": "Rigspolitiet (Policía Nacional de Dinamarca), «Politiet har styrket indsatsen på droneområdet», 25 de junio de 2026: el cierre de las investigaciones",
@@ -128,6 +129,7 @@
       "source": "Rigspolitiet · politi.dk (en danés)"
     },
     {
+      "role": "contexto",
       "src": "/pursue/european-drone-incursions-2025-context.jpg",
       "type": "image",
       "title": "Contexto · aeropuerto de Copenhague (Kastrup), cerrado la noche del 22 de septiembre de 2025",

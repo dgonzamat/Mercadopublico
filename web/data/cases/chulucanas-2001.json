@@ -92,6 +92,7 @@
   },
   "documents": [
     {
+      "role": "contexto",
       "src": "/pursue/chulucanas-2001-context.jpg",
       "type": "image",
       "title": "Contexto · Chulucanas (Piura, Perú), donde se filmaron las luces de 2001",

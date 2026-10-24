@@ -80,6 +80,7 @@
   ],
   "documents": [
     {
+      "role": "documento",
       "src": "/pursue/yemen-orb-2024-house-hearing.pdf",
       "type": "pdf",
       "title": "Audiencia de la Cámara de Representantes del 9 de septiembre de 2025 (Serie 119-44): presentación del vídeo de Yemen por el congresista Burlison, 4 págs.",
@@ -91,6 +92,7 @@
       "fallbackUrl": "https://www.govinfo.gov/content/pkg/CHRG-119hhrg61718/pdf/CHRG-119hhrg61718.pdf"
     },
     {
+      "role": "contexto",
       "src": "/pursue/yemen-orb-2024-context.jpg",
       "type": "image",
       "title": "Contexto · el mar Rojo, frente a cuya costa yemení se grabó la esfera",

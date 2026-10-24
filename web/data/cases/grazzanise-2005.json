@@ -121,6 +121,7 @@
   "evidenceReviewed": "2026-10-02",
   "documents": [
     {
+      "role": "documento",
       "src": "/pursue/aeronautica-militare-avvistamenti-2005.pdf",
       "type": "pdf",
       "title": "Aeronautica Militare — «Avvistamenti O.V.N.I. 2005» (5 págs.); Grazzanise, entradas 1 y 2 en la pág. 3",
@@ -130,6 +131,7 @@
       "fallbackUrl": "https://www.aeronautica.difesa.it/wp-content/uploads/2022/11/Avvistamenti_2005.pdf"
     },
     {
+      "role": "documento",
       "src": "/pursue/aeronautica-militare-avvistamenti-1972-1990.pdf",
       "type": "pdf",
       "title": "Aeronautica Militare — avistamientos por región y año, 1972–1990 (3 págs.)",

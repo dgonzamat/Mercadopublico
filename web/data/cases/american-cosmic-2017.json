@@ -64,6 +64,7 @@
   ],
   "documents": [
     {
+      "role": "contexto",
       "src": "/pursue/american-cosmic-2017-context.jpg",
       "type": "image",
       "title": "Contexto · el desierto de Nuevo México, escenario no divulgado del libro American Cosmic",

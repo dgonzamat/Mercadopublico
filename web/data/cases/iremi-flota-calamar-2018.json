@@ -75,6 +75,7 @@
   ],
   "documents": [
     {
+      "role": "contexto",
       "src": "/pursue/iremi-flota-calamar-2018-lamparas.jpg",
       "type": "image",
       "title": "Contexto · lámparas de un barco calamarero",
@@ -86,6 +87,7 @@
       "fallbackUrl": "https://commons.wikimedia.org/wiki/File:Squid_jigger_electric_lamps.JPG"
     },
     {
+      "role": "documento",
       "src": "https://sefaa.dgac.gob.cl/wp-content/uploads/2023/09/CASO-N%C2%B0899-04122018.pdf",
       "type": "link",
       "title": "Informe del SEFAA (DGAC de Chile), caso n.º 899, IREMI (UL302), reporte del 4 de diciembre de 2018",

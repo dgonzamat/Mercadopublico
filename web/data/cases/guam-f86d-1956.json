@@ -36,6 +36,7 @@
   "category": "incident",
   "documents": [
     {
+      "role": "documento",
       "src": "/pursue/DOW-UAP-D156-Air_Intelligence_Information_Report_Guam-1956.pdf",
       "type": "pdf",
       "title": "DOW-UAP-D156 — Informe de inteligencia aérea sobre la luz que persiguió un F-86D sobre Guam",

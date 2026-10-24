@@ -72,6 +72,7 @@
   },
   "documents": [
     {
+      "role": "documento",
       "src": "/pursue/voronezh-1989-fbis-nota-prensa.pdf",
       "type": "pdf",
       "title": "FBIS, Foreign Press Note «USSR: Media Report Multitude of UFO Sightings» (22 nov 1989, 5 págs.)",
@@ -83,6 +84,7 @@
       "fallbackUrl": "https://archive.org/details/cia-readingroom-document-0000042346"
     },
     {
+      "role": "contexto",
       "src": "/pursue/molebka-m-triangle-1983-context.jpg",
       "type": "image",
       "title": "Contexto · el óblast de Perm (Rusia), región del 'triángulo M' de Molebka",

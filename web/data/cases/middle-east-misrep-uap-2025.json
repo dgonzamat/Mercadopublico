@@ -53,6 +53,7 @@
   ],
   "documents": [
     {
+      "role": "documento",
       "src": "/pursue/DOW-UAP-D108_mission-report-middle-east-2025.pdf",
       "type": "pdf",
       "title": "DOW-UAP-D108 · el parte del 29 de julio de 2025, con la descripción «seis objetos esféricos pequeños agrupados» y el módulo UAP rellenado a medias (PURSUE Release 06)",
@@ -61,6 +62,7 @@
       "license": "Dominio público · obra del Gobierno de EE. UU. (17 USC §105)"
     },
     {
+      "role": "documento",
       "src": "/pursue/DOW-UAP-D107_mission-report-middle-east-2025.pdf",
       "type": "pdf",
       "title": "DOW-UAP-D107 · el parte del 29 de octubre de 2025, con el módulo UAP entero y casi todos sus campos en blanco (PURSUE Release 06)",
@@ -69,6 +71,7 @@
       "license": "Dominio público · obra del Gobierno de EE. UU. (17 USC §105)"
     },
     {
+      "role": "prueba",
       "src": "https://www.dvidshub.net/video/embed/1023397",
       "type": "video",
       "title": "DOW-UAP-PR135 · el metraje del parte de julio (D108): 60 segundos de sensor infrarrojo en los que varias áreas de contraste cruzan el cuadro juntas (PURSUE Release 06)",
@@ -78,6 +81,7 @@
       "fallbackUrl": "https://www.dvidshub.net/video/1023397/dow-uap-pr135-unresolved-uap-report-middle-east-2025"
     },
     {
+      "role": "prueba",
       "src": "https://www.dvidshub.net/video/embed/1023396",
       "type": "video",
       "title": "DOW-UAP-PR133 · el metraje del parte de octubre (D107): 4 minutos 58 segundos, con el retículo de seguimiento automático que no logra enganchar (PURSUE Release 06)",

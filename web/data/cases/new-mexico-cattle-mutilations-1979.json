@@ -93,6 +93,7 @@
   "evidenceReviewed": "2026-10-12",
   "documents": [
     {
+      "role": "documento",
       "src": "/pursue/new-mexico-cattle-mutilations-1979-fbi.pdf",
       "type": "pdf",
       "title": "Expediente del FBI «Animal Mutilation»: informe de Gabe Valdez sobre la vaca de Manuel Gómez (1976) y memorando de cierre de Albuquerque (enero de 1980), 7 págs.",
@@ -104,6 +105,7 @@
       "fallbackUrl": "https://archive.org/details/AnimalMutilation"
     },
     {
+      "role": "contexto",
       "src": "/pursue/rommel-report-1980-context.jpg",
       "type": "image",
       "title": "Contexto · Santa Fe (Nuevo México)",

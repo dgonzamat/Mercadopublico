@@ -77,6 +77,7 @@
   ],
   "documents": [
     {
+      "role": "contexto",
       "src": "/pursue/petorca-dabit-2018-magallanes.jpg",
       "type": "image",
       "title": "Contexto · las nubes de Magallanes sobre el cerro Tololo, en Chile",
@@ -88,6 +89,7 @@
       "fallbackUrl": "https://commons.wikimedia.org/wiki/File:Large_and_Small_Magellanic_Clouds_over_Cerro_Tololo_(noirlab2030c).jpg"
     },
     {
+      "role": "documento",
       "src": "https://sefaa.dgac.gob.cl/wp-content/uploads/2023/09/CASO-N%C2%B0792-12022018.pdf",
       "type": "link",
       "title": "Informe del SEFAA (DGAC de Chile), caso n.º 792, Petorca, 12 de febrero de 2018 (resuelto el 30 de enero de 2019)",

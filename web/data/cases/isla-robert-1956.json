@@ -123,6 +123,7 @@
   ],
   "documents": [
     {
+      "role": "contexto",
       "src": "/pursue/isla-robert-1956-peninsula-coppermine.jpg",
       "type": "image",
       "title": "Contexto · la península Coppermine, en la isla Robert, donde estaba el refugio",
@@ -134,6 +135,7 @@
       "fallbackUrl": "https://commons.wikimedia.org/wiki/File:Coppermine-Peninsula.jpg"
     },
     {
+      "role": "documento",
       "src": "https://archive.org/details/UFO_Chile_Issue_02",
       "type": "link",
       "title": "«UFO Chile» nº 2, octubre de 1967 · el primer relato del caso (escaneo)",

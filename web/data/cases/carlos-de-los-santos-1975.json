@@ -74,6 +74,7 @@
   ],
   "documents": [
     {
+      "role": "documento",
       "src": "https://archive.org/details/AFU_19750800_APRO_Bulletin_v24_n2",
       "type": "link",
       "title": "APRO Bulletin, vol. 24, n.º 2 (agosto de 1975), «Escort»: la investigación de Fernando Téllez",
@@ -83,6 +84,7 @@
       "source": "APRO · Archives for the Unexplained (archive.org)"
     },
     {
+      "role": "contexto",
       "src": "/pursue/carlos-de-los-santos-1975-context.jpg",
       "type": "image",
       "title": "Contexto · el aeropuerto internacional de Ciudad de México",

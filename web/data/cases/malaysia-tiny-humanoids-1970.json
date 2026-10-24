@@ -99,6 +99,7 @@
   ],
   "documents": [
     {
+      "role": "contexto",
       "src": "/pursue/malaysia-tiny-humanoids-1970-context.jpg",
       "type": "image",
       "title": "Contexto · Bukit Mertajam (Penang, Malasia), epicentro de la oleada escolar de 1970",

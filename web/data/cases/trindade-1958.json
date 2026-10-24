@@ -64,6 +64,7 @@
   "name_en": "Trindade Island",
   "documents": [
     {
+      "role": "documento",
       "src": "/pursue/trindade-1958-bluebook-oni.pdf",
       "type": "pdf",
       "title": "Project Blue Book · tarjeta «fraude» e informe 39-58 de la Inteligencia Naval de EE. UU. (extracto)",
@@ -75,6 +76,7 @@
       "fallbackUrl": "https://archive.org/details/1958-01-6957752-Trinidade-Island"
     },
     {
+      "role": "contexto",
       "src": "/pursue/trindade-1958-context.jpg",
       "type": "image",
       "title": "Contexto · la isla de Trindade (Brasil), donde el buque escuela fotografió el objeto",

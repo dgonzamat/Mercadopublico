@@ -82,6 +82,7 @@
   },
   "documents": [
     {
+      "role": "contexto",
       "src": "/pursue/vranov-dyji-1987-context.jpg",
       "type": "image",
       "title": "Contexto · un helicóptero Mil Mi-24, el tipo implicado en el incidente de Vranov nad Dyjí",

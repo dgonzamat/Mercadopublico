@@ -200,6 +200,7 @@
     "indet": 0.15
   },
   "primaryDocument": {
+    "role": "contexto",
     "url": "https://commons.wikimedia.org/wiki/Special:FilePath/Skinwalker_Ranch_(10393732103).jpg?width=800",
     "alt": "Letreros de «prohibido el paso» a la entrada del Skinwalker Ranch, Utah.",
     "caption": "Entrada del Skinwalker Ranch en el condado de Uintah, Utah, foco del programa AAWSAP financiado por la DIA (2008–2010) y de tres décadas de medición instrumentada.",
@@ -213,6 +214,7 @@
   "seoTitle_en": "AARO Historical Record Report — AAWSAP & Skinwalker Ranch",
   "seoDescription_en": "The DoD's AAWSAP program at Skinwalker Ranch: 38 DIRDs, USD 22M via the DIA, the instrumented field campaigns, and AARO's Historical Record Report (Vol. 1, 2024).",
   "featuredDoc": {
+    "role": "documento",
     "label": "AARO Historical Record Report, Volumen 1 (PDF oficial, feb 2024)",
     "label_en": "AARO Historical Record Report, Volume 1 (official PDF, Feb 2024)",
     "url": "https://www.aaro.mil/Portals/136/PDFs/AARO_Historical_Record_Report_Vol_1_2024.pdf",
@@ -225,6 +227,7 @@
   ],
   "documents": [
     {
+      "role": "documento",
       "src": "/pursue/DOW-UAP-D110_aawsap-statement-of-objectives-2008.pdf",
       "type": "pdf",
       "title": "DOW-UAP-D110 · el pliego de objetivos del AAWSAP, 18 de julio de 2008: las doce áreas de estudio 3.a.1–3.a.12 de las que saldrían los DIRD, el horizonte «hasta 2050» y el requisito de experiencia que estrechó el campo de ofertantes (PURSUE Release 06)",
@@ -233,6 +236,7 @@
       "license": "Dominio público · obra del Gobierno de EE. UU. (17 USC §105)"
     },
     {
+      "role": "documento",
       "src": "/pursue/DOW-UAP-D112_aawsap-modification-p00001-2009.pdf",
       "type": "pdf",
       "title": "DOW-UAP-D112 · modificación P00001, 2 de septiembre de 2009: ejerce el año de opción «sujeto a la disponibilidad de fondos» y lo valora en 25.000.000 de dólares (PURSUE Release 06)",
@@ -243,6 +247,7 @@
       "license": "Dominio público · obra del Gobierno de EE. UU. (17 USC §105)"
     },
     {
+      "role": "documento",
       "src": "/pursue/DOW-UAP-D113_aawsap-modification-p00002-2010.pdf",
       "type": "pdf",
       "title": "DOW-UAP-D113 · modificación P00002, 2 de febrero de 2010: la financiación del año de opción, con 11.948.810 dólares, que lleva el total comprometido a 21.948.810 (PURSUE Release 06)",
@@ -253,6 +258,7 @@
       "license": "Dominio público · obra del Gobierno de EE. UU. (17 USC §105)"
     },
     {
+      "role": "documento",
       "src": "/pursue/DOW-UAP-D114_aawsap-modification-p00003-2010.pdf",
       "type": "pdf",
       "title": "DOW-UAP-D114 · modificación P00003, 18 de mayo de 2010: cambio administrativo del representante del oficial de contratación (COR), por cero dólares (PURSUE Release 06)",
@@ -263,6 +269,7 @@
       "license": "Dominio público · obra del Gobierno de EE. UU. (17 USC §105)"
     },
     {
+      "role": "documento",
       "src": "/pursue/DOW-UAP-D115_aawsap-modification-p00004-2010.pdf",
       "type": "pdf",
       "title": "DOW-UAP-D115 · modificación P00004, 18 de mayo de 2010: solo la hoja de distribución de una segunda modificación administrativa del mismo día (PURSUE Release 06)",
@@ -273,6 +280,7 @@
       "license": "Dominio público · obra del Gobierno de EE. UU. (17 USC §105)"
     },
     {
+      "role": "documento",
       "src": "/pursue/DOW-UAP-D116_aawsap-modification-p00005-2010.pdf",
       "type": "pdf",
       "title": "DOW-UAP-D116 · modificación P00005, 28 de septiembre de 2010: la prórroga sin financiación que lleva el contrato hasta el 21 de diciembre de 2010, con el cuadro de partidas del año de opción (PURSUE Release 06)",
@@ -281,6 +289,7 @@
       "license": "Dominio público · obra del Gobierno de EE. UU. (17 USC §105)"
     },
     {
+      "role": "documento",
       "src": "https://archive.org/details/defence-intelligence-reference-documents_DIRDs",
       "type": "link",
       "title": "Los 37 Defense Intelligence Reference Documents (DIRD) del programa, en la versión FOIA anterior a PURSUE (espejo en archive.org)",
@@ -290,6 +299,7 @@
       "source": "Defense Intelligence Agency · respuesta FOIA, espejo de usuario en archive.org"
     },
     {
+      "role": "documento",
       "src": "https://www.nytimes.com/2017/12/16/us/politics/pentagon-program-ufo-harry-reid.html",
       "type": "link",
       "title": "«Glowing Auras and Black Money» · el NYT revela el AATIP",
@@ -298,6 +308,7 @@
       "description_en": "Front-page article in The New York Times on December 16, 2017, 'Glowing Auras and 'Black Money': The Pentagon's Mysterious U.F.O. Program', by Helene Cooper, Ralph Blumenthal and Leslie Kean. It revealed the Advanced Aerospace Threat Identification Program (AATIP), funded with about $22 million between 2007 and 2012, driven by Senator Harry Reid and with contracts to Bigelow Aerospace (BAASS). It presented Luis Elizondo as its former director, and on the same day To The Stars Academy released the Navy FLIR1 and Gimbal videos. The Pentagon confirmed the program existed. It proves nothing about the origin of the objects, and Elizondo's role at the head of AATIP was later questioned by The Intercept and by contradictory Pentagon statements."
     },
     {
+      "role": "documento",
       "src": "/pursue/DOW-UAP-D166-MUFON-Reports_Prepared_for_BAASS-November_2008.pdf",
       "type": "pdf",
       "title": "DOW-UAP-D166 · informes de MUFON preparados para BAASS, noviembre de 2008: cinco propuestas de investigación sobre sustentación, potencia, control, interfaz humana y propulsión (PURSUE Release 07, 9,5 MB)",
@@ -309,6 +320,7 @@
       "fallbackUrl": "https://www.war.gov/medialink/ufo/release-07/documents/DOW-UAP-D166-MUFON-Reports_Prepared_for_BAASS-November_2008.pdf"
     },
     {
+      "role": "documento",
       "src": "/pursue/DOW-UAP-D167-Project_Capella-December-2008.pdf",
       "type": "pdf",
       "title": "DOW-UAP-D167 · «Project Capella», 10 de diciembre de 2008: el informe n.º 1 de Documatica Research a BAASS sobre un almacén de datos de fenómenos aéreos inusuales (PURSUE Release 07, 6,7 MB)",
@@ -320,6 +332,7 @@
       "fallbackUrl": "https://www.war.gov/medialink/ufo/release-07/documents/DOW-UAP-D167-Project_Capella-December-2008.pdf"
     },
     {
+      "role": "documento",
       "src": "/pursue/DOW-UAP-D168-BAASS_Project_Management_Plan-December_2008.pdf",
       "type": "pdf",
       "title": "DOW-UAP-D168 · plan de gestión del proyecto de BAASS, 2 de diciembre de 2008: las doce áreas del pliego repartidas en nueve proyectos (PURSUE Release 07, 6,7 MB)",
@@ -331,6 +344,7 @@
       "fallbackUrl": "https://www.war.gov/medialink/ufo/release-07/documents/DOW-UAP-D168-BAASS_Project_Management_Plan-December_2008.pdf"
     },
     {
+      "role": "documento",
       "src": "/pursue/DOW-UAP-D169-BAASS_Monthly_Report-March_2009.pdf",
       "type": "pdf",
       "title": "DOW-UAP-D169 · informe mensual de BAASS, marzo de 2009: el contrato con MUFON, la gestión ante la FAA y «The UFO Assault on Brazil» (PURSUE Release 07)",
@@ -342,6 +356,7 @@
       "fallbackUrl": "https://www.war.gov/medialink/ufo/release-07/documents/DOW-UAP-D169-BAASS_Monthly_Report-March_2009.pdf"
     },
     {
+      "role": "documento",
       "src": "/pursue/DOW-UAP-D170-BAASS_Montly_Report_April_2009.pdf",
       "type": "pdf",
       "title": "DOW-UAP-D170 · informe mensual de BAASS, abril de 2009: casos de MUFON y el primer análisis de Project Northern Tier (PURSUE Release 07, 7,9 MB)",
@@ -353,6 +368,7 @@
       "fallbackUrl": "https://www.war.gov/medialink/ufo/release-07/documents/DOW-UAP-D170-BAASS_Montly_Report_April_2009.pdf"
     },
     {
+      "role": "documento",
       "src": "https://hgbvdqckoosxesixhepr.supabase.co/storage/v1/object/public/pursue/DOW-UAP-D171-BAASS_Monthly_Report_June_2009.pdf",
       "type": "pdf",
       "title": "DOW-UAP-D171 · informe mensual de BAASS, junio de 2009: la bóveda subterránea proyectada, los casos de MUFON, Brasil y Northern Tier (PURSUE Release 07, 19,3 MB)",
@@ -364,6 +380,7 @@
       "fallbackUrl": "https://www.war.gov/medialink/ufo/release-07/documents/DOW-UAP-D171-BAASS_Monthly_Report_June_2009.pdf"
     },
     {
+      "role": "documento",
       "src": "https://hgbvdqckoosxesixhepr.supabase.co/storage/v1/object/public/pursue/DOW-UAP-D173-BAASS_Monthly_Report_November_2009.pdf",
       "type": "pdf",
       "title": "DOW-UAP-D173 · informe mensual de BAASS, noviembre de 2009: casos de MUFON, los partes de los vigilantes del rancho, sus experimentos con candado y un «orbe azul» en California (PURSUE Release 07, 80,4 MB)",
@@ -375,6 +392,7 @@
       "fallbackUrl": "https://www.war.gov/medialink/ufo/release-07/documents/DOW-UAP-D173-BAASS_Monthly_Report_November_2009.pdf"
     },
     {
+      "role": "documento",
       "src": "/pursue/DOW-UAP-D174-Utah_Ranch_Investigation_Report_April_2010.pdf",
       "type": "pdf",
       "title": "DOW-UAP-D174 · «Utah Ranch Investigation», despliegues de marzo y abril de 2010: testigos, cámaras, biosensores, barrido de radiofrecuencia y ADN de un pelo (PURSUE Release 07, 7,5 MB)",
@@ -386,6 +404,7 @@
       "fallbackUrl": "https://www.war.gov/medialink/ufo/release-07/documents/DOW-UAP-D174-Utah_Ranch_Investigation_Report_April_2010.pdf"
     },
     {
+      "role": "documento",
       "src": "https://hgbvdqckoosxesixhepr.supabase.co/storage/v1/object/public/pursue/DOW-UAP-D175-BAASS_Self-Assessment_of_UAP_Analysis_Capabilities_November_2010.pdf",
       "type": "pdf",
       "title": "DOW-UAP-D175 · autoevaluación de las capacidades de análisis de BAASS, 23 de noviembre de 2010: el almacén de datos de once bases y los modelos del caso Tic Tac (PURSUE Release 07, 17,3 MB)",

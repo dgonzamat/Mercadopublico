@@ -82,6 +82,7 @@
   ],
   "documents": [
     {
+      "role": "documento",
       "src": "/pursue/vietnam-dmz-1968-iii-maf-chronology.pdf",
       "type": "pdf",
       "title": "Crónica de mando de la III Fuerza Anfibia de Marines, junio de 1968: carátula, cartas de remisión y págs. 16-17 del resumen de inteligencia, 6 págs.",
@@ -93,6 +94,7 @@
       "fallbackUrl": "http://www.project1947.com/articles/vietnam_command_chron_june_68.pdf"
     },
     {
+      "role": "contexto",
       "src": "/pursue/vietnam-dmz-1968-context.jpg",
       "type": "image",
       "title": "Contexto · el crucero USS Boston, alcanzado por fuego amigo durante el incidente de la DMZ",

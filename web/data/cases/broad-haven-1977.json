@@ -102,6 +102,7 @@
   "seoTitle": "Broad Haven 1977: la escuela galesa, los dibujos de los niños y el Triángulo de Dyfed",
   "seoDescription": "En 1977, ~14 alumnos de Broad Haven (Gales) dibujaron por separado un objeto plateado junto al patio; el episodio abrió la oleada del Triángulo de Dyfed. El MoD indagó sin explicar. Fuentes y lectura crítica.",
   "featuredDoc": {
+    "role": "documento",
     "label": "El Triángulo galés de 1977: reseña del caso de Broad Haven (Herald.Wales)",
     "label_en": "The 1977 Welsh Triangle: review of the Broad Haven case (Herald.Wales)",
     "url": "https://herald.wales/west-wales/pembrokeshire/the-welsh-triangle-what-was-seen-in-the-sky-back-in-1977/",

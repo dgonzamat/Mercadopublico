@@ -84,6 +84,7 @@
   },
   "documents": [
     {
+      "role": "documento",
       "src": "http://www.nicap.org/docs/751111falconbridge.pdf",
       "type": "link",
       "title": "Télex de CFS Falconbridge a NDHQ Ottawa y al Consejo Nacional de Investigación (11 nov 1975)",
@@ -93,6 +94,7 @@
       "source": "Archivos Públicos de Canadá (RG 77, vol. 308), vía NICAP"
     },
     {
+      "role": "contexto",
       "src": "/pursue/falconbridge-norad-1975-context.jpg",
       "type": "image",
       "title": "Contexto · Falconbridge (Sudbury, Ontario), sede de la estación de radar de NORAD",

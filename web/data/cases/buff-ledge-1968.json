@@ -73,6 +73,7 @@
   },
   "documents": [
     {
+      "role": "contexto",
       "src": "/pursue/buff-ledge-1968-context.jpg",
       "type": "image",
       "title": "Contexto · el lago Champlain (Vermont), junto al campamento Buff Ledge",

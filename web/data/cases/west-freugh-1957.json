@@ -72,6 +72,7 @@
   },
   "documents": [
     {
+      "role": "contexto",
       "src": "/pursue/west-freugh-1957-context.jpg",
       "type": "image",
       "title": "Contexto · RAF West Freugh (Escocia)",

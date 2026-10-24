@@ -61,6 +61,7 @@
   ],
   "documents": [
     {
+      "role": "contexto",
       "src": "/pursue/norwegian-spiral-2009-bulava.jpg",
       "type": "image",
       "title": "La causa, no el evento: un lanzamiento del misil balístico intercontinental Bulava (RSM-56) desde submarino. La espiral del 9 de diciembre de 2009 fue una prueba fallida de este mismo sistema —la tercera etapa giró y venteó su combustible, dibujando la espiral—; esta foto oficial muestra un lanzamiento nominal del arma cuyo fallo produjo el fenómeno.",

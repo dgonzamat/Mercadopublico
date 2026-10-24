@@ -99,6 +99,7 @@
   },
   "documents": [
     {
+      "role": "documento",
       "src": "/pursue/kinross-incident-1953-form14.pdf",
       "type": "pdf",
       "title": "Informe de accidente de la USAF sobre el F-89C 51-5853A (Form 14) y declaraciones del controlador y del investigador, 7 págs.",
@@ -110,6 +111,7 @@
       "fallbackUrl": "https://ufobc.ca/kinross/otherTopics/usafDocs.html"
     },
     {
+      "role": "contexto",
       "src": "/pursue/kinross-incident-1953-context.jpg",
       "type": "image",
       "title": "Contexto · un Northrop F-89 Scorpion, el tipo de caza desaparecido sobre el lago Superior",

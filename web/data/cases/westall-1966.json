@@ -106,6 +106,7 @@
   ],
   "documents": [
     {
+      "role": "documento",
       "src": "https://archive.org/details/Australian_Flying_Saucer_Review_1966_07_no_5_VFSRS",
       "type": "link",
       "title": "Australian Flying Saucer Review n.º 5 (Victorian Flying Saucer Research Society, julio de 1966), págs. 13-14: «Scoop! Flying saucer over Westall»",
@@ -115,6 +116,7 @@
       "source": "Victorian Flying Saucer Research Society · Internet Archive"
     },
     {
+      "role": "contexto",
       "src": "/pursue/westall-1966-context.jpg",
       "type": "image",
       "title": "Contexto · Westall (Melbourne, Australia), donde cientos de escolares vieron el objeto",

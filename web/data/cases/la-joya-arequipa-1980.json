@@ -81,6 +81,7 @@
   ],
   "documents": [
     {
+      "role": "documento",
       "src": "/pursue/la-joya-1980-dia-ir-6876014680.pdf",
       "type": "pdf",
       "title": "USDAO Lima, informe de inteligencia IR 6 876 0146 80, «UFO sighted in Peru» (recibido el 3 de junio de 1980, 2 págs.)",
@@ -92,6 +93,7 @@
       "fallbackUrl": "https://documents.theblackvault.com/documents/ufos/dia2ufo.pdf"
     },
     {
+      "role": "contexto",
       "src": "/pursue/la-joya-arequipa-1980-context.jpg",
       "type": "image",
       "title": "Contexto · Arequipa (Perú), cerca de La Joya donde un caza FAP disparó al objeto",

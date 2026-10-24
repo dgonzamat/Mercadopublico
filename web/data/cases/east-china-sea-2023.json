@@ -68,6 +68,7 @@
   },
   "documents": [
     {
+      "role": "prueba",
       "src": "https://www.dvidshub.net/video/embed/1023405",
       "type": "video",
       "title": "DOW-UAP-PR148 · Mar de China Oriental 2023, 59 segundos de sensor infrarrojo — el expediente completo (PURSUE Release 06)",

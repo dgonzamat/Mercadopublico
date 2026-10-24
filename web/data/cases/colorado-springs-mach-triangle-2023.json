@@ -37,6 +37,7 @@
   "category": "incident",
   "documents": [
     {
+      "role": "documento",
       "src": "/pursue/FBI-UAP-D030_FD-302_Large-Triangle-with-Red-Lights_2023.pdf",
       "type": "pdf",
       "title": "FBI-UAP-D030 — FD-302, declaración del testigo (octubre 2025)",
@@ -46,6 +47,7 @@
       "fallbackUrl": "https://www.war.gov/medialink/ufo/080726/release_05/documents/FBI-UAP-D030_FD-302_Large-Triangle-with-Red-Lights_2023.pdf"
     },
     {
+      "role": "prueba",
       "src": "/pursue/FBI-UAP-D031_Digital-Rendering_Large-Triangle-with-Red-Lights_2023.jpg",
       "type": "image",
       "title": "FBI-UAP-D031 — representación digital del objeto",

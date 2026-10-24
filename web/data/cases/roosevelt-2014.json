@@ -109,6 +109,7 @@
   },
   "documents": [
     {
+      "role": "prueba",
       "src": "https://www.dvidshub.net/video/embed/956955",
       "type": "video",
       "title": "Video GIMBAL — objeto rotando sobre las nubes frente a Jacksonville, tripulación menciona 'toda una flota' en radar (20 ene 2015)",
@@ -118,6 +119,7 @@
       "fallbackUrl": "https://www.dvidshub.net/video/956955"
     },
     {
+      "role": "prueba",
       "src": "https://www.dvidshub.net/video/embed/956683",
       "type": "video",
       "title": "Video GOFAST — objeto desplazándose a baja altura sobre el océano Atlántico",
@@ -127,6 +129,7 @@
       "fallbackUrl": "https://www.dvidshub.net/video/956683"
     },
     {
+      "role": "contexto",
       "src": "/pursue/roosevelt-2014-context.jpg",
       "type": "image",
       "title": "Contexto · el portaaviones USS Theodore Roosevelt, cuyos pilotos registraron los objetos (Gimbal/GoFast)",

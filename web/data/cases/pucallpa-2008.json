@@ -72,6 +72,7 @@
   ],
   "documents": [
     {
+      "role": "contexto",
       "src": "/pursue/pucallpa-2008-context.jpg",
       "type": "image",
       "title": "Contexto · Pucallpa (Ucayali, Perú)",

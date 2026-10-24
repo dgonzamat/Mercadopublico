@@ -72,6 +72,7 @@
   ],
   "documents": [
     {
+      "role": "documento",
       "src": "https://documents.theblackvault.com/documents/ufos/australia/B1497_V116-783-1047_10491375.pdf",
       "type": "link",
       "title": "Departamento de Transporte de Australia, expediente V116/783/1047: informe resumen de la investigación del accidente del VH-DSJ (aprobado el 27 abr 1982)",
@@ -81,6 +82,7 @@
       "source": "National Archives of Australia, B1497 · copia de The Black Vault"
     },
     {
+      "role": "contexto",
       "src": "/pursue/valentich-1978-context.jpg",
       "type": "image",
       "title": "Contexto · cabo Otway, sobre el estrecho de Bass donde desapareció Valentich",

@@ -84,6 +84,7 @@
   },
   "documents": [
     {
+      "role": "documento",
       "src": "http://www.tricksterbook.com/ArticlesOnline/LindaCase.htm",
       "type": "link",
       "title": "Stefula, Butler y Hansen, «A Critique of Budd Hopkins' Case of the UFO Abduction of Linda Napolitano» (1993)",
@@ -93,6 +94,7 @@
       "source": "George P. Hansen, tricksterbook.com (1993)"
     },
     {
+      "role": "contexto",
       "src": "/pursue/napolitano-brooklyn-1989-context.jpg",
       "type": "image",
       "title": "Contexto · el puente de Brooklyn, cerca del alegado suceso de Linda Napolitano",

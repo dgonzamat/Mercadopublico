@@ -77,6 +77,7 @@
   ],
   "documents": [
     {
+      "role": "documento",
       "src": "https://archive.org/details/UFO_Newsclipping_Service_1978_02_no_103/page/n6/mode/1up",
       "type": "link",
       "title": "«Mystery metal falls from sky», Daily Nonpareil (Council Bluffs), 18 dic 1977, en UFO Newsclipping Service n.º 103",
@@ -86,6 +87,7 @@
       "source": "Daily Nonpareil (Council Bluffs, Iowa), reproducido por UFO Newsclipping Service (archive.org)"
     },
     {
+      "role": "contexto",
       "src": "/pursue/council-bluffs-1977-context.jpg",
       "type": "image",
       "title": "Contexto · Council Bluffs (Iowa)",

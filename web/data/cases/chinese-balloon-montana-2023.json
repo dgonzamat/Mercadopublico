@@ -115,6 +115,7 @@
     "indet": 0.02
   },
   "primaryDocument": {
+    "role": "documento",
     "url": "https://commons.wikimedia.org/wiki/Special:FilePath/2023_Chinese_Balloon_route.svg?width=800",
     "alt": "Mapa de la trayectoria del globo de vigilancia chino de 2023.",
     "caption": "Trayectoria del globo de vigilancia chino de 2023, desde Alaska y Montana hasta su derribo frente a la costa de Carolina del Sur.",

@@ -109,6 +109,7 @@
   ],
   "documents": [
     {
+      "role": "prueba",
       "src": "https://www.dvidshub.net/video/embed/944204",
       "type": "video",
       "title": "'Puerto Rico Objects' — metraje FLIR original de CBP: cruce aire-agua y división en dos objetos (26 abr 2013)",
@@ -118,6 +119,7 @@
       "fallbackUrl": "https://www.dvidshub.net/video/944204"
     },
     {
+      "role": "documento",
       "src": "https://www.dvidshub.net/video/embed/955936",
       "type": "video",
       "title": "Reconstrucción digital (Systems Toolkit) de la trayectoria de vuelo que sostiene la resolución de la AARO",
@@ -127,6 +129,7 @@
       "fallbackUrl": "https://www.dvidshub.net/video/955936"
     },
     {
+      "role": "contexto",
       "src": "/pursue/aguadilla-2013-context.jpg",
       "type": "image",
       "title": "Contexto · el aeropuerto de Aguadilla (Puerto Rico), donde una cámara de CBP filmó el objeto",

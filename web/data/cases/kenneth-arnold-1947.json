@@ -74,6 +74,7 @@
     "indet": 0.25
   },
   "primaryDocument": {
+    "role": "prueba",
     "url": "https://commons.wikimedia.org/wiki/Special:FilePath/Arnold_AAF_drawing.jpg?width=800",
     "alt": "Dibujo de los objetos en forma de disco entregado por Kenneth Arnold a la inteligencia de la USAAF, 1947.",
     "caption": "Dibujo de los objetos que Kenneth Arnold entregó a la inteligencia de la Army Air Force el 12 de julio de 1947, tras su avistamiento del Monte Rainier que acuñó el término «platillo volador».",
@@ -93,6 +94,7 @@
   },
   "documents": [
     {
+      "role": "documento",
       "src": "https://hgbvdqckoosxesixhepr.supabase.co/storage/v1/object/public/pursue/38_143685_box7_incident_summaries_1-100.pdf",
       "type": "pdf",
       "title": "Incident Summaries 1-100 — fichas «Check-List: Unidentified Flying Objects» (USAF)",
@@ -104,6 +106,7 @@
       "description_en": "Three volumes of US Air Force \"Incident Summaries\", covering incidents numbered 1 to 233, drawn from its records at the National Archives and declassified in the first PURSUE release on 8 May 2026. Each summary is built around a standardized form, \"Check-List - Unidentified Flying Objects\", recording date, place, object description, heading, weather and witness reliability, and many add witness lists and statements. It is the instrument with which Projects Sign (1948) and Grudge (1949) tabulated flying-disc reports, the forerunner of Blue Book's record cards. A form proves that a report was received and processed, not that it was anomalous: most were resolved as balloons, astronomical bodies, aircraft or misidentifications."
     },
     {
+      "role": "documento",
       "src": "https://hgbvdqckoosxesixhepr.supabase.co/storage/v1/object/public/pursue/38_143685_box7_incident_summaries_101-172.pdf",
       "type": "pdf",
       "title": "Incident Summaries 101-172 — fichas «Check-List: Unidentified Flying Objects» (USAF)",
@@ -113,6 +116,7 @@
       "fallbackUrl": "https://www.war.gov/medialink/ufo/release_1/38_143685_box7_incident_summaries_101-172.pdf"
     },
     {
+      "role": "documento",
       "src": "https://hgbvdqckoosxesixhepr.supabase.co/storage/v1/object/public/pursue/38_143685_box7_incident_summaries_173-233__part1of4.pdf",
       "type": "pdf",
       "title": "Incident Summaries 173-233 (parte 1/4) — fichas «Check-List: Unidentified Flying Objects» (USAF)",
@@ -122,6 +126,7 @@
       "fallbackUrl": "https://www.war.gov/medialink/ufo/release_1/38_143685_box7_incident_summaries_173-233.pdf"
     },
     {
+      "role": "documento",
       "src": "https://hgbvdqckoosxesixhepr.supabase.co/storage/v1/object/public/pursue/38_143685_box7_incident_summaries_173-233__part2of4.pdf",
       "type": "pdf",
       "title": "Incident Summaries 173-233 (parte 2/4) — fichas «Check-List: Unidentified Flying Objects» (USAF)",
@@ -131,6 +136,7 @@
       "fallbackUrl": "https://www.war.gov/medialink/ufo/release_1/38_143685_box7_incident_summaries_173-233.pdf"
     },
     {
+      "role": "documento",
       "src": "https://hgbvdqckoosxesixhepr.supabase.co/storage/v1/object/public/pursue/38_143685_box7_incident_summaries_173-233__part3of4.pdf",
       "type": "pdf",
       "title": "Incident Summaries 173-233 (parte 3/4) — fichas «Check-List: Unidentified Flying Objects» (USAF)",
@@ -140,6 +146,7 @@
       "fallbackUrl": "https://www.war.gov/medialink/ufo/release_1/38_143685_box7_incident_summaries_173-233.pdf"
     },
     {
+      "role": "documento",
       "src": "https://hgbvdqckoosxesixhepr.supabase.co/storage/v1/object/public/pursue/38_143685_box7_incident_summaries_173-233__part4of4.pdf",
       "type": "pdf",
       "title": "Incident Summaries 173-233 (parte 4/4) — fichas «Check-List: Unidentified Flying Objects» (USAF)",

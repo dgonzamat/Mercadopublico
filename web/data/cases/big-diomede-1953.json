@@ -35,6 +35,7 @@
   "category": "incident",
   "documents": [
     {
+      "role": "documento",
       "src": "/pursue/DOW-UAP-D161-Air_Intelligence_Information_Report_Alaska-1953.pdf",
       "type": "pdf",
       "title": "DOW-UAP-D161 — Informe de inteligencia aérea IR 5004-40-53 del 5004.º escuadrón sobre la luz de la Gran Diómedes",

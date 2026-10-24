@@ -91,6 +91,7 @@
   },
   "documents": [
     {
+      "role": "documento",
       "src": "https://www.cnes-geipan.fr/sites/default/files/PV%20n%C2%B028%20%281981308305%29.pdf",
       "type": "link",
       "title": "Gendarmería de Draguignan: télex del 9 de enero de 1981 y acta n.º 28/1981 con plancha fotográfica, 11 págs.",
@@ -100,6 +101,7 @@
       "source": "Gendarmería Nacional (brigada de Draguignan); expediente GEIPAN 1981-01-00849"
     },
     {
+      "role": "contexto",
       "src": "/pursue/trans-en-provence-1981-context.jpg",
       "type": "image",
       "title": "Contexto · la región de Draguignan (Var, Francia), cerca de Trans-en-Provence",

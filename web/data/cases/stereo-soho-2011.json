@@ -99,6 +99,7 @@
   ],
   "documents": [
     {
+      "role": "prueba",
       "src": "/pursue/stereo-soho-2011-triangulo-hi2b.jpg",
       "type": "image",
       "title": "STEREO Behind HI2, 30 de diciembre de 2011 · el «triángulo» y Venus",
@@ -110,6 +111,7 @@
       "fallbackUrl": "https://stereo-ssc.nascom.nasa.gov/artifacts/triangle/"
     },
     {
+      "role": "prueba",
       "src": "/pursue/stereo-soho-2011-rueda-hi2a-2020.jpg",
       "type": "image",
       "title": "STEREO Ahead HI2, 12 de marzo de 2020 · la «rueda»",
@@ -121,6 +123,7 @@
       "fallbackUrl": "https://stereo-ssc.nascom.nasa.gov/artifacts/wheel/"
     },
     {
+      "role": "prueba",
       "src": "/pursue/stereo-soho-2011-mota-lasco-c3-2022.gif",
       "type": "image",
       "title": "SOHO LASCO C3, 20 de diciembre de 2022 · la mota que gira",
@@ -132,6 +135,7 @@
       "fallbackUrl": "https://soho.nascom.nasa.gov/hotshots/2022_12_23/"
     },
     {
+      "role": "documento",
       "src": "/pursue/stereo-soho-2011-como-fabricar-un-ovni-2003.gif",
       "type": "image",
       "title": "SOHO EIT, 18 de enero de 2001 · «cómo fabricar un ovni»",

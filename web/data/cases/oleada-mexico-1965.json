@@ -58,6 +58,7 @@
   ],
   "documents": [
     {
+      "role": "documento",
       "src": "/pursue/oleada-mexico-1965-mexicali-airgram.pdf",
       "type": "pdf",
       "title": "Aerograma A-11 del consulado de EE. UU. en Mexicali, «Political Report for August 1965» (14 de septiembre de 1965): página de resumen, 1 pág.",
@@ -69,6 +70,7 @@
       "fallbackUrl": "https://archive.org/details/NSAUFO"
     },
     {
+      "role": "contexto",
       "src": "/pursue/oleada-mexico-1965-context.jpg",
       "type": "image",
       "title": "Contexto · el Ángel de la Independencia, Ciudad de México",

@@ -105,6 +105,7 @@
   },
   "documents": [
     {
+      "role": "prueba",
       "src": "https://www.dvidshub.net/video/embed/1023402",
       "type": "video",
       "title": "DOW-UAP-PR159 · el film de Tremonton digitalizado, 2 de julio de 1952 (PURSUE Release 06)",
@@ -114,6 +115,7 @@
       "fallbackUrl": "https://www.dvidshub.net/video/1023402/dow-uap-pr159-historical-film-reported-ufos-utah-1952"
     },
     {
+      "role": "contexto",
       "src": "/pursue/tremonton-film-1952-context.jpg",
       "type": "image",
       "title": "Contexto · el valle del Bear River (Utah), cerca de Tremonton",
@@ -123,6 +125,7 @@
       "fallbackUrl": "https://commons.wikimedia.org/wiki/File%3ABear%20River%20Migratory%20Bird%20Refuge%202016-10-14%202428.jpg"
     },
     {
+      "role": "documento",
       "src": "/pursue/DOW-UAP-D103_blue-book-photo-file-tremonton-1952.pdf",
       "type": "pdf",
       "title": "DOW-UAP-D103 · el expediente fotográfico del Proyecto Blue Book sobre el film, con la ficha de índice que archiva «globos almohada o aves» cinco días después del avistamiento (PURSUE Release 06)",
@@ -131,6 +134,7 @@
       "license": "Dominio público · obra del Gobierno de EE. UU. (17 USC §105)"
     },
     {
+      "role": "documento",
       "src": "/pursue/robertson-panel-report-1953.pdf",
       "type": "pdf",
       "title": "Informe del Panel Robertson (CIA, 14-18 de enero de 1953), redactado por F. C. Durant: 38 páginas con el apartado dedicado a Tremonton, la lista de objeciones al análisis de la Marina y el inventario del material presentado, globo almohada incluido",
@@ -140,6 +144,7 @@
       "fallbackUrl": "https://archive.org/details/cia-readingroom-document-cia-rdp79b00752a000300100010-4"
     },
     {
+      "role": "documento",
       "src": "/pursue/DOW-UAP-D085_Transmission-of-CIA-Scientific-Advisory-Panel-Rept_1953.pdf",
       "type": "pdf",
       "title": "DOW-UAP-D085 — transmisión del informe del panel científico de la CIA (Panel Robertson, 1953)",
@@ -149,6 +154,7 @@
       "fallbackUrl": "https://www.war.gov/medialink/ufo/061226/release_03/documents/DOW-UAP-D085_Transmission-of-CIA-Scientific-Advisory-Panel-Rept_1953.pdf"
     },
     {
+      "role": "documento",
       "src": "/pursue/CIA-UAP-002_Scientific-Advisory-Panel-on-Unidentified-Flying-Objects_Report_1952-1953.pdf",
       "type": "pdf",
       "title": "CIA-UAP-002 — Scientific Advisory Panel on UFOs (Panel Robertson), 1952-53",
@@ -160,6 +166,7 @@
       "description_en": "Report of the Scientific Advisory Panel on Unidentified Flying Objects, the so-called Robertson Panel: the committee of scientists convened by the CIA in January 1953, which reviewed the best cases and recommended stripping UFOs of the \"special status\" and the \"aura of mystery\" they had acquired; the \"debunking\" programme appears only in F. C. Durant's internal write-up (February 1953), among the comments left out of the formal report. It is one of eighteen CIA documents (CIA-UAP-002) released in the third PURSUE release on 12 June 2026, together with Battelle's Special Report No. 14, the official history of the U-2 and OXCART programs, which acknowledges that many reports from the 1950s and 1960s were flights of those spy planes, and foreign-intelligence reports. It shows that the CIA treated the phenomenon as a management problem; it does not prove the objects were anomalous."
     },
     {
+      "role": "documento",
       "src": "https://archive.org/download/cia-readingroom-document-cia-rdp79b00752a000300100010-4/cia-rdp79b00752a000300100010-4.pdf",
       "type": "link",
       "title": "Robertson Panel",

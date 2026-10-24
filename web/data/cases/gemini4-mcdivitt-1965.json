@@ -97,6 +97,7 @@
   },
   "documents": [
     {
+      "role": "contexto",
       "src": "/pursue/NASA-Gemini4-GT4-EarthSky-OuterSpace-1965.jpg",
       "type": "image",
       "title": "Gemini 4 · fotografía de la misión (GT-4, cielo y espacio exterior, junio de 1965)",
@@ -106,6 +107,7 @@
       "fallbackUrl": "https://images.nasa.gov/details/s65-34776"
     },
     {
+      "role": "documento",
       "src": "/pursue/NASA-UAP-D016_Preliminary-Gemini-4-Crew-Debriefing_Part1_1965.pdf",
       "type": "pdf",
       "title": "NASA-UAP-D016 — Gemini 4, debriefing preliminar de tripulación, parte 1 (1965)",
@@ -117,6 +119,7 @@
       "description_en": "Eight NASA documents published in the third PURSUE release on June 12, 2026: the crew and technical debriefings of the Gemini 4, 5, 7 and 9 missions (1965-1966) and the Mercury-era Astronaut Scientific Debriefings (1962-1963). They are the primary source for the cylindrical object James McDivitt described and photographed on Gemini 4, the 'bogey' and 'fireflies' Frank Borman and Jim Lovell reported on Gemini 7, and John Glenn's 'fireflies' report. Most of the material is routine technical debriefing. NASA attributed the bogey to the Titan booster stage and the fireflies to ice and debris shed by the spacecraft; McDivitt's object was never securely identified."
     },
     {
+      "role": "documento",
       "src": "/pursue/NASA-UAP-D017_Preliminary-Gemini-4-Crew-Debriefing_Part2_1965.pdf",
       "type": "pdf",
       "title": "NASA-UAP-D017 — Gemini 4, debriefing preliminar de tripulación, parte 2 (1965)",
@@ -126,6 +129,7 @@
       "fallbackUrl": "https://www.war.gov/medialink/ufo/061226/release_03/documents/NASA-UAP-D017_Preliminary-Gemini-4-Crew-Debriefing_Part2_1965.pdf"
     },
     {
+      "role": "documento",
       "src": "/pursue/NASA-UAP-D018_Gemini-4_Experiment-Debriefing_1967.pdf",
       "type": "pdf",
       "title": "NASA-UAP-D018 — Gemini 4, debriefing de experimentos (1967)",

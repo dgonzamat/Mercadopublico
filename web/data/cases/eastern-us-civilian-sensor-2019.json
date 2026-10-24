@@ -43,6 +43,7 @@
   "category": "incident",
   "documents": [
     {
+      "role": "prueba",
       "src": "https://www.dvidshub.net/video/embed/1014128",
       "type": "video",
       "title": "DOW-UAP-PR112 — sensor IR a bordo de aeronave civil, con debrief D090 del observador (20 s)",

@@ -86,6 +86,7 @@
   },
   "documents": [
     {
+      "role": "contexto",
       "src": "/pursue/air-france-3532-1994-context.jpg",
       "type": "image",
       "title": "Contexto · un Airbus A320, el tipo de avión del vuelo Air France 3532",
@@ -95,6 +96,7 @@
       "fallbackUrl": "https://commons.wikimedia.org/wiki/File%3ALufthansa%20Airbus%20A320-211%20D-AIQT%2001.jpg"
     },
     {
+      "role": "documento",
       "src": "/pursue/255_413270_ufos_and_defense_what_should_we_prepare_for.pdf",
       "type": "pdf",
       "title": "«UFO's and Defense: What Should We Prepare For» — informe COMETA (1999) + carta de Carol Rosin",

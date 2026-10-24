@@ -64,6 +64,7 @@
   },
   "documents": [
     {
+      "role": "documento",
       "src": "/pursue/ib435-1969-expediente-690225.pdf",
       "type": "pdf",
       "title": "Expediente 690225 del Ejército del Aire (extracto, 11 págs.): resumen del MOA, informe del Sector Aéreo de Valencia, declaración del comandante, conclusiones del informador y croquis de Venus",

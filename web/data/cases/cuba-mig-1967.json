@@ -95,6 +95,7 @@
   ],
   "documents": [
     {
+      "role": "documento",
       "src": "https://archive.org/download/just-cause-newsletter/Just_Cause_Zechel_v1_i6.pdf",
       "type": "link",
       "title": "Just Cause, vol. 1, n.º 6 (septiembre de 1978, con noticias hasta noviembre): las cartas de la NSA y de la Fuerza Aérea a Robert Todd",
@@ -104,6 +105,7 @@
       "source": "Citizens Against UFO Secrecy (CAUS), vía archive.org"
     },
     {
+      "role": "contexto",
       "src": "/pursue/cuba-mig-1967-context.jpg",
       "type": "image",
       "title": "Contexto · un caza MiG-21, del tipo cubano implicado en el reporte de la NSA de 1967",

@@ -123,6 +123,7 @@
   "evidenceReviewed": "2026-10-02",
   "documents": [
     {
+      "role": "documento",
       "src": "/pursue/Grudge_1949_AppendixI_Incident1_Muroc.jpg",
       "type": "image",
       "title": "Project Grudge (agosto de 1949), apéndice I · incidente n.º 1, Muroc, 8 de julio de 1947: opinión del AMC «probablemente globos de investigación»",
@@ -132,6 +133,7 @@
       "fallbackUrl": "https://archive.org/details/project-grudge-august-1949-part-8"
     },
     {
+      "role": "contexto",
       "src": "/pursue/nara-rg38-1947-context.jpg",
       "type": "image",
       "title": "Contexto · Rogers Dry Lake (Muroc / Edwards, California), citado en los reportes de 1947",

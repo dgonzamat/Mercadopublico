@@ -113,6 +113,7 @@
     "indet": 0.13
   },
   "primaryDocument": {
+    "role": "prueba",
     "url": "https://commons.wikimedia.org/wiki/Special:FilePath/General_Ramey_with_Roswell_Memo.png",
     "alt": "Brigadier General Roger Ramey en cuclillas junto a restos del incidente, sosteniendo un telegrama en su mano, Fort Worth, 8 de julio de 1947.",
     "caption": "El general Roger Ramey con el telegrama y los restos. Fort Worth, 8 de julio de 1947: el mismo día en que la base de Roswell anunció un «disco recuperado» y la 8.ª Fuerza Aérea lo identificó como un globo meteorológico con reflector de radar.",
@@ -133,6 +134,7 @@
   },
   "documents": [
     {
+      "role": "documento",
       "src": "/pursue/majestic-12-documents-context.jpg",
       "type": "image",
       "title": "Uno de los documentos Majestic-12 en circulación, investigados por el FBI",

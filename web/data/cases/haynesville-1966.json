@@ -115,6 +115,7 @@
   },
   "documents": [
     {
+      "role": "documento",
       "src": "https://archive.org/details/DTIC_AD0680975",
       "type": "link",
       "title": "Informe Condon (1968), caso 10: «South Central, Winter 1966»",

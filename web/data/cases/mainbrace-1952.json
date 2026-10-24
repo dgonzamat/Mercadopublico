@@ -96,6 +96,7 @@
   },
   "documents": [
     {
+      "role": "contexto",
       "src": "/pursue/Operation-Mainbrace-fleet-North-Sea-Sept-1952-IWM-A32288.jpg",
       "type": "image",
       "title": "Operation Mainbrace · la flota aliada en el Mar del Norte, septiembre de 1952 (IWM A32288)",
@@ -105,6 +106,7 @@
       "fallbackUrl": "https://commons.wikimedia.org/wiki/File:USS_Wright_(CVL-49),_HMS_Illustrious_(R87)_and_HMS_Eagle_(R05)_underway_in_the_North_Sea_in_September_1952_(IWM_A32288).jpg"
     },
     {
+      "role": "documento",
       "src": "https://www.forsvaret.dk/da/organisation/flyvevaabnet/flyvevabnets-historie/flyvevabnets-ufo-arkiv--offentliggjort-i-2009/",
       "type": "link",
       "title": "Dinamarca · archivos UFO de la Fuerza Aérea desclasificados",

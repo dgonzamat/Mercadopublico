@@ -34,6 +34,7 @@
   "category": "incident",
   "documents": [
     {
+      "role": "documento",
       "src": "/pursue/DOW-UAP-D101_IIR_Unresolved-UAP-Report-Gulf-of-Oman_2021.pdf",
       "type": "pdf",
       "title": "DOW-UAP-D101 — Reporte de Información de Inteligencia (IIR) de AFSOC, Golfo de Omán (publicado 27 abr 2022)",
@@ -43,6 +44,7 @@
       "fallbackUrl": "https://www.war.gov/medialink/ufo/080726/release_05/documents/DOW-UAP-D101_IIR_Unresolved-UAP-Report-Gulf-of-Oman_2021.pdf"
     },
     {
+      "role": "prueba",
       "src": "https://www.dvidshub.net/video/embed/1017793",
       "type": "video",
       "title": "DOW-UAP-PR117 — grabación del sensor EO/IR del AC-130, Golfo de Omán (2021)",
@@ -52,6 +54,7 @@
       "fallbackUrl": "https://www.dvidshub.net/video/1017793"
     },
     {
+      "role": "prueba",
       "src": "https://www.dvidshub.net/video/embed/1017795",
       "type": "video",
       "title": "DOW-UAP-PR118 — grabación del sensor EO/IR del AC-130, Golfo de Omán (2021)",
@@ -61,6 +64,7 @@
       "fallbackUrl": "https://www.dvidshub.net/video/1017795"
     },
     {
+      "role": "prueba",
       "src": "https://www.dvidshub.net/video/embed/1017798",
       "type": "video",
       "title": "DOW-UAP-PR119 — grabación del sensor EO/IR del AC-130, Golfo de Omán (2021)",
@@ -70,6 +74,7 @@
       "fallbackUrl": "https://www.dvidshub.net/video/1017798"
     },
     {
+      "role": "prueba",
       "src": "https://www.dvidshub.net/video/embed/1017800",
       "type": "video",
       "title": "DOW-UAP-PR120 — grabación del sensor EO/IR del AC-130, Golfo de Omán (2021)",
@@ -79,6 +84,7 @@
       "fallbackUrl": "https://www.dvidshub.net/video/1017800"
     },
     {
+      "role": "prueba",
       "src": "https://www.dvidshub.net/video/embed/1017802",
       "type": "video",
       "title": "DOW-UAP-PR121 — grabación del sensor EO/IR del AC-130, Golfo de Omán (2021)",
@@ -88,6 +94,7 @@
       "fallbackUrl": "https://www.dvidshub.net/video/1017802"
     },
     {
+      "role": "prueba",
       "src": "https://www.dvidshub.net/video/embed/1017803",
       "type": "video",
       "title": "DOW-UAP-PR122 — grabación del sensor EO/IR del AC-130, Golfo de Omán (2021)",

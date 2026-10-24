@@ -78,6 +78,7 @@
   },
   "documents": [
     {
+      "role": "documento",
       "src": "https://factorelblog.com/wp-content/uploads/2021/12/1-Trancas-LaGaceta-23-oct-1963.jpg",
       "type": "link",
       "title": "La Gaceta (Tucumán), «Extraña aparición de un grupo de “ufos”» (23 de octubre de 1963)",
@@ -87,6 +88,7 @@
       "source": "La Gaceta (Tucumán), copia reproducida en Factor el Blog (Alejandro Agostinelli)"
     },
     {
+      "role": "contexto",
       "src": "/pursue/trancas-1963-context.jpg",
       "type": "image",
       "title": "Contexto · Trancas (Tucumán, Argentina)",

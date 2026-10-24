@@ -79,6 +79,7 @@
   },
   "documents": [
     {
+      "role": "contexto",
       "src": "/pursue/belgian-wave-1989-context.jpg",
       "type": "image",
       "title": "Contexto · un F-16 de la Fuerza Aérea Belga, del tipo que interceptó durante la oleada",

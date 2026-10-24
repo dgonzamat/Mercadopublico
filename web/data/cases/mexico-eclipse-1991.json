@@ -74,6 +74,7 @@
   ],
   "documents": [
     {
+      "role": "contexto",
       "src": "/pursue/mexico-eclipse-1991-context.jpg",
       "type": "image",
       "title": "Contexto · el Zócalo de Ciudad de México, bajo el eclipse total del 11 de julio de 1991",

@@ -127,6 +127,7 @@
   "name_en": "Hudson Valley Boomerang",
   "documents": [
     {
+      "role": "documento",
       "src": "/pursue/hudson-valley-1983-nrc-foia.pdf",
       "type": "pdf",
       "title": "Respuesta de la Comisión Reguladora Nuclear a la solicitud FOIA-84-854 sobre Indian Point (21 de noviembre de 1984), 1 pág.",
@@ -138,6 +139,7 @@
       "fallbackUrl": "https://www.nrc.gov/docs/ML2117/ML21179A021.pdf"
     },
     {
+      "role": "contexto",
       "src": "/pursue/hudson-valley-1983-context.jpg",
       "type": "image",
       "title": "Contexto · el valle del Hudson (Nueva York), escenario de la oleada del 'Boomerang'",

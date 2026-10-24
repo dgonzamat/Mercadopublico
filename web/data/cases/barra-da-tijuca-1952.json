@@ -95,6 +95,7 @@
   },
   "documents": [
     {
+      "role": "documento",
       "src": "/pursue/barra-da-tijuca-1952-arx-0001.pdf",
       "type": "pdf",
       "title": "Arquivo Nacional, ARX.0.0.1: las cinco fotos de Ed Keffel, numeradas y anotadas a mano por la Fuerza Aérea Brasileña",

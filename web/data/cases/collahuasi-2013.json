@@ -85,6 +85,7 @@
   ],
   "documents": [
     {
+      "role": "documento",
       "src": "https://www.theufochronicles.com/2014/07/the-chilean-collahuasi-ufo-case.html",
       "type": "link",
       "title": "Informe del CEFAA «El caso Collahuasi» (julio de 2014), en la traducción inglesa de Scott Corrales",
@@ -94,6 +95,7 @@
       "source": "CEFAA (DGAC de Chile), vía The UFO Chronicles"
     },
     {
+      "role": "contexto",
       "src": "/pursue/collahuasi-2013-context.jpg",
       "type": "image",
       "title": "Contexto · la mina Collahuasi (Tarapacá, Chile), donde el personal grabó el objeto",

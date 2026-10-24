@@ -82,6 +82,7 @@
   },
   "documents": [
     {
+      "role": "documento",
       "src": "https://archive.org/details/un-031154-caso-lotti",
       "type": "link",
       "title": "L'Unità, 3 nov 1954: «Romanzesco incontro coi marziani narrato da una contadina di Arezzo»",
@@ -91,6 +92,7 @@
       "source": "L'Unità · Internet Archive"
     },
     {
+      "role": "contexto",
       "src": "/pursue/rosa-lotti-cennina-1954-context.jpg",
       "type": "image",
       "title": "Contexto · Cennina (Bucine, Toscana, Italia)",

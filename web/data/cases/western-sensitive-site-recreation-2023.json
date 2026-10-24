@@ -36,6 +36,7 @@
   "category": "incident",
   "documents": [
     {
+      "role": "prueba",
       "src": "https://www.dvidshub.net/video/embed/1010272",
       "type": "video",
       "title": "FBI-UAP-PR005 — Recreación digital, 'Narrative Statement 3-1', día 1 del incidente (2023)",
@@ -45,6 +46,7 @@
       "fallbackUrl": "https://www.dvidshub.net/video/1010272"
     },
     {
+      "role": "prueba",
       "src": "https://www.dvidshub.net/video/embed/1010276",
       "type": "video",
       "title": "FBI-UAP-PR006 — Recreación digital, 'Narrative Statement 3-2', día 2 del incidente (2023)",

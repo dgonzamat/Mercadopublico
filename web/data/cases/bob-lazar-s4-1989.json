@@ -78,6 +78,7 @@
   },
   "documents": [
     {
+      "role": "documento",
       "src": "https://archive.org/details/UFO_Newsclipping_Service_1990_11_no_256",
       "type": "link",
       "title": "Lincoln County News, 30 ago 1990 · Los Álamos «no encuentra registro» de Lazar (UFO Newsclipping Service n.º 256)",
@@ -87,6 +88,7 @@
       "source": "UFO Newsclipping Service n.º 256, noviembre de 1990 (archive.org)"
     },
     {
+      "role": "contexto",
       "src": "/pursue/bob-lazar-s4-1989-context.jpg",
       "type": "image",
       "title": "Contexto · Área 51 / Groom Lake (Nevada), cerca del alegado sitio S-4 de Bob Lazar",

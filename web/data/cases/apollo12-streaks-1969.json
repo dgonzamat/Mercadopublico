@@ -22,6 +22,7 @@
   "summary_en": "Audio from the Apollo 12 post-mission medical debrief (1969), declassified in the second PURSUE tranche (May 22, 2026): astronauts Conrad, Gordon and Bean describe 'streaks/flashes of light' they saw while trying to sleep in deep space. Science explains it well as cosmic rays interacting with the retina: a case included for documentary transparency, not for anomaly.",
   "documents": [
     {
+      "role": "documento",
       "src": "/pursue/nasa-uap-d1-apollo-12-transcript-1969.pdf",
       "type": "pdf",
       "title": "NASA-UAP-D1 — transcripción aire-tierra de Apollo 12 (nov 1969): partículas vía telescopio y debris",
@@ -31,6 +32,7 @@
       "fallbackUrl": "https://www.war.gov/medialink/ufo/release_1/nasa-uap-d1-apollo-12-transcript-1969.pdf"
     },
     {
+      "role": "contexto",
       "src": "/pursue/nasa-uap-vm1-apollo-12-1969.jpg",
       "type": "image",
       "title": "NASA-UAP-VM1 — placa fotográfica de Apollo 12 (1969)",
@@ -40,6 +42,7 @@
       "fallbackUrl": "https://www.war.gov/medialink/ufo/release_1/nasa-uap-vm1-apollo-12-1969.jpg"
     },
     {
+      "role": "contexto",
       "src": "/pursue/nasa-uap-vm2-apollo-12-1969.jpg",
       "type": "image",
       "title": "NASA-UAP-VM2 — placa fotográfica de Apollo 12 (1969)",
@@ -49,6 +52,7 @@
       "fallbackUrl": "https://www.war.gov/medialink/ufo/release_1/nasa-uap-vm2-apollo-12-1969.jpg"
     },
     {
+      "role": "contexto",
       "src": "/pursue/nasa-uap-vm3-apollo-12-1969.jpg",
       "type": "image",
       "title": "NASA-UAP-VM3 — placa fotográfica de Apollo 12 (1969)",
@@ -58,6 +62,7 @@
       "fallbackUrl": "https://www.war.gov/medialink/ufo/release_1/nasa-uap-vm3-apollo-12-1969.jpg"
     },
     {
+      "role": "contexto",
       "src": "/pursue/nasa-uap-vm4-apollo-12-1969.jpg",
       "type": "image",
       "title": "NASA-UAP-VM4 — placa fotográfica de Apollo 12 (1969)",
@@ -67,6 +72,7 @@
       "fallbackUrl": "https://www.war.gov/medialink/ufo/release_1/nasa-uap-vm4-apollo-12-1969.jpg"
     },
     {
+      "role": "contexto",
       "src": "/pursue/nasa-uap-vm5-apollo-12-1969.jpg",
       "type": "image",
       "title": "NASA-UAP-VM5 — placa fotográfica de Apollo 12 (1969)",

@@ -3,7 +3,8 @@
 // Sonda de página: ¿llega el lector al relato sin atravesar el papeleo?
 //
 // Mide, en un móvil de 390×844, cuántas pantallas hay desde arriba de la
-// ficha hasta el primer párrafo de «Qué pasó», en TODAS las fichas
+// ficha hasta el primer contenido del caso —el registro del suceso (vídeo o
+// foto) si lo hay, o el relato— y que nada más se cuele antes, en TODAS las fichas
 // (`/es/cases/<id>/`). Nació de la especificación de la ficha (oct 2026): el
 // visor de documentos iba antes del relato y lo empujaba a 2,9 pantallas en la
 // ficha típica y a 9,6 en Skinwalker, y ninguna sonda lo veía porque las de
@@ -21,9 +22,19 @@ import fs from "fs";
 import http from "http";
 import path from "path";
 import { createRequire } from "module";
+import { execSync } from "child_process";
 
+// Playwright no es dependencia del repo: está instalado de forma global en el
+// entorno, así que se busca primero aquí y después en la raíz global de npm.
 const require = createRequire(import.meta.url);
-const { chromium } = require("playwright");
+let playwright;
+try {
+  playwright = require("playwright");
+} catch {
+  const globalRoot = execSync("npm root -g").toString().trim();
+  playwright = createRequire(path.join(globalRoot, "noop.js"))("playwright");
+}
+const { chromium } = playwright;
 const root = path.resolve(path.dirname(new URL(import.meta.url).pathname), "..");
 const OUT = path.join(root, "out");
 const BASE = "/Mercadopublico";
@@ -53,22 +64,31 @@ const page = await (await browser.newContext({ javaScriptEnabled: false, viewpor
 const rows = [];
 for (const id of ids) {
   await page.goto(`http://127.0.0.1:${port}${BASE}/es/cases/${id}/`, { waitUntil: "load" });
-  const y = await page.evaluate(() => {
-    const h2 = [...document.querySelectorAll("article section h2")].find((e) => e.getBoundingClientRect().height > 0);
-    return h2 ? h2.getBoundingClientRect().top + window.scrollY : null;
+  // El primer contenido del caso es el registro del suceso (bloque 4, si lo
+  // hay) o el relato; entre «Qué fue» y él no puede colarse nada más.
+  const m = await page.evaluate(() => {
+    const vis = (e) => e && e.getBoundingClientRect().height > 0;
+    const top = (e) => e.getBoundingClientRect().top + window.scrollY;
+    const h2 = [...document.querySelectorAll("article section h2")].find(vis);
+    const proof = [...document.querySelectorAll("article p")].find((e) => vis(e) && /^(Registro del suceso|Record of the event)$/.test(e.textContent.trim()));
+    const header = document.querySelector("article header");
+    const first = proof ?? h2;
+    // Lo que haya entre el fin de la cabecera y el primer contenido del caso.
+    const gap = header && first ? [...document.querySelectorAll("article > *")].filter((e) => vis(e) && top(e) >= top(header) + header.getBoundingClientRect().height - 1 && top(e) < top(first) - 1 && !e.contains(first)).length : 0;
+    return { y: first ? top(first) : null, gap };
   });
-  rows.push({ id, screens: y == null ? null : +(y / H).toFixed(2) });
+  rows.push({ id, screens: m.y == null ? null : +(m.y / H).toFixed(2), gap: m.gap });
 }
 await browser.close();
 server.close();
 
 const ok = rows.filter((r) => r.screens != null).map((r) => r.screens).sort((a, b) => a - b);
-const over = rows.filter((r) => r.screens == null || r.screens > MAX).sort((a, b) => (b.screens ?? 99) - (a.screens ?? 99));
-console.log(`qa-relato: ${rows.length} fichas · pantallas hasta el relato: mediana ${ok[ok.length >> 1]}, p90 ${ok[Math.floor(ok.length * 0.9)]}, máx ${ok.at(-1)}`);
+const over = rows.filter((r) => r.screens == null || r.screens > MAX || r.gap > 0).sort((a, b) => (b.screens ?? 99) - (a.screens ?? 99));
+console.log(`qa-relato: ${rows.length} fichas · pantallas hasta el caso: mediana ${ok[ok.length >> 1]}, p90 ${ok[Math.floor(ok.length * 0.9)]}, máx ${ok.at(-1)}`);
 if (arg("--json")) fs.writeFileSync(arg("--json"), JSON.stringify(rows, null, 1));
 if (over.length) {
-  console.log(`  ${over.length} pasan de ${MAX} pantallas (o no tienen relato):`);
-  over.slice(0, 20).forEach((r) => console.log(`    ${r.id}  ${r.screens ?? "sin relato"}`));
+  console.log(`  ${over.length} pasan de ${MAX} pantallas, no tienen relato o tienen algo entre la cabecera y el caso:`);
+  over.slice(0, 20).forEach((r) => console.log(`    ${r.id}  ${r.screens ?? "sin relato"}${r.gap ? `  (${r.gap} bloque(s) entre la cabecera y el caso)` : ""}`));
   process.exit(1);
 }
 console.log(`  ✓ todas por debajo de ${MAX} pantallas.`);

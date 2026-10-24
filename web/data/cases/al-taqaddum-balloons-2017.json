@@ -34,6 +34,7 @@
   "category": "incident",
   "documents": [
     {
+      "role": "prueba",
       "src": "https://www.dvidshub.net/video/embed/960331",
       "type": "video",
       "title": "'Al Taqaddum Object' — 17 minutos de metraje IR, resuelto por la AARO como racimo de globos",
@@ -43,6 +44,7 @@
       "fallbackUrl": "https://www.dvidshub.net/video/960331"
     },
     {
+      "role": "documento",
       "src": "https://www.aaro.mil/UAP-Cases/UAP-Case-Resolution-Reports/",
       "type": "link",
       "title": "El archivo de resoluciones de la AARO: aves, globos, y lo que queda sin resolver",

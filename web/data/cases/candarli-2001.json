@@ -67,6 +67,7 @@
   ],
   "documents": [
     {
+      "role": "documento",
       "src": "https://abcnews.go.com/International/story?id=80672",
       "type": "link",
       "title": "ABC News, «Turkish Pilots Encounter UFOs Over Aegean» (Atenas, 8 ago 2001)",
@@ -76,6 +77,7 @@
       "source": "ABC News"
     },
     {
+      "role": "contexto",
       "src": "/pursue/candarli-2001-context.jpg",
       "type": "image",
       "title": "Contexto · Çandarlı (costa del Egeo, Turquía)",

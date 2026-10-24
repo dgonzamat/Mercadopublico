@@ -36,6 +36,7 @@
   "category": "incident",
   "documents": [
     {
+      "role": "documento",
       "src": "/pursue/DOW-UAP-D163-Air_Intelligence_Information_Report_Sweden-1953.pdf",
       "type": "pdf",
       "title": "DOW-UAP-D163 — Informe de inteligencia aérea del agregado en Estocolmo sobre el avistamiento de Hässleholm",

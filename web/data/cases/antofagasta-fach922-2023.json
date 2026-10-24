@@ -94,6 +94,7 @@
   ],
   "documents": [
     {
+      "role": "contexto",
       "src": "/pursue/antofagasta-fach922-2023-ckoirama.jpg",
       "type": "image",
       "title": "Contexto · dos objetos en órbita cruzando el cielo de Antofagasta",
@@ -105,6 +106,7 @@
       "fallbackUrl": "https://commons.wikimedia.org/wiki/File:Earlier_image_of_a_BlueWalker_3_pass_over_Ckoirama_Observatory_(ann22033e).jpg"
     },
     {
+      "role": "documento",
       "src": "https://sefaa.dgac.gob.cl/wp-content/uploads/2024/01/CASO-N%C2%B01936-24112023.pdf",
       "type": "link",
       "title": "Informe del SEFAA (DGAC de Chile), caso n.º 1936, FL350 sobre Antofagasta, 23 de noviembre de 2023",

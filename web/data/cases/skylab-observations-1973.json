@@ -33,6 +33,7 @@
   "summary_en": "Document NASA-UAP-D7, declassified in the first PURSUE release, gathers excerpts from the debriefings of the three Skylab crews (1973–1974). It records flashes the astronauts saw with their eyes closed (cosmic-ray phosphenes), a bright reddish object the Skylab 3 crew tracked for 5-10 minutes and described as 'obviously a satellite in a very similar orbit to our own', and flashing lights outside that the Skylab 4 crew attributed to pieces of the station or other satellites. The witnesses themselves gave all three a prosaic reading, although nobody confirmed to them which satellite the reddish object was.",
   "documents": [
     {
+      "role": "documento",
       "src": "/pursue/nasa-uap-d7-skylab-technical-crew-debriefing-1973.pdf",
       "type": "pdf",
       "title": "NASA-UAP-D7 — debriefings técnicos de las tres tripulaciones de Skylab (1973-1974)",

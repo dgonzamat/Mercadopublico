@@ -90,6 +90,7 @@
   ],
   "documents": [
     {
+      "role": "contexto",
       "src": "/pursue/calama-orbitales-2023-esquema.jpg",
       "type": "image",
       "title": "Contexto · por qué un satélite puede brillar en plena noche",
@@ -101,6 +102,7 @@
       "fallbackUrl": "https://commons.wikimedia.org/wiki/File:Schematic_showing_the_satellites_that_would_be_visible_at_a_given_time_and_place_(eso2004b).jpg"
     },
     {
+      "role": "documento",
       "src": "https://sefaa.dgac.gob.cl/wp-content/uploads/2024/03/CASO-N%C2%B01937-25112023.pdf",
       "type": "link",
       "title": "Informe del SEFAA (DGAC de Chile), caso n.º 1937, Calama, 8 de noviembre de 2023",

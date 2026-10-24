@@ -84,6 +84,7 @@
   ],
   "documents": [
     {
+      "role": "documento",
       "src": "https://www.oocities.org/saufor/unsorted/1996-Sept-Roundup.html",
       "type": "link",
       "title": "CNI News, 1 de septiembre de 1996: el informativo de la SABC y la crónica de Rapport en traducción de Marius Lubbe",
@@ -93,6 +94,7 @@
       "source": "CNI News / Rapport (1 sep 1996), copia en la web de SAUFOR (oocities.org)"
     },
     {
+      "role": "contexto",
       "src": "/pursue/pretoria-mamelodi-1996-context.jpg",
       "type": "image",
       "title": "Contexto · los Union Buildings en Pretoria (Sudáfrica)",

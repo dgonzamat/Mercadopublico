@@ -62,6 +62,7 @@
   },
   "documents": [
     {
+      "role": "documento",
       "src": "/pursue/moron-1995-expediente-01-maest-95.pdf",
       "type": "pdf",
       "title": "Expediente 01-MAEST-95 del Ejército del Aire (extracto, 7 págs.): resumen del MOA, informe del oficial informador, nota sobre la cúpula y croquis del piloto",

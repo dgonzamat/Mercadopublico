@@ -52,6 +52,7 @@
   ],
   "documents": [
     {
+      "role": "prueba",
       "src": "/pursue/NASA-UAP-D030_STS-80-Unidentified-Object-Image1_1996.jpg",
       "type": "image",
       "title": "NASA-UAP-D030 — STS-80, objeto no identificado (imagen 1, 1996)",
@@ -61,6 +62,7 @@
       "fallbackUrl": "https://www.war.gov/UFO/"
     },
     {
+      "role": "prueba",
       "src": "/pursue/NASA-UAP-D031_STS-80-Unidentified-Object-Image2_1996.jpg",
       "type": "image",
       "title": "NASA-UAP-D031 — STS-80, objeto no identificado (imagen 2, 1996)",
@@ -70,6 +72,7 @@
       "fallbackUrl": "https://www.war.gov/UFO/"
     },
     {
+      "role": "prueba",
       "src": "/pursue/NASA-UAP-D032_STS-80-Unidentified-Object-Image3_1996.jpg",
       "type": "image",
       "title": "NASA-UAP-D032 — STS-80, objeto no identificado (imagen 3, 1996)",

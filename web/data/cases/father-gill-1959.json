@@ -73,6 +73,7 @@
   ],
   "documents": [
     {
+      "role": "documento",
       "src": "/pursue/father-gill-1959-agregado-aereo.pdf",
       "type": "pdf",
       "title": "Project Blue Book, expediente «New Guinea», junio-julio de 1959: ficha, informe del agregado aéreo en Australia (21 ene 1960) y hoja firmada del 26 de junio (3 págs.)",
@@ -84,6 +85,7 @@
       "fallbackUrl": "https://archive.org/details/1959-06-8406927-NewGuinea"
     },
     {
+      "role": "contexto",
       "src": "/pursue/father-gill-1959-context.jpg",
       "type": "image",
       "title": "Contexto · Boianai (Papúa Nueva Guinea)",

@@ -79,6 +79,7 @@
   ],
   "documents": [
     {
+      "role": "documento",
       "src": "/pursue/BlueBook_1966-03-8671584_SouthernMichigan_record-card.jpg",
       "type": "image",
       "title": "Project Blue Book · tarjeta de registro del expediente 1966-03-8671584 (sur de Michigan): conclusión «Other (MARSH GAS)»",
@@ -88,6 +89,7 @@
       "fallbackUrl": "https://archive.org/details/1966-03-8671584-SOUTHERNMICHIGAN"
     },
     {
+      "role": "documento",
       "src": "/pursue/BlueBook_1966-03_SAB-OBrien-committee-special-report.pdf",
       "type": "pdf",
       "title": "Informe especial del comité ad hoc de la Junta Científica Asesora de la USAF para revisar Project Blue Book (comité O'Brien), marzo de 1966: reunido el 3 de febrero, recomienda contratar universidades para estudiar a fondo avistamientos seleccionados (el mismo informe figura en DOW-UAP-D092, PURSUE)",

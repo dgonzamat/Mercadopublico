@@ -77,6 +77,7 @@
   ],
   "documents": [
     {
+      "role": "documento",
       "src": "/pursue/phoenix-lights-1997-usaf-foia.pdf",
       "type": "pdf",
       "title": "Respuestas FOIA de la Fuerza Aérea sobre la noche del 13 de marzo de 1997: base de Luke (1 may 1997) y base de Davis-Monthan (8 ago 2013)",
@@ -88,6 +89,7 @@
       "fallbackUrl": "https://www.theblackvault.com/documentarchive/the-phoenix-lights-incident-march-13th-1997/"
     },
     {
+      "role": "contexto",
       "src": "/pursue/phoenix-lights-1997-context.jpg",
       "type": "image",
       "title": "Contexto · Phoenix (Arizona), sobre cuya área metropolitana se vieron las luces de 1997",

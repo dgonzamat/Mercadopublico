@@ -65,6 +65,7 @@
   ],
   "documents": [
     {
+      "role": "contexto",
       "src": "/pursue/ireland-iaa-2018-context.jpg",
       "type": "image",
       "title": "Contexto · el aeropuerto de Shannon (Irlanda), cuyo control aéreo recibió los reportes",

@@ -36,6 +36,7 @@
   "mundanoType": "instrumento",
   "documents": [
     {
+      "role": "prueba",
       "src": "https://www.dvidshub.net/video/embed/1014101",
       "type": "video",
       "title": "DOW-UAP-PR104 — sensor IR rastrea un área de contraste con forma de estrella de seis puntas (18 s)",

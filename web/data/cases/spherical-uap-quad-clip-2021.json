@@ -43,6 +43,7 @@
   "category": "incident",
   "documents": [
     {
+      "role": "prueba",
       "src": "https://www.dvidshub.net/video/embed/1007735",
       "type": "video",
       "title": "DOW-UAP-PR061 — título de uploader 'vid 0' (4:46; ~3 min sin objeto descrito)",
@@ -52,6 +53,7 @@
       "fallbackUrl": "https://www.dvidshub.net/video/1007735"
     },
     {
+      "role": "prueba",
       "src": "https://www.dvidshub.net/video/embed/1007739",
       "type": "video",
       "title": "DOW-UAP-PR062 — título de uploader 'vid 1' (4:49, seguimiento continuo descrito)",
@@ -61,6 +63,7 @@
       "fallbackUrl": "https://www.dvidshub.net/video/1007739"
     },
     {
+      "role": "prueba",
       "src": "https://www.dvidshub.net/video/embed/1007740",
       "type": "video",
       "title": "DOW-UAP-PR063 — título de uploader 'vid 2' (4:49; solo 49 s con objeto descrito)",
@@ -70,6 +73,7 @@
       "fallbackUrl": "https://www.dvidshub.net/video/1007740"
     },
     {
+      "role": "prueba",
       "src": "https://www.dvidshub.net/video/embed/1007734",
       "type": "video",
       "title": "DOW-UAP-PR060 — título de uploader 'obj 2' (4:50, seguimiento activo primeros 2:04)",

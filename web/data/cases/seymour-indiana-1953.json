@@ -34,6 +34,7 @@
   "category": "incident",
   "documents": [
     {
+      "role": "documento",
       "src": "/pursue/DOW-UAP-D164-Flying_Object_Report_Indiana-1954.pdf",
       "type": "pdf",
       "title": "DOW-UAP-D164 — Informe UFOB del 2466.º Centro de Entrenamiento de Combate de la Reserva, base aérea de Atterbury",

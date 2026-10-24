@@ -86,6 +86,7 @@
   ],
   "documents": [
     {
+      "role": "contexto",
       "src": "/pursue/pantex-2015-context.jpg",
       "type": "image",
       "title": "Contexto · la planta Pantex (Amarillo, Texas), sobre la que se reportaron drones",
@@ -95,6 +96,7 @@
       "fallbackUrl": "https://commons.wikimedia.org/wiki/File%3APantex%20plant%20aeriel%20unknown%20data.jpg"
     },
     {
+      "role": "documento",
       "src": "/pursue/DOE-UAP-D001_PANTEX_Image.pdf",
       "type": "pdf",
       "title": "DOE-UAP-D001 — Pantex Unidentified Object Incident Report (UCNI)",

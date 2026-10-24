@@ -111,6 +111,7 @@
   },
   "documents": [
     {
+      "role": "documento",
       "src": "/pursue/cefae-capilla-del-monte-extracto.pdf",
       "type": "pdf",
       "title": "CEFAe (Fuerza Aérea Argentina) · fotos de Capilla del Monte y el cerro Uritorco analizadas en los informes de 2015 y 2016",
@@ -120,6 +121,7 @@
       "fallbackUrl": "https://desafiospublicos.argentina.gob.ar/sites/default/files/informe_cefae_2016.pdf"
     },
     {
+      "role": "contexto",
       "src": "/pursue/capilla-del-monte-1986-context.jpg",
       "type": "image",
       "title": "Contexto · Capilla del Monte (Córdoba, Argentina), al pie del cerro Uritorco",

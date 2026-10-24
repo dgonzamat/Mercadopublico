@@ -97,6 +97,7 @@
   },
   "documents": [
     {
+      "role": "contexto",
       "src": "/pursue/ellsworth-woods-1977-context.jpg",
       "type": "image",
       "title": "Contexto · instalación de lanzamiento Minuteman Delta-09 (44th Missile Wing, Dakota del Sur)",
