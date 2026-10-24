@@ -12,6 +12,7 @@ import { ShareButton } from "@/components/ShareButton";
 import { ResearcherAvatar } from "@/components/ResearcherAvatar";
 import { researchersForCase } from "@/lib/researcherCases";
 import { DocumentsViewer } from "@/components/DocumentsViewer";
+import { splitLead } from "@/lib/splitLead";
 import { Eyebrow, H1, Caption, PullQuote } from "@/lib/typography";
 import { caseJsonLd, serializeJsonLd } from "@/lib/jsonld";
 import { BreadcrumbJsonLd } from "@/components/BreadcrumbJsonLd";
@@ -446,9 +447,6 @@ export async function CaseDetailPage(
         </a>
       )}
 
-      {/* ────────── ZONE A3 — VISOR DE DOCUMENTOS PRIMARIOS ────────── */}
-      <DocumentsViewer docs={c.documents ?? []} locale={locale} />
-
       {/* EN-only disclaimer when no EN narrative available */}
       {hasNarrative && !c.whatHappened_en && locale === "en" && (
         <div lang="en" data-lang="en" className="border-2 border-text bg-panel p-5">
@@ -557,6 +555,12 @@ export async function CaseDetailPage(
             <T locale={locale} es="Lo que queda en papel" en="What's left on paper" />
           </h2>
         </header>
+
+        {/* El visor iba entre la cabecera y el relato: en móvil empujaba el
+            primer párrafo a casi 3 pantallas en la ficha típica (9,6 en
+            Skinwalker; medido en las 397, oct 2026). Los documentos respaldan
+            el relato, así que van después de él. */}
+        <DocumentsViewer docs={c.documents ?? []} locale={locale} />
 
         {c.primaryDocument && (
           <figure className="space-y-3 border-l-2 border-accent/40 pl-5">
@@ -966,7 +970,7 @@ function ClassBasis({ c, locale }: { c: (typeof cases)[number]; locale: "es" | "
             <T locale={locale} es={why.es} en={why.en} />
           </span>
           {(() => {
-            const w = splitLead((locale === "es" ? es! : en!).text, 380);
+            const w = splitLead((locale === "es" ? es! : en!).text, 200);
             return (
               <>
                 {w.lead}{" "}
@@ -1021,16 +1025,4 @@ function splitOriginal(t: string): { text: string; original?: string } {
   const m = t.match(/\s*(?:Original en [a-záéíóú]+|[A-Z][a-z]+ original):\s*(«[^»]*»(?:[;,]\s*«[^»]*»)*)\.?/);
   if (!m || m.index === undefined) return { text: t };
   return { text: (t.slice(0, m.index) + " " + t.slice(m.index + m[0].length)).replace(/\s+/g, " ").trim(), original: m[1] };
-}
-
-/** Corta un texto largo en una entrada de frases completas (hasta `max`
- *  caracteres) y el resto, que la ficha pliega. Si no hay un punto razonable
- *  donde cortar, o lo que sobra es corto, devuelve el texto entero. */
-function splitLead(t: string, max: number): { lead: string; rest?: string } {
-  if (t.length <= max + 200) return { lead: t };
-  const re = /[.!?»"](?=\s+[A-ZÁÉÍÓÚÑ«"(¿¡])/g;
-  let cut = -1;
-  for (let m; (m = re.exec(t)) && m.index < max; ) cut = m.index + 1;
-  if (cut < 120) return { lead: t };
-  return { lead: t.slice(0, cut), rest: t.slice(cut).trim() };
 }
