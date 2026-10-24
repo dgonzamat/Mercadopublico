@@ -2,8 +2,8 @@
   "id": "western-us-objects-2021",
   "num": 354,
   "pursueReleases": [],
-  "name": "Tres 'UAP' resueltos: eran tres aviones comerciales, según el cruce con radar de la AARO",
-  "name_en": "Three 'UAPs' resolved: they were three commercial aircraft, per AARO's radar cross-check",
+  "name": "Oeste de EE. UU. · un sensor infrarrojo graba tres puntos lejanos",
+  "name_en": "Western U.S. · an infrared sensor records three distant dots",
   "year_start": 2021,
   "country": "US",
   "country_name": "Estados Unidos",
@@ -11,8 +11,8 @@
   "location": {
     "lat": 39,
     "lng": -116,
-    "place": "Campo de tiro militar en el oeste de EE.UU. (ubicación exacta no revelada)",
-    "place_en": "Military range in the western United States (exact location undisclosed)"
+    "place": "Campo de tiro militar, oeste de EE. UU. (ubicación no revelada)",
+    "place_en": "Military range, western U.S. (exact location undisclosed)"
   },
   "tier": "A",
   "epistemicStatus": "documented",
@@ -35,8 +35,8 @@
     "nohumano_abierto": 0,
     "indet": 0.07
   },
-  "summary": "En 2021, un sensor de video infrarrojo de un campo de tiro militar del oeste de Estados Unidos registró tres objetos no identificados. El 31 de mayo de 2023, el director de la AARO, Sean Kirkpatrick, presentó el caso ante el Equipo de Estudio Independiente de la NASA sobre UAP y lo cerró en la misma presentación: cruzando el video con datos de vuelos comerciales, la AARO evaluó que eran tres aviones comerciales muy lejos del sensor, cuyas trazas de radar se alineaban con los objetos y a esa distancia se veían como puntos. Ni el radar, ni la fecha, ni el lugar se han publicado, así que nadie fuera del gobierno puede repetir la comprobación.",
-  "summary_en": "In 2021, an infrared video sensor at a military range in the western United States recorded three unidentified objects. On May 31, 2023, AARO director Sean Kirkpatrick presented the case to NASA's Independent Study Team on UAP and closed it in the same presentation: combining the video with commercial flight data, AARO assessed that they were three commercial aircraft far from the sensor, whose radar tracks aligned with the objects and which at that distance appeared as dots. Neither the radar data, nor the date, nor the location have been published, so no one outside the government can repeat the check.",
+  "summary": "En 2021, un sensor de video infrarrojo de un campo de tiro militar del oeste de EE. UU. grabó tres objetos no identificados. El 31 de mayo de 2023, Sean Kirkpatrick, director de la oficina del Pentágono para estos fenómenos (AARO), presentó el caso ante un equipo de estudio de la NASA y lo dio por cerrado: al cruzar el video con datos de vuelos comerciales, la AARO evaluó que eran tres aviones de línea muy lejanos, cuyos recorridos en el radar coincidían con los objetos y que a esa distancia se veían como puntos. Ni el radar ni la fecha ni el lugar se han publicado, así que nadie fuera del Gobierno puede repetir la comprobación.",
+  "summary_en": "In 2021, an infrared video sensor at a military range in the western United States recorded three unidentified objects. On May 31, 2023, Sean Kirkpatrick, director of the Pentagon office for these phenomena (AARO), presented the case to a NASA study team and declared it closed: by matching the video against commercial flight data, AARO assessed that they were three airliners far from the sensor, whose radar tracks lined up with the objects and which at that distance looked like dots. The radar data, the date and the location have not been published, so no one outside the government can repeat the check.",
   "patterns": [],
   "category": "incident",
   "documents": [

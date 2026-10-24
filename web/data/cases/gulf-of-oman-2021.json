@@ -4,8 +4,8 @@
   "pursueReleases": [
     5
   ],
-  "name": "Golfo de Omán · las «esferas frías» que parecieron esquivar el cañón de un AC-130",
-  "name_en": "Gulf of Oman · the 'cold orbs' that appeared to dodge an AC-130's cannon",
+  "name": "Golfo de Omán · un avión artillado ve esferas frías en infrarrojo",
+  "name_en": "Gulf of Oman · a gunship crew sees cold orbs on infrared",
   "year_start": 2021,
   "country": "OM",
   "country_name": "Omán",
@@ -13,8 +13,8 @@
   "location": {
     "lat": 24.85,
     "lng": 58.75,
-    "place": "Golfo de Omán, cerca de las coordenadas MGRS 40REN6 (aguas internacionales/territoriales)",
-    "place_en": "Gulf of Oman, near MGRS coordinates 40REN6 (international/territorial waters)"
+    "place": "Golfo de Omán",
+    "place_en": "Gulf of Oman"
   },
   "tier": "S",
   "epistemicStatus": "documented",
@@ -28,8 +28,8 @@
     "nohumano_abierto": 0.07,
     "indet": 0.28
   },
-  "summary": "La noche del 8 de septiembre de 2021, un AC-130 de Operaciones Especiales de EE.UU. observó unas 25 instancias de fenómenos no identificados en un ejercicio de fuego real en el golfo de Omán: «esferas frías» de unos 1,2 m en el infrarrojo, dos de ellas sobre la bengala usada como blanco, que parecieron alejarse al apretar el gatillo del cañón de 105 mm; otras volaron en formación, a 250-1.300 mph según un oficial. El informe del AFSOC (abril de 2022) se basa en un debriefing siete meses después. La grabación completa se corrompió, pero en 2026 PURSUE publicó seis clips filmados con un teléfono desde la pantalla del sensor.",
-  "summary_en": "On the night of 8 September 2021, a U.S. Special Operations AC-130 observed some 25 instances of unidentified phenomena during a live-fire exercise in the Gulf of Oman: 'cold orbs' about four feet across in infrared, two over the flare used as a target, which appeared to fly off just as the 105mm cannon's trigger was pulled; others flew in formation, at 250 to 1,300 mph per the combat systems officer. The AFSOC intelligence report (April 2022) rests on a debriefing seven months later. The full recording was corrupted, but in 2026 PURSUE released six clips filmed with a phone from the sensor display.",
+  "summary": "La noche del 8 de septiembre de 2021, en un ejercicio de fuego real en el golfo de Omán, la tripulación de un avión artillado AC-130 de EE. UU. vio en su cámara infrarroja unas 25 apariciones de «esferas frías» de unos 1,2 m. Dos, inmóviles sobre la bengala usada como blanco, parecieron alejarse justo al apretar el gatillo del cañón de 105 mm; otras volaron en formación, a 250-1.300 mph según un oficial. El informe de la Fuerza Aérea (abril de 2022) se basa en una entrevista siete meses posterior. La grabación completa se corrompió; en 2026 se publicaron seis clips filmados con un teléfono desde la pantalla del sensor.",
+  "summary_en": "On the night of September 8, 2021, during a live-fire exercise in the Gulf of Oman, the crew of a U.S. AC-130 gunship saw on its infrared camera some 25 sightings of “cold orbs” about four feet across. Two, hovering over the flare used as a target, appeared to fly off just as the 105mm cannon's trigger was pulled; others flew in formation, at 250 to 1,300 mph according to an officer. The Air Force report (April 2022) rests on an interview held seven months later. The full recording was corrupted; in 2026 six clips filmed with a phone from the sensor display were released.",
   "patterns": [],
   "category": "incident",
   "documents": [

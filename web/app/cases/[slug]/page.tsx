@@ -14,7 +14,7 @@ import { researchersForCase } from "@/lib/researcherCases";
 import { DocumentsViewer } from "@/components/DocumentsViewer";
 import { caseVisuals } from "@/lib/caseVisuals";
 import { splitLead } from "@/lib/splitLead";
-import { Eyebrow, H1, Caption, PullQuote } from "@/lib/typography";
+import { Eyebrow, H1, Caption } from "@/lib/typography";
 import { caseJsonLd, serializeJsonLd } from "@/lib/jsonld";
 import { BreadcrumbJsonLd } from "@/components/BreadcrumbJsonLd";
 import { linkCaseRefs } from "@/lib/caseRefs";
@@ -99,31 +99,6 @@ export async function generateMetadata(props: { params: Promise<{ slug: string }
   };
 }
 
-/**
- * Extract the longest quoted phrase from a body of prose, to render
- * as a pull-quote. Returns null if no suitable quote (30–240 chars).
- *
- * The corpus uses single quotes (') for technical terms ('Anomalous Aerial
- * Vehicles', 'flying disc') and double quotes (" " or curly “”) for actual
- * citations. We accept both — heuristic only.
- */
-function findPullQuote(text?: string): string | null {
-  if (!text) return null;
-  const patterns = [
-    /[“”]([^“”]{30,240})[“”]|"([^"]{30,240})"/g,
-    /''([^']{30,240})''|'([^']{30,240})'/g,
-  ];
-  const all: string[] = [];
-  for (const re of patterns) {
-    for (const m of text.matchAll(re)) {
-      const q = m[1] ?? m[2];
-      if (q) all.push(q);
-    }
-  }
-  if (all.length === 0) return null;
-  all.sort((a, b) => b.length - a.length);
-  return all[0];
-}
 
 export async function CaseDetailPage(
   props: {
@@ -238,7 +213,6 @@ export async function CaseDetailPage(
   const whatHappenedParas = c.whatHappened
     ? c.whatHappened.split("\n\n")
     : [];
-  const pullQuote = findPullQuote(c.whatHappened);
 
   // Antes decía «La noche en cuestión» en todo caso de un solo año, y muchos
   // ocurrieron de día (Kenneth Arnold, Kilimanjaro): el rótulo afirmaba algo
@@ -454,11 +428,6 @@ export async function CaseDetailPage(
                     >
                       {linkCaseRefs(para, NAME_BY_SLUG)}
                     </p>
-                    {pullQuote && i === 0 && (
-                      <PullQuote className="border-l-4 text-2xl md:text-3xl">
-                        “{pullQuote}”
-                      </PullQuote>
-                    )}
                   </div>
                 ))}
               </div>

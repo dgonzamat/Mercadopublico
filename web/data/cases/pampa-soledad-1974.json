@@ -1,8 +1,8 @@
 {
   "id": "pampa-soledad-1974",
   "num": 387,
-  "name": "Pampa Soledad · los artistas perseguidos por luces",
-  "name_en": "Pampa Soledad · the artists chased by lights",
+  "name": "Pampa Soledad · cinco artistas dicen que una luz los persiguió",
+  "name_en": "Pampa Soledad · five performers say a light chased them",
   "year_start": 1974,
   "country": "CL",
   "country_name": "Chile",
@@ -10,8 +10,8 @@
   "location": {
     "lat": -21.87,
     "lng": -69.6,
-    "place": "Pampa Soledad, entre la Oficina Victoria y Quillagua, Región de Antofagasta",
-    "place_en": "Pampa Soledad, between Oficina Victoria and Quillagua, Antofagasta Region"
+    "place": "Pampa Soledad, entre Oficina Victoria y Quillagua (Antofagasta)",
+    "place_en": "Pampa Soledad, between Oficina Victoria and Quillagua (Antofagasta)"
   },
   "tier": "B",
   "mundanoType": "sin_propuesta",
