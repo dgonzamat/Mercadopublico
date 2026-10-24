@@ -1,8 +1,8 @@
 {
   "id": "iremi-flota-calamar-2018",
   "num": 468,
-  "name": "Pacífico frente a Perú · las «ciudades» bajo las nubes que vio el LXP2371",
-  "name_en": "Pacific off Peru · the 'cities' under the clouds seen by LXP2371",
+  "name": "Pacífico frente a Perú · una tripulación ve el mar «encendido»",
+  "name_en": "Pacific off Peru · an airline crew sees the sea “lit up”",
   "year_start": 2018,
   "country": "PE",
   "country_name": "Perú",
@@ -10,16 +10,16 @@
   "location": {
     "lat": -18.35,
     "lng": -75.3833,
-    "place": "Punto IREMI de la aerovía UL302, océano Pacífico frente a la costa sur de Perú",
-    "place_en": "IREMI waypoint on airway UL302, Pacific Ocean off the southern coast of Peru"
+    "place": "Océano Pacífico, frente a la costa sur de Perú",
+    "place_en": "Pacific Ocean, off the southern coast of Peru"
   },
   "tier": "A",
   "mundanoType": "misid",
   "misidSubtype": "luces_tierra",
   "epistemicStatus": "documented",
   "probability": 9,
-  "summary": "En un vuelo reportado el 4 de diciembre de 2018, la tripulación del LXP2371 de Lan Perú, en la aerovía oceánica UL302 entre los puntos ASEPU e IREMI, avisó por radio al control oceánico chileno de que «el mar está encendido»: una mancha de luces blancas de unas 80 millas, «como si hubieran ciudades debajo de las nubes», que a su juicio era demasiado grande para una flota de barcos. El controlador tampoco creía que hubiera una flota pesquera tan grande. El SEFAA estudió el audio, las fotos que el comandante envió por WhatsApp y la información de la Armada de Chile, y concluyó en 2019 que fue una faena de pesca de alta mar, probablemente de barcos calamareros que usan potentes focos.",
-  "summary_en": "On a flight reported on 4 December 2018, the crew of Lan Perú flight LXP2371, on the oceanic airway UL302 between the ASEPU and IREMI waypoints, radioed Chile's oceanic control that 'the sea is lit up': a patch of white lights some 80 miles long, 'as if there were cities under the clouds', which they thought was too large for a fleet of boats. The controller did not believe there was a fishing fleet that large either. SEFAA studied the audio, the photos the captain sent over WhatsApp and information from the Chilean Navy, and concluded in 2019 that it was a high-seas fishing operation, probably giant-squid boats that use powerful lamps.",
+  "summary": "En un vuelo reportado el 4 de diciembre de 2018, la tripulación de un avión de Lan Perú que volaba sobre alta mar avisó al control oceánico chileno de que «el mar está encendido»: una mancha de luces blancas de unas 80 millas, «como si hubieran ciudades debajo de las nubes», demasiado grande, a su juicio, para una flota de barcos; el controlador pensaba lo mismo. El SEFAA, la oficina oficial chilena para estos fenómenos, analizó el audio, las fotos del comandante y la información de la Armada de Chile, y concluyó en 2019 que fue una faena de pesca de alta mar, probablemente de barcos calamareros con potentes focos.",
+  "summary_en": "On a flight reported on 4 December 2018, the crew of a Lan Perú aircraft flying over the open ocean radioed Chile's oceanic control that “the sea is lit up”: a patch of white lights some 80 miles long, “as if there were cities under the clouds”, which they thought was too large for a fleet of boats; the controller did not believe there was a fishing fleet that large either. SEFAA, Chile's official office for these phenomena, analysed the audio, the captain's photos and information from the Chilean Navy, and concluded in 2019 that it was a high-seas fishing operation, probably giant-squid boats that use powerful lamps.",
   "patterns": [],
   "category": "incident",
   "posterior": {

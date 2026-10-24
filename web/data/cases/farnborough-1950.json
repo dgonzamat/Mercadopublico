@@ -1,8 +1,8 @@
 {
   "id": "farnborough-1950",
   "num": 444,
-  "name": "Farnborough · los discos del piloto de pruebas Hubbard",
-  "name_en": "Farnborough · test pilot Hubbard's discs",
+  "name": "Farnborough · un piloto de pruebas y cinco oficiales ven un disco",
+  "name_en": "Farnborough · a test pilot and five officers see a grey disc",
   "year_start": 1950,
   "country": "GB",
   "country_name": "Reino Unido",
@@ -10,8 +10,8 @@
   "location": {
     "lat": 51.2795,
     "lng": -0.7765,
-    "place": "Royal Aircraft Establishment · Farnborough, Hampshire",
-    "place_en": "Royal Aircraft Establishment · Farnborough, Hampshire"
+    "place": "Royal Aircraft Establishment, Farnborough (Hampshire)",
+    "place_en": "Royal Aircraft Establishment, Farnborough (Hampshire)"
   },
   "tier": "B",
   "mundanoType": "misid",
@@ -19,8 +19,8 @@
   "objectDetail": "avion",
   "epistemicStatus": "documented",
   "probability": 36,
-  "summary": "El 14 de agosto de 1950 el piloto de pruebas Stan Hubbard vio un disco gris perla sobre el aeródromo de Farnborough; el 5 de septiembre él y otros cinco oficiales vieron otro desde la torre de control. El Flying Saucer Working Party del Ministerio de Defensa aceptó que vieron un objeto real y lo atribuyó a una ilusión óptica o a un avión corriente visto en el límite de la visión.",
-  "summary_en": "On 14 August 1950 test pilot Stan Hubbard saw a pearl-grey disc over Farnborough airfield; on 5 September he and five other officers saw another from the control tower. The Ministry of Defence's Flying Saucer Working Party accepted they had seen a real object and attributed it to an optical illusion or an ordinary aircraft seen at extreme visual range.",
+  "summary": "El 14 de agosto de 1950 el piloto de pruebas Stan Hubbard vio un disco gris perla sobre el aeródromo de Farnborough; los dos oficiales que estaban con él no vieron nada. El 5 de septiembre él y otros cinco oficiales vieron otro desde la torre de control. El Flying Saucer Working Party del Ministerio de Defensa atribuyó el primero a una ilusión óptica o a un avión normal, y aceptó que en el segundo vieron un objeto real, que creyó un avión corriente en el límite de la visión. En 2002, 52 años después, Hubbard contó una versión distinta y dijo que el informe no recogió bien lo que declaró.",
+  "summary_en": "On 14 August 1950 test pilot Stan Hubbard saw a pearl-grey disc over Farnborough airfield; the two officers with him saw nothing. On 5 September he and five other officers saw another from the control tower. The Ministry of Defence's Flying Saucer Working Party put the first down to an optical illusion or an ordinary aircraft, and accepted that in the second they had seen a real object, which it took for an ordinary aircraft at the limit of vision. In 2002, 52 years later, Hubbard gave a different account and said the report had not recorded his statement correctly.",
   "patterns": [
     "8m"
   ],

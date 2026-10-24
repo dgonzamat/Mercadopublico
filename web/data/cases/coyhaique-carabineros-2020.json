@@ -1,8 +1,8 @@
 {
   "id": "coyhaique-carabineros-2020",
   "num": 471,
-  "name": "Aysén · la luz azul verde que vio el piloto de Carabineros sobre Coyhaique",
-  "name_en": "Aysén · the blue-green light seen by the Carabineros pilot over Coyhaique",
+  "name": "Coyhaique · un piloto de Carabineros ve una luz azul verde",
+  "name_en": "Coyhaique · a Carabineros pilot sees a blue-green light",
   "year_start": 2020,
   "country": "CL",
   "country_name": "Chile",
@@ -10,15 +10,15 @@
   "location": {
     "lat": -45.5936,
     "lng": -72.1053,
-    "place": "En vuelo a unos 28.000 pies, a la altura del aeródromo Teniente Vidal de Coyhaique (región de Aysén)",
-    "place_en": "In flight at about 28,000 feet, abeam Teniente Vidal aerodrome, Coyhaique (Aysén region)"
+    "place": "En vuelo sobre Coyhaique (región de Aysén)",
+    "place_en": "In flight over Coyhaique (Aysén region)"
   },
   "tier": "B",
   "mundanoType": "sin_propuesta",
   "epistemicStatus": "documented",
   "probability": 39,
-  "summary": "Hacia las 20:00 del 20 de abril de 2020, el piloto de un avión de la Prefectura Aérea de Carabineros que volaba de Punta Arenas a Puerto Montt, a unos 28.000 pies, vio a la altura de Coyhaique una luz grande, ovalada y de color azul verde que se mantenía arriba y frente a su avión; la tomó por un avión comercial hasta que se desplazó y se acercó, y luego desapareció hacia el noroeste. El SEFAA identificó el vuelo por los planes de vuelo, pero el piloto dejó de colaborar y no entregó imágenes, y el caso se cerró como «Relato» sin proponer causa.",
-  "summary_en": "At around 20:00 on 20 April 2020, the pilot of a Carabineros Air Prefecture aircraft flying from Punta Arenas to Puerto Montt, at about 28,000 feet, saw abeam Coyhaique a large, oval, blue-green light that stayed above and in front of his aircraft; he took it for an airliner until it moved and came closer, and it then disappeared towards the northwest. SEFAA identified the flight from the flight plans, but the pilot stopped cooperating and handed over no images, and the case was closed as a 'Report' (Relato) with no cause proposed.",
+  "summary": "Hacia las 20:00 del 20 de abril de 2020, el piloto de un avión de la Prefectura Aérea de Carabineros que volaba de Punta Arenas a Puerto Montt, a unos 28.000 pies, vio a la altura de Coyhaique una luz grande, ovalada y de color azul verde que se mantenía arriba y frente a su avión; la tomó por un avión comercial hasta que se desplazó y se acercó, y luego desapareció hacia el noroeste. El SEFAA, la oficina oficial chilena para estos fenómenos, identificó el vuelo por los planes de vuelo, pero el piloto dejó de colaborar y no entregó imágenes, y el caso se cerró como «Relato» sin proponer causa.",
+  "summary_en": "At around 20:00 on 20 April 2020, the pilot of a Carabineros Air Prefecture aircraft flying from Punta Arenas to Puerto Montt, at about 28,000 feet, saw abeam Coyhaique a large, oval, blue-green light that stayed above and in front of his aircraft; he took it for an airliner until it moved and came closer, and it then disappeared towards the northwest. SEFAA, Chile's official office for these phenomena, identified the flight from the flight plans, but the pilot stopped cooperating and handed over no images, and the case was closed as a “Report” (Relato) with no cause proposed.",
   "patterns": [],
   "category": "incident",
   "posterior": {

@@ -10,8 +10,8 @@
   "location": {
     "lat": -45.4,
     "lng": -73.0,
-    "place": "ubicación atribuida en la Región de Aysén, sur de Chile (no verificada)",
-    "place_en": "claimed location in the Aysén Region, southern Chile (unverified)"
+    "place": "Región de Aysén, sur de Chile (ubicación atribuida, no verificada)",
+    "place_en": "Aysén Region, southern Chile (claimed location, unverified)"
   },
   "tier": "B",
   "mundanoType": "fraude",

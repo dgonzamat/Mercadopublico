@@ -1,8 +1,8 @@
 {
   "id": "atlantico-bethune-1951",
   "num": 473,
-  "name": "Vuelo 125 de la Marina · la luz que se acercó a un R5D sobre el Atlántico (Canadá, 1951)",
-  "name_en": "Navy flight 125 · the light that closed on an R5D over the Atlantic (Canada, 1951)",
+  "name": "Vuelo 125 de la Marina · la tripulación ve una luz que se acerca",
+  "name_en": "Navy Flight 125 · the crew sees a light that seems to close in",
   "year_start": 1951,
   "country": "CA",
   "country_name": "Canadá",
@@ -10,8 +10,8 @@
   "location": {
     "lat": 49.8333,
     "lng": -50.05,
-    "place": "Atlántico Norte, 49°50' N 50°03' O, unas 200 millas al noreste de Argentia (Terranova)",
-    "place_en": "North Atlantic, 49°50' N 50°03' W, about 200 miles northeast of Argentia (Newfoundland)"
+    "place": "Atlántico Norte, unas 200 millas al noreste de Argentia (Terranova)",
+    "place_en": "North Atlantic, about 200 miles northeast of Argentia (Newfoundland)"
   },
   "tier": "A",
   "mundanoType": "misid",
@@ -19,8 +19,8 @@
   "objectDetail": "luna",
   "epistemicStatus": "documented",
   "probability": 35,
-  "summary": "A las 00:55 GMT del 10 de febrero de 1951, la tripulación de un transporte R5D de la Marina de Estados Unidos que volaba de Keflavik a Argentia vio, unas 200 millas al noreste de Terranova, una luz amarilla bajo las nubes que creció, tomó forma circular de borde anaranjado, pareció acercarse y se perdió tras el horizonte por el rumbo 290°. Siete tripulantes firmaron ese mismo día sus declaraciones; uno pensó en una aurora y otro en la puesta de la luna. El astrónomo consultado por la Fuerza Aérea se inclinó por una aurora boreal. En 2001 el copiloto, Graham Bethune, contó en el Disclosure Project una versión con más detalles que no figuran en el expediente.",
-  "summary_en": "At 00:55 GMT on 10 February 1951, the crew of a US Navy R5D transport flying from Keflavik to Argentia saw, about 200 miles northeast of Newfoundland, a yellow light under the clouds that grew, took a circular shape with an orange rim, seemed to approach and vanished over the horizon on a bearing of 290°. Seven crew members signed statements that same day; one thought of the aurora and another of the setting Moon. The astronomer the Air Force consulted leaned toward the northern lights. In 2001 the co-pilot, Graham Bethune, told the Disclosure Project a version with further details that are not in the file.",
+  "summary": "A las 00:55 GMT del 10 de febrero de 1951, la tripulación de un avión de la Marina de EE. UU. que volaba de Keflavik a Argentia vio, unas 200 millas al noreste de Terranova, una luz amarilla bajo las nubes que creció, tomó forma circular de borde anaranjado, pareció acercarse y se perdió tras el horizonte por el rumbo 290°. Siete tripulantes firmaron ese mismo día sus declaraciones; uno pensó en una aurora y otro en la puesta de la luna. El astrónomo consultado por la Fuerza Aérea se inclinó por una aurora boreal. En 2001 el copiloto, Graham Bethune, contó en el Disclosure Project una versión con más detalles que no figuran en el expediente.",
+  "summary_en": "At 00:55 GMT on 10 February 1951, the crew of a U.S. Navy aircraft flying from Keflavik to Argentia saw, about 200 miles northeast of Newfoundland, a yellow light under the clouds that grew, took a circular shape with an orange rim, seemed to approach and vanished over the horizon on a bearing of 290°. Seven crew members signed statements that same day; one thought of the aurora and another of the setting Moon. The astronomer the Air Force consulted leaned toward the northern lights. In 2001 the co-pilot, Graham Bethune, told the Disclosure Project a version with further details that are not in the file.",
   "patterns": [],
   "category": "incident",
   "posterior": {

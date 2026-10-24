@@ -4,8 +4,8 @@
   "pursueReleases": [
     2
   ],
-  "name": "Siria 2021 (PR051): la «aceleración instantánea» que coincide con el fin del seguimiento del sensor",
-  "name_en": "Syria 2021 (PR051): the 'instant acceleration' that coincides with the sensor ending its track",
+  "name": "Siria · video militar de una supuesta «aceleración instantánea»",
+  "name_en": "Syria · military video of a supposed “instant acceleration”",
   "year_start": 2021,
   "country": "SY",
   "country_name": "Siria",
@@ -13,8 +13,8 @@
   "location": {
     "lat": 32.09,
     "lng": 36.9,
-    "place": "Frontera entre Jordania y Siria (coordenadas de la descripción de Corbell; la AARO solo dice área del CENTCOM)",
-    "place_en": "Jordan–Syria border (coordinates from Corbell's description; AARO only says CENTCOM area)"
+    "place": "Siria, cerca de la frontera con Jordania (lugar sin confirmar)",
+    "place_en": "Syria, near the Jordanian border (location unconfirmed)"
   },
   "tier": "B",
   "epistemicStatus": "documented",
@@ -30,8 +30,8 @@
     "nohumano_abierto": 0.02,
     "indet": 0.3
   },
-  "summary": "Un video infrarrojo de cinco minutos, publicado en la segunda entrega de PURSUE con el título que le puso quien lo subió, «Syrian UAP instant acceleration». La AARO dice que probablemente procede de una plataforma militar de EE. UU. en el área del CENTCOM en 2021, que fue editado antes de subirse y que su cadena de custodia no está acreditada; y describe el momento de la supuesta aceleración como el instante en que el sensor deja de seguir el objeto, que entonces sale del encuadre. Jeremy Corbell lo había filtrado en febrero de 2026 atribuyéndolo a un MQ-9 Reaper, dato que la ficha oficial no confirma.",
-  "summary_en": "A five-minute infrared video, released in PURSUE's second release under the title given by whoever uploaded it, \"Syrian UAP instant acceleration\". AARO says it likely comes from a U.S. military platform in the CENTCOM area in 2021, that it was edited before upload and that its chain of custody is not substantiated; and it describes the moment of the supposed acceleration as the instant the sensor stops tracking the object, which then leaves the frame. Jeremy Corbell had leaked it in February 2026, attributing it to an MQ-9 Reaper, a detail the official record does not confirm.",
+  "summary": "En mayo de 2026 el Departamento de Guerra de EE. UU. publicó un video infrarrojo de cinco minutos con el título que le dio quien lo subió: «Syrian UAP instant acceleration». La oficina del Pentágono para estos fenómenos (AARO) dice que probablemente procede de una plataforma militar estadounidense en la zona del Mando Central en 2021, que se editó antes de subirlo y que su cadena de custodia no está acreditada, y que la supuesta aceleración es el instante en que el sensor deja de seguir el objeto, que sale del encuadre. Jeremy Corbell lo había filtrado en febrero atribuyéndolo a un dron MQ-9 Reaper, dato que la versión oficial no confirma.",
+  "summary_en": "In May 2026 the U.S. Department of War released a five-minute infrared video under the title given by whoever uploaded it: “Syrian UAP instant acceleration”. The Pentagon office for these phenomena (AARO) says it likely comes from a U.S. military platform in Central Command's area in 2021, that it was edited before upload and that its chain of custody is not substantiated, and that the supposed acceleration is the instant the sensor stops tracking the object, which leaves the frame. Jeremy Corbell had leaked it in February, attributing it to an MQ-9 Reaper drone, a detail the official release does not confirm.",
   "patterns": [
     "8r"
   ],

@@ -1,8 +1,8 @@
 {
   "id": "stereo-soho-2011",
   "num": 455,
-  "name": "STEREO y SOHO · los «ovnis» junto al Sol",
-  "name_en": "STEREO and SOHO · the “UFOs” beside the Sun",
+  "name": "STEREO y SOHO · cinco imágenes de supuestas naves junto al Sol",
+  "name_en": "STEREO and SOHO · five images of supposed craft beside the Sun",
   "year_start": 2011,
   "year_end": 2022,
   "country": "US",
@@ -11,8 +11,8 @@
   "location": {
     "lat": 38.9916,
     "lng": -76.8526,
-    "place": "Centro de Ciencia de STEREO · NASA Goddard (Greenbelt, Maryland)",
-    "place_en": "STEREO Science Center · NASA Goddard (Greenbelt, Maryland)"
+    "place": "Centro de Ciencia de STEREO, NASA Goddard (Greenbelt, Maryland)",
+    "place_en": "STEREO Science Center, NASA Goddard (Greenbelt, Maryland)"
   },
   "tier": "S",
   "mundanoType": "instrumento",
