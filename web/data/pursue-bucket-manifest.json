@@ -6,10 +6,12 @@
     "342_hs1-416511228_box186_319.1-flying-discs-1949__part1of2.pdf",
     "342_hs1-416511228_box186_319.1-flying-discs-1949__part2of2.pdf",
     "38_143685_box7_incident_summaries_1-100.pdf",
+    "38_143685_box7_incident_summaries_101-172.pdf",
     "38_143685_box7_incident_summaries_173-233__part1of4.pdf",
     "38_143685_box7_incident_summaries_173-233__part2of4.pdf",
     "38_143685_box7_incident_summaries_173-233__part3of4.pdf",
     "38_143685_box7_incident_summaries_173-233__part4of4.pdf",
+    "65_hs1-834228961_62-hq-83894_section_1.pdf",
     "65_hs1-834228961_62-hq-83894_section_10__part1of2.pdf",
     "65_hs1-834228961_62-hq-83894_section_10__part2of2.pdf",
     "65_hs1-834228961_62-hq-83894_section_2.pdf",
@@ -33,9 +35,9 @@
     "DOW-UAP-D175-BAASS_Self-Assessment_of_UAP_Analysis_Capabilities_November_2010.pdf"
   ],
   "totals": {
-    "count": 28,
-    "bytes": 331460974,
+    "count": 30,
+    "bytes": 364300909,
     "largest_bytes": 29866836,
-    "measured_at": "2026-10-23"
+    "measured_at": "2026-10-24"
   }
 }

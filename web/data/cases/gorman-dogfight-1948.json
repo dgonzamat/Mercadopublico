@@ -102,7 +102,7 @@
       "description_en": "Three volumes of US Air Force \"Incident Summaries\", covering incidents numbered 1 to 233, drawn from its records at the National Archives and declassified in the first PURSUE release on 8 May 2026. Each summary is built around a standardized form, \"Check-List - Unidentified Flying Objects\", recording date, place, object description, heading, weather and witness reliability, and many add witness lists and statements. It is the instrument with which Projects Sign (1948) and Grudge (1949) tabulated flying-disc reports, the forerunner of Blue Book's record cards. A form proves that a report was received and processed, not that it was anomalous: most were resolved as balloons, astronomical bodies, aircraft or misidentifications."
     },
     {
-      "src": "/pursue/38_143685_box7_incident_summaries_101-172.pdf",
+      "src": "https://hgbvdqckoosxesixhepr.supabase.co/storage/v1/object/public/pursue/38_143685_box7_incident_summaries_101-172.pdf",
       "type": "pdf",
       "title": "Incident Summaries 101-172 — fichas «Check-List: Unidentified Flying Objects» (USAF)",
       "title_en": "Incident Summaries 101-172 — 'Check-List: Unidentified Flying Objects' cards (USAF)",
