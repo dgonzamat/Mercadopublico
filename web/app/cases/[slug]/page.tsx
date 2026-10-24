@@ -412,42 +412,6 @@ export async function CaseDetailPage(
         )}
       </header>
 
-      {/* ────────── ZONE A2 — DOCUMENTO PRIMARIO DESTACADO ────────── */}
-      {/* Para casos cuya búsqueda dominante tiene intención "descargar el
-          PDF": se ofrece el documento arriba del fold para satisfacer esa
-          intención y reducir el rebote (pogo-sticking) hacia el SERP. */}
-      {c.featuredDoc && (
-        <a
-          href={c.featuredDoc.url}
-          target="_blank"
-          rel="noopener noreferrer"
-          className="group block border-2 border-accent bg-panel p-6 no-underline transition-colors hover:bg-accent/5 md:p-8"
-        >
-          <p className="text-sm font-semibold text-accent">
-            <T locale={locale} es="Documento primario · PDF" en="Primary source · PDF" />
-          </p>
-          <p className="mt-3 flex items-start gap-3 font-display text-xl font-medium leading-snug text-text md:text-2xl">
-            <span aria-hidden className="shrink-0 text-accent">
-              ↓
-            </span>
-            <span className="underline decoration-accent/40 underline-offset-4 group-hover:decoration-accent">
-              <T locale={locale}
-                es={c.featuredDoc.label}
-                en={c.featuredDoc.label_en ?? c.featuredDoc.label}
-              />
-            </span>
-          </p>
-          {c.featuredDoc.note && (
-            <p className="mt-3 text-sm leading-relaxed text-muted">
-              <T locale={locale}
-                es={c.featuredDoc.note}
-                en={c.featuredDoc.note_en ?? c.featuredDoc.note}
-              />
-            </p>
-          )}
-        </a>
-      )}
-
       {/* La prueba del propio caso (vídeo, foto del suceso) va antes del relato;
           el papeleo, después, en «Lo que queda en papel». */}
       <DocumentsViewer
@@ -567,10 +531,43 @@ export async function CaseDetailPage(
           </h2>
         </header>
 
-        {/* El visor iba entre la cabecera y el relato: en móvil empujaba el
-            primer párrafo a casi 3 pantallas en la ficha típica (9,6 en
-            Skinwalker; medido en las 397, oct 2026). El papeleo respalda el
-            relato, así que va después de él; la prueba del caso queda arriba. */}
+        {/* El documento destacado y el visor iban entre la cabecera y el
+            relato: en móvil empujaban el primer párrafo a casi 3 pantallas en
+            la ficha típica (9,6 en Skinwalker; medido en las 397, oct 2026).
+            El papeleo respalda el relato, así que va después de él; la prueba
+            del caso (vídeo, foto del suceso) queda arriba. */}
+        {c.featuredDoc && (
+          <a
+            href={c.featuredDoc.url}
+            target="_blank"
+            rel="noopener noreferrer"
+            className="group block border-2 border-accent bg-panel p-6 no-underline transition-colors hover:bg-accent/5 md:p-8"
+          >
+            <p className="text-sm font-semibold text-accent">
+              <T locale={locale} es="Documento primario · PDF" en="Primary source · PDF" />
+            </p>
+            <p className="mt-3 flex items-start gap-3 font-display text-xl font-medium leading-snug text-text md:text-2xl">
+              <span aria-hidden className="shrink-0 text-accent">
+                ↓
+              </span>
+              <span className="underline decoration-accent/40 underline-offset-4 group-hover:decoration-accent">
+                <T locale={locale}
+                  es={c.featuredDoc.label}
+                  en={c.featuredDoc.label_en ?? c.featuredDoc.label}
+                />
+              </span>
+            </p>
+            {c.featuredDoc.note && (
+              <p className="mt-3 text-sm leading-relaxed text-muted">
+                <T locale={locale}
+                  es={c.featuredDoc.note}
+                  en={c.featuredDoc.note_en ?? c.featuredDoc.note}
+                />
+              </p>
+            )}
+          </a>
+        )}
+
         <DocumentsViewer docs={caseMedia.rest} locale={locale} />
 
         {c.primaryDocument && (
