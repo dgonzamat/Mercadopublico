@@ -111,6 +111,46 @@
         "id": "B8",
         "title": "23 oct · Expedientes de la Fuerza Aérea de la séptima entrega (1949-1957) sin ficha",
         "state": "resuelto el 23 oct: Arabia Saudí, Marruecos, Guam, Hässleholm, Berlín, Prince George, Sassari, Seymour, Big Diomede, Gambell y cuatro de Santa Catalina (1949, 1952, 1953 y 1955)"
+      },
+      {
+        "id": "B9",
+        "title": "24 oct · Capa 1 de la especificación de la ficha: título, lugar y resumen de todas las fichas con la guía /redaccion, por lotes con editor y verificador independiente",
+        "state": "en curso: lotes 1 a 4 aplicados en la rama; lotes 5 a 8 en edición; falta el PR"
+      },
+      {
+        "id": "B10",
+        "title": "24 oct · Capa 2: relato y evidencia de las fichas que marque E52 (relato largo, jerga, spanglish, bitácoras, evidence fuera de rango); empieza por las ocho ya reescritas y verificadas (Skinwalker, Tremonton y las de radar) y por los errores de relato anotados al revisar la portada (Kovalyonok y Savinykh, Lubbock y Grudge, Zanfretta, Utsuro-bune, fotos de la serie B del FBI, muletillas de Yukón, Valdés, Bariloche, Ghost rockets y Ovaloid, bitácora de Popocatépetl, Tbilisi/Tiflis, Nueva Jersey)",
+        "state": "pendiente; al cerrarla, E52 pasa a ERROR"
+      },
+      {
+        "id": "B11",
+        "title": "24 oct · Identificadores con el año equivocado: fort-beaufort-1971 (el caso es de 1972) y greece-haf-radar-1990 (es de 1985). Cambiar un id cambia la URL y exige alias en lib/caseAliases.ts",
+        "state": "espera decisión del dueño"
+      },
+      {
+        "id": "B12",
+        "title": "24 oct · Casos ocurridos en el espacio (apollo12-streaks-1969 y similares): el lugar dice «trayecto a la Luna» y las coordenadas siguen en Houston; decidir cómo se representan en el mapa",
+        "state": "espera decisión del dueño"
+      },
+      {
+        "id": "B13",
+        "title": "24 oct · Dos PDF de /pursue que ninguna ficha usa: CIA-UAP-015 (Special Report 14 de Blue Book) y dow-uap-d48 (informe del RTI de 1996 sobre fallos de cohetes)",
+        "state": "espera decisión del dueño: se propuso embeber el Special Report 14 en Tremonton o Mariana y retirar D48"
+      },
+      {
+        "id": "B14",
+        "title": "24 oct · Inglés británico en algunos textos EN (Malmstrom, Colares, Valensole, Manises) frente al estadounidense del resto; fijar la variante en la guía /redaccion",
+        "state": "pendiente"
+      },
+      {
+        "id": "B15",
+        "title": "24 oct · Tanda 2 y 3 de expedientes de Blue Book (Bermudas, Simiutak, Chorwon, Paget; Islandia, Kimpo, costa de Groenlandia, Managua)",
+        "state": "en pausa hasta cerrar las capas de texto"
+      },
+      {
+        "id": "B16",
+        "title": "24 oct · Rótulos de licencia sin traducción para los documentos de contratistas de la séptima entrega (MUFON, Documatica, BAASS), que mide U11",
+        "state": "pendiente"
       }
     ]
   }
