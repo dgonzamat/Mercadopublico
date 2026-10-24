@@ -17,7 +17,7 @@ Esta guía nació de un fallo real (oct 2026): la ficha de Skinwalker había cre
 
 | Campo | Qué hace | Forma |
 |---|---|---|
-| `name` / `name_en` | Decir qué pasó y dónde | **Lugar · quién vio qué**, ≤ 65 caracteres. Sin año (va encima), sin veredicto (va en «Qué fue»), sin siglas ni jerga. «Exeter · objeto a baja altura visto por dos policías». |
+| `name` / `name_en` | Decir qué pasó y dónde | **Nombre del caso · qué pasó**, ≤ 65 caracteres, en todas las fichas sin excepción. El prefijo es el nombre por el que se conoce el caso si lo tiene («Roswell», «Caso Valdés», «Mothman», «Communion»), y si no, el lugar. Después de «·», quién vio qué. Sin año (va encima), sin veredicto (va en «Qué fue»), sin siglas ni jerga. «Exeter · objeto a baja altura visto por dos policías». |
 | `location.place` / `place_en` | Ubicar | Solo el lugar, ≤ 70 caracteres: «Sector de Chorwon (hoy Cheorwon), Corea del Sur». Nada de cuadrículas, cálculos ni fuentes. |
 | `summary` / `summary_en` | Contar el caso en un párrafo | Qué, quién, cuándo, dónde y qué quedó; 400–650 caracteres. La primera frase sola ya debe informar. |
 | `whatHappened` | Relatar el suceso | **Cronológico**, centrado en el suceso. Párrafos de ≤ 1.200 caracteres. Ver §3. |
