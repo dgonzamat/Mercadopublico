@@ -1,8 +1,8 @@
 {
   "id": "santa-cruz-bolivia-1962",
   "num": 491,
-  "name": "Santa Cruz de la Sierra · una luz que cae soltando chispas",
-  "name_en": "Santa Cruz de la Sierra · a light that falls shedding sparks",
+  "name": "Santa Cruz · dos personas ven caer una luz que suelta chispas",
+  "name_en": "Santa Cruz · two people see a light fall, shedding sparks",
   "year_start": 1962,
   "country": "BO",
   "country_name": "Bolivia",
@@ -10,8 +10,8 @@
   "location": {
     "lat": -17.78,
     "lng": -63.18,
-    "place": "Santa Cruz de la Sierra; el objeto apareció a unos 45 grados de altura, justo al oeste de la ciudad, y bajó hacia el horizonte oeste",
-    "place_en": "Santa Cruz de la Sierra; the object appeared about 45 degrees up, due west of the city, and came down toward the western horizon"
+    "place": "Santa Cruz de la Sierra, Bolivia",
+    "place_en": "Santa Cruz de la Sierra, Bolivia"
   },
   "tier": "B",
   "epistemicStatus": "documented",

@@ -4,8 +4,8 @@
   "pursueReleases": [
     7
   ],
-  "name": "Gambell · una luz inmóvil sobre el mar que se apaga de golpe",
-  "name_en": "Gambell · a motionless light over the sea that suddenly goes out",
+  "name": "Gambell · un cazador ve sobre el mar una luz quieta que se apaga",
+  "name_en": "Gambell · a hunter sees a still light at sea suddenly go out",
   "year_start": 1953,
   "country": "US",
   "country_name": "Estados Unidos",
@@ -13,8 +13,8 @@
   "location": {
     "lat": 63.78,
     "lng": -171.74,
-    "place": "Gambell, en la punta noroeste de la isla de San Lorenzo, Alaska (el informe da 63° 50' N 171° 36' O); la luz estaba hacia el oeste, a 283° verdaderos, a una distancia que nadie estimó",
-    "place_en": "Gambell, at the northwest tip of St. Lawrence Island, Alaska (the report gives 63° 50' N 171° 36' W); the light lay to the west, at 283° true, at a distance nobody estimated"
+    "place": "Gambell, isla de San Lorenzo, Alaska",
+    "place_en": "Gambell, St. Lawrence Island, Alaska"
   },
   "tier": "A",
   "epistemicStatus": "documented",

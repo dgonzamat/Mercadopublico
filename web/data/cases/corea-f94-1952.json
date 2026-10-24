@@ -1,8 +1,8 @@
 {
   "id": "corea-f94-1952",
   "num": 492,
-  "name": "Corea · un F-94 engancha con su radar un blanco en la cola",
-  "name_en": "Korea · an F-94 radar-locks a target on its tail",
+  "name": "Corea · un caza persigue una luz y su radar detecta algo detrás",
+  "name_en": "Korea · a fighter chases a light; radar spots something behind it",
   "year_start": 1952,
   "country": "KR",
   "country_name": "Corea del Sur",
@@ -10,8 +10,8 @@
   "location": {
     "lat": 38.215,
     "lng": 127.164,
-    "place": "Sector de Chorwon (hoy Cheorwon, Corea del Sur), detrás de las líneas de la ONU: cuadrícula militar CT 3930 del informe, convertida a coordenadas por cálculo propio y aproximada; la luz estaba en CT 5050, unos 22 km al nornordeste, más allá de la línea de bombardeo, en lo que hoy es Corea del Norte",
-    "place_en": "Chorwon sector (today Cheorwon, South Korea), behind the UN lines: the report's military grid square CT 3930, converted to coordinates by our own calculation and approximate; the light was at CT 5050, some 22 km to the north-northeast, beyond the bomb line, in what is today North Korea"
+    "place": "Sector de Chorwon (hoy Cheorwon), Corea del Sur",
+    "place_en": "Chorwon sector (today Cheorwon), South Korea"
   },
   "tier": "S",
   "epistemicStatus": "documented",

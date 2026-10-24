@@ -4,8 +4,8 @@
   "pursueReleases": [
     1
   ],
-  "name": "Papúa Nueva Guinea · aeronaves de gran altitud y estelas (cable DoS, 1985)",
-  "name_en": "Papua New Guinea · high-altitude aircraft and contrails (DoS cable, 1985)",
+  "name": "Wewak · luces y estelas nocturnas asustan a los vecinos",
+  "name_en": "Wewak · night lights and trails frighten local residents",
   "year_start": 1985,
   "country": "PG",
   "country_name": "Papúa Nueva Guinea",
@@ -13,8 +13,8 @@
   "location": {
     "lat": -4.06,
     "lng": 144.07,
-    "place": "Espacio aéreo de Papúa Nueva Guinea (vic. Angoram, prov. de Sepik Oriental) — cable de la embajada de EE.UU. en Port Moresby",
-    "place_en": "Papua New Guinea airspace (vic. Angoram, East Sepik Province) — U.S. Embassy Port Moresby cable"
+    "place": "Cielo de Papúa Nueva Guinea, cerca de Angoram (Sepik Oriental)",
+    "place_en": "Skies over Papua New Guinea, near Angoram (East Sepik Province)"
   },
   "tier": "B",
   "mundanoType": "misid",

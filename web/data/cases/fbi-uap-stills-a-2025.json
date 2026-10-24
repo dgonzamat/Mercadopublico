@@ -4,8 +4,8 @@
   "pursueReleases": [
     1
   ],
-  "name": "Imágenes fijas UAP del FBI · serie A",
-  "name_en": "FBI UAP still images · A series",
+  "name": "Oeste de EE. UU. · imágenes del FBI de un pequeño objeto redondo",
+  "name_en": "Western U.S. · FBI sensor images of a small, rounded object",
   "year_start": 2025,
   "country": "US",
   "country_name": "Estados Unidos",
@@ -13,8 +13,8 @@
   "location": {
     "lat": 39.5,
     "lng": -113,
-    "place": "Instalación de pruebas sensible del gobierno — oeste de EE.UU. (vínculo solo a través del índice oficial; ubicación redactada, coordenadas aproximadas)",
-    "place_en": "Sensitive government test installation — Western U.S. (link only through the official index; location redacted, approximate coordinates)"
+    "place": "Instalación de pruebas del Gobierno, oeste de EE. UU. (lugar tachado)",
+    "place_en": "Government test site, western U.S. (location redacted)"
   },
   "tier": "B",
   "epistemicStatus": "documented",

@@ -4,8 +4,8 @@
   "pursueReleases": [
     7
   ],
-  "name": "Prince George · una luz azulada baja junto a un B-29",
-  "name_en": "Prince George · a bluish light comes down near a B-29",
+  "name": "Prince George · dos guardias ven una luz que baja y se detiene",
+  "name_en": "Prince George · two guards see a light come down and stop",
   "year_start": 1953,
   "country": "CA",
   "country_name": "Canadá",
@@ -13,8 +13,8 @@
   "location": {
     "lat": 53.884,
     "lng": -122.679,
-    "place": "Aeropuerto de Prince George, Columbia Británica (los observadores estaban en el aeropuerto; la luz se fue hacia el oeste)",
-    "place_en": "Prince George Airport, British Columbia (the observers were at the airport; the light left towards the west)"
+    "place": "Aeropuerto de Prince George, Columbia Británica (Canadá)",
+    "place_en": "Prince George Airport, British Columbia, Canada"
   },
   "tier": "A",
   "epistemicStatus": "documented",

@@ -11,7 +11,7 @@ import { Breadcrumb } from "@/components/Breadcrumb";
 import { ShareButton } from "@/components/ShareButton";
 import { ResearcherAvatar } from "@/components/ResearcherAvatar";
 import { researchersForCase } from "@/lib/researcherCases";
-import { DocumentsViewer } from "@/components/DocumentsViewer";
+import { DocumentsViewer, splitCaseMedia } from "@/components/DocumentsViewer";
 import { splitLead } from "@/lib/splitLead";
 import { Eyebrow, H1, Caption, PullQuote } from "@/lib/typography";
 import { caseJsonLd, serializeJsonLd } from "@/lib/jsonld";
@@ -229,6 +229,7 @@ export async function CaseDetailPage(
   );
 
   const hasNarrative = Boolean(c.whatHappened || c.whyMatters);
+  const caseMedia = splitCaseMedia(c.documents ?? []);
   const hasEvidence = Boolean(c.evidence && c.evidence.length > 0);
   const hasSources = Boolean(c.sources && c.sources.length > 0);
   const hasRichContent = hasNarrative || hasEvidence || hasSources;
@@ -447,6 +448,16 @@ export async function CaseDetailPage(
         </a>
       )}
 
+      {/* La prueba del propio caso (vídeo, foto del suceso) va antes del relato;
+          el papeleo, después, en «Lo que queda en papel». */}
+      <DocumentsViewer
+        docs={caseMedia.media}
+        locale={locale}
+        heading={caseMedia.media.some((d) => d.type === "video")
+          ? { es: "Vídeo e imágenes del caso", en: "Video and images from the case" }
+          : { es: "Imágenes del caso", en: "Images from the case" }}
+      />
+
       {/* EN-only disclaimer when no EN narrative available */}
       {hasNarrative && !c.whatHappened_en && locale === "en" && (
         <div lang="en" data-lang="en" className="border-2 border-text bg-panel p-5">
@@ -558,9 +569,9 @@ export async function CaseDetailPage(
 
         {/* El visor iba entre la cabecera y el relato: en móvil empujaba el
             primer párrafo a casi 3 pantallas en la ficha típica (9,6 en
-            Skinwalker; medido en las 397, oct 2026). Los documentos respaldan
-            el relato, así que van después de él. */}
-        <DocumentsViewer docs={c.documents ?? []} locale={locale} />
+            Skinwalker; medido en las 397, oct 2026). El papeleo respalda el
+            relato, así que va después de él; la prueba del caso queda arriba. */}
+        <DocumentsViewer docs={caseMedia.rest} locale={locale} />
 
         {c.primaryDocument && (
           <figure className="space-y-3 border-l-2 border-accent/40 pl-5">

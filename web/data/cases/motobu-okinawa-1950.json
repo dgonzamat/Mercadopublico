@@ -1,8 +1,8 @@
 {
   "id": "motobu-okinawa-1950",
   "num": 495,
-  "name": "Península de Motobu · un radar de tiro sigue un blanco inmóvil que luego se va a 500 millas por hora (1950)",
-  "name_en": "Motobu Peninsula · a gun-laying radar tracks a target that hangs still and then leaves at 500 miles per hour (1950)",
+  "name": "Motobu · un radar antiaéreo capta algo quieto que luego se aleja",
+  "name_en": "Motobu · an army radar sees something hang still, then speed off",
   "year_start": 1950,
   "country": "JP",
   "country_name": "Japón",
@@ -10,8 +10,8 @@
   "location": {
     "lat": 26.62,
     "lng": 127.95,
-    "place": "Sobre la península de Motobu, norte de Okinawa (islas Ryukyu, entonces bajo administración militar de EE. UU.); primer contacto a 26° 37′ N, 127° 57′ E según el informe, visto desde el parque de artillería de «Kawasake», unas 20 millas al sur-suroeste",
-    "place_en": "Over the Motobu Peninsula, northern Okinawa (Ryukyu Islands, then under U.S. military administration); first contact at 26° 37′ N, 127° 57′ E according to the report, seen from the \"Kawasake\" gun park, about 20 miles to the south-south-west"
+    "place": "Sobre la península de Motobu, norte de Okinawa (hoy Japón)",
+    "place_en": "Over the Motobu Peninsula, northern Okinawa (today Japan)"
   },
   "tier": "A",
   "epistemicStatus": "documented",

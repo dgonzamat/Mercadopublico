@@ -1,8 +1,8 @@
 {
   "id": "ayoayo-bolivia-1962",
   "num": 490,
-  "name": "Ayoayo · un objeto plateado y ardiente cae en el altiplano",
-  "name_en": "Ayoayo · a fiery silver object falls on the Altiplano",
+  "name": "Ayoayo · tres personas ven caer un objeto plateado y ardiente",
+  "name_en": "Ayoayo · three people see a fiery silver object fall",
   "year_start": 1962,
   "country": "BO",
   "country_name": "Bolivia",
@@ -10,8 +10,8 @@
   "location": {
     "lat": -17.08,
     "lng": -68.14,
-    "place": "Altiplano de La Paz, unos 15 km al oeste de Ayoayo y unos 65 km al sur de La Paz (el punto que da el telegrama: 8 y 35 millas náuticas)",
-    "place_en": "La Paz Altiplano, some 15 km west of Ayoayo and some 65 km south of La Paz (the point the telegram gives: 8 and 35 nautical miles)"
+    "place": "Altiplano de La Paz, cerca de Ayoayo (Bolivia)",
+    "place_en": "La Paz Altiplano, near Ayoayo, Bolivia"
   },
   "tier": "B",
   "epistemicStatus": "documented",

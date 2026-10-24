@@ -4,8 +4,8 @@
   "pursueReleases": [
     7
   ],
-  "name": "Gran Diómedes · una luz vista desde la Pequeña Diómedes",
-  "name_en": "Big Diomede · a light seen from Little Diomede",
+  "name": "Pequeña Diómedes · un muchacho ve una luz en la isla soviética",
+  "name_en": "Little Diomede · a boy spots a light on the nearby Soviet island",
   "year_start": 1953,
   "country": "RU",
   "country_name": "Rusia",
@@ -13,8 +13,8 @@
   "location": {
     "lat": 65.75,
     "lng": -169.05,
-    "place": "Extremo sur de la isla Gran Diómedes (Ratmánov), entonces URSS, a unos 95 pies sobre el mar; el testigo estaba en la aldea de la Pequeña Diómedes (Alaska), a 2,5 millas",
-    "place_en": "Southern tip of Big Diomede Island (Ratmanov), then USSR, about 95 feet above the sea; the witness was in Little Diomede village (Alaska), 2.5 miles away"
+    "place": "Isla Gran Diómedes (entonces URSS), frente a Alaska",
+    "place_en": "Big Diomede Island (then USSR), facing Alaska"
   },
   "tier": "B",
   "epistemicStatus": "documented",
