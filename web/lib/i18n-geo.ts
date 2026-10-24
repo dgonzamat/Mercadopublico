@@ -46,6 +46,7 @@ const COUNTRY_EN: Record<string, string> = {
   Italia: "Italy",
   Japón: "Japan",
   Kazajistán: "Kazakhstan",
+  Libia: "Libya",
   Marruecos: "Morocco",
   "Multi-país (Persian Gulf)": "Multi-country (Persian Gulf)",
   "Multi-país (Oriente Medio)": "Multi-country (Middle East)",
