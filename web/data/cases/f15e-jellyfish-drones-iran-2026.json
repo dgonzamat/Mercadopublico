@@ -1,8 +1,8 @@
 {
   "id": "f15e-jellyfish-drones-iran-2026",
   "num": 301,
-  "name": "F-15E derribado sobre Irán · formación de drones 'medusa' (Operation Epic Fury, 2026)",
-  "name_en": "F-15E downed over Iran · 'jellyfish' drone formation (Operation Epic Fury, 2026)",
+  "name": "Irán · el piloto de un caza derribado describe drones «medusa»",
+  "name_en": "Iran · a downed fighter pilot describes a “jellyfish” of drones",
   "year_start": 2026,
   "country": "IR",
   "country_name": "Irán",
@@ -23,8 +23,8 @@
     "nohumano_abierto": 0.07,
     "indet": 0.25
   },
-  "summary": "En abril de 2026, durante la Operation Epic Fury, un F-15E Strike Eagle de EE.UU. fue derribado sobre Irán. Según CNN (23 de junio de 2026, con cuatro fuentes), el piloto describió en sus debriefings una formación de drones iraníes que se movía como una sola unidad con forma de «medusa»: drones mayores arriba y menores debajo, como tentáculos. El piloto fue rescatado en horas y el oficial de sistemas de armas evadió la captura más de un día. El relato abrió un debate en inteligencia entre un enjambre iraní más avanzado de lo estimado y un UAP; el piloto sufrió una conmoción en el derribo, y algunos analistas cuestionan su fiabilidad.",
-  "summary_en": "In April 2026, during Operation Epic Fury, a U.S. F-15E Strike Eagle was shot down over Iran. According to CNN (June 23, 2026, citing four sources), the pilot described in his debriefings a formation of Iranian drones moving as a single unit in a 'jellyfish' shape: larger drones above and smaller ones below like tentacles. The pilot was rescued within hours and the weapons systems officer evaded capture for more than a day. The account sparked debate in the intelligence community between a more advanced Iranian drone swarm than assessed and a UAP; the pilot was concussed in the crash, and some analysts question his reliability.",
+  "summary": "En abril de 2026, durante la operación Epic Fury, un caza F-15E de EE. UU. fue derribado sobre Irán. Según cuatro fuentes citadas por CNN el 23 de junio, el piloto contó al ser interrogado que vio una formación de drones iraníes que se movía como una sola unidad con forma de «medusa»: drones mayores arriba y menores debajo, como tentáculos. El piloto fue rescatado en horas y el oficial de sistemas de armas evadió la captura más de un día. En inteligencia se debatió si era un enjambre iraní más avanzado de lo estimado o un fenómeno sin identificar; el piloto sufrió una conmoción en el derribo y algunos analistas dudan de su relato.",
+  "summary_en": "In April 2026, during Operation Epic Fury, a U.S. F-15E fighter was shot down over Iran. According to four sources cited by CNN on 23 June, the pilot said in his debriefings that he had seen a formation of Iranian drones moving as a single unit in the shape of a “jellyfish”: larger drones on top and smaller ones below like tentacles. The pilot was rescued within hours, and the weapons systems officer evaded capture for more than a day. Analysts debated whether it was an Iranian drone swarm more advanced than assessed or an unidentified phenomenon; the pilot was concussed in the shootdown, and some analysts doubt his account.",
   "patterns": [
     "8s"
   ],

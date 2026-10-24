@@ -4,8 +4,8 @@
   "pursueReleases": [
     4
   ],
-  "name": "Pantex · objeto no identificado sobre la planta nuclear (2015)",
-  "name_en": "Pantex · unidentified object over the nuclear plant (2015)",
+  "name": "Pantex · un objeto sin identificar sobrevuela la planta nuclear",
+  "name_en": "Pantex · an unidentified object flies over the nuclear plant",
   "year_start": 2015,
   "country": "US",
   "country_name": "Estados Unidos",
@@ -19,8 +19,8 @@
   "tier": "S",
   "epistemicStatus": "documented",
   "probability": 34,
-  "summary": "El 1 de septiembre de 2015, el radar de vigilancia terrestre (GSR) de la planta Pantex, la principal instalación de ensamblaje de armas nucleares de EE.UU. (Amarillo, Texas), detectó un objeto no identificado al oeste, volando hacia el norte a 10–15 mph. La Fuerza Protectora activó el plan antidrones, aseguró las puertas y lo persiguió en vehículo. Con binoculares no vieron propulsión ni oyeron sonido; el objeto (un «diamante» de unos 4 pies, que aceleró y cambió de rumbo al ser seguido) fue rastreado por la cámara CROWS de un Bearcat y filmado desde la torre GSR. El video fue a Sandia y la evidencia al FBI. Informe desclasificado en 2026.",
-  "summary_en": "On 1 September 2015, the Ground Surveillance Radar (GSR) at the Pantex Plant, the primary U.S. nuclear-weapons assembly facility (Amarillo, Texas), detected an unidentified object to the west, flying north at 10–15 mph. The Protective Force activated the drone response plan, secured the gates and pursued it by vehicle. Through binoculars they saw no propulsion and heard no sound; the object (a 'diamond' of about 4 ft, which sped up and changed course when followed) was tracked by a Bearcat's CROWS camera and filmed from the GSR tower. The video went to Sandia and the evidence to the FBI. Report declassified in 2026.",
+  "summary": "El 1 de septiembre de 2015, el radar de vigilancia terrestre de la planta Pantex (Amarillo, Texas), la principal instalación de montaje de armas nucleares de EE. UU., detectó al oeste un objeto no identificado que volaba hacia el norte a 10-15 millas por hora. Los guardias activaron el plan contra drones, cerraron las puertas y lo persiguieron en vehículo. Con prismáticos no vieron propulsión ni oyeron sonido; el objeto, un «diamante» de unos 4 pies, aceleró y cambió de rumbo al ser seguido. Se filmó desde un blindado y desde la torre del radar; el vídeo fue al laboratorio Sandia y las pruebas al FBI. El informe se desclasificó en 2026.",
+  "summary_en": "On 1 September 2015, the ground surveillance radar at the Pantex Plant in Amarillo, Texas, the main U.S. nuclear-weapons assembly site, detected an unidentified object to the west flying north at 10–15 mph. Security officers activated the counter-drone plan, locked the gates and chased it by vehicle. Through binoculars they saw no means of propulsion and heard no sound; the object, a “diamond” about 4 feet tall, sped up and changed course as they followed. It was filmed from an armored vehicle and from the radar tower; the video went to Sandia laboratory and the evidence to the FBI. The report was declassified in 2026.",
   "patterns": [
     "8f",
     "8s"

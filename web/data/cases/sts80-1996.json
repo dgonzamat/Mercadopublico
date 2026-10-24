@@ -4,8 +4,8 @@
   "pursueReleases": [
     4
   ],
-  "name": "STS-80 · objeto no identificado en fotografía orbital (1996)",
-  "name_en": "STS-80 · unidentified object in orbital photography (1996)",
+  "name": "Columbia · el transbordador fotografía un objeto blanco en órbita",
+  "name_en": "Columbia · the space shuttle photographs a white object in orbit",
   "year_start": 1996,
   "country": "US",
   "country_name": "Estados Unidos / órbita terrestre baja",
@@ -13,15 +13,15 @@
   "location": {
     "lat": 28.6,
     "lng": -80.6,
-    "place": "Órbita terrestre baja · transbordador Columbia (STS-80), lanzado desde el Kennedy Space Center, Florida",
-    "place_en": "Low Earth orbit · Space Shuttle Columbia (STS-80), launched from Kennedy Space Center, Florida"
+    "place": "Órbita terrestre baja, transbordador Columbia",
+    "place_en": "Low Earth orbit, Space Shuttle Columbia"
   },
   "tier": "A",
   "epistemicStatus": "documented",
   "mundanoType": "misid",
   "probability": 37,
-  "summary": "Durante la misión STS-80 del transbordador Columbia, del 19 de noviembre al 7 de diciembre de 1996, la fotografía de observación terrestre captó un pequeño objeto blanco y alargado, visible sobre el negro del espacio junto al limbo iluminado de la Tierra y, en otra toma, sobre las nubes. La NASA catalogó tres fotogramas como «objeto no identificado» (NASA-UAP-D030/031/032), desclasificados en 2026 por la AARO. Son fotos de una sola cámara, sin radar ni datos de distancia: la explicación propuesta es un fragmento cercano al orbitador iluminado por el Sol, cuya escala y distancia no pueden juzgarse en una imagen monocular.",
-  "summary_en": "During Space Shuttle Columbia's STS-80 mission, from 19 November to 7 December 1996, Earth-observation photography captured a small, elongated white object, seen against the black of space next to the Earth's sunlit limb and, in another frame, against the clouds. NASA cataloged three frames as 'unidentified object' images (NASA-UAP-D030/031/032), declassified in 2026 by AARO. They are single-camera photos, with no radar or ranging data: the explanation proposed is a fragment near the orbiter lit by the Sun, whose scale and distance cannot be judged from a monocular image.",
+  "summary": "Durante la misión STS-80 del transbordador Columbia, del 19 de noviembre al 7 de diciembre de 1996, las fotos de observación de la Tierra captaron un objeto pequeño, blanco y alargado, sobre el negro del espacio junto al borde iluminado de la Tierra y, en otra toma, sobre las nubes. La NASA catalogó tres fotogramas como «objeto no identificado», que se desclasificaron en 2026. Son fotos de una sola cámara, sin radar ni datos de distancia; la explicación propuesta es un fragmento cercano al transbordador iluminado por el sol, cuyo tamaño y distancia no pueden juzgarse en una sola imagen.",
+  "summary_en": "During Space Shuttle Columbia’s STS-80 mission, from 19 November to 7 December 1996, Earth-observation photos caught a small, white, elongated object against the black of space beside the Earth’s sunlit edge and, in another frame, against the clouds. NASA cataloged three frames as “unidentified object” images, which were declassified in 2026. They come from a single camera, with no radar or range data; the proposed explanation is a fragment near the shuttle lit by the sun, whose size and distance cannot be judged from a single image.",
   "patterns": [],
   "category": "incident",
   "posterior": {

@@ -1,8 +1,8 @@
 {
   "id": "ellsworth-afb-1953",
   "num": 311,
-  "name": "Ellsworth AFB · el «mejor reporte» de Blue Book",
-  "name_en": "Ellsworth AFB · Blue Book's 'best report'",
+  "name": "Ellsworth · dos cazas salen tras una luz que seguía el radar",
+  "name_en": "Ellsworth · two fighters go after a light tracked on radar",
   "year_start": 1953,
   "country": "US",
   "country_name": "Estados Unidos",
@@ -10,15 +10,15 @@
   "location": {
     "lat": 44.145,
     "lng": -103.104,
-    "place": "Ellsworth AFB, Rapid City, Dakota del Sur",
-    "place_en": "Ellsworth AFB, Rapid City, South Dakota"
+    "place": "Base aérea de Ellsworth, Rapid City, Dakota del Sur",
+    "place_en": "Ellsworth Air Force Base, Rapid City, South Dakota"
   },
   "tier": "S",
   "mundanoType": "misid",
   "epistemicStatus": "documented",
   "probability": 37,
-  "summary": "La noche del 5 de agosto de 1953, una observadora del Ground Observer Corps en Blackhawk (Dakota del Sur) reportó una luz; el radar de Ellsworth AFB registró ecos y guió hacia ellos a dos F-84. El primer piloto solo vio una luz plateada; el segundo persiguió unos cinco minutos, hasta unas 80 millas al norte, una luz que cambiaba de blanco a verde, mientras el radar de tierra mostraba un eco por delante. El informe de Ruppelt lo dejó «sin resolver», pero en enero de 1954 Hynek y el comandante del escuadrón de radar lo descartaron, y la tarjeta quedó corregida a mano a Capella (visual) y propagación anómala (radar).",
-  "summary_en": "On the night of August 5, 1953, a Ground Observer Corps volunteer at Blackhawk, South Dakota, reported a light; the Ellsworth AFB radar showed echoes and vectored two F-84s toward them. The first pilot saw only a silver light; the second chased a light that changed from white to green for about five minutes, to some 80 miles north, while ground radar showed an echo ahead. Ruppelt's report carried it as 'Unsolved', but in January 1954 Hynek and the radar squadron commander discounted it, and the record card was corrected by hand to Capella (visual) and anomalous propagation (radar).",
+  "summary": "La noche del 5 de agosto de 1953, una voluntaria de la red civil de observadores aéreos en Blackhawk avisó de una luz; el radar de la base aérea de Ellsworth registró contactos y guió hacia ellos a dos cazas. El primer piloto solo vio una luz plateada; el segundo persiguió unos cinco minutos, hasta unas 80 millas al norte, una luz que pasaba de blanco a verde, mientras el radar de tierra mostraba algo por delante. El informe de Ruppelt lo dejó «sin resolver», pero en enero de 1954 el astrónomo Hynek y el jefe del escuadrón de radar lo descartaron, y su registro se corrigió a mano: Capella para la luz y propagación anómala para el radar.",
+  "summary_en": "On the night of 5 August 1953, a volunteer with the civilian Ground Observer Corps at Blackhawk reported a light; the radar at Ellsworth Air Force Base picked up contacts and guided two fighters toward them. The first pilot saw only a silver light; the second chased a light that changed from white to green for about five minutes, to some 80 miles north, while ground radar showed something ahead of him. Ruppelt’s report carried it as “unsolved,” but in January 1954 astronomer Hynek and the radar squadron commander discounted it, and the record card was corrected by hand: Capella for the light, anomalous propagation for the radar.",
   "patterns": [
     "8e"
   ],

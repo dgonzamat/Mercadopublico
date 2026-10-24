@@ -1,8 +1,8 @@
 {
   "id": "france-wave-1990",
   "num": 319,
-  "name": "Oleada francesa del 5 de noviembre de 1990",
-  "name_en": "The 5 November 1990 French Wave",
+  "name": "Francia · miles de personas ven un triángulo de luz en el cielo",
+  "name_en": "France · thousands see a triangle of light cross the sky",
   "year_start": 1990,
   "country": "FR",
   "country_name": "Francia",
@@ -10,15 +10,15 @@
   "location": {
     "lat": 47.08,
     "lng": 2.4,
-    "place": "Francia · trayectoria SO→NE",
-    "place_en": "France · SW→NE track"
+    "place": "Francia, de un extremo a otro del país",
+    "place_en": "Across France"
   },
   "tier": "S",
   "mundanoType": "misid",
   "epistemicStatus": "documented",
   "probability": 4,
-  "summary": "Oleada OVNI a escala nacional en Francia: hacia las 19:00 del 5 de noviembre de 1990, miles de testigos vieron un gran «triángulo» luminoso y silencioso cruzar el país de suroeste a noreste. Era la reentrada de la tercera etapa del cohete Protón que había lanzado el satélite Gorizont 21 dos días antes: un télex de la NASA la situó sobre el este de Francia a las 18:06 UT, un rastreador aficionado la había identificado antes y el SEPRA la anunció el 9 de noviembre.",
-  "summary_en": "A nationwide UFO wave in France: at around 19:00 on 5 November 1990, thousands of witnesses saw a large, luminous, silent 'triangle' cross the country from southwest to northeast. It was the re-entry of the third stage of the Proton rocket that had launched the Gorizont 21 satellite two days earlier: a NASA telex placed it over eastern France at 18:06 UT, an amateur tracker had identified it even sooner, and SEPRA announced it on 9 November.",
+  "summary": "Hacia las 19:00 del 5 de noviembre de 1990, miles de personas en toda Francia vieron un gran «triángulo» luminoso y silencioso cruzar el país de suroeste a noreste. Era la reentrada de la tercera etapa del cohete Protón que había lanzado el satélite Gorizont 21 dos días antes: un télex de la NASA la situó sobre el este de Francia a las 18:06 en tiempo universal, un rastreador aficionado ya la había identificado y el servicio oficial francés que estudiaba estos fenómenos (SEPRA) la anunció el 9 de noviembre.",
+  "summary_en": "At around 7 pm on 5 November 1990, thousands of people across France saw a large, luminous, silent “triangle” cross the country from southwest to northeast. It was the re-entry of the third stage of the Proton rocket that had launched the Gorizont 21 satellite two days earlier: a NASA telex placed it over eastern France at 18:06 UT, an amateur tracker had already identified it, and SEPRA, the French government office that studied such phenomena, announced it on 9 November.",
   "patterns": [
     "8l",
     "8k"

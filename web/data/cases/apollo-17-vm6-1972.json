@@ -4,8 +4,8 @@
   "pursueReleases": [
     1
   ],
-  "name": "Apollo 17 · formación triangular VM6 (PURSUE)",
-  "name_en": "Apollo 17 · VM6 triangular formation (PURSUE)",
+  "name": "Apolo 17 · tres puntos de luz en triángulo en una foto de la Luna",
+  "name_en": "Apollo 17 · three points of light in a triangle on a Moon photo",
   "year_start": 1972,
   "country": "US",
   "country_name": "Estados Unidos / espacio cislunar",
@@ -13,8 +13,8 @@
   "location": {
     "lat": 29.56,
     "lng": -95.09,
-    "place": "NASA · archivo fotográfico Apollo 17 (superficie lunar, Taurus-Littrow)",
-    "place_en": "NASA · Apollo 17 photographic archive (lunar surface, Taurus-Littrow)"
+    "place": "Taurus-Littrow, superficie de la Luna",
+    "place_en": "Taurus-Littrow, surface of the Moon"
   },
   "tier": "A",
   "mundanoType": "instrumento",
@@ -29,8 +29,8 @@
     "nohumano_abierto": 0.08,
     "indet": 0.2
   },
-  "summary": "La placa VM6 de Apollo 17 (diciembre de 1972) muestra, al ampliar el cuadrante inferior derecho del cielo lunar, tres puntos luminosos en triángulo regular. Circulaba desde hacía décadas en catálogos amateur; en 2026, dentro de PURSUE, el Departamento de Guerra abrió el caso NASA-UAP-VM6, y un análisis preliminar del Gobierno, tras obtener el film original para un análisis conjunto con la NASA, la describió como «potencialmente el resultado de un objeto físico en la escena». La lectura escéptica histórica es un artefacto fotográfico (defecto de la emulsión, destello de lente o reflejo en la ventanilla), que ese análisis pone en duda.",
-  "summary_en": "The Apollo 17 VM6 plate (December 1972) shows, when the lower-right quadrant of the lunar sky is magnified, three luminous dots in a regular triangular formation. It had circulated for decades in amateur catalogs; in 2026, within PURSUE, the Department of War opened case NASA-UAP-VM6, and a preliminary government analysis, having obtained the original film for a joint analysis with NASA, described it as 'potentially the result of a physical object in the scene'. The historical skeptical reading is a photographic artifact (emulsion error, lens flare or a reflection on the window), which that analysis calls into question.",
+  "summary": "En una placa fotográfica del Apolo 17, de diciembre de 1972, al ampliar el cuadrante inferior derecho del cielo sobre el horizonte lunar aparecen tres puntos luminosos en triángulo regular. Circuló durante décadas entre aficionados. En mayo de 2026, el Departamento de Guerra de EE. UU. la publicó en su archivo de ovnis, abrió un caso y escribió que un análisis preliminar la consideraba «potencialmente el resultado de un objeto físico en la escena»; el Gobierno obtuvo el film original para estudiarlo con la NASA. La lectura escéptica, un defecto de la emulsión, un destello de la lente o un reflejo en la ventanilla, queda así en duda.",
+  "summary_en": "On an Apollo 17 photographic plate from December 1972, magnifying the lower-right quadrant of the sky above the lunar horizon reveals three points of light in a regular triangle. The photo had circulated for decades in amateur catalogs. In May 2026, the U.S. Department of War published it in its UFO archive, opened a case on it and wrote that a preliminary analysis found it “potentially the result of a physical object in the scene”; the government obtained the original film to study it with NASA. The long-standing skeptical reading, an emulsion flaw, lens flare or a reflection in the window, is thus called into question.",
   "documents": [
     {
       "role": "prueba",

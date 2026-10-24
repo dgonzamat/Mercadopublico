@@ -1,8 +1,8 @@
 {
   "id": "molebka-m-triangle-1983",
   "num": 266,
-  "name": "Zona de Molebka · M-Triangle",
-  "name_en": "Molebka Zone · M-Triangle",
+  "name": "Zona de Molebka · un geólogo ve una esfera de luz y una huella",
+  "name_en": "Molebka Zone · a geologist sees a glowing sphere and finds a ring",
   "year_start": 1983,
   "country": "RU",
   "country_name": "Rusia",
@@ -10,15 +10,15 @@
   "location": {
     "lat": 57.5,
     "lng": 57.6,
-    "place": "Molebka, óblast de Perm, Rusia (orilla del río Sylva)",
-    "place_en": "Molebka, Perm Oblast, Russia (Sylva River bank)"
+    "place": "Molebka, junto al río Sylva, óblast de Perm (Rusia)",
+    "place_en": "Molebka, on the Sylva River, Perm Oblast, Russia"
   },
   "tier": "B",
   "mundanoType": "sin_propuesta",
   "epistemicStatus": "documented",
   "probability": 43,
-  "summary": "La 'zona anómala de Molebka' o 'Triángulo de Perm', en los Urales rusos, se hizo famosa tras 1983, cuando el geólogo Emil Bachurin dijo ver una esfera luminosa y hallar en la nieve una huella circular de ~62 m. En los años 80-90 atrajo expediciones que reportaban luces, fallos de equipos y 'mirages'. Es la zona anómala más célebre de la antigua URSS, sobre un lugar ya sagrado para los mansi.",
-  "summary_en": "The 'Molebka anomalous zone' or 'Perm Triangle', in the Russian Urals, became famous after 1983, when geologist Emil Bachurin said he saw a luminous sphere and found a ~62 m circular print in the snow. In the 1980s-90s it drew expeditions reporting lights, equipment failures and 'mirages'. It is the most famous anomalous zone of the former USSR, on a site already sacred to the Mansi.",
+  "summary": "La «zona anómala de Molebka», o «Triángulo de Perm», junto al río Sylva en los Urales rusos, se hizo famosa a partir de 1983, cuando el geólogo Emil Bachurin dijo haber visto una esfera luminosa elevarse sobre el bosque y haber hallado en la nieve una marca circular de unos 62 metros; otra versión sitúa la huella en un campo arado. En 1984 dijo ver una gran bola púrpura. A finales de los años ochenta llegaron expediciones que contaban luces, espejismos, fallos de cámaras y equipos y malestares. El lugar ya era sagrado para el pueblo mansi y hoy vive en parte del turismo de lo anómalo.",
+  "summary_en": "The “Molebka anomalous zone,” or “Perm Triangle,” on the Sylva River in Russia’s Urals, became famous from 1983, when geologist Emil Bachurin said he had seen a glowing sphere rise above the forest and found a circular mark about 62 meters across in the snow; another version puts the mark in a ploughed field. In 1984 he said he saw a large purple ball. In the late 1980s expeditions arrived reporting lights, mirages, camera and equipment failures and physical discomfort. The site was already sacred to the Mansi people, and today it lives partly off paranormal tourism.",
   "patterns": [
     "8g"
   ],
