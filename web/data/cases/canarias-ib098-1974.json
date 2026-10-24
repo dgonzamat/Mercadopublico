@@ -1,8 +1,8 @@
 {
   "id": "canarias-ib098-1974",
   "num": 410,
-  "name": "Canarias · el Fokker IB-098 y los ecos del radar de Gando (1974)",
-  "name_en": "Canary Islands · the Fokker IB-098 and the Gando radar echoes (1974)",
+  "name": "Canarias · pilotos de Iberia ven una luz blanca muy intensa",
+  "name_en": "Canary Islands · Iberia pilots see an intense white light",
   "year_start": 1974,
   "country": "ES",
   "country_name": "España",
@@ -18,8 +18,8 @@
   "objectDetail": "sensor_radar",
   "epistemicStatus": "documented",
   "probability": 55,
-  "summary": "La noche del 24 de noviembre de 1974, los pilotos del vuelo IB-098 de Iberia (Tenerife-Las Palmas) vieron una luz blanca potente acercarse de frente y quedarse más de un minuto junto a su punta de ala. Un teniente coronel del Ejército del Aire vio una luz parecida desde Gran Canaria. El radar del Escuadrón de Alerta y Control n.º 8 no la captó, pero luego siguió un eco que cruzó 35 millas en cuatro minutos y otro que pareció detenerse junto a un avión que aterrizaba en Tenerife. En 1975 el juez instructor dio por no identificados los tres episodios; la revisión de 1994 no halló pruebas de un objeto físico y señaló posibles ecos anómalos.",
-  "summary_en": "On the night of 24 November 1974 the pilots of Iberia flight IB-098 (Tenerife-Las Palmas) saw a powerful white light approach head-on and hold station off their wingtip for more than a minute. A Spanish Air Force lieutenant colonel saw a similar light from Gran Canaria. The radar of No. 8 Air Control and Warning Squadron did not detect it, but then tracked an echo that covered 35 miles in four minutes and another that seemed to stop beside an aircraft landing on Tenerife. In 1975 the investigating judge deemed all three episodes unidentified; the 1994 review found no evidence of a physical object and pointed to possible anomalous echoes.",
+  "summary": "La noche del 24 de noviembre de 1974, los pilotos de un vuelo de Iberia entre Tenerife y Las Palmas vieron una intensa luz blanca que se les acercó de frente y quedó luego a su derecha, a diez o quince millas, más de un minuto. Un teniente coronel del Ejército del Aire vio desde Gran Canaria una luz parecida. El radar de Gando no la captó, pero siguió una señal que cruzó 35 millas en unos cuatro minutos y otra que pareció detenerse junto a un avión que aterrizaba en Tenerife. En 1975 el juez dio por no identificados los tres episodios; la revisión de 1994 no halló pruebas de un objeto físico y apuntó a posibles reflejos anómalos del radar.",
+  "summary_en": "On the night of 24 November 1974 the pilots of an Iberia flight from Tenerife to Las Palmas saw an intense white light approach head-on and then sit off to their right, ten to fifteen miles away, for more than a minute. An Air Force lieutenant colonel saw a similar light from Gran Canaria. The Gando radar did not detect it, but later tracked a signal that covered 35 miles in about four minutes and another that seemed to stop beside an aircraft landing on Tenerife. In 1975 the judge deemed all three episodes unidentified; the 1994 review found no evidence of a physical object and pointed to possible anomalous radar returns.",
   "patterns": [
     "8g"
   ],

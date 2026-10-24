@@ -1,8 +1,8 @@
 {
   "id": "colorado-law-enforcement-2023",
   "num": 394,
-  "name": "Colorado 2023 · el orbe que filmó un policía",
-  "name_en": "Colorado 2023 · the orb a police officer filmed",
+  "name": "Colorado · un policía graba con su teléfono una luz de colores",
+  "name_en": "Colorado · a police officer films a flashing light on his phone",
   "year_start": 2023,
   "country": "US",
   "country_name": "Estados Unidos",
@@ -10,8 +10,8 @@
   "location": {
     "lat": 39.06,
     "lng": -105.55,
-    "place": "Colorado, carretera interestatal (marcador de milla redactado)",
-    "place_en": "Colorado, interstate highway (mile marker redacted)"
+    "place": "Una autopista interestatal de Colorado",
+    "place_en": "An interstate highway in Colorado"
   },
   "tier": "A",
   "mundanoType": "instrumento",
@@ -20,8 +20,8 @@
   "pursueReleases": [
     6
   ],
-  "summary": "En octubre de 2023, un agente de policía local de Colorado grabó con su teléfono cuatro clips de una luz que describió como silenciosa y con destellos rojos, azules y verdes, y elevó el reporte a la AARO. PURSUE lo publicó el 18 de septiembre de 2026 en una serie nueva (LLE, por local law enforcement), cuyo origen es un policía de calle. En su narración en directo dice ver «otro orbe» a unos 300 pies, haber comprobado el radar sin hallar aeronaves y llevar quince minutos viéndolo inmóvil. La AARO advierte que el autoenfoque de un teléfono puede distorsionar la forma y el movimiento aparentes de un objeto lejano a mucho aumento.",
-  "summary_en": "In October 2023 a local law-enforcement officer in Colorado filmed four clips on his phone of a light he described as silent with red, blue and green flashes, and escalated the report to AARO. PURSUE published it on 18 September 2026 under a new series (LLE, for local law enforcement), whose origin is a patrol officer. Narrating live, he says he sees 'another orb' some 300 feet up, that he checked radar and found no aircraft, and that it had been stationary for fifteen minutes. AARO warns that a phone's autofocus may distort the apparent shape and motion of a distant subject at high magnification.",
+  "summary": "En octubre de 2023, un agente de una policía local de Colorado grabó con su teléfono cuatro videos de una luz que describió como silenciosa y con destellos rojos, azules y verdes, y pasó el aviso a la oficina del Pentágono que investiga estos fenómenos (AARO). En su narración en directo dice ver «otro orbe» a unos 300 pies del suelo, haber comprobado el radar sin hallar aeronaves y que lleva quince minutos inmóvil. El Departamento de Guerra lo publicó el 18 de septiembre de 2026. La AARO advierte que el autoenfoque de un teléfono puede distorsionar la forma y el movimiento aparentes de un objeto lejano a mucho aumento.",
+  "summary_en": "In October 2023 a local police officer in Colorado used his phone to film four videos of a light he described as silent and flashing red, blue and green, and passed the report to the Pentagon office that investigates these phenomena (AARO). Narrating live, he says he sees “another orb” some 300 feet off the ground, that he checked radar and found no aircraft, and that it has been stationary for fifteen minutes. The Department of War released it on 18 September 2026. AARO warns that a phone’s autofocus can distort the apparent shape and motion of a distant subject at high magnification.",
   "patterns": [
     "8h",
     "8n"

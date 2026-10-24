@@ -1,8 +1,8 @@
 {
   "id": "tunis-firefall-1969",
   "num": 421,
-  "name": "Túnez · la «bola de fuego» vista por la embajada de EE.UU. (1969)",
-  "name_en": "Tunis · the \"firefall\" seen by the US embassy (1969)",
+  "name": "Túnez · vecinos y diplomáticos ven nubes verdes en el cielo",
+  "name_en": "Tunis · residents and U.S. diplomats see green clouds in the sky",
   "year_start": 1969,
   "country": "TN",
   "country_name": "Túnez",
@@ -25,8 +25,8 @@
     "nohumano_abierto": 0.02,
     "indet": 0.11
   },
-  "summary": "La noche del 13 de julio de 1969, muchos testigos en Túnez, entre ellos funcionarios de la embajada de EE.UU., vieron nubes luminosas verdosas hacia el norte. La embajada pidió una explicación al Smithsonian. Esa misma noche, a las 19:41 GMT, la ESRO lanzó un cohete sonda Skylark desde Cerdeña, justo en esa dirección.",
-  "summary_en": "On the night of 13 July 1969, many witnesses in Tunis, US embassy officials among them, saw greenish luminous clouds to the north. The embassy asked the Smithsonian for an explanation. That same night, at 19:41 GMT, ESRO launched a Skylark sounding rocket from Sardinia, in exactly that direction.",
+  "summary": "La noche del 13 de julio de 1969, muchas personas en Túnez, entre ellas funcionarios de la embajada de EE. UU., vieron hacia el norte dos nubes luminosas verdosas; una parecía una estrella que «explotó» y se extendió. Al día siguiente, la embajada lo comunicó a Washington en un telegrama y pidió una explicación al Observatorio Smithsonian; la colección que guarda el telegrama no incluye respuesta. Esa noche, a las 19:41 GMT, la Organización Europea de Investigación Espacial lanzó un cohete sonda Skylark desde Cerdeña, que según un cálculo de esta ficha quedaba en esa dirección; ninguna fuente publicada propone esa explicación.",
+  "summary_en": "On the night of 13 July 1969, many people in Tunis, U.S. embassy officials among them, saw two greenish luminous clouds to the north; one looked like a star that “exploded” and spread out. The next day the embassy reported it to Washington in a telegram and asked the Smithsonian Observatory for an explanation; the collection that holds the telegram includes no reply. That night, at 19:41 GMT, the European Space Research Organisation launched a Skylark sounding rocket from Sardinia, which by this entry's own calculation lay in that direction; no published source proposes that explanation.",
   "patterns": [
     "8e"
   ],

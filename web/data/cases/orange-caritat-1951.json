@@ -1,8 +1,8 @@
 {
   "id": "orange-caritat-1951",
   "num": 403,
-  "name": "Orange-Caritat · el objeto plateado perseguido por dos Vampire",
-  "name_en": "Orange-Caritat · the silver object chased by two Vampires",
+  "name": "Orange-Caritat · dos pilotos de caza persiguen un objeto plateado",
+  "name_en": "Orange-Caritat · two fighter pilots chase a silver object",
   "year_start": 1951,
   "country": "FR",
   "country_name": "Francia",
@@ -10,15 +10,15 @@
   "location": {
     "lat": 44.14,
     "lng": 4.8667,
-    "place": "Base aérea 115 de Orange-Caritat (Vaucluse) y cielo de los Altos Alpes",
-    "place_en": "Orange-Caritat Air Base 115 (Vaucluse) and the sky over the Hautes-Alpes"
+    "place": "Base aérea de Orange-Caritat (Vaucluse) y cielo de los Altos Alpes",
+    "place_en": "Orange-Caritat air base (Vaucluse) and the Hautes-Alpes sky"
   },
   "tier": "A",
   "mundanoType": "sin_propuesta",
   "epistemicStatus": "documented",
   "probability": 45,
-  "summary": "El 15 de junio de 1951, hacia las 11:30, dos pilotos de caza de la 5.ª Escuadra, en un vuelo de entrenamiento con Vampire desde la base de Orange-Caritat, vieron un objeto plateado, muy brillante y aparentemente inmóvil hacia el macizo del Pelvoux. Al acercarse, se volvió oblongo y se alejó al este subiendo, más rápido que sus aviones, hasta perderse tras seis minutos de persecución. El coronel de la base informó al mando con los relatos de ambos pilotos. El GEIPAN lo clasifica «D»: no identificado.",
-  "summary_en": "On 15 June 1951, at about 11:30, two fighter pilots of the 5th Fighter Wing, on a training flight in Vampires from Orange-Caritat air base, saw a silver, very bright and apparently motionless object towards the Pelvoux massif. As they closed in, it turned oblong and moved off to the east while climbing, faster than their aircraft, until it was lost after a six-minute chase. The base's colonel reported to command with both pilots' accounts. GEIPAN classes it 'D': unidentified.",
+  "summary": "El 15 de junio de 1951, hacia las 11:30, dos pilotos de caza de la 5.ª Escuadra, en un vuelo de entrenamiento con cazas Vampire desde la base de Orange-Caritat, vieron un objeto plateado, muy brillante y aparentemente inmóvil hacia el macizo del Pelvoux. Al acercarse, se volvió oblongo y se alejó al este subiendo, más rápido que sus aviones, hasta perderse tras seis minutos de persecución. El coronel de la base informó al mando con los relatos de ambos pilotos. El servicio oficial francés que estudia estos fenómenos (GEIPAN) lo clasifica como no identificado.",
+  "summary_en": "On 15 June 1951, at about 11:30, two fighter pilots of the 5th Fighter Wing, on a training flight in Vampire jets from Orange-Caritat air base, saw a silver, very bright and apparently motionless object towards the Pelvoux massif. As they closed in, it turned oblong and moved off to the east while climbing, faster than their aircraft, until it was lost after a six-minute chase. The base's colonel reported to command with both pilots' accounts. The official French service that studies these phenomena (GEIPAN) classes it as unidentified.",
   "patterns": [
     "8h"
   ],

@@ -1,8 +1,8 @@
 {
   "id": "muroc-1947",
   "num": 433,
-  "name": "Discos sobre Muroc Army Air Field",
-  "name_en": "Discs over Muroc Army Air Field",
+  "name": "Muroc · militares ven objetos plateados sobre la base de pruebas",
+  "name_en": "Muroc · airmen see silver objects over the test base",
   "year_start": 1947,
   "country": "US",
   "country_name": "Estados Unidos",
@@ -10,7 +10,7 @@
   "location": {
     "lat": 34.905,
     "lng": -117.884,
-    "place": "Muroc Army Air Field (hoy Edwards AFB), California",
+    "place": "Base aérea de Muroc (hoy Edwards), California",
     "place_en": "Muroc Army Air Field (now Edwards AFB), California"
   },
   "tier": "A",
@@ -27,7 +27,7 @@
     "nohumano_abierto": 0.04,
     "indet": 0.27
   },
-  "summary": "El 8 de julio de 1947, en la base de pruebas de Muroc, el teniente McHenry y otros tres testigos vieron dos objetos plateados y luego un tercero que daba vueltas cerradas; el capitán Stapp vio caer un objeto ovalado que creyó fabricado por el hombre, y el mayor Shoop, un objeto metálico que oscilaba durante ocho minutos. Project Grudge atribuyó en 1949 el primer avistamiento a globos de investigación, aunque el laboratorio de globos de la Fuerza Aérea juzgó muy improbable, sin descartarlo, que su único lanzamiento candidato llegara hasta allí.",
+  "summary": "El 8 de julio de 1947, en la base de pruebas de Muroc, el teniente McHenry y otros tres testigos vieron dos objetos plateados y luego un tercero que daba vueltas cerradas; el capitán Stapp vio caer un objeto ovalado que creyó fabricado por el hombre, y el mayor Shoop, un objeto metálico que oscilaba durante ocho minutos. El proyecto Grudge, de la Fuerza Aérea, atribuyó en 1949 el primer avistamiento a globos de investigación, aunque el laboratorio de globos de la Fuerza Aérea juzgó muy improbable, sin descartarlo, que su único lanzamiento candidato llegara hasta allí.",
   "summary_en": "On July 8, 1947, at the Muroc test base, Lieutenant McHenry and three other witnesses saw two silver objects and then a third one circling tightly; Captain Stapp saw an oval object fall that he believed was man-made, and Major Shoop a metallic object that oscillated for eight minutes. In 1949 Project Grudge attributed the first sighting to research balloons, although the Air Force's balloon laboratory judged it very unlikely, without ruling it out, that its only candidate launch reached that far.",
   "patterns": [
     "8h"

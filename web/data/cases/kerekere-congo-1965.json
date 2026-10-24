@@ -4,8 +4,8 @@
   "pursueReleases": [
     7
   ],
-  "name": "Kerekere · el fragmento del objeto que explotó sobre el Congo (1965)",
-  "name_en": "Kerekere · the fragment of the object that exploded over the Congo (1965)",
+  "name": "Kerekere · un objeto volador explota y cae en el Congo",
+  "name_en": "Kerekere · a flying object explodes and falls in the Congo",
   "year_start": 1965,
   "country": "CD",
   "country_name": "República Democrática del Congo",
@@ -28,8 +28,8 @@
     "nohumano_abierto": 0.01,
     "indet": 0.14
   },
-  "summary": "Entre el 10 y el 15 de octubre de 1965, un objeto volador no identificado explotó y cayó cerca de Kerekere, en el noreste del Congo. Analistas militares de EE.UU. estudiaron un fragmento de 41 gramos: era la pieza de un motor o generador, fundida a más de 1.370 °C, cuyo país de origen no se pudo determinar.",
-  "summary_en": "Between 10 and 15 October 1965, an unidentified flying object exploded and fell near Kerekere, in north-eastern Congo. US military analysts examined a 41-gram fragment: it was part of a motor or generator, melted at more than 1,370 °C, whose country of origin could not be determined.",
+  "summary": "Entre el 10 y el 15 de octubre de 1965, un objeto volador no identificado que iba de este a oeste «explotó y cayó a tierra» cerca de Kerekere, en el noreste de la actual República Democrática del Congo; el informe que lo cuenta admite que faltan detalles de la observación. Analistas militares de EE. UU. estudiaron un fragmento metálico de 41 gramos recuperado en el terreno: era parte de un motor o de un generador eléctrico, expuesta a más de 1.370 °C, y su país de origen no se pudo determinar. En esos días reentraron varios satélites grandes, pero sin la fecha ni la hora exactas no se puede saber si alguno pasó por allí.",
+  "summary_en": "At some point between 10 and 15 October 1965, an unidentified flying object travelling east to west “exploded and fell to earth” near Kerekere, in north-eastern present-day Democratic Republic of the Congo; the report that describes it admits that details of the sighting are lacking. U.S. military analysts examined a 41-gram metal fragment recovered at the site: it was part of an electric motor or generator, exposed to more than 1,370 °C, and its country of origin could not be determined. Several large satellites re-entered in those days, but without the exact date or time there is no way to know whether any passed over the area.",
   "patterns": [
     "8e"
   ],

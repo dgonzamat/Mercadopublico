@@ -1,8 +1,8 @@
 {
   "id": "luanda-tap-1966",
   "num": 420,
-  "name": "Luanda · el vuelo de TAP escoltado por dos luces (1966)",
-  "name_en": "Luanda · the TAP flight escorted by two lights (1966)",
+  "name": "Luanda · pasajeros y tripulación ven dos luces junto al avión",
+  "name_en": "Luanda · passengers and crew see two lights beside the plane",
   "year_start": 1966,
   "country": "AO",
   "country_name": "Angola",
@@ -25,8 +25,8 @@
     "nohumano_abierto": 0.05,
     "indet": 0.25
   },
-  "summary": "El 7 de diciembre de 1966, pasajeros y tripulación de un vuelo de TAP de Beira a Luanda vieron dos luces que acompañaron al avión durante unos veinte minutos; la torre no tenía tráfico en la zona. El caso se conoce por el aerograma A-53 del consulado de EE.UU. en Luanda, que acabó en la colección de documentos sobre ovnis de la NSA.",
-  "summary_en": "On 7 December 1966, passengers and crew of a TAP flight from Beira to Luanda saw two lights that accompanied the aircraft for about twenty minutes; the tower had no traffic in the area. The case is known through airgram A-53 from the US consulate in Luanda, which ended up in the NSA's collection of UFO documents.",
+  "summary": "El 7 de diciembre de 1966, a unos veinte minutos de Luanda, un pasajero de un vuelo de TAP procedente de Beira vio por la ventanilla lo que le parecieron dos objetos que seguían al avión. El comandante, que habló después de «dos luces al costado de mi avión», avisó a la torre, que no tenía tráfico en la zona; las luces desaparecieron cuando faltaba un minuto para aterrizar. TAP concluyó que no había razón para considerarlas prueba de objetos voladores. El caso se conoce por un informe del consulado de EE. UU. en Luanda que resumía la prensa local y que acabó en la colección de documentos sobre ovnis de la Agencia de Seguridad Nacional (NSA).",
+  "summary_en": "On 7 December 1966, about twenty minutes out of Luanda, a passenger on a TAP flight from Beira saw through the window what looked to him like two objects following the aircraft. The captain, who later spoke of “two lights alongside my aircraft”, called the tower, which had no traffic in the area; the lights vanished when the plane was a minute from landing. TAP concluded there was no reason to regard them as proof of flying objects. The case is known from a U.S. consulate report in Luanda that summarised the local press and ended up in the National Security Agency's (NSA) collection of UFO documents.",
   "patterns": [
     "8e"
   ],
