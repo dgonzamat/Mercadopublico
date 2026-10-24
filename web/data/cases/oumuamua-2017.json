@@ -86,6 +86,7 @@
     "indet": 0.19
   },
   "primaryDocument": {
+    "role": "contexto",
     "url": "https://commons.wikimedia.org/wiki/Special:FilePath/Artist%E2%80%99s_impression_of_the_interstellar_asteroid_%60Oumuamua.jpg?width=800",
     "alt": "Impresión artística de ESO del objeto interestelar ʻOumuamua.",
     "caption": "Impresión artística de ʻOumuamua, el primer objeto interestelar conocido que cruzó el Sistema Solar (2017), según el Observatorio Europeo Austral (ESO/M. Kornmesser).",

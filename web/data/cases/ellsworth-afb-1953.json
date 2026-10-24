@@ -72,6 +72,7 @@
   },
   "documents": [
     {
+      "role": "documento",
       "src": "/pursue/ellsworth-afb-1953-blue-book.pdf",
       "type": "pdf",
       "title": "Expediente de Blue Book de Rapid City–Blackhawk (agosto de 1953): tarjeta, informe T53-11156 y cartas de Atwell y Hynek, 8 págs.",
@@ -83,6 +84,7 @@
       "fallbackUrl": "https://archive.org/details/1953-08-6979324-RapidCity-Blackhawk-SoughDakotaArea"
     },
     {
+      "role": "contexto",
       "src": "/pursue/ellsworth-afb-1953-context.jpg",
       "type": "image",
       "title": "Contexto · Base Aérea de Ellsworth (Dakota del Sur)",

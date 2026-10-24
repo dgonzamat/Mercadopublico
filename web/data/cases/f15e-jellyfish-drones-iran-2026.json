@@ -79,6 +79,7 @@
   ],
   "documents": [
     {
+      "role": "documento",
       "src": "https://www.cnn.com/2026/06/23/politics/iran-drones-f-15-pilot-intelligence",
       "type": "link",
       "title": "CNN, «Exclusive: Downed US pilot reported seeing Iranian drones swarm in 'jellyfish' formation» (23 jun 2026)",
@@ -88,6 +89,7 @@
       "source": "CNN"
     },
     {
+      "role": "contexto",
       "src": "/pursue/f15e-jellyfish-drones-iran-2026-context.jpg",
       "type": "image",
       "title": "Contexto · un F-15 Strike Eagle de la USAF, del tipo derribado sobre Irán en 2026",

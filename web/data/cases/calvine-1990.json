@@ -75,6 +75,7 @@
   },
   "documents": [
     {
+      "role": "documento",
       "src": "/pursue/calvine-1990-defe24-1940.pdf",
       "type": "pdf",
       "title": "Expediente DEFE 24/1940: nota del incidente de Calvine, minuta del 14 de septiembre de 1990 y líneas para responder al Daily Record",
@@ -86,6 +87,7 @@
       "fallbackUrl": "https://discovery.nationalarchives.gov.uk/details/r/C11483085"
     },
     {
+      "role": "contexto",
       "src": "/pursue/calvine-1990-context.jpg",
       "type": "image",
       "title": "Contexto · Pitlochry (Perthshire, Escocia), cerca de donde se tomó la fotografía de Calvine",

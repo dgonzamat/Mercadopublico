@@ -35,6 +35,7 @@
   "category": "incident",
   "documents": [
     {
+      "role": "documento",
       "src": "/pursue/DOW-UAP-D158-Flying_Object_Report_Canada-1953.pdf",
       "type": "pdf",
       "title": "DOW-UAP-D158 — Informe de objetos voladores del 918.º Escuadrón de Control y Alerta Aérea, Prince George",

@@ -109,6 +109,7 @@
   },
   "documents": [
     {
+      "role": "documento",
       "src": "/pursue/mothman-1966-ntsb-har-71-1.pdf",
       "type": "pdf",
       "title": "NTSB-HAR-71-1 · el informe del colapso del Silver Bridge (extracto)",
@@ -120,6 +121,7 @@
       "fallbackUrl": "https://www.ntsb.gov/investigations/AccidentReports/Reports/HAR7101.pdf"
     },
     {
+      "role": "documento",
       "src": "https://archive.org/details/the-flying-saucer-review-ultimate-collection",
       "type": "link",
       "title": "John A. Keel, «West Virginia's Enigmatic \"Bird\"» · Flying Saucer Review 14(4), 1968",
@@ -129,6 +131,7 @@
       "source": "Flying Saucer Review 14(4), julio-agosto de 1968 (archive.org)"
     },
     {
+      "role": "contexto",
       "src": "/pursue/mothman-1966-context.jpg",
       "type": "image",
       "title": "Contexto · la estatua del Mothman en Point Pleasant (Virginia Occidental)",

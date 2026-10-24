@@ -80,6 +80,7 @@
   ],
   "documents": [
     {
+      "role": "documento",
       "src": "https://sefaa.dgac.gob.cl/wp-content/uploads/2021/11/CASO-No-510-31122014.pdf",
       "type": "link",
       "title": "Informe del CEFAA (DGAC de Chile), caso n.º 510, norte de La Serena, fin de 2014",
@@ -89,6 +90,7 @@
       "source": "SEFAA, Dirección General de Aeronáutica Civil de Chile"
     },
     {
+      "role": "contexto",
       "src": "/pursue/la-serena-tripulaciones-2014-cz3a.jpg",
       "type": "image",
       "title": "Contexto · el cohete Larga Marcha 3A, el tipo que lanzó el satélite FY-2G",

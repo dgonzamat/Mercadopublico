@@ -106,6 +106,7 @@
   "evidenceReviewed": "2026-10-02",
   "documents": [
     {
+      "role": "documento",
       "src": "/pursue/Punch_1909-06-02_p379_phantom-airships.jpg",
       "type": "image",
       "title": "Punch, 2 de junio de 1909, p. 379: «In phantom airships Great Britain is now facile princeps» (Charivaria) y la sátira «The New Terror», con dispositivos para protegerse de los dirigibles",

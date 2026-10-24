@@ -67,6 +67,7 @@
   },
   "documents": [
     {
+      "role": "documento",
       "src": "https://sefaa.dgac.gob.cl/wp-content/uploads/2025/11/CASO-N%C2%B0-794-20022018.pdf",
       "type": "link",
       "title": "Informe del SEFAA (DGAC de Chile), caso n.º 794, Chacalluta, 20 de febrero de 2018 (resuelto el 28 de octubre de 2025)",
@@ -76,6 +77,7 @@
       "source": "SEFAA, Dirección General de Aeronáutica Civil de Chile"
     },
     {
+      "role": "contexto",
       "src": "/pursue/arica-chacalluta-2018-context.jpg",
       "type": "image",
       "title": "Contexto · la plataforma del aeropuerto de Chacalluta, en Arica, en el año 2000",

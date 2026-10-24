@@ -78,6 +78,7 @@
   },
   "documents": [
     {
+      "role": "prueba",
       "src": "/pursue/nuremberg-1561-context.jpg",
       "type": "image",
       "title": "El grabado de Hans Glaser sobre el fenómeno celeste de Núremberg, 14 de abril de 1561",

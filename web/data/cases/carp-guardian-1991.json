@@ -93,6 +93,7 @@
   },
   "documents": [
     {
+      "role": "documento",
       "src": "https://archive.org/details/MUFON_Ontario_Newsletter_1995_10_Carp_Ontario_Case_special",
       "type": "link",
       "title": "MUFON Ontario Newsletter, octubre de 1995, número especial «The Carp case (The Guardian Caper)»",
@@ -102,6 +103,7 @@
       "source": "MUFON Ontario, vía archive.org (Archives for the Unexplained)"
     },
     {
+      "role": "contexto",
       "src": "/pursue/carp-guardian-1991-context.jpg",
       "type": "image",
       "title": "Contexto · el Diefenbunker en Carp (Ontario, Canadá)",

@@ -79,6 +79,7 @@
   },
   "documents": [
     {
+      "role": "documento",
       "src": "/pursue/redmond-oregon-1959-blue-book.pdf",
       "type": "pdf",
       "title": "Expediente de Blue Book de Redmond (septiembre de 1959): tarjeta, télex del 24 de septiembre, registros de la FAA de Redmond y Seattle, télex del 827.º escuadrón y conclusiones de ATIC, 13 págs.",
@@ -90,6 +91,7 @@
       "fallbackUrl": "https://archive.org/details/1959-09-6958382-Redmond-Oregon"
     },
     {
+      "role": "contexto",
       "src": "/pursue/redmond-oregon-1959-context.jpg",
       "type": "image",
       "title": "Contexto · Redmond (Oregón), donde policía, FAA y seis F-102 siguieron el objeto",

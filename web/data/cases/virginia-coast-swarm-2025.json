@@ -80,6 +80,7 @@
   ],
   "documents": [
     {
+      "role": "documento",
       "src": "/pursue/virginia-coast-swarm-2025-aaro-fy25.pdf",
       "type": "pdf",
       "title": "Informe Anual Consolidado sobre UAP del año fiscal 2025 de la AARO: portada y pp. 4-5 (el único caso marítimo, frente a Virginia)",
@@ -91,6 +92,7 @@
       "fallbackUrl": "https://documents2.theblackvault.com/documents/osd/AARO_FY2025_Consolidated_Annual_Report_on_UAP.pdf"
     },
     {
+      "role": "contexto",
       "src": "/pursue/virginia-coast-swarm-2025-context.jpg",
       "type": "image",
       "title": "Contexto · la Estación Naval de Norfolk en 2011, la mayor base naval del mundo y la instalación militar dominante de la costa de Virginia donde se reportó el enjambre",

@@ -32,6 +32,7 @@
   "summary_en": "On February 15, 2022, at 09:35 (Mountain Time), five U.S. Army service members at Fort Carson observed an airborne object over Cheyenne Mountain (Colorado Springs), home to NORAD's hardened command complex. PURSUE declassified the file in Release 03 (June 12, 2026): an FBI FD-302 interview, an FD-1057 for the forensic sketch, a digital rendering of the object, and an intelligence-community analysis (ICA-UAP-D001), which concluded it was 'possibly backscattering of sunlight', with 'low confidence', leaving the case formally unresolved.",
   "documents": [
     {
+      "role": "documento",
       "src": "/pursue/FBI-UAP-D001_FD-302_Unresolved-UAP-Report_ColoradoSprings_2022.pdf",
       "type": "pdf",
       "title": "FBI-UAP-D001 — FD-302, reporte de UAP no resuelto, Colorado Springs (2022)",
@@ -41,6 +42,7 @@
       "fallbackUrl": "https://www.war.gov/medialink/ufo/061226/release_03/documents/FBI-UAP-D001_FD-302_Unresolved-UAP-Report_ColoradoSprings_2022.pdf"
     },
     {
+      "role": "documento",
       "src": "/pursue/FBI-UAP-D002_FD-1057_Unresolved-UAP-Report_ColoradoSprings_2022.pdf",
       "type": "pdf",
       "title": "FBI-UAP-D002 — FD-1057, reporte de UAP no resuelto, Colorado Springs (2022)",
@@ -50,6 +52,7 @@
       "fallbackUrl": "https://www.war.gov/medialink/ufo/061226/release_03/documents/FBI-UAP-D002_FD-1057_Unresolved-UAP-Report_ColoradoSprings_2022.pdf"
     },
     {
+      "role": "documento",
       "src": "/pursue/FBI-UAP-D003_Digital-Rendering_Unresolved-UAP-Report_ColoradoSprings_2022.pdf",
       "type": "pdf",
       "title": "FBI-UAP-D003 — representación digital del objeto, Colorado Springs (2022)",
@@ -59,6 +62,7 @@
       "fallbackUrl": "https://www.war.gov/medialink/ufo/061226/release_03/documents/FBI-UAP-D003_Digital-Rendering_Unresolved-UAP-Report_ColoradoSprings_2022.pdf"
     },
     {
+      "role": "documento",
       "src": "/pursue/ICA-UAP-D001_Analysis_Colorado-Springs-UAP-Incident.pdf",
       "type": "pdf",
       "title": "ICA-UAP-D001 — análisis de inteligencia del incidente de Colorado Springs",

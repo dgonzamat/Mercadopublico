@@ -46,6 +46,7 @@
   "category": "incident",
   "documents": [
     {
+      "role": "prueba",
       "src": "https://www.dvidshub.net/video/embed/1007706",
       "type": "video",
       "title": "DOW-UAP-PR050 — título de uploader '4 UAP Formation Iran'; cuatro áreas de contraste cruzan el encuadre juntas (20 s)",

@@ -98,6 +98,7 @@
   "seoTitle": "Film de Mariana (Great Falls 1950): el OVNI filmado que la USAF no cerró",
   "seoDescription": "Nick Mariana filmó dos objetos sobre Great Falls, Montana, en 1950. La USAF y el Robertson Panel dijeron reflejos de F-94; el analista Robert Baker lo dejó sin explicar; faltan los fotogramas más nítidos. Fuentes primarias.",
   "featuredDoc": {
+    "role": "documento",
     "label": "Mariana UFO film — ficha y cronología (Wikipedia)",
     "label_en": "Mariana UFO film — entry and timeline (Wikipedia)",
     "url": "https://en.wikipedia.org/wiki/Mariana_UFO_film",
@@ -116,6 +117,7 @@
   "evidenceReviewed": "2026-10-02",
   "documents": [
     {
+      "role": "documento",
       "src": "/pursue/CIA-UAP-002_Scientific-Advisory-Panel-on-Unidentified-Flying-Objects_Report_1952-1953.pdf",
       "type": "pdf",
       "title": "CIA-UAP-002 — Scientific Advisory Panel on UFOs (Panel Robertson), 1952-53",
@@ -127,6 +129,7 @@
       "description_en": "Report of the Scientific Advisory Panel on Unidentified Flying Objects, the so-called Robertson Panel: the committee of scientists convened by the CIA in January 1953, which reviewed the best cases and recommended stripping UFOs of the \"special status\" and the \"aura of mystery\" they had acquired; the \"debunking\" programme appears only in F. C. Durant's internal write-up (February 1953), among the comments left out of the formal report. It is one of eighteen CIA documents (CIA-UAP-002) released in the third PURSUE release on 12 June 2026, together with Battelle's Special Report No. 14, the official history of the U-2 and OXCART programs, which acknowledges that many reports from the 1950s and 1960s were flights of those spy planes, and foreign-intelligence reports. It shows that the CIA treated the phenomenon as a management problem; it does not prove the objects were anomalous."
     },
     {
+      "role": "documento",
       "src": "https://archive.org/download/cia-readingroom-document-cia-rdp79b00752a000300100010-4/cia-rdp79b00752a000300100010-4.pdf",
       "type": "link",
       "title": "Robertson Panel",

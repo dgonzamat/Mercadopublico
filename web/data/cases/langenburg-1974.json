@@ -73,6 +73,7 @@
   ],
   "documents": [
     {
+      "role": "documento",
       "src": "https://archive.org/download/the-flying-saucer-review-ultimate-collection/114.FSR.pdf",
       "type": "link",
       "title": "Despacho de Canadian Press desde Langenburg (Edmonton Journal, 4 sep 1974), reproducido en Flying Saucer Review, vol. 20, n.º 3",
@@ -82,6 +83,7 @@
       "source": "Canadian Press / Flying Saucer Review, vía archive.org"
     },
     {
+      "role": "contexto",
       "src": "/pursue/langenburg-1974-context.jpg",
       "type": "image",
       "title": "Contexto · Langenburg (Saskatchewan, Canadá)",

@@ -75,6 +75,7 @@
   },
   "documents": [
     {
+      "role": "documento",
       "src": "https://archive.org/details/cia-readingroom-document-0005516658",
       "type": "link",
       "title": "«Airliner Crew Reports UFO Sighting»: traducción del JPRS del artículo de Trud del 30 de enero de 1985 (desclasificada por la CIA), 5 págs.",
@@ -84,6 +85,7 @@
       "source": "CIA Reading Room, documento 0005516658, vía archive.org"
     },
     {
+      "role": "contexto",
       "src": "/pursue/minsk-aeroflot-1984-context.jpg",
       "type": "image",
       "title": "Contexto · un Tupolev Tu-134 de Aeroflot, el tipo de avión del caso Minsk",

@@ -70,6 +70,7 @@
   ],
   "documents": [
     {
+      "role": "documento",
       "src": "http://www.ufoevidence.org/cases/case443.htm",
       "type": "link",
       "title": "Yamanashi Nichi-Nichi Shimbun, 25 de febrero de 1975, «¿Aterrizó un ovni en la ciudad de Kōfu?», en la traducción de Masaru Mori",
@@ -79,6 +80,7 @@
       "source": "Yamanashi Nichi-Nichi Shimbun (traducción de Masaru Mori), vía UFO Evidence"
     },
     {
+      "role": "contexto",
       "src": "/pursue/kofu-japan-1975-context.jpg",
       "type": "image",
       "title": "Contexto · Kōfu (Yamanashi, Japón), donde dos niños reportaron el encuentro",

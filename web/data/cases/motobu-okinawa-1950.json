@@ -32,6 +32,7 @@
   "category": "incident",
   "documents": [
     {
+      "role": "documento",
       "src": "/pursue/blue-book-motobu-okinawa-1950.pdf",
       "type": "pdf",
       "title": "Expediente de Blue Book de la península de Motobu, Okinawa (marzo de 1950): tarjeta e informe IR-1-50 de la 20.ª Fuerza Aérea, 3 págs.",

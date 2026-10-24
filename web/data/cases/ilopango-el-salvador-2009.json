@@ -77,6 +77,7 @@
   },
   "documents": [
     {
+      "role": "contexto",
       "src": "/pursue/ilopango-el-salvador-2009-context.jpg",
       "type": "image",
       "title": "Contexto · el aeropuerto de Ilopango (El Salvador)",

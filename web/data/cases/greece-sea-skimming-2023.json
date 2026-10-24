@@ -41,6 +41,7 @@
   "category": "incident",
   "documents": [
     {
+      "role": "prueba",
       "src": "https://www.dvidshub.net/video/embed/1006080",
       "type": "video",
       "title": "DOW-UAP-PR34 — grabación del sensor, Grecia, octubre 2023",
@@ -50,6 +51,7 @@
       "fallbackUrl": "https://www.dvidshub.net/video/1006080"
     },
     {
+      "role": "prueba",
       "src": "https://www.dvidshub.net/video/embed/1006082",
       "type": "video",
       "title": "DOW-UAP-PR35 — grabación del sensor, Grecia, octubre 2023",
@@ -59,6 +61,7 @@
       "fallbackUrl": "https://www.dvidshub.net/video/1006082"
     },
     {
+      "role": "documento",
       "src": "/pursue/dow-uap-d33-mission-report-greece-october-2023.pdf",
       "type": "pdf",
       "title": "DOW-UAP-D33 — MISREP del avistamiento del 27 de octubre (giros de 90 grados a 80 mph)",
@@ -68,6 +71,7 @@
       "fallbackUrl": "https://www.war.gov/medialink/ufo/release_1/dow-uap-d33-mission-report-greece-october-2023.pdf"
     },
     {
+      "role": "documento",
       "src": "/pursue/dow-uap-d35-mission-report-greece-october-2023.pdf",
       "type": "pdf",
       "title": "DOW-UAP-D35 — MISREP del avistamiento del 29 de octubre (30 mph rumbo a tierra)",

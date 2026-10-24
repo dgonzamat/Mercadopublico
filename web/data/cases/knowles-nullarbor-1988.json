@@ -112,6 +112,7 @@
   },
   "documents": [
     {
+      "role": "documento",
       "src": "https://archive.org/details/UFO_Research_Australia_Jan_1988_Mundrabilla",
       "type": "link",
       "title": "«The Mundrabilla Incident – January 20th 1988», informe de UFO Research Australia (segunda edición, 26 de enero de 1988)",
@@ -121,6 +122,7 @@
       "source": "UFO Research Australia / UFO Research South Australia, vía archive.org"
     },
     {
+      "role": "contexto",
       "src": "/pursue/knowles-nullarbor-1988-context.jpg",
       "type": "image",
       "title": "Contexto · la llanura de Nullarbor (Australia), escenario del caso de la familia Knowles",

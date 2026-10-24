@@ -92,6 +92,7 @@
   ],
   "documents": [
     {
+      "role": "contexto",
       "src": "/pursue/kaikoura-1978-context.jpg",
       "type": "image",
       "title": "Contexto · Kaikōura (Nueva Zelanda), donde el avión de carga filmó las luces",
@@ -101,6 +102,7 @@
       "fallbackUrl": "https://commons.wikimedia.org/wiki/File%3AKaik%C5%8Dura%20Peninsula%20coast%2C%20New%20Zealand%20(52385942035).jpg"
     },
     {
+      "role": "documento",
       "src": "https://ufocusnz.org.nz/2020/08/04/relinquishing-responsibility-circumstances-surrounding-the-release-of-the-new-zealand-mod-ufo-files-2010-11/",
       "type": "link",
       "title": "Doce volúmenes, justo antes de Navidad: la desclasificación OVNI de Nueva Zelanda (2010)",

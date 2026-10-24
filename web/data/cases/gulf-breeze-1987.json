@@ -75,6 +75,7 @@
   },
   "documents": [
     {
+      "role": "documento",
       "src": "https://archive.org/details/UFO_Newsclipping_Service_1990_07_no_252/page/n4/mode/1up",
       "type": "link",
       "title": "Declaración no jurada de «Chris» (Tommy Smith), 15 jun 1990, publicada por el Gulf Breeze Sentinel, y prensa de junio de 1990 sobre la maqueta",
@@ -84,6 +85,7 @@
       "source": "Gulf Breeze Sentinel y Daily News (Fort Walton Beach), reproducidos por UFO Newsclipping Service (archive.org)"
     },
     {
+      "role": "contexto",
       "src": "/pursue/gulf-breeze-1987-context.jpg",
       "type": "image",
       "title": "Contexto · Gulf Breeze (Florida)",

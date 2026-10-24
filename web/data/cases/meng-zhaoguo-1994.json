@@ -84,6 +84,7 @@
   },
   "documents": [
     {
+      "role": "contexto",
       "src": "/pursue/meng-zhaoguo-1994-context.jpg",
       "type": "image",
       "title": "Contexto · Wuchang (Heilongjiang, China), cerca del campamento maderero Hongqi",

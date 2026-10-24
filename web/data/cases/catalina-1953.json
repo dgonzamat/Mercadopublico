@@ -36,6 +36,7 @@
   "category": "incident",
   "documents": [
     {
+      "role": "documento",
       "src": "/pursue/DOW-UAP-D178_Unresolved_UAP_Report_Catalina_Island-1953.pdf",
       "type": "pdf",
       "title": "DOW-UAP-D178 — Tarjeta de Blue Book y télex UFOB del 2347.º Centro de Entrenamiento de la Reserva, Long Beach",

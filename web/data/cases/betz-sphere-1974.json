@@ -75,6 +75,7 @@
   },
   "documents": [
     {
+      "role": "documento",
       "src": "https://archive.org/details/UFO_Newsclipping_Service_1974_06_no_62/page/n8",
       "type": "link",
       "title": "Cables de AP y UPI de abril de 1974 sobre la esfera Betz",
@@ -84,6 +85,7 @@
       "source": "UFO Newsclipping Service n.º 62 (junio de 1974), p. 9 · recortes de AP y UPI (archive.org)"
     },
     {
+      "role": "contexto",
       "src": "/pursue/betz-sphere-1974-context.jpg",
       "type": "image",
       "title": "Contexto · Fort George Island (Florida), donde la familia Betz halló la esfera",

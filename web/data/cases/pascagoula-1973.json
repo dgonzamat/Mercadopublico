@@ -81,6 +81,7 @@
   },
   "documents": [
     {
+      "role": "documento",
       "src": "https://archive.org/details/UFO_Newsclipping_Service_1973_09-10_no_53-54/page/n1",
       "type": "link",
       "title": "Despacho de UPI del 12 de octubre de 1973 · «Meeting With Space 'Things'?»",
@@ -90,6 +91,7 @@
       "source": "Washington Star-News, 13 oct 1973 (UPI) · UFO Newsclipping Service n.º 53-54, p. 2 (archive.org)"
     },
     {
+      "role": "contexto",
       "src": "/pursue/pascagoula-1973-context.jpg",
       "type": "image",
       "title": "Contexto · Pascagoula (Misisipi), a orillas del río donde ocurrió la abducción reportada",

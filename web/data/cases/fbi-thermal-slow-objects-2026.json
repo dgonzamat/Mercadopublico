@@ -34,6 +34,7 @@
   "category": "incident",
   "documents": [
     {
+      "role": "prueba",
       "src": "https://www.dvidshub.net/video/embed/1017801",
       "type": "video",
       "title": "FBI-UAP-PR007 — 'Slow-moving Objects', metraje térmico de la primera observación, correspondiente al FD-302 D032",
@@ -43,6 +44,7 @@
       "fallbackUrl": "https://www.dvidshub.net/video/1017801"
     },
     {
+      "role": "documento",
       "src": "/pursue/FBI-UAP-D032_FD-302_Slow-moving-Objects_2026.pdf",
       "type": "pdf",
       "title": "FBI-UAP-D032 — FD-302, primera observación (16:04): detección RF y observación térmica",
@@ -52,6 +54,7 @@
       "fallbackUrl": "https://www.war.gov/medialink/ufo/080726/release_05/documents/FBI-UAP-D032_FD-302_Slow-moving-Objects_2026.pdf"
     },
     {
+      "role": "documento",
       "src": "/pursue/FBI-UAP-D033_FD-302_Thermally-Elevated-Aerial-Object_2026.pdf",
       "type": "pdf",
       "title": "FBI-UAP-D033 — FD-302, día siguiente: comparación de tamaño con un Black Hawk",

@@ -71,6 +71,7 @@
   },
   "documents": [
     {
+      "role": "contexto",
       "src": "/pursue/fh227-pluna-1975-context.jpg",
       "type": "image",
       "title": "Contexto · un Fairchild F-27, del tipo del avión de PLUNA escoltado por la luz",

@@ -62,6 +62,7 @@
   },
   "documents": [
     {
+      "role": "documento",
       "src": "/pursue/noia-1993-expediente-01-macen-93.pdf",
       "type": "pdf",
       "title": "Expediente 01-MACEN-93 del Ejército del Aire (extracto, 15 págs.): portada y resumen del MOA, informe y cuestionario del teniente coronel jefe del EVA-10, juicio del oficial informador, datos meteorológicos, consultas a operaciones y al radar, cuestionarios de dos testigos y juicio del general jefe del MACEN",

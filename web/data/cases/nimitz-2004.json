@@ -120,6 +120,7 @@
   },
   "documents": [
     {
+      "role": "prueba",
       "src": "https://www.dvidshub.net/video/embed/955825",
       "type": "video",
       "title": "Video ATFLIR 'FLIR1' — el objeto Tic-Tac y su aceleración lateral abrupta final, capturado por el Tte. Chad Underwood",
@@ -129,6 +130,7 @@
       "fallbackUrl": "https://www.dvidshub.net/video/955825"
     },
     {
+      "role": "documento",
       "src": "https://hgbvdqckoosxesixhepr.supabase.co/storage/v1/object/public/pursue/DOW-UAP-D175-BAASS_Self-Assessment_of_UAP_Analysis_Capabilities_November_2010.pdf",
       "type": "pdf",
       "title": "DOW-UAP-D175 · informe de BAASS sobre sus capacidades de análisis UAP, 23 de noviembre de 2010 (PURSUE Release 07)",
@@ -140,6 +142,7 @@
       "fallbackUrl": "https://www.war.gov/medialink/ufo/release-07/documents/DOW-UAP-D175-BAASS_Self-Assessment_of_UAP_Analysis_Capabilities_November_2010.pdf"
     },
     {
+      "role": "contexto",
       "src": "/pursue/nimitz-2004-context.jpg",
       "type": "image",
       "title": "Contexto · el portaaviones USS Nimitz (CVN-68), cuyo grupo de combate registró el objeto Tic-Tac en 2004",

@@ -67,6 +67,7 @@
   ],
   "documents": [
     {
+      "role": "documento",
       "src": "/pursue/uss-omaha-2019-navy-foia.pdf",
       "type": "pdf",
       "title": "Marina de EE. UU. — respuesta FOIA sobre los registros del USS Omaha del 15 de julio de 2019 (3 págs.)",
@@ -78,6 +79,7 @@
       "fallbackUrl": "https://documents2.theblackvault.com/documents/navy/DON-NAVY-2021-005821.pdf"
     },
     {
+      "role": "prueba",
       "src": "/pursue/uss-omaha-2019-fotograma.png",
       "type": "image",
       "title": "Fotograma del vídeo del USS Omaha (15 de julio de 2019)",
@@ -89,6 +91,7 @@
       "fallbackUrl": "https://commons.wikimedia.org/wiki/File:USS_Omaha_UFO_video_-_July_2019.png"
     },
     {
+      "role": "contexto",
       "src": "/pursue/uss-omaha-2019-context.jpg",
       "type": "image",
       "title": "Contexto · el USS Omaha (LCS-12), buque de la esfera transmedium filmada en 2019",

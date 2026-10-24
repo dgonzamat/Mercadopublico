@@ -42,6 +42,7 @@ export interface CaseDocument {
   source: string;
   license: string;
   href?: string;
+  role?: VisualRole;
 }
 
 /**
@@ -61,8 +62,21 @@ export interface CaseDocument {
  * unilateralmente, así que la contraparte es la sonda viva
  * `check-dvids-embeds.mjs`, que vigila que sigan siendo framables.
  */
+/**
+ * Papel de un elemento visual en la ficha, y lo único que decide dónde se
+ * muestra (oct 2026, especificación de la ficha). `prueba`: registra el suceso
+ * mismo (vídeo del sensor, foto o dibujo del objeto) y va antes del relato.
+ * `documento`: papel sobre el caso (expediente, informe, carta, enlace) y va en
+ * «Documentos y fuentes». `contexto`: el lugar, el avión, una persona, un
+ * monumento; va al final. Antes la posición salía del campo (`documents`,
+ * `primaryDocument`, `featuredDoc`) y del tipo, y la foto de Trent acababa
+ * entre el papeleo mientras la entrada del rancho Skinwalker iba arriba.
+ */
+export type VisualRole = "prueba" | "documento" | "contexto";
+
 export interface DocEmbed {
   src: string;
+  role?: VisualRole;
   /** "link": documento sin copia embebible (solo existe en el sitio del
    *  emisor o en Commons). Se muestra como tarjeta con su descripción y un
    *  enlace al original; no cuenta como visual del caso. */
@@ -184,6 +198,7 @@ export interface UAPCase {
   // convierte la página en el mejor puente hacia el documento en vez de
   // dejar al usuario rebotar buscando el PDF. Ausente = no se renderiza.
   featuredDoc?: {
+    role?: VisualRole;
     label: string;
     label_en?: string;
     url: string;

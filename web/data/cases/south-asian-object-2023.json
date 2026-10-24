@@ -34,6 +34,7 @@
   "category": "incident",
   "documents": [
     {
+      "role": "prueba",
       "src": "https://www.dvidshub.net/video/embed/880270",
       "type": "video",
       "title": "'South Asian Object 1' — el clip presentado ante el Senado, 15 ene 2023 (9 s)",
@@ -43,6 +44,7 @@
       "fallbackUrl": "https://www.dvidshub.net/video/880270"
     },
     {
+      "role": "prueba",
       "src": "https://www.dvidshub.net/video/embed/880271",
       "type": "video",
       "title": "'South Asian Object 2' — metraje adicional con mayor distancia focal usado para el análisis (2:10)",

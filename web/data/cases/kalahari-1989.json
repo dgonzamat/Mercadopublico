@@ -85,6 +85,7 @@
   ],
   "documents": [
     {
+      "role": "documento",
       "src": "https://archive.org/details/UFO_AFRINEWS03-150",
       "type": "link",
       "title": "UFO Afrinews n.º 3 (junio de 1990), pp. 5-13: Cynthia Hind, «UFO crash on Botswana/South African border (caso n.º 21)»",
@@ -94,6 +95,7 @@
       "source": "Cynthia Hind, UFO Afrinews n.º 3 (1990), vía archive.org"
     },
     {
+      "role": "contexto",
       "src": "/pursue/kalahari-1989-context.jpg",
       "type": "image",
       "title": "Contexto · el desierto del Kalahari, en la frontera Sudáfrica–Botsuana",

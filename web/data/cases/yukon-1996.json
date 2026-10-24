@@ -87,6 +87,7 @@
   "name_en": "Yukon Highway",
   "documents": [
     {
+      "role": "contexto",
       "src": "/pursue/yukon-1996-context.jpg",
       "type": "image",
       "title": "Contexto · el Territorio del Yukón (Canadá)",

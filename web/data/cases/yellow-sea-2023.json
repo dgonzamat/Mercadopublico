@@ -102,6 +102,7 @@
   ],
   "documents": [
     {
+      "role": "prueba",
       "src": "https://www.dvidshub.net/video/embed/1023406",
       "type": "video",
       "title": "DOW-UAP-PR150 · Mar Amarillo 2023, 57 segundos de sensor infrarrojo; incluye la oclusión por la geometría de la plataforma y la frase del recuadro de enfoque (PURSUE Release 06)",
@@ -111,6 +112,7 @@
       "fallbackUrl": "https://www.dvidshub.net/video/1023406/dow-uap-pr150-unresolved-uap-report-yellow-sea-2023"
     },
     {
+      "role": "prueba",
       "src": "https://www.dvidshub.net/video/embed/1023410",
       "type": "video",
       "title": "DOW-UAP-PR152 · el clip más largo, 1 minuto 38 segundos (PURSUE Release 06)",
@@ -120,6 +122,7 @@
       "fallbackUrl": "https://www.dvidshub.net/video/1023410/dow-uap-pr152-unresolved-uap-report-yellow-sea-2023"
     },
     {
+      "role": "prueba",
       "src": "https://www.dvidshub.net/video/embed/1023404",
       "type": "video",
       "title": "DOW-UAP-PR144 · 27 segundos; el área de contraste ya está en cuadro al abrir el clip (PURSUE Release 06)",

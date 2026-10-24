@@ -95,6 +95,7 @@
   ],
   "documents": [
     {
+      "role": "documento",
       "src": "/pursue/colares-1977-registro-observacoes.pdf",
       "type": "pdf",
       "title": "I COMAR, «Registro de Observações de OVNI» (Operación Prato): portada y primeros registros, con croquis y mapas (extracto, 14 de 160 págs.)",
@@ -104,6 +105,7 @@
       "fallbackUrl": "https://imagem.sian.an.gov.br/acervo/derivadas/BR_DFANBSB_ARX/0/0/0184/BR_DFANBSB_ARX_0_0_0184_d0001de0001.pdf"
     },
     {
+      "role": "documento",
       "src": "/pursue/DOW-UAP-D169-BAASS_Monthly_Report-March_2009.pdf",
       "type": "pdf",
       "title": "DOW-UAP-D169 · informe mensual de BAASS de marzo de 2009, con el resumen ejecutivo «The UFO Assault on Brazil, with its epicenter at Colares» (págs. 22-38 de su numeración) (PURSUE Release 07)",
@@ -115,6 +117,7 @@
       "fallbackUrl": "https://www.war.gov/medialink/ufo/release-07/documents/DOW-UAP-D169-BAASS_Monthly_Report-March_2009.pdf"
     },
     {
+      "role": "contexto",
       "src": "/pursue/colares-1977-context.jpg",
       "type": "image",
       "title": "Contexto · la costa del Pará (Brasil), región de la Operação Prato en Colares",

@@ -102,6 +102,7 @@
   ],
   "documents": [
     {
+      "role": "documento",
       "src": "https://ufology.patrickgross.org/press/leprovencal18mai1977.htm",
       "type": "link",
       "title": "Le Provençal, 18 de mayo de 1977, p. 22: «Enlevé par un OVNI pendant 15 minutes» (facsímil y traducción)",
@@ -111,6 +112,7 @@
       "source": "Le Provençal (18 may 1977), en ufology.patrickgross.org"
     },
     {
+      "role": "contexto",
       "src": "/pursue/valdes-1977-context.jpg",
       "type": "image",
       "title": "Contexto · Arica (norte de Chile), cerca del avistamiento del cabo Valdés en Putre",

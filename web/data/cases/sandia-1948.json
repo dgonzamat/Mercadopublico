@@ -26,6 +26,7 @@
   "summary_en": "Between December 1948 and May 1950 the OSI office at Kirtland compiled some 150 incidents of lights in the sky over New Mexico's nuclear corridor; meteoriticist Lincoln La Paz accepted 72 as 'green fireballs', less than 5% of all the reports he received. Two conferences at Los Alamos found no explanation, and Project Twinkle closed in 1951 without a firm conclusion. The documents were released in 2026 in PURSUE Release 02.",
   "documents": [
     {
+      "role": "documento",
       "src": "/pursue/DOW-UAP-D017_General_Correspondence_Of_Sandia.pdf",
       "type": "pdf",
       "title": "DOW-UAP-D017 — correspondencia general de Sandia (green fireballs)",

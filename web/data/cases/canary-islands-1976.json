@@ -86,6 +86,7 @@
   },
   "documents": [
     {
+      "role": "documento",
       "src": "/pursue/canary-islands-1976-expediente-760622.pdf",
       "type": "pdf",
       "title": "Expediente 760622 del Ejército del Aire (extracto, 12 de 107 págs.): ficha del Mando Operativo Aéreo e informes del Mando Aéreo de Canarias",
@@ -95,6 +96,7 @@
       "fallbackUrl": "https://bibliotecavirtual.defensa.gob.es/BVMDefensa/exp_ovni/es/consulta/registro.do?control=BMDB20160069082"
     },
     {
+      "role": "contexto",
       "src": "/pursue/canary-islands-1976-context.jpg",
       "type": "image",
       "title": "Contexto · las islas Canarias, sobre las que se vio el fenómeno de junio de 1976",

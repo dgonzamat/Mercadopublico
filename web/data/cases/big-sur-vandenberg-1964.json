@@ -75,6 +75,7 @@
   ],
   "documents": [
     {
+      "role": "documento",
       "src": "https://cdn.centerforinquiry.org/wp-content/uploads/sites/29/1993/01/22165151/p77.pdf",
       "type": "link",
       "title": "Kingston A. George, ingeniero del proyecto · «The Big Sur 'UFO': An Identified Flying Object» (1993)",
@@ -84,6 +85,7 @@
       "source": "Skeptical Inquirer, vol. 17 (invierno de 1993), pp. 180-187 · Center for Inquiry"
     },
     {
+      "role": "contexto",
       "src": "/pursue/big-sur-vandenberg-1964-context.jpg",
       "type": "image",
       "title": "Contexto · la Base Aérea de Vandenberg (California), origen del lanzamiento de la ojiva de prueba",

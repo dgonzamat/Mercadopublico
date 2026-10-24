@@ -78,6 +78,7 @@
   ],
   "documents": [
     {
+      "role": "contexto",
       "src": "/pursue/copiapo-chamonate-2022-antares.jpg",
       "type": "image",
       "title": "Contexto · el lanzamiento del Antares con la nave Cygnus NG-18, isla Wallops, 7 de noviembre de 2022",
@@ -89,6 +90,7 @@
       "fallbackUrl": "https://commons.wikimedia.org/wiki/File:Antares_CRS-18_Launch.jpg"
     },
     {
+      "role": "documento",
       "src": "https://sefaa.dgac.gob.cl/wp-content/uploads/2024/10/CASO-N%C2%B0-1838-08112022-2.pdf",
       "type": "link",
       "title": "Informe del SEFAA (DGAC de Chile), caso n.º 1838, Copiapó, 8 de noviembre de 2022",

@@ -69,6 +69,7 @@
   },
   "documents": [
     {
+      "role": "documento",
       "src": "https://ufology.patrickgross.org/htm/cattleargentina01.htm",
       "type": "link",
       "title": "Comunicado del SENASA, «Informe oficial sobre lesiones y mutilaciones en cadáveres bovinos» (1 de julio de 2002), traducción inglesa",
@@ -78,6 +79,7 @@
       "source": "SENASA (Argentina), traducción del Institute of Hispanic Ufology, vía ufology.patrickgross.org"
     },
     {
+      "role": "contexto",
       "src": "/pursue/mutilaciones-ganado-2002-context.jpg",
       "type": "image",
       "title": "Contexto · la provincia de La Pampa (Argentina)",

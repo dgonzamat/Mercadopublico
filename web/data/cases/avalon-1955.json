@@ -36,6 +36,7 @@
   "category": "incident",
   "documents": [
     {
+      "role": "documento",
       "src": "/pursue/DOW-UAP-D177_Unresolved_UAP_Report_Catalina_Island-1955.pdf",
       "type": "pdf",
       "title": "DOW-UAP-D177 — Tarjetas de Blue Book y télex del 670.º Escuadrón de Control y Alerta Aérea, San Pedro",

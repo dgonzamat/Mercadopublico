@@ -89,6 +89,7 @@
   },
   "documents": [
     {
+      "role": "documento",
       "src": "/pursue/langley-drones-2023-senate-hearing.pdf",
       "type": "pdf",
       "title": "Audiencias del Comité de Servicios Armados del Senado, S. Hrg. 118-741: el general Guillot (14 mar 2024) y la respuesta escrita del general Allvin, 5 págs.",
@@ -100,6 +101,7 @@
       "fallbackUrl": "https://www.govinfo.gov/content/pkg/CHRG-118shrg62122/pdf/CHRG-118shrg62122.pdf"
     },
     {
+      "role": "contexto",
       "src": "/pursue/langley-drones-2023-context.jpg",
       "type": "image",
       "title": "Contexto · la Base Aérea de Langley (Virginia), sobrevolada por las incursiones de drones",
@@ -109,6 +111,7 @@
       "fallbackUrl": "https://commons.wikimedia.org/wiki/File%3AA%20T-38%20Talon%20taxis%20down%20the%20runway%20at%20Langley%20Air%20Force%20Base%2C%20Virginia.%20March%2026%2C%202012.jpg"
     },
     {
+      "role": "documento",
       "src": "https://www.governmentattic.org/59docs/DTRAphalanxRptsUAS2024.pdf",
       "type": "link",
       "title": "DTRA, informes PHALANX de drones detectados en torno a bases de EE. UU., diciembre de 2024 (FOIA 25-024)",
@@ -119,6 +122,7 @@
       "license": "Dominio público · obra del Gobierno de EE. UU."
     },
     {
+      "role": "documento",
       "src": "https://www.liberationtimes.com/s/FOIA-2026-000270-Responsive-Records.pdf",
       "type": "link",
       "title": "NRC, partes de seguridad sobre drones en centrales nucleares, 2024 a 2026 (FOIA-2026-000270)",

@@ -78,6 +78,7 @@
   ],
   "documents": [
     {
+      "role": "contexto",
       "src": "/pursue/patagonia-lan081-2019-iss.jpg",
       "type": "image",
       "title": "Contexto · la Estación Espacial Internacional, el objeto que el comité consideró más probable",
@@ -89,6 +90,7 @@
       "fallbackUrl": "https://commons.wikimedia.org/wiki/File:International_Space_Station_after_undocking_of_STS-132.jpg"
     },
     {
+      "role": "documento",
       "src": "https://sefaa.dgac.gob.cl/wp-content/uploads/2023/09/CASO-N%C2%B01014-17122019.pdf",
       "type": "link",
       "title": "Informe del SEFAA (DGAC de Chile), caso n.º 1014, Punta Arenas, 17 de diciembre de 2019",

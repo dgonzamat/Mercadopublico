@@ -110,6 +110,7 @@
     }
   ],
   "primaryDocument": {
+    "role": "contexto",
     "url": "https://commons.wikimedia.org/wiki/Special:FilePath/Kecksburg_UFO.JPG?width=800",
     "alt": "Réplica del objeto en forma de bellota erigida como monumento en Kecksburg, Pensilvania.",
     "caption": "Réplica del objeto con forma de bellota erigida como monumento en Kecksburg, Pensilvania, que conmemora el incidente de diciembre de 1965.",
@@ -128,6 +129,7 @@
   },
   "documents": [
     {
+      "role": "documento",
       "src": "/pursue/EOP-UAP-D002-Memo_on_Interagency_Coordination_for_the_Recovery_of_Foreign_Materiel-May_1963.pdf",
       "type": "pdf",
       "title": "EOP-UAP-D002 — Memorando de R. W. Hale a Welsh sobre las objeciones de Arnold Frutkin, de la NASA, al «project» de fragmentos (29 may 1963)",
@@ -139,6 +141,7 @@
       "fallbackUrl": "https://www.war.gov/medialink/ufo/release-07/documents/EOP-UAP-D002-Memo_on_Interagency_Coordination_for_the_Recovery_of_Foreign_Materiel-May_1963.pdf"
     },
     {
+      "role": "documento",
       "src": "/pursue/USG-UAP-D002-Interagency_Correspondence_Concerning_Space_Fragments-1962_1964.pdf",
       "type": "pdf",
       "title": "USG-UAP-D002 — Carpeta «Space Vehicle Fragments – Responsibilities and Procedures» (Biblioteca LBJ, 1962–1964)",

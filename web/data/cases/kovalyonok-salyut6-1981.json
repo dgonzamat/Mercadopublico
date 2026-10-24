@@ -84,6 +84,7 @@
   },
   "documents": [
     {
+      "role": "contexto",
       "src": "/pursue/kovalyonok-salyut6-1981-context.jpg",
       "type": "image",
       "title": "Contexto · la estación Salyut-6, desde donde el cosmonauta Kovalyonok observó el objeto",

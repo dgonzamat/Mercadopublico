@@ -32,15 +32,6 @@ const INLINE_NONVIDEO_MAX = 4;
 // primarios» (204 fichas lo decían de una foto de contexto).
 const isContextDoc = (d: { title?: string }) => /^(Contexto|Context)\b/.test(d.title ?? "");
 
-/** Separa la prueba del propio caso —vídeo o imagen que no sea de contexto,
- *  hasta dos— del papeleo. La ficha muestra la prueba antes del relato (es
- *  lo que el lector viene a ver: 46 fichas con vídeo, 35 con foto del
- *  suceso) y el papeleo después, para que no entierre el relato. */
-export function splitCaseMedia(docs: DocEmbed[]): { media: DocEmbed[]; rest: DocEmbed[] } {
-  const media = docs.filter((d) => d.type === "video" || (d.type === "image" && !isContextDoc(d))).slice(0, 2);
-  return { media, rest: docs.filter((d) => !media.includes(d)) };
-}
-
 export function DocumentsViewer({ docs, locale, heading }: { docs: DocEmbed[]; locale: "es" | "en"; heading?: { es: string; en: string } }) {
   if (docs.length === 0) return null;
   const docsVideo = docs.filter((d) => d.type === "video");

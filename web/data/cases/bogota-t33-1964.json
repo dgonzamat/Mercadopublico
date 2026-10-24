@@ -56,6 +56,7 @@
   },
   "documents": [
     {
+      "role": "documento",
       "src": "https://www.eltiempo.com/colombia/otras-ciudades/ovnis-controlador-aereo-dice-que-avion-persiguio-extrano-aparato-en-bogota-379078",
       "type": "link",
       "title": "El Tiempo, «Controlador aéreo revela cómo avión de guerra persiguió ovni en Bogotá» (24 de junio de 2019)",
@@ -65,6 +66,7 @@
       "source": "El Tiempo (Colombia)"
     },
     {
+      "role": "contexto",
       "src": "/pursue/bogota-t33-1964-context.jpg",
       "type": "image",
       "title": "Contexto · el aeropuerto El Dorado de Bogotá (Colombia)",

@@ -38,6 +38,7 @@
   ],
   "category": "incident",
   "primaryDocument": {
+    "role": "prueba",
     "url": "https://commons.wikimedia.org/wiki/Special:FilePath/Ghostrocket 7-09-1946.jpg?width=800",
     "alt": "Fotografía de prensa del 9 de julio de 1946, de Erik Reuterswärd, que muestra la estela de un 'ghost rocket' (cohete fantasma) sobre Suecia.",
     "caption": "Fotografía de un «cohete fantasma» tomada el 9 de julio de 1946 por Erik Reuterswärd y entregada a la prensa por el ejército sueco: una estela de un solo día de la oleada, el tipo de observación luminosa que el Estado Mayor sueco atribuyó en su mayoría a meteoros en su comunicado del 10 de octubre.",
@@ -48,6 +49,7 @@
   },
   "documents": [
     {
+      "role": "documento",
       "src": "/pursue/DOW-UAP-D099_Intelligence-Review-of-Ghost-Rocket-Incidents_1947.pdf",
       "type": "pdf",
       "title": "DOW-UAP-D099 — 'World in Review', boletín SECRETO de la División de Inteligencia del Departamento de Guerra de EE.UU. (20 ene 1947), sección 'Ghost Rockets Over Scandinavia'",

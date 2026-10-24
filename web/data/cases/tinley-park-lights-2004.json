@@ -89,6 +89,7 @@
   ],
   "documents": [
     {
+      "role": "documento",
       "src": "https://archive.org/details/UFO_Newsclipping_Service_2005_01_no_426/page/n0/mode/1up",
       "type": "link",
       "title": "«Flying objects hovering over Southland yet to be identified», Daily Southtown, 1 nov 2004, en UFO Newsclipping Service n.º 426",
@@ -98,6 +99,7 @@
       "source": "Daily Southtown Economist (Chicago), reproducido por UFO Newsclipping Service (archive.org)"
     },
     {
+      "role": "contexto",
       "src": "/pursue/tinley-park-lights-2004-context.jpg",
       "type": "image",
       "title": "Contexto · Tinley Park (Illinois)",

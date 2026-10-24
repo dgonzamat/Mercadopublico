@@ -67,6 +67,7 @@
   ],
   "documents": [
     {
+      "role": "contexto",
       "src": "/pursue/sts48-1991-context.jpg",
       "type": "image",
       "title": "La misión STS-48 del transbordador Discovery, cuyo vídeo en órbita originó el caso",

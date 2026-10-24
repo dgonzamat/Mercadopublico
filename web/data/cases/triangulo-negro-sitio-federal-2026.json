@@ -36,6 +36,7 @@
   "category": "incident",
   "documents": [
     {
+      "role": "documento",
       "src": "/pursue/FBI-UAP-D043-FD_302_Unidentified_Aerial_Object_Observation_Report-2026.pdf",
       "type": "pdf",
       "title": "FBI-UAP-D043 — FD-302 con la declaración firmada de los agentes",
@@ -47,6 +48,7 @@
       "fallbackUrl": "https://www.war.gov/medialink/ufo/release-07/documents/FBI-UAP-D043-FD_302_Unidentified_Aerial_Object_Observation_Report-2026.pdf"
     },
     {
+      "role": "documento",
       "src": "/pursue/DOW-UAP-D176-Triangular_UAP_AARO_MFR_2026.pdf",
       "type": "pdf",
       "title": "DOW-UAP-D176 — Memorando de la AARO sobre la entrevista a los testigos",

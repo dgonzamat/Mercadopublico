@@ -109,6 +109,7 @@
   },
   "documents": [
     {
+      "role": "documento",
       "src": "http://dbarkertv.com/CENCOM%20TAPE%20RECORD.jpg",
       "type": "link",
       "title": "Registro horario de CENCOM, central de despacho del condado de St. Clair (5 de enero de 2000)",
@@ -118,6 +119,7 @@
       "source": "Condado de St. Clair (Illinois), CENCOM, vía Darryl Barker"
     },
     {
+      "role": "contexto",
       "src": "/pursue/st-clair-triangle-2000-context.jpg",
       "type": "image",
       "title": "Contexto · Belleville (condado de St. Clair, Illinois)",

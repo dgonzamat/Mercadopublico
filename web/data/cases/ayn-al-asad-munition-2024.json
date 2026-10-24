@@ -33,6 +33,7 @@
   "category": "incident",
   "documents": [
     {
+      "role": "documento",
       "src": "/pursue/dow-uap-d28-mission-report-east-china-sea-2024.pdf",
       "type": "pdf",
       "title": "DOW-UAP-D28 — MISREP con formulario UAP, Ayn al-Asad (Irak), septiembre 2024. El nombre oficial del archivo dice 'East China Sea'; el contenido es de CENTCOM/Irak",

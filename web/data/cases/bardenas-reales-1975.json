@@ -67,6 +67,7 @@
   },
   "documents": [
     {
+      "role": "documento",
       "src": "/pursue/bardenas-reales-1975-expediente-750102.pdf",
       "type": "pdf",
       "title": "Expediente 750102 del Ejército del Aire (extracto, 6 págs.): resumen del MOA, índice, informe del jefe del polígono, croquis e interpretación del teniente general",

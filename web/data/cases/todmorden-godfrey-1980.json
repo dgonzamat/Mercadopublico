@@ -75,6 +75,7 @@
   ],
   "documents": [
     {
+      "role": "documento",
       "src": "https://archive.org/details/the-flying-saucer-review-ultimate-collection/153.FSR.pdf/page/n3/mode/1up",
       "type": "link",
       "title": "Jenny Randles, «A Policeman's Lot» (informe MUFORA/UFOIN del 3 de junio de 1981 y posdata del 11 de junio), Flying Saucer Review 27(2)",
@@ -84,6 +85,7 @@
       "source": "Flying Saucer Review, vol. 27, n.º 2 (1981); copia en archive.org"
     },
     {
+      "role": "contexto",
       "src": "/pursue/todmorden-godfrey-1980-context.jpg",
       "type": "image",
       "title": "Contexto · Todmorden (West Yorkshire, Inglaterra)",

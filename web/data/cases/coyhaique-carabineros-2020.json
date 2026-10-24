@@ -76,6 +76,7 @@
   ],
   "documents": [
     {
+      "role": "contexto",
       "src": "/pursue/coyhaique-carabineros-2020-ciudad.jpg",
       "type": "image",
       "title": "Contexto · Coyhaique vista desde la Reserva Nacional Coyhaique",
@@ -87,6 +88,7 @@
       "fallbackUrl": "https://commons.wikimedia.org/wiki/File:Coyhaique_desde_la_RNC.jpg"
     },
     {
+      "role": "documento",
       "src": "https://sefaa.dgac.gob.cl/wp-content/uploads/2022/06/INFORME-CASO-N%C2%B0-1101.pdf",
       "type": "link",
       "title": "Informe del SEFAA (DGAC de Chile), caso n.º 1101, Coyhaique, 20 de abril de 2020",

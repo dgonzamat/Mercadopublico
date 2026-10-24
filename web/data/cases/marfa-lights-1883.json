@@ -79,6 +79,7 @@
   ],
   "documents": [
     {
+      "role": "documento",
       "src": "https://archive.org/details/sim_coronet_1957-07_42_3",
       "type": "link",
       "title": "Paul Moran, «The Mystery of the Texas Ghost Light» · Coronet, julio de 1957",
@@ -88,6 +89,7 @@
       "source": "Coronet 42(3), julio de 1957 (archive.org)"
     },
     {
+      "role": "contexto",
       "src": "/pursue/marfa-lights-1883-context.jpg",
       "type": "image",
       "title": "Contexto · Marfa (Texas), cerca de Mitchell Flat donde se ven las luces",

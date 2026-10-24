@@ -41,6 +41,7 @@
   "category": "incident",
   "documents": [
     {
+      "role": "prueba",
       "src": "https://www.dvidshub.net/video/embed/1014104",
       "type": "video",
       "title": "DOW-UAP-PR106 — sensor IR pierde el objeto en 4 segundos; el debrief D089 describe 'apariencia metálica, parte inferior reflectante' (11 s)",

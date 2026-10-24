@@ -83,6 +83,7 @@
   ],
   "documents": [
     {
+      "role": "contexto",
       "src": "/pursue/rebep-ambulancia-2022-king-air.jpg",
       "type": "image",
       "title": "Contexto · un Beechcraft King Air 200 configurado como avión ambulancia",
@@ -94,6 +95,7 @@
       "fallbackUrl": "https://commons.wikimedia.org/wiki/File:King_Air_200_air_ambulance.JPG"
     },
     {
+      "role": "documento",
       "src": "https://sefaa.dgac.gob.cl/wp-content/uploads/2022/10/Informe-de-Publicacion-de-caso-N%C2%B0-1752-31012022.pdf",
       "type": "link",
       "title": "Informe del SEFAA (DGAC de Chile), caso n.º 1752, REBEP, 30 de enero de 2022",

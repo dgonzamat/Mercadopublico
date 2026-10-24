@@ -87,6 +87,7 @@
   },
   "documents": [
     {
+      "role": "documento",
       "src": "https://elibrary.sansad.in/server/api/core/bitstreams/7e980698-40bd-4ddc-8402-bc6f331c3376/content",
       "type": "link",
       "title": "Respuesta del Ministerio de Aviación Civil a la pregunta no oral n.º 2024 de la Lok Sabha (14 dic 2023)",
@@ -96,6 +97,7 @@
       "source": "Lok Sabha, Parlamento de la India (Digital Sansad)"
     },
     {
+      "role": "contexto",
       "src": "/pursue/imphal-airport-2023-context.jpg",
       "type": "image",
       "title": "Contexto · la plataforma y la torre de control del aeropuerto de Imphal, sobre la que se vio el objeto",

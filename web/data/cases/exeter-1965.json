@@ -82,6 +82,7 @@
   },
   "documents": [
     {
+      "role": "documento",
       "src": "/pursue/exeter-1965-blue-book.pdf",
       "type": "pdf",
       "title": "Expediente de Blue Book de Exeter (septiembre de 1965): tarjeta, informe de la base de Pease, declaraciones de los tres testigos, carta de los patrulleros y respuestas de la Fuerza Aérea, 12 págs.",
@@ -93,6 +94,7 @@
       "fallbackUrl": "https://archive.org/details/1965-09-9373271-Exeter-NewHampshire"
     },
     {
+      "role": "contexto",
       "src": "/pursue/exeter-1965-context.jpg",
       "type": "image",
       "title": "Contexto · Exeter (Nuevo Hampshire), escenario del avistamiento a baja altura",

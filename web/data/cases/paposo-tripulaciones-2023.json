@@ -99,6 +99,7 @@
   ],
   "documents": [
     {
+      "role": "contexto",
       "src": "/pursue/paposo-tripulaciones-2023-paranal.jpg",
       "type": "image",
       "title": "Contexto · satélites visibles a simple vista desde Paranal, a unos 40 km de la ruta",
@@ -110,6 +111,7 @@
       "fallbackUrl": "https://commons.wikimedia.org/wiki/File:Night_sky_at_ESO%27s_Paranal_Observatory_around_twilight,_Eso2004a.jpg"
     },
     {
+      "role": "documento",
       "src": "https://sefaa.dgac.gob.cl/wp-content/uploads/2024/08/CASO-N%C2%B0-1931-06112023.pdf",
       "type": "link",
       "title": "Informe del SEFAA (DGAC de Chile), caso n.º 1931, aerovía UQ803, 6 de noviembre de 2023",

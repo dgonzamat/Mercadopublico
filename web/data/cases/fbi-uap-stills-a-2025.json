@@ -39,6 +39,7 @@
   "summary_en": "The 'A series' is eight still images (A1–A8) from a reticle-equipped sensor that the FBI submitted to AARO, declassified in the first PURSUE tranche (May 8, 2026). The official captions say date and location 'have not been provided', yet war.gov's index dates them to 'Late 2025' and pairs them with the FBI-302 interview of the USPER case, linked to orb encounters at a test installation in the Western U.S. in 2025. They show, over arid terrain, a small rounded object by the reticle: dark in seven, light with a specular highlight in A7. The operator could not identify it; there is no published AARO resolution.",
   "documents": [
     {
+      "role": "prueba",
       "src": "/pursue/fbi-photo-a1.png",
       "type": "image",
       "title": "Foto FBI A001 — imagen fija UAP de sistema gubernamental (fecha y lugar no provistos)",
@@ -48,6 +49,7 @@
       "fallbackUrl": "https://www.war.gov/medialink/ufo/release_1/fbi-photo-a1.png"
     },
     {
+      "role": "prueba",
       "src": "/pursue/fbi-photo-a2.png",
       "type": "image",
       "title": "Foto FBI A002 — imagen fija UAP de sistema gubernamental (fecha y lugar no provistos)",
@@ -57,6 +59,7 @@
       "fallbackUrl": "https://www.war.gov/medialink/ufo/release_1/fbi-photo-a2.png"
     },
     {
+      "role": "prueba",
       "src": "/pursue/fbi-photo-a3.png",
       "type": "image",
       "title": "Foto FBI A003 — imagen fija UAP de sistema gubernamental (fecha y lugar no provistos)",
@@ -66,6 +69,7 @@
       "fallbackUrl": "https://www.war.gov/medialink/ufo/release_1/fbi-photo-a3.png"
     },
     {
+      "role": "prueba",
       "src": "/pursue/fbi-photo-a4.png",
       "type": "image",
       "title": "Foto FBI A004 — imagen fija UAP de sistema gubernamental (fecha y lugar no provistos)",
@@ -75,6 +79,7 @@
       "fallbackUrl": "https://www.war.gov/medialink/ufo/release_1/fbi-photo-a4.png"
     },
     {
+      "role": "prueba",
       "src": "/pursue/fbi-photo-a5.png",
       "type": "image",
       "title": "Foto FBI A005 — imagen fija UAP de sistema gubernamental (fecha y lugar no provistos)",
@@ -84,6 +89,7 @@
       "fallbackUrl": "https://www.war.gov/medialink/ufo/release_1/fbi-photo-a5.png"
     },
     {
+      "role": "prueba",
       "src": "/pursue/fbi-photo-a6.png",
       "type": "image",
       "title": "Foto FBI A006 — imagen fija UAP de sistema gubernamental (fecha y lugar no provistos)",
@@ -93,6 +99,7 @@
       "fallbackUrl": "https://www.war.gov/medialink/ufo/release_1/fbi-photo-a6.png"
     },
     {
+      "role": "prueba",
       "src": "/pursue/fbi-photo-a7.png",
       "type": "image",
       "title": "Foto FBI A007 — imagen fija UAP de sistema gubernamental (fecha y lugar no provistos)",
@@ -102,6 +109,7 @@
       "fallbackUrl": "https://www.war.gov/medialink/ufo/release_1/fbi-photo-a7.png"
     },
     {
+      "role": "prueba",
       "src": "/pursue/fbi-photo-a8.png",
       "type": "image",
       "title": "Foto FBI A008 — imagen fija UAP de sistema gubernamental (fecha y lugar no provistos)",
@@ -111,6 +119,7 @@
       "fallbackUrl": "https://www.war.gov/medialink/ufo/release_1/fbi-photo-a8.png"
     },
     {
+      "role": "documento",
       "src": "/pursue/usper-statement-redacted.pdf",
       "type": "pdf",
       "title": "USPER Statement — entrevista FBI-302 del oficial de inteligencia (PURSUE R01, redactada)",
@@ -122,6 +131,7 @@
       "description_en": "An FBI-302 interview with a currently serving senior U.S. intelligence-community official, identity protected, declassified in the first PURSUE release and expanded in the second with his first-person narrative (ODNI-UAP-D001). It describes a 2025 encounter at a sensitive Western US test installation: a 'super-hot' orb hovering over the ground that traveled some 20 miles at a speed the pursuing helicopter could not match, then four or five orbs flaring up and down for half an hour, seen by the official, pilots on night vision and ground observers, who took photos through those devices. It is testimony: no radar or telemetry was published and the location is redacted."
     },
     {
+      "role": "documento",
       "src": "/pursue/ODNI-UAP-D001_USPER_Narrative_Senior_USIC.pdf",
       "type": "pdf",
       "title": "ODNI-UAP-D001 — narrativa en primera persona del mismo oficial (PURSUE R02)",
@@ -131,6 +141,7 @@
       "fallbackUrl": "https://www.war.gov/medialink/ufo/052226/release_02/documents/ODNI-UAP-D001_USPER_Narrative_Senior_USIC.pdf"
     },
     {
+      "role": "prueba",
       "src": "/pursue/fbi-photo-b1.png",
       "type": "image",
       "title": "Foto FBI B001 — contacto IR/visión nocturna del evento (oeste de EE.UU., 2025)",
@@ -140,6 +151,7 @@
       "fallbackUrl": "https://www.war.gov/medialink/ufo/release_1/fbi-photo-b1.pdf"
     },
     {
+      "role": "prueba",
       "src": "/pursue/fbi-photo-b2.png",
       "type": "image",
       "title": "Foto FBI B002 — contacto IR/visión nocturna del evento (oeste de EE.UU., 2025)",
@@ -149,6 +161,7 @@
       "fallbackUrl": "https://www.war.gov/medialink/ufo/release_1/fbi-photo-b2.pdf"
     },
     {
+      "role": "prueba",
       "src": "/pursue/fbi-photo-b3.png",
       "type": "image",
       "title": "Foto FBI B003 — contacto IR/visión nocturna del evento (oeste de EE.UU., 2025)",
@@ -158,6 +171,7 @@
       "fallbackUrl": "https://www.war.gov/medialink/ufo/release_1/fbi-photo-b3.pdf"
     },
     {
+      "role": "prueba",
       "src": "/pursue/fbi-photo-b4.png",
       "type": "image",
       "title": "Foto FBI B004 — contacto IR/visión nocturna del evento (oeste de EE.UU., 2025)",
@@ -167,6 +181,7 @@
       "fallbackUrl": "https://www.war.gov/medialink/ufo/release_1/fbi-photo-b4.pdf"
     },
     {
+      "role": "prueba",
       "src": "/pursue/fbi-photo-b5.png",
       "type": "image",
       "title": "Foto FBI B005 — contacto IR/visión nocturna del evento (oeste de EE.UU., 2025)",
@@ -176,6 +191,7 @@
       "fallbackUrl": "https://www.war.gov/medialink/ufo/release_1/fbi-photo-b5.pdf"
     },
     {
+      "role": "prueba",
       "src": "/pursue/fbi-photo-b6.png",
       "type": "image",
       "title": "Foto FBI B006 — contacto IR/visión nocturna del evento (oeste de EE.UU., 2025)",
@@ -185,6 +201,7 @@
       "fallbackUrl": "https://www.war.gov/medialink/ufo/release_1/fbi-photo-b6.pdf"
     },
     {
+      "role": "prueba",
       "src": "/pursue/fbi-photo-b7.png",
       "type": "image",
       "title": "Foto FBI B007 — contacto IR/visión nocturna del evento (oeste de EE.UU., 2025)",
@@ -194,6 +211,7 @@
       "fallbackUrl": "https://www.war.gov/medialink/ufo/release_1/fbi-photo-b7.pdf"
     },
     {
+      "role": "prueba",
       "src": "/pursue/fbi-photo-b8.png",
       "type": "image",
       "title": "Foto FBI B008 — contacto IR/visión nocturna del evento (oeste de EE.UU., 2025)",
@@ -203,6 +221,7 @@
       "fallbackUrl": "https://www.war.gov/medialink/ufo/release_1/fbi-photo-b8.pdf"
     },
     {
+      "role": "prueba",
       "src": "/pursue/fbi-photo-b9.png",
       "type": "image",
       "title": "Foto FBI B009 — contacto IR/visión nocturna del evento (oeste de EE.UU., 2025)",
@@ -212,6 +231,7 @@
       "fallbackUrl": "https://www.war.gov/medialink/ufo/release_1/fbi-photo-b9.pdf"
     },
     {
+      "role": "prueba",
       "src": "/pursue/fbi-photo-b10.png",
       "type": "image",
       "title": "Foto FBI B010 — contacto IR/visión nocturna del evento (oeste de EE.UU., 2025)",
@@ -221,6 +241,7 @@
       "fallbackUrl": "https://www.war.gov/medialink/ufo/release_1/fbi-photo-b10.pdf"
     },
     {
+      "role": "prueba",
       "src": "/pursue/fbi-photo-b11.png",
       "type": "image",
       "title": "Foto FBI B011 — contacto IR/visión nocturna del evento (oeste de EE.UU., 2025)",
@@ -230,6 +251,7 @@
       "fallbackUrl": "https://www.war.gov/medialink/ufo/release_1/fbi-photo-b11.pdf"
     },
     {
+      "role": "prueba",
       "src": "/pursue/fbi-photo-b12.png",
       "type": "image",
       "title": "Foto FBI B012 — contacto IR/visión nocturna del evento (oeste de EE.UU., 2025)",
@@ -239,6 +261,7 @@
       "fallbackUrl": "https://www.war.gov/medialink/ufo/release_1/fbi-photo-b12.pdf"
     },
     {
+      "role": "prueba",
       "src": "/pursue/fbi-photo-b13.png",
       "type": "image",
       "title": "Foto FBI B013 — contacto IR/visión nocturna del evento (oeste de EE.UU., 2025)",
@@ -248,6 +271,7 @@
       "fallbackUrl": "https://www.war.gov/medialink/ufo/release_1/fbi-photo-b13.pdf"
     },
     {
+      "role": "prueba",
       "src": "/pursue/fbi-photo-b14.png",
       "type": "image",
       "title": "Foto FBI B014 — contacto IR/visión nocturna del evento (oeste de EE.UU., 2025)",
@@ -257,6 +281,7 @@
       "fallbackUrl": "https://www.war.gov/medialink/ufo/release_1/fbi-photo-b14.pdf"
     },
     {
+      "role": "prueba",
       "src": "/pursue/fbi-photo-b15.png",
       "type": "image",
       "title": "Foto FBI B015 — contacto IR/visión nocturna del evento (oeste de EE.UU., 2025)",
@@ -266,6 +291,7 @@
       "fallbackUrl": "https://www.war.gov/medialink/ufo/release_1/fbi-photo-b15.pdf"
     },
     {
+      "role": "prueba",
       "src": "/pursue/fbi-photo-b16.png",
       "type": "image",
       "title": "Foto FBI B016 — contacto IR/visión nocturna del evento (oeste de EE.UU., 2025)",
@@ -275,6 +301,7 @@
       "fallbackUrl": "https://www.war.gov/medialink/ufo/release_1/fbi-photo-b16.pdf"
     },
     {
+      "role": "prueba",
       "src": "/pursue/fbi-photo-b17.png",
       "type": "image",
       "title": "Foto FBI B017 — contacto IR/visión nocturna del evento (oeste de EE.UU., 2025)",
@@ -284,6 +311,7 @@
       "fallbackUrl": "https://www.war.gov/medialink/ufo/release_1/fbi-photo-b17.pdf"
     },
     {
+      "role": "prueba",
       "src": "/pursue/fbi-photo-b18.png",
       "type": "image",
       "title": "Foto FBI B018 — contacto IR/visión nocturna del evento (oeste de EE.UU., 2025)",
@@ -293,6 +321,7 @@
       "fallbackUrl": "https://www.war.gov/medialink/ufo/release_1/fbi-photo-b18.pdf"
     },
     {
+      "role": "prueba",
       "src": "/pursue/fbi-photo-b19.png",
       "type": "image",
       "title": "Foto FBI B019 — contacto IR/visión nocturna del evento (oeste de EE.UU., 2025)",
@@ -302,6 +331,7 @@
       "fallbackUrl": "https://www.war.gov/medialink/ufo/release_1/fbi-photo-b19.pdf"
     },
     {
+      "role": "prueba",
       "src": "/pursue/fbi-photo-b20.png",
       "type": "image",
       "title": "Foto FBI B020 — contacto IR/visión nocturna del evento (oeste de EE.UU., 2025)",
@@ -311,6 +341,7 @@
       "fallbackUrl": "https://www.war.gov/medialink/ufo/release_1/fbi-photo-b20.pdf"
     },
     {
+      "role": "documento",
       "src": "/pursue/fbi-photo-b21.pdf",
       "type": "pdf",
       "title": "Foto FBI B021 — contacto IR/visión nocturna del evento (oeste de EE.UU., 2025)",
@@ -320,6 +351,7 @@
       "fallbackUrl": "https://www.war.gov/medialink/ufo/release_1/fbi-photo-b21.pdf"
     },
     {
+      "role": "prueba",
       "src": "/pursue/fbi-photo-b22.png",
       "type": "image",
       "title": "Foto FBI B022 — contacto IR/visión nocturna del evento (oeste de EE.UU., 2025)",
@@ -329,6 +361,7 @@
       "fallbackUrl": "https://www.war.gov/medialink/ufo/release_1/fbi-photo-b22.pdf"
     },
     {
+      "role": "prueba",
       "src": "/pursue/fbi-photo-b23.png",
       "type": "image",
       "title": "Foto FBI B023 — contacto IR/visión nocturna del evento (oeste de EE.UU., 2025)",
@@ -338,6 +371,7 @@
       "fallbackUrl": "https://www.war.gov/medialink/ufo/release_1/fbi-photo-b23.pdf"
     },
     {
+      "role": "prueba",
       "src": "/pursue/fbi-photo-b24.png",
       "type": "image",
       "title": "Foto FBI B024 — contacto IR/visión nocturna del evento (oeste de EE.UU., 2025)",

@@ -34,6 +34,7 @@
   "category": "incident",
   "documents": [
     {
+      "role": "prueba",
       "src": "https://www.dvidshub.net/video/embed/944201",
       "type": "video",
       "title": "'Mt. Etna Object' — metraje FLIR mostrando el objeto aparentemente cruzando la columna volcánica (dic 2018)",

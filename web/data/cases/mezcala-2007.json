@@ -74,6 +74,7 @@
   },
   "documents": [
     {
+      "role": "documento",
       "src": "https://ovnisyfenomenosparanormales.wordpress.com/2014/08/05/el-ovni-de-mezcala-mexico/",
       "type": "link",
       "title": "Francisco Rangel Cruz, crónica de La Crónica Vespertino de Chilpancingo (10 de enero de 2008), reproducida en un blog",
@@ -83,6 +84,7 @@
       "source": "La Crónica Vespertino (Chilpancingo), reproducida en ovnisyfenomenosparanormales.wordpress.com"
     },
     {
+      "role": "contexto",
       "src": "/pursue/mezcala-2007-context.jpg",
       "type": "image",
       "title": "Contexto · Mezcala (Guerrero, México)",

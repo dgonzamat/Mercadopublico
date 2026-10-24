@@ -73,6 +73,7 @@
   },
   "documents": [
     {
+      "role": "documento",
       "src": "https://www.cnes-geipan.fr/sites/default/files/note_tech_17.pdf",
       "type": "link",
       "title": "GEPAN · Nota técnica n.º 17 sobre el caso del 21 de octubre de 1982 (21 de marzo de 1983)",
@@ -82,6 +83,7 @@
       "source": "GEIPAN (CNES) · © CNES"
     },
     {
+      "role": "contexto",
       "src": "/pursue/amarante-nancy-1982-context.jpg",
       "type": "image",
       "title": "Contexto · un amaranto en flor (Amaranthus caudatus), la especie del macizo que el testigo encontró marchito",

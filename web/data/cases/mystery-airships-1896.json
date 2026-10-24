@@ -95,6 +95,7 @@
   },
   "documents": [
     {
+      "role": "documento",
       "src": "/pursue/mystery-airships-1896-context.jpg",
       "type": "image",
       "title": "Ilustración de prensa de la ola de dirigibles misteriosos de 1896-97",

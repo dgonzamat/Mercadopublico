@@ -92,6 +92,7 @@
   ],
   "documents": [
     {
+      "role": "documento",
       "src": "/pursue/ilkley-moor-1987-defe24-1931.pdf",
       "type": "pdf",
       "title": "Expediente DEFE 24/1931: respuestas del Ministerio de Defensa a MUFORA sobre el caso de Ilkley (julio, octubre y diciembre de 1988)",
@@ -103,6 +104,7 @@
       "fallbackUrl": "https://discovery.nationalarchives.gov.uk/details/r/C11483076"
     },
     {
+      "role": "documento",
       "src": "https://archive.org/details/BritishUFOFiles/defe-24-1931.pdf/page/n408/mode/1up",
       "type": "link",
       "title": "Cartas de MUFORA al Ministerio de Defensa sobre el testigo de Ilkley (6 de abril, 25 de mayo, 13 de julio y 29 de noviembre de 1988), en DEFE 24/1931",
@@ -112,6 +114,7 @@
       "source": "The National Archives (Reino Unido), DEFE 24/1931; copia digital en archive.org (BritishUFOFiles)"
     },
     {
+      "role": "documento",
       "src": "https://archive.org/details/UFO_Times_No_04_Nov_1989/page/n4/mode/1up",
       "type": "link",
       "title": "Jenny Randles, «To believe or not to believe: the lessons of Gulf Breeze and Ilkley Moor», UFO Times (BUFORA) n.º 4, noviembre de 1989",
@@ -121,6 +124,7 @@
       "source": "UFO Times n.º 4 (BUFORA, noviembre de 1989), págs. 6-9; copia en archive.org"
     },
     {
+      "role": "contexto",
       "src": "/pursue/ilkley-moor-1987-context.jpg",
       "type": "image",
       "title": "Contexto · Ilkley Moor (West Yorkshire, Inglaterra)",

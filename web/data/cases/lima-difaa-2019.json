@@ -117,6 +117,7 @@
   },
   "documents": [
     {
+      "role": "documento",
       "src": "/pursue/lima-difaa-2019-rai-corpac.jpg",
       "type": "image",
       "title": "Reporte de Accidente y/o Incidente (RAI) de la torre del Jorge Chávez, con el sello de recepción de CORPAC del 27 feb 2019",
@@ -126,6 +127,7 @@
       "fallbackUrl": "https://expedienteoculto.blogspot.com/2019/02/todo-sobre-el-avistamiento-de-dos-ovnis.html"
     },
     {
+      "role": "contexto",
       "src": "/pursue/lima-difaa-2019-context.jpg",
       "type": "image",
       "title": "Contexto · el aeropuerto Jorge Chávez (Lima, Perú), donde ocurrió el doble avistamiento",

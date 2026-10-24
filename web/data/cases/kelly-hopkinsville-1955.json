@@ -88,6 +88,7 @@
   },
   "documents": [
     {
+      "role": "documento",
       "src": "/pursue/kelly-hopkinsville-1955-blue-book.pdf",
       "type": "pdf",
       "title": "Correspondencia de la Fuerza Aérea sobre el incidente de Hopkinsville (1957)",
@@ -99,6 +100,7 @@
       "fallbackUrl": "https://archive.org/details/1955-08-6972585-OLDGREENWICH-CONNECTICUT"
     },
     {
+      "role": "contexto",
       "src": "/pursue/kelly-hopkinsville-1955-context.jpg",
       "type": "image",
       "title": "Contexto · Hopkinsville (Kentucky), cerca de la granja del célebre 'asedio'",

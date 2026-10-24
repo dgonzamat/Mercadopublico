@@ -75,6 +75,7 @@
   ],
   "documents": [
     {
+      "role": "documento",
       "src": "/pursue/kirtland-afb-1957-blue-book-index.pdf",
       "type": "pdf",
       "title": "Índice de Project Blue Book · avistamientos del 1 al 4 de noviembre de 1957",
@@ -86,6 +87,7 @@
       "fallbackUrl": "https://archive.org/details/ProjectBlueBookIndexes"
     },
     {
+      "role": "contexto",
       "src": "/pursue/kirtland-afb-1957-context.jpg",
       "type": "image",
       "title": "Contexto · la Base Aérea de Kirtland (Nuevo México)",

@@ -86,6 +86,7 @@
   ],
   "documents": [
     {
+      "role": "documento",
       "src": "/pursue/rb47-1957-blue-book.pdf",
       "type": "pdf",
       "title": "Expediente de Blue Book del RB-47 (julio de 1957): tarjeta, mensaje del 55.º Ala, cartas del Mando de Defensa Aérea, análisis de ATIC y carta de la CAA, 9 págs.",
@@ -97,6 +98,7 @@
       "fallbackUrl": "https://archive.org/details/1957-07-6961835-ForbesAFB-Kansas"
     },
     {
+      "role": "contexto",
       "src": "/pursue/rb47-1957-context.jpg",
       "type": "image",
       "title": "Contexto · un Boeing RB-47, el tipo de avión del encuentro ECM de 1957",

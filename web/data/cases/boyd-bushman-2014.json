@@ -84,6 +84,7 @@
   },
   "documents": [
     {
+      "role": "contexto",
       "src": "/pursue/boyd-bushman-2014-context.png",
       "type": "image",
       "title": "Contexto · Tucson (Arizona)",

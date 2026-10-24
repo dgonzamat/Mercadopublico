@@ -100,6 +100,7 @@
   ],
   "documents": [
     {
+      "role": "documento",
       "src": "http://www.zianet.com/web/schneid.htm",
       "type": "link",
       "title": "Phil Schneider, «UFOs and Cattle Cars» · transcripción de la conferencia de mayo de 1995",
@@ -109,6 +110,7 @@
       "source": "zianet.com (transcripción sin autor declarado)"
     },
     {
+      "role": "contexto",
       "src": "/pursue/dulce-schneider-1979-context.jpg",
       "type": "image",
       "title": "Contexto · Dulce (Nuevo México), al pie de la Mesa Archuleta",

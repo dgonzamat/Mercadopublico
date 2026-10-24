@@ -81,6 +81,7 @@
   },
   "documents": [
     {
+      "role": "documento",
       "src": "/pursue/wanaque-reservoir-1966-bluebook.pdf",
       "type": "pdf",
       "title": "Project Blue Book · tarjeta, memorandos y télex de la Defensa Aérea de Nueva York (extracto)",
@@ -92,6 +93,7 @@
       "fallbackUrl": "https://archive.org/details/1966-01-8722320-Wayne-NewJersey"
     },
     {
+      "role": "contexto",
       "src": "/pursue/wanaque-reservoir-1966-context.jpg",
       "type": "image",
       "title": "Contexto · el embalse de Wanaque (Nueva Jersey)",

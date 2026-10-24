@@ -110,6 +110,7 @@
   },
   "documents": [
     {
+      "role": "documento",
       "src": "https://www.news24.com/southafrica/news/air-force-on-alert-about-ufo-20040603",
       "type": "link",
       "title": "Despacho de AFP «Air force on alert about UFO» (Lisboa, 3 de junio de 2004), publicado por News24",
@@ -119,6 +120,7 @@
       "source": "Agence France-Presse, vía News24"
     },
     {
+      "role": "contexto",
       "src": "/pursue/lisbon-radar-2004-context.jpg",
       "type": "image",
       "title": "Contexto · Lisboa (Portugal), cuyo control aéreo registró el blanco de radar",

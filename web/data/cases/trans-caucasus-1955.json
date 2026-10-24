@@ -32,6 +32,7 @@
   "summary_en": "Report IR 193-55 (PURSUE Release 01), signed on October 14, 1955 by U.S. air attaché Lt. Col. Thomas S. Ryan, records the account of three 'highly reliable' observers who, traveling by rail through the Trans-Caucasus south of Baku on October 4, 1955 at 19:10, saw two disc-shaped objects ascend almost vertically to about 6,000 feet and sharply accelerate northward. The attaché's cable transcribed in the report, and later CIA memo CIA-UAP-D020, identify them: Senator Richard Russell, his military aide (Lt. Col. E. U. Hathaway) and interpreter Ruben Efron.",
   "documents": [
     {
+      "role": "documento",
       "src": "/pursue/341_110677_numerical_file_5-2500.pdf",
       "type": "pdf",
       "title": "Air Intelligence Information Report IR 193-55 — Agregado Aéreo de EE.UU. (14 oct 1955)",

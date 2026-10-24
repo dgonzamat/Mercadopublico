@@ -32,6 +32,7 @@
   "category": "incident",
   "documents": [
     {
+      "role": "documento",
       "src": "/pursue/blue-book-korea-f94-1952.pdf",
       "type": "pdf",
       "title": "Expediente de Blue Book «North Korea», mayo de 1952: las 11 hojas del suceso del 26 de mayo y de los globos con luz de esa zona",

@@ -81,6 +81,7 @@
   },
   "documents": [
     {
+      "role": "documento",
       "src": "https://www.dvidshub.net/video/embed/880293",
       "type": "video",
       "title": "Audiencia completa del Subcomité del Senado, 19 abr 2023, donde Kirkpatrick presentó la esfera de Oriente Medio de 2022 (59:28)",
@@ -90,6 +91,7 @@
       "fallbackUrl": "https://www.dvidshub.net/video/880293"
     },
     {
+      "role": "contexto",
       "src": "https://www.dvidshub.net/video/embed/880273",
       "type": "video",
       "title": "'Middle East Object' (2022) — la esfera que Kirkpatrick mostró en la audiencia y que la prensa asoció con el Mosul Orb",
@@ -99,6 +101,7 @@
       "fallbackUrl": "https://www.dvidshub.net/video/880273"
     },
     {
+      "role": "contexto",
       "src": "/pursue/mosul-orb-2016-context.png",
       "type": "image",
       "title": "Contexto · Mosul (Irak), sobre cuya área, según Jeremy Corbell, una plataforma de EE.UU. grabó la esfera",

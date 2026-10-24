@@ -97,6 +97,7 @@
   ],
   "documents": [
     {
+      "role": "documento",
       "src": "https://cnes-geipan.fr/en/node/50980",
       "type": "link",
       "title": "GEIPAN (CNES), expediente del caso «Rentrée atmosphérique 5 novembre 1990» (clase A), con las actas de la gendarmería",
@@ -106,6 +107,7 @@
       "source": "GEIPAN · Centre national d'études spatiales (CNES)"
     },
     {
+      "role": "contexto",
       "src": "/pursue/france-wave-1990-context.jpg",
       "type": "image",
       "title": "Contexto · la Gendarmería francesa, que recopiló los reportes de la oleada del 5-nov-1990",

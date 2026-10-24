@@ -77,6 +77,7 @@
   },
   "documents": [
     {
+      "role": "documento",
       "src": "https://www.aztecapuebla.com/noticias/que-son-los-objetos-luminosos-captados-en-el-volcan-popocatepetl/",
       "type": "link",
       "title": "Azteca Puebla, «¿OVNIS o satélites? Captan a objetos luminosos en el volcán Popocatépetl en la madrugada» (12 de julio de 2026)",
@@ -86,6 +87,7 @@
       "source": "Azteca Puebla (TV Azteca)"
     },
     {
+      "role": "contexto",
       "src": "/pursue/popocatepetl-1992-context.jpg",
       "type": "image",
       "title": "Contexto · el volcán Popocatépetl (México), foco recurrente de avistamientos",

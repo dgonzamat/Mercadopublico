@@ -78,6 +78,7 @@
   ],
   "documents": [
     {
+      "role": "contexto",
       "src": "/pursue/caleta-lobos-tres-marias-2024-orion.jpg",
       "type": "image",
       "title": "Contexto · el cinturón de Orión, las Tres Marías, sobre el desierto de Atacama",
@@ -89,6 +90,7 @@
       "fallbackUrl": "https://commons.wikimedia.org/wiki/File:Orion_Watches_over_Paranal_-_potw2009a.jpg"
     },
     {
+      "role": "documento",
       "src": "https://sefaa.dgac.gob.cl/wp-content/uploads/2024/08/CASO-N%C2%B0-1984-23042024-1.pdf",
       "type": "link",
       "title": "Informe del SEFAA (DGAC de Chile), caso n.º 1984, al sur de caleta Lobos, 22 de abril de 2024",

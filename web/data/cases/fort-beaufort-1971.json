@@ -74,6 +74,7 @@
   ],
   "documents": [
     {
+      "role": "documento",
       "src": "https://archive.org/details/AFU_19721100_APRO_Bulletin_September-October",
       "type": "link",
       "title": "APRO Bulletin, septiembre-octubre de 1972, págs. 1, 3 y 4: «The South African Flap»",
@@ -83,6 +84,7 @@
       "source": "Aerial Phenomena Research Organization · Internet Archive (AFU)"
     },
     {
+      "role": "contexto",
       "src": "/pursue/fort-beaufort-1971-context.jpg",
       "type": "image",
       "title": "Contexto · Fort Beaufort (Cabo Oriental, Sudáfrica)",

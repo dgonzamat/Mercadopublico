@@ -88,6 +88,7 @@
   ],
   "documents": [
     {
+      "role": "documento",
       "src": "/pursue/cecconi-treviso-1979-archivio-am.pdf",
       "type": "pdf",
       "title": "Aeronautica Militare — ficha del 18 de junio de 1979 en el catálogo de avistamientos 1972–1990 (2 págs.)",
@@ -99,6 +100,7 @@
       "fallbackUrl": "https://www.aeronautica.difesa.it/wp-content/uploads/2023/05/Archivio_OVNI_periodo1972-1990.pdf"
     },
     {
+      "role": "contexto",
       "src": "/pursue/cecconi-treviso-1979-context.jpg",
       "type": "image",
       "title": "Contexto · Treviso (Italia), base del 2° Stormo cuyo piloto persiguió el objeto",

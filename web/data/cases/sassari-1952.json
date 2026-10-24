@@ -36,6 +36,7 @@
   "category": "incident",
   "documents": [
     {
+      "role": "documento",
       "src": "/pursue/DOW-UAP-D157-Air_Intelligence_Information_Report_Italy-1952.pdf",
       "type": "pdf",
       "title": "DOW-UAP-D157 — Informe de inteligencia aérea del agregado en Roma sobre la esfera de Sassari",

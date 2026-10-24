@@ -34,6 +34,7 @@
   "category": "incident",
   "documents": [
     {
+      "role": "documento",
       "src": "/pursue/DOW-UAP-D155-Air_Intelligence_Information_Report_Saudi_Arabia-1957.pdf",
       "type": "pdf",
       "title": "DOW-UAP-D155 — Informe de inteligencia aérea sobre el eco del B-52 número 394",

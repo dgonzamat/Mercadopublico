@@ -99,6 +99,7 @@
   ],
   "documents": [
     {
+      "role": "documento",
       "src": "/pursue/bonnybridge-1992-defe24-1963.pdf",
       "type": "pdf",
       "title": "Expediente DEFE 24/1963: respuesta del Ministerio de Defensa sobre la oleada de Bonnybridge (13 de abril de 1993)",
@@ -110,6 +111,7 @@
       "fallbackUrl": "https://discovery.nationalarchives.gov.uk/details/r/C11511527"
     },
     {
+      "role": "documento",
       "src": "https://archive.org/details/BritishUFOFiles/defe-24-1963.pdf/page/n249/mode/1up",
       "type": "link",
       "title": "Carta de Strange Phenomena Investigations al Ministerio de Defensa sobre los avistamientos de Bonnybridge (29 de marzo de 1993), en DEFE 24/1963",
@@ -119,6 +121,7 @@
       "source": "The National Archives (Reino Unido), DEFE 24/1963; copia digital en archive.org (BritishUFOFiles)"
     },
     {
+      "role": "contexto",
       "src": "/pursue/bonnybridge-1992-context.jpg",
       "type": "image",
       "title": "Contexto · Bonnybridge (Escocia), corazón del 'triángulo de Falkirk'",

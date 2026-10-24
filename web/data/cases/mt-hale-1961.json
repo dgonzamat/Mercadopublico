@@ -101,6 +101,7 @@
   "evidenceReviewed": "2026-10-12",
   "documents": [
     {
+      "role": "documento",
       "src": "/pursue/mt-hale-1961-raaf-a703.pdf",
       "type": "pdf",
       "title": "RAAF, expediente A703 580/1/1 parte 3 (extracto, 3 págs.): télex de Pearce del 7 ago 1961, carta del 18 ago e informe policial de Meekatharra",
@@ -112,6 +113,7 @@
       "fallbackUrl": "https://documents.theblackvault.com/documents/ufos/australia/A703_580-1-1_Part%203_756666.pdf"
     },
     {
+      "role": "documento",
       "src": "https://documents.theblackvault.com/documents/ufos/australia/A13693_3092-2-000_30030606.pdf",
       "type": "link",
       "title": "Turner Report · JIO Australia (1971)",

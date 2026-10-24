@@ -72,6 +72,7 @@
   ],
   "documents": [
     {
+      "role": "documento",
       "src": "https://files.ncas.org/condon/text/case22.htm",
       "type": "link",
       "title": "Informe Condon (1968), caso 22 «Claim of UFO Landing»",
@@ -81,6 +82,7 @@
       "source": "Condon, E. U. (dir.), «Scientific Study of Unidentified Flying Objects» (1968), transcripción de NCAS"
     },
     {
+      "role": "contexto",
       "src": "/pursue/falcon-lake-1967-context.jpg",
       "type": "image",
       "title": "Contexto · el parque Whiteshell (Manitoba, Canadá), zona del encuentro de Stefan Michalak",

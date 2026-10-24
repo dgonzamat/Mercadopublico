@@ -95,6 +95,7 @@
   },
   "documents": [
     {
+      "role": "documento",
       "src": "https://oversight.house.gov/wp-content/uploads/2025/09/Wiggins-Written-Statement.pdf",
       "type": "link",
       "title": "Declaración escrita del suboficial mayor Alexandro C. Wiggins ante el Comité de Supervisión de la Cámara (9 sep 2025)",
@@ -104,6 +105,7 @@
       "source": "Cámara de Representantes de EE. UU., Comité de Supervisión"
     },
     {
+      "role": "contexto",
       "src": "/pursue/uss-jackson-2023-context.png",
       "type": "image",
       "title": "Contexto · el USS Jackson (LCS-6), buque del incidente transmedium reportado por Wiggins",

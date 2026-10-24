@@ -100,6 +100,7 @@
   },
   "documents": [
     {
+      "role": "documento",
       "src": "/pursue/nash-fortenberry-1952-blue-book.pdf",
       "type": "pdf",
       "title": "Expediente de Blue Book de Norfolk (julio de 1952): tarjeta, cable AFOIN 53722, informe de inteligencia AF Form 112 del mayor Sharpe con croquis y resumen de ATIC, 7 págs.",
@@ -111,6 +112,7 @@
       "fallbackUrl": "http://www.nicap.org/docs/520714norfolk_docs2a.pdf"
     },
     {
+      "role": "contexto",
       "src": "/pursue/nash-fortenberry-1952-context.jpg",
       "type": "image",
       "title": "Contexto · un Douglas DC-4 de Pan American, el tipo de avión del avistamiento de Norfolk",

@@ -82,6 +82,7 @@
   },
   "documents": [
     {
+      "role": "documento",
       "src": "/pursue/manston-torres-1957-defe24-1931.pdf",
       "type": "pdf",
       "title": "Expediente DEFE 24/1931: memorandos de Sec(AS)2a del 22 de julio y del 18 de noviembre de 1988 sobre el incidente de 1957",
@@ -93,6 +94,7 @@
       "fallbackUrl": "https://discovery.nationalarchives.gov.uk/details/r/C11483076"
     },
     {
+      "role": "documento",
       "src": "https://archive.org/details/BritishUFOFiles/defe-24-1931.pdf/page/n258/mode/1up",
       "type": "link",
       "title": "Carta del abogado al Ministerio de Defensa (20 de julio de 1988) y relato mecanografiado de Milton Torres, en DEFE 24/1931",
@@ -102,6 +104,7 @@
       "source": "The National Archives (Reino Unido), DEFE 24/1931; copia digital en archive.org (BritishUFOFiles)"
     },
     {
+      "role": "contexto",
       "src": "/pursue/manston-torres-1957-context.jpg",
       "type": "image",
       "title": "Contexto · RAF Manston (Kent, Inglaterra), base del interceptor con orden de disparar",

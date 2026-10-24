@@ -32,6 +32,7 @@
   "category": "incident",
   "documents": [
     {
+      "role": "contexto",
       "src": "/pursue/skinny-bob-abbott-2026-context.jpg",
       "type": "image",
       "title": "Contexto · el interior real de un SCIF (Casa Blanca, 2011)",

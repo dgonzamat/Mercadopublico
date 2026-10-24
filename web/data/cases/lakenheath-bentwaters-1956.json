@@ -88,6 +88,7 @@
   ],
   "documents": [
     {
+      "role": "documento",
       "src": "/pursue/lakenheath-bentwaters-1956-blue-book-extract.pdf",
       "type": "pdf",
       "title": "Project Blue Book · tarjeta, análisis de ATIC e informe IR-1-56 (extracto, 4 págs.)",
@@ -99,6 +100,7 @@
       "fallbackUrl": "https://archive.org/details/1956-08-7069309-Bentwaters-Lakenheath-England"
     },
     {
+      "role": "contexto",
       "src": "/pursue/lakenheath-bentwaters-1956-context.jpg",
       "type": "image",
       "title": "Contexto · RAF Lakenheath (Inglaterra), base del incidente radar-visual",

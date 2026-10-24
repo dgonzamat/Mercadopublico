@@ -69,6 +69,7 @@
   },
   "documents": [
     {
+      "role": "documento",
       "src": "/pursue/morocco-gendarmerie-1976-state-cables.pdf",
       "type": "pdf",
       "title": "Cables del Departamento de Estado de EE. UU. sobre los avistamientos de Marruecos (25 de septiembre y 5 de octubre de 1976)",
@@ -80,6 +81,7 @@
       "fallbackUrl": "https://wikileaks.org/plusd/cables/1976RABAT05209_b.html"
     },
     {
+      "role": "contexto",
       "src": "/pursue/morocco-gendarmerie-1976-context.jpg",
       "type": "image",
       "title": "Contexto · Rabat (Marruecos), sede de la Gendarmería Real",

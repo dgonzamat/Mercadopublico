@@ -98,6 +98,7 @@
   ],
   "documents": [
     {
+      "role": "contexto",
       "src": "/pursue/antofagasta-nube-tripulaciones-2023-minotaur.jpg",
       "type": "image",
       "title": "Contexto · la estela iluminada de un cohete sobre el cielo nocturno (Minotaur I, Vandenberg, 2005)",
@@ -109,6 +110,7 @@
       "fallbackUrl": "https://commons.wikimedia.org/wiki/File:Twilight_phenomenon_in_the_wake_of_a_Minotaur_I_launch_from_Vandenberg_AFB,_CaIif.jpg"
     },
     {
+      "role": "documento",
       "src": "https://sefaa.dgac.gob.cl/wp-content/uploads/2024/03/CASO-N%C2%B01918-08092023-1.pdf",
       "type": "link",
       "title": "Informe del SEFAA (DGAC de Chile), caso n.º 1918, versión final, 7 de septiembre de 2023",

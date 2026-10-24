@@ -79,6 +79,7 @@
   },
   "documents": [
     {
+      "role": "documento",
       "src": "/pursue/levelland-1957-blue-book.pdf",
       "type": "pdf",
       "title": "Expediente de Blue Book de Levelland (noviembre de 1957): tarjeta, informes preliminares de Reese AFB, resumen de ATIC, conclusiones del capitán Gregory y resumen de la Fuerza Aérea, 7 págs.",
@@ -90,6 +91,7 @@
       "fallbackUrl": "https://archive.org/details/1957-11-7229541-VicinityLevelland-Texas"
     },
     {
+      "role": "contexto",
       "src": "/pursue/levelland-1957-context.jpg",
       "type": "image",
       "title": "Contexto · Levelland (Texas), donde el objeto detuvo los motores de varios vehículos",

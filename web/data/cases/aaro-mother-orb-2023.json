@@ -25,6 +25,7 @@
   "summary_en": "Over two days in October 2023, six federal agents (three two-person teams) observed near a sensitive national security site in the western U.S. an orange 'mother' orb that appeared for 1-2 seconds and released clusters of 2-4 red orbs. AARO published the report on 5 June 2026 (director Jon Kosloski): ~60% correlates with IR flares and radar; ~40% remains unexplained.",
   "documents": [
     {
+      "role": "documento",
       "src": "/pursue/western_us_event_slides_5.08.2026.pdf",
       "type": "pdf",
       "title": "Western US Event — resumen de testimonios de siete agentes federales (PURSUE R01)",
@@ -34,6 +35,7 @@
       "fallbackUrl": "https://www.war.gov/medialink/ufo/release_1/western_us_event_slides_5.08.2026.pdf"
     },
     {
+      "role": "documento",
       "src": "/pursue/DOW-UAP-D077_Unresolved-Case-Analysis-Update_Western-United-States-Event.pdf",
       "type": "pdf",
       "title": "DOW-UAP-D077 — AARO · actualización de análisis de caso no resuelto, Western US Event",
@@ -43,6 +45,7 @@
       "fallbackUrl": "https://www.war.gov/medialink/ufo/061226/release_03/documents/DOW-UAP-D077_Unresolved-Case-Analysis-Update_Western-United-States-Event.pdf"
     },
     {
+      "role": "documento",
       "src": "/pursue/DOW-UAP-D078_Notional-Map_Western-United-States-Event.pdf",
       "type": "pdf",
       "title": "DOW-UAP-D078 — mapa nocional del evento, Western US Event",
@@ -52,6 +55,7 @@
       "fallbackUrl": "https://www.war.gov/medialink/ufo/061226/release_03/documents/DOW-UAP-D078_Notional-Map_Western-United-States-Event.pdf"
     },
     {
+      "role": "documento",
       "src": "/pursue/DoW-UAP-D079_Narrative-1_Western-US-Event.pdf",
       "type": "pdf",
       "title": "DOW-UAP-D079 — narrativa de testigo 1, Western US Event (2023)",
@@ -61,6 +65,7 @@
       "fallbackUrl": "https://www.war.gov/medialink/ufo/061226/release_03/documents/DoW-UAP-D079_Narrative-1_Western-US-Event.pdf"
     },
     {
+      "role": "documento",
       "src": "/pursue/DoW-UAP-D080_Narrative-2_Western-US-Event.pdf",
       "type": "pdf",
       "title": "DOW-UAP-D080 — narrativa de testigo 2, Western US Event (2023)",
@@ -70,6 +75,7 @@
       "fallbackUrl": "https://www.war.gov/medialink/ufo/061226/release_03/documents/DoW-UAP-D080_Narrative-2_Western-US-Event.pdf"
     },
     {
+      "role": "documento",
       "src": "/pursue/DoW-UAP-D081_Narrative-3_Western-US-Event.pdf",
       "type": "pdf",
       "title": "DOW-UAP-D081 — narrativa de testigo 3, Western US Event (2023)",
@@ -79,6 +85,7 @@
       "fallbackUrl": "https://www.war.gov/medialink/ufo/061226/release_03/documents/DoW-UAP-D081_Narrative-3_Western-US-Event.pdf"
     },
     {
+      "role": "documento",
       "src": "/pursue/DoW-UAP-D082_Narrative-4_Western-US-Event.pdf",
       "type": "pdf",
       "title": "DOW-UAP-D082 — narrativa de testigo 4, Western US Event (2023)",
@@ -88,6 +95,7 @@
       "fallbackUrl": "https://www.war.gov/medialink/ufo/061226/release_03/documents/DoW-UAP-D082_Narrative-4_Western-US-Event.pdf"
     },
     {
+      "role": "documento",
       "src": "/pursue/DoW-UAP-D083_Narrative-5_Western-US-Event.pdf",
       "type": "pdf",
       "title": "DOW-UAP-D083 — narrativa de testigo 5, Western US Event (2023)",
@@ -97,6 +105,7 @@
       "fallbackUrl": "https://www.war.gov/medialink/ufo/061226/release_03/documents/DoW-UAP-D083_Narrative-5_Western-US-Event.pdf"
     },
     {
+      "role": "prueba",
       "src": "/pursue/FBI-UAP-D014_Digital-Rendering_Incident-1-1_Western-US-Event_2023.jpg",
       "type": "image",
       "title": "FBI-UAP-D014 — representación digital, incidente 1-1, Western US Event",
@@ -106,6 +115,7 @@
       "fallbackUrl": "https://www.war.gov/medialink/ufo/061226/release_03/documents/FBI-UAP-D014_Digital-Rendering_Incident-1-1_Western-US-Event_2023.jpg"
     },
     {
+      "role": "prueba",
       "src": "/pursue/FBI-UAP-D015_Digital-Rendering_Incident-1-2_Western-US-Event_2023.jpg",
       "type": "image",
       "title": "FBI-UAP-D015 — representación digital, incidente 1-2, Western US Event",
@@ -115,6 +125,7 @@
       "fallbackUrl": "https://www.war.gov/medialink/ufo/061226/release_03/documents/FBI-UAP-D015_Digital-Rendering_Incident-1-2_Western-US-Event_2023.jpg"
     },
     {
+      "role": "prueba",
       "src": "/pursue/FBI-UAP-D016_Digital-Rendering_Incident-2-1_Western-US-Event_2023.jpg",
       "type": "image",
       "title": "FBI-UAP-D016 — representación digital, incidente 2-1, Western US Event",
@@ -124,6 +135,7 @@
       "fallbackUrl": "https://www.war.gov/medialink/ufo/061226/release_03/documents/FBI-UAP-D016_Digital-Rendering_Incident-2-1_Western-US-Event_2023.jpg"
     },
     {
+      "role": "prueba",
       "src": "/pursue/FBI-UAP-D017_Digital-Rendering_Incident-2-2_Western-US-Event_2023.jpg",
       "type": "image",
       "title": "FBI-UAP-D017 — representación digital, incidente 2-2, Western US Event",
@@ -133,6 +145,7 @@
       "fallbackUrl": "https://www.war.gov/medialink/ufo/061226/release_03/documents/FBI-UAP-D017_Digital-Rendering_Incident-2-2_Western-US-Event_2023.jpg"
     },
     {
+      "role": "prueba",
       "src": "/pursue/FBI-UAP-D018_Digital-Rendering_Incident-2-3_Western-US-Event_2023.jpg",
       "type": "image",
       "title": "FBI-UAP-D018 — representación digital, incidente 2-3, Western US Event",
@@ -142,6 +155,7 @@
       "fallbackUrl": "https://www.war.gov/medialink/ufo/061226/release_03/documents/FBI-UAP-D018_Digital-Rendering_Incident-2-3_Western-US-Event_2023.jpg"
     },
     {
+      "role": "prueba",
       "src": "/pursue/FBI-UAP-D019_Digital-Rendering_Incident-2-4_Western-US-Event_2023.jpg",
       "type": "image",
       "title": "FBI-UAP-D019 — representación digital, incidente 2-4, Western US Event",
@@ -151,6 +165,7 @@
       "fallbackUrl": "https://www.war.gov/medialink/ufo/061226/release_03/documents/FBI-UAP-D019_Digital-Rendering_Incident-2-4_Western-US-Event_2023.jpg"
     },
     {
+      "role": "prueba",
       "src": "/pursue/FBI-UAP-D020_Digital-Rendering_Incident-2-5_Western-US-Event_2023.jpg",
       "type": "image",
       "title": "FBI-UAP-D020 — representación digital, incidente 2-5, Western US Event",
@@ -160,6 +175,7 @@
       "fallbackUrl": "https://www.war.gov/medialink/ufo/061226/release_03/documents/FBI-UAP-D020_Digital-Rendering_Incident-2-5_Western-US-Event_2023.jpg"
     },
     {
+      "role": "prueba",
       "src": "/pursue/FBI-UAP-D021_Digital-Rendering_Incident-1-3_Western-US-Event_2023.jpg",
       "type": "image",
       "title": "FBI-UAP-D021 — representación digital, incidente 1-3, Western US Event",
@@ -169,6 +185,7 @@
       "fallbackUrl": "https://www.war.gov/medialink/ufo/061226/release_03/documents/FBI-UAP-D021_Digital-Rendering_Incident-1-3_Western-US-Event_2023.jpg"
     },
     {
+      "role": "prueba",
       "src": "/pursue/FBI-UAP-D022_Digital-Rendering_Incident-2-6_Western-US-Event_2023.jpg",
       "type": "image",
       "title": "FBI-UAP-D022 — representación digital, incidente 2-6, Western US Event",
@@ -178,6 +195,7 @@
       "fallbackUrl": "https://www.war.gov/medialink/ufo/061226/release_03/documents/FBI-UAP-D022_Digital-Rendering_Incident-2-6_Western-US-Event_2023.jpg"
     },
     {
+      "role": "prueba",
       "src": "/pursue/FBI-UAP-D023_Digital-Rendering_Incident-2-7_Western-US-Event_2023.jpg",
       "type": "image",
       "title": "FBI-UAP-D023 — representación digital, incidente 2-7, Western US Event",

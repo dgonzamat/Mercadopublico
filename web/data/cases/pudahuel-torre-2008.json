@@ -78,6 +78,7 @@
   ],
   "documents": [
     {
+      "role": "contexto",
       "src": "/pursue/pudahuel-torre-2008-aeropuerto.jpg",
       "type": "image",
       "title": "Contexto · el aeropuerto Arturo Merino Benítez desde el aire, en 2014",
@@ -89,6 +90,7 @@
       "fallbackUrl": "https://commons.wikimedia.org/wiki/File:Aero_Merino_Benitez_aire.JPG"
     },
     {
+      "role": "documento",
       "src": "https://sefaa.dgac.gob.cl/wp-content/uploads/2023/09/CASO-N%C2%B0820-06052018.pdf",
       "type": "link",
       "title": "Informe del SEFAA (DGAC de Chile), caso n.º 820, Pudahuel, 2008 (resuelto el 12 de octubre de 2022)",
@@ -98,6 +100,7 @@
       "source": "SEFAA, Dirección General de Aeronáutica Civil de Chile"
     },
     {
+      "role": "documento",
       "src": "https://sefaa.dgac.gob.cl/wp-content/uploads/2022/11/Informe-de-Publicacion-de-caso-N%C2%B0-820-06052018.pdf",
       "type": "link",
       "title": "Informe de publicación del SEFAA, caso n.º 820",

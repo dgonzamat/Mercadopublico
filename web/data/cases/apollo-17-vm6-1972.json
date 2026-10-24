@@ -33,6 +33,7 @@
   "summary_en": "The Apollo 17 VM6 plate (December 1972) shows, when the lower-right quadrant of the lunar sky is magnified, three luminous dots in a regular triangular formation. It had circulated for decades in amateur catalogs; in 2026, within PURSUE, the Department of War opened case NASA-UAP-VM6, and a preliminary government analysis, having obtained the original film for a joint analysis with NASA, described it as 'potentially the result of a physical object in the scene'. The historical skeptical reading is a photographic artifact (emulsion error, lens flare or a reflection on the window), which that analysis calls into question.",
   "documents": [
     {
+      "role": "prueba",
       "src": "/pursue/nasa-uap-vm6-apollo-17-1972.jpg",
       "type": "image",
       "title": "NASA-UAP-VM6 — placa de Apollo 17 con la formación triangular",
@@ -42,6 +43,7 @@
       "fallbackUrl": "https://www.war.gov/medialink/ufo/release_1/nasa-uap-vm6-apollo-17-1972.jpg"
     },
     {
+      "role": "documento",
       "src": "/pursue/nasa-uap-d2-apollo-17-transcript-1972.pdf",
       "type": "pdf",
       "title": "NASA-UAP-D2 — transcripción aire-tierra de Apollo 17 (dic 1972): partículas, destellos y 'streaks'",
@@ -51,6 +53,7 @@
       "fallbackUrl": "https://www.war.gov/medialink/ufo/release_1/nasa-uap-d2-apollo-17-transcript-1972.pdf"
     },
     {
+      "role": "documento",
       "src": "/pursue/nasa-uap-d5-apollo-17-crew-debriefing-for-science-1973.pdf",
       "type": "pdf",
       "title": "NASA-UAP-D5 — debriefing científico de Apollo 17 (8 ene 1973): fondo UV/rayos-X inesperado",
@@ -60,6 +63,7 @@
       "fallbackUrl": "https://www.war.gov/medialink/ufo/release_1/nasa-uap-d5-apollo-17-crew-debriefing-for-science-1973.pdf"
     },
     {
+      "role": "documento",
       "src": "/pursue/nasa-uap-d6-apollo-17-technical-crew-debriefing-1973.pdf",
       "type": "pdf",
       "title": "NASA-UAP-D6 — debriefing técnico de tripulación de Apollo 17 (1973)",
@@ -75,6 +79,7 @@
   ],
   "category": "incident",
   "featuredDoc": {
+    "role": "documento",
     "label": "NASA-UAP-VM6 · placa Apollo 17 (PURSUE Release 01)",
     "label_en": "NASA-UAP-VM6 · Apollo 17 plate (PURSUE Release 01)",
     "url": "https://www.war.gov/medialink/ufo/release_1/nasa-uap-vm6-apollo-17-1972.jpg",

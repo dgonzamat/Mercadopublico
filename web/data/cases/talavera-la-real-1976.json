@@ -94,6 +94,7 @@
   ],
   "documents": [
     {
+      "role": "documento",
       "src": "/pursue/talavera-la-real-1976-expediente-761112.pdf",
       "type": "pdf",
       "title": "Expediente 761112 del Mando Operativo Aéreo, «Avistamiento de fenómenos extraños en la base aérea de Talavera» (desclasificado en 1996), extracto de 10 págs.",
@@ -105,6 +106,7 @@
       "fallbackUrl": "https://bibliotecavirtual.defensa.gob.es/BVMDefensa/exp_ovni/es/consulta/busqueda_referencia.do?campo=idtitulo&idValor=395902"
     },
     {
+      "role": "contexto",
       "src": "/pursue/talavera-la-real-1976-context.jpg",
       "type": "image",
       "title": "Contexto · Talavera la Real (Badajoz, España)",

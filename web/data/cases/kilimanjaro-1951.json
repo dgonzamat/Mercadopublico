@@ -85,6 +85,7 @@
   ],
   "documents": [
     {
+      "role": "documento",
       "src": "/pursue/kilimanjaro-1951-consulado.pdf",
       "type": "pdf",
       "title": "Project Blue Book, expediente «East Africa», 19 feb 1951: ficha ATIC y despacho del consulado de EE. UU. en Dar es Salaam (3 págs.)",
@@ -96,6 +97,7 @@
       "fallbackUrl": "https://archive.org/details/1951-02-7006612-EastAfrica"
     },
     {
+      "role": "contexto",
       "src": "/pursue/kilimanjaro-1951-context.jpg",
       "type": "image",
       "title": "Contexto · el monte Kilimanjaro (Tanzania), sobre el que la tripulación de EAA observó el objeto",

@@ -70,6 +70,7 @@
   ],
   "documents": [
     {
+      "role": "contexto",
       "src": "/pursue/iquique-nube-lxp380-2019-a321.jpg",
       "type": "image",
       "title": "Contexto · un Airbus A321 de LATAM Chile",
@@ -81,6 +82,7 @@
       "fallbackUrl": "https://commons.wikimedia.org/wiki/File:LATAM_Chile_Airbus_A321-211_CC-BEQ_SCL_2018-11-17.jpg"
     },
     {
+      "role": "documento",
       "src": "https://sefaa.dgac.gob.cl/wp-content/uploads/2026/06/CASO-N%C2%B0-971-09082019.pdf",
       "type": "link",
       "title": "Informe del SEFAA (DGAC de Chile), caso n.º 971, Iquique, 9 de agosto de 2019 (resuelto el 11 de mayo de 2026)",

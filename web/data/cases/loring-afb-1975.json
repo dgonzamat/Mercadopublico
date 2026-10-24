@@ -95,6 +95,7 @@
   "seoTitle": "Sobrevuelos de Loring AFB 1975: UAP sobre bases nucleares del SAC",
   "seoDescription": "En oct–nov de 1975, objetos no identificados penetraron Loring, Wurtsmith, Malmstrom y Minot AFB. Teletipos al NMCC, radar de NORAD y documentos FOIA lo confirman; la USAF lo cerró como 'helicópteros'. Fuentes primarias.",
   "featuredDoc": {
+    "role": "documento",
     "label": "Las incursiones de 1975 sobre bases del SAC (análisis con documentos desclasificados, TWZ)",
     "label_en": "The 1975 incursions over SAC bases (analysis with declassified documents, TWZ)",
     "url": "https://www.twz.com/35674/the-bizarre-mystery-of-unexplained-aerial-incursions-over-loring-air-force-base",
@@ -113,6 +114,7 @@
   "evidenceReviewed": "2026-10-23",
   "documents": [
     {
+      "role": "documento",
       "src": "/pursue/DOW-UAP-D170-BAASS_Montly_Report_April_2009.pdf",
       "type": "pdf",
       "title": "DOW-UAP-D170 · informe mensual de BAASS de abril de 2009, con el análisis inicial del «Project Northern Tier» (PURSUE Release 07)",

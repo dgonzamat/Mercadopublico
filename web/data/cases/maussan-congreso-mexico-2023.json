@@ -82,6 +82,7 @@
   },
   "documents": [
     {
+      "role": "contexto",
       "src": "/pursue/maussan-congreso-mexico-2023-context.jpg",
       "type": "image",
       "title": "Contexto · el Palacio Legislativo de San Lázaro (Cámara de Diputados), Ciudad de México",

@@ -100,6 +100,7 @@
   ],
   "documents": [
     {
+      "role": "documento",
       "src": "https://archive.org/details/HollandMichiganUfoSighting911Call03-08-1994",
       "type": "link",
       "title": "Grabación del 911 del condado de Ottawa (Michigan), 8 mar 1994, con la llamada al Servicio Meteorológico Nacional",
@@ -109,6 +110,7 @@
       "source": "Despacho del 911 del condado de Ottawa (Michigan), vía The Black Vault (archive.org)"
     },
     {
+      "role": "contexto",
       "src": "/pursue/lake-michigan-1994-context.jpg",
       "type": "image",
       "title": "Contexto · la costa del lago Michigan en Holland, de donde llegaron las primeras llamadas al 911 la noche del 8 de marzo de 1994",

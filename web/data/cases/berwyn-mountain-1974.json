@@ -87,6 +87,7 @@
   "whyMatters_en": "Berwyn is a control case: the clean example of how a covert-recovery myth is born with nothing to recover. Its analytical value is twofold. First, it is extraordinarily well explained (an instrumentally recorded M3.5 earthquake plus a bolide seen by many independent witnesses) which makes it a yardstick for other cases: if an 'inexplicable' episode has this quality of mundane evidence, it is no mystery. Second, its public trajectory is a laboratory of how the absence of an immediate explanation, the press and the Roswell imaginary manufacture, over years, a story of bodies and military trucks that the MoD's own declassification disproves. It is the reminder that the default stance toward a 'crashed UFO' should be skepticism, and that sometimes the sky simply did two things at once.",
   "documents": [
     {
+      "role": "documento",
       "src": "https://archive.org/details/BUFORA_Journal_Volume_04_No_02_Spring_1974/page/n28/mode/1up",
       "type": "link",
       "title": "«Explosion in North Wales», BUFORA Journal, vol. 4, n.º 2 (primavera de 1974)",
@@ -96,6 +97,7 @@
       "source": "BUFORA Journal, vol. 4, n.º 2 (primavera de 1974), págs. 27-28; copia en archive.org"
     },
     {
+      "role": "contexto",
       "src": "/pursue/berwyn-mountain-1974-context.jpg",
       "type": "image",
       "title": "Contexto · los montes Berwyn (Gales), cerca de Llandrillo",

@@ -76,6 +76,7 @@
   },
   "documents": [
     {
+      "role": "documento",
       "src": "/pursue/cosford-1993-defe24-2086.pdf",
       "type": "pdf",
       "title": "Expediente DEFE 24/2086: informe de la Policía de la RAF en Cosford y minutas de Sec(AS)2a del 16 y el 22 de abril de 1993",
@@ -87,6 +88,7 @@
       "fallbackUrl": "https://discovery.nationalarchives.gov.uk/details/r/C11511541"
     },
     {
+      "role": "contexto",
       "src": "/pursue/cosford-1993-context.jpg",
       "type": "image",
       "title": "Contexto · RAF Cosford (Shropshire, Inglaterra)",

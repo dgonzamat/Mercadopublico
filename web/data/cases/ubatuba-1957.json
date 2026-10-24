@@ -64,6 +64,7 @@
   },
   "documents": [
     {
+      "role": "documento",
       "src": "https://files.ncas.org/condon/text/s3chap03.htm",
       "type": "link",
       "title": "Informe Condon (1969), sección III, capítulo 3, «Direct Physical Evidence»: el análisis de los fragmentos de magnesio de Ubatuba",
@@ -73,6 +74,7 @@
       "source": "Scientific Study of Unidentified Flying Objects (1969) · NCAS"
     },
     {
+      "role": "contexto",
       "src": "/pursue/ubatuba-1957-context.jpg",
       "type": "image",
       "title": "Contexto · Ubatuba (São Paulo, Brasil)",

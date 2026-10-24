@@ -67,6 +67,7 @@
   },
   "documents": [
     {
+      "role": "documento",
       "src": "https://www.cnes-geipan.fr/sites/default/files/PV%20AERO%20%281951208633%29.pdf",
       "type": "link",
       "title": "Expediente militar de 1951 · informe del coronel de la base 115 y relatos de los dos pilotos",
@@ -76,6 +77,7 @@
       "source": "GEIPAN (CNES), expediente «PV AERO (1951208633)» · © CNES"
     },
     {
+      "role": "contexto",
       "src": "/pursue/orange-caritat-1951-context.jpg",
       "type": "image",
       "title": "Contexto · un SE.535 Mistral, la versión francesa del de Havilland Vampire que volaba la 5.ª Escuadra",

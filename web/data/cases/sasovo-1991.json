@@ -65,6 +65,7 @@
   },
   "documents": [
     {
+      "role": "documento",
       "src": "https://archive.org/details/cia-readingroom-document-0005517791",
       "type": "link",
       "title": "Pravda, 15 de abril de 1991, «¿Salitre volado por un ovni?»: traducción del servicio de seguimiento de prensa extranjera, en la sala de lectura de la CIA",
@@ -74,6 +75,7 @@
       "source": "Pravda (15 abr 1991), traducción del FBIS; sala de lectura de la CIA, espejo en archive.org"
     },
     {
+      "role": "contexto",
       "src": "/pursue/sasovo-1991-context.jpg",
       "type": "image",
       "title": "Contexto · Sasovo (óblast de Riazán, Rusia)",

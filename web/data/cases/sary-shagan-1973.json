@@ -32,6 +32,7 @@
   "summary_en": "In late summer 1973, at Site 7 of the Sary Shagan weapons testing range (the Soviet anti-ballistic-missile and directed-energy proving ground near Lake Balkhash), a worker saw to the west, at about 70° elevation, a sharp green circular object. Within 10-15 seconds the circle widened and several concentric green circles formed; the color faded within minutes, with no sound or explosion, under a clear sky. The account reached the West as a CIA HUMINT report and was declassified in the second PURSUE release (May 22, 2026). The signature is consistent with a Soviet high-altitude test as much as with an optical-atmospheric phenomenon.",
   "documents": [
     {
+      "role": "documento",
       "src": "/pursue/CIA-UAP-D001_Intelligence_Information_Report_USSR_1973.pdf",
       "type": "pdf",
       "title": "CIA-UAP-D001 — informe HUMINT de inteligencia, URSS (1973)",
@@ -41,6 +42,7 @@
       "fallbackUrl": "https://www.war.gov/medialink/ufo/052226/release_02/documents/CIA-UAP-D001_Intelligence_Information_Report_USSR_1973.pdf"
     },
     {
+      "role": "documento",
       "src": "/pursue/CIA-UAP-011-The_Sary_Shagan_Weapons_Testing_Range.pdf",
       "type": "pdf",
       "title": "CIA-UAP-011 — el campo de pruebas de armas de Sary Shagan",
@@ -56,6 +58,7 @@
   ],
   "category": "incident",
   "featuredDoc": {
+    "role": "documento",
     "label": "CIA-UAP-D001 · informe HUMINT (PURSUE Release 02)",
     "label_en": "CIA-UAP-D001 · HUMINT report (PURSUE Release 02)",
     "url": "https://www.war.gov/UFO/?releaseDate=Release+02#records",

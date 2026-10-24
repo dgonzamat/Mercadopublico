@@ -36,6 +36,7 @@
   "category": "incident",
   "documents": [
     {
+      "role": "documento",
       "src": "/pursue/DOW-UAP-D159-Air_Intelligence_Information_Report_Germany-1953.pdf",
       "type": "pdf",
       "title": "DOW-UAP-D159 — Informe de inteligencia aérea con los registros de control de Tempelhof del 10 y 11 de agosto de 1953",

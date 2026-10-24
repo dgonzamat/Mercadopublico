@@ -77,6 +77,7 @@
   ],
   "documents": [
     {
+      "role": "contexto",
       "src": "/pursue/petrozavodsk-1977-context.jpg",
       "type": "image",
       "title": "Contexto · Petrozavodsk (Carelia), donde se vio el fenómeno de la 'medusa'",
@@ -86,6 +87,7 @@
       "fallbackUrl": "https://commons.wikimedia.org/wiki/File%3APetrozavodsk%20Bay%20(2).jpg"
     },
     {
+      "role": "documento",
       "src": "https://skepticalinquirer.org/newsletter/history-of-state-ufo-research-in-the-ussr/",
       "type": "link",
       "title": "Programa SETKA · investigación estatal soviética de UAP (1978–1991)",

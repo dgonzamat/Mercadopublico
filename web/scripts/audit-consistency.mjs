@@ -2121,6 +2121,62 @@ const HYPE_REVIEWED = new Set(["lakenheath-bentwaters-1956", "morocco-gendarmeri
   }
 }
 
+// ─── 9ze. RULE E52: la guía de redacción (/redaccion), medida en el corpus ─
+//
+// La especificación de la ficha (oct 2026) fija límites que el lector nota:
+// títulos de hasta 65 caracteres, lugar hasta 70, resumen de 400 a 650,
+// `evidence` de 3–8 hechos de ≤ 600, relato de ≤ 12.000. Nacieron porque
+// Skinwalker había crecido a 41.500 caracteres entrega tras entrega y 23
+// títulos usaban jerga de piloto que el dueño no entendió. Antes ninguna sonda
+// los medía, así que el problema se acumuló sin que nada avisara. WARN
+// agregado (mismo patrón que E13): deja el backlog medible mientras las capas
+// de texto lo bajan. Las bitácoras y las herramientas del redactor van en el
+// mismo aviso hasta que la capa 2 las limpie; entonces pasan a ERROR.
+{
+  const unq = (t) => (t || "").replace(/«[^»]*»|“[^”]*”|"[^"]*"/g, " ");
+  const esText = (c) => [c.summary, c.whatHappened, c.whyMatters, ...(c.evidence || [])].filter(Boolean).join("\n\n");
+  const JERGA = /\b(?:engancha\w*|enganches?|ecos?|retornos?|pasadas|(?:el|un|del|al|los|dos) blancos?)\b|\b(?:GCI|AC&W|FEAF|ATIC|AF 112|CPS-1|APG-33|TPS-1D)\b/gi;
+  const SPANGLISH = /\b(?:paper|papers|metadata|disclosure|sole-source|debriefing|peer-review\w*|timeline|footage|data warehouses?)\b|\brelease\b/g;
+  const BITACORA = /\b(?:est[ea] (?:expediente|ficha)|la ficha) (?:describía|decía|venía citando|trataba|traía|afirmaba)\b|\bhasta ahora se citaba\b|\buna versión anterior de esta ficha\b/gi;
+  const HERRAMIENTA = /\b(?:conector|extractor|techo de extracción|barrido automático)\b/gi;
+  const checks = {
+    "título > 65": (c) => c.name.length > 65,
+    "lugar > 70": (c) => (c.location?.place || "").length > 70,
+    "resumen fuera de 400–650": (c) => c.summary.length < 400 || c.summary.length > 650,
+    "evidence fuera de 3–8 o ítem > 600": (c) => c.evidence && (c.evidence.length < 3 || c.evidence.length > 8 || c.evidence.some((e) => e.length > 600)),
+    "relato > 12.000": (c) => (c.whatHappened || "").length + (c.whyMatters || "").length > 12000,
+    "jerga ≥ 2 por 1.000 caracteres": (c) => { const t = unq(esText(c)); return t.length && ((t.match(JERGA) || []).length * 1000) / t.length >= 2; },
+    "spanglish": (c) => SPANGLISH.test(unq(esText(c))) && !(SPANGLISH.lastIndex = 0),
+  };
+  const parts = [];
+  for (const [label, f] of Object.entries(checks)) {
+    const hit = cases.filter((c) => { SPANGLISH.lastIndex = 0; return f(c); });
+    if (hit.length) parts.push(`${label}: ${hit.length} (${hit.slice(0, 3).map((c) => c.id).join(", ")}${hit.length > 3 ? "…" : ""})`);
+  }
+  for (const [label, re] of [["bitácora del redactor", BITACORA], ["herramienta del redactor", HERRAMIENTA]]) {
+    const hit = cases.filter((c) => { re.lastIndex = 0; return re.test(unq(esText(c))); });
+    if (hit.length) parts.push(`${label}: ${hit.length} (${hit.slice(0, 3).map((c) => c.id).join(", ")}${hit.length > 3 ? "…" : ""})`);
+  }
+  if (parts.length) record("WARN", "data/cases", 0, `E52 guía de redacción: ${parts.join(" · ")}. Ver .claude/commands/redaccion.md.`);
+}
+
+// ─── 9zf. RULE E53: todo elemento visual declara su papel ─────────────────
+//
+// La ficha ordena imágenes y documentos solo por su papel (`role`: prueba,
+// documento, contexto; ver lib/caseVisuals.ts). Antes decidía por el campo y
+// el tipo, y la foto de Trent acababa entre el papeleo mientras la entrada
+// del rancho Skinwalker iba arriba. Un elemento sin papel caería en una regla
+// por defecto, que es justo lo que la especificación quitó. ERROR.
+{
+  const ROLES = new Set(["prueba", "documento", "contexto"]);
+  const sinPapel = [];
+  for (const c of cases) {
+    const items = [...(c.documents || []).map((d, i) => [`documents[${i}]`, d]), ...(c.primaryDocument ? [["primaryDocument", c.primaryDocument]] : []), ...(c.featuredDoc ? [["featuredDoc", c.featuredDoc]] : [])];
+    for (const [k, d] of items) if (!ROLES.has(d.role)) sinPapel.push(`${c.id}#${k}`);
+  }
+  if (sinPapel.length) record("ERROR", "data/cases", 0, `E53 elemento visual sin papel: ${sinPapel.length} sin \`role\` válido (prueba | documento | contexto): ${sinPapel.slice(0, 5).join(", ")}${sinPapel.length > 5 ? "…" : ""}.`);
+}
+
 // ─── 10. REPORT ──────────────────────────────────────────────────────────
 
 const errors = findings.filter((f) => f.level === "ERROR");

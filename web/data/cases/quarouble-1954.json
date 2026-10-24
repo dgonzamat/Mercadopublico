@@ -69,6 +69,7 @@
   ],
   "documents": [
     {
+      "role": "documento",
       "src": "https://ufologie.patrickgross.org/1954/10sep1954quaroublef.htm",
       "type": "link",
       "title": "Prensa regional de septiembre de 1954 sobre Quarouble (La Croix du Nord, Nord-Matin y otros), transcrita por Patrick Gross",
@@ -78,6 +79,7 @@
       "source": "Patrick Gross, «Les OVNIS vus de près» (ufologie.patrickgross.org)"
     },
     {
+      "role": "contexto",
       "src": "/pursue/quarouble-1954-context.jpg",
       "type": "image",
       "title": "Contexto · Quarouble (Nord, Francia)",
