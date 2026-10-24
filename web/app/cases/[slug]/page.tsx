@@ -11,14 +11,14 @@ import { Breadcrumb } from "@/components/Breadcrumb";
 import { ShareButton } from "@/components/ShareButton";
 import { ResearcherAvatar } from "@/components/ResearcherAvatar";
 import { researchersForCase } from "@/lib/researcherCases";
-import { DocumentsViewer, splitCaseMedia } from "@/components/DocumentsViewer";
+import { DocumentsViewer } from "@/components/DocumentsViewer";
+import { caseVisuals } from "@/lib/caseVisuals";
 import { splitLead } from "@/lib/splitLead";
 import { Eyebrow, H1, Caption, PullQuote } from "@/lib/typography";
 import { caseJsonLd, serializeJsonLd } from "@/lib/jsonld";
 import { BreadcrumbJsonLd } from "@/components/BreadcrumbJsonLd";
 import { linkCaseRefs } from "@/lib/caseRefs";
 import { CASE_ALIASES, aliasCanonical, aliasHref } from "@/lib/caseAliases";
-import { licenseLabel } from "@/lib/license";
 
 export function generateStaticParams() {
   return [...cases.map((c) => c.id), ...Object.keys(CASE_ALIASES)].map((slug) => ({ slug }));
@@ -229,7 +229,7 @@ export async function CaseDetailPage(
   );
 
   const hasNarrative = Boolean(c.whatHappened || c.whyMatters);
-  const caseMedia = splitCaseMedia(c.documents ?? []);
+  const visuals = caseVisuals(c);
   const hasEvidence = Boolean(c.evidence && c.evidence.length > 0);
   const hasSources = Boolean(c.sources && c.sources.length > 0);
   const hasRichContent = hasNarrative || hasEvidence || hasSources;
@@ -240,14 +240,10 @@ export async function CaseDetailPage(
     : [];
   const pullQuote = findPullQuote(c.whatHappened);
 
-  // «La noche en cuestión» asume incidente puntual; los expedientes y los
-  // casos que abarcan años piden otro encabezado.
-  const whTitle =
-    c.category === "document"
-      ? { es: "El expediente en cuestión", en: "The file in question" }
-      : c.year_end && c.year_end > c.year_start
-        ? { es: "Los años en cuestión", en: "The years in question" }
-        : { es: "La noche en cuestión", en: "The night in question" };
+  // Antes decía «La noche en cuestión» en todo caso de un solo año, y muchos
+  // ocurrieron de día (Kenneth Arnold, Kilimanjaro): el rótulo afirmaba algo
+  // falso. Un rótulo neutro vale para todos (oct 2026).
+  const whTitle = { es: "Qué pasó", en: "What happened" };
 
   // whyMatters es prosa multi-párrafo en ~80% del corpus: se divide por \n\n
   // igual que whatHappened. El display font solo aguanta textos cortos; sobre
@@ -340,7 +336,7 @@ export async function CaseDetailPage(
         {/* Resúmenes de hasta 1.500 caracteres en letra grande empujaban todo
             fuera de la pantalla: se muestra la entrada y el resto se pliega. */}
         {(() => {
-          const sum = splitLead(locale === "es" ? c.summary : c.summary_en ?? c.summary, 420);
+          const sum = splitLead(locale === "es" ? c.summary : c.summary_en ?? c.summary, 450);
           return (
             <div className="space-y-3">
               <p className={summaryClass}>{linkCaseRefs(sum.lead, NAME_BY_SLUG)}</p>
@@ -412,14 +408,12 @@ export async function CaseDetailPage(
         )}
       </header>
 
-      {/* La prueba del propio caso (vídeo, foto del suceso) va antes del relato;
-          el papeleo, después, en «Lo que queda en papel». */}
+      {/* Bloque 4 · la prueba del caso: lo que registró el suceso (vídeo del
+          sensor, foto o dibujo del objeto), hasta dos, antes del relato. */}
       <DocumentsViewer
-        docs={caseMedia.media}
+        docs={visuals.top}
         locale={locale}
-        heading={caseMedia.media.some((d) => d.type === "video")
-          ? { es: "Vídeo e imágenes del caso", en: "Video and images from the case" }
-          : { es: "Imágenes del caso", en: "Images from the case" }}
+        heading={{ es: "Registro del suceso", en: "Record of the event" }}
       />
 
       {/* EN-only disclaimer when no EN narrative available */}
@@ -527,78 +521,14 @@ export async function CaseDetailPage(
       <section className="space-y-12 border-t-2 border-text pt-12">
         <header className="space-y-3">
           <h2 className="font-display text-3xl font-medium leading-tight text-text md:text-4xl">
-            <T locale={locale} es="Lo que queda en papel" en="What's left on paper" />
+            <T locale={locale} es="Documentos y fuentes" en="Documents and sources" />
           </h2>
         </header>
 
-        {/* El documento destacado y el visor iban entre la cabecera y el
-            relato: en móvil empujaban el primer párrafo a casi 3 pantallas en
-            la ficha típica (9,6 en Skinwalker; medido en las 397, oct 2026).
-            El papeleo respalda el relato, así que va después de él; la prueba
-            del caso (vídeo, foto del suceso) queda arriba. */}
-        {c.featuredDoc && (
-          <a
-            href={c.featuredDoc.url}
-            target="_blank"
-            rel="noopener noreferrer"
-            className="group block border-2 border-accent bg-panel p-6 no-underline transition-colors hover:bg-accent/5 md:p-8"
-          >
-            <p className="text-sm font-semibold text-accent">
-              <T locale={locale} es="Documento primario · PDF" en="Primary source · PDF" />
-            </p>
-            <p className="mt-3 flex items-start gap-3 font-display text-xl font-medium leading-snug text-text md:text-2xl">
-              <span aria-hidden className="shrink-0 text-accent">
-                ↓
-              </span>
-              <span className="underline decoration-accent/40 underline-offset-4 group-hover:decoration-accent">
-                <T locale={locale}
-                  es={c.featuredDoc.label}
-                  en={c.featuredDoc.label_en ?? c.featuredDoc.label}
-                />
-              </span>
-            </p>
-            {c.featuredDoc.note && (
-              <p className="mt-3 text-sm leading-relaxed text-muted">
-                <T locale={locale}
-                  es={c.featuredDoc.note}
-                  en={c.featuredDoc.note_en ?? c.featuredDoc.note}
-                />
-              </p>
-            )}
-          </a>
-        )}
-
-        <DocumentsViewer docs={caseMedia.rest} locale={locale} />
-
-        {c.primaryDocument && (
-          <figure className="space-y-3 border-l-2 border-accent/40 pl-5">
-            <a
-              href={c.primaryDocument.href ?? c.primaryDocument.url}
-              target="_blank"
-              rel="noopener noreferrer"
-              className="block w-full max-w-md transition hover:opacity-90"
-            >
-              {/* eslint-disable-next-line @next/next/no-img-element */}
-              <img
-                src={c.primaryDocument.url}
-                alt={c.primaryDocument.alt}
-                className="w-full border border-text/15 bg-surface-2"
-                loading="lazy"
-              />
-            </a>
-            <figcaption className="max-w-md space-y-1">
-              <p className="text-sm leading-snug text-text">
-                <T locale={locale}
-                  es={c.primaryDocument.caption}
-                  en={c.primaryDocument.caption_en ?? c.primaryDocument.caption}
-                />
-              </p>
-              <p className="font-mono text-[11px] text-muted">
-                {c.primaryDocument.source} · {licenseLabel(c.primaryDocument.license, locale)}
-              </p>
-            </figcaption>
-          </figure>
-        )}
+        {/* Bloque 6 · el papeleo, después del relato: antes iba entre la
+            cabecera y el relato y empujaba el primer párrafo a casi 3 pantallas
+            en la ficha típica (9,6 en Skinwalker; medido en las 397, oct 2026). */}
+        <DocumentsViewer docs={visuals.paper} locale={locale} />
 
         {(hasEvidence || hasSources) && (
           <div className="grid gap-12 md:grid-cols-2">
@@ -638,7 +568,7 @@ export async function CaseDetailPage(
                       {tail.length > 0 && (
                         <details className="mt-3">
                           <summary className="cursor-pointer text-sm text-accent">
-                            <T locale={locale} es={`Ver ${tail.length} evidencias más`} en={`Show ${tail.length} more items`} />
+                            <T locale={locale} es={`Ver ${tail.length} hechos más`} en={`Show ${tail.length} more facts`} />
                           </summary>
                           <ol className="mt-3 space-y-3">{tail.map((item, k) => renderItem(item, k + 5))}</ol>
                         </details>
@@ -756,6 +686,14 @@ export async function CaseDetailPage(
             </div>
           </div>
         )}
+
+        {/* Bloque 7 · contexto: el lugar, el avión, una persona, un monumento.
+            Ayuda a situar, pero no es del suceso, así que va al final. */}
+        <DocumentsViewer
+          docs={visuals.context}
+          locale={locale}
+          heading={{ es: "Contexto (no son imágenes del suceso)", en: "Context (not images of the event)" }}
+        />
       </section>
 
       {/* ────────── DOCUMENTOS ↔ CASOS ────────── */}
@@ -965,9 +903,14 @@ function ClassBasis({ c, locale }: { c: (typeof cases)[number]; locale: "es" | "
   // va el porqué, citado de la fuente. Cuando lo mundano no es lo más
   // probable, se aclara a qué parte del reparto se refiere la cita.
   const label = cls ? (detail ? { es: `${cls.label} · ${shortLabel(detail.label)}`, en: `${cls.labelEn} · ${shortLabel(detail.labelEn)}` } : { es: cls.label, en: cls.labelEn }) : undefined;
+  // La etiqueta no mete la clase dentro de una frase: con «sin_propuesta»
+  // salía «sería causa ordinaria probable, sin identificar» / «it would be
+  // likely ordinary, unidentified», agramatical en los dos idiomas (oct 2026).
   const why = mundaneLeads || !label
     ? { es: "Por qué: ", en: "Why: " }
-    : { es: `Por qué, si fue algo mundano, sería ${label.es.toLowerCase()}: `, en: `Why, if it was mundane, it would be ${label.en.toLowerCase()}: ` };
+    : pk === "sin_propuesta"
+      ? { es: "Si fue algo ordinario, por qué no se sabe qué: ", en: "If it was ordinary, why no specific cause is named: " }
+      : { es: `Si fue algo ordinario, lo más probable es: ${label.es.toLowerCase()}. Por qué: `, en: `If it was ordinary, the likeliest cause is: ${label.en.toLowerCase()}. Why: ` };
   const es = b ? splitOriginal(b.es) : undefined;
   const en = b ? splitOriginal(b.en) : undefined;
   return (
