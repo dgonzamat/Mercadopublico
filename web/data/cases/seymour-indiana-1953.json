@@ -4,8 +4,8 @@
   "pursueReleases": [
     7
   ],
-  "name": "Un matrimonio ve desde el coche dos anillos como de humo, con cuatro luces que giran, bajar, detenerse y salir disparados al norte de Seymour (Indiana) · «datos insuficientes» para Blue Book (Estados Unidos, 1953)",
-  "name_en": "A married couple in their car watch two smoke-like rings with four rotating lights come down, stop and shoot off north of Seymour (Indiana) · 'insufficient data' for Blue Book (United States, 1953)",
+  "name": "Seymour · un matrimonio ve desde el coche dos anillos con luces",
+  "name_en": "Seymour · a couple in their car see two rings of spinning lights",
   "year_start": 1953,
   "country": "US",
   "country_name": "Estados Unidos",
@@ -13,8 +13,8 @@
   "location": {
     "lat": 39.05,
     "lng": -85.817,
-    "place": "Al norte de Seymour, Indiana (las coordenadas del informe, 39° 03' N 85° 49' O, caen unos 12 km al nornoreste del centro; pueden ser una referencia aproximada)",
-    "place_en": "North of Seymour, Indiana (the report's coordinates, 39° 03' N 85° 49' W, fall about 12 km north-northeast of the town centre; they may be an approximate reference)"
+    "place": "Al norte de Seymour, Indiana",
+    "place_en": "North of Seymour, Indiana"
   },
   "tier": "B",
   "epistemicStatus": "documented",

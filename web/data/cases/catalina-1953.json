@@ -4,8 +4,8 @@
   "pursueReleases": [
     7
   ],
-  "name": "Un sargento ve desde San Pedro una luz redonda, blanca y purpúrea, que parece quieta sobre Catalina y se va hacia Los Ángeles durante diez minutos · «Júpiter» para Blue Book (Estados Unidos, 1953)",
-  "name_en": "A sergeant in San Pedro watches a round, purplish-white light that seems to hang over Catalina and then heads toward Los Angeles for ten minutes · 'Jupiter' for Blue Book (United States, 1953)",
+  "name": "San Pedro · un sargento ve una luz quieta que después se aleja",
+  "name_en": "San Pedro · a sergeant sees a light hang still, then move away",
   "year_start": 1953,
   "country": "US",
   "country_name": "Estados Unidos",
@@ -13,8 +13,8 @@
   "location": {
     "lat": 33.737,
     "lng": -118.292,
-    "place": "Esquina de la calle Décima con Gaffey, San Pedro (Los Ángeles), California; el objeto se vio al principio sobre la isla de Santa Catalina, unos 40 km al sur",
-    "place_en": "Corner of Tenth Street and Gaffey, San Pedro (Los Angeles), California; the object was first seen over Santa Catalina Island, about 40 km to the south"
+    "place": "San Pedro (Los Ángeles), frente a la isla Santa Catalina, California",
+    "place_en": "San Pedro (Los Angeles), facing Santa Catalina Island, California"
   },
   "tier": "A",
   "epistemicStatus": "documented",

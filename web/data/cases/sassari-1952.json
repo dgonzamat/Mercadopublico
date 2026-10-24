@@ -4,8 +4,8 @@
   "pursueReleases": [
     7
   ],
-  "name": "La esfera voladora del profesor Sias · una luz verde azulada de tres a cinco segundos sobre Sassari y su carta a la embajada de EE. UU. (Italia, 1952)",
-  "name_en": "Professor Sias's flying sphere · a three-to-five-second green-blue light over Sassari and his letter to the US embassy (Italy, 1952)",
+  "name": "Sassari · un profesor ve cruzar el cielo una esfera verde azulada",
+  "name_en": "Sassari · a teacher sees a blue-green sphere streak across the sky",
   "year_start": 1952,
   "country": "IT",
   "country_name": "Italia",
@@ -13,8 +13,8 @@
   "location": {
     "lat": 40.727,
     "lng": 8.56,
-    "place": "Patio del instituto de huérfanos de guerra de la Brigada Sassari, en Sassari (Cerdeña); la esfera apareció hacia el sur, a unos 45 grados de altura",
-    "place_en": "Courtyard of the Sassari Brigade war-orphans institute, Sassari (Sardinia); the sphere appeared to the south, about 45 degrees up"
+    "place": "Patio de un instituto de huérfanos de guerra, Sassari (Cerdeña)",
+    "place_en": "Courtyard of a war-orphans' school, Sassari, Sardinia"
   },
   "tier": "B",
   "epistemicStatus": "documented",

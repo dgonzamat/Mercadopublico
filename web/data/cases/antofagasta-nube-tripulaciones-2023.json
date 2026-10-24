@@ -10,8 +10,8 @@
   "location": {
     "lat": -22.615,
     "lng": -70.3344,
-    "place": "Espacio aéreo unos 85 km al norte del aeropuerto de Antofagasta (posición del SKU329); el JAT026 volaba 321 millas más al sur, cerca del punto PUNAP",
-    "place_en": "Airspace some 85 km north of Antofagasta airport (position of SKU329); JAT026 was flying 321 miles further south, near the PUNAP waypoint"
+    "place": "Espacio aéreo al norte de Antofagasta, Chile",
+    "place_en": "Airspace north of Antofagasta, Chile"
   },
   "tier": "A",
   "mundanoType": "misid",

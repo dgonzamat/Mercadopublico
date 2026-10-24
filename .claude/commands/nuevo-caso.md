@@ -10,6 +10,8 @@ Estás creando un **caso nuevo** para el corpus UAP Codex. La fuente de verdad e
 ## 0. Investigación primero (no relleno)
 El estándar es prosa con **investigación caso por caso, fuentes primarias**. Antes de escribir: busca el caso (WebSearch), identifica ≥2-3 fuentes verificables (informe oficial, prensa de la época, investigación seria) y extrae los hechos. Si no puedes documentarlo, dilo — es mejor no crear el caso que rellenarlo.
 
+**Redacción:** todo el texto de la ficha (ES y EN) sigue el skill `/redaccion` (`.claude/commands/redaccion.md`): léelo antes de escribir y repasa su lista final («Antes de entregar») antes de entregar.
+
 ## 1. Identidad del caso
 - **id**: slug kebab-case estable, típicamente `<lugar>-<año>` (ej. `trindade-1958`). Debe ser único y `<id>.json` **tiene que coincidir** con el nombre de archivo (lo valida el schema).
 - **num**: secuencial único = (num máximo actual) + 1. Calcúlalo, **no rellenes huecos**:

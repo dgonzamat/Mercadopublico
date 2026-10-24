@@ -4,8 +4,8 @@
   "pursueReleases": [
     7
   ],
-  "name": "Ecos en V, W y M en el radar del Destacamento 2 del 737.º Escuadrón AC&W (Marruecos francés, 1953)",
-  "name_en": "V, W and M returns on the radar of Detachment 2, 737th AC&W Squadron (French Morocco, 1953)",
+  "name": "Marruecos · un radar muestra sobre el mar formas que nadie vio",
+  "name_en": "Morocco · a radar shows shapes over the sea that no one saw",
   "year_start": 1953,
   "country": "MA",
   "country_name": "Marruecos",
@@ -13,8 +13,8 @@
   "location": {
     "lat": 35.08,
     "lng": -2.32,
-    "place": "Estación de radar del Destacamento 2, noreste del Marruecos francés, cerca de la desembocadura del Muluya (coordenada GEOREF MJNF 4105 del informe, convertida y aproximada); los ecos, sobre el Mediterráneo, al nordeste",
-    "place_en": "Detachment 2 radar station, northeastern French Morocco, near the mouth of the Moulouya (the report's GEOREF coordinate MJNF 4105, converted and approximate); the returns over the Mediterranean to the northeast"
+    "place": "Noreste del Marruecos francés, junto al Mediterráneo",
+    "place_en": "North-eastern French Morocco, by the Mediterranean"
   },
   "tier": "A",
   "epistemicStatus": "documented",

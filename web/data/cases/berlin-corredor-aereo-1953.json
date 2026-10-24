@@ -4,8 +4,8 @@
   "pursueReleases": [
     7
   ],
-  "name": "Luces rojas en el corredor aéreo central de Berlín · los registros de control de Tempelhof (Alemania, 1953)",
-  "name_en": "Red lights in Berlin's centre air corridor · the Tempelhof control logs (Germany, 1953)",
+  "name": "Berlín · pilotos ven luces rojas en el corredor aéreo",
+  "name_en": "Berlin · pilots see red lights in the air corridor",
   "year_start": 1953,
   "country": "DE",
   "country_name": "Alemania",
@@ -13,8 +13,8 @@
   "location": {
     "lat": 52.4,
     "lng": 11.6,
-    "place": "Corredor aéreo central entre Berlín y Hanover, veinte millas náuticas al oeste de Genthin, en la zona soviética (posición calculada a partir del registro; la del primer avistamiento no consta)",
-    "place_en": "Centre air corridor between Berlin and Hanover, twenty nautical miles west of Genthin, in the Soviet zone (position calculated from the log; that of the first sighting is not recorded)"
+    "place": "Corredor aéreo entre Berlín y Hanover, sobre la zona soviética",
+    "place_en": "Berlin–Hanover air corridor, over the Soviet zone"
   },
   "tier": "B",
   "epistemicStatus": "documented",

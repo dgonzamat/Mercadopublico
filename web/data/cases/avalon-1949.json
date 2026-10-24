@@ -4,8 +4,8 @@
   "pursueReleases": [
     7
   ],
-  "name": "Diez objetos que pasan de uno en uno sobre Avalon, contados en una carta a Kenneth Arnold · «datos insuficientes» para Blue Book (Estados Unidos, 1949)",
-  "name_en": "Ten objects passing one at a time over Avalon, told in a letter to Kenneth Arnold · 'insufficient data' for Blue Book (United States, 1949)",
+  "name": "Avalon · diez objetos que pasaron uno tras otro, según una carta",
+  "name_en": "Avalon · ten objects passing one by one, told in a letter",
   "year_start": 1949,
   "country": "US",
   "country_name": "Estados Unidos",
@@ -13,8 +13,8 @@
   "location": {
     "lat": 33.343,
     "lng": -118.327,
-    "place": "Avalon, isla de Santa Catalina, California (la carta no da la calle; dice solo que la casa de la hija estaba en la calle siguiente)",
-    "place_en": "Avalon, Santa Catalina Island, California (the letter gives no street; it says only that the daughter's house was on the next street)"
+    "place": "Avalon, isla Santa Catalina, California",
+    "place_en": "Avalon, Santa Catalina Island, California"
   },
   "tier": "B",
   "epistemicStatus": "documented",

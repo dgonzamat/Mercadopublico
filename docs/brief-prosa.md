@@ -2,6 +2,8 @@
 
 Repo: /home/user/Mercadopublico. Fichas en `web/data/cases/<id>.json`. Trabajas SOLO en los ficheros de tu lote. No hagas commit ni push. No toques ningún otro fichero.
 
+**Redacción:** sigue el skill `/redaccion` (`.claude/commands/redaccion.md`); este brief es un subconjunto suyo.
+
 ## Qué corregir (en español y en su par `_en`)
 Campos: `summary`, `whatHappened`, `whyMatters`, `evidence` y sus `_en`.
 

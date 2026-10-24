@@ -4,8 +4,8 @@
   "pursueReleases": [
     7
   ],
-  "name": "Un F-86D persigue una luz blanca intermitente sobre Guam · ¿el globo meteorológico iluminado soltado una hora y 38 minutos antes? (1956)",
-  "name_en": "An F-86D chases a blinking white light over Guam · the lighted weather balloon released an hour and 38 minutes earlier? (1956)",
+  "name": "Guam · un caza persigue una luz intermitente sin poder alcanzarla",
+  "name_en": "Guam · a fighter pilot chases a blinking light he cannot catch",
   "year_start": 1956,
   "country": "GU",
   "country_name": "Guam",
@@ -13,8 +13,8 @@
   "location": {
     "lat": 13.6,
     "lng": 144.82,
-    "place": "Circuito de espera del radiofaro de Guam, sobre el noroeste de la isla, entre la base de Andersen y Agaña (posición aproximada, tomada del croquis del informe)",
-    "place_en": "Guam radio range holding pattern, over the north-west of the island, between Andersen Air Force Base and Agana (approximate position, taken from the report's sketch)"
+    "place": "Noroeste de Guam, entre la base de Andersen y Agaña",
+    "place_en": "North-western Guam, between Andersen Air Force Base and Agana"
   },
   "tier": "B",
   "epistemicStatus": "documented",

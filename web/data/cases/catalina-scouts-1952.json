@@ -4,8 +4,8 @@
   "pursueReleases": [
     7
   ],
-  "name": "Tres boy scouts del campamento Camp Fox ven en una caminata por la isla Santa Catalina un objeto plateado, más rápido que un reactor y sin ruido, que hace un giro ascendente y se «desintegra» · «datos insuficientes» para Blue Book (Estados Unidos, 1952)",
-  "name_en": "Three Boy Scouts from Camp Fox, on a hike on Santa Catalina Island, see a silent silver object, faster than a jet, make a climbing turn and 'disintegrate' · 'insufficient data' for Blue Book (United States, 1952)",
+  "name": "Santa Catalina · tres scouts ven un objeto plateado sin ruido",
+  "name_en": "Santa Catalina Island · three Scouts see a silent silver object",
   "year_start": 1952,
   "country": "US",
   "country_name": "Estados Unidos",
@@ -13,8 +13,8 @@
   "location": {
     "lat": 33.405,
     "lng": -118.366,
-    "place": "Isla Santa Catalina, California, cerca de Long Point, donde estaba Camp Fox, el campamento de la YMCA de Glendale (hoy Fox Landing), unas 5 millas al noroeste de Avalon (coordenadas aproximadas: el informe no precisa el lugar de la caminata)",
-    "place_en": "Santa Catalina Island, California, near Long Point, where Camp Fox, the Glendale YMCA camp (today Fox Landing), stood, about 5 miles northwest of Avalon (approximate coordinates: the report does not pin down where the hike was)"
+    "place": "Camp Fox, cerca de Long Point, isla Santa Catalina, California",
+    "place_en": "Camp Fox, near Long Point, Santa Catalina Island, California"
   },
   "tier": "B",
   "epistemicStatus": "documented",

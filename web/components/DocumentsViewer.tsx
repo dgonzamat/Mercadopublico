@@ -3,6 +3,7 @@ import DvidsVideo from "@/components/DvidsVideo";
 import { T } from "@/components/T";
 import { licenseLabel } from "@/lib/license";
 import type { DocEmbed } from "@/lib/types";
+import { splitLead } from "@/lib/splitLead";
 
 /**
  * Visor de documentos primarios, compartido por la ficha de caso y el perfil de
@@ -31,7 +32,16 @@ const INLINE_NONVIDEO_MAX = 4;
 // primarios» (204 fichas lo decían de una foto de contexto).
 const isContextDoc = (d: { title?: string }) => /^(Contexto|Context)\b/.test(d.title ?? "");
 
-export function DocumentsViewer({ docs, locale }: { docs: DocEmbed[]; locale: "es" | "en" }) {
+/** Separa la prueba del propio caso —vídeo o imagen que no sea de contexto,
+ *  hasta dos— del papeleo. La ficha muestra la prueba antes del relato (es
+ *  lo que el lector viene a ver: 46 fichas con vídeo, 35 con foto del
+ *  suceso) y el papeleo después, para que no entierre el relato. */
+export function splitCaseMedia(docs: DocEmbed[]): { media: DocEmbed[]; rest: DocEmbed[] } {
+  const media = docs.filter((d) => d.type === "video" || (d.type === "image" && !isContextDoc(d))).slice(0, 2);
+  return { media, rest: docs.filter((d) => !media.includes(d)) };
+}
+
+export function DocumentsViewer({ docs, locale, heading }: { docs: DocEmbed[]; locale: "es" | "en"; heading?: { es: string; en: string } }) {
   if (docs.length === 0) return null;
   const docsVideo = docs.filter((d) => d.type === "video");
   const docsOther = docs.filter((d) => d.type !== "video" && d.type !== "link");
@@ -43,7 +53,9 @@ export function DocumentsViewer({ docs, locale }: { docs: DocEmbed[]; locale: "e
   return (
     <section className="space-y-6">
       <p className="text-sm font-semibold text-accent">
-        {onlyLinks ? (
+        {heading ? (
+          <T locale={locale} es={heading.es} en={heading.en} />
+        ) : onlyLinks ? (
           <T locale={locale} es="Documentos" en="Documents" />
         ) : onlyContext ? (
           <T locale={locale} es="Imagen de contexto (no es un documento del caso)" en="Context image (not a document from the case)" />
@@ -71,11 +83,7 @@ export function DocumentsViewer({ docs, locale }: { docs: DocEmbed[]; locale: "e
               <p className="text-sm leading-snug text-text">
                 <T locale={locale} es={doc.title} en={doc.title_en ?? doc.title} />
               </p>
-              {doc.description && (
-                <p className="text-sm leading-relaxed text-muted">
-                  <T locale={locale} es={doc.description} en={doc.description_en ?? doc.description} />
-                </p>
-              )}
+              <DocDescription doc={doc} locale={locale} />
               <p className="font-mono text-[11px] text-muted">
                 {[doc.source, licenseLabel(doc.license, locale)].filter(Boolean).join(" · ")}
                 {doc.fallbackUrl && (
@@ -115,11 +123,7 @@ export function DocumentsViewer({ docs, locale }: { docs: DocEmbed[]; locale: "e
                 <p className="text-sm leading-snug text-text">
                   <T locale={locale} es={doc.title} en={doc.title_en ?? doc.title} />
                 </p>
-                {doc.description && (
-                  <p className="text-sm leading-relaxed text-muted">
-                    <T locale={locale} es={doc.description} en={doc.description_en ?? doc.description} />
-                  </p>
-                )}
+                <DocDescription doc={doc} locale={locale} />
                 <p className="font-mono text-[11px] text-muted">
                   {[doc.source, licenseLabel(doc.license, locale)].filter(Boolean).join(" · ")}
                   {" · "}
@@ -144,11 +148,7 @@ export function DocumentsViewer({ docs, locale }: { docs: DocEmbed[]; locale: "e
           <p className="text-sm font-semibold leading-snug text-text">
             <T locale={locale} es={doc.title} en={doc.title_en ?? doc.title} />
           </p>
-          {doc.description && (
-            <p className="text-sm leading-relaxed text-muted">
-              <T locale={locale} es={doc.description} en={doc.description_en ?? doc.description} />
-            </p>
-          )}
+          <DocDescription doc={doc} locale={locale} />
           <p className="font-mono text-[11px] text-muted">
             {doc.source && <>{doc.source} · </>}
             <a
@@ -163,5 +163,26 @@ export function DocumentsViewer({ docs, locale }: { docs: DocEmbed[]; locale: "e
         </div>
       ))}
     </section>
+  );
+}
+
+/** Descripción de un documento: la entrada a la vista y el resto plegado.
+ *  157 fichas tenían alguna de más de 600 caracteres, y con cuatro visores
+ *  seguidos las descripciones sumaban pantallas enteras (oct 2026). */
+function DocDescription({ doc, locale }: { doc: DocEmbed; locale: "es" | "en" }) {
+  if (!doc.description) return null;
+  const w = splitLead(locale === "es" ? doc.description : doc.description_en ?? doc.description, 220);
+  return (
+    <div className="text-sm leading-relaxed text-muted">
+      <p>{w.lead}</p>
+      {w.rest && (
+        <details className="mt-1">
+          <summary className="cursor-pointer text-accent">
+            <T locale={locale} es="Ver más" en="Read more" />
+          </summary>
+          <p className="mt-1">{w.rest}</p>
+        </details>
+      )}
+    </div>
   );
 }

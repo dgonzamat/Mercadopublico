@@ -2,6 +2,8 @@
 
 Repo: /home/user/Mercadopublico. Cases are JSON files at web/data/cases/<id>.json.
 
+**Writing:** every piece of case text you write or change, in Spanish and in English, follows the `/redaccion` guide (`.claude/commands/redaccion.md`). Read it before writing.
+
 Each case's classification is written by hand: `posterior` (6 MECE keys summing to exactly 1: mundano_natural, humana_clasificada, adversaria, nohumano_encubierto, nohumano_abierto, indet), `mundanoType` (misid|natural|fraude) and `misidSubtype` (astronomico|aeronave|espacial|terrestre_otros, only when mundanoType=misid). The site just sums these numbers, so a classification written without reading the evidence contaminates every count.
 
 Rule from the owner: the classification must be assigned only AFTER reading the primary evidence (the actual file, report, telex, transcript, contemporaneous press), never from Wikipedia or an aggregator summary.

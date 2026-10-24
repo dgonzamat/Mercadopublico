@@ -1,8 +1,8 @@
 {
   "id": "kadena-okinawa-1951",
   "num": 494,
-  "name": "Un radar AN/CPS-1 de Okinawa sigue un eco con forma de salchicha a unas 3.000 millas por hora · dos expertos discrepan y Blue Book lo deja como no identificado (Japón, 1951)",
-  "name_en": "An AN/CPS-1 radar on Okinawa tracks a sausage-shaped echo at some 3,000 miles per hour · two experts disagree and Blue Book leaves it unidentified (Japan, 1951)",
+  "name": "Okinawa · un radar sigue algo que nadie vio en el cielo",
+  "name_en": "Okinawa · a radar tracks something no one saw in the sky",
   "year_start": 1951,
   "country": "JP",
   "country_name": "Japón",
@@ -10,8 +10,8 @@
   "location": {
     "lat": 26.415,
     "lng": 127.797,
-    "place": "Estación de control de interceptación del sitio 51 «A», unos kilómetros al norte de la base aérea de Kadena, Okinawa (bajo administración de EE. UU. en 1951; hoy Japón); el eco se siguió sobre el mar, al norte, hacia las islas Amami",
-    "place_en": "Site 51 \"A\" ground-controlled intercept station, a few miles north of Kadena Air Base, Okinawa (under U.S. administration in 1951; today Japan); the echo was tracked over the sea to the north, towards the Amami Islands"
+    "place": "Al norte de la base aérea de Kadena, Okinawa (hoy Japón)",
+    "place_en": "North of Kadena Air Base, Okinawa (today Japan)"
   },
   "tier": "S",
   "epistemicStatus": "documented",

@@ -10,8 +10,8 @@
   "location": {
     "lat": -20.5352,
     "lng": -70.537,
-    "place": "Aerovía UQ802 cerca del punto DADGI, unas 20 millas náuticas al oeste del aeropuerto Diego Aracena de Iquique (región de Tarapacá)",
-    "place_en": "Airway UQ802 near the DADGI waypoint, some 20 nautical miles west of Diego Aracena airport, Iquique (Tarapacá region)"
+    "place": "Sobre el mar, unos 37 km al oeste del aeropuerto de Iquique (Chile)",
+    "place_en": "Over the sea, about 37 km west of Iquique airport, Chile"
   },
   "tier": "A",
   "mundanoType": "natural",

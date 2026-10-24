@@ -10,8 +10,8 @@
   "location": {
     "lat": -50.366,
     "lng": -73.56,
-    "place": "Ruta Santiago–Punta Arenas, 8 millas náuticas al este del punto BODOM, sobre el Campo de Hielo Patagónico Sur (región de Magallanes)",
-    "place_en": "Santiago–Punta Arenas route, 8 nautical miles east of the BODOM waypoint, over the Southern Patagonian Ice Field (Magallanes region)"
+    "place": "Sobre el Campo de Hielo Patagónico Sur, región de Magallanes (Chile)",
+    "place_en": "Over the Southern Patagonian Ice Field, Magallanes region, Chile"
   },
   "tier": "A",
   "mundanoType": "misid",

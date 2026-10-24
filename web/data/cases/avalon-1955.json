@@ -4,8 +4,8 @@
   "pursueReleases": [
     7
   ],
-  "name": "Un vecino de Avalon ve una luz redonda y muy brillante, naranja y luego roja, caer en vertical durante dos segundos · «meteoro probable» para Blue Book (Estados Unidos, 1955)",
-  "name_en": "An Avalon resident sees a round, very bright light, orange then red, fall straight down for two seconds · 'probable meteor' for Blue Book (United States, 1955)",
+  "name": "Avalon · un vecino ve caer en vertical una luz naranja y roja",
+  "name_en": "Avalon · a resident sees an orange-red light drop straight down",
   "year_start": 1955,
   "country": "US",
   "country_name": "Estados Unidos",
@@ -13,8 +13,8 @@
   "location": {
     "lat": 33.343,
     "lng": -118.327,
-    "place": "Avalon, isla de Santa Catalina, California (el testigo vivía en el 222 de la calle Descanso; la luz cayó hacia el nornoroeste, acimut 340)",
-    "place_en": "Avalon, Santa Catalina Island, California (the witness lived at 222 Descanso Street; the light fell toward the north-northwest, azimuth 340)"
+    "place": "Avalon, isla Santa Catalina, California",
+    "place_en": "Avalon, Santa Catalina Island, California"
   },
   "tier": "A",
   "epistemicStatus": "documented",

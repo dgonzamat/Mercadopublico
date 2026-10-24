@@ -4,8 +4,8 @@
   "pursueReleases": [
     7
   ],
-  "name": "Una luz de unos segundos en el extremo sur de la Gran Diómedes, vista por un muchacho de 14 años desde la aldea de la Pequeña Diómedes · informe del 5004.º escuadrón de inteligencia aérea (URSS, 1953)",
-  "name_en": "A light lasting a few seconds on the southern tip of Big Diomede, seen by a 14-year-old boy from Little Diomede village · report of the 5004th Air Intelligence Service Squadron (USSR, 1953)",
+  "name": "Pequeña Diómedes · un muchacho ve una luz en la isla soviética",
+  "name_en": "Little Diomede · a boy spots a light on the nearby Soviet island",
   "year_start": 1953,
   "country": "RU",
   "country_name": "Rusia",
@@ -13,8 +13,8 @@
   "location": {
     "lat": 65.75,
     "lng": -169.05,
-    "place": "Extremo sur de la isla Gran Diómedes (Ratmánov), entonces URSS, a unos 95 pies sobre el mar; el testigo estaba en la aldea de la Pequeña Diómedes (Alaska), a 2,5 millas",
-    "place_en": "Southern tip of Big Diomede Island (Ratmanov), then USSR, about 95 feet above the sea; the witness was in Little Diomede village (Alaska), 2.5 miles away"
+    "place": "Isla Gran Diómedes (entonces URSS), frente a Alaska",
+    "place_en": "Big Diomede Island (then USSR), facing Alaska"
   },
   "tier": "B",
   "epistemicStatus": "documented",

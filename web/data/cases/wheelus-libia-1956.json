@@ -1,8 +1,8 @@
 {
   "id": "wheelus-libia-1956",
   "num": 493,
-  "name": "Dos ecos lentos frente a Trípoli que un radar de tierra y los F-86D interceptan hasta el «Splash» sin verlos nunca · «WEATHER RETURNS», escrito sobre la tarjeta de Blue Book junto a una casilla «Unknown» emborronada (Libia, 1956)",
-  "name_en": "Two slow returns off Tripoli that a ground radar and F-86Ds intercept through to \"Splash\" without ever seeing them · \"WEATHER RETURNS\", written on the Blue Book card next to a smudged \"Unknown\" box (Libya, 1956)",
+  "name": "Trípoli · cazas persiguen sobre el mar algo que solo vio el radar",
+  "name_en": "Tripoli · fighters chase something at sea that only radar saw",
   "year_start": 1956,
   "country": "LY",
   "country_name": "Libia",
@@ -10,8 +10,8 @@
   "location": {
     "lat": 33.3,
     "lng": 13.65,
-    "place": "Sobre el Mediterráneo, entre 15 y 60 millas náuticas al norte y nordeste de la base aérea de Wheelus, junto a Trípoli (posición aproximada de las interceptaciones, cálculo propio con las referencias del informe)",
-    "place_en": "Over the Mediterranean, between 15 and 60 nautical miles north and north-east of Wheelus Air Base, next to Tripoli (approximate position of the interceptions, own calculation from the report's references)"
+    "place": "Mediterráneo, al norte de la base de Wheelus, junto a Trípoli (Libia)",
+    "place_en": "Mediterranean, north of Wheelus Air Base, near Tripoli, Libya"
   },
   "tier": "S",
   "epistemicStatus": "documented",
