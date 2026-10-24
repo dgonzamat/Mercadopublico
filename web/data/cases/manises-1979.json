@@ -1,7 +1,8 @@
 {
   "id": "manises-1979",
   "num": 21,
-  "name": "Manises 1979",
+  "name": "Manises · una tripulación ve dos luces rojas y desvía el avión",
+  "name_en": "Manises · an airliner crew sees two red lights and diverts",
   "year_start": 1979,
   "country": "ES",
   "country_name": "España",
@@ -9,16 +10,16 @@
   "location": {
     "lat": 39.49,
     "lng": -0.47,
-    "place": "Manises, Valencia",
-    "place_en": "Manises, Valencia"
+    "place": "Manises, Valencia (España)",
+    "place_en": "Manises, Valencia, Spain"
   },
   "tier": "A",
   "mundanoType": "misid",
   "misidSubtype": "luces_tierra",
   "epistemicStatus": "documented",
   "probability": 35,
-  "summary": "La noche del 11 de noviembre de 1979 la tripulación del vuelo JK-297 de TAE vio dos luces rojas que parecían seguir al avión y desvió a Valencia; un Mirage F-1 despegó de Albacete tras unas luces vistas desde el aeropuerto. El expediente del Ejército del Aire registra que Pegaso solo grabó la traza del Caravelle, que el EVA 5 vio hasta cinco ecos momentáneos, luego atribuidos a ecos fijos, que el caza tuvo tres blocajes sin enganche consistente, e identifica con un astro la luz vista desde tierra. El juez instructor dio por no identificado un tráfico visto por dos controladores; el Mando Aéreo de Transporte no halló prueba de ningún ovni.",
-  "summary_en": "On the night of 11 November 1979 the crew of TAE flight JK-297 saw two red lights that seemed to follow the aircraft and diverted to Valencia; a Mirage F-1 took off from Albacete after lights seen from the airport. The Spanish Air Force file records that Pegaso recorded only the Caravelle's track, that EVA 5 made out up to five momentary echoes, later put down to fixed echoes, that the fighter had three lock-ons without a consistent lock, and identifies the light seen from the ground with a star. The investigating officer treated as unidentified a traffic seen by two controllers; the Air Transport Command found no proof of any UFO.",
+  "summary": "La noche del 11 de noviembre de 1979, la tripulación del vuelo JK-297 de TAE vio dos luces rojas que parecían seguirlo y se desvió a Valencia; un caza despegó de Albacete tras otras luces vistas desde el aeropuerto. Según el expediente del Ejército del Aire, el radar de defensa solo grabó al avión de pasajeros, otro radar vio hasta cinco señales momentáneas, atribuidas luego a reflejos falsos, el radar del caza captó algo tres veces sin llegar a seguirlo, y la luz vista desde tierra era un astro. El juez instructor dio por no identificado un tráfico visto por dos controladores; el Mando Aéreo de Transporte no halló prueba de ningún ovni.",
+  "summary_en": "On the night of 11 November 1979, the crew of TAE flight JK-297 saw two red lights that seemed to follow it and diverted to Valencia; a fighter took off from Albacete after other lights seen from the airport. According to the Spanish Air Force file, air-defence radar recorded only the airliner, another radar registered up to five momentary returns, later put down to false echoes, the fighter's radar caught something three times without managing to track it, and the light seen from the ground was a star. The investigating officer treated as unidentified a traffic seen by two controllers; the Air Transport Command found no proof of any UFO.",
   "patterns": [
     "8e"
   ],

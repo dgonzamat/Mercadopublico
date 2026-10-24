@@ -1,7 +1,7 @@
 {
   "id": "bolivia-el-taire-1978",
   "num": 75,
-  "name": "El Taire / caída de Bermejo",
+  "name": "Bermejo · la prensa anuncia la caída de un objeto metálico",
   "year_start": 1978,
   "country": "BO",
   "country_name": "Bolivia",
@@ -76,7 +76,7 @@
     "nohumano_abierto": 0.02,
     "indet": 0.32
   },
-  "name_en": "El Taire / Bermejo crash",
+  "name_en": "Bermejo · press reports the fall of a metal object",
   "documents": [
     {
       "role": "documento",

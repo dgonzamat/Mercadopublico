@@ -1,8 +1,8 @@
 {
   "id": "basel-1566",
   "num": 236,
-  "name": "Fenómeno celeste · Basilea",
-  "name_en": "Celestial Phenomenon · Basel",
+  "name": "Basilea · vecinos ven esferas negras cruzar ante el Sol",
+  "name_en": "Basel · townspeople see black spheres cross the Sun",
   "year_start": 1566,
   "country": "CH",
   "country_name": "Suiza",
@@ -17,8 +17,8 @@
   "mundanoType": "natural",
   "epistemicStatus": "documented",
   "probability": 38,
-  "summary": "Al amanecer del 7 de agosto de 1566, numerosos habitantes de Basilea (Suiza) dijeron ver grandes esferas negras que cruzaban veloces el cielo frente al sol, 'como si combatieran', algunas tornándose rojas y consumiéndose. El hecho se sumó a otros prodigios solares y lunares de ese verano. El impresor Samuel Apiarius lo publicó en una hoja volante con grabado, con un texto que firma Samuel Coccius, estudiante en Basilea.",
-  "summary_en": "At dawn on 7 August 1566, many inhabitants of Basel (Switzerland) reported large black spheres crossing the sky swiftly in front of the sun, 'as if fighting', some turning red and burning up. The event joined other solar and lunar prodigies of that summer. The printer Samuel Apiarius published it in a broadsheet with a woodcut, with a text signed by Samuel Coccius, a student in Basel.",
+  "summary": "Al amanecer del 7 de agosto de 1566, según una hoja volante impresa en Basilea, numerosos habitantes de la ciudad vieron grandes esferas negras cruzar veloces ante el sol, «como si combatieran», y algunas se volvieron rojas y se consumieron. El hecho se sumó a otros prodigios en el cielo de ese verano. Imprimió la hoja Samuel Apiarius, con un grabado y un texto que firma Samuel Coccius, estudiante en Basilea; se conserva en la Zentralbibliothek de Zúrich. El meteorólogo Gustav Hellmann no supo interpretar las bolas negras, y la lectura más citada hoy son efectos ópticos del sol al amanecer, como halos y parhelios.",
+  "summary_en": "At dawn on August 7, 1566, according to a broadsheet printed in Basel, many of the city's inhabitants saw large black spheres race across the face of the sun, “as if fighting,” some turning red and burning out. It came on top of other sky prodigies that summer. Samuel Apiarius printed the sheet, with a woodcut and a text signed by Samuel Coccius, a student in Basel; it is kept at the Zurich Central Library. Meteorologist Gustav Hellmann could not account for the black balls, and the most cited reading today is optical effects of the rising sun, such as halos and sun dogs.",
   "patterns": [
     "8h"
   ],

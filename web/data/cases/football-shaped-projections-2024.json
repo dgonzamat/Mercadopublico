@@ -4,8 +4,8 @@
   "pursueReleases": [
     1
   ],
-  "name": "Un cuerpo ovalado con tres proyecciones radiales, visto 9 segundos",
-  "name_en": "An oval body with three radial projections, seen for 9 seconds",
+  "name": "Pacífico occidental · un sensor graba un óvalo con tres salientes",
+  "name_en": "Western Pacific · a sensor records an oval with three projections",
   "year_start": 2024,
   "country": "US",
   "country_name": "Área de responsabilidad de INDOPACOM (ubicación exacta no revelada)",
@@ -13,8 +13,8 @@
   "location": {
     "lat": 15,
     "lng": 140,
-    "place": "Océano Pacífico occidental, área INDOPACOM (ubicación exacta no revelada)",
-    "place_en": "Western Pacific Ocean, INDOPACOM area (exact location undisclosed)"
+    "place": "Océano Pacífico occidental (ubicación exacta no revelada)",
+    "place_en": "Western Pacific Ocean (exact location undisclosed)"
   },
   "tier": "A",
   "epistemicStatus": "documented",
@@ -36,8 +36,8 @@
     "nohumano_abierto": 0.05,
     "indet": 0.27
   },
-  "summary": "En 2024, un sensor infrarrojo a bordo de una plataforma militar estadounidense en el área de responsabilidad del Comando Indo-Pacífico registró 9 segundos de un objeto que la AARO describe con inusual precisión geométrica: 'un cuerpo con forma de balón de fútbol americano, con tres proyecciones radiales: una orientada verticalmente, y dos orientadas hacia abajo en un ángulo de 45 grados respecto al eje mayor de la masa principal'. Es una descripción morfológica muy detallada y geométricamente específica, sacada de un metraje muy breve: nueve segundos de metraje, sin informe de misión, sin declaración del reportante y sin ningún otro dato de contexto.",
-  "summary_en": "In 2024, an infrared sensor aboard a U.S. military platform within Indo-Pacific Command's area of responsibility recorded 9 seconds of an object AARO describes with unusual geometric precision: 'a body resembling a football-shaped mass, with three radial projections: one oriented vertically, and two oriented downward at a 45-degree angle relative to the major axis of the main mass.' It is a very detailed and geometrically specific morphological description, drawn from very brief footage: nine seconds of footage, with no mission report, no reporter statement, and no other contextual data.",
+  "summary": "En 2024, un sensor infrarrojo de una plataforma militar de EE. UU. en la zona del Comando Indo-Pacífico grabó 9 segundos de un objeto que la oficina del Pentágono para estos fenómenos (AARO) describe así: «un cuerpo con forma de balón de fútbol americano, con tres proyecciones radiales: una orientada verticalmente, y dos orientadas hacia abajo en un ángulo de 45 grados respecto al eje mayor de la masa principal». No hay informe de misión, declaración de quien lo grabó ni otro dato de contexto: el índice de datos oficial solo da como lugar el mar de China Oriental. Se publicó en mayo de 2026.",
+  "summary_en": "In 2024, an infrared sensor on a U.S. military platform in the Indo-Pacific Command area recorded 9 seconds of an object that the Pentagon office for these phenomena (AARO) describes as “a body resembling a football-shaped mass, with three radial projections: one oriented vertically, and two oriented downward at a 45-degree angle relative to the major axis of the main mass.” There is no mission report, no statement from whoever recorded it and no other context: the official data index gives only the East China Sea as the location. It was released in May 2026.",
   "patterns": [],
   "category": "incident",
   "documents": [

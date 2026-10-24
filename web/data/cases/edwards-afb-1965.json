@@ -1,8 +1,8 @@
 {
   "id": "edwards-afb-1965",
   "num": 310,
-  "name": "Edwards AFB · las cintas de 1965",
-  "name_en": "Edwards AFB · The 1965 Tapes",
+  "name": "Edwards · la torre ve luces de colores durante horas",
+  "name_en": "Edwards · tower staff watch colored lights for hours",
   "year_start": 1965,
   "country": "US",
   "country_name": "Estados Unidos",
@@ -10,15 +10,15 @@
   "location": {
     "lat": 34.905,
     "lng": -117.884,
-    "place": "Edwards AFB, desierto de Mojave, California",
-    "place_en": "Edwards AFB, Mojave Desert, California"
+    "place": "Base aérea de Edwards, desierto de Mojave, California",
+    "place_en": "Edwards Air Force Base, Mojave Desert, California"
   },
   "tier": "A",
   "mundanoType": "misid",
   "epistemicStatus": "documented",
   "probability": 29,
-  "summary": "En la madrugada del 7 de octubre de 1965, el operador de la torre de Edwards AFB y otros tres militares vieron durante horas entre siete y doce luces del tamaño de estrellas que parpadeaban en rojo, verde y blanco, bajas por el este-noreste. Varios radares captaron ecos breves en la zona, y en un momento la torre y el radar casi coincidieron en tres objetos; un F-106 despegó a las 5:09 y no encontró nada. La tarjeta de Blue Book atribuye las luces a estrellas y planetas y los ecos a la atmósfera; el analista de radar atribuyó ambas cosas a variaciones atmosféricas. En esa parte del cielo estaban Júpiter, Capella, Cástor y Pólux.",
-  "summary_en": "In the early hours of October 7, 1965, the Edwards AFB tower operator and three other servicemen watched for hours between seven and twelve star-sized lights flashing red, green and white, low in the east-northeast. Several radars picked up brief returns in the area, and at one point the tower and radar nearly agreed on three objects; an F-106 scrambled at 5:09 a.m. and found nothing. The Blue Book card puts the lights down to stars and planets and the returns to the atmosphere; the radar analyst attributed both to atmospheric variations. Jupiter, Capella, Castor and Pollux were in that part of the sky.",
+  "summary": "En la madrugada del 7 de octubre de 1965, el operador de la torre de la base aérea de Edwards y otros tres militares vieron durante horas entre siete y doce luces como estrellas, bajas hacia el este-noreste, que parpadeaban en rojo, verde y blanco. Varios radares mostraron contactos breves, y en un momento la torre y el radar casi coincidieron en tres objetos; un caza despegó a las 5:09 y no encontró nada. La Fuerza Aérea atribuyó las luces a estrellas y planetas y los contactos de radar a la atmósfera, y su analista de radar, ambas cosas a variaciones atmosféricas. En esa parte del cielo estaban Júpiter, Capella, Cástor y Pólux.",
+  "summary_en": "In the early hours of 7 October 1965, the Edwards Air Force Base tower operator and three other servicemen watched for hours between seven and twelve star-sized lights low in the east-northeast, flashing red, green and white. Several radars picked up brief contacts in the area, and at one point the tower and the radar nearly agreed on three objects; a fighter took off at 5:09 am and found nothing. The Air Force put the lights down to stars and planets and the radar contacts to the atmosphere, and its radar analyst blamed both on atmospheric variations. Jupiter, Capella, Castor and Pollux were in that part of the sky.",
   "patterns": [
     "8e"
   ],

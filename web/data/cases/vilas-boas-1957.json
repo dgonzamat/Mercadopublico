@@ -1,8 +1,8 @@
 {
   "id": "vilas-boas-1957",
   "num": 175,
-  "name": "Antônio Vilas-Boas",
-  "name_en": "Antônio Vilas-Boas",
+  "name": "Vilas-Boas · un agricultor dice que lo subieron a una nave",
+  "name_en": "Vilas-Boas · a farmer says he was taken aboard a craft",
   "year_start": 1957,
   "country": "BR",
   "country_name": "Brasil",
@@ -10,14 +10,14 @@
   "location": {
     "lat": -19.86,
     "lng": -49.77,
-    "place": "São Francisco de Sales, Minas Gerais",
-    "place_en": "São Francisco de Sales, Minas Gerais"
+    "place": "São Francisco de Sales, Minas Gerais (Brasil)",
+    "place_en": "São Francisco de Sales, Minas Gerais (Brazil)"
   },
   "tier": "B",
   "mundanoType": "fraude",
   "probability": 41,
-  "summary": "La noche del 16 de octubre de 1957, el agricultor Antônio Vilas-Boas, de 23 años, dijo haber sido sacado a la fuerza de su tractor por figuras de baja estatura y llevado al interior de un objeto aterrizado en São Francisco de Sales, donde fue examinado y sometido a una interacción de tipo reproductivo. El médico Olavo Fontes lo examinó el 22 de febrero de 1958 y documentó lesiones cutáneas y síntomas que, años después, describió como sugestivos de exposición a radiación, aunque reconoció que llegó demasiado tarde para los análisis de sangre que podrían haberlo confirmado. Precede en cuatro años al caso de Betty y Barney Hill.",
-  "summary_en": "On the night of 16 October 1957, 23-year-old farmer Antônio Vilas-Boas said he was forcibly taken from his tractor by short figures and brought inside a landed object in São Francisco de Sales, where he was examined and subjected to a reproductive-type interaction. Physician Olavo Fontes examined him on 22 February 1958 and documented skin lesions and symptoms that, years later, he described as suggestive of radiation exposure, while admitting the patient reached him too late for the blood tests that could have confirmed it. It predates the Betty and Barney Hill case by four years.",
+  "summary": "La noche del 16 de octubre de 1957, el agricultor Antônio Vilas-Boas, de 23 años, dijo que unas figuras de baja estatura lo sacaron a la fuerza de su tractor y lo llevaron al interior de un objeto aterrizado cerca de São Francisco de Sales, donde lo examinaron y lo sometieron a un encuentro de fin reproductivo. El médico Olavo Fontes lo examinó el 22 de febrero de 1958 y anotó lesiones en la piel y síntomas que, en 1966, describió como sugestivos de exposición a radiación, aunque admitió que llegó demasiado tarde para los análisis de sangre. Es el relato de un solo testigo, y su carta de noviembre contaba de otro modo los primeros momentos.",
+  "summary_en": "On the night of October 16, 1957, 23-year-old farmer Antônio Vilas-Boas said short figures dragged him off his tractor and took him inside a landed object near São Francisco de Sales, where they examined him and subjected him to an encounter with a reproductive purpose. Physician Olavo Fontes examined him on February 22, 1958, and noted skin lesions and symptoms that in 1966 he described as suggestive of radiation exposure, while admitting the patient reached him too late for blood tests. It is a single witness's account, and his November letter told the first moments differently.",
   "patterns": [
     "8a"
   ],

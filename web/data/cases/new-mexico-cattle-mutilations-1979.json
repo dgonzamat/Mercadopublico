@@ -1,8 +1,8 @@
 {
   "id": "new-mexico-cattle-mutilations-1979",
   "num": 442,
-  "name": "Ola de mutilaciones de ganado en Nuevo México (Dulce)",
-  "name_en": "New Mexico cattle mutilation wave (Dulce)",
+  "name": "Las «mutilaciones» de Dulce · ganaderos hallan reses sin órganos",
+  "name_en": "The Dulce “mutilations” · ranchers find cattle missing organs",
   "year_start": 1975,
   "year_end": 1979,
   "country": "US",
@@ -26,8 +26,8 @@
     "nohumano_abierto": 0.01,
     "indet": 0.13
   },
-  "summary": "De 1975 a 1979, decenas de reses aparecieron muertas en Nuevo México sin lengua, ojos, ubre o genitales, con el foco en Dulce (condado de Río Arriba). El agente estatal Gabe Valdez describió cortes «precisos», marcas de trípode, radiación y animales izados por aire; el senador Harrison Schmitt llevó el asunto al FBI y una subvención federal pagó una investigación dirigida por el exagente Kenneth Rommel. Su informe de 1980 concluyó que ninguno de los 117 casos que revisó podía confirmarse como mutilación «clásica» y atribuyó los que tenían datos suficientes a carroñeo tras una muerte natural, aunque Rommel nunca examinó en persona un caso de Dulce.",
-  "summary_en": "From 1975 to 1979, dozens of cattle were found dead in New Mexico without tongue, eyes, udder or genitals, centered on Dulce (Rio Arriba County). State officer Gabe Valdez described \"precise\" cuts, tripod marks, radiation and animals lifted by air; Senator Harrison Schmitt took the matter to the FBI and a federal grant paid for an investigation led by former agent Kenneth Rommel. His 1980 report concluded that none of the 117 cases it reviewed could be confirmed as a \"classic\" mutilation and attributed those with sufficient data to scavenging after a natural death, although Rommel never personally examined a Dulce case.",
+  "summary": "De 1975 a 1979, decenas de reses aparecieron muertas en Nuevo México sin lengua, ojos, ubre o genitales, con el foco en Dulce. El agente estatal Gabe Valdez describió cortes «precisos», marcas de trípode, radiación y animales izados por aire; el senador Harrison Schmitt llevó el asunto al FBI y una subvención federal pagó una investigación dirigida por el exagente Kenneth Rommel. Su informe de 1980 concluyó que ninguno de los 117 casos que revisó podía confirmarse como mutilación «clásica» y atribuyó los que tenían datos suficientes a carroñeo tras una muerte natural, aunque Rommel nunca examinó en persona un caso de Dulce.",
+  "summary_en": "From 1975 to 1979, dozens of cattle were found dead in New Mexico without tongue, eyes, udder or genitals, centered on Dulce. State officer Gabe Valdez described “precise” cuts, tripod marks, radiation and animals lifted by air; Senator Harrison Schmitt took the matter to the FBI and a federal grant paid for an investigation led by former agent Kenneth Rommel. His 1980 report concluded that none of the 117 cases it reviewed could be confirmed as a “classic” mutilation and attributed those with sufficient data to scavenging after a natural death, although Rommel never personally examined a Dulce case.",
   "patterns": [
     "8a",
     "8g"

@@ -1,7 +1,8 @@
 {
   "id": "trans-en-provence-1981",
   "num": 23,
-  "name": "Trans-en-Provence",
+  "name": "Trans-en-Provence · un hombre ve posarse un objeto en su terreno",
+  "name_en": "Trans-en-Provence · a man sees an object land on his property",
   "year_start": 1981,
   "country": "FR",
   "country_name": "Francia",
@@ -9,8 +10,8 @@
   "location": {
     "lat": 43.5,
     "lng": 6.48,
-    "place": "Trans-en-Provence",
-    "place_en": "Trans-en-Provence"
+    "place": "Trans-en-Provence, Francia",
+    "place_en": "Trans-en-Provence, France"
   },
   "tier": "A",
   "mundanoType": "fraude",

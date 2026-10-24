@@ -1,8 +1,8 @@
 {
   "id": "kenneth-arnold-1947",
   "num": 170,
-  "name": "Kenneth Arnold · el avistamiento que acuñó 'platillo volador' (EE.UU., 1947)",
-  "name_en": "Kenneth Arnold · the sighting that coined 'flying saucer' (USA, 1947)",
+  "name": "Kenneth Arnold · nueve objetos brillantes junto al monte Rainier",
+  "name_en": "Kenneth Arnold · nine bright objects near Mount Rainier",
   "year_start": 1947,
   "country": "US",
   "country_name": "Estados Unidos",
@@ -17,8 +17,8 @@
   "mundanoType": "misid",
   "epistemicStatus": "documented",
   "probability": 33,
-  "summary": "El 24 de junio de 1947, el piloto privado Kenneth Arnold volaba cerca del Monte Rainier (Washington) cuando reportó nueve objetos brillantes en cadena entre el Rainier y el Monte Adams. Cronometró su paso y dedujo unas 1.700 millas por hora. Su descripción del movimiento («como un platillo si lo lanzas rebotando sobre el agua») llevó a la prensa a acuñar «flying saucer» y disparó la oleada de 1947. El agente que lo entrevistó lo consideró sincero, pero J. Allen Hynek mostró que distancia, tamaño y detalle no podían ser ciertos a la vez, y que con el tamaño estimado irían a unas 400 millas por hora; Blue Book lo cerró como «Otro (espejismo)».",
-  "summary_en": "On June 24, 1947, private pilot Kenneth Arnold was flying near Mount Rainier (Washington) when he reported nine bright objects in a chain between Rainier and Mount Adams. He timed their passage and derived about 1,700 miles per hour. His description of the motion ('like a saucer if you skip it across water') led the press to coin 'flying saucer' and triggered the 1947 wave. The agent who interviewed him considered him sincere, but J. Allen Hynek showed that distance, size and detail could not all be true at once, and that with the estimated size they would have gone about 400 miles per hour; Blue Book closed it as 'Other (mirage).'",
+  "summary": "El 24 de junio de 1947, el piloto Kenneth Arnold volaba cerca del monte Rainier cuando vio nueve objetos brillantes en cadena entre el Rainier y el monte Adams. Cronometró su paso y dedujo unas 1.700 millas por hora. Su descripción del movimiento («como un platillo si lo lanzas rebotando sobre el agua») llevó a la prensa a acuñar «flying saucer» (platillo volador) y desató la oleada de 1947. El agente que lo entrevistó lo creyó sincero, pero Hynek mostró que distancia, tamaño y detalle no podían ser ciertos a la vez y que, con el tamaño estimado, irían a unas 400 millas por hora; la Fuerza Aérea lo cerró como «Otro (espejismo)».",
+  "summary_en": "On June 24, 1947, pilot Kenneth Arnold was flying near Mount Rainier when he saw nine bright objects in a chain between Rainier and Mount Adams. He timed their passage and worked out about 1,700 miles per hour. His description of the motion (“like a saucer if you skip it across water”) led the press to coin “flying saucer” and set off the 1947 wave. The agent who interviewed him found him sincere, but Hynek showed that distance, size and detail could not all be true at once and that, at the estimated size, they would have been going about 400 miles per hour; the Air Force closed it as “Other (mirage).”",
   "patterns": [
     "8h"
   ],

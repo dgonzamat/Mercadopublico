@@ -4,8 +4,8 @@
   "pursueReleases": [
     2
   ],
-  "name": "Sary Shagan · objeto verde sobre campo de armas soviético (CIA-UAP-D001)",
-  "name_en": "Sary Shagan · green object over Soviet weapons range (CIA-UAP-D001)",
+  "name": "Sary Shagan · un trabajador ve un círculo verde que se expande",
+  "name_en": "Sary Shagan · a worker sees a green circle spread into rings",
   "year_start": 1973,
   "country": "SU",
   "country_name": "Unión Soviética (RSS de Kazajistán)",
@@ -13,8 +13,8 @@
   "location": {
     "lat": 46,
     "lng": 73.6,
-    "place": "Sitio 7 · campo de pruebas de armas de Sary Shagan, cerca del lago Baljash",
-    "place_en": "Site 7 · Sary Shagan weapons testing range, near Lake Balkhash"
+    "place": "Campo de pruebas de Sary Shagan, cerca del lago Baljash (Kazajistán)",
+    "place_en": "Sary Shagan test range, near Lake Balkhash, Kazakhstan"
   },
   "tier": "B",
   "mundanoType": "sin_propuesta",
@@ -28,8 +28,8 @@
     "nohumano_abierto": 0.05,
     "indet": 0.2
   },
-  "summary": "A fines del verano de 1973, en el Sitio 7 del campo de pruebas de Sary Shagan (polígono soviético antimisiles y de energía dirigida junto al lago Baljash), un trabajador vio al oeste, a unos 70° de elevación, un nítido objeto circular verde. En 10-15 segundos el círculo se ensanchó y se formaron varios círculos verdes concéntricos; el color se desvaneció en minutos, sin sonido ni explosión, con cielo despejado. El relato llegó a Occidente como un informe HUMINT de la CIA y se desclasificó en la segunda entrega de PURSUE (22 may 2026). La firma es compatible con un ensayo soviético de altitud tanto como con un fenómeno óptico-atmosférico.",
-  "summary_en": "In late summer 1973, at Site 7 of the Sary Shagan weapons testing range (the Soviet anti-ballistic-missile and directed-energy proving ground near Lake Balkhash), a worker saw to the west, at about 70° elevation, a sharp green circular object. Within 10-15 seconds the circle widened and several concentric green circles formed; the color faded within minutes, with no sound or explosion, under a clear sky. The account reached the West as a CIA HUMINT report and was declassified in the second PURSUE release (May 22, 2026). The signature is consistent with a Soviet high-altitude test as much as with an optical-atmospheric phenomenon.",
+  "summary": "A finales del verano de 1973, un trabajador del campo de pruebas soviético de Sary Shagan, junto al lago Baljash (hoy Kazajistán), donde se probaban antimisiles y armas de energía dirigida, vio al oeste, a unos 70° sobre el horizonte, un objeto circular verde y nítido. En 10 a 15 segundos el círculo se ensanchó y se formaron varios anillos verdes concéntricos; el color se apagó en minutos, sin sonido ni explosión y con el cielo despejado. La CIA recogió el relato de un antiguo ciudadano soviético, y el informe se desclasificó en mayo de 2026. Encaja tanto con un ensayo soviético a gran altura como con un fenómeno óptico de la atmósfera.",
+  "summary_en": "In late summer 1973, a worker at the Soviet Sary Shagan test range near Lake Balkhash, in today’s Kazakhstan, where anti-missile defenses and directed-energy weapons were tested, saw to the west, about 70° above the horizon, a sharp green circular object. Within 10 to 15 seconds the circle widened and several concentric green rings formed; the color faded within minutes, with no sound or explosion, under a clear sky. The CIA got the account from a former Soviet citizen, and the report was declassified in May 2026. It fits a Soviet high-altitude test as well as an optical effect in the atmosphere.",
   "documents": [
     {
       "role": "documento",

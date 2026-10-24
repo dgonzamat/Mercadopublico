@@ -1,8 +1,8 @@
 {
   "id": "mothman-1966",
   "num": 231,
-  "name": "Mothman · Point Pleasant",
-  "name_en": "Mothman · Point Pleasant",
+  "name": "Mothman · vecinos de Point Pleasant ven una criatura alada",
+  "name_en": "Mothman · Point Pleasant residents see a winged creature",
   "year_start": 1966,
   "year_end": 1967,
   "country": "US",
@@ -18,8 +18,8 @@
   "mundanoType": "misid",
   "epistemicStatus": "documented",
   "probability": 22,
-  "summary": "Entre noviembre de 1966 y diciembre de 1967, vecinos de Point Pleasant (Virginia Occidental) reportaron una criatura alada de gran tamaño con ojos rojos cerca de la antigua zona de explosivos 'TNT Area'. El 15 de diciembre de 1967, el puente Silver Bridge colapsó matando a 46 personas; la coincidencia temporal fundió ambos hechos en la leyenda del 'hombre polilla'.",
-  "summary_en": "Between November 1966 and December 1967, residents of Point Pleasant (West Virginia) reported a large winged creature with red eyes near the former 'TNT Area' explosives site. On 15 December 1967, the Silver Bridge collapsed, killing 46 people; the temporal coincidence fused both events into the 'Mothman' legend.",
+  "summary": "Entre noviembre de 1966 y noviembre de 1967, vecinos de Point Pleasant (Virginia Occidental) dijeron ver una gran criatura alada, gris y de ojos rojos, sobre todo cerca de la «TNT Area», un antiguo complejo de explosivos. El 15 de noviembre de 1966, dos parejas contaron que la criatura persiguió su coche; un ayudante del sheriff volvió con ellos y no la encontró. Un biólogo lo atribuyó en 1966 a una grulla, y Joe Nickell, a un cárabo. El 15 de diciembre de 1967 se desplomó el Silver Bridge y murieron 46 personas, por la rotura de un eslabón corroído, pero la coincidencia fundió ambos hechos en la leyenda del «hombre polilla».",
+  "summary_en": "Between November 1966 and November 1967, residents of Point Pleasant, West Virginia, said they saw a large gray winged creature with red eyes, mostly near the “TNT Area,” a former explosives complex. On November 15, 1966, two couples said it chased their car; a sheriff's deputy went back with them and found nothing. A biologist put it down to a crane in 1966, and Joe Nickell to a barred owl. On December 15, 1967, the Silver Bridge collapsed, killing 46 people, after a corroded link cracked, but the coincidence fused the two events into the Mothman legend.",
   "patterns": [
     "8d"
   ],

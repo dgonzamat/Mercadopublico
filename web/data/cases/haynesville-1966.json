@@ -1,8 +1,8 @@
 {
   "id": "haynesville-1966",
   "num": 392,
-  "name": "Haynesville · luz pulsante y corteza quemada",
-  "name_en": "Haynesville · pulsating light and scorched bark",
+  "name": "Haynesville · un físico y su familia ven una luz en el bosque",
+  "name_en": "Haynesville · a physicist and his family see a light in the woods",
   "year_start": 1966,
   "country": "US",
   "country_name": "Estados Unidos",
@@ -10,13 +10,13 @@
   "location": {
     "lat": 32.96,
     "lng": -93.14,
-    "place": "Carretera federal 79, zona boscosa cercana a Haynesville, norte de Luisiana",
-    "place_en": "U.S. Highway 79, wooded area near Haynesville, northern Louisiana"
+    "place": "Carretera 79, cerca de Haynesville (norte de Luisiana)",
+    "place_en": "Highway 79, near Haynesville, northern Louisiana"
   },
   "tier": "B",
   "probability": 81,
   "summary": "El 30 de diciembre de 1966, el físico atómico Louie A. Galloway y su familia vieron desde la carretera 79, cerca de Haynesville (Luisiana), una luz que pulsaba en rojo anaranjado por debajo de la copa de los árboles, que por instantes se volvió blanca e intensa. La fuerza aérea lo registró como no identificado, según el artículo de 2025; el informe Condon, su Caso 10, concluyó que la fuente «sigue sin identificar», y advirtió que la potencia de cientos de megavatios calculada por el testigo era muy dudosa. En junio de 2025, Vallée, Dini y Mestchersky lo reanalizaron en Progress in Aerospace Sciences a partir de una muestra de corteza quemada.",
-  "summary_en": "On 30 December 1966, atomic physicist Louie A. Galloway and his family watched from Highway 79 near Haynesville, Louisiana, a light pulsing reddish-orange below treetop level that for a few moments turned white and intense. According to the 2025 article, the Air Force recorded it as unidentified; the Condon report published it as its Case 10 and concluded that 'the source remains unidentified', while warning that the several hundred megawatts computed by the witness were highly dubious. In June 2025, Vallée, Dini and Mestchersky reanalysed the case in Progress in Aerospace Sciences from a scorched bark sample.",
+  "summary_en": "On 30 December 1966, atomic physicist Louie A. Galloway and his family, driving on Highway 79 near Haynesville, Louisiana, saw a reddish-orange light pulsing below treetop level that for a few moments turned an intense white. According to the 2025 article, the Air Force recorded it as unidentified; the Condon report published it as its Case 10, concluded that “the source remains unidentified” and warned that the several hundred megawatts the witness calculated were highly dubious. In June 2025, Vallée, Dini and Mestchersky reanalysed the case in Progress in Aerospace Sciences from a sample of scorched bark.",
   "patterns": [
     "8a",
     "8e"

@@ -1,8 +1,8 @@
 {
   "id": "virginia-coast-swarm-2025",
   "num": 332,
-  "name": "Enjambre naval frente a Virginia",
-  "name_en": "Virginia Coast Swarm",
+  "name": "Costa de Virginia · la Marina informa de unos cien objetos",
+  "name_en": "Virginia coast · the Navy reports about a hundred objects",
   "year_start": 2025,
   "country": "US",
   "country_name": "Estados Unidos",
@@ -21,8 +21,8 @@
     "8s",
     "8e"
   ],
-  "summary": "El informe anual del año fiscal 2025 de la AARO, publicado en julio de 2026, dedica tres frases a su único caso del dominio marítimo: unidades de la Marina estadounidense que operaban frente a la costa de Virginia informaron de unos 100 UAP en el aire y de dos sistemas de superficie, probablemente no tripulados. La oficina dice que lo investiga activamente junto con la unidad que lo reportó. El informe no da la fecha, la duración ni el lugar exacto, ni dice si los objetos se vieron a la vez o en varios días.",
-  "summary_en": "AARO's annual report for fiscal year 2025, released in July 2026, devotes three sentences to its only maritime-domain case: U.S. Navy assets operating off the coast of Virginia reported approximately 100 airborne UAP and two surface systems, likely uncrewed. The office says it is actively investigating the event in coordination with the reporting unit. The report gives no date, duration or exact location, and does not say whether the objects were seen at once or over several days.",
+  "summary": "El informe anual del año fiscal 2025 de la oficina del Pentágono para estos fenómenos (AARO), publicado en julio de 2026, dedica tres frases a su único caso en el mar: unidades de la Marina de EE. UU. que operaban frente a la costa de Virginia informaron de unos 100 objetos no identificados en el aire y de dos sistemas de superficie, probablemente no tripulados. La oficina dice que lo investiga activamente junto con la unidad que lo informó. El informe no da la fecha, la duración ni el lugar exacto, ni dice si los objetos se vieron a la vez o en varios días.",
+  "summary_en": "The fiscal year 2025 annual report of the Pentagon office for these phenomena (AARO), released in July 2026, devotes three sentences to its only maritime case: U.S. Navy units operating off the coast of Virginia reported about 100 unidentified objects in the air and two surface systems, likely uncrewed. The office says it is actively investigating the event together with the reporting unit. The report gives no date, duration or exact location, and does not say whether the objects were seen at once or over several days.",
   "posterior": {
     "mundano_natural": 0.25,
     "humana_clasificada": 0.15,

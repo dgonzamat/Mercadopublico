@@ -5,8 +5,8 @@
     5,
     7
   ],
-  "name": "Conde, Bahía · la esfera tripulada que nadie vio en el lugar",
-  "name_en": "Conde, Bahia · the manned sphere no one on the ground ever saw",
+  "name": "Conde, Bahía · la radio anuncia una esfera caída con un cuerpo",
+  "name_en": "Conde, Bahia · radio reports a fallen sphere with a body inside",
   "year_start": 1963,
   "country": "BR",
   "country_name": "Brasil",
@@ -29,8 +29,8 @@
     "nohumano_abierto": 0.01,
     "indet": 0.03
   },
-  "summary": "El 8 de noviembre de 1963, Radio Tupi y O Globo, de Río de Janeiro, difundieron que una gran esfera metálica había caído en el centro de Conde, Bahía, abriendo un hoyo de cuatro metros, con un cuerpo humano vestido con ropa pesada y marcas indescifrables dentro. Consultado por la embajada de EE.UU., el cónsul en Salvador, Harold Midkiff, respondió el 14 de noviembre que la historia estaba «aparentemente fabricada en Río»: nadie en la zona había visto nada. El Ministerio de Aeronáutica negó cualquier «objeto extraño», el Jornal da Bahia tituló «A Nave que Não Estava Lá» y Blue Book cerró el caso como fraude.",
-  "summary_en": "On November 8, 1963, Radio Tupi and O Globo, of Rio de Janeiro, reported that a large metal sphere had fallen in the center of Conde, Bahia, gouging a four-meter hole, with a human body inside in heavy clothing bearing indecipherable markings. Asked by the U.S. embassy, the consul in Salvador, Harold Midkiff, replied on November 14 that the story was \"apparently fabricated in Rio\": no one in the area had seen anything. Brazil's Ministry of Aeronautics denied any \"strange object,\" the Jornal da Bahia ran \"A Nave que Não Estava Lá\" (\"The Airship That Wasn't There\") and Blue Book closed the case as a hoax.",
+  "summary": "El 8 de noviembre de 1963, Radio Tupi y O Globo, de Río de Janeiro, difundieron que una gran esfera metálica había caído en el centro de Conde, Bahía, abriendo un hoyo de cuatro metros, con un cuerpo humano dentro vestido con ropa pesada y marcas indescifrables. Consultado por la embajada de EE. UU., el cónsul en Salvador, Harold Midkiff, respondió el 14 de noviembre que la historia estaba «aparentemente fabricada en Río»: nadie en la zona había visto nada. El Ministerio de Aeronáutica negó cualquier «objeto extraño», el Jornal da Bahia tituló «La nave que no estaba allí» y el proyecto Blue Book de la Fuerza Aérea lo cerró como fraude.",
+  "summary_en": "On November 8, 1963, Radio Tupi and O Globo, of Rio de Janeiro, reported that a large metal sphere had fallen in the center of Conde, Bahia, gouging a four-meter hole, with a human body inside in heavy clothing bearing indecipherable markings. Asked by the U.S. embassy, the consul in Salvador, Harold Midkiff, replied on November 14 that the story was “apparently fabricated in Rio”: no one in the area had seen anything. Brazil's Ministry of Aeronautics denied any “strange object,” the Jornal da Bahia ran “A Nave que Não Estava Lá” (“The Airship That Wasn't There”) and the Air Force's Project Blue Book closed the case as a hoax.",
   "patterns": [],
   "entityMorphology": [
     "sin-forma"

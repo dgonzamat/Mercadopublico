@@ -4,8 +4,8 @@
   "pursueReleases": [
     7
   ],
-  "name": "Triángulo negro sobre una cresta, visto por agentes federales en un sitio sensible (oeste de EE. UU., 2026)",
-  "name_en": "Black triangle over a ridgeline, seen by federal agents at a sensitive site (western U.S., 2026)",
+  "name": "Oeste de EE. UU. · agentes federales ven un triángulo negro",
+  "name_en": "Western U.S. · federal agents see a black triangle",
   "year_start": 2026,
   "country": "US",
   "country_name": "Estados Unidos",
@@ -13,8 +13,8 @@
   "location": {
     "lat": 39,
     "lng": -116,
-    "place": "Sitio de seguridad nacional sensible, oeste de EE.UU. (ubicación no revelada)",
-    "place_en": "Sensitive national security site, western U.S. (undisclosed location)"
+    "place": "Sitio federal sensible, oeste de EE. UU. (ubicación no revelada)",
+    "place_en": "Sensitive federal site, western U.S. (undisclosed location)"
   },
   "tier": "A",
   "epistemicStatus": "documented",
@@ -30,8 +30,8 @@
     "nohumano_abierto": 0.05,
     "indet": 0.32
   },
-  "summary": "Al anochecer de un día de 2026, en un sitio federal sensible del oeste de EE. UU., un agente detectó con un equipo térmico un objeto sobre una cresta y otros dos lo vieron con prismáticos y un monocular térmico: un triángulo negro y mate de nueve a quince pies de envergadura que subió en vertical, pasó a vuelo horizontal muy rápido y se perdió tras el terreno sin hacer ruido. La declaración firmada que recibió el FBI lo compara con un dron de ala delta y da tres segundos en total; el memorando de la AARO añade un estacionario de veinte segundos, advierte que no hubo medida de velocidad y recoge que los testigos, habituados a los drones, creen que uno pequeño se habría oído.",
-  "summary_en": "At dusk on a day in 2026, at a sensitive federal site in the western U.S., one agent detected an object over a ridgeline on thermal equipment and two others watched it through binoculars and a thermal monocular: a matte black triangle with a nine-to-fifteen-foot wingspan that climbed vertically, went into very fast horizontal flight and vanished behind the terrain without a sound. The signed statement the FBI received likens it to a delta wing drone and gives three seconds in total; the AARO memorandum adds a twenty-second hover, states that no speed was measured and records that the witnesses, who are used to drones, believe a small one would have been heard.",
+  "summary": "Al anochecer de un día de 2026, en un sitio federal sensible del oeste de EE. UU., tres agentes vieron sobre una cresta, con equipos térmicos y prismáticos, un triángulo negro mate de nueve a quince pies de envergadura que subió en vertical, pasó a vuelo horizontal muy rápido y se perdió tras el terreno sin ruido. La declaración que recibió el FBI lo compara con un dron de ala delta y da tres segundos en total; el informe de la oficina del Pentágono para estos casos añade veinte segundos de vuelo estacionario, advierte que no se midió la velocidad y recoge que los testigos creen que un dron pequeño se habría oído.",
+  "summary_en": "At dusk on a day in 2026, at a sensitive federal site in the western U.S., three agents watched over a ridgeline, through thermal equipment and binoculars, a matte black triangle with a nine-to-fifteen-foot wingspan that climbed vertically, went into very fast horizontal flight and vanished behind the terrain without a sound. The statement the FBI received likens it to a delta wing drone and gives three seconds in total; the report of the Pentagon office for these cases adds a twenty-second hover, states that no speed was measured and records the witnesses' belief that a small drone would have been heard.",
   "patterns": [],
   "category": "incident",
   "documents": [

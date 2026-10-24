@@ -4,8 +4,8 @@
   "pursueReleases": [
     1
   ],
-  "name": "Skylab · destellos y objeto rojizo (NASA, PURSUE)",
-  "name_en": "Skylab · light flashes and reddish object (NASA, PURSUE)",
+  "name": "Skylab · los astronautas cuentan destellos y un objeto rojizo",
+  "name_en": "Skylab · astronauts describe light flashes and a reddish object",
   "year_start": 1973,
   "year_end": 1974,
   "country": "US",
@@ -14,8 +14,8 @@
   "location": {
     "lat": 29.56,
     "lng": -95.09,
-    "place": "NASA · estación espacial Skylab (órbita terrestre baja) — debriefs de tripulación, Houston",
-    "place_en": "NASA · Skylab space station (low Earth orbit) — crew debriefings, Houston"
+    "place": "Estación espacial Skylab, en órbita terrestre",
+    "place_en": "Skylab space station, in Earth orbit"
   },
   "tier": "B",
   "mundanoType": "misid",
@@ -29,8 +29,8 @@
     "nohumano_abierto": 0.03,
     "indet": 0.14
   },
-  "summary": "El documento NASA-UAP-D7, desclasificado en el primer release PURSUE, reúne extractos de los debriefings de las tres tripulaciones de Skylab (1973–1974). Recoge destellos que los astronautas veían con los ojos cerrados (fosfenos por rayos cósmicos), un objeto rojizo brillante que la tripulación de Skylab 3 siguió 5 a 10 minutos y describió como «obviamente un satélite en órbita muy similar a la nuestra», y luces parpadeantes exteriores que la de Skylab 4 atribuyó a fragmentos de la estación u otros satélites. Los propios testigos dieron una lectura prosaica a las tres, aunque nadie les confirmó qué satélite era el objeto rojizo.",
-  "summary_en": "Document NASA-UAP-D7, declassified in the first PURSUE release, gathers excerpts from the debriefings of the three Skylab crews (1973–1974). It records flashes the astronauts saw with their eyes closed (cosmic-ray phosphenes), a bright reddish object the Skylab 3 crew tracked for 5-10 minutes and described as 'obviously a satellite in a very similar orbit to our own', and flashing lights outside that the Skylab 4 crew attributed to pieces of the station or other satellites. The witnesses themselves gave all three a prosaic reading, although nobody confirmed to them which satellite the reddish object was.",
+  "summary": "Un documento de la NASA, desclasificado en mayo de 2026, recoge lo que contaron tras el vuelo las tres tripulaciones de la estación Skylab (1973–1974): destellos vistos con los ojos cerrados, que causan los rayos cósmicos al atravesar el ojo; un objeto rojizo y brillante que la tripulación de Skylab 3 siguió de 5 a 10 minutos y describió como «obviamente un satélite en una órbita muy similar a la nuestra», y luces parpadeantes en el exterior que la de Skylab 4 atribuyó a fragmentos de la estación o a otros satélites. Los astronautas lo explicaron todo de forma ordinaria, aunque nadie les confirmó qué satélite era el objeto rojizo.",
+  "summary_en": "A NASA document declassified in May 2026 collects excerpts from the post-flight debriefings of all three Skylab crews (1973–1974). It covers the flashes the astronauts saw with their eyes closed, caused by cosmic rays passing through the eye; a bright reddish object the Skylab 3 crew followed for 5 to 10 minutes and described as “obviously a satellite in a very similar orbit to our own”; and flashing lights outside that the Skylab 4 crew put down to fragments of the station or other satellites. The astronauts gave all three an ordinary explanation, although nobody ever told them which satellite the reddish object was.",
   "documents": [
     {
       "role": "documento",

@@ -4,8 +4,8 @@
   "pursueReleases": [
     1
   ],
-  "name": "El objeto no crecía: la plataforma se acercaba",
-  "name_en": "The object wasn't growing: the platform was closing in",
+  "name": "Oriente Medio · un sensor sigue un objeto que parece crecer",
+  "name_en": "Middle East · a sensor tracks an object that seems to grow",
   "year_start": 2020,
   "country": "US",
   "country_name": "Oriente Medio, área de responsabilidad de CENTCOM (ubicación exacta no revelada)",
@@ -13,8 +13,8 @@
   "location": {
     "lat": 33,
     "lng": 44,
-    "place": "Oriente Medio, área de responsabilidad de CENTCOM (ubicación exacta no revelada)",
-    "place_en": "Middle East, CENTCOM area of responsibility (exact location undisclosed)"
+    "place": "Oriente Medio (ubicación exacta no revelada)",
+    "place_en": "Middle East (exact location undisclosed)"
   },
   "tier": "A",
   "epistemicStatus": "documented",
@@ -28,8 +28,8 @@
     "nohumano_abierto": 0.02,
     "indet": 0.29
   },
-  "summary": "En 2020, el Departamento de la Fuerza Aérea de EE.UU. sometió a la AARO un reporte (DOW-UAP-PR45, publicado como «Unresolved UAP Report») de 58 segundos de metraje infrarrojo sobre Oriente Medio, sin descripción alguna del testigo. El sensor sigue un área de contraste que 'aumenta gradualmente en distintividad' y luego, al hacer zoom, 'aumenta en tamaño y distintividad aparentes'. La AARO adjuntó un comentario técnico infrecuente: ese aumento de tamaño se debe, al menos en parte, a que la propia plataforma se acercaba al objeto, no a que el objeto creciera o se aproximara por su cuenta. El comentario no identifica el objeto, y el caso sigue sin resolver.",
-  "summary_en": "In 2020, the U.S. Department of the Air Force submitted a report to AARO (DOW-UAP-PR45, published as an 'Unresolved UAP Report') consisting of 58 seconds of infrared footage over the Middle East, with no witness description at all. The sensor tracks an area of contrast that 'gradually increases in distinctiveness' and then, after zooming in, 'increases in apparent size and distinctiveness.' AARO attached a rare technical comment: that apparent growth is at least partly due to the platform itself closing the distance to the object, not the object growing or approaching on its own. The comment does not identify the object, and the case remains unresolved.",
+  "summary": "En 2020, la Fuerza Aérea de EE. UU. envió a la oficina del Pentágono para estos fenómenos (AARO) 58 segundos de video infrarrojo grabado sobre Oriente Medio, sin ninguna descripción del testigo, que se publicó como «no resuelto». El sensor sigue una zona de contraste que se distingue cada vez mejor y que, tras un zoom, «aumenta en tamaño y distintividad aparentes». La AARO añadió un comentario técnico: ese aumento se debe probablemente, al menos en parte, a que la propia plataforma se acercaba al objeto, no a que el objeto creciera o se aproximara por su cuenta. El comentario no identifica el objeto, y el caso sigue sin resolver.",
+  "summary_en": "In 2020, the U.S. Air Force sent the Pentagon office for these phenomena (AARO) 58 seconds of infrared video recorded over the Middle East, with no witness description at all, which was released as “unresolved.” The sensor tracks an area of contrast that stands out more and more and, after a zoom, “increases in apparent size and distinctiveness.” AARO added a technical comment: that growth is probably due, at least in part, to the platform itself closing in on the object, not to the object growing or approaching on its own. The comment does not identify the object, and the case remains unresolved.",
   "patterns": [],
   "category": "incident",
   "documents": [

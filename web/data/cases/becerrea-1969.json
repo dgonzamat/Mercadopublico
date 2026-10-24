@@ -1,8 +1,8 @@
 {
   "id": "becerrea-1969",
   "num": 447,
-  "name": "Becerreá · la «nave» iluminada junto a la carretera de Lugo",
-  "name_en": "Becerreá · the lit-up 'spacecraft' beside the Lugo road",
+  "name": "Becerreá · un conductor ve un objeto iluminado junto a un monte",
+  "name_en": "Becerreá · a driver sees a lit-up object on a hillside",
   "year_start": 1969,
   "country": "ES",
   "country_name": "España",
@@ -10,8 +10,8 @@
   "location": {
     "lat": 42.9126,
     "lng": -7.3108,
-    "place": "Km 476 de la carretera de Madrid a Ferrol (N-VI), entre Becerreá y Lugo",
-    "place_en": "Km 476 of the Madrid to Ferrol road (N-VI), between Becerreá and Lugo"
+    "place": "Carretera N-VI, km 476, entre Becerreá y Lugo",
+    "place_en": "N-VI road, km 476, between Becerreá and Lugo"
   },
   "tier": "B",
   "mundanoType": "natural",
@@ -25,8 +25,8 @@
   },
   "epistemicStatus": "documented",
   "probability": 36,
-  "summary": "Hacia las ocho de la tarde del 2 de abril de 1969, un conductor que viajaba solo por la carretera de Madrid a Ferrol, entre Becerreá y Lugo, vio en la falda de un monte, casi a ras de suelo, un objeto iluminado en forma de obús, de cinco o seis metros, con el exterior «como si fuera Gresite en múltiples colores»; al detenerse ya no estaba. Su carta llegó al Estado Mayor del Aire, que pidió una información de la que no hay constancia. En 1993 el MOA sugirió el reflejo del sol en una roca granítica, con muy poco margen: ese día el sol se puso a las 19:56.",
-  "summary_en": "At about eight in the evening on 2 April 1969, a driver travelling alone on the Madrid to Ferrol road, between Becerreá and Lugo, saw on the slope of a hill, almost at ground level, a lit-up shell-shaped object five or six metres long, its exterior 'as if it were Gresite in multiple colours'; when he stopped it was gone. His letter reached the Air Staff, which ordered an inquiry of which there is no record. In 1993 the MOA suggested the sun reflecting off a granite rock, with very little margin: that day the sun set at 19:56.",
+  "summary": "Hacia las ocho de la tarde del 2 de abril de 1969, un conductor que viajaba solo por la carretera de Madrid a Ferrol, entre Becerreá y Lugo, vio en la falda de un monte, casi a ras de suelo, un objeto iluminado en forma de obús, de cinco o seis metros, con el exterior «como si fuera Gresite en múltiples colores»; al detenerse ya no estaba. Su carta llegó al Estado Mayor del Aire, que pidió una información de la que no hay constancia. En 1993 el Mando Operativo Aéreo sugirió el reflejo del sol en una roca granítica, con muy poco margen: ese día el sol se puso a las 19:56.",
+  "summary_en": "At about eight in the evening on 2 April 1969, a driver travelling alone on the Madrid to Ferrol road, between Becerreá and Lugo, saw on the slope of a hill, almost at ground level, a lit-up shell-shaped object five or six metres long, its exterior “as if it were Gresite in multiple colours”; when he stopped it was gone. His letter reached the Air Staff, which ordered an inquiry of which there is no record. In 1993 the Air Operations Command suggested the sun reflecting off a granite rock, with very little margin: that day the sun set at 19:56.",
   "patterns": [
     "8h"
   ],

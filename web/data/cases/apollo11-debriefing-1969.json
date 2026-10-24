@@ -4,8 +4,8 @@
   "pursueReleases": [
     1
   ],
-  "name": "Apolo 11 · observaciones del Technical Crew Debriefing (NASA, PURSUE)",
-  "name_en": "Apollo 11 · Technical Crew Debriefing observations (NASA, PURSUE)",
+  "name": "Apolo 11 · los astronautas describen un objeto y destellos",
+  "name_en": "Apollo 11 · the astronauts describe an object and light flashes",
   "year_start": 1969,
   "country": "US",
   "country_name": "Estados Unidos / espacio cislunar",
@@ -13,15 +13,15 @@
   "location": {
     "lat": 29.55,
     "lng": -95.09,
-    "place": "NASA · Technical Crew Debriefing, Houston (tránsito Tierra-Luna)",
-    "place_en": "NASA · Technical Crew Debriefing, Houston (Earth-Moon transit)"
+    "place": "Trayecto entre la Tierra y la Luna, y órbita lunar",
+    "place_en": "Between the Earth and the Moon, and in lunar orbit"
   },
   "tier": "B",
   "mundanoType": "misid",
   "epistemicStatus": "documented",
   "probability": 18,
-  "summary": "El Technical Crew Debriefing del Apolo 11 (31 jul 1969), desclasificado en la primera entrega PURSUE (NASA-UAP-D4), recoge observaciones de Armstrong, Collins y Aldrin: un objeto apreciable a un día de la Luna, «pequeños destellos» en la cabina y una «fuente de luz bastante brillante» en órbita lunar, atribuida primero a un «posible láser» y luego, si nadie admitía haber apuntado un láser a la Luna, a «más probablemente un reflejo en un lago» de la Tierra. La tripulación no llegó a una conclusión sobre el objeto, aunque Collins sospechaba que procedía de la propia nave, y los destellos son el fenómeno conocido de los rayos cósmicos.",
-  "summary_en": "Apollo 11's Technical Crew Debriefing (Jul 31, 1969), declassified in the first PURSUE tranche (NASA-UAP-D4), records observations by Armstrong, Collins and Aldrin: a noticeable object about a day from the Moon, 'little flashes' inside the cabin, and a 'fairly bright light source' in lunar orbit, first ascribed to a 'possible laser' and later, if no one owned up to beaming a laser at the Moon, to 'more probably a reflection off a lake' on Earth. The crew reached no conclusion about the object, though Collins suspected it came from the spacecraft itself, and the flashes are the known cosmic-ray phenomenon.",
+  "summary": "En su interrogatorio técnico posterior al vuelo, el 31 de julio de 1969, los astronautas del Apolo 11 Armstrong, Collins y Aldrin describieron un objeto apreciable a un día de la Luna, «pequeños destellos» dentro de la cabina y una «fuente de luz bastante brillante» en órbita lunar, que atribuyeron primero a un «posible láser» y luego, si nadie admitía haber apuntado uno a la Luna, a «más probablemente un reflejo en un lago» de la Tierra. No llegaron a una conclusión sobre el objeto, aunque Collins sospechaba que venía de la propia nave, y los destellos son el efecto conocido de los rayos cósmicos. El documento se publicó en mayo de 2026.",
+  "summary_en": "In their technical debriefing after the flight, on 31 July 1969, Apollo 11 astronauts Armstrong, Collins and Aldrin described a sizable object about a day out from the Moon, “little flashes” inside the cabin and a “fairly bright light source” in lunar orbit, which they first put down to a “possible laser” and then, if no one owned up to aiming a laser at the Moon, to “more probably a reflection off a lake” on Earth. They reached no conclusion about the object, though Collins suspected it came from the spacecraft itself, and the flashes are the known effect of cosmic rays. The document was released in May 2026.",
   "documents": [
     {
       "role": "documento",

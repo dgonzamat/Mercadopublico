@@ -1,8 +1,8 @@
 {
   "id": "latakia-p8a-2016",
   "num": 330,
-  "name": "P-8A frente a Latakia",
-  "name_en": "P-8A off Latakia",
+  "name": "Latakia · un avión de patrulla de EE. UU. sigue un objeto veloz",
+  "name_en": "Latakia · a U.S. patrol plane tracks a fast object over the sea",
   "year_start": 2016,
   "country": "SY",
   "country_name": "Siria",
@@ -10,8 +10,8 @@
   "location": {
     "lat": 36.18,
     "lng": 34.99,
-    "place": "Mediterráneo Oriental, 55 millas náuticas al noroeste de Latakia",
-    "place_en": "Eastern Mediterranean, 55 nautical miles northwest of Latakia"
+    "place": "Mediterráneo oriental, frente a Latakia (Siria)",
+    "place_en": "Eastern Mediterranean, off Latakia, Syria"
   },
   "tier": "S",
   "probability": 17,
@@ -20,8 +20,8 @@
     "8s",
     "8e"
   ],
-  "summary": "El 18 de noviembre de 2016, un P-8A Poseidon que vigilaba la actividad del grupo del portaaviones ruso Almirante Kuznetsov en el Mediterráneo Oriental siguió con su sensor electroóptico e infrarrojo un objeto no identificado a unas 55 millas náuticas al noroeste de Latakia, volando a unos 500 nudos en rumbo sureste, alejándose del grupo ruso, y en perfil rasante sobre el mar. La tripulación lo describió como un posible lanzamiento de misil y perdió el contacto unos dos minutos después. El parte lo evaluó como actividad estándar del grupo del Kuznetsov, y fue desclasificado en marzo de 2026 dentro del primer lote PURSUE.",
-  "summary_en": "On 18 November 2016 a P-8A Poseidon monitoring the activity of the Russian carrier Admiral Kuznetsov's task group in the Eastern Mediterranean tracked an unidentified object on its electro-optical and infrared sensor some 55 nautical miles northwest of Latakia, flying at roughly 500 knots on a southeasterly heading outbound from the Russian group, in a sea-skimming profile. The crew described it as a possible missile launch and lost contact about two minutes later. The report assessed it as standard activity of the Kuznetsov group, and it was declassified in March 2026 in the first PURSUE tranche.",
+  "summary": "El 18 de noviembre de 2016, un avión de patrulla marítima P-8A Poseidon de la Armada de EE. UU., que vigilaba al grupo del portaaviones ruso Almirante Kuznetsov en el Mediterráneo oriental, siguió con su cámara óptica e infrarroja un objeto no identificado a unas 55 millas náuticas al noroeste de Latakia (Siria). Volaba a unos 500 nudos hacia el sureste, alejándose del grupo ruso y rasante sobre el mar. La tripulación lo describió como un posible lanzamiento de misil y lo perdió de vista unos dos minutos después. El parte lo dio por actividad normal del grupo del Kuznetsov, y se desclasificó en marzo de 2026.",
+  "summary_en": "On 18 November 2016, a U.S. Navy P-8A Poseidon patrol aircraft monitoring the Russian carrier Admiral Kuznetsov’s group in the eastern Mediterranean tracked an unidentified object with its electro-optical and infrared camera some 55 nautical miles northwest of Latakia, Syria. It was flying at about 500 knots to the southeast, away from the Russian group, skimming the sea. The crew described it as a possible missile launch and lost sight of it about two minutes later. The report put it down to routine activity by the Kuznetsov group, and it was declassified in March 2026.",
   "posterior": {
     "mundano_natural": 0.12,
     "humana_clasificada": 0.05,

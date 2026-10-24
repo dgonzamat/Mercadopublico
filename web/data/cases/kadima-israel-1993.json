@@ -1,8 +1,8 @@
 {
   "id": "kadima-israel-1993",
   "num": 162,
-  "name": "Kadima · oleada de encuentros con trazas y respuesta policial (Israel, 1993)",
-  "name_en": "Kadima · encounter wave with traces and police response (Israel, 1993)",
+  "name": "Kadima · cuatro mujeres dicen ver gigantes de traje plateado",
+  "name_en": "Kadima · four women report silver-suited giants",
   "year_start": 1993,
   "country": "IL",
   "country_name": "Israel",
@@ -10,8 +10,8 @@
   "location": {
     "lat": 32.2756,
     "lng": 34.9189,
-    "place": "Moshav Kadima, cerca de Netanya",
-    "place_en": "Moshav Kadima, near Netanya"
+    "place": "Moshav Kadima, cerca de Netanya (Israel)",
+    "place_en": "Moshav Kadima, near Netanya (Israel)"
   },
   "tier": "B",
   "mundanoType": "sin_propuesta",

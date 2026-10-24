@@ -1,8 +1,8 @@
 {
   "id": "falconbridge-norad-1975",
   "num": 315,
-  "name": "Falconbridge · radar de NORAD y la oleada del Northern Tier",
-  "name_en": "Falconbridge · NORAD radar and the Northern Tier wave",
+  "name": "Falconbridge · el radar sigue una esfera que ven tres militares",
+  "name_en": "Falconbridge · radar tracks a sphere that three servicemen see",
   "year_start": 1975,
   "country": "CA",
   "country_name": "Canadá",
@@ -10,15 +10,15 @@
   "location": {
     "lat": 46.59,
     "lng": -80.81,
-    "place": "CFS Falconbridge, Ontario (cerca de Sudbury)",
-    "place_en": "CFS Falconbridge, Ontario (near Sudbury)"
+    "place": "Estación de radar de Falconbridge, cerca de Sudbury (Ontario)",
+    "place_en": "Falconbridge radar station, near Sudbury, Ontario"
   },
   "tier": "S",
   "mundanoType": "misid",
   "epistemicStatus": "documented",
   "probability": 48,
-  "summary": "El 11 de noviembre de 1975, la estación de radar canadiense de Falconbridge (Ontario) siguió un objeto esférico y luminoso que el mayor Robert Oliver y dos militares más vieron desde el edificio de operaciones; su télex a Ottawa lo sitúa a 25-30 millas al sur, subiendo de 42.000 a 72.000 pies en catorce minutos. Dos F-106 despegaron seis horas después sin encontrar nada. NORAD lo incluyó en una oleada de reportes sobre las bases del 'Northern Tier' desde el 28 de octubre; el ascenso continuo del télex encaja con un globo estratosférico, pero ningún lanzamiento lo confirma y a esa hora el sol no podía iluminarlo.",
-  "summary_en": "On November 11, 1975, the Canadian radar station at Falconbridge, Ontario, followed a bright spherical object that Major Robert Oliver and two other servicemen watched from the operations building; their telex to Ottawa places it 25-30 miles south, climbing from 42,000 to 72,000 feet in fourteen minutes. Two F-106s took off six hours later and found nothing. NORAD included it in a wave of reports over the 'Northern Tier' bases since October 28; the continuous climb in the telex fits a stratospheric balloon, but no launch confirms it and at that hour the sun could not have lit it.",
+  "summary": "El 11 de noviembre de 1975, la estación de radar canadiense de Falconbridge (Ontario) siguió un objeto esférico y luminoso que el mayor Robert Oliver y otros dos militares vieron desde el edificio de operaciones; su télex a Ottawa lo sitúa a 25-30 millas al sur, subiendo de 42.000 a 72.000 pies en catorce minutos. Dos cazas despegaron seis horas después y no encontraron nada. El mando de defensa aérea NORAD lo incluyó en una oleada de avisos sobre bases de la franja norte desde el 28 de octubre. El ascenso continuo encaja con un globo estratosférico, pero ningún lanzamiento lo confirma y a esa hora el sol no podía iluminarlo.",
+  "summary_en": "On 11 November 1975, the Canadian radar station at Falconbridge, Ontario, tracked a bright spherical object that Major Robert Oliver and two other servicemen watched from the operations building; their telex to Ottawa puts it 25–30 miles to the south, climbing from 42,000 to 72,000 feet in fourteen minutes. Two fighter jets took off six hours later and found nothing. The air defense command NORAD counted it in a wave of reports over northern-tier bases that began on 28 October. The steady climb fits a stratospheric balloon, but no launch confirms it, and at that hour the sun could not have lit it.",
   "patterns": [
     "8f",
     "8e"

@@ -1,8 +1,8 @@
 {
   "id": "bosque-chile-2010",
   "num": 40,
-  "name": "El Bosque Chile (CEFAA)",
-  "name_en": "El Bosque, Chile (CEFAA)",
+  "name": "Santiago · un objeto aparece en videos de una exhibición aérea",
+  "name_en": "Santiago · an object turns up in videos of an air show",
   "year_start": 2010,
   "country": "CL",
   "country_name": "Chile",
@@ -10,15 +10,15 @@
   "location": {
     "lat": -33.46,
     "lng": -70.69,
-    "place": "Santiago, Chile",
-    "place_en": "Santiago, Chile"
+    "place": "Base Aérea El Bosque, Santiago (Chile)",
+    "place_en": "El Bosque Air Base, Santiago, Chile"
   },
   "tier": "A",
   "mundanoType": "misid",
   "epistemicStatus": "documented",
   "probability": 25,
-  "summary": "Durante una parada aérea de la FACh en El Bosque (Santiago), nadie notó nada en vivo; al revisar después las grabaciones, un ingeniero que ralentizó su propia grabación detectó un objeto cruzando a alta velocidad entre las escuadrillas. CEFAA reunió siete videos y consultó a dos analistas estadounidenses: Bruce Maccabee juzgó lo más probable un insecto cercano y Richard Haines sostuvo que al menos uno de los objetos, grabado por dos cámaras, no lo era; CEFAA dejó el caso sin resolver.",
-  "summary_en": "During a FACh air parade at El Bosque (Santiago), nobody noticed anything live; on later reviewing the footage, an engineer who slowed down his own footage spotted an object crossing at high speed between the squadrons. CEFAA gathered seven videos and consulted two U.S. analysts: Bruce Maccabee judged a nearby insect most likely and Richard Haines held that at least one of the objects, recorded by two cameras, was not one; CEFAA left the case unsolved.",
+  "summary": "El 5 de noviembre de 2010, durante una exhibición de la Fuerza Aérea de Chile en la base El Bosque (Santiago), nadie vio nada raro; después, un ingeniero que pasó despacio su propia grabación descubrió un objeto que cruzaba muy rápido entre las escuadrillas. El comité oficial chileno para estos fenómenos, entonces CEFAA, reunió siete videos y consultó a dos analistas estadounidenses: Bruce Maccabee juzgó lo más probable un insecto cerca de la cámara, y Richard Haines sostuvo que al menos uno de los objetos, grabado por dos cámaras, no lo era. El CEFAA dejó el caso sin resolver.",
+  "summary_en": "On 5 November 2010, during a Chilean Air Force display at El Bosque air base in Santiago, nobody noticed anything unusual; afterwards, an engineer who slowed down his own footage spotted an object streaking between the squadrons. Chile's official committee for these phenomena, then called CEFAA, gathered seven videos and consulted two U.S. analysts: Bruce Maccabee judged a nearby insect most likely, and Richard Haines held that at least one of the objects, recorded by two cameras, was not one. CEFAA left the case unsolved.",
   "patterns": [
     "8e"
   ],

@@ -1,8 +1,8 @@
 {
   "id": "manston-torres-1957",
   "num": 312,
-  "name": "RAF Manston · la orden de disparar (Milton Torres)",
-  "name_en": "RAF Manston · the order to fire (Milton Torres)",
+  "name": "Manston · ordenan a un piloto disparar a algo que ve en su radar",
+  "name_en": "Manston · a pilot is told to fire at something on his radar",
   "year_start": 1957,
   "country": "GB",
   "country_name": "Reino Unido",
@@ -10,14 +10,14 @@
   "location": {
     "lat": 51.342,
     "lng": 1.346,
-    "place": "RAF Manston, Kent, sobre East Anglia",
-    "place_en": "RAF Manston, Kent, over East Anglia"
+    "place": "Kent y East Anglia, Inglaterra",
+    "place_en": "Kent and East Anglia, England"
   },
   "tier": "B",
   "epistemicStatus": "documented",
   "probability": 47,
-  "summary": "Según el relato que escribió en 1988, la noche del 20 de mayo de 1957 el teniente de la USAF Milton Torres despegó de RAF Manston (Kent) en un F-86D y recibió la orden de disparar una salva de 24 cohetes contra un eco que el control de tierra seguía sobre East Anglia. Dentro de las nubes y sin verlo nunca, lo enganchó en su radar a 15 millas con un retorno «con las proporciones de un portaaviones volador»; el eco se alejó, rompió el enganche y salió de su escala de 30 millas. Al día siguiente un civil le ordenó silencio. No se conoce registro militar de la época: los de Manston los guardaba la USAF y no consta que se consultaran; el relato llegó al MoD en 1988 y se publicó en 2008.",
-  "summary_en": "According to the account he wrote in 1988, on the night of 20 May 1957 USAF Lieutenant Milton Torres scrambled from RAF Manston (Kent) in an F-86D and was ordered to fire a salvo of 24 rockets at an echo ground control was tracking over East Anglia. Inside cloud and never seeing it, he locked it on his radar at 15 miles (24 km), a return 'with the proportions of a flying aircraft carrier'; the echo pulled away, broke lock and left his 30-mile scale. The next day a civilian ordered him to stay silent. No contemporary military record is known: Manston's were held by the USAF and there is no sign they were checked; the account reached the MoD in 1988 and was published in 2008.",
+  "summary": "Según el relato que escribió en 1988, la noche del 20 de mayo de 1957 el teniente estadounidense Milton Torres despegó en un caza de la base de Manston (Kent) y recibió la orden de disparar una salva de 24 cohetes contra algo que el control de tierra seguía en el radar sobre East Anglia. Dentro de las nubes y sin verlo nunca, lo captó en su radar a 15 millas: algo «con las proporciones de un portaaviones volador», que se alejó y salió de su alcance de 30 millas. Al día siguiente un civil le ordenó silencio. No se conoce ningún registro militar de la época, y no consta que se consultaran los de Manston. El relato se publicó en 2008.",
+  "summary_en": "According to the account he wrote in 1988, on the night of 20 May 1957 U.S. Air Force Lieutenant Milton Torres took off in a fighter from RAF Manston in Kent and was ordered to fire a salvo of 24 rockets at something ground control was tracking on radar over East Anglia. Inside cloud and never seeing it, he picked it up on his radar at 15 miles, something “with the proportions of a flying aircraft carrier,” which pulled away and out of his 30-mile range. The next day a civilian ordered him to keep quiet. No military record from the time is known, and there is no sign Manston’s were checked. The account was published in 2008.",
   "patterns": [
     "8e",
     "8m"

@@ -1,8 +1,8 @@
 {
   "id": "petare-1954",
   "num": 100,
-  "name": "Caso Petare (González–Ponce)",
-  "name_en": "The Petare Case (González–Ponce)",
+  "name": "Petare · dos transportistas dicen forcejear con figuras peludas",
+  "name_en": "Petare · two delivery men say they grappled with hairy figures",
   "year_start": 1954,
   "country": "VE",
   "country_name": "Venezuela",
@@ -16,8 +16,8 @@
   "tier": "B",
   "mundanoType": "sin_propuesta",
   "probability": 44,
-  "summary": "En la madrugada del 28 de noviembre de 1954 (29 según el catálogo URECAT), en Petare (al este de Caracas), dos trabajadores del transporte de mercancías (Gustavo González y José Ponce) relataron haber encontrado un objeto esférico luminoso flotando en plena calle y figuras peludas de aproximadamente un metro. González dijo haber forcejeado con una de ellas, que se le zafó y lo hizo caer al pavimento; en el puesto de emergencias le apreciaron contusiones leves en el costado izquierdo. Llamó la atención porque hubo intervención policial y constancia de los agentes de guardia de la Inspectoría General de Tránsito de que los testigos no estaban ebrios, aunque González llegó «bastante nervioso».",
-  "summary_en": "In the early morning of 28 November 1954 (29 according to the URECAT catalogue), in Petare (east of Caracas), two merchandise-transport workers (Gustavo González and José Ponce) recounted finding a luminous spherical object hovering in the middle of the street and hairy figures about one meter tall. González said he wrestled with one of them, which broke free and sent him to the pavement; at the emergency post he was found to have slight bruises on his left side. It drew attention because there was police intervention and a record by the duty officers of the General Traffic Inspectorate that the witnesses were not intoxicated, although González arrived \"quite nervous\".",
+  "summary": "En la madrugada del 28 de noviembre de 1954 (el 29, según el catálogo URECAT), en Petare, al este de Caracas, dos transportistas de mercancías, Gustavo González y José Ponce, contaron que encontraron un objeto esférico luminoso flotando en plena calle y figuras peludas de alrededor de un metro. González dijo que forcejeó con una, que se le zafó y lo tiró al pavimento; en el puesto de emergencias le vieron contusiones leves en el costado izquierdo. Los agentes de guardia de la Inspectoría General de Tránsito dejaron constancia de que no estaban ebrios, aunque González llegó «bastante nervioso».",
+  "summary_en": "In the early hours of 28 November 1954 (the 29th, according to the URECAT catalogue), in Petare, east of Caracas, two goods delivery workers, Gustavo González and José Ponce, said they came upon a glowing spherical object floating in the middle of the street and hairy figures about a meter tall. González said he grappled with one, which broke free and knocked him to the pavement; at the emergency post he was found to have slight bruises on his left side. The duty officers of the General Traffic Inspectorate recorded that the men were not drunk, although González arrived “quite nervous”.",
   "patterns": [
     "8a"
   ],

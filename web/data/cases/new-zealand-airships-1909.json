@@ -1,8 +1,8 @@
 {
   "id": "new-zealand-airships-1909",
   "num": 247,
-  "name": "Ola de dirigibles · Nueva Zelanda",
-  "name_en": "Airship Wave · New Zealand",
+  "name": "Nueva Zelanda · escolares y vecinos ven dirigibles misteriosos",
+  "name_en": "New Zealand · schoolchildren and locals see mystery airships",
   "year_start": 1909,
   "country": "NZ",
   "country_name": "Nueva Zelanda",
@@ -17,8 +17,8 @@
   "mundanoType": "misid",
   "epistemicStatus": "documented",
   "probability": 29,
-  "summary": "Entre junio y agosto de 1909, Nueva Zelanda vivió su propia ola de 'dirigibles' misteriosos, concentrada en el sur de la Isla Sur. El caso más citado es el de Kelso (viernes 23 de julio, a mediodía): varios escolares y una vecina vieron pasar sobre la escuela una nave con forma de barco o cigarro, con un mástil y una hélice en la popa; un reportero del Otago Daily Times los interrogó por separado y obtuvo seis dibujos que llamó asombrosamente parecidos, aunque otro periódico informó de que los dibujos se habían copiado de una revista.",
-  "summary_en": "Between June and August 1909, New Zealand had its own wave of mysterious 'airships', concentrated in the south of the South Island. The most cited case is Kelso (Friday 23 July, at noon): several schoolchildren and a local woman saw a boat- or cigar-shaped craft with a mast and a propeller at the stern pass over the school; an Otago Daily Times reporter interviewed them separately and obtained six drawings he called dumbfoundingly alike, although another paper reported that the drawings had been copied from a magazine.",
+  "summary": "Entre junio y agosto de 1909, Nueva Zelanda vivió su propia ola de «dirigibles» misteriosos, concentrada en el sur de la Isla Sur. El caso más citado es el de Kelso (viernes 23 de julio, a mediodía): varios escolares y una vecina vieron pasar sobre la escuela una nave con forma de barco o cigarro, con un mástil y una hélice en la popa; un reportero del Otago Daily Times los interrogó por separado y obtuvo seis dibujos que llamó asombrosamente parecidos, aunque otro periódico informó de que los dibujos se habían copiado de una revista.",
+  "summary_en": "Between June and August 1909, New Zealand had its own wave of mysterious “airships,” concentrated in the south of the South Island. The most cited case is Kelso (Friday, July 23, at noon): several schoolchildren and a local woman saw a boat- or cigar-shaped craft with a mast and a propeller at the stern pass over the school; an Otago Daily Times reporter interviewed them separately and obtained six drawings he called dumbfoundingly alike, although another paper reported that the drawings had been copied from a magazine.",
   "patterns": [
     "8h"
   ],

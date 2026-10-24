@@ -1,8 +1,8 @@
 {
   "id": "communion-1985",
   "num": 85,
-  "name": "Communion (Whitley Strieber)",
-  "name_en": "Communion (Whitley Strieber)",
+  "name": "Communion · Whitley Strieber relata su abducción en su cabaña",
+  "name_en": "Communion · Whitley Strieber recounts his abduction at his cabin",
   "year_start": 1985,
   "country": "US",
   "country_name": "Estados Unidos",
@@ -17,8 +17,8 @@
   "mundanoType": "psicosocial",
   "epistemicStatus": "documented",
   "probability": 40,
-  "summary": "En la noche del 26 de diciembre de 1985, el escritor Whitley Strieber relató haber despertado paralizado en su cabaña del norte de Nueva York y haber sido conducido por seres pequeños de grandes ojos negros. Lo narró en 'Communion' (1987), best seller que definió la imagen moderna del 'gris' y la experiencia de abducción. El periodista Ed Conroy investigó el caso. Los escépticos lo atribuyen a parálisis del sueño / hipnagogia; no hay evidencia física.",
-  "summary_en": "On the night of 26 December 1985, writer Whitley Strieber recounted waking paralyzed in his upstate New York cabin and being led away by small beings with large black eyes. He told it in 'Communion' (1987), the bestseller that defined the modern image of the 'grey' and the abduction experience. Journalist Ed Conroy investigated the case. Skeptics attribute it to sleep paralysis / hypnagogia; there is no physical evidence.",
+  "summary": "En la noche del 26 de diciembre de 1985, el escritor Whitley Strieber relató haber despertado paralizado en su cabaña del norte del estado de Nueva York y haber sido conducido por seres pequeños de grandes ojos negros. Lo narró en «Communion» (1987), un éxito de ventas que fijó la imagen moderna del «gris» y de la experiencia de abducción. El periodista Ed Conroy investigó el caso. Los escépticos lo atribuyen a la parálisis del sueño o a imágenes hipnagógicas; no hay evidencia física.",
+  "summary_en": "On the night of 26 December 1985, writer Whitley Strieber said he woke paralyzed in his upstate New York cabin and was led away by small beings with large black eyes. He told the story in “Communion” (1987), the bestseller that fixed the modern image of the “grey” and of the abduction experience. Journalist Ed Conroy investigated the case. Skeptics put it down to sleep paralysis or hypnagogic imagery; there is no physical evidence.",
   "patterns": [],
   "entityMorphology": [
     "gris"

@@ -1,8 +1,8 @@
 {
   "id": "fort-monmouth-1951",
   "num": 314,
-  "name": "Fort Monmouth · el caso que reactivó Grudge",
-  "name_en": "Fort Monmouth · the case that revived Grudge",
+  "name": "Fort Monmouth · un objeto veloz en el radar y un disco en el aire",
+  "name_en": "Fort Monmouth · a fast radar contact and a disc seen from a jet",
   "year_start": 1951,
   "country": "US",
   "country_name": "Estados Unidos",
@@ -17,8 +17,8 @@
   "mundanoType": "misid",
   "epistemicStatus": "documented",
   "probability": 20,
-  "summary": "El 10 de septiembre de 1951, un operador alumno de la escuela de radar del Signal Corps en Fort Monmouth (Nueva Jersey) no logró enganchar en seguimiento automático un blanco a baja altura ante visitantes de alto rango y concluyó que iba más rápido que un reactor; unos 25 minutos después, los dos tripulantes de un T-33 vieron sobre Sandy Hook un objeto plateado en forma de disco muy por debajo de ellos. El caso llegó al general Cabell y precipitó la reorganización de Project Grudge, que meses después pasó a llamarse Blue Book. La investigación de la Fuerza Aérea lo cerró como globos, un avión convencional y propagación anómala, y el propio Ruppelt lo contó como caso resuelto.",
-  "summary_en": "On September 10, 1951, a student operator at the Signal Corps radar school at Fort Monmouth, New Jersey, failed to lock a low-flying target in automatic tracking in front of visiting brass and concluded it was going faster than a jet; about 25 minutes later, the two crewmen of a T-33 saw a silver disc-shaped object far below them over Sandy Hook. The case reached General Cabell and precipitated the reorganization of Project Grudge, renamed Blue Book months later. The Air Force investigation closed it as balloons, a conventional airplane and anomalous propagation, and Ruppelt himself told it as a solved case.",
+  "summary": "El 10 de septiembre de 1951, un alumno de la escuela de radar del Cuerpo de Señales en Fort Monmouth (Nueva Jersey) no logró, ante altos mandos de visita, que su radar siguiera automáticamente un objeto a baja altura, y concluyó que iba más rápido que un reactor. Unos 25 minutos después, los dos tripulantes de un avión T-33 vieron sobre Sandy Hook un objeto plateado en forma de disco muy por debajo de ellos. El caso llegó al general Cabell y llevó a reorganizar el proyecto Grudge, que meses después pasó a llamarse Blue Book. La investigación lo cerró como globos, un avión y una propagación anómala del radar, y Ruppelt lo contó como resuelto.",
+  "summary_en": "On 10 September 1951, a student operator at the Signal Corps radar school at Fort Monmouth, New Jersey, failed, in front of visiting top brass, to get his radar to follow a low-flying object automatically, and concluded it was faster than a jet. About 25 minutes later, the two crew of a T-33 jet saw a silver, disc-shaped object far below them over Sandy Hook. The case reached General Cabell and led the Air Force to reorganize Project Grudge, renamed Blue Book months later. The investigation closed it as balloons, an aircraft and anomalous radar propagation, and Ruppelt himself counted it as solved.",
   "patterns": [
     "8e"
   ],

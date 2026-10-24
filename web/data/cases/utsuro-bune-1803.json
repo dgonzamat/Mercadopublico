@@ -1,8 +1,8 @@
 {
   "id": "utsuro-bune-1803",
   "num": 257,
-  "name": "Utsuro-bune · Hitachi",
-  "name_en": "Utsuro-bune · Hitachi",
+  "name": "Utsuro-bune · pescadores hallan un barco hueco con una mujer",
+  "name_en": "Utsuro-bune · fishermen find a hollow ship carrying a woman",
   "year_start": 1803,
   "country": "JP",
   "country_name": "Japón",
@@ -17,8 +17,8 @@
   "mundanoType": "folclore",
   "epistemicStatus": "documented",
   "probability": 38,
-  "summary": "Según varios textos japoneses de la era Edo, a comienzos de 1803 (los documentos dan fechas distintas; la más citada es el día 22 del segundo mes del calendario lunisolar japonés, no el 22 de febrero) unos pescadores de la costa de Hitachi avistaron un extraño objeto flotante con forma de pebetero (de unos 3,3 m de alto y 5,5 m de ancho, con ventanas y una escritura desconocida en su interior) del que descendió una joven de piel pálida y cabello rojo que sostenía una caja. El relato del 'barco hueco' (utsuro-bune) es un clásico del folclore japonés.",
-  "summary_en": "According to several Japanese texts of the Edo era, early in 1803 (the documents give different dates; the most cited is the 22nd day of the second month of the Japanese lunisolar calendar, not 22 February) fishermen on the Hitachi coast sighted a strange floating object shaped like an incense burner (about 3.3 m high and 5.5 m wide, with windows and an unknown script inside) from which a young woman with pale skin and red hair, holding a box, emerged. The 'hollow ship' (utsuro-bune) tale is a classic of Japanese folklore.",
+  "summary": "Varios textos japoneses del periodo Edo cuentan que a comienzos de 1803 unos pescadores de la costa de Hitachi avistaron un extraño objeto flotante con forma de pebetero, de unos 3,3 m de alto y 5,5 m de ancho, con ventanas y una escritura desconocida en su interior, del que salió una joven de piel pálida y cabello rojo que sostenía una caja. Los documentos dan fechas distintas; la más citada es el día 22 del segundo mes del calendario lunisolar japonés, que no equivale al 22 de febrero. El relato del «barco hueco» (utsuro-bune) es un clásico del folclore japonés.",
+  "summary_en": "Several Japanese texts from the Edo period tell how, early in 1803, fishermen on the Hitachi coast sighted a strange floating object shaped like an incense burner, about 3.3 m high and 5.5 m wide, with windows and an unknown script inside, from which a young woman with pale skin and red hair emerged holding a box. The documents give different dates; the most cited is the 22nd day of the second month of the Japanese lunisolar calendar, which is not February 22. The tale of the “hollow ship” (utsuro-bune) is a classic of Japanese folklore.",
   "patterns": [
     "8h"
   ],

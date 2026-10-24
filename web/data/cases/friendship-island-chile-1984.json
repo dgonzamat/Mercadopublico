@@ -1,8 +1,8 @@
 {
   "id": "friendship-island-chile-1984",
   "num": 270,
-  "name": "Isla Friendship · contactee chileno",
-  "name_en": "Friendship Island · Chilean contactee case",
+  "name": "Isla Friendship · dicen hablar por radio con una comunidad oculta",
+  "name_en": "Friendship Island · radio hams say they talk to a hidden group",
   "year_start": 1984,
   "country": "CL",
   "country_name": "Chile",
@@ -10,15 +10,15 @@
   "location": {
     "lat": -45.4,
     "lng": -73.0,
-    "place": "ubicación atribuida en la Región de Aysén, sur de Chile (no verificada)",
-    "place_en": "claimed location in the Aysén Region, southern Chile (unverified)"
+    "place": "Región de Aysén, sur de Chile (ubicación atribuida, no verificada)",
+    "place_en": "Aysén Region, southern Chile (claimed location, unverified)"
   },
   "tier": "B",
   "mundanoType": "fraude",
   "epistemicStatus": "documented",
   "probability": 40,
-  "summary": "Desde mediados de los años 1980, un grupo de radioaficionados chilenos reportó recibir transmisiones en banda corta de una comunidad que se identificaba como 'Friendship'. El principal divulgador, el empresario santiaguino Ernesto de la Fuente, afirmó haber sido sanado de una enfermedad pulmonar por sus integrantes. El relato describía una comunidad pacifista con tecnología avanzada operando desde una ubicación secreta en el sur de Chile, asociada a una embarcación blanca alargada fotografiada en la Patagonia. El caso, fenómeno mediático en Chile en los años 1990 (televisión y prensa), nunca produjo evidencia verificable de la comunidad ni de la embarcación, y se clasifica como contactee.",
-  "summary_en": "From the mid-1980s, a group of Chilean radio amateurs reported receiving shortwave transmissions from a community identifying itself as 'Friendship'. Its main promoter, Santiago businessman Ernesto de la Fuente, claimed he had been healed of a lung disease by its members. The account described a pacifist community with advanced technology operating from a secret location in southern Chile, associated with a long white vessel photographed in Patagonia. The case, a media phenomenon in Chile in the 1990s (television and press), never produced verifiable evidence of the community or the vessel, and is classified as contactee.",
+  "summary": "Desde mediados de los años ochenta, varios radioaficionados chilenos dijeron recibir en onda corta transmisiones de una comunidad que se identificaba como «Friendship». Su principal divulgador, el empresario santiaguino Ernesto de la Fuente, afirmó que sus integrantes lo habían sanado de una enfermedad pulmonar. Según el relato, era una comunidad pacifista con tecnología avanzada, oculta en algún punto del sur de Chile, y se le asoció la foto de una gran embarcación blanca y alargada en la Patagonia. El caso llenó la televisión y la prensa chilenas en los años noventa, pero nunca hubo pruebas verificables de la comunidad ni de la embarcación.",
+  "summary_en": "From the mid-1980s, several Chilean radio amateurs said they were receiving shortwave transmissions from a community that called itself “Friendship.” Its main promoter, Santiago businessman Ernesto de la Fuente, claimed its members had cured him of a lung disease. As the story went, it was a peaceful community with advanced technology, hidden somewhere in southern Chile, and it became linked to a photo of a long white vessel in Patagonia. The case was all over Chilean television and newspapers in the 1990s, but no verifiable evidence of the community or the vessel ever emerged.",
   "patterns": [
     "8d"
   ],

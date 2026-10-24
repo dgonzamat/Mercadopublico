@@ -1,8 +1,8 @@
 {
   "id": "fort-beaufort-1971",
   "num": 112,
-  "name": "Fort Beaufort · OVNI baleado por la policía",
-  "name_en": "Fort Beaufort · UFO fired on by police",
+  "name": "Fort Beaufort · un granjero y un policía disparan a una luz",
+  "name_en": "Fort Beaufort · a farmer and a policeman shoot at a light",
   "year_start": 1972,
   "country": "ZA",
   "country_name": "Sudáfrica",
@@ -10,15 +10,15 @@
   "location": {
     "lat": -32.78,
     "lng": 26.63,
-    "place": "Braeside farm, Fort Beaufort, Cabo Oriental",
-    "place_en": "Braeside farm, Fort Beaufort, Eastern Cape"
+    "place": "Granja Braeside, Fort Beaufort, Cabo Oriental (Sudáfrica)",
+    "place_en": "Braeside farm, Fort Beaufort, Eastern Cape (South Africa)"
   },
   "tier": "B",
   "mundanoType": "sin_propuesta",
   "epistemicStatus": "documented",
   "probability": 47,
-  "summary": "El 26 de junio de 1972, cerca de Fort Beaufort (Cabo Oriental), un granjero y un policía dispararon contra un objeto luminoso de baja altura que cambiaba de color; relatos posteriores añaden seis concejales que lo observaron con binoculares, y en la arcilla dura quedaron impresiones que un geólogo de la Universidad de Fort Hare dijo que no eran «animal or human». Caso multi-testigo con participación policial y municipal, traza física y cobertura de prensa internacional, pero sin registro de sensor ni reporte militar formal.",
-  "summary_en": "On June 26, 1972, near Fort Beaufort (Eastern Cape), a farmer and a policeman fired at a low-altitude luminous object that changed color; later accounts add six town councillors who watched it through binoculars, and imprints were left in the hard clay that a Fort Hare University geologist said were 'definitely not animal or human'. A multi-witness case with police and municipal involvement, a physical trace and international press coverage, but no sensor record or formal military report.",
+  "summary": "El 26 de junio de 1972, cerca de Fort Beaufort (Cabo Oriental, Sudáfrica), un granjero y un policía dispararon contra un objeto luminoso que volaba bajo y cambiaba de color; relatos posteriores añaden seis concejales que lo observaron con prismáticos. En la arcilla dura quedaron unas marcas que un geólogo de la Universidad de Fort Hare dijo que no eran «en absoluto de animal ni de humano». El caso tuvo testigos policiales y municipales, una huella física y eco en la prensa internacional, pero no quedó ningún registro de radar u otro instrumento ni un informe militar formal.",
+  "summary_en": "On 26 June 1972, near Fort Beaufort (Eastern Cape, South Africa), a farmer and a policeman fired at a low-flying luminous object that changed color; later accounts add six town councillors who watched it through binoculars. Imprints were left in the hard clay that a Fort Hare University geologist said were “definitely not animal or human”. The case had police and municipal witnesses, a physical trace and international press coverage, but left no radar or other instrument record and no formal military report.",
   "patterns": [
     "8a"
   ],

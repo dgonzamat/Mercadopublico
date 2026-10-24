@@ -4,8 +4,8 @@
   "pursueReleases": [
     4
   ],
-  "name": "Cuando el propio sensor explica por qué el objeto parpadea",
-  "name_en": "When the sensor itself explains why the object flickers",
+  "name": "Golfo de América · un objeto parpadea en un video infrarrojo",
+  "name_en": "Gulf of America · an object flickers on infrared video",
   "year_start": 2019,
   "country": "US",
   "country_name": "Golfo de América (ubicación exacta no revelada)",
@@ -36,8 +36,8 @@
     "nohumano_abierto": 0.02,
     "indet": 0.32
   },
-  "summary": "En 2019, la Fuerza Aérea de EE.UU. sometió a la AARO 8 segundos de metraje infrarrojo sobre el Golfo de América, catalogados como DOW-UAP-PR115 y publicados con el rótulo «Unresolved UAP Report» (sin resolver). El clip muestra un área de contraste parcialmente oculta por el HUD que «parpadea visualmente» mientras el sensor la sigue. La AARO añadió un comentario técnico sobre el parpadeo: cuando la temperatura de una fuente se asemeja a la del entorno, puede mezclarse con el fondo o parecer parpadear por los filtros de control automático de ganancia del propio sensor. El comentario no identifica el objeto y el caso sigue abierto.",
-  "summary_en": "In 2019, the U.S. Air Force submitted to AARO 8 seconds of infrared footage over the Gulf of America, catalogued as DOW-UAP-PR115 and published under the label 'Unresolved UAP Report'. The clip shows an area of contrast partially obscured by the HUD that 'visually flickers' as the sensor tracks it. AARO added a technical comment on the flicker: when a source's temperature resembles that of its surroundings, it can blend into the background or appear to flicker due to the sensor's own auto-gain control filters. The comment does not identify the object and the case remains open.",
+  "summary": "En 2019, la Fuerza Aérea de EE. UU. envió a la oficina del Pentágono para estos fenómenos (AARO) 8 segundos de video infrarrojo grabado sobre el golfo de América, que se publicó en 2026 como «no resuelto». Muestra una zona de contraste, parcialmente tapada por los datos sobreimpresos en la pantalla, que «parpadea visualmente» mientras el sensor la sigue. La AARO añadió un comentario técnico: cuando la temperatura de una fuente se parece a la del entorno, puede confundirse con el fondo o parecer que parpadea por los filtros automáticos de contraste del propio sensor. El comentario no identifica el objeto, y el caso sigue abierto.",
+  "summary_en": "In 2019, the U.S. Air Force sent the Pentagon office for these phenomena (AARO) 8 seconds of infrared video recorded over the Gulf of America, which was released in 2026 as “unresolved.” It shows an area of contrast, partly hidden by the data overlaid on the screen, that “visually flickers” as the sensor tracks it. AARO added a technical comment: when a source's temperature resembles that of its surroundings, it can blend into the background or seem to flicker because of the sensor's own automatic contrast filters. The comment does not identify the object, and the case remains open.",
   "patterns": [],
   "category": "incident",
   "documents": [

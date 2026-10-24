@@ -1,8 +1,8 @@
 {
   "id": "schirmer-ashland-1967",
   "num": 385,
-  "name": "Herbert Schirmer · el policía de Ashland",
-  "name_en": "Herbert Schirmer · the Ashland patrolman",
+  "name": "Herbert Schirmer · un policía ve un objeto ovalado sobre la vía",
+  "name_en": "Herbert Schirmer · a patrolman sees an oval craft over the road",
   "year_start": 1967,
   "country": "US",
   "country_name": "Estados Unidos",
@@ -10,8 +10,8 @@
   "location": {
     "lat": 41.0389,
     "lng": -96.3728,
-    "place": "Ashland, Nebraska (cruce de la Highway 6 con la Highway 63)",
-    "place_en": "Ashland, Nebraska (junction of Highway 6 and Highway 63)"
+    "place": "Ashland, Nebraska (cruce de las carreteras 6 y 63)",
+    "place_en": "Ashland, Nebraska (junction of Highways 6 and 63)"
   },
   "tier": "A",
   "epistemicStatus": "documented",

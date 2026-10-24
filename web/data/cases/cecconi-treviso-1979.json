@@ -1,7 +1,8 @@
 {
   "id": "cecconi-treviso-1979",
   "num": 74,
-  "name": "Cecconi G-91R · Treviso",
+  "name": "Caso Cecconi · un piloto militar fotografía un cilindro negro",
+  "name_en": "Cecconi case · a military pilot photographs a black cylinder",
   "year_start": 1979,
   "country": "IT",
   "country_name": "Italia",
@@ -9,8 +10,8 @@
   "location": {
     "lat": 45.67,
     "lng": 12.24,
-    "place": "Treviso · 14° Gruppo, 2° Stormo",
-    "place_en": "Treviso · 14° Gruppo, 2° Stormo"
+    "place": "Cerca de Treviso-Sant'Angelo (Italia)",
+    "place_en": "Near Treviso-Sant'Angelo (Italy)"
   },
   "tier": "S",
   "mundanoType": "misid",

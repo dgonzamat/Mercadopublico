@@ -1,8 +1,8 @@
 {
   "id": "montanchez-1967",
   "num": 405,
-  "name": "Montánchez · el objeto que ningún avión logró alcanzar",
-  "name_en": "Montánchez · the object no aircraft could reach",
+  "name": "Montánchez · cazas suben sin alcanzar un objeto brillante",
+  "name_en": "Montánchez · jets climb but cannot reach a bright object",
   "year_start": 1967,
   "country": "ES",
   "country_name": "España",
@@ -10,16 +10,16 @@
   "location": {
     "lat": 39.2253,
     "lng": -6.1508,
-    "place": "Cielo de Montánchez (Cáceres) y zona de Talavera la Real (Badajoz)",
-    "place_en": "Sky over Montánchez (Cáceres) and the Talavera la Real area (Badajoz)"
+    "place": "Cielo de Montánchez (Cáceres) y Talavera la Real (Badajoz)",
+    "place_en": "Sky over Montánchez (Cáceres) and Talavera la Real (Badajoz)"
   },
   "tier": "S",
   "mundanoType": "misid",
   "misidSubtype": "aeronave",
   "epistemicStatus": "documented",
   "probability": 19,
-  "summary": "El 3 de junio de 1967, un reactor de entrenamiento T-33 del Ejército del Aire, con dos capitanes a bordo, vio sobre Montánchez un objeto muy brillante muy por encima de su techo de vuelo. Dos estaciones de radar de defensa aérea lo detectaron y se enviaron dos cazas F-86 con cámaras, que subieron hasta 42.000 pies sin alcanzarlo. El expediente, desclasificado en 1992, dice que la doble detección radar hace «innegable» un objeto físico; los propios pilotos pensaron que podía ser un globo.",
-  "summary_en": "On 3 June 1967, a Spanish Air Force T-33 jet trainer with two captains aboard saw over Montánchez a very bright object far above its ceiling. Two air-defence radar stations detected it and two F-86 fighters with cameras were sent up, climbing to 42,000 feet without reaching it. The file, declassified in 1992, says the double radar detection makes a physical object 'undeniable'; the pilots themselves thought it might be a balloon.",
+  "summary": "El 3 de junio de 1967, dos capitanes del Ejército del Aire que volaban en un reactor de entrenamiento vieron sobre Montánchez un objeto muy brillante, muy por encima de su avión. Dos estaciones de radar de defensa aérea registraron señales en la zona, y se enviaron dos cazas con cámaras, que subieron hasta 42.000 pies sin alcanzarlo. El expediente, desclasificado en 1992, dice que la doble detección por radar hace «innegable» un objeto físico; los propios pilotos pensaron que podía ser un globo.",
+  "summary_en": "On 3 June 1967, two Spanish Air Force captains flying a jet trainer saw over Montánchez a very bright object far above their aircraft. Two air-defence radar stations picked up signals in the area, and two fighters with cameras were sent up, climbing to 42,000 feet without reaching it. The file, declassified in 1992, says the double radar detection makes a physical object “undeniable”; the pilots themselves thought it might be a balloon.",
   "patterns": [
     "8e",
     "8h"

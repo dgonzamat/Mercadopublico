@@ -1,8 +1,8 @@
 {
   "id": "noite-oficial-1986",
   "num": 99,
-  "name": "Noite Oficial dos OVNIs",
-  "name_en": "The Official UFO Night (Brazil)",
+  "name": "Noite Oficial dos OVNIs · cazas persiguen luces vistas en radar",
+  "name_en": "Official UFO Night · Brazilian jets chase lights seen on radar",
   "year_start": 1986,
   "country": "BR",
   "country_name": "Brasil",
@@ -10,14 +10,14 @@
   "location": {
     "lat": -23.18,
     "lng": -45.88,
-    "place": "Espacio aéreo de São Paulo / Río / Goiás",
-    "place_en": "Airspace of São Paulo / Rio / Goiás"
+    "place": "Cielo de São Paulo, Río de Janeiro y Goiás",
+    "place_en": "Skies over São Paulo, Rio de Janeiro and Goiás"
   },
   "tier": "S",
   "epistemicStatus": "documented",
   "probability": 64,
-  "summary": "La noche del 19 al 20 de mayo de 1986, controladores y radares brasileños registraron luces y ecos no identificados sobre São Paulo y Goiás; la prensa habló después de unos 21 objetos. La FAB despegó cinco cazas (F-5 y Mirage) desde Santa Cruz (Río) y Anápolis (Goiás): tres tuvieron contactos de radar de a bordo o visuales (uno de ellos con un eco que se alejaba aun a velocidad supersónica) y dos no detectaron nada. El ministro de Aeronáutica, brigadier Octávio Moreira Lima, confirmó el episodio en rueda de prensa con los pilotos, y el informe confidencial del Comando de Defensa Aeroespacial concluyó que los fenómenos eran «sólidos» y reflejaban «de cierta forma inteligencia».",
-  "summary_en": "On the night of 19–20 May 1986, Brazilian controllers and radars logged unidentified lights and returns over São Paulo and Goiás; the press later spoke of some 21 objects. The FAB scrambled five fighters (F-5 and Mirage) from Santa Cruz (Rio) and Anápolis (Goiás): three had onboard-radar or visual contacts (one of them with a return that pulled away even at supersonic speed) and two detected nothing. The Minister of Aeronautics, Brigadier Octávio Moreira Lima, confirmed the episode at a press conference with the pilots, and the confidential report of the Aerospace Defence Command concluded that the phenomena were \"solid\" and reflected \"in some way intelligence\".",
+  "summary": "La noche del 19 al 20 de mayo de 1986, controladores y radares brasileños registraron luces y contactos no identificados sobre São Paulo y Goiás; la prensa habló después de unos 21 objetos. La Fuerza Aérea hizo despegar cinco cazas desde Santa Cruz (Río) y Anápolis (Goiás): tres los captaron en su radar o los vieron, uno de ellos algo que se alejaba aun a velocidad supersónica, y dos no detectaron nada. El ministro de Aeronáutica, Octávio Moreira Lima, lo confirmó ante la prensa con los pilotos, y el informe confidencial de la defensa aérea concluyó que los fenómenos eran «sólidos» y reflejaban «de cierta forma inteligencia».",
+  "summary_en": "On the night of 19–20 May 1986, Brazilian controllers and radars logged unidentified lights and contacts over São Paulo and Goiás; the press later spoke of some 21 objects. The Air Force scrambled five fighters from Santa Cruz (Rio) and Anápolis (Goiás): three picked something up on their radar or saw it, one of them something that pulled away even at supersonic speed, and two detected nothing. The Minister of Aeronautics, Octávio Moreira Lima, confirmed it at a press conference with the pilots, and the confidential air defense report concluded that the phenomena were “solid” and reflected “in some way intelligence”.",
   "patterns": [],
   "category": "incident",
   "posterior": {

@@ -4,8 +4,8 @@
   "pursueReleases": [
     2
   ],
-  "name": "'Movimiento errático': la propia AARO dice que fue la edición, no el objeto",
-  "name_en": "'Erratic movement': AARO itself says it was the edit, not the object",
+  "name": "Europa · el «movimiento errático» de un video alterado",
+  "name_en": "Europe · the “erratic movement” in an altered video",
   "year_start": 2022,
   "country": "US",
   "country_name": "Área de responsabilidad de EUCOM (ubicación exacta no revelada)",
@@ -13,8 +13,8 @@
   "location": {
     "lat": 40,
     "lng": 20,
-    "place": "Área de responsabilidad de EUCOM (ubicación exacta no revelada)",
-    "place_en": "EUCOM area of responsibility (exact location undisclosed)"
+    "place": "Probablemente Europa (ubicación no revelada)",
+    "place_en": "Probably Europe (exact location undisclosed)"
   },
   "tier": "B",
   "epistemicStatus": "documented",
@@ -28,8 +28,8 @@
     "nohumano_abierto": 0.02,
     "indet": 0.45
   },
-  "summary": "Un clip de casi cuatro minutos circula con el título 'Spherical UAP Erratic movement [CALLSIGN] (Mission) 2022', pero la propia AARO, en la descripción visual oficial del archivo, señala algo que el título no dice: 'las alteraciones digitales del metraje influyen significativamente en el desempeño aparente del área de contraste'. Es decir, la agencia misma dice que la edición del video influye de forma significativa en lo que el título llama 'movimiento errático'. Forma parte del lote de 50 videos de Release 02 (material hallado en una red clasificada al responder a una petición de ocho miembros de la Cámara de Representantes, ver [[reeves-foia-classified-network-2023]]).",
-  "summary_en": "A nearly four-minute clip circulates under the title 'Spherical UAP Erratic movement [CALLSIGN] (Mission) 2022', but AARO itself, in the file's official visual description, notes something the title doesn't: 'digital alterations to the video footage significantly influence the area of contrast's apparent performance characteristics.' In other words, the agency itself says the video's editing significantly influences what the title calls 'erratic movement'. It is part of the 50-video Release 02 batch (material found on a classified network in response to a request from eight House members; see [[reeves-foia-classified-network-2023]]).",
+  "summary": "Un video de casi cuatro minutos circula con el título «Spherical UAP Erratic movement [CALLSIGN] (Mission) 2022» («esfera, movimiento errático»), que puso quien lo subió a una red clasificada en junio de 2024. La oficina del Pentágono para estos fenómenos (AARO) advierte que el video fue alterado digitalmente antes de subirse y que esas alteraciones «influyen significativamente» en el comportamiento aparente del objeto, sin decir cómo se movía en realidad. Es parte del lote de 50 videos hallado en esa red a petición de ocho miembros de la Cámara ([[reeves-foia-classified-network-2023]]). Probablemente procede de un sensor militar en Europa.",
+  "summary_en": "A nearly four-minute clip circulates under the title “Spherical UAP Erratic movement [CALLSIGN] (Mission) 2022,” given by whoever uploaded it to a classified network in June 2024. The Pentagon office for these phenomena (AARO) warns that the video was digitally altered before upload and that those alterations “significantly influence” the object's apparent behavior, without saying how it really moved. It is part of the 50-video batch found on that network at the request of eight House members ([[reeves-foia-classified-network-2023]]). It probably comes from a military sensor in Europe.",
   "patterns": [
     "8d"
   ],
@@ -87,7 +87,7 @@
     }
   ],
   "classBasis": {
-    "es": "Ninguna fuente propone qué era el área de contraste. La AARO atribuye a la edición digital el comportamiento aparente del objeto, no su identidad. En Metabunk se mencionan un dron, un globo o un misil sin favorecer ninguno, y un participante concluye que el vídeo no da información suficiente para identificarlo. La falta de un análisis publicado no es prueba contra una causa ordinaria: en el año fiscal 2024 AARO resolvió 174 casos, todos como «objetos prosaicos» (globos, aves, drones, satélites, aviones), aunque «muchos otros casos siguen sin resolver».",
+    "es": "Ninguna fuente propone qué era el área de contraste. La AARO atribuye a la edición digital el comportamiento aparente del objeto, no su identidad. En Metabunk se mencionan un dron, un globo o un misil sin favorecer ninguno, y un participante concluye que el video no da información suficiente para identificarlo. La falta de un análisis publicado no es prueba contra una causa ordinaria: en el año fiscal 2024 AARO resolvió 174 casos, todos como «objetos prosaicos» (globos, aves, drones, satélites, aviones), aunque «muchos otros casos siguen sin resolver».",
     "en": "No source proposes what the area of contrast was. AARO ascribes the apparent behaviour, not the identity, to digital edits that 'significantly influence the area of contrast's apparent performance characteristics'. Metabunk raises a drone, a balloon or a missile, favouring none, and one participant finds it 'just not giving enough information to make conclusive identification'. The absence of a published analysis is not evidence against an ordinary cause: AARO's FY2024 report finalized 'all 174 cases' as 'resolved to prosaic objects including balloons, birds, UAS, satellites, and aircraft', though 'many other cases remain unresolved'.",
     "source": "AARO — DOW-UAP-PR054 (DVIDS, PURSUE Release 02); Metabunk — hilo «DOW-UAP-PR054, Spherical UAP Erratic movement» (jul 2026) · AARO — Fiscal Year 2024 Consolidated Annual Report on UAP (14 nov 2024), tasa base",
     "source_en": "AARO — DOW-UAP-PR054 (DVIDS, PURSUE Release 02); Metabunk — thread “DOW-UAP-PR054, Spherical UAP Erratic movement” (Jul 2026) · AARO — Fiscal Year 2024 Consolidated Annual Report on UAP (14 Nov 2024), base rate",

@@ -1,8 +1,8 @@
 {
   "id": "valentich-1978",
   "num": 104,
-  "name": "Desaparición de Frederick Valentich",
-  "name_en": "Disappearance of Frederick Valentich",
+  "name": "Valentich · un piloto avisa de unas luces y desaparece en el mar",
+  "name_en": "Valentich · a pilot reports lights and vanishes over the sea",
   "year_start": 1978,
   "country": "AU",
   "country_name": "Australia",
@@ -17,8 +17,8 @@
   "mundanoType": "misid",
   "epistemicStatus": "documented",
   "probability": 31,
-  "summary": "El 21 de octubre de 1978, el piloto australiano Frederick Valentich, de 20 años, desapareció en un Cessna 182 sobre el estrecho de Bass, en ruta a la isla King. Minutos antes informó al servicio de vuelo de Melbourne que una aeronave con cuatro luces brillantes pasaba al menos 300 m por encima de él, que 'no es un avión' y que su motor rateaba; tras 17 segundos de micrófono abierto, la comunicación se cortó. La búsqueda no halló rastro de él ni del avión. Su única 'evidencia' es la transcripción de radio.",
-  "summary_en": "On 21 October 1978, the 20-year-old Australian pilot Frederick Valentich disappeared in a Cessna 182 over Bass Strait, en route to King Island. Minutes earlier he told the Melbourne flight service that an aircraft with four bright lights was passing at least 300 m above him, that 'it's not an aircraft' and that his engine was rough idling; after 17 seconds of open microphone, the communication cut off. The search found no trace of him or the plane. It is one of Australia's most famous cases, though its only 'evidence' is the radio transcript.",
+  "summary": "El 21 de octubre de 1978, el piloto australiano Frederick Valentich, de 20 años, desapareció en un Cessna 182 sobre el estrecho de Bass, en ruta a la isla King. Minutos antes informó al servicio de vuelo de Melbourne de que una aeronave con cuatro luces brillantes pasaba al menos 300 m por encima de él, que «no es un avión» y que el motor le fallaba; tras 17 segundos de micrófono abierto, la comunicación se cortó. La búsqueda no halló rastro de él ni del avión. La única prueba que queda es la transcripción de la radio.",
+  "summary_en": "On 21 October 1978, the 20-year-old Australian pilot Frederick Valentich disappeared in a Cessna 182 over Bass Strait, on his way to King Island. Minutes earlier he told the Melbourne flight service that an aircraft with four bright lights was passing at least 300 m above him, that “it's not an aircraft” and that his engine was rough idling; after 17 seconds of open microphone, the transmission cut off. The search found no trace of him or the plane. The only evidence left is the radio transcript.",
   "patterns": [],
   "category": "incident",
   "posterior": {

@@ -1,8 +1,8 @@
 {
   "id": "wanaque-reservoir-1966",
   "num": 237,
-  "name": "Embalse de Wanaque · Nueva Jersey",
-  "name_en": "Wanaque Reservoir · New Jersey",
+  "name": "Embalse de Wanaque · policías y vecinos ven luces sobre el agua",
+  "name_en": "Wanaque Reservoir · police and residents see lights over water",
   "year_start": 1966,
   "country": "US",
   "country_name": "Estados Unidos",
@@ -18,7 +18,7 @@
   "epistemicStatus": "documented",
   "probability": 46,
   "summary": "Entre enero y octubre de 1966, policías, autoridades municipales y numerosos vecinos de Wanaque (Nueva Jersey) reportaron luces sobre el mayor embalse del estado. La noche del 11 de enero, un objeto muy brillante y silencioso fue visto durante horas; la prensa habló de más de 150 llamadas, y el télex militar de esa noche registra seis en una hora. El oficial de inteligencia del sector de defensa aérea de Nueva York, que hizo buscar el objeto con baterías de misiles, lo calificó de «desconocido»; Project Blue Book lo cambió a «probable aeronave» sin datos nuevos.",
-  "summary_en": "Between January and October 1966, police, municipal officials and many residents of Wanaque (New Jersey) reported lights over the state's largest reservoir. On the night of 11 January, a very bright, silent object was seen for hours; the press spoke of over 150 calls, and that night's military telex records six in one hour. The intelligence officer of the New York Air Defense Sector, who had missile batteries search for the object, rated it 'unknown'; Project Blue Book changed it to 'probable aircraft' without new data.",
+  "summary_en": "Between January and October 1966, police, municipal officials and many residents of Wanaque, New Jersey, reported lights over the state's largest reservoir. On the night of January 11, a very bright, silent object was seen for hours; the press spoke of more than 150 calls, and that night's military telex records six in one hour. The intelligence officer of the New York Air Defense Sector, who had missile batteries search for the object, rated it “unknown”; Project Blue Book changed it to “probable aircraft” without new data.",
   "patterns": [
     "8h"
   ],

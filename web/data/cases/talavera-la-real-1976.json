@@ -1,8 +1,8 @@
 {
   "id": "talavera-la-real-1976",
   "num": 324,
-  "name": "Talavera la Real · el «Hombre Verde» (1976)",
-  "name_en": "Talavera la Real · the 'Green Man' (1976)",
+  "name": "Talavera la Real · tres soldados de guardia ven un «hombre verde»",
+  "name_en": "Talavera la Real · three soldiers on guard see a “green man”",
   "year_start": 1976,
   "country": "ES",
   "country_name": "España",
@@ -10,8 +10,8 @@
   "location": {
     "lat": 38.893,
     "lng": -6.813,
-    "place": "Base Aérea de Talavera la Real (Ala 23), Badajoz, Extremadura",
-    "place_en": "Talavera la Real Air Base (Ala 23), Badajoz, Extremadura, Spain"
+    "place": "Base Aérea de Talavera la Real, Badajoz",
+    "place_en": "Talavera la Real Air Base, Badajoz, Spain"
   },
   "tier": "B",
   "epistemicStatus": "documented",
@@ -25,7 +25,7 @@
   },
   "probability": 33,
   "summary": "La madrugada del 12 de noviembre de 1976, tres soldados de guardia en el área de combustible de la Base Aérea de Talavera la Real (Badajoz) reportaron interferencias, un silbido, un apagón y un perro alterado. José Manuel Trejo describió una figura de tres metros hecha de puntos de luz verde antes de perder el conocimiento; sus compañeros dispararon contra ella, que se desvaneció; no se hallaron casquillos ni impactos. El expediente desclasificado en 1996 no trae parte del suceso: el Estado Mayor dice no tener «constancia del hecho». Nada en él respalda un objeto o un ser.",
-  "summary_en": "In the early hours of 12 November 1976, three soldiers on guard in the fuel area of Talavera la Real Air Base (Badajoz, Spain) reported interference, a whistle, a partial blackout and an agitated dog. José Manuel Trejo described a figure some three meters tall made of points of green light before losing consciousness; his companions fired on it, it vanished, and no casings or impacts were found. The file declassified in 1996 contains no report of the incident: the Air Staff says it has no 'record of the event'. Nothing in it supports an object or a being.",
+  "summary_en": "In the early hours of 12 November 1976, three soldiers on guard in the fuel area of Talavera la Real Air Base (Badajoz, Spain) reported interference, a whistle, a partial blackout and an agitated dog. José Manuel Trejo described a figure some three meters tall made of points of green light before losing consciousness; his companions fired on it, it vanished, and no casings or impacts were found. The file declassified in 1996 contains no report of the incident: the Air Staff says it has no “record of the event”. Nothing in it supports an object or a being.",
   "patterns": [
     "8a",
     "8h"

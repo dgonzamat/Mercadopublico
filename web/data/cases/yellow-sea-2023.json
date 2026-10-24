@@ -1,8 +1,8 @@
 {
   "id": "yellow-sea-2023",
   "num": 393,
-  "name": "Mar Amarillo 2023 · cinco clips sin objeto descrito",
-  "name_en": "Yellow Sea 2023 · five clips with no object described",
+  "name": "Mar Amarillo · un sensor militar sigue una mancha térmica",
+  "name_en": "Yellow Sea · a military sensor tracks a thermal patch",
   "year_start": 2023,
   "country": "CN",
   "country_name": "China",
@@ -20,8 +20,8 @@
   "pursueReleases": [
     6
   ],
-  "summary": "En 2023, el Comando Indo-Pacífico reportó a la AARO un fenómeno anómalo no identificado sobre el Mar Amarillo, registrado por un sensor infrarrojo a bordo de una plataforma militar. PURSUE publicó el 18 de septiembre de 2026 cinco reportes con un clip cada uno, que suman cuatro minutos y diez segundos y que esta ficha agrupa porque comparten comando, año y lugar. Las fichas oficiales no describen ningún objeto: hablan de un «área de contraste» que el sensor sigue, y dos de ellas (una de este expediente y otra de un caso de Oriente Medio de la misma entrega) repiten palabra por palabra una frase cuya negación parece haberse caído, invirtiendo su sentido.",
-  "summary_en": "In 2023, Indo-Pacific Command reported to AARO an unidentified anomalous phenomenon over the Yellow Sea, recorded by an infrared sensor aboard a military platform. On 18 September 2026 PURSUE published five reports with one clip each, totalling four minutes and ten seconds, which this entry groups because they share command, year and location. The official records describe no object: they speak of an 'area of contrast' the sensor tracks, and two of them (one in this file and one in a Middle East case from the same release) repeat word for word a sentence whose negation appears to have dropped out, inverting its sense.",
+  "summary": "En 2023, el Comando Indo-Pacífico de EE. UU. informó a la oficina del Pentágono que investiga estos fenómenos (AARO) de algo no identificado sobre el Mar Amarillo, grabado por un sensor infrarrojo militar. El Departamento de Guerra publicó el 18 de septiembre de 2026 cinco videos, que suman cuatro minutos y diez segundos y comparten mando, año y lugar; no se dice si son un mismo suceso. Sus fichas no describen ningún objeto: hablan de un «área de contraste» que el sensor sigue. Una de ellas repite palabra por palabra una frase de un video de Oriente Medio a la que parece faltarle una negación, lo que invierte su sentido.",
+  "summary_en": "In 2023, U.S. Indo-Pacific Command reported to the Pentagon office that investigates these phenomena (AARO) something unidentified over the Yellow Sea, recorded by a military infrared sensor. On 18 September 2026 the Department of War published five videos, totalling four minutes and ten seconds, that share command, year and location; it does not say whether they show a single event. Their records describe no object: they speak of an “area of contrast” the sensor tracks. One of them repeats word for word a sentence from a Middle East video that seems to have lost a negation, which reverses its meaning.",
   "patterns": [
     "8s",
     "8e"

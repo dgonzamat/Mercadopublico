@@ -1,7 +1,8 @@
 {
   "id": "rendlesham-1980",
   "num": 22,
-  "name": "Rendlesham Forest",
+  "name": "Rendlesham · militares de EE. UU. persiguen luces en un bosque",
+  "name_en": "Rendlesham · U.S. airmen chase lights through a forest",
   "year_start": 1980,
   "country": "GB",
   "country_name": "Reino Unido",
@@ -9,8 +10,8 @@
   "location": {
     "lat": 52.09,
     "lng": 1.46,
-    "place": "Rendlesham Forest, Suffolk",
-    "place_en": "Rendlesham Forest, Suffolk"
+    "place": "Bosque de Rendlesham, Suffolk (Inglaterra)",
+    "place_en": "Rendlesham Forest, Suffolk, England"
   },
   "tier": "A",
   "mundanoType": "misid",

@@ -1,8 +1,8 @@
 {
   "id": "skinny-bob-abbott-2026",
   "num": 333,
-  "name": "Skinny Bob · reaparición viral en 2026 de un video fabricado de 2011",
-  "name_en": "Skinny Bob · 2026 viral revival of a fabricated 2011 video",
+  "name": "Skinny Bob · videos de un ser gris presentados como filtración",
+  "name_en": "Skinny Bob · videos of a grey being presented as a leak",
   "year_start": 2011,
   "country": "US",
   "country_name": "Estados Unidos",
@@ -10,8 +10,8 @@
   "location": {
     "lat": 38.895,
     "lng": -77.025,
-    "place": "EE.UU. — video viral en YouTube, sin origen institucional verificado",
-    "place_en": "USA — viral YouTube video, no verified institutional origin"
+    "place": "Sin lugar conocido (videos difundidos en YouTube)",
+    "place_en": "No known location (videos posted on YouTube)"
   },
   "tier": "B",
   "probability": 8,
@@ -24,8 +24,8 @@
     "nohumano_abierto": 0,
     "indet": 0.07
   },
-  "summary": "Entre abril y mayo de 2011, la cuenta anónima de YouTube «ivan0135» subió cuatro videos granulados, presentados como película filtrada de entrevistas, entre 1942 y 1969, a un ser gris muy delgado («Skinny Bob»). El análisis colectivo (Metabunk, skinnybob.info) halló una capa de daño de película de catálogo y un código de tiempo en la tipografía Consolas, de 2006-2007, aplicados digitalmente: el metraje es moderno, aunque su autor nunca apareció. En 2025 Eddie Abbott, que dice ser exanalista de inteligencia del Ejército, dijo haberlo visto completo en 2008, sin verificación. Desde mayo de 2026 el canal «qtecqot» subió cuatro videos nuevos.",
-  "summary_en": "In April–May 2011 the anonymous YouTube account 'ivan0135' uploaded four grainy videos, presented as leaked film of interviews, between 1942 and 1969, with an extremely thin grey being ('Skinny Bob'). Crowdsourced analysis (Metabunk, skinnybob.info) found a stock film-damage overlay and a timecode in the Consolas typeface, from 2006-2007, applied digitally: the footage is modern, although its maker never came forward. In 2025 Eddie Abbott, who presents himself as a former Army intelligence analyst, said he had seen the complete footage in 2008, without verification. Since May 2026 the channel 'qtecqot' has uploaded four new videos.",
+  "summary": "Entre abril y mayo de 2011, la cuenta anónima de YouTube «ivan0135» subió cuatro videos presentados como película filtrada de entrevistas de entre 1942 y 1969 a un ser gris muy delgado («Skinny Bob»). Un análisis colectivo en foros halló una capa de daño de película de catálogo y un código de tiempo en la tipografía Consolas, de 2006-2007, aplicados digitalmente: no es película de archivo sin manipular, aunque su autor nunca apareció. En 2025, Eddie Abbott, que dice ser exanalista de inteligencia del Ejército, afirmó sin verificación haberlo visto completo en 2008. Desde mayo de 2026, otro canal subió cuatro videos como supuesta continuación.",
+  "summary_en": "In April and May 2011, the anonymous YouTube account “ivan0135” uploaded four videos presented as leaked film of interviews held between 1942 and 1969 with an extremely thin grey being (“Skinny Bob”). A collective analysis on online forums found a stock film-damage overlay and a timecode in the Consolas typeface, from 2006-2007, applied digitally: it is not untouched archive film, although its maker never came forward. In 2025 Eddie Abbott, who says he is a former Army intelligence analyst, claimed without verification to have seen the full footage in 2008. Since May 2026 another channel has posted four videos it presents as a continuation.",
   "patterns": [
     "8d"
   ],
@@ -104,7 +104,7 @@
   ],
   "evidenceReviewed": "2026-09-28",
   "classBasis": {
-    "es": "Hilo de Metabunk «Skinny bob videos?» (2021): «El argumento de que la capa de grano es la de Pond5 es sólido como una roca. No hay ninguna duda de que es exactamente esa capa», y se identificó también la tipografía del texto sobreimpreso, ambas modernas. El mismo hilo admite que no se ha hallado el vídeo de base y que ni «Ivan» ni nadie se ha atribuido la autoría; un participante planteó que el vídeo de base fuera auténtico y la capa se añadiera después. La clase cubre los cuatro clips de 2011; los vídeos de 2026 del canal qtecqot no tienen un análisis forense concluyente.",
+    "es": "Hilo de Metabunk «Skinny bob videos?» (2021): «El argumento de que la capa de grano es la de Pond5 es sólido como una roca. No hay ninguna duda de que es exactamente esa capa», y se identificó también la tipografía del texto sobreimpreso, ambas modernas. El mismo hilo admite que no se ha hallado el video de base y que ni «Ivan» ni nadie se ha atribuido la autoría; un participante planteó que el video de base fuera auténtico y la capa se añadiera después. La clase cubre los cuatro clips de 2011; los videos de 2026 del canal qtecqot no tienen un análisis forense concluyente.",
     "en": "Metabunk thread 'Skinny bob videos?' (2021): 'The case for the grain overlay from pond5 is rock solid IMO. There is really no question that is the exact overlay used', and the typeface of the text overlay was also identified, both modern. The same thread admits that the underlying footage has not been found and that neither 'Ivan' nor anyone else has claimed authorship; one participant raised the possibility that the underlying video was genuine and the overlay added later. The class covers the four 2011 clips; the 2026 videos from the qtecqot channel have no conclusive forensic analysis.",
     "source": "Metabunk — «Skinny bob videos?» (hilo, 2021)",
     "source_en": "Metabunk — “Skinny bob videos?” (thread, 2021)",

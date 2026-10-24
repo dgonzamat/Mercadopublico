@@ -1,8 +1,8 @@
 {
   "id": "val-johnson-1979",
   "num": 173,
-  "name": "Val Johnson · patrullero con daño físico documentado (EE.UU., 1979)",
-  "name_en": "Val Johnson · patrol car with documented physical damage (USA, 1979)",
+  "name": "Val Johnson · una luz se abalanza sobre su coche patrulla",
+  "name_en": "Val Johnson · a light rushes at his patrol car",
   "year_start": 1979,
   "country": "US",
   "country_name": "Estados Unidos",
@@ -25,8 +25,8 @@
   },
   "epistemicStatus": "documented",
   "probability": 55,
-  "summary": "Hacia la 1:40 de la madrugada del 27 de agosto de 1979, el ayudante del sheriff Val Johnson conducía por la carretera 220 del condado de Marshall (Minnesota) cuando una luz intensa se abalanzó sobre su patrulla; perdió el conocimiento. Al despertar, el parabrisas estaba agrietado, un faro y la luz de emergencia dañados y la antena doblada; además, tanto su reloj de pulsera como el reloj del auto se habían atrasado 14 minutos, y tenía irritación ocular como de soldadura. El sheriff documentó los daños y el vehículo se conserva hoy en un museo del condado. Hay daño físico medible a un objeto (el auto) y un testigo policial, aunque con un único observador y dudas sobre la mecánica de los daños.",
-  "summary_en": "Around 1:40 a.m. on August 27, 1979, Deputy Sheriff Val Johnson was driving on Marshall County Highway 220 (Minnesota) when an intense light rushed at his patrol car; he lost consciousness. When he came to, the windshield was cracked, a headlight and the emergency light damaged and the antenna bent; in addition, both his wristwatch and the car's clock had fallen 14 minutes behind, and he had welding-like eye irritation. The sheriff documented the damage and the vehicle is preserved today in a county museum. There is measurable physical damage to an object (the car) and a police witness, though with a single observer and doubts about the mechanics of the damage.",
+  "summary": "Hacia la 1:40 del 27 de agosto de 1979, el ayudante del sheriff Val Johnson conducía por la carretera 220 del condado de Marshall (Minnesota) cuando una luz intensa se abalanzó sobre su coche patrulla y perdió el conocimiento. Al despertar, el parabrisas estaba agrietado, un faro y la luz de emergencia rotos y las antenas dobladas; su reloj y el del coche se habían atrasado 14 minutos, y tenía los ojos irritados como por una soldadura. El sheriff documentó los daños y el coche se exhibe en un museo del condado. Hubo un solo testigo, y el escéptico Philip Klass sostuvo, sin probarlo, que Johnson causó los daños.",
+  "summary_en": "Around 1:40 a.m. on August 27, 1979, Deputy Sheriff Val Johnson was driving on Highway 220 in Marshall County, Minnesota, when an intense light rushed at his patrol car and he blacked out. When he came to, the windshield was cracked, a headlight and the emergency light were broken and the antennas bent; his watch and the car's clock had both lost 14 minutes, and his eyes were irritated as if by welding. The sheriff documented the damage, and the car is on display in a county museum. There was a single witness, and skeptic Philip Klass claimed, without proof, that Johnson caused the damage himself.",
   "patterns": [
     "8a"
   ],

@@ -1,8 +1,8 @@
 {
   "id": "deception-island-1965",
   "num": 197,
-  "name": "Isla Decepción · luces sobre las bases antárticas (1965)",
-  "name_en": "Deception Island · lights over the Antarctic bases (1965)",
+  "name": "Isla Decepción · luces sobre las bases antárticas",
+  "name_en": "Deception Island · lights over the Antarctic bases",
   "year_start": 1965,
   "country": "AR",
   "country_name": "Antártida · Isla Decepción (bases AR/CL/UK)",
@@ -17,8 +17,8 @@
   "mundanoType": "misid",
   "epistemicStatus": "documented",
   "probability": 26,
-  "summary": "El 3 de julio de 1965 la base chilena Aguirre Cerda y la base naval argentina Decepción, en la misma isla, informaron de una luz multicolor que se desplazaba y se detenía; ese día, en la base argentina de las Orcadas del Sur, dos meteorólogos vieron un cuerpo blanco-azulado durante 15 segundos mientras dos variómetros registraban una perturbación. Pero el intento de fotografiar la luz fracasó, el Informe Condon halló la perturbación dentro de las fluctuaciones diarias normales, y un estudio posterior atribuye los avistamientos clave a un meteoro, al satélite Echo II y a estrellas o planetas brillantes.",
-  "summary_en": "On July 3, 1965 the Chilean base Aguirre Cerda and the Argentine naval base Decepción, on the same island, reported a multicolored light that moved and stopped; that day, at the Argentine base in the South Orkneys, two meteorologists saw a bluish-white body for 15 seconds while two variometers registered a disturbance. But the attempt to photograph the light failed, the Condon Report found the disturbance within normal daily fluctuations, and a later study attributes the key sightings to a meteor, the Echo II satellite and bright stars or planets.",
+  "summary": "El 3 de julio de 1965, la base chilena Aguirre Cerda y la base naval argentina Decepción, en la misma isla antártica, informaron de una luz multicolor que se desplazaba y se detenía; ese día, en la base argentina de las Orcadas del Sur, dos meteorólogos vieron un cuerpo blanco azulado durante 15 segundos mientras dos instrumentos magnéticos registraban una perturbación. El intento de fotografiar la luz fracasó, el Informe Condon halló la perturbación dentro de las fluctuaciones diarias normales, y un estudio posterior atribuye los avistamientos clave a un meteoro, al satélite Echo II y a estrellas o planetas brillantes.",
+  "summary_en": "On July 3, 1965, Chile's Aguirre Cerda base and Argentina's Decepción naval base, on the same Antarctic island, reported a multicolored light that moved and stopped; that day, at the Argentine base in the South Orkneys, two meteorologists saw a bluish-white body for 15 seconds while two magnetic instruments recorded a disturbance. The attempt to photograph the light failed, the Condon Report found the disturbance within normal daily fluctuations, and a later study attributes the key sightings to a meteor, the Echo II satellite and bright stars or planets.",
   "patterns": [
     "8a",
     "8e"

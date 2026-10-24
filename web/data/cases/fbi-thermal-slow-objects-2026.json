@@ -4,8 +4,8 @@
   "pursueReleases": [
     5
   ],
-  "name": "Dos jornadas de objetos térmicos lentos, calibrados contra un Black Hawk",
-  "name_en": "Two days of slow thermal objects, calibrated against a Black Hawk",
+  "name": "Oeste de EE. UU. · una cámara térmica capta objetos lentos",
+  "name_en": "Western U.S. · a thermal camera picks up slow-moving objects",
   "year_start": 2026,
   "country": "US",
   "country_name": "Estados Unidos",
@@ -13,8 +13,8 @@
   "location": {
     "lat": 39,
     "lng": -116,
-    "place": "Sitio de seguridad nacional sensible, oeste de EE.UU. (ubicación no revelada)",
-    "place_en": "Sensitive national security site, western U.S. (undisclosed location)"
+    "place": "Sitio federal sensible, oeste de EE. UU. (no revelado)",
+    "place_en": "Sensitive federal site, western U.S. (undisclosed)"
   },
   "tier": "S",
   "epistemicStatus": "documented",
@@ -29,7 +29,7 @@
     "indet": 0.18
   },
   "summary": "En 2026, en un sitio federal sensible, una alerta de detección de radiofrecuencia llevó a un testigo a orientar un dispositivo óptico térmico hacia el rumbo indicado; fotografió y filmó dos objetos negros moviéndose lentamente en formación sobre una cordillera. Al día siguiente, hacia las 21:00, un agente especial del FBI vio desde la misma zona un objeto térmicamente «caliente» con rumbo similar y lo comparó con un helicóptero Black Hawk del Ejército que filmó como referencia: medía aproximadamente la mitad. El testigo no pudo estimar altitud ni velocidad, y el agente no pudo determinar tipo de aeronave, propulsión ni configuración.",
-  "summary_en": "In 2026, at a sensitive federal site, a radio-frequency detection alert led a witness to aim a thermal optical device at the indicated bearing; he photographed and filmed two black objects moving slowly in formation above a mountain range. The next day, at about 2100 hours, an FBI Special Agent saw from the same area a thermally 'hot' object on a similar heading and compared it with a U.S. Army Black Hawk helicopter he filmed as a reference: it measured roughly half its size. The witness could not estimate altitude or speed, and the agent could not determine aircraft type, propulsion or configuration.",
+  "summary_en": "In 2026, at a sensitive federal site, a radio-frequency detection alert led a witness to aim a thermal optical device at the indicated bearing; he photographed and filmed two black objects moving slowly in formation above a mountain range. The next day, at about 2100 hours, an FBI Special Agent saw from the same area a thermally “hot” object on a similar heading and compared it with a U.S. Army Black Hawk helicopter he filmed as a reference: it measured roughly half its size. The witness could not estimate altitude or speed, and the agent could not determine aircraft type, propulsion or configuration.",
   "patterns": [],
   "category": "incident",
   "documents": [

@@ -13,8 +13,8 @@
   "location": {
     "lat": 27,
     "lng": 47,
-    "place": "Noreste de Arabia Saudí, hacia los 27° N y 47° E (coordenadas aproximadas que da el informe), a 39.000 pies",
-    "place_en": "North-eastern Saudi Arabia, at about 27° N 47° E (approximate coordinates given by the report), at 39,000 ft"
+    "place": "Noreste de Arabia Saudí, en vuelo a 39.000 pies",
+    "place_en": "North-eastern Saudi Arabia, in flight at 39,000 ft"
   },
   "tier": "S",
   "epistemicStatus": "documented",

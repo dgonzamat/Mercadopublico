@@ -1,8 +1,8 @@
 {
   "id": "rebep-avion-ambulancia-2022",
   "num": 458,
-  "name": "Atacama · la luz que vio el avión ambulancia cerca de REBEP",
-  "name_en": "Atacama · the light seen by the air ambulance near REBEP",
+  "name": "Atacama · el piloto de un avión ambulancia ve una luz rápida",
+  "name_en": "Atacama · an air ambulance pilot sees a fast, bright light",
   "year_start": 2022,
   "country": "CL",
   "country_name": "Chile",
@@ -10,15 +10,15 @@
   "location": {
     "lat": -26.98,
     "lng": -70.3925,
-    "place": "Punto de notificación REBEP, al norte de Caldera (región de Atacama)",
-    "place_en": "REBEP reporting point, north of Caldera (Atacama region)"
+    "place": "Espacio aéreo al norte de Caldera (región de Atacama)",
+    "place_en": "Airspace north of Caldera (Atacama region)"
   },
   "tier": "B",
   "mundanoType": "sin_propuesta",
   "epistemicStatus": "documented",
   "probability": 41,
-  "summary": "En la madrugada del 30 de enero de 2022, el piloto de un avión ambulancia Beechcraft 200 que volaba de Iquique a Santiago consultó dos veces por radio al control de Iquique si tenía otro tráfico y luego avisó de uno «muy luminoso y rápido», a unos 50.000 pies, hacia el sur de su posición, cerca del punto REBEP, en Atacama. Ni el radar de Iquique ni el de Santiago tenían otro avión en la zona. El SEFAA revisó el radar del vuelo y once satélites visibles sin encontrar nada que encajara; el comandante nunca respondió ni entregó el video que habría grabado, y el caso se cerró como «Relato».",
-  "summary_en": "In the early hours of 30 January 2022, the pilot of a Beechcraft 200 air ambulance flying from Iquique to Santiago asked Iquique control twice by radio whether there was other traffic and then reported one that was 'very bright and fast', at about 50,000 feet, to the south of his position, near the REBEP waypoint in Atacama. Neither the Iquique nor the Santiago radar had any other aircraft in the area. SEFAA reviewed the flight's radar track and eleven visible satellites without finding anything that fitted; the captain never replied or handed over the video he reportedly shot, and the case was closed as a 'Report'.",
+  "summary": "En la madrugada del 30 de enero de 2022, el piloto de un avión ambulancia que volaba de Iquique a Santiago consultó dos veces por radio al control de Iquique si tenía otro tráfico y luego avisó de uno «muy luminoso y rápido», a unos 50.000 pies, hacia el sur de su posición, cerca del punto REBEP, en Atacama. Ni el radar de Iquique ni el de Santiago tenían otro avión en la zona. El SEFAA, la oficina oficial chilena para estos fenómenos, revisó el radar del vuelo y once satélites visibles sin encontrar nada que encajara; el comandante nunca respondió ni entregó el video que habría grabado, y el caso se cerró como «Relato».",
+  "summary_en": "Early on 30 January 2022, the pilot of an air ambulance flying from Iquique to Santiago asked Iquique control twice by radio whether there was other traffic and then reported one that was “very bright and fast”, at about 50,000 feet, to the south of his position, near the REBEP waypoint in Atacama. Neither the Iquique nor the Santiago radar had any other aircraft in the area. SEFAA, Chile's official office for these phenomena, reviewed the flight's radar track and eleven visible satellites without finding anything that fitted; the captain never replied or handed over the video he reportedly shot, and the case was closed as a “Report”.",
   "patterns": [],
   "category": "incident",
   "posterior": {

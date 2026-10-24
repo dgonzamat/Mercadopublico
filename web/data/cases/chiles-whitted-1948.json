@@ -1,8 +1,8 @@
 {
   "id": "chiles-whitted-1948",
   "num": 165,
-  "name": "Chiles-Whitted · dos pilotos de aerolínea y un objeto con ventanas (EE.UU., 1948)",
-  "name_en": "Chiles-Whitted · two airline pilots and a windowed object (USA, 1948)",
+  "name": "Chiles-Whitted · dos pilotos de línea y un objeto con ventanas",
+  "name_en": "Chiles-Whitted · two airline pilots and a windowed object",
   "year_start": 1948,
   "country": "US",
   "country_name": "Estados Unidos",
@@ -10,8 +10,8 @@
   "location": {
     "lat": 32.2,
     "lng": -86.5,
-    "place": "~32 km al suroeste de Montgomery, Alabama",
-    "place_en": "~32 km southwest of Montgomery, Alabama"
+    "place": "Unos 30 km al suroeste de Montgomery, Alabama",
+    "place_en": "About 30 km southwest of Montgomery, Alabama"
   },
   "tier": "A",
   "mundanoType": "misid",
@@ -19,8 +19,8 @@
   "objectDetail": "meteoro",
   "epistemicStatus": "documented",
   "probability": 27,
-  "summary": "Hacia las 2:45 del 24 de julio de 1948, los pilotos de Eastern Air Lines Clarence S. Chiles y John B. Whitted vieron desde un DC-3 cerca de Montgomery (Alabama) un objeto en forma de cigarro con un resplandor interior «como una bengala de magnesio» y una llama rojo-anaranjada detrás; pasó a media milla y subió hasta perderse en una nube tras 10 a 15 segundos. El Project Sign lo dio por no identificado; Hynek escribió en 1949 que, aceptado al pie de la letra, no tenía explicación astronómica, pero que la llama, la nube y la duración encajaban con un bólido lento. El expediente reúne avistamientos de una bola de fuego esa noche.",
-  "summary_en": "Around 2:45 a.m. on July 24, 1948, Eastern Air Lines pilots Clarence S. Chiles and John B. Whitted saw from a DC-3 near Montgomery (Alabama) a cigar-shaped object with an interior glow \"like a magnesium flare\" and a red-orange flame behind; it passed half a mile away and pulled up into a cloud after 10 to 15 seconds. Project Sign called it unidentified; in 1949 Hynek wrote that, taken at face value, it had no astronomical explanation, but that the flame, the cloud and the duration fit a slow fireball. The file gathers sightings of a fireball that night.",
+  "summary": "Hacia las 2:45 del 24 de julio de 1948, los pilotos de Eastern Air Lines Clarence Chiles y John Whitted vieron desde su DC-3, cerca de Montgomery (Alabama), un objeto en forma de cigarro con un resplandor interior «como una bengala de magnesio» y una llama rojo-anaranjada; pasó a media milla y subió hasta perderse en una nube tras 10 a 15 segundos. Project Sign, el programa de la Fuerza Aérea, lo dio por no identificado. Hynek escribió en 1949 que, aceptado al pie de la letra, no tenía explicación astronómica, pero que la llama, la nube y la duración encajaban con un bólido lento, y esa noche hubo otros avistamientos de una bola de fuego.",
+  "summary_en": "Around 2:45 a.m. on July 24, 1948, Eastern Air Lines pilots Clarence Chiles and John Whitted saw from their DC-3, near Montgomery, Alabama, a cigar-shaped object with an inner glow “like a magnesium flare” and a red-orange flame; it passed half a mile away and climbed into a cloud after 10 to 15 seconds. Project Sign, the Air Force program, called it unidentified. In 1949 Hynek wrote that, taken at face value, it had no astronomical explanation, but that the flame, the cloud and the duration fit a slow fireball, and there were other sightings of a fireball that night.",
   "patterns": [],
   "category": "incident",
   "posterior": {

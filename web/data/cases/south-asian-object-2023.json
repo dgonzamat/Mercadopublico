@@ -2,8 +2,8 @@
   "id": "south-asian-object-2023",
   "num": 353,
   "pursueReleases": [],
-  "name": "El MQ-9 que grabó a otro MQ-9 — y una estela que era compresión de video",
-  "name_en": "The MQ-9 that filmed another MQ-9 — and a wake that was video compression",
+  "name": "Asia del Sur · un dron graba un objeto con una aparente estela",
+  "name_en": "South Asia · a drone films an object with an apparent trail",
   "year_start": 2023,
   "country": "US",
   "country_name": "Asia del Sur (país exacto no revelado; plataforma y liberación son de EE.UU.)",
@@ -28,8 +28,8 @@
     "nohumano_abierto": 0.01,
     "indet": 0.07
   },
-  "summary": "El 15 de enero de 2023, el sensor infrarrojo (FLIR) de un dron MQ-9 Reaper en Asia del Sur registró un objeto rápido que cruzaba el campo de visión con una aparente estela. El director de la AARO, Sean Kirkpatrick, lo mostró en abril de 2023 ante un subcomité del Senado y lo dio por resuelto: cuadro a cuadro, la estela seguía la dirección de la cámara y no la del objeto, y el final mostraba la firma térmica de los motores de un avión regional. La ficha oficial en DVIDS es más cauta: evalúa que «probablemente» era una aeronave comercial, atribuye la estela a la compresión del video y deja la resolución «pendiente de revisión final».",
-  "summary_en": "On January 15, 2023, the infrared (FLIR) sensor of an MQ-9 Reaper drone in South Asia recorded a fast object crossing the field of view with an apparent trail. AARO director Sean Kirkpatrick showed it in April 2023 to a Senate subcommittee and called it resolved: frame by frame, the trail followed the camera's direction rather than the object's, and the end of the footage showed the engine heat signature of a commuter aircraft. The official DVIDS record is more cautious: it assesses the object 'likely' was a commercial aircraft, attributes the trail to video compression, and leaves the case 'pending final review'.",
+  "summary": "El 15 de enero de 2023, la cámara infrarroja de un dron MQ-9 Reaper que filmaba a otro MQ-9 en Asia del Sur grabó un objeto rápido que cruzaba la imagen con una aparente estela. Sean Kirkpatrick, director de la oficina del Pentágono para estos fenómenos (AARO), lo mostró en el Senado en abril de 2023 y lo dio por resuelto: cuadro a cuadro, la estela seguía la dirección de la cámara y no la del objeto, y al final se veía el calor de los motores de un avión regional. La descripción oficial es más cauta: «probablemente» era un avión comercial, la estela se debió a la compresión del video y el caso sigue «pendiente de revisión final».",
+  "summary_en": "On January 15, 2023, the infrared camera of an MQ-9 Reaper drone filming another MQ-9 in South Asia recorded a fast object crossing the frame with an apparent trail. Sean Kirkpatrick, director of the Pentagon office for these phenomena (AARO), showed it to the Senate in April 2023 and called it resolved: frame by frame, the trail followed the camera's direction rather than the object's, and the end showed the engine heat of a regional airliner. The official description is more cautious: it was “likely” a commercial aircraft, the trail came from video compression, and the case is “pending final review.”",
   "patterns": [],
   "category": "incident",
   "documents": [
@@ -101,7 +101,7 @@
   ],
   "evidenceReviewed": "2026-09-28",
   "classBasis": {
-    "es": "Evaluación de la AARO en el registro oficial de DVIDS: tras analizar el vídeo completo, metraje adicional con mayor distancia focal y los datos de vuelos comerciales de la región, «la AARO evalúa que el objeto probablemente es una aeronave comercial y que la estela de cavitación es un artefacto del sensor resultante de la compresión del vídeo». La resolución del caso quedó «pendiente de revisión final».",
+    "es": "Evaluación de la AARO en el registro oficial de DVIDS: tras analizar el video completo, metraje adicional con mayor distancia focal y los datos de vuelos comerciales de la región, «la AARO evalúa que el objeto probablemente es una aeronave comercial y que la estela de cavitación es un artefacto del sensor resultante de la compresión del vídeo». La resolución del caso quedó «pendiente de revisión final».",
     "en": "AARO assessment in the official DVIDS record: after analysis of the full motion video, additional footage with a longer focal length and commercial flight data in the region, \"AARO assesses that the object likely is a commercial aircraft and that the trailing cavitation is a sensor artifact resultant of video compression.\" Case resolution was \"pending final review\".",
     "source": "DVIDS — «South Asian Object 1», evaluación de la AARO (19 abr 2023)",
     "source_en": "DVIDS — “South Asian Object 1”, AARO evaluation (19 Apr 2023)",

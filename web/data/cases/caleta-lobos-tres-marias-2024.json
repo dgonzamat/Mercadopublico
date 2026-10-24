@@ -1,8 +1,8 @@
 {
   "id": "caleta-lobos-tres-marias-2024",
   "num": 467,
-  "name": "Caleta Lobos · las luces bajo las Tres Marías que vieron tres tripulaciones",
-  "name_en": "Caleta Lobos · the lights below Orion's Belt seen by three airline crews",
+  "name": "Caleta Lobos · tres tripulaciones ven luces bajo las Tres Marías",
+  "name_en": "Caleta Lobos · three airline crews see lights below Orion's Belt",
   "year_start": 2024,
   "country": "CL",
   "country_name": "Chile",
@@ -10,8 +10,8 @@
   "location": {
     "lat": -20.9872,
     "lng": -70.2181,
-    "place": "Punto de notificación XONOG, sobre la costa al sur de la caleta Lobos, Región de Tarapacá",
-    "place_en": "XONOG reporting point, over the coast south of Caleta Lobos, Tarapacá Region"
+    "place": "Sobre la costa al sur de la caleta Lobos (región de Tarapacá)",
+    "place_en": "Over the coast south of Caleta Lobos (Tarapacá region)"
   },
   "tier": "A",
   "mundanoType": "misid",
@@ -19,8 +19,8 @@
   "objectDetail": "satelite",
   "epistemicStatus": "documented",
   "probability": 20,
-  "summary": "En la noche del 22 de abril de 2024, el comandante del vuelo ARG1364 de Aerolíneas Argentinas, a 38.000 pies sobre la costa al sur de Iquique, avisó de luces destellantes y sin trayectoria definida, de tres a cuatro, muy altas y bajo las Tres Marías, el cinturón de Orión; consultada, la tripulación del SKU333 dijo ver dos luces al suroeste, y un tercer vuelo, dos luces a su izquierda. Sin imágenes, el SEFAA reconstruyó el cielo de cada avión, encontró el Sol bajo el horizonte aproximadamente en esa dirección y 24 satélites iluminados bajo las tres estrellas, y lo consideró probablemente explicado como reflejos del Sol en objetos espaciales por encima de los 400 km de altitud.",
-  "summary_en": "On the night of 22 April 2024, the captain of Aerolíneas Argentinas flight ARG1364, at 38,000 feet over the coast south of Iquique, reported flashing lights with no defined path, three to four of them, very high and below Orion's Belt, known in Chile as the Three Marys; when asked, the crew of SKU333 said they saw two lights to the southwest, and a third flight also reported two lights on its left. Without images, SEFAA reconstructed the sky from each aircraft, found the Sun below the horizon roughly in that direction and 24 sunlit satellites below the three stars, and considered it probably explained as sunlight reflected by space objects more than 400 km up.",
+  "summary": "La noche del 22 de abril de 2024, el comandante de un vuelo de Aerolíneas Argentinas, sobre la costa al sur de Iquique, avisó de tres o cuatro luces destellantes, sin trayectoria definida, muy altas y bajo las Tres Marías, el cinturón de Orión; la tripulación de un vuelo de Sky Airline dijo ver dos luces al suroeste, y un tercer vuelo, dos a su izquierda. Sin imágenes, el SEFAA, la oficina oficial chilena para estos fenómenos, reconstruyó el cielo de cada avión, halló el Sol bajo el horizonte en esa dirección y 24 satélites iluminados bajo las tres estrellas, y lo dio por probablemente explicado: reflejos del Sol en objetos a más de 400 km.",
+  "summary_en": "On the night of 22 April 2024, the captain of an Aerolíneas Argentinas flight, over the coast south of Iquique, reported three or four flashing lights with no defined path, very high and below Orion's Belt, known in Chile as the Three Marys; the crew of a Sky Airline flight saw two lights to the southwest, and a third flight two on its left. Without images, SEFAA, Chile's official office for these phenomena, reconstructed the sky from each aircraft, found the Sun below the horizon roughly in that direction and 24 sunlit satellites below the three stars, and judged it probably explained: sunlight reflected by objects more than 400 km up.",
   "patterns": [],
   "category": "incident",
   "posterior": {

@@ -1,8 +1,8 @@
 {
   "id": "paposo-tripulaciones-2023",
   "num": 459,
-  "name": "Paposo · las luces que vieron tres tripulaciones sobre el desierto",
-  "name_en": "Paposo · the lights seen by three airline crews over the desert",
+  "name": "Paposo · tres tripulaciones ven luces sobre el desierto",
+  "name_en": "Paposo · three airline crews see lights over the desert",
   "year_start": 2023,
   "country": "CL",
   "country_name": "Chile",
@@ -10,8 +10,8 @@
   "location": {
     "lat": -24.9325,
     "lng": -70.3467,
-    "place": "Aerovía UQ803, al este de Paposo, unas 100 millas náuticas al sur de Antofagasta",
-    "place_en": "Airway UQ803, east of Paposo, some 100 nautical miles south of Antofagasta"
+    "place": "Ruta aérea al este de Paposo, al sur de Antofagasta",
+    "place_en": "Air route east of Paposo, south of Antofagasta"
   },
   "tier": "A",
   "mundanoType": "misid",
@@ -19,8 +19,8 @@
   "objectDetail": "satelite",
   "epistemicStatus": "documented",
   "probability": 23,
-  "summary": "En la noche del 5 al 6 de noviembre de 2023, tres tripulaciones de vuelos comerciales que bajaban hacia Santiago por la aerovía UQ803, al sur de Antofagasta, avisaron por radio al control de Iquique de luces al suroeste; una habló de «cuatro luces que giran aleatoriamente», otra de luces «muy, muy alto» que «aparecen y desaparecen» y la tercera de «los ovnis que se veían hace unos meses». El SEFAA comprobó que cruzaban ese sector varios satélites y la estación china Tiangong, pero sin imágenes no pudo identificar los objetos y lo cerró como «Relato». En el mismo mes y la misma zona propuso reflejos del Sol en satélites para otros tres reportes parecidos, y en uno, con video, los identificó.",
-  "summary_en": "On the night of 5–6 November 2023, three airline crews heading south to Santiago along airway UQ803, south of Antofagasta, radioed Iquique control about lights to the southwest; one spoke of 'four lights turning at random', another of lights 'very, very high' that 'appear and disappear', and a third of 'the UFOs that were seen a few months ago'. SEFAA established that satellites were crossing that sector, and a pass of China's Tiangong station, but without images it could not identify the objects and closed it as a 'Report'. In the same month and area it proposed sunlight reflecting off satellites for three other similar reports, and in one, with video, identified them.",
+  "summary": "La noche del 5 al 6 de noviembre de 2023, tres tripulaciones de vuelos comerciales que bajaban hacia Santiago al sur de Antofagasta avisaron al control de Iquique de luces al suroeste: una habló de «cuatro luces que giran aleatoriamente» y otra de luces «muy, muy alto» que «aparecen y desaparecen». El SEFAA, la oficina oficial chilena para estos fenómenos, comprobó que cruzaban ese sector varios satélites y la estación china Tiangong, pero sin imágenes no pudo identificarlos y cerró el caso como «Relato». Ese mes, en la misma zona, propuso reflejos del Sol en satélites para otros tres reportes parecidos, y en uno, con video, los identificó.",
+  "summary_en": "On the night of 5–6 November 2023, three airline crews heading south to Santiago, south of Antofagasta, radioed Iquique control about lights to the southwest; one spoke of “four lights turning at random” and another of lights “very, very high” that “appear and disappear”. SEFAA, Chile's official office for these phenomena, established that satellites were crossing that sector, and a pass of China's Tiangong station, but without images it could not identify the objects and closed it as a “Report”. In the same month and area it proposed sunlight reflecting off satellites for three other similar reports, and in one, with video, identified them.",
   "patterns": [],
   "category": "incident",
   "posterior": {

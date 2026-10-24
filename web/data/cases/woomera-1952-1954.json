@@ -1,8 +1,8 @@
 {
   "id": "woomera-1952-1954",
   "num": 409,
-  "name": "Woomera · el expediente de seguridad del campo de misiles (1952–1954)",
-  "name_en": "Woomera · the rocket range security file (1952–1954)",
+  "name": "Woomera · seis avistamientos en el campo de pruebas de cohetes",
+  "name_en": "Woomera · six sightings at the rocket test range",
   "year_start": 1952,
   "country": "AU",
   "country_name": "Australia",
@@ -17,8 +17,8 @@
   "mundanoType": "sin_propuesta",
   "epistemicStatus": "documented",
   "probability": 35,
-  "summary": "Entre 1952 y 1954, la oficina de seguridad del campo de misiles de Woomera investigó seis episodios en su propio recinto y los archivó en un solo expediente, hoy en el Archivo Nacional de Australia. Uno de ellos es el del 5 de mayo de 1954: un radar antiaéreo siguió un blanco sin identificar que, según el sargento que lo cronometró, cruzó 15.000 yardas en diez segundos por encima de los 60.000 pies, y ese mismo día un técnico de Vickers-Armstrongs vio con prismáticos un objeto circular y gris detenerse sobre la trayectoria de un bombardero Canberra. El resto del expediente se resolvió o quedó en explicaciones prosaicas: meteoros, un eco de nube de nieve y una luz baja sobre el horizonte.",
-  "summary_en": "Between 1952 and 1954 the security office of the Woomera rocket range investigated six episodes on its own grounds and filed them in a single folder, now held by the National Archives of Australia. One of them is 5 May 1954: an anti-aircraft radar tracked an unidentified target that, according to the sergeant who timed it, covered 15,000 yards in ten seconds above 60,000 feet, and the same day a Vickers-Armstrongs technician watched through binoculars as a round grey object stopped over the flight path of a Canberra bomber. The rest of the file was resolved or left with prosaic explanations: meteors, a snow-cloud echo and a low light on the horizon.",
+  "summary": "Entre 1952 y 1954, la oficina de seguridad del campo de pruebas de cohetes de Woomera investigó seis episodios en su propio recinto, hoy en un expediente del Archivo Nacional de Australia. El central es del 5 de mayo de 1954: un radar antiaéreo siguió una señal sin identificar que, según el sargento que la cronometró, recorrió 15.000 yardas en diez segundos por encima de los 60.000 pies, y ese día un técnico vio con prismáticos un objeto circular y gris detenerse sobre la trayectoria de un bombardero. Entre los demás hay un meteoro, una señal de radar atribuida a una nube de nieve y un objeto en forma de cigarro que quedó sin causa.",
+  "summary_en": "Between 1952 and 1954, the security office of the Woomera rocket range investigated six episodes on its own grounds, now in one file at the National Archives of Australia. The central one is from 5 May 1954: an anti-aircraft radar tracked an unidentified signal that, according to the sergeant who timed it, covered 15,000 yards in ten seconds above 60,000 feet, and that day a technician watched through binoculars as a round grey object stopped over the flight path of a bomber. The others include a meteor, a radar signal put down to a snow cloud and a cigar-shaped object left without a cause.",
   "patterns": [
     "8g"
   ],

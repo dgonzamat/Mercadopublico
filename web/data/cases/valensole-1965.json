@@ -1,7 +1,8 @@
 {
   "id": "valensole-1965",
   "num": 12,
-  "name": "Valensole",
+  "name": "Valensole · un agricultor ve un objeto posado en su lavanda",
+  "name_en": "Valensole · a farmer sees an object landed in his lavender",
   "year_start": 1965,
   "country": "FR",
   "country_name": "Francia",
@@ -9,15 +10,15 @@
   "location": {
     "lat": 43.83,
     "lng": 5.98,
-    "place": "Valensole, Provence",
-    "place_en": "Valensole, Provence"
+    "place": "Valensole, Provenza (Francia)",
+    "place_en": "Valensole, Provence, France"
   },
   "tier": "A",
   "mundanoType": "misid",
   "epistemicStatus": "documented",
   "probability": 66,
   "summary": "El agricultor Maurice Masse contó que al amanecer del 1 de julio de 1965 vio un objeto posado en su campo de lavanda y a pequeños ocupantes que volvieron a él y despegaron; en su declaración ampliada a la gendarmería, el 18 de agosto, añadió que quedó paralizado. Las huellas en el suelo, ya pisoteadas por los curiosos, las midieron y fotografiaron los gendarmes. Los militares lo atribuyeron a un helicóptero de las maniobras en curso, algo que Masse rechazó. El GEIPAN (CNES) lo clasifica «D» por defecto, por su extrañeza, sin haber publicado una investigación propia.",
-  "summary_en": "Farmer Maurice Masse said that at dawn on 1 July 1965 he saw an object resting in his lavender field and small occupants who went back into it before it took off; in his expanded statement to the gendarmerie on 18 August he added that he had been paralysed. The ground marks, already trampled by onlookers, were measured and photographed by the gendarmes. Military sources attributed it to a helicopter from the manoeuvres then under way, which Masse rejected. GEIPAN (CNES) classes it 'D' by default, on account of its strangeness, without having published an investigation of its own.",
+  "summary_en": "Farmer Maurice Masse said that at dawn on 1 July 1965 he saw an object resting in his lavender field and small occupants who went back into it before it took off; in his expanded statement to the gendarmerie on 18 August he added that he had been paralysed. The ground marks, already trampled by onlookers, were measured and photographed by the gendarmes. Military sources attributed it to a helicopter from the manoeuvres then under way, which Masse rejected. GEIPAN (CNES) classes it “D” by default, on account of its strangeness, without having published an investigation of its own.",
   "patterns": [
     "8a"
   ],

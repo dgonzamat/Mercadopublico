@@ -4,8 +4,8 @@
   "pursueReleases": [
     2
   ],
-  "name": "Dos 'tic-tacs' calientes sobre Tyndall, filmados por la Guardia Costera",
-  "name_en": "Two hot 'tic-tacs' over Tyndall, filmed by the Coast Guard",
+  "name": "Tyndall · dos videos infrarrojos rotulados «tic tac» al subirlos",
+  "name_en": "Tyndall · two infrared clips their uploader labeled “tic tac”",
   "year_start": 2024,
   "country": "US",
   "country_name": "Estados Unidos",
@@ -13,8 +13,8 @@
   "location": {
     "lat": 30.07,
     "lng": -85.58,
-    "place": "Inmediaciones de la base aérea Tyndall, costa del Golfo de México, Florida",
-    "place_en": "Vicinity of Tyndall Air Force Base, Gulf of Mexico coast, Florida"
+    "place": "Cerca de la base aérea Tyndall, Florida",
+    "place_en": "Near Tyndall Air Force Base, Florida"
   },
   "tier": "B",
   "epistemicStatus": "documented",
@@ -35,8 +35,8 @@
     "source_en": "DVIDS — DOW-UAP-PR066 and PR065; AARO, Fiscal Year 2024 Consolidated Annual Report on UAP (Nov 2024)",
     "url": "https://media.defense.gov/2024/Nov/14/2003583603/-1/-1/0/FY24-CONSOLIDATED-ANNUAL-REPORT-ON-UAP-508.PDF"
   },
-  "summary": "Dos clips infrarrojos, supuestamente de abril de 2024 cerca de la base Tyndall (Florida), forman parte del lote de 50 videos que la AARO localizó en una red clasificada, un lote que la propia AARO advierte que carece de cadena de custodia sustanciada. El título «USCG C-144 Tyndall UAP TIC TAC IR hot» lo asignó quien subió el archivo, no el Departamento de Guerra, y la AARO solo evalúa como «probable» que el sensor fuera de la Guardia Costera. Su descripción visual registra un «área de contraste» que el sensor sigue en un clip y pierde en el otro, sin la silueta de cápsula que sugiere el título.",
-  "summary_en": "Two infrared clips, reportedly from April 2024 near Tyndall AFB (Florida), are part of the batch of 50 videos AARO located on a classified network, a batch AARO itself notes lacks a substantiated chain of custody. The title 'USCG C-144 Tyndall UAP TIC TAC IR hot' was assigned by whoever uploaded the file, not by the Department of War, and AARO only assesses it as 'likely' that the sensor was a Coast Guard one. Its visual description records an 'area of contrast' the sensor tracks in one clip and loses in the other, without the capsule silhouette the title suggests.",
+  "summary": "Dos videos infrarrojos, supuestamente de abril de 2024 cerca de la base aérea Tyndall (Florida), forman parte de un lote de 50 que la oficina del Pentágono para estos fenómenos (AARO) halló en una red clasificada, y del que advierte que a muchos les falta una cadena de custodia demostrada. El título «USCG C-144 Tyndall UAP TIC TAC IR hot» lo puso quien subió el archivo, no el Departamento de Guerra, y la AARO solo ve «probable» que la cámara fuera de la Guardia Costera. Su descripción registra una zona de contraste que el sensor no logra seguir en un video y sigue buena parte del otro, sin la silueta de cápsula que sugiere el título.",
+  "summary_en": "Two infrared clips, reportedly from April 2024 near Tyndall Air Force Base (Florida), belong to a batch of 50 that the Pentagon office for these phenomena (AARO) found on a classified network, and of which it warns that many lack a substantiated chain of custody. The title “USCG C-144 Tyndall UAP TIC TAC IR hot” was given by whoever uploaded the file, not by the Department of War, and AARO only considers it “likely” that the camera was a Coast Guard one. Its description records an area of contrast that the sensor fails to follow in one clip and tracks for much of the other, with no sign of the capsule shape the title suggests.",
   "patterns": [
     "8d"
   ],

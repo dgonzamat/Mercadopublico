@@ -4,8 +4,8 @@
   "pursueReleases": [
     4
   ],
-  "name": "El testimonio del aviador de 28 años: un objeto pequeño, rápido, visto desde una aeronave civil",
-  "name_en": "The 28-year aviator's testimony: a small, fast object seen from a civilian aircraft",
+  "name": "Costa este de EE. UU. · un avión civil graba un objeto veloz",
+  "name_en": "U.S. East Coast · a civilian aircraft films a small, fast object",
   "year_start": 2019,
   "country": "US",
   "country_name": "Estados Unidos",
@@ -35,8 +35,8 @@
     "nohumano_abierto": 0.04,
     "indet": 0.3
   },
-  "summary": "En 2019, un sensor infrarrojo a bordo de una aeronave CIVIL (no militar, un detalle inusual) registró 20 segundos de un objeto sobre la costa este de Estados Unidos. La Armada de EE.UU. sometió el reporte a la AARO, acompañado de un informe de debrief (DOW-UAP-D090) que cita al observador: el objeto exhibía 'características de vuelo distintas a todo lo que había visto en 28 años [de servicio] para la Fuerza Aérea y la Armada de EE.UU.'. El informe lo describe como 'pequeño' y 'viajando en línea recta en dirección opuesta a alta velocidad'. El video mismo es fragmentario: el objeto es visible apenas unos segundos antes de que el sensor cambie de modo y la pantalla se sature de blanco.",
-  "summary_en": "In 2019, an infrared sensor aboard a CIVILIAN aircraft (not military, an unusual detail) recorded 20 seconds of an object over the U.S. East Coast. The U.S. Navy submitted the report to AARO, accompanied by a debrief report (DOW-UAP-D090) quoting the observer: the object exhibited 'flight characteristics unlike anything [they] had seen in 28 years [of service] for the U.S. Air Force and U.S. Navy.' The report describes it as 'small' and 'traveling in a straight line in the opposite direction at high speed.' The video itself is fragmentary: the object is visible for only a few seconds before the sensor changes mode and the screen washes out white.",
+  "summary": "En 2019, un sensor infrarrojo a bordo de una aeronave civil grabó 20 segundos de un objeto sobre la costa este de EE. UU. La Marina envió el caso a la oficina del Pentágono para estos fenómenos (AARO) junto con el informe de la entrevista posterior al observador, que dice que el objeto tenía «características de vuelo distintas a todo lo que había visto en 28 años» trabajando para la Fuerza Aérea y la Marina, y lo describe como «pequeño» y «viajando en línea recta, en dirección opuesta, a alta velocidad». El video es fragmentario: el objeto se ve unos diez segundos antes de que el sensor cambie de modo y la pantalla quede en blanco.",
+  "summary_en": "In 2019, an infrared sensor aboard a civilian aircraft recorded 20 seconds of an object over the U.S. East Coast. The Navy sent the case to the Pentagon office for these phenomena (AARO) along with a report of the observer's debriefing, which says the object had “flight characteristics unlike anything” seen in 28 years working for the Air Force and the Navy, and describes it as “small” and “traveling in a straight line in the opposite direction at high speed.” The video is fragmentary: the object is visible for about ten seconds before the sensor changes mode and the screen washes out white.",
   "patterns": [
     "8e"
   ],

@@ -1,8 +1,8 @@
 {
   "id": "kinross-incident-1953",
   "num": 195,
-  "name": "Incidente Kinross · F-89 desaparecido sobre el lago Superior",
-  "name_en": "Kinross Incident · F-89 lost over Lake Superior",
+  "name": "Kinross · un caza desaparece sobre el lago Superior",
+  "name_en": "Kinross · a fighter vanishes over Lake Superior",
   "year_start": 1953,
   "country": "US",
   "country_name": "Estados Unidos",
@@ -17,8 +17,8 @@
   "mundanoType": "misid",
   "epistemicStatus": "documented",
   "probability": 39,
-  "summary": "El 23 de noviembre de 1953, un caza F-89C Scorpion despegó de Kinross AFB para interceptar un blanco de radar clasificado como «Unknown» sobre el lago Superior. El radar terrestre mostró que el avión y el objetivo se fusionaban en un solo blip, y el F-89, con el teniente Felix Moncla y el operador de radar Robert Wilson, desapareció sin dejar rastro. El informe de accidente de la USAF identificó el blanco como un Dakota (C-47) de la Real Fuerza Aérea Canadiense desviado de su ruta, algo que Canadá negó después; nunca se hallaron la aeronave ni los cuerpos.",
-  "summary_en": "On November 23, 1953, an F-89C Scorpion fighter took off from Kinross AFB to intercept a radar target classified as \"Unknown\" over Lake Superior. Ground radar showed the aircraft and the target merge into a single blip, and the F-89, with Lt. Felix Moncla and radar operator Robert Wilson, vanished without a trace. The USAF accident report identified the target as an off-course Royal Canadian Air Force Dakota (C-47), which Canada later denied; neither the aircraft nor the bodies were ever found.",
+  "summary": "La noche del 23 de noviembre de 1953, un caza F-89C despegó de la base aérea de Kinross (Michigan) para identificar un avión que el radar de tierra seguía sobre el lago Superior y que, por ir unas 30 millas fuera de ruta, se clasificó como desconocido. En la pantalla, el caza y el avión se fundieron en un solo punto, y el F-89, con el teniente Felix Moncla y el operador de radar Robert Wilson, desapareció. El informe de accidente de la Fuerza Aérea identificó el avión como un Dakota de la Real Fuerza Aérea Canadiense desviado de su ruta, algo que Canadá negó después; nunca se hallaron el caza ni los cuerpos.",
+  "summary_en": "On the night of November 23, 1953, an F-89C fighter took off from Kinross Air Force Base, Michigan, to identify a plane that ground radar was tracking over Lake Superior and that, flying some 30 miles off course, had been classed as unknown. On the screen the fighter and the plane merged into a single dot, and the F-89, with Lt. Felix Moncla and radar operator Robert Wilson aboard, vanished. The Air Force accident report identified the plane as an off-course Royal Canadian Air Force Dakota, which Canada later denied; neither the fighter nor the bodies were ever found.",
   "patterns": [
     "8a",
     "8c"

@@ -4,8 +4,8 @@
   "pursueReleases": [
     5
   ],
-  "name": "El reloj mecánico que se adelantó 25 minutos",
-  "name_en": "The mechanical watch that ran 25 minutes fast",
+  "name": "Oeste de EE. UU. · dos empleados federales ven luces rojas",
+  "name_en": "Western U.S. · two federal employees watch red lights at night",
   "year_start": 2026,
   "country": "US",
   "country_name": "Estados Unidos",
@@ -13,8 +13,8 @@
   "location": {
     "lat": 39,
     "lng": -116,
-    "place": "Sitio de seguridad nacional sensible, oeste de EE.UU. (ubicación no revelada)",
-    "place_en": "Sensitive national security site, western U.S. (undisclosed location)"
+    "place": "Sitio federal sensible, oeste de EE. UU. (no revelado)",
+    "place_en": "Sensitive federal site, western U.S. (undisclosed)"
   },
   "tier": "B",
   "epistemicStatus": "documented",
@@ -27,7 +27,7 @@
     "nohumano_abierto": 0.05,
     "indet": 0.35
   },
-  "summary": "Una noche de 2026, dos empleados de un sitio federal en el oeste de EE.UU., en reconocimiento de área, observaron durante horas luces rojas que no identificaron: luces a lo largo de la cresta de la cordillera, una sobre su posición y, más tarde, dos que se acercaron desde el este hasta detenerse a unos cientos de metros, una a unos dos metros del suelo. El FBI los entrevistó por separado: coinciden en el esquema de la noche, no en las horas, el número de luces ni las distancias. Los dos cuentan que el reloj mecánico de uno, que en cinco años no se había desviado más de minuto y medio, terminó la noche 25 minutos adelantado.",
+  "summary": "Una noche de 2026, dos empleados de un sitio federal en el oeste de EE. UU., en reconocimiento de área, observaron durante horas luces rojas que no identificaron: luces a lo largo de la cresta de la cordillera, una sobre su posición y, más tarde, dos que se acercaron desde el este hasta detenerse a unos cientos de metros, una a unos dos metros del suelo. El FBI los entrevistó por separado: coinciden en el esquema de la noche, no en las horas, el número de luces ni las distancias. Los dos cuentan que el reloj mecánico de uno, que en cinco años no se había desviado más de minuto y medio, terminó la noche 25 minutos adelantado.",
   "summary_en": "One night in 2026, two employees of a federal site in the western U.S., on area-reconnaissance duty, spent hours watching red lights they could not identify: lights along the crest of the mountain range, one above their position and, later, two that approached from the east and stopped a few hundred meters away, one about six feet off the ground. The FBI interviewed them separately: they agree on the outline of the night, not on times, the number of lights or distances. Both say one man's mechanical watch, which had never drifted more than a minute and a half in five years, ended the night 25 minutes fast.",
   "patterns": [
     "8b",

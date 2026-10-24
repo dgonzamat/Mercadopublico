@@ -1,8 +1,8 @@
 {
   "id": "wonsan-sunchon-1952",
   "num": 62,
-  "name": "Wonsan-Sunchon (Corea)",
-  "name_en": "Wonsan-Sunchon (Korea)",
+  "name": "Wonsan · dos tripulaciones de bombardero ven una esfera naranja",
+  "name_en": "Wonsan · two bomber crews see an orange sphere",
   "year_start": 1952,
   "country": "KP",
   "country_name": "Corea del Norte",
@@ -10,8 +10,8 @@
   "location": {
     "lat": 39.15,
     "lng": 127.43,
-    "place": "Wonsan / Sunchon, Corea del Norte (misión USAF)",
-    "place_en": "Wonsan / Sunchon, North Korea (USAF mission)"
+    "place": "Wonsan y Sunchon, Corea del Norte",
+    "place_en": "Wonsan and Sunchon, North Korea"
   },
   "tier": "A",
   "mundanoType": "misid",
@@ -26,7 +26,7 @@
   "epistemicStatus": "documented",
   "probability": 37,
   "summary": "La noche del 29 de enero de 1952, durante la Guerra de Corea, dos tripulaciones de B-29 de la USAF, en misiones distintas y con 24 minutos de diferencia, vieron cerca de Wonsan y de Sunchon una esfera naranja de menos de un metro que se acercó a sus aviones. La inteligencia de la zona pensó en una bengala o un dispositivo enemigo nuevo, y la tarjeta de Project Blue Book lo dejó como «posiblemente globo».",
-  "summary_en": "On the night of 29 January 1952, during the Korean War, two USAF B-29 crews on different missions, 24 minutes apart, saw near Wonsan and Sunchon an orange sphere under a meter across that approached their aircraft. Theater intelligence thought of a flare or a new enemy device, and the Project Blue Book record card left it as 'possibly balloon.'",
+  "summary_en": "On the night of 29 January 1952, during the Korean War, two U.S. Air Force B-29 bomber crews on separate missions, 24 minutes apart, each saw an orange sphere less than a meter across approach their aircraft, one near Wonsan and the other near Sunchon. Intelligence officers in the theater considered an enemy flare or a new enemy device, and the Project Blue Book record card filed it as “possibly balloon.”",
   "patterns": [
     "8e",
     "8h"
