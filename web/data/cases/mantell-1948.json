@@ -1,7 +1,7 @@
 {
   "id": "mantell-1948",
   "num": 4,
-  "name": "Caída de Mantell",
+  "name": "Caso Mantell · un piloto muere persiguiendo un objeto brillante",
   "year_start": 1948,
   "country": "US",
   "country_name": "Estados Unidos",
@@ -15,8 +15,8 @@
   "tier": "A",
   "epistemicStatus": "documented",
   "probability": 22,
-  "summary": "El Capitán Thomas Mantell murió al estrellarse su F-51 tras subir por encima de los 15.000 pies persiguiendo un objeto brillante; el expediente atribuye la caída a la falta de oxígeno: primera fatalidad militar estadounidense documentada en la persecución de un objeto no identificado.",
-  "summary_en": "Captain Thomas Mantell died when his F-51 crashed after he climbed past 15,000 feet chasing a bright object; the file attributes the crash to lack of oxygen: the first documented US military fatality in pursuit of an unidentified object.",
+  "summary": "El 7 de enero de 1948, la torre de Godman Field (Fort Knox, Kentucky) y vecinos de varios pueblos informaron de un gran objeto brillante, y cuatro cazas F-51 de la Guardia Nacional Aérea fueron desviados para investigarlo. El capitán Thomas Mantell siguió subiendo cuando, a 22.000 pies, otro piloto se retiró por no llevar oxígeno, y su avión se estrelló cerca de Franklin; el expediente atribuye la caída a la falta de oxígeno. Fue la primera muerte documentada de un militar estadounidense persiguiendo un objeto no identificado. Esa tarde un astrónomo siguió con telescopio un globo a unos 25.000 pies, y la tarjeta de Blue Book dice «BALLOON».",
+  "summary_en": "On 7 January 1948, the tower at Godman Field (Fort Knox, Kentucky) and residents of several towns reported a large, bright object, and four Air National Guard F-51 fighters were diverted to investigate. Captain Thomas Mantell kept climbing after another pilot, at 22,000 feet, turned back for lack of oxygen, and his plane crashed near Franklin; the file attributes the crash to lack of oxygen. It was the first documented death of a U.S. serviceman chasing an unidentified object. That afternoon an astronomer followed a balloon at about 25,000 feet through a telescope, and the Blue Book record card reads “BALLOON.”",
   "patterns": [
     "8c"
   ],
@@ -65,7 +65,7 @@
     "license": "Dominio público · obra del Gobierno de EE. UU.",
     "href": "https://commons.wikimedia.org/wiki/File:Kentucky_National_Guard_portrait_of_Captain_Thomas_F._Mantell_Jr.jpg"
   },
-  "name_en": "Mantell crash",
+  "name_en": "Mantell incident · a fighter pilot dies chasing a bright object",
   "posterior": {
     "mundano_natural": 0.14,
     "humana_clasificada": 0.62,

@@ -1,8 +1,8 @@
 {
   "id": "rex-heflin-1965",
   "num": 250,
-  "name": "Rex Heflin · Santa Ana",
-  "name_en": "Rex Heflin · Santa Ana",
+  "name": "Rex Heflin · un inspector de tráfico fotografía un objeto",
+  "name_en": "Rex Heflin · a traffic investigator photographs an object",
   "year_start": 1965,
   "country": "US",
   "country_name": "Estados Unidos",
@@ -17,8 +17,8 @@
   "mundanoType": "fraude",
   "epistemicStatus": "documented",
   "probability": 49,
-  "summary": "El 3 de agosto de 1965, hacia el mediodía, el inspector de tráfico del Departamento de Carreteras del Condado de Orange Rex Heflin tomó tres fotografías Polaroid de un objeto con forma de sombrero sobre Myford Road, en Santa Ana (California), y después una cuarta de un anillo de humo; la radio de su furgoneta se había cortado poco antes. El 22 de septiembre, uno o dos hombres que decían ser de NORAD se llevaron los tres originales, que nunca aparecieron. La Fuerza Aérea habló de fraude fotográfico, el NICAP lo negó, y el Comité Condon reprodujo las tres primeras fotos con una maqueta colgada de un hilo y juzgó la evidencia no concluyente e internamente inconsistente.",
-  "summary_en": "On 3 August 1965, around midday, Orange County Road Department traffic investigator Rex Heflin took three Polaroid photographs of a hat-shaped object over Myford Road in Santa Ana (California), and later a fourth of a smoke ring; his van's radio had cut out shortly before. On 22 September, one or two men claiming to be from NORAD took the three originals, which never resurfaced. The Air Force spoke of a photographic hoax, NICAP denied it, and the Condon Committee reproduced the first three photos with a model hung from a thread and found the evidence inconclusive and internally inconsistent.",
+  "summary": "El 3 de agosto de 1965, hacia el mediodía, Rex Heflin, inspector de tráfico del condado de Orange, tomó tres fotografías Polaroid de un objeto con forma de sombrero sobre Myford Road, en Santa Ana (California), y después una cuarta de un anillo de humo; la radio de su furgoneta se había cortado poco antes. El 22 de septiembre, uno o dos hombres que decían ser del mando de defensa aérea (NORAD) se llevaron los originales, que nunca aparecieron. La Fuerza Aérea habló de fraude y el grupo civil NICAP lo negó; el Comité Condon reprodujo las fotos con una maqueta colgada de un hilo y juzgó la evidencia no concluyente e internamente inconsistente.",
+  "summary_en": "Around midday on August 3, 1965, Orange County traffic investigator Rex Heflin took three Polaroid photographs of a hat-shaped object over Myford Road in Santa Ana, California, and then a fourth of a smoke ring; the radio in his van had cut out shortly before. On September 22, one or two men claiming to be from the air defense command (NORAD) took the originals, which never resurfaced. The Air Force called it a hoax and the civilian group NICAP disputed that; the Condon Committee reproduced the photos with a model hung from a thread and found the evidence inconclusive and internally inconsistent.",
   "patterns": [
     "8k",
     "8m"

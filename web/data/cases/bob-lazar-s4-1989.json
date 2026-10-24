@@ -1,8 +1,8 @@
 {
   "id": "bob-lazar-s4-1989",
   "num": 243,
-  "name": "Bob Lazar · S-4 / Área 51",
-  "name_en": "Bob Lazar · S-4 / Area 51",
+  "name": "Bob Lazar · dice que estudió platillos volantes en el Área 51",
+  "name_en": "Bob Lazar · says he studied flying saucers at Area 51",
   "year_start": 1989,
   "country": "US",
   "country_name": "Estados Unidos",
@@ -17,8 +17,8 @@
   "mundanoType": "fraude",
   "epistemicStatus": "documented",
   "probability": 35,
-  "summary": "En 1989, Bob Lazar declaró ante el periodista George Knapp (al principio con el rostro oculto) haber trabajado en S-4, una instalación cerca de Groom Lake (Área 51), donde dijo haber visto nueve platillos volantes intactos de origen extraterrestre y haber sido contratado para hacer ingeniería inversa de su propulsión, alimentada por el 'elemento 115'. Sus credenciales académicas y laborales nunca pudieron verificarse.",
-  "summary_en": "In 1989, Bob Lazar told journalist George Knapp (initially with his face hidden) that he had worked at S-4, a facility near Groom Lake (Area 51), where he said he saw nine intact flying saucers of extraterrestrial origin and was hired to reverse-engineer their propulsion, powered by 'element 115'. His academic and employment credentials could never be verified.",
+  "summary": "En 1989, Bob Lazar contó en la televisión de Las Vegas al periodista George Knapp, al principio con el rostro oculto, que había trabajado en S-4, una instalación al sur de Groom Lake (Área 51, Nevada), donde dijo haber visto nueve platillos volantes intactos de origen extraterrestre y haber estudiado su propulsión, alimentada por el «elemento 115». Nunca se verificaron sus estudios en el MIT ni su empleo en Los Álamos, aunque su nombre figuraba en una guía telefónica del laboratorio de 1982. El elemento 115 se sintetizó en 2003, pero es inestable y no tiene las propiedades que Lazar le atribuía.",
+  "summary_en": "In 1989 Bob Lazar told Las Vegas television journalist George Knapp, at first with his face hidden, that he had worked at S-4, a facility south of Groom Lake (Area 51, Nevada), where he said he saw nine intact flying saucers of extraterrestrial origin and studied their propulsion, powered by “element 115.” His studies at MIT and his employment at Los Alamos were never verified, although his name appeared in a 1982 laboratory phone directory. Element 115 was synthesized in 2003, but it is unstable and has none of the properties Lazar claimed for it.",
   "patterns": [
     "8r"
   ],

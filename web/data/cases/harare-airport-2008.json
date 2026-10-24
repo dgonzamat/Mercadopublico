@@ -4,8 +4,8 @@
   "pursueReleases": [
     3
   ],
-  "name": "Aeropuerto de Harare · disco con luces rotatorias sobre el aeropuerto (Zimbabue, 2008)",
-  "name_en": "Harare Airport · disc with rotating lights over the airport (Zimbabwe, 2008)",
+  "name": "Harare · un disco con luces giratorias sobre el aeropuerto",
+  "name_en": "Harare · a disc with rotating lights over the airport",
   "year_start": 2008,
   "country": "ZW",
   "country_name": "Zimbabwe",
@@ -35,8 +35,8 @@
     "nohumano_abierto": 0.15,
     "indet": 0.45
   },
-  "summary": "En la tarde del 2 de julio de 2008, un objeto no identificado quedó suspendido «a gran altitud» sobre el Aeropuerto Internacional de Harare (Zimbabue), observado «posiblemente» por radar y por medios ópticos: un disco de centro hueco con luces rotatorias debajo, del que salieron «haces», que cambió de color y ascendió rápido. Lo registra un informe de la CIA del 3 de julio (inteligencia «no evaluada definitivamente»), desclasificado en 2026 en la tercera entrega de PURSUE. No es un análisis de la CIA: recoge el debate entre un dispositivo de reconocimiento extranjero y un origen extraterrestre. No hay datos de radar, fotos ni corroboración.",
-  "summary_en": "On the afternoon of July 2, 2008, an unidentified object hovered \"at high altitude\" over Harare International Airport (Zimbabwe), observed \"possibly\" by radar and optical means: a disc with a hollow center and rotating lights underneath, from which \"beams\" emanated, which shifted colors and quickly ascended. It is recorded in a CIA report of July 3 (\"not finally evaluated intelligence\"), declassified in 2026 in the third PURSUE release. It is not a CIA analysis: it records the debate between a foreign reconnaissance device and an extraterrestrial origin. There is no radar data, photo or corroboration.",
+  "summary": "En la tarde del 2 de julio de 2008, un objeto quedó suspendido «a gran altitud» sobre el aeropuerto internacional de Harare (Zimbabue), observado «posiblemente» por radar y por medios ópticos: un disco de centro hueco con luces giratorias debajo, del que salieron «haces», que cambió de color y subió deprisa. Lo recoge un informe de información de la CIA del 3 de julio, de inteligencia «no evaluada definitivamente», publicado en 2026. No es un análisis de la CIA: transmite el debate de personas con el nombre tachado sobre si era un aparato de reconocimiento extranjero o algo extraterrestre. No hay datos de radar, fotos ni corroboración.",
+  "summary_en": "On the afternoon of July 2, 2008, an object hovered “at high altitude” over Harare International Airport (Zimbabwe), observed “possibly” by radar and by optical means: a disc with a hollow center and rotating lights underneath, which gave off “beams,” changed color and climbed fast. It is recorded in a CIA information report of July 3, “not finally evaluated intelligence,” made public in 2026. It is not a CIA analysis: it relays a debate among people whose names are redacted over whether it was a foreign reconnaissance device or of extraterrestrial origin. There is no radar data, photo or corroboration.",
   "patterns": [
     "8e",
     "8s"

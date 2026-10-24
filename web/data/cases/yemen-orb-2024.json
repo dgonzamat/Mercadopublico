@@ -1,8 +1,8 @@
 {
   "id": "yemen-orb-2024",
   "num": 78,
-  "name": "Yemen — Orbe / Misil Hellfire (MQ-9, 2024)",
-  "name_en": "Yemen — Orb / Hellfire Missile Strike (MQ-9, 2024)",
+  "name": "Yemen · un dron filma un misil que alcanza una esfera",
+  "name_en": "Yemen · drone films a missile striking an orb",
   "year_start": 2024,
   "country": "YE",
   "country_name": "Yemen",
@@ -10,14 +10,14 @@
   "location": {
     "lat": 14.8,
     "lng": 42,
-    "place": "Mar Rojo, frente a costa occidental de Yemen",
+    "place": "Mar Rojo, frente a la costa occidental de Yemen",
     "place_en": "Red Sea, off the western coast of Yemen"
   },
   "tier": "B",
   "mundanoType": "misid",
   "probability": 48,
-  "summary": "Según el congresista Eric Burlison, un MQ-9 Reaper de EE. UU. filmó frente a la costa de Yemen, el 30 de octubre de 2024, cómo un misil AGM-114 Hellfire lanzado por otro MQ-9 golpeaba un orbe no identificado, desprendía restos y se desviaba sin detonar, mientras el objeto seguía su camino. Burlison mostró el vídeo en una audiencia de la Cámara (9 sep 2025) como recibido de un denunciante, con una revisión independiente en curso; sería el primer caso conocido de un Reaper atacando un blanco aéreo en operaciones.",
-  "summary_en": "According to Congressman Eric Burlison, a U.S. MQ-9 Reaper filmed off the coast of Yemen, on 30 October 2024, a Hellfire AGM-114 missile fired by another MQ-9 striking an unidentified orb, knocking off debris and deflecting away without detonating, while the object kept going. Burlison showed the video at a House hearing (9 Sep 2025) as received from a whistleblower, with an independent review ongoing; it would be the first known instance of a Reaper engaging an aerial target in operations.",
+  "summary": "Según el congresista Eric Burlison, un dron estadounidense MQ-9 Reaper filmó frente a la costa de Yemen, el 30 de octubre de 2024, cómo un misil Hellfire lanzado por otro dron del mismo modelo golpeaba un orbe no identificado, desprendía restos y se desviaba sin detonar, mientras el objeto seguía su camino. Burlison mostró el vídeo en una audiencia de la Cámara de Representantes el 9 de septiembre de 2025, como recibido de un denunciante y con una revisión independiente en curso; sería el primer caso conocido de un Reaper atacando un objeto en vuelo durante una operación.",
+  "summary_en": "According to Congressman Eric Burlison, a U.S. MQ-9 Reaper drone filmed off the coast of Yemen, on 30 October 2024, a Hellfire missile fired by a second drone of the same type striking an unidentified orb, knocking off debris and glancing away without detonating, while the object kept going. Burlison showed the video at a House hearing on 9 September 2025, saying it came from a whistleblower and that an independent review was under way; it would be the first known instance of a Reaper engaging an airborne object during an operation.",
   "patterns": [
     "8r",
     "8a"

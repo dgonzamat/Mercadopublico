@@ -1,8 +1,8 @@
 {
   "id": "algeria-min-defense-1975",
   "num": 69,
-  "name": "Démarche Min. Defensa Argelia",
-  "name_en": "Algeria Ministry of Defense démarche",
+  "name": "Argelia · Defensa pregunta a EE. UU. por objetos vistos en radar",
+  "name_en": "Algeria · Defense Ministry asks the U.S. about radar sightings",
   "year_start": 1975,
   "country": "DZ",
   "country_name": "Argelia",
@@ -27,7 +27,7 @@
     "indet": 0.22
   },
   "summary": "El 7 de marzo de 1975, el coronel Abdelhamid Latreche, secretario general del Ministerio de Defensa Nacional de Argelia, citó al jefe de la misión estadounidense en Argel para preguntarle si Estados Unidos podía explicar unas «máquinas» vistas cinco veces sobre Argelia desde enero, la última la víspera, primero por radar y luego a simple vista. Washington respondió que ni la NASA ni el Pentágono sabían nada.",
-  "summary_en": "On 7 March 1975, Colonel Abdelhamid Latreche, Secretary General of Algeria's Ministry of National Defence, called in the head of the U.S. mission in Algiers to ask whether the United States could explain 'machines' seen five times over Algeria since January, the latest the night before, first on radar and then visually. Washington replied that neither NASA nor the Pentagon knew anything.",
+  "summary_en": "On 7 March 1975, Colonel Abdelhamid Latreche, Secretary General of Algeria's Ministry of National Defence, called in the head of the U.S. mission in Algiers and asked whether the United States could explain the “machines” seen over Algeria five times since January, most recently the night before, first on radar and then with the naked eye. Washington replied that neither NASA nor the Pentagon knew anything about them.",
   "patterns": [
     "8e",
     "8m"

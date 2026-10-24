@@ -1,8 +1,8 @@
 {
   "id": "nash-fortenberry-1952",
   "num": 194,
-  "name": "Nash-Fortenberry · dos pilotos de Pan Am (Virginia)",
-  "name_en": "Nash-Fortenberry · two Pan Am pilots (Virginia)",
+  "name": "Nash-Fortenberry · dos pilotos de línea y unos discos rojizos",
+  "name_en": "Nash-Fortenberry · two airline pilots and glowing red discs",
   "year_start": 1952,
   "country": "US",
   "country_name": "Estados Unidos",
@@ -10,8 +10,8 @@
   "location": {
     "lat": 36.8508,
     "lng": -76.2859,
-    "place": "Cerca de Norfolk, Virginia",
-    "place_en": "Near Norfolk, Virginia"
+    "place": "Bahía de Chesapeake, cerca de Norfolk, Virginia",
+    "place_en": "Chesapeake Bay, near Norfolk, Virginia"
   },
   "tier": "A",
   "epistemicStatus": "documented",
@@ -26,8 +26,8 @@
     "source_en": "Tulien, T., “Revisiting One of the Classics: The 1952 Nash/Fortenberry Sighting” (NICAP), citing Menzel, The World of Flying Saucers (1963)",
     "url": "http://www.nicap.org/reports/nash-tulien.htm"
   },
-  "summary": "El 14 de julio de 1952, los pilotos de Pan American William Nash y William Fortenberry observaron desde su DC-4, cerca de Norfolk (Virginia), seis discos de brillo rojizo volando en formación por debajo de su avión; los discos ejecutaron una inversión abrupta, se les unieron otros dos y partieron a gran velocidad. Project Blue Book lo archivó como «Unknown» (no identificado).",
-  "summary_en": "On July 14, 1952, Pan American pilots William Nash and William Fortenberry observed from their DC-4, near Norfolk, Virginia, six reddish-glowing discs flying in formation below their aircraft; the discs executed an abrupt flip, were joined by two more and departed at high speed. Project Blue Book filed it as \"Unknown\".",
+  "summary": "La noche del 14 de julio de 1952, los pilotos de Pan American William Nash y William Fortenberry vieron desde su DC-4, sobre la bahía de Chesapeake cerca de Norfolk (Virginia), seis discos de brillo rojo anaranjado que volaban en línea por debajo del avión; se voltearon casi en el acto, se les unieron otros dos y se alejaron a gran velocidad. Estuvieron a la vista entre cinco y diez segundos. Blue Book, el programa de la Fuerza Aérea, descartó que fueran cinco reactores cercanos y lo archivó como no identificado. El astrofísico Donald Menzel lo atribuyó a un reflejo y luego a un reflector visto a través de capas de calima.",
+  "summary_en": "On the night of July 14, 1952, Pan American pilots William Nash and William Fortenberry saw from their DC-4, over Chesapeake Bay near Norfolk, Virginia, six discs glowing red-orange and flying in a line below the plane; they flipped almost instantly, were joined by two more and sped away. They were in view for five to ten seconds. Blue Book, the Air Force program, ruled out five jets flying nearby and filed it as unidentified. Astrophysicist Donald Menzel put it down to a reflection and later to a searchlight seen through layers of haze.",
   "patterns": [
     "8h",
     "8a"

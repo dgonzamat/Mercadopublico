@@ -5,8 +5,8 @@
     1,
     3
   ],
-  "name": "Orbe madre · Oeste de EE.UU.",
-  "name_en": "Mother Orb · Western U.S.",
+  "name": "Oeste de EE. UU. · seis agentes ven un orbe que suelta otros",
+  "name_en": "Western U.S. · six agents see an orb release smaller orbs",
   "year_start": 2023,
   "country": "US",
   "country_name": "Estados Unidos",
@@ -14,15 +14,15 @@
   "location": {
     "lat": 39,
     "lng": -116,
-    "place": "Sitio de seguridad nacional sensible, oeste de EE.UU. (ubicación no revelada)",
-    "place_en": "Sensitive national security site, western U.S. (undisclosed location)"
+    "place": "Cerca de un sitio de seguridad nacional, oeste de EE. UU.",
+    "place_en": "Near a national security site, western U.S."
   },
   "tier": "A",
   "mundanoType": "misid",
   "epistemicStatus": "documented",
   "probability": 39,
-  "summary": "Durante dos días de octubre de 2023, seis agentes federales (tres equipos de dos) observaron cerca de un sitio de seguridad nacional sensible en el oeste de EE.UU. un orbe naranja 'madre' que aparecía 1-2 segundos y liberaba racimos de 2-4 orbes rojos. AARO publicó el informe el 5 de junio de 2026 (director Jon Kosloski): ~60% se correlaciona con bengalas IR y radar; ~40% permanece sin explicar.",
-  "summary_en": "Over two days in October 2023, six federal agents (three two-person teams) observed near a sensitive national security site in the western U.S. an orange 'mother' orb that appeared for 1-2 seconds and released clusters of 2-4 red orbs. AARO published the report on 5 June 2026 (director Jon Kosloski): ~60% correlates with IR flares and radar; ~40% remains unexplained.",
+  "summary": "Durante dos días de octubre de 2023, seis agentes federales, en tres equipos de dos, vieron cerca de un sitio de seguridad nacional del oeste de EE. UU. un orbe naranja que aparecía uno o dos segundos y soltaba grupos de dos a cuatro orbes rojos; en una ocasión, uno de estos quedó inmóvil sobre una cresta durante horas. No grabaron vídeo ni recogieron datos. En su informe del 5 de junio de 2026, la oficina del Pentágono que investiga estos fenómenos (AARO) atribuyó cerca del 60 % de lo observado a bengalas lanzadas por aviones militares en un ejercicio, aunque los agentes dijeron que no lo parecían, y dejó sin resolver el 40 % restante.",
+  "summary_en": "Over two days in October 2023, six federal agents, in three two-person teams, watched an orange orb near a national security site in the western U.S. appear for one or two seconds and release clusters of two to four red orbs; on one occasion a red orb hung motionless over a ridge for hours. They recorded no video or data. In its June 5, 2026 report, the Pentagon office that investigates these phenomena (AARO) attributed about 60% of what was seen to flares dropped by military aircraft during an exercise, although the agents said it did not look like flares, and left the remaining 40% unresolved.",
   "documents": [
     {
       "role": "documento",

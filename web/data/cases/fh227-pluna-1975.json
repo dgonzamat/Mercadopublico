@@ -1,8 +1,8 @@
 {
   "id": "fh227-pluna-1975",
   "num": 98,
-  "name": "FH-227 PLUNA · luz que escoltó al avión",
-  "name_en": "FH-227 PLUNA · light that escorted the plane",
+  "name": "Norte de Uruguay · un piloto de PLUNA ve una luz que lo acompaña",
+  "name_en": "Northern Uruguay · a PLUNA pilot sees a light flying alongside",
   "year_start": 1975,
   "country": "UY",
   "country_name": "Uruguay",
@@ -10,8 +10,8 @@
   "location": {
     "lat": -30.4,
     "lng": -56.5,
-    "place": "Norte de Uruguay (ruta Asunción–Montevideo, hacia Artigas)",
-    "place_en": "Northern Uruguay (Asunción–Montevideo route, toward Artigas)"
+    "place": "Norte de Uruguay (ruta Asunción–Montevideo)",
+    "place_en": "Northern Uruguay (Asunción–Montevideo route)"
   },
   "tier": "B",
   "mundanoType": "misid",

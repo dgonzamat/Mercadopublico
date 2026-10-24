@@ -1,8 +1,8 @@
 {
   "id": "jellyfish-iraq-2018",
   "num": 230,
-  "name": "Vídeo 'medusa' · Iraq",
-  "name_en": "'Jellyfish' Video · Iraq",
+  "name": "Irak · un objeto con forma de medusa en un vídeo infrarrojo",
+  "name_en": "Iraq · a jellyfish-shaped object in an infrared video",
   "year_start": 2018,
   "country": "IQ",
   "country_name": "Irak",
@@ -17,8 +17,8 @@
   "mundanoType": "misid",
   "epistemicStatus": "documented",
   "probability": 43,
-  "summary": "En 2018, un sensor infrarrojo de una base militar conjunta en Irak captó un objeto con forma de 'medusa' que sobrevoló la instalación, descendió sobre el agua y, según el periodista Jeremy Corbell que filtró el vídeo en enero de 2024, se sumergió antes de volver a emerger y partir. El Pentágono no confirmó ni desmintió la autenticidad del material.",
-  "summary_en": "In 2018, an infrared sensor at a joint military base in Iraq captured a 'jellyfish'-shaped object that overflew the installation, descended over water and, according to journalist Jeremy Corbell who leaked the video in January 2024, submerged before re-emerging and departing. The Pentagon neither confirmed nor denied the footage's authenticity.",
+  "summary": "En enero de 2024, el periodista Jeremy Corbell difundió un vídeo infrarrojo en blanco y negro que, según él, se grabó en 2018 en una base militar conjunta de EE. UU. en Irak. Muestra una forma irregular con apéndices colgantes, como una medusa, que se desplaza despacio sobre la instalación. Corbell asegura que la grabación completa dura unos 30 minutos y que en ella el objeto se sumerge en el agua y emerge 17 minutos después, pero esa grabación no se ha publicado. Un militar de inteligencia destinado en la base dijo haberla visto y que se tomó desde un globo de vigilancia. El Pentágono no confirmó ni desmintió su autenticidad.",
+  "summary_en": "In January 2024 journalist Jeremy Corbell released a black-and-white infrared video that, he said, was recorded in 2018 at a joint U.S. military base in Iraq. It shows an irregular shape with dangling appendages, like a jellyfish, drifting slowly over the installation. Corbell says the full recording runs about 30 minutes and shows the object plunging into water and resurfacing 17 minutes later, but that recording has not been released. An intelligence controller stationed at the base said he had seen it and that it was shot from a surveillance balloon. The Pentagon neither confirmed nor denied its authenticity.",
   "patterns": [
     "8r",
     "8h"

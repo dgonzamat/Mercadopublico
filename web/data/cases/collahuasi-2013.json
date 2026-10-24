@@ -1,8 +1,8 @@
 {
   "id": "collahuasi-2013",
   "num": 174,
-  "name": "Collahuasi (CEFAA)",
-  "name_en": "Collahuasi (CEFAA)",
+  "name": "Collahuasi · trabajadores de una mina fotografían un disco",
+  "name_en": "Collahuasi · mine workers photograph a disc",
   "year_start": 2013,
   "country": "CL",
   "country_name": "Chile",
@@ -10,13 +10,13 @@
   "location": {
     "lat": -20.98,
     "lng": -68.66,
-    "place": "Mina Collahuasi, Tarapacá",
-    "place_en": "Collahuasi mine, Tarapacá"
+    "place": "Mina Collahuasi, Tarapacá (Chile)",
+    "place_en": "Collahuasi mine, Tarapacá (Chile)"
   },
   "tier": "A",
   "probability": 39,
-  "summary": "En abril de 2013, trabajadores de la minera Doña Inés de Collahuasi (a más de 4.300 m en el altiplano de Tarapacá) fotografiaron un objeto con forma de disco que permaneció entre una y dos horas cerca de la faena antes de alejarse. La CEFAA, el comité oficial de la DGAC chilena bajo el general (r) Ricardo Bermúdez, recibió dos fotos en febrero de 2014, descartó nubes, drones y globos, y su analista de imagen lo calificó como un objeto o fenómeno de gran interés, no identificado. El propio Bermúdez pidió cautela: era la conclusión de un solo analista y los testigos no cooperaron.",
-  "summary_en": "In April 2013, workers at the Doña Inés de Collahuasi mine (over 4,300 m up on the Tarapacá altiplano) photographed a disc-shaped object that stayed near the site for one to two hours before moving off. CEFAA, the official committee of Chile's DGAC under General (ret.) Ricardo Bermúdez, received two photos in February 2014, ruled out clouds, drones and balloons, and its image analyst rated it an object or phenomenon of great interest, unidentified. Bermúdez himself urged caution: it was a single analyst's conclusion and the witnesses did not cooperate.",
+  "summary": "A mediados de abril de 2013, trabajadores de la mina Doña Inés de Collahuasi, a más de 4.300 metros en el altiplano de Tarapacá (Chile), fotografiaron un objeto con forma de disco que estuvo entre una y dos horas cerca de la mina antes de alejarse. El comité oficial chileno de fenómenos aéreos anómalos (CEFAA), dependiente de la aviación civil, recibió dos fotos en febrero de 2014, descartó nubes, drones y globos, y su analista de imagen lo calificó de objeto o fenómeno de gran interés, no identificado. Su director, el general (r) Ricardo Bermúdez, pidió cautela: era la conclusión de un solo analista y los testigos no cooperaron.",
+  "summary_en": "In mid-April 2013, workers at the Doña Inés de Collahuasi mine, more than 4,300 meters up on the Tarapacá altiplano in Chile, photographed a disc-shaped object that stayed near the mine for one to two hours before moving off. CEFAA, Chile's official committee on anomalous aerial phenomena under the civil aviation authority, received two photos in February 2014, ruled out clouds, drones and balloons, and its image analyst rated it an object or phenomenon of great interest, unidentified. Its director, retired General Ricardo Bermúdez, urged caution: it was a single analyst's conclusion, and the witnesses did not cooperate.",
   "patterns": [
     "8e",
     "8g"

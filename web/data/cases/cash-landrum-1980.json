@@ -1,7 +1,8 @@
 {
   "id": "cash-landrum-1980",
   "num": 151,
-  "name": "Cash-Landrum",
+  "name": "Cash-Landrum · un objeto incandescente seguido por helicópteros",
+  "name_en": "Cash-Landrum · a glowing object trailed by helicopters",
   "year_start": 1980,
   "country": "US",
   "country_name": "Estados Unidos",
@@ -9,8 +10,8 @@
   "location": {
     "lat": 30.1,
     "lng": -94.7,
-    "place": "Huffman, Texas (cerca Houston)",
-    "place_en": "Huffman, Texas (near Houston)"
+    "place": "Cerca de Huffman, al noreste de Houston, Texas",
+    "place_en": "Near Huffman, northeast of Houston, Texas"
   },
   "tier": "B",
   "epistemicStatus": "documented",

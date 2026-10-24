@@ -1,7 +1,8 @@
 {
   "id": "rb47-1957",
   "num": 52,
-  "name": "RB-47 ECM Encounter",
+  "name": "Sur de EE. UU. · un avión espía capta una señal y ve una luz",
+  "name_en": "Southern U.S. · a spy plane picks up a signal and sees a light",
   "year_start": 1957,
   "country": "US",
   "country_name": "Estados Unidos",
@@ -9,15 +10,15 @@
   "location": {
     "lat": 33,
     "lng": -91,
-    "place": "Misisipi–Luisiana–Texas–Oklahoma",
-    "place_en": "Mississippi–Louisiana–Texas–Oklahoma"
+    "place": "Del Misisipi a Oklahoma (EE. UU.)",
+    "place_en": "Mississippi to Oklahoma, USA"
   },
   "tier": "S",
   "mundanoType": "misid",
   "epistemicStatus": "documented",
   "probability": 48,
-  "summary": "En la madrugada del 17 de julio de 1957, un RB-47H de reconocimiento electrónico de la USAF captó con uno de sus receptores ELINT una señal de radar en banda S cuyos rumbos, según el informe del ala, coincidieron varias veces con una luz que veían los pilotos; entre Luisiana y Texas el radar de tierra de Duncanville la siguió unos minutos. La Defensa Aérea lo dejó como desconocido y Blue Book lo cerró como un avión de línea; el Informe Condon, sin el expediente, lo consideró no identificado, y Philip Klass atribuyó las señales a radares de tierra.",
-  "summary_en": "In the early hours of 17 July 1957, a USAF RB-47H electronic reconnaissance aircraft picked up on one of its ELINT receivers an S-band radar signal whose bearings, according to the wing report, matched several times a light the pilots could see; between Louisiana and Texas the Duncanville ground radar tracked it for a few minutes. Air Defense Command carried it as unknown and Blue Book closed it as an airliner; the Condon Report, lacking the file, deemed it unidentified, and Philip Klass attributed the signals to ground radars.",
+  "summary": "En la madrugada del 17 de julio de 1957, un avión RB-47H de reconocimiento electrónico de la USAF captó con uno de sus receptores una señal de radar cuyo rumbo, según el informe del ala, coincidió varias veces con el de una luz que veían los pilotos; entre Luisiana y Texas, el radar de tierra de Duncanville la siguió unos minutos. La Defensa Aérea lo dejó como desconocido y Blue Book lo cerró como un avión de línea; el informe Condon, que no tuvo el expediente, lo consideró no identificado, y Philip Klass atribuyó las señales a radares de tierra.",
+  "summary_en": "In the early hours of 17 July 1957, a USAF RB-47H electronic reconnaissance plane picked up on one of its receivers a radar signal whose bearing, according to the wing report, matched several times that of a light the pilots could see; between Louisiana and Texas, the Duncanville ground radar tracked it for a few minutes. Air Defense Command carried it as unknown and Blue Book closed it as an airliner; the Condon Report, which never had the file, deemed it unidentified, and Philip Klass attributed the signals to ground radars.",
   "patterns": [
     "8e",
     "8k"

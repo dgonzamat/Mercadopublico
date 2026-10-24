@@ -1,7 +1,7 @@
 {
   "id": "belgian-wave-1989",
   "num": 27,
-  "name": "Oleada belga (F-16)",
+  "name": "Oleada belga · dos F-16 persiguen lo que mostraban los radares",
   "year_start": 1989,
   "year_end": 1990,
   "country": "BE",
@@ -17,8 +17,8 @@
   "mundanoType": "misid",
   "epistemicStatus": "documented",
   "probability": 45,
-  "summary": "Durante la oleada belga de 1989–1990, la noche del 30 al 31 de marzo de 1990 dos F-16 despegaron tras ecos en dos radares militares de tierra y el aviso de gendarmes; en nueve intentos de interceptación lograron breves enganches de radar con cambios de velocidad extremos, sin ver nunca nada. El informe de la Fuerza Aérea no halló explicación; el físico Auguste Meessen atribuyó después esos enganches a masas de aire húmedo e interferencias Doppler, pero concluyó que una traza registrada por los dos radares de tierra solo se explica como un ovni («trace non ambiguë d'un ovni»), y halló otra en el radar civil el 18 de marzo de 1990.",
-  "summary_en": "During the 1989–1990 Belgian wave, on the night of 30–31 March 1990 two F-16s were scrambled after echoes on two military ground radars and a gendarmerie report; across nine interception attempts they achieved brief radar lock-ons with extreme speed changes, but never saw anything. The Air Force report found no explanation; physicist Auguste Meessen later attributed those lock-ons to humid air masses and Doppler interference, yet concluded that one track recorded by both ground radars can only be explained as a UFO ('trace non ambiguë d'un ovni'), and found another on the civil radar on 18 March 1990.",
+  "summary": "La noche del 30 al 31 de marzo de 1990, en plena oleada de avistamientos en Bélgica, dos cazas F-16 despegaron porque dos radares militares de tierra mostraban algo y unos gendarmes habían dado aviso. En nueve intentos, sus radares captaron algo durante segundos, con cambios de velocidad extremos, pero los pilotos nunca vieron nada. El informe de la Fuerza Aérea no halló explicación. El físico Auguste Meessen atribuyó después esas detecciones de los cazas a masas de aire húmedo e interferencias, pero concluyó que una traza registrada por los dos radares de tierra solo se explica como un ovni, y halló otra en el radar civil el 18 de marzo.",
+  "summary_en": "On the night of 30–31 March 1990, at the height of a wave of sightings in Belgium, two F-16 fighters were scrambled because two military ground radars were showing something and gendarmes had raised the alarm. Across nine attempts, their radars caught something for a few seconds, with extreme changes of speed, but the pilots never saw anything. The Air Force report found no explanation. Physicist Auguste Meessen later put those detections down to humid air masses and interference, yet concluded that one track recorded by both ground radars can only be explained as a UFO, and found another on the civil radar on 18 March.",
   "patterns": [
     "8b",
     "8e",
@@ -68,7 +68,7 @@
       "note_en": "Later testimony by the officer who led the follow-up (secondary)"
     }
   ],
-  "name_en": "Belgian Wave (F-16)",
+  "name_en": "Belgian wave · two F-16s chase what ground radars were showing",
   "posterior": {
     "mundano_natural": 0.4,
     "humana_clasificada": 0.1,

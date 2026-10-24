@@ -4,8 +4,8 @@
   "pursueReleases": [
     1
   ],
-  "name": "Sitio de prueba LiDAR — objeto ovaloide (PURSUE, 2023)",
-  "name_en": "LiDAR Test Site — Ovaloid Object (PURSUE, 2023)",
+  "name": "Campo de pruebas militar · dos contratistas ven algo color bronce",
+  "name_en": "Military test range · two contractors see a bronze-colored object",
   "year_start": 2023,
   "country": "US",
   "country_name": "Estados Unidos",
@@ -13,14 +13,14 @@
   "location": {
     "lat": 39.5,
     "lng": -98.35,
-    "place": "Sitio de prueba militar — ubicación clasificada (EE.UU.)",
-    "place_en": "Military test site — classified location (U.S.)"
+    "place": "Sitio de pruebas militar en EE. UU. (ubicación clasificada)",
+    "place_en": "Military test site in the U.S. (classified location)"
   },
   "tier": "A",
   "mundanoType": "sin_propuesta",
   "probability": 40,
-  "summary": "Septiembre 2023, sitio de prueba militar de EE.UU. con espacio aéreo cerrado por ensayos LiDAR: una contratista con 15 años en instalaciones militares (que ella misma cerró el espacio aéreo ese día), un contratista con experiencia como piloto de drones observan un objeto ovaloide metálico color bronce (~40–60 m) que se materializa desde una luz brillante y desaparece al instante. Gráfico renderizado por el FBI y boceto compuesto; ubicación oficialmente redactada. Divulgado en el release oficial PURSUE (war.gov/ufo, may 2026).",
-  "summary_en": "September 2023, a U.S. military test site with airspace closed for LiDAR trials: a contractor with 15 years on military installations (who personally closed the airspace that day), a contractor with experience as a drone pilot observe a bronze metallic ovaloid object (~40–60 m) that materializes from a bright light and vanishes instantly. FBI-rendered graphic and composite sketch; location officially redacted. Disclosed in the official PURSUE release (war.gov/ufo, May 2026).",
+  "summary": "En septiembre de 2023, en un sitio de pruebas militar de EE. UU. con el espacio aéreo cerrado para unos ensayos con láser (LiDAR), una contratista con quince años en instalaciones militares, que ese día había cerrado ella misma el espacio aéreo, y un contratista con experiencia como piloto de drones vieron durante unos segundos un objeto metálico de color bronce, que luego desapareció. Según la descripción del gráfico que hizo el FBI, medía entre 40 y 60 metros y surgió de una luz brillante. La ubicación sigue clasificada, y el caso se publicó en la primera entrega de archivos del Gobierno de EE. UU., en mayo de 2026.",
+  "summary_en": "In September 2023, at a U.S. military test site whose airspace had been closed for laser (LiDAR) trials, a contractor with fifteen years on military installations, who had closed the airspace herself that day, and a contractor with experience as a drone pilot saw a bronze-colored metallic object for a few seconds before it vanished. According to the description of the graphic the FBI produced, it was 40 to 60 meters long and emerged from a bright light. The location remains classified, and the case was released in the U.S. government's first batch of files, in May 2026.",
   "primaryDocument": {
     "role": "prueba",
     "url": "/pursue/ovaloid-fbi-composite-sketch-2023.jpg",

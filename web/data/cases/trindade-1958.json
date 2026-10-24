@@ -1,7 +1,7 @@
 {
   "id": "trindade-1958",
   "num": 11,
-  "name": "Isla Trindade",
+  "name": "Isla Trindade · fotos de un objeto tomadas desde un buque",
   "year_start": 1958,
   "country": "BR",
   "country_name": "Brasil",
@@ -9,15 +9,15 @@
   "location": {
     "lat": -20.51,
     "lng": -29.32,
-    "place": "Ilha de Trindade",
-    "place_en": "Trindade Island"
+    "place": "Isla de Trindade, Brasil",
+    "place_en": "Trindade Island, Brazil"
   },
   "tier": "A",
   "mundanoType": "fraude",
   "epistemicStatus": "documented",
   "probability": 47,
-  "summary": "Decenas de personas a bordo del buque Almirante Saldanha dijeron ver un objeto con forma de Saturno frente a la Isla Trindade; las fotos de Almiro Baraúna se revelaron a bordo y se publicaron en la prensa de Río en febrero de 1958. Project Blue Book, con el análisis de la inteligencia naval estadounidense, las clasificó como fraude.",
-  "summary_en": "Dozens of people aboard the ship Almirante Saldanha said they saw a Saturn-shaped object off Trindade Island; Almiro Baraúna's photos were developed on board and they were published in the Rio press in February 1958. Project Blue Book, relying on US naval intelligence analysis, classified them as a hoax.",
+  "summary": "Cerca del mediodía del 16 de enero de 1958, decenas de personas en la cubierta del buque escuela Almirante Saldanha, de la Marina de Brasil, dijeron ver un objeto con forma de Saturno frente a la isla de Trindade, a unos 1.200 km de la costa. El fotógrafo civil Almiro Baraúna tomó seis fotos, que reveló a bordo solo, con un oficial esperando fuera, y la prensa de Río las publicó en febrero. La inteligencia naval de EE. UU. las juzgó un fraude sin una investigación detallada, y Project Blue Book las archivó como tal; la versión de decenas de testigos nunca quedó en un registro firmado.",
+  "summary_en": "Around midday on 16 January 1958, dozens of people on the deck of the Brazilian Navy training ship Almirante Saldanha said they saw a Saturn-shaped object off Trindade Island, some 1,200 km from the coast. Civilian photographer Almiro Baraúna took six photos, which he developed on board alone while an officer waited outside, and the Rio press published them in February. U.S. naval intelligence judged them a hoax without a detailed investigation, and Project Blue Book filed them as such; the account of dozens of witnesses was never set down in a signed record.",
   "patterns": [
     "8f"
   ],
@@ -61,7 +61,7 @@
       "note_en": "Published in O Globo"
     }
   ],
-  "name_en": "Trindade Island",
+  "name_en": "Trindade Island · photos of an object taken from a navy ship",
   "documents": [
     {
       "role": "documento",

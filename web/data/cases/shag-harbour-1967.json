@@ -1,7 +1,8 @@
 {
   "id": "shag-harbour-1967",
   "num": 55,
-  "name": "Shag Harbour",
+  "name": "Shag Harbour · testigos ven una hilera de luces bajar al mar",
+  "name_en": "Shag Harbour · witnesses see a row of lights drop to the sea",
   "year_start": 1967,
   "country": "CA",
   "country_name": "Canadá",
@@ -9,8 +10,8 @@
   "location": {
     "lat": 43.49,
     "lng": -65.69,
-    "place": "Shag Harbour, Nova Scotia",
-    "place_en": "Shag Harbour, Nova Scotia"
+    "place": "Shag Harbour, Nueva Escocia (Canadá)",
+    "place_en": "Shag Harbour, Nova Scotia, Canada"
   },
   "tier": "A",
   "mundanoType": "sin_propuesta",

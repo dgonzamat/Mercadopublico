@@ -1,8 +1,8 @@
 {
   "id": "mystery-drones-east-coast-2024",
   "num": 141,
-  "name": "Mystery Drones · costa este (New Jersey + NY + bases)",
-  "name_en": "Mystery Drones · East Coast (New Jersey + NY + bases)",
+  "name": "Nueva Jersey · oleada de avistamientos de drones en la costa este",
+  "name_en": "New Jersey · a wave of drone sightings on the East Coast",
   "year_start": 2024,
   "country": "US",
   "country_name": "Estados Unidos",
@@ -10,14 +10,14 @@
   "location": {
     "lat": 40.0583,
     "lng": -74.4057,
-    "place": "New Jersey + área de la costa este de EE.UU.",
-    "place_en": "New Jersey + U.S. East Coast area"
+    "place": "Nueva Jersey y costa este de EE. UU.",
+    "place_en": "New Jersey and the U.S. East Coast"
   },
   "tier": "B",
   "mundanoType": "misid",
   "probability": 25,
-  "summary": "En noviembre y diciembre de 2024 se reportó una ola de avistamientos de drones grandes y coordinados sobre New Jersey y la costa este de EE.UU., con sobrevuelos reportados cerca de Picatinny Arsenal, Naval Weapons Station Earle, los reactores de Salem y Hope Creek y la residencia del gobernador Phil Murphy; la Casa Blanca dijo que no había avistamientos confirmados en espacio aéreo restringido. La administración Biden dijo que no había nada anómalo ni amenaza extranjera, y la de Trump, el 28 de enero de 2025, que la FAA había autorizado los drones «para investigación y otras razones diversas». Varios legisladores cuestionaron la explicación.",
-  "summary_en": "Between November and December 2024 a wave of sightings of large, coordinated drones was reported over New Jersey and the U.S. East Coast, with reported overflights near Picatinny Arsenal, Naval Weapons Station Earle, the Salem and Hope Creek reactors and Governor Phil Murphy's residence; the White House said there were no confirmed sightings in restricted airspace. The Biden administration said there was nothing anomalous and no foreign threat, and the Trump administration, on January 28, 2025, that the drones had been authorized by the FAA 'for research and various other reasons'. Several lawmakers questioned the explanation.",
+  "summary": "En noviembre y diciembre de 2024 se registraron miles de avistamientos de drones grandes y coordinados sobre Nueva Jersey y la costa este de EE. UU., algunos cerca del arsenal de Picatinny, la estación naval Earle, los reactores de Salem y Hope Creek y la residencia del gobernador Phil Murphy. El gobierno de Biden dijo que muchos eran aviones tripulados, que ninguno se confirmó en espacio aéreo restringido y que no había nada anómalo ni amenaza extranjera. En enero de 2025, el de Trump dijo que la autoridad de aviación (FAA) los había autorizado «con fines de investigación y otras razones diversas». Varios legisladores lo cuestionaron.",
+  "summary_en": "In November and December 2024, thousands of sightings of large, coordinated drones were logged over New Jersey and the U.S. East Coast, some near Picatinny Arsenal, Naval Weapons Station Earle, the Salem and Hope Creek reactors and Governor Phil Murphy's home. The Biden administration said many were manned aircraft, that none was confirmed in restricted airspace and that there was nothing anomalous and no foreign threat. On January 28, 2025, the Trump administration said the FAA, the aviation authority, had authorized the drones “for research and various other reasons.” Several lawmakers questioned the explanation.",
   "patterns": [
     "8e",
     "8h",

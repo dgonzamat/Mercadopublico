@@ -1,8 +1,8 @@
 {
   "id": "aztec-1948",
   "num": 248,
-  "name": "Aztec · Nuevo México",
-  "name_en": "Aztec · New Mexico",
+  "name": "Aztec · el supuesto choque de un platillo con 16 cuerpos",
+  "name_en": "Aztec · the alleged crash of a saucer with 16 bodies",
   "year_start": 1948,
   "country": "US",
   "country_name": "Estados Unidos",
@@ -17,8 +17,8 @@
   "mundanoType": "fraude",
   "epistemicStatus": "documented",
   "probability": 12,
-  "summary": "El llamado 'otro Roswell': la afirmación de que en marzo de 1948 un platillo de 30 metros con 16 cuerpos humanoides se estrelló cerca de Aztec, Nuevo México, y fue recuperado por el ejército. Lo publicó el periodista Frank Scully en 'Behind the Flying Saucers' (1950). En 1952 el periodista J. P. Cahn lo destapó en la revista True como un fraude de dos estafadores, Silas Newton y Leo GeBauer, que fueron condenados en Denver en 1953 por estafa en una venta de aparatos para localizar petróleo.",
-  "summary_en": "The so-called 'other Roswell': the claim that in March 1948 a 99-foot saucer with 16 humanoid bodies crashed near Aztec, New Mexico, and was recovered by the military. Journalist Frank Scully published it in 'Behind the Flying Saucers' (1950). In 1952 journalist J. P. Cahn exposed it in True magazine as a hoax by two con men, Silas Newton and Leo GeBauer, who were convicted in Denver in 1953 of a confidence game involving oil-locating devices.",
+  "summary": "El llamado «otro Roswell»: la afirmación de que en marzo de 1948 un platillo de 30 metros con 16 cuerpos humanoides se estrelló cerca de Aztec (Nuevo México) y el ejército lo recuperó. Lo publicó el periodista Frank Scully en «Behind the Flying Saucers» (1950). En 1952, el periodista J. P. Cahn lo destapó en la revista «True» como un fraude de dos estafadores, Silas Newton y Leo GeBauer, condenados en Denver en 1953 por estafa en la venta de aparatos para localizar petróleo.",
+  "summary_en": "The so-called “other Roswell”: the claim that in March 1948 a 99-foot saucer carrying 16 humanoid bodies crashed near Aztec, New Mexico, and was recovered by the military. Journalist Frank Scully published it in Behind the Flying Saucers (1950). In 1952 journalist J. P. Cahn exposed it in True magazine as a hoax by two con men, Silas Newton and Leo GeBauer, who were convicted in Denver in 1953 of a confidence game involving oil-locating devices.",
   "patterns": [
     "8m"
   ],

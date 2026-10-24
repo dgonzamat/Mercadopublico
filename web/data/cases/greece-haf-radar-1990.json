@@ -1,8 +1,8 @@
 {
   "id": "greece-haf-radar-1990",
   "num": 118,
-  "name": "Grecia · tres controladores aéreos (Naxos, Lemnos, Corfú)",
-  "name_en": "Greece · three air traffic controllers (Naxos, Lemnos, Corfu)",
+  "name": "Grecia · tres controladores aéreos ven un objeto como un cigarro",
+  "name_en": "Greece · three air traffic controllers see a cigar-shaped object",
   "year_start": 1985,
   "country": "GR",
   "country_name": "Grecia",
@@ -10,8 +10,8 @@
   "location": {
     "lat": 37.98,
     "lng": 23.73,
-    "place": "Espacio aéreo griego — Naxos, Lemnos y Corfú",
-    "place_en": "Greek airspace — Naxos, Lemnos and Corfu"
+    "place": "Espacio aéreo griego: Naxos, Lemnos y Corfú",
+    "place_en": "Greek airspace: Naxos, Lemnos and Corfu"
   },
   "tier": "B",
   "mundanoType": "sin_propuesta",
@@ -24,8 +24,8 @@
   },
   "epistemicStatus": "documented",
   "probability": 39,
-  "summary": "El 14 de diciembre de 1985, según el registro más trazable, tres controladores aéreos de Naxos, Lemnos y Corfú informaron por separado de haber visto pasar un objeto con forma de cigarro a más de 3.000 mph (unos 4.800 km/h); el episodio quedó documentado en el cuartel general de la Fuerza Aérea Helénica. Un relato periodístico de 2026 lo sitúa en 1990 y lo convierte en un blanco de radar, sin fecha, lugares ni fuente. Un ejemplo de cómo un avistamiento cambia al volver a contarse.",
-  "summary_en": "On 14 December 1985, according to the most traceable record, three air traffic controllers at Naxos, Lemnos and Corfu separately reported seeing a cigar-shaped object pass overhead at over 3,000 mph (about 4,800 km/h); the incident was documented at Hellenic Air Force Headquarters. A 2026 press account places it in 1990 and turns it into a radar target, with no date, places or source. An example of how a sighting changes as it is retold.",
+  "summary": "El 14 de diciembre de 1985, según el registro más trazable, tres controladores aéreos de Naxos, Lemnos y Corfú informaron por separado de haber visto pasar un objeto con forma de cigarro a más de 3.000 millas por hora (unos 4.800 km/h); el episodio quedó documentado en el cuartel general de la Fuerza Aérea Helénica. Un relato periodístico de 2026 lo sitúa en 1990 y lo convierte en algo que solo vio el radar, sin fecha, lugares ni fuente.",
+  "summary_en": "On 14 December 1985, according to the most traceable record, three air traffic controllers at Naxos, Lemnos and Corfu separately reported seeing a cigar-shaped object pass overhead at over 3,000 mph (about 4,800 km/h); the incident was documented at Hellenic Air Force headquarters. A 2026 press account places it in 1990 and turns it into something seen only on radar, with no date, places or source.",
   "patterns": [
     "8e"
   ],

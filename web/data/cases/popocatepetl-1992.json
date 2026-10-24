@@ -1,7 +1,8 @@
 {
   "id": "popocatepetl-1992",
   "num": 29,
-  "name": "Popocatépetl",
+  "name": "Popocatépetl · las cámaras del volcán graban objetos en vuelo",
+  "name_en": "Popocatépetl · volcano cameras record objects in flight",
   "year_start": 1992,
   "country": "MX",
   "country_name": "México",
@@ -9,15 +10,15 @@
   "location": {
     "lat": 19.02,
     "lng": -98.62,
-    "place": "Popocatépetl",
-    "place_en": "Popocatépetl"
+    "place": "Volcán Popocatépetl, México",
+    "place_en": "Popocatépetl volcano, Mexico"
   },
   "tier": "A",
   "mundanoType": "sin_propuesta",
   "epistemicStatus": "documented",
   "probability": 27,
-  "summary": "Desde 1992, las cámaras térmicas y visuales con que el CENAPRED monitorea el volcán Popocatépetl han registrado entre 50 y 200 eventos de objetos que emergen del cráter o lo sobrevuelan, archivados de forma automática por un sistema no diseñado para detectar UAP. Es instrumentación continua sin sesgo de selección sobre infraestructura geológica activa.",
-  "summary_en": "Since 1992, the thermal and visible cameras with which CENAPRED monitors the Popocatépetl volcano have recorded between 50 and 200 events of objects emerging from or overflying the crater, automatically archived by a system not designed to detect UAP. It is continuous, selection-bias-free instrumentation over active geological infrastructure.",
+  "summary": "Desde 1992, el Centro Nacional de Prevención de Desastres (CENAPRED) vigila el volcán Popocatépetl con cámaras térmicas y visibles que graban día y noche. Según los recuentos, han captado entre 50 y 200 episodios de objetos que parecen salir del cráter o sobrevolarlo, como el cilindro del 28 de julio de 1998 o el objeto alargado del 25 de octubre de 2012. Las cámaras no se diseñaron para buscar ovnis, y muchos de esos objetos son meteoros, aves o insectos junto a la lente, satélites o defectos de la propia cámara; según la prensa local, una hilera de luces de julio de 2026 era un tren de satélites Starlink.",
+  "summary_en": "Since 1992, Mexico's National Center for Disaster Prevention (CENAPRED) has watched the Popocatépetl volcano with thermal and visible-light cameras that record day and night. By various counts, they have caught between 50 and 200 episodes of objects that seem to emerge from the crater or fly over it, such as the cylinder of 28 July 1998 or the elongated object of 25 October 2012. The cameras were not designed to look for UFOs, and many of these objects are meteors, birds or insects near the lens, satellites or flaws in the camera itself; according to local press, a row of lights in July 2026 was a train of Starlink satellites.",
   "patterns": [
     "8f",
     "8g"

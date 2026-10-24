@@ -1,7 +1,8 @@
 {
   "id": "nimitz-2004",
   "num": 36,
-  "name": "USS Nimitz Tic-Tac",
+  "name": "Nimitz · pilotos de la Marina ven un objeto con forma de Tic Tac",
+  "name_en": "Nimitz · Navy pilots see a Tic Tac-shaped object",
   "year_start": 2004,
   "country": "US",
   "country_name": "Estados Unidos",
@@ -15,8 +16,8 @@
   "tier": "S",
   "epistemicStatus": "documented",
   "probability": 56,
-  "summary": "En noviembre de 2004, el radar SPY-1 del crucero USS Princeton detectó varias veces contactos que descendían muy rápido desde gran altitud; el 14 de noviembre, el Cmdr. David Fravor y otros tres tripulantes de dos F/A-18F vieron de cerca un objeto blanco en forma de Tic-Tac sobre una perturbación en el agua, y horas después otra tripulación grabó con infrarrojo el vídeo FLIR1, que el Pentágono publicó en 2020 como «no identificado». Su expediente también recoge dudas de sus propios testigos.",
-  "summary_en": "In November 2004, the cruiser USS Princeton's SPY-1 radar repeatedly detected contacts descending very rapidly from high altitude; on 14 November, Cmdr. David Fravor and three other crew in two F/A-18Fs saw a white Tic-Tac-shaped object up close over a disturbance in the water, and hours later another crew recorded the FLIR1 infrared video, which the Pentagon released in 2020 as 'unidentified'. Its file also records doubts from its own witnesses.",
+  "summary": "En noviembre de 2004, frente a Baja California, el radar del crucero USS Princeton detectó varias veces algo que bajaba muy rápido desde gran altura. El 14 de noviembre, el comandante David Fravor y otros tres tripulantes de dos cazas F/A-18F vieron de cerca un objeto blanco con forma de pastilla Tic Tac sobre una agitación del agua, y horas después otra tripulación grabó con su cámara infrarroja el vídeo conocido como FLIR1, que el Pentágono publicó en 2020 como «no identificado». La documentación del caso recoge también dudas de algunos de sus propios testigos.",
+  "summary_en": "In November 2004, off Baja California, the cruiser USS Princeton's radar repeatedly detected something dropping very fast from high altitude. On 14 November, Cmdr. David Fravor and three other crew in two F/A-18F fighters saw up close a white object shaped like a Tic Tac mint over a disturbance in the water, and hours later another crew recorded with its infrared camera the video known as FLIR1, which the Pentagon released in 2020 as “unidentified.” The case records also include doubts from some of its own witnesses.",
   "patterns": [
     "8b"
   ],

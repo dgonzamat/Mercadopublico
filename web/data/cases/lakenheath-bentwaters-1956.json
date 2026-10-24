@@ -1,7 +1,8 @@
 {
   "id": "lakenheath-bentwaters-1956",
   "num": 9,
-  "name": "Lakenheath-Bentwaters",
+  "name": "Lakenheath · radares y un caza siguen objetos rápidos de noche",
+  "name_en": "Lakenheath · radars and a fighter track fast objects at night",
   "year_start": 1956,
   "country": "GB",
   "country_name": "Reino Unido",
@@ -9,15 +10,15 @@
   "location": {
     "lat": 52.41,
     "lng": 0.56,
-    "place": "Suffolk, England",
+    "place": "Suffolk, Inglaterra",
     "place_en": "Suffolk, England"
   },
   "tier": "S",
   "mundanoType": "natural",
   "epistemicStatus": "documented",
   "probability": 66,
-  "summary": "Radares de dos bases de la USAF en Suffolk siguieron blancos rápidos durante unas cinco horas (13–14 de agosto de 1956) y un caza Venom de la RAF informó que uno se le colocó a la cola. Blue Book cerró el caso como propagación anómala; el informe Condon lo juzgó su caso radar-visual más desconcertante.",
-  "summary_en": "Radars at two USAF bases in Suffolk tracked fast-moving targets for some five hours (13–14 August 1956), and an RAF Venom fighter reported that one got onto its tail. Blue Book closed the case as anomalous propagation; the Condon Report judged it its most puzzling radar-visual case.",
+  "summary": "La noche del 13 al 14 de agosto de 1956, los radares de dos bases de la USAF en Suffolk (Inglaterra), Bentwaters y Lakenheath, siguieron durante unas cinco horas señales que se movían muy rápido, mientras observadores en tierra y tripulaciones en vuelo veían luces. La RAF envió un caza nocturno Venom: su piloto informó que había captado uno con su radar y que después el objeto se le colocó a la cola y no conseguía quitárselo de encima. Blue Book cerró el caso como propagación anómala, un efecto atmosférico que falsea el radar; el informe Condon lo juzgó el más desconcertante de sus casos con radar y testigos a la vez.",
+  "summary_en": "On the night of 13–14 August 1956, radars at two USAF bases in Suffolk, England, Bentwaters and Lakenheath, tracked fast-moving blips for some five hours, while ground observers and aircrews in flight saw lights. The RAF sent up a Venom night fighter: its pilot reported that he had one on his radar and that the object then got onto his tail and he could not shake it. Blue Book closed the case as anomalous propagation, an atmospheric effect that fools radar; the Condon Report judged it the most puzzling of its cases combining radar and eyewitnesses.",
   "patterns": [
     "8e"
   ],

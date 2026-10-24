@@ -1,7 +1,7 @@
 {
   "id": "hessdalen-1981",
   "num": 24,
-  "name": "Luces de Hessdalen",
+  "name": "Hessdalen · luces que se repiten en un valle noruego",
   "year_start": 1981,
   "country": "NO",
   "country_name": "Noruega",
@@ -9,15 +9,15 @@
   "location": {
     "lat": 62.78,
     "lng": 11.2,
-    "place": "Hessdalen Valley",
-    "place_en": "Hessdalen Valley"
+    "place": "Valle de Hessdalen, Noruega",
+    "place_en": "Hessdalen Valley, Norway"
   },
   "tier": "A",
   "mundanoType": "natural",
   "epistemicStatus": "documented",
   "probability": 27,
-  "summary": "El valle de Hessdalen (Noruega) registra luces anómalas recurrentes desde 1981 y tiene monitoreo científico instrumental continuo desde hace más de cuatro décadas, con estación automática de medición y publicaciones revisadas por pares.",
-  "summary_en": "Norway's Hessdalen valley has produced recurring anomalous lights since 1981 and has been under continuous instrumented scientific monitoring for over four decades, with an automated measurement station and peer-reviewed publications.",
+  "summary": "Desde diciembre de 1981, los vecinos del valle de Hessdalen, en el centro de Noruega, ven luces blancas, amarillas o rojas que flotan, suben, bajan y cruzan el valle; al principio llegaron a verse hasta unas cuatro veces al día, y hoy aparecen de forma esporádica. La campaña de campo de 1984 reunió 188 avistamientos y 36 detecciones de radar, sin descubrir qué eran. Desde 1998, una estación automática vigila el valle sin interrupción, y los estudios publicados, algunos revisados por pares, trabajan sobre todo hipótesis de plasma ligadas a la geología local, aunque ninguna se ha confirmado.",
+  "summary_en": "Since December 1981, residents of the Hessdalen valley in central Norway have seen white, yellow or red lights that hover, rise, drop and cross the valley; at first they appeared up to about four times a day, and today they show up only sporadically. The 1984 field campaign gathered 188 sightings and 36 radar detections without finding out what they were. Since 1998 an automated station has watched the valley continuously, and the published studies, some peer-reviewed, mostly explore plasma hypotheses tied to the local geology, though none has been confirmed.",
   "patterns": [
     "8g"
   ],
@@ -73,7 +73,7 @@
     "nohumano_abierto": 0.035,
     "indet": 0.225
   },
-  "name_en": "Hessdalen lights",
+  "name_en": "Hessdalen · recurring lights in a Norwegian valley",
   "documents": [
     {
       "role": "documento",

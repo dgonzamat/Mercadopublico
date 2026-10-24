@@ -1,8 +1,8 @@
 {
   "id": "maussan-congreso-mexico-2023",
   "num": 249,
-  "name": "Maussan · momias ante el Congreso de México",
-  "name_en": "Maussan · Mummies before the Mexican Congress",
+  "name": "Congreso de México · Maussan exhibe dos momias de Nazca",
+  "name_en": "Mexican Congress · Maussan displays two Nazca mummies",
   "year_start": 2023,
   "country": "MX",
   "country_name": "México",
@@ -17,8 +17,8 @@
   "mundanoType": "fraude",
   "epistemicStatus": "documented",
   "probability": 12,
-  "summary": "El 12 de septiembre de 2023, el comunicador Jaime Maussan presentó ante una audiencia del Congreso de México dos cuerpos momificados pequeños, de cabeza alargada y manos de tres dedos, que dijo hallados en Nazca (Perú) y 'no parte de nuestra evolución terrestre'. La UNAM negó respaldar el análisis y científicos lo calificaron de fraude; fiscalía peruana ya había descrito en 2017 muñecos fabricados.",
-  "summary_en": "On 12 September 2023, broadcaster Jaime Maussan presented to a hearing of the Mexican Congress two small mummified bodies, with elongated heads and three-fingered hands, which he said were found in Nazca (Peru) and 'not part of our terrestrial evolution'. UNAM denied endorsing the analysis and scientists called it a fraud; a Peruvian prosecutor had already described manufactured dolls in 2017.",
+  "summary": "El 12 de septiembre de 2023, el comunicador Jaime Maussan presentó en una audiencia de la Cámara de Diputados de México dos pequeños cuerpos momificados, de cabeza alargada y manos de tres dedos, que dijo hallados en Nazca (Perú) y ajenos a «nuestra evolución terrestre». La Universidad Nacional Autónoma de México (UNAM) aclaró que solo había fechado una muestra por carbono 14, sin concluir nada sobre su origen, y especialistas en anatomía dijeron que parecían armados con huesos humanos y de animales. En 2017, la fiscalía de Perú ya había descrito momias parecidas como muñecos recién fabricados.",
+  "summary_en": "On September 12, 2023, broadcaster Jaime Maussan presented to a hearing of Mexico's Chamber of Deputies two small mummified bodies with elongated heads and three-fingered hands, which he said had been found in Nazca, Peru, and were not part of “our terrestrial evolution.” Mexico's National Autonomous University (UNAM) clarified that it had only carbon-dated one sample, without drawing any conclusion about its origin, and anatomy specialists said the bodies looked assembled from human and animal bones. In 2017 Peruvian prosecutors had already described similar mummies as recently made dolls.",
   "patterns": [
     "8d"
   ],

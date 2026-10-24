@@ -1,7 +1,8 @@
 {
   "id": "varginha-1996",
   "num": 31,
-  "name": "Varginha",
+  "name": "Varginha · tres jóvenes dicen ver una criatura junto a un muro",
+  "name_en": "Varginha · three young women say they saw a creature by a wall",
   "year_start": 1996,
   "country": "BR",
   "country_name": "Brasil",
@@ -9,14 +10,14 @@
   "location": {
     "lat": -21.55,
     "lng": -45.43,
-    "place": "Varginha, Minas Gerais",
-    "place_en": "Varginha, Minas Gerais"
+    "place": "Varginha, Minas Gerais (Brasil)",
+    "place_en": "Varginha, Minas Gerais, Brazil"
   },
   "tier": "A",
   "mundanoType": "misid",
   "epistemicStatus": "documented",
   "probability": 52,
-  "summary": "El 20 de enero de 1996, tres jóvenes de Varginha dijeron haber visto una criatura agachada junto a un muro, y ufólogos locales sostuvieron después que los Bombeiros y el Ejército capturaron uno o más seres. Dos investigaciones del Ejército (1996 y 1997) atribuyeron el relato a la confusión con un vecino del barrio y se archivaron; el expediente incluye la autopsia del policía militar Marco Eli Cherese, que señala una infección por bacterias conocidas. En 2026 volvió a la escena política con testigos ante congresistas de EE.UU. y la publicación del expediente por el Superior Tribunal Militar.",
+  "summary": "El 20 de enero de 1996, tres jóvenes de Varginha dijeron haber visto una criatura agachada junto a un muro, y ufólogos locales sostuvieron después que los bomberos y el Ejército capturaron uno o más seres. Dos investigaciones del Ejército (1996 y 1997) atribuyeron el relato a la confusión con un vecino del barrio y se archivaron; el expediente incluye la autopsia del policía militar Marco Eli Cherese, que señala una infección por bacterias conocidas. En 2026 volvió a la escena política con testigos ante congresistas de EE. UU. y la publicación del expediente por el Superior Tribunal Militar.",
   "summary_en": "On 20 January 1996, three young women in Varginha said they saw a creature crouching by a wall, and local ufologists later claimed the fire brigade and the Army captured one or more beings. Two Army inquiries (1996 and 1997) attributed the account to confusion with a local man and were archived; the file includes the autopsy of military policeman Marco Eli Cherese, pointing to an infection by known bacteria. In 2026 it returned to the political stage with witnesses before U.S. members of Congress and the Superior Tribunal Militar's publication of the file.",
   "patterns": [
     "8a",

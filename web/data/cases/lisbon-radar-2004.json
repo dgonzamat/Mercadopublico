@@ -1,8 +1,8 @@
 {
   "id": "lisbon-radar-2004",
   "num": 121,
-  "name": "Lisboa · blanco de radar de la Fuerza Aérea",
-  "name_en": "Lisbon · Air Force radar target",
+  "name": "Portugal · una luz con humo cruza el cielo y el radar capta algo",
+  "name_en": "Portugal · a smoking light crosses the sky; radar sees something",
   "year_start": 2004,
   "country": "PT",
   "country_name": "Portugal",
@@ -17,8 +17,8 @@
   "mundanoType": "misid",
   "epistemicStatus": "documented",
   "probability": 24,
-  "summary": "La noche del martes 1 de junio de 2004, ante una luz blanca con humo vista en buena parte de Portugal, la Fuerza Aérea Portuguesa reforzó la vigilancia radar y tuvo F-16 listos para despegar. Su portavoz, el coronel Carlos Barbosa, confirmó que el radar de defensa registró un 'blanco' durante dos o tres minutos que no era un avión identificado como tal, y las autoridades no supieron decir qué era. Esa misma noche, a las 23:01 hora de Lisboa, Francia ensayó un misil M45 desde el golfo de Vizcaya: la luz con humo encaja con un lanzamiento; el blanco de radar, que según datos sin fuente citados por Langbroek volaba a baja altura, no.",
-  "summary_en": "On the night of Tuesday 1 June 2004, in response to a white light with smoke seen across much of Portugal, the Portuguese Air Force stepped up radar surveillance and had F-16s ready for take-off. Its spokesperson, Colonel Carlos Barbosa, confirmed that defense radar registered a 'target' for two or three minutes that was not identified as an aircraft, and the authorities could not say what it was. That same night, at 23:01 Lisbon time, France tested an M45 missile from the Bay of Biscay: the light with smoke fits a launch; the radar target, low-altitude according to unsourced data cited by Langbroek, does not.",
+  "summary": "La noche del martes 1 de junio de 2004, ante una luz blanca con humo vista en buena parte de Portugal, la Fuerza Aérea Portuguesa reforzó la vigilancia por radar y tuvo cazas F-16 listos para despegar. Su portavoz, el coronel Carlos Barbosa, confirmó que el radar de defensa captó durante dos o tres minutos algo que no era un avión identificado, y las autoridades no supieron decir qué era. Esa misma noche, a las 23:01 hora de Lisboa, Francia ensayó un misil M45 desde el golfo de Vizcaya: la luz con humo encaja con el lanzamiento; lo que vio el radar, que según datos sin fuente citados por Langbroek volaba bajo, no.",
+  "summary_en": "On the night of Tuesday 1 June 2004, after a white light with smoke was seen across much of Portugal, the Portuguese Air Force stepped up radar surveillance and had F-16 fighters ready for take-off. Its spokesman, Colonel Carlos Barbosa, confirmed that defense radar picked up something for two or three minutes that was not an identified aircraft, and the authorities could not say what it was. That same night, at 23:01 Lisbon time, France tested an M45 missile from the Bay of Biscay: the smoking light fits the launch; the radar contact, which unsourced data cited by Langbroek put at low altitude, does not.",
   "patterns": [
     "8e"
   ],

@@ -1,8 +1,8 @@
 {
   "id": "byelokoroviche-1982",
   "num": 196,
-  "name": "Byelokoroviche · UFO sobre base de misiles soviética",
-  "name_en": "Byelokoroviche · UFO over Soviet missile base",
+  "name": "Byelokoroviche · luces sobre una base soviética de misiles",
+  "name_en": "Byelokoroviche · lights over a Soviet missile base",
   "year_start": 1982,
   "country": "SU",
   "country_name": "Unión Soviética (Ucrania)",
@@ -10,8 +10,8 @@
   "location": {
     "lat": 50.95,
     "lng": 28,
-    "place": "Base de las Fuerzas de Cohetes Estratégicos · Byelokoroviche, RSS de Ucrania",
-    "place_en": "Strategic Rocket Forces base · Byelokoroviche, Ukrainian SSR"
+    "place": "Base de misiles cerca de Usovo y Byelokoroviche (Ucrania soviética)",
+    "place_en": "Missile base near Usovo and Byelokoroviche (Soviet Ukraine)"
   },
   "tier": "A",
   "mundanoType": "misid",

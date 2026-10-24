@@ -1,8 +1,8 @@
 {
   "id": "chinese-balloon-montana-2023",
   "num": 140,
-  "name": "Globo de vigilancia chino · Montana → Carolina del Sur",
-  "name_en": "Chinese surveillance balloon · Montana → South Carolina",
+  "name": "Montana · un globo de vigilancia chino cruza Estados Unidos",
+  "name_en": "Montana · a Chinese surveillance balloon crosses the U.S.",
   "year_start": 2023,
   "country": "US",
   "country_name": "Estados Unidos",
@@ -10,14 +10,14 @@
   "location": {
     "lat": 32.78,
     "lng": -79.35,
-    "place": "Costa de Carolina del Sur (derribo) / sobrevuelo Montana–Carolina",
-    "place_en": "South Carolina coast (shootdown) / Montana–Carolina overflight"
+    "place": "Montana y costa de Carolina del Sur, Estados Unidos",
+    "place_en": "Montana and the South Carolina coast, United States"
   },
   "tier": "S",
   "epistemicStatus": "documented",
   "probability": 2,
-  "summary": "Entre el 28 de enero y el 4 de febrero de 2023, un globo de gran altitud de un programa vinculado al Ejército Popular de Liberación chino entró por Alaska, cruzó Canadá y sobrevoló Estados Unidos, incluida Montana, con la base Malmstrom y silos Minuteman III, hasta que un F-22 lo derribó frente a Carolina del Sur. China reconoció que era suyo, aunque lo presentó como una aeronave civil meteorológica desviada; Washington lo identificó como plataforma de vigilancia y recuperó del fondo marino la carga útil, que analizó el FBI. Según la evaluación posterior del Pentágono, no recopiló información mientras cruzaba Estados Unidos.",
-  "summary_en": "Between January 28 and February 4, 2023, a high-altitude balloon from a program linked to China's People's Liberation Army entered through Alaska, crossed Canada and overflew the United States, including Montana, with Malmstrom AFB and Minuteman III silos, until an F-22 shot it down off South Carolina. China acknowledged it was its own, though it called it a civilian weather airship blown off course; Washington identified it as a surveillance platform and recovered the payload from the seabed, which the FBI analyzed. According to the Pentagon's later assessment, it did not collect information while crossing the United States.",
+  "summary": "Entre el 28 de enero y el 4 de febrero de 2023, un globo de gran altitud de un programa vinculado al Ejército Popular de Liberación chino entró por Alaska, cruzó Canadá y sobrevoló Estados Unidos, incluida Montana, donde están la base Malmstrom y sus silos de misiles, hasta que un caza F-22 lo derribó frente a Carolina del Sur. China reconoció que era suyo, aunque lo presentó como una aeronave civil meteorológica desviada; Washington lo identificó como plataforma de vigilancia y recuperó del fondo del mar la carga útil, que analizó el FBI. Según la evaluación posterior del Pentágono, no recopiló información mientras cruzaba Estados Unidos.",
+  "summary_en": "Between January 28 and February 4, 2023, a high-altitude balloon from a program linked to China's People's Liberation Army entered through Alaska, crossed Canada and flew over the United States, including Montana, home to Malmstrom Air Force Base and its missile silos, until an F-22 shot it down off South Carolina. China acknowledged it was its own, though it called it a civilian weather airship blown off course; Washington identified it as a surveillance platform and recovered the payload from the seabed, which the FBI analyzed. According to the Pentagon's later assessment, it collected no information while crossing the United States.",
   "patterns": [
     "8c",
     "8m",

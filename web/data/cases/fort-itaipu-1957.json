@@ -1,8 +1,8 @@
 {
   "id": "fort-itaipu-1957",
   "num": 219,
-  "name": "Fuerte de Itaipú · centinelas quemados",
-  "name_en": "Fort Itaipu · burned sentries",
+  "name": "Fuerte de Itaipú · dos centinelas ven bajar un disco luminoso",
+  "name_en": "Fort Itaipu · two sentries see a glowing disk descend",
   "year_start": 1957,
   "country": "BR",
   "country_name": "Brasil",
@@ -16,8 +16,8 @@
   "tier": "B",
   "epistemicStatus": "documented",
   "probability": 58,
-  "summary": "La madrugada del 4 de noviembre de 1957, dos centinelas del Fuerte de Itaipú, en la costa de São Paulo, habrían visto descender un objeto en forma de disco, del tamaño de un Douglas grande y con resplandor anaranjado, que emitió un zumbido y una oleada de calor que les causó quemaduras, con un apagón eléctrico en el fuerte. El caso lo publicó en 1959 el médico y ufólogo Olavo Fontes (APRO), a partir de oficiales anónimos y figura en el clásico expediente brasileño, pero su documentación primaria es disputada: un coronel que se decía comandante lo calificó de «leyenda». Efectos físicos llamativos, fuentes contestadas.",
-  "summary_en": "In the early hours of November 4, 1957, two sentries at Fort Itaipu, on the São Paulo coast, reportedly saw a disk-shaped object the size of a big Douglas, with an orange glow, descend, emitting a hum and a wave of heat that burned them, with an electrical blackout at the fort. The case was published in 1959 by physician and ufologist Olavo Fontes (APRO), based on anonymous officers and appears in the classic Brazilian file, but its primary documentation is disputed: a colonel who claimed to be the commander called it a 'legend'. Striking physical effects, contested sources.",
+  "summary": "La madrugada del 4 de noviembre de 1957, dos centinelas del Fuerte de Itaipú, en la costa de São Paulo, habrían visto descender un objeto en forma de disco, con un resplandor anaranjado y del tamaño de un gran avión Douglas, que emitió un zumbido y una oleada de calor que les causó quemaduras; poco después, un apagón dejó el fuerte a oscuras. Lo publicó en 1959 el médico y ufólogo Olavo Fontes a partir de oficiales anónimos, y figura en el clásico expediente brasileño, pero su documentación primaria está en disputa: un coronel que decía haber sido el comandante lo calificó de «leyenda».",
+  "summary_en": "In the early hours of November 4, 1957, two sentries at Fort Itaipu, on the São Paulo coast, reportedly saw a disk-shaped object with an orange glow, the size of a large Douglas aircraft, descend and give off a hum and a wave of heat that burned them; moments later a blackout plunged the fort into darkness. Physician and ufologist Olavo Fontes published the case in 1959, based on anonymous officers, and it appears in the classic Brazilian file, but its primary documentation is disputed: a colonel who said he had been the commander called it a “legend.”",
   "patterns": [
     "8a",
     "8m"

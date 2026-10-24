@@ -1,7 +1,8 @@
 {
   "id": "kumburgaz-2007",
   "num": 37,
-  "name": "Kumburgaz (Yalman)",
+  "name": "Kumburgaz · un vigilante filma luces sobre el mar de Mármara",
+  "name_en": "Kumburgaz · a night guard films lights over the Sea of Marmara",
   "year_start": 2007,
   "year_end": 2009,
   "country": "TR",
@@ -10,8 +11,8 @@
   "location": {
     "lat": 41.06,
     "lng": 28.36,
-    "place": "Kumburgaz, Istanbul",
-    "place_en": "Kumburgaz, Istanbul"
+    "place": "Kumburgaz, Estambul (Turquía)",
+    "place_en": "Kumburgaz, Istanbul, Turkey"
   },
   "tier": "A",
   "epistemicStatus": "documented",

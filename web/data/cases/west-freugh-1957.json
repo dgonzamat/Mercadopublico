@@ -1,8 +1,8 @@
 {
   "id": "west-freugh-1957",
   "num": 113,
-  "name": "West Freugh · radar RAF + silencio del Air Ministry",
-  "name_en": "West Freugh · RAF radar + Air Ministry silence",
+  "name": "West Freugh · un radar militar sigue un objeto durante 36 minutos",
+  "name_en": "West Freugh · military radar tracks an object for 36 minutes",
   "year_start": 1957,
   "country": "GB",
   "country_name": "Reino Unido",
@@ -16,8 +16,8 @@
   "tier": "S",
   "epistemicStatus": "documented",
   "probability": 66,
-  "summary": "En abril de 1957, el radar de la Bombing Trials Unit del Ministry of Supply en RAF West Freugh (Escocia) trackeó durante 36 minutos un objeto que se mantuvo estático a 50.000 ft, ascendió a 70.000 ft y luego aceleró a ~240 mph hacia la Isla de Man. El informe interno de inteligencia concluyó que eran «cinco objetos reflectantes de tipo y origen no identificados», mientras las notas para responder en el Parlamento sugerían un posible avión privado; al personal de la base se le pidió no hablar del asunto. Caso radar institucional con encubrimiento parlamentario documentado.",
-  "summary_en": "In April 1957, the Ministry of Supply Bombing Trials Unit radar at RAF West Freugh (Scotland) tracked an object for 36 minutes that held still at 50,000 ft, climbed to 70,000 ft and then accelerated to ~240 mph toward the Isle of Man. The internal intelligence report concluded they were \"five reflecting objects of unidentified type and origin\", while the notes for answering in Parliament suggested a possible private aircraft; base personnel were told not to talk about it. An institutional radar case with a documented parliamentary cover-up.",
+  "summary": "En abril de 1957, el radar de la unidad de pruebas de bombardeo del Ministerio de Abastecimiento en la base de RAF West Freugh (Escocia) siguió durante 36 minutos un objeto que se mantuvo inmóvil a 50.000 pies, subió a 70.000 y luego aceleró a unas 240 millas por hora hacia la isla de Man. El informe interno de inteligencia concluyó que eran «cinco objetos reflectantes de tipo y origen no identificados», mientras que las notas para responder en el Parlamento apuntaban a un posible avión privado, y al personal de la base se le pidió que no hablara del asunto.",
+  "summary_en": "In April 1957, the radar of the Ministry of Supply's bombing trials unit at RAF West Freugh (Scotland) tracked for 36 minutes an object that held still at 50,000 ft, climbed to 70,000 ft and then sped up to about 240 mph toward the Isle of Man. The internal intelligence report concluded they were “five reflecting objects of unidentified type and origin”, while the notes for answering in Parliament pointed to a possible private aircraft, and base staff were asked not to talk about it.",
   "patterns": [
     "8e",
     "8m"

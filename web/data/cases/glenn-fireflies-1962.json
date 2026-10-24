@@ -1,8 +1,8 @@
 {
   "id": "glenn-fireflies-1962",
   "num": 241,
-  "name": "Luciérnagas de Glenn · Friendship 7",
-  "name_en": "Glenn's Fireflies · Friendship 7",
+  "name": "Friendship 7 · John Glenn ve «luciérnagas» junto a su cápsula",
+  "name_en": "Friendship 7 · John Glenn sees “fireflies” around his capsule",
   "year_start": 1962,
   "country": "US",
   "country_name": "Estados Unidos",
@@ -10,8 +10,8 @@
   "location": {
     "lat": 28.5,
     "lng": -80.6,
-    "place": "Órbita terrestre baja · misión Mercury-Atlas 6 / Friendship 7 (NASA)",
-    "place_en": "Low Earth orbit · Mercury-Atlas 6 / Friendship 7 mission (NASA)"
+    "place": "Órbita terrestre baja · misión Friendship 7 (NASA)",
+    "place_en": "Low Earth orbit · Friendship 7 mission (NASA)"
   },
   "tier": "A",
   "mundanoType": "misid",
@@ -19,7 +19,7 @@
   "epistemicStatus": "documented",
   "probability": 18,
   "summary": "El 20 de febrero de 1962, durante el primer vuelo orbital tripulado de EE.UU. (Friendship 7), John Glenn describió miles de partículas luminosas de color amarillo verdoso flotando alrededor de la cápsula, «como si la nave avanzara por un campo de luciérnagas». En mayo de 1962 el propio Glenn lo daba todavía por una cuestión abierta; los análisis de la NASA y un experimento de Scott Carpenter en el vuelo siguiente las atribuyeron a partículas desprendidas de la propia nave, sobre todo escarcha del vapor del sistema de soporte vital.",
-  "summary_en": "On 20 February 1962, during the first U.S. crewed orbital flight (Friendship 7), John Glenn described thousands of light yellowish-green luminous particles floating around the capsule, 'as if the spacecraft were moving through a field of fireflies'. In May 1962 Glenn himself still considered it an open question; NASA's analyses and an experiment by Scott Carpenter on the next flight attributed them to particles shed by the craft itself, mostly frost from the life-support system's steam.",
+  "summary_en": "On February 20, 1962, during the first U.S. crewed orbital flight (Friendship 7), John Glenn described thousands of yellowish-green luminous particles floating around the capsule, “as if the spacecraft were moving through a field of fireflies.” In May 1962 Glenn himself still considered it an open question; NASA's analyses and an experiment by Scott Carpenter on the next flight attributed them to particles shed by the craft itself, mostly frost from the life-support system's steam.",
   "patterns": [],
   "category": "incident",
   "whatHappened": "El 20 de febrero de 1962, John Glenn se convirtió en el primer estadounidense en orbitar la Tierra a bordo de la cápsula Friendship 7, en la misión Mercury-Atlas 6. Durante uno de sus amaneceres orbitales, al salir el Sol tras un periodo de oscuridad, Glenn comunicó por radio una observación inesperada: la cápsula estaba rodeada por una nube de pequeñas partículas luminosas. En su informe al simposio COSPAR de mayo de 1962 las describió así: eran de «un color amarillo verdoso claro», «como si la nave avanzara por un campo de luciérnagas», del brillo de «una estrella de primera magnitud», de tamaño variable entre una cabeza de alfiler y quizá 3/8 de pulgada, separadas entre sí unos 8 a 10 pies y «repartidas de forma uniforme» alrededor de la nave; de vez en cuando una o dos subían lentamente y cruzaban la ventanilla. Las vio durante unos minutos en cada amanecer orbital. Un memorando de la NASA del 21 de febrero hablaba de «miles de partículas luminosas» que parecían viajar con la nave.\n\nEl fenómeno desconcertó tanto a Glenn como al control de la misión, en un vuelo que era ya de por sí el salto más arriesgado del programa espacial estadounidense hasta la fecha. Glenn, en su informe, no se inclinó por un origen local: en el tercer amanecer giró la nave para mirar hacia delante, vio solo un 10 % de las partículas y le pareció que «venían hacia mí desde cierta distancia, de modo que no parecían salir de la nave»; añadió que su naturaleza «sigue sujeta a debate» y que, como la capa luminosa del horizonte, eran para él «asuntos todavía abiertos». La NASA, en cambio, apuntó desde el principio a la propia nave: un borrador de memorando tras la entrevista con Glenn del 27 de febrero concluyó, por la sola distribución de velocidades (todas se movían a la misma velocidad y en la misma dirección, igual en las tres órbitas), que «no eran partículas extraterrestres sino partículas asociadas a la nave», y que esa consistencia «exigiría» que vinieran de la propia cápsula.\n\nEl vuelo siguiente aportó la prueba. En el MA-7 de mayo de 1962, Scott Carpenter vio y fotografió partículas parecidas a copos de nieve en los tres amaneceres, pero también 7 y 43 minutos después de salir el Sol, de modo que no dependían del amanecer, salvo por verse mejor entonces; y poco antes del reingreso hizo lo que el informe de la NASA llama «el experimento decisivo»: golpeó las paredes de la cápsula con la mano, y los golpes «liberaron enseguida un gran número de partículas». El análisis concluyó que lo más probable es que fueran copos de nieve formados dentro de la cápsula, entre el mamparo y el escudo térmico, por el vapor expulsado del sistema de soporte vital, con una parte de polvo, restos de aislante y otras partículas sueltas. En el MA-9 de 1963 Gordon Cooper describió «enormes chorros de partículas luminosas de luciérnagas» que salían de la nave cada vez que encendía un propulsor.",
