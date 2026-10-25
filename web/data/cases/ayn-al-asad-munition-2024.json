@@ -4,8 +4,8 @@
   "pursueReleases": [
     1
   ],
-  "name": "El objeto caliente que cruzó la mira entre el disparo y el impacto",
-  "name_en": "The hot object that crossed the crosshairs between release and impact",
+  "name": "Ayn al-Asad · un objeto caliente cruza la imagen en un disparo",
+  "name_en": "Ayn al-Asad · a hot object crosses the sensor during a strike",
   "year_start": 2024,
   "country": "IQ",
   "country_name": "Irak",
@@ -13,8 +13,8 @@
   "location": {
     "lat": 33.79,
     "lng": 42.44,
-    "place": "Zona de operación restringida 'RAINDROP', base aérea Ayn al-Asad, provincia de Anbar",
-    "place_en": "Restricted Operating Zone 'RAINDROP', Ayn al-Asad Airbase, Anbar Province"
+    "place": "Base aérea Ayn al-Asad, provincia de Anbar, Irak",
+    "place_en": "Ayn al-Asad Air Base, Anbar Province, Iraq"
   },
   "tier": "S",
   "epistemicStatus": "documented",
@@ -27,8 +27,8 @@
     "nohumano_abierto": 0.02,
     "indet": 0.16
   },
-  "summary": "El 20 de septiembre de 2024, durante una calibración de armamento sobre la base aérea Ayn al-Asad (Irak), una aeronave estadounidense lanzó un misil AGM-176 y mantuvo la designación láser hasta el impacto. Entre el disparo y la detonación, un objeto no identificado cruzó a alta velocidad el campo del sensor y generó un destello infrarrojo en las torretas MX-20 y MX-25, señal de una fuente de calor significativa. El parte consigna que no había otro aparato reportado en ese espacio aéreo y que la trayectoria «parecía predeterminada». El fichero oficial lleva un nombre que dice «Mar de la China Oriental», pero su contenido es de CENTCOM e Irak.",
-  "summary_en": "On September 20, 2024, during a weapons calibration over Ayn al-Asad Airbase (Iraq), a U.S. aircraft released an AGM-176 missile and held laser designation until impact. Between release and detonation, an unidentified object crossed the sensor's field of view at high speed and caused an infrared lens flare on the MX-20 and MX-25 turrets, a sign of a significant heat source. The report records that no other aircraft had been reported in that airspace and that the path \"appeared predetermined.\" The official file bears a name reading \"East China Sea\", but its content is CENTCOM and Iraq.",
+  "summary": "El 20 de septiembre de 2024, en una calibración de armamento sobre la base aérea Ayn al-Asad (Irak), un avión de Operaciones Especiales de EE. UU. lanzó un misil ligero guiado por láser y mantuvo el láser sobre el blanco hasta el impacto. En ese intervalo, dos oficiales de a bordo vieron un objeto no identificado cruzar a gran velocidad la imagen de sus sensores, donde dejó un destello infrarrojo, señal de una fuente de calor importante. El parte consigna que no había otro aparato registrado en ese espacio aéreo y que la trayectoria «parecía predeterminada». El archivo oficial se llama «Mar de la China Oriental», pero trata de Irak.",
+  "summary_en": "On September 20, 2024, during a weapons calibration over Ayn al-Asad Air Base (Iraq), a U.S. Special Operations aircraft fired a light laser-guided missile and kept the laser on the target until impact. In that interval, two officers in the crew saw an unidentified object cross their sensor image at high speed; it caused a flare on both infrared cameras, a sign of a significant heat source. The report records that no other aircraft had been reported in that airspace and that the path “appeared predetermined.” The official file is named for the East China Sea, but it is about Iraq.",
   "patterns": [],
   "category": "incident",
   "documents": [

@@ -1,8 +1,8 @@
 {
   "id": "la-serena-tripulaciones-2014",
   "num": 461,
-  "name": "La Serena · el objeto de dos colas que vieron cinco tripulaciones a fines de 2014",
-  "name_en": "La Serena · the two-tailed object seen by five aircrews at the end of 2014",
+  "name": "La Serena · cinco tripulaciones ven un objeto blanco de dos colas",
+  "name_en": "La Serena · five aircrews see a white, two-tailed object",
   "year_start": 2014,
   "country": "CL",
   "country_name": "Chile",
@@ -10,8 +10,8 @@
   "location": {
     "lat": -29.07,
     "lng": -71.25,
-    "place": "Ruta Calama–Santiago, unas 50 millas náuticas al norte de La Serena (región de Coquimbo)",
-    "place_en": "Calama–Santiago route, some 50 nautical miles north of La Serena (Coquimbo region)"
+    "place": "Al norte de La Serena (región de Coquimbo)",
+    "place_en": "North of La Serena (Coquimbo region)"
   },
   "tier": "A",
   "mundanoType": "misid",
@@ -19,8 +19,8 @@
   "objectDetail": "cohete_misil",
   "epistemicStatus": "documented",
   "probability": 24,
-  "summary": "En la noche de fin de año de 2014, las tripulaciones de un avión ambulancia y de cuatro vuelos comerciales avisaron por radio al control de Santiago de un objeto blanco, «aparentemente de dos colas», «ubicado hacia el océano» y «en movimiento ascendente», al norte de La Serena; el radar no mostraba tráfico en ese sector. El comité oficial de la DGAC, entonces CEFAA, concluyó que el origen más probable fue la puesta en órbita del satélite chino Fengyun 2G, lanzado el 31 de diciembre a las 01:02 UTC. El informe no da la hora y sus datos admiten dos noches: el reloj de la captura del radar encaja con la del lanzamiento; los partes meteorológicos y la carta del cielo, con la siguiente.",
-  "summary_en": "On the last nights of 2014, the crews of an air ambulance and four airline flights radioed Santiago control about a white object, 'apparently with two tails', 'located towards the ocean' and 'moving upwards', north of La Serena; radar showed no traffic in that sector. The official DGAC committee, then called CEFAA, concluded that the most probable origin was the orbital insertion of the Chinese Fengyun 2G satellite, launched on 31 December at 01:02 UTC. The report gives no time and its data fit two different nights: the clock on the radar screenshot matches the night of the launch; the weather reports and sky chart, the following one.",
+  "summary": "Una de las dos últimas noches de 2014, las tripulaciones de un avión ambulancia y cuatro vuelos comerciales avisaron al control de Santiago de un objeto blanco, «aparentemente de dos colas», que se veía hacia el océano y subía, al norte de La Serena; el radar no mostraba tráfico allí. El comité oficial chileno para estos fenómenos, entonces CEFAA, concluyó que lo más probable fue la puesta en órbita del satélite chino Fengyun 2G, lanzado el 31 de diciembre a las 01:02 UTC. El informe no da la hora y sus datos admiten dos noches: el reloj del radar encaja con la del lanzamiento; los partes meteorológicos y la carta del cielo, con la siguiente.",
+  "summary_en": "On one of the last two nights of 2014, the crews of an air ambulance and four airline flights told Santiago control of a white object, “apparently with two tails”, that could be seen towards the ocean and was rising, north of La Serena; radar showed no traffic there. Chile's official committee for these phenomena, then called CEFAA, concluded that the most probable origin was the orbital insertion of the Chinese Fengyun 2G satellite, launched on 31 December at 01:02 UTC. The report gives no time and its data fit two nights: the radar clock matches the night of the launch; the weather reports and sky chart, the following one.",
   "patterns": [],
   "category": "incident",
   "posterior": {

@@ -1,8 +1,8 @@
 {
   "id": "burgos-1970",
   "num": 452,
-  "name": "Burgos 1970 · el objeto inmóvil que fotografió la avioneta de la FOAT",
-  "name_en": "Burgos 1970 · the motionless object photographed from the FOAT light aircraft",
+  "name": "Burgos 1970 · desde una avioneta fotografían un objeto inmóvil",
+  "name_en": "Burgos 1970 · a survey plane's crew photographs a still object",
   "year_start": 1970,
   "country": "ES",
   "country_name": "España",
@@ -10,8 +10,8 @@
   "location": {
     "lat": 42.465,
     "lng": -3.29,
-    "place": "Unos 30 o 40 km al ENE de Burgos, según la estimación del piloto",
-    "place_en": "Some 30 or 40 km ENE of Burgos, by the pilot's estimate"
+    "place": "Provincia de Burgos, unos 30 o 40 km al este-nordeste de la capital",
+    "place_en": "Burgos province, some 30 to 40 km east-northeast of the city"
   },
   "tier": "A",
   "mundanoType": "misid",

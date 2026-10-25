@@ -1,8 +1,8 @@
 {
   "id": "mystery-airships-1896",
   "num": 240,
-  "name": "Gran ola de dirigibles · EE.UU.",
-  "name_en": "Great Airship Wave · U.S.",
+  "name": "EE. UU. · la prensa relata dirigibles con reflectores en el cielo",
+  "name_en": "United States · newspapers report airships with searchlights",
   "year_start": 1896,
   "year_end": 1897,
   "country": "US",
@@ -18,8 +18,8 @@
   "mundanoType": "misid",
   "epistemicStatus": "documented",
   "probability": 32,
-  "summary": "Entre noviembre de 1896 y la primavera de 1897, más de mil testimonios de prensa describieron grandes 'dirigibles' con forma de cigarro, reflectores y hélices cruzando el cielo de EE.UU., años antes de que existieran aeronaves capaces de tal cosa. La ola arrancó en Sacramento y se extendió al este; en Aurora (Texas) un periódico llegó a relatar el 'estrellamiento' de uno con un tripulante 'no de este mundo'.",
-  "summary_en": "Between November 1896 and spring 1897, over a thousand press accounts described large cigar-shaped 'airships' with searchlights and propellers crossing the U.S. sky, years before any aircraft could do such a thing. The wave began in Sacramento and spread east; in Aurora (Texas) a newspaper even reported the 'crash' of one with a pilot 'not of this world'.",
+  "summary": "Entre noviembre de 1896 y la primavera de 1897, más de mil noticias describieron grandes «dirigibles» con forma de cigarro, reflectores y hélices cruzando el cielo de EE. UU., años antes de que existiera una aeronave capaz de hacerlo. La ola empezó en Sacramento y se extendió hacia el este; en Aurora (Texas), un periódico llegó a contar que uno se había estrellado con un piloto que «no era un habitante de este mundo». No consta ningún resto recuperado ni fotografía fiable, y la mayoría de los historiadores la explica como una mezcla de Venus y estrellas brillantes, bulos de periódicos y la expectación ante la llegada de la aviación.",
+  "summary_en": "Between November 1896 and the spring of 1897, more than a thousand newspaper accounts described large cigar-shaped “airships” with searchlights and propellers crossing American skies, years before any aircraft could do so. The wave began in Sacramento and spread east; in Aurora, Texas, one paper even reported that an airship had crashed with a pilot who was “not an inhabitant of this world.” There is no record of any wreckage recovered or any reliable photograph, and most historians explain the wave as a mix of Venus and bright stars, newspaper hoaxes and the excitement over the coming of flight.",
   "patterns": [
     "8h"
   ],

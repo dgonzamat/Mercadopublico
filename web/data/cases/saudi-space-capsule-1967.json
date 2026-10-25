@@ -1,8 +1,8 @@
 {
   "id": "saudi-space-capsule-1967",
   "num": 423,
-  "name": "Arabia Saudí · la «cápsula espacial» que el rey Faisal no quería devolver (1967–1969)",
-  "name_en": "Saudi Arabia · the \"space capsule\" King Faisal did not want to return (1967–1969)",
+  "name": "Arabia Saudí · el rey Faisal retiene una esfera caída del cielo",
+  "name_en": "Saudi Arabia · King Faisal keeps a fallen metal sphere",
   "year_start": 1967,
   "country": "SA",
   "country_name": "Arabia Saudí",
@@ -27,8 +27,8 @@
     "nohumano_abierto": 0.01,
     "indet": 0.03
   },
-  "summary": "En 1967 cayó en la Provincia Oriental de Arabia Saudí una esfera metálica con números estarcidos. EE.UU. la identificó como una botella de presión del cohete que lanzó el satélite Explorer 35 y la reclamó durante más de un año; el rey Faisal, que al principio se negó a entregarla, acabó devolviéndola en enero de 1969.",
-  "summary_en": "In 1967 a metal sphere with stencilled numbers fell in Saudi Arabia's Eastern Province. The US identified it as a pressure bottle from the rocket that launched the Explorer 35 satellite and pressed for it for more than a year; King Faisal, who at first refused to hand it over, finally returned it in January 1969.",
+  "summary": "En 1967 cayó en la Provincia Oriental de Arabia Saudí una esfera metálica de unos 60 centímetros, con un orificio roscado y números estarcidos; un empleado de la petrolera ARAMCO informó al consulado de EE. UU. en Dhahran. EE. UU. la identificó como una botella de presión del cohete que lanzó el satélite Explorer 35 y la reclamó durante más de un año. El rey Faisal, que la tenía en su oficina de Riad, se negó al principio a entregarla porque no veía prueba de que fuera estadounidense, y acabó devolviéndola en enero de 1969. El catálogo de McDowell anota la caída de esa etapa en Arabia Saudí el 31 de agosto de 1967.",
+  "summary_en": "In 1967 a metal sphere about 60 centimetres across, with a threaded hole and stencilled numbers, fell in Saudi Arabia's Eastern Province; an employee of the oil company ARAMCO reported it to the U.S. consulate in Dhahran. The U.S. identified it as a pressure bottle from the rocket that launched the Explorer 35 satellite and pressed for it for more than a year. King Faisal, who kept it in his Riyadh office, at first refused to hand it over because he saw no proof it was American, and finally returned it in January 1969. McDowell's catalogue records that stage falling in Saudi Arabia on 31 August 1967.",
   "patterns": [
     "8e"
   ],

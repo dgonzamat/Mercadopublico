@@ -1,8 +1,8 @@
 {
   "id": "langenburg-1974",
   "num": 267,
-  "name": "Anillos de Langenburg · investigación RCMP",
-  "name_en": "Langenburg Rings · RCMP investigation",
+  "name": "Langenburg · un agricultor ve cinco objetos sobre su campo",
+  "name_en": "Langenburg · a farmer sees five objects over his field",
   "year_start": 1974,
   "country": "CA",
   "country_name": "Canadá",
@@ -10,15 +10,15 @@
   "location": {
     "lat": 50.85,
     "lng": -101.7,
-    "place": "campo de colza cerca de Langenburg, Saskatchewan",
-    "place_en": "rapeseed field near Langenburg, Saskatchewan"
+    "place": "Campo de colza cerca de Langenburg, Saskatchewan (Canadá)",
+    "place_en": "Rapeseed field near Langenburg, Saskatchewan, Canada"
   },
   "tier": "A",
   "mundanoType": "sin_propuesta",
   "epistemicStatus": "documented",
   "probability": 50,
-  "summary": "El 1 de septiembre de 1974, el agricultor Edwin Fuhr cosechaba colza cerca de Langenburg (Saskatchewan, Canadá) cuando reportó cinco objetos metálicos con forma de cuenco invertido girando a poca altura sobre el campo. Tras unos minutos ascendieron juntos, lanzaron una ráfaga que aplastó el pasto y se alejaron. Dejaron cinco anillos de vegetación arremolinada en sentido horario. La Real Policía Montada del Canadá (RCMP), por el agente Ron Morier, investigó el sitio, fotografió los anillos y consideró a Fuhr un testigo creíble sin móvil de fraude. El caso entró en el catálogo de trazas físicas de Ted Phillips (CUFOS).",
-  "summary_en": "On September 1, 1974, farmer Edwin Fuhr was harvesting rapeseed near Langenburg (Saskatchewan, Canada) when he reported five metallic, inverted-bowl-shaped objects spinning low over the field. After a few minutes they rose together, released a gust that flattened the grass, and departed. They left five rings of clockwise-swirled vegetation. The Royal Canadian Mounted Police (RCMP), through Constable Ron Morier, investigated the site, photographed the rings, and considered Fuhr a credible witness with no fraud motive. The case entered Ted Phillips's (CUFOS) physical-trace catalog.",
+  "summary": "El 1 de septiembre de 1974, el agricultor Edwin Fuhr cosechaba colza cerca de Langenburg (Saskatchewan, Canadá) cuando vio cinco objetos metálicos con forma de cuenco invertido que giraban a poca altura sobre el campo. Tras unos minutos ascendieron juntos, lanzaron una ráfaga que aplastó el pasto y se alejaron. Dejaron cinco anillos de vegetación arremolinada en el sentido de las agujas del reloj. El agente Ron Morier, de la Real Policía Montada del Canadá, investigó el sitio, fotografió los anillos y consideró a Fuhr un testigo creíble sin motivo para un fraude. El caso entró en el catálogo de huellas físicas de Ted Phillips.",
+  "summary_en": "On 1 September 1974, farmer Edwin Fuhr was harvesting rapeseed near Langenburg, Saskatchewan, when he saw five metallic objects shaped like upturned bowls spinning low over the field. After a few minutes they rose together, released a gust that flattened the grass and flew off. They left five rings of vegetation swirled clockwise. Constable Ron Morier of the Royal Canadian Mounted Police investigated the site, photographed the rings and judged Fuhr a credible witness with no motive for a hoax. The case went into Ted Phillips’s catalog of physical-trace cases.",
   "patterns": [
     "8a",
     "8h"

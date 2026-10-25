@@ -1,7 +1,7 @@
 {
   "id": "hudson-valley-1983",
   "num": 60,
-  "name": "Hudson Valley · el 'Boomerang'",
+  "name": "Valle del Hudson · miles de vecinos ven un gran objeto en V",
   "year_start": 1983,
   "year_end": 1986,
   "country": "US",
@@ -10,15 +10,15 @@
   "location": {
     "lat": 41.5,
     "lng": -73.9,
-    "place": "Hudson Valley, NY-CT",
-    "place_en": "Hudson Valley, NY-CT"
+    "place": "Valle del Hudson, Nueva York y Connecticut",
+    "place_en": "Hudson Valley, New York and Connecticut"
   },
   "tier": "A",
   "mundanoType": "misid",
   "epistemicStatus": "documented",
   "probability": 29,
   "summary": "Entre 1983 y 1986, miles de residentes del valle del Hudson (Nueva York y Connecticut) reportaron un gran objeto en forma de V o bumerán con luces de colores, el «Westchester Boomerang». La policía estatal lo atribuyó en 1984 a pilotos que volaban en formación desde el aeródromo de Stormville y la FAA no halló lecturas de radar que coincidieran; los investigadores del CUFOS sostuvieron que parte de los avistamientos no encajaba con los aviones.",
-  "summary_en": "Between 1983 and 1986, thousands of Hudson Valley residents (New York and Connecticut) reported a large V- or boomerang-shaped object with colored lights, the \"Westchester Boomerang\". State police attributed it in 1984 to pilots flying in formation out of Stormville airport and the FAA found no matching radar readings; CUFOS investigators argued that part of the sightings did not fit the planes.",
+  "summary_en": "Between 1983 and 1986, thousands of Hudson Valley residents in New York and Connecticut reported a large V- or boomerang-shaped object with colored lights, the “Westchester Boomerang.” State police attributed it in 1984 to pilots flying in formation out of Stormville airport, and the FAA found no matching radar readings; CUFOS investigators argued that some of the sightings did not fit the planes.",
   "patterns": [
     "8g",
     "8l",
@@ -124,7 +124,7 @@
     "nohumano_abierto": 0.06,
     "indet": 0.21
   },
-  "name_en": "Hudson Valley Boomerang",
+  "name_en": "Hudson Valley · thousands see a large V-shaped object",
   "documents": [
     {
       "role": "documento",

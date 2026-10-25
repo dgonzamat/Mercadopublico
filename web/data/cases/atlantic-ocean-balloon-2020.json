@@ -4,8 +4,8 @@
   "pursueReleases": [
     4
   ],
-  "name": "'Un globo grande y algo deformado': el propio observador identifica el objeto",
-  "name_en": "'A large, somewhat deformed balloon': the observer identifies the object himself",
+  "name": "Atlántico · la tripulación compara el objeto con un globo",
+  "name_en": "Atlantic · the crew likens the object to a balloon",
   "year_start": 2020,
   "country": "US",
   "country_name": "Estados Unidos",
@@ -28,8 +28,8 @@
     "nohumano_abierto": 0.01,
     "indet": 0.15
   },
-  "summary": "En 2020, el Comando Norte de EE.UU. sometió a la AARO un reporte de 32 segundos de metraje infrarrojo sobre el océano Atlántico. Lo inusual de este expediente no es el video (un sensor que sigue un área de contraste sin incidentes) sino el informe de debrief que lo acompaña (DOW-UAP-D091): el debrief describe el objeto como 'de color más oscuro, entre marrón y rojizo, de aproximadamente 12-15 pies de altura', que 'viajaba con el viento', 'no maniobraba ni cambiaba de dirección', y que 'se asemejaba a un globo grande, algo deformado'. La comparación mundana la ofrece el propio informe de la tripulación, no un analista posterior.",
-  "summary_en": "In 2020, U.S. Northern Command submitted a report to AARO consisting of 32 seconds of infrared footage over the Atlantic Ocean. What is unusual about this file is not the video (a sensor tracking an area of contrast without incident) but the accompanying debrief report (DOW-UAP-D091): the debrief describes the object as 'a darker, maroonish color, approximately 12-15 feet in height,' that 'traveled with the wind,' 'did not maneuver or change direction,' and 'appeared similar to a large, somewhat deformed balloon.' The mundane comparison comes from the crew's own report, not from a later analyst.",
+  "summary": "En 2020, el Comando Norte de EE. UU. envió a la oficina del Pentágono para estos fenómenos (AARO) 32 segundos de video infrarrojo grabado sobre el océano Atlántico, en el que el sensor sigue sin incidentes una zona de contraste. Lo acompaña el informe de la entrevista posterior a la tripulación, que describe un objeto «de color más oscuro, entre marrón y rojizo», de unos 12 a 15 pies de altura, que «viajaba con el viento», «no maniobraba ni cambiaba de dirección» y «se asemejaba a un globo grande, algo deformado». La comparación la hace el propio informe; el video se publicó como «no resuelto», una etiqueta que no es una evaluación.",
+  "summary_en": "In 2020, U.S. Northern Command sent the Pentagon office for these phenomena (AARO) 32 seconds of infrared video recorded over the Atlantic Ocean, in which the sensor tracks an area of contrast without incident. It comes with a report of the crew's debriefing that describes an object of “a darker, maroonish color,” about 12 to 15 feet tall, that “traveled with the wind,” “did not maneuver or change direction” and “appeared similar to a large, somewhat deformed balloon.” The balloon comparison comes from the report itself; the video was released as “unresolved,” a label that is not an assessment.",
   "patterns": [],
   "category": "incident",
   "documents": [

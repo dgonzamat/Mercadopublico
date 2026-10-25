@@ -1,8 +1,8 @@
 {
   "id": "copiapo-chamonate-2022",
   "num": 463,
-  "name": "Copiapó · las luces al sur que vieron tres tripulaciones la noche del Cygnus NG-18",
-  "name_en": "Copiapó · the lights to the south seen by three crews on the night of Cygnus NG-18",
+  "name": "Copiapó · tres tripulaciones ven dos luces lentas hacia el sur",
+  "name_en": "Copiapó · three airline crews see two slow lights to the south",
   "year_start": 2022,
   "country": "CL",
   "country_name": "Chile",
@@ -10,8 +10,8 @@
   "location": {
     "lat": -27.2989,
     "lng": -70.4142,
-    "place": "Espacio aéreo sobre el aeródromo Chamonate, 11 km al noroeste de Copiapó (Atacama)",
-    "place_en": "Airspace over Chamonate aerodrome, 11 km northwest of Copiapó (Atacama)"
+    "place": "Sobre el aeródromo Chamonate, al noroeste de Copiapó (Atacama)",
+    "place_en": "Over Chamonate aerodrome, northwest of Copiapó (Atacama)"
   },
   "tier": "A",
   "mundanoType": "misid",
@@ -19,8 +19,8 @@
   "objectDetail": "cohete_misil",
   "epistemicStatus": "documented",
   "probability": 35,
-  "summary": "En la noche del 7 al 8 de noviembre de 2022, las tripulaciones de tres vuelos comerciales que bajaban hacia Santiago desde Iquique, Calama y Antofagasta preguntaron al control de Iquique si había tráfico al sur y dijeron tener a la vista dos luces que se movían lentamente, a unas 40 millas, y que otra tripulación describió como «muy grandes». El radar no registró nada. El SEFAA consideró que existían las condiciones para que fueran el cohete y la nave del lanzamiento 2022-149, la misión de carga Cygnus NG-18, pero sin imágenes de los testigos cerró el caso como «Relato».",
-  "summary_en": "On the night of 7–8 November 2022, the crews of three airline flights heading south to Santiago from Iquique, Calama and Antofagasta asked Iquique control whether there was traffic to the south and said they had in sight two lights moving slowly, some 40 miles away, which another crew described as 'very large'. Radar recorded nothing. SEFAA considered that the conditions existed for them to be the rocket and spacecraft of launch 2022-149, the Cygnus NG-18 cargo mission, but without images from the witnesses it closed the case as a 'Report'.",
+  "summary": "La noche del 7 al 8 de noviembre de 2022, las tripulaciones de tres vuelos comerciales que bajaban hacia Santiago desde Iquique, Calama y Antofagasta dijeron al control de Iquique tener a la vista, hacia el sur, dos luces que se movían despacio, a unas 40 millas; una las describió como «muy grandes». El radar no registró nada. El SEFAA, la oficina oficial chilena para estos fenómenos, consideró posible que fueran el cohete y la nave de carga Cygnus NG-18, lanzados el día 7, pero sin imágenes cerró el caso como «Relato». Según un cálculo de esta ficha, la sombra de la Tierra los cubría: solo se habrían visto con los motores encendidos.",
+  "summary_en": "On the night of 7–8 November 2022, the crews of three airline flights heading south to Santiago from Iquique, Calama and Antofagasta told Iquique control they had in sight, to the south, two lights moving slowly, some 40 miles away; one crew described them as “very large”. Radar recorded nothing. SEFAA, Chile's official office for these phenomena, considered they could be the rocket and the Cygnus NG-18 cargo craft, launched on the 7th, but without images it closed the case as a “Report”. By this entry's own calculation, both were in Earth's shadow and could only have been seen with their engines firing.",
   "patterns": [],
   "category": "incident",
   "posterior": {

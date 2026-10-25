@@ -1,8 +1,8 @@
 {
   "id": "ferrol-1966",
   "num": 446,
-  "name": "Ferrol · la luz de La Carreira",
-  "name_en": "Ferrol · the light over La Carreira",
+  "name": "Ferrol · cuatro hombres de guardia ven una luz y la fotografían",
+  "name_en": "Ferrol · four men on watch see a light and photograph it",
   "year_start": 1966,
   "country": "ES",
   "country_name": "España",
@@ -10,8 +10,8 @@
   "location": {
     "lat": 43.5513,
     "lng": -8.1729,
-    "place": "Estación radio receptora naval de La Carreira, entre Narón y Valdoviño (comarca de Ferrol, A Coruña)",
-    "place_en": "La Carreira naval radio receiving station, between Narón and Valdoviño (Ferrol area, A Coruña)"
+    "place": "Estación naval de La Carreira, entre Narón y Valdoviño (A Coruña)",
+    "place_en": "La Carreira naval station, between Narón and Valdoviño (A Coruña)"
   },
   "tier": "B",
   "mundanoType": "misid",
@@ -20,7 +20,7 @@
   "epistemicStatus": "documented",
   "probability": 45,
   "summary": "La noche del 2 de abril de 1966, un cabo primero electricista, un celador de líneas y dos marineros de guardia en la estación radio receptora de La Carreira, cerca de Ferrol, vieron durante unos 45 minutos un objeto luminoso «de luz opaca muy intensa» que cambiaba de forma cada cinco minutos, a la izquierda del monte Campelo. El cabo lo fotografió con una exposición de 68 segundos. Nadie lo comunicó a los mandos hasta agosto, cuando un corresponsal de La Voz de Galicia pidió permiso para publicarlo. El Mando Operativo Aéreo no formuló hipótesis; Ballester Olmos y Plaza del Olmo proponen la Luna, con una fecha distinta.",
-  "summary_en": "On the night of 2 April 1966, a leading electrician, a line keeper and two sailors on duty at the La Carreira radio receiving station, near Ferrol, watched for some 45 minutes a luminous object 'of very intense opaque light' that changed shape every five minutes, to the left of Mount Campelo. The corporal photographed it with a 68-second exposure. Nobody told the commanders until August, when a correspondent of La Voz de Galicia asked for permission to publish it. The Air Operations Command put forward no hypothesis; Ballester Olmos and Plaza del Olmo propose the Moon, on a different date.",
+  "summary_en": "On the night of 2 April 1966, an electrician corporal, a line keeper and two sailors on duty at the La Carreira radio receiving station, near Ferrol, watched for some 45 minutes a luminous object “of very intense opaque light” that changed shape every five minutes, to the left of Mount Campelo. The corporal photographed it with a 68-second exposure. Nobody told the commanders until August, when a correspondent of La Voz de Galicia asked for permission to publish it. The Air Operations Command put forward no hypothesis; Ballester Olmos and Plaza del Olmo propose the Moon, on a different date.",
   "patterns": [
     "8h"
   ],

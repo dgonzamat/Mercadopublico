@@ -1,7 +1,8 @@
 {
   "id": "westall-1966",
   "num": 13,
-  "name": "Westall Australia",
+  "name": "Westall · alumnos ven un objeto plateado sobre su colegio",
+  "name_en": "Westall · pupils see a silver object over their school",
   "year_start": 1966,
   "country": "AU",
   "country_name": "Australia",
@@ -9,8 +10,8 @@
   "location": {
     "lat": -37.94,
     "lng": 145.13,
-    "place": "Westall, Melbourne",
-    "place_en": "Westall, Melbourne"
+    "place": "Westall, Melbourne (Australia)",
+    "place_en": "Westall, Melbourne, Australia"
   },
   "tier": "B",
   "mundanoType": "misid",

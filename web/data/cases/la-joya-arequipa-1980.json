@@ -1,8 +1,8 @@
 {
   "id": "la-joya-arequipa-1980",
   "num": 161,
-  "name": "La Joya · un caza FAP dispara contra un objeto (Perú, 1980)",
-  "name_en": "La Joya · a Peruvian fighter fires at an object (Peru, 1980)",
+  "name": "La Joya · un caza peruano dispara contra un objeto",
+  "name_en": "La Joya · a Peruvian fighter fires on an object",
   "year_start": 1980,
   "country": "PE",
   "country_name": "Perú",
@@ -10,14 +10,14 @@
   "location": {
     "lat": -16.61,
     "lng": -71.87,
-    "place": "Base Aérea de La Joya, Arequipa",
-    "place_en": "La Joya Air Base, Arequipa"
+    "place": "Base Aérea de La Joya, Arequipa (Perú)",
+    "place_en": "La Joya Air Base, Arequipa (Peru)"
   },
   "tier": "B",
   "epistemicStatus": "documented",
   "probability": 64,
   "summary": "El 11 de abril de 1980, en la Base Aérea de La Joya (Arequipa, Perú), el teniente Óscar Santa María Huertas despegó en un Su-22 para interceptar un objeto que la base creyó al principio un globo espía. Según su testimonio, disparó 64 proyectiles que el objeto pareció absorber sin daño, y luego se desplazaba cada vez que lograba fijarlo. Descrito como una cúpula color crema sobre una base circular plateada de unos 10 metros, resistió 22 minutos de persecución ante cientos de testigos. El único documento de la época, de la agregaduría de defensa de EE.UU. en Lima, lo fecha el 9 de mayo, y concluye que «su origen sigue siendo desconocido».",
-  "summary_en": "On April 11, 1980, at La Joya Air Base (Arequipa, Peru), Lieutenant Óscar Santa María Huertas scrambled in a Su-22 to intercept an object the base initially took for a spy balloon. By his testimony, he fired 64 rounds that the object seemed to absorb without damage, and it then moved away each time he locked onto it. Described as a cream-colored dome over a silver circular base about 10 meters across, it withstood 22 minutes of pursuit before hundreds of witnesses. The only contemporaneous document, from the U.S. defense attaché office in Lima, dates it to May 9 and concludes that 'its origin remains unknown'.",
+  "summary_en": "On April 11, 1980, at La Joya Air Base (Arequipa, Peru), Lieutenant Óscar Santa María Huertas scrambled in a Su-22 to intercept an object the base initially took for a spy balloon. By his testimony, he fired 64 rounds that the object seemed to absorb without damage, and it then moved away each time he locked onto it. Described as a cream-colored dome over a silver circular base about 10 meters across, it withstood 22 minutes of pursuit before hundreds of witnesses. The only contemporaneous document, from the U.S. defense attaché office in Lima, dates it to May 9 and concludes that “its origin remains unknown.”",
   "patterns": [
     "8e"
   ],

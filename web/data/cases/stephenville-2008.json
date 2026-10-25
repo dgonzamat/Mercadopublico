@@ -1,7 +1,8 @@
 {
   "id": "stephenville-2008",
   "num": 38,
-  "name": "Stephenville",
+  "name": "Stephenville · vecinos ven un objeto grande y silencioso",
+  "name_en": "Stephenville · residents see a large, silent object",
   "year_start": 2008,
   "country": "US",
   "country_name": "Estados Unidos",
@@ -16,8 +17,8 @@
   "mundanoType": "misid",
   "epistemicStatus": "documented",
   "probability": 42,
-  "summary": "Decenas de testigos (incluido un alguacil) reportaron un objeto grande y silencioso sobre Stephenville (Texas); un análisis de MUFON de los datos de radar de la FAA obtenidos por FOIA describió una traza sin transpondedor hacia el espacio aéreo restringido del rancho presidencial de Crawford. La Reserva de la Fuerza Aérea, tras negarlo, admitió que diez F-16 entrenaban esa tarde en la zona.",
-  "summary_en": "Dozens of witnesses (including a constable) reported a large, silent object over Stephenville, Texas; a MUFON analysis of FAA radar data obtained via FOIA described a track with no transponder heading toward the restricted airspace of the presidential ranch at Crawford. Air Force Reserve Command, after denying it, admitted that ten F-16s were training in the area that evening.",
+  "summary": "Al anochecer del 8 de enero de 2008, decenas de vecinos de Stephenville (Texas), entre ellos un alguacil y un piloto privado, dijeron ver un objeto grande y silencioso a baja altura. El investigador Robert Powell, de la organización civil MUFON, obtuvo de la FAA los datos de radar de esa noche y describió la traza de algo que no se identificaba como avión y que iba hacia el espacio aéreo restringido del rancho presidencial de Crawford; el astrónomo James McGaha replicó que esos puntos se escogieron entre millones de señales de ruido. La Reserva de la Fuerza Aérea, tras negarlo, admitió que diez F-16 entrenaban esa tarde en la zona.",
+  "summary_en": "At dusk on 8 January 2008, dozens of residents of Stephenville, Texas, among them a constable and a private pilot, said they saw a large, silent object flying low. Investigator Robert Powell, of the civilian group MUFON, obtained the FAA's radar data for that night and described the track of something that did not identify itself as an aircraft, heading for the restricted airspace over the presidential ranch at Crawford; astronomer James McGaha replied that those points had been picked out of millions of noise returns. Air Force Reserve Command, after denying it, admitted that ten F-16s were training in the area that evening.",
   "patterns": [
     "8l"
   ],

@@ -4,8 +4,8 @@
   "pursueReleases": [
     1
   ],
-  "name": "Trans-Cáucaso 1955: los 'tres observadores altamente fiables' eran el senador Russell y su comitiva",
-  "name_en": "Trans-Caucasus 1955: the 'three highly reliable observers' were Senator Russell and his party",
+  "name": "Transcaucasia · el senador Russell ve dos discos desde un tren",
+  "name_en": "Transcaucasia · Senator Russell sees two discs from a train",
   "year_start": 1955,
   "country": "SU",
   "country_name": "Unión Soviética (RSS de Azerbaiyán)",
@@ -13,8 +13,8 @@
   "location": {
     "lat": 39.95,
     "lng": 49.4,
-    "place": "Línea férrea entre Aliaty (Ələt) y Adzhijabul, RSS de Azerbaiyán — al sur de Bakú",
-    "place_en": "Railway between Aliaty (Ələt) and Adzhijabul, Azerbaijan SSR — south of Baku"
+    "place": "Vía férrea entre Aliaty y Adzhijabul, al sur de Bakú (Azerbaiyán)",
+    "place_en": "Railway between Aliaty and Adzhijabul, south of Baku, Azerbaijan"
   },
   "tier": "B",
   "mundanoType": "misid",
@@ -28,8 +28,8 @@
     "nohumano_abierto": 0.04,
     "indet": 0.13
   },
-  "summary": "El informe IR 193-55 (PURSUE Release 01), firmado el 14 de octubre de 1955 por el agregado aéreo de EE.UU. Tte. Cnel. Thomas S. Ryan, recoge el relato de tres observadores «altamente fiables» que, viajando en tren por el trans-Cáucaso al sur de Bakú el 4 de octubre de 1955 a las 19:10, vieron dos objetos en forma de disco ascender casi verticalmente hasta unos 6.000 pies y acelerar bruscamente rumbo al norte. El cable del agregado transcrito en el informe, y luego el memo CIA-UAP-D020, los identifican: el senador Richard Russell, su asesor militar (el Tte. Cnel. E. U. Hathaway) y el intérprete Ruben Efron.",
-  "summary_en": "Report IR 193-55 (PURSUE Release 01), signed on October 14, 1955 by U.S. air attaché Lt. Col. Thomas S. Ryan, records the account of three 'highly reliable' observers who, traveling by rail through the Trans-Caucasus south of Baku on October 4, 1955 at 19:10, saw two disc-shaped objects ascend almost vertically to about 6,000 feet and sharply accelerate northward. The attaché's cable transcribed in the report, and later CIA memo CIA-UAP-D020, identify them: Senator Richard Russell, his military aide (Lt. Col. E. U. Hathaway) and interpreter Ruben Efron.",
+  "summary": "El 4 de octubre de 1955, a las 19:10, tres viajeros estadounidenses que cruzaban en tren la Transcaucasia, al sur de Bakú (Azerbaiyán soviético), vieron dos objetos en forma de disco subir casi en vertical, uno tras otro, hasta unos 6.000 pies y acelerar de golpe hacia el norte; dos reflectores apuntaban al cielo desde el lugar de donde subían. El informe del agregado aéreo de EE. UU., Thomas S. Ryan, del 14 de octubre, los llama «altamente fiables». El cable que transcribe y un memorando posterior de la CIA los identifican: el senador Richard Russell, su asesor militar, E. U. Hathaway, y el intérprete Ruben Efron.",
+  "summary_en": "On 4 October 1955, at 7:10 pm, three American travelers crossing the Transcaucasus by train, south of Baku in Soviet Azerbaijan, saw two disc-shaped objects climb almost vertically, one after the other, to about 6,000 feet and then speed off to the north; two searchlights pointed skyward from the spot they rose from. The U.S. air attaché’s report, signed by Lt. Col. Thomas S. Ryan on 14 October, calls them “highly reliable.” The cable it transcribes and a later CIA memo identify them: Senator Richard Russell, his military aide Lt. Col. E. U. Hathaway, and interpreter Ruben Efron.",
   "documents": [
     {
       "role": "documento",

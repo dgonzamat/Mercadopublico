@@ -1,7 +1,8 @@
 {
   "id": "minot-afb-1968",
   "num": 56,
-  "name": "Minot AFB B-52",
+  "name": "Minot · un B-52 y el personal de misiles ven una luz",
+  "name_en": "Minot · a B-52 crew and missile staff see a light",
   "year_start": 1968,
   "country": "US",
   "country_name": "Estados Unidos",
@@ -9,8 +10,8 @@
   "location": {
     "lat": 48.42,
     "lng": -101.36,
-    "place": "Minot AFB, Dakota del Norte",
-    "place_en": "Minot AFB, North Dakota"
+    "place": "Base Aérea de Minot, Dakota del Norte",
+    "place_en": "Minot Air Force Base, North Dakota"
   },
   "tier": "S",
   "mundanoType": "misid",
@@ -18,8 +19,8 @@
   "objectDetail": "planeta_estrella",
   "epistemicStatus": "documented",
   "probability": 62,
-  "summary": "La madrugada del 24 de octubre de 1968, dieciséis miembros del personal de mantenimiento y seguridad del campo de misiles Minuteman de Minot AFB (Dakota del Norte) reportaron durante horas una luz grande que cambiaba de blanco a verde y ámbar, a veces con ruido de reactor. Hacia las 03:40 el radar de un B-52H captó un eco que se mantuvo junto a su ala izquierda unas 20 millas mientras sus dos radios UHF dejaban de transmitir; la tripulación filmó la pantalla. Luego el piloto vio una luz naranja en el suelo o muy cerca, y más tarde saltó la alarma de intrusión del silo Oscar-7. Blue Book lo atribuyó a Sirio, al B-52 y a un «posible plasma».",
-  "summary_en": "Before dawn on 24 October 1968, sixteen maintenance and security personnel in the Minuteman missile field around Minot AFB, North Dakota, reported for hours a large light that changed from white to green and amber, sometimes with a jet-engine sound. At about 3:40 a.m. the radar of a B-52H picked up an echo that stayed off its left wing for some 20 miles while both its UHF radios stopped transmitting; the crew filmed the scope. Later the pilot saw an orange light on or near the ground, and later the intrusion alarm at the Oscar-7 silo went off. Blue Book attributed it to Sirius, the B-52 itself and a 'possible plasma'.",
+  "summary": "La madrugada del 24 de octubre de 1968, dieciséis miembros del personal de mantenimiento y seguridad del campo de misiles nucleares de la base de Minot (Dakota del Norte) informaron durante horas de una luz grande que cambiaba de blanco a verde y ámbar, a veces con ruido de reactor. Hacia las 03:40, el radar de un B-52H captó algo que se mantuvo junto a su ala izquierda unas 20 millas mientras sus dos radios dejaban de transmitir; la tripulación filmó la pantalla. Luego el piloto vio una luz naranja en el suelo o muy cerca, y saltó la alarma de intrusión de un silo. Blue Book lo atribuyó a Sirio, al propio B-52 y a un «posible plasma».",
+  "summary_en": "Before dawn on 24 October 1968, sixteen maintenance and security personnel in the nuclear missile field around Minot Air Force Base, North Dakota, reported for hours a large light that changed from white to green and amber, sometimes with a jet-engine sound. At about 3:40 a.m., a B-52H bomber's radar picked up something that stayed off its left wing for some 20 miles while both its radios stopped transmitting; the crew filmed the scope. Then the pilot saw an orange light on or near the ground, and the intrusion alarm at a silo went off. Blue Book attributed it to Sirius, the B-52 itself and a “possible plasma.”",
   "patterns": [
     "8e",
     "8f",

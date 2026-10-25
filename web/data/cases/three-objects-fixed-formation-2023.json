@@ -4,8 +4,8 @@
   "pursueReleases": [
     1
   ],
-  "name": "Tres objetos que mantienen posición y orientación fija entre sí durante dos minutos",
-  "name_en": "Three objects holding a fixed position and orientation relative to each other for two minutes",
+  "name": "Pacífico occidental · un sensor sigue tres objetos en formación",
+  "name_en": "Western Pacific · a sensor tracks three objects in formation",
   "year_start": 2023,
   "country": "US",
   "country_name": "Área de responsabilidad de INDOPACOM (ubicación exacta no revelada)",
@@ -13,8 +13,8 @@
   "location": {
     "lat": 18,
     "lng": 125,
-    "place": "Océano Pacífico occidental, área INDOPACOM (ubicación exacta no revelada)",
-    "place_en": "Western Pacific Ocean, INDOPACOM area (exact location undisclosed)"
+    "place": "Océano Pacífico occidental (ubicación exacta no revelada)",
+    "place_en": "Western Pacific Ocean (exact location undisclosed)"
   },
   "tier": "A",
   "epistemicStatus": "documented",
@@ -28,8 +28,8 @@
     "nohumano_abierto": 0.04,
     "indet": 0.28
   },
-  "summary": "En 2023, un sensor infrarrojo a bordo de una plataforma militar estadounidense en el área INDOPACOM registró casi dos minutos ininterrumpidos de tres objetos que, según la descripción visual oficial de la AARO, 'mantienen posición y orientación fija entre sí' durante toda la observación. A diferencia de la mayoría de los casos de múltiples objetos (donde suelen aparecer y desaparecer, cruzarse o perderse contra el fondo), aquí los tres puntos de contraste permanecen relativos entre sí de forma estable el tiempo suficiente como para que el propio analista lo señalara como un rasgo distintivo del metraje.",
-  "summary_en": "In 2023, an infrared sensor aboard a U.S. military platform in the INDOPACOM area recorded nearly two uninterrupted minutes of three objects that, per AARO's official visual description, 'maintain a fixed position and orientation relative to one another' throughout the observation. Unlike most multi-object cases (where objects typically appear and disappear, cross paths, or lose distinctiveness against the background) here the three contrast points remain stable relative to each other long enough that the analyst himself flagged it as a distinctive feature of the footage.",
+  "summary": "En 2023, un sensor infrarrojo de una plataforma militar de EE. UU. en la zona del Comando Indo-Pacífico grabó casi dos minutos seguidos de tres zonas de contraste que, según la descripción de la oficina del Pentágono para estos fenómenos (AARO), «parecen mantener una posición y orientación fija entre sí» mientras el sensor las mantiene en el centro de la imagen. La AARO advierte que esa descripción no es un juicio sobre la naturaleza del suceso. Quien lo grabó no dejó descripción, y no se publicaron coordenadas, plataforma ni fecha exacta; el índice de datos oficial da como lugar Japón. Se publicó en mayo de 2026.",
+  "summary_en": "In 2023, an infrared sensor on a U.S. military platform in the Indo-Pacific Command area recorded nearly two uninterrupted minutes of three areas of contrast that, according to the description by the Pentagon office for these phenomena (AARO), “appear to maintain a fixed position and orientation relative to one another” while the sensor keeps them in the center of the frame. AARO warns that the description is not a judgment on the nature of the event. Whoever recorded it left no description, and no coordinates, platform or exact date were released; the official data index gives Japan as the location. It was released in May 2026.",
   "patterns": [
     "8b"
   ],
@@ -78,7 +78,7 @@
       "name": "Índice de datos de war.gov/UFO (CSV de la entrega), espejo en github.com/abigailhaddad/ufo-releases",
       "name_en": "war.gov/UFO release data index (CSV), mirrored at github.com/abigailhaddad/ufo-releases",
       "url": "https://github.com/abigailhaddad/ufo-releases",
-      "note": "El registro DOW-UAP-PR047 lleva en el campo de título del vídeo «Unresolved UAP Report Japan, 2023» y como lugar «Japan».",
+      "note": "El registro DOW-UAP-PR047 lleva en el campo de título del video «Unresolved UAP Report Japan, 2023» y como lugar «Japan».",
       "note_en": "The DOW-UAP-PR047 record carries 'Unresolved UAP Report Japan, 2023' in its video-title field and 'Japan' as location."
     },
     {

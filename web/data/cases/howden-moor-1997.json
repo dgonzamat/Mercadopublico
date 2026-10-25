@@ -1,8 +1,8 @@
 {
   "id": "howden-moor-1997",
   "num": 114,
-  "name": "Howden Moor · operativo de rescate por un objeto fantasma",
-  "name_en": "Howden Moor · rescue operation for a phantom object",
+  "name": "Howden Moors · testigos ven caer algo y empieza una gran búsqueda",
+  "name_en": "Howden Moors · witnesses see something fall; a big search follows",
   "year_start": 1997,
   "country": "GB",
   "country_name": "Reino Unido",
@@ -10,8 +10,8 @@
   "location": {
     "lat": 53.43,
     "lng": -1.75,
-    "place": "Howden Moors, Peak District, frontera South Yorkshire/Derbyshire",
-    "place_en": "Howden Moors, Peak District, South Yorkshire/Derbyshire border"
+    "place": "Howden Moors, Peak District (Inglaterra)",
+    "place_en": "Howden Moors, Peak District (England)"
   },
   "tier": "A",
   "mundanoType": "misid",
@@ -19,8 +19,8 @@
   "objectDetail": "avion",
   "epistemicStatus": "documented",
   "probability": 26,
-  "summary": "La noche del 24 de marzo de 1997, tras reportes de un objeto que se estrelló o explotó sobre los Howden Moors (Peak District), los servicios de emergencia montaron uno de los mayores operativos de búsqueda de la región (~200 personas, £50.000+). El British Geological Survey registró dos 'eventos sónicos' esa noche, a las 21:52 y a las 22:06, y muchos testigos vieron cazas militares a baja altura, aunque el Ministerio de Defensa solo reconoció vuelos de entrenamiento reservados hasta las 21:07. Ningún avión apareció y los radares consultados no mostraron nada significativo. Caso multi-agencia sobre un objeto que el aparato oficial buscó pero nunca confirmó.",
-  "summary_en": "On the night of March 24, 1997, after reports of an object that crashed or exploded over the Howden Moors (Peak District), emergency services mounted one of the region's largest search operations (~200 personnel, £50,000+). The British Geological Survey recorded two 'sonic events' that night, at 9:52 and 10:06pm, and many witnesses saw low-flying military jets, although the Ministry of Defence only acknowledged training flights booked until 9:07pm. No aircraft turned up and the radars checked showed nothing significant. A multi-agency case about an object the official apparatus searched for but never confirmed.",
+  "summary": "La noche del 24 de marzo de 1997, tras avisos de un objeto que se estrelló o explotó sobre los Howden Moors (Peak District), los servicios de emergencia montaron uno de los mayores operativos de búsqueda de la región, con unas 200 personas y más de 50.000 libras de coste. El British Geological Survey registró dos «eventos sónicos» esa noche, a las 21:52 y a las 22:06, y muchos testigos vieron cazas militares a baja altura, aunque el Ministerio de Defensa solo reconoció vuelos de entrenamiento reservados hasta las 21:07. No apareció ningún avión y los radares consultados no mostraron nada significativo.",
+  "summary_en": "On the night of 24 March 1997, after reports of an object that crashed or exploded over the Howden Moors (Peak District), emergency services mounted one of the region's largest search operations, with about 200 people and a cost of more than £50,000. The British Geological Survey recorded two “sonic events” that night, at 9:52 and 10:06 p.m., and many witnesses saw military jets flying low, although the Ministry of Defence only acknowledged training flights booked until 9:07 p.m. No aircraft turned up and the radars checked showed nothing significant.",
   "patterns": [],
   "category": "incident",
   "posterior": {

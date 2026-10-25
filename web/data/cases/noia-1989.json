@@ -1,8 +1,8 @@
 {
   "id": "noia-1989",
   "num": 448,
-  "name": "Noia · el eco inmóvil del radar del Iroite",
-  "name_en": "Noia · the motionless echo on the Iroite radar",
+  "name": "Noia · un radar militar sigue una señal casi quieta toda la noche",
+  "name_en": "Noia · a military radar tracks a near-motionless signal all night",
   "year_start": 1989,
   "country": "ES",
   "country_name": "España",
@@ -17,8 +17,8 @@
   "mundanoType": "natural",
   "epistemicStatus": "documented",
   "probability": 39,
-  "summary": "La tarde del 5 de diciembre de 1989, mientras la Guardia Civil comunicaba a la torre de Santiago una luz lenticular «entre Castro y Sada», el radar del Escuadrón de Vigilancia Aérea n.º 10, en el monte Iroite, sobre Noia, captó un eco primario y secundario a 57.000 pies que subió hasta los 75.000 y siguió casi inmóvil en la pantalla de altura hasta la mañana siguiente. Ningún avión civil vio nada. El eco no coincidía en posición con la luz; Ballester Olmos y Manuel Borraz atribuyen la luz a Venus y el eco a una propagación anómala del radar.",
-  "summary_en": "On the evening of 5 December 1989, while the Civil Guard was reporting to Santiago tower a lenticular light 'between Castro and Sada', the radar of Air Surveillance Squadron No. 10, on Mount Iroite above Noia, picked up a primary and secondary echo at 57,000 feet that climbed to 75,000 and stayed almost motionless on the height display until the next morning. No civil aircraft saw anything. The echo did not match the light's position; Ballester Olmos and Manuel Borraz attribute the light to Venus and the echo to anomalous radar propagation.",
+  "summary": "La tarde del 5 de diciembre de 1989, mientras la Guardia Civil comunicaba a la torre de Santiago una luz lenticular «entre Castro y Sada», el radar del Escuadrón de Vigilancia Aérea n.º 10, en el monte Iroite, sobre Noia, captó una señal, por reflexión y con respuesta de transpondedor, a 57.000 pies, que subió hasta los 75.000 y siguió casi inmóvil en la pantalla de altura hasta la mañana siguiente. Ningún avión civil vio nada. La señal no coincidía en posición con la luz; Ballester Olmos y Manuel Borraz atribuyen la luz a Venus y la señal a una propagación anómala de las ondas del radar.",
+  "summary_en": "On the evening of 5 December 1989, while the Civil Guard was reporting to Santiago tower a lenticular light “between Castro and Sada”, the radar of Air Surveillance Squadron No. 10, on Mount Iroite above Noia, picked up a signal, both as a reflection and as a transponder reply, at 57,000 feet that climbed to 75,000 and stayed almost motionless on the height display until the next morning. No civil aircraft saw anything. The signal did not match the light's position; Ballester Olmos and Manuel Borraz attribute the light to Venus and the signal to anomalous propagation of the radar waves.",
   "patterns": [
     "8e"
   ],

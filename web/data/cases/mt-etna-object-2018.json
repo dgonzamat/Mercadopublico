@@ -2,8 +2,8 @@
   "id": "mt-etna-object-2018",
   "num": 365,
   "pursueReleases": [],
-  "name": "El objeto que parecía cruzar la nube de un volcán en erupción",
-  "name_en": "The object that appeared to cross an erupting volcano's plume",
+  "name": "Etna · un dron filma algo que parece cruzar la nube del volcán",
+  "name_en": "Etna · a drone films something that seems to cross the plume",
   "year_start": 2018,
   "country": "IT",
   "country_name": "Italia",
@@ -28,8 +28,8 @@
     "nohumano_abierto": 0.01,
     "indet": 0.1
   },
-  "summary": "En diciembre de 2018, un sensor infrarrojo FLIR de una plataforma no tripulada de la Fuerza Aérea de EE.UU. sobre el Mediterráneo grabó un objeto que parecía atravesar la columna de gas y ceniza de una erupción del Etna, en Sicilia, sin alterar su rumbo, altitud ni desempeño. La AARO lo analizó con socios de inteligencia y de ciencia y tecnología, y consultó a un vulcanólogo. Con reconstrucción 3D y un análisis de la luminosidad de los píxeles, descartó que cruzara la columna, y evalúa con confianza moderada que era un globo a la deriva a unos 170 kilómetros del volcán, distancia estimada a partir de la capa de nubes y del viento, no medida.",
-  "summary_en": "In December 2018, a FLIR infrared sensor on an uncrewed U.S. Air Force platform over the Mediterranean recorded an object that appeared to pass through the plume of gas and ash from an eruption of Mount Etna, in Sicily, with no effect on its bearing, altitude or performance. AARO analyzed it with intelligence and S&T partners, and consulted a volcanologist. Using 3D reconstruction and an analysis of the object's pixel luminosity, it ruled out that the object crossed the plume, and assesses with moderate confidence that it was a balloon drifting about 170 kilometers from the volcano, a distance estimated from weather data, not measured.",
+  "summary": "En diciembre de 2018, la cámara infrarroja de un aparato no tripulado de la Fuerza Aérea de EE. UU. sobre el Mediterráneo grabó un objeto que parecía cruzar la columna de gas y ceniza de una erupción del Etna, en Sicilia, sin cambiar de rumbo ni de altitud. La oficina del Pentágono para estos fenómenos (AARO) lo analizó con otras agencias y un vulcanólogo. Con modelos en 3D y comparando el brillo de los píxeles del objeto con el de su entorno, descartó que cruzara la columna, y evalúa con confianza moderada que era un globo a la deriva a unos 170 km del volcán, distancia estimada con datos de nubes y viento, no medida.",
+  "summary_en": "In December 2018, the infrared camera of an uncrewed U.S. Air Force aircraft over the Mediterranean recorded an object that appeared to pass through the plume of gas and ash from an eruption of Mount Etna, in Sicily, without changing heading or altitude. The Pentagon office for these phenomena (AARO) analyzed it with other agencies and a volcanologist. Using 3D models and comparing the brightness of the object's pixels with that of its surroundings, it ruled out a crossing, and assesses with moderate confidence that it was a balloon drifting about 170 km from the volcano, a distance estimated from cloud and wind data, not measured.",
   "patterns": [],
   "category": "incident",
   "documents": [
@@ -91,7 +91,7 @@
   ],
   "evidenceReviewed": "2026-09-28",
   "classBasis": {
-    "es": "Evaluación de la AARO en DVIDS: los efectos ópticos de las intensas condiciones atmosféricas cerca del volcán distorsionaron el vídeo e hicieron que el objeto pareciera cruzar la columna; «la AARO evalúa con confianza moderada que la grabación muestra en cambio un globo a unos 170 kilómetros de la caldera, que viajaba a la velocidad y en la dirección del viento».",
+    "es": "Evaluación de la AARO en DVIDS: los efectos ópticos de las intensas condiciones atmosféricas cerca del volcán distorsionaron el video e hicieron que el objeto pareciera cruzar la columna; «la AARO evalúa con confianza moderada que la grabación muestra en cambio un globo a unos 170 kilómetros de la caldera, que viajaba a la velocidad y en la dirección del viento».",
     "en": "AARO assessment on DVIDS: optical effects from the intense atmospheric conditions near the volcano distorted the video, causing the object to appear to transit the plume; \"AARO assesses with moderate confidence that the footage instead depicts a balloon approximately 170 kilometers from the caldera traveling at wind speed and direction.\"",
     "source": "DVIDS — «Mt. Etna Object», evaluación de la AARO (19 nov 2024)",
     "source_en": "DVIDS — “Mt. Etna Object”, AARO evaluation (19 Nov 2024)",

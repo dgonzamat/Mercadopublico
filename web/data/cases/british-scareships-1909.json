@@ -1,8 +1,8 @@
 {
   "id": "british-scareships-1909",
   "num": 244,
-  "name": "Scareships británicos · 1909",
-  "name_en": "British Scareships · 1909",
+  "name": "Reino Unido · naves aéreas con reflectores en el cielo nocturno",
+  "name_en": "Britain · airships with searchlights in the night sky",
   "year_start": 1909,
   "country": "GB",
   "country_name": "Reino Unido",
@@ -17,8 +17,8 @@
   "mundanoType": "misid",
   "epistemicStatus": "documented",
   "probability": 28,
-  "summary": "En la primavera de 1909, decenas de británicos (entre ellos un policía en Peterborough) reportaron 'naves aéreas' con forma de cigarro o torpedo y potentes reflectores cruzando el cielo de noche, sobre todo en Anglia Oriental y Gales. La prensa los bautizó 'scareships' y muchos supusieron que eran zepelines alemanes espiando, pese a que la aviación alemana no podía alcanzar Gran Bretaña en 1909; la prensa de ese mismo verano habló de una maqueta publicitaria y de un supuesto inventor que resultó ser un bulo.",
-  "summary_en": "In spring 1909, dozens of Britons (including a policeman in Peterborough) reported cigar- or torpedo-shaped 'airships' with powerful searchlights crossing the night sky, mostly over East Anglia and Wales. The press dubbed them 'scareships' and many assumed they were German Zeppelins spying, despite German aviation being unable to reach Britain in 1909; the press that same summer spoke of an advertising model and of a supposed inventor who turned out to be a hoax.",
+  "summary": "En la primavera de 1909, decenas de británicos, entre ellos un policía de Peterborough, contaron haber visto de noche «naves aéreas» con forma de cigarro o de torpedo y potentes reflectores, sobre todo en Anglia Oriental y Gales. La prensa las llamó «scareships» y muchos supusieron que eran zepelines alemanes espiando, aunque la aviación alemana no podía llegar a Gran Bretaña en 1909; ese mismo verano, la prensa habló de una maqueta publicitaria y de un supuesto inventor que resultó ser un bulo.",
+  "summary_en": "In the spring of 1909, dozens of Britons, among them a policeman in Peterborough, reported seeing cigar- or torpedo-shaped “airships” with powerful searchlights crossing the night sky, mostly over East Anglia and Wales. The press called them “scareships,” and many assumed they were German Zeppelins on spying missions, even though German aviation could not reach Britain in 1909; that same summer the press wrote of an advertising model and of a supposed inventor who turned out to be a hoax.",
   "patterns": [
     "8h"
   ],

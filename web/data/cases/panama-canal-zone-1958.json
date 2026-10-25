@@ -1,8 +1,8 @@
 {
   "id": "panama-canal-zone-1958",
   "num": 155,
-  "name": "Zona del Canal de Panamá · radar militar y reflectores (1958)",
-  "name_en": "Panama Canal Zone · military radar and searchlights (1958)",
+  "name": "Canal de Panamá · militares de EE. UU. siguen objetos por radar",
+  "name_en": "Panama Canal · U.S. military radars track unknown objects",
   "year_start": 1958,
   "country": "PA",
   "country_name": "Panamá",
@@ -10,8 +10,8 @@
   "location": {
     "lat": 8.9147,
     "lng": -79.5997,
-    "place": "Zona del Canal (administración estadounidense), Howard Field y baterías antiaéreas",
-    "place_en": "Canal Zone (U.S. administration), Howard Field and anti-aircraft batteries"
+    "place": "Zona del Canal de Panamá (bajo administración estadounidense)",
+    "place_en": "Panama Canal Zone (under U.S. administration)"
   },
   "tier": "S",
   "epistemicStatus": "documented",
@@ -26,8 +26,8 @@
     "source_en": "Project Blue Book, analysis by Colonel Gordon C. Hoffman (AFCIN-4E1) and case record card",
     "url": "https://archive.org/details/1958-03-6963741-PanamaCanalZone"
   },
-  "summary": "En las noches del 9 y 10 de marzo de 1958, personal de la Fuerza Aérea y de artillería antiaérea del Ejército de EE.UU. en la Zona del Canal de Panamá rastreó objetos no identificados con varios radares de búsqueda y seguimiento. Según el informe del Ejército, cuando los reflectores los iluminaron, los blancos subieron de 2.000 a 10.000 pies en cinco a diez segundos; un T-33 de Howard Field intentó interceptarlos sin éxito, porque cada vez que se acercaba el objeto se alejaba varias millas y se detenía. Lo documentó el capitán Vernon D. Adams (USAF), y Project Blue Book lo cerró como probable globo y falso blanco de radar.",
-  "summary_en": "On the nights of March 9 and 10, 1958, U.S. Air Force personnel and U.S. Army anti-aircraft artillery in the Panama Canal Zone tracked unidentified objects with several search and tracking radars. According to the Army report, when searchlights illuminated the targets, they climbed from 2,000 to 10,000 feet in five to ten seconds; a T-33 from Howard Field tried to intercept without success, because each time it closed in the object moved several miles away and stopped. Capt. Vernon D. Adams (USAF) documented it, and Project Blue Book closed it as a probable balloon and a false radar target.",
+  "summary": "En las noches del 9 y 10 de marzo de 1958, personal de la Fuerza Aérea y de la artillería antiaérea del Ejército de EE. UU. en la Zona del Canal de Panamá siguió con varios radares objetos que no lograron identificar. Según el informe del Ejército, cuando los reflectores los iluminaron, subieron de 2.000 a 10.000 pies en cinco a diez segundos; un reactor T-33 salió a interceptarlos, y cada vez que se acercaba el objeto se alejaba varias millas y se detenía. Un vuelo comercial guiado hasta unas 100 yardas no vio nada. Project Blue Book, el programa de la Fuerza Aérea, lo cerró como probable globo y falsa señal de radar.",
+  "summary_en": "On the nights of March 9 and 10, 1958, U.S. Air Force personnel and Army anti-aircraft gunners in the Panama Canal Zone tracked objects they could not identify on several radars. According to the Army report, when searchlights lit them up, they climbed from 2,000 to 10,000 feet in five to ten seconds; a T-33 jet went up to intercept, and each time it closed in the object moved several miles away and stopped. An airliner guided to within about 100 yards saw nothing. Project Blue Book, the Air Force program, closed it as a probable balloon and a false radar signal.",
   "patterns": [
     "8e"
   ],

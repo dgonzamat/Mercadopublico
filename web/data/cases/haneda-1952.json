@@ -1,8 +1,8 @@
 {
   "id": "haneda-1952",
   "num": 309,
-  "name": "Haneda AFB · radar-visual sobre Tokio",
-  "name_en": "Haneda AFB · Radar-Visual over Tokyo",
+  "name": "Haneda · la torre ve una luz y el radar sigue algo sobre Tokio",
+  "name_en": "Haneda · tower staff watch a light as radar tracks something",
   "year_start": 1952,
   "country": "JP",
   "country_name": "Japón",
@@ -10,8 +10,8 @@
   "location": {
     "lat": 35.553,
     "lng": 139.781,
-    "place": "Haneda AFB, bahía de Tokio",
-    "place_en": "Haneda AFB, Tokyo Bay"
+    "place": "Base aérea de Haneda, bahía de Tokio",
+    "place_en": "Haneda Air Base, Tokyo Bay"
   },
   "tier": "S",
   "mundanoType": "misid",
@@ -19,8 +19,8 @@
   "objectDetail": "planeta_estrella",
   "epistemicStatus": "documented",
   "probability": 37,
-  "summary": "La noche del 5 al 6 de agosto de 1952, cuatro operadores de la torre de Haneda AFB (Tokio) vigilaron durante cerca de una hora, con binoculares 7x50, una luz brillante baja hacia el noreste rodeada de una zona oscura; el radar del GCI de Shiroi siguió un blanco débil en la zona y un F-94 obtuvo un contacto de radar de unos 90 segundos, sin lograr el enganche ni ver nada. La tarjeta de Blue Book dice «Unknown»; el Informe Condon (1968) atribuyó la luz a la estrella Capella, que el cálculo sitúa justo en ese rumbo, y los ecos a propagación anómala.",
-  "summary_en": "On the night of 5-6 August 1952, four tower operators at Haneda AFB (Tokyo) watched through 7x50 binoculars, for about an hour, a bright light low in the northeast surrounded by a dark area; Shiroi GCI radar tracked a weak target in the area and an F-94 obtained a radar contact of about 90 seconds, without achieving lock-on or seeing anything. The Blue Book card reads 'Unknown'; the Condon Report (1968) attributed the light to the star Capella, which calculation places right on that bearing, and the returns to anomalous propagation.",
+  "summary": "La noche del 5 al 6 de agosto de 1952, cuatro operadores de la torre de la base aérea de Haneda (Tokio) vigilaron con prismáticos durante cerca de una hora una luz brillante, baja hacia el noreste y rodeada de una zona oscura. Un radar de tierra siguió algo débil en esa zona, y un caza enviado a buscarlo lo tuvo unos 90 segundos en su radar, sin poder fijarlo ni ver nada. La Fuerza Aérea lo dejó como «desconocido»; el Informe Condon (1968) atribuyó la luz a la estrella Capella, que el cálculo sitúa justo en ese rumbo, y lo que mostraba el radar, a una propagación anómala de la señal.",
+  "summary_en": "On the night of 5–6 August 1952, four tower operators at Haneda Air Base in Tokyo watched through binoculars for about an hour a bright light low in the northeast, surrounded by a dark patch. A ground radar tracked something faint in that area, and a fighter sent to look held it on its radar for about 90 seconds, without locking on or seeing anything. The Air Force filed it as “unknown”; the Condon Report (1968) attributed the light to the star Capella, which calculation puts right on that bearing, and the radar returns to anomalous propagation of the signal.",
   "patterns": [
     "8e"
   ],

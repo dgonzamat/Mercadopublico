@@ -1,7 +1,8 @@
 {
   "id": "kumburgaz-2007",
   "num": 37,
-  "name": "Kumburgaz (Yalman)",
+  "name": "Kumburgaz · un vigilante filma luces sobre el mar de Mármara",
+  "name_en": "Kumburgaz · a night guard films lights over the Sea of Marmara",
   "year_start": 2007,
   "year_end": 2009,
   "country": "TR",
@@ -10,8 +11,8 @@
   "location": {
     "lat": 41.06,
     "lng": 28.36,
-    "place": "Kumburgaz, Istanbul",
-    "place_en": "Kumburgaz, Istanbul"
+    "place": "Kumburgaz, Estambul (Turquía)",
+    "place_en": "Kumburgaz, Istanbul, Turkey"
   },
   "tier": "A",
   "epistemicStatus": "documented",
@@ -25,7 +26,7 @@
     "source_en": "Andrés Duarte, via Kentaro Mori (forgetomori.com, 2010), cited in the Metabunk thread “2008 UFO Footage From Kumburgaz, Turkey”",
     "url": "https://www.metabunk.org/threads/2008-ufo-footage-from-kumburgaz-turkey.9844/"
   },
-  "summary": "Entre 2007 y 2009, el vigilante nocturno Yalçın Yalman filmó desde Kumburgaz, sobre el Mar de Mármara, luces que en las tomas más ampliadas parecen objetos discoidales (unos veinticinco segmentos de vídeo). El Observatorio Nacional del TÜBİTAK examinó las cintas de 2007 y concluyó que no eran una animación ni un montaje, pero que no se podía saber dónde estaban los objetos, a qué distancia, de qué tamaño ni qué eran.",
+  "summary": "Entre 2007 y 2009, el vigilante nocturno Yalçın Yalman filmó desde Kumburgaz, sobre el Mar de Mármara, luces que en las tomas más ampliadas parecen objetos discoidales (unos veinticinco segmentos de video). El Observatorio Nacional del TÜBİTAK examinó las cintas de 2007 y concluyó que no eran una animación ni un montaje, pero que no se podía saber dónde estaban los objetos, a qué distancia, de qué tamaño ni qué eran.",
   "summary_en": "Between 2007 and 2009, night guard Yalçın Yalman filmed from Kumburgaz, over the Sea of Marmara, lights that in the most magnified shots look like disc-shaped objects (some twenty-five video segments). The TÜBİTAK National Observatory examined the 2007 tapes and concluded they were not animation or editing, but that the objects' location, distance, size and nature could not be determined.",
   "patterns": [
     "8g"
@@ -91,7 +92,7 @@
       "type": "link",
       "title": "Anadolu Ajansı · el examen preliminar de las cintas por el Observatorio Nacional del TÜBİTAK (5 de febrero de 2008)",
       "title_en": "Anadolu Agency · the TÜBİTAK National Observatory's preliminary review of the tapes (5 February 2008)",
-      "description": "Despacho de la agencia estatal turca, en turco, que resume el informe preliminar del Observatorio Nacional del TÜBİTAK sobre las cintas del vigilante de Kumburgaz. Según los códigos de tiempo, las tomas eran sobre todo del verano de 2007; el informe dice que no son una animación por ordenador, un efecto de vídeo ni una recreación de estudio, que el indicador AM/PM hace dudar de las horas y que, sin otro objeto de referencia en los fotogramas, no se puede saber la posición, la distancia, el tamaño ni la naturaleza de los objetos. El director, Zeki Eker, dijo que no era un montaje, pero tampoco se podía probar que no fuera una broma. Prensa con copyright: se enlaza.",
+      "description": "Despacho de la agencia estatal turca, en turco, que resume el informe preliminar del Observatorio Nacional del TÜBİTAK sobre las cintas del vigilante de Kumburgaz. Según los códigos de tiempo, las tomas eran sobre todo del verano de 2007; el informe dice que no son una animación por ordenador, un efecto de video ni una recreación de estudio, que el indicador AM/PM hace dudar de las horas y que, sin otro objeto de referencia en los fotogramas, no se puede saber la posición, la distancia, el tamaño ni la naturaleza de los objetos. El director, Zeki Eker, dijo que no era un montaje, pero tampoco se podía probar que no fuera una broma. Prensa con copyright: se enlaza.",
       "description_en": "Dispatch from the Turkish state news agency, in Turkish, summarising the TÜBİTAK National Observatory's preliminary report on the Kumburgaz guard's tapes. Going by the time codes, the footage was mostly from summer 2007; the report says it is not computer animation, a video effect or a studio re-creation, that the AM/PM indicator casts doubt on the times, and that with no other reference object in the frames the position, distance, size and nature of the objects cannot be known. The director, Zeki Eker, said it was not a montage, but neither could it be proved not to be a prank. Copyrighted press: linked here.",
       "source": "Anadolu Ajansı, vía Memurlar.net (5 feb 2008), en turco"
     },
@@ -99,7 +100,7 @@
       "role": "contexto",
       "src": "/pursue/kumburgaz-2007-context.jpg",
       "type": "image",
-      "title": "Contexto · Kumburgaz (Estambul), la costa desde donde se grabó el vídeo de 2007",
+      "title": "Contexto · Kumburgaz (Estambul), la costa desde donde se grabó el video de 2007",
       "title_en": "Context · Kumburgaz (Istanbul), the coast from which the 2007 video was recorded",
       "source": "Sunset Kumburgaz.jpg · Wikimedia Commons",
       "license": "CC BY-SA 4.0",

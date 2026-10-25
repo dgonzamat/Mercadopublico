@@ -1,7 +1,8 @@
 {
   "id": "falcon-lake-1967",
   "num": 15,
-  "name": "Falcon Lake",
+  "name": "Falcon Lake · un prospector dice que un objeto posado lo quemó",
+  "name_en": "Falcon Lake · a prospector says a landed object burned him",
   "year_start": 1967,
   "country": "CA",
   "country_name": "Canadá",
@@ -9,15 +10,15 @@
   "location": {
     "lat": 49.71,
     "lng": -95.27,
-    "place": "Falcon Lake, Manitoba",
-    "place_en": "Falcon Lake, Manitoba"
+    "place": "Falcon Lake, Manitoba (Canadá)",
+    "place_en": "Falcon Lake, Manitoba, Canada"
   },
   "tier": "A",
   "mundanoType": "fraude",
   "epistemicStatus": "documented",
   "probability": 51,
-  "summary": "El prospector Stefan Michalak sufrió quemaduras en patrón geométrico documentadas en hospital tras tocar un objeto posado cerca de Falcon Lake (Manitoba); la RCMP y la RCAF investigaron, y el informe Condon reunió las inconsistencias del relato y mostró que el material radiactivo hallado después era plata comercial cubierta de mineral de uranio.",
-  "summary_en": "Prospector Stefan Michalak suffered hospital-documented geometric-pattern burns after touching an object that had landed near Falcon Lake, Manitoba; the RCMP and RCAF investigated, and the Condon Report gathered the inconsistencies in the account and showed that the radioactive material found later was commercial silver coated with uranium ore.",
+  "summary": "El 20 de mayo de 1967, el prospector Stefan Michalak contó que, cerca de Falcon Lake (Manitoba, Canadá), vio posarse un objeto en forma de disco, tocó su superficie caliente y un chorro de gas caliente le quemó el torso. Las quemaduras, superficiales y en un patrón geométrico, quedaron documentadas en el hospital, y los exámenes no hallaron radiación en su cuerpo. La policía montada (RCMP) y la Fuerza Aérea canadiense investigaron; el informe Condon reunió las inconsistencias del relato y mostró que el material radiactivo hallado después en el sitio era plata comercial cubierta de mineral de uranio.",
+  "summary_en": "On 20 May 1967, prospector Stefan Michalak said that near Falcon Lake, Manitoba, Canada, he saw a disc-shaped object land, touched its hot surface and was burned on the torso by a blast of hot gas. The burns, superficial and in a geometric pattern, were documented in hospital, and tests found no radiation in his body. The Royal Canadian Mounted Police (RCMP) and the Canadian air force investigated; the Condon Report gathered the inconsistencies in his account and showed that the radioactive material found later at the site was commercial silver coated with uranium ore.",
   "patterns": [
     "8a"
   ],

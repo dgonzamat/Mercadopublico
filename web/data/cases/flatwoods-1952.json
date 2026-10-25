@@ -1,8 +1,8 @@
 {
   "id": "flatwoods-1952",
   "num": 223,
-  "name": "Monstruo de Flatwoods · Braxton County",
-  "name_en": "Flatwoods Monster · Braxton County",
+  "name": "Flatwoods · siete vecinos ven una figura de ojos luminosos",
+  "name_en": "Flatwoods · seven locals see a figure with glowing eyes",
   "year_start": 1952,
   "country": "US",
   "country_name": "Estados Unidos",
@@ -16,8 +16,8 @@
   "tier": "B",
   "epistemicStatus": "documented",
   "probability": 30,
-  "summary": "La noche del 12 de septiembre de 1952, tras ver una luz brillante caer sobre una colina, un grupo de siete personas de Flatwoods (Virginia Occidental) (los hermanos May, su madre Kathleen, otros niños y un guardia nacional) subió a buscarla y describió una figura enorme de ojos luminosos, un siseo y un olor nauseabundo que les provocó malestar. La explicación más aceptada (un meteoro esa noche, una baliza aérea en tierra y un búho posado, magnificados por el miedo) es prosaica y bien argumentada. Ícono del folclore: testigos múltiples y una explicación prosaica detallada.",
-  "summary_en": "On the night of September 12, 1952, after seeing a bright light fall over a hill, a group of seven people from Flatwoods (West Virginia) (the May brothers, their mother Kathleen, other children and a National Guardsman) climbed to look for it and described a huge figure with glowing eyes, a hiss and a nauseating smell that made them feel ill. The most accepted explanation (a meteor that night, a ground-based aircraft beacon and a perched owl, magnified by fear) is prosaic and well argued. A folklore icon: multiple witnesses and a detailed prosaic explanation.",
+  "summary": "La noche del 12 de septiembre de 1952, tras ver una luz brillante caer sobre una colina de Flatwoods (Virginia Occidental), siete personas, entre ellas los hermanos May, su madre Kathleen, otros niños y un guardia nacional, subieron a buscarla. Describieron una figura enorme de ojos luminosos, un siseo y un olor nauseabundo que les provocó malestar. La explicación más aceptada es prosaica y está bien argumentada: un meteoro que cruzó esa noche, una baliza aérea en tierra y un búho posado, magnificados por el miedo.",
+  "summary_en": "On the night of September 12, 1952, after seeing a bright light fall onto a hill in Flatwoods, West Virginia, seven people, among them the May brothers, their mother Kathleen, other children and a National Guardsman, climbed up to look for it. They described a huge figure with glowing eyes, a hissing sound and a nauseating smell that made them feel ill. The most accepted explanation is prosaic and well argued: a meteor that crossed the sky that night, an aircraft beacon on the ground and a perched owl, magnified by fear.",
   "patterns": [
     "8a",
     "8h"

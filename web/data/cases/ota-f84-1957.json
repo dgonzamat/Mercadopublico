@@ -1,8 +1,8 @@
 {
   "id": "ota-f84-1957",
   "num": 474,
-  "name": "Cuatro F-84 de la base de Ota · la luz que siguió a la formación de Lemos Ferreira (España y Portugal, 1957)",
-  "name_en": "Four F-84s from Ota air base · the light that followed Lemos Ferreira's flight (Spain and Portugal, 1957)",
+  "name": "Ota · cuatro pilotos portugueses ven una luz que los sigue",
+  "name_en": "Ota · four Portuguese pilots see a light that follows them",
   "year_start": 1957,
   "country": "PT",
   "country_name": "Portugal",
@@ -10,15 +10,15 @@
   "location": {
     "lat": 38.96,
     "lng": -8.53,
-    "place": "Ruta Granada–Portalegre–Coruche; el acercamiento final, cerca de Coruche (Portugal)",
-    "place_en": "Granada–Portalegre–Coruche route; the final approach, near Coruche (Portugal)"
+    "place": "Entre Granada (España) y Coruche (Portugal)",
+    "place_en": "Between Granada (Spain) and Coruche (Portugal)"
   },
   "tier": "B",
   "mundanoType": "sin_propuesta",
   "epistemicStatus": "documented",
   "probability": 45,
-  "summary": "En la noche del 4 de septiembre de 1957, cuatro F-84 de la Fuerza Aérea Portuguesa que hacían un ejercicio de navegación desde la base de Ota vieron durante unos cuarenta minutos, desde Granada hasta cerca de Coruche, una luz que cambiaba de color y de tamaño, de la que salieron cuatro círculos amarillos y que terminó lanzándose hacia la formación. El relato firmado del jefe, el capitán José Lemos Ferreira, se publicó en 1958; un despacho de la AFP de noviembre de 1957 lo fecha el 4 de noviembre. No hay expediente oficial publicado, y la variación magnética que, según la AFP y la revista, registró Coimbra coincide con una tormenta geomagnética mundial.",
-  "summary_en": "On the night of 4 September 1957, four Portuguese Air Force F-84s on a navigation exercise out of Ota air base watched for about forty minutes, from Granada to near Coruche, a light that changed colour and size, released four yellow circles and finally dived at the formation. The signed account of the flight leader, Captain José Lemos Ferreira, was published in 1958; an AFP dispatch of November 1957 dates it to 4 November. No official file has been published, and the magnetic variation that, according to AFP and the magazine, Coimbra logged coincides with a worldwide geomagnetic storm.",
+  "summary": "En la noche del 4 de septiembre de 1957, los pilotos de cuatro cazas de la Fuerza Aérea Portuguesa, en un ejercicio desde la base de Ota, vieron unos cuarenta minutos, desde Granada hasta cerca de Coruche, una luz que cambiaba de color y tamaño, de la que salieron cuatro círculos amarillos y que terminó lanzándose hacia la formación. El relato firmado del jefe, el capitán José Lemos Ferreira, se publicó en 1958; un despacho de la AFP de noviembre de 1957 lo fecha el 4 de noviembre. No hay expediente oficial publicado, y la variación magnética que, según la AFP y la revista, registró Coimbra coincide con una tormenta geomagnética severa.",
+  "summary_en": "On the night of 4 September 1957, the pilots of four Portuguese Air Force fighters on an exercise out of Ota air base watched for about forty minutes, from Granada to near Coruche, a light that changed colour and size, released four yellow circles and finally dived at the formation. The signed account of the flight leader, Captain José Lemos Ferreira, was published in 1958; an AFP dispatch of November 1957 dates it to 4 November. No official file has been published, and the magnetic variation that, according to AFP and the magazine, Coimbra logged coincides with a severe geomagnetic storm.",
   "patterns": [
     "8b"
   ],

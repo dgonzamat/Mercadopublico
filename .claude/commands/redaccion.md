@@ -17,7 +17,7 @@ Esta guía nació de un fallo real (oct 2026): la ficha de Skinwalker había cre
 
 | Campo | Qué hace | Forma |
 |---|---|---|
-| `name` / `name_en` | Decir qué pasó y dónde | **Lugar · quién vio qué**, ≤ 65 caracteres. Sin año (va encima), sin veredicto (va en «Qué fue»), sin siglas ni jerga. «Exeter · objeto a baja altura visto por dos policías». |
+| `name` / `name_en` | Decir qué pasó y dónde | **Nombre del caso · qué pasó**, ≤ 65 caracteres, en todas las fichas sin excepción. El prefijo es el nombre por el que se conoce el caso si lo tiene («Roswell», «Caso Valdés», «Mothman», «Communion»), y si no, el lugar. Después de «·», quién vio qué. Sin año (va encima), sin veredicto (va en «Qué fue»), sin siglas ni jerga. «Exeter · objeto a baja altura visto por dos policías». |
 | `location.place` / `place_en` | Ubicar | Solo el lugar, ≤ 70 caracteres: «Sector de Chorwon (hoy Cheorwon), Corea del Sur». Nada de cuadrículas, cálculos ni fuentes. |
 | `summary` / `summary_en` | Contar el caso en un párrafo | Qué, quién, cuándo, dónde y qué quedó; 400–650 caracteres. La primera frase sola ya debe informar. |
 | `whatHappened` | Relatar el suceso | **Cronológico**, centrado en el suceso. Párrafos de ≤ 1.200 caracteres. Ver §3. |
@@ -52,7 +52,7 @@ Aviones muy conocidos (B-52, DC-3) pueden ir en el título si son el centro del 
 
 ## 5. Español
 
-- **Norma**: español neutro, RAE y Fundéu. Sin voseo ni regionalismos.
+- **Norma**: español neutro, RAE y Fundéu. Sin voseo ni regionalismos. Donde la RAE admite dos formas, se usa una sola en todo el corpus: **«video»** (sin tilde, la forma del español de América y la mayoritaria en el corpus; unificado el 24 oct 2026).
 - **Comillas**: «» y, dentro, “”. Las citas en inglés van literales entre «» y se traducen o glosan si el lector las necesita.
 - **Cifras**: punto de millar y coma decimal (21.948.810; 3,5); «EE. UU.» con espacio; unidades con espacio (50 pies, 22 km); siglos en romanos.
 - **Nada de spanglish**: *paper* → artículo; *metadata* → metadatos; *release* → entrega o publicación; *disclosure* → revelación; *sole-source* → adjudicación directa; *debriefing* → informe o interrogatorio posterior; *briefing* → sesión informativa; *peer-reviewed* → revisado por pares; *timeline* → cronología.
@@ -62,6 +62,7 @@ Aviones muy conocidos (B-52, DC-3) pueden ir en el título si son el centro del 
 ## 6. Inglés (mismo nivel)
 
 - **Plain English**, frases cortas, voz activa, verbos concretos. Estilo de un buen periódico, no de un informe.
+- **Inglés estadounidense** en ortografía y vocabulario (*center*, *rumor*, *defense*, *maneuver*), como el resto del sitio.
 - **Cifras y signos**: 6,000; 3.5; “double quotes” (or "…"), “U.S.”; unidades: 50 ft, 22 km.
 - **Nada de traducción literal del español**: el `_en` dice lo mismo con las palabras que usaría un redactor nativo. Delatan traducción las construcciones «It is X what…», «realize» por *carry out*, «actual» por *current*, «eventually» por *possibly*, «sensible» por *sensitive*, artículos de más («the 1952»), y los nombres en español sin adaptar (Apolo → Apollo, Corea → Korea).
 - **Paridad**: mismos hechos, mismas cifras y mismos matices en los dos idiomas. Si cambias uno, cambias el otro.

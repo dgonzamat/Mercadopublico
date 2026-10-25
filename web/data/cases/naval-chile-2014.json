@@ -1,8 +1,8 @@
 {
   "id": "naval-chile-2014",
   "num": 42,
-  "name": "Helicóptero Naval Chile",
-  "name_en": "Chilean Navy helicopter",
+  "name": "Valparaíso · un helicóptero naval filma un objeto en infrarrojo",
+  "name_en": "Valparaíso · a navy helicopter films an object on infrared",
   "year_start": 2014,
   "country": "CL",
   "country_name": "Chile",
@@ -10,15 +10,15 @@
   "location": {
     "lat": -33,
     "lng": -71.6,
-    "place": "Costa de Chile",
-    "place_en": "Coast of Chile"
+    "place": "Océano Pacífico frente a Valparaíso (Chile)",
+    "place_en": "Pacific Ocean off Valparaíso, Chile"
   },
   "tier": "S",
   "mundanoType": "misid",
   "epistemicStatus": "documented",
   "probability": 44,
-  "summary": "Un helicóptero Cougar de la Armada de Chile filmó nueve minutos de video infrarrojo de un objeto visible solo en térmico frente a Valparaíso; el CEFAA investigó durante dos años con múltiples agencias y publicó oficialmente el material y el reporte en 2017.",
-  "summary_en": "A Chilean Navy Cougar helicopter filmed nine minutes of infrared video of an object visible only in thermal imaging off Valparaíso; CEFAA ran a two-year multi-agency investigation and officially published the footage and report in 2017.",
+  "summary": "El 11 de noviembre de 2014, un helicóptero de la Armada de Chile frente a Valparaíso filmó durante nueve minutos, con su cámara infrarroja, un objeto lejano que dos veces soltó descargas de calor; los dos tripulantes dijeron verlo también a simple vista, y ni el radar costero ni el de Santiago lo detectaron. El comité oficial chileno para estos fenómenos, entonces CEFAA, lo declaró no identificado tras dos años y publicó el video y el informe en 2017. Los analistas franceses consultados propusieron un avión de línea, lectura que los expertos chilenos rechazaron; después, el foro Metabunk propuso un vuelo de Iberia que despegaba de Santiago.",
+  "summary_en": "On 11 November 2014, a Chilean Navy helicopter off Valparaíso filmed for nine minutes, with its infrared camera, a distant object that twice gave off bursts of heat; both crew members said they also saw it with the naked eye, and neither the coastal radar nor Santiago's detected it. Chile's official committee for these phenomena, then called CEFAA, declared it unidentified after two years and released the video and report in 2017. The French analysts it consulted proposed an airliner, a reading the Chilean experts rejected; later, the Metabunk forum proposed an Iberia flight taking off from Santiago.",
   "patterns": [
     "8e"
   ],
@@ -87,7 +87,7 @@
   "misidSubtype": "aeronave",
   "objectDetail": "avion",
   "classBasis": {
-    "es": "El análisis colectivo de Metabunk sobre el vídeo FLIR de la Armada: el objeto es un avión que se aleja de la cámara y deja una estela aerodinámica breve; tras descartar el LA330, «el análisis 3D posterior reveló que el IB6830 (un A340 de cuatro motores) encaja perfectamente», a unas 35 millas cuando se vio por primera vez.",
+    "es": "El análisis colectivo de Metabunk sobre el video FLIR de la Armada: el objeto es un avión que se aleja de la cámara y deja una estela aerodinámica breve; tras descartar el LA330, «el análisis 3D posterior reveló que el IB6830 (un A340 de cuatro motores) encaja perfectamente», a unas 35 millas cuando se vio por primera vez.",
     "en": "Metabunk's collective analysis of the Navy FLIR video: the object is a plane flying away from the camera and briefly leaving an aerodynamic contrail; after setting aside LA330, \"subsequent 3D analysis revealed that IB6830 (a four-engined A340) is actually a perfect match\", some 35 miles away when first spotted.",
     "source": "Metabunk — «Explained: Chilean Navy \"UFO\" video - Aerodynamic Contrails, Flight IB6830» (2017)",
     "source_en": "Metabunk — “Explained: Chilean Navy \"UFO\" video - Aerodynamic Contrails, Flight IB6830” (2017)",

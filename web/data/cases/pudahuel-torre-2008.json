@@ -10,8 +10,8 @@
   "location": {
     "lat": -33.393,
     "lng": -70.7858,
-    "place": "Aeropuerto internacional Arturo Merino Benítez, Pudahuel (Santiago, región Metropolitana)",
-    "place_en": "Arturo Merino Benítez International Airport, Pudahuel (Santiago, Metropolitan region)"
+    "place": "Aeropuerto Arturo Merino Benítez, Pudahuel (Santiago)",
+    "place_en": "Arturo Merino Benítez Airport, Pudahuel (Santiago)"
   },
   "tier": "B",
   "mundanoType": "misid",
@@ -19,8 +19,8 @@
   "objectDetail": "desechos_aereos",
   "epistemicStatus": "documented",
   "probability": 12,
-  "summary": "La mañana del 17 de octubre de 2008, el personal de la torre de control del aeropuerto de Santiago y un meteorólogo vieron sobre el aeródromo un pequeño objeto plateado que reflejaba el Sol; lo miraron unos 20 minutos mientras derivaba despacio hacia el norte, y con binoculares al meteorólogo le pareció amorfo. El CEFAA, antecesor del SEFAA, entrevistó a los testigos en 2010, encontró la reja de la pista con gran cantidad de bolsas plásticas y lo atribuyó a una bolsa levantada por el viento. Un grupo ufológico pidió reabrir el caso en 2018, y en 2022 el SEFAA mantuvo la conclusión: un cuerpo inerte arrastrado por el viento, muy posiblemente una bolsa de basura.",
-  "summary_en": "On the morning of 17 October 2008, control tower staff at Santiago airport and a meteorologist saw a small silvery object over the airfield that reflected the sunlight; they watched it for about 20 minutes as it drifted slowly north, and through binoculars it looked amorphous to the meteorologist. CEFAA, SEFAA's predecessor, interviewed the witnesses in 2010, found a great many plastic bags on the runway fence and attributed it to a bag lifted by the wind. A ufology group asked for the case to be reopened in 2018, and in 2022 SEFAA upheld the conclusion: an inert body carried by the wind, very possibly a rubbish bag.",
+  "summary": "La mañana del 17 de octubre de 2008, el personal de la torre de control del aeropuerto de Santiago y un meteorólogo vieron sobre el aeródromo un pequeño objeto plateado que reflejaba el Sol; lo miraron unos 20 minutos mientras derivaba despacio hacia el norte, y con binoculares al meteorólogo le pareció amorfo. El comité oficial chileno para estos fenómenos, entonces CEFAA, entrevistó a los testigos en 2010, encontró la reja de la pista llena de bolsas plásticas y lo atribuyó a una bolsa levantada por el viento. Un grupo ufológico pidió reabrir el caso en 2018, y en 2022 el comité, ya llamado SEFAA, mantuvo esa conclusión.",
+  "summary_en": "On the morning of 17 October 2008, control tower staff at Santiago airport and a meteorologist saw a small silvery object over the airfield that reflected the sunlight; they watched it for about 20 minutes as it drifted slowly north, and through binoculars it looked amorphous to the meteorologist. Chile's official committee for these phenomena, then called CEFAA, interviewed the witnesses in 2010, found the runway fence full of plastic bags and attributed it to a bag lifted by the wind. A ufology group asked for the case to be reopened in 2018, and in 2022 the committee, by then called SEFAA, upheld that conclusion.",
   "patterns": [],
   "category": "incident",
   "posterior": {

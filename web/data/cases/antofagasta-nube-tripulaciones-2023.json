@@ -1,8 +1,8 @@
 {
   "id": "antofagasta-nube-tripulaciones-2023",
   "num": 464,
-  "name": "Antofagasta · la nube luminosa que dos tripulaciones vieron sobre el norte de Chile",
-  "name_en": "Antofagasta · the glowing cloud two airline crews saw over northern Chile",
+  "name": "Antofagasta · dos tripulaciones ven una nube luminosa que sube",
+  "name_en": "Antofagasta · two airline crews see a glowing, rising cloud",
   "year_start": 2023,
   "country": "CL",
   "country_name": "Chile",
@@ -19,8 +19,8 @@
   "objectDetail": "cohete_misil",
   "epistemicStatus": "documented",
   "probability": 13,
-  "summary": "En la noche del 6 de septiembre de 2023, la tripulación del vuelo SKU329 de Sky Airline, al norte de Antofagasta, avisó al control de Iquique de una luz al suroeste que primero tomó por la Luna tras una nube, que subía en vertical y destellaba «como una beacon»; la de un JetSMART 321 millas más al sur dijo ver lo mismo pasar sobre su avión. El SEFAA lo atribuyó primero a vuelos militares nocturnos; cinco meses después, con el relato del comandante y cuatro fotos de un teléfono tomadas en esos mismos minutos, concluyó que fue el cohete chino Long March 4C que había puesto en órbita el satélite Yaogan 33-03, aunque por nuestro cálculo ese cohete no estaba a la vista de Chile a esa hora.",
-  "summary_en": "On the night of 6 September 2023, the crew of Sky Airline flight SKU329, north of Antofagasta, told Iquique control of a light to the southwest that it first took for the Moon behind a cloud, which rose vertically and flashed 'like a beacon'; the crew of a JetSMART flight 321 miles further south said it saw the same thing pass over its aircraft. SEFAA first attributed it to night military flights; five months later, with the captain's account and four phone photos taken in those same minutes, it concluded that it was the Chinese Long March 4C rocket that had put the Yaogan 33-03 satellite into orbit, although by our calculation that rocket was not in view of Chile at that hour.",
+  "summary": "La noche del 6 de septiembre de 2023, la tripulación de un vuelo de Sky Airline, al norte de Antofagasta, avisó al control de Iquique de una luz al suroeste que tomó por la Luna tras una nube, que subía en vertical y destellaba «como una beacon»; la de un vuelo de JetSMART, 321 millas al sur, dijo verla pasar sobre su avión. El SEFAA, la oficina oficial chilena para estos fenómenos, lo atribuyó a vuelos militares; cinco meses después, con cuatro fotos tomadas en esos minutos que le entregó el comandante, concluyó que fue el cohete chino del satélite Yaogan 33-03, aunque según un cálculo de esta ficha no estaba a la vista de Chile.",
+  "summary_en": "On the night of 6 September 2023, the crew of a Sky Airline flight north of Antofagasta told Iquique control of a light to the southwest that it took for the Moon behind a cloud, which rose vertically and flashed “like a beacon”; the crew of a JetSMART flight 321 miles to the south said it saw it pass over its aircraft. SEFAA, Chile's official office for these phenomena, put it down to military flights; five months later, with four photos from those minutes that the captain handed over, it concluded it was the Chinese rocket carrying the Yaogan 33-03 satellite, though by this entry's own calculation it was not in view of Chile.",
   "patterns": [],
   "category": "incident",
   "posterior": {

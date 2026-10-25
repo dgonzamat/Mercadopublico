@@ -4,8 +4,8 @@
   "pursueReleases": [
     4
   ],
-  "name": "Objeto en forma de estrella sobre el Mar Amarillo",
-  "name_en": "Star-shaped object over the Yellow Sea",
+  "name": "Mar Amarillo · un sensor militar sigue una forma de estrella",
+  "name_en": "Yellow Sea · a military sensor tracks a star-shaped pattern",
   "year_start": 2025,
   "country": "CN",
   "country_name": "China",
@@ -23,8 +23,8 @@
     "8s",
     "8e"
   ],
-  "summary": "En 2025 (DVIDS registra el 1 de enero como fecha de toma), una plataforma militar estadounidense del Comando Indo-Pacífico detectó con sensor infrarrojo un objeto no identificado sobre el Mar Amarillo. El video, de 18 segundos según la ficha oficial (el archivo publicado dura unos 15), desclasificado el 10 de julio de 2026 en el cuarto lote de registros UAP, muestra un patrón de contraste que funcionarios describieron como una estrella de seis puntas seguida por el sensor de a bordo. AARO no ofreció conclusión analítica y el caso quedó formalmente sin resolver.",
-  "summary_en": "In 2025 (DVIDS lists January 1 as the date taken), a U.S. military platform from Indo-Pacific Command detected an unidentified object over the Yellow Sea via infrared sensor. The video, 18 seconds long per the official record (the published file runs about 15), declassified on July 10, 2026 in the fourth tranche of UAP records, shows a contrast pattern officials described as a six-pointed star tracked by the onboard sensor. AARO offered no analytical conclusion and the case was formally left unresolved.",
+  "summary": "En 2025, un sensor infrarrojo de una plataforma militar estadounidense del Comando Indo-Pacífico grabó sobre el mar Amarillo una zona de contraste que parece una estrella de seis puntas y que el sensor mantiene en el centro de la imagen. El portal donde se publicó la fecha el 1 de enero; la descripción oficial habla de 18 segundos, aunque el archivo dura unos 15. Salió el 10 de julio de 2026 en la cuarta entrega de archivos del Gobierno de EE. UU., con la advertencia de que describir la forma no es concluir qué era. La oficina del Pentágono para estos fenómenos (AARO) no emitió evaluación, y el caso sigue sin resolver.",
+  "summary_en": "In 2025, an infrared sensor on a U.S. Indo-Pacific Command military platform recorded over the Yellow Sea an area of contrast that looks like a six-pointed star, which the sensor keeps centered in the frame. The site where it was published lists January 1 as the date taken; the official description gives 18 seconds, although the published file runs about 15. It came out on July 10, 2026, in the U.S. government's fourth release of files, with a warning that describing the shape is not a conclusion about what it was. The Pentagon office for these phenomena (AARO) issued no assessment, and the case remains unresolved.",
   "posterior": {
     "mundano_natural": 0.25,
     "humana_clasificada": 0.15,
@@ -76,7 +76,7 @@
     {
       "name": "DVIDS — DOW-UAP-PR104, video infrarrojo del objeto en forma de estrella (PURSUE Release 04)",
       "url": "https://www.dvidshub.net/video/1014101",
-      "note": "Vídeo embebido en el visor de este caso, revisado fotograma a fotograma para esta revisión, y ficha oficial: «INDOPACOM submitted a report ... consisting of 18 seconds of video footage»; metadatos: fecha de toma 01.01.2025, duración 00:00:15.",
+      "note": "Video embebido en el visor de este caso, revisado fotograma a fotograma para esta revisión, y ficha oficial: «INDOPACOM submitted a report ... consisting of 18 seconds of video footage»; metadatos: fecha de toma 01.01.2025, duración 00:00:15.",
       "note_en": "Video embedded in this case's viewer, reviewed frame by frame for this review, and official record: 'INDOPACOM submitted a report ... consisting of 18 seconds of video footage'; metadata: date taken 01.01.2025, length 00:00:15."
     },
     {

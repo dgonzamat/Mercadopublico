@@ -1,8 +1,8 @@
 {
   "id": "cussac-1967",
   "num": 177,
-  "name": "Cussac",
-  "name_en": "Cussac",
+  "name": "Cussac · dos niños ven una esfera y cuatro figuras negras",
+  "name_en": "Cussac · two children see a sphere and four black figures",
   "year_start": 1967,
   "country": "FR",
   "country_name": "Francia",
@@ -10,8 +10,8 @@
   "location": {
     "lat": 44.97,
     "lng": 3.05,
-    "place": "Cussac, Cantal",
-    "place_en": "Cussac, Cantal"
+    "place": "Cussac, Cantal (Francia)",
+    "place_en": "Cussac, Cantal (France)"
   },
   "tier": "B",
   "mundanoType": "misid",

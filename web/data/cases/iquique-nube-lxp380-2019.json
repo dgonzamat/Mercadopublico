@@ -1,8 +1,8 @@
 {
   "id": "iquique-nube-lxp380-2019",
   "num": 470,
-  "name": "Iquique · la «aeronave» del amanecer que el LXP380 fotografió",
-  "name_en": "Iquique · the dawn 'aircraft' photographed by LXP380",
+  "name": "Iquique · una tripulación fotografía una «aeronave» al amanecer",
+  "name_en": "Iquique · an airline crew photographs an “aircraft” at dawn",
   "year_start": 2019,
   "country": "CL",
   "country_name": "Chile",
@@ -18,8 +18,8 @@
   "objectDetail": "atmosferico",
   "epistemicStatus": "documented",
   "probability": 13,
-  "summary": "A las 06:34 del 9 de agosto de 2019, la tripulación del vuelo LXP380 de LATAM, que volaba hacia Arica a 32.000 pies frente a Iquique, avisó al control de aproximación de que tenía «al parecer» una aeronave a las 3 de su posición, a unas 20 o 30 millas y a su misma altitud. El radar no mostraba nada y el tráfico más cercano estaba muy lejos. El piloto tomó una foto y un video de 12 segundos contra el resplandor del alba. Tras consultar a un meteorólogo, a un asesor en astronomía y a una analista de imágenes, el SEFAA concluyó en 2026 que lo fotografiado tuvo las características de una nube que fue cambiando de forma.",
-  "summary_en": "At 06:34 on 9 August 2019, the crew of LATAM flight LXP380, flying north towards Arica at 32,000 feet off Iquique, told approach control that they had 'apparently' an aircraft at 3 o'clock, some 20 or 30 miles away and at their own altitude. Radar showed nothing and the nearest traffic was far away. The pilot took a photo and a 12-second video against the glow of dawn. After consulting a meteorologist, an astronomy adviser and an image analyst, SEFAA concluded in 2026 that what was photographed had the characteristics of a cloud that kept changing shape.",
+  "summary": "A las 06:34 del 9 de agosto de 2019, la tripulación de un vuelo de LATAM que iba hacia Arica a 32.000 pies frente a Iquique avisó al control de aproximación de que tenía «al parecer» una aeronave a las 3 de su posición, a unas 20 o 30 millas y a su misma altitud. El radar no mostraba nada y el tráfico más cercano estaba muy lejos. El piloto tomó una foto y un video de 12 segundos contra el resplandor del alba. Tras consultar a un meteorólogo, a un astrónomo asesor y a una analista de imágenes, el SEFAA, la oficina oficial chilena para estos fenómenos, concluyó en 2026 que lo fotografiado tenía las características de una nube cambiante.",
+  "summary_en": "At 06:34 on 9 August 2019, the crew of a LATAM flight heading north to Arica at 32,000 feet off Iquique told approach control that they had “apparently” an aircraft at 3 o'clock, some 20 or 30 miles away and at their own altitude. Radar showed nothing and the nearest traffic was far away. The pilot took a photo and a 12-second video against the glow of dawn. After consulting a meteorologist, an astronomy adviser and an image analyst, SEFAA, Chile's official office for these phenomena, concluded in 2026 that what was photographed had the characteristics of a cloud that kept changing shape.",
   "patterns": [],
   "category": "incident",
   "posterior": {

@@ -1,7 +1,8 @@
 {
   "id": "sts48-1991",
   "num": 28,
-  "name": "STS-48 NASA",
+  "name": "Transbordador Discovery · un punto de luz gira tras un destello",
+  "name_en": "Space shuttle Discovery · a point of light turns after a flash",
   "year_start": 1991,
   "country": "US",
   "country_name": "Órbita Terrestre",
@@ -9,16 +10,16 @@
   "location": {
     "lat": 28.585,
     "lng": -80.65,
-    "place": "Órbita de Discovery (STS-48) · misión lanzada desde Cabo Cañaveral",
-    "place_en": "Discovery orbit (STS-48) · mission launched from Cape Canaveral"
+    "place": "Órbita terrestre (transbordador Discovery, misión STS-48)",
+    "place_en": "Earth orbit (space shuttle Discovery, mission STS-48)"
   },
   "tier": "A",
   "mundanoType": "misid",
   "misidSubtype": "espacial",
   "epistemicStatus": "documented",
   "probability": 42,
-  "summary": "Una cámara del transbordador Discovery captó un punto luminoso que giró unos 90 grados y aceleró tras un destello; NASA lo atribuyó a partículas de hielo y el análisis independiente de Carlotto calculó ~14,000 mph en menos de un segundo, incompatible con esa explicación.",
-  "summary_en": "A camera aboard shuttle Discovery captured a luminous point that turned about 90 degrees and accelerated after a flash; NASA attributed it to ice particles, while Carlotto's independent analysis computed ~14,000 mph in under a second, incompatible with that explanation.",
+  "summary": "El 15 de septiembre de 1991, durante la misión STS-48, una cámara de video del transbordador Discovery apuntada al horizonte nocturno de la Tierra grabó varios puntos luminosos a la deriva; tras un destello, uno giró unos 90 grados y se alejó acelerando. La NASA y el ingeniero James Oberg lo explican como partículas de hielo del propio transbordador empujadas por el disparo de un propulsor de maniobra. Mark Carlotto calculó unas 14.000 millas por hora en menos de un segundo, cifra que solo vale si el objeto estaba lejos: con una sola cámara no puede saberse si los puntos estaban a metros o a kilómetros.",
+  "summary_en": "On 15 September 1991, during mission STS-48, a video camera aboard the shuttle Discovery pointed at Earth's night horizon recorded several points of light drifting; after a flash, one turned about 90 degrees and sped away. NASA and engineer James Oberg explain them as ice particles from the shuttle itself, pushed by the firing of a maneuvering thruster. Mark Carlotto calculated about 14,000 mph in under a second, a figure that holds only if the object was far away: with a single camera there is no way to tell whether the points were meters or kilometers off.",
   "patterns": [],
   "category": "incident",
   "posterior": {
@@ -70,7 +71,7 @@
       "role": "contexto",
       "src": "/pursue/sts48-1991-context.jpg",
       "type": "image",
-      "title": "La misión STS-48 del transbordador Discovery, cuyo vídeo en órbita originó el caso",
+      "title": "La misión STS-48 del transbordador Discovery, cuyo video en órbita originó el caso",
       "title_en": "The STS-48 Space Shuttle Discovery mission, whose in-orbit video sparked the case",
       "source": "STS-48 crew.jpg · Wikimedia Commons",
       "license": "Dominio público",

@@ -1,8 +1,8 @@
 {
   "id": "burgos-1975",
   "num": 453,
-  "name": "Burgos 1975 · la luz que vieron cuatro soldados en la carretera de Santander",
-  "name_en": "Burgos 1975 · the light four soldiers saw on the Santander road",
+  "name": "Burgos 1975 · cuatro soldados ven una luz posada en el campo",
+  "name_en": "Burgos 1975 · four soldiers see a light resting in a field",
   "year_start": 1975,
   "country": "ES",
   "country_name": "España",
@@ -10,8 +10,8 @@
   "location": {
     "lat": 42.462,
     "lng": -3.68,
-    "place": "Kilómetro 14 de la carretera de Burgos a Santander, paraje de El Andrinal (Burgos)",
-    "place_en": "Kilometre 14 of the Burgos to Santander road, El Andrinal (Burgos)"
+    "place": "Carretera de Burgos a Santander, km 14 (paraje de El Andrinal)",
+    "place_en": "Burgos–Santander road, km 14 (El Andrinal)"
   },
   "tier": "B",
   "mundanoType": "psicosocial",

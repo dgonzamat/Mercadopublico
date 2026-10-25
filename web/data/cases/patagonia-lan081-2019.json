@@ -1,8 +1,8 @@
 {
   "id": "patagonia-lan081-2019",
   "num": 462,
-  "name": "Campo de Hielo Sur · la luz que cruzó ante un A321 rumbo a Punta Arenas",
-  "name_en": "Southern Patagonian Ice Field · the light that crossed ahead of an A321 bound for Punta Arenas",
+  "name": "Campo de Hielo Sur · una luz con destellos cruza ante un avión",
+  "name_en": "Patagonian Ice Field · a flashing light crosses ahead of a jet",
   "year_start": 2019,
   "country": "CL",
   "country_name": "Chile",
@@ -19,8 +19,8 @@
   "objectDetail": "satelite",
   "epistemicStatus": "documented",
   "probability": 9,
-  "summary": "En la madrugada del 17 de diciembre de 2019, el capitán del vuelo LAN 081, un Airbus A321 de Santiago a Punta Arenas, preguntó por radio si había otro tráfico cerca y, ante la respuesta negativa, describió un objeto con destellos intermitentes que cruzó por delante del avión y se perdió hacia el este, sobre territorio argentino. La oficina de tránsito aéreo de Punta Arenas envió el reporte y el audio a la DGAC. En su formulario, el propio capitán lo consideró «altamente probable» un satélite; el CEFAA halló varios objetos en órbita en ese sector, concluyó que lo más probable fue la Estación Espacial Internacional y lo cerró como «Resuelto».",
-  "summary_en": "In the early hours of 17 December 2019, the captain of flight LAN 081, an Airbus A321 from Santiago to Punta Arenas, radioed to ask whether there was other traffic nearby and, told there was none, described an object with intermittent flashes that crossed ahead of the aircraft and disappeared to the east, over Argentine territory. The Punta Arenas air traffic office sent the report and the audio to the DGAC. On his form the captain himself judged it 'highly probable' to be a satellite; CEFAA found several orbiting objects in that sector, concluded that the International Space Station was the most probable, and closed the case as 'Resolved'.",
+  "summary": "En la madrugada del 17 de diciembre de 2019, el capitán de un vuelo de LAN de Santiago a Punta Arenas preguntó por radio si había otro tráfico cerca y, como no lo había, describió un objeto con destellos intermitentes que cruzó por delante del avión y se perdió hacia el este, sobre Argentina. El control de Punta Arenas envió el reporte y el audio al comité oficial chileno para estos fenómenos, entonces CEFAA. En su formulario, el capitán lo consideró «altamente probable» un satélite; el comité halló varios objetos en órbita en ese sector, concluyó que lo más probable fue la Estación Espacial Internacional y lo cerró como «Resuelto».",
+  "summary_en": "Early on 17 December 2019, the captain of a LAN flight from Santiago to Punta Arenas radioed to ask whether there was other traffic nearby and, told there was none, described an object with intermittent flashes that crossed ahead of the aircraft and disappeared to the east, over Argentina. Punta Arenas air traffic control sent the report and the audio to Chile's official committee for these phenomena, then called CEFAA. On his form the captain judged it “highly probable” to be a satellite; the committee found several orbiting objects in that sector, concluded the International Space Station was most likely, and closed the case as “Resolved”.",
   "patterns": [],
   "category": "incident",
   "posterior": {

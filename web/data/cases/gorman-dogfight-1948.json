@@ -1,8 +1,8 @@
 {
   "id": "gorman-dogfight-1948",
   "num": 192,
-  "name": "Gorman Dogfight · F-51 vs. luz maniobrante (Fargo)",
-  "name_en": "Gorman Dogfight · F-51 vs. maneuvering light (Fargo)",
+  "name": "Duelo de Gorman · un piloto persigue una luz durante 27 minutos",
+  "name_en": "Gorman dogfight · a pilot chases a light for 27 minutes",
   "year_start": 1948,
   "country": "US",
   "country_name": "Estados Unidos",
@@ -17,8 +17,8 @@
   "mundanoType": "misid",
   "epistemicStatus": "documented",
   "probability": 23,
-  "summary": "El 1 de octubre de 1948, el segundo teniente de la Guardia Nacional Aérea George F. Gorman persiguió durante unos 27 minutos sobre Fargo, en su F-51 Mustang, una pequeña luz blanca que según él maniobraba mejor que su caza. Los controladores de la torre y los ocupantes de una avioneta Piper Cub vieron una luz rápida durante segundos, no las maniobras. Project Sign lo investigó; en 1949, ya bajo Project Grudge, un análisis lo atribuyó a un globo meteorológico iluminado.",
-  "summary_en": "On October 1, 1948, Air National Guard 2nd Lt. George F. Gorman chased a small white light over Fargo for about 27 minutes in his F-51 Mustang, a light he said out-maneuvered his fighter. The tower controllers and the occupants of a Piper Cub saw a fast light for seconds, not the maneuvers. Project Sign investigated it; in 1949, under Project Grudge, an analysis attributed it to a lighted weather balloon.",
+  "summary": "La noche del 1 de octubre de 1948, el segundo teniente de la Guardia Nacional Aérea George F. Gorman persiguió durante unos 27 minutos sobre Fargo (Dakota del Norte), en su caza F-51 Mustang, una pequeña luz blanca que según él maniobraba mejor que su avión. Los controladores de la torre y los ocupantes de una avioneta vieron una luz rápida durante segundos, no las maniobras. Project Sign, el programa de la Fuerza Aérea, descartó entonces los globos; en 1949, ya con el nombre de Project Grudge, un análisis lo atribuyó a un globo meteorológico iluminado que la estación de Fargo había soltado cerca de la hora del avistamiento.",
+  "summary_en": "On the night of October 1, 1948, Air National Guard 2nd Lt. George F. Gorman chased a small white light over Fargo, North Dakota, for about 27 minutes in his F-51 Mustang fighter, a light he said out-maneuvered his plane. The tower controllers and the occupants of a light plane saw a fast light for seconds, not the maneuvers. Project Sign, the Air Force program, ruled out balloons at the time; in 1949, by then renamed Project Grudge, an analysis attributed it to a lighted weather balloon that the Fargo weather station had released around the time of the sighting.",
   "patterns": [
     "8a",
     "8h"

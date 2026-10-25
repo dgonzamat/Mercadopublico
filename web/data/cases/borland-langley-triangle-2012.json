@@ -1,8 +1,8 @@
 {
   "id": "borland-langley-triangle-2012",
   "num": 335,
-  "name": "Borland · el triángulo de Langley y la interferencia telefónica",
-  "name_en": "Borland · the Langley triangle and the phone interference",
+  "name": "Langley · Dylan Borland ve un triángulo silencioso",
+  "name_en": "Langley · Dylan Borland sees a silent triangle",
   "year_start": 2012,
   "country": "US",
   "country_name": "Estados Unidos",
@@ -10,8 +10,8 @@
   "location": {
     "lat": 37.0827,
     "lng": -76.3606,
-    "place": "Base Conjunta Langley-Eustis (antigua Langley AFB), Hampton, Virginia",
-    "place_en": "Joint Base Langley-Eustis (former Langley AFB), Hampton, Virginia"
+    "place": "Base Conjunta Langley-Eustis, Hampton, Virginia",
+    "place_en": "Joint Base Langley-Eustis, Hampton, Virginia"
   },
   "tier": "B",
   "epistemicStatus": "documented",
@@ -25,7 +25,7 @@
     "indet": 0.35
   },
   "summary": "En el verano de 2012, el especialista de inteligencia geoespacial de la Fuerza Aérea Dylan Borland dijo haber visto, cerca del hangar de la NASA en la base Langley (Virginia), un triángulo equilátero de unos 100 pies que interfirió su teléfono, no hizo ruido, subió en segundos a altura de crucero y se alejó despacio hacia el este, sobre el Atlántico. Lo relató bajo juramento ante el Congreso el 9 de septiembre de 2025, alegando represalias profesionales. En agosto de 2026 afirmó en una entrevista que una inteligencia no humana «controla» el encubrimiento, interpretación suya de un comentario ajeno de segunda mano, sin dato verificable nuevo.",
-  "summary_en": "In the summer of 2012, Air Force geospatial intelligence specialist Dylan Borland said he saw, near the NASA hangar at Langley Air Force Base (Virginia), an equilateral triangle about 100 feet long that interfered with his phone, made no sound, rose in seconds to commercial-jet altitude and moved slowly east, out over the Atlantic. He recounted it under oath before Congress on September 9, 2025, alleging professional retaliation. In August 2026 he claimed in an interview that a non-human intelligence 'controls' the cover-up, his own interpretation of a secondhand comment, with no new verifiable data.",
+  "summary_en": "In the summer of 2012, Air Force geospatial intelligence specialist Dylan Borland said he saw, near the NASA hangar at Langley Air Force Base (Virginia), an equilateral triangle about 100 feet long that interfered with his phone, made no sound, rose in seconds to commercial-jet altitude and moved slowly east, out over the Atlantic. He recounted it under oath before Congress on September 9, 2025, alleging professional retaliation. In August 2026 he claimed in an interview that a non-human intelligence “controls” the cover-up, his own interpretation of a secondhand comment, with no new verifiable data.",
   "patterns": [
     "8k"
   ],

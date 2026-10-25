@@ -1,8 +1,8 @@
 {
   "id": "langley-drones-2023",
   "num": 229,
-  "name": "Incursiones de drones · Langley AFB",
-  "name_en": "Drone Incursions · Langley AFB",
+  "name": "Langley · drones sin identificar sobrevuelan una base aérea",
+  "name_en": "Langley · unidentified drones fly over an air base",
   "year_start": 2023,
   "country": "US",
   "country_name": "Estados Unidos",
@@ -17,8 +17,8 @@
   "mundanoType": "misid",
   "epistemicStatus": "documented",
   "probability": 24,
-  "summary": "Entre el 6 y el 22 de diciembre de 2023, enjambres de drones no identificados sobrevolaron durante 17 noches la base de la Fuerza Aérea de Langley (Virginia), sede de escuadrones F-22 y del Air Combat Command. Algunos medían hasta 6 metros. Pese a reuniones de alto nivel del DoD, el FBI y la AARO, y al despliegue del NASA WB-57, el origen nunca se determinó públicamente.",
-  "summary_en": "Between 6 and 22 December 2023, swarms of unidentified drones overflew Langley Air Force Base (Virginia) (home to F-22 squadrons and Air Combat Command) for 17 nights. Some were up to 20 feet long. Despite high-level DoD, FBI and AARO meetings, and the deployment of NASA's WB-57, the origin was never publicly determined.",
+  "summary": "Entre el 6 y el 22 de diciembre de 2023, durante 17 noches, grupos de drones sin identificar entraron en el espacio aéreo restringido de la base conjunta Langley-Eustis (Virginia), sede de cazas furtivos F-22. Había desde pequeños cuadricópteros hasta aparatos de ala fija de unos 6 metros. La Fuerza Aérea no los derribó, y el Pentágono trasladó temporalmente cazas a otra base. El Departamento de Defensa, el FBI y la oficina del Pentágono que investiga los fenómenos anómalos (AARO) se reunieron durante dos semanas, y la NASA hizo volar sobre la base un avión de investigación WB-57F, pero el origen nunca se determinó públicamente.",
+  "summary_en": "For 17 nights between December 6 and 22, 2023, groups of unidentified drones entered the restricted airspace of Joint Base Langley-Eustis in Virginia, home to F-22 stealth fighters. They ranged from small quadcopters to fixed-wing craft about 20 feet long. The Air Force did not shoot them down, and the Pentagon temporarily moved fighters to another base. The Defense Department, the FBI and the Pentagon office that investigates anomalous phenomena (AARO) met for two weeks, and NASA flew a WB-57F research aircraft over the base, but the origin was never publicly determined.",
   "patterns": [
     "8s"
   ],

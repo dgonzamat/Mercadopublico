@@ -1,8 +1,8 @@
 {
   "id": "bonilla-zacatecas-1883",
   "num": 215,
-  "name": "Observación de Bonilla · Observatorio de Zacatecas",
-  "name_en": "Bonilla observation · Zacatecas Observatory",
+  "name": "Zacatecas · un astrónomo ve cientos de cuerpos cruzar el Sol",
+  "name_en": "Zacatecas · an astronomer sees hundreds of bodies cross the Sun",
   "year_start": 1883,
   "country": "MX",
   "country_name": "México",
@@ -16,8 +16,8 @@
   "tier": "A",
   "epistemicStatus": "documented",
   "probability": 40,
-  "summary": "El 12 y 13 de agosto de 1883, el astrónomo José Arbol y Bonilla, director del Observatorio de Zacatecas, contó 447 pequeños cuerpos que cruzaban el disco del Sol de oeste a este y tomó varias placas al colodión húmedo; él mismo los situó más cerca que la Luna. La observación se publicó, con una de las placas, en «L'Astronomie» de Flammarion (septiembre de 1885). En 2011, un equipo de la UNAM reinterpretó los datos como fragmentos de un cometa que habría pasado muy cerca de la Tierra, una hipótesis prosaica pero extraordinaria que sigue debatida. La documentación de época es impecable; el objeto sigue sin cerrar.",
-  "summary_en": "On August 12 and 13, 1883, astronomer José Arbol y Bonilla, director of the Zacatecas Observatory, counted 447 small bodies crossing the Sun's disk from west to east and took several wet collodion plates; he himself placed them closer than the Moon. The observation was published, with one of the plates, in Flammarion's 'L'Astronomie' (September 1885). In 2011, a UNAM team reinterpreted the data as fragments of a comet that would have passed very close to Earth, a prosaic but extraordinary hypothesis still debated. The period documentation is impeccable; the object is still not closed.",
+  "summary": "El 12 y el 13 de agosto de 1883, el astrónomo José Arbol y Bonilla, director del Observatorio de Zacatecas, contó 447 pequeños cuerpos que cruzaban el disco del Sol de oeste a este y tomó varias placas fotográficas al colodión húmedo; él mismo los situó más cerca que la Luna. La observación se publicó, con una de las placas, en «L'Astronomie», la revista de Flammarion, en septiembre de 1885. En 2011, un equipo de la Universidad Nacional Autónoma de México (UNAM) reinterpretó los datos como fragmentos de un cometa que habría pasado muy cerca de la Tierra, una hipótesis prosaica pero extraordinaria que sigue en debate.",
+  "summary_en": "On August 12 and 13, 1883, astronomer José Arbol y Bonilla, director of the Zacatecas Observatory, counted 447 small bodies crossing the Sun's disk from west to east and took several wet collodion photographic plates; he himself placed them closer than the Moon. The observation was published, with one of the plates, in Flammarion's journal L'Astronomie in September 1885. In 2011 a team from Mexico's National Autonomous University (UNAM) reinterpreted the data as fragments of a comet that may have passed very close to Earth, a prosaic but extraordinary hypothesis that is still debated.",
   "patterns": [
     "8h"
   ],

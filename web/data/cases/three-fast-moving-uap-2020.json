@@ -4,8 +4,8 @@
   "pursueReleases": [
     2
   ],
-  "name": "Tres objetos veloces en el mismo campo de visión, 29 de octubre de 2020",
-  "name_en": "Three fast objects in the same field of view, October 29, 2020",
+  "name": "Oriente Medio · el video de «tres objetos» donde se ven dos",
+  "name_en": "Middle East · a clip of “three objects” that shows two",
   "year_start": 2020,
   "country": "US",
   "country_name": "Estados Unidos",
@@ -13,8 +13,8 @@
   "location": {
     "lat": 26,
     "lng": 51,
-    "place": "Ubicación no revelada (metadata DVIDS declara 'undisclosed location')",
-    "place_en": "Undisclosed location (DVIDS metadata declares 'undisclosed location')"
+    "place": "Probablemente Oriente Medio (ubicación no revelada)",
+    "place_en": "Probably the Middle East (exact location undisclosed)"
   },
   "tier": "B",
   "epistemicStatus": "documented",
@@ -28,8 +28,8 @@
     "nohumano_abierto": 0.02,
     "indet": 0.36
   },
-  "summary": "Un clip de cuatro minutos lleva el título «29 October 2020 [CALLSIGN] (Mission) observes 3 fast moving UAP», asignado por quien subió el archivo a una red clasificada en octubre de 2020, no por el Departamento de Guerra. Forma parte de los 50 videos que la AARO localizó a petición de ocho miembros de la Cámara, y advierte que muchos carecen de una cadena de custodia sustanciada. Su descripción visual oficial registra solo dos áreas de contraste simultáneas, no tres, durante unos 15 segundos hacia la mitad del clip, y cerca de un tercio del clip no tiene contenido mientras el sensor cicla su zoom. Se liberó en la segunda entrega de PURSUE.",
-  "summary_en": "A four-minute clip carries the title '29 October 2020 [CALLSIGN] (Mission) observes 3 fast moving UAP', assigned by whoever uploaded the file to a classified network in October 2020, not by the Department of War. It is part of the 50 videos AARO located while responding to a request from eight House members, and AARO warns that many lack a substantiated chain of custody. Its official visual description records only two simultaneous areas of contrast, not three, for about 15 seconds around the clip's midpoint, and about a third of the clip has no content while the sensor cycles its zoom. It was released in PURSUE's second drop.",
+  "summary": "Un video de cuatro minutos lleva el título «29 October 2020 [CALLSIGN] (Mission) observes 3 fast moving UAP» («observa tres objetos rápidos»), que puso quien lo subió a una red clasificada en octubre de 2020, no el Departamento de Guerra. Es uno de los 50 videos que la oficina del Pentágono para estos fenómenos (AARO) localizó a petición de ocho miembros de la Cámara de Representantes, y la oficina advierte que a muchos les falta una cadena de custodia demostrada. Su descripción registra como máximo dos zonas de contraste a la vez, no tres, durante unos 15 segundos, y casi un tercio del video no tiene contenido.",
+  "summary_en": "A four-minute clip carries the title “29 October 2020 [CALLSIGN] (Mission) observes 3 fast moving UAP,” given by whoever uploaded it to a classified network in October 2020, not by the Department of War. It is one of the 50 videos that the Pentagon office for these phenomena (AARO) located at the request of eight House members, and the office warns that many lack a substantiated chain of custody. Its description records at most two areas of contrast at once, not three, for about 15 seconds around the midpoint, and about a third of the clip has no content. It was released in May 2026.",
   "patterns": [
     "8b",
     "8d"

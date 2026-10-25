@@ -2,8 +2,8 @@
   "id": "apollo12-streaks-1969",
   "num": 110,
   "pursueReleases": [1, 2],
-  "name": "Apollo 12 · 'streaks of light' (NASA)",
-  "name_en": "Apollo 12 · 'streaks of light' (NASA)",
+  "name": "Apolo 12 · los astronautas ven destellos al intentar dormir",
+  "name_en": "Apollo 12 · astronauts see flashes of light while trying to sleep",
   "year_start": 1969,
   "country": "US",
   "country_name": "Estados Unidos / espacio cislunar",
@@ -11,15 +11,15 @@
   "location": {
     "lat": 29.55,
     "lng": -95.09,
-    "place": "NASA · debrief post-misión, Houston",
-    "place_en": "NASA · post-mission debrief, Houston"
+    "place": "Trayecto a la Luna (nave Apolo 12)",
+    "place_en": "On the way to the Moon (Apollo 12 spacecraft)"
   },
   "tier": "B",
   "mundanoType": "natural",
   "epistemicStatus": "documented",
   "probability": 10,
-  "summary": "Audio del debrief médico post-misión del Apolo 12 (1969), desclasificado en la segunda entrega PURSUE (22 may 2026): los astronautas Conrad, Gordon y Bean describen 'streaks/flashes of light' que veían al intentar dormir en espacio profundo. La ciencia lo explica bien como rayos cósmicos interactuando con la retina: caso incluido por transparencia documental, no por anomalía.",
-  "summary_en": "Audio from the Apollo 12 post-mission medical debrief (1969), declassified in the second PURSUE tranche (May 22, 2026): astronauts Conrad, Gordon and Bean describe 'streaks/flashes of light' they saw while trying to sleep in deep space. Science explains it well as cosmic rays interacting with the retina: a case included for documentary transparency, not for anomaly.",
+  "summary": "En noviembre de 1969, durante el viaje a la Luna, los astronautas del Apolo 12 Pete Conrad, Richard Gordon y Alan Bean vieron estelas y destellos de luz mientras intentaban dormir, desde la primera noche. Lo contaron en la entrevista médica posterior a la misión, cuyo audio desclasificó el Gobierno de EE. UU. el 22 de mayo de 2026. En la misma cinta, uno de ellos dice que no era algo externo, sino algo que ocurría dentro del ojo, y la NASA concluyó después que era interno a su visión: la explicación aceptada son los rayos cósmicos que atraviesan la retina.",
+  "summary_en": "In November 1969, on the way to the Moon, Apollo 12 astronauts Pete Conrad, Richard Gordon and Alan Bean saw streaks and flashes of light while trying to sleep, starting on the first night. They described them in the post-mission medical debriefing, whose audio the U.S. government declassified on 22 May 2026. On the same tape, one of them says it was not something outside but something happening inside the eye, and NASA later concluded it was internal to their vision: the accepted explanation is cosmic rays passing through the retina.",
   "documents": [
     {
       "role": "documento",

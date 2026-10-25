@@ -1,8 +1,8 @@
 {
   "id": "chulucanas-2001",
   "num": 64,
-  "name": "Chulucanas · Oleada DIFAA",
-  "name_en": "Chulucanas · DIFAA wave",
+  "name": "Chulucanas · luces naranjas grabadas sobre una procesión",
+  "name_en": "Chulucanas · orange lights filmed over a religious procession",
   "year_start": 2001,
   "country": "PE",
   "country_name": "Perú",
@@ -10,8 +10,8 @@
   "location": {
     "lat": -5.1,
     "lng": -80.16,
-    "place": "Chulucanas, Piura",
-    "place_en": "Chulucanas, Piura"
+    "place": "Chulucanas, Piura (Perú)",
+    "place_en": "Chulucanas, Piura, Peru"
   },
   "tier": "B",
   "epistemicStatus": "documented",

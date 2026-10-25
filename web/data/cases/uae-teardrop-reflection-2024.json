@@ -4,8 +4,8 @@
   "pursueReleases": [
     4
   ],
-  "name": "'Puede ser un reflejo': el propio observador duda de su reporte sobre EAU",
-  "name_en": "'It may be a reflection': the observer himself doubts his own report over the UAE",
+  "name": "Emiratos · un objeto con una barra que podría ser un reflejo",
+  "name_en": "UAE · an object with a bar beneath it that may be a reflection",
   "year_start": 2024,
   "country": "AE",
   "country_name": "Emiratos Árabes Unidos",
@@ -28,8 +28,8 @@
     "nohumano_abierto": 0.02,
     "indet": 0.25
   },
-  "summary": "En junio de 2024, un sensor infrarrojo de una plataforma militar estadounidense registró 21 segundos de un objeto sobre aguas de Emiratos Árabes Unidos. La AARO describe un área de contraste en forma de «lágrima invertida» con una masa lineal vertical colgando debajo; el informe de misión D8 habla de un objeto con un poste o barra vertical debajo que podía ser, en cambio, «un reflejo de un objeto en el agua», aunque según la redacción del informe D27 lo que podía ser reflejo era la barra, no el objeto. La AARO atribuye el reporte al Comando Norte (NORTHCOM), aunque Emiratos está en el área del Comando Central (CENTCOM).",
-  "summary_en": "In June 2024, an infrared sensor aboard a U.S. military platform recorded 21 seconds of an object over waters off the United Arab Emirates. AARO describes an area of contrast shaped like an 'inverted teardrop' with a vertically linear mass hanging below; the mission report the record cites (DoW-UAP-D8) speaks of an object with a vertical pole or bar beneath that might instead be 'a reflection from an object in the water,' although as report D27 is worded, what might be a reflection was the bar, not the object. AARO attributes the report to Northern Command (NORTHCOM), though the UAE falls within Central Command's (CENTCOM) area.",
+  "summary": "En junio de 2024, un sensor infrarrojo militar de EE. UU. grabó 21 segundos de un objeto sobre aguas de los Emiratos Árabes Unidos. La oficina del Pentágono para estos fenómenos (AARO) describe una «lágrima invertida» con una masa vertical debajo y cita un informe según el cual el objeto podía ser «un reflejo de un objeto en el agua», pero ese informe es de otro suceso. El que coincide, del 7 de junio, describe una esfera caliente con un poste vertical debajo, a unos 140 nudos justo sobre el agua, y lo que podía ser un reflejo era el poste. La AARO atribuye el caso al Comando Norte, aunque los Emiratos son zona del Comando Central.",
+  "summary_en": "In June 2024, a U.S. military infrared sensor recorded 21 seconds of an object over waters off the United Arab Emirates. The Pentagon office for these phenomena (AARO) describes an “inverted teardrop” with a vertical mass below and cites a report saying the object might be “a reflection from an object in the water,” but that report concerns another event. The matching one, dated June 7, describes a hot sphere with a vertical pole beneath it, at about 140 knots just above the water, and what might be a reflection was the pole. AARO attributes the case to Northern Command, although the UAE is in Central Command's area.",
   "patterns": [],
   "category": "incident",
   "documents": [
@@ -53,7 +53,7 @@
     "Informe de misión DoW-UAP-D8: 'objeto con un poste o barra vertical adherido a la parte inferior'",
     "El observador consignó una alternativa mundana: 'puede ser un reflejo de un objeto en el agua'",
     "Descripción visual oficial: el área de contraste permanece centrada en el campo del sensor durante los 21 segundos (el sensor la sigue)",
-    "Anomalía administrativa: la AARO atribuye el sometimiento a NORTHCOM, pese a que EAU está en el área de CENTCOM; el índice de datos de war.gov sitúa el vídeo en el golfo de Omán",
+    "Anomalía administrativa: la AARO atribuye el sometimiento a NORTHCOM, pese a que EAU está en el área de CENTCOM; el índice de datos de war.gov sitúa el video en el golfo de Omán",
     "Publicado en PURSUE Release 01 (8 de mayo de 2026), dominio público",
     "Informe de misión DoW-UAP-D27 (Mando Central, 7 jun 2024): esfera caliente con barra vertical, posible reflejo del objeto en el agua, en vuelo recto justo sobre el agua a 140 nudos"
   ],
@@ -89,7 +89,7 @@
       "name": "Índice de datos de war.gov/UFO (CSV de la entrega), espejo en github.com/abigailhaddad/ufo-releases",
       "name_en": "war.gov/UFO release data index (CSV), mirrored at github.com/abigailhaddad/ufo-releases",
       "url": "https://github.com/abigailhaddad/ufo-releases",
-      "note": "El registro DOW-UAP-PR029 lleva en el campo de título del vídeo «Unresolved UAP Report, Gulf of Oman, June 2024» y como lugar «Gulf of Oman».",
+      "note": "El registro DOW-UAP-PR029 lleva en el campo de título del video «Unresolved UAP Report, Gulf of Oman, June 2024» y como lugar «Gulf of Oman».",
       "note_en": "The DOW-UAP-PR029 record carries 'Unresolved UAP Report, Gulf of Oman, June 2024' in its video-title field and 'Gulf of Oman' as location."
     },
     {
@@ -99,7 +99,7 @@
     }
   ],
   "classBasis": {
-    "es": "El informe de misión que coincide con el vídeo, DoW-UAP-D27 (Mando Central, 7 de junio de 2024), describe un objeto esférico caliente y brillante con un poste o barra cilíndrica vertical debajo, posible reflejo del objeto en el agua, volando en línea recta justo sobre el agua a unos 140 nudos. El posible reflejo explica la barra, no el objeto, y ninguna fuente propone qué era. La falta de un análisis publicado no es prueba contra una causa ordinaria: en el año fiscal 2024 AARO resolvió 174 casos, todos como «objetos prosaicos» (globos, aves, drones, satélites, aviones), aunque «muchos otros casos siguen sin resolver».",
+    "es": "El informe de misión que coincide con el video, DoW-UAP-D27 (Mando Central, 7 de junio de 2024), describe un objeto esférico caliente y brillante con un poste o barra cilíndrica vertical debajo, posible reflejo del objeto en el agua, volando en línea recta justo sobre el agua a unos 140 nudos. El posible reflejo explica la barra, no el objeto, y ninguna fuente propone qué era. La falta de un análisis publicado no es prueba contra una causa ordinaria: en el año fiscal 2024 AARO resolvió 174 casos, todos como «objetos prosaicos» (globos, aves, drones, satélites, aviones), aunque «muchos otros casos siguen sin resolver».",
     "en": "The mission report matching the video, DoW-UAP-D27 (Central Command, 7 June 2024), describes a 'GLOWING HOT SPHERICAL UNIDENTIFIED OBJECT WITH A VERTICAL UNWAVERING CYLINDRICAL POLE/BAR ATTACHED ON THE BOTTOM OF THE OBJECT POSS REFLECTION FROM THE OBJECT IN THE WATER, MOVING AT 140KNOTS', 'FLYING STRAIGHT JUST OVER THE WATER'. The possible reflection explains the bar, not the object, and no source proposes what it was. The absence of a published analysis is not evidence against an ordinary cause: AARO's FY2024 report finalized 'all 174 cases' as 'resolved to prosaic objects', though 'many other cases remain unresolved'.",
     "source": "Departamento de Guerra — DoW-UAP-D27, informe de misión, Emiratos Árabes Unidos (PURSUE Release 01) · AARO — Fiscal Year 2024 Consolidated Annual Report on UAP (14 nov 2024), tasa base",
     "source_en": "Department of War — DoW-UAP-D27, mission report, United Arab Emirates (PURSUE Release 01) · AARO — Fiscal Year 2024 Consolidated Annual Report on UAP (14 Nov 2024), base rate",

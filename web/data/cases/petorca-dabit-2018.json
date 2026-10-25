@@ -1,8 +1,8 @@
 {
   "id": "petorca-dabit-2018",
   "num": 469,
-  "name": "Petorca · los destellos que el LXP337 vio cruzar hacia Argentina",
-  "name_en": "Petorca · the flashes LXP337 saw crossing towards Argentina",
+  "name": "Petorca · un piloto ve destellos que cruzan hacia Argentina",
+  "name_en": "Petorca · a pilot sees flashes crossing towards Argentina",
   "year_start": 2018,
   "country": "CL",
   "country_name": "Chile",
@@ -10,16 +10,16 @@
   "location": {
     "lat": -32.2515,
     "lng": -70.8352,
-    "place": "Punto de control DABIT, sobre la provincia de Petorca (región de Valparaíso), en la aproximación a Santiago",
-    "place_en": "DABIT reporting point, over Petorca province (Valparaíso region), on the approach to Santiago"
+    "place": "Sobre la provincia de Petorca (región de Valparaíso)",
+    "place_en": "Over Petorca province (Valparaíso region)"
   },
   "tier": "A",
   "mundanoType": "misid",
   "misidSubtype": "espacial",
   "epistemicStatus": "documented",
   "probability": 28,
-  "summary": "Pasada la medianoche del 12 de febrero de 2018, el comandante del vuelo LXP337 de LATAM, que bajaba hacia Santiago cerca del punto DABIT, sobre Petorca, preguntó por radio al control de Santiago si había un tráfico a gran altura que entrara al espacio aéreo argentino desde el Pacífico: veía unos destellos «como de stoplights» que cruzaban de oeste a este, siguiendo una ruta «como la nube de Magallanes». No había nada en los radares. El SEFAA no logró que el piloto respondiera a cinco mensajes y, con la opinión de un asesor, circunscribió el origen a tránsito aeroespacial a gran altitud o a luminiscencia atmosférica, sin identificar un objeto concreto.",
-  "summary_en": "Just after midnight on 12 February 2018, the captain of LATAM flight LXP337, descending towards Santiago near the DABIT reporting point over Petorca, asked Santiago control by radio whether there was high-altitude traffic entering Argentine airspace from the Pacific: he could see some flashes 'like stoplights' crossing from west to east, following a path 'like the Magellanic Cloud'. There was nothing on radar. SEFAA could not get the pilot to answer five messages and, with an adviser's opinion, narrowed the origin to high-altitude aerospace traffic or atmospheric luminescence, without identifying a specific object.",
+  "summary": "Pasada la medianoche del 12 de febrero de 2018, el comandante de un vuelo de LATAM que bajaba hacia Santiago, sobre Petorca, preguntó al control si había un tráfico a gran altura que entrara al espacio aéreo argentino desde el Pacífico: veía unos destellos «como de stoplights» que cruzaban de oeste a este, siguiendo una ruta «como la nube de Magallanes». No había nada en los radares. El SEFAA, la oficina oficial chilena para estos fenómenos, no logró que el piloto respondiera a cinco mensajes y, con la opinión de un asesor, limitó el origen a tránsito aeroespacial a gran altitud o a luminiscencia atmosférica, sin identificar el objeto.",
+  "summary_en": "Just after midnight on 12 February 2018, the captain of a LATAM flight descending towards Santiago over Petorca asked Santiago control whether there was high-altitude traffic entering Argentine airspace from the Pacific: he could see some flashes “like stoplights” crossing from west to east, following a path “like the Magellanic Cloud”. There was nothing on radar. SEFAA, Chile's official office for these phenomena, could not get the pilot to answer five messages and, with an adviser's opinion, narrowed the origin to high-altitude aerospace traffic or atmospheric luminescence, without identifying the object.",
   "patterns": [],
   "category": "incident",
   "posterior": {

@@ -1,7 +1,7 @@
 {
   "id": "yukon-1996",
   "num": 32,
-  "name": "Carretera del Yukón",
+  "name": "Yukón · veintidós testigos ven una enorme hilera de luces",
   "year_start": 1996,
   "country": "CA",
   "country_name": "Canadá",
@@ -9,15 +9,15 @@
   "location": {
     "lat": 62.45,
     "lng": -136.66,
-    "place": "Yukon Territory",
-    "place_en": "Yukon Territory"
+    "place": "Territorio del Yukón, Canadá",
+    "place_en": "Yukon Territory, Canada"
   },
   "tier": "B",
   "mundanoType": "misid",
   "epistemicStatus": "documented",
   "probability": 25,
-  "summary": "Veintidós testigos identificados en tres zonas de la carretera Klondike, en el Yukón, vieron la noche del 11 de diciembre de 1996 una enorme hilera de luces silenciosa; la mayoría de los relatos se concentra hacia las 20:30, y en 2012 el especialista en órbitas Ted Molczan la identificó con la reentrada de la segunda etapa del cohete de Cosmos 2335.",
-  "summary_en": "Twenty-two identified witnesses in three areas along the Klondike Highway in the Yukon saw a huge, silent row of lights on the night of 11 December 1996; most accounts cluster around 8:30 p.m., and in 2012 orbit specialist Ted Molczan identified it with the re-entry of the second stage of the Cosmos 2335 rocket.",
+  "summary": "La noche del 11 de diciembre de 1996, veintidós testigos identificados en tres puntos de la carretera Klondike, en el Yukón (Canadá), vieron una enorme hilera de luces silenciosa que avanzaba despacio cerca del horizonte norte; la mayoría de los relatos se concentra hacia las 20:30. El ingeniero Martin Jasek, que entrevistó a los testigos, calculó por triangulación que el objeto medía de 0,88 a 1,8 km. En 2012, el especialista en órbitas Ted Molczan lo identificó con la reentrada de la segunda etapa del cohete que había lanzado ese día el satélite ruso Cosmos 2335, que calculó hacia las 20:22–20:26.",
+  "summary_en": "On the night of 11 December 1996, twenty-two identified witnesses at three points along the Klondike Highway in the Yukon, Canada, saw a huge, silent row of lights moving slowly near the northern horizon; most accounts cluster around 8:30 p.m. Engineer Martin Jasek, who interviewed the witnesses, estimated by triangulation that the object was 0.88 to 1.8 km long. In 2012, orbit specialist Ted Molczan identified it with the re-entry of the second stage of the rocket that had launched the Russian satellite Cosmos 2335 that day, which he calculated for 8:22–8:26 p.m.",
   "patterns": [
     "8l"
   ],
@@ -84,7 +84,7 @@
     "nohumano_abierto": 0.06,
     "indet": 0.17
   },
-  "name_en": "Yukon Highway",
+  "name_en": "Yukon · 22 witnesses see a huge row of lights",
   "documents": [
     {
       "role": "contexto",

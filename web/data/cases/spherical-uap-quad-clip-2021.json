@@ -4,8 +4,8 @@
   "pursueReleases": [
     2
   ],
-  "name": "Cuatro clips, diecinueve minutos de archivo — pero no diecinueve de objeto en pantalla",
-  "name_en": "Four clips, nineteen minutes on file — but not nineteen of object on screen",
+  "name": "Oriente Medio · cuatro videos de un objeto que se ve a ratos",
+  "name_en": "Middle East · four videos of an object seen only at times",
   "year_start": 2021,
   "country": "US",
   "country_name": "Estados Unidos",
@@ -13,8 +13,8 @@
   "location": {
     "lat": 32,
     "lng": 54,
-    "place": "Ubicación no revelada (metadata DVIDS declara 'undisclosed location')",
-    "place_en": "Undisclosed location (DVIDS metadata declares 'undisclosed location')"
+    "place": "Probablemente Oriente Medio (ubicación no revelada)",
+    "place_en": "Probably the Middle East (exact location undisclosed)"
   },
   "tier": "B",
   "epistemicStatus": "documented",
@@ -35,8 +35,8 @@
     "source_en": "Metabunk — thread “PR060, PR061, PR062, PR063 CENTCOM Iraq” (2026); AARO, FY2024 Consolidated Annual Report on UAP",
     "url": "https://www.metabunk.org/threads/pr060-pr061-pr062-pr063-centocom-iraq.14907/"
   },
-  "summary": "Cuatro archivos titulados «obj 2», «vid 0», «vid 1» y «vid 2», supuestamente del 12 de abril de 2021, suman casi diecinueve minutos. Según la AARO, esos títulos no son del Departamento de Guerra sino de quien los subió a una red clasificada en 2024, dentro de un lote de 50 videos en el que muchos materiales carecen de cadena de custodia sustanciada. La descripción visual de la AARO no confirma diecinueve minutos de observación continua: en «vid 0» y «vid 2», la mayor parte de sus cuatro minutos y medio no muestra área de contraste, y el objeto solo aparece en fragmentos de menos de un minuto. Salieron en la segunda entrega de PURSUE.",
-  "summary_en": "Four files titled 'obj 2,' 'vid 0,' 'vid 1' and 'vid 2,' reportedly from April 12, 2021, total nearly nineteen minutes. Per AARO, those titles come not from the Department of War but from whoever uploaded them to a classified network in 2024, within a 50-video batch in which many materials lack a substantiated chain of custody. AARO's visual description does not confirm nineteen minutes of continuous observation: in 'vid 0' and 'vid 2', most of their four and a half minutes shows no area of contrast, the object appearing only in sub-minute fragments. They came out in PURSUE's second drop.",
+  "summary": "Cuatro videos titulados «obj 2», «vid 0», «vid 1» y «vid 2», supuestamente del 12 de abril de 2021, suman casi diecinueve minutos. Según la oficina del Pentágono para estos fenómenos (AARO), esos títulos los puso quien los subió a una red clasificada en 2024, no el Departamento de Guerra, y forman parte de un lote de 50 videos en el que a muchos les falta una cadena de custodia demostrada. Su descripción no confirma diecinueve minutos de observación continua: en «vid 0» y «vid 2» casi todo el metraje no muestra ninguna zona de contraste, y el objeto solo aparece en tramos de menos de un minuto. Se publicaron en mayo de 2026.",
+  "summary_en": "Four videos titled “obj 2,” “vid 0,” “vid 1” and “vid 2,” reportedly from April 12, 2021, add up to nearly nineteen minutes. According to the Pentagon office for these phenomena (AARO), those titles were given by whoever uploaded them to a classified network in 2024, not by the Department of War, and they belong to a 50-video batch in which many items lack a substantiated chain of custody. Its description does not confirm nineteen minutes of continuous observation: in “vid 0” and “vid 2” most of the footage shows no area of contrast, and the object appears only in stretches of under a minute. They were released in May 2026.",
   "patterns": [
     "8d"
   ],

@@ -2,7 +2,7 @@
   "id": "calama-learjet-2023",
   "num": 460,
   "name": "Calama · la luz que «seguía» a un Learjet argentino",
-  "name_en": "Calama · the light 'following' an Argentine Learjet",
+  "name_en": "Calama · the light “following” an Argentine Learjet",
   "year_start": 2023,
   "country": "CL",
   "country_name": "Chile",
@@ -10,8 +10,8 @@
   "location": {
     "lat": -22.9661,
     "lng": -68.4944,
-    "place": "Aerovía UL550, al sureste de Calama, cerca del punto PANED (región de Antofagasta)",
-    "place_en": "Airway UL550, southeast of Calama, near the PANED waypoint (Antofagasta region)"
+    "place": "Al sureste de Calama (región de Antofagasta)",
+    "place_en": "Southeast of Calama (Antofagasta region)"
   },
   "tier": "B",
   "mundanoType": "misid",
@@ -19,8 +19,8 @@
   "objectDetail": "satelite",
   "epistemicStatus": "documented",
   "probability": 30,
-  "summary": "La madrugada del 8 de noviembre de 2023, el piloto de un Learjet 60 argentino que volaba de Guayaquil a Tucumán a 41.000 pies informó por radio, pasando Calama, de «una luz brillante a las 3 del reloj, a unas 5 millas». Cuando la controladora de Iquique le sugirió el reflejo de una planta fotovoltaica, respondió que conocía la planta, que no era eso y que la luz «los estaba siguiendo»; según el reporte, la vio de 6 a 10 segundos cruzar de este a oeste. El SEFAA encontró en ese sector varios objetos en órbita que podían reflejar la luz del Sol, pero sin imágenes no pudo identificar ninguno y cerró el caso como «Relato».",
-  "summary_en": "In the early hours of 8 November 2023, the pilot of an Argentine Learjet 60 flying from Guayaquil to Tucumán at 41,000 feet radioed, after passing Calama, about 'a bright light at 3 o'clock, about 5 miles away'. When the Iquique controller suggested the reflection of a solar power plant, he replied that he knew the plant, that it was not that and that the light 'was following them'; according to the report, he saw it for 6 to 10 seconds crossing from east to west. SEFAA found several orbiting objects in that sector that could reflect sunlight, but without images it could not identify any and closed the case as a 'Report'.",
+  "summary": "La madrugada del 8 de noviembre de 2023, el piloto de un Learjet 60 argentino que volaba de Guayaquil a Tucumán a 41.000 pies avisó, pasado Calama, de «una luz brillante a las 3 del reloj, a unas 5 millas». Cuando la controladora de Iquique le sugirió el reflejo de una planta fotovoltaica, respondió que la conocía, que no era eso y que la luz «los estaba siguiendo»; según el reporte, la vio de 6 a 10 segundos cruzar de este a oeste. El SEFAA, la oficina oficial chilena para estos fenómenos, halló en ese sector varios objetos en órbita que podían reflejar la luz del Sol, pero sin imágenes no identificó ninguno y cerró el caso como «Relato».",
+  "summary_en": "Early on 8 November 2023, the pilot of an Argentine Learjet 60 flying from Guayaquil to Tucumán at 41,000 feet reported, after passing Calama, “a bright light at 3 o'clock, about 5 miles away”. When the Iquique controller suggested the reflection of a solar power plant, he replied that he knew the plant, that it was not that and that the light “was following them”; according to the report, he saw it for 6 to 10 seconds crossing from east to west. SEFAA, Chile's official office for these phenomena, found several orbiting objects in that sector that could reflect sunlight, but without images it identified none and closed the case as a “Report”.",
   "patterns": [],
   "category": "incident",
   "posterior": {

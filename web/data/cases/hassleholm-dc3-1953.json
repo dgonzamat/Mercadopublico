@@ -13,8 +13,8 @@
   "location": {
     "lat": 56.16,
     "lng": 13.77,
-    "place": "Sobre las nubes cerca de Hässleholm (Escania), con el DC-3 a 2.150 metros en la ruta de Malmö a Estocolmo",
-    "place_en": "Above the clouds near Hässleholm (Scania), with the DC-3 at 2,150 metres on the Malmö–Stockholm route"
+    "place": "Sobre las nubes cerca de Hässleholm (Escania, Suecia)",
+    "place_en": "Above the clouds near Hässleholm (Scania, Sweden)"
   },
   "tier": "A",
   "epistemicStatus": "documented",
@@ -31,7 +31,7 @@
   },
   "probability": 29,
   "summary": "La tarde del 17 de diciembre de 1953, el capitán Ulf Christiernsson, jefe de pilotos de Transair, y su mecánico Olle Johansson vieron desde un DC-3, sobre las nubes cerca de Hässleholm, un objeto metálico, casi redondo, que pasó por debajo del avión en sentido contrario durante unos segundos. El Estado Mayor de la Defensa sueco lo comunicó ese mismo día y abrió una investigación. Tres días después, el Dagens Nyheter informó de que una perfumería de Malmö había soltado ese mediodía más de 300 globos publicitarios a unos 20 kilómetros al sur; el agregado aéreo de EE. UU. no lo menciona y Blue Book archivó el caso como no identificado.",
-  "summary_en": "On the afternoon of 17 December 1953, Captain Ulf Christiernsson, Transair's chief pilot, and his mechanic Olle Johansson saw from a DC-3, above the clouds near Hässleholm, a metallic, nearly round object that passed beneath the aircraft in the opposite direction for a few seconds. The Swedish Defence Staff announced it that same day and opened an investigation. Three days later Dagens Nyheter reported that a Malmö perfume firm had released more than 300 advertising balloons that midday about 20 kilometres to the south; the US air attaché does not mention it and Blue Book filed the case as unidentified.",
+  "summary_en": "On the afternoon of 17 December 1953, Captain Ulf Christiernsson, Transair's chief pilot, and his mechanic Olle Johansson saw from a DC-3, above the clouds near Hässleholm, a metallic, nearly round object that passed beneath the aircraft in the opposite direction for a few seconds. The Swedish Defence Staff announced it that same day and opened an investigation. Three days later Dagens Nyheter reported that a Malmö perfume firm had released more than 300 advertising balloons that midday about 20 kilometres to the south; the U.S. air attaché does not mention it and Blue Book filed the case as unidentified.",
   "patterns": [],
   "category": "incident",
   "documents": [

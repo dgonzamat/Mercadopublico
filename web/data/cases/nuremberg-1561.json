@@ -1,8 +1,8 @@
 {
   "id": "nuremberg-1561",
   "num": 228,
-  "name": "Fenómeno celeste · Núremberg",
-  "name_en": "Celestial Phenomenon · Nuremberg",
+  "name": "Núremberg · vecinos ven esferas y cruces luchar en el cielo",
+  "name_en": "Nuremberg · townspeople see spheres and crosses battle in the sky",
   "year_start": 1561,
   "country": "DE",
   "country_name": "Alemania",
@@ -17,8 +17,8 @@
   "mundanoType": "folclore",
   "epistemicStatus": "documented",
   "probability": 33,
-  "summary": "El 14 de abril de 1561, al amanecer, numerosos habitantes de Núremberg dijeron ver en el cielo un despliegue de esferas, cilindros, cruces y dos grandes crecientes que parecían combatir entre sí, seguido de la caída de objetos humeantes y la aparición de una gran forma oscura. El impresor Hans Glaser publicó una hoja volante con un grabado y un texto describiendo el suceso.",
-  "summary_en": "On 14 April 1561, at dawn, many inhabitants of Nuremberg reported seeing in the sky a display of spheres, cylinders, crosses and two large crescents that seemed to fight one another, followed by smoking objects falling and the appearance of a large dark shape. The printer Hans Glaser published a broadsheet with a woodcut and text describing the event.",
+  "summary": "Al amanecer del 14 de abril de 1561, según una hoja volante del impresor Hans Glaser, «muchos hombres y mujeres» de Núremberg vieron sobre el sol naciente esferas, cilindros, cruces y dos grandes crecientes que parecieron combatir entre sí durante más de una hora, hasta caer a tierra humeando; después se vio una gran forma oscura, como una lanza negra. Glaser lo leyó como una advertencia divina. La hoja, conservada en Zúrich, es la única fuente del suceso. Carl Jung la interpretó en 1958 como imaginería bélica y religiosa proyectada sobre un fenómeno atmosférico real; es la lectura que hoy predomina entre los historiadores.",
+  "summary_en": "At dawn on April 14, 1561, according to a broadsheet by the printer Hans Glaser, “many men and women” of Nuremberg saw spheres, cylinders, crosses and two large crescents over the rising sun that seemed to fight one another for more than an hour, until they fell to the ground smoking; then a large dark shape appeared, like a black spear. Glaser read it as a divine warning. The broadsheet, kept at the Zurich Central Library, is the only source for the event. In 1958 Carl Jung interpreted it as the warlike and religious imagery of the age projected onto a real atmospheric phenomenon, the reading most historians still favor.",
   "patterns": [
     "8h"
   ],

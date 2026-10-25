@@ -1,8 +1,8 @@
 {
   "id": "hill-1961",
   "num": 152,
-  "name": "Barney y Betty Hill",
-  "name_en": "Barney and Betty Hill",
+  "name": "Barney y Betty Hill · la luz que siguió su coche",
+  "name_en": "Barney and Betty Hill · the light that followed their car",
   "year_start": 1961,
   "country": "US",
   "country_name": "Estados Unidos",
@@ -10,15 +10,15 @@
   "location": {
     "lat": 44.49,
     "lng": -71.57,
-    "place": "Lancaster, New Hampshire",
-    "place_en": "Lancaster, New Hampshire"
+    "place": "White Mountains, cerca de Lancaster, New Hampshire",
+    "place_en": "White Mountains, near Lancaster, New Hampshire"
   },
   "tier": "A",
   "mundanoType": "misid",
   "epistemicStatus": "documented",
   "probability": 35,
-  "summary": "La noche del 19 al 20 de septiembre de 1961, Betty y Barney Hill reportaron que una luz siguió su coche en las White Mountains de New Hampshire y, bajo hipnosis más de dos años después, relataron una abducción. Blue Book cerró el caso como datos insuficientes: atribuye la luz a un efecto óptico atmosférico parecido a un reflector publicitario, y una carta de 1963 la da «con toda probabilidad» por Júpiter. El eco de radar de Pease fue más de una hora después y a unos 125 km, y la base dijo que no podía establecerse relación alguna. El psiquiatra Benjamin Simon concluyó que la abducción era una fantasía nacida de los sueños de Betty.",
-  "summary_en": "On the night of September 19-20, 1961, Betty and Barney Hill reported that a light followed their car in New Hampshire's White Mountains and, under hypnosis more than two years later, recounted an abduction. Blue Book closed the case as insufficient data: it attributes the light to an atmospheric optical condition resembling an advertising searchlight, and a 1963 letter calls it 'in all probability' Jupiter. The Pease radar return came more than an hour later and some 125 km away, and the base said no relationship could be established. Psychiatrist Benjamin Simon concluded the abduction was a fantasy born of Betty's dreams.",
+  "summary": "La noche del 19 al 20 de septiembre de 1961, Betty y Barney Hill contaron que una luz siguió su coche por las White Mountains de New Hampshire; más de dos años después, bajo hipnosis, relataron una abducción. Project Blue Book, el programa de la Fuerza Aérea, cerró el caso por datos insuficientes y atribuyó la luz a un efecto óptico parecido a un reflector publicitario; una carta de 1963 la da «con toda probabilidad» por Júpiter. Lo que captó el radar de la base Pease fue más de una hora después y a unos 125 km, y la base no halló relación. El psiquiatra Benjamin Simon concluyó que la abducción era una fantasía nacida de los sueños de Betty.",
+  "summary_en": "On the night of September 19–20, 1961, Betty and Barney Hill said a light followed their car through New Hampshire's White Mountains; more than two years later, under hypnosis, they described an abduction. Project Blue Book, the Air Force program, closed the case for insufficient data and put the light down to an optical effect resembling an advertising searchlight; a 1963 letter calls it “in all probability” Jupiter. What the radar at Pease Air Force Base picked up came more than an hour later and some 125 km away, and the base found no link. Psychiatrist Benjamin Simon concluded the abduction was a fantasy born of Betty's dreams.",
   "patterns": [
     "8e",
     "8m"

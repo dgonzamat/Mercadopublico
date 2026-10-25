@@ -1,7 +1,8 @@
 {
   "id": "voronezh-1989",
   "num": 26,
-  "name": "Voronezh",
+  "name": "Voronezh · niños dicen ver un objeto y seres altos en un parque",
+  "name_en": "Voronezh · children report an object and tall figures in a park",
   "year_start": 1989,
   "country": "RU",
   "country_name": "URSS / Rusia",
@@ -9,8 +10,8 @@
   "location": {
     "lat": 51.67,
     "lng": 39.21,
-    "place": "Voronezh, USSR",
-    "place_en": "Voronezh, USSR"
+    "place": "Voronezh, URSS (hoy Rusia)",
+    "place_en": "Voronezh, USSR (now Russia)"
   },
   "tier": "B",
   "mundanoType": "psicosocial",
@@ -23,8 +24,8 @@
   },
   "epistemicStatus": "documented",
   "probability": 38,
-  "summary": "Tras los reportes de un grupo de niños sobre un objeto y figuras humanoides en un parque de Voronezh, la agencia oficial soviética TASS publicó en plena Glasnost un comunicado que calificó la visita de 'hecho científicamente comprobado'.",
-  "summary_en": "After children and adults reported an object and humanoid figures in a Voronezh park, the official Soviet agency TASS published a Glasnost-era statement calling the visit a 'scientifically proven fact'.",
+  "summary": "El 27 de septiembre de 1989, al atardecer, un grupo de niños contó que en un parque de Voronezh, en la Rusia soviética, se posó un objeto rojo del que salieron figuras altas y un pequeño «robot». En plena Glasnost, la agencia oficial TASS difundió el 9 de octubre un despacho que la prensa mundial resumió como una visita «científicamente comprobada». Al día siguiente, su autor admitió que su fuente eran unos diez chicos de 12 o 13 años y que podía haber fantasía; la piedra supuestamente extraterrestre resultó ser hematita común, y las inspecciones posteriores no hallaron huellas verificables.",
+  "summary_en": "At dusk on 27 September 1989, a group of children said a red object landed in a park in Voronezh, in Soviet Russia, and that tall figures and a small “robot” came out of it. At the height of Glasnost, the official agency TASS put out a dispatch on 9 October that the world press summed up as a “scientifically proven” visit. The next day its author admitted his source was about ten children aged 12 or 13 and that there might be fantasy involved; the supposedly alien rock turned out to be common hematite, and later inspections found no verifiable traces.",
   "patterns": [
     "8e"
   ],

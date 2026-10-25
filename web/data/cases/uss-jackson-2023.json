@@ -1,8 +1,8 @@
 {
   "id": "uss-jackson-2023",
   "num": 77,
-  "name": "USS Jackson — Incidente transmedio (Wiggins, 2023)",
-  "name_en": "USS Jackson — Transmedium Incident (Wiggins, 2023)",
+  "name": "USS Jackson · un suboficial dice ver una luz salir del mar",
+  "name_en": "USS Jackson · a Navy chief says he saw a light rise from the sea",
   "year_start": 2023,
   "country": "US",
   "country_name": "Estados Unidos",
@@ -10,15 +10,15 @@
   "location": {
     "lat": 32.889,
     "lng": -117.934,
-    "place": "Área de aviso W-291, frente a San Diego (costa sur de California)",
-    "place_en": "Warning Area W-291, off San Diego (Southern California coast)"
+    "place": "Frente a San Diego (costa sur de California)",
+    "place_en": "Off San Diego (Southern California coast)"
   },
   "tier": "B",
   "mundanoType": "misid",
   "epistemicStatus": "documented",
   "probability": 44,
-  "summary": "Un suboficial mayor de la Armada en servicio activo, Alexandro Wiggins, declaró ante el Congreso que el 15 de febrero de 2023, desde el USS Jackson frente a San Diego, vio en el radar, en la pantalla del sensor Star SAFIRE y a simple vista una luz con forma de «Tic Tac» que, según él, salió del mar, se unió a otros tres objetos y partió con ellos al mismo tiempo. Hubo un video grabado de la pantalla y un reporte al oficial de guardia, pero, según su testimonio, ninguna investigación posterior; el propio testigo admitió que no puede probar que el objeto emergiera del agua.",
-  "summary_en": "An active-duty Navy senior chief, Alexandro Wiggins, told Congress that on February 15, 2023, aboard USS Jackson off San Diego, he saw on radar, on the Star SAFIRE sensor display and with the naked eye a 'Tic Tac'-shaped light that, by his account, rose from the sea, joined three other objects and departed with them at the same moment. There was a video recorded off the display and a report to the officer on watch, but, per his testimony, no follow-up investigation; the witness himself acknowledged he cannot prove the object emerged from the water.",
+  "summary": "Un suboficial mayor de la Armada en servicio activo, Alexandro Wiggins, declaró ante el Congreso que el 15 de febrero de 2023, desde el USS Jackson frente a San Diego, vio en el radar, en la pantalla de la cámara del buque (Star SAFIRE) y a simple vista una luz con forma de «Tic Tac» que, según él, salió del mar, se unió a otros tres objetos y partió con ellos al mismo tiempo. Se grabó un video de la pantalla y se informó al oficial de guardia, pero, según su testimonio, no hubo investigación posterior; el propio testigo admitió que no puede probar que el objeto emergiera del agua.",
+  "summary_en": "An active-duty Navy senior chief, Alexandro Wiggins, told Congress that on 15 February 2023, aboard USS Jackson off San Diego, he saw on radar, on the ship's camera display (Star SAFIRE) and with the naked eye a “Tic Tac”-shaped light that, by his account, rose from the sea, joined three other objects and left with them at the same moment. A video was recorded off the display and the officer on watch was told, but, by his testimony, there was no follow-up investigation; the witness himself acknowledged he cannot prove the object came out of the water.",
   "patterns": [
     "8h",
     "8e"

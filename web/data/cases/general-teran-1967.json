@@ -1,8 +1,8 @@
 {
   "id": "general-teran-1967",
   "num": 422,
-  "name": "General Terán · la esfera caída del cielo (1967)",
-  "name_en": "General Terán · the sphere that fell from the sky (1967)",
+  "name": "General Terán · vecinos ven humo y hallan una esfera metálica",
+  "name_en": "General Terán · residents see smoke and find a metal sphere",
   "year_start": 1967,
   "country": "MX",
   "country_name": "México",
@@ -27,8 +27,8 @@
     "nohumano_abierto": 0.01,
     "indet": 0.06
   },
-  "summary": "El 7 de febrero de 1967 los vecinos de General Terán (Nuevo León) vieron una estela de humo y oyeron estruendos, y en un ejido apareció una esfera metálica que acabó en manos de EE.UU. El consulado en Monterrey reenvió el informe del alcalde a la NASA. Todo apunta a la reentrada de la segunda etapa del cohete Delta que lanzó el satélite Intelsat II F-1.",
-  "summary_en": "On 7 February 1967 residents of General Terán (Nuevo León) saw a smoke trail and heard booms, and a metal sphere turned up on an ejido and ended up in US hands. The consulate in Monterrey forwarded the mayor's report to NASA. Everything points to the re-entry of the second stage of the Delta rocket that launched the Intelsat II F-1 satellite.",
+  "summary": "La mañana del 7 de febrero de 1967, vecinos de General Terán (Nuevo León, México) vieron una estela de humo y oyeron estruendos, y en una huerta del ejido Las Anacuitas apareció un objeto metálico, una esfera que estuvo expuesta varios días en la presidencia municipal. El consulado de EE. UU. en Monterrey reenvió el informe del alcalde a la NASA, y el objeto acabó en manos de funcionarios estadounidenses. El analista de reentradas Ted Molczan lo atribuye a la caída, ese mismo día, de un depósito de helio de la segunda etapa del cohete Delta que lanzó el satélite Intelsat II F-1; el Mando Estratégico de EE. UU. fecha esa reentrada el día 9.",
+  "summary_en": "On the morning of 7 February 1967, residents of General Terán (Nuevo León, Mexico) saw a smoke trail and heard booms, and a metal object, a sphere later displayed for several days at the town hall, turned up in an orchard on the Las Anacuitas ejido. The U.S. consulate in Monterrey forwarded the mayor's report to NASA, and the object ended up in U.S. hands. Re-entry analyst Ted Molczan attributes it to a helium tank from the second stage of the Delta rocket that launched the Intelsat II F-1 satellite, falling that same day; U.S. Strategic Command dates that re-entry to the 9th.",
   "patterns": [
     "8e"
   ],

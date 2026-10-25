@@ -4,8 +4,8 @@
   "pursueReleases": [
     1
   ],
-  "name": "Gemini 7 · Borman & Lovell",
-  "name_en": "Gemini 7 · Borman & Lovell",
+  "name": "Gemini 7 · Borman y Lovell ven un objeto en órbita",
+  "name_en": "Gemini 7 · Borman and Lovell see an object in orbit",
   "year_start": 1965,
   "country": "US",
   "country_name": "Estados Unidos",
@@ -21,8 +21,8 @@
   "misidSubtype": "espacial",
   "epistemicStatus": "documented",
   "probability": 24,
-  "summary": "En diciembre de 1965, durante la misión Gemini 7, el astronauta Frank Borman reportó a Houston un objeto no identificado ('bogey'); junto a Jim Lovell describió además 'cientos de pequeñas partículas' y un 'cuerpo brillante' contra el fondo negro del espacio. Un documento reliberado por PURSUE en 2026 lleva la anotación manuscrita 'UFO Sighting by Borman'.",
-  "summary_en": "In December 1965, during the Gemini 7 mission, astronaut Frank Borman reported an unidentified object ('bogey') to Houston; with Jim Lovell he also described 'hundreds of little particles' and a 'brilliant body' against the black background of space. A document re-released by PURSUE in 2026 bears the handwritten note 'UFO Sighting by Borman'.",
+  "summary": "En diciembre de 1965, al comienzo de su segunda vuelta a la Tierra, el astronauta Frank Borman comunicó a Houston un objeto no identificado que volaba junto a la Gemini 7 y describió con Jim Lovell «cientos de pequeñas partículas» a unos cinco o seis kilómetros. Aparte, Lovell veía la etapa del cohete que los lanzó. El historiador espacial James Oberg identifica el objeto con restos del propio cohete; el Informe Condon lo contó entre los avistamientos de astronautas sin explicar, porque a la tripulación le pareció que iban en órbita polar. Una transcripción de la misión lleva anotado a mano «UFO Sighting by Borman».",
+  "summary_en": "In December 1965, early in the second orbit, astronaut Frank Borman reported to Houston an unidentified object flying alongside Gemini 7, and with Jim Lovell described “hundreds of little particles” some three or four miles away. Separately, Lovell could see the rocket stage that had launched them. Space historian James Oberg identifies the object with debris from that rocket; the Condon Report counted it among the astronaut sightings left unexplained, because to the crew they seemed to be in a polar orbit. A mission transcript bears the handwritten note “UFO Sighting by Borman.”",
   "documents": [
     {
       "role": "documento",

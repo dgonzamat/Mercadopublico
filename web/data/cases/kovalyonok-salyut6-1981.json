@@ -1,8 +1,8 @@
 {
   "id": "kovalyonok-salyut6-1981",
   "num": 144,
-  "name": "Cosmonauta Kovalyonok · estación Salyut-6 · objeto en órbita",
-  "name_en": "Cosmonaut Kovalyonok · Salyut-6 station · object in orbit",
+  "name": "Kovalyonok · un cosmonauta ve un objeto junto a la Salyut-6",
+  "name_en": "Kovalyonok · a cosmonaut sees an object beside Salyut-6",
   "year_start": 1981,
   "country": "SU",
   "country_name": "Unión Soviética",
@@ -10,15 +10,15 @@
   "location": {
     "lat": -33,
     "lng": 28,
-    "place": "Órbita baja terrestre sobre el Atlántico Sur / Océano Índico, estación espacial Salyut-6",
-    "place_en": "Low Earth orbit over the South Atlantic / Indian Ocean, Salyut-6 space station"
+    "place": "Órbita terrestre sobre el sur de África, estación Salyut-6",
+    "place_en": "Earth orbit over southern Africa, Salyut-6 space station"
   },
   "tier": "B",
   "mundanoType": "misid",
   "epistemicStatus": "documented",
   "probability": 38,
-  "summary": "El 5 de mayo de 1981, hacia las 18:00 hora de Moscú, el cosmonauta Vladimir Kovalyonok (Mayor General, dos veces Héroe de la Unión Soviética) observó desde un puerto de la estación Salyut-6 un objeto que volaba a la par de la nave sobre el sur del continente africano. Inicialmente elíptico tipo 'pesa de mancuerna', el objeto se volvió translúcido revelando una estructura interna y luego mostró una emisión tipo gas en un extremo antes de desaparecer. Kovalyonok llamó a su compañero Viktor Savinykh, quien también lo observó. No se registró ese día ningún test de cohete ni de misil compatible.",
-  "summary_en": "On May 5, 1981, around 18:00 Moscow time, cosmonaut Vladimir Kovalyonok (Major General, twice Hero of the Soviet Union) observed from a porthole of the Salyut-6 station an object flying alongside the spacecraft over southern Africa. Initially elliptical like a 'barbell', the object became translucent revealing an internal structure and then showed a gas-like emission at one end before disappearing. Kovalyonok called his crewmate Viktor Savinykh, who also observed it. No rocket or missile test compatible with that day was recorded.",
+  "summary": "El 5 de mayo de 1981, hacia las 18:00 hora de Moscú, el comandante de la estación soviética Salyut-6, Vladimir Kovalyonok, vio por una ventanilla un objeto que volaba a la par de la nave sobre el sur de África. Era elíptico; según su relato, se volvió translúcido, mostró una estructura interna, se dividió en dos partes unidas «como una pesa» y soltó una emisión parecida a un gas antes de disiparse. Llamó al ingeniero Viktor Savinykh, pero no llegaron a fotografiarlo. James Oberg atribuye muchos avistamientos de cosmonautas a lanzamientos lejanos, pero el catálogo de Jonathan McDowell no registra ninguno compatible esos días.",
+  "summary_en": "On May 5, 1981, around 6 p.m. Moscow time, the commander of the Soviet Salyut-6 station, Vladimir Kovalyonok, saw through a porthole an object flying alongside the spacecraft over southern Africa. It was elliptical; by his account, it turned translucent, showed an internal structure, split into two connected parts “like a dumbbell” and gave off a gas-like emission before dissipating. He called flight engineer Viktor Savinykh, but they never managed to photograph it. James Oberg attributes many cosmonaut sightings to distant launches, but Jonathan McDowell's launch catalog lists no matching launch for those days.",
   "patterns": [
     "8e",
     "8h"

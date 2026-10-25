@@ -1,8 +1,8 @@
 {
   "id": "scandinavian-ghost-fliers-1933",
   "num": 242,
-  "name": "Aviadores fantasma · Escandinavia",
-  "name_en": "Ghost Fliers · Scandinavia",
+  "name": "Norte de Escandinavia · aviones sin matrícula en la noche ártica",
+  "name_en": "Northern Scandinavia · unmarked planes in the Arctic night",
   "year_start": 1933,
   "year_end": 1934,
   "country": "SE",
@@ -18,8 +18,8 @@
   "mundanoType": "misid",
   "epistemicStatus": "documented",
   "probability": 26,
-  "summary": "Entre 1933 y 1934, habitantes y autoridades del norte de Suecia, Noruega y Finlandia reportaron aviones grises sin matrícula, los 'aviadores fantasma' (spökflygare), volando de noche y con mal tiempo, a veces a baja altura y con reflectores, en condiciones al límite de la aviación de la época en el Ártico; muchas de las luces resultaron ser estrellas, planetas o, en un caso, un globo. Los ejércitos los buscaron sin hallar ni los aparatos ni su base.",
-  "summary_en": "Between 1933 and 1934, residents and authorities of northern Sweden, Norway and Finland reported grey unmarked aircraft, the 'ghost fliers' (spökflygare), flying at night and in bad weather, sometimes low and with searchlights, in conditions at the limit of the era's aviation in the Arctic; many of the lights turned out to be stars, planets or, in one case, a balloon. The militaries searched for them without finding either the craft or their base.",
+  "summary": "Entre 1933 y 1934, habitantes y autoridades del norte de Suecia, Noruega y Finlandia informaron de aviones grises sin matrícula, los «aviadores fantasma» (spökflygare), que volaban de noche y con mal tiempo, a veces a baja altura y con reflectores, en condiciones al límite de la aviación de la época en el Ártico; muchas de las luces resultaron ser estrellas, planetas o, en un caso, un globo. Los ejércitos los buscaron sin hallar ni los aparatos ni su base.",
+  "summary_en": "In 1933 and 1934, residents and officials in northern Sweden, Norway and Finland reported gray unmarked aircraft, the “ghost fliers” (spökflygare), flying at night and in bad weather, sometimes low and with searchlights, in conditions at the limit of the era's aviation in the Arctic; many of the lights turned out to be stars, planets or, in one case, a balloon. The armed forces searched for them without finding either the planes or their base.",
   "patterns": [
     "8s"
   ],

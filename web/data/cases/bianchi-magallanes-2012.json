@@ -1,8 +1,8 @@
 {
   "id": "bianchi-magallanes-2012",
   "num": 386,
-  "name": "Karim Bianchi · el senador chileno que dice haber sido abducido",
-  "name_en": "Karim Bianchi · the Chilean senator who says he was abducted",
+  "name": "Karim Bianchi · un senador dice que una luz le apagó el auto",
+  "name_en": "Karim Bianchi · a senator says a light shut off his car",
   "year_start": 2012,
   "country": "CL",
   "country_name": "Chile",
@@ -10,8 +10,8 @@
   "location": {
     "lat": -52.04,
     "lng": -71.94,
-    "place": "Ruta 9 a la altura de Río Rubens (ubicación aproximada), entre Puerto Natales y Punta Arenas, Región de Magallanes",
-    "place_en": "Route 9 near Río Rubens (approximate location), between Puerto Natales and Punta Arenas, Magallanes Region"
+    "place": "Ruta 9, cerca de Río Rubens, entre Puerto Natales y Punta Arenas",
+    "place_en": "Route 9, near Río Rubens, between Puerto Natales and Punta Arenas"
   },
   "tier": "B",
   "probability": 53,
@@ -25,7 +25,7 @@
     "indet": 0.43
   },
   "summary": "En mayo de 2024, el senador chileno Karim Bianchi (independiente, Magallanes) contó en «Not News» (Vía X) que en 2012, manejando solo de noche entre Puerto Natales y Punta Arenas, una luz giratoria le apagó el auto y el teléfono, y que «apareció» unos 200 km más adelante sin memoria del trayecto. Relató secuelas (lechuzas «en todas partes», descargas al dar la mano) y la visita de un hombre que le entregó supuestos documentos secretos de la NASA. Lo contó con tono ligero ante un panel incrédulo, en un programa donde antes había leído el tarot, y luego lo defendió sin retractarse. No hay testigo, registro ni documento que lo corrobore.",
-  "summary_en": "In May 2024, Chilean senator Karim Bianchi (independent, Magallanes) said on the show 'Not News' (Vía X) that in 2012, driving alone at night between Puerto Natales and Punta Arenas, a spinning light shut off his car and phone, and that he 'appeared' about 200 km further on with no memory of the drive. He described aftereffects (owls 'everywhere', shocks when shaking hands) and a visit from a man who gave him supposed secret NASA documents. He told it in a light tone before an incredulous panel, on a show where he had previously read tarot cards, and later defended it without retracting. No witness, record or document corroborates it.",
+  "summary_en": "In May 2024, Chilean senator Karim Bianchi (independent, Magallanes) said on the show “Not News” (Vía X) that in 2012, driving alone at night between Puerto Natales and Punta Arenas, a spinning light shut off his car and phone, and that he “appeared” about 200 km further on with no memory of the drive. He described aftereffects (owls “everywhere”, shocks when shaking hands) and a visit from a man who gave him supposed secret NASA documents. He told it in a light tone before an incredulous panel, on a show where he had previously read tarot cards, and later defended it without retracting. No witness, record or document corroborates it.",
   "patterns": [
     "8d"
   ],

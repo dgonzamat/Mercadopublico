@@ -1,8 +1,8 @@
 {
   "id": "loring-afb-1975",
   "num": 224,
-  "name": "Sobrevuelos de Loring AFB · bases nucleares SAC",
-  "name_en": "Loring AFB overflights · SAC nuclear bases",
+  "name": "Loring · una aeronave sin identificar sobre las armas nucleares",
+  "name_en": "Loring · an unidentified aircraft over nuclear weapons storage",
   "year_start": 1975,
   "country": "US",
   "country_name": "Estados Unidos",
@@ -10,14 +10,14 @@
   "location": {
     "lat": 46.95,
     "lng": -67.886,
-    "place": "Loring AFB, Limestone, Maine, EE.UU.",
-    "place_en": "Loring AFB, Limestone, Maine, USA"
+    "place": "Base aérea de Loring, Limestone, Maine, EE. UU.",
+    "place_en": "Loring Air Force Base, Limestone, Maine, U.S."
   },
   "tier": "S",
   "epistemicStatus": "documented",
   "probability": 48,
-  "summary": "En octubre y noviembre de 1975, objetos no identificados entraron repetidamente en el espacio aéreo de bases nucleares del Comando Aéreo Estratégico (SAC). En Loring AFB (Maine), una aeronave desconocida con luz roja de navegación y luz estroboscópica blanca, seguida por el radar de la torre, sobrevoló dos noches el área de armas nucleares; NORAD negó los cazas pedidos. El patrón se repitió en Wurtsmith, Malmstrom y Minot. El SAC habló de un «helicóptero no identificado», pero en 1977 la USAF admitió que los sobrevuelos «no fueron identificados como helicópteros» y que esa suposición salía del sonido y las luces que percibieron los testigos.",
-  "summary_en": "In October and November 1975, unidentified objects repeatedly entered the airspace of Strategic Air Command (SAC) nuclear bases. At Loring AFB (Maine), an unknown aircraft showing a red navigation light and a white strobe, tracked by the tower radar, overflew the nuclear weapons storage area on two consecutive nights; the base requested fighters from NORAD and was refused. The pattern repeated at Wurtsmith, Malmstrom and Minot. SAC spoke of an 'unidentified helicopter', but in 1977 the USAF admitted the overflights 'were not identified as helicopters' and that the assumption came from the sound and light perceptions of the eyewitnesses.",
+  "summary": "En octubre y noviembre de 1975, objetos sin identificar entraron varias veces en el espacio aéreo de bases nucleares del Mando Aéreo Estratégico de EE. UU. En la base de Loring (Maine), una aeronave desconocida con una luz roja y otra blanca intermitente, seguida por el radar de la torre, sobrevoló dos noches el depósito de armas nucleares; la base pidió cazas y se los negaron. Se repitió en Wurtsmith, Malmstrom y Minot. El mando habló de un «helicóptero no identificado»; en 1977, la Fuerza Aérea admitió que los sobrevuelos «no fueron identificados como helicópteros» y que esa idea salía del sonido y las luces que vieron los testigos.",
+  "summary_en": "In October and November 1975, unidentified objects repeatedly entered the airspace of U.S. Strategic Air Command nuclear bases. At Loring, Maine, an unknown aircraft showing a red navigation light and a flashing white light, tracked by the tower radar, flew over the nuclear weapons storage area on two consecutive nights; the base asked for fighters and was turned down. The same happened at Wurtsmith, Malmstrom and Minot. The command spoke of an “unidentified helicopter,” but in 1977 the Air Force admitted the overflights “were not identified as helicopters” and that the idea came from the sound and lights the witnesses perceived.",
   "patterns": [
     "8f",
     "8m"

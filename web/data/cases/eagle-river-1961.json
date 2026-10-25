@@ -1,8 +1,8 @@
 {
   "id": "eagle-river-1961",
   "num": 439,
-  "name": "Eagle River · encuentro con ocupantes y tortitas",
-  "name_en": "Eagle River · encounter with occupants and pancakes",
+  "name": "Eagle River · un fontanero dice que un platillo le dio tortitas",
+  "name_en": "Eagle River · a plumber says a saucer's crew gave him pancakes",
   "year_start": 1961,
   "country": "US",
   "country_name": "Estados Unidos",
@@ -18,8 +18,8 @@
   "objectDetail": "medica",
   "epistemicStatus": "documented",
   "probability": 16,
-  "summary": "El 18 de abril de 1961, un fontanero de 60 años que vivía solo en Eagle River (Wisconsin) contó que un platillo cromado aterrizó junto a su casa, que uno de tres hombres vestidos de negro le pidió agua y que le dieron cuatro tortitas. El laboratorio de la Fuerza Aérea halló harina, azúcar, sal y aceite hidrogenado, la FDA las declaró tortitas corrientes y Blue Book lo cerró como alucinación.",
-  "summary_en": "On April 18, 1961, a 60-year-old plumber living alone in Eagle River, Wisconsin, said a chrome saucer landed beside his house, that one of three men dressed in black asked him for water, and that they gave him four pancakes. The Air Force laboratory found flour, sugar, salt and hydrogenated oil, the FDA declared them ordinary pancakes, and Blue Book closed the case as a hallucination.",
+  "summary": "El 18 de abril de 1961, Joe Simonton, un fontanero de 60 años que vivía solo en Eagle River (Wisconsin), contó que un platillo cromado había descendido junto a su casa, que uno de los tres hombres vestidos de negro que iban dentro le pidió agua y que a cambio le dieron cuatro tortitas. El laboratorio de la Fuerza Aérea halló harina, azúcar, sal y aceite hidrogenado; la agencia federal de alimentos (FDA) las describió como tortitas corrientes de alforfón, y Blue Book lo cerró como alucinación.",
+  "summary_en": "On April 18, 1961, Joe Simonton, a 60-year-old plumber living alone in Eagle River, Wisconsin, said a chrome saucer had come down beside his house, that one of three men dressed in black inside it asked him for water, and that in return they gave him four pancakes. The Air Force laboratory found flour, sugar, salt and hydrogenated oil; the Food and Drug Administration (FDA) described them as ordinary buckwheat pancakes, and Blue Book closed the case as a hallucination.",
   "patterns": [],
   "category": "incident",
   "posterior": {

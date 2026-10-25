@@ -1,8 +1,8 @@
 {
   "id": "antofagasta-fach922-2023",
   "num": 465,
-  "name": "Antofagasta · las tres luces que filmó la tripulación del FACh922",
-  "name_en": "Antofagasta · the three lights filmed by the FACh922 crew",
+  "name": "Antofagasta · una tripulación filma tres luces que parpadean",
+  "name_en": "Antofagasta · an aircrew films three flashing lights",
   "year_start": 2023,
   "country": "CL",
   "country_name": "Chile",
@@ -10,8 +10,8 @@
   "location": {
     "lat": -23.7975,
     "lng": -70.3761,
-    "place": "Junto al punto de control ISEKA, al sur de Antofagasta, a 35.000 pies",
-    "place_en": "Next to the ISEKA control point, south of Antofagasta, at 35,000 feet"
+    "place": "Espacio aéreo al sur de Antofagasta, Chile",
+    "place_en": "Airspace south of Antofagasta, Chile"
   },
   "tier": "A",
   "mundanoType": "misid",
@@ -19,8 +19,8 @@
   "objectDetail": "satelite",
   "epistemicStatus": "documented",
   "probability": 9,
-  "summary": "Poco después de la medianoche del 23 de noviembre de 2023, la tripulación del FACh922, un vuelo de Iquique a Santiago con indicativo de la Fuerza Aérea de Chile, vio sobre la Región de Antofagasta tres luces que se encendían y apagaban como estrellas y que en un momento empezaron a moverse, y las filmó con un iPhone. El SEFAA analizó los 1.110 cuadros del video, fijó con los metadatos y con el radar la hora y la posición del avión, y concluyó que «lo reportado fue» el sobrevuelo de tres satélites Starlink y los restos del satélite chino Fengyun 1C, sin asignar cada luz a uno de ellos. Clasificó el caso como «Probablemente Explicado».",
-  "summary_en": "Shortly after midnight on 23 November 2023, the crew of FACh922, a flight from Iquique to Santiago with a Chilean Air Force call sign, saw over the Antofagasta Region three lights that flashed on and off like stars and at one point began to move, and filmed them with an iPhone. SEFAA analysed the video's 1,110 frames, fixed the time and the aircraft's position from the metadata and the radar, and concluded that 'what was reported was' the overflight of three Starlink satellites and the remains of the Chinese satellite Fengyun 1C, without assigning each light to one of them. It classified the case as 'Probably Explained'.",
+  "summary": "Poco después de la medianoche del 23 de noviembre de 2023, la tripulación de un vuelo de Iquique a Santiago con indicativo de la Fuerza Aérea de Chile vio sobre la Región de Antofagasta tres luces que se encendían y apagaban como estrellas y que en un momento empezaron a moverse, y las filmó con un iPhone. El SEFAA, la oficina oficial chilena para estos fenómenos, analizó los 1.110 cuadros del video, fijó la hora y la posición del avión, y concluyó que «lo reportado fue» el sobrevuelo de tres satélites Starlink y los restos del satélite chino Fengyun 1C, sin asignar cada luz a uno de ellos. Clasificó el caso como «Probablemente Explicado».",
+  "summary_en": "Shortly after midnight on 23 November 2023, the crew of a flight from Iquique to Santiago with a Chilean Air Force call sign saw over the Antofagasta Region three lights that flashed on and off like stars and at one point began to move, and filmed them with an iPhone. SEFAA, Chile's official office for these phenomena, analysed the video's 1,110 frames, fixed the time and the aircraft's position, and concluded that “what was reported was” the overflight of three Starlink satellites and the remains of the Chinese satellite Fengyun 1C, without assigning each light to one of them. It classified the case as “Probably Explained”.",
   "patterns": [],
   "category": "incident",
   "posterior": {
