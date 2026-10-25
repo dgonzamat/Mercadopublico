@@ -196,11 +196,44 @@ function validateDocEmbeds(w, docs) {
   }
 }
 
+// JSON.parse acepta claves repetidas y se queda con la última, así que un
+// editor que inserta un campo sin quitar el viejo (dos redactores dejaron hasta
+// cuatro `description` en un documento, oct 2026) pasa todas las sondas.
+function dupKeys(text) {
+  const dups = [];
+  const stack = [];
+  for (let i = 0; i < text.length; i++) {
+    const ch = text[i];
+    if (ch === '"') {
+      let j = i + 1;
+      while (j < text.length && text[j] !== '"') j += text[j] === "\\" ? 2 : 1;
+      const top = stack[stack.length - 1];
+      if (top && top.obj && top.expectKey) {
+        const k = text.slice(i + 1, j);
+        if (top.keys.has(k)) dups.push(k);
+        top.keys.add(k);
+        top.expectKey = false;
+      }
+      i = j;
+    } else if (ch === "{") stack.push({ obj: true, keys: new Set(), expectKey: true });
+    else if (ch === "[") stack.push({ obj: false });
+    else if (ch === "}" || ch === "]") stack.pop();
+    else if (ch === ",") {
+      const top = stack[stack.length - 1];
+      if (top && top.obj) top.expectKey = true;
+    }
+  }
+  return dups;
+}
+
 for (const file of caseFiles) {
   const w = `cases/${file}`;
   let c;
   try {
-    c = JSON.parse(fs.readFileSync(path.join(casesDir, file), "utf-8"));
+    const rawCase = fs.readFileSync(path.join(casesDir, file), "utf-8");
+    c = JSON.parse(rawCase);
+    const dups = dupKeys(rawCase);
+    if (dups.length) err(w, `clave duplicada en el JSON (gana la última): ${[...new Set(dups)].join(", ")}`);
   } catch (e) {
     err(w, `JSON inválido: ${e.message}`);
     continue;
