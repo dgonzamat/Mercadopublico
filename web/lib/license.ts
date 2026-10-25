@@ -46,6 +46,12 @@ const EN: Record<string, string> = {
   "CC BY 4.0 · Fuente: Biblioteca Central del Ejército del Aire": "CC BY 4.0 · Source: Biblioteca Central del Ejército del Aire",
   "Dominio público (obra del Gobierno de EE. UU.)": "Public domain (US Government work)",
   "Open Parliament Licence v3.0": "Open Parliament Licence v3.0",
+  "Publicado por el Departamento de Guerra (PURSUE Release 07) · obra de MUFON, organización privada: dominio público no garantizado":
+    "Published by the Department of War (PURSUE Release 07) · work by MUFON, a private organization: public domain not guaranteed",
+  "Publicado por el Departamento de Guerra (PURSUE Release 07) · obra de Documatica Research, contratista privado: dominio público no garantizado":
+    "Published by the Department of War (PURSUE Release 07) · work by Documatica Research, a private contractor: public domain not guaranteed",
+  "Publicado por el Departamento de Guerra (PURSUE Release 07) · informe de un contratista (BAASS): la exención del 17 USC §105 para obras del Gobierno no está garantizada":
+    "Published by the Department of War (PURSUE Release 07) · contractor report (BAASS): the 17 USC §105 exemption for Government works is not guaranteed",
 };
 
 export function licenseLabel(license: string | undefined, locale: "es" | "en"): string | undefined {

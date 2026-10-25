@@ -57,7 +57,7 @@ const MARKERS = {
 // Lo citado es de la fuente, y la sinceridad de un testigo («hombre honesto»,
 // «testigos honestos», «reporta honestamente lo que vio») es un dato del caso:
 // ninguno es la muletilla del redactor que alaba su propia lectura.
-const SINCERE = /hombre honesto|honest man|testigos honestos|honest witnesses|honestamente lo que vio|honestly reports?|describe it honestly/gi;
+const SINCERE = /hombre honesto|honest man|testigos honestos|honest witnesses|honestamente lo que vio|honestly reports?|describe it honestly|trustworthy and honest/gi;
 const unquotedProse = (c) => prose(c).replace(/«[^»]*»|"[^"]*"|“[^”]*”|(?<![\w])'[^']*'(?![\w])/g, "").replace(SINCERE, "");
 console.log("\nProsa · fichas con muletillas (C3 = Tier A, C4/C5 = Tier B):");
 const anyHit = cases.filter((c) => Object.values(MARKERS).some((re) => re.test(unquotedProse(c))));

@@ -53,7 +53,7 @@ Aviones muy conocidos (B-52, DC-3) pueden ir en el título si son el centro del 
 ## 5. Español
 
 - **Norma**: español neutro, RAE y Fundéu. Sin voseo ni regionalismos. Donde la RAE admite dos formas, se usa una sola en todo el corpus: **«video»** (sin tilde, la forma del español de América y la mayoritaria en el corpus; unificado el 24 oct 2026).
-- **Comillas**: «» y, dentro, “”. Las citas en inglés van literales entre «» y se traducen o glosan si el lector las necesita.
+- **Comillas**: «» y, dentro, “”. Las citas en inglés van literales entre «» y se traducen o glosan si el lector las necesita. Nunca comillas simples rectas ('así') como comillas: el apóstrofo solo va dentro de una palabra o un nombre (O'Brien). *(enforzado: E54.)*
 - **Cifras**: punto de millar y coma decimal (21.948.810; 3,5); «EE. UU.» con espacio; unidades con espacio (50 pies, 22 km); siglos en romanos.
 - **Nada de spanglish**: *paper* → artículo; *metadata* → metadatos; *release* → entrega o publicación; *disclosure* → revelación; *sole-source* → adjudicación directa; *debriefing* → informe o interrogatorio posterior; *briefing* → sesión informativa; *peer-reviewed* → revisado por pares; *timeline* → cronología.
 - **Calcos que delatan traducción**: «secuencia desorientadora», «consecuente» por importante (*consequential*), «correr un análisis» por hacerlo, «su segunda importancia es…», «hace sentido», «a nivel de», «en base a», «jugar un rol».
@@ -63,7 +63,7 @@ Aviones muy conocidos (B-52, DC-3) pueden ir en el título si son el centro del 
 
 - **Plain English**, frases cortas, voz activa, verbos concretos. Estilo de un buen periódico, no de un informe.
 - **Inglés estadounidense** en ortografía y vocabulario (*center*, *rumor*, *defense*, *maneuver*), como el resto del sitio.
-- **Cifras y signos**: 6,000; 3.5; “double quotes” (or "…"), “U.S.”; unidades: 50 ft, 22 km.
+- **Cifras y signos**: 6,000; 3.5; "double quotes" (straight, como el resto del corpus; las simples solo para una cita dentro de otra), “U.S.”; unidades: 50 ft, 22 km. **Fechas**: «March 5, 1952», «September 5» y «October 13 and 25», nunca «5 March 1952»; con día de la semana, «Thursday, October 21, 1982». **Ortografía estadounidense**: color, center, meter, defense, toward, catalog, program, gray, analyze, organize, skeptical, maneuver, license, judgment (los nombres propios y las citas literales entre comillas conservan su forma: «Ministry of Defence»). *(enforzado: E54.)*
 - **Nada de traducción literal del español**: el `_en` dice lo mismo con las palabras que usaría un redactor nativo. Delatan traducción las construcciones «It is X what…», «realize» por *carry out*, «actual» por *current*, «eventually» por *possibly*, «sensible» por *sensitive*, artículos de más («the 1952»), y los nombres en español sin adaptar (Apolo → Apollo, Corea → Korea).
 - **Paridad**: mismos hechos, mismas cifras y mismos matices en los dos idiomas. Si cambias uno, cambias el otro.
 

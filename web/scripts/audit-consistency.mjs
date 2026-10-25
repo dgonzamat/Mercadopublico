@@ -2177,6 +2177,52 @@ const HYPE_REVIEWED = new Set(["lakenheath-bentwaters-1956", "morocco-gendarmeri
   if (sinPapel.length) record("ERROR", "data/cases", 0, `E53 elemento visual sin papel: ${sinPapel.length} sin \`role\` válido (prueba | documento | contexto): ${sinPapel.slice(0, 5).join(", ")}${sinPapel.length > 5 ? "…" : ""}.`);
 }
 
+// ─── 9zg. RULE E54: comillas, ortografía y fechas de la guía de redacción ─
+//
+// El diagnóstico de los relatos (oct 2026) halló, en las 397 fichas, tres
+// deslices mecánicos que ninguna sonda miraba: comillas simples rectas como
+// comillas ('así') en ES y EN (3.960 tramos en el inglés y 1.201 en el
+// español, frente a «» y "…" de la guía), ortografía británica en el inglés
+// (metres, defence, towards: ~1.350 casos en 326 fichas) y fechas día-mes
+// («5 March 1952»). Se corrigieron de una vez con un script; esta regla evita
+// que vuelvan. Se ignora lo que va entre comillas (cita literal de una fuente
+// británica) y los nombres propios, que empiezan con mayúscula
+// (Ministry of Defence). ERROR.
+{
+  const strip = (t) => t.replace(/«[^»]*»|“[^”]*”|"[^"\n]*"/g, " ");
+  const MESES = "January|February|March|April|May|June|July|August|September|October|November|December";
+  const BRIT = new RegExp("\\b(?:(?:colo|neighbo|favo|behavio|hono|labo|harbo|rumo|vapo|flavo|armo|odo|humo|endeavo)ur\\w*|(?:organi|recogni|reali|summari|authori|speciali|characteri|emphasi|critici|minimi|maximi|prioriti|standardi|utili|visuali|categori|digiti|apologi|civili|capitali|normali)s(?:e|ed|es|ing|ation|ations)|centre[sd]?|metres?|kilometres?|millimetres?|centimetres?|defence\\w*|offence|licence[sd]?|catalogue[sd]?|programmes?|analys(?:e|ed|ing)|sceptic(?:al|s|ism)?|grey\\w*|towards|whilst|amongst|manoeuvr\\w+|judgement|artefacts?|tyres?|aluminium|sulphur|aeroplanes?|lorr(?:y|ies))\\b", "g");
+  const FECHA = new RegExp("\\b\\d{1,2}(?:\\s*(?:to|and|or|&|[–-])\\s*\\d{1,2})? (?:" + MESES + ")\\b", "g");
+  const SIMPLE = /(?:^|[\s(\[¿¡])'(?=[A-Za-zÀ-ÿ])[^'\n]{1,300}?(?<=[\w.,…!?)\]])'(?=$|[\s.,;:!?)\]-])/;
+  const get = (c, lang) => {
+    const en = lang === "en";
+    const k = (n) => (en ? n + "_en" : n);
+    return [c[k("name")], c[k("summary")], c[k("whatHappened")], c[k("whyMatters")], ...(c[k("evidence")] || []), c.location?.[en ? "place_en" : "place"], c.classBasis?.[en ? "en" : "es"], ...(c.documents || []).map((d) => d[k("description")]), ...(c.sources || []).map((s) => s[k("note")])].filter((t) => typeof t === "string");
+  };
+  const simples = [], britanicas = [], fechas = [];
+  for (const c of cases) {
+    for (const lang of ["es", "en"]) {
+      for (const t of get(c, lang)) {
+        const u = strip(t);
+        if (SIMPLE.test(u)) simples.push(c.id + ":" + lang);
+        if (lang === "en") {
+          if (BRIT.test(u)) britanicas.push(c.id);
+          BRIT.lastIndex = 0;
+          if (FECHA.test(u)) fechas.push(c.id);
+          FECHA.lastIndex = 0;
+        }
+      }
+    }
+  }
+  const uniq = (a) => [...new Set(a)];
+  const fmt = (a) => `${uniq(a).length} fichas (${uniq(a).slice(0, 4).join(", ")}${uniq(a).length > 4 ? "…" : ""})`;
+  const parts = [];
+  if (simples.length) parts.push(`comillas simples como comillas: ${fmt(simples)}; usa «» en ES y "…" en EN`);
+  if (britanicas.length) parts.push(`ortografía británica en el inglés: ${fmt(britanicas)}; usa inglés estadounidense`);
+  if (fechas.length) parts.push(`fecha día-mes en el inglés: ${fmt(fechas)}; escribe «March 5, 1952»`);
+  if (parts.length) record("ERROR", "data/cases", 0, `E54 guía de redacción: ${parts.join(" · ")}.`);
+}
+
 // ─── 10. REPORT ──────────────────────────────────────────────────────────
 
 const errors = findings.filter((f) => f.level === "ERROR");

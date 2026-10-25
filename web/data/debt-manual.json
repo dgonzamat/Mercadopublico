@@ -115,12 +115,12 @@
       {
         "id": "B9",
         "title": "24 oct · Capa 1 de la especificación de la ficha: título, lugar y resumen de todas las fichas con la guía /redaccion, por lotes con editor y verificador independiente",
-        "state": "en curso: lotes 1 a 4 aplicados en la rama; lotes 5 a 8 en edición; falta el PR"
+        "state": "hecho el 25 oct (#1179): portada de todas las fichas aplicada, con editor y verificador independiente; se quitó la cita destacada automática y se unificó «video»"
       },
       {
         "id": "B10",
         "title": "24 oct · Capa 2: relato y evidencia. Primero un diagnóstico editorial de los relatos de todas las fichas (estructura, calidad del español y del inglés, coherencia), en solo lectura y por lotes, con nota bien / retoques / reescribir; después se corrigen solo las marcadas, con dos agentes, por tier S, A, B. Se suman las fichas que marque E52 (relato largo, jerga, spanglish, bitácoras, evidence fuera de rango); empieza por las ocho ya reescritas y verificadas (Skinwalker, Tremonton y las de radar) y por los errores de relato anotados al revisar la portada (Kovalyonok y Savinykh, Lubbock y Grudge, Zanfretta, Utsuro-bune, fotos de la serie B del FBI, muletillas de Yukón, Valdés, Bariloche, Ghost rockets y Ovaloid, bitácora de Popocatépetl, Tbilisi/Tiflis, Nueva Jersey)",
-        "state": "pendiente; al cerrarla, E52 pasa a ERROR"
+        "state": "en curso. Diagnóstico de los relatos terminado el 25 oct: ninguna ficha está «bien»; cada ficha tiene nota (retoques o reescribir) y la lista de sus frases y contradicciones en el material de trabajo de la sesión (no está en el repo). Lo mecánico (comillas, ortografía estadounidense, fechas) se corrigió de una vez con el barrido y la regla E54. Falta lo que exige leer la fuente: reescribir las marcadas por tier S, A, B con dos agentes, corregir las contradicciones de hecho dentro de esa pasada y de la de retoques (el diagnóstico las lista con las dos frases), y al cerrar, E52 pasa a ERROR"
       },
       {
         "id": "B11",
@@ -140,7 +140,7 @@
       {
         "id": "B14",
         "title": "24 oct · Inglés británico en algunos textos EN (Malmstrom, Colares, Valensole, Manises) frente al estadounidense del resto; fijar la variante en la guía /redaccion",
-        "state": "pendiente"
+        "state": "hecho el 25 oct: la variante es el inglés estadounidense; barrido de todo el corpus y regla E54 (ERROR) con fechas «March 5, 1952»"
       },
       {
         "id": "B15",
@@ -150,7 +150,7 @@
       {
         "id": "B16",
         "title": "24 oct · Rótulos de licencia sin traducción para los documentos de contratistas de la séptima entrega (MUFON, Documatica, BAASS), que mide U11",
-        "state": "pendiente"
+        "state": "hecho el 25 oct: tres rótulos traducidos en lib/license.ts; U11 en 0"
       }
     ]
   }
