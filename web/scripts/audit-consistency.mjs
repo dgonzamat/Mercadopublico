@@ -2133,7 +2133,9 @@ const HYPE_REVIEWED = new Set(["lakenheath-bentwaters-1956", "morocco-gendarmeri
 // de texto lo bajan. Las bitácoras y las herramientas del redactor van en el
 // mismo aviso hasta que la capa 2 las limpie; entonces pasan a ERROR.
 {
-  const unq = (t) => (t || "").replace(/«[^»]*»|“[^”]*”|"[^"]*"/g, " ");
+  // Fuera las citas y los enlaces [[slug]]: un slug como pursue-release-2026
+  // no es inglés en la prosa.
+  const unq = (t) => (t || "").replace(/«[^»]*»|“[^”]*”|"[^"]*"|\[\[[^\]]*\]\]/g, " ");
   const esText = (c) => [c.summary, c.whatHappened, c.whyMatters, ...(c.evidence || [])].filter(Boolean).join("\n\n");
   const JERGA = /\b(?:engancha\w*|enganches?|ecos?|retornos?|pasadas|(?:el|un|del|al|los|dos) blancos?)\b|\b(?:GCI|AC&W|FEAF|ATIC|AF 112|CPS-1|APG-33|TPS-1D)\b/gi;
   const SPANGLISH = /\b(?:paper|papers|metadata|disclosure|sole-source|debriefing|peer-review\w*|timeline|footage|data warehouses?)\b|\brelease\b/g;
