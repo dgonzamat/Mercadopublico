@@ -36,7 +36,7 @@
   "whyMatters_en": "It has an official NASA video in the public domain, an independent physical analysis published in a peer-reviewed journal (Carlotto, JSE 1995) and a documented, long-standing dispute with the official explanation. Its value lies not in proving anything exotic but in clearly exhibiting why a single optical record can rarely settle a controversy: the entire difference between \"ice particle three meters away pushed by a thruster\" and \"object kilometers away maneuvering at 14,000 mph\" hinges on a distance the camera does not measure.\n\nOberg's skeptical reading is strong and economical: the flash coincides with a known RCS firing, the phenomenon recurs on nearly every mission, and sunlit particles reacting to the jet explain both the flash and the simultaneous trajectory change of several points at once: hard to attribute to a single intelligent craft. Carlotto's objection (the ~0.5 s pause before acceleration) is genuine but not decisive, since it can arise from tracking artifacts in low-resolution video. The calibration is symmetric: Carlotto's kinematics was never quantitatively refuted, but the particle explanation was never ruled out and is the most parsimonious.",
   "evidence": [
     "Video STS-48 oficial NASA archivado y de dominio público",
-    "Carlotto, M.: JSE peer-reviewed analysis (1995) con cálculo de aceleración",
+    "Carlotto, M.: análisis revisado por pares en el JSE (1995), con cálculo de aceleración",
     "Explicación oficial NASA Public Affairs (partículas de hielo) sin análisis numérico",
     "Replicación del análisis Carlotto por múltiples investigadores independientes"
   ],
