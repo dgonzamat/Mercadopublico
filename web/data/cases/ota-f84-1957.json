@@ -154,6 +154,15 @@
   ],
   "documents": [
     {
+      "role": "documento",
+      "src": "https://archive.org/download/the-flying-saucer-review-ultimate-collection/31.FSR.pdf",
+      "type": "link",
+      "title": "Flying Saucer Review, enero y febrero de 1959: nota sobre el caso de Ota (pág. 3 del PDF)",
+      "title_en": "Flying Saucer Review, January and February 1959: note on the Ota case (p. 3 of the PDF)",
+      "description": "Número de la revista británica Flying Saucer Review de enero y febrero de 1959, en la colección completa de archive.org. En la página 3 recuerda que el 4 de septiembre de 1957 cuatro reactores de la Fuerza Aérea Portuguesa salieron de la base de Ota en un vuelo nocturno de rutina, y remite a la entrevista con el capitán José Lemos Ferreira publicada en el número de mayo y junio de 1958, con las fotos de los cuatro pilotos. Ese número, con el relato firmado del capitán, no está en la colección digitalizada; esta es la referencia de la época más cercana que se puede consultar.",
+      "description_en": "Issue of the British magazine Flying Saucer Review for January and February 1959, in the complete collection on archive.org. On page 3 it recalls that on September 4, 1957, four jets of the Portuguese Air Force left Ota Base on a routine night flight, and refers to the interview with Captain José Lemos Ferreira published in the May and June 1958 issue, with photographs of the four pilots. That issue, with the captain's signed account, is not in the digitized collection; this is the closest contemporary reference that can be consulted."
+    },
+    {
       "role": "contexto",
       "src": "/pursue/ota-f84-1957-context.jpg",
       "type": "image",
