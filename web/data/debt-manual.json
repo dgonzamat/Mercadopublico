@@ -120,7 +120,7 @@
       {
         "id": "B10",
         "title": "24 oct · Capa 2: relato y evidencia. Primero un diagnóstico editorial de los relatos de todas las fichas (estructura, calidad del español y del inglés, coherencia), en solo lectura y por lotes, con nota bien / retoques / reescribir; después se corrigen solo las marcadas, con dos agentes, por tier S, A, B. Se suman las fichas que marque E52 (relato largo, jerga, spanglish, bitácoras, evidence fuera de rango); empieza por las ocho ya reescritas y verificadas (Skinwalker, Tremonton y las de radar) y por los errores de relato anotados al revisar la portada (Kovalyonok y Savinykh, Lubbock y Grudge, Zanfretta, Utsuro-bune, fotos de la serie B del FBI, muletillas de Yukón, Valdés, Bariloche, Ghost rockets y Ovaloid, bitácora de Popocatépetl, Tbilisi/Tiflis, Nueva Jersey)",
-        "state": "en curso. Diagnóstico de los relatos terminado el 25 oct: ninguna ficha está «bien»; cada ficha tiene nota (retoques o reescribir) y la lista de sus frases y contradicciones en el material de trabajo de la sesión (no está en el repo). Lo mecánico (comillas, ortografía estadounidense, fechas) se corrigió de una vez con el barrido y la regla E54. Falta lo que exige leer la fuente: reescribir las marcadas por tier S, A, B con dos agentes, corregir las contradicciones de hecho dentro de esa pasada y de la de retoques (el diagnóstico las lista con las dos frases), y al cerrar, E52 pasa a ERROR"
+        "state": "en curso. Diagnóstico de los relatos terminado el 25 oct: ninguna ficha está «bien»; cada ficha tiene nota (retoques o reescribir) y la lista de sus frases y contradicciones en el material de trabajo de la sesión (no está en el repo). Lo mecánico (comillas, ortografía estadounidense, fechas) se corrigió de una vez con el barrido y la regla E54. Hecho al 27 oct: todo el Tier S y todo el Tier A marcados como «reescribir», con redactor y verificador independiente y los arreglos contrastados con la fuente (#1182 a #1189); la jerga, el inglés suelto, las bitácoras del redactor y la fórmula «no es X, sino Y» que mide E52 o el informe de deuda quedaron limpios (#1185, #1186, #1192, #1193). Falta: reescribir las fichas Tier B marcadas; la pasada de retoques de los tres tiers; Haynesville (evidencia y relato largo) y los relatos largos de Skinwalker y Atlántico/Bethune; los porqués de clase largos, que llevan las objeciones; corregir las contradicciones de hecho dentro de esas pasadas, y al cerrar, E52 pasa a ERROR"
       },
       {
         "id": "B11",
@@ -151,6 +151,16 @@
         "id": "B16",
         "title": "24 oct · Rótulos de licencia sin traducción para los documentos de contratistas de la séptima entrega (MUFON, Documatica, BAASS), que mide U11",
         "state": "hecho el 25 oct: tres rótulos traducidos en lib/license.ts; U11 en 0"
+      },
+      {
+        "id": "B17",
+        "title": "27 oct · Skinwalker: el contrato DOW-UAP-D111 («Solicitation and Original Order», 22 sep 2008) se cita en la evidencia pero no está en el visor. Está en el Drive del dueño; pesa más que el tope de descarga del conector y no hay copia en archive.org",
+        "state": "espera que el dueño lo parta en trozos menores que el tope de descarga"
+      },
+      {
+        "id": "B18",
+        "title": "27 oct · D105 (Washington y Tremonton 1952): la capa de texto del PDF confirma las citas de la ficha salvo dos, que el OCR no deja leer: «orders of magnitude greater» en la carta de Hollywood y la fecha de la carta de Weber (la respuesta de Fournet la fecha el 2 de agosto y la ficha de Washington dice el 2 de septiembre)",
+        "state": "espera las páginas de esas cartas como imagen; el PDF entero supera el tope de descarga del conector"
       }
     ]
   }
