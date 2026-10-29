@@ -2138,7 +2138,10 @@ const HYPE_REVIEWED = new Set(["lakenheath-bentwaters-1956", "morocco-gendarmeri
   const unq = (t) => (t || "").replace(/«[^»]*»|“[^”]*”|"[^"]*"|\[\[[^\]]*\]\]/g, " ");
   const esText = (c) => [c.summary, c.whatHappened, c.whyMatters, ...(c.evidence || [])].filter(Boolean).join("\n\n");
   const JERGA = /\b(?:engancha\w*|enganches?|ecos?|retornos?|pasadas|(?:el|un|del|al|los|dos) blancos?)\b|\b(?:GCI|AC&W|FEAF|ATIC|AF 112|CPS-1|APG-33|TPS-1D)\b/gi;
-  const SPANGLISH = /\b(?:paper|papers|metadata|disclosure|sole-source|debriefing|peer-review\w*|timeline|footage|data warehouses?)\b|\brelease\b/g;
+  const SPANGLISH = /\b(?:paper|papers|metadata|disclosure|sole-source|debriefing|peer-review\w*|timeline|footage|data warehouses?|thrusters?|craft|proceedings|ball lightning|frames)\b|\brelease\b/g;
+  // «Caso de calibración», «ancla de calibración», «lectura calibrada»: valoración
+  // sobre el propio caso, que la guía saca de «Por qué importa» (oct 2026).
+  const CALIBRACION = /\b(?:caso|valor|ancla|anclaje|función|lección|trabajo) de calibraci[óo]n|calibraci[óo]n (?:escéptica|prudente|exige|debe|es simétrica|especialmente)|lectura calibrada|para la calibraci[óo]n/gi;
   const BITACORA = /\b(?:est[ea] (?:expediente|ficha)|la ficha) (?:describía|decía|venía citando|trataba|traía|afirmaba)\b|\bhasta ahora se citaba\b|\buna versión anterior de esta ficha\b/gi;
   const HERRAMIENTA = /\b(?:conector|extractor|techo de extracción|barrido automático)\b/gi;
   const checks = {
@@ -2146,6 +2149,7 @@ const HYPE_REVIEWED = new Set(["lakenheath-bentwaters-1956", "morocco-gendarmeri
     "lugar > 70": (c) => (c.location?.place || "").length > 70,
     "resumen fuera de 400–650": (c) => c.summary.length < 400 || c.summary.length > 650,
     "evidence fuera de 3–8 o ítem > 600": (c) => c.evidence && (c.evidence.length < 3 || c.evidence.length > 8 || c.evidence.some((e) => e.length > 600)),
+    "párrafo > 1.200": (c) => [c.whatHappened, c.whyMatters].some((t) => (t || "").split("\n\n").some((p) => p.length > 1200)),
     "relato > 12.000": (c) => (c.whatHappened || "").length + (c.whyMatters || "").length > 12000,
     "jerga ≥ 2 por 1.000 caracteres": (c) => { const t = unq(esText(c)); return t.length && ((t.match(JERGA) || []).length * 1000) / t.length >= 2; },
     "spanglish": (c) => SPANGLISH.test(unq(esText(c))) && !(SPANGLISH.lastIndex = 0),
@@ -2155,11 +2159,26 @@ const HYPE_REVIEWED = new Set(["lakenheath-bentwaters-1956", "morocco-gendarmeri
     const hit = cases.filter((c) => { SPANGLISH.lastIndex = 0; return f(c); });
     if (hit.length) parts.push(`${label}: ${hit.length} (${hit.slice(0, 3).map((c) => c.id).join(", ")}${hit.length > 3 ? "…" : ""})`);
   }
-  for (const [label, re] of [["bitácora del redactor", BITACORA], ["herramienta del redactor", HERRAMIENTA]]) {
+  for (const [label, re] of [["bitácora del redactor", BITACORA], ["herramienta del redactor", HERRAMIENTA], ["metadiscurso de calibración", CALIBRACION]]) {
     const hit = cases.filter((c) => { re.lastIndex = 0; return re.test(unq(esText(c))); });
     if (hit.length) parts.push(`${label}: ${hit.length} (${hit.slice(0, 3).map((c) => c.id).join(", ")}${hit.length > 3 ? "…" : ""})`);
   }
   if (parts.length) record("WARN", "data/cases", 0, `E52 guía de redacción: ${parts.join(" · ")}. Ver .claude/commands/redaccion.md.`);
+}
+
+// ─── 9ze2. RULE E55: «convencional», no «prosaico» ni «mundano» ────────────
+//
+// La prosa llamaba a lo mismo prosaico, mundano, ordinario y convencional
+// (oct 2026: ~300 usos de prosaic*/mundan* en 189 fichas). «Prosaico» es un
+// calco del inglés y el lector no lo usa; el dueño eligió «convencional»
+// (29 oct 2026). Solo mira los campos en español y fuera de las citas. Los
+// identificadores de clase (`mundano_natural`, `ProsaicKey`) son código y no
+// pasan por aquí. ERROR.
+{
+  const PALABRA = /\b(?:prosaic|mundan)[oa]s?\b|\bprosaicidad\b/i;
+  const unq = (t) => (t || "").replace(/«[^»]*»|“[^”]*”|"[^"]*"|\[\[[^\]]*\]\]/g, " ");
+  const hit = cases.filter((c) => [c.summary, c.whatHappened, c.whyMatters, ...(c.evidence || []), c.classBasis?.es].some((t) => PALABRA.test(unq(t))));
+  if (hit.length) record("ERROR", "data/cases", 0, `E55 «prosaico»/«mundano» en la prosa: ${hit.length} (${hit.slice(0, 5).map((c) => c.id).join(", ")}${hit.length > 5 ? "…" : ""}). Se escribe «convencional».`);
 }
 
 // ─── 9zf. RULE E53: todo elemento visual declara su papel ─────────────────

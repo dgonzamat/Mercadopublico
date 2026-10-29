@@ -21,7 +21,7 @@
   "probability": 60,
   "mundanoType": "sin_propuesta",
   "classBasis": {
-    "es": "Ninguna fuente propone una causa. El informe de la CIA solo recoge el debate entre «un dispositivo de reconocimiento avanzado perteneciente a un gobierno extranjero» y «un objeto volador no identificado de origen extraterrestre», y la cobertura de NBC News, iHarare, New Zimbabwe y The Debrief no propone otra. Tasa base de casos parecidos: en su informe del año fiscal 2024, la AARO resolvió 118 casos, «todos ellos resueltos como objetos prosaicos, como diversos tipos de globos, aves y sistemas aéreos no tripulados (UAS)», y el informe de 2023 añade que la mayoría «muestran características ordinarias de fuentes fácilmente explicables».",
+    "es": "Ninguna fuente propone una causa. El informe de la CIA solo recoge el debate entre «un dispositivo de reconocimiento avanzado perteneciente a un gobierno extranjero» y «un objeto volador no identificado de origen extraterrestre», y la cobertura de NBC News, iHarare, New Zimbabwe y The Debrief no propone otra. Tasa base de casos parecidos: en su informe del año fiscal 2024, la AARO resolvió 118 casos, «todos ellos resueltos como objetos convencionales, como diversos tipos de globos, aves y sistemas aéreos no tripulados (UAS)», y el informe de 2023 añade que la mayoría «muestran características ordinarias de fuentes fácilmente explicables».",
     "en": "No source proposes a cause. The CIA report only records the debate between \"an advanced reconnaissance device belonging to a foreign government\" and \"an unidentified flying object of extraterrestrial origins\", and the coverage by NBC News, iHarare, New Zimbabwe and The Debrief proposes none. Base rate for similar cases: in its fiscal year 2024 report, AARO resolved 118 cases, \"all of which resolved to prosaic objects such as various types of balloons, birds, and unmanned aerial systems (UAS)\", and the 2023 report adds that the majority \"demonstrate ordinary characteristics of readily explainable sources\".",
     "source": "CIA-UAP-017 y cobertura de prensa (jun 2026); AARO — Fiscal Year 2024 Consolidated Annual Report on UAP (nov 2024) y Fiscal Year 2023 Consolidated Annual Report on UAP (oct 2023)",
     "source_en": "CIA-UAP-017 and press coverage (Jun 2026); AARO — Fiscal Year 2024 Consolidated Annual Report on UAP (Nov 2024) and Fiscal Year 2023 Consolidated Annual Report on UAP (Oct 2023)",
@@ -95,20 +95,20 @@
     {
       "name": "New Zimbabwe — «UFO over Zimbabwe's main airport in 2008 had America's CIA on 'high alert', new files reveal» (jun 2026)",
       "url": "https://www.newzimbabwe.com/ufo-over-zimbabwes-main-airport-in-2008-had-americas-cia-on-high-alert-new-files-reveal/",
-      "note": "Fuente secundaria (prensa). Revisada para la clasificación: no propone ninguna explicación prosaica.",
+      "note": "Fuente secundaria (prensa). Revisada para la clasificación: no propone ninguna explicación convencional.",
       "note_en": "Secondary source (press). Checked for the classification: it proposes no prosaic explanation."
     },
     {
       "name": "Hanks, M. — «The Pentagon Just Released Its Third Batch of UAP Files—What Have We Learned from the PURSUE Releases So Far?», The Debrief (14 jun 2026)",
       "name_en": "Hanks, M. — 'The Pentagon Just Released Its Third Batch of UAP Files—What Have We Learned from the PURSUE Releases So Far?', The Debrief (Jun 14, 2026)",
       "url": "https://thedebrief.org/the-pentagon-just-released-its-third-batch-of-uap-files-what-have-we-learned-from-the-pursue-releases-so-far/",
-      "note": "Fuente secundaria. Revisada para la clasificación: describe el informe sin proponer ninguna explicación prosaica.",
+      "note": "Fuente secundaria. Revisada para la clasificación: describe el informe sin proponer ninguna explicación convencional.",
       "note_en": "Secondary source. Checked for the classification: it describes the report without proposing any prosaic explanation."
     },
     {
       "name": "AARO — Fiscal Year 2024 Consolidated Annual Report on Unidentified Anomalous Phenomena (nov 2024)",
       "url": "https://media.defense.gov/2024/Nov/14/2003583603/-1/-1/0/FY24-CONSOLIDATED-ANNUAL-REPORT-ON-UAP-508.PDF",
-      "note": "Tasa base: 118 casos resueltos en el periodo y 174 más cerrados después, todos como objetos prosaicos (globos, aves, UAS, satélites, aeronaves).",
+      "note": "Tasa base: 118 casos resueltos en el periodo y 174 más cerrados después, todos como objetos convencionales (globos, aves, UAS, satélites, aeronaves).",
       "note_en": "Base rate: 118 cases resolved in the period and 174 more closed afterwards, all as prosaic objects (balloons, birds, UAS, satellites, aircraft)."
     },
     {

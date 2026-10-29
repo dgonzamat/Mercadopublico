@@ -21,7 +21,7 @@
   "probability": 53,
   "mundanoType": "sin_propuesta",
   "classBasis": {
-    "es": "Ninguna fuente propone una causa. Las cinco fichas de DVIDS (PR123 a PR127) solo describen «áreas de contraste» y «fuentes de luz aparentes» y advierten de que el material fue alterado digitalmente antes de llegar a la AARO; la cobertura de la quinta entrega no propone nada. Tasa base: en el año fiscal 2024 la AARO resolvió 118 casos, «todos ellos resueltos como objetos prosaicos, como diversos tipos de globos, aves y sistemas aéreos no tripulados (UAS)», y cerró después otros 174 como «globos, aves, UAS, satélites y aeronaves».",
+    "es": "Ninguna fuente propone una causa. Las cinco fichas de DVIDS (PR123 a PR127) solo describen «áreas de contraste» y «fuentes de luz aparentes» y advierten de que el material fue alterado digitalmente antes de llegar a la AARO; la cobertura de la quinta entrega no propone nada. Tasa base: en el año fiscal 2024 la AARO resolvió 118 casos, «todos ellos resueltos como objetos convencionales, como diversos tipos de globos, aves y sistemas aéreos no tripulados (UAS)», y cerró después otros 174 como «globos, aves, UAS, satélites y aeronaves».",
     "en": "No source proposes a cause. The five DVIDS records (PR123 through PR127) only describe \"areas of contrast\" and \"apparent light sources\" and warn that the media was digitally altered before reaching AARO; the coverage of the fifth release proposes nothing. Base rate: in fiscal year 2024 AARO resolved 118 cases, \"all of which resolved to prosaic objects such as various types of balloons, birds, and unmanned aerial systems (UAS)\", and later closed another 174 as \"balloons, birds, UAS, satellites, and aircraft\".",
     "source": "DVIDS — DOW-UAP-PR123 a PR127 (PURSUE, entrega 5); AARO — Fiscal Year 2024 Consolidated Annual Report on UAP (nov 2024) y Fiscal Year 2023 Consolidated Annual Report on UAP (oct 2023)",
     "source_en": "DVIDS — DOW-UAP-PR123 to PR127 (PURSUE, release 5); AARO — Fiscal Year 2024 Consolidated Annual Report on UAP (Nov 2024) and Fiscal Year 2023 Consolidated Annual Report on UAP (Oct 2023)",
@@ -124,7 +124,7 @@
     {
       "name": "AARO — Fiscal Year 2024 Consolidated Annual Report on Unidentified Anomalous Phenomena (nov 2024)",
       "url": "https://media.defense.gov/2024/Nov/14/2003583603/-1/-1/0/FY24-CONSOLIDATED-ANNUAL-REPORT-ON-UAP-508.PDF",
-      "note": "Tasa base: 118 casos resueltos en el periodo y 174 más cerrados después, todos como objetos prosaicos (globos, aves, UAS, satélites, aeronaves).",
+      "note": "Tasa base: 118 casos resueltos en el periodo y 174 más cerrados después, todos como objetos convencionales (globos, aves, UAS, satélites, aeronaves).",
       "note_en": "Base rate: 118 cases resolved in the period and 174 more closed afterwards, all as prosaic objects (balloons, birds, UAS, satellites, aircraft)."
     },
     {
