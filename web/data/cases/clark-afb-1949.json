@@ -63,7 +63,7 @@
       "name": "AARO — Fiscal Year 2024 Consolidated Annual Report on UAP (14 nov 2024), tasa base",
       "name_en": "AARO — Fiscal Year 2024 Consolidated Annual Report on UAP (Nov 14, 2024), base rate",
       "url": "https://media.defense.gov/2024/Nov/14/2003583603/-1/-1/0/FY24-CONSOLIDATED-ANNUAL-REPORT-ON-UAP-508.PDF",
-      "note": "Fuente secundaria de contexto: los 174 casos que AARO dio por resueltos lo fueron todos como objetos prosaicos.",
+      "note": "Fuente secundaria de contexto: los 174 casos que AARO dio por resueltos lo fueron todos como objetos convencionales.",
       "note_en": "Secondary context source: the 174 cases AARO resolved were all resolved as prosaic objects."
     }
   ],
@@ -81,7 +81,7 @@
   ],
   "evidenceReviewed": "2026-10-14",
   "classBasis": {
-    "es": "Ninguna causa propuesta resiste el expediente. El controlador «opina que la estela fue formada por los dos aviones F-51», y la tarjeta de Blue Book lo adoptó; pero el informe IR-365-49 de la FEAF lo descarta, porque pasaron treinta minutos hasta el despegue de esos aviones «y además solo se observó una estela», y sus dos pilotos declararon que «no vimos ninguna estela». La falta de un análisis publicado no es prueba contra una causa ordinaria: en 2024 AARO resolvió 174 casos, todos como «objetos prosaicos» (globos, aves, drones, satélites, aviones), aunque «muchos otros casos siguen sin resolver».",
+    "es": "Ninguna causa propuesta resiste el expediente. El controlador «opina que la estela fue formada por los dos aviones F-51», y la tarjeta de Blue Book lo adoptó; pero el informe IR-365-49 de la FEAF lo descarta, porque pasaron treinta minutos hasta el despegue de esos aviones «y además solo se observó una estela», y sus dos pilotos declararon que «no vimos ninguna estela». La falta de un análisis publicado no es prueba contra una causa ordinaria: en 2024 AARO resolvió 174 casos, todos como «objetos convencionales» (globos, aves, drones, satélites, aviones), aunque «muchos otros casos siguen sin resolver».",
     "en": "No proposed cause survives the file. The duty controller \"is of the opinion that the con-trail was formed by said two F-51 aircraft\", and the Blue Book card adopted it; but FEAF report IR-365-49 discounts it, as thirty minutes passed before they took off \"and also only one con-trail was observed\", and their two pilots stated that \"we did not see any vapor trails\". The absence of a published analysis is not evidence against an ordinary cause: AARO's 2024 report finalized \"all 174 cases\" as \"resolved to prosaic objects including balloons, birds, UAS, satellites, and aircraft\", though \"many other cases remain unresolved\".",
     "source": "Project Blue Book — expediente «8 Sep 49, Clark AFB, Philippines» (ficha e informe IR-365-49 de la FEAF) · AARO — Fiscal Year 2024 Consolidated Annual Report on UAP (14 nov 2024), tasa base",
     "source_en": "Project Blue Book — file “8 Sep 49, Clark AFB, Philippines” (record card and FEAF report IR-365-49) · AARO — Fiscal Year 2024 Consolidated Annual Report on UAP (14 Nov 2024), base rate",

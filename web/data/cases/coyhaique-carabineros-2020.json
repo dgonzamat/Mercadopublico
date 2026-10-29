@@ -63,7 +63,7 @@
       "name": "AARO — Fiscal Year 2024 Consolidated Annual Report on UAP (14 nov 2024)",
       "name_en": "AARO — Fiscal Year 2024 Consolidated Annual Report on UAP (14 Nov 2024)",
       "url": "https://media.defense.gov/2024/Nov/14/2003583603/-1/-1/0/FY24-CONSOLIDATED-ANNUAL-REPORT-ON-UAP-508.PDF",
-      "note": "Tasa base: los 174 casos resueltos ese año lo fueron como objetos prosaicos; muchos otros siguen sin resolver.",
+      "note": "Tasa base: los 174 casos resueltos ese año lo fueron como objetos convencionales; muchos otros siguen sin resolver.",
       "note_en": "Base rate: the 174 cases resolved that year were all resolved to prosaic objects; many others remain unresolved."
     },
     {
@@ -99,7 +99,7 @@
     }
   ],
   "classBasis": {
-    "es": "El SEFAA no propuso ninguna causa: cerró el caso porque «no existen medios de estudio que permitan ir más allá del relato reportado». La falta de una propuesta no es prueba contra una causa ordinaria: en su informe de 2024, AARO dio por resueltos 174 casos, todos como «objetos prosaicos», entre ellos globos, aves, drones, satélites y aviones. El mismo informe añade que «muchos otros casos siguen sin resolver», así que la cifra es la tasa entre los casos resueltos, no entre todos.",
+    "es": "El SEFAA no propuso ninguna causa: cerró el caso porque «no existen medios de estudio que permitan ir más allá del relato reportado». La falta de una propuesta no es prueba contra una causa ordinaria: en su informe de 2024, AARO dio por resueltos 174 casos, todos como «objetos convencionales», entre ellos globos, aves, drones, satélites y aviones. El mismo informe añade que «muchos otros casos siguen sin resolver», así que la cifra es la tasa entre los casos resueltos, no entre todos.",
     "en": "SEFAA proposed no cause: it closed the case because \"there are no means of study that allow going beyond the reported account\". The lack of a proposal is not evidence against an ordinary cause: in its 2024 report AARO stated that \"all 174 cases have been finalized as resolved to prosaic objects including balloons, birds, UAS, satellites, and aircraft\". The same report adds that \"many other cases remain unresolved\", so the figure is the rate among resolved cases, not among all cases.",
     "source": "SEFAA (DGAC Chile) — «Caso N° 1101» · AARO — Fiscal Year 2024 Consolidated Annual Report on UAP (14 nov 2024), tasa base",
     "source_en": "SEFAA (DGAC Chile) — \"Case No. 1101\" · AARO — Fiscal Year 2024 Consolidated Annual Report on UAP (14 Nov 2024), base rate",

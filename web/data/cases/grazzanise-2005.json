@@ -16,7 +16,7 @@
   "tier": "A",
   "mundanoType": "sin_propuesta",
   "classBasis": {
-    "es": "Ninguna fuente propone qué eran los ecos: la tabla de la Aeronautica Militare de febrero de 2005 solo dice que no fue posible asociarlos a «attività di volo o di radiosondaggio conosciuta», la prensa de 2007 y 2014 no propone causa, y no se halló análisis del CISU ni de otro investigador. La falta de un análisis publicado no es prueba contra una causa ordinaria: en el año fiscal 2024 AARO resolvió 174 casos, todos como «objetos prosaicos» (globos, aves, drones, satélites, aviones), aunque «muchos otros casos siguen sin resolver».",
+    "es": "Ninguna fuente propone qué eran los ecos: la tabla de la Aeronautica Militare de febrero de 2005 solo dice que no fue posible asociarlos a «attività di volo o di radiosondaggio conosciuta», la prensa de 2007 y 2014 no propone causa, y no se halló análisis del CISU ni de otro investigador. La falta de un análisis publicado no es prueba contra una causa ordinaria: en el año fiscal 2024 AARO resolvió 174 casos, todos como «objetos convencionales» (globos, aves, drones, satélites, aviones), aunque «muchos otros casos siguen sin resolver».",
     "en": "No source proposes what the echoes were: the Aeronautica Militare table for February 2005 only says they could not be associated with \"known flight or radiosonde activity\", the 2007 and 2014 press proposes no cause, and no analysis by CISU or any other researcher was found. The absence of a published analysis is not evidence against an ordinary cause: AARO's FY2024 report finalized \"all 174 cases\" as \"resolved to prosaic objects including balloons, birds, UAS, satellites, and aircraft\", though \"many other cases remain unresolved\".",
     "source": "Aeronautica Militare — «Avvistamenti O.V.N.I. – Febbraio 2005» · AARO — Fiscal Year 2024 Consolidated Annual Report on UAP (14 nov 2024), tasa base",
     "source_en": "Aeronautica Militare — “Avvistamenti O.V.N.I. – Febbraio 2005” · AARO — Fiscal Year 2024 Consolidated Annual Report on UAP (14 Nov 2024), base rate",
@@ -101,7 +101,7 @@
       "name": "AARO — Fiscal Year 2024 Consolidated Annual Report on UAP (14 nov 2024)",
       "name_en": "AARO — Fiscal Year 2024 Consolidated Annual Report on UAP (14 Nov 2024)",
       "url": "https://media.defense.gov/2024/Nov/14/2003583603/-1/-1/0/FY24-CONSOLIDATED-ANNUAL-REPORT-ON-UAP-508.PDF",
-      "note": "Tasa base para la clase prosaica: 174 casos resueltos, todos como objetos prosaicos.",
+      "note": "Tasa base para la clase convencional: 174 casos resueltos, todos como objetos convencionales.",
       "note_en": "Base rate for the prosaic class: 174 resolved cases, all as prosaic objects."
     },
     {
