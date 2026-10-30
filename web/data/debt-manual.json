@@ -125,17 +125,17 @@
       {
         "id": "B11",
         "title": "24 oct · Identificadores con el año equivocado: fort-beaufort-1971 (el caso es de 1972) y greece-haf-radar-1990 (es de 1985). Cambiar un id cambia la URL y exige alias en lib/caseAliases.ts",
-        "state": "espera decisión del dueño"
+        "state": "resuelto el 30 oct: fort-beaufort-1972 y greece-haf-radar-1985, con alias desde los identificadores viejos"
       },
       {
         "id": "B12",
         "title": "24 oct · Casos ocurridos en el espacio (apollo12-streaks-1969 y similares): el lugar dice «trayecto a la Luna» y las coordenadas siguen en Houston; decidir cómo se representan en el mapa",
-        "state": "espera decisión del dueño"
+        "state": "resuelto el 30 oct: los 12 casos ocurridos en órbita o rumbo a la Luna salen del mapa (OFF_MAP en build-cases.mjs) y /atlas dice cuántos son"
       },
       {
         "id": "B13",
         "title": "24 oct · Dos PDF de /pursue que ninguna ficha usa: CIA-UAP-015 (Special Report 14 de Blue Book) y dow-uap-d48 (informe del RTI de 1996 sobre fallos de cohetes)",
-        "state": "espera decisión del dueño: se propuso embeber el Special Report 14 en Tremonton o Mariana y retirar D48"
+        "state": "resuelto el 30 oct: el Special Report 14 se embebió en el perfil de Zeidman en lugar del enlace a la prensa; D48 se retiró de /pursue"
       },
       {
         "id": "B14",

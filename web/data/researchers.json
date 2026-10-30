@@ -4449,12 +4449,14 @@
     ],
     "documents": [
       {
-        "src": "https://www.livescience.com/space/extraterrestrial-life/us-government-declassifies-nearly-200-uap-files-including-strange-sightings-from-apollo-astronauts",
-        "type": "link",
-        "title": "Battelle Memorial Institute · Special Report 14",
-        "title_en": "Battelle Memorial Institute · Special Report 14",
+        "src": "/pursue/CIA-UAP-015-Project_Blue_Book_Special_Report_No_14.pdf",
+        "type": "pdf",
+        "title": "CIA-UAP-015 · Project Blue Book Special Report No. 14 (Battelle Memorial Institute, 1955)",
+        "title_en": "CIA-UAP-015 · Project Blue Book Special Report No. 14 (Battelle Memorial Institute, 1955)",
         "description": "El Project Blue Book Special Report No. 14 es el estudio estadístico que el Battelle Memorial Institute ejecutó bajo contrato de la USAF entre 1952 y 1955, sobre unos 3.200 reportes de avistamientos. Dejó alrededor del 22% de los casos como «unknown», con una tasa mayor entre los reportes de mejor calidad. Es la base cuantitativa más amplia de la época sobre los informes recibidos por la Fuerza Aérea; mide cómo se clasificaron esos informes, no qué eran los objetos, y una proporción de desconocidos no equivale a una prueba de anomalía.",
-        "description_en": "Project Blue Book Special Report No. 14 is the statistical study the Battelle Memorial Institute carried out under USAF contract between 1952 and 1955, covering some 3,200 sighting reports. It left about 22% of cases as 'unknown', with a higher rate among the best-quality reports. It is the broadest quantitative base of its era on the reports the Air Force received; it measures how those reports were classified, not what the objects were, and a share of unknowns is not proof of an anomaly."
+        "description_en": "Project Blue Book Special Report No. 14 is the statistical study the Battelle Memorial Institute carried out under USAF contract between 1952 and 1955, covering some 3,200 sighting reports. It left about 22% of cases as 'unknown', with a higher rate among the best-quality reports. It is the broadest quantitative base of its era on the reports the Air Force received; it measures how those reports were classified, not what the objects were, and a share of unknowns is not proof of an anomaly.",
+        "source": "Copia de la CIA publicada en PURSUE (Departamento de Guerra, 2026)",
+        "license": "Dominio público · obra del Gobierno de EE. UU. (17 USC §105)"
       }
     ]
   },

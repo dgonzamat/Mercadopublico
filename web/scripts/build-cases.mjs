@@ -38,8 +38,21 @@ console.log(`build-cases: client bundle (no prose) → data/cases-client.json`);
 const ATLAS_FIELDS = ["id", "name", "name_en", "tier", "country", "country_name", "year_start", "probability"];
 // Solo incidentes: los casos-documento son evidencia, no sucesos, y no se
 // cuentan como casos (ver siteStats.cases); el mapa y su conteo deben cuadrar.
+// Casos ocurridos en órbita o rumbo a la Luna: su location es el centro de la
+// NASA que llevaba la misión, y un marcador en Houston o en Cabo Cañaveral
+// diría que el suceso fue ahí (decisión del dueño, oct 2026). Salen del mapa,
+// no del corpus; /atlas dice cuántos son.
+const OFF_MAP = new Set([
+  "apollo-17-vm6-1972", "apollo11-debriefing-1969", "apollo12-streaks-1969",
+  "caballero-negro-1998", "gemini4-mcdivitt-1965", "gemini7-borman-1965",
+  "glenn-fireflies-1962", "kovalyonok-salyut6-1981", "skylab-observations-1973",
+  "stereo-soho-2011", "sts48-1991", "sts80-1996",
+]);
+for (const id of OFF_MAP) {
+  if (!cases.some((c) => c.id === id)) throw new Error(`build-cases: OFF_MAP nombra un caso que no existe: ${id}`);
+}
 const atlasPoints = cases
-  .filter((c) => c.category !== "document" && c.location && typeof c.location.lat === "number")
+  .filter((c) => c.category !== "document" && !OFF_MAP.has(c.id) && c.location && typeof c.location.lat === "number")
   .map((c) => {
     const p = { location: { lat: c.location.lat, lng: c.location.lng } };
     for (const k of ATLAS_FIELDS) p[k] = c[k];
@@ -113,6 +126,7 @@ const siteStats = {
   tierS: cases.filter((c) => c.tier === "S").length,
   tierA: cases.filter((c) => c.tier === "A").length,
   tierB: cases.filter((c) => c.tier === "B").length,
+  offMap: OFF_MAP.size,
   countries: new Set(cases.filter((c) => c.category !== "document").map((c) => c.country)).size,
   startYear: CORPUS_START_YEAR,
   endYear: corpusEndYear,
