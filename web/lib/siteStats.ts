@@ -30,6 +30,8 @@ export const STATS = statsData as {
   tierA: number;
   tierB: number;
   countries: number;
+  /** Casos ocurridos en el espacio, sin marcador en /atlas. */
+  offMap: number;
   startYear: number;
   endYear: number;
   years: number;

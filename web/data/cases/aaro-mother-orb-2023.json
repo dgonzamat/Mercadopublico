@@ -211,6 +211,30 @@
       "source": "FBI (PURSUE Release 03)",
       "license": "Dominio público · obra del Gobierno de EE. UU.",
       "fallbackUrl": "https://www.war.gov/medialink/ufo/061226/release_03/documents/FBI-UAP-D023_Digital-Rendering_Incident-2-7_Western-US-Event_2023.jpg"
+    },
+    {
+      "role": "documento",
+      "src": "https://www.dvidshub.net/video/embed/1010272",
+      "type": "video",
+      "title": "FBI-UAP-PR005 — Recreación digital, 'Narrative Statement 3-1', día 1 del incidente (2023)",
+      "title_en": "FBI-UAP-PR005 — Digital recreation, 'Narrative Statement 3-1', incident day 1 (2023)",
+      "source": "FBI, recreación preparada a pedido del Departamento de Guerra, vía DVIDS (PURSUE Release 03)",
+      "license": "Dominio público · obra del Gobierno de EE. UU.",
+      "fallbackUrl": "https://www.dvidshub.net/video/1010272",
+      "description": "Recreación digital en video, preparada por el FBI a pedido del Departamento de Guerra en 2026 a partir de la descripción de primera mano del testigo 3, un agente especial federal, con el título «Narrative Statement 3-1» (día 1 del incidente). Es una interpretación artística, no un registro del suceso. El registro oficial en DVIDS no da coordenadas ni identifica el sitio.",
+      "description_en": "Digital recreation video, prepared by the FBI at the Department of War's request in 2026 from the first-hand description of witness 3, a federal law enforcement special agent, titled \"Narrative Statement 3-1\" (incident day 1). It is an artistic interpretation, not a record of the event. The official DVIDS record gives no coordinates or site identification."
+    },
+    {
+      "role": "documento",
+      "src": "https://www.dvidshub.net/video/embed/1010276",
+      "type": "video",
+      "title": "FBI-UAP-PR006 — Recreación digital, 'Narrative Statement 3-2', día 2 del incidente (2023)",
+      "title_en": "FBI-UAP-PR006 — Digital recreation, 'Narrative Statement 3-2', incident day 2 (2023)",
+      "source": "FBI, recreación preparada a pedido del Departamento de Guerra, vía DVIDS (PURSUE Release 03)",
+      "license": "Dominio público · obra del Gobierno de EE. UU.",
+      "fallbackUrl": "https://www.dvidshub.net/video/1010276",
+      "description": "Recreación digital en video, preparada por el FBI a pedido del Departamento de Guerra en 2026 a partir de la descripción de primera mano del testigo 3, un agente especial federal, con el título «Narrative Statement 3-2» (día 2 del incidente). Es una interpretación artística, no un registro del suceso. El registro oficial en DVIDS no da coordenadas ni identifica el sitio.",
+      "description_en": "Digital recreation video, prepared by the FBI at the Department of War's request in 2026 from the first-hand description of witness 3, a federal law enforcement special agent, titled \"Narrative Statement 3-2\" (incident day 2). It is an artistic interpretation, not a record of the event. The official DVIDS record gives no coordinates or site identification."
     }
   ],
   "patterns": [
@@ -255,6 +279,20 @@
     {
       "name": "EarthSky — '3rd batch of Pentagon UAP files: Orbs and more'",
       "url": "https://earthsky.org/human-world/pentagon-uap-files-ufos-pursue/"
+    },
+    {
+      "name": "DVIDS — FBI-UAP-PR005/PR006, recreaciones digitales del FBI (PURSUE Release 03)",
+      "url": "https://www.dvidshub.net/video/1010272",
+      "note": "Ambos videos van embebidos en el visor de este caso; las fichas reconocen explícitamente que se trata de recreaciones, no de metraje original.",
+      "note_en": "Both videos are embedded in this case's viewer; the records explicitly acknowledge these are recreations, not original footage.",
+      "name_en": "DVIDS — FBI-UAP-PR005/PR006, FBI digital recreations (PURSUE Release 03)"
+    },
+    {
+      "name": "AARO — DoW-UAP-D081, narrativa del testigo 3, Western U.S. Event (2 jun 2026; copia alojada en este sitio)",
+      "name_en": "AARO — DoW-UAP-D081, Witness 3 narrative, Western U.S. Event (2 Jun 2026; copy hosted on this site)",
+      "url": "https://uapcodex.org/pursue/DoW-UAP-D081_Narrative-3_Western-US-Event.pdf",
+      "note": "Texto libre del testigo 3: el orbe naranja que expulsa tres orbes rojos y, la misma noche o la siguiente, cuatro luces rojas sobre un aeródromo y un vehículo que se aleja campo a través.",
+      "note_en": "Witness 3's free-form text: the orange orb expelling three red orbs and, the same night or the next, four red lights over an airfield and a vehicle moving off across rough terrain."
     }
   ],
   "posterior": {

@@ -10,6 +10,11 @@
 export const CASE_ALIASES: Readonly<Record<string, string>> = {
   // Mismo vídeo (DVIDS 1007713, DOW-UAP-PR055); se contaba dos veces (oct 2026).
   "afghanistan-isr-disc-2020": "spherical-afghanistan-2020",
+  // Mismo suceso (Western US Event, oct 2023) contado desde el testigo 3 (oct 2026).
+  "western-sensitive-site-recreation-2023": "aaro-mother-orb-2023",
+  // Identificadores con el año equivocado: el caso es de 1972 y de 1985 (oct 2026).
+  "fort-beaufort-1971": "fort-beaufort-1972",
+  "greece-haf-radar-1990": "greece-haf-radar-1985",
   // Fichas-documento integradas en lo que respaldan (decisión del dueño, oct
   // 2026: ningún documento con ficha propia). Los catálogos de clips de PURSUE
   // sin caso propio salieron del sitio; sus casos conservan sus clips.
