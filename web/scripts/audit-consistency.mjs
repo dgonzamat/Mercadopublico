@@ -493,10 +493,24 @@ for (const c of cases) {
 // la página es prosa. Por eso el umbral aplica solo a whatHappened+whyMatters.
 
 const PAGE_MIN_BODY = 3500;
+// Fichas cortas por falta de fuentes alcanzables, con la búsqueda agotada
+// registrada en docs/registros.md («Fichas cortas · búsqueda agotada»). Mismo
+// principio que VISUAL_CERRADO_POR_LICENCIA (E21): separar «no lo tenemos» de
+// «no se puede tener», porque un aviso que pide algo imposible acaba
+// silenciado. Decisión del dueño, 31 oct 2026. El guard de abajo avisa si una
+// ficha exenta llega al estándar o deja de existir, para que la lista no
+// esconda progreso.
+const LONGITUD_CERRADA = new Set(["orcas-island-1994"]);
 const shortBodies = [];
+for (const id of LONGITUD_CERRADA) {
+  const c = cases.find((x) => x.id === id);
+  const len = c ? ((c.whatHappened || "") + "\n\n" + (c.whyMatters || "")).trim().length : 0;
+  if (!c || len >= PAGE_MIN_BODY)
+    record("WARN", casesDir, 0, `E13 exención: ${id} ${c ? "ya alcanza el estándar" : "ya no existe"}; sácala de LONGITUD_CERRADA.`);
+}
 for (const c of cases) {
   const bodyLen = ((c.whatHappened || "") + "\n\n" + (c.whyMatters || "")).trim().length;
-  if (bodyLen < PAGE_MIN_BODY) {
+  if (bodyLen < PAGE_MIN_BODY && !LONGITUD_CERRADA.has(c.id)) {
     shortBodies.push({ id: c.id, tier: c.tier || "?", len: bodyLen });
   }
 }
