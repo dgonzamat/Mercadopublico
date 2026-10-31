@@ -2129,9 +2129,9 @@ const HYPE_REVIEWED = new Set(["lakenheath-bentwaters-1956", "morocco-gendarmeri
 // Skinwalker había crecido a 41.500 caracteres entrega tras entrega y 23
 // títulos usaban jerga de piloto que el dueño no entendió. Antes ninguna sonda
 // los medía, así que el problema se acumuló sin que nada avisara. WARN
-// agregado (mismo patrón que E13): deja el backlog medible mientras las capas
-// de texto lo bajan. Las bitácoras y las herramientas del redactor van en el
-// mismo aviso hasta que la capa 2 las limpie; entonces pasan a ERROR.
+// agregado mientras las capas de texto lo bajaron; ERROR desde que la capa 2
+// pasó por las 396 fichas (31 oct 2026, decisión del dueño): una ficha que vuelva
+// a romper un límite rompe el build.
 {
   // Fuera las citas y los enlaces [[slug]]: un slug como pursue-release-2026
   // no es inglés en la prosa.
@@ -2163,7 +2163,7 @@ const HYPE_REVIEWED = new Set(["lakenheath-bentwaters-1956", "morocco-gendarmeri
     const hit = cases.filter((c) => { re.lastIndex = 0; return re.test(unq(esText(c))); });
     if (hit.length) parts.push(`${label}: ${hit.length} (${hit.slice(0, 3).map((c) => c.id).join(", ")}${hit.length > 3 ? "…" : ""})`);
   }
-  if (parts.length) record("WARN", "data/cases", 0, `E52 guía de redacción: ${parts.join(" · ")}. Ver .claude/commands/redaccion.md.`);
+  if (parts.length) record("ERROR", "data/cases", 0, `E52 guía de redacción: ${parts.join(" · ")}. Ver .claude/commands/redaccion.md.`);
 }
 
 // ─── 9ze2. RULE E55: «convencional», no «prosaico» ni «mundano» ────────────
