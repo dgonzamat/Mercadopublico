@@ -44,18 +44,6 @@
   "documents": [
     {
       "role": "prueba",
-      "src": "https://www.dvidshub.net/video/embed/1007735",
-      "type": "video",
-      "title": "DOW-UAP-PR061 — título de uploader 'vid 0' (4:46; ~3 min sin objeto descrito)",
-      "title_en": "DOW-UAP-PR061 — uploader title 'vid 0' (4:46; ~3 min with no object described)",
-      "source": "US Department of War vía DVIDS (PURSUE Release 02) · VIRIN 210413-D-D0360-9523",
-      "license": "Dominio público · obra del Gobierno de EE. UU.",
-      "fallbackUrl": "https://www.dvidshub.net/video/1007735",
-      "description": "Video DOW-UAP-PR061, con el título definido por quien lo subió, «Spherical UAP [CALLSIGN] 2021/04/12 vid 0». Dura 4:46 y lo subió un usuario a la red clasificada en junio de 2024. Según la AARO, probablemente procede de una cámara de video y un sensor infrarrojo a bordo de una plataforma militar de EE. UU. en el área del CENTCOM en 2021. Su descripción oficial empieza en 3:02: una zona de contraste entra por la esquina superior derecha y sale por la inferior derecha, y el sensor la sigue y la centra; en 4:01 el sensor cambia de modo porque la zona se vuelve indistinta frente al fondo. No describe nada en los tres primeros minutos.",
-      "description_en": "Video DOW-UAP-PR061, with the uploader-defined title \"Spherical UAP [CALLSIGN] 2021/04/12 vid 0.\" It runs 4:46 and a user uploaded it to the classified network in June 2024. According to AARO, it likely derives from a video camera and an infrared sensor aboard a U.S. military platform in the CENTCOM area in 2021. Its official description begins at 3:02: an area of contrast enters from the upper right corner and exits at the lower right, and the sensor tracks and centers it; at 4:01 the sensor changes modes as the area becomes indistinct against the background. It describes nothing in the first three minutes."
-    },
-    {
-      "role": "prueba",
       "src": "https://www.dvidshub.net/video/embed/1007739",
       "type": "video",
       "title": "DOW-UAP-PR062 — título de uploader 'vid 1' (4:49, seguimiento continuo descrito)",
@@ -68,18 +56,6 @@
     },
     {
       "role": "prueba",
-      "src": "https://www.dvidshub.net/video/embed/1007740",
-      "type": "video",
-      "title": "DOW-UAP-PR063 — título de uploader 'vid 2' (4:49; solo 49 s con objeto descrito)",
-      "title_en": "DOW-UAP-PR063 — uploader title 'vid 2' (4:49; only 49 s with object described)",
-      "source": "US Department of War vía DVIDS (PURSUE Release 02)",
-      "license": "Dominio público · obra del Gobierno de EE. UU.",
-      "fallbackUrl": "https://www.dvidshub.net/video/1007740",
-      "description": "Video DOW-UAP-PR063, con el título definido por quien lo subió, «Spherical UAP [CALLSIGN] 2021/04/12 vid 2». Dura 4:49 y lo subió un usuario a la red clasificada en mayo de 2024. Según la AARO, probablemente procede de una cámara de video y un sensor infrarrojo a bordo de una plataforma militar de EE. UU. en el área del CENTCOM en 2021. Su descripción oficial cubre solo los primeros 49 segundos, en los que el sensor sigue una zona de contraste y la mantiene en general en el centro; a los 50 segundos se aleja de ella y no hay descripción para los cuatro minutos restantes.",
-      "description_en": "Video DOW-UAP-PR063, with the uploader-defined title \"Spherical UAP [CALLSIGN] 2021/04/12 vid 2.\" It runs 4:49 and a user uploaded it to the classified network in May 2024. According to AARO, it likely derives from a video camera and an infrared sensor aboard a U.S. military platform in the CENTCOM area in 2021. Its official description covers only the first 49 seconds, in which the sensor tracks an area of contrast and keeps it generally in the center; at 50 seconds it pans away from it, and there is no description for the remaining four minutes."
-    },
-    {
-      "role": "prueba",
       "src": "https://www.dvidshub.net/video/embed/1007734",
       "type": "video",
       "title": "DOW-UAP-PR060 — título de uploader 'obj 2' (4:50, seguimiento activo primeros 2:04)",
@@ -89,6 +65,30 @@
       "fallbackUrl": "https://www.dvidshub.net/video/1007734",
       "description": "Video DOW-UAP-PR060, con el título definido por quien lo subió, «Spherical UAP [CALLSIGN] 2021/04/12 obj 2». Dura 4:50 y lo subió un usuario a la red clasificada en junio de 2024. Según la AARO, probablemente procede de una cámara de video y un sensor infrarrojo a bordo de una plataforma militar de EE. UU. en el área del CENTCOM en 2021. Su descripción oficial: de 0:00 a 0:26 una zona de contraste cruza el campo de derecha a izquierda y el sensor se desplaza y cambia el zoom para seguirla; de 0:27 a 2:04 la zona vuelve a entrar y el sensor la sigue hacia la izquierda y hacia arriba; de 2:05 al final, el sensor vuelve a enfocar el tema original del video.",
       "description_en": "Video DOW-UAP-PR060, with the uploader-defined title \"Spherical UAP [CALLSIGN] 2021/04/12 obj 2.\" It runs 4:50 and a user uploaded it to the classified network in June 2024. According to AARO, it likely derives from a video camera and an infrared sensor aboard a U.S. military platform in the CENTCOM area in 2021. Its official description: from 0:00 to 0:26 an area of contrast transits the field of view from right to left and the sensor pans and zooms to track it; from 0:27 to 2:04 the area re-enters and the sensor pans left and up to track it; from 2:05 to the end, the sensor refocuses on the original subject matter of the video."
+    },
+    {
+      "role": "documento",
+      "src": "https://www.dvidshub.net/video/embed/1007735",
+      "type": "video",
+      "title": "DOW-UAP-PR061 — título de uploader 'vid 0' (4:46; ~3 min sin objeto descrito)",
+      "title_en": "DOW-UAP-PR061 — uploader title 'vid 0' (4:46; ~3 min with no object described)",
+      "source": "US Department of War vía DVIDS (PURSUE Release 02) · VIRIN 210413-D-D0360-9523",
+      "license": "Dominio público · obra del Gobierno de EE. UU.",
+      "fallbackUrl": "https://www.dvidshub.net/video/1007735",
+      "description": "Video DOW-UAP-PR061, con el título definido por quien lo subió, «Spherical UAP [CALLSIGN] 2021/04/12 vid 0». Dura 4:46 y lo subió un usuario a la red clasificada en junio de 2024. Según la AARO, probablemente procede de una cámara de video y un sensor infrarrojo a bordo de una plataforma militar de EE. UU. en el área del CENTCOM en 2021. Su descripción oficial empieza en 3:02: una zona de contraste entra por la esquina superior derecha y sale por la inferior derecha, y el sensor la sigue y la centra; en 4:01 el sensor cambia de modo porque la zona se vuelve indistinta frente al fondo. No describe nada en los tres primeros minutos.",
+      "description_en": "Video DOW-UAP-PR061, with the uploader-defined title \"Spherical UAP [CALLSIGN] 2021/04/12 vid 0.\" It runs 4:46 and a user uploaded it to the classified network in June 2024. According to AARO, it likely derives from a video camera and an infrared sensor aboard a U.S. military platform in the CENTCOM area in 2021. Its official description begins at 3:02: an area of contrast enters from the upper right corner and exits at the lower right, and the sensor tracks and centers it; at 4:01 the sensor changes modes as the area becomes indistinct against the background. It describes nothing in the first three minutes."
+    },
+    {
+      "role": "documento",
+      "src": "https://www.dvidshub.net/video/embed/1007740",
+      "type": "video",
+      "title": "DOW-UAP-PR063 — título de uploader 'vid 2' (4:49; solo 49 s con objeto descrito)",
+      "title_en": "DOW-UAP-PR063 — uploader title 'vid 2' (4:49; only 49 s with object described)",
+      "source": "US Department of War vía DVIDS (PURSUE Release 02)",
+      "license": "Dominio público · obra del Gobierno de EE. UU.",
+      "fallbackUrl": "https://www.dvidshub.net/video/1007740",
+      "description": "Video DOW-UAP-PR063, con el título definido por quien lo subió, «Spherical UAP [CALLSIGN] 2021/04/12 vid 2». Dura 4:49 y lo subió un usuario a la red clasificada en mayo de 2024. Según la AARO, probablemente procede de una cámara de video y un sensor infrarrojo a bordo de una plataforma militar de EE. UU. en el área del CENTCOM en 2021. Su descripción oficial cubre solo los primeros 49 segundos, en los que el sensor sigue una zona de contraste y la mantiene en general en el centro; a los 50 segundos se aleja de ella y no hay descripción para los cuatro minutos restantes.",
+      "description_en": "Video DOW-UAP-PR063, with the uploader-defined title \"Spherical UAP [CALLSIGN] 2021/04/12 vid 2.\" It runs 4:49 and a user uploaded it to the classified network in May 2024. According to AARO, it likely derives from a video camera and an infrared sensor aboard a U.S. military platform in the CENTCOM area in 2021. Its official description covers only the first 49 seconds, in which the sensor tracks an area of contrast and keeps it generally in the center; at 50 seconds it pans away from it, and there is no description for the remaining four minutes."
     }
   ],
   "whatHappened": "Estos cuatro archivos, catalogados como DOW-UAP-PR060 a PR063, forman parte del lote de 50 videos que la AARO localizó en una red clasificada cuando, el 6 de marzo de 2026, ocho miembros de la Cámara de Representantes pidieron acceso a 51 registros potencialmente relacionados con UAP (ver [[reeves-foia-classified-network-2023]]). La AARO advierte que «muchos de estos materiales carecen de una cadena de custodia sustanciada».\n\nLos títulos «obj 2», «vid 0», «vid 1» y «vid 2», todos con la fecha 12 de abril de 2021, son títulos «definidos por el usuario» que subió los archivos a la red clasificada, no una designación del Departamento de Guerra: «vid 1» y «vid 2» se subieron en mayo de 2024, y «obj 2» y «vid 0» en junio de 2024. La AARO evalúa como «probable», sin confirmarlo, que las imágenes procedan de una cámara de video y un sensor infrarrojo (en «vid 1», de un sensor de color e infrarrojo) a bordo de una plataforma militar de EE. UU. que operaba en el área de responsabilidad del Comando Central (CENTCOM) en 2021. Las cuatro duraciones son 4:50, 4:46, 4:49 y 4:49. Los identificadores VIRIN de DVIDS de los cuatro llevan la fecha 13 de abril de 2021 (210413), un día después de la que consta en los títulos.\n\nLa AARO publicó con cada video una descripción visual con marcas de tiempo. Según ella, solo «vid 1» tiene seguimiento ininterrumpido de una zona de contraste durante los 4:49 completos. En «obj 2», una zona de contraste cruza el encuadre y el sensor la sigue hasta 2:04; desde 2:05 «vuelve a enfocar el tema original del video». En «vid 0», la descripción empieza en 3:02, cuando una zona de contraste entra por la esquina superior derecha y el sensor la centra, y en 4:01 el sensor cambia de modo porque la zona se vuelve indistinta. En «vid 2», el sensor sigue una zona de contraste durante los primeros 49 segundos y luego se aleja de ella, sin descripción para los cuatro minutos restantes. La AARO advierte que su descripción no debe leerse como un juicio analítico.\n\nNo hay coordenadas, plataforma, unidad ni declaración de tripulación identificadas en el registro público. El material se subió a DVIDS el 22 de mayo de 2026, dentro de la segunda entrega de PURSUE, bajo licencia de dominio público, sin informe de inteligencia ni documento narrativo que lo acompañe.",

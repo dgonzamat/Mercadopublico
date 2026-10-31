@@ -71,6 +71,7 @@
 import fs from "node:fs";
 import path from "node:path";
 import { fileURLToPath } from "node:url";
+import { MARKERS, SINCERE, SLOP, FORMULA_REVIEWED, unquote } from "./lib/prose-markers.mjs";
 
 const __dirname = path.dirname(fileURLToPath(import.meta.url));
 const root = path.join(__dirname, "..");
@@ -2165,6 +2166,12 @@ const HYPE_REVIEWED = new Set(["lakenheath-bentwaters-1956", "morocco-gendarmeri
     "evidence fuera de 3–8 o ítem > 600": (c) => c.evidence && (c.evidence.length < 3 || c.evidence.length > 8 || c.evidence.some((e) => e.length > 600)),
     "párrafo > 1.200": (c) => [c.whatHappened, c.whyMatters].some((t) => (t || "").split("\n\n").some((p) => p.length > 1200)),
     "relato > 12.000": (c) => (c.whatHappened || "").length + (c.whyMatters || "").length > 12000,
+    // Cerrados el 31 oct 2026 (/blindar): el porqué de clase se pliega en la
+    // ficha a partir de 700 caracteres, y el detalle no tiene pipeline de
+    // markdown (solo resuelve [[slug]]), así que ** - # salen crudos.
+    "porqué de clase > 700": (c) => (c.classBasis?.es || "").length > 700,
+    "markdown en la prosa": (c) => [c.summary, c.summary_en, c.whatHappened, c.whatHappened_en, c.whyMatters, c.whyMatters_en, ...(c.evidence || []), ...(c.evidence_en || [])]
+      .some((t) => /\*\*|(^|\n)(- |# )/.test(t || "")),
     "jerga ≥ 2 por 1.000 caracteres": (c) => { const t = unq(esText(c)); return t.length && ((t.match(JERGA) || []).length * 1000) / t.length >= 2; },
     "spanglish": (c) => SPANGLISH.test(unq(esText(c))) && !(SPANGLISH.lastIndex = 0),
   };
@@ -2195,6 +2202,28 @@ const HYPE_REVIEWED = new Set(["lakenheath-bentwaters-1956", "morocco-gendarmeri
   if (hit.length) record("ERROR", "data/cases", 0, `E55 «prosaico»/«mundano» en la prosa: ${hit.length} (${hit.slice(0, 5).map((c) => c.id).join(", ")}${hit.length > 5 ? "…" : ""}). Se escribe «convencional».`);
 }
 
+// ─── 9zf0. RULE E56: muletillas e «IA slop» en la prosa (ERROR) ──────────
+//
+// Los mismos marcadores que cuenta el informe de deuda (scripts/lib/
+// prose-markers.mjs): «el corpus», notas de sesión, «honesto», «Es uno de
+// los», la fórmula «no es X, sino Y», la raya y los intensificadores vacíos.
+// Se cerraron en la capa 2 (31 oct 2026) y desde /blindar rompen el build si
+// reaparecen. Lo citado entre comillas es de la fuente y queda fuera, igual
+// que la sinceridad de un testigo (SINCERE) y los contrastes factuales ya
+// revisados (FORMULA_REVIEWED).
+{
+  const proseOf = (c) => [c.summary, c.summary_en, c.whatHappened, c.whatHappened_en, c.whyMatters, c.whyMatters_en, ...(c.evidence || []), ...(c.evidence_en || [])].filter(Boolean).join("\n");
+  const hits = [];
+  for (const c of cases) {
+    const t = unquote(proseOf(c));
+    for (const [label, re] of Object.entries(MARKERS))
+      if (re.test(t.replace(SINCERE, ""))) hits.push(`${c.id} (${label})`);
+    for (const [label, re] of Object.entries(SLOP))
+      if (re.test(t) && !(label.startsWith("fórmula") && FORMULA_REVIEWED.has(c.id))) hits.push(`${c.id} (${label})`);
+  }
+  if (hits.length) record("ERROR", casesDir, 0, `E56 muletillas en la prosa: ${hits.length} — ${hits.slice(0, 8).join(", ")}${hits.length > 8 ? "…" : ""}. Reescribir (ver docs/brief-prosa.md y /redaccion); lo citado entre comillas no cuenta.`);
+}
+
 // ─── 9zf. RULE E53: todo elemento visual declara su papel ─────────────────
 //
 // La ficha ordena imágenes y documentos solo por su papel (`role`: prueba,
@@ -2209,6 +2238,12 @@ const HYPE_REVIEWED = new Set(["lakenheath-bentwaters-1956", "morocco-gendarmeri
     const items = [...(c.documents || []).map((d, i) => [`documents[${i}]`, d]), ...(c.primaryDocument ? [["primaryDocument", c.primaryDocument]] : []), ...(c.featuredDoc ? [["featuredDoc", c.featuredDoc]] : [])];
     for (const [k, d] of items) if (!ROLES.has(d.role)) sinPapel.push(`${c.id}#${k}`);
   }
+  // Como mucho dos `prueba` por ficha (31 oct 2026, /blindar): van antes del
+  // relato, y con más el visor esconde lo que importa (el informe del rancho
+  // en Skinwalker quedó oculto tras cuatro modificaciones del contrato). Lo
+  // demás que registra el suceso va como `documento`.
+  const demasiadas = cases.filter((c) => [...(c.documents || []), c.primaryDocument, c.featuredDoc].filter((d) => d && d.role === "prueba").length > 2).map((c) => c.id);
+  if (demasiadas.length) record("ERROR", "data/cases", 0, `E53 más de dos \`prueba\`: ${demasiadas.length} ficha(s) — ${demasiadas.slice(0, 5).join(", ")}${demasiadas.length > 5 ? "…" : ""}. Deja las dos que mejor registran el suceso y pasa el resto a \`documento\`.`);
   if (sinPapel.length) record("ERROR", "data/cases", 0, `E53 elemento visual sin papel: ${sinPapel.length} sin \`role\` válido (prueba | documento | contexto): ${sinPapel.slice(0, 5).join(", ")}${sinPapel.length > 5 ? "…" : ""}.`);
 }
 

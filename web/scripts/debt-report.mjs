@@ -8,6 +8,7 @@
 import fs from "fs";
 import path from "path";
 import { spawnSync } from "child_process";
+import { MARKERS, SINCERE, SLOP, FORMULA_REVIEWED } from "./lib/prose-markers.mjs";
 
 const ROOT = path.resolve(path.dirname(new URL(import.meta.url).pathname), "..");
 const CASES_DIR = path.join(ROOT, "data/cases");
@@ -44,20 +45,6 @@ const prose = (c) =>
   ]
     .filter(Boolean)
     .join("\n");
-const MARKERS = {
-  // Autorreferencias al archivo, no «corpus» como conjunto de datos de una
-  // fuente («corpus de video de Yalman»): el primer barrido solo miraba «el
-  // corpus»/«the corpus» y dejó ~45 fichas con «this corpus», «un corpus
-  // calibrado» o «Ireland's first corpus case» (oct 2026).
-  "«el corpus»": /\b(?:el|este|del|al|mismo) corpus\b|\b(?:the|this|same|calibrated|institutional|PURSUE) corpus\b|\bun corpus (?:calibrado|que|donde|serio)\b|\ba corpus (?:that|where|tracking)\b|\bcorpus (?:case|cases|file|pattern)\b/i,
-  "nota de sesión": /\besta (?:misma )?sesión\b|\bthis (?:same )?session\b|\bthis session's\b/i,
-  "«honesto»": /\bhonest/i,
-  "«Es uno de los»": /\bEs uno de los\b|\bIt is one of the\b/,
-};
-// Lo citado es de la fuente, y la sinceridad de un testigo («hombre honesto»,
-// «testigos honestos», «reporta honestamente lo que vio») es un dato del caso:
-// ninguno es la muletilla del redactor que alaba su propia lectura.
-const SINCERE = /hombre honesto|honest man|testigos honestos|honest witnesses|honestamente lo que vio|honestly reports?|describe it honestly|trustworthy and honest/gi;
 const unquotedProse = (c) => prose(c).replace(/«[^»]*»|"[^"]*"|“[^”]*”|(?<![\w])'[^']*'(?![\w])/g, "").replace(SINCERE, "");
 console.log("\nProsa · fichas con muletillas (C3 = Tier A, C4/C5 = Tier B):");
 const anyHit = cases.filter((c) => Object.values(MARKERS).some((re) => re.test(unquotedProse(c))));
@@ -126,21 +113,10 @@ for (const [label, fn] of checks) {
 }
 
 // 5 · IA slop: huellas de texto generado, en las fichas y en la interfaz.
-const SLOP = {
-  "fórmula «no es X, es/sino Y»": /\bno es (?:solo |sólo |simplemente )?[^.;:]{1,60}?, (?:sino|es) |\bit is not [^.;:]{1,60}?, (?:but|it is) /i,
-  "raya (—) en la prosa": /—/,
-  "intensificador vacío (crucial, clave, fundamental…)": /\b(?:crucial|cabe destacar|vale la pena|sin duda|en definitiva|fundamental(?:mente)?|crucially|it is worth noting|notably|undoubtedly)\b/i,
-};
 console.log("\nIA slop · prosa de las fichas:");
 // Lo citado entre comillas es de la fuente, no del redactor («sin duda» en
 // boca de un informe de 1951 no es relleno): se excluye, como en E7b.
 const unquoted = (t) => t.replace(/«[^»]*»|"[^"]*"|“[^”]*”|(?<![\w])'[^']*'(?![\w])/g, "");
-// Fichas cuya fórmula «no es X, sino Y» se revisó y es un contraste factual
-// (el expediente no es de Blue Book, sino un informe de accidente), no un
-// recurso retórico: no son deuda. Si una deja de usarla, se avisa.
-const FORMULA_REVIEWED = new Set([
-  "mexico-eclipse-1991", // «Venus no es una estrella, sino un planeta»: lo dice Printy, es un dato
-]);
 for (const [label, re] of Object.entries(SLOP)) {
   const all = cases.filter((c) => re.test(unquoted(prose(c))));
   const reviewed = label.startsWith("fórmula") ? all.filter((c) => FORMULA_REVIEWED.has(c.id)) : [];

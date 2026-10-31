@@ -54,30 +54,6 @@
     },
     {
       "role": "prueba",
-      "src": "https://www.dvidshub.net/video/embed/1017806",
-      "type": "video",
-      "title": "DOW-UAP-PR124 — captura secundaria de un display de sensor IR, 53 s",
-      "title_en": "DOW-UAP-PR124 — secondary capture of an IR sensor display, 53 s",
-      "source": "US Navy UAPTF, transferido a la AARO en 2022, vía DVIDS",
-      "license": "Dominio público · obra del Gobierno de EE. UU.",
-      "fallbackUrl": "https://www.dvidshub.net/video/1017806",
-      "description": "Video DOW-UAP-PR124, de 53 segundos: captura secundaria, hecha con un aparato de mano, de la pantalla del mismo tipo de sensor infrarrojo, grabada al mismo tiempo que los otros cuatro clips. Según la descripción de la AARO, el sensor amplía un área de contraste entre los segundos 2 y 29, y desde el segundo 30 el área se confunde con el fondo. La ficha advierte que el material fue alterado digitalmente antes de llegar a la AARO.",
-      "description_en": "Video DOW-UAP-PR124, 53 seconds long: a secondary capture, made with a hand-held device, of the screen of an infrared sensor, recorded at the same time as the other four clips. According to AARO's description, the sensor zooms in on an area of contrast from second 2 to 29, and from second 30 the area blends into the background. The record warns that the media was digitally altered before it reached AARO."
-    },
-    {
-      "role": "prueba",
-      "src": "https://www.dvidshub.net/video/embed/1017788",
-      "type": "video",
-      "title": "DOW-UAP-PR125 — captura secundaria de un display de sensor IR, 28 s",
-      "title_en": "DOW-UAP-PR125 — secondary capture of an IR sensor display, 28 s",
-      "source": "US Navy UAPTF, transferido a la AARO en 2022, vía DVIDS",
-      "license": "Dominio público · obra del Gobierno de EE. UU.",
-      "fallbackUrl": "https://www.dvidshub.net/video/1017788",
-      "description": "Video DOW-UAP-PR125, de 28 segundos: captura secundaria, hecha con un aparato de mano, de la pantalla de un sensor infrarrojo, grabada al mismo tiempo que los otros cuatro clips. Según la descripción de la AARO, el área de contraste se desplaza hacia la izquierda entre los segundos 6 y 9, se confunde con el fondo hasta el segundo 15 y luego aparece un área de contraste que el sensor sigue y la mantiene centrada. La ficha advierte que el material fue alterado digitalmente antes de llegar a la AARO.",
-      "description_en": "Video DOW-UAP-PR125, 28 seconds long: a secondary capture, made with a hand-held device, of the screen of an infrared sensor, recorded at the same time as the other four clips. According to AARO's description, the area of contrast moves left from second 6 to 9, blends into the background until second 15 and then an area of contrast appears that the sensor pans to follow and keeps it centered. The record warns that the media was digitally altered before it reached AARO."
-    },
-    {
-      "role": "prueba",
       "src": "https://www.dvidshub.net/video/embed/1017790",
       "type": "video",
       "title": "DOW-UAP-PR126 — grabación de mano de un militar en condiciones de poca luz: varias fuentes de luz aparentes, 2 min 32 s",
@@ -89,7 +65,31 @@
       "description_en": "Video DOW-UAP-PR126, 2 minutes 32 seconds long, recorded with a hand-held device by a U.S. service member in 2019, in low light. According to AARO's description, the camera brings two apparent light sources into frame from the upper left corner, then repeatedly brings several into and out of frame, and from 0:54 to 1:23 zooms in on the one in the lower left quarter. The record warns that the media was digitally altered before it reached AARO."
     },
     {
-      "role": "prueba",
+      "role": "documento",
+      "src": "https://www.dvidshub.net/video/embed/1017806",
+      "type": "video",
+      "title": "DOW-UAP-PR124 — captura secundaria de un display de sensor IR, 53 s",
+      "title_en": "DOW-UAP-PR124 — secondary capture of an IR sensor display, 53 s",
+      "source": "US Navy UAPTF, transferido a la AARO en 2022, vía DVIDS",
+      "license": "Dominio público · obra del Gobierno de EE. UU.",
+      "fallbackUrl": "https://www.dvidshub.net/video/1017806",
+      "description": "Video DOW-UAP-PR124, de 53 segundos: captura secundaria, hecha con un aparato de mano, de la pantalla del mismo tipo de sensor infrarrojo, grabada al mismo tiempo que los otros cuatro clips. Según la descripción de la AARO, el sensor amplía un área de contraste entre los segundos 2 y 29, y desde el segundo 30 el área se confunde con el fondo. La ficha advierte que el material fue alterado digitalmente antes de llegar a la AARO.",
+      "description_en": "Video DOW-UAP-PR124, 53 seconds long: a secondary capture, made with a hand-held device, of the screen of an infrared sensor, recorded at the same time as the other four clips. According to AARO's description, the sensor zooms in on an area of contrast from second 2 to 29, and from second 30 the area blends into the background. The record warns that the media was digitally altered before it reached AARO."
+    },
+    {
+      "role": "documento",
+      "src": "https://www.dvidshub.net/video/embed/1017788",
+      "type": "video",
+      "title": "DOW-UAP-PR125 — captura secundaria de un display de sensor IR, 28 s",
+      "title_en": "DOW-UAP-PR125 — secondary capture of an IR sensor display, 28 s",
+      "source": "US Navy UAPTF, transferido a la AARO en 2022, vía DVIDS",
+      "license": "Dominio público · obra del Gobierno de EE. UU.",
+      "fallbackUrl": "https://www.dvidshub.net/video/1017788",
+      "description": "Video DOW-UAP-PR125, de 28 segundos: captura secundaria, hecha con un aparato de mano, de la pantalla de un sensor infrarrojo, grabada al mismo tiempo que los otros cuatro clips. Según la descripción de la AARO, el área de contraste se desplaza hacia la izquierda entre los segundos 6 y 9, se confunde con el fondo hasta el segundo 15 y luego aparece un área de contraste que el sensor sigue y la mantiene centrada. La ficha advierte que el material fue alterado digitalmente antes de llegar a la AARO.",
+      "description_en": "Video DOW-UAP-PR125, 28 seconds long: a secondary capture, made with a hand-held device, of the screen of an infrared sensor, recorded at the same time as the other four clips. According to AARO's description, the area of contrast moves left from second 6 to 9, blends into the background until second 15 and then an area of contrast appears that the sensor pans to follow and keeps it centered. The record warns that the media was digitally altered before it reached AARO."
+    },
+    {
+      "role": "documento",
       "src": "https://www.dvidshub.net/video/embed/1017791",
       "type": "video",
       "title": "DOW-UAP-PR127 — grabación de mano de un militar, cámara persigue una fuente de luz aparente, 2 min 29 s",
