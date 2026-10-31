@@ -55,26 +55,26 @@
     {
       "name": "AARO — Fiscal Year 2025 Consolidated Annual Report on Unidentified Anomalous Phenomena",
       "url": "https://www.aaro.mil/Portals/136/PDFs/FY25%20UAP%20Annual%20Report/AARO_FY2025_Consolidated_Annual_Report_on_UAP.pdf",
-      "note": "Fuente institucional primaria que documenta el caso del enjambre de Virginia como uno de los 319 reportes UAP recibidos durante el período de reporte FY2025 (junio 2024 - mayo 2025).",
-      "note_en": "Primary institutional source documenting the Virginia swarm case as one of 319 UAP reports received during the FY2025 reporting period (June 2024 - May 2025)."
+      "note": "Fuente institucional primaria que documenta el caso de Virginia como uno de los 319 informes sobre UAP recibidos durante el período de informe del año fiscal 2025 (junio de 2024 - mayo de 2025). El informe no usa la palabra «enjambre».",
+      "note_en": "Primary institutional source documenting the Virginia case as one of 319 UAP reports received during the FY2025 reporting period (June 2024 - May 2025). The report does not use the word \"swarm\"."
     },
     {
       "name": "Pentagon investigating mysterious UAP event reported by the Navy near Virginia's coast | DefenseScoop",
       "url": "https://defensescoop.com/2026/07/21/pentagon-investigating-ufo-uap-event-near-virginia-coast/",
-      "note": "Cobertura periodística especializada en defensa sobre la investigación del Pentágono del evento de Virginia, publicada el 21 de julio de 2026.",
-      "note_en": "Defense-focused press coverage of the Pentagon's investigation of the Virginia event, published July 21, 2026."
+      "note": "Cobertura periodística especializada en defensa sobre la investigación del Pentágono del suceso de Virginia, publicada el 21 de julio de 2026. Es la única fuente que lo describe como «enjambre» (swarming).",
+      "note_en": "Defense-focused press coverage of the Pentagon's investigation of the Virginia event, published July 21, 2026. It is the only source that describes it as \"swarming\"."
     },
     {
       "name": "AARO Releases FY2025 UAP Report | The Black Vault",
       "url": "https://www.theblackvault.com/documentarchive/aaro-releases-fy2025-uap-report-months-after-statutory-deadline-citing-319-new-cases-and-expanded-satellite-analysis/",
-      "note": "Análisis detallado del reporte FY2025 de AARO por archivo especializado en documentación gubernamental UAP, destacando los 319 casos nuevos y el evento de Virginia.",
-      "note_en": "Detailed analysis of AARO's FY2025 report by archive specializing in UAP government documentation, highlighting the 319 new cases and the Virginia event."
+      "note": "Análisis detallado del informe FY2025 de AARO por archivo especializado en documentación gubernamental UAP, destacando los 319 casos nuevos y el suceso de Virginia.",
+      "note_en": "Detailed analysis of AARO's FY2025 report by archive specializing in UAP government documentation, highlighting the 319 new cases and the Virginia case."
     },
     {
       "name": "AARO — Fiscal Year 2025 Consolidated Annual Report on UAP (copia en The Black Vault)",
       "name_en": "AARO — Fiscal Year 2025 Consolidated Annual Report on UAP (copy at The Black Vault)",
       "url": "https://documents2.theblackvault.com/documents/osd/AARO_FY2025_Consolidated_Annual_Report_on_UAP.pdf",
-      "note": "Fuente primaria: p. 5, el único caso marítimo frente a Virginia (unos 100 UAP aéreos y dos sistemas de superficie probablemente no tripulados), investigado activamente con la unidad que lo reportó.",
+      "note": "Fuente primaria: p. 5, el único caso marítimo frente a Virginia (unos 100 UAP aéreos y dos sistemas de superficie probablemente no tripulados), investigado activamente con la unidad que lo informó.",
       "note_en": "Primary source: p. 5, the single maritime case off Virginia (approximately 100 airborne UAP and two likely uncrewed surface systems), actively investigated with the reporting unit."
     }
   ],
@@ -95,8 +95,8 @@
       "role": "contexto",
       "src": "/pursue/virginia-coast-swarm-2025-context.jpg",
       "type": "image",
-      "title": "Contexto · la Estación Naval de Norfolk en 2011, la mayor base naval del mundo y la instalación militar dominante de la costa de Virginia donde se reportó el enjambre",
-      "title_en": "Context · Naval Station Norfolk in 2011, the world's largest naval base and the dominant military installation on the Virginia coast where the swarm was reported",
+      "title": "Contexto · la Estación Naval de Norfolk en 2011, la mayor base naval del mundo y la instalación militar dominante de la costa de Virginia donde se informó de los objetos",
+      "title_en": "Context · Naval Station Norfolk in 2011, the world's largest naval base and the dominant military installation on the Virginia coast where the objects were reported",
       "source": "US Navy 110707-N-XZ912-104, foto de Mass Communication Specialist 1st Class Christopher B. Stoltz · Wikimedia Commons",
       "license": "Dominio público",
       "fallbackUrl": "https://commons.wikimedia.org/wiki/File:US%20Navy%20110707-N-XZ912-104%20An%20aerial%20view%20of%20Norfolk%20Naval%20Station%2C%20the%20largest%20naval%20base%20in%20the%20world.jpg",
@@ -105,7 +105,7 @@
     }
   ],
   "classBasis": {
-    "es": "Ninguna fuente propone una causa: el informe anual de la AARO del año fiscal 2025 dedica al caso tres frases —unidades de la Marina frente a la costa de Virginia, «aproximadamente 100 UAP aéreos y dos sistemas de superficie, probablemente no tripulados», investigación activa con la unidad que lo reportó— y no lo resuelve. Tasa base del mismo informe: la AARO considera que todos los casos resueltos en el periodo «son atribuibles a objetos convencionales como globos, satélites, aves, aviones y sistemas aéreos no tripulados», y envió 191 de los 319 casos al archivo activo por falta de datos.",
+    "es": "Ninguna fuente propone una causa: el informe anual de la AARO del año fiscal 2025 dedica al caso tres frases —unidades de la Marina frente a la costa de Virginia, «aproximadamente 100 UAP aéreos y dos sistemas de superficie, probablemente no tripulados», investigación activa con la unidad que lo informó— y no lo resuelve. Tasa base del mismo informe: la AARO considera que todos los casos resueltos en el periodo «son atribuibles a objetos convencionales como globos, satélites, aves, aviones y sistemas aéreos no tripulados», y envió 191 de los 319 casos al archivo activo por falta de datos.",
     "en": "No source proposes a cause: AARO's fiscal year 2025 annual report devotes three sentences to the case —Navy assets off the coast of Virginia, \"approximately 100 airborne UAP and two, likely uncrewed, surface systems\", active investigation with the reporting unit— and does not resolve it. Base rate from the same report: AARO assesses that \"all resolved cases are attributable to prosaic objects such as balloons, satellites, birds, aircraft, and unmanned aerial systems (UAS)\", and it sent 191 of the 319 cases to its active archive for insufficient data.",
     "source": "AARO — Fiscal Year 2025 Consolidated Annual Report on UAP (jul 2026), pp. 2 y 5, copia en The Black Vault",
     "source_en": "AARO — Fiscal Year 2025 Consolidated Annual Report on UAP (Jul 2026), pp. 2 and 5, copy at The Black Vault",

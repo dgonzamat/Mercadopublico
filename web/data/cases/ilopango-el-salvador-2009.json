@@ -65,6 +65,13 @@
       "name": "AARO — Fiscal Year 2024 Consolidated Annual Report on UAP (14 nov 2024)",
       "name_en": "AARO — Fiscal Year 2024 Consolidated Annual Report on UAP (Nov 14, 2024)",
       "url": "https://media.defense.gov/2024/Nov/14/2003583603/-1/-1/0/FY24-CONSOLIDATED-ANNUAL-REPORT-ON-UAP-508.PDF"
+    },
+    {
+      "name": "McDowell, J. — GCAT, catálogo de objetos espaciales (TSS-1R, 1996-012B)",
+      "name_en": "McDowell, J. — GCAT space-object catalog (TSS-1R, 1996-012B)",
+      "url": "https://planet4589.org/space/gcat/tsv/cat/satcat.tsv",
+      "note": "Da la reentrada del TSS-1R el 20 de marzo de 1996, no el 29 de febrero que recoge Flotilla Aérea.",
+      "note_en": "Gives TSS-1R's reentry as March 20, 1996, not the February 29 reported by Flotilla Aérea."
     }
   ],
   "posterior": {
