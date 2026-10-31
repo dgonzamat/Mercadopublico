@@ -120,7 +120,7 @@
       {
         "id": "B10",
         "title": "24 oct · Capa 2: relato y evidencia. Primero un diagnóstico editorial de los relatos de todas las fichas (estructura, calidad del español y del inglés, coherencia), en solo lectura y por lotes, con nota bien / retoques / reescribir; después se corrigen solo las marcadas, con dos agentes, por tier S, A, B. Se suman las fichas que marque E52 (relato largo, jerga, spanglish, bitácoras, evidence fuera de rango); empieza por las ocho ya reescritas y verificadas (Skinwalker, Tremonton y las de radar) y por los errores de relato anotados al revisar la portada (Kovalyonok y Savinykh, Lubbock y Grudge, Zanfretta, Utsuro-bune, fotos de la serie B del FBI, muletillas de Yukón, Valdés, Bariloche, Ghost rockets y Ovaloid, bitácora de Popocatépetl, Tbilisi/Tiflis, Nueva Jersey)",
-        "state": "en curso. Diagnóstico de los relatos terminado el 25 oct: ninguna ficha está «bien»; cada ficha tiene nota (retoques o reescribir) y la lista de sus frases y contradicciones en el material de trabajo de la sesión (no está en el repo). Lo mecánico (comillas, ortografía estadounidense, fechas) se corrigió de una vez con el barrido y la regla E54. Hecho al 27 oct: todo el Tier S y todo el Tier A marcados como «reescribir», con redactor y verificador independiente y los arreglos contrastados con la fuente (#1182 a #1189); la jerga, el inglés suelto, las bitácoras del redactor y la fórmula «no es X, sino Y» que mide E52 o el informe de deuda quedaron limpios (#1185, #1186, #1192, #1193). El 28 oct se fijó una sola meta, que cada ficha pase una vez por la capa 2, y se cerraron Haynesville, los relatos largos de Skinwalker y Atlántico/Bethune y las primeras tandas de Tier B (#1197 y #1198); las contradicciones y los hallazgos de cada verificador se corrigen dentro de la misma pasada. Falta: el resto de las Tier B y la pasada de retoques de Tier S y A; los porqués de clase largos, que llevan las objeciones; corregir las contradicciones de hecho dentro de esas pasadas, y al cerrar, E52 pasa a ERROR"
+        "state": "hecho el 31 oct. Diagnóstico de los relatos terminado el 25 oct: ninguna ficha está «bien»; cada ficha tiene nota (retoques o reescribir) y la lista de sus frases y contradicciones en el material de trabajo de la sesión (no está en el repo). Lo mecánico (comillas, ortografía estadounidense, fechas) se corrigió de una vez con el barrido y la regla E54. Hecho al 27 oct: todo el Tier S y todo el Tier A marcados como «reescribir», con redactor y verificador independiente y los arreglos contrastados con la fuente (#1182 a #1189); la jerga, el inglés suelto, las bitácoras del redactor y la fórmula «no es X, sino Y» que mide E52 o el informe de deuda quedaron limpios (#1185, #1186, #1192, #1193). El 28 oct se fijó una sola meta, que cada ficha pase una vez por la capa 2, y se cerraron Haynesville, los relatos largos de Skinwalker y Atlántico/Bethune y las primeras tandas de Tier B (#1197 y #1198); las contradicciones y los hallazgos de cada verificador se corrigen dentro de la misma pasada. Falta: el resto de las Tier B y la pasada de retoques de Tier S y A; los porqués de clase largos, que llevan las objeciones; corregir las contradicciones de hecho dentro de esas pasadas, y al cerrar, E52 pasa a ERROR Cerrada el 31 oct: todas las fichas pasaron por la capa 2, los párrafos largos y los porqués de clase largos quedaron limpios y E52 pasó a ERROR."
       },
       {
         "id": "B11",
@@ -145,7 +145,7 @@
       {
         "id": "B15",
         "title": "24 oct · Tanda 2 y 3 de expedientes de Blue Book (Bermudas, Simiutak, Chorwon, Paget; Islandia, Kimpo, costa de Groenlandia, Managua)",
-        "state": "en pausa hasta cerrar las capas de texto"
+        "state": "en curso desde el 31 oct (tandas 2 y 3, con redactor y verificador)"
       },
       {
         "id": "B16",
@@ -155,12 +155,12 @@
       {
         "id": "B17",
         "title": "27 oct · Skinwalker: el contrato DOW-UAP-D111 («Solicitation and Original Order», 22 sep 2008) se cita en la evidencia pero no está en el visor. Está en el Drive del dueño; pesa más que el tope de descarga del conector y no hay copia en archive.org",
-        "state": "espera que el dueño lo parta en trozos menores que el tope de descarga"
+        "state": "resuelto el 31 oct: el contrato estaba en el espejo de archive.org (pursue-uap-documents-2026); embebido en el visor de Skinwalker, recomprimido en gris con la misma capa de texto"
       },
       {
         "id": "B18",
         "title": "27 oct · D105 (Washington y Tremonton 1952): la capa de texto del PDF confirma las citas de la ficha salvo dos, que el OCR no deja leer: «orders of magnitude greater» en la carta de Hollywood y la fecha de la carta de Weber (la respuesta de Fournet la fecha el 2 de agosto y la ficha de Washington dice el 2 de septiembre)",
-        "state": "espera las páginas de esas cartas como imagen; el PDF entero supera el tope de descarga del conector"
+        "state": "resuelto el 31 oct: las cartas salieron del espejo de archive.org (pursue-uap-documents-2026); la carta de Hollywood dice «many times greater» y la de Weber está fechada el 2 de agosto; corregido en Washington 1952"
       }
     ]
   }

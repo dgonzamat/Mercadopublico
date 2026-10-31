@@ -138,7 +138,9 @@ const unquoted = (t) => t.replace(/«[^»]*»|"[^"]*"|“[^”]*”|(?<![\w])'[^
 // Fichas cuya fórmula «no es X, sino Y» se revisó y es un contraste factual
 // (el expediente no es de Blue Book, sino un informe de accidente), no un
 // recurso retórico: no son deuda. Si una deja de usarla, se avisa.
-const FORMULA_REVIEWED = new Set([]);
+const FORMULA_REVIEWED = new Set([
+  "mexico-eclipse-1991", // «Venus no es una estrella, sino un planeta»: lo dice Printy, es un dato
+]);
 for (const [label, re] of Object.entries(SLOP)) {
   const all = cases.filter((c) => re.test(unquoted(prose(c))));
   const reviewed = label.startsWith("fórmula") ? all.filter((c) => FORMULA_REVIEWED.has(c.id)) : [];
