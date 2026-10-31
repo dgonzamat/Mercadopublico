@@ -130,7 +130,7 @@
       {
         "id": "B12",
         "title": "24 oct · Casos ocurridos en el espacio (apollo12-streaks-1969 y similares): el lugar dice «trayecto a la Luna» y las coordenadas siguen en Houston; decidir cómo se representan en el mapa",
-        "state": "resuelto el 30 oct: los 12 casos ocurridos en órbita o rumbo a la Luna salen del mapa (OFF_MAP en build-cases.mjs) y /atlas dice cuántos son"
+        "state": "resuelto el 30 oct: los casos ocurridos en órbita o rumbo a la Luna salen del mapa (OFF_MAP en build-cases.mjs) y /atlas dice cuántos son"
       },
       {
         "id": "B13",
