@@ -1989,7 +1989,7 @@ if (fs.existsSync(regionsPath)) {
 // (oct 2026: citas de Condon, Dash, el embajador en Marruecos y AARO, un hecho
 // histórico y el blog «Enigmatic Ideas») salen del conteo para que la nota solo
 // hable de usos nuevos; si una de ellas pierde todos sus usos, el guard lo dice.
-const HYPE_REVIEWED = new Set(["lakenheath-bentwaters-1956", "morocco-gendarmerie-1976", "mosul-orb-2016", "mystery-airships-1896", "tinley-park-lights-2004"]);
+const HYPE_REVIEWED = new Set(["lakenheath-bentwaters-1956", "morocco-gendarmerie-1976", "mosul-orb-2016", "tinley-park-lights-2004"]);
 {
   const NOTE_RE = /\b(?:el|este) corpus (?:debe|debería|deberá|necesita|tiene que)\b|\bthe corpus (?:must|should|needs)\b|versión anterior de (?:esta|este) (?:ficha|caso)|(?:la|una) ficha anterior|esta misma ficha|versiones anteriores|earlier versions? of this|previous version of this|this same record/i;
   const RANK_RE = /\bprimer[oa]? (?:[\p{L}\p{N}'’-]+ ){0,4}(?:del|en el) corpus\b|corpus's first\b|\bfirst (?:[\p{L}\p{N}'’-]+ ){0,3}(?:case|file) in the corpus\b|\b(?:más|menos) [\p{L}\p{N}'’-]+(?: [\p{L}\p{N}'’-]+){0,3} (?:del|de todo el|en todo el) corpus\b|\bmejor(?:es)? [\p{L}\p{N}'’-]+(?: [\p{L}\p{N}'’-]+){0,3} del corpus\b|corpus's (?:most|least|best|strongest|weakest|clearest|largest|only|anchor)\b|\b(?:most|best|strongest|weakest|largest|longest|shortest|clearest|cleanest|oldest)\b(?: [\p{L}\p{N}'’-]+){0,4} in the (?:entire )?corpus\b|\bcaso ancla del corpus\b|\bancla a [\p{L}\p{N}'’-]+ en el corpus\b|\banchors [\p{L}\p{N}'’-]+ in the corpus\b/iu;
