@@ -2238,6 +2238,12 @@ const HYPE_REVIEWED = new Set(["lakenheath-bentwaters-1956", "morocco-gendarmeri
     const items = [...(c.documents || []).map((d, i) => [`documents[${i}]`, d]), ...(c.primaryDocument ? [["primaryDocument", c.primaryDocument]] : []), ...(c.featuredDoc ? [["featuredDoc", c.featuredDoc]] : [])];
     for (const [k, d] of items) if (!ROLES.has(d.role)) sinPapel.push(`${c.id}#${k}`);
   }
+  // Como mucho dos `prueba` por ficha (31 oct 2026, /blindar): van antes del
+  // relato, y con más el visor esconde lo que importa (el informe del rancho
+  // en Skinwalker quedó oculto tras cuatro modificaciones del contrato). Lo
+  // demás que registra el suceso va como `documento`.
+  const demasiadas = cases.filter((c) => [...(c.documents || []), c.primaryDocument, c.featuredDoc].filter((d) => d && d.role === "prueba").length > 2).map((c) => c.id);
+  if (demasiadas.length) record("ERROR", "data/cases", 0, `E53 más de dos \`prueba\`: ${demasiadas.length} ficha(s) — ${demasiadas.slice(0, 5).join(", ")}${demasiadas.length > 5 ? "…" : ""}. Deja las dos que mejor registran el suceso y pasa el resto a \`documento\`.`);
   if (sinPapel.length) record("ERROR", "data/cases", 0, `E53 elemento visual sin papel: ${sinPapel.length} sin \`role\` válido (prueba | documento | contexto): ${sinPapel.slice(0, 5).join(", ")}${sinPapel.length > 5 ? "…" : ""}.`);
 }
 

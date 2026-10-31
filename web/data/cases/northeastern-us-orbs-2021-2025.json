@@ -48,30 +48,6 @@
   "documents": [
     {
       "role": "prueba",
-      "src": "https://www.dvidshub.net/video/embed/1010263",
-      "type": "video",
-      "title": "FBI-UAP-PR001 — 'Triangle-Orbs', nov 2021: luz única que se resuelve en múltiples luces con rotación errática",
-      "title_en": "FBI-UAP-PR001 — 'Triangle-Orbs', Nov 2021: single light resolving into multiple lights with erratic rotation",
-      "source": "Testigo civil (iPhone 12 Pro), reportado al FBI, vía DVIDS (PURSUE Release 03)",
-      "license": "Dominio público · obra del Gobierno de EE. UU.",
-      "fallbackUrl": "https://www.dvidshub.net/video/1010263",
-      "description": "Video grabado por un testigo civil y remitido al FBI; publicado por el Departamento de Guerra en la tercera entrega de PURSUE. Noviembre de 2021, hacia las 5:00 de la madrugada: una luz brillante cerca del horizonte, a unos 2.000 pies, que pasa de un solo objeto a varias luces con rotación errática y se desplaza de izquierda a derecha. Grabado con un iPhone 12 Pro en la mano, lo que introduce movimiento de cámara.",
-      "description_en": "Video filmed by a civilian witness and sent to the FBI; published by the Department of War in the third PURSUE release. November 2021, around 5:00 a.m.: a bright light near the horizon, about 2,000 feet away, that goes from a single object to several lights with erratic rotation and drifts from left to right. Filmed handheld on an iPhone 12 Pro, which adds camera shake."
-    },
-    {
-      "role": "prueba",
-      "src": "https://www.dvidshub.net/video/embed/1010264",
-      "type": "video",
-      "title": "FBI-UAP-PR002 — 'Red Orb Rotation', mar 2022: dos luces rojas estacionarias, una rota alrededor de la otra",
-      "title_en": "FBI-UAP-PR002 — 'Red Orb Rotation', Mar 2022: two stationary red lights, one rotating around the other",
-      "source": "Testigo civil (iPhone 12 Pro), reportado al FBI, vía DVIDS (PURSUE Release 03)",
-      "license": "Dominio público · obra del Gobierno de EE. UU.",
-      "fallbackUrl": "https://www.dvidshub.net/video/1010264",
-      "description": "Video grabado por un testigo civil y remitido al FBI; publicado por el Departamento de Guerra en la tercera entrega de PURSUE. Marzo de 2022, 19:20: dos luces rojas brillantes cerca del horizonte, a unos 2.500 pies y casi inmóviles. La inferior parece girar lentamente respecto a la superior, de la posición de las 6 a poco más allá de las 9 en la analogía del reloj del informe. El testigo no oyó ningún sonido.",
-      "description_en": "Video filmed by a civilian witness and sent to the FBI; published by the Department of War in the third PURSUE release. March 2022, 7:20 p.m.: two bright red lights near the horizon, about 2,500 feet away and nearly stationary. The lower one appears to rotate slowly relative to the upper one, from the 6 o'clock position to a little past 9 in the report's clock-face analogy. The witness heard no sound."
-    },
-    {
-      "role": "prueba",
       "src": "https://www.dvidshub.net/video/embed/1010267",
       "type": "video",
       "title": "FBI-UAP-PR003 — 'Orbs Over the Pond', oct 2024: esfera 'plasma-like' estática ~45 min, autenticada por el gobierno",
@@ -93,6 +69,30 @@
       "fallbackUrl": "https://www.dvidshub.net/video/1010269",
       "description": "Video grabado por dos testigos civiles y remitido al FBI; publicado en la tercera entrega de PURSUE. Julio de 2025, 21:00: una esfera roja brillante de aproximadamente un metro, con un núcleo blanco del tamaño de una pelota de baloncesto, a unos 25 pies del suelo y a unos 90 pies del testigo. Una segunda esfera idéntica aparece sobre la primera. Mientras el testigo graba con un iPhone 14 Pro Max, ambas se alejan juntas hacia el oeste sobre una línea de árboles y parecen fusionarse a unas 75 yardas.",
       "description_en": "Video filmed by two civilian witnesses and sent to the FBI; published in the third PURSUE release. July 2025, 9:00 p.m.: a bright red sphere about one meter across, with a white core the size of a basketball, about 25 feet off the ground and about 90 feet from the witness. A second, identical sphere appears above the first. While the witness films on an iPhone 14 Pro Max, both move off together to the west over a line of trees and appear to merge at about 75 yards."
+    },
+    {
+      "role": "documento",
+      "src": "https://www.dvidshub.net/video/embed/1010263",
+      "type": "video",
+      "title": "FBI-UAP-PR001 — 'Triangle-Orbs', nov 2021: luz única que se resuelve en múltiples luces con rotación errática",
+      "title_en": "FBI-UAP-PR001 — 'Triangle-Orbs', Nov 2021: single light resolving into multiple lights with erratic rotation",
+      "source": "Testigo civil (iPhone 12 Pro), reportado al FBI, vía DVIDS (PURSUE Release 03)",
+      "license": "Dominio público · obra del Gobierno de EE. UU.",
+      "fallbackUrl": "https://www.dvidshub.net/video/1010263",
+      "description": "Video grabado por un testigo civil y remitido al FBI; publicado por el Departamento de Guerra en la tercera entrega de PURSUE. Noviembre de 2021, hacia las 5:00 de la madrugada: una luz brillante cerca del horizonte, a unos 2.000 pies, que pasa de un solo objeto a varias luces con rotación errática y se desplaza de izquierda a derecha. Grabado con un iPhone 12 Pro en la mano, lo que introduce movimiento de cámara.",
+      "description_en": "Video filmed by a civilian witness and sent to the FBI; published by the Department of War in the third PURSUE release. November 2021, around 5:00 a.m.: a bright light near the horizon, about 2,000 feet away, that goes from a single object to several lights with erratic rotation and drifts from left to right. Filmed handheld on an iPhone 12 Pro, which adds camera shake."
+    },
+    {
+      "role": "documento",
+      "src": "https://www.dvidshub.net/video/embed/1010264",
+      "type": "video",
+      "title": "FBI-UAP-PR002 — 'Red Orb Rotation', mar 2022: dos luces rojas estacionarias, una rota alrededor de la otra",
+      "title_en": "FBI-UAP-PR002 — 'Red Orb Rotation', Mar 2022: two stationary red lights, one rotating around the other",
+      "source": "Testigo civil (iPhone 12 Pro), reportado al FBI, vía DVIDS (PURSUE Release 03)",
+      "license": "Dominio público · obra del Gobierno de EE. UU.",
+      "fallbackUrl": "https://www.dvidshub.net/video/1010264",
+      "description": "Video grabado por un testigo civil y remitido al FBI; publicado por el Departamento de Guerra en la tercera entrega de PURSUE. Marzo de 2022, 19:20: dos luces rojas brillantes cerca del horizonte, a unos 2.500 pies y casi inmóviles. La inferior parece girar lentamente respecto a la superior, de la posición de las 6 a poco más allá de las 9 en la analogía del reloj del informe. El testigo no oyó ningún sonido.",
+      "description_en": "Video filmed by a civilian witness and sent to the FBI; published by the Department of War in the third PURSUE release. March 2022, 7:20 p.m.: two bright red lights near the horizon, about 2,500 feet away and nearly stationary. The lower one appears to rotate slowly relative to the upper one, from the 6 o'clock position to a little past 9 in the report's clock-face analogy. The witness heard no sound."
     },
     {
       "role": "documento",

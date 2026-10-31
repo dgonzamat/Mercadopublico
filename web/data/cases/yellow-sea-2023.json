@@ -103,18 +103,6 @@
   "documents": [
     {
       "role": "prueba",
-      "src": "https://www.dvidshub.net/video/embed/1023406",
-      "type": "video",
-      "title": "DOW-UAP-PR150 · Mar Amarillo 2023, 57 segundos de sensor infrarrojo; incluye la oclusión por la geometría de la plataforma y la frase del recuadro de enfoque (PURSUE Release 06)",
-      "title_en": "DOW-UAP-PR150 · Yellow Sea 2023, 57 seconds of infrared sensor; includes the occlusion by the platform's geometry and the focus-box sentence (PURSUE Release 06)",
-      "source": "Department of War · PURSUE Release 06 (18 sep 2026), vía DVIDS",
-      "license": "Dominio público · obra del Gobierno de EE. UU. (17 USC §105)",
-      "fallbackUrl": "https://www.dvidshub.net/video/1023406/dow-uap-pr150-unresolved-uap-report-yellow-sea-2023",
-      "description": "Clip de sensor infrarrojo de 57 segundos del Mar Amarillo en 2023 (PURSUE, Release 06). Según la descripción oficial, tras cinco segundos sin contenido el área de contraste entra por el borde inferior del cuadro y el sensor la sigue; entre los segundos 52 y 57 la propia plataforma ocluye la vista, desenfoca la imagen y bloquea el lado derecho de la pantalla. La descripción incluye la frase sobre el recuadro rectangular del centro del cuadro: «This display element is a graphical component of the sensor system and does indicate a physical change in the environment», que se contradice a sí misma y aparece idéntica en DOW-UAP-PR133.",
-      "description_en": "Infrared sensor clip, 57 seconds, of the Yellow Sea in 2023 (PURSUE, Release 06). According to the official description, after five seconds with no content the area of contrast enters from the bottom edge of the frame and the sensor tracks it; between seconds 52 and 57 the platform itself occludes the view, blurring the image and blocking the right side of the screen. The description includes the sentence about the rectangular overlay at the center of the frame: \"This display element is a graphical component of the sensor system and does indicate a physical change in the environment,\" which contradicts itself and appears identically in DOW-UAP-PR133."
-    },
-    {
-      "role": "prueba",
       "src": "https://www.dvidshub.net/video/embed/1023410",
       "type": "video",
       "title": "DOW-UAP-PR152 · el clip más largo, 1 minuto 38 segundos (PURSUE Release 06)",
@@ -127,6 +115,18 @@
     },
     {
       "role": "prueba",
+      "src": "https://www.dvidshub.net/video/embed/1023406",
+      "type": "video",
+      "title": "DOW-UAP-PR150 · Mar Amarillo 2023, 57 segundos de sensor infrarrojo; incluye la oclusión por la geometría de la plataforma y la frase del recuadro de enfoque (PURSUE Release 06)",
+      "title_en": "DOW-UAP-PR150 · Yellow Sea 2023, 57 seconds of infrared sensor; includes the occlusion by the platform's geometry and the focus-box sentence (PURSUE Release 06)",
+      "source": "Department of War · PURSUE Release 06 (18 sep 2026), vía DVIDS",
+      "license": "Dominio público · obra del Gobierno de EE. UU. (17 USC §105)",
+      "fallbackUrl": "https://www.dvidshub.net/video/1023406/dow-uap-pr150-unresolved-uap-report-yellow-sea-2023",
+      "description": "Clip de sensor infrarrojo de 57 segundos del Mar Amarillo en 2023 (PURSUE, Release 06). Según la descripción oficial, tras cinco segundos sin contenido el área de contraste entra por el borde inferior del cuadro y el sensor la sigue; entre los segundos 52 y 57 la propia plataforma ocluye la vista, desenfoca la imagen y bloquea el lado derecho de la pantalla. La descripción incluye la frase sobre el recuadro rectangular del centro del cuadro: «This display element is a graphical component of the sensor system and does indicate a physical change in the environment», que se contradice a sí misma y aparece idéntica en DOW-UAP-PR133.",
+      "description_en": "Infrared sensor clip, 57 seconds, of the Yellow Sea in 2023 (PURSUE, Release 06). According to the official description, after five seconds with no content the area of contrast enters from the bottom edge of the frame and the sensor tracks it; between seconds 52 and 57 the platform itself occludes the view, blurring the image and blocking the right side of the screen. The description includes the sentence about the rectangular overlay at the center of the frame: \"This display element is a graphical component of the sensor system and does indicate a physical change in the environment,\" which contradicts itself and appears identically in DOW-UAP-PR133."
+    },
+    {
+      "role": "documento",
       "src": "https://www.dvidshub.net/video/embed/1023404",
       "type": "video",
       "title": "DOW-UAP-PR144 · 27 segundos; el área de contraste ya está en cuadro al abrir el clip (PURSUE Release 06)",
