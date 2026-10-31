@@ -51,16 +51,17 @@ export const REGION_LABELS: Record<Region, { es: string; en: string }> = {
 const COUNTRY_REGION: Record<string, Region> = {
   // Norteamérica
   US: "norteamerica", CA: "norteamerica", MX: "norteamerica", PR: "norteamerica",
+  GL: "norteamerica", BM: "norteamerica",
   // Latinoamérica (Centro, Sur y Caribe hispano)
   AR: "latinoamerica", BO: "latinoamerica", BR: "latinoamerica", CL: "latinoamerica",
   CO: "latinoamerica", CR: "latinoamerica", EC: "latinoamerica", PE: "latinoamerica",
   UY: "latinoamerica", VE: "latinoamerica", PA: "latinoamerica", GT: "latinoamerica",
-  CU: "latinoamerica", SV: "latinoamerica",
+  CU: "latinoamerica", SV: "latinoamerica", NI: "latinoamerica",
   // Europa
   BE: "europa", CZ: "europa", ES: "europa", FR: "europa", GB: "europa", IT: "europa",
   NO: "europa", SE: "europa", DE: "europa", NL: "europa", PT: "europa", IE: "europa",
   PL: "europa", CH: "europa", AT: "europa", DK: "europa", FI: "europa",
-  GR: "europa", RO: "europa", UA: "europa",
+  GR: "europa", RO: "europa", UA: "europa", IS: "europa",
   // Asia (incluye Rusia/Eurasia)
   RU: "asia", IN: "asia", PK: "asia", PH: "asia", JP: "asia", CN: "asia", KR: "asia", ID: "asia", TH: "asia",
   SU: "asia", KZ: "asia", AF: "asia", VN: "asia", MY: "asia", KP: "asia",
