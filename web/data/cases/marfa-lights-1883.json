@@ -55,14 +55,16 @@
       "note_en": "Observation campaign correlating the lights with headlights on US Route 67."
     },
     {
-      "name": "Texas State Highway / Marfa Lights Viewing Area — registro del mirador oficial",
-      "note": "Documenta la institucionalización del fenómeno como atractivo turístico.",
-      "note_en": "Documents the institutionalization of the phenomenon as a tourist attraction."
+      "name": "Handbook of Texas (TSHA) — «Marfa Lights»: mirador oficial y centro de visitantes",
+      "note": "Documenta la institucionalización del fenómeno como atractivo turístico (Handbook of Texas: mirador del Departamento de Transporte en la US-90 y centro de visitantes de 2003).",
+      "note_en": "Documents the institutionalization of the phenomenon as a tourist attraction (Handbook of Texas: Department of Transportation viewing area on US 90 and the 2003 visitor center).",
+      "url": "https://www.tshaonline.org/handbook/entries/marfa-lights"
     },
     {
       "name": "Texas Monthly / cobertura periodística histórica de las Luces de Marfa",
       "note": "Recoge la tradición desde 1883 y el debate sobre las explicaciones.",
-      "note_en": "Covers the tradition since 1883 and the debate over explanations."
+      "note_en": "Covers the tradition since 1883 and the debate over explanations.",
+      "url": "https://www.texasmonthly.com/articles/the-truth-is-out-there/"
     },
     {
       "name": "K. D. Stephan, J. Bunnell et al., «Quantitative intensity and location measurements of an intense long-duration luminous object near Marfa, Texas», Journal of Atmospheric and Solar-Terrestrial Physics 73 (2011)",
@@ -75,6 +77,13 @@
     {
       "name": "Paul Moran, «The Mystery of the Texas Ghost Light», Coronet 42(3), julio de 1957 (primer relato publicado)",
       "name_en": "Paul Moran, 'The Mystery of the Texas Ghost Light', Coronet 42(3), July 1957 (first published account)"
+    },
+    {
+      "name": "K. D. Stephan et al., «Spectroscopy applied to observations of terrestrial light sources of uncertain origin», American Journal of Physics 77(8), 697-703 (2009)",
+      "name_en": "K. D. Stephan et al., \"Spectroscopy applied to observations of terrestrial light sources of uncertain origin\", American Journal of Physics 77(8), 697-703 (2009)",
+      "url": "https://doi.org/10.1119/1.3130609",
+      "note": "Campaña de espectroscopia de Texas State en las luces de Marfa.",
+      "note_en": "Texas State spectroscopy campaign on the Marfa lights."
     }
   ],
   "documents": [
@@ -106,8 +115,8 @@
   "classBasis": {
     "es": "El equipo de la Sociedad de Estudiantes de Física de la Universidad de Texas en Dallas concluyó en 2004 que todas las luces observadas durante cuatro noches al suroeste del mirador podían atribuirse con fiabilidad a faros de automóviles que circulaban por la US-67 entre Marfa y Presidio, y reprodujo una luz de Marfa haciendo destellar los faros de un vehículo aparcado en esa carretera. La campaña espectroscópica de Texas State (2009) identificó también faros y pequeñas hogueras, pero dejó abierta la naturaleza de las luces «genuinas», que no observó.",
     "en": "The University of Texas at Dallas Society of Physics Students team concluded in 2004 that all the lights observed over four nights southwest of the view park could be reliably attributed to automobile headlights travelling along US 67 between Marfa and Presidio, and reproduced a Marfa light by flashing the headlights of a vehicle parked on that road. The Texas State spectroscopic campaign (2009) also identified headlights and small fires, but left open the nature of the \"genuine\" lights, which it did not observe.",
-    "source": "Stolyarov, Klenzing, Roddy y Heelis, «An Experimental Analysis of the Marfa Lights», UTD Society of Physics Students (2004), según la reseña de Wikipedia; K. D. Stephan et al., American Journal of Physics 77 (2009) 697",
-    "source_en": "Stolyarov, Klenzing, Roddy and Heelis, “An Experimental Analysis of the Marfa Lights”, UTD Society of Physics Students (2004), per Wikipedia's summary; K. D. Stephan et al., American Journal of Physics 77 (2009) 697",
+    "source": "Stolyarov, Klenzing, Roddy y Heelis, «An Experimental Analysis of the Marfa Lights», UTD Society of Physics Students (2004), según la reseña de Wikipedia; K. D. Stephan et al., «Spectroscopy applied to observations of terrestrial light sources of uncertain origin», American Journal of Physics 77(8), 697 (2009)",
+    "source_en": "Stolyarov, Klenzing, Roddy and Heelis, “An Experimental Analysis of the Marfa Lights”, UTD Society of Physics Students (2004), per Wikipedia's summary; K. D. Stephan et al., “Spectroscopy applied to observations of terrestrial light sources of uncertain origin”, American Journal of Physics 77(8), 697 (2009)",
     "url": "https://en.wikipedia.org/wiki/Marfa_lights"
   },
   "evidenceReviewed": "2026-10-04"

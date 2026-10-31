@@ -49,7 +49,7 @@
       "description_en": "Three-page FBI FD-302 form summarizing the witness's October 2025 interview about what he saw over Colorado Springs in October 2023. Names, the day and several places are redacted, and the third page is fully redacted. It records his account, his estimates of size, altitude and speed and the call to his wife, and carries the warning that it \"contains neither recommendations nor conclusions of the FBI\". Released in PURSUE Release 05."
     },
     {
-      "role": "prueba",
+      "role": "contexto",
       "src": "/pursue/FBI-UAP-D031_Digital-Rendering_Large-Triangle-with-Red-Lights_2023.jpg",
       "type": "image",
       "title": "FBI-UAP-D031 — representación digital del objeto",

@@ -47,8 +47,8 @@
   ],
   "sources": [
     {
-      "name": "Proyecto Blue Book — expediente «2 December 1950, Kenya, Africa» (ficha e informe R-750-50 del agregado militar en Adís Abeba), NARA, espejo en archive.org",
-      "name_en": "Project Blue Book — file \"2 December 1950, Kenya, Africa\" (record card and report R-750-50 from the military attaché in Addis Ababa), NARA, archive.org mirror",
+      "name": "Proyecto Blue Book — expediente «2 December 1950, Kenya, Africa» (ficha e informe R-750-50 del Ejército de EE. UU., desde Etiopía), NARA, espejo en archive.org",
+      "name_en": "Project Blue Book — file \"2 December 1950, Kenya, Africa\" (record card and report R-750-50 from the U.S. Army, sent from Ethiopia), NARA, archive.org mirror",
       "url": "https://archive.org/details/1950-12-9619313-Kenya-Africa-"
     },
     {
@@ -62,8 +62,8 @@
       "role": "documento",
       "src": "/pursue/blue-book-nanyuki-kenya-1950.pdf",
       "type": "pdf",
-      "title": "Expediente de Blue Book de Nanyuki, Kenia (diciembre de 1950): ficha e informe del agregado militar, 4 págs.",
-      "title_en": "Blue Book file on Nanyuki, Kenya (December 1950): record card and the military attaché's report, 4 pp.",
+      "title": "Expediente de Blue Book de Nanyuki, Kenia (diciembre de 1950): ficha e informe del Ejército de EE. UU. desde Etiopía, 4 págs.",
+      "title_en": "Blue Book file on Nanyuki, Kenya (December 1950): record card and the U.S. Army report sent from Ethiopia, 4 pp.",
       "source": "Proyecto Blue Book (NARA), vía archive.org",
       "license": "Dominio público · obra del Gobierno de EE. UU.",
       "fallbackUrl": "https://archive.org/details/1950-12-9619313-Kenya-Africa-",
@@ -73,8 +73,8 @@
   ],
   "evidenceReviewed": "2026-09-27",
   "classBasis": {
-    "es": "Ninguna fuente propone una causa: el informe R-750-50 del agregado militar reproduce el relato del East African Standard con valoración C-3 y sin análisis, y la ficha de Blue Book no registra conclusión (una nota manuscrita parece decir «no identificado»). El testigo pensó un momento en una pelusa de cardo y lo descartó al compararlo con un pájaro; la semilla con vilano que discute esta ficha es una lectura propia. La falta de un análisis publicado no es prueba contra una causa ordinaria: en 2024 AARO resolvió 174 casos, todos como «objetos convencionales» (globos, aves, drones, satélites, aviones), aunque «muchos otros casos siguen sin resolver».",
-    "en": "No source proposes a cause: the military attaché's report R-750-50 reproduces the East African Standard account with a C-3 rating and no analysis, and the Blue Book card records no conclusion (a handwritten note appears to read \"unidentified\"). The witness briefly thought of thistledown and dismissed it by comparison with a bird; the seed tuft this file discusses is its own reading. The absence of a published analysis is not evidence against an ordinary cause: AARO's 2024 report finalized \"all 174 cases\" as \"resolved to prosaic objects including balloons, birds, UAS, satellites, and aircraft\", though \"many other cases remain unresolved\".",
+    "es": "Ninguna fuente propone una causa: el informe R-750-50 del Ejército de EE. UU. desde Etiopía reproduce el relato del East African Standard con valoración C-3 y sin análisis, y la ficha de Blue Book no registra conclusión (una nota manuscrita parece decir «no identificado»). El testigo pensó un momento en una pelusa de cardo y lo descartó al compararlo con un pájaro; la semilla con vilano que discute esta ficha es una lectura propia. La falta de un análisis publicado no es prueba contra una causa ordinaria: en 2024 AARO resolvió 174 casos, todos como «objetos convencionales» (globos, aves, drones, satélites, aviones), aunque «muchos otros casos siguen sin resolver».",
+    "en": "No source proposes a cause: report R-750-50 from the U.S. Army, sent from Ethiopia, reproduces the East African Standard account with a C-3 rating and no analysis, and the Blue Book card records no conclusion (a handwritten note appears to read \"unidentified\"). The witness briefly thought of thistledown and dismissed it by comparison with a bird; the seed tuft this file discusses is its own reading. The absence of a published analysis is not evidence against an ordinary cause: AARO's 2024 report finalized \"all 174 cases\" as \"resolved to prosaic objects including balloons, birds, UAS, satellites, and aircraft\", though \"many other cases remain unresolved\".",
     "source": "Proyecto Blue Book — expediente «2 December 1950, Kenya, Africa» (NARA, espejo en archive.org) · AARO — Fiscal Year 2024 Consolidated Annual Report on UAP (14 nov 2024), tasa base",
     "source_en": "Project Blue Book — file “2 December 1950, Kenya, Africa” (NARA, mirror at archive.org) · AARO — Fiscal Year 2024 Consolidated Annual Report on UAP (14 Nov 2024), base rate",
     "url": "https://media.defense.gov/2024/Nov/14/2003583603/-1/-1/0/FY24-CONSOLIDATED-ANNUAL-REPORT-ON-UAP-508.PDF"
