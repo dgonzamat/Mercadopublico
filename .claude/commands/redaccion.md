@@ -52,7 +52,9 @@ Aviones muy conocidos (B-52, DC-3) pueden ir en el título si son el centro del 
 
 ## 5. Español
 
-- **Norma**: español neutro, RAE y Fundéu. Sin voseo ni regionalismos. Donde la RAE admite dos formas, se usa una sola en todo el corpus: **«video»** (sin tilde, la forma del español de América y la mayoritaria en el corpus; unificado el 24 oct 2026).
+- **Norma**: español latinoamericano culto de prensa (referencia: BBC Mundo), RAE y Fundéu. Sin vocabulario de España: coche → auto, ordenador → computadora, aparcar → estacionar, pliego → bases de la licitación, emitir una serie → transmitirla, de aquí a → hasta.
+- **Ritmo**: frases de 15–25 palabras de media, alguna hasta ~35; ninguna apila más de tres datos. Una sigla que el lector no necesita se quita en vez de glosarla dentro de la frase. La calidad la audita `/auditar-prosa` (prueba del lector + rúbrica) con la sonda `audit-prosa.mjs` como triaje.
+- Sin voseo ni regionalismos. Donde la RAE admite dos formas, se usa una sola en todo el corpus: **«video»** (sin tilde, la forma del español de América y la mayoritaria en el corpus; unificado el 24 oct 2026).
 - **Comillas**: «» y, dentro, “”. Las citas en inglés van literales entre «» y se traducen o glosan si el lector las necesita. Nunca comillas simples rectas ('así') como comillas: el apóstrofo solo va dentro de una palabra o un nombre (O'Brien). *(enforzado: E54.)*
 - **Cifras**: punto de millar y coma decimal (21.948.810; 3,5); «EE. UU.» con espacio; unidades con espacio (50 pies, 22 km); siglos en romanos.
 - **Nada de spanglish**: *paper* → artículo; *metadata* → metadatos; *release* → entrega o publicación; *disclosure* → revelación; *sole-source* → adjudicación directa; *debriefing* → informe o interrogatorio posterior; *briefing* → sesión informativa; *peer-reviewed* → revisado por pares; *timeline* → cronología.
@@ -80,6 +82,8 @@ Aviones muy conocidos (B-52, DC-3) pueden ir en el título si son el centro del 
 - **Exagerar el misterio**: cada maniobra, cifra o testigo con nombre necesita su fuente primaria. Si fue una luz, se dice «una luz».
 
 ## 8. Antes de entregar
+
+0. Si tu texto cambia la evidencia que recoge la ficha (un dato corregido, uno nuevo comprobado en la fuente, una objeción que vuelve o que sale), dilo en tu informe: esa ficha pasa después por la revisión de la clasificación (`posterior`, `classBasis`), que tú no tocas.
 
 1. Lee el título y el resumen como si no supieras nada: ¿se entienden a la primera?
 2. Lee el relato en voz alta: ¿hay alguna frase que tengas que releer? Reescríbela.
