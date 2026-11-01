@@ -163,5 +163,35 @@
         "state": "resuelto el 31 oct: las cartas salieron del espejo de archive.org (pursue-uap-documents-2026); la carta de Hollywood dice «many times greater» y la de Weber está fechada el 2 de agosto; corregido en Washington 1952"
       }
     ]
+  },
+  {
+    "group": "Calidad de la prosa (nov 2026)",
+    "items": [
+      {
+        "id": "P1",
+        "title": "Reescribir el resto de las fichas con el método del lote R1 (tools/reescritura): plan, fuente primaria, verificador, lector Opus, segunda pasada y revisión de la clasificación si cambia la evidencia",
+        "state": "pendiente; decidir si se hace con agentes o con la API por lotes (requiere una clave de API como secreto del entorno). Prioridad Tier S, luego A y B"
+      },
+      {
+        "id": "P2",
+        "title": "Tercera pasada del lote R1 con los retoques de los lectores: Nimitz (siglas y testigos secundarios; «dos semanas» frente a un ejercicio de seis días; el ejercicio de tiro del Louisville frente a «sin pruebas de armas»), Lake Huron (cuenta de meses), Washington 1952 («both cases», el comentario del B-25), Skinwalker (qué fecha de fin del programa acepta), unidades mezcladas",
+        "state": "pendiente"
+      },
+      {
+        "id": "P3",
+        "title": "Verificación independiente de la prosa de la Armada de Chile corregida con el informe IPACO y de KONA BLUE en Skinwalker, que entraron después del verificador",
+        "state": "pendiente"
+      },
+      {
+        "id": "P4",
+        "title": "Inglés: el punto y la coma van fuera de las comillas (estilo británico) en todo el texto inglés; pasarlo al estilo estadounidense sería un barrido mecánico",
+        "state": "espera decisión del dueño"
+      },
+      {
+        "id": "P5",
+        "title": "PDF de respaldo del lote R1 (tools/reescritura/pdf.mjs)",
+        "state": "no generado por decisión del dueño; la herramienta está lista"
+      }
+    ]
   }
 ]
