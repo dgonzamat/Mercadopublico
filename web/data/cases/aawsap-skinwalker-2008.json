@@ -1,8 +1,8 @@
 {
   "id": "aawsap-skinwalker-2008",
   "num": 39,
-  "name": "Skinwalker Ranch · AAWSAP y experimentos de campo",
-  "name_en": "Skinwalker Ranch · AAWSAP and field experiments",
+  "name": "Rancho Skinwalker · el Pentágono paga por estudiar sus fenómenos",
+  "name_en": "Skinwalker Ranch · the Pentagon pays to study its phenomena",
   "year_start": 2008,
   "year_end": 2010,
   "country": "US",
@@ -11,14 +11,14 @@
   "location": {
     "lat": 40.25,
     "lng": -109.88,
-    "place": "Skinwalker Ranch, Uintah Basin, Utah",
+    "place": "Rancho Skinwalker, cuenca del Uintah, Utah",
     "place_en": "Skinwalker Ranch, Uintah Basin, Utah"
   },
   "tier": "A",
   "epistemicStatus": "documented",
   "probability": 46,
-  "summary": "Programa del Departamento de Defensa de EE. UU. (2008–2010, unos 22 millones de dólares) que impulsó el senador Harry Reid, contrató la Agencia de Inteligencia de Defensa (DIA) y ejecutó BAASS, de Robert Bigelow, en parte en el rancho Skinwalker (Utah). Encargó 38 informes de referencia (DIRD) sobre física exótica y efectos biológicos; se han publicado 37. Lo documentan contratos, recibos y testimonios bajo declaración; según sus participantes, continuó como AATIP, asociado a Luis Elizondo. Ninguna de las tres campañas de medición del rancho (NIDS, BAASS y el equipo de Brandon Fugal) ha dado un resultado concluyente revisado por pares.",
-  "summary_en": "A U.S. Department of Defense program (2008–2010, about $22 million) pushed by Senator Harry Reid, contracted by the Defense Intelligence Agency (DIA) and carried out by Robert Bigelow's company BAASS, partly at Skinwalker Ranch, Utah. It commissioned 38 reference reports (DIRDs) on exotic physics and biological effects; 37 have been published. Contracts, receipts and testimony under declaration document it; according to its participants, it continued as AATIP, associated with Luis Elizondo. None of the three measurement campaigns at the ranch (NIDS, BAASS and Brandon Fugal's team) has produced a conclusive peer-reviewed result.",
+  "summary": "En 1994 una familia de la cuenca del Uintah (Utah) contó haber visto en su rancho luces en el cielo, reses mutiladas y criaturas extrañas. El empresario Robert Bigelow compró el rancho en 1996, y entre 2008 y 2010 su empresa lo estudió con dinero del Departamento de Defensa: un programa (AAWSAP) de unos 22 millones de dólares que impulsó el senador Harry Reid y contrató la Agencia de Inteligencia de Defensa. Encargó además 38 informes sobre física exótica, 37 ya publicados, y según sus participantes siguió como el AATIP, revelado en 2017. Ninguna de las tres campañas de medición en el rancho ha dado un resultado revisado por pares.",
+  "summary_en": "In 1994 a family in Utah's Uintah Basin said they had seen lights in the sky, mutilated cattle and strange creatures on their ranch. Businessman Robert Bigelow bought the ranch in 1996, and from 2008 to 2010 his company studied it with Defense Department money: a program (AAWSAP) worth about $22 million, pushed by Senator Harry Reid and contracted by the Defense Intelligence Agency. It also commissioned 38 reports on exotic physics, 37 of them now released, and according to its participants it continued as AATIP, revealed in 2017. None of the three measurement campaigns at the ranch has produced a peer-reviewed result.",
   "patterns": [
     "8a",
     "8g",
