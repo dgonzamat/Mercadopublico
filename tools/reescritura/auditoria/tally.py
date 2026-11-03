@@ -19,9 +19,13 @@ for t, i in m["fichas"]:
         r = re.findall(r"VEREDICTO-UI:\s*\**\s*(BIEN|AJUSTAR|REHACER)", tu, re.I); ui = r[-1].upper() if r else None
         defs += [{"gravedad": g.upper(), "tipo": ty.strip().lower(), "detalle": de.strip()[:300]}
                  for g, ty, de in re.findall(r"DEFECTO:\s*\**\s*(ALTA|MEDIA|BAJA)\s*\|\s*(ui-[^|\n]+?)\s*\|\s*([^\n]+)", tu, re.I)]
+    # Lo que se repite en todas las fichas se registra una vez como transversal (dash.py), no por ficha.
+    TRANSV = re.compile(r"pie (del sitio |de página )?(sale |va |est[aá] )?(entero )?en inglés|footer|THE PROJECT|\bDEV\b|cookies|#418|hidrataci|Sin caus|r[oó]tulo[^|]{0,40}(barra|reparto)[^|]{0,40}cort|(barra|reparto)[^|]{0,60}cortad", re.I)
+    for d_ in defs:
+        if d_["tipo"].startswith("ui-") and TRANSV.search(d_["detalle"]): d_["tipo"] = "ui-transversal"
     sev = lambda ds: next((g for g in ("ALTA", "MEDIA", "BAJA") if any(d["gravedad"] == g for d in ds)), "NINGUNA")
     grav = sev([d for d in defs if not d["tipo"].startswith("ui-")])  # prosa y página se miden aparte
-    grav_ui = sev([d for d in defs if d["tipo"].startswith("ui-")]) if ui else None
+    grav_ui = sev([d for d in defs if d["tipo"].startswith("ui-") and d["tipo"] != "ui-transversal"]) if ui else None
     if v == "REESCRIBIR": grav = "ALTA"
     res.append({"id": i, "tier": t, "veredicto": v, "veredicto_ui": ui, "gravedad": grav, "gravedad_ui": grav_ui, "defectos": defs})
 falta = [r["id"] for r in res if not r["veredicto"]]

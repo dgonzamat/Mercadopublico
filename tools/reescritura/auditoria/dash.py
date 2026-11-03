@@ -34,6 +34,9 @@ trans = [
  {"hallazgo": "El aviso de cookies sale en inglés en todo el espejo /es: se dibuja en el layout raíz, fuera del contenedor que fija el español", "factor": "página", "gravedad": "ALTA", "alcance": "todas las páginas /es", "detectado": "2026-11-03", "estado": "Pendiente"},
  {"hallazgo": "Error de hidratación de React #418: el HTML estático no coincide con el primer render del navegador", "factor": "página", "gravedad": "MEDIA", "alcance": "todas las páginas probadas (fichas, portada, /es y raíz)", "detectado": "2026-11-03", "estado": "Pendiente"},
  {"hallazgo": "El rótulo de la barra de «Qué fue» se corta en el móvil («Sin causa c…», «Causa natural o hu…»)", "factor": "página", "gravedad": "BAJA", "alcance": "fichas con reparto de clases", "detectado": "2026-11-03", "estado": "Pendiente"},
+ {"hallazgo": "El pie del sitio pasa a inglés en las fichas en español al cargar la página: el HTML estático está en español y el navegador lo cambia (ligado al error #418)", "factor": "página", "gravedad": "ALTA", "alcance": "todas las fichas /es revisadas cuyo pie entró en las capturas", "detectado": "2026-11-03", "estado": "Pendiente"},
+ {"hallazgo": "Nombres internos de campos (whatHappened, whyMatters, classBasis…) a la vista en notas de fuentes y textos: 34 menciones en 17 fichas, medido en el repo", "factor": "página", "gravedad": "ALTA", "alcance": "17 fichas", "detectado": "2026-11-03", "estado": "Pendiente"},
+ {"hallazgo": "Imágenes de Commons enlazadas al archivo original sin ?width=: Wikimedia respondió 429 y el memorándum de Halt no cargó en Rendlesham", "factor": "página", "gravedad": "MEDIA", "alcance": "3 fichas (Rendlesham, Roswell, Teherán)", "detectado": "2026-11-03", "estado": "Pendiente"},
 ]
 for k, v in {"fichas": fichas, "defectos": defectos, "cobertura": cob, "transversales": trans}.items():
     json.dump(v, open(f"{O}/{k}.json", "w"), ensure_ascii=False)
