@@ -39,6 +39,7 @@ trans = [
  {"hallazgo": "Imágenes de Commons que no cargan en las capturas (Halt en Rendlesham, Varginha): Wikimedia responde 429 a este contenedor también en miniaturas, así que no está probado que fallen para los lectores; queda por comprobar desde otra red", "factor": "página", "gravedad": "BAJA", "alcance": "sin confirmar", "detectado": "2026-11-03", "estado": "Por verificar"},
  {"hallazgo": "Las etiquetas de «Fisionomía de la entidad» muestran el identificador interno junto al nombre («gris Gris», «sin-forma», «robotica»): el componente pinta el slug a propósito", "factor": "página", "gravedad": "MEDIA", "alcance": "35 fichas con fisionomía, medido en el repo", "detectado": "2026-11-03", "estado": "Pendiente"},
  {"hallazgo": "La tarjeta de «Actores asociados» se sale por la derecha en el móvil y corta su texto", "factor": "página", "gravedad": "MEDIA", "alcance": "visto en 3 fichas (Cisco Grove, Napolitano, Valdés); falta medirlo en todas", "detectado": "2026-11-03", "estado": "Pendiente"},
+ {"hallazgo": "Comillas simples rectas ('…') en los títulos de fuentes: 341 fuentes en 168 fichas, medido en el repo. Puede ser deliberado (el título se cita literal); decisión del dueño", "factor": "página", "gravedad": "BAJA", "alcance": "168 fichas", "detectado": "2026-11-03", "estado": "Espera al dueño"},
 ]
 for k, v in {"fichas": fichas, "defectos": defectos, "cobertura": cob, "transversales": trans}.items():
     json.dump(v, open(f"{O}/{k}.json", "w"), ensure_ascii=False)
