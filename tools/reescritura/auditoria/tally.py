@@ -20,7 +20,7 @@ falta = [r["id"] for r in res if not r["veredicto"]]
 if falta: sys.exit(f"sin veredicto: {falta}")
 h = f"{S}/muestras/historial.json"
 hist = json.load(open(h)) if os.path.exists(h) else []
-hist = [x for x in hist if x["fecha"] != m["fecha"]] + [{"fecha": m["fecha"], "fichas": res}]
+hist = sorted([x for x in hist if x["fecha"] != m["fecha"]] + [{"fecha": m["fecha"], "fichas": res}], key=lambda x: x["fecha"])
 json.dump(hist, open(h, "w"), ensure_ascii=False, indent=1)
 from collections import Counter
 print(m["fecha"], Counter(r["veredicto"] for r in res), Counter(r["gravedad"] for r in res), Counter(d["tipo"] for r in res for d in r["defectos"]).most_common(6))
