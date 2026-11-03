@@ -17,6 +17,7 @@ Después de las respuestas, lista cada defecto que encontraste, uno por línea, 
 `DEFECTO: <ALTA|MEDIA|BAJA> | <tipo> | <frase citada o descripción breve>`
 - ALTA (hechos y coherencia): el texto se contradice, un recuento no cuadra entre resumen y relato, alguien aparece sin presentar, una cifra, fecha u hora no se puede situar, o el texto está roto (rutas web o código a la vista, frase sin verbo). Tipos: contradiccion, recuento, referente, cifra, roto.
 - MEDIA (estructura y selección): se repite lo mismo en varias secciones, «Por qué importa» resume en vez de aportar, lo más revelador queda escondido al final, el texto transcribe el registro (horas, oficinas, trámites) en vez de contar el caso, un párrafo no aporta. Tipos: repeticion, porque-importa, orden, transcripcion, relleno.
+- ALTA exige que el defecto esté en el texto y lo pueda comprobar cualquiera que lo lea: dos frases que dicen cosas incompatibles, un número que no cuadra con otro número del mismo texto, una persona nombrada sin presentar. Si es una duda tuya, algo que supones o algo que te gustaría saber, no es ALTA: márcalo MEDIA con tipo `duda`.
 - BAJA (estilo): frases demasiado largas o enredadas, siglas sin explicar, unidades mezcladas, palabras de España o calcos. Tipos: frase, siglas, unidades, vocabulario.
 
 La ÚLTIMA línea de cada archivo debe ser exactamente `VEREDICTO: APROBADA`, `VEREDICTO: RETOCAR` o `VEREDICTO: REESCRIBIR`.
