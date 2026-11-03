@@ -13,9 +13,17 @@ for t, i in m["fichas"]:
         txt = open(f).read()
     defs = [{"gravedad": g.upper(), "tipo": ty.strip().lower(), "detalle": de.strip()[:300]}
             for g, ty, de in re.findall(r"DEFECTO:\s*\**\s*(ALTA|MEDIA|BAJA)\s*\|\s*([^|\n]+?)\s*\|\s*([^\n]+)", txt if os.path.exists(f) else "", re.I)]
-    grav = next((g for g in ("ALTA", "MEDIA", "BAJA") if any(d["gravedad"] == g for d in defs)), "NINGUNA")
+    fu = f"{d}/lector/{i}-ui.md"; ui = None
+    if os.path.exists(fu):
+        tu = open(fu).read()
+        r = re.findall(r"VEREDICTO-UI:\s*\**\s*(BIEN|AJUSTAR|REHACER)", tu, re.I); ui = r[-1].upper() if r else None
+        defs += [{"gravedad": g.upper(), "tipo": ty.strip().lower(), "detalle": de.strip()[:300]}
+                 for g, ty, de in re.findall(r"DEFECTO:\s*\**\s*(ALTA|MEDIA|BAJA)\s*\|\s*(ui-[^|\n]+?)\s*\|\s*([^\n]+)", tu, re.I)]
+    sev = lambda ds: next((g for g in ("ALTA", "MEDIA", "BAJA") if any(d["gravedad"] == g for d in ds)), "NINGUNA")
+    grav = sev([d for d in defs if not d["tipo"].startswith("ui-")])  # prosa y página se miden aparte
+    grav_ui = sev([d for d in defs if d["tipo"].startswith("ui-")]) if ui else None
     if v == "REESCRIBIR": grav = "ALTA"
-    res.append({"id": i, "tier": t, "veredicto": v, "gravedad": grav, "defectos": defs})
+    res.append({"id": i, "tier": t, "veredicto": v, "veredicto_ui": ui, "gravedad": grav, "gravedad_ui": grav_ui, "defectos": defs})
 falta = [r["id"] for r in res if not r["veredicto"]]
 if falta: sys.exit(f"sin veredicto: {falta}")
 h = f"{S}/muestras/historial.json"
