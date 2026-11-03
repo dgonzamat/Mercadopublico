@@ -20,7 +20,7 @@ for t, i in m["fichas"]:
         defs += [{"gravedad": g.upper(), "tipo": ty.strip().lower(), "detalle": de.strip()[:300]}
                  for g, ty, de in re.findall(r"DEFECTO:\s*\**\s*(ALTA|MEDIA|BAJA)\s*\|\s*(ui-[^|\n]+?)\s*\|\s*([^\n]+)", tu, re.I)]
     # Lo que se repite en todas las fichas se registra una vez como transversal (dash.py), no por ficha.
-    TRANSV = re.compile(r"pie (del sitio |de página )?(sale |va |est[aá] )?(entero )?en inglés|footer|THE PROJECT|\bDEV\b|cookies|#418|hidrataci|Sin caus|r[oó]tulo[^|]{0,40}(barra|reparto)[^|]{0,40}cort|(barra|reparto)[^|]{0,60}cortad", re.I)
+    TRANSV = re.compile(r"pie (del sitio |de página )?(sale |va |est[aá] )?(entero )?en inglés|footer|THE PROJECT|\bDEV\b|cookies|#418|hidrataci|Sin caus|r[oó]tulo[^|]{0,40}(barra|reparto)[^|]{0,40}cort|(barra|reparto)[^|]{0,60}cortad|fisionom|(c[oó]digo|identificador) interno «(sin-forma|robotica|gris|humanoide|[a-z-]+)»", re.I)
     for d_ in defs:
         if d_["tipo"].startswith("ui-") and TRANSV.search(d_["detalle"]): d_["tipo"] = "ui-transversal"
     sev = lambda ds: next((g for g in ("ALTA", "MEDIA", "BAJA") if any(d["gravedad"] == g for d in ds)), "NINGUNA")

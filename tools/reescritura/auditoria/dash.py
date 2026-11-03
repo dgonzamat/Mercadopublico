@@ -37,6 +37,8 @@ trans = [
  {"hallazgo": "El pie del sitio pasa a inglés en las fichas en español al cargar la página: el HTML estático está en español y el navegador lo cambia (ligado al error #418)", "factor": "página", "gravedad": "ALTA", "alcance": "todas las fichas /es revisadas cuyo pie entró en las capturas", "detectado": "2026-11-03", "estado": "Pendiente"},
  {"hallazgo": "Nombres internos de campos (whatHappened, whyMatters, classBasis…) a la vista en notas de fuentes y textos: 34 menciones en 17 fichas, medido en el repo", "factor": "página", "gravedad": "ALTA", "alcance": "17 fichas", "detectado": "2026-11-03", "estado": "Pendiente"},
  {"hallazgo": "Imágenes de Commons enlazadas al archivo original sin ?width=: Wikimedia respondió 429 y el memorándum de Halt no cargó en Rendlesham", "factor": "página", "gravedad": "MEDIA", "alcance": "3 fichas (Rendlesham, Roswell, Teherán)", "detectado": "2026-11-03", "estado": "Pendiente"},
+ {"hallazgo": "Las etiquetas de «Fisionomía de la entidad» muestran el identificador interno junto al nombre («gris Gris», «sin-forma», «robotica»): el componente pinta el slug a propósito", "factor": "página", "gravedad": "MEDIA", "alcance": "35 fichas con fisionomía, medido en el repo", "detectado": "2026-11-03", "estado": "Pendiente"},
+ {"hallazgo": "La tarjeta de «Actores asociados» se sale por la derecha en el móvil y corta su texto", "factor": "página", "gravedad": "MEDIA", "alcance": "visto en 2 fichas (Cisco Grove, Napolitano); falta medirlo en todas", "detectado": "2026-11-03", "estado": "Pendiente"},
 ]
 for k, v in {"fichas": fichas, "defectos": defectos, "cobertura": cob, "transversales": trans}.items():
     json.dump(v, open(f"{O}/{k}.json", "w"), ensure_ascii=False)
