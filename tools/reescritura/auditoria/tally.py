@@ -20,7 +20,7 @@ for t, i in m["fichas"]:
         defs += [{"gravedad": g.upper(), "tipo": ty.strip().lower(), "detalle": de.strip()[:300]}
                  for g, ty, de in re.findall(r"DEFECTO:\s*\**\s*(ALTA|MEDIA|BAJA)\s*\|\s*(ui-[^|\n]+?)\s*\|\s*([^\n]+)", tu, re.I)]
     # Lo que se repite en todas las fichas se registra una vez como transversal (dash.py), no por ficha.
-    TRANSV = re.compile(r"pie (del sitio |de página )?(sale |va |est[aá] )?(entero )?en inglés|footer|THE PROJECT|\bDEV\b|cookies|#418|hidrataci|Sin caus|r[oó]tulo[^|]{0,40}(barra|reparto)[^|]{0,40}cort|(barra|reparto)[^|]{0,60}cortad|fisionom|solo (el )?(icono|flecha|glifo)|«\(↗\)»|\(↗, ↗\)|«\(véase ↗\)»|comillas simples rectas|Actores asociados|tarjeta de actor|whatHappened|whyMatters|classBasis|(c[oó]digo|identificador) interno «(sin-forma|robotica|gris|humanoide|[a-z-]+)»", re.I)
+    TRANSV = re.compile(r"pie (del sitio |de página )?(sale |va |est[aá] )?(entero )?en inglés|footer|THE PROJECT|\bDEV\b|cookies|#418|hidrataci|Sin caus|r[oó]tulo[^|]{0,40}(barra|reparto)[^|]{0,40}cort|(barra|reparto)[^|]{0,60}cortad|fisionom|otros 1 documentos|solo (el )?(icono|flecha|glifo)|«\(↗\)»|\(↗, ↗\)|«\(véase ↗\)»|comillas simples rectas|Actores asociados|tarjeta de actor|whatHappened|whyMatters|classBasis|(c[oó]digo|identificador) interno «(sin-forma|robotica|gris|humanoide|[a-z-]+)»", re.I)
     # Commons limita (429) al contenedor de captura: una imagen suya que no carga no prueba nada del sitio.
     ENTORNO = re.compile(r"(Commons|wikimedia|Halt_Memorandum|Nave_Espacial|memor[aá]ndum[^|]{0,40}Halt)[^|]{0,120}(no carga|rota|roto)|(no carga|rota|roto)[^|]{0,120}(Commons|wikimedia|Halt)", re.I)
     for d_ in defs:
