@@ -52,6 +52,8 @@ trans = [
  {"hallazgo": "El recuadro «Por qué» de «Qué fue» cita la fuente en inglés o francés sin traducir en la página española, aunque el relato sí la traduce", "factor": "página", "gravedad": "MEDIA", "alcance": "20 fichas, medido en el repo (porqué de clase en español con cita en inglés)", "detectado": "2026-11-04", "estado": "Pendiente"},
  {"hallazgo": "Nombres de fuentes en inglés fuera de comillas en la página española («Director GEPAN testimony», «Independent analysis…»)", "factor": "página", "gravedad": "MEDIA", "alcance": "67 fuentes en 53 fichas, medido en el repo", "detectado": "2026-11-04", "estado": "Pendiente"},
  {"hallazgo": "El visor de PDF abre en la portada de documentos de cientos de páginas y no en la página del caso", "factor": "página", "gravedad": "MEDIA", "alcance": "visto en 6 fichas (Kenneth Arnold, Chiles-Whitted, Puerto Rico 1964, Molebka, Gemini 4, Sandia)", "detectado": "2026-11-04", "estado": "Pendiente"},
+ {"hallazgo": "La miga de pan repite el título completo de la ficha en mayúsculas y ocupa tres líneas en el móvil antes del caso", "factor": "página", "gravedad": "BAJA", "alcance": "todas las fichas (componente Breadcrumb)", "detectado": "2026-11-04", "estado": "Pendiente"},
+ {"hallazgo": "Notas internas del redactor a la vista en las notas de fuentes y documentos («no es accesible desde el entorno de revisión», «no se pudo descargar desde aquí», «enlace heredado»)", "factor": "página", "gravedad": "MEDIA", "alcance": "120 notas en 89 fichas, medido en el repo", "detectado": "2026-11-04", "estado": "Pendiente"},
 ]
 for k, v in {"fichas": fichas, "defectos": defectos, "cobertura": cob, "transversales": trans}.items():
     json.dump(v, open(f"{O}/{k}.json", "w"), ensure_ascii=False)
