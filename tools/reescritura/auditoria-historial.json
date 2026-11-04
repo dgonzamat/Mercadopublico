@@ -14753,5 +14753,1686 @@
     ]
    }
   ]
+ },
+ {
+  "fecha": "2026-11-04",
+  "muestra": "2026-11-04b",
+  "fichas": [
+   {
+    "id": "pantex-2015",
+    "tier": "S",
+    "veredicto": "RETOCAR",
+    "veredicto_ui": "AJUSTAR",
+    "gravedad": "MEDIA",
+    "gravedad_ui": "MEDIA",
+    "defectos": [
+     {
+      "gravedad": "MEDIA",
+      "tipo": "duda",
+      "detalle": "Fecha del 1 o del 2 de septiembre: el texto señala la discrepancia pero no dice cuál es la correcta."
+     },
+     {
+      "gravedad": "MEDIA",
+      "tipo": "repeticion",
+      "detalle": "El diamante, la falta de sonido y de propulsión, la aceleración, Sandia y el FBI aparecen en el resumen, en el relato y en «Por qué importa»."
+     },
+     {
+      "gravedad": "MEDIA",
+      "tipo": "porque-importa",
+      "detalle": "El primer párrafo de «Por qué importa» vuelve a enumerar los medios que registraron el objeto."
+     },
+     {
+      "gravedad": "MEDIA",
+      "tipo": "transcripcion",
+      "detalle": "Párrafo de la desclasificación: UCNI, DOEUAPD005, solicitud 23-00131-R y carta de remisión."
+     },
+     {
+      "gravedad": "MEDIA",
+      "tipo": "transcripcion",
+      "detalle": "«Zona 12 Sur», «Pantex Drive», «County Road G y la FM 1342»: detalle de registro que no ayuda al lector."
+     },
+     {
+      "gravedad": "MEDIA",
+      "tipo": "duda",
+      "detalle": "No queda claro si la grabación de la cámara CROWS se conservó o si el único video es el de la torre."
+     },
+     {
+      "gravedad": "BAJA",
+      "tipo": "unidades",
+      "detalle": "Mezcla de millas, pies, metros y km/h («a 75–100 metros de distancia, y lo estimó a 100–200 pies de altura»)."
+     },
+     {
+      "gravedad": "BAJA",
+      "tipo": "siglas",
+      "detalle": "NNSA, CROWS, UCNI, AARO y FBI; CROWS no hacía falta."
+     },
+     {
+      "gravedad": "BAJA",
+      "tipo": "frase",
+      "detalle": "«Otro equipo, en un vehículo blindado Bearcat con una estación de armas de control remoto que lleva cámara (CROWS), siguió…»: demasiado larga."
+     },
+     {
+      "gravedad": "BAJA",
+      "tipo": "vocabulario",
+      "detalle": "«metro y pico» es coloquial."
+     },
+     {
+      "gravedad": "MEDIA",
+      "tipo": "ui-visual",
+      "detalle": "El visor del informe abre en la página 5/6, un rectángulo gris liso que parece un visor vacío; el pie no explica que es el fotograma tachado (p08)"
+     },
+     {
+      "gravedad": "MEDIA",
+      "tipo": "ui-orden",
+      "detalle": "Tier S sin ningún elemento de registro del suceso antes del relato; el único documento del caso aparece tras «Por qué importa», seis pantallas después del resumen (p07–p08)"
+     },
+     {
+      "gravedad": "MEDIA",
+      "tipo": "ui-rotulo",
+      "detalle": "El pie del visor dice «DOE-UAP-D001» y el porqué de clase y la evidencia citan el mismo informe como «DOE-UAP-D005»/«DOEUAPD005» (p02, p05, p08)"
+     },
+     {
+      "gravedad": "BAJA",
+      "tipo": "ui-muro",
+      "detalle": "Tres párrafos de 22–23 líneas en el relato, en el límite de la guía (p03, p05)"
+     },
+     {
+      "gravedad": "BAJA",
+      "tipo": "ui-toque",
+      "detalle": "Flechas ‹ › del visor pequeñas y de bajo contraste sobre la barra beige (p08)"
+     },
+     {
+      "gravedad": "BAJA",
+      "tipo": "ui-duda",
+      "detalle": "«Actors» del pie aparece subrayado en rojo en una captura y no en la otra; posible estado de foco residual (p12)"
+     }
+    ]
+   },
+   {
+    "id": "fbi-thermal-slow-objects-2026",
+    "tier": "S",
+    "veredicto": "REESCRIBIR",
+    "veredicto_ui": "AJUSTAR",
+    "gravedad": "ALTA",
+    "gravedad_ui": "MEDIA",
+    "defectos": [
+     {
+      "gravedad": "ALTA",
+      "tipo": "contradiccion",
+      "detalle": "«El empleado no tenía experiencia en aviación, aunque sí horas de vuelo como piloto privado»."
+     },
+     {
+      "gravedad": "ALTA",
+      "tipo": "contradiccion",
+      "detalle": "El rumbo de 58 grados (noreste, «sureste» según la declaración) frente al «mismo sector occidental, unas dos líneas de cresta más al oeste»."
+     },
+     {
+      "gravedad": "ALTA",
+      "tipo": "referente",
+      "detalle": "«la misma zona de observación que citaba en su declaración anterior»: no se ha mencionado ninguna declaración anterior del agente."
+     },
+     {
+      "gravedad": "ALTA",
+      "tipo": "referente",
+      "detalle": "«le pidieron que mirara hacia el rumbo de 58 grados»: no se dice quién."
+     },
+     {
+      "gravedad": "ALTA",
+      "tipo": "cifra",
+      "detalle": "«a unos 10.000 pies sobre el nivel del mar»: no se sabe a qué se refiere la cifra, y choca con que nadie pudiera estimar la altitud."
+     },
+     {
+      "gravedad": "ALTA",
+      "tipo": "roto",
+      "detalle": "«Según un cálculo de esta ficha»: nota del redactor dentro del relato."
+     },
+     {
+      "gravedad": "MEDIA",
+      "tipo": "duda",
+      "detalle": "El resumen dice «rumbo similar», pero nunca se dice hacia dónde volaban los objetos del primer día."
+     },
+     {
+      "gravedad": "MEDIA",
+      "tipo": "repeticion",
+      "detalle": "El Black Hawk, «la mitad», la falta de altitud y velocidad, y ala fija o rotatoria se repiten en el resumen, en el relato y en «Por qué importa»."
+     },
+     {
+      "gravedad": "MEDIA",
+      "tipo": "porque-importa",
+      "detalle": "El segundo párrafo repite y cierra con una conclusión oscura («así que la imagen térmica no los distingue»)."
+     },
+     {
+      "gravedad": "MEDIA",
+      "tipo": "duda",
+      "detalle": "El texto cita «térmicamente elevado» en «Por qué importa», pero el relato no lo había citado."
+     },
+     {
+      "gravedad": "BAJA",
+      "tipo": "frase",
+      "detalle": "«ni si era de ala fija, de ala rotatoria (como un helicóptero) o de otro sistema aéreo no tripulado»: la construcción es ambigua."
+     },
+     {
+      "gravedad": "BAJA",
+      "tipo": "unidades",
+      "detalle": "Pies para la altitud, grados de rumbo sin explicar."
+     },
+     {
+      "gravedad": "MEDIA",
+      "tipo": "ui-muro",
+      "detalle": "La descripción del FD-302 D032 se muestra desplegada, unas 19 líneas de gris pequeño bajo el visor que repiten el relato, mientras la de D033 va plegada tras «Ver más» (p08–p09)"
+     },
+     {
+      "gravedad": "BAJA",
+      "tipo": "ui-toque",
+      "detalle": "Flechas ‹ › de los visores PDF pequeñas y de bajo contraste sobre la barra beige (p08, p09)"
+     },
+     {
+      "gravedad": "BAJA",
+      "tipo": "ui-rotulo",
+      "detalle": "El rótulo de tier usa el texto genérico «varios testigos independientes» y aquí cada observación tiene un solo testigo con cámara; la etiqueta no orienta sobre por qué es S (p02)"
+     }
+    ]
+   },
+   {
+    "id": "ladakh-itbp-2012",
+    "tier": "A",
+    "veredicto": "RETOCAR",
+    "veredicto_ui": "AJUSTAR",
+    "gravedad": "MEDIA",
+    "gravedad_ui": "MEDIA",
+    "defectos": [
+     {
+      "gravedad": "MEDIA",
+      "tipo": "repeticion",
+      "detalle": "«para agosto–octubre de 2012, Venus encaja con la descripción, aunque nadie lo midió» está casi literal en el relato y en «Por qué importa»."
+     },
+     {
+      "gravedad": "MEDIA",
+      "tipo": "duda",
+      "detalle": "«más de un centenar» frente a «329 avistamientos»: periodos distintos, pero el lector tiene que conciliarlos solo."
+     },
+     {
+      "gravedad": "MEDIA",
+      "tipo": "duda",
+      "detalle": "«durante tres a cuatro horas» frente a la ventana de las 18:00 a las 5:00."
+     },
+     {
+      "gravedad": "MEDIA",
+      "tipo": "orden",
+      "detalle": "El informe de diciembre de 2012 se cuenta antes que la respuesta parlamentaria del 26 de noviembre."
+     },
+     {
+      "gravedad": "MEDIA",
+      "tipo": "transcripcion",
+      "detalle": "La cadena de atribuciones (IBTimes resume a India Today, HuffPost cita al Times of India, The Register y UAS Vision recogen al Telegraph) pesa más que los hechos."
+     },
+     {
+      "gravedad": "MEDIA",
+      "tipo": "relleno",
+      "detalle": "El párrafo de acimutes y magnitudes es demasiado técnico para lo que aporta."
+     },
+     {
+      "gravedad": "MEDIA",
+      "tipo": "porque-importa",
+      "detalle": "El segundo párrafo de «Por qué importa» repite los cabos sueltos ya dichos."
+     },
+     {
+      "gravedad": "BAJA",
+      "tipo": "frase",
+      "detalle": "«Un cálculo de las posiciones de Júpiter y Venus…»: no se dice de quién es el cálculo."
+     },
+     {
+      "gravedad": "BAJA",
+      "tipo": "siglas",
+      "detalle": "ITBP, ULO, UAV, ISRO, DRDO y NTRO en pocas líneas."
+     },
+     {
+      "gravedad": "BAJA",
+      "tipo": "vocabulario",
+      "detalle": "«Unidentified Luminous Objects» y «Indian Astronomical Observatory» en inglés."
+     },
+     {
+      "gravedad": "MEDIA",
+      "tipo": "ui-muro",
+      "detalle": "El párrafo del cálculo de Júpiter y Venus ocupa 27 líneas en el móvil, cargado de acimuts, magnitudes y horas (p07–p08)"
+     },
+     {
+      "gravedad": "BAJA",
+      "tipo": "ui-muro",
+      "detalle": "Otros dos párrafos del relato rondan 23–24 líneas, en el límite de la guía (p05–p06)"
+     },
+     {
+      "gravedad": "BAJA",
+      "tipo": "ui-visual",
+      "detalle": "La única imagen (el lago Pangong Tso) llega en la pantalla 12, tras siete fuentes; once pantallas de texto sin apoyo visual para ubicar un lugar remoto (p12)"
+     },
+     {
+      "gravedad": "BAJA",
+      "tipo": "ui-espaciado",
+      "detalle": "Las notas de las fuentes son largas (6–8 líneas cada una) y repiten el relato, alargando el final de la página (p11–p12)"
+     }
+    ]
+   },
+   {
+    "id": "lago-de-cote-1971",
+    "tier": "A",
+    "veredicto": "RETOCAR",
+    "veredicto_ui": "AJUSTAR",
+    "gravedad": "ALTA",
+    "gravedad_ui": "MEDIA",
+    "defectos": [
+     {
+      "gravedad": "ALTA",
+      "tipo": "referente",
+      "detalle": "«Haines y Vallée lo examinaron en 1990»: aparecen en el resumen sin presentar."
+     },
+     {
+      "gravedad": "ALTA",
+      "tipo": "referente",
+      "detalle": "«gracias a Peter Sturrock, Vallée y Ricardo Vílchez»: Sturrock y Vílchez aparecen sin presentar."
+     },
+     {
+      "gravedad": "MEDIA",
+      "tipo": "duda",
+      "detalle": "«sin hallar deformación, defecto ni indicio de montaje» (resumen) frente a «tres rayas finas y paralelas… cruzaban la imagen del disco»."
+     },
+     {
+      "gravedad": "MEDIA",
+      "tipo": "duda",
+      "detalle": "«apoyaba el argumento en lo que los autores decían sobre la incoherencia de las sombras»: no se dijo nada de una incoherencia, solo que no había sombra."
+     },
+     {
+      "gravedad": "MEDIA",
+      "tipo": "duda",
+      "detalle": "La medición de 64 m: no se dice qué se midió ni con qué distancia supuesta."
+     },
+     {
+      "gravedad": "MEDIA",
+      "tipo": "repeticion",
+      "detalle": "«nadie a bordo vio el objeto» y «la cámara disparaba sola» aparecen en el resumen, en el relato y dos veces en «Por qué importa»."
+     },
+     {
+      "gravedad": "MEDIA",
+      "tipo": "relleno",
+      "detalle": "El párrafo de 2022 sobre la copia por contacto se alarga explicando lo que no aporta (Heidelberg Tango, laboratorio en Kansas)."
+     },
+     {
+      "gravedad": "BAJA",
+      "tipo": "unidades",
+      "detalle": "Pies, metros, centímetros y millas por hora («entre unas 1.425 y 1.988 millas por hora»)."
+     },
+     {
+      "gravedad": "BAJA",
+      "tipo": "frase",
+      "detalle": "«En 2013, la Rocky Mountain Paranormal Research Society propuso otra explicación convencional, que reproduce el hilo de Metabunk sobre el caso»: el sujeto es ambiguo."
+     },
+     {
+      "gravedad": "BAJA",
+      "tipo": "vocabulario",
+      "detalle": "«Frame 300»: inglés innecesario."
+     },
+     {
+      "gravedad": "MEDIA",
+      "tipo": "ui-muro",
+      "detalle": "El párrafo «Lo obtuvieron: gracias a Peter Sturrock…» ocupa 29 líneas en el móvil (p06–p07)"
+     },
+     {
+      "gravedad": "MEDIA",
+      "tipo": "ui-muro",
+      "detalle": "El párrafo del escaneo de 2022 («En 2022 se produjo la copia digital…») ocupa 25 líneas (p07–p08)"
+     },
+     {
+      "gravedad": "BAJA",
+      "tipo": "ui-muro",
+      "detalle": "El primer párrafo del relato ronda 24 líneas, en el límite de la guía (p03–p04)"
+     },
+     {
+      "gravedad": "BAJA",
+      "tipo": "ui-duda",
+      "detalle": "En el ancho del móvil el disco es un punto pequeño dentro de la foto; un recorte ampliado o un aviso de que se puede ampliar ayudaría a ver lo que el relato describe (p03)"
+     }
+    ]
+   },
+   {
+    "id": "noia-1989",
+    "tier": "A",
+    "veredicto": "REESCRIBIR",
+    "veredicto_ui": "AJUSTAR",
+    "gravedad": "ALTA",
+    "gravedad_ui": "MEDIA",
+    "defectos": [
+     {
+      "gravedad": "ALTA",
+      "tipo": "referente",
+      "detalle": "«Ballester Olmos y Manuel Borraz atribuyen la luz a Venus» (resumen) y «Ballester Olmos reconstruyó en 2005»: nunca se dice quiénes son."
+     },
+     {
+      "gravedad": "ALTA",
+      "tipo": "roto",
+      "detalle": "«Según un cálculo propio de esta ficha»: nota del redactor dentro del texto."
+     },
+     {
+      "gravedad": "ALTA",
+      "tipo": "cifra",
+      "detalle": "«08'30z del día 06 de los corrientes»: hora citada en código, sin traducir."
+     },
+     {
+      "gravedad": "MEDIA",
+      "tipo": "duda",
+      "detalle": "Horas del aviso: torre avisada a las 18:43, escuadrón comunica a las 18:48 y llama a la torre a las 18:50."
+     },
+     {
+      "gravedad": "MEDIA",
+      "tipo": "duda",
+      "detalle": "Puesto de Castro (parte) frente a cuartel de Sada (Ballester)."
+     },
+     {
+      "gravedad": "MEDIA",
+      "tipo": "duda",
+      "detalle": "La luz desaparece hacia las 18:57 UTC «como oculta por los árboles», con Venus a unos 10° y poniéndose una hora más tarde."
+     },
+     {
+      "gravedad": "MEDIA",
+      "tipo": "transcripcion",
+      "detalle": "El párrafo de 20:00–21:02 (frecuencias, radiogoniómetro, niveles de vuelo, PRF, cambio de canal) copia el parte."
+     },
+     {
+      "gravedad": "MEDIA",
+      "tipo": "orden",
+      "detalle": "Las explicaciones (Venus, propagación anómala, posición real del eco) solo aparecen en «Por qué importa»."
+     },
+     {
+      "gravedad": "MEDIA",
+      "tipo": "repeticion",
+      "detalle": "«Ningún avión civil vio nada» y «más de trece horas» se repiten en tres secciones."
+     },
+     {
+      "gravedad": "MEDIA",
+      "tipo": "porque-importa",
+      "detalle": "El primer párrafo de «Por qué importa» enumera de nuevo lo que hizo el escuadrón."
+     },
+     {
+      "gravedad": "MEDIA",
+      "tipo": "duda",
+      "detalle": "«En su contra pesa un dato del propio parte: el eco tenía respuesta secundaria»: no se explica por qué eso va contra la propagación anómala."
+     },
+     {
+      "gravedad": "BAJA",
+      "tipo": "siglas",
+      "detalle": "RAPPI, UPA-35, RHI, EVA 10, UTC y Nécora; las dos primeras no se explican."
+     },
+     {
+      "gravedad": "BAJA",
+      "tipo": "unidades",
+      "detalle": "Pies, millas náuticas, kilómetros, metros y niveles de vuelo mezclados."
+     },
+     {
+      "gravedad": "BAJA",
+      "tipo": "frase",
+      "detalle": "«A las 20:45 UTC se cambió la frecuencia de repetición de impulsos del canal de servicio…»: larga y técnica."
+     },
+     {
+      "gravedad": "MEDIA",
+      "tipo": "ui-muro",
+      "detalle": "El párrafo de las 20:00 UTC (alarmas, radiogoniómetro, UPA-35, cambio de frecuencia) ocupa 31 líneas en el móvil (p05–p06)"
+     },
+     {
+      "gravedad": "MEDIA",
+      "tipo": "ui-muro",
+      "detalle": "El párrafo de la propagación anómala («Para el eco, Borraz propone…») ocupa 27 líneas (p08–p09)"
+     },
+     {
+      "gravedad": "MEDIA",
+      "tipo": "ui-muro",
+      "detalle": "El primer párrafo de «Por qué importa» ocupa 25 líneas, cargado de distancias y ángulos (p07)"
+     },
+     {
+      "gravedad": "BAJA",
+      "tipo": "ui-duda",
+      "detalle": "El expediente 891205, que el relato sigue minuto a minuto, solo aparece en la pantalla 10, tras «Por qué importa»; el lector lee el parte sin verlo (p10)"
+     },
+     {
+      "gravedad": "BAJA",
+      "tipo": "ui-rotulo",
+      "detalle": "El pie del visor dice «extracto, 4 págs.» y fecha el oficio de remisión en 1996, y la fuente 01 dice «5 págs.» y «(1992)» (p11–p12)"
+     },
+     {
+      "gravedad": "BAJA",
+      "tipo": "ui-rotulo",
+      "detalle": "La cita del porqué de clase abre con «¿Fue un caso… y no se ve la comilla de cierre antes de «Leer el porqué completo» (p02)"
+     },
+     {
+      "gravedad": "BAJA",
+      "tipo": "ui-toque",
+      "detalle": "Flechas ‹ › del visor pequeñas y de bajo contraste sobre la barra beige (p11)"
+     }
+    ]
+   },
+   {
+    "id": "prince-christian-groenlandia-1954",
+    "tier": "A",
+    "veredicto": "RETOCAR",
+    "veredicto_ui": "BIEN",
+    "gravedad": "ALTA",
+    "gravedad_ui": "BAJA",
+    "defectos": [
+     {
+      "gravedad": "MEDIA",
+      "tipo": "duda",
+      "detalle": "El primer télex nunca dice en el relato «dos millas al sur», pero «Por qué importa» lo da como dato"
+     },
+     {
+      "gravedad": "ALTA",
+      "tipo": "cifra",
+      "detalle": "«como exacta con un margen de seis minutos en cualquier sentido (la unidad se lee con dificultad)»: no se puede situar qué son los seis minutos"
+     },
+     {
+      "gravedad": "MEDIA",
+      "tipo": "duda",
+      "detalle": "«descritos por el piloto» cuando los testigos son el copiloto y el ingeniero"
+     },
+     {
+      "gravedad": "MEDIA",
+      "tipo": "transcripcion",
+      "detalle": "Párrafo de 17:32, 20:15 y 23:34: sucesión de horas de mensajes y oficinas"
+     },
+     {
+      "gravedad": "MEDIA",
+      "tipo": "repeticion",
+      "detalle": "Discrepancias de hora, duración y distancia contadas en el relato y otra vez en «Por qué importa»"
+     },
+     {
+      "gravedad": "MEDIA",
+      "tipo": "repeticion",
+      "detalle": "Ausencia de radar e interceptación repetida en resumen, relato y «Por qué importa»"
+     },
+     {
+      "gravedad": "MEDIA",
+      "tipo": "relleno",
+      "detalle": "Último párrafo sobre Java: repite el relato y dice que no se saca conclusión"
+     },
+     {
+      "gravedad": "BAJA",
+      "tipo": "frase",
+      "detalle": "«El relato de la tripulación se tomó después en Gander… para un interrogatorio posterior con las oficinas de KLM»"
+     },
+     {
+      "gravedad": "BAJA",
+      "tipo": "frase",
+      "detalle": "«había enviado» en pluscuamperfecto confunde el orden de los hechos"
+     },
+     {
+      "gravedad": "BAJA",
+      "tipo": "siglas",
+      "detalle": "ATIC, Pepperrell y GMT sin explicar"
+     },
+     {
+      "gravedad": "BAJA",
+      "tipo": "vocabulario",
+      "detalle": "rumbo «manuvered» sin traducir ni aclarar"
+     },
+     {
+      "gravedad": "BAJA",
+      "tipo": "unidades",
+      "detalle": "Pies, millas, nudos y pulgadas mezclados con un solo equivalente en centímetros"
+     },
+     {
+      "gravedad": "BAJA",
+      "tipo": "ui-duda",
+      "detalle": "El expediente de Blue Book, que es el registro del suceso, solo aparece en p08, tras todo el relato; el lector no ve la tarjeta mientras lee los télex que la describen (p03–p07)."
+     },
+     {
+      "gravedad": "BAJA",
+      "tipo": "ui-espaciado",
+      "detalle": "El cierre del «Por qué» lleva cinco líneas de fuentes en rojo entre paréntesis que compiten con la explicación (p02)."
+     },
+     {
+      "gravedad": "BAJA",
+      "tipo": "ui-duda",
+      "detalle": "Ítems de evidencia con citas largas en mayúsculas en inglés de los télex, pesadas de leer en el móvil (p09–p11)."
+     }
+    ]
+   },
+   {
+    "id": "boac-centaurus-1954",
+    "tier": "A",
+    "veredicto": "REESCRIBIR",
+    "veredicto_ui": "AJUSTAR",
+    "gravedad": "ALTA",
+    "gravedad_ui": "MEDIA",
+    "defectos": [
+     {
+      "gravedad": "ALTA",
+      "tipo": "contradiccion",
+      "detalle": "Resumen: «el radar… en Cartwright lo detectó y despegó un caza» frente al télex «RADAR NONE» y «fue puesto en alerta o despegó»"
+     },
+     {
+      "gravedad": "ALTA",
+      "tipo": "recuento",
+      "detalle": "«seis o siete objetos menores» frente a «cinco o seis más pequeños» del télex, sin comentario"
+     },
+     {
+      "gravedad": "ALTA",
+      "tipo": "recuento",
+      "detalle": "«Lo vieron los 11 tripulantes» frente a «el grueso de la tripulación» y «otros 11 tripulantes lo verificaron»"
+     },
+     {
+      "gravedad": "ALTA",
+      "tipo": "cifra",
+      "detalle": "«Hacia el atardecer» frente a «01:05 a 01:23 GMT» sin hora local; fecha «entre el 29 y el 30 de junio» sin explicar"
+     },
+     {
+      "gravedad": "ALTA",
+      "tipo": "cifra",
+      "detalle": "«(1954-06-8714325)» sin explicar qué es"
+     },
+     {
+      "gravedad": "ALTA",
+      "tipo": "referente",
+      "detalle": "«Otro mensaje del expediente, que describe un objeto amarillento a 144°»: no se dice quién lo vio"
+     },
+     {
+      "gravedad": "MEDIA",
+      "tipo": "duda",
+      "detalle": "«cuando nosotros y el caza contactamos con el avión»: no se entiende quién habla"
+     },
+     {
+      "gravedad": "MEDIA",
+      "tipo": "porque-importa",
+      "detalle": "«Por qué importa» resume el relato y omite la conclusión de Shough a favor del espejismo"
+     },
+     {
+      "gravedad": "MEDIA",
+      "tipo": "repeticion",
+      "detalle": "Biografía de Howard, 18 minutos e interrogatorio contados tres veces"
+     },
+     {
+      "gravedad": "MEDIA",
+      "tipo": "repeticion",
+      "detalle": "Radar de Cartwright no documentado, en relato y en «Por qué importa»"
+     },
+     {
+      "gravedad": "BAJA",
+      "tipo": "siglas",
+      "detalle": "ATIC, NARCAP y GMT sin explicar"
+     },
+     {
+      "gravedad": "BAJA",
+      "tipo": "frase",
+      "detalle": "Frase del cálculo de Marte con acimut, babor, estribor y rumbos en una sola oración"
+     },
+     {
+      "gravedad": "BAJA",
+      "tipo": "unidades",
+      "detalle": "Kilómetros y metros junto a millas y pies"
+     },
+     {
+      "gravedad": "MEDIA",
+      "tipo": "ui-visual",
+      "detalle": "Página sin ningún visual (0 imágenes, 0 visores): el expediente de Blue Book 1954-06-8714325 y el dibujo de Howard que cita el relato no se muestran; solo hay una tarjeta de enlace a NARCAP (p09)."
+     },
+     {
+      "gravedad": "MEDIA",
+      "tipo": "ui-rotulo",
+      "detalle": "Bandera del Reino Unido junto a «Sobre Labrador, Canadá» (p01) y Lakenheath listado como «mismo país» en relacionados (p11): el país visible no es el del lugar del suceso."
+     },
+     {
+      "gravedad": "MEDIA",
+      "tipo": "ui-muro",
+      "detalle": "Primer párrafo de «Qué pasó» de 25 líneas en el móvil (p03)."
+     },
+     {
+      "gravedad": "BAJA",
+      "tipo": "ui-toque",
+      "detalle": "El «ver fuente» de la tarjeta de documento es pequeño, monoespaciado y poco visible como acción (p09)."
+     },
+     {
+      "gravedad": "BAJA",
+      "tipo": "ui-duda",
+      "detalle": "La tarjeta de «Documentos» repite el estudio de NARCAP que vuelve a aparecer como fuente 02 (p09–p10)."
+     }
+    ]
+   },
+   {
+    "id": "kecksburg-1965",
+    "tier": "A",
+    "veredicto": "RETOCAR",
+    "veredicto_ui": "AJUSTAR",
+    "gravedad": "ALTA",
+    "gravedad_ui": "MEDIA",
+    "defectos": [
+     {
+      "gravedad": "ALTA",
+      "tipo": "referente",
+      "detalle": "«las tiras metálicas halladas en el condado de Lapeer (Michigan)» sin mención previa"
+     },
+     {
+      "gravedad": "ALTA",
+      "tipo": "referente",
+      "detalle": "«R. W. Hale» y «Arnold Frutkin» aparecen sin presentar"
+     },
+     {
+      "gravedad": "ALTA",
+      "tipo": "referente",
+      "detalle": "«la estación de radar de Oakdale» y «el mayor Quintanilla» nombrados sin presentar la primera vez"
+     },
+     {
+      "gravedad": "ALTA",
+      "tipo": "cifra",
+      "detalle": "«(accesión 255-68A-2062)» y «CIV.A. 03-2509»: códigos sin valor para el lector"
+     },
+     {
+      "gravedad": "MEDIA",
+      "tipo": "relleno",
+      "detalle": "Párrafo de las directrices de 1962-1963, que «no dicen nada de Kecksburg»"
+     },
+     {
+      "gravedad": "MEDIA",
+      "tipo": "transcripcion",
+      "detalle": "Párrafos del litigio Kean v. NASA y del registro de guardia, contados como trámite (horas, oficinas, cartas)"
+     },
+     {
+      "gravedad": "MEDIA",
+      "tipo": "repeticion",
+      "detalle": "«confirma la búsqueda, no la recuperación» repetido en resumen, relato y «Por qué importa»"
+     },
+     {
+      "gravedad": "MEDIA",
+      "tipo": "repeticion",
+      "detalle": "Los 300 km de distancia, tres veces"
+     },
+     {
+      "gravedad": "MEDIA",
+      "tipo": "orden",
+      "detalle": "La frase del GCAT tras «no resiste los datos orbitales» parece apoyar lo que se va a descartar"
+     },
+     {
+      "gravedad": "MEDIA",
+      "tipo": "duda",
+      "detalle": "No queda claro si el litigio terminó en acuerdo o no"
+     },
+     {
+      "gravedad": "BAJA",
+      "tipo": "siglas",
+      "detalle": "TU, FAA, SPADATS (explicada), NORAD, FOIA, GCAT sin explicar"
+     },
+     {
+      "gravedad": "BAJA",
+      "tipo": "frase",
+      "detalle": "Primera frase de «Qué pasó» del análisis de Sky & Telescope: una sola oración con planetario, pilotos, trayectoria, sismógrafo y foto"
+     },
+     {
+      "gravedad": "BAJA",
+      "tipo": "vocabulario",
+      "detalle": "«Moon Dust» y «fragología» sin explicar con claridad"
+     },
+     {
+      "gravedad": "MEDIA",
+      "tipo": "ui-muro",
+      "detalle": "Primer párrafo de «Qué pasó» de 31 líneas (p03–p04), párrafo de «Por qué importa» de 28 (p09–p10) y otro de 26 (p04–p05)."
+     },
+     {
+      "gravedad": "MEDIA",
+      "tipo": "ui-visual",
+      "detalle": "Los dos visores (p11–p13) muestran documentos de 1962–1963 que el propio relato dice que «no dicen nada de Kecksburg» (p08); el expediente de Blue Book y las dos fotografías del expediente 10129 (fuente 02, p14) no se embeben."
+     },
+     {
+      "gravedad": "BAJA",
+      "tipo": "ui-rotulo",
+      "detalle": "Los títulos de los documentos empiezan con códigos internos «EOP-UAP-D002 —» y «USG-UAP-D002 —» (p12–p13)."
+     },
+     {
+      "gravedad": "BAJA",
+      "tipo": "ui-duda",
+      "detalle": "Página de 18,4 pantallas; «Qué pasó» corre de p02 a p09 sin ningún elemento que corte la lectura."
+     }
+    ]
+   },
+   {
+    "id": "eastern-us-civilian-sensor-2019",
+    "tier": "A",
+    "veredicto": "RETOCAR",
+    "veredicto_ui": "BIEN",
+    "gravedad": "ALTA",
+    "gravedad_ui": "BAJA",
+    "defectos": [
+     {
+      "gravedad": "ALTA",
+      "tipo": "cifra",
+      "detalle": "«DOW-UAP-PR112» y «DOW-UAP-D090»: códigos de archivo a la vista sin valor para el lector"
+     },
+     {
+      "gravedad": "MEDIA",
+      "tipo": "duda",
+      "detalle": "«en dirección opuesta»: no se dice opuesta a qué"
+     },
+     {
+      "gravedad": "MEDIA",
+      "tipo": "repeticion",
+      "detalle": "Cita de los 28 años repetida en resumen, relato y «Por qué importa»"
+     },
+     {
+      "gravedad": "MEDIA",
+      "tipo": "repeticion",
+      "detalle": "«unos 11 segundos» y «pantalla en blanco» repetidos cuatro veces"
+     },
+     {
+      "gravedad": "MEDIA",
+      "tipo": "porque-importa",
+      "detalle": "Los dos primeros párrafos de «Por qué importa» resumen el relato"
+     },
+     {
+      "gravedad": "MEDIA",
+      "tipo": "transcripcion",
+      "detalle": "Descripción del video segundo a segundo, con cambios de aumento y modo"
+     },
+     {
+      "gravedad": "BAJA",
+      "tipo": "frase",
+      "detalle": "«Los corchetes son de la AARO, y la cita no aclara si esos años fueron… experiencia aeronáutica larga»"
+     },
+     {
+      "gravedad": "BAJA",
+      "tipo": "siglas",
+      "detalle": "DVIDS y PURSUE poco explicados"
+     },
+     {
+      "gravedad": "BAJA",
+      "tipo": "vocabulario",
+      "detalle": "«Range Fouler Debrief» en inglés (explicado a medias)"
+     },
+     {
+      "gravedad": "BAJA",
+      "tipo": "ui-rotulo",
+      "detalle": "El «Por qué» (p02) y el pie del visor (p03) cargan identificadores «DOW-UAP-PR112», «D090», «DOW-UAP-D090» que el lector no necesita para entender."
+     },
+     {
+      "gravedad": "BAJA",
+      "tipo": "ui-duda",
+      "detalle": "El marco del visor de video se ve bajo (~200 px) para un clip de 20 s; no se puede confirmar porque el embed no carga en el entorno (p03)."
+     }
+    ]
+   },
+   {
+    "id": "st-clair-triangle-2000",
+    "tier": "A",
+    "veredicto": "REESCRIBIR",
+    "veredicto_ui": "AJUSTAR",
+    "gravedad": "ALTA",
+    "gravedad_ui": "MEDIA",
+    "defectos": [
+     {
+      "gravedad": "ALTA",
+      "tipo": "recuento",
+      "detalle": "Título y resumen hablan de «tres policías»; el relato presenta cinco (Barton, Martin, Stevens, Jany, Lopinot)"
+     },
+     {
+      "gravedad": "ALTA",
+      "tipo": "contradiccion",
+      "detalle": "«la flecha de Martin y Stevens»: en el relato Stevens nunca describe una flecha"
+     },
+     {
+      "gravedad": "ALTA",
+      "tipo": "cifra",
+      "detalle": "Stevens lo ve «a las 4:28, según su reloj» y el despacho fecha su aviso «a las 4:39:27», sin explicar la diferencia"
+     },
+     {
+      "gravedad": "ALTA",
+      "tipo": "cifra",
+      "detalle": "«hacia las 5:03, hora a la que según Barker se lo comunicó por radio a Stevens»: no se sabe a qué corresponde la hora"
+     },
+     {
+      "gravedad": "MEDIA",
+      "tipo": "duda",
+      "detalle": "«un objeto… con luces blancas y una roja» atribuido a los tres policías; Martin solo describe tres luces brillantes"
+     },
+     {
+      "gravedad": "MEDIA",
+      "tipo": "transcripcion",
+      "detalle": "Horas al segundo (4:11:55, 4:23:06, 4:23:57, 4:39:27) y disputa sobre si Barton ya había oído el aviso"
+     },
+     {
+      "gravedad": "MEDIA",
+      "tipo": "relleno",
+      "detalle": "Tres párrafos de debate sobre Venus entre Klass, Davis, Hall y Hendry"
+     },
+     {
+      "gravedad": "MEDIA",
+      "tipo": "repeticion",
+      "detalle": "Venus antes de Noll y Barton y Venus para Jany, repetido en resumen, relato y «Por qué importa»"
+     },
+     {
+      "gravedad": "MEDIA",
+      "tipo": "repeticion",
+      "detalle": "Respuesta de Scott y el diseñador del NIDS, en relato y «Por qué importa»"
+     },
+     {
+      "gravedad": "MEDIA",
+      "tipo": "porque-importa",
+      "detalle": "«La otra es la respuesta de la base»: la segunda «lectura» no es una lectura del objeto"
+     },
+     {
+      "gravedad": "BAJA",
+      "tipo": "frase",
+      "detalle": "«según el resumen de su entrevista con el… (NIDS), de Robert Bigelow, publicado por Philip Klass, editor del Skeptics UFO Newsletter»"
+     },
+     {
+      "gravedad": "BAJA",
+      "tipo": "frase",
+      "detalle": "«Aun así mantuvo que ninguno de los policías dijo haber visto aparte un Venus muy brillante, que algunos habrían tenido bajo al sudeste»"
+     },
+     {
+      "gravedad": "BAJA",
+      "tipo": "siglas",
+      "detalle": "CENCOM, MUFON, NIDS, FAA, C-5, V-8"
+     },
+     {
+      "gravedad": "BAJA",
+      "tipo": "unidades",
+      "detalle": "Metros y kilómetros mezclados con «20 o 30.000» pies"
+     },
+     {
+      "gravedad": "MEDIA",
+      "tipo": "ui-muro",
+      "detalle": "Párrafos de 28 líneas (p04), 23 (p03) y 22 (p07–p08); «Qué pasó» ocupa ocho pantallas seguidas sin corte (p03–p10)."
+     },
+     {
+      "gravedad": "MEDIA",
+      "tipo": "ui-visual",
+      "detalle": "Ningún visual en el relato: el registro horario de CENCOM es solo una tarjeta de enlace (p13) y la única imagen que cuentan las métricas no aparece en las 14 primeras pantallas; la Polaroid y los dibujos se citan pero no se ven."
+     },
+     {
+      "gravedad": "BAJA",
+      "tipo": "ui-espaciado",
+      "detalle": "El cierre del «Por qué» lleva cinco líneas de fuentes en rojo entre paréntesis (p02)."
+     },
+     {
+      "gravedad": "BAJA",
+      "tipo": "ui-toque",
+      "detalle": "El «ver fuente» de la tarjeta de CENCOM es pequeño y monoespaciado (p13)."
+     }
+    ]
+   },
+   {
+    "id": "langley-drones-2023",
+    "tier": "A",
+    "veredicto": "RETOCAR",
+    "veredicto_ui": "AJUSTAR",
+    "gravedad": "ALTA",
+    "gravedad_ui": "MEDIA",
+    "defectos": [
+     {
+      "gravedad": "ALTA",
+      "tipo": "referente",
+      "detalle": "«lo dijo el portavoz de la base»: ningún portavoz aparece en el relato"
+     },
+     {
+      "gravedad": "MEDIA",
+      "tipo": "repeticion",
+      "detalle": "no derribarlos y el traslado de F-22 se cuentan en resumen, relato y «Por qué importa»"
+     },
+     {
+      "gravedad": "MEDIA",
+      "tipo": "repeticion",
+      "detalle": "la frase de Guillot sobre el «marco operativo» se repite casi literal en «Por qué importa»"
+     },
+     {
+      "gravedad": "MEDIA",
+      "tipo": "porque-importa",
+      "detalle": "resume el relato; solo aporta la lista de tres explicaciones"
+     },
+     {
+      "gravedad": "MEDIA",
+      "tipo": "relleno",
+      "detalle": "párrafo de registros FOIA de diciembre de 2024 (DTRA, Surry, NRC) que no documenta el caso"
+     },
+     {
+      "gravedad": "MEDIA",
+      "tipo": "duda",
+      "detalle": "«a unas 100 millas por hora»: no se sabe si es medición o impresión"
+     },
+     {
+      "gravedad": "BAJA",
+      "tipo": "siglas",
+      "detalle": "DTRA, NRC, DJI, FOIA en un mismo párrafo"
+     },
+     {
+      "gravedad": "BAJA",
+      "tipo": "unidades",
+      "detalle": "millas por hora junto a metros y kilómetros"
+     },
+     {
+      "gravedad": "BAJA",
+      "tipo": "vocabulario",
+      "detalle": "«instalación designada», «capacidad emergente», «marco operativo»: jerga sin traducir"
+     },
+     {
+      "gravedad": "BAJA",
+      "tipo": "vocabulario",
+      "detalle": "«Air Combat Command» sin traducir en la prosa española"
+     },
+     {
+      "gravedad": "MEDIA",
+      "tipo": "ui-muro",
+      "detalle": "párrafo de los registros FOIA de 2024 en «Qué pasó» de unas 28 líneas en el móvil (p06–p07)"
+     },
+     {
+      "gravedad": "MEDIA",
+      "tipo": "ui-muro",
+      "detalle": "descripción desplegable de la tarjeta NRC («Cinco son de la central de Surry…») de 36 líneas y de la DTRA («El de Langley-Eustis…») de 31 líneas, listas de páginas y números de serie en bloque (p09–p10, tras «Ver más»)"
+     },
+     {
+      "gravedad": "BAJA",
+      "tipo": "ui-espaciado",
+      "detalle": "la nota de la fuente 06 (p11–p12) arrastra números de parte (SID-03275, 03276…) y paginación del PDF que alargan la lista de fuentes"
+     },
+     {
+      "gravedad": "BAJA",
+      "tipo": "ui-duda",
+      "detalle": "el relato (p03–p07) llega a 5 pantallas sin ningún apoyo visual; un mapa de la base y los astilleros cercanos ayudaría a situar al lector"
+     }
+    ]
+   },
+   {
+    "id": "yukon-1996",
+    "tier": "B",
+    "veredicto": "RETOCAR",
+    "veredicto_ui": "AJUSTAR",
+    "gravedad": "ALTA",
+    "gravedad_ui": "MEDIA",
+    "defectos": [
+     {
+      "gravedad": "ALTA",
+      "tipo": "recuento",
+      "detalle": "22 testigos en resumen y «Por qué importa» frente a «un total de 31» en el relato, sin aclarar"
+     },
+     {
+      "gravedad": "ALTA",
+      "tipo": "recuento",
+      "detalle": "«Seis de los nueve grupos»: la enumeración previa da cinco grupos y no se dicen los nueve"
+     },
+     {
+      "gravedad": "ALTA",
+      "tipo": "recuento",
+      "detalle": "Mayo figura entre los lugares con observaciones, pero no en el desglose de los 22 testigos"
+     },
+     {
+      "gravedad": "ALTA",
+      "tipo": "referente",
+      "detalle": "«Harro Zimmer» aparece sin presentar"
+     },
+     {
+      "gravedad": "MEDIA",
+      "tipo": "duda",
+      "detalle": "la familia de Carmacks vio el objeto hacia las 19:00, más de una hora antes de la reentrada, y el texto no lo trata"
+     },
+     {
+      "gravedad": "MEDIA",
+      "tipo": "duda",
+      "detalle": "«de 100 km de largo» cuando la etapa medía 9,4 m; no se explica"
+     },
+     {
+      "gravedad": "MEDIA",
+      "tipo": "orden",
+      "detalle": "«El investigador que documentó el caso» aparece antes de nombrarlo como Jasek en el relato"
+     },
+     {
+      "gravedad": "MEDIA",
+      "tipo": "porque-importa",
+      "detalle": "el segundo párrafo repite la coincidencia ya explicada y omite la objeción de Jasek"
+     },
+     {
+      "gravedad": "MEDIA",
+      "tipo": "transcripcion",
+      "detalle": "cronología de versiones del informe (oct 1999, feb 2000, jun 2000) confusa y sin función"
+     },
+     {
+      "gravedad": "BAJA",
+      "tipo": "frase",
+      "detalle": "«en una órbita cuyo punto más bajo estaba a muy poca altura»"
+     },
+     {
+      "gravedad": "BAJA",
+      "tipo": "vocabulario",
+      "detalle": "«propagó la órbita», «programa de perturbaciones»: jerga sin explicar"
+     },
+     {
+      "gravedad": "MEDIA",
+      "tipo": "ui-muro",
+      "detalle": "párrafo del cálculo de Molczan de unas 28 líneas cargado de cifras orbitales (p05–p06)"
+     },
+     {
+      "gravedad": "BAJA",
+      "tipo": "ui-duda",
+      "detalle": "ningún apoyo visual en todo el relato (p02–p07); un mapa con Fox Lake, Carmacks, Pelly Crossing y la trayectoria calculada haría legible la triangulación"
+     },
+     {
+      "gravedad": "BAJA",
+      "tipo": "ui-rotulo",
+      "detalle": "la leyenda genérica del Tier B («un solo testigo…») bajo la banda choca a primera vista con el título de veintidós testigos (p02)"
+     }
+    ]
+   },
+   {
+    "id": "mystery-drones-east-coast-2024",
+    "tier": "B",
+    "veredicto": "RETOCAR",
+    "veredicto_ui": "AJUSTAR",
+    "gravedad": "ALTA",
+    "gravedad_ui": "MEDIA",
+    "defectos": [
+     {
+      "gravedad": "ALTA",
+      "tipo": "referente",
+      "detalle": "«Buttigieg y Mayorkas» y «el director Wray» sin decir de qué"
+     },
+     {
+      "gravedad": "MEDIA",
+      "tipo": "porque-importa",
+      "detalle": "resume el relato sin aportar nada nuevo"
+     },
+     {
+      "gravedad": "MEDIA",
+      "tipo": "repeticion",
+      "detalle": "la lista de instalaciones aparece en resumen, relato y «Por qué importa»"
+     },
+     {
+      "gravedad": "MEDIA",
+      "tipo": "repeticion",
+      "detalle": "el rechazo de Murphy y los legisladores se cuenta tres veces"
+     },
+     {
+      "gravedad": "MEDIA",
+      "tipo": "transcripcion",
+      "detalle": "el relato es una sucesión de declaraciones oficiales; no se cuenta ningún avistamiento concreto"
+     },
+     {
+      "gravedad": "MEDIA",
+      "tipo": "duda",
+      "detalle": "restricciones de vuelo de la FAA sobre Picatinny frente a «no había avistamientos confirmados en espacio aéreo restringido»"
+     },
+     {
+      "gravedad": "MEDIA",
+      "tipo": "duda",
+      "detalle": "«más de 3.000 avisos» frente a «miles de avistamientos»: no se sabe si es la misma cuenta"
+     },
+     {
+      "gravedad": "BAJA",
+      "tipo": "siglas",
+      "detalle": "DHS nunca se explica"
+     },
+     {
+      "gravedad": "BAJA",
+      "tipo": "frase",
+      "detalle": "la frase de Andy Kim y Cory Booker con dos paréntesis"
+     },
+     {
+      "gravedad": "BAJA",
+      "tipo": "vocabulario",
+      "detalle": "«propiedad residencial», «nexo extranjero», «Middletown Township»: calcos del inglés"
+     },
+     {
+      "gravedad": "MEDIA",
+      "tipo": "ui-visual",
+      "detalle": "la página no tiene ninguna imagen, documento ni mapa: unas 12 pantallas de solo texto (p01–p12)"
+     },
+     {
+      "gravedad": "MEDIA",
+      "tipo": "ui-muro",
+      "detalle": "párrafo de los lugares sobrevolados y la presión política de unas 30 líneas (p04)"
+     },
+     {
+      "gravedad": "BAJA",
+      "tipo": "ui-rotulo",
+      "detalle": "el punto 05 de la evidencia une nombres con «+» y abrevia «Gobernador NJ», se lee como nota de trabajo (p08–p09)"
+     },
+     {
+      "gravedad": "BAJA",
+      "tipo": "ui-espaciado",
+      "detalle": "el punto 04 de la evidencia es un párrafo de nueve líneas con dos declaraciones encadenadas dentro de una viñeta (p08)"
+     }
+    ]
+   },
+   {
+    "id": "detroit-dome-object-1958",
+    "tier": "B",
+    "veredicto": "RETOCAR",
+    "veredicto_ui": "BIEN",
+    "gravedad": "MEDIA",
+    "gravedad_ui": "BAJA",
+    "defectos": [
+     {
+      "gravedad": "MEDIA",
+      "tipo": "transcripcion",
+      "detalle": "«expediente de la oficina de Detroit 100-DE-18221 con el número de serie 844; el sello de la oficina lo da por buscado, indexado, registrado y archivado»"
+     },
+     {
+      "gravedad": "MEDIA",
+      "tipo": "repeticion",
+      "detalle": "que el FBI no investigaba y remitía a la Fuerza Aérea se dice en resumen, relato y «Por qué importa»"
+     },
+     {
+      "gravedad": "MEDIA",
+      "tipo": "repeticion",
+      "detalle": "un solo testigo sin instrumentos ni corroboración, en resumen, relato y «Por qué importa»"
+     },
+     {
+      "gravedad": "MEDIA",
+      "tipo": "porque-importa",
+      "detalle": "su idea principal (la cadena de avisos) ya la había explicado el relato"
+     },
+     {
+      "gravedad": "MEDIA",
+      "tipo": "duda",
+      "detalle": "«notificado un mes después del avistamiento»: no queda claro de qué avistamiento"
+     },
+     {
+      "gravedad": "BAJA",
+      "tipo": "siglas",
+      "detalle": "«PURSUE» sin explicar"
+     },
+     {
+      "gravedad": "BAJA",
+      "tipo": "vocabulario",
+      "detalle": "«Six Mile» sin decir que es una calle o avenida"
+     },
+     {
+      "gravedad": "BAJA",
+      "tipo": "vocabulario",
+      "detalle": "citas en inglés seguidas («Unidentified Flying Objects», «Advise proper air force authorities», la anotación de Prater)"
+     },
+     {
+      "gravedad": "BAJA",
+      "tipo": "ui-contraste",
+      "detalle": "el enlace «Leer el porqué completo» y la cita entre paréntesis que le sigue van en el mismo rojo y se funden en un solo bloque (p02)"
+     },
+     {
+      "gravedad": "BAJA",
+      "tipo": "ui-duda",
+      "detalle": "el memorándum, único registro del suceso y citado en todo el relato, aparece recién en p07, después de «Por qué importa»"
+     }
+    ]
+   },
+   {
+    "id": "talavera-la-real-1976",
+    "tier": "B",
+    "veredicto": "RETOCAR",
+    "veredicto_ui": "AJUSTAR",
+    "gravedad": "ALTA",
+    "gravedad_ui": "MEDIA",
+    "defectos": [
+     {
+      "gravedad": "ALTA",
+      "tipo": "contradiccion",
+      "detalle": "«lo abre el agregado de Defensa en Caracas» frente a «el expediente se abrió por las cartas que llegaron al Ministerio» (Ballester), sin comentario"
+     },
+     {
+      "gravedad": "ALTA",
+      "tipo": "referente",
+      "detalle": "«una persona con antecedentes psiquiátricos»: no se dice quién"
+     },
+     {
+      "gravedad": "ALTA",
+      "tipo": "referente",
+      "detalle": "«Extremadura Misteriosa», «COPE» y «Planvex» citados sin presentar"
+     },
+     {
+      "gravedad": "MEDIA",
+      "tipo": "orden",
+      "detalle": "la hipótesis de Ballester Olmos y que «las armas se habían disparado» aparecen solo en «Por qué importa»"
+     },
+     {
+      "gravedad": "MEDIA",
+      "tipo": "porque-importa",
+      "detalle": "trae evidencia nueva en vez de decir por qué importa el caso"
+     },
+     {
+      "gravedad": "MEDIA",
+      "tipo": "transcripcion",
+      "detalle": "el párrafo de respuestas oficiales de 1984, 1985 y 1991 con cargos y oficinas"
+     },
+     {
+      "gravedad": "MEDIA",
+      "tipo": "repeticion",
+      "detalle": "la ausencia de casquillos e impactos se cuenta tres veces"
+     },
+     {
+      "gravedad": "MEDIA",
+      "tipo": "duda",
+      "detalle": "Trejo da el número de cargadores disparados aunque estaba inconsciente"
+     },
+     {
+      "gravedad": "MEDIA",
+      "tipo": "duda",
+      "detalle": "el resumen atribuye el relato a los tres soldados, pero casi todo es «según Trejo»"
+     },
+     {
+      "gravedad": "BAJA",
+      "tipo": "siglas",
+      "detalle": "DRISDE, Ala 23 sin explicar"
+     },
+     {
+      "gravedad": "BAJA",
+      "tipo": "frase",
+      "detalle": "«el general segundo jefe del Estado Mayor del Aire fija la respuesta a un particular»"
+     },
+     {
+      "gravedad": "BAJA",
+      "tipo": "vocabulario",
+      "detalle": "«soldados de reemplazo», «garita», «se encasquilló»: términos de España poco claros para un lector latinoamericano"
+     },
+     {
+      "gravedad": "MEDIA",
+      "tipo": "ui-transversal",
+      "detalle": "«Fisionomía de la entidad» muestra «Pequeña, peluda, con garras» y el relato describe una figura de unos 3 m hecha de puntos de luz verde (p10)"
+     },
+     {
+      "gravedad": "MEDIA",
+      "tipo": "ui-transversal",
+      "detalle": "la tarjeta de «Actores asociados» nombra a «José María Trejo» y el relato a «José Manuel Trejo» (p11 frente a p03)"
+     },
+     {
+      "gravedad": "MEDIA",
+      "tipo": "ui-muro",
+      "detalle": "párrafo de las respuestas oficiales de 1984–1991 de unas 28 líneas (p05–p06), y otros dos de 26 y 25 líneas (p03–p04, p02–p03)"
+     },
+     {
+      "gravedad": "BAJA",
+      "tipo": "ui-rotulo",
+      "detalle": "la descripción visible del expediente se corta en «testigos J.» antes del «Ver más», a mitad de un nombre (p08)"
+     },
+     {
+      "gravedad": "BAJA",
+      "tipo": "ui-rotulo",
+      "detalle": "la evidencia usa «~60 m», «~3 m» y barras («interferencia de radio / silbido agudo»), que se leen como notas (p09)"
+     },
+     {
+      "gravedad": "BAJA",
+      "tipo": "ui-rotulo",
+      "detalle": "la leyenda genérica del Tier B («un solo testigo…») choca con «tres soldados» del título (p02)"
+     }
+    ]
+   },
+   {
+    "id": "dulce-schneider-1979",
+    "tier": "B",
+    "veredicto": "RETOCAR",
+    "veredicto_ui": "AJUSTAR",
+    "gravedad": "MEDIA",
+    "gravedad_ui": "MEDIA",
+    "defectos": [
+     {
+      "gravedad": "MEDIA",
+      "tipo": "referente",
+      "detalle": "«Greg Valdez y Norio Hayakawa descartan esa hipótesis.» (aparecen sin decir quiénes son; se insinúa después)"
+     },
+     {
+      "gravedad": "MEDIA",
+      "tipo": "referente",
+      "detalle": "«la historia de Dulce que difundía John Lear desde los años ochenta» (John Lear sin presentar)"
+     },
+     {
+      "gravedad": "BAJA",
+      "tipo": "referente",
+      "detalle": "«que comparó con la historia de Bob Lazar» (Lazar sin presentar)"
+     },
+     {
+      "gravedad": "MEDIA",
+      "tipo": "duda",
+      "detalle": "30 + 40 personas, 66 muertos y 3 supervivientes suman 69 y no 70 (es el relato de Schneider, pero el texto no lo comenta)"
+     },
+     {
+      "gravedad": "MEDIA",
+      "tipo": "repeticion",
+      "detalle": "Credenciales sin verificar y ausencia de documentos se dicen en resumen, relato y «Por qué importa»"
+     },
+     {
+      "gravedad": "MEDIA",
+      "tipo": "porqué-importa",
+      "detalle": "«Por qué importa» repite Bennewitz, historial psiquiátrico y el tubo sin huellas, ya contados en el relato"
+     },
+     {
+      "gravedad": "MEDIA",
+      "tipo": "relleno",
+      "detalle": "Párrafo del padre, el presupuesto de 1,25 billones, los 107.200 vagones y los 64.000 helicópteros: catálogo que no aporta al caso"
+     },
+     {
+      "gravedad": "BAJA",
+      "tipo": "frase",
+      "detalle": "«las furgonetas lo rodearon por ambos lados y se fueron por un barranco» (no se entiende qué pasó)"
+     },
+     {
+      "gravedad": "BAJA",
+      "tipo": "siglas",
+      "detalle": "«Ryolite-38», «placas G-14», «EG&G» sin explicar"
+     },
+     {
+      "gravedad": "BAJA",
+      "tipo": "vocabulario",
+      "detalle": "Resumen dice que la exesposa «sostuvo» el homicidio y el relato dice que lo «sugirió»"
+     },
+     {
+      "gravedad": "BAJA",
+      "tipo": "unidades",
+      "detalle": "«más de una milla de profundidad», «dos millas y media (unos cuatro kilómetros)»: millas sin convertir en la primera"
+     },
+     {
+      "gravedad": "MEDIA",
+      "tipo": "ui-muro",
+      "detalle": "El párrafo «Nada de lo sustancial pudo comprobarse…» mide 29 líneas en el móvil y ocupa casi toda la pantalla (p07)."
+     },
+     {
+      "gravedad": "BAJA",
+      "tipo": "ui-muro",
+      "detalle": "El párrafo «Tras unos dos años de recuperación…» llega a 24 líneas, en el límite (p05–p06)."
+     },
+     {
+      "gravedad": "BAJA",
+      "tipo": "ui-duda",
+      "detalle": "Nueve pantallas seguidas de solo texto antes del primer elemento visual. El único visual es una foto de contexto al final (p12)."
+     },
+     {
+      "gravedad": "BAJA",
+      "tipo": "ui-rotulo",
+      "detalle": "La miga de pan repite el título completo en tres líneas de mayúsculas monoespaciadas sobre el titular (p01)."
+     }
+    ]
+   },
+   {
+    "id": "imjarvi-1970",
+    "tier": "B",
+    "veredicto": "RETOCAR",
+    "veredicto_ui": "BIEN",
+    "gravedad": "MEDIA",
+    "gravedad_ui": "BAJA",
+    "defectos": [
+     {
+      "gravedad": "MEDIA",
+      "tipo": "duda",
+      "detalle": "«Ninguna fuente ha propuesto una causa ordinaria.» frente al médico y a Tuuri, que proponen un «fenómeno eléctrico»"
+     },
+     {
+      "gravedad": "MEDIA",
+      "tipo": "referente",
+      "detalle": "«contó al autor del primer artículo finlandés» (artículo y autor no presentados)"
+     },
+     {
+      "gravedad": "BAJA",
+      "tipo": "siglas",
+      "detalle": "«APRO Bulletin» y «GICOFF» sin explicar"
+     },
+     {
+      "gravedad": "BAJA",
+      "tipo": "referente",
+      "detalle": "«Instituto Chalmers» sin decir qué es ni dónde"
+     },
+     {
+      "gravedad": "MEDIA",
+      "tipo": "duda",
+      "detalle": "«Viljo tenía la cara hinchada y roja» sin explicación en el relato"
+     },
+     {
+      "gravedad": "BAJA",
+      "tipo": "frase",
+      "detalle": "Dos horas (16:45 y 15:45) seguidas sin decir cuál se toma"
+     },
+     {
+      "gravedad": "BAJA",
+      "tipo": "vocabulario",
+      "detalle": "Resumen «decenas de avistamientos» frente a «al menos veintitrés» en el relato"
+     },
+     {
+      "gravedad": "MEDIA",
+      "tipo": "repeticion",
+      "detalle": "Las comprobaciones negativas y la luz vista a 10 y 15 km se cuentan en el relato y otra vez en «Por qué importa»"
+     },
+     {
+      "gravedad": "MEDIA",
+      "tipo": "porqué-importa",
+      "detalle": "«Por qué importa» resume el relato casi entero"
+     },
+     {
+      "gravedad": "BAJA",
+      "tipo": "ui-muro",
+      "detalle": "El párrafo sobre GICOFF y «Flying Saucer Review» mide 25 líneas, justo sobre el umbral (p05–p06)."
+     },
+     {
+      "gravedad": "BAJA",
+      "tipo": "ui-duda",
+      "detalle": "La ficha no tiene ninguna imagen ni visor: son unas 11 pantallas de solo texto (p01–p11)."
+     },
+     {
+      "gravedad": "BAJA",
+      "tipo": "ui-rotulo",
+      "detalle": "El identificador «(case741)» aparece en la cita del recuadro «Por qué» (p02)."
+     },
+     {
+      "gravedad": "BAJA",
+      "tipo": "ui-rotulo",
+      "detalle": "La miga de pan repite el título completo en tres líneas de mayúsculas (p01)."
+     }
+    ]
+   },
+   {
+    "id": "oloron-gaillac-1952",
+    "tier": "B",
+    "veredicto": "RETOCAR",
+    "veredicto_ui": "BIEN",
+    "gravedad": "MEDIA",
+    "gravedad_ui": "BAJA",
+    "defectos": [
+     {
+      "gravedad": "MEDIA",
+      "tipo": "referente",
+      "detalle": "«Patrick Gross, que la publica» (sin decir quién es)"
+     },
+     {
+      "gravedad": "MEDIA",
+      "tipo": "referente",
+      "detalle": "«otro testigo de otra observación de ese día rechazó con fuerza la explicación» (testigo y observación sin presentar)"
+     },
+     {
+      "gravedad": "MEDIA",
+      "tipo": "duda",
+      "detalle": "«el artículo de Jean Fondin que el médico adjuntó a su carta» aparece solo en «Por qué importa»; el relato habla de una foto de revista adjunta"
+     },
+     {
+      "gravedad": "MEDIA",
+      "tipo": "duda",
+      "detalle": "«hilos de hasta 6 a 8 milímetros de grosor» parece desmesurado para seda de araña y no se comenta"
+     },
+     {
+      "gravedad": "BAJA",
+      "tipo": "referente",
+      "detalle": "El médico de Oloron nunca tiene nombre, aunque es la fuente central"
+     },
+     {
+      "gravedad": "BAJA",
+      "tipo": "frase",
+      "detalle": "«el periodista Jean Fondin, enviado de un periódico infantil de París» (desconcierta sin explicación)"
+     },
+     {
+      "gravedad": "MEDIA",
+      "tipo": "repeticion",
+      "detalle": "La explicación de Gross y que el médico no explica el cilindro se cuentan en relato y en «Por qué importa»"
+     },
+     {
+      "gravedad": "MEDIA",
+      "tipo": "porqué-importa",
+      "detalle": "«Por qué importa» resume casi todo; solo aporta la falta de muestra y el carácter de segunda mano"
+     },
+     {
+      "gravedad": "BAJA",
+      "tipo": "frase",
+      "detalle": "Frase del 28 de octubre demasiado larga («su opinión se debatió… hasta el 28 de octubre, cuando…»)"
+     },
+     {
+      "gravedad": "BAJA",
+      "tipo": "vocabulario",
+      "detalle": "«ninguna de las fuentes enlazadas», «no está enlazado en las fuentes»: lenguaje de archivo, no de relato"
+     },
+     {
+      "gravedad": "BAJA",
+      "tipo": "ui-transversal",
+      "detalle": "El pie de la foto de contexto no dice qué muestra (el pórtico de la catedral) y usa comillas simples rectas en 'cabellos de ángel' (p09)."
+     },
+     {
+      "gravedad": "BAJA",
+      "tipo": "ui-rotulo",
+      "detalle": "La miga de pan repite el título completo en tres líneas de mayúsculas (p01)."
+     }
+    ]
+   },
+   {
+    "id": "catalina-scouts-1952",
+    "tier": "B",
+    "veredicto": "RETOCAR",
+    "veredicto_ui": "AJUSTAR",
+    "gravedad": "MEDIA",
+    "gravedad_ui": "MEDIA",
+    "defectos": [
+     {
+      "gravedad": "MEDIA",
+      "tipo": "transcripcion",
+      "detalle": "Párrafo de la tarjeta: «tinta roja: \"Insuff\"», «\"2? June 1952\", con el segundo dígito borroso», columnas de conclusiones, número 1339"
+     },
+     {
+      "gravedad": "MEDIA",
+      "tipo": "duda",
+      "detalle": "«dos de las cartas traían un croquis» frente a «cartas que no figuran entre los papeles publicados»"
+     },
+     {
+      "gravedad": "MEDIA",
+      "tipo": "referente",
+      "detalle": "«Davenport como posible polarización de la luz» aparece antes de que se presente a Marc Davenport"
+     },
+     {
+      "gravedad": "BAJA",
+      "tipo": "referente",
+      "detalle": "«compañero suyo en Northrop» (no queda claro de quién es compañero; Northrop sin presentar)"
+     },
+     {
+      "gravedad": "BAJA",
+      "tipo": "referente",
+      "detalle": "«el coronel Charles W. Bicking como comandante» (comandante de qué)"
+     },
+     {
+      "gravedad": "MEDIA",
+      "tipo": "repeticion",
+      "detalle": "La hora (mediodía / 12:00 PDT) y la hipótesis de que Spriggs era un adulto se dicen dos veces en el relato"
+     },
+     {
+      "gravedad": "MEDIA",
+      "tipo": "repeticion",
+      "detalle": "Último párrafo de «Por qué importa» repite el informe de March y el «datos insuficientes» ya explicados"
+     },
+     {
+      "gravedad": "BAJA",
+      "tipo": "frase",
+      "detalle": "«lo que encaja con la carta fechada de Spriggs, el único adulto por su fecha entre los anexos de 1952, aunque sigue sin constar quién era»"
+     },
+     {
+      "gravedad": "BAJA",
+      "tipo": "vocabulario",
+      "detalle": "Citas en inglés sin traducir: «by disintegration», «in an incredibly short time», «It remained in a flat horizontal position…», «the slow moving object»"
+     },
+     {
+      "gravedad": "BAJA",
+      "tipo": "unidades",
+      "detalle": "Millas y pies sin convertir (4, 5 y 8 millas; 150 pies; 500 a 800 pies)"
+     },
+     {
+      "gravedad": "BAJA",
+      "tipo": "siglas",
+      "detalle": "«MAFB-1», «807.º Grupo de Base Aérea», «PDT»"
+     },
+     {
+      "gravedad": "MEDIA",
+      "tipo": "ui-muro",
+      "detalle": "La sonda mide un párrafo de 30 líneas («La primera es la tarjeta del caso…»), al parecer dentro del «Ver más» de la tarjeta del documento (p11)."
+     },
+     {
+      "gravedad": "BAJA",
+      "tipo": "ui-muro",
+      "detalle": "Párrafos de unas 24–25 líneas seguidos en el relato y en «Por qué importa» («El oficial dejó en «None»…», «Según Vrooman…», «Las dos versiones…») (p04–p08)."
+     },
+     {
+      "gravedad": "BAJA",
+      "tipo": "ui-contraste",
+      "detalle": "La primera página del escaneo en el visor se ve casi blanca: en el móvil no se distingue el texto de la tarjeta (p10)."
+     },
+     {
+      "gravedad": "BAJA",
+      "tipo": "ui-rotulo",
+      "detalle": "La línea del lugar ocupa tres líneas de monoespaciada junto al número, y la miga de pan repite el título (p01)."
+     }
+    ]
+   },
+   {
+    "id": "ilkley-moor-1987",
+    "tier": "B",
+    "veredicto": "RETOCAR",
+    "veredicto_ui": "BIEN",
+    "gravedad": "MEDIA",
+    "gravedad_ui": "BAJA",
+    "defectos": [
+     {
+      "gravedad": "MEDIA",
+      "tipo": "referente",
+      "detalle": "«Según Patrick Gross, Hough y Randles rastrearon esa explicación» (Gross sin presentar)"
+     },
+     {
+      "gravedad": "MEDIA",
+      "tipo": "referente",
+      "detalle": "«citando a Patrick Vidal (SOBEPS, 1990)» (Vidal y SOBEPS sin presentar)"
+     },
+     {
+      "gravedad": "MEDIA",
+      "tipo": "duda",
+      "detalle": "Se encargan inspección geomagnética y radiológica, evaluación psicológica y foto de comparación de 1988, y nunca se dice qué resultaron"
+     },
+     {
+      "gravedad": "BAJA",
+      "tipo": "frase",
+      "detalle": "«Hough encargó el análisis de la foto a tres fuentes, entre ellas el laboratorio de Kodak…, y su mejora posterior por ordenador; el estudio de la brújula…; una inspección… a otro…»"
+     },
+     {
+      "gravedad": "BAJA",
+      "tipo": "siglas",
+      "detalle": "«DIGAP», «MUFORA», «SOBEPS» sin explicar"
+     },
+     {
+      "gravedad": "BAJA",
+      "tipo": "repeticion",
+      "detalle": "Testigo sincero que rehuía la prensa: final del relato y arranque de «Por qué importa»"
+     },
+     {
+      "gravedad": "BAJA",
+      "tipo": "frase",
+      "detalle": "«hacia las 20:50, según el testigo y su esposa» (detalle de expediente sin función)"
+     },
+     {
+      "gravedad": "BAJA",
+      "tipo": "ui-duda",
+      "detalle": "La foto de la que depende el caso no aparece y la página no explica su ausencia (p08–p13)."
+     },
+     {
+      "gravedad": "BAJA",
+      "tipo": "ui-espaciado",
+      "detalle": "La foto vertical de contexto (arroyo) ocupa más de una pantalla completa (p12–p13)."
+     },
+     {
+      "gravedad": "BAJA",
+      "tipo": "ui-transversal",
+      "detalle": "La etiqueta de fisionomía «Pequeña, peluda, con garras» no casa con la entidad que describe el relato (verde, de brazos largos) (p12)."
+     },
+     {
+      "gravedad": "BAJA",
+      "tipo": "ui-rotulo",
+      "detalle": "La miga de pan repite el título completo en tres líneas de mayúsculas (p01)."
+     }
+    ]
+   }
+  ]
  }
 ]
