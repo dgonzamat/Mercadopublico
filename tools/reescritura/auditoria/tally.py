@@ -20,12 +20,15 @@ for t, i in m["fichas"]:
         defs += [{"gravedad": g.upper(), "tipo": ty.strip().lower(), "detalle": de.strip()[:300]}
                  for g, ty, de in re.findall(r"DEFECTO:\s*\**\s*(ALTA|MEDIA|BAJA)\s*\|\s*(ui-[^|\n]+?)\s*\|\s*([^\n]+)", tu, re.I)]
     # Lo que se repite en todas las fichas se registra una vez como transversal (dash.py), no por ficha.
-    TRANSV = re.compile(r"pie (del sitio |de página )?(sale |va |est[aá] )?(entero )?en inglés|footer|THE PROJECT|\bDEV\b|cookies|#418|hidrataci|Sin caus|r[oó]tulo[^|]{0,40}(barra|reparto)[^|]{0,40}cort|(barra|reparto)[^|]{0,60}cortad|fisionom|otros 1 documentos|solo (el )?(icono|flecha|glifo)|«\(↗\)»|\(↗, ↗\)|«\(véase ↗\)»|comillas simples rectas|Actores asociados|tarjeta de actor|whatHappened|whyMatters|classBasis|(c[oó]digo|identificador) interno «(sin-forma|robotica|gris|humanoide|[a-z-]+)»", re.I)
+    TRANSV = re.compile(r"pie (del sitio |de página )?(sale |va |est[aá] )?(entero )?en inglés|footer|THE PROJECT|\bDEV\b|cookies|#418|hidrataci|Sin caus|r[oó]tulo[^|]{0,40}(barra|reparto)[^|]{0,40}cort|(barra|reparto)[^|]{0,60}cortad|fisionom|recuadro «Por qué»[^|]{0,60}(inglés|francés)|cuadro «Por qué»[^|]{0,60}(inglés|francés)|«%»|signo %|% queda solo|otros 1 documentos|solo (el )?(icono|flecha|glifo)|«\(↗\)»|\(↗, ↗\)|«\(véase ↗\)»|comillas simples rectas|Actores asociados|tarjeta de actor|whatHappened|whyMatters|classBasis|(c[oó]digo|identificador) interno «(sin-forma|robotica|gris|humanoide|[a-z-]+)»", re.I)
     # Commons limita (429) al contenedor de captura: una imagen suya que no carga no prueba nada del sitio.
     ENTORNO = re.compile(r"(Commons|wikimedia|Halt_Memorandum|Nave_Espacial|memor[aá]ndum[^|]{0,40}Halt)[^|]{0,120}(no carga|rota|roto)|(no carga|rota|roto)[^|]{0,120}(Commons|wikimedia|Halt)", re.I)
     for d_ in defs:
         if d_["tipo"].startswith("ui-") and ENTORNO.search(d_["detalle"]): d_["tipo"] = "ui-entorno"
         elif d_["tipo"].startswith("ui-") and TRANSV.search(d_["detalle"]): d_["tipo"] = "ui-transversal"
+    # La gravedad la fija el tipo (brief): los de hechos y coherencia son ALTA aunque el lector ponga MEDIA.
+    for d_ in defs:
+        if d_["tipo"] in ("contradiccion", "recuento", "referente", "cifra", "roto"): d_["gravedad"] = "ALTA"
     sev = lambda ds: next((g for g in ("ALTA", "MEDIA", "BAJA") if any(d["gravedad"] == g for d in ds)), "NINGUNA")
     grav = sev([d for d in defs if not d["tipo"].startswith("ui-")])  # prosa y página se miden aparte
     grav_ui = sev([d for d in defs if d["tipo"].startswith("ui-") and d["tipo"] not in ("ui-transversal", "ui-entorno")]) if ui else None
