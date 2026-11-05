@@ -98,7 +98,8 @@
       "description_en": "Extract from the official Senate record. At the Northern Command posture hearing of March 14, 2024, Gen. Gregory Guillot, asked by Sen. Kaine, says counter-drone work has dominated his first month, that he \"was not prepared for the number of incursions\" he sees, and that he has made the events at Joint Base Langley-Eustis the centerpiece of his 90-day assessment and that this emerging capability \"outstrips the operational framework\" they have to address it. In the questions for the record of the Air Force hearing of April 16, Sen. Cotton says Langley was swarmed by drones for weeks in December 2023, and Gen. David Allvin answers that \"Langley was not attacked, but its airspace was violated by drones\".",
       "source": "Senado de EE. UU., Comité de Servicios Armados (GPO, govinfo)",
       "license": "Dominio público · obra del Gobierno de EE. UU.",
-      "fallbackUrl": "https://www.govinfo.gov/content/pkg/CHRG-118shrg62122/pdf/CHRG-118shrg62122.pdf"
+      "fallbackUrl": "https://www.govinfo.gov/content/pkg/CHRG-118shrg62122/pdf/CHRG-118shrg62122.pdf",
+      "page": 3
     },
     {
       "role": "contexto",

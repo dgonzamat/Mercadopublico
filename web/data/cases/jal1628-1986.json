@@ -6,7 +6,7 @@
   "year_start": 1986,
   "country": "US",
   "country_name": "Alaska, EE.UU.",
-  "flag": "🇯🇵",
+  "flag": "🇺🇸",
   "location": {
     "lat": 64.5,
     "lng": -150,
@@ -89,7 +89,8 @@
       "description_en": "Ten pages of the file the FAA's public affairs office in Anchorage released on March 5, 1987. They include release 87-09, in which the agency says it was \"unable to confirm the event\" and that the second target was a split image of the 747 itself (the echo off the fuselage and the transponder's reply did not line up and showed as two dots). They also contain the contents page, seven pages of the selected transcript of communications among JAL 1628, Anchorage Center, the military control center at Elmendorf, United flight 69 and the C-130, with UTC times, and the February 25, 1987 analysis of the radar data, which found no abnormalities.",
       "source": "FAA, Región de Alaska — «Selected Material Relative to the FAA Investigation of Japan Air Lines flight 1628» (5 mar 1987), copia en NICAP · pp. 41-49 y 53 del PDF",
       "license": "Dominio público · obra del Gobierno de EE. UU.",
-      "fallbackUrl": "https://www.nicap.org/docs/861117_flight1628.pdf"
+      "fallbackUrl": "https://www.nicap.org/docs/861117_flight1628.pdf",
+      "page": 4
     },
     {
       "role": "contexto",

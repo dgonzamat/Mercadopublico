@@ -130,7 +130,8 @@
       "description_en": "Annual Aeronautica Militare table of the sightings reported in 2005: four reports, two in February (both at Grazzanise, page 3), one in July and one in December. For each it gives place, date, time, shape, color, speed, direction of motion, height, weather, who reported it and the result of the Air Force's check. The year's other two cases are an object seen from an airliner between Pescara and Ancona (July 25) and another at Monzuno (December 26), whose check also rules out \"fenomeni naturali conosciuti\" (known natural phenomena). The Aeronautica Militare's current \"OVNI\" page says its procedure looks for a correlation \"con eventi umani e/o fenomeni naturali\" (with human events and/or natural phenomena) and only classifies an episode as a UFO \"se non è stato possibile individuare una giustificazione tecnica o naturale\" (if no technical or natural justification could be found); that page does not describe the 2005 file.",
       "source": "Aeronautica Militare (aeronautica.difesa.it)",
       "license": "Acto oficial de la administración pública italiana, excluido del derecho de autor (Ley 633/1941, art. 5)",
-      "fallbackUrl": "https://www.aeronautica.difesa.it/wp-content/uploads/2022/11/Avvistamenti_2005.pdf"
+      "fallbackUrl": "https://www.aeronautica.difesa.it/wp-content/uploads/2022/11/Avvistamenti_2005.pdf",
+      "page": 3
     },
     {
       "role": "documento",

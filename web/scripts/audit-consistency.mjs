@@ -73,6 +73,7 @@ import path from "node:path";
 import { fileURLToPath } from "node:url";
 import { MARKERS, SINCERE, SLOP, FORMULA_REVIEWED, unquote } from "./lib/prose-markers.mjs";
 import { caseRefNounFindings } from "./lib/case-ref-noun.mjs";
+import { flagMatches } from "./lib/flag.mjs";
 
 const __dirname = path.dirname(fileURLToPath(import.meta.url));
 const root = path.join(__dirname, "..");
@@ -2235,6 +2236,17 @@ const HYPE_REVIEWED = new Set(["lakenheath-bentwaters-1956", "morocco-gendarmeri
 {
   const hits = cases.flatMap((c) => caseRefNounFindings(c).map((h) => `${c.id} (${h.field}: «${h.before} [[${h.slug}]]»)`));
   if (hits.length) record("WARN", casesDir, 0, `E57 enlace a otro caso usado como sustantivo: ${hits.length} — ${hits.slice(0, 6).join(", ")}${hits.length > 6 ? "…" : ""}. Nombrar el caso en el texto y dejar el «↗» detrás.`);
+}
+
+// ─── 9zf2. RULE E58: la bandera es la del país de la ficha ────────────────
+//
+// La cabecera pinta la bandera junto al lugar, así que una bandera que no es la
+// del país contradice la ficha (JAL 1628 llevaba la de Japón sobre Alaska; nov
+// 2026). Excepciones deliberadas en scripts/lib/flag.mjs. ERROR: hoy no hay
+// ninguna y el arreglo es una línea.
+{
+  const bad = cases.filter((c) => !flagMatches(c)).map((c) => `${c.id} (${c.country} ${c.flag})`);
+  if (bad.length) record("ERROR", casesDir, 0, `E58 bandera distinta del país de la ficha: ${bad.join(", ")}. Usa la del país del suceso (o un globo si no lo hay).`);
 }
 
 // ─── 9zf. RULE E53: todo elemento visual declara su papel ─────────────────
