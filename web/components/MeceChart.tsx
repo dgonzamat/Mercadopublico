@@ -268,7 +268,8 @@ export function CasePosterior({
       {/* Leyenda de la barra sin cifras: la única cifra visible es la de arriba. */}
       <div className="mt-1 flex w-full gap-1 text-xs text-muted">
         {groups.map((g) => (
-          <span key={g.id} className="min-w-0 truncate" style={{ flex: `${Math.round(g.items.reduce((a, r) => a + r.count, 0) * 1000)} 1 0%` }}>
+          // Rótulo en dos líneas si hace falta: con `truncate` se leía «Sin causa c…» en el móvil.
+          <span key={g.id} className="min-w-0 break-words leading-tight" style={{ flex: `${Math.round(g.items.reduce((a, r) => a + r.count, 0) * 1000)} 1 0%` }}>
             {g.sub >= 15 && <T es={g.es} en={g.en} locale={locale} />}
           </span>
         ))}

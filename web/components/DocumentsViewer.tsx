@@ -104,8 +104,8 @@ export function DocumentsViewer({ docs, locale, heading }: { docs: DocEmbed[]; l
           <summary className="cursor-pointer text-sm font-semibold text-text marker:text-accent">
             <T
               locale={locale}
-              es={`Ver los otros ${docsRest.length} documentos`}
-              en={`Show the other ${docsRest.length} documents`}
+              es={docsRest.length === 1 ? "Ver el otro documento" : `Ver los otros ${docsRest.length} documentos`}
+              en={docsRest.length === 1 ? "Show the other document" : `Show the other ${docsRest.length} documents`}
             />
           </summary>
           <ul className="mt-4 space-y-3 border-t border-border pt-4">
