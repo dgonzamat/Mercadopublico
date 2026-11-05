@@ -74,6 +74,8 @@ export const CATEGORY_META: Record<
 > = {
   document: { icon: "📄", label: "Documento", label_en: "Document" },
   incident: { icon: "👁", label: "Incidente", label_en: "Incident" },
-  contactee: { icon: "🧑", label: "Contactado", label_en: "Contactee" },
+  // «Contactado» suelto junto al tier no se entendía (auditoría de página, nov 2026):
+  // el rótulo dice qué tipo de caso es.
+  contactee: { icon: "🧑", label: "Relato de contacto", label_en: "Contact account" },
   crop_circle: { icon: "🌾", label: "Círculo de cultivo", label_en: "Crop circle" },
 };

@@ -72,6 +72,7 @@ import fs from "node:fs";
 import path from "node:path";
 import { fileURLToPath } from "node:url";
 import { MARKERS, SINCERE, SLOP, FORMULA_REVIEWED, unquote } from "./lib/prose-markers.mjs";
+import { caseRefNounFindings } from "./lib/case-ref-noun.mjs";
 
 const __dirname = path.dirname(fileURLToPath(import.meta.url));
 const root = path.join(__dirname, "..");
@@ -2222,6 +2223,18 @@ const HYPE_REVIEWED = new Set(["lakenheath-bentwaters-1956", "morocco-gendarmeri
       if (re.test(t) && !(label.startsWith("fórmula") && FORMULA_REVIEWED.has(c.id))) hits.push(`${c.id} (${label})`);
   }
   if (hits.length) record("ERROR", casesDir, 0, `E56 muletillas en la prosa: ${hits.length} — ${hits.slice(0, 8).join(", ")}${hits.length > 8 ? "…" : ""}. Reescribir (ver docs/brief-prosa.md y /redaccion); lo citado entre comillas no cuenta.`);
+}
+
+// ─── 9zf1. RULE E57: un enlace entre casos no ocupa el lugar de un nombre ─
+//
+// `[[slug]]` se dibuja solo como «↗» (lib/caseRefs.tsx), así que tras un
+// artículo o una preposición («por el de [[x]]», «en [[x]] y GoFast») la frase
+// queda sin sustantivo. Lo vio el lector en la auditoría de noviembre de 2026
+// y ninguna sonda lo medía. WARN hasta que el lote que lo limpia termine; la
+// lógica vive en scripts/lib/case-ref-noun.mjs y tiene su prueba unitaria.
+{
+  const hits = cases.flatMap((c) => caseRefNounFindings(c).map((h) => `${c.id} (${h.field}: «${h.before} [[${h.slug}]]»)`));
+  if (hits.length) record("WARN", casesDir, 0, `E57 enlace a otro caso usado como sustantivo: ${hits.length} — ${hits.slice(0, 6).join(", ")}${hits.length > 6 ? "…" : ""}. Nombrar el caso en el texto y dejar el «↗» detrás.`);
 }
 
 // ─── 9zf. RULE E53: todo elemento visual declara su papel ─────────────────

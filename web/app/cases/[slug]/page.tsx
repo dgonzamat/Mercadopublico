@@ -502,7 +502,7 @@ export async function CaseDetailPage(
         {(hasEvidence || hasSources) && (
           <div className="grid gap-12 md:grid-cols-2">
             {hasEvidence && (
-              <div className="space-y-4">
+              <div className="min-w-0 space-y-4">
                 <Eyebrow>
                   <T locale={locale} es="Evidencia documentada" en="Documented evidence" />
                 </Eyebrow>
@@ -512,7 +512,7 @@ export async function CaseDetailPage(
                   const renderItem = (item: string, i: number) => (
                     <li
                       key={i}
-                      className="grid grid-cols-[2rem_1fr] gap-3 text-base leading-relaxed text-text"
+                      className="grid grid-cols-[2rem_minmax(0,1fr)] gap-3 text-base leading-relaxed text-text [overflow-wrap:anywhere]"
                     >
                       <span
                         aria-hidden
@@ -549,7 +549,7 @@ export async function CaseDetailPage(
             )}
 
             {hasSources && (
-              <div className="space-y-4">
+              <div className="min-w-0 space-y-4">
                 <Eyebrow>
                   <T locale={locale} es="Fuentes" en="Sources" />
                 </Eyebrow>
@@ -557,7 +557,7 @@ export async function CaseDetailPage(
                   {c.sources!.map((s, i) => (
                     <li
                       key={i}
-                      className="grid grid-cols-[2rem_1fr] gap-3 text-sm leading-relaxed"
+                      className="grid grid-cols-[2rem_minmax(0,1fr)] gap-3 text-sm leading-relaxed [overflow-wrap:anywhere]"
                     >
                       <span
                         aria-hidden
@@ -611,12 +611,11 @@ export async function CaseDetailPage(
                   href={`/entities/${f.slug}`}
                   className="inline-flex min-h-[44px] items-center border-2 px-3 py-1.5 text-xs hover:bg-text hover:text-bg"
                   style={{ borderColor: f.color }}
-                  title={f.description_en ?? f.description}
+                  title={locale === "es" ? f.description : f.description_en ?? f.description}
                 >
-                  <span className="font-mono">{f.slug}</span>
-                  <span className="ml-2">
-                    <T locale={locale} es={f.name} en={f.name_en} />
-                  </span>
+                  {/* Solo el nombre: el slug interno («gris», «sin-forma») salía al lado
+                      y se leía como un rótulo duplicado (auditoría de página, nov 2026). */}
+                  <T locale={locale} es={f.name} en={f.name_en} />
                 </LocaleLink>
               ))}
             </div>
@@ -780,15 +779,17 @@ export async function CaseDetailPage(
               en={`Associated actors (${caseResearchers.length})`}
             />
           </Eyebrow>
-          <div className="grid gap-3 sm:grid-cols-2">
+          {/* Columnas minmax(0,1fr): sin ellas una etiqueta larga ensanchaba la tarjeta
+              más allá de la pantalla y el truncate no actuaba (auditoría, nov 2026). */}
+          <div className="grid grid-cols-[minmax(0,1fr)] gap-3 sm:grid-cols-[repeat(2,minmax(0,1fr))]">
             {caseResearchers.map((r) => (
               <LocaleLink
                 key={r.id}
                 href={`/researchers/${r.id}`}
-                className="flex items-center gap-3 border border-border bg-panel p-3 transition hover:border-accent/50"
+                className="flex min-w-0 items-center gap-3 border border-border bg-panel p-3 transition hover:border-accent/50"
               >
                 <ResearcherAvatar researcher={r} size="sm" />
-                <span className="min-w-0">
+                <span className="min-w-0 flex-1">
                   <span className="block truncate text-sm font-medium text-text">
                     {r.name}
                   </span>
