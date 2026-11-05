@@ -102,7 +102,8 @@
       "description_en": "Extract from the FBI file. The New Mexico State Police report written by Officer Gabriel Valdez on December 15, 1976 places the case 13 miles east of Dulce: the three-year-old cow missing its left ear, tongue, udder and rectum, the 4-inch tripod marks that followed it for some 600 feet, the yellow substance the labs could not identify, and Howard Burgess's radiation reading. The Albuquerque FBI memo and letterhead memorandum (January 1980) close the matter: there were no new reports on Indian lands, and the 1978 reports, though suspicious, did not allow a determination that the animals had been mutilated.",
       "source": "FBI, expediente «Animal Mutilation» (partes 3 y 5), vía archive.org",
       "license": "Dominio público · obra del Gobierno de EE. UU.",
-      "fallbackUrl": "https://archive.org/details/AnimalMutilation"
+      "fallbackUrl": "https://archive.org/details/AnimalMutilation",
+      "page": 3
     },
     {
       "role": "contexto",

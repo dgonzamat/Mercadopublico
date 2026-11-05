@@ -58,7 +58,7 @@ export function DocumentsViewer({ docs, locale, heading }: { docs: DocEmbed[]; l
         .map((doc, i) => (
           <figure key={i} className="space-y-2">
             {doc.type === "pdf" ? (
-              <PdfDoc src={doc.src} fallbackUrl={doc.fallbackUrl} />
+              <PdfDoc src={doc.src} fallbackUrl={doc.fallbackUrl} page={doc.page} />
             ) : doc.type === "video" ? (
               <DvidsVideo src={doc.src} title={doc.title_en ?? doc.title} />
             ) : (

@@ -17,9 +17,11 @@ const PdfPages = dynamic(() => import("./PdfPages"), {
 export default function PdfDoc({
   src,
   fallbackUrl,
+  page,
 }: {
   src: string;
   fallbackUrl?: string;
+  page?: number;
 }) {
-  return <PdfPages src={src} fallbackUrl={fallbackUrl} />;
+  return <PdfPages src={src} fallbackUrl={fallbackUrl} initialPage={page} />;
 }

@@ -192,6 +192,8 @@ function validateDocEmbeds(w, docs) {
           if (d[f] !== undefined && !isStr(d[f])) err(dw, `${f} debe ser string`);
         if (d.fallbackUrl !== undefined && !isHttpUrl(d.fallbackUrl))
           err(dw, `fallbackUrl malformada: "${d.fallbackUrl}"`);
+        if (d.page !== undefined && (!Number.isInteger(d.page) || d.page < 1 || d.type !== "pdf"))
+          err(dw, `page debe ser un entero ≥ 1 y solo vale en documentos pdf: ${JSON.stringify(d.page)}`);
       });
   }
 }

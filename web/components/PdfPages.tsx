@@ -1,6 +1,7 @@
 "use client";
 
 import { useEffect, useRef, useState } from "react";
+import { startPage } from "@/lib/startPage";
 import { Document, Page, pdfjs } from "react-pdf";
 
 // Worker same-origin, bundleado por el toolchain (no CDN de terceros).
@@ -12,6 +13,8 @@ pdfjs.GlobalWorkerOptions.workerSrc = new URL(
 type Props = {
   src: string;
   fallbackUrl?: string;
+  /** Página inicial declarada por el documento (`page`). */
+  initialPage?: number;
 };
 
 /**
@@ -21,9 +24,9 @@ type Props = {
  * Se carga vía dynamic(ssr:false) desde PdfDoc, así que pdfjs solo corre en el
  * navegador. Capas de texto/anotación desactivadas: solo render visual.
  */
-export default function PdfPages({ src, fallbackUrl }: Props) {
+export default function PdfPages({ src, fallbackUrl, initialPage }: Props) {
   const [numPages, setNumPages] = useState(0);
-  const [page, setPage] = useState(1);
+  const [page, setPage] = useState(() => startPage(initialPage));
   const [width, setWidth] = useState(0);
   const [failed, setFailed] = useState(false);
   const boxRef = useRef<HTMLDivElement>(null);
@@ -60,7 +63,10 @@ export default function PdfPages({ src, fallbackUrl }: Props) {
       <div ref={boxRef} className="max-h-[80vh] overflow-auto">
         <Document
           file={src}
-          onLoadSuccess={({ numPages }) => setNumPages(numPages)}
+          onLoadSuccess={({ numPages }) => {
+            setNumPages(numPages);
+            setPage((p) => startPage(p, numPages));
+          }}
           onLoadError={() => setFailed(true)}
           loading={
             <div className="flex h-[60vh] min-h-[360px] items-center justify-center text-sm text-muted">

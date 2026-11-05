@@ -91,6 +91,9 @@ export interface DocEmbed {
   source?: string;
   license?: string;
   fallbackUrl?: string;
+  /** Página en la que abre el visor de un PDF (1 = la primera). Para documentos
+   *  largos cuya parte pertinente no es la portada. */
+  page?: number;
 }
 
 /**
