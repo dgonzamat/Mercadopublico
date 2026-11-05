@@ -1,5 +1,5 @@
 """Cuenta los veredictos de una muestra (línea final «VEREDICTO: APROBADA|RETOCAR|REESCRIBIR»
-de cada informe del lector) y la añade a historial.json. Uso: tally.py <dir_muestra>"""
+de cada informe del lector) y la añade a historial.json. Uso: tally.py <dir_muestra> [--historial <ruta>] (la reauditoría usa reaud-historial.json)"""
 import json, re, sys, os
 S = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 d = sys.argv[1]; m = json.load(open(f"{d}/muestra.json"))
@@ -36,7 +36,7 @@ for t, i in m["fichas"]:
     res.append({"id": i, "tier": t, "veredicto": v, "veredicto_ui": ui, "gravedad": grav, "gravedad_ui": grav_ui, "defectos": defs})
 falta = [r["id"] for r in res if not r["veredicto"]]
 if falta: sys.exit(f"sin veredicto: {falta}")
-h = f"{S}/muestras/historial.json"
+h = sys.argv[sys.argv.index("--historial") + 1] if "--historial" in sys.argv else f"{S}/muestras/historial.json"
 hist = json.load(open(h)) if os.path.exists(h) else []
 key = m.get("muestra", m["fecha"])
 if any(x.get("muestra", x["fecha"]) != key and x["fecha"] == m["fecha"] and {f["id"] for f in x["fichas"]} & {r["id"] for r in res} for x in hist): sys.exit("fichas repetidas con otra muestra")
