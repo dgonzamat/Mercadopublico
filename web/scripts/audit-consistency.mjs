@@ -73,6 +73,8 @@ import path from "node:path";
 import { fileURLToPath } from "node:url";
 import { MARKERS, SINCERE, SLOP, FORMULA_REVIEWED, unquote } from "./lib/prose-markers.mjs";
 import { caseRefNounFindings } from "./lib/case-ref-noun.mjs";
+import { longParagraphs, MAX_PARAGRAPH } from "./lib/long-paragraphs.mjs";
+import { noteFindings } from "./lib/note-hygiene.mjs";
 import { flagMatches } from "./lib/flag.mjs";
 
 const __dirname = path.dirname(fileURLToPath(import.meta.url));
@@ -2270,6 +2272,37 @@ const HYPE_REVIEWED = new Set(["lakenheath-bentwaters-1956", "morocco-gendarmeri
   const demasiadas = cases.filter((c) => [...(c.documents || []), c.primaryDocument, c.featuredDoc].filter((d) => d && d.role === "prueba").length > 2).map((c) => c.id);
   if (demasiadas.length) record("ERROR", "data/cases", 0, `E53 más de dos \`prueba\`: ${demasiadas.length} ficha(s) — ${demasiadas.slice(0, 5).join(", ")}${demasiadas.length > 5 ? "…" : ""}. Deja las dos que mejor registran el suceso y pasa el resto a \`documento\`.`);
   if (sinPapel.length) record("ERROR", "data/cases", 0, `E53 elemento visual sin papel: ${sinPapel.length} sin \`role\` válido (prueba | documento | contexto): ${sinPapel.slice(0, 5).join(", ")}${sinPapel.length > 5 ? "…" : ""}.`);
+}
+
+// ─── 9zf2. RULE E59: párrafos de más de 900 caracteres (muro en el móvil) ─
+//
+// E52 corta en 1.200, que en 390 px son 25 a 31 líneas: la auditoría de
+// noviembre de 2026 halló 401 muros en 283 fichas que esa regla aprobaba. La
+// fase 1 del plan de remediación baja el umbral a 900 (unas 19 líneas) como
+// WARN; pasa a ERROR cuando los lotes que parten esos párrafos terminen, y
+// entonces E52 puede bajar su límite. Lógica y prueba unitaria en
+// scripts/lib/long-paragraphs.mjs.
+{
+  const hit = cases.map((c) => [c.id, longParagraphs(c)]).filter(([, h]) => h.length);
+  const n = hit.reduce((a, [, h]) => a + h.length, 0);
+  if (n) record("WARN", casesDir, 0, `E59 párrafos de más de ${MAX_PARAGRAPH} caracteres: ${n} en ${hit.length} fichas (${hit.slice(0, 4).map(([id, h]) => `${id} ×${h.length}`).join(", ")}${hit.length > 4 ? "…" : ""}). Partir por donde cambia la idea, igual en ES y EN.`);
+}
+
+// ─── 9zf3. RULE E60: notas del redactor en fuentes y documentos ─────────────
+//
+// E47 y E56 miran la prosa del caso, no las notas de las fuentes ni las
+// descripciones de los documentos, y ahí la auditoría de noviembre de 2026 halló
+// nombres internos de campos, notas de trabajo («no es accesible desde el
+// entorno de revisión», «enlace heredado») y URL crudas. WARN hasta que el lote
+// que las limpia termine. Lógica y prueba en scripts/lib/note-hygiene.mjs.
+{
+  const all = cases.flatMap((c) => noteFindings(c).map((h) => ({ id: c.id, ...h })));
+  const by = (k) => all.filter((h) => h.kind === k);
+  const parts = [["campo", "nombre interno de campo"], ["nota", "nota de trabajo"], ["url", "URL cruda"]]
+    .map(([k, label]) => [label, by(k)])
+    .filter(([, h]) => h.length)
+    .map(([label, h]) => `${label}: ${h.length} en ${new Set(h.map((x) => x.id)).size} fichas (${h.slice(0, 2).map((x) => `${x.id} «${x.match}»`).join(", ")}${h.length > 2 ? "…" : ""})`);
+  if (parts.length) record("WARN", casesDir, 0, `E60 texto del redactor en notas de fuentes y documentos: ${parts.join(" · ")}. El lector ve la nota tal cual: reescribirla como dato o quitarla.`);
 }
 
 // ─── 9zg. RULE E54: comillas, ortografía y fechas de la guía de redacción ─
