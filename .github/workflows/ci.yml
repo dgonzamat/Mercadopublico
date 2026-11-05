@@ -41,6 +41,13 @@ jobs:
       - name: Lint (ESLint)
         run: npm run lint
 
+      # Pruebas unitarias (node --test, sin dependencias): funciones puras de
+      # lib/ y la lógica de las sondas, cada una con su caso que debe fallar.
+      # Nacen de la auditoría de noviembre de 2026, que encontró sondas en
+      # verde sobre defectos reales.
+      - name: Unit tests (node --test)
+        run: npm run test:unit
+
       # Typecheck explícito ANTES del build: `tsc --noEmit` (~7 s) falla rápido
       # y aísla los errores de tipo, en vez de descubrirlos al final de
       # `next build` tras el webpack. Nace de #638, donde un error de resolución

@@ -8,6 +8,7 @@
     "build": "next build",
     "postbuild": "node scripts/test-chart.mjs",
     "test": "node scripts/test-chart.mjs",
+    "test:unit": "node --experimental-strip-types --no-warnings --test tests/*.test.mjs",
     "typecheck": "tsc --noEmit",
     "start": "next start",
     "audit": "node scripts/audit-consistency.mjs",
