@@ -779,15 +779,17 @@ export async function CaseDetailPage(
               en={`Associated actors (${caseResearchers.length})`}
             />
           </Eyebrow>
-          <div className="grid gap-3 sm:grid-cols-2">
+          {/* Columnas minmax(0,1fr): sin ellas una etiqueta larga ensanchaba la tarjeta
+              más allá de la pantalla y el truncate no actuaba (auditoría, nov 2026). */}
+          <div className="grid grid-cols-[minmax(0,1fr)] gap-3 sm:grid-cols-[repeat(2,minmax(0,1fr))]">
             {caseResearchers.map((r) => (
               <LocaleLink
                 key={r.id}
                 href={`/researchers/${r.id}`}
-                className="flex items-center gap-3 border border-border bg-panel p-3 transition hover:border-accent/50"
+                className="flex min-w-0 items-center gap-3 border border-border bg-panel p-3 transition hover:border-accent/50"
               >
                 <ResearcherAvatar researcher={r} size="sm" />
-                <span className="min-w-0">
+                <span className="min-w-0 flex-1">
                   <span className="block truncate text-sm font-medium text-text">
                     {r.name}
                   </span>
