@@ -1,0 +1,59 @@
+{
+ "_nota": "Fichas que ya pasaron por el método de remediación (corrector + verificador + relectura de muestra). Lo lee elegir_lote.py.",
+ "lotes": {
+  "R1 (#1236)": [
+   "lakenheath-bentwaters-1956",
+   "colares-1977",
+   "jal1628-1986",
+   "belgian-wave-1989",
+   "campeche-2004",
+   "nimitz-2004",
+   "aguadilla-2013",
+   "naval-chile-2014",
+   "lake-huron-2023",
+   "washington-dc-1952",
+   "aawsap-skinwalker-2008"
+  ],
+  "PoC 1 (#1238)": [
+   "canarias-5-marzo-1979",
+   "loring-afb-1975",
+   "oumuamua-2017",
+   "gulf-of-oman-2021",
+   "west-freugh-1957"
+  ],
+  "PoC 2 (#1238)": [
+   "kinross-incident-1953",
+   "middle-east-misrep-uap-2025",
+   "lake-michigan-1994",
+   "ellsworth-afb-1953",
+   "kyiv-mao-observations-2022"
+  ],
+  "PoC 3 (#1238)": [
+   "corea-f94-1952",
+   "noite-oficial-1986",
+   "uss-omaha-2019",
+   "stereo-soho-2011",
+   "hassayampa-philippine-sea-1965",
+   "chelyabinsk-2013",
+   "haneda-1952",
+   "roosevelt-2014",
+   "falconbridge-norad-1975",
+   "caballero-negro-1998"
+  ],
+  "Lote 2a-1 (#1242)": [
+   "fbi-thermal-slow-objects-2026",
+   "wheelus-libia-1956",
+   "greece-diamond-swir-2024",
+   "kadena-okinawa-1951",
+   "france-wave-1990",
+   "iraq-misrep-uas-2022",
+   "arabia-saudi-b52-powerflite-1957",
+   "cecconi-treviso-1979",
+   "panama-canal-zone-1958",
+   "3i-atlas-2025"
+  ]
+ },
+ "reescribir_tras_relectura": [
+  "kadena-okinawa-1951"
+ ]
+}
