@@ -244,8 +244,10 @@ export async function CaseDetailPage(
         ? "font-display text-lg leading-snug text-text md:text-2xl"
         : "font-display text-xl leading-snug text-text md:text-3xl";
 
+  // Los <script> de datos estructurados van fuera del <article>: como primeros
+  // hijos recibían el margen de space-y y abrían un hueco de 64 px en móvil.
   return (
-    <article className="mx-auto max-w-3xl space-y-16 py-4 md:space-y-32">
+    <>
       <script
         type="application/ld+json"
         // Per-case Schema.org Article+Event+Place graph for rich snippets
@@ -262,13 +264,15 @@ export async function CaseDetailPage(
           { label: locale === "es" ? c.name : c.name_en ?? c.name },
         ]}
       />
+    <article className="mx-auto max-w-3xl space-y-16 py-4 md:space-y-32">
       <div className="flex items-center justify-between gap-4">
         <Breadcrumb
           locale={locale}
           items={[
             { href: "/", es: "Inicio", en: "Home" },
             ...(crumbParent ? [crumbParent] : []),
-            { es: c.name, en: c.name_en ?? c.name },
+            // El título ya es el H1 justo debajo: la ruta cierra con el número.
+            { es: `nº ${c.num}`, en: `No. ${c.num}` },
           ]}
         />
         <ShareButton title={c.name} locale={locale} />
@@ -276,11 +280,12 @@ export async function CaseDetailPage(
 
       {/* ────────── ZONE A — HERO EDITORIAL ────────── */}
       <header className="space-y-8">
-        <div className="grid grid-cols-[auto_1fr] items-baseline gap-x-6 gap-y-4 md:gap-x-10">
-          {/* El número es de caso: un documento no lo muestra. */}
+        <div className="grid grid-cols-1 items-baseline gap-x-6 gap-y-4 md:grid-cols-[auto_1fr] md:gap-x-10">
+          {/* El número es de caso: un documento no lo muestra. En móvil va en la
+              ruta, para que el título use todo el ancho. */}
           <span
             aria-hidden
-            className="font-display text-4xl leading-none tabular-nums text-accent md:text-8xl"
+            className="hidden font-display text-8xl leading-none tabular-nums text-accent md:block"
           >
             {c.category === "document" ? "" : String(c.num).padStart(2, "0")}
           </span>
@@ -848,6 +853,7 @@ export async function CaseDetailPage(
       </nav>
       )}
     </article>
+    </>
   );
 }
 
