@@ -18,7 +18,7 @@ export function Breadcrumb({
   return (
     <nav
       aria-label="Ruta de navegación"
-      className="font-mono text-xs uppercase tracking-widest text-muted"
+      className="text-sm text-muted"
     >
       <ol className="flex flex-wrap items-center gap-x-2 gap-y-1">
         {items.map((it, i) => {
