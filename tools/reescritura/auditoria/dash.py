@@ -9,7 +9,6 @@ cases = {c["id"]: c for c in (json.load(open(f)) for f in glob.glob("/home/user/
 fichas, defectos = [], []
 for m in hist:
     for f in m["fichas"]:
-        if f["id"] in hechas: continue
         ds = f.get("defectos", [])
         pro = [d for d in ds if not d["tipo"].startswith("ui-")]; ui = [d for d in ds if d["tipo"].startswith("ui-")]
         fichas.append({"ficha": f["id"], "nombre": cases.get(f["id"], {}).get("name", f["id"]), "tier": f["tier"],
@@ -23,7 +22,7 @@ for m in hist:
                 "muestra": m.get("muestra", m["fecha"]), "factor": "página" if d["tipo"].startswith("ui-") else "prosa",
                 "gravedad": d["gravedad"], "tipo": d["tipo"].removeprefix("ui-"), "duda": d["tipo"] in ("duda", "ui-duda"),
                 "detalle": d["detalle"]})
-n = len(fichas); pend = len(cases) - len(hechas)
+n = len(fichas); pend = len(cases)  # desde el 5 nov la auditoría cubre también las 11 reescritas en R1
 nr = sum(f["veredicto"] == "REESCRIBIR" for f in fichas); na = sum(f["veredicto"] == "APROBADA" for f in fichas)
 cob = [{"fichas_total": len(cases), "reescritas_r1": len(hechas), "pendientes": pend,
         "auditadas_prosa": n, "auditadas_pagina": sum(f["veredicto_ui"] != "SIN REVISAR" for f in fichas),
@@ -31,6 +30,10 @@ cob = [{"fichas_total": len(cases), "reescritas_r1": len(hechas), "pendientes": 
         "est_reescribir": round(pend * nr / max(n, 1)), "est_aprobadas": round(pend * na / max(n, 1)),
         "est_retocar": pend - round(pend * nr / max(n, 1)) - round(pend * na / max(n, 1))}]
 trans = [
+ {"hallazgo": "Un enlace a otro caso usado como sustantivo («por el de ↗», «en ↗ y GoFast») deja la frase sin nombre: linkCaseRefs dibuja solo «↗» y el nombre queda en el title", "factor": "página", "gravedad": "ALTA", "alcance": "fichas con [[slug]] tras preposición o artículo (Burgos 1975, Golfo de Omán, Ghost rockets Finlandia…)", "detectado": "2026-11-05", "estado": "Pendiente"},
+ {"hallazgo": "El recuadro «Por qué» corta la cita en una inicial («dijo a J.»): splitLead toma el punto de la inicial como fin de oración", "factor": "página", "gravedad": "ALTA", "alcance": "fichas con iniciales en el porqué (Lubbock 1951 visto; ~14 en riesgo)", "detectado": "2026-11-05", "estado": "Pendiente"},
+ {"hallazgo": "Una URL o ruta sin cortes en la nota de una fuente desborda Evidencia y Fuentes por la derecha, y la sonda ui.mjs no lo ve (desborde_horizontal vacío)", "factor": "página", "gravedad": "ALTA", "alcance": "Ferrol 1966, Harare 2008; la sonda no es fiable para este caso", "detectado": "2026-11-05", "estado": "Pendiente"},
+ {"hallazgo": "La etiqueta «Contactado» junto al tier no se explica en la página", "factor": "página", "gravedad": "BAJA", "alcance": "fichas con tipo de encuentro contactee", "detectado": "2026-11-05", "estado": "Pendiente"},
  {"hallazgo": "El aviso de cookies sale en inglés en todo el espejo /es: se dibuja en el layout raíz, fuera del contenedor que fija el español", "factor": "página", "gravedad": "ALTA", "alcance": "todas las páginas /es", "detectado": "2026-11-03", "estado": "Pendiente"},
  {"hallazgo": "Error de hidratación de React #418: el HTML estático no coincide con el primer render del navegador", "factor": "página", "gravedad": "MEDIA", "alcance": "todas las páginas probadas (fichas, portada, /es y raíz)", "detectado": "2026-11-03", "estado": "Pendiente"},
  {"hallazgo": "El rótulo de la barra de «Qué fue» se corta en el móvil («Sin causa c…», «Causa natural o hu…»)", "factor": "página", "gravedad": "BAJA", "alcance": "fichas con reparto de clases", "detectado": "2026-11-03", "estado": "Pendiente"},
