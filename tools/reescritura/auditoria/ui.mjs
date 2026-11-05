@@ -12,7 +12,11 @@ import { execSync } from "child_process";
 const require = createRequire(import.meta.url);
 let pw;
 try { pw = require("playwright"); } catch { pw = createRequire(path.join(execSync("npm root -g").toString().trim(), "noop.js"))("playwright"); }
-const WEB = "/home/user/Mercadopublico/web", OUT = path.join(WEB, "out"), BASE = "/Mercadopublico", H = 844, MAXP = 14;
+// El sitio se sirve desde la raíz (uapcodex.org): next.config.mjs deja basePath vacío
+// salvo que NEXT_PUBLIC_BASE_PATH diga otra cosa. Servirlo bajo /Mercadopublico hacía
+// que el router del cliente no reconociera /es y pasara el chrome a inglés con el
+// error #418: tres «defectos transversales» de la auditoría eran de esta sonda (nov 2026).
+const WEB = "/home/user/Mercadopublico/web", OUT = path.join(WEB, "out"), BASE = process.env.NEXT_PUBLIC_BASE_PATH || "", H = 844, MAXP = 14;
 const dir = process.argv[2];
 const m = JSON.parse(fs.readFileSync(path.join(dir, "muestra.json")));
 // out/ rancio = capturas de una ficha que ya no existe así (lección de test-chart).
@@ -25,7 +29,7 @@ if (stale.length) { console.error("ui: out/ RANCIO para", stale.map((s) => s[1])
 const types = { ".html": "text/html", ".js": "application/javascript", ".css": "text/css", ".svg": "image/svg+xml", ".png": "image/png", ".jpg": "image/jpeg", ".jpeg": "image/jpeg", ".webp": "image/webp", ".pdf": "application/pdf", ".json": "application/json", ".woff2": "font/woff2", ".mjs": "application/javascript" };
 const server = http.createServer((q, r) => {
   let u = decodeURIComponent(q.url.split("?")[0]);
-  if (u.startsWith(BASE)) u = u.slice(BASE.length);
+  if (BASE && u.startsWith(BASE)) u = u.slice(BASE.length);
   let f = path.join(OUT, u);
   if (fs.existsSync(f) && fs.statSync(f).isDirectory()) f = path.join(f, "index.html");
   if (!fs.existsSync(f)) { r.statusCode = 404; return r.end(); }
@@ -40,7 +44,7 @@ const out = {};
 for (const [, id] of m.fichas) {
   const page = await ctx.newPage();
   const fails = [];
-  page.on("response", (r) => { if (r.status() >= 400 && r.url().includes("127.0.0.1")) fails.push(`${r.status()} ${r.url().split(BASE)[1] ?? r.url()}`); });
+  page.on("response", (r) => { if (r.status() >= 400 && r.url().includes("127.0.0.1")) fails.push(`${r.status()} ${new URL(r.url()).pathname}`); });
   page.on("pageerror", (e) => fails.push("JS " + String(e).slice(0, 120)));
   await page.goto(`http://127.0.0.1:${port}${BASE}/es/cases/${id}/`, { waitUntil: "networkidle" }).catch(() => {});
   // Bajar poco a poco para que carguen los visores perezosos, y volver arriba.
@@ -69,7 +73,9 @@ for (const [, id] of m.fichas) {
       pantallas_hasta_caso: first ? +(top(first) / H).toFixed(2) : null,
       parrafos_mas_largos: paras.sort((a, b) => b.lineas - a.lineas).slice(0, 3),
       imagenes: imgs.length, imagenes_rotas: rotas, visores_renderizados: visores,
-      desborde_horizontal: document.documentElement.scrollWidth > window.innerWidth + 1 ? ancho : [],
+      // Por elemento, no por página: un contenedor que recorta (overflow hidden) no
+      // desplaza la página y aun así deja texto cortado (Ferrol, Harare; nov 2026).
+      desborde_horizontal: ancho,
       toques_pequenos: toques, markup_crudo: crudo,
     };
   }, H);
