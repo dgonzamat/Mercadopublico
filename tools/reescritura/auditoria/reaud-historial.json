@@ -1,0 +1,148 @@
+[
+ {
+  "fecha": "2026-11-06",
+  "muestra": "reaud-2026-11-06",
+  "fichas": [
+   {
+    "id": "three-objects-fixed-formation-2023",
+    "tier": "A",
+    "veredicto": "RETOCAR",
+    "veredicto_ui": "BIEN",
+    "gravedad": "MEDIA",
+    "gravedad_ui": "BAJA",
+    "defectos": [
+     {
+      "gravedad": "MEDIA",
+      "tipo": "duda",
+      "detalle": "«con sus marcas de tiempo»: el relato nunca menciona marcas de tiempo en la descripción de la AARO"
+     },
+     {
+      "gravedad": "MEDIA",
+      "tipo": "repeticion",
+      "detalle": "«quien lo grabó no dejó descripción/testimonio» aparece en resumen, relato y «Por qué importa»"
+     },
+     {
+      "gravedad": "MEDIA",
+      "tipo": "repeticion",
+      "detalle": "la disposición fija de las tres manchas se cuenta en resumen, relato y primer párrafo de «Por qué importa»"
+     },
+     {
+      "gravedad": "MEDIA",
+      "tipo": "porque-importa",
+      "detalle": "el primer párrafo de «Por qué importa» resume el relato sin aportar"
+     },
+     {
+      "gravedad": "MEDIA",
+      "tipo": "transcripcion",
+      "detalle": "párrafo de DVIDS (fecha de toma de relleno, título, entrega) es trámite de archivo"
+     },
+     {
+      "gravedad": "MEDIA",
+      "tipo": "relleno",
+      "detalle": "el lugar leído en el registro de otro video (PR46) en Metabunk no aporta al caso y confunde"
+     },
+     {
+      "gravedad": "BAJA",
+      "tipo": "frase",
+      "detalle": "«un participante leyó en ese mismo campo»: no queda claro de qué registro es el campo"
+     },
+     {
+      "gravedad": "BAJA",
+      "tipo": "siglas",
+      "detalle": "PR46, PR47, DOW-UAP-PR47, PURSUE, DVIDS e INDOPACOM se acumulan; PURSUE no se explica"
+     },
+     {
+      "gravedad": "BAJA",
+      "tipo": "frase",
+      "detalle": "«si la plataforma que observa se mantiene estable» choca con la explicación de que el sensor gira para seguirlas"
+     },
+     {
+      "gravedad": "BAJA",
+      "tipo": "ui-rotulo",
+      "detalle": "Los casos relacionados dicen «mismo país · misma época» y llevan a casos en EE. UU. (lago Hurón, Montana), mientras la cabecera dice «Océano Pacífico occidental» y la evidencia 05 dice «Japón»; la página nunca nombra el país que comparten (p09)"
+     },
+     {
+      "gravedad": "BAJA",
+      "tipo": "ui-duda",
+      "detalle": "La fuente 04 (AARO, informe anual FY2024) se muestra en rojo y sin nota, distinta de las otras tres fuentes en tinta subrayada con nota (p08)"
+     },
+     {
+      "gravedad": "BAJA",
+      "tipo": "ui-espaciado",
+      "detalle": "El recuadro «Por qué» acaba en una cadena de dos fuentes enlazadas en rojo entre paréntesis que ocupa cuatro líneas y pesa más que la propia explicación (p02)"
+     }
+    ]
+   },
+   {
+    "id": "goulburn-sea-fury-1954",
+    "tier": "A",
+    "veredicto": "RETOCAR",
+    "veredicto_ui": "BIEN",
+    "gravedad": "MEDIA",
+    "gravedad_ui": "BAJA",
+    "defectos": [
+     {
+      "gravedad": "MEDIA",
+      "tipo": "duda",
+      "detalle": "«El comité creado para estudiar estos informes le agradeció…»: no se dice qué comité es ni a quién agradeció"
+     },
+     {
+      "gravedad": "MEDIA",
+      "tipo": "orden",
+      "detalle": "que uno de los tres ecos era el propio caza aparece solo en «Por qué importa»; debía ir con el parte de Jessop"
+     },
+     {
+      "gravedad": "MEDIA",
+      "tipo": "repeticion",
+      "detalle": "la deformación del ministro («luces en su radar con formas debajo») se cuenta en relato y en «Por qué importa»"
+     },
+     {
+      "gravedad": "MEDIA",
+      "tipo": "repeticion",
+      "detalle": "el anuncio de «aviones y proyectiles guiados» de los oficiales en Canberra se repite en el último párrafo"
+     },
+     {
+      "gravedad": "MEDIA",
+      "tipo": "transcripcion",
+      "detalle": "el recorrido administrativo del informe (Nowra, Melbourne, Inteligencia de la Fuerza Aérea) es trámite"
+     },
+     {
+      "gravedad": "MEDIA",
+      "tipo": "porque-importa",
+      "detalle": "el primer párrafo de «Por qué importa» resume el relato"
+     },
+     {
+      "gravedad": "BAJA",
+      "tipo": "frase",
+      "detalle": "«ninguna otra luz, y apenas una forma vaga, con la luz blanca encima y en el centro»: críptica, no dice qué luces faltaban"
+     },
+     {
+      "gravedad": "BAJA",
+      "tipo": "frase",
+      "detalle": "la coreografía de las dos luces (una en punto, nueve en punto, costado izquierdo) cuesta seguirla"
+     },
+     {
+      "gravedad": "BAJA",
+      "tipo": "unidades",
+      "detalle": "«una milla» y «32 millas» sin conversión ni aclarar si son náuticas, cuando pies y nudos sí se convierten"
+     },
+     {
+      "gravedad": "BAJA",
+      "tipo": "siglas",
+      "detalle": "TAA y RAAF aparecen juntas en la misma frase"
+     },
+     {
+      "gravedad": "BAJA",
+      "tipo": "ui-duda",
+      "detalle": "El informe del piloto y el parte del radar (el expediente NAA) aparecen solo en la pantalla 9, tras seis pantallas de relato que los citan; no hay «Registro del suceso». Encaja con la especificación (role documento), pero el lector los echa en falta antes (p09)"
+     },
+     {
+      "gravedad": "BAJA",
+      "tipo": "ui-espaciado",
+      "detalle": "El recuadro «Por qué» termina con una cadena de dos fuentes en rojo de cinco líneas que compite con la explicación (p02)"
+     }
+    ]
+   }
+  ]
+ }
+]
