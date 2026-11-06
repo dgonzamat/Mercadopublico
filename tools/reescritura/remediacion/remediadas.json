@@ -205,7 +205,6 @@
  "pendientes_lote_2026_11_06": {
   "alta_con_fuente_sin_verificar": "resuelto: las 18 aplicadas (11 tras verificar; 7 tras contrastar con la fuente la corrección del verificador)",
   "relectura": "sin hacer",
-  "revisar_clasificacion": [],
   "fuente_pendiente_de_sources": [
    "eastern-us-civilian-sensor-2019 (D090: parche-fuente-pendiente-fuente.json)",
    "barra-da-tijuca-1952 (Spaulding: NYT sala de lectura CIA)",
