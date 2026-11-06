@@ -1,4 +1,5 @@
 {
+ "nota": "7 respuestas ALTA que el verificador pidió corregir; contrastar su propuesta con la fuente antes de aplicar. Las 11 OK ya se aplicaron.",
  "respuestas": [
   {
    "id": "seoul-blue-house-1976",
@@ -27,7 +28,12 @@
      "viejo": "The official explanation (a strayed U.S. freighter) has support in the control records and in the State Department telegrams",
      "nuevo": "The official explanation (a strayed U.S. freighter) has support in the recording of the exchanges with air traffic control that SBS showed and in the State Department telegrams"
     }
-   ]
+   ],
+   "verificador": {
+    "dictamen": "CORREGIR",
+    "detalle": "Asia Business Daily (asiae, leído) respalda la frase de la solicitud de información a los organismos del Estado. Asia Time (leído) dice «관제기록» (registro de control) de las comunicaciones de 18:04 a 18:09; no dice «grabación» ni de dónde salió. Las ops cambian «registros de control» por «grabación», que es más de lo que dice la fuente. El primer par de ops (whyMatters sobre la solicitud) está bien.",
+    "propuesta": "En la segunda op de whyMatters: «tiene respaldo en el registro de control de las comunicaciones del carguero que dio a conocer SBS y en los telegramas». EN: «in the air traffic control record of the freighter's communications that SBS reported and in the State Department telegrams». Aplicar tal cual la primera op (SBS pidió documentos...)."
+   }
   },
   {
    "id": "seoul-blue-house-1976",
@@ -46,7 +52,12 @@
      "viejo": "The control records SBS showed in 2020 also place the freighter in the zone: around 18:04 the controller warned it that it might enter it, and the plane entered three minutes later, around 18:07, six minutes before the first shooting given in the telegram; according to those records, it kept its course for about 30 minutes.",
      "nuevo": "In 2020 SBS showed the recording of the freighter's exchanges with air traffic control, without saying where it had obtained it. Between 18:04 and 18:09 the controller warned the crew that, if they held that course, they could enter the prohibited zone. The program placed the first shooting at 18:12, three minutes after that warning, and the second at 18:39: if both were aimed at the freighter, it would still have been on its course half an hour later. The telegrams give other times, 18:13 and 18:32."
     }
-   ]
+   ],
+   "verificador": {
+    "dictamen": "CORREGIR",
+    "detalle": "Asia Time (leído, líneas del artículo): el registro de control cubre 18:04–18:09; «정부가 밝힌 대공포 발사 시간은 6시 12분으로 관제기록보다 3분 더 이후이며 또한 6시 39분 또다시 사격» = la hora que el GOBIERNO dio para el tiroteo es 18:12, y luego otro a las 18:39. La op escribe «El programa situó el primer tiroteo a las 18:12», lo que atribuye a SBS una hora que el artículo da como del Gobierno. Además «grabación» no está en la fuente («관제기록» = registro de control), y «sin decir de dónde la obtuvo» es una ausencia que se apoya en un solo artículo de prensa (el brief pide no afirmar ausencias por una búsqueda). 18:12 es 3 minutos después del fin de la comunicación (18:09), no «de ese aviso» (que cae entre 18:04 y 18:09). El telegrama da 18:13 (no «otras horas» para el primero: difiere en un minuto) y 18:32 (frente a 18:39).",
+    "propuesta": "ES: «SBS dio a conocer en 2020 el registro de control de las comunicaciones del carguero. Entre las 18:04 y las 18:09, el controlador le advirtió de que, si seguía ese rumbo, podía entrar en la zona prohibida. Según el programa, el Gobierno situó el primer tiroteo a las 18:12, tres minutos después de terminar esa comunicación, y volvió a disparar a las 18:39: si los dos iban contra el carguero, este habría seguido su ruta media hora más tarde. Los telegramas dan las 18:13 y las 18:32.» EN: «In 2020 SBS reported the air traffic control record of the freighter's communications. Between 18:04 and 18:09 the controller warned the crew that, if they held that course, they could enter the prohibited zone. According to the program, the government placed the first shooting at 18:12, three minutes after that exchange ended, and fired again at 18:39: if both were aimed at the freighter, it would still have been on its course half an hour later. The telegrams give 18:13 and 18:32.» Quitar «sin decir de dónde la obtuvo» (o escribir «las crónicas que citamos no dicen de dónde la obtuvo»)."
+   }
   },
   {
    "id": "canarias-ib098-1974",
@@ -75,113 +86,12 @@
      "viejo": "The 1994 review would later note that the judge had changed the time of this statement, which in the original was about 19:30.",
      "nuevo": "In his report the judge placed it at 19:50, twenty minutes later, and so made it coincide with IB-098's flight, which took off at 19:45; the 1994 review noted the change."
     }
-   ]
-  },
-  {
-   "id": "canarias-ib098-1974",
-   "pregunta": "ALTA contradicción: ¿en qué fase estaba la luz por encima y en cuál por debajo del horizonte del avión?",
-   "respuesta": "Por encima al principio y por debajo después. Según el informe del juez, los pilotos (a nivel de vuelo 70, unos 7.000 pies) la vieron de frente, «ligeramente más alta» que ellos, acercándose y descendiendo; en el cruce iba a nivel 60, unos 1.000 pies por debajo, y quedó a sus tres en punto, «recortada en la capa de estratos». El juez lo usa para descartar una estrella: «muy por debajo de su horizonte». El parte del escuadrón dice lo mismo («el citado foco de luz baja y se coloca a sus tres») y la revisión de 1994 escribe que la luz «había descendido hasta el nivel 60».",
-   "cita": "Juez: «divisaron a sus \"12\" una potente luz que se apreciaba ligeramente más alta que ellos y que se aproximaba en dirección contraria y descendiendo […] en el momento de cruce la luz iba aproximadamente a FL 60» y «un piloto nunca puede ver una estrella desplazándose próximo a él, y mucho menos observarla muy por debajo de su horizonte, recortada sobre la capa de estratos que sobrevolaba».",
-   "fuente": "/home/user/Mercadopublico/web/public/pursue/canarias-1974-expediente-741124.pdf, págs. 8 y 9 del extracto (fols. 67 y 68); pág. 1 (revisión de 1994) y pág. 5 (parte del escuadrón)",
-   "ops": [
-    {
-     "campo": "whatHappened",
-     "viejo": "vieron un poco más alta que ellos y ligeramente a la izquierda de su morro una luz blanca muy intensa que se les acercaba en sentido contrario.",
-     "nuevo": "vieron un poco más alta que ellos y ligeramente a la izquierda de su morro una luz blanca muy intensa que se les acercaba en sentido contrario mientras descendía."
-    },
-    {
-     "campo": "whatHappened_en",
-     "viejo": "they saw slightly above them and a little to the left of their nose a very intense white light approaching from the opposite direction.",
-     "nuevo": "they saw slightly above them and a little to the left of their nose a very intense white light approaching from the opposite direction as it descended."
-    },
-    {
-     "campo": "whatHappened",
-     "viejo": "Los pilotos siguieron viendo la luz, ahora a su derecha",
-     "nuevo": "Según el juez, al cruzarse con ellos la luz iba a unos 6.000 pies, algo por debajo del avión. Los pilotos siguieron viendo la luz, ahora a su derecha"
-    },
-    {
-     "campo": "whatHappened_en",
-     "viejo": "The pilots kept watching the light, now off to their right",
-     "nuevo": "According to the judge, when the light crossed them it was at about 6,000 feet, a little below the aircraft. The pilots kept watching the light, now off to their right"
-    }
-   ]
-  },
-  {
-   "id": "canarias-ib098-1974",
-   "pregunta": "ALTA referente: ¿el operador de radar identificado como D-03 es el sargento que operaba el radar?",
-   "respuesta": "Sí. La declaración 03 es la de un sargento del servicio de radar del Escuadrón de Alerta y Control n.º 8 (W-8), operador de radar con siete años de servicio y nivel 9, la máxima calificación; es el «Sargento Radarista» que cita el juez. La revisión de 1994 dice que D-03, en la encuesta que le hizo el oficial de inteligencia del MOA, no descartó que los ecos fueran reflejos anómalos.",
-   "cita": "Declaración 03: «Presta sus servicios en: El Ejército del Aire. Servicio de radar del W-8. Categoría o empleo: Sargento. […] Curso: operador radar. Nivel 9 en la última evaluación (máxima calificación en pantalla)». Revisión de 1994: «los ecos en pantalla podrían haberse producido por reflejos anómalos tal como el testigo D-03 afirma al no ser descartable esa posibilidad».",
-   "fuente": "Expediente 741124 completo (Biblioteca Virtual de Defensa, https://bibliotecavirtual.defensa.gob.es/BVMDefensa/exp_ovni/es/catalogo_imagenes/grupo.do?path=102269), pág. 44 (fol. 44); extracto /pursue/canarias-1974-expediente-741124.pdf, pág. 4",
-   "ops": [
-    {
-     "campo": "whyMatters",
-     "viejo": "la revisión anota además que el propio operador de radar identificado como D-03 no descartó que los ecos fueran reflejos anómalos.",
-     "nuevo": "la revisión anota además que el propio sargento que operaba el radar no descartó que los ecos fueran reflejos anómalos."
-    },
-    {
-     "campo": "whyMatters_en",
-     "viejo": "the review also notes that the radar operator identified as D-03 himself did not rule out the echoes being anomalous reflections.",
-     "nuevo": "the review also notes that the sergeant who operated the radar himself did not rule out the echoes being anomalous reflections."
-    }
-   ]
-  },
-  {
-   "id": "northeastern-us-orbs-2021-2025",
-   "pregunta": "ALTA referente: ¿quién contó lo de 1987 y en cuál de las dos entrevistas FD-302?",
-   "respuesta": "Está en la FD-302-71 (FBI-UAP-D010), la entrevista en persona a quien llegaba a casa en el auto, hecha con su cónyuge presente; es la misma que describe la bola amarilla y la nota del agente de las 30 yardas. Las tachaduras borran el nombre y el pronombre de quien hizo la declaración, así que el documento no permite saber cuál de los dos fue. El inglés «he» no se sostiene.",
-   "cita": "FD-302-71: «In 1987, [tachado] stated that [tachado] had witnessed something strange off of [tachado] near power lines. […] saw the object hover and then land near the power station. Since then [tachado] stated that [tachado] has always been interested in the topic of UAP».",
-   "fuente": "/home/user/Mercadopublico/web/public/pursue/FBI-UAP-D010_FD-302-71_Northeastern-Orb-Sighting_2026.pdf, págs. 1 y 2",
-   "ops": [
-    {
-     "campo": "whatHappened",
-     "viejo": "(unos 70 m). Las dos entrevistas del FBI",
-     "nuevo": "(unos 70 m).\n\nLas dos entrevistas del FBI"
-    },
-    {
-     "campo": "whatHappened_en",
-     "viejo": "(about 70 m). The FBI's two February 2026 interviews",
-     "nuevo": "(about 70 m).\n\nThe FBI's two February 2026 interviews"
-    },
-    {
-     "campo": "whatHappened",
-     "viejo": "Una habla de una bola de luz amarilla",
-     "nuevo": "La que se hizo en persona (FD-302-71) habla de una bola de luz amarilla"
-    },
-    {
-     "campo": "whatHappened_en",
-     "viejo": "One describes a yellow ball of light",
-     "nuevo": "The one held in person (FD-302-71) describes a yellow ball of light"
-    },
-    {
-     "campo": "whatHappened",
-     "viejo": "Ese testigo contó además que en 1987 ya había visto algo extraño junto a una central eléctrica y que desde entonces «siempre le ha interesado el tema de los UAP» (fenómenos anómalos no identificados).",
-     "nuevo": "En esa entrevista, uno de los dos (las tachaduras no dejan ver cuál) contó además que en 1987 había visto algo extraño junto a una central eléctrica y que desde entonces «siempre le ha interesado el tema de los UAP» (fenómenos anómalos no identificados)."
-    },
-    {
-     "campo": "whatHappened_en",
-     "viejo": "That witness also said that in 1987 he had already seen something strange near a power plant and has \"always been interested in the UAP topic\" (unidentified anomalous phenomena) since.",
-     "nuevo": "In that interview, one of the two (the redactions do not show which) also said that in 1987 they had seen something strange near a power station and have \"always been interested in the topic of UAP\" (unidentified anomalous phenomena) since."
-    }
-   ]
-  },
-  {
-   "id": "northeastern-us-orbs-2021-2025",
-   "pregunta": "ALTA roto: ¿en qué documento del FBI está el relato de 1996?",
-   "respuesta": "En FBI-UAP-D005 (FD-1057-04), la comunicación sobre la entrevista de octubre de 2024 al testigo de los tres primeros episodios. El relato aparece tras contar que el testigo contactó por LinkedIn a otra persona, que le preguntó si había tenido antes alguna experiencia OVNI; las tachaduras ocultan sujetos y pronombres, de modo que lo más probable es que sea del entrevistado, pero el documento no lo deja asentado.",
-   "cita": "«[tachado] asked [tachado] if [tachado] had a UFO experience before in [tachado] life. At this point, [tachado] explained an incident that occurred in 1996. [tachado] stated that [tachado] was driving with [tachado] Army officer from Fort Bliss, TX to Fort Carson, CO. While in New Mexico, [tachado] claimed that the vehicle [tachado] was driving shut down and a large light shined on [tachado] and [tachado] passenger.»",
-   "fuente": "/home/user/Mercadopublico/web/public/pursue/FBI-UAP-D005_FD-1057-04_Northeastern-US_2024.pdf, pág. 1",
-   "ops": [
-    {
-     "campo": "whatHappened",
-     "viejo": "Uno de los documentos del FBI recoge además un relato de 1996, de un vehículo que se apagó bajo una luz en Nuevo México; por las tachaduras, no queda claro de quién es. En noviembre de 2024, dos agentes",
-     "nuevo": "La entrevista del FBI de octubre de 2024 con el testigo de los tres primeros episodios (FD-1057-04) recoge además un relato de 1996, de un vehículo que se apagó bajo una luz en Nuevo México; por las tachaduras, no queda claro si es suyo o de la persona con la que había hablado del tema.\n\nEn noviembre de 2024, dos agentes"
-    },
-    {
-     "campo": "whatHappened_en",
-     "viejo": "One of the FBI documents also records a 1996 account of a vehicle that shut down under a light in New Mexico; because of redactions, it is not clear whose account it is. In November 2024, two FBI agents",
-     "nuevo": "The FBI's October 2024 interview with the witness of the first three episodes (FD-1057-04) also records a 1996 account of a vehicle that shut down under a light in New Mexico; because of redactions, it is not clear whether the account is his or that of the person he had discussed the sightings with.\n\nIn November 2024, two FBI agents"
-    }
-   ]
+   ],
+   "verificador": {
+    "dictamen": "CORREGIR",
+    "detalle": "Comprobado en las imágenes del extracto: la revisión de 1994 (pág. 2 del extracto, fol. 3) dice 19:30 en la declaración y 19:50 en el informe del juez, y que «se podría decir que el avistamiento de este testigo coincidiría con el del IB-098»; añade que el juez varió la hora «quizás inadvertidamente». La declaración 04 (fol. 48) dice «Hora (Z): 19:30». El informe del juez (fol. 67) dice «A las 19:50». Las dos primeras ops (19:30 según su declaración) están bien. La tercera dice que el juez «así la hizo coincidir» con el IB-098: atribuye intención, y la fuente dice «quizás inadvertidamente» y «coincidiría». IB-098 despegó a las 19:45 (confirmado).",
+    "propuesta": "ES: «El juez la situó en su informe a las 19:50, veinte minutos más tarde; con esa hora el avistamiento coincidiría con el vuelo del IB-098, que despegó a las 19:45. La revisión de 1994 advirtió el cambio y lo atribuyó, quizás, a un descuido.» EN: «In his report the judge placed it at 19:50, twenty minutes later; at that time it would coincide with IB-098's flight, which took off at 19:45. The 1994 review noted the change and suggested it may have been inadvertent.»"
+   }
   },
   {
    "id": "iremi-flota-calamar-2018",
@@ -210,130 +120,12 @@
      "viejo": "on July 30 it asked for the cooperation of the Navy's representative on the committee, from the Naval Aviation Command, and of the Investigations Police representative.",
      "nuevo": "on July 30 it asked for the cooperation of the representatives of the Navy, from its Naval Aviation Command, and of the Investigations Police on the office's committee."
     }
-   ]
-  },
-  {
-   "id": "iremi-flota-calamar-2018",
-   "pregunta": "ALTA cifra: ¿alguna otra fuente da la fecha del vuelo?",
-   "respuesta": "No. El informe del SEFAA solo da la «Fecha Reporte: 04-12-2018» y la de resolución; no fecha ni da la hora del vuelo, y las fotos llegaron sin metadatos. Una búsqueda del vuelo LXP2371 y de la frase «el mar está encendido» no halló otra fuente. La ficha ya fecha solo el aviso, que es lo correcto; no hace falta cambio.",
-   "cita": "la fuente no lo dice («Fecha Reporte: 04-12-2018»; «no pudiendo confirmar la fecha o ubicación exactas de las tomas»)",
-   "fuente": "https://sefaa.dgac.gob.cl/wp-content/uploads/2023/09/CASO-N%C2%B0899-04122018.pdf, págs. 1 y 2",
-   "ops": []
-  },
-  {
-   "id": "shag-harbour-1967",
-   "pregunta": "ALTA cifra: ¿a qué se refieren las 16 millas del capitán del pesquero y las 175 millas náuticas?",
-   "respuesta": "Las 16 millas son la distancia a la que estaba el pesquero del lugar de los avistamientos; las 175 millas náuticas, la distancia entre ese lugar y la posición que el capitán dio para los objetos que vio. El Informe Condon da las dos cifras sin conciliarlas. Añade que las luces se vieron desde la puesta del sol hasta las 23:00 y que una subió en vertical hacia las 23:00.",
-   "cita": "«The captain of a fishing boat that had been about 16 mi. from the site of the earlier reports, reported […] three stationary bright red flashing lights on the water, from sundown until about 11:00 p.m. […] However, since the position he reported for the objects was about 175 n. mi. from the original site, the two situations do not appear to be related.»",
-   "fuente": "https://files.ncas.org/condon/text/case34.htm (Informe Condon, caso 34, págs. 538-539)",
-   "ops": [
-    {
-     "campo": "whatHappened",
-     "viejo": "El Proyecto Colorado recogió además el aviso del capitán de un pesquero, a unas 16 millas, que había visto tres luces rojas intermitentes e inmóviles sobre el agua y cuatro puntos en su radar, que tomó por buques de la Marina, y una luz que subió en vertical y que tomó por un helicóptero. Como la posición que dio quedaba a unas 175 millas náuticas del lugar, el informe concluyó que ambos episodios no parecían relacionados.",
-     "nuevo": "El Proyecto Colorado recogió además el aviso del capitán de un pesquero que estaba a unas 16 millas del lugar de los avistamientos. Desde la puesta del sol hasta las 23:00, él y su tripulación habían visto tres luces rojas intermitentes e inmóviles sobre el agua y cuatro puntos en su radar, que tomó por buques de la Marina; hacia las 23:00, una de las luces subió en vertical y la tomó por un helicóptero. Como la posición que dio para esos objetos quedaba a unas 175 millas náuticas del lugar, el informe concluyó que ambos episodios no parecían relacionados; no explica cómo encaja esa distancia con las 16 millas."
-    },
-    {
-     "campo": "whatHappened_en",
-     "viejo": "The Colorado Project also recorded the report of a fishing-boat captain some 16 miles away who had seen three stationary, flashing red lights on the water and four blips on his radar, which he took for naval vessels, and a light rising that he took for a helicopter. Since the position he gave was about 175 nautical miles from the site, the report concluded the two episodes did not appear to be related.",
-     "nuevo": "The Colorado Project also recorded the report of a fishing-boat captain who had been about 16 miles from the site of the sightings. From sundown until 11:00 p.m. he and his crew had seen three stationary, flashing red lights on the water and four blips on his radar, which he took for naval vessels; at about 11:00 p.m. one of the lights went straight up, and he took it for a helicopter. Since the position he gave for those objects was about 175 nautical miles from the site, the report concluded the two episodes did not appear to be related; it does not explain how that distance squares with the 16 miles."
-    }
-   ]
-  },
-  {
-   "id": "shag-harbour-1967",
-   "pregunta": "ALTA recuento: ¿cuáles son los «otros seis testigos» del télex?",
-   "respuesta": "La fuente no lo dice. El télex solo pone «6 OTHER WITNESSES - NAMES KNOW[N] TO RCMP CPL», y el memorando y la carta del cuartel general repiten «six other witnesses» sin nombres. El recuento no se puede casar con el del Proyecto Colorado (cinco jóvenes, otro testigo a dos millas y dos mujeres, ocho civiles, más dos agentes).",
-   "cita": "«E 6 OTHER WITNESSES - NAMES KNOW TO RCMP CPL»",
-   "fuente": "https://archive.org/stream/CanadaUFO/Canada%20-%20FOIA%20Part%2017%20-%20Pages%204801-5100_djvu.txt (télex del RCC Halifax, 5 oct 1967, y memorando del CFHQ)",
-   "ops": [
-    {
-     "campo": "whatHappened",
-     "viejo": "Resume el parte de la RCMP, con el propio cabo Wercicky como observador y otros seis testigos:",
-     "nuevo": "Resume el parte de la RCMP, con el propio cabo Wercicky como observador y «otros 6 testigos», cuyos nombres no da (dice que los conoce el cabo), de modo que no se sabe cuáles de los civiles que recogió el Proyecto Colorado eran:"
-    },
-    {
-     "campo": "whatHappened_en",
-     "viejo": "It summarizes the RCMP report, with Cpl. Wercicky himself as observer and six other witnesses:",
-     "nuevo": "It summarizes the RCMP report, with Cpl. Wercicky himself as observer and \"6 other witnesses,\" whose names it does not give (it says the corporal knows them), so it cannot be told which of the civilians recorded by the Colorado Project they were:"
-    },
-    {
-     "campo": "whatHappened",
-     "viejo": "con resultado nulo. Un memorando del cuartel general recoge",
-     "nuevo": "con resultado nulo.\n\nUn memorando del cuartel general recoge"
-    },
-    {
-     "campo": "whatHappened_en",
-     "viejo": "with nil results. A headquarters memorandum records",
-     "nuevo": "with nil results.\n\nA headquarters memorandum records"
-    }
-   ]
-  },
-  {
-   "id": "shag-harbour-1967",
-   "pregunta": "ALTA referente: ¿qué isla recorrían en auto las dos mujeres jóvenes?",
-   "respuesta": "La fuente no lo dice. El Informe Condon solo habla de «an island»: el supuesto punto de caída quedaba entre una isla y el continente, a 200-300 yardas de la costa. No la nombra, y los documentos canadienses de 1967 no mencionan a las dos mujeres. Identificarla como Cape Sable Island sería una inferencia sin fuente primaria.",
-   "cita": "«The site of the presumed impact was in between an island and the mainland, about 200-300 yd. offshore. […] However two young women driving on the island reported that a horizontal pattern of three yellow lights had tilted and descended».",
-   "fuente": "https://files.ncas.org/condon/text/case34.htm (pág. 538)",
-   "ops": [
-    {
-     "campo": "whatHappened",
-     "viejo": "dos mujeres jóvenes que conducían por la isla vieron",
-     "nuevo": "dos mujeres jóvenes que conducían por una isla frente a la costa, que el informe no nombra (el punto de caída quedaba entre ella y el continente), vieron"
-    },
-    {
-     "campo": "whatHappened_en",
-     "viejo": "two young women driving on the island saw",
-     "nuevo": "two young women driving on an island off the coast, which the report does not name (the presumed point of entry lay between it and the mainland), saw"
-    }
-   ]
-  },
-  {
-   "id": "portage-county-1966",
-   "pregunta": "ALTA cifra: ¿de dónde sale la hora de las 5:06?",
-   "respuesta": "Del informe telefónico de Spaur a Blue Book del 18 de abril de 1966, que empieza: «0506 when I got back from my cruiser, I was checking an abandoned vehicle». Es la hora a la que la luz le llamó la atención. La tarjeta no da esa hora. El documento no dice el huso; la ficha lo daba como hora del Este, y se quita para no afirmar lo que no consta.",
-   "cita": "«REPORT BY TELEPHONE CONVERSATION 18 APRIL 1966 SHERIFF SPAUR, RAVENNA, OHIO. 0506 when I got back from my cruiser, I was checking an abandoned vehicle […] very bright light, first attracted.»",
-   "fuente": "https://archive.org/download/1966-04-7104469-Ravenna-Mantua-Ohio/1966-04-7104469-Ravenna-Mantua-Ohio_djvu.txt (informe telefónico del 18 abr 1966)",
-   "ops": [
-    {
-     "campo": "whatHappened",
-     "viejo": "Calculadas con efemérides (las tablas de posiciones de los astros), a las 5:06 hora del Este Venus estaba",
-     "nuevo": "Calculadas con efemérides (las tablas de posiciones de los astros) para las 5:06, la hora a la que Spaur situó el comienzo en ese informe telefónico, Venus estaba"
-    },
-    {
-     "campo": "whatHappened_en",
-     "viejo": "Computed from ephemerides (tables of where the planets stand), at 5:06 Eastern time Venus stood",
-     "nuevo": "Computed from ephemerides (tables of where the planets stand) for 5:06, the time at which Spaur placed the start in that phone report, Venus stood"
-    },
-    {
-     "campo": "evidence",
-     "viejo": "Efemérides: a las 5:06 hora del Este Venus estaba a unos 11° de altura y 110° de azimut junto a una Luna del 11 %; las cifras que dio Quintanilla (salida a las 2:49, 150° de azimut, 25° de elevación) no corresponden a esa mañana",
-     "nuevo": "Efemérides para las 5:06, hora de inicio que dio Spaur por teléfono el 18 de abril: Venus estaba a unos 11° de altura y 110° de azimut junto a una Luna del 11 %; las cifras que dio Quintanilla (salida a las 2:49, 150° de azimut, 25° de elevación) no corresponden a esa mañana"
-    },
-    {
-     "campo": "evidence_en",
-     "viejo": "Ephemerides: at 5:06 Eastern time Venus stood about 11 degrees high at azimuth 110 beside an 11 percent Moon; the figures Quintanilla gave (rising at 2:49, azimuth 150, elevation 25 degrees) do not fit that morning",
-     "nuevo": "Ephemerides for 5:06, the start time Spaur gave by phone on April 18: Venus stood about 11 degrees high at azimuth 110 beside an 11 percent Moon; the figures Quintanilla gave (rising at 2:49, azimuth 150, elevation 25 degrees) do not fit that morning"
-    }
-   ]
-  },
-  {
-   "id": "portage-county-1966",
-   "pregunta": "ALTA referente: ¿la foto de Buchert eran dos imágenes?",
-   "respuesta": "Un solo negativo con dos manchas («two images»), en la misma zona del fotograma. El análisis de Blue Book dice que la luz brillante no aparece y que esas dos imágenes serían defectos de revelado de una película vieja y velada; además, caen fuera del campo de visión del objetivo. Por teléfono, Buchert habló de «pictures» y describió en las copias «two saucers», un solo objeto.",
-   "cita": "«The two images which appear on the negative are probably the result of processing defects due to old fogged film and poor handling.» y «Both \"images\" fall into the same frame area».",
-   "fuente": "Expediente de Blue Book, https://archive.org/details/1966-04-7104469-Ravenna-Mantua-Ohio, pág. 52 del PDF (resumen) y análisis fotográfico",
-   "ops": [
-    {
-     "campo": "whatHappened",
-     "viejo": "lo que muestra la foto serían defectos de revelado de película velada.",
-     "nuevo": "las dos manchas que aparecen en el negativo serían defectos de revelado de una película vieja y velada."
-    },
-    {
-     "campo": "whatHappened_en",
-     "viejo": "what shows on the photo would be processing defects in fogged film.",
-     "nuevo": "the two marks that appear on the negative would be processing defects in old, fogged film."
-    }
-   ]
+   ],
+   "verificador": {
+    "dictamen": "CORREGIR",
+    "detalle": "Informe (leído): «cooperación del asesor y representante de la Armada de Chile en el Comité de la Comandancia de Aviación Naval. En paralelo … representante de la PDI en el Comité». Sitio del SEFAA (leído): CEFAA creado el 3 oct 1997, cambio de nombre a SEFAA el 18 oct 2021. La primera op (CEFAA hasta 2021) está bien. La segunda iguala «el Comité» con «el comité de la oficina»: es una inferencia razonable (el mismo informe habla de «el Comité» sin más), pero la cita no lo dice, y la lectura literal «Comité de la Comandancia de Aviación Naval» sigue siendo posible.",
+    "propuesta": "Segunda op, ES: «el 30 de julio pidió cooperación a los representantes de la Armada (de su Comandancia de Aviación Naval) y de la Policía de Investigaciones en el Comité.» EN: «on July 30 it asked for the cooperation of the Navy's representative (from its Naval Aviation Command) and of the Investigations Police representative on the Committee.» (sin «de la oficina»). Aplicar la primera op tal cual."
+   }
   },
   {
    "id": "kecksburg-1965",
@@ -352,7 +144,12 @@
      "viejo": "and in May 1963, according to a memo by R. W. Hale, NASA's Arnold Frutkin felt that Defense",
      "nuevo": "and in May 1963, according to a memo from R. W. Hale, of the Council staff, to its executive secretary, Edward C. Welsh, Arnold Frutkin, NASA's director of international programs, felt that Defense"
     }
-   ]
+   ],
+   "verificador": {
+    "dictamen": "CORREGIR",
+    "detalle": "Hale: memorando del 29 may 1963 «MEMORANDUM FOR DR. WELSH», firmado R. W. Hale; el telecon del 17 oct 1962 dice «Called R. W. Hale, Space Council»; Welsh firma «E. C. Welsh, Executive Secretary» del Consejo (leído en USG-UAP-D002). «Edward C. Welsh» no está en los documentos, pero se confirma por Wikipedia (Edward Cristy Welsh, secretario ejecutivo del Consejo 1961-69). «Del personal del Consejo» es inferencia leve pero sostenible. Frutkin: los documentos solo dicen «AI/Mr. Frutkin» y «Mr. Arnold Frutkin (NASA)»; el cargo «director de Programas Internacionales» no consta en ellos. La URL de NASA JSC que da la respuesta devolvió (200) una página-cáscara sin texto de Frutkin, no pude comprobarlo; Wikipedia lo llama «deputy director» de la oficina internacional y dice que el título pasó a «assistant administrator for international affairs» en 1963. El cargo está en conflicto o sin comprobar: NO-COMPROBADO esa parte.",
+    "propuesta": "Quitar el cargo de Frutkin: ES «… a su secretario ejecutivo, Edward C. Welsh, Arnold Frutkin, representante de la NASA en el grupo interagencial, pensaba que Defensa…»; EN «… to its executive secretary, Edward C. Welsh, Arnold Frutkin, NASA's representative in the interagency group, felt that Defense…». (Los documentos de noviembre de 1963 lo listan como «(NASA)» entre los miembros del grupo.) Lo de Hale y Welsh se puede aplicar tal cual."
+   }
   },
   {
    "id": "kecksburg-1965",
@@ -371,36 +168,12 @@
      "viejo": "the same one reported from Indiana, Ohio, Michigan and Pennsylvania; some metal strips found in Lapeer County, Michigan, turned out to be chaff, anti-radar strips dropped by aircraft during exercises.",
      "nuevo": "the same one reported from Indiana, Ohio, Michigan and Pennsylvania. A week earlier the same office had answered a December 1965 letter from the Lapeer County (Michigan) sheriff's office, which had sent Blue Book material found where some residents said they had seen something from the fireball come down: it had no connection with the fireball and was chaff, anti-radar strips dropped by aircraft during exercises."
     }
-   ]
-  },
-  {
-   "id": "lubbock-lights-1951",
-   "pregunta": "ALTA recuento: ¿alguna formación tuvo 18 luces?",
-   "respuesta": "No según Ruppelt. Para la primera formación da «de 15 a 30» luces en semicírculo, y no da cifras para las demás, que en general no tenían un orden fijo. El «18» viene de las fotos de Hart: crónicas secundarias (UFO Casebook; el Atlanta Journal de 1952 que cita Wikipedia) dicen que mostraban de 18 a 20 puntos. El «entre 20 y 30» del relato tampoco es de Ruppelt; Wikipedia lo atribuye mal a sus págs. 97-99. El expediente de Blue Book de archive.org no da recuentos.",
-   "cita": "Ruppelt: «They estimated that there were from fifteen to thirty separate lights and that they were moving from north to south».",
-   "fuente": "E. J. Ruppelt, The Report on Unidentified Flying Objects (1956), cap. 8, https://www.gutenberg.org/ebooks/17346",
-   "ops": [
-    {
-     "campo": "summary",
-     "viejo": "vieron sobre Lubbock formaciones de 18 a 30 luces azul verdosas que cruzaban el cielo en segundos.",
-     "nuevo": "vieron sobre Lubbock formaciones de luces azul verdosas que cruzaban el cielo en segundos."
-    },
-    {
-     "campo": "summary_en",
-     "viejo": "saw formations of 18 to 30 blue-green lights cross the sky over Lubbock in seconds.",
-     "nuevo": "saw formations of blue-green lights cross the sky over Lubbock in seconds."
-    },
-    {
-     "campo": "whatHappened",
-     "viejo": "una formación de entre 20 y 30 luces azul-verdosas dispuestas en semicírculo.",
-     "nuevo": "una formación de entre 15 y 30 luces azul-verdosas dispuestas en semicírculo, según calcularon después."
-    },
-    {
-     "campo": "whatHappened_en",
-     "viejo": "a formation of between 20 and 30 blue-green lights arranged in a semicircle",
-     "nuevo": "a formation of between 15 and 30 blue-green lights arranged in a semicircle, by their later estimate,"
-    }
-   ]
+   ],
+   "verificador": {
+    "dictamen": "CORREGIR",
+    "detalle": "Páginas 17, 24 y 30 del PDF (vistas): carta del 27 oct 1966 (Toronto) solo habla del bólido; carta del 19 oct 1966 de Freeman (SAFOICC, Office of Information) responde a «your letter of December 10 to Wright-Patterson» (destinatario tachado, Lapeer, Michigan): «There is no connection between the fireball and the material … The material … is chaff … dropped by aircraft to confuse radar complexes when participating in interdiction exercises». La carta del sheriff Parks (10 dic 1965): «Some claimed that they seen an object go down. In the area the enclosed was found». Respaldado. Dos retoques: «una semana antes» son ocho días (19 frente a 27 oct); y el sheriff dice que algunos vieron caer «un objeto», no «algo del bólido». El destinatario de la respuesta está tachado: que sea la oficina del sheriff se infiere de la fecha del 10 dic y del membrete, razonable.",
+    "propuesta": "ES: «El 19 de octubre, ocho días antes, la misma oficina había respondido a una carta de diciembre de 1965 de la oficina del sheriff del condado de Lapeer (Michigan), que envió a Blue Book un material hallado donde algunos vecinos decían haber visto caer un objeto: no tenía relación con el bólido y era chaff, cintas antirradar que lanzan los aviones en ejercicios.» EN: «On October 19, eight days earlier, the same office had answered a December 1965 letter from the Lapeer County (Michigan) sheriff's office, which had sent Blue Book material found where some residents said they had seen an object come down: it had no connection with the fireball and was chaff, anti-radar strips dropped by aircraft during exercises.»"
+   }
   },
   {
    "id": "lubbock-lights-1951",
@@ -439,7 +212,12 @@
      "viejo": "Ruppelt (1956): he thought of birds \"but I was wrong\"; officially all the sightings except a radar detection are \"unknowns\"",
      "nuevo": "Ruppelt (1956): he thought of birds \"but I was wrong\"; officially all the sightings are \"unknowns\" except a radar target in Washington State put down to weather"
     }
-   ]
+   ],
+   "verificador": {
+    "dictamen": "CORREGIR",
+    "detalle": "Ruppelt (leído): dos radares, blanco a 900 mph y 13.000 pies, rumbo noroeste, seis minutos, F-86 sin resultado; los especialistas del ATIC lo atribuyeron al tiempo «although it was a borderline case»; «Officially all of the sightings, except the UFO that was picked up on radar, are unknowns». Omite algo de la misma fuente que lo contradice: el último párrafo del propio informe de la estación decía que el blanco NO era del tiempo (los operadores llevaban siete años con radar), y el capitán le dijo a Ruppelt que el blanco se veía igual en las dos pantallas (lo que descartaba el tiempo); Ruppelt entendió que el capitán no aceptaba la explicación («that's the way it officially stands»). Además «unos» especialistas «de la Fuerza Aérea» es correcto (ATIC) pero hay que decir que el atribuir al tiempo es la posición oficial, no la de la estación. Respuesta del agente ya lo mencionaba («el capitán no estuvo de acuerdo») pero las ops lo omiten.",
+    "propuesta": "whatHappened ES: «… los especialistas de la Fuerza Aérea lo atribuyeron al tiempo, aunque como caso dudoso; el informe de la propia estación y su capitán sostenían que no era un blanco meteorológico, y Ruppelt entendió que el capitán no aceptaba esa explicación, pero así quedó oficialmente.» EN: «… the Air Force specialists put it down to weather, though as a borderline case; the station's own report and its captain held that it was not a weather target, and Ruppelt understood the captain did not accept that explanation, but that is how it stands officially.» Las ops de summary y evidence están bien tal cual (dicen «atribuido al tiempo», que es lo oficial)."
+   }
   }
  ]
 }
