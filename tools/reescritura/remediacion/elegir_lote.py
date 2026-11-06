@@ -19,10 +19,17 @@ tramos = [
     ("Tier A con ALTA", sorted([i for i in pend if cs[i]["tier"] == "A" and alta[i] and ver.get(i) != "REESCRIBIR"], key=lambda i: (-alta[i], -total[i]))),
     ("Reescrituras Tier A (método de reescritura, no de corrección)", [i for i in pend if cs[i]["tier"] == "A" and ver.get(i) == "REESCRIBIR"]),
 ]
-lote, tramo = [], None
+# Si un tramo de corrección no llena el lote, se completa con el siguiente de corrección;
+# el de reescrituras usa otro método y nunca se mezcla.
+lote, nombres = [], []
 for nombre, ids in tramos:
-    if ids:
-        tramo = nombre
-        lote = ids[:n]
+    if not ids or len(lote) >= n:
+        continue
+    if nombre.startswith("Reescrituras") and lote:
         break
+    nombres.append(nombre)
+    lote += ids[:n - len(lote)]
+    if nombre.startswith("Reescrituras"):
+        break
+tramo = " + ".join(nombres) or None
 print(json.dumps({"tramo": tramo, "lote": lote, "pendientes_por_tramo": {k: len(v) for k, v in tramos}}, ensure_ascii=False, indent=1))

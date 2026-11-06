@@ -63,9 +63,32 @@
    "minot-afb-1968",
    "montanchez-1967",
    "lima-difaa-2019"
+  ],
+  "Lote 2026-11-06": [
+   "tunguska-1908",
+   "latakia-p8a-2016",
+   "seoul-blue-house-1976",
+   "canarias-ib098-1974",
+   "northeastern-us-orbs-2021-2025",
+   "iremi-flota-calamar-2018",
+   "shag-harbour-1967",
+   "portage-county-1966",
+   "kecksburg-1965",
+   "lubbock-lights-1951"
   ]
  },
  "reescribir_tras_relectura": [
   "kadena-okinawa-1951"
- ]
+ ],
+ "pendientes_lote_2026_11_06": {
+  "alta_con_fuente_sin_verificar": "18 preguntas ALTA respondidas con la fuente en pendientes/lote-2026-11-06-fuente.json; sus ops (pendientes/lote-2026-11-06-parche-fuente.json) faltan por verificar antes de aplicarse",
+  "relectura": "sin hacer",
+  "revisar_clasificacion": [
+   "canarias-ib098-1974",
+   "kecksburg-1965",
+   "lubbock-lights-1951",
+   "shag-harbour-1967",
+   "seoul-blue-house-1976"
+  ]
+ }
 }
