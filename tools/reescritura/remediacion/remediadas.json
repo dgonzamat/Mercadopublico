@@ -105,7 +105,7 @@
   "kadena-okinawa-1951"
  ],
  "pendientes_lote_2026_11_06": {
-  "alta_con_fuente_sin_verificar": "11 de 18 aplicadas tras verificar; las 7 que el verificador pidió corregir (Seúl ×2, Canarias 19:30/19:50, IREMI comité, Kecksburg ×2, Lubbock radar) están en pendientes/lote-2026-11-06-fuente.json con su propuesta",
+  "alta_con_fuente_sin_verificar": "resuelto: las 18 aplicadas (11 tras verificar; 7 tras contrastar con la fuente la corrección del verificador)",
   "relectura": "sin hacer",
   "revisar_clasificacion": [
    "canarias-ib098-1974",

@@ -64,8 +64,8 @@
       "name": "CBS News Chicago — Third 'unidentified object' downed over Lake Huron (12 feb 2023)",
       "name_en": "CBS News Chicago — Third 'unidentified object' downed over Lake Huron (Feb 12, 2023)",
       "url": "https://www.cbsnews.com/chicago/news/third-unidentified-object-downed-over-lake-huron/",
-      "note": "Reproduce íntegro el comunicado del Departamento de Defensa de ese día: «North American Aerospace Defense Command detected the object Sunday morning and has maintained visual and radar tracking of it. Based on its flight path and data we can reasonably connect this object to the radar signal picked up over Montana, which flew in proximity to sensitive DOD sites.» Sustituye a defense.gov, inalcanzable desde el entorno de revisión.",
-      "note_en": "Reproduces in full the Department of Defense statement of that day: \"North American Aerospace Defense Command detected the object Sunday morning and has maintained visual and radar tracking of it. Based on its flight path and data we can reasonably connect this object to the radar signal picked up over Montana, which flew in proximity to sensitive DOD sites.\" Stands in for defense.gov, unreachable from the review environment."
+      "note": "Reproduce íntegro el comunicado del Departamento de Defensa de ese día: «North American Aerospace Defense Command detected the object Sunday morning and has maintained visual and radar tracking of it. Based on its flight path and data we can reasonably connect this object to the radar signal picked up over Montana, which flew in proximity to sensitive DOD sites.» Sustituye a defense.gov, cuyo original no se pudo consultar.",
+      "note_en": "Reproduces in full the Department of Defense statement of that day: \"North American Aerospace Defense Command detected the object Sunday morning and has maintained visual and radar tracking of it. Based on its flight path and data we can reasonably connect this object to the radar signal picked up over Montana, which flew in proximity to sensitive DOD sites.\" Stands in for defense.gov, whose original could not be consulted."
     },
     {
       "name": "NPR — Over Lake Huron, the U.S. downs a 3rd unidentified object in 3 days (12 feb 2023)",
@@ -99,8 +99,8 @@
       "name": "DoD — Transcripción de rueda de prensa (febrero de 2023)",
       "name_en": "DoD — Press briefing transcript (February 2023)",
       "url": "https://www.defense.gov/News/Transcripts/Transcript/Article/3296725/",
-      "note": "Enlace heredado; defense.gov no es accesible desde el entorno de revisión, así que su contenido no se verificó.",
-      "note_en": "Inherited link; defense.gov is not reachable from the review environment, so its content was not verified."
+      "note": "Fuente del Departamento de Defensa; su contenido no se pudo verificar en el original.",
+      "note_en": "Department of Defense source; its content could not be checked against the original."
     },
     {
       "name": "CTV News — Police in Canada collected wreckage after object shot down over Lake Huron (15 nov 2024)",
