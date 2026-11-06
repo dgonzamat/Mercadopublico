@@ -425,8 +425,8 @@
     {
       "name": "war.gov/UFO — FBI Photo A series (A1–A8), PURSUE Release 01",
       "url": "https://www.war.gov/ufo/",
-      "note": "Portal oficial; leyendas y archivos de la sumisión FBI a la AARO. No alcanzable desde el entorno de revisión; las imágenes se leyeron desde la copia alojada en /pursue.",
-      "note_en": "Official portal; captions and files of the FBI's submission to AARO. Not reachable from the review environment; the images were read from the copy hosted in /pursue."
+      "note": "Portal oficial; leyendas y archivos de la sumisión FBI a la AARO. El portal no respondió; las imágenes se leyeron desde la copia alojada en /pursue.",
+      "note_en": "Official portal; captions and files of the FBI's submission to AARO. The portal did not respond; the images were read from the copy hosted in /pursue."
     },
     {
       "name": "war.gov/UFO — USPER Statement (FBI-302 redactado, PURSUE Release 01)",
@@ -467,8 +467,8 @@
       "name": "IBTimes UK — 'US Intelligence Witnesses to 2025 UFO Orb Incident Could Testify Before Congress, Lawmaker Says' (11 oct 2026)",
       "name_en": "IBTimes UK — 'US Intelligence Witnesses to 2025 UFO Orb Incident Could Testify Before Congress, Lawmaker Says' (Oct 11, 2026)",
       "url": "https://www.ibtimes.co.uk/burlison-considers-testimony-orange-uap-orbs-1824884",
-      "note": "Recoge las declaraciones de Burlison al New York Post del 10 oct 2026 (nypost.com/2026/10/10/us-news/us-intel-community-witnesses-to-2025-ufo-orb-incident-could-testify-before-congress/), que no fue alcanzable desde el entorno de revisión; la cita «may expose other things» coincide en IBTimes UK y BroBible. Sitúa el encuentro en una misión de helicóptero de finales de 2025 con orbes naranjas cerca de una base militar del oeste, descrita en el informe de entrevista del FBI publicado en mayo.",
-      "note_en": "Reports Burlison's remarks to the New York Post of Oct 10, 2026 (nypost.com/2026/10/10/us-news/us-intel-community-witnesses-to-2025-ufo-orb-incident-could-testify-before-congress/), which could not be reached from the review environment; the \"may expose other things\" quote matches in IBTimes UK and BroBible. It places the encounter on a late-2025 helicopter mission with orange orbs near a western military base, described in the FBI interview report released in May."
+      "note": "Recoge las declaraciones de Burlison al New York Post del 10 oct 2026, que se citan por su cobertura en IBTimes UK y BroBible, donde la cita «may expose other things» coincide. Sitúa el encuentro en una misión de helicóptero de finales de 2025 con orbes naranjas cerca de una base militar del oeste, descrita en el informe de entrevista del FBI publicado en mayo.",
+      "note_en": "Reports Burlison's remarks to the New York Post of Oct 10, 2026, cited through their coverage in IBTimes UK and BroBible, where the \"may expose other things\" quote matches. It places the encounter on a late-2025 helicopter mission with orange orbs near a western military base, described in the FBI interview report released in May."
     }
   ],
   "evidenceReviewed": "2026-09-28"

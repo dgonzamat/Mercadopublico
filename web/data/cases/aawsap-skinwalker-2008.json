@@ -55,14 +55,14 @@
     {
       "name": "Department of War — PURSUE Release 06 (18 sep 2026): republicación de los 37 DIRD de AAWSAP",
       "name_en": "Department of War — PURSUE Release 06 (18 Sep 2026): republication of the 37 AAWSAP DIRDs",
-      "note": "Mismos documentos ya públicos por FOIA, en versiones con menos tachaduras: reaparecen los nombres de las oficinas de la DIA que los produjeron. war.gov no es alcanzable desde este entorno (403), así que el contenido se cita por la cobertura, no por lectura directa del portal.",
-      "note_en": "The same documents already public via FOIA, in less-redacted versions: the names of the DIA offices that produced them reappear. war.gov is not reachable from this environment (403), so the contents are cited from the coverage, not from direct reading of the portal."
+      "note": "Mismos documentos ya públicos por FOIA, en versiones con menos tachaduras: reaparecen los nombres de las oficinas de la DIA que los produjeron. El contenido se cita según la cobertura de prensa.",
+      "note_en": "The same documents already public via FOIA, in less-redacted versions: the names of the DIA offices that produced them reappear. The contents are cited from the press coverage."
     },
     {
       "name": "AARO — Report on the Historical Record of U.S. Government Involvement with UAP, Volume 1 (febrero 2024)",
       "url": "https://documents2.theblackvault.com/documents/dod/AARO_Historical_Record_Report_Volume_1_2024.pdf",
-      "note": "Historical Record Report (Vol. 1) de AARO, págs. 22–24: AAWSAP/AATIP, la negativa de Lynn a convertirlo en programa de acceso especial, la falta de revisión por pares y la propuesta de campaña de debates. Copia en The Black Vault (aaro.mil y media.defense.gov no son accesibles desde aquí).",
-      "note_en": "AARO Historical Record Report (Vol. 1), pp. 22–24: AAWSAP/AATIP, Lynn's refusal to make it a special access program, the lack of peer review and the proposed debate campaign. Copy at The Black Vault (aaro.mil and media.defense.gov are not reachable from here)."
+      "note": "Historical Record Report (Vol. 1) de AARO, págs. 22–24: AAWSAP/AATIP, la negativa de Lynn a convertirlo en programa de acceso especial, la falta de revisión por pares y la propuesta de campaña de debates. Copia en The Black Vault.",
+      "note_en": "AARO Historical Record Report (Vol. 1), pp. 22–24: AAWSAP/AATIP, Lynn's refusal to make it a special access program, the lack of peer review and the proposed debate campaign. Copy at The Black Vault."
     },
     {
       "name": "Jacques Vallée — video grabado a pedido de James Fox (jun 2026): la base CAPELLA y los ~260.000 reportes screened de AAWSAP/BAASS",
@@ -111,14 +111,14 @@
     },
     {
       "name": "The Bigelow Podcast — Episodio 2 (Knapp/Bigelow, 11 ago 2026): evolución de AAWSAP y consciencia",
-      "note": "Fuente primaria de la cifra de ~100 documentos BASS y 50 investigadores a tiempo completo; cobertura secundaria en MysteryWire/FOX40/CBS47 bajo el mismo titular («Robert Bigelow Opens up about AAWSAP...»), inaccesible a fetch directo (403).",
-      "note_en": "Primary source for the ~100 BASS documents and 50 full-time researchers figures; secondary coverage on MysteryWire/FOX40/CBS47 under the same headline (\"Robert Bigelow Opens up about AAWSAP...\"), inaccessible to direct fetch (403)."
+      "note": "Fuente primaria de la cifra de ~100 documentos BASS y 50 investigadores a tiempo completo; cobertura secundaria en MysteryWire/FOX40/CBS47 bajo el mismo titular («Robert Bigelow Opens up about AAWSAP...»).",
+      "note_en": "Primary source for the ~100 BASS documents and 50 full-time researchers figures; secondary coverage on MysteryWire/FOX40/CBS47 under the same headline (\"Robert Bigelow Opens up about AAWSAP...\")."
     },
     {
       "name": "«Jacques Vallée's final report» — Reality Check con Ross Coulthart, NewsNation (15 sep 2026)",
       "url": "https://www.newsnationnow.com/podcasts-newsnation/reality-check/jacques-vallees-final-report-reality-check/",
-      "note": "Entrevista sobre el volumen final de «Forbidden Science»; de aquí salen el corte a los tres años, la habilitación sin liberar y la conclusión de que nadie está a cargo. El sitio responde 403 a clientes automatizados.",
-      "note_en": "Interview about the final volume of \"Forbidden Science\"; the three-year cutoff, the unrevoked clearance and the nobody-in-charge conclusion come from here. The site returns 403 to automated clients."
+      "note": "Entrevista sobre el volumen final de «Forbidden Science»; de aquí salen el corte a los tres años, la habilitación sin liberar y la conclusión de que nadie está a cargo.",
+      "note_en": "Interview about the final volume of \"Forbidden Science\"; the three-year cutoff, the unrevoked clearance and the nobody-in-charge conclusion come from this interview."
     },
     {
       "name": "The Bigelow Podcast, episodios 6 y 7 (8 y 16 sep 2026): Vallée reunido con Bigelow y Kelleher, entrevistados por Knapp",
