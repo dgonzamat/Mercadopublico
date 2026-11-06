@@ -206,12 +206,15 @@
   "alta_con_fuente_sin_verificar": "resuelto: las 18 aplicadas (11 tras verificar; 7 tras contrastar con la fuente la corrección del verificador)",
   "relectura": "sin hacer",
   "revisar_clasificacion": [
-   "canarias-ib098-1974",
-   "kecksburg-1965",
-   "lubbock-lights-1951",
-   "shag-harbour-1967",
-   "seoul-blue-house-1976",
-   "manises-1979"
+   "chiles-whitted-1948",
+   "genkai-nuclear-2025",
+   "grazzanise-2005",
+   "galilea-frontera-libano-2026"
+  ],
+  "fuente_pendiente_de_sources": [
+   "eastern-us-civilian-sensor-2019 (D090: parche-fuente-pendiente-fuente.json)",
+   "barra-da-tijuca-1952 (Spaulding: NYT sala de lectura CIA)",
+   "tremonton-film-1952 (título y nota de D103: «cinco días después»)"
   ]
  }
 }
