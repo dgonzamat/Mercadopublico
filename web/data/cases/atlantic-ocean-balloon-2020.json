@@ -73,6 +73,13 @@
       "note": "Video embebido en el visor de este caso; la ficha incluye la cita completa del debrief y la descripción visual citadas en el relato.",
       "note_en": "Video embedded in this case's viewer; the record includes the full debrief quote and the visual description quoted in the account.",
       "name_en": "DVIDS — DOW-UAP-PR116, with the DOW-UAP-D091 debrief quoted by AARO (PURSUE Release 04)"
+    },
+    {
+      "name": "DOW-UAP-D091 — «Range Fouler Debrief», Atlantic Ocean, 2020 (copia en archive.org)",
+      "name_en": "DOW-UAP-D091 — \"Range Fouler Debrief\", Atlantic Ocean, 2020 (archive.org copy)",
+      "url": "https://archive.org/download/pursue-uap-documents-2026/Release_04/DOW-UAP-D091_Range-Fouler-Debrief_Atlantic-Ocean_2020.pdf",
+      "note": "Formulario que rellenó el oficial de sistemas de armas tras el vuelo; copia del documento de la cuarta entrega de PURSUE.",
+      "note_en": "Form completed by the weapon systems officer after the flight; copy of the document from the fourth PURSUE release."
     }
   ],
   "misidSubtype": "aeronave",
