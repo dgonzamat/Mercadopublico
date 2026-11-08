@@ -18,15 +18,15 @@
   },
   "tier": "A",
   "epistemicStatus": "documented",
-  "probability": 18,
+  "probability": 21,
   "mundanoType": "misid",
   "posterior": {
-    "mundano_natural": 0.78,
+    "mundano_natural": 0.75,
     "humana_clasificada": 0.03,
     "adversaria": 0.01,
     "nohumano_encubierto": 0.02,
     "nohumano_abierto": 0.01,
-    "indet": 0.15
+    "indet": 0.18
   },
   "summary": "En 2020, al anochecer y en un punto del Atlántico que no se ha revelado, una tripulación aérea militar de EE. UU. se cruzó con un objeto. Uno de los tripulantes lo describió después como granate, de 12 a 15 pies de alto, llevado por el viento y sin maniobras, y escribió que parecía «un globo grande, algo deformado», aunque no pudieron comprobarlo al pasar a su lado. El Comando Norte envió ese informe, con 32 segundos de video infrarrojo, a la oficina del Pentágono que estudia estos fenómenos, que lo publicó en 2026 como «no resuelto».",
   "summary_en": "At dusk one day in 2020, somewhere over the Atlantic that has never been disclosed, a U.S. military aircrew passed close to an object. One crew member later described it as maroonish, 12 to 15 feet tall, drifting with the wind and making no maneuvers, and wrote that it looked like \"a large, somewhat deformed balloon,\" though the crew could not confirm that as they went by. U.S. Northern Command sent that report, with 32 seconds of infrared video, to the Pentagon office that studies these phenomena, which released it in 2026 as \"unresolved.\"",
@@ -85,11 +85,11 @@
   "misidSubtype": "aeronave",
   "objectDetail": "globo",
   "classBasis": {
-    "es": "El debrief que acompaña al reporte describe un objeto de color granate, de unos 12 a 15 pies de altura, que «viajaba con el viento», no maniobraba ni cambiaba de dirección y se parecía a «un globo grande, algo deformado».",
-    "en": "The accompanying debrief describes a \"darker, maroonish color, approximately 12-15 feet in height\" object that traveled with the wind, did not \"maneuver or change direction\", and resembled a \"large, somewhat deformed balloon\".",
-    "source": "AARO — DOW-UAP-PR116 con el debrief DOW-UAP-D091 (PURSUE Release 04)",
-    "source_en": "AARO — DOW-UAP-PR116 with debrief DOW-UAP-D091 (PURSUE Release 04)",
-    "url": "https://www.dvidshub.net/video/1014124"
+    "es": "El formulario que rellenó el oficial de sistemas de armas describe un solo objeto granate, de unos 12 a 15 pies de alto, que «viajaba con el viento», sin maniobras ni cambios de dirección, y que «parecía un globo grande, algo deformado»; el mismo formulario añade que la tripulación no pudo comprobarlo al cruzarse con él, y la AARO lo publicó como no resuelto.",
+    "en": "The form completed by the weapon systems officer describes a single \"darker, maroonish color\" object, \"approximately 12-15ft in height,\" that \"traveled with the wind\" with \"no maneuvers or change in direction,\" and that \"appeared as a large, somewhat deformed balloon\"; the same form adds \"but we were unable to verify that as we passed at the merge,\" and AARO released it as unresolved.",
+    "source": "AARO — formulario DOW-UAP-D091 «Range Fouler Debrief» (PURSUE Release 04, copia en archive.org), con el video DOW-UAP-PR116",
+    "source_en": "AARO — DOW-UAP-D091 \"Range Fouler Debrief\" form (PURSUE Release 04, archive.org copy), with video DOW-UAP-PR116",
+    "url": "https://archive.org/download/pursue-uap-documents-2026/Release_04/DOW-UAP-D091_Range-Fouler-Debrief_Atlantic-Ocean_2020.pdf"
   },
-  "evidenceReviewed": "2026-10-03"
+  "evidenceReviewed": "2026-11-08"
 }
