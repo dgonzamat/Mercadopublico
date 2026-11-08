@@ -212,6 +212,18 @@
    "bonilla-zacatecas-1883",
    "schirmer-ashland-1967",
    "pacific-ocean-uaptf-lights-2019"
+  ],
+  "Lote 2026-11-08b": [
+   "gulf-america-thermal-camouflage-2019",
+   "mt-etna-object-2018",
+   "gemini4-mcdivitt-1965",
+   "general-teran-1967",
+   "campo-de-mayo-1972",
+   "valentich-1978",
+   "battle-of-los-angeles-1942",
+   "moron-puerto-serrano-1995",
+   "al-taqaddum-balloons-2017",
+   "middle-east-thermal-signature-annotation-2020"
   ]
  },
  "reescribir_tras_relectura": [
@@ -223,7 +235,8 @@
   "fuente_pendiente_de_sources": [
    "eastern-us-civilian-sensor-2019 (D090: parche-fuente-pendiente-fuente.json)",
    "barra-da-tijuca-1952 (Spaulding: NYT sala de lectura CIA)",
-   "tremonton-film-1952 (título y nota de D103: «cinco días después»)"
+   "tremonton-film-1952 (título y nota de D103: «cinco días después»)",
+   "mt-etna-object-2018 (documents[0]: título dice FLIR y Fuerza Aérea; el informe de la AARO dice SWIR y U.S. military)"
   ]
  }
 }
