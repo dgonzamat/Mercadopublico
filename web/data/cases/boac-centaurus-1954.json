@@ -15,7 +15,7 @@
   },
   "tier": "A",
   "epistemicStatus": "documented",
-  "probability": 58,
+  "probability": 39,
   "summary": "Al atardecer del 29 de junio de 1954, sobre Labrador, la tripulación de un avión de línea británico vio un gran objeto oscuro que cambiaba de forma, rodeado de seis objetos menores. El avión, el «Centaurus» de BOAC, volaba de Nueva York a Londres. Lo observaron durante 18 minutos a contraluz del sol poniente, y el capitán James Howard lo dibujó. Un caza F-94 desviado hacia el avión no vio nada ni lo captó en su radar. La Fuerza Aérea de EE. UU. lo atribuyó a un reflejo de Marte, que estaba en el lado contrario; un estudio de 2009 considera lo más probable un espejismo inusual.",
   "summary_en": "At dusk on June 29, 1954, the crew of a British airliner over Labrador saw a large dark object that kept changing shape, surrounded by six smaller ones. The plane, BOAC's \"Centaurus,\" was flying from New York to London. They watched it for 18 minutes against the setting sun, and Captain James Howard sketched it. An F-94 fighter diverted toward the plane saw nothing and picked up nothing on radar. The U.S. Air Force put it down to a reflection of Mars, which was on the opposite side of the sky; a 2009 study judges an unusual mirage the most likely explanation.",
   "patterns": [
@@ -80,12 +80,12 @@
   "mundanoType": "natural",
   "objectDetail": "optico",
   "posterior": {
-    "mundano_natural": 0.34,
-    "humana_clasificada": 0.05,
-    "adversaria": 0.03,
-    "nohumano_encubierto": 0.08,
-    "nohumano_abierto": 0.15,
-    "indet": 0.35
+    "mundano_natural": 0.55,
+    "humana_clasificada": 0.04,
+    "adversaria": 0.02,
+    "nohumano_encubierto": 0.04,
+    "nohumano_abierto": 0.08,
+    "indet": 0.27
   },
   "seoTitle": "BOAC «Centaurus» 1954: el OVNI que escoltó un avión sobre Labrador",
   "seoDescription": "El capitán James Howard (ex-RAF) y la tripulación del Stratocruiser «Centaurus» de BOAC fueron acompañados 18 minutos por un objeto que cambiaba de forma con 6-7 satélites sobre Labrador en 1954. Fuentes primarias.",
@@ -104,5 +104,5 @@
     "source_en": "Shough, M. — “The BOAC Labrador sighting of June 29, 1954”, summary (CAELESTIA)",
     "url": "https://www.caelestia.be/BOAC.html"
   },
-  "evidenceReviewed": "2026-10-02"
+  "evidenceReviewed": "2026-11-06"
 }
