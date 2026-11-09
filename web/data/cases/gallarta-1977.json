@@ -16,7 +16,7 @@
   "tier": "B",
   "mundanoType": "fraude",
   "epistemicStatus": "documented",
-  "probability": 11,
+  "probability": 13,
   "summary": "En marzo de 1977 La Gaceta del Norte publicó que en una escombrera de Gallarta (Vizcaya) habían aparecido más de ochenta huellas de aterrizajes de ovnis. El oficial instructor del Ejército del Aire encontró dos testigos, suegro y yerno: un encofrador que contaba cinco aterrizajes con seres que le daban la mano y un ingeniero naval que había visto de día, durante uno o dos segundos, un objeto que subía casi en vertical. La 3.ª Región Aérea concluyó que la información «no debe tomarse en consideración», y un estudio de 1979 de Stendek, un equipo de consultores, atribuyó las huellas a una retroexcavadora y concluyó que era un fraude.",
   "summary_en": "In March 1977 La Gaceta del Norte reported that more than eighty UFO landing marks had appeared on a spoil heap in Gallarta (Biscay). The Air Force's investigating officer found two witnesses, father-in-law and son-in-law: a formwork carpenter who described five landings with beings who shook his hand, and a naval engineer who had seen, in daylight and for one or two seconds, an object climbing almost vertically. The 3rd Air Region concluded that the information \"should not be taken into consideration\", and a 1979 study by Stendek, a team of consultants, put the marks down to a backhoe and concluded it was a hoax.",
   "patterns": [
@@ -53,12 +53,12 @@
     }
   ],
   "posterior": {
-    "mundano_natural": 0.86,
+    "mundano_natural": 0.84,
     "humana_clasificada": 0.02,
     "adversaria": 0.01,
     "nohumano_encubierto": 0.01,
     "nohumano_abierto": 0.03,
-    "indet": 0.07
+    "indet": 0.09
   },
   "documents": [
     {
@@ -73,11 +73,11 @@
     }
   ],
   "classBasis": {
-    "es": "«Las huellas, al principio desconcertantes, tienen un origen absolutamente terrestre y la historia que nos cuenta el testigo no ocurrió. Se trata pues de un fraude»: el operario de una retroexcavadora dijo haber hecho las huellas al arrancar piedras. La 3.ª Región Aérea ya había concluido que la información «no debe tomarse en consideración». La clase cubre los aterrizajes; la observación diurna del yerno queda fuera, y el propio estudio dice que su opinión sobre un fraude consciente «no es definitiva».",
-    "en": "\"The marks, disconcerting at first, have an entirely earthly origin and the story the witness tells us did not happen. It is therefore a hoax\": a backhoe operator said he had made the marks while pulling out stones. The 3rd Air Region had already concluded that the information \"should not be taken into consideration\". The class covers the landings; the son-in-law's daytime sighting is left out, and the study itself says its opinion of a conscious hoax \"is not definitive\".",
-    "source": "Consultores de Stendek, «Informe sobre la investigación de los supuestos aterrizajes de cuatro O.V.N.I.S. en Gallarta (Vizcaya)», San Sebastián, 1 sep 1979 (expediente 770213, ff. 0082-0084)",
-    "source_en": "Stendek consultants, “Informe sobre la investigación de los supuestos aterrizajes de cuatro O.V.N.I.S. en Gallarta (Vizcaya)”, San Sebastián, 1 Sep 1979 (file 770213, ff. 0082-0084)",
+    "es": "«Las huellas, al principio desconcertantes, tienen un origen absolutamente terrestre y la historia que nos cuenta el testigo no ocurrió. Se trata pues de un fraude»: el operario de una retroexcavadora dijo haber hecho las huellas al arrancar piedras. La 3.ª Región Aérea había concluido que la información «no debe tomarse en consideración». En contra, el instructor escribió que las cadenas que pudieron dejar otras huellas, las del lugar donde había estado la tanqueta, «no son ni parecidas» a las de las máquinas de los alrededores. La clase cubre los aterrizajes; la observación diurna del yerno queda fuera, y el estudio dice que su opinión sobre un fraude consciente «no es definitiva».",
+    "en": "\"The marks, disconcerting at first, have an entirely earthly origin and the story the witness tells us did not happen. It is therefore a hoax\": a backhoe operator said he had made the marks while pulling out stones. The 3rd Air Region had already concluded that the information \"should not be taken into consideration\". Against it, the investigating officer wrote that the chains that could have left other marks, those where the tankette had stood, \"are nothing like\" those of the machines nearby. The class covers the landings; the son-in-law's daytime sighting is left out, and the study says its opinion of a conscious hoax \"is not definitive\".",
+    "source": "Consultores de Stendek, «Informe sobre la investigación de los supuestos aterrizajes de cuatro O.V.N.I.S. en Gallarta (Vizcaya)», San Sebastián, 1 sep 1979 (expediente 770213, ff. 0082-0084) · informe del juez informador, Bilbao, 27 jul 1977 (f. 0034)",
+    "source_en": "Stendek consultants, “Informe sobre la investigación de los supuestos aterrizajes de cuatro O.V.N.I.S. en Gallarta (Vizcaya)”, San Sebastián, 1 Sep 1979 (file 770213, ff. 0082-0084) · investigating officer's report, Bilbao, 27 Jul 1977 (f. 0034)",
     "url": "https://bibliotecavirtual.defensa.gob.es/BVMDefensa/exp_ovni/es/consulta/busqueda_referencia.do?campo=idtitulo&idValor=395886"
   },
-  "evidenceReviewed": "2026-10-16"
+  "evidenceReviewed": "2026-11-09"
 }
