@@ -58,7 +58,7 @@ categorias = [
     {"categoria": "Prosa de las fichas", "unidad": "fichas",
      "hecho": sum(x["remediadas"] + x["aprobadas_sin_tocar"] for x in tiers), "en_curso": 0,
      "pendiente": sum(x["pendientes"] for x in tiers), "aplazado": sum(x["aplazadas"] for x in tiers),
-     "nota": "Corrector, verificador contra la fuente y relectura de muestra. Aplazadas: Tier B sin defectos graves y reescrituras Tier B."},
+     "nota": "Corrector, verificador contra la fuente y relectura de cada ficha desde el 10 nov 2026 (antes, de muestra). Aplazadas: Tier B sin defectos graves y reescrituras Tier B."},
     {"categoria": "Página en el móvil", "unidad": "hallazgos",
      "hecho": t_hecho, "en_curso": t_curso, "pendiente": len(trans) - t_hecho - t_curso, "aplazado": 0,
      "nota": "Defectos que se repiten en todo el sitio, del tablero de la auditoría."},
