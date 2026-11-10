@@ -16,7 +16,7 @@
   "tier": "B",
   "mundanoType": "fraude",
   "epistemicStatus": "documented",
-  "probability": 12,
+  "probability": 9,
   "summary": "El 28 de junio de 1952, el diario alemán Saarbrücker Zeitung publicó que cazas noruegos habían hallado un platillo estrellado en la isla ártica de Spitsbergen: un disco con toberas en el borde para girar y con inscripciones «rusas». Versiones posteriores añadieron un origen extraterrestre y cuerpos calcinados, y la historia circuló durante décadas. La Fuerza Aérea noruega lo desmintió ya en 1952, y en 1991 el investigador noruego Ole Jonny Braenne no halló ninguno de los nombres citados ni la noticia del accidente en la prensa noruega de 1952. Los investigadores lo consideran un bulo periodístico.",
   "summary_en": "On June 28, 1952, the German newspaper Saarbrücker Zeitung reported that Norwegian fighter pilots had found a crashed saucer on the Arctic island of Spitsbergen: a disc with jets around the rim to spin it, bearing \"Russian\" inscriptions. Later versions added an extraterrestrial origin and charred bodies, and the story circulated for decades. The Norwegian Air Force denied it as early as 1952, and in 1991 Norwegian researcher Ole Jonny Braenne found none of the names cited and no report of the crash in the Norwegian press of 1952. Researchers consider it a newspaper hoax.",
   "patterns": [],
@@ -62,12 +62,12 @@
     }
   ],
   "posterior": {
-    "mundano_natural": 0.85,
+    "mundano_natural": 0.88,
     "humana_clasificada": 0.03,
     "adversaria": 0.0,
-    "nohumano_encubierto": 0.03,
+    "nohumano_encubierto": 0.02,
     "nohumano_abierto": 0.0,
-    "indet": 0.09
+    "indet": 0.07
   },
   "documents": [
     {
@@ -84,9 +84,9 @@
   "classBasis": {
     "es": "Kevin Randle (2024), tras revisar los expedientes de Blue Book: el caso figura allí como fraude; según otras fuentes, la Fuerza Aérea noruega dijo al agregado que la historia era «definitivamente falsa»; y «no parece haber prueba de que el accidente ocurriera», pues el relato «parece venir de un periódico que inventó los detalles». Randle cita además «Majic Eyes Only» de Ryan Wood: en 1985 el Ministerio de Defensa noruego respondió a Philip Mantle que «toda la historia parece completamente infundada», y varias personas citadas en los artículos y resúmenes de inteligencia «simplemente no existían».",
     "en": "Kevin Randle (2024), after going through the Blue Book files: the case \"is labeled as a hoax by them\"; according to other sources the Norwegian Air Force told the attaché that \"the story was definitely false\"; and \"there seems to be no evidence that the crash took place\". Randle also quotes Ryan Wood's \"Majic Eyes Only\": in 1985 the Norwegian Ministry of Defense told Philip Mantle that \"The whole story seems utterly unfounded\", and \"several of those people cited in both newspaper articles and official intelligence summaries ... simply did not exist\".",
-    "source": "Randle, K. — «Spitsbergen Crash/Retrieval and David Grusch», A Different Perspective (may 2024)",
-    "source_en": "Randle, K. — “Spitsbergen Crash/Retrieval and David Grusch”, A Different Perspective (May 2024)",
+    "source": "Randle, K., «Spitsbergen Crash/Retrieval and David Grusch», A Different Perspective (may 2024)",
+    "source_en": "Randle, K., “Spitsbergen Crash/Retrieval and David Grusch”, A Different Perspective (May 2024)",
     "url": "http://kevinrandle.blogspot.com/2024/05/spitsbergen-crashretrieval-and-david.html"
   },
-  "evidenceReviewed": "2026-10-02"
+  "evidenceReviewed": "2026-11-10"
 }

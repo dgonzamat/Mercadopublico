@@ -17,18 +17,18 @@
   "category": "incident",
   "epistemicStatus": "documented",
   "mundanoType": "misid",
-  "probability": 52,
+  "probability": 47,
   "patterns": [
     "8k",
     "8g"
   ],
   "posterior": {
-    "mundano_natural": 0.4,
+    "mundano_natural": 0.45,
     "humana_clasificada": 0.04,
     "adversaria": 0.04,
     "nohumano_encubierto": 0.04,
-    "nohumano_abierto": 0.18,
-    "indet": 0.3
+    "nohumano_abierto": 0.15,
+    "indet": 0.28
   },
   "summary": "El 16 de agosto de 1954, sobre la capital de Madagascar (entonces Tananarive, colonia francesa), miles de personas (unas 20.000, según el principal testigo, Edmond Campagnac, de Air France) vieron pasar a baja altura una luz verde seguida de un objeto metálico, con forma de cigarro en su relato de 1964 y de balón en versiones posteriores. Los relatos describen un apagón del alumbrado a su paso, pánico en un parque de ganado y un objeto parecido sobre La Sakay. Según el personal de Air France, el general Fleurquin encargó una investigación al jesuita Coze, director del observatorio, de la que no hay rastro en los archivos de la Fuerza Aérea.",
   "summary_en": "On August 16, 1954, over the capital of Madagascar (then Tananarive, a French colony), thousands of people (some 20,000, by the estimate of the main witness, Air France's Edmond Campagnac) watched a green light pass at low altitude followed by a metallic object, cigar-shaped in his 1964 account and football-shaped in later versions. The accounts describe the street lighting cutting out as it passed, panic in a livestock park and a similar object over La Sakay. According to Air France staff, General Fleurquin entrusted an investigation to the Jesuit Coze, the observatory director, of which no trace has been found in the Air Force records.",
@@ -91,11 +91,11 @@
   "misidSubtype": "astronomico",
   "objectDetail": "meteoro",
   "classBasis": {
-    "es": "Eric Maillot, del Cercle Zététique, sostiene que fue un meteoro, citado por Patrick Gross: su abuelo, que vivía en Madagascar, observó «este... meteoro, pasando sin la doble vuelta que se le atribuye» en la revista LDLN, y resume: «Tomen un meteoro, háganlo zigzaguear y ahí lo tienen: tienen un OVNI»; Gross añade que el caso ha sido criticado como un simple meteoro cuyos rasgos extraños serían «añadidos tardíos» por la «memoria defectuosa». Pero Gross, que reproduce la crítica, la rechaza, y un meteoro no explica bien el segundo objeto visto minutos después ni el apagón que relatan los testigos.",
-    "en": "Eric Maillot, of the Cercle Zététique, holds it was a meteor, quoted by Patrick Gross: his grandfather, who lived in Madagascar, observed \"this... meteor, streaking by without double turn as it is claimed\" in LDLN magazine, and he sums up: \"Take a meteor, make it zig-zag, and there you are: you have a UFO\"; Gross adds that the case has been criticized as only a meteor whose strange features were \"late additions\" due to \"faulty memory\". But Gross, who reproduces the criticism, rejects it, and a meteor does not explain well the second object seen minutes later or the blackout the witnesses describe.",
-    "source": "Patrick Gross — «Tananarive, Madagascar, 1954» (cita a Eric Maillot, Cercle Zététique)",
-    "source_en": "Patrick Gross — “Tananarive, Madagascar, 1954” (citing Eric Maillot, Cercle Zététique)",
+    "es": "Eric Maillot, del Cercle Zététique, citado por Patrick Gross, sostiene que fue un meteoro: su abuelo lo vio en Madagascar sin el doble giro que le atribuye la revista LDLN, y resume: «Tomen un meteoro, háganlo zigzaguear y ahí lo tienen: tienen un OVNI»; Gross recoge además la crítica de que sus rasgos extraños serían «añadidos tardíos» por la «memoria defectuosa». Un meteoro explica mal el segundo objeto y el apagón, pero esos rasgos solo constan en relatos publicados desde 1964. Según Hobana, la prensa malgache no se hizo eco del avistamiento; Grimout recordó que solo habló de un apagón general, y un diario de enero de 1955 menciona de pasada, sin fecha, un platillo sobre Tananarive.",
+    "en": "Eric Maillot, of the Cercle Zététique, quoted by Patrick Gross, holds it was a meteor: his grandfather saw it in Madagascar \"streaking by without double turn as it is claimed\" in LDLN magazine, and he sums up: \"Take a meteor, make it zig-zag, and there you are: you have a UFO\"; Gross also records the criticism that its strange features were \"late additions\" due to \"faulty memory.\" A meteor explains poorly the second object and the blackout, but those features appear only in accounts published from 1964 on. According to Hobana, the Malagasy press did not report the sighting; Grimout recalled it spoke only of a general blackout, and a January 1955 paper mentions in passing, undated, a saucer over Tananarive.",
+    "source": "Patrick Gross, «Tananarive, Madagascar, 1954» (cita a Eric Maillot, Cercle Zététique, y el Fandrosoam-Baovao del 21 ene 1955) · Ion Hobana, «OZN. Observatori credibili, relatări incredibile», cap. «O observaţie excepţională» (carta de Grimout)",
+    "source_en": "Patrick Gross, \"Tananarive, Madagascar, 1954\" (citing Eric Maillot, Cercle Zététique, and the Fandrosoam-Baovao of January 21, 1955) · Ion Hobana, \"OZN. Observatori credibili, relatări incredibile,\" chapter \"O observaţie excepţională\" (Grimout's letter)",
     "url": "https://ufologie.patrickgross.org/htm/tana54.htm"
   },
-  "evidenceReviewed": "2026-10-03"
+  "evidenceReviewed": "2026-11-10"
 }

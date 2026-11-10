@@ -18,15 +18,15 @@
   },
   "tier": "B",
   "epistemicStatus": "documented",
-  "probability": 43,
+  "probability": 39,
   "mundanoType": "instrumento",
   "posterior": {
-    "mundano_natural": 0.46,
+    "mundano_natural": 0.5,
     "humana_clasificada": 0.08,
     "adversaria": 0.03,
-    "nohumano_encubierto": 0.05,
+    "nohumano_encubierto": 0.04,
     "nohumano_abierto": 0.02,
-    "indet": 0.36
+    "indet": 0.33
   },
   "summary": "Un video de 47 segundos circula con el título «Spherical UAP over AFG in and out of clouds 23 Nov 2020» («esfera sobre Afganistán entrando y saliendo de las nubes»), que según la oficina del Pentágono para estos fenómenos (AARO) puso quien lo subió a una red clasificada en junio de 2024, no el Departamento de Guerra. Es uno de 50 videos publicados de lo que la AARO halló a petición de ocho miembros de la Cámara, y a muchos les falta, advierte, una cadena de custodia demostrada. Añade que este «fue alterado digitalmente» antes de subirse: trae rótulos que anuncian nitidez y contraste realzados, zoom, seguimiento y cámara lenta.",
   "summary_en": "A 47-second clip circulates under the title “Spherical UAP over AFG in and out of clouds 23 Nov 2020,” which, according to the Pentagon office for these phenomena (AARO), was given by whoever uploaded it to a classified network in June 2024, not by the Department of War. It is one of 50 videos released from what AARO found while responding to eight House members, and the office warns that many lack a substantiated chain of custody. It adds that this one “was digitally altered” before upload: it includes cards announcing sharpening, contrast enhancement, zoom, motion tracking and slow motion.",
@@ -125,11 +125,11 @@
     }
   ],
   "classBasis": {
-    "es": "El análisis de Metabunk atribuye la forma a un artefacto óptico: si la fuente de luz es muy intensa, como el sol, «sus rayos pueden llegar al frente de la lente y causar un destello, aunque la fuente no esté en la imagen». Mick West, que se inclina por «un reflejo interno del sol», admitió en mayo de 2026 no recordar un ejemplo de ese tipo de cámara con un reflejo interno y dejó el caso en información insuficiente. El hilo está dividido: un participante prefiere el globo espía de Corridor Crew y otro sostiene que la segunda oclusión parcial se parece aún menos a un destello.",
-    "en": "The Metabunk analysis attributes the shape to an optical artifact: if the light source is very strong, such as the sun, \"its light rays can reach the front of the lens and cause lens flare\". Mick West, who leans toward \"an internal reflection of the sun\", admitted in May 2026 he did not recall an example of that kind of camera having an internal reflection, and left the case at insufficient information. The thread is split: one participant prefers Corridor Crew's \"spy balloon\", another argues that \"this second partial occlusion looks even less like a flare behavior\".",
-    "source": "Metabunk, hilo PR055 (posts de John J. y flarkey, 27-28 may 2026)",
-    "source_en": "Metabunk, thread PR055 (posts by John J. and flarkey, May 27-28, 2026)",
-    "url": "https://www.metabunk.org/threads/pr055-corbells-u-s-military-films-huge-disc-hiding-in-the-clouds-new-video-06-17-25.14289/page-5"
+    "es": "El análisis de Metabunk atribuye la forma a un artefacto de la cámara. Mick West, que se inclina por «un reflejo interno del sol», mostró que, con las nubes estabilizadas, la rotación del fondo traza un vaivén que replica el movimiento del objeto en pantalla (6 jul 2025). En mayo de 2026 admitió no recordar un ejemplo de esa cámara con un reflejo interno; el 13 de junio, que la compresión impide ver qué ocurre («estamos en la zona de información insuficiente»); y el 22, ante la objeción cinemática de Zaine M., que sin la geometría de la cámara no puede descartarlo. Otros prefieren el globo espía de Corridor Crew o sostienen que la oclusión no se parece a un destello.",
+    "en": "The Metabunk analysis attributes the shape to a camera artifact. Mick West, who leans toward \"an internal reflection of the sun,\" showed that, with the clouds stabilized, the background rotation \"traces out a back-and-forth path that seems to perfectly mirror the on-screen motion of the object\" (July 6, 2025). In May 2026 he said he did not recall such a camera having an internal reflection; on June 13, that compression hides what is happening (\"We are in the LIZ,\" the low information zone); and on June 22, answering Zaine M.'s kinematic objection, that without the camera geometry \"we can't really rule out an internal reflection.\" Others prefer Corridor Crew's spy balloon or argue the occlusion does not look like a flare.",
+    "source": "Metabunk, hilo PR055 (mensajes de Mick West n.º 74, 21 jun 2025; n.º 85, 22 jun 2025; n.º 141, 6 jul 2025; n.º 199, 28 may 2026; n.º 222, 13 jun 2026; y n.º 225, 22 jun 2026)",
+    "source_en": "Metabunk, thread PR055 (posts by Mick West no. 74, June 21, 2025; no. 85, June 22, 2025; no. 141, July 6, 2025; no. 199, May 28, 2026; no. 222, June 13, 2026; and no. 225, June 22, 2026)",
+    "url": "https://www.metabunk.org/threads/pr055-corbells-u-s-military-films-huge-disc-hiding-in-the-clouds-new-video-06-17-25.14289/"
   },
-  "evidenceReviewed": "2026-10-03"
+  "evidenceReviewed": "2026-11-10"
 }
