@@ -9,6 +9,8 @@ R = os.path.dirname(os.path.abspath(__file__))
 n = int(sys.argv[1]) if len(sys.argv) > 1 else 10
 reg = json.load(open(f"{R}/remediadas.json"))
 hechas = {i for v in reg["lotes"].values() for i in v}
+# Las que la relectura mandó a reescribir salen del método de corrección (Borland volvió a salir el 11 nov 2026).
+hechas |= set(reg.get("reescribir_tras_relectura", []))
 cs = {c["id"]: c for c in (json.load(open(f)) for f in glob.glob("/home/user/Mercadopublico/web/data/cases/*.json"))}
 ver = {f["ficha"]: f["veredicto"] for f in json.load(open(f"{D}/fichas.json"))}
 defs = json.load(open(f"{D}/defectos.json"))
