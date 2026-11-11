@@ -16,7 +16,7 @@
   "tier": "B",
   "mundanoType": "fraude",
   "epistemicStatus": "documented",
-  "probability": 35,
+  "probability": 32,
   "summary": "En 1989, Bob Lazar, que revelaba fotografías en Las Vegas, contó en la televisión local que había trabajado en S-4, una instalación junto al Área 51, en Nevada. Dijo que allí había nueve platillos volantes de origen extraterrestre y que estudió su propulsión, alimentada por el «elemento 115». Nunca presentó pruebas. El MIT y Caltech no tienen registro de sus estudios, y Los Álamos dijo no tener constancia de su empleo, aunque una guía del laboratorio de 1982 lo listaba como técnico de un subcontratista. El elemento 115 se sintetizó en 2003 y es muy inestable.",
   "summary_en": "In 1989 Bob Lazar, a photo processor in Las Vegas, told local television he had worked at S-4, a facility next to Area 51 in Nevada. He said nine flying saucers of extraterrestrial origin were kept there and that he studied their propulsion, which ran on \"element 115.\" He never produced any proof. MIT and Caltech have no record of his studies, and Los Alamos said it had no record of employing him, although a 1982 lab directory listed him as a subcontractor's technician. Element 115 was synthesized in 2003 and is highly unstable.",
   "patterns": [
@@ -73,12 +73,12 @@
     }
   ],
   "posterior": {
-    "mundano_natural": 0.6,
+    "mundano_natural": 0.63,
     "humana_clasificada": 0.05,
     "adversaria": 0.0,
-    "nohumano_encubierto": 0.12,
+    "nohumano_encubierto": 0.11,
     "nohumano_abierto": 0.01,
-    "indet": 0.22
+    "indet": 0.2
   },
   "documents": [
     {
@@ -105,11 +105,11 @@
     }
   ],
   "classBasis": {
-    "es": "Benjamin Radford, en Live Science (2012): las afirmaciones de Lazar «fueron refutadas más tarde (por escépticos y creyentes en los ovnis por igual)»; se descubrió que había inventado «no solo su empleo en Nellis sino todo su historial; casi nada de lo que dijo era cierto». Pero el artículo de Skeptic que cita esta ficha sostiene que las objeciones habituales no tienen el peso que se les suele dar. En particular, contra lo de que inventó todo su historial, recuerda que «un artículo de 1982 del Los Alamos Monitor lo identificaba como físico en la Los Alamos Meson Physics Facility», años antes de la historia ovni, aunque eso no aclara su puesto exacto.",
-    "en": "Benjamin Radford, in Live Science (2012): \"Lazar's claims were later disproven (by UFO skeptics and believers alike). He was found to have fabricated not only his employment at Nellis but indeed his entire background; almost nothing of what he said was true.\" But the Skeptic article this case cites argues that \"the standard counterclaims do not carry the weight often assigned to them\". In particular, against the claim that he invented his whole background, it notes that \"A 1982 Los Alamos Monitor article identified him as a physicist at the Los Alamos Meson Physics Facility, years before the UFO story made him notorious\", though \"That does not settle what his precise status was\".",
-    "source": "Radford, B. — «Area 51: Secrets, Yes; Aliens, No», Live Science (27 sep 2012) · Skeptic — «The Strange Case of Bob Lazar»",
-    "source_en": "Radford, B. — “Area 51: Secrets, Yes; Aliens, No”, Live Science (27 Sep 2012) · Skeptic — “The Strange Case of Bob Lazar”",
+    "es": "Benjamin Radford, en Live Science (2012): las afirmaciones de Lazar «fueron refutadas más tarde (por escépticos y creyentes en los ovnis por igual)», y había inventado «no solo su empleo en Nellis sino todo su historial». El artículo de Skeptic (2026) sostiene que esas objeciones pesan menos de lo que se cree y se apoya en una nota de 1982 del Los Alamos Monitor que lo llamaba físico. Esa nota trataba de su auto con motor a reacción y repetía cómo se presentaba él, sin comprobarlo; la guía del laboratorio de 1982 lo lista como empleado de un subcontratista de técnicos. Lazar estuvo en Los Álamos, pero nada respalda sus títulos ni su trabajo en S-4.",
+    "en": "Benjamin Radford, in Live Science (2012): \"Lazar's claims were later disproven (by UFO skeptics and believers alike). He was found to have fabricated not only his employment at Nellis but indeed his entire background.\" The Skeptic article (2026) argues that \"the standard counterclaims do not carry the weight often assigned to them\", leaning on a 1982 Los Alamos Monitor piece that called him a physicist. That piece was about his jet-engine car and repeated how he described himself, unchecked; the lab's 1982 directory lists him as an employee of a subcontractor that supplied technicians. Lazar was at Los Alamos, but nothing supports his degrees or his work at S-4.",
+    "source": "Radford, B. — «Area 51: Secrets, Yes; Aliens, No», Live Science (27 sep 2012) · Skeptic — «The Strange Case of Bob Lazar» (2026) · Wikipedia — Bob Lazar (guía de Los Álamos de 1982 y nota del Los Alamos Monitor, fuente secundaria)",
+    "source_en": "Radford, B. — “Area 51: Secrets, Yes; Aliens, No”, Live Science (27 Sep 2012) · Skeptic — “The Strange Case of Bob Lazar” (2026) · Wikipedia — Bob Lazar (1982 Los Alamos directory and Los Alamos Monitor piece, secondary source)",
     "url": "https://www.livescience.com/23514-area-51.html"
   },
-  "evidenceReviewed": "2026-10-03"
+  "evidenceReviewed": "2026-11-01"
 }
