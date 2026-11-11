@@ -258,10 +258,9 @@ export async function ResearcherDetailPage({
                 style={{ borderColor: f.color }}
                 title={locale === "es" ? f.description : f.description_en}
               >
-                <span className="font-mono">{f.slug}</span>
-                <span className="ml-2">
-                  <T es={f.name} en={f.name_en} locale={locale} />
-                </span>
+                {/* Solo el nombre: el slug interno («gris», «sin-forma») es español
+                    y salía como rótulo duplicado en el sitio inglés (nov 2026). */}
+                <T es={f.name} en={f.name_en} locale={locale} />
               </LocaleLink>
             ))}
           </div>
