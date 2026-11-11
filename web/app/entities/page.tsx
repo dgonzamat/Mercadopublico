@@ -8,7 +8,7 @@ export const metadata = {
   ...pageMeta({
     title: "Non-human entity hypotheses",
     description:
-      "Catalog of the physical forms attributed to non-human entities across the corpus, with the origin framework each form reads toward.",
+      "Catalog of the physical forms attributed to non-human entities in the archive's cases, with the origin framework each form reads toward.",
     path: "/entities/",
   }),
   alternates: {
@@ -54,16 +54,16 @@ export function EntitiesView({ locale }: { locale: "es" | "en" }) {
             locale={locale}
             es={
               <>
-                Qué forma describió el testigo primario — incluidas las
-                formas que ningún caso del corpus llega a cumplir. De{" "}
+                Qué forma describió el testigo primario, incluidas las
+                formas que ningún caso del archivo llega a cumplir. De{" "}
                 {total} casos, {withForm} describen (o afirman sin describir)
                 una entidad. El resto documenta solo un objeto.
               </>
             }
             en={
               <>
-                What form the primary witness described — including the
-                forms no case in the corpus manages to satisfy. Of {total}{" "}
+                What form the primary witness described, including the
+                forms no case in the archive manages to satisfy. Of {total}{" "}
                 cases, {withForm} describe (or claim without describing) an
                 entity. The rest document only an object.
               </>
@@ -73,7 +73,7 @@ export function EntitiesView({ locale }: { locale: "es" | "en" }) {
       </header>
 
       <section className="space-y-3">
-        <h2 className="font-mono text-xs uppercase tracking-widest text-muted">
+        <h2 className="text-sm font-semibold text-muted">
           <T es="Formas presentes" en="Present forms" locale={locale} />
         </h2>
         <div className="grid gap-3 sm:grid-cols-2">
@@ -94,13 +94,16 @@ export function EntitiesView({ locale }: { locale: "es" | "en" }) {
               >
                 <div className="flex items-start justify-between gap-3">
                   <div>
-                    <p className="font-mono text-xs text-accent">{f.slug}</p>
-                    <h3 className="mt-1 text-base font-medium text-text">
+                    <h3 className="text-base font-medium text-text">
                       <T es={f.name} en={f.name_en} locale={locale} />
                     </h3>
                   </div>
                   <span className="bg-bg px-2 py-0.5 font-mono text-[10px] text-muted">
-                    <T es={`${count} casos`} en={`${count} cases`} locale={locale} />
+                    <T
+                      es={`${count} ${count === 1 ? "caso" : "casos"}`}
+                      en={`${count} ${count === 1 ? "case" : "cases"}`}
+                      locale={locale}
+                    />
                   </span>
                 </div>
                 <p className="mt-2 text-xs text-muted">
@@ -129,7 +132,7 @@ export function EntitiesView({ locale }: { locale: "es" | "en" }) {
       </section>
 
       <section className="space-y-3">
-        <h2 className="font-mono text-xs uppercase tracking-widest text-muted">
+        <h2 className="text-sm font-semibold text-muted">
           <T
             es="Arquetipos conocidos, sin caso en el archivo"
             en="Known archetypes, no case in the archive"

@@ -107,10 +107,10 @@ export async function EntityDetailPage(
       </section>
 
       <section>
-        <h2 className="font-mono text-xs uppercase tracking-widest text-muted">
+        <h2 className="text-sm font-semibold text-muted">
           <T
-            es="Lectura de origen · no es un campo del corpus"
-            en="Origin reading · not a corpus field"
+            es="Lectura de origen · no es un campo de las fichas"
+            en="Origin reading · not a case field"
             locale={locale}
           />
         </h2>
@@ -145,7 +145,7 @@ export async function EntityDetailPage(
       </section>
 
       <section>
-        <h2 className="font-mono text-xs uppercase tracking-widest text-muted">
+        <h2 className="text-sm font-semibold text-muted">
           <T
             es={`Casos con esta forma (${entityCases.length})`}
             en={`Cases with this form (${entityCases.length})`}
