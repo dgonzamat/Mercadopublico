@@ -17,13 +17,14 @@ ver = {f["ficha"]: f["veredicto"] for f in json.load(open(f"{D}/fichas.json"))}
 defs = json.load(open(f"{D}/defectos.json"))
 alta = collections.Counter(d["ficha"] for d in defs if d["factor"] == "prosa" and d["gravedad"] == "ALTA")
 
-# Fichas por tier. Aplazado (decisión del dueño, 5 nov): Tier B sin ALTA y reescrituras Tier B.
+# Fichas por tier. Aplazado (decisión del dueño, 5 nov): Tier B sin ALTA ni veredicto APROBADA (las reescrituras Tier B se cerraron el 11 nov).
 tiers = []
 for t in "SAB":
     ids = [i for i in cs if cs[i]["tier"] == t]
     h = [i for i in ids if i in hechas]
-    ap = [i for i in ids if i not in hechas and t == "B" and (not alta[i] or ver.get(i) == "REESCRIBIR")]
-    ok = [i for i in ids if i not in hechas and ver.get(i) == "APROBADA" and i not in ap]
+    # Primero las aprobadas: una Tier B APROBADA no tiene ALTA y caía como aplazada (Vilas-Boas, Florencia, 11 nov 2026).
+    ok = [i for i in ids if i not in hechas and ver.get(i) == "APROBADA"]
+    ap = [i for i in ids if i not in hechas and i not in ok and t == "B" and (not alta[i] or ver.get(i) == "REESCRIBIR")]
     pend = [i for i in ids if i not in hechas and i not in ap and i not in ok]
     tiers.append({"tier": t, "fichas": len(ids), "remediadas": len(h), "aprobadas_sin_tocar": len(ok),
                   "pendientes": len(pend), "aplazadas": len(ap)})
@@ -58,7 +59,7 @@ categorias = [
     {"categoria": "Prosa de las fichas", "unidad": "fichas",
      "hecho": sum(x["remediadas"] + x["aprobadas_sin_tocar"] for x in tiers), "en_curso": 0,
      "pendiente": sum(x["pendientes"] for x in tiers), "aplazado": sum(x["aplazadas"] for x in tiers),
-     "nota": "Corrector, verificador contra la fuente y relectura de cada ficha desde el 10 nov 2026 (antes, de muestra). Aplazadas: Tier B sin defectos graves y reescrituras Tier B."},
+     "nota": "Corrector, verificador contra la fuente y relectura de cada ficha desde el 10 nov 2026 (antes, de muestra). Aplazadas: Tier B sin defectos graves."},
     {"categoria": "Página en el móvil", "unidad": "hallazgos",
      "hecho": t_hecho, "en_curso": t_curso, "pendiente": len(trans) - t_hecho - t_curso, "aplazado": 0,
      "nota": "Defectos que se repiten en todo el sitio, del tablero de la auditoría."},
