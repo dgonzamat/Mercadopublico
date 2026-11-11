@@ -18,6 +18,18 @@ for f in p["fichas"]:
     ok = True
     for k, op in enumerate(f.get("ops", [])):
         t, m = get(c, op["campo"])
+        if t is not None and t.count(op["viejo"]) != 1 and "\xa0" in t:
+            # Los agentes copian el espacio duro de la ficha («41 %») como espacio normal:
+            # si el tramo aparece una sola vez admitiendo cualquiera de los dos, se usa
+            # el texto real y el reemplazo conserva el espacio duro donde lo llevaba.
+            pat = re.escape(op["viejo"]).replace(r"\ ", "[ \xa0]")
+            hits = list(re.finditer(pat, t))
+            if len(hits) == 1:
+                real = hits[0].group(0)
+                nuevo = op["nuevo"]
+                for a, b in re.findall(r"(\S)\xa0(\S)", real):
+                    nuevo = nuevo.replace(f"{a} {b}", f"{a}\xa0{b}")
+                op = {**op, "viejo": real, "nuevo": nuevo}
         if t is None or t.count(op["viejo"]) != 1:
             fallos.append(f"{f['id']} op {k} ({op['campo']}): «{op['viejo'][:50]}» aparece {0 if t is None else t.count(op['viejo'])} veces"); ok = False; continue
         put(c, op["campo"], t.replace(op["viejo"], op["nuevo"]), m)
