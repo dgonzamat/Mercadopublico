@@ -4,7 +4,7 @@ import { esMeta } from "@/lib/seo";
 export const metadata = esMeta({
   title: "Hipótesis de entidades no humanas",
   description:
-    "Catálogo de las formas físicas atribuidas a entidades no humanas en el corpus, con el marco de origen hacia el que lee cada forma.",
+    "Catálogo de las formas físicas atribuidas a entidades no humanas en los casos del archivo, con el marco de origen hacia el que lee cada forma.",
   enPath: "/entities/",
 });
 
