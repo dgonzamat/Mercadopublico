@@ -1,10 +1,10 @@
 """Paquete reducido: solo los párrafos que tocan los defectos de la auditoría (y su par EN),
 más el resumen y los párrafos largos. Uso: paquete2.py <salida.json> <id>..."""
 import json, re, sys
-S = "/tmp/claude-0/-home-user-Mercadopublico/51719664-1aa9-5406-a859-ae4ae7bbc06e/scratchpad"
+D = "/home/user/Mercadopublico/tools/reescritura/datos"  # datos de la auditoría del 6 nov 2026, versionados
 W = "/home/user/Mercadopublico/web/data/cases"
 LIM = 900
-defs = json.load(open(f"{S}/auditdash/defectos.json"))
+defs = json.load(open(f"{D}/defectos.json"))
 PROSA = ["whatHappened", "whyMatters"]
 def claves(det):
     q = re.findall(r"«([^»]{4,})»", det)
