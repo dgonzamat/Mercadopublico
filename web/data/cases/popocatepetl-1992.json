@@ -1,9 +1,9 @@
 {
   "id": "popocatepetl-1992",
   "num": 29,
-  "name": "Popocatépetl · las cámaras del volcán graban objetos en vuelo",
-  "name_en": "Popocatépetl · volcano cameras record objects in flight",
-  "year_start": 1992,
+  "name": "Popocatépetl · las cámaras del volcán graban luces en el cielo",
+  "name_en": "Popocatépetl · volcano cameras record lights in the sky",
+  "year_start": 2012,
   "country": "MX",
   "country_name": "México",
   "flag": "🇲🇽",
@@ -14,67 +14,144 @@
     "place_en": "Popocatépetl volcano, Mexico"
   },
   "tier": "A",
-  "mundanoType": "sin_propuesta",
+  "mundanoType": "misid",
+  "misidSubtype": "astronomico",
   "epistemicStatus": "documented",
-  "probability": 27,
-  "summary": "Desde 1992, el Centro Nacional de Prevención de Desastres (CENAPRED) vigila el volcán Popocatépetl con cámaras térmicas y visibles que graban día y noche. Han captado varias veces objetos que parecen salir del cráter o sobrevolarlo, como el objeto alargado del 25 de octubre de 2012. Las cámaras no se diseñaron para buscar ovnis, y muchos de esos objetos son meteoros, aves o insectos junto a la lente, satélites o defectos de la propia cámara; según la prensa local, una hilera de luces de julio de 2026 era un tren de satélites Starlink.",
-  "summary_en": "Since 1992, Mexico's National Center for Disaster Prevention (CENAPRED) has watched the Popocatépetl volcano with thermal and visible-light cameras that record day and night. They have repeatedly caught objects that seem to emerge from the crater or fly over it, such as the elongated object of October 25, 2012. The cameras were not designed to look for UFOs, and many of these objects are meteors, birds or insects near the lens, satellites or flaws in the camera itself; according to local press, a row of lights in July 2026 was a train of Starlink satellites.",
+  "probability": 19,
+  "summary": "Desde que el volcán Popocatépetl despertó, a fines de 1994, el Centro Nacional de Prevención de Desastres (CENAPRED) lo vigila con una red de estaciones que hoy incluye cámaras que graban día y noche. Esas cámaras, y otras que se transmiten en vivo por internet, han captado varias veces luces que parecen entrar al cráter o salir de él. La más difundida, del 25 de octubre de 2012, la grabó una cámara de Televisa en la estación de Altzomoni; el CENAPRED la atribuyó a un probable bólido. Otras hileras de luces, en 2023 y 2026, se atribuyeron a trenes de satélites Starlink.",
+  "summary_en": "Since the Popocatépetl volcano reawakened in late 1994, Mexico's National Center for Disaster Prevention (CENAPRED) has watched it with a network of stations that now includes cameras that record day and night. Those cameras, and others streamed live online, have repeatedly caught lights that seem to enter or leave the crater. The best known, from October 25, 2012, was recorded by a Televisa camera at the Altzomoni station; CENAPRED attributed it to a likely fireball. Other rows of lights, in 2023 and 2026, were attributed to trains of Starlink satellites.",
   "patterns": [
     "8f",
     "8g"
   ],
   "category": "incident",
-  "whatHappened": "El volcán Popocatépetl (5.426 m) está a unos 70 km al sureste de Ciudad de México, junto a una megalópolis de más de veinte millones de personas. Desde 1992, el Centro Nacional de Prevención de Desastres (CENAPRED) lo observa de forma continua con cámaras que transmiten día y noche: unas térmicas, que captan el calor, y otras de luz visible. En esas más de tres décadas, las cámaras han grabado varias veces objetos que parecen salir del cráter, sobrevolar la cumbre o bajar hacia ella.\n\nUno de esos episodios es el del 25 de octubre de 2012: un objeto alargado que pareció entrar en el cráter, grabado a las 20:44 y difundido por Televisa; la astrónoma Margarita Rosado opinó que podía ser un defecto del video, la sobreexposición de algunos píxeles.\n\nEl 11 de julio de 2026, una de las cámaras de la estación de Altzomoni, desde donde se vigila el volcán, grabó una hilera de luces que, según Azteca Puebla, era un tren de satélites Starlink; la nota no dice si la cámara era del CENAPRED. El medio recordó que las cámaras han captado otras veces meteoros, aeronaves, drones, aves e insectos que en video pueden parecer moverse de forma extraña, y Nación321 señaló que el CENAPRED no había dado una explicación oficial.\n\nNo existe ningún expediente sobre el Popocatépetl en la oficina del Pentágono que estudia estos fenómenos (AARO). La designación DOW-UAP-PR053, que a veces se cita para el volcán, corresponde a un video de octubre de 2022 que la AARO atribuye probablemente a un sensor infrarrojo en la zona del Mando Central de EE. UU., sin relación con el volcán.\n\nPara buena parte de los episodios hay explicaciones convencionales y plausibles: meteoros y bólidos; aves o insectos cerca de la lente, que salen desenfocados y enormes; satélites o reflejos del Sol al amanecer y al atardecer; y defectos de las propias cámaras, cuyo sensor electrónico (CCD) puede crear formas cilíndricas o lineales falsas por efectos del obturador, por saturación o por las líneas del barrido de la imagen. Como las cámaras graban sin parar y abarcan un campo muy amplio, por pura estadística captan muchísimos pasos de objetos comunes. Algunos episodios siguen sin una explicación publicada.",
-  "whatHappened_en": "The Popocatépetl volcano (5,426 m) lies about 70 km southeast of Mexico City, next to a megalopolis of more than twenty million people. Since 1992, Mexico's National Center for Disaster Prevention (CENAPRED) has monitored it continuously with cameras that broadcast day and night: some thermal, which pick up heat, and others for visible light. Over those three-plus decades, the cameras have repeatedly recorded objects that seem to rise from the crater, fly over the summit or descend toward it.\n\nOne of those episodes is that of October 25, 2012: an elongated object that seemed to enter the crater, recorded at 8:44 p.m. and broadcast by Televisa; astronomer Margarita Rosado thought it could be a video defect, the overexposure of some pixels.\n\nOn July 11, 2026, one of the cameras at the Altzomoni station, from which the volcano is watched, recorded a row of lights that, according to Azteca Puebla, was a train of Starlink satellites; the report does not say whether the camera belonged to CENAPRED. The outlet recalled that the cameras have at other times caught meteors, aircraft, drones, birds and insects that can seem to move strangely on video, and Nación321 noted that CENAPRED had given no official explanation.\n\nThe Pentagon office that studies these phenomena (AARO) has no file on Popocatépetl. The designation DOW-UAP-PR053, sometimes cited for the volcano, is an October 2022 clip that AARO assesses as likely coming from an infrared sensor in the U.S. Central Command area, unrelated to the volcano.\n\nFor many of the episodes there are conventional, plausible explanations: meteors and fireballs; birds or insects near the lens, which appear out of focus and enormous; satellites or sun glints at dawn and dusk; and flaws in the cameras themselves, whose electronic sensor (CCD) can create false cylindrical or linear shapes through shutter effects, smear from an overloaded sensor or scan lines. Because the cameras record nonstop over a very wide field of view, by sheer statistics they catch a great many common objects passing through. Some episodes still have no published explanation.",
-  "whyMatters": "Las cámaras del Popocatépetl son de una institución, funcionan sin parar desde hace más de tres décadas sobre el mismo volcán y no se diseñaron para buscar ovnis: su trabajo es vigilar fumarolas, columnas de ceniza y erupciones. También importa cómo se grabaron sus videos: las cámaras no apuntan adonde alguien espera ver algo ni recortan lo que graban, lo que reduce el sesgo de selección (mirar solo donde ya se espera ver algo). No lo elimina: los episodios que se conocen son los que alguien eligió entre años de grabación y difundió, como hizo Televisa con el de 2012. Y el CENAPRED se dedica a la vulcanología, no a los ovnis, así que no gana nada inflando avistamientos, lo que reduce también el incentivo a manipular.\n\nEse registro largo y homogéneo, de procedencia conocida, permite medir cuántos objetos comunes cruzan la imagen cada hora y comparar con esa cifra cualquier episodio extraño.",
-  "whyMatters_en": "The Popocatépetl cameras belong to an institution, have run nonstop over the same volcano for more than three decades and were not designed to look for UFOs: their job is to watch fumaroles, ash columns and eruptions. How their videos were recorded also matters: the cameras are not aimed where someone expects to see something, nor do they crop what they record, which reduces selection bias (looking only where one already expects to see something). It does not remove it: the episodes that are known are the ones someone picked out of years of footage and made public, as Televisa did with the 2012 one. And CENAPRED works in volcanology, not UFOs, so it gains nothing by inflating sightings, which also reduces the incentive to manipulate.\n\nThat long, consistent record of known origin makes it possible to measure how many common objects cross the image per hour and to compare any strange episode against that figure.",
+  "whatHappened": "El Popocatépetl está a unos 60 km de las afueras de la Ciudad de México, y alrededor de 20 millones de personas viven en un radio de 80 km del volcán. Tras casi 70 años de calma, a fines de 1994 empezó a emitir gases y ceniza. El CENAPRED, creado en 1988 como brazo técnico del Sistema Nacional de Protección Civil, instaló entonces las primeras estaciones de vigilancia con ayuda del Servicio Geológico de Estados Unidos, y desde entonces se encarga de vigilar el volcán y dar la alerta. En 2020 la red tenía siete cámaras, además de doce sismómetros y otros sensores. Las imágenes se guardan: en 2021 el centro conservaba un respaldo de 25 años de datos sísmicos e imágenes.\n\nLa noche del jueves 25 de octubre de 2012, un día de varias explosiones del volcán, una cámara de Televisa instalada en la estación de Altzomoni grabó una forma alargada y brillante que, en unos dos segundos, pareció caer dentro del cráter. El video se transmitió en el noticiero de Joaquín López Dóriga, y la prensa le calculó un kilómetro de largo. La astrónoma Margarita Rosado, de la UNAM, comentó que el objeto «va en caída». El divulgador Luis Ruiz Noguez escribió que Rosado también sugirió un defecto del video, la sobreexposición de algunos píxeles. En Estados Unidos, el analista de video Marc Dantonio lo vio como un meteoro muy lejos, detrás del cráter, y el exagente del FBI Ben Hansen señaló que el estruendo del volcán parecía añadido al reportaje.\n\nEl 30 de octubre, la Subdirección de Peligros Geológicos del CENAPRED elaboró una nota informativa sobre esas imágenes, que la prensa difundió en la primera quincena de noviembre. La cámara del propio centro en Altzomoni, a 11 km del cráter y a pocos metros de la de Televisa, había registrado a las 20:44 una señal luminosa de unos tres segundos que parecía entrar al cráter. La nota atribuyó las diferencias de forma y brillo entre las dos grabaciones a cada equipo: el encuadre del CENAPRED era más abierto y la cámara de Televisa, más sensible a la luz. Según la nota, además, los píxeles de estas cámaras nocturnas se saturan con facilidad y agrandan la luz: comparada con el cráter, de 800 m de ancho, la estela nunca pasó de unos 200 m. Durante el descenso, ninguna estación sísmica del volcán registró señales relevantes, y ninguna de las demás cámaras de la red captó el objeto.\n\nCon esos datos, la nota concluyó que la luz viajaba muy probablemente en un plano mucho más lejano, detrás del volcán. Como explicación más probable propuso un bólido de la lluvia de las Táuridas, activa esos días junto con la de las Oriónidas. No descartó un fragmento de satélite artificial que, al entrar en la atmósfera, dejara una estela parecida a la de un meteoro, y pidió que especialistas en astronomía validaran las dos hipótesis.\n\nEn febrero de 2013 circuló la imagen de otro objeto cilíndrico que cruzaba sobre el cráter en horizontal; la nota de agencias que la recoge no dice qué cámara la tomó ni cuándo. El vulcanólogo Hugo Delgado, del Instituto de Geofísica de la UNAM, dijo que creía que se trataba de «el paso de un meteorito, de una estrella fugaz, que es muy común». Explicó que las cámaras tienen un tiempo de exposición, así que un punto luminoso rápido queda como una raya, y de cuadro a cuadro esa secuencia de rayas parece un objeto alargado que se mueve.\n\nEn diciembre de 2019 se instalaron cámaras nuevas en Tlamacas, a 5 km del cráter, y en Tianguismanalco, a 20 km, junto con Webcams de México, un sitio que transmite por internet cámaras en vivo y que difunde estas. De esas transmisiones salieron los videos de 2023. El 1 de junio de 2023, Jaime Maussan, conocido difusor del tema ovni, compartió un video de una cámara de Webcams de México en el que un objeto cilíndrico parecía entrar al cráter, y en redes unos usuarios lo llamaron estrella fugaz, meteorito o bólido. La noche del 24 de agosto de 2023, hacia las 20:35, una cámara de Tianguismanalco grabó una ráfaga de luces que parecían salir del cráter.\n\nEl medio de divulgación espacial Frontera Espacial dijo que era «un tren de satélites Starlink», cuyo paso coincidía con la hora del video, y atribuyó la aparente salida del cráter a la ubicación de la cámara. Algunos usuarios objetaron la explicación por la inclinación de la trayectoria, la altura y el número de luces, y el CENAPRED no confirmó nada.\n\nLa madrugada del 11 de julio de 2026, una de las cámaras de la estación de Altzomoni grabó una fila de puntos luminosos que, por la perspectiva, parecía salir de las inmediaciones del cráter. Azteca Puebla informó que era un tren de satélites Starlink, alineados tras su lanzamiento y todavía iluminados por el Sol, y recordó que las cámaras del volcán han captado meteoros, aeronaves, drones, aves e insectos que en video pueden parecer moverse de forma extraña. La nota no dice quién operaba la cámara ni cita al CENAPRED.",
+  "whatHappened_en": "Popocatépetl lies about 60 km from the outskirts of Mexico City, and some 20 million people live within 80 km of the volcano. After nearly 70 years of calm, it began to release gas and ash in late 1994. CENAPRED, founded in 1988 as the technical arm of Mexico's civil protection system, then installed the first monitoring stations with help from the U.S. Geological Survey, and it has been in charge of watching the volcano and issuing alerts ever since. In 2020 the network had seven cameras, plus twelve seismometers and other sensors. The images are kept: in 2021 the center held a 25-year backup of seismic data and images.\n\nOn the night of Thursday, October 25, 2012, a day of several explosions at the volcano, a Televisa camera at the Altzomoni station recorded a bright, elongated shape that, in about two seconds, seemed to fall into the crater. The video aired on Joaquín López Dóriga's newscast, and the press put its length at one kilometer. Astronomer Margarita Rosado, of UNAM, remarked that the object \"is falling.\" Science writer Luis Ruiz Noguez wrote that Rosado also suggested a video defect, the overexposure of some pixels. In the United States, video analyst Marc Dantonio took it for a meteor far beyond the crater, and former FBI agent Ben Hansen said the rumble of the volcano seemed to have been added to the news report.\n\nOn October 30, CENAPRED's Office of Geological Hazards prepared an information note on those images, which the press reported in the first half of November. The center's own camera at Altzomoni, 11 km from the crater and a few meters from Televisa's, had recorded at 8:44 p.m. a luminous signal about three seconds long that seemed to enter the crater. The note put the differences in shape and brightness between the two recordings down to each piece of equipment: CENAPRED's framing was wider and the Televisa camera more sensitive to light. The note added that the pixels of these night cameras saturate easily and enlarge the light: measured against the crater, 800 m wide, the trail never appeared longer than about 200 m. During the descent, none of the volcano's seismic stations recorded relevant signals, and none of the other cameras in the network caught the object.\n\nFrom those data, the note concluded that the light was very likely traveling on a much more distant plane, behind the volcano. As the most likely explanation it proposed a fireball from the Taurid meteor shower, active those days along with the Orionids. It did not rule out a fragment of an artificial satellite that, on entering the atmosphere, left a trail similar to a meteor's, and it asked astronomy specialists to validate both hypotheses.\n\nIn February 2013 an image circulated of another cylindrical object crossing horizontally above the crater; the wire report on it does not say which camera took it or when. Volcanologist Hugo Delgado, of UNAM's Institute of Geophysics, said he believed it was \"the passage of a meteorite, a shooting star, which is very common.\" He explained that cameras have an exposure time, so a fast point of light shows up as a streak, and from frame to frame that sequence of streaks looks like an elongated object in motion.\n\nIn December 2019 new cameras were installed at Tlamacas, 5 km from the crater, and at Tianguismanalco, 20 km away, together with Webcams de México, a website that streams live cameras online, including these. The 2023 videos came from those streams. On June 1, 2023, Jaime Maussan, a well-known promoter of UFO claims, shared a video from a Webcams de México camera in which a cylindrical object seemed to enter the crater, and on social media some users called it a shooting star, meteorite or fireball. On the night of August 24, 2023, around 8:35 p.m., a camera at Tianguismanalco recorded a burst of lights that seemed to rise from the crater.\n\nThe space news outlet Frontera Espacial said it was \"a train of Starlink satellites\" whose pass matched the time of the video, and put the apparent rise from the crater down to where the camera stood. Some users objected to the explanation because of the slant of the path, the altitude and the number of lights, and CENAPRED confirmed nothing.\n\nBefore dawn on July 11, 2026, one of the cameras at the Altzomoni station recorded a line of points of light that, because of the perspective, seemed to rise from near the crater. Azteca Puebla reported that it was a train of Starlink satellites, still lined up after launch and lit by the Sun, and recalled that the volcano cameras have caught meteors, aircraft, drones, birds and insects that can seem to move strangely on video. The report does not say who ran the camera and does not quote CENAPRED.",
+  "whyMatters": "Las cámaras del Popocatépetl vigilan un volcán. Graban sin parar sobre el mismo punto para seguir fumarolas, columnas de ceniza y explosiones, y nadie las apunta adonde espera ver un ovni. Eso reduce el sesgo de mirar solo donde ya se espera ver algo, pero no lo elimina: los episodios que se conocen son los que alguien eligió entre años de imágenes y difundió, como hizo Televisa en 2012 o como hacen hoy las cuentas que retransmiten las cámaras en vivo.\n\nEl episodio de 2012 muestra lo que una red así permite comprobar. El CENAPRED comparó su grabación con la de Televisa, revisó los registros sísmicos en busca de un impacto y miró las demás cámaras; con esos datos situó la luz muy por detrás del volcán. Un objeto que de verdad cayera al cráter habría dejado rastro en los sismómetros o en otras cámaras, y la misma comprobación sirve para cualquier video nuevo.\n\nLas dos explicaciones que más se repiten sirven para muchos otros videos: la exposición de la cámara, que convierte cualquier punto rápido en un cilindro, y los satélites recién lanzados, que viajan en fila y reflejan la luz del Sol aunque en tierra ya sea de noche. Lo que queda abierto son los muchos videos que nadie analizó, y la falta de un estudio publicado no prueba que su causa sea extraordinaria.",
+  "whyMatters_en": "The Popocatépetl cameras watch a volcano. They record nonstop over the same spot to follow fumaroles, ash columns and explosions, and nobody points them where they expect to see a UFO. That reduces the bias of looking only where one already expects to see something, but it does not remove it: the episodes that are known are the ones someone picked out of years of footage and made public, as Televisa did in 2012 and as the accounts that rebroadcast the live cameras do today.\n\nThe 2012 episode shows what such a network can check. CENAPRED compared its recording with Televisa's, reviewed the seismic records for an impact and looked at the other cameras; with those data it placed the light far behind the volcano. An object that really fell into the crater would likely have left a trace on the seismometers or other cameras, and the same check works for any new video.\n\nThe two explanations that come up most often fit many other videos: the camera exposure, which turns any fast point into a cylinder, and newly launched satellites, which travel in a line and reflect sunlight even when it is already night on the ground. What remains open are the many videos that nobody has analyzed, and the lack of a published study does not show that their cause is extraordinary.",
   "evidence": [
-    "Desde 1992, las cámaras del CENAPRED graban el volcán de forma continua y automática.",
-    "Episodio del 25 de octubre de 2012: un objeto alargado que pareció entrar en el cráter, grabado a las 20:44 y difundido por Televisa.",
-    "Julio de 2026: una hilera de luces sobre el volcán, grabada por una cámara de monitoreo de la estación de Altzomoni, identificada como un tren de satélites Starlink (Azteca Puebla).",
-    "Octubre de 2012: la astrónoma Margarita Rosado opinó que el objeto alargado grabado el día 25 podía ser un defecto del video."
+    "El CENAPRED, creado en 1988, instaló las primeras estaciones de vigilancia del Popocatépetl cuando el volcán despertó a fines de 1994; en 2020 su red tenía siete cámaras (presentación del CENAPRED, 2020).",
+    "25 de octubre de 2012: una cámara de Televisa en Altzomoni grabó una forma alargada que pareció caer al cráter en unos dos segundos; el video se transmitió en el noticiero de Joaquín López Dóriga (Sopitas, 30 de octubre de 2012).",
+    "Nota informativa del CENAPRED del 30 de octubre de 2012: su cámara de Altzomoni registró a las 20:44 una señal luminosa de unos tres segundos; ninguna estación sísmica registró señales relevantes y ninguna de las demás cámaras de la red lo captó.",
+    "La misma nota propuso como explicación más probable un bólido de la lluvia de las Táuridas, sin descartar un fragmento de satélite artificial, y pidió que lo validaran especialistas en astronomía.",
+    "Febrero de 2013: el vulcanólogo Hugo Delgado, del Instituto de Geofísica de la UNAM, atribuyó otro objeto cilíndrico sobre el cráter a una estrella fugaz, que la exposición de la cámara convierte en una raya (El Siglo de Torreón).",
+    "24 de agosto de 2023: una cámara de Tianguismanalco grabó una ráfaga de luces que Frontera Espacial identificó como un tren de satélites Starlink; el CENAPRED no confirmó nada (Vanguardia).",
+    "11 de julio de 2026: una cámara de la estación de Altzomoni grabó una fila de luces que Azteca Puebla identificó como un tren de satélites Starlink."
   ],
   "evidence_en": [
-    "Since 1992, CENAPRED's cameras have recorded the volcano continuously and automatically.",
-    "Episode of October 25, 2012: an elongated object that seemed to enter the crater, recorded at 8:44 p.m. and broadcast by Televisa.",
-    "July 2026: a row of lights over the volcano, recorded by a monitoring camera at the Altzomoni station, identified as a train of Starlink satellites (Azteca Puebla).",
-    "October 2012: astronomer Margarita Rosado thought the elongated object recorded on the 25th could be a video defect."
+    "CENAPRED, founded in 1988, installed the first monitoring stations on Popocatépetl when the volcano reawakened in late 1994; in 2020 its network had seven cameras (CENAPRED presentation, 2020).",
+    "October 25, 2012: a Televisa camera at Altzomoni recorded an elongated shape that seemed to fall into the crater in about two seconds; the video aired on Joaquín López Dóriga's newscast (Sopitas, October 30, 2012).",
+    "CENAPRED information note of October 30, 2012: its Altzomoni camera recorded at 8:44 p.m. a luminous signal about three seconds long; no seismic station recorded relevant signals and none of the other cameras in the network caught the object.",
+    "The same note proposed as the most likely explanation a fireball from the Taurid meteor shower, without ruling out a fragment of an artificial satellite, and asked astronomy specialists to validate it.",
+    "February 2013: volcanologist Hugo Delgado, of UNAM's Institute of Geophysics, attributed another cylindrical object above the crater to a shooting star, which the camera's exposure turns into a streak (El Siglo de Torreón).",
+    "August 24, 2023: a camera at Tianguismanalco recorded a burst of lights that Frontera Espacial identified as a train of Starlink satellites; CENAPRED confirmed nothing (Vanguardia).",
+    "July 11, 2026: a camera at the Altzomoni station recorded a line of lights that Azteca Puebla identified as a train of Starlink satellites."
   ],
   "sources": [
     {
-      "name": "CENAPRED — Monitoreo Volcánico Popocatépetl",
-      "url": "https://www.gob.mx/cenapred"
+      "name": "CENAPRED, Sergio Valderrama Membrillo, «Fenómenos geológicos: volcanes y deslizamiento de laderas» (presentación, 15 oct 2020)",
+      "name_en": "CENAPRED, Sergio Valderrama Membrillo, \"Fenómenos geológicos: volcanes y deslizamiento de laderas\" (presentation, Oct 15, 2020)",
+      "url": "https://www.gob.mx/cms/uploads/attachment/file/599412/TEMA_2_FENOMENOS_GEOLOGICOS.pdf",
+      "note": "Fecha la creación del CENAPRED en 1988 y dice que, cuando el volcán se reactivó en 1994, el centro instaló con el USGS las primeras estaciones; enumera 7 cámaras y 12 sismómetros y los sitios de vigilancia visual.",
+      "note_en": "Dates CENAPRED's founding to 1988 and says that, when the volcano reactivated in 1994, the center installed the first stations with the USGS; lists 7 cameras and 12 seismometers and the visual monitoring sites."
     },
     {
-      "name": "Maussan, J. — Compilación Popocatépetl UFO archive",
-      "note": "Cobertura periodística sostenida",
-      "note_en": "Sustained press coverage"
+      "name": "CENAPRED, «¿Cómo se monitorean los volcanes activos?» (presentación)",
+      "name_en": "CENAPRED, \"¿Cómo se monitorean los volcanes activos?\" (presentation)",
+      "url": "https://www.gob.mx/cms/uploads/attachment/file/336994/2_Como_se_monitorean_los_volc_nes_viernes_24.pdf",
+      "note": "Dice que el Popocatépetl «inició a finales de 1994 un periodo de actividad» y que alrededor de 20 millones de personas viven en un radio de 80 km.",
+      "note_en": "Says Popocatépetl began a period of activity in late 1994 and that about 20 million people live within a radius of 80 km."
     },
     {
-      "name": "Marcianitos Verdes, «El ovni del Popocatépetl» (oct 2012)",
+      "name": "Espinasa-Pereña et al., «Monitoring volcanoes in Mexico», Volcanica 4(S1): 223–233 (2021)",
+      "url": "https://doi.org/10.30909/vol.04.S1.223246",
+      "note": "Artículo de investigadores del CENAPRED y otros observatorios. Sitúa el volcán a 60 km de las afueras de la Ciudad de México, cuenta la instalación de las primeras estaciones tras el despertar de 1994 y menciona un respaldo físico de 25 años de datos sísmicos e imágenes.",
+      "note_en": "Paper by researchers from CENAPRED and other observatories. Places the volcano 60 km from the outskirts of Mexico City, recounts the first stations installed after the 1994 reawakening and mentions a 25-year physical backup of seismic data and images."
+    },
+    {
+      "name": "SEGOB / CENAPRED, nota informativa sobre las imágenes de un objeto luminoso sobre el volcán Popocatépetl el 25 de octubre de 2012 (30 oct 2012), traducción al inglés publicada por Inexplicata",
+      "name_en": "SEGOB / CENAPRED, information note on the images of a luminous object over the Popocatépetl volcano on October 25, 2012 (Oct 30, 2012), English translation published by Inexplicata",
+      "url": "http://inexplicata.blogspot.com/2012/11/mexico-official-report-on-popocatepetl.html",
+      "note": "Documento oficial de la Subdirección de Peligros Geológicos; el original en español no se localizó en línea y se lee en la traducción de Scott Corrales (12 nov 2012). Cámara de Altzomoni a 11 km del cráter, señal de unos 3 segundos a las 20:44, sin señales sísmicas, no la captaron las otras cuatro cámaras; probable bólido de las Táuridas o fragmento de satélite. La traducción habla de otras cuatro cámaras; el resumen de Sopitas del 13 de noviembre dice que el CENAPRED tenía cuatro en total. El original estuvo en cenapred.unam.mx/es/DocumentosGrals/objeto_luminoso_popo_25oct2012.pdf, que hoy no responde.",
+      "note_en": "Official document from the Office of Geological Hazards; the Spanish original was not found online and is read in Scott Corrales's translation (Nov 12, 2012). Altzomoni camera 11 km from the crater, a signal of about 3 seconds at 8:44 p.m., no seismic signals, not caught by the other four cameras; likely a Taurid fireball or a satellite fragment. The translation speaks of four other cameras; the November 13 Sopitas summary says CENAPRED had four in total. The original was posted at cenapred.unam.mx/es/DocumentosGrals/objeto_luminoso_popo_25oct2012.pdf, which no longer responds."
+    },
+    {
+      "name": "Francisco Alanís, «WTF: un tubo gigante cayó al cráter del Popocatépetl», Sopitas (30 oct 2012)",
+      "name_en": "Francisco Alanís, \"WTF: un tubo gigante cayó al cráter del Popocatépetl,\" Sopitas (Oct 30, 2012)",
+      "url": "https://www.sopitas.com/noticias/wtf-un-tubo-gigante-cayo-al-crater-del-popocatepetl/",
+      "note": "El video fue «captado esa noche por una cámara de Televisa» y presentado en el noticiero de Joaquín López Dóriga; el objeto estuvo a cuadro unos dos segundos; cita a la astrónoma Margarita Rosado, de la UNAM.",
+      "note_en": "The video was captured that night by a Televisa camera and shown on Joaquín López Dóriga's newscast; the object was on screen for about two seconds; quotes astronomer Margarita Rosado, of UNAM."
+    },
+    {
+      "name": "Francisco Alanís, «Cenapred aclara el misterioso caso del tubo gigante que cayó en el Popocatépetl», Sopitas (13 nov 2012)",
+      "name_en": "Francisco Alanís, \"Cenapred aclara el misterioso caso del tubo gigante que cayó en el Popocatépetl,\" Sopitas (Nov 13, 2012)",
+      "url": "https://www.sopitas.com/noticias/cenapred-aclara-el-misterioso-caso-del-tubo-gigante-que-cayo-en-el-popocatepetl/",
+      "note": "Resume en español la respuesta del CENAPRED: su cámara de Altzomoni, en la misma estación que la de Televisa, captó un objeto de forma distinta, y «no se registró algún sismo, u otro impacto dentro del volcán».",
+      "note_en": "Summarizes CENAPRED's response in Spanish: its Altzomoni camera, at the same station as Televisa's, caught an object of a different shape, and no earthquake or other impact inside the volcano was recorded."
+    },
+    {
+      "name": "HuffPost, «Did A UFO Fall Into An Erupting Volcano In Mexico?» (1 nov 2012)",
+      "name_en": "HuffPost, \"Did A UFO Fall Into An Erupting Volcano In Mexico?\" (Nov 1, 2012)",
+      "url": "https://www.huffpost.com/2012/11/01/ufo-mexico-volcano_n_2057861.html",
+      "note": "Televisa grabó la imagen con una cámara fija que vigila el volcán; el analista Marc Dantonio lo creyó un meteoro lejos del cráter y Ben Hansen vio el sonido del volcán añadido al reportaje.",
+      "note_en": "Televisa caught the image on a fixed camera that monitors the volcano; analyst Marc Dantonio took it for a meteor far beyond the crater and Ben Hansen said the volcano audio was dubbed in."
+    },
+    {
+      "name": "Luis Ruiz Noguez, «El ovni del Popocatépetl», blog Marcianitos Verdes (30 oct 2012)",
       "url": "https://marcianitosverdes.haaan.com/2012/10/el-ovni-del-popocatpetl/",
-      "note": "El video del 25 de octubre de 2012 difundido por Televisa y la opinión de la astrónoma Margarita Rosado (sobreexposición de píxeles).",
-      "note_en": "The October 25, 2012 video broadcast by Televisa and astronomer Margarita Rosado's opinion (pixel overexposure)."
+      "note": "Blog de divulgación escéptica, fuente secundaria. Recoge que la astrónoma Margarita Rosado sugirió «un defecto del video: sobreexposición de algunos pixeles».",
+      "note_en": "Skeptical science blog, a secondary source. Reports that astronomer Margarita Rosado suggested a video defect, the overexposure of some pixels.",
+      "name_en": "Luis Ruiz Noguez, \"El ovni del Popocatépetl,\" Marcianitos Verdes blog (Oct 30, 2012)"
+    },
+    {
+      "name": "El Siglo de Torreón, «Objeto sobre el “Popo”, estrella fugaz: experto» (22 feb 2013)",
+      "name_en": "El Siglo de Torreón, \"Objeto sobre el 'Popo', estrella fugaz: experto\" (Feb 22, 2013)",
+      "url": "https://www.elsiglodetorreon.com.mx/noticia/2013/objeto-sobre-el-popo-estrella-fugaz-experto.html",
+      "note": "Nota de agencias con la explicación del vulcanólogo Hugo Delgado (Instituto de Geofísica, UNAM): un meteoro que la exposición de la cámara registra como una raya.",
+      "note_en": "Wire report with the explanation of volcanologist Hugo Delgado (Institute of Geophysics, UNAM): a meteor that the camera's exposure records as a streak."
+    },
+    {
+      "name": "Mexico News Daily, «4 new webcams installed at El Popo, Colima volcanoes» (23 dic 2019)",
+      "name_en": "Mexico News Daily, \"4 new webcams installed at El Popo, Colima volcanoes\" (Dec 23, 2019)",
+      "url": "https://mexiconewsdaily.com/news/4-new-webcams-installed-at-el-popo-colima-volcanoes",
+      "note": "Cámaras nuevas en Tlamacas (5 km del cráter) y Tianguismanalco (20 km), instaladas junto con Webcams de México, que las transmite en vivo; las imágenes del CENAPRED se actualizan cada minuto.",
+      "note_en": "New cameras at Tlamacas (5 km from the crater) and Tianguismanalco (20 km), installed together with Webcams de México, which streams them live; CENAPRED's images update every minute."
+    },
+    {
+      "name": "UnoTV, «¿Estrella fugaz o supuesto ovni? Captan objeto cilíndrico “entrar” al Popocatépetl» (2 jun 2023)",
+      "name_en": "UnoTV, \"¿Estrella fugaz o supuesto ovni? Captan objeto cilíndrico 'entrar' al Popocatépetl\" (Jun 2, 2023)",
+      "url": "https://www.unotv.com/estados/puebla/supuesto-ovni-entra-al-volcan-popocatepetl-video/",
+      "note": "El video del 1 de junio de 2023, difundido por Jaime Maussan a partir de la cámara de Webcams de México; usuarios lo llamaron bólido.",
+      "note_en": "The June 1, 2023 video, spread by Jaime Maussan from the Webcams de México camera; users called it a fireball."
+    },
+    {
+      "name": "UnoTV, «Captan presunta flotilla de ovnis en el volcán Popocatépetl» (25 ago 2023)",
+      "name_en": "UnoTV, \"Captan presunta flotilla de ovnis en el volcán Popocatépetl\" (Aug 25, 2023)",
+      "url": "https://www.unotv.com/ciencia-y-tecnologia/espacio-astronomia/en-el-volcan-popocatepetl-captan-presunta-flotilla-de-ovnis/",
+      "note": "Video del 24 de agosto de 2023 hacia las 20:35 (captura de @webcamsdemexico); Frontera Espacial lo atribuyó a Starlink y algunos usuarios lo objetaron por la inclinación, la altura y el número de luces.",
+      "note_en": "Video of August 24, 2023 around 8:35 p.m. (screenshot from @webcamsdemexico); Frontera Espacial attributed it to Starlink and some users objected because of the slant, altitude and number of lights."
+    },
+    {
+      "name": "Liz Hernández, «¿Ovnis en Don Goyo? Popocatépetl emite luces en ráfaga; serían satélites de Starlink», Vanguardia (25 ago 2023)",
+      "name_en": "Liz Hernández, \"¿Ovnis en Don Goyo? Popocatépetl emite luces en ráfaga; serían satélites de Starlink,\" Vanguardia (Aug 25, 2023)",
+      "url": "https://vanguardia.com.mx/noticias/ovnis-en-don-goyo-popocatepetl-emite-luces-en-rafaga-serian-satelites-de-starlink-aseguran-expertos-KD9036059",
+      "note": "Cita a Frontera Espacial («un tren de satélites Starlink»), que atribuye la ilusión a la ubicación de la cámara en Tianguismanalco, y dice que el CENAPRED no confirmó nada.",
+      "note_en": "Quotes Frontera Espacial (\"a train of Starlink satellites\"), which puts the illusion down to the camera's location at Tianguismanalco, and says CENAPRED confirmed nothing."
     },
     {
       "name": "Azteca Puebla, «¿Qué son los objetos luminosos captados en el volcán Popocatépetl?» (12 jul 2026)",
       "url": "https://www.aztecapuebla.com/noticias/que-son-los-objetos-luminosos-captados-en-el-volcan-popocatepetl/",
       "note": "Identifica una hilera de luces del 11 de julio de 2026 como un tren de satélites Starlink.",
       "note_en": "Identifies a July 11, 2026 row of lights as a train of Starlink satellites."
-    },
-    {
-      "name": "AARO — Fiscal Year 2024 Consolidated Annual Report on UAP (14 nov 2024)",
-      "name_en": "AARO — Fiscal Year 2024 Consolidated Annual Report on UAP (Nov 14, 2024)",
-      "url": "https://media.defense.gov/2024/Nov/14/2003583603/-1/-1/0/FY24-CONSOLIDATED-ANNUAL-REPORT-ON-UAP-508.PDF"
     }
   ],
   "posterior": {
-    "mundano_natural": 0.7,
+    "mundano_natural": 0.78,
     "humana_clasificada": 0.02,
-    "adversaria": 0.015,
-    "nohumano_encubierto": 0.01,
-    "nohumano_abierto": 0.045,
-    "indet": 0.21
+    "adversaria": 0.01,
+    "nohumano_encubierto": 0.005,
+    "nohumano_abierto": 0.035,
+    "indet": 0.15
   },
   "documents": [
     {
@@ -101,11 +178,11 @@
     }
   ],
   "classBasis": {
-    "es": "Las fuentes proponen causas distintas para eventos distintos, sin favorecer ninguna para el conjunto: el 11 de julio de 2026 una hilera de luces «corresponde a un tren de satélites Starlink», y las cámaras captan también «meteoros, aeronaves, drones, aves e insectos» (Azteca Puebla); para el video de 2012, la astrónoma Margarita Rosado apuntó a la sobreexposición de algunos píxeles. La falta de un análisis publicado no es prueba contra una causa ordinaria: en 2024 AARO resolvió 174 casos, todos como «objetos convencionales» (globos, aves, drones, satélites, aviones), aunque «muchos otros casos siguen sin resolver».",
-    "en": "The sources propose different causes for different events, favoring none for the whole: on July 11, 2026 a row of lights \"corresponds to a train of Starlink satellites\", and the cameras also catch \"meteors, aircraft, drones, birds and insects\" (Azteca Puebla); for the 2012 video, astronomer Margarita Rosado pointed to the overexposure of some pixels. The absence of a published analysis is not evidence against an ordinary cause: AARO's 2024 report finalized \"all 174 cases\" as \"resolved to prosaic objects including balloons, birds, UAS, satellites, and aircraft\", though \"many other cases remain unresolved\".",
-    "source": "Azteca Puebla, «¿Qué son los objetos luminosos captados en el volcán Popocatépetl?» (12 jul 2026); Marcianitos Verdes, «El ovni del Popocatépetl» (oct 2012) · AARO — Fiscal Year 2024 Consolidated Annual Report on UAP (14 nov 2024), tasa base",
-    "source_en": "Azteca Puebla, “¿Qué son los objetos luminosos captados en el volcán Popocatépetl?” (12 Jul 2026); Marcianitos Verdes, “El ovni del Popocatépetl” (Oct 2012) · AARO — Fiscal Year 2024 Consolidated Annual Report on UAP (14 Nov 2024), base rate",
-    "url": "https://media.defense.gov/2024/Nov/14/2003583603/-1/-1/0/FY24-CONSOLIDATED-ANNUAL-REPORT-ON-UAP-508.PDF"
+    "es": "El CENAPRED estudió la luz del 25 de octubre de 2012 con su propia cámara, los sismógrafos y las otras cuatro cámaras, y propuso como explicación más probable un bólido de la lluvia de las Táuridas, sin descartar un fragmento de satélite. Para otra imagen de 2013, el vulcanólogo Hugo Delgado dijo que era «el paso de un meteorito, de una estrella fugaz, que es muy común». Las hileras de luces de 2023 y 2026 se atribuyeron a trenes de satélites Starlink.",
+    "en": "CENAPRED studied the October 25, 2012 light with its own camera, the seismographs and the other four cameras, and proposed as the most likely explanation \"a bolide from the Taurid meteor shower,\" without ruling out a satellite fragment. For another image in 2013, volcanologist Hugo Delgado said it was \"the passage of a meteorite, a shooting star, which is very common.\" The rows of lights of 2023 and 2026 were attributed to trains of Starlink satellites.",
+    "source": "SEGOB / CENAPRED, nota informativa (30 oct 2012); El Siglo de Torreón (22 feb 2013); Vanguardia (25 ago 2023); Azteca Puebla (12 jul 2026)",
+    "source_en": "SEGOB / CENAPRED, information note (Oct 30, 2012); El Siglo de Torreón (Feb 22, 2013); Vanguardia (Aug 25, 2023); Azteca Puebla (Jul 12, 2026)",
+    "url": "http://inexplicata.blogspot.com/2012/11/mexico-official-report-on-popocatepetl.html"
   },
-  "evidenceReviewed": "2026-10-16"
+  "evidenceReviewed": "2026-11-11"
 }
