@@ -5,7 +5,7 @@ auditdash/transversales.json), decisiones del dueño (deuda/deuda.json) y las so
 y E60 de audit-consistency.mjs. Uso: avance.py <salida>"""
 import json, glob, collections, subprocess, re, sys, os, datetime
 REPO = "/home/user/Mercadopublico"
-S = "/tmp/claude-0/-home-user-Mercadopublico/51719664-1aa9-5406-a859-ae4ae7bbc06e/scratchpad"
+D = "/home/user/Mercadopublico/tools/reescritura/datos"  # datos de la auditoría del 6 nov 2026, versionados
 out = sys.argv[1]
 os.makedirs(out, exist_ok=True)
 hoy = datetime.date.today().isoformat()
@@ -13,8 +13,8 @@ hoy = datetime.date.today().isoformat()
 cs = {c["id"]: c for c in (json.load(open(f)) for f in glob.glob(f"{REPO}/web/data/cases/*.json"))}
 reg = json.load(open(f"{REPO}/tools/reescritura/remediacion/remediadas.json"))
 hechas = {i for v in reg["lotes"].values() for i in v}
-ver = {f["ficha"]: f["veredicto"] for f in json.load(open(f"{S}/auditdash/fichas.json"))}
-defs = json.load(open(f"{S}/auditdash/defectos.json"))
+ver = {f["ficha"]: f["veredicto"] for f in json.load(open(f"{D}/fichas.json"))}
+defs = json.load(open(f"{D}/defectos.json"))
 alta = collections.Counter(d["ficha"] for d in defs if d["factor"] == "prosa" and d["gravedad"] == "ALTA")
 
 # Fichas por tier. Aplazado (decisión del dueño, 5 nov): Tier B sin ALTA y reescrituras Tier B.
@@ -29,13 +29,13 @@ for t in "SAB":
                   "pendientes": len(pend), "aplazadas": len(ap)})
 
 # Hallazgos de página que se repiten en todo el sitio.
-trans = json.load(open(f"{S}/auditdash/transversales.json"))
+trans = json.load(open(f"{D}/transversales.json"))
 cerrado = lambda e: e.startswith(("Hecho", "Descartado", "Decidido"))
 t_hecho = sum(cerrado(x["estado"]) for x in trans)
 t_curso = sum(x["estado"].startswith(("Parcial", "En el PR", "En curso")) for x in trans)
 
 # Decisiones del dueño (panel de deuda).
-deuda = json.load(open(f"{S}/deuda/deuda.json"))
+deuda = json.load(open(f"{D}/deuda.json"))
 dec = [r for r in deuda if r["categoria"] == "Decisiones del dueño" or r["estado"] == "Espera al dueño"]
 d_pend = sum(r["estado"] == "Espera al dueño" for r in dec)
 
