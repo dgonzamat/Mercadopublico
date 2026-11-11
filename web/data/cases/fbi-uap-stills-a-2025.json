@@ -4,8 +4,8 @@
   "pursueReleases": [
     1
   ],
-  "name": "Oeste de EE. UU. · imágenes del FBI de un pequeño objeto redondo",
-  "name_en": "Western U.S. · FBI sensor images of a small, rounded object",
+  "name": "Oeste de EE. UU. · orbes ante un helicóptero e imágenes del FBI",
+  "name_en": "Western U.S. · orbs around a helicopter and FBI sensor images",
   "year_start": 2025,
   "country": "US",
   "country_name": "Estados Unidos",
@@ -13,16 +13,16 @@
   "location": {
     "lat": 39.5,
     "lng": -113,
-    "place": "Instalación de pruebas del Gobierno, oeste de EE. UU. (lugar tachado)",
-    "place_en": "Government test site, western U.S. (location redacted)"
+    "place": "Campo de pruebas del Gobierno, oeste de EE. UU. (lugar no revelado)",
+    "place_en": "Government test range, western U.S. (location not disclosed)"
   },
   "tier": "B",
   "epistemicStatus": "documented",
   "probability": 40,
   "mundanoType": "sin_propuesta",
   "classBasis": {
-    "es": "Ninguna fuente propone una causa para el objeto de las fotos: las leyendas oficiales dicen que el operador no pudo identificarlo, la entrevista FBI-302 del caso USPER y la narrativa ODNI-UAP-D001 describen los orbes sin explicarlos, y la cobertura no cita ninguna propuesta; los restos de cohetes del campo de tiro explican otro hallazgo, y la lectura de bengalas de la ficha es propia. La falta de un análisis publicado no es prueba contra una causa ordinaria: en 2024 AARO resolvió 174 casos, todos como «objetos convencionales» (globos, aves, drones, satélites, aviones), aunque «muchos otros casos siguen sin resolver».",
-    "en": "No source proposes a cause for the object in the photos: the official captions say the operator could not identify it, the USPER FBI-302 interview and the ODNI-UAP-D001 narrative describe the orbs without explaining them, and the coverage cites no proposal; the rocket debris on the range explains a different finding, and the entry's flare reading is its own. The absence of a published analysis is not evidence against an ordinary cause: AARO's 2024 report finalized \"all 174 cases\" as \"resolved to prosaic objects including balloons, birds, UAS, satellites, and aircraft\", though \"many other cases remain unresolved\".",
+    "es": "Ninguna fuente propone una causa para los orbes ni para los objetos de las fotos: las leyendas oficiales dicen que el operador no pudo identificarlos, el informe del FBI y el relato escrito del funcionario los describen sin explicarlos; la prensa no cita ninguna. El índice solo identifica, en la B7, un objeto «de aspecto compatible con un helicóptero»; los restos de cohetes explican otro hallazgo y la comparación con bengalas es de la ficha. La falta de un análisis publicado no es prueba contra una causa ordinaria: en 2024 la AARO resolvió 174 casos, todos como «objetos convencionales» (globos, aves, drones, satélites o aviones), aunque «muchos otros casos siguen sin resolver».",
+    "en": "No source proposes a cause for the orbs or for the objects in the images: the official captions say the operator could not identify them, the FBI interview report and the official's written account describe them without explaining them, and the coverage cites no proposal. The index identifies only, in B7, an object \"consistent in appearance with a helicopter\"; the rocket debris explains a different finding, and the comparison with flares is the entry's own. The absence of a published analysis is not evidence against an ordinary cause: AARO's 2024 report finalized \"all 174 cases\" as \"resolved to prosaic objects including balloons, birds, UAS, satellites, and aircraft\", though \"many other cases remain unresolved\".",
     "source": "war.gov/UFO, FBI Photo A001–A008, USPER Statement y ODNI-UAP-D001; UAP Logbook · AARO — Fiscal Year 2024 Consolidated Annual Report on UAP (14 nov 2024), tasa base",
     "source_en": "war.gov/UFO, FBI Photo A001–A008, USPER Statement and ODNI-UAP-D001; UAP Logbook · AARO — Fiscal Year 2024 Consolidated Annual Report on UAP (14 Nov 2024), base rate",
     "url": "https://media.defense.gov/2024/Nov/14/2003583603/-1/-1/0/FY24-CONSOLIDATED-ANNUAL-REPORT-ON-UAP-508.PDF"
@@ -35,8 +35,8 @@
     "nohumano_abierto": 0.07,
     "indet": 0.27
   },
-  "summary": "Son ocho imágenes fijas de un sensor con retícula que el FBI entregó a la oficina del Pentágono que investiga estos fenómenos (AARO), publicadas en mayo de 2026. Muestran, sobre terreno árido, un objeto pequeño y redondeado: oscuro en todas menos en una, donde se ve claro y con un brillo. Sus pies dicen que no se facilitaron fecha ni lugar, pero el índice oficial las fecha a finales de 2025 y las vincula con la declaración de un testigo ante el FBI sobre encuentros con orbes en una instalación de pruebas del Gobierno en el oeste de EE. UU. El operador no pudo identificar el objeto, y la AARO no ha publicado ninguna conclusión.",
-  "summary_en": "These are eight still images from a sensor with a targeting reticle that the FBI handed to AARO, the Pentagon office that investigates these phenomena, released in May 2026. Over arid ground they show a small, rounded object: dark in all but one, where it looks light and shiny. Their captions say no date or location was provided, but the official index dates them to late 2025 and links them to a witness statement to the FBI about orb encounters at a government test site in the western U.S. The operator could not identify the object, and AARO has published no conclusion.",
+  "summary": "A finales de 2025, en un campo de pruebas del Gobierno de EE. UU. en el oeste del país, un alto funcionario de inteligencia y dos pilotos vieron desde un helicóptero, durante más de una hora, orbes naranjas que se encendían y apagaban a su alrededor. Antes, un equipo en tierra había seguido con cámara infrarroja un orbe «súper caliente». El FBI recogió el relato del funcionario, publicado en mayo de 2026 con 32 imágenes fijas de sensores. Las fuentes no proponen ninguna explicación.",
+  "summary_en": "In late 2025, at a U.S. government test range in the western part of the country, a senior intelligence official and two pilots spent more than an hour watching orange orbs flare up and go dark around their helicopter. Earlier, a ground team had tracked a \"super-hot\" orb with an infrared camera. The FBI took down the official's account, released in May 2026 with 32 still images from sensors. The sources offer no explanation.",
   "documents": [
     {
       "role": "prueba",
@@ -82,7 +82,9 @@
       "title_en": "ODNI-UAP-D001 — first-hand narrative by the same official (PURSUE R02)",
       "source": "ODNI (PURSUE Release 02)",
       "license": "Dominio público · obra del Gobierno de EE. UU.",
-      "fallbackUrl": "https://www.war.gov/medialink/ufo/052226/release_02/documents/ODNI-UAP-D001_USPER_Narrative_Senior_USIC.pdf"
+      "fallbackUrl": "https://www.war.gov/medialink/ufo/052226/release_02/documents/ODNI-UAP-D001_USPER_Narrative_Senior_USIC.pdf",
+      "description": "Relato en primera persona del alto funcionario de inteligencia que iba en el helicóptero, publicado el 22 de mayo de 2026 por la Oficina del Director de Inteligencia Nacional y corregido el 26 de mayo por una errata («map-of-the-earth» por «nap-of-the-earth»). Cuenta la búsqueda de restos, que resultaron ser de cohetes y proyectiles, el aviso del radar, el orbe «súper caliente» que siguió el equipo de tierra y los orbes naranjas que se encendían en fila junto al helicóptero y sobre los aviones militares. Dice que él no tomó fotos.",
+      "description_en": "First-person account by the senior intelligence official who was aboard the helicopter, released May 22, 2026, by the Office of the Director of National Intelligence and corrected May 26 for a typo (\"map-of-the-earth\" for \"nap-of-the-earth\"). It describes the debris search, which turned up rocket and projectile remnants, the radar alert, the \"super-hot\" orb tracked by the ground team and the orange orbs that lit up in rows beside the helicopter and above the military aircraft. He says he took no photos."
     },
     {
       "role": "documento",
@@ -160,266 +162,316 @@
       "role": "documento",
       "src": "/pursue/fbi-photo-b1.png",
       "type": "image",
-      "title": "Foto FBI B001 — contacto IR/visión nocturna del evento (oeste de EE.UU., 2025)",
-      "title_en": "FBI Photo B001 — IR/night-vision contact from the event (Western US, 2025)",
+      "title": "Foto FBI B001 — fotograma de la segunda serie (oeste de EE.UU., 2025)",
+      "title_en": "FBI Photo B001 — frame from the second series (Western US, 2025)",
       "source": "FBI (PURSUE Release 01)",
       "license": "Dominio público · obra del Gobierno de EE. UU.",
-      "fallbackUrl": "https://www.war.gov/medialink/ufo/release_1/fbi-photo-b1.pdf"
+      "fallbackUrl": "https://www.war.gov/medialink/ufo/release_1/fbi-photo-b1.pdf",
+      "description": "Imagen B1 de la segunda serie del FBI (24 fotogramas monocromos con retícula), publicada con el informe de entrevista del funcionario. Según el índice oficial, muestra un objeto pequeño, oscuro y circular arriba a la derecha; al fondo, una sierra o nubes difusas. La leyenda dice que procede de «un sistema militar de EE. UU.» en 2025, que se alteró con tachaduras y que el operador no pudo identificar el objeto; la fecha impresa es errónea porque el reloj del sistema no estaba configurado.",
+      "description_en": "Image B1 from the FBI's second series (24 monochrome frames with a reticle), released with the official's interview report. According to the official index, it shows a small, dark, circular object at upper right; in the background, an indistinct mountain range or clouds. The caption says it comes from \"a U.S. military system\" in 2025, was altered with redactions and that the operator could not identify the object; the printed date is wrong because the system clock was not set."
     },
     {
       "role": "documento",
       "src": "/pursue/fbi-photo-b2.png",
       "type": "image",
-      "title": "Foto FBI B002 — contacto IR/visión nocturna del evento (oeste de EE.UU., 2025)",
-      "title_en": "FBI Photo B002 — IR/night-vision contact from the event (Western US, 2025)",
+      "title": "Foto FBI B002 — fotograma de la segunda serie (oeste de EE.UU., 2025)",
+      "title_en": "FBI Photo B002 — frame from the second series (Western US, 2025)",
       "source": "FBI (PURSUE Release 01)",
       "license": "Dominio público · obra del Gobierno de EE. UU.",
-      "fallbackUrl": "https://www.war.gov/medialink/ufo/release_1/fbi-photo-b2.pdf"
+      "fallbackUrl": "https://www.war.gov/medialink/ufo/release_1/fbi-photo-b2.pdf",
+      "description": "Imagen B2 de la segunda serie del FBI (24 fotogramas monocromos con retícula), publicada con el informe de entrevista del funcionario. Según el índice oficial, muestra un objeto pequeño, oscuro y circular arriba a la derecha; al fondo, una sierra o nubes difusas. La leyenda dice que procede de «un sistema militar de EE. UU.» en 2025, que se alteró con tachaduras y que el operador no pudo identificar el objeto; la fecha impresa es errónea porque el reloj del sistema no estaba configurado.",
+      "description_en": "Image B2 from the FBI's second series (24 monochrome frames with a reticle), released with the official's interview report. According to the official index, it shows a small, dark, circular object at upper right; in the background, an indistinct mountain range or clouds. The caption says it comes from \"a U.S. military system\" in 2025, was altered with redactions and that the operator could not identify the object; the printed date is wrong because the system clock was not set."
     },
     {
       "role": "documento",
       "src": "/pursue/fbi-photo-b3.png",
       "type": "image",
-      "title": "Foto FBI B003 — contacto IR/visión nocturna del evento (oeste de EE.UU., 2025)",
-      "title_en": "FBI Photo B003 — IR/night-vision contact from the event (Western US, 2025)",
+      "title": "Foto FBI B003 — fotograma de la segunda serie (oeste de EE.UU., 2025)",
+      "title_en": "FBI Photo B003 — frame from the second series (Western US, 2025)",
       "source": "FBI (PURSUE Release 01)",
       "license": "Dominio público · obra del Gobierno de EE. UU.",
-      "fallbackUrl": "https://www.war.gov/medialink/ufo/release_1/fbi-photo-b3.pdf"
+      "fallbackUrl": "https://www.war.gov/medialink/ufo/release_1/fbi-photo-b3.pdf",
+      "description": "Imagen B3 de la segunda serie del FBI (24 fotogramas monocromos con retícula), publicada con el informe de entrevista del funcionario. Según el índice oficial, muestra un objeto pequeño, oscuro y circular justo a la derecha del centro; al fondo, una sierra o nubes difusas. La leyenda dice que procede de «un sistema militar de EE. UU.» en 2025, que se alteró con tachaduras y que el operador no pudo identificar el objeto; la fecha impresa es errónea porque el reloj del sistema no estaba configurado.",
+      "description_en": "Image B3 from the FBI's second series (24 monochrome frames with a reticle), released with the official's interview report. According to the official index, it shows a small, dark, circular object just right of center; in the background, an indistinct mountain range or clouds. The caption says it comes from \"a U.S. military system\" in 2025, was altered with redactions and that the operator could not identify the object; the printed date is wrong because the system clock was not set."
     },
     {
       "role": "documento",
       "src": "/pursue/fbi-photo-b4.png",
       "type": "image",
-      "title": "Foto FBI B004 — contacto IR/visión nocturna del evento (oeste de EE.UU., 2025)",
-      "title_en": "FBI Photo B004 — IR/night-vision contact from the event (Western US, 2025)",
+      "title": "Foto FBI B004 — fotograma de la segunda serie (oeste de EE.UU., 2025)",
+      "title_en": "FBI Photo B004 — frame from the second series (Western US, 2025)",
       "source": "FBI (PURSUE Release 01)",
       "license": "Dominio público · obra del Gobierno de EE. UU.",
-      "fallbackUrl": "https://www.war.gov/medialink/ufo/release_1/fbi-photo-b4.pdf"
+      "fallbackUrl": "https://www.war.gov/medialink/ufo/release_1/fbi-photo-b4.pdf",
+      "description": "Imagen B4 de la segunda serie del FBI (24 fotogramas monocromos con retícula), publicada con el informe de entrevista del funcionario. Según el índice oficial, muestra un objeto pequeño, oscuro y circular cerca del centro, a la derecha; al fondo, un paisaje difuso. La leyenda dice que procede de «un sistema militar de EE. UU.» en 2025, que se alteró con tachaduras y que el operador no pudo identificar el objeto; la fecha impresa es errónea porque el reloj del sistema no estaba configurado.",
+      "description_en": "Image B4 from the FBI's second series (24 monochrome frames with a reticle), released with the official's interview report. According to the official index, it shows a small, dark, circular object near the center, to the right; an indistinct landscape behind. The caption says it comes from \"a U.S. military system\" in 2025, was altered with redactions and that the operator could not identify the object; the printed date is wrong because the system clock was not set."
     },
     {
       "role": "documento",
       "src": "/pursue/fbi-photo-b5.png",
       "type": "image",
-      "title": "Foto FBI B005 — contacto IR/visión nocturna del evento (oeste de EE.UU., 2025)",
-      "title_en": "FBI Photo B005 — IR/night-vision contact from the event (Western US, 2025)",
+      "title": "Foto FBI B005 — fotograma de la segunda serie (oeste de EE.UU., 2025)",
+      "title_en": "FBI Photo B005 — frame from the second series (Western US, 2025)",
       "source": "FBI (PURSUE Release 01)",
       "license": "Dominio público · obra del Gobierno de EE. UU.",
-      "fallbackUrl": "https://www.war.gov/medialink/ufo/release_1/fbi-photo-b5.pdf"
+      "fallbackUrl": "https://www.war.gov/medialink/ufo/release_1/fbi-photo-b5.pdf",
+      "description": "Imagen B5 de la segunda serie del FBI (24 fotogramas monocromos con retícula), publicada con el informe de entrevista del funcionario. Según el índice oficial, muestra ningún objeto definido en la zona central; al fondo, posiblemente una sierra. La leyenda dice que procede de «un sistema militar de EE. UU.» en 2025, que se alteró con tachaduras y que el operador no pudo identificar el objeto; la fecha impresa es errónea porque el reloj del sistema no estaba configurado.",
+      "description_en": "Image B5 from the FBI's second series (24 monochrome frames with a reticle), released with the official's interview report. According to the official index, it shows no distinct object in the central area; in the background, possibly a mountain range. The caption says it comes from \"a U.S. military system\" in 2025, was altered with redactions and that the operator could not identify the object; the printed date is wrong because the system clock was not set."
     },
     {
       "role": "documento",
       "src": "/pursue/fbi-photo-b6.png",
       "type": "image",
-      "title": "Foto FBI B006 — contacto IR/visión nocturna del evento (oeste de EE.UU., 2025)",
-      "title_en": "FBI Photo B006 — IR/night-vision contact from the event (Western US, 2025)",
+      "title": "Foto FBI B006 — fotograma de la segunda serie (oeste de EE.UU., 2025)",
+      "title_en": "FBI Photo B006 — frame from the second series (Western US, 2025)",
       "source": "FBI (PURSUE Release 01)",
       "license": "Dominio público · obra del Gobierno de EE. UU.",
-      "fallbackUrl": "https://www.war.gov/medialink/ufo/release_1/fbi-photo-b6.pdf"
+      "fallbackUrl": "https://www.war.gov/medialink/ufo/release_1/fbi-photo-b6.pdf",
+      "description": "Imagen B6 de la segunda serie del FBI (24 fotogramas monocromos con retícula), publicada con el informe de entrevista del funcionario. Según el índice oficial, muestra un objeto oscuro con estructura y un apéndice a la izquierda en lo alto de la retícula, y otro más pequeño, oscuro y circular, abajo a la derecha. La leyenda dice que procede de «un sistema militar de EE. UU.» en 2025, que se alteró con tachaduras y que el operador no pudo identificar el objeto; la fecha impresa es errónea porque el reloj del sistema no estaba configurado.",
+      "description_en": "Image B6 from the FBI's second series (24 monochrome frames with a reticle), released with the official's interview report. According to the official index, it shows a dark, structured object with an appendage on its left at the top of the reticle, and a smaller, dark, circular one at lower right. The caption says it comes from \"a U.S. military system\" in 2025, was altered with redactions and that the operator could not identify the object; the printed date is wrong because the system clock was not set."
     },
     {
       "role": "documento",
       "src": "/pursue/fbi-photo-b7.png",
       "type": "image",
-      "title": "Foto FBI B007 — contacto IR/visión nocturna del evento (oeste de EE.UU., 2025)",
-      "title_en": "FBI Photo B007 — IR/night-vision contact from the event (Western US, 2025)",
+      "title": "Foto FBI B007 — fotograma de la segunda serie (oeste de EE.UU., 2025)",
+      "title_en": "FBI Photo B007 — frame from the second series (Western US, 2025)",
       "source": "FBI (PURSUE Release 01)",
       "license": "Dominio público · obra del Gobierno de EE. UU.",
-      "fallbackUrl": "https://www.war.gov/medialink/ufo/release_1/fbi-photo-b7.pdf"
+      "fallbackUrl": "https://www.war.gov/medialink/ufo/release_1/fbi-photo-b7.pdf",
+      "description": "Imagen B7 de la segunda serie del FBI (24 fotogramas monocromos con retícula), publicada con el informe de entrevista del funcionario. Según el índice oficial, muestra un objeto oscuro «de aspecto compatible con un helicóptero» arriba a la derecha y otro más pequeño, oscuro y circular, debajo de la retícula. La leyenda dice que procede de «un sistema militar de EE. UU.» en 2025, que se alteró con tachaduras y que el operador no pudo identificar el objeto; la fecha impresa es errónea porque el reloj del sistema no estaba configurado.",
+      "description_en": "Image B7 from the FBI's second series (24 monochrome frames with a reticle), released with the official's interview report. According to the official index, it shows a dark object \"consistent in appearance with a helicopter\" at upper right and a smaller, dark, circular one below the reticle. The caption says it comes from \"a U.S. military system\" in 2025, was altered with redactions and that the operator could not identify the object; the printed date is wrong because the system clock was not set."
     },
     {
       "role": "documento",
       "src": "/pursue/fbi-photo-b8.png",
       "type": "image",
-      "title": "Foto FBI B008 — contacto IR/visión nocturna del evento (oeste de EE.UU., 2025)",
-      "title_en": "FBI Photo B008 — IR/night-vision contact from the event (Western US, 2025)",
+      "title": "Foto FBI B008 — fotograma de la segunda serie (oeste de EE.UU., 2025)",
+      "title_en": "FBI Photo B008 — frame from the second series (Western US, 2025)",
       "source": "FBI (PURSUE Release 01)",
       "license": "Dominio público · obra del Gobierno de EE. UU.",
-      "fallbackUrl": "https://www.war.gov/medialink/ufo/release_1/fbi-photo-b8.pdf"
+      "fallbackUrl": "https://www.war.gov/medialink/ufo/release_1/fbi-photo-b8.pdf",
+      "description": "Imagen B8 de la segunda serie del FBI (24 fotogramas monocromos con retícula), publicada con el informe de entrevista del funcionario. Según el índice oficial, muestra un objeto pequeño, oscuro y circular justo a la derecha del centro; al fondo, una sierra difusa. La leyenda dice que procede de «un sistema militar de EE. UU.» en 2025, que se alteró con tachaduras y que el operador no pudo identificar el objeto; la fecha impresa es errónea porque el reloj del sistema no estaba configurado.",
+      "description_en": "Image B8 from the FBI's second series (24 monochrome frames with a reticle), released with the official's interview report. According to the official index, it shows a small, dark, circular object just right of center; an indistinct mountain range behind. The caption says it comes from \"a U.S. military system\" in 2025, was altered with redactions and that the operator could not identify the object; the printed date is wrong because the system clock was not set."
     },
     {
       "role": "documento",
       "src": "/pursue/fbi-photo-b9.png",
       "type": "image",
-      "title": "Foto FBI B009 — contacto IR/visión nocturna del evento (oeste de EE.UU., 2025)",
-      "title_en": "FBI Photo B009 — IR/night-vision contact from the event (Western US, 2025)",
+      "title": "Foto FBI B009 — fotograma de la segunda serie (oeste de EE.UU., 2025)",
+      "title_en": "FBI Photo B009 — frame from the second series (Western US, 2025)",
       "source": "FBI (PURSUE Release 01)",
       "license": "Dominio público · obra del Gobierno de EE. UU.",
-      "fallbackUrl": "https://www.war.gov/medialink/ufo/release_1/fbi-photo-b9.pdf"
+      "fallbackUrl": "https://www.war.gov/medialink/ufo/release_1/fbi-photo-b9.pdf",
+      "description": "Imagen B9 de la segunda serie del FBI (24 fotogramas monocromos con retícula), publicada con el informe de entrevista del funcionario. Según el índice oficial, muestra un objeto pequeño, oscuro y circular abajo a la izquierda del centro; al fondo, una sierra difusa. La leyenda dice que procede de «un sistema militar de EE. UU.» en 2025, que se alteró con tachaduras y que el operador no pudo identificar el objeto; la fecha impresa es errónea porque el reloj del sistema no estaba configurado.",
+      "description_en": "Image B9 from the FBI's second series (24 monochrome frames with a reticle), released with the official's interview report. According to the official index, it shows a small, dark, circular object below and left of center; an indistinct mountain range behind. The caption says it comes from \"a U.S. military system\" in 2025, was altered with redactions and that the operator could not identify the object; the printed date is wrong because the system clock was not set."
     },
     {
       "role": "documento",
       "src": "/pursue/fbi-photo-b10.png",
       "type": "image",
-      "title": "Foto FBI B010 — contacto IR/visión nocturna del evento (oeste de EE.UU., 2025)",
-      "title_en": "FBI Photo B010 — IR/night-vision contact from the event (Western US, 2025)",
+      "title": "Foto FBI B010 — fotograma de la segunda serie (oeste de EE.UU., 2025)",
+      "title_en": "FBI Photo B010 — frame from the second series (Western US, 2025)",
       "source": "FBI (PURSUE Release 01)",
       "license": "Dominio público · obra del Gobierno de EE. UU.",
-      "fallbackUrl": "https://www.war.gov/medialink/ufo/release_1/fbi-photo-b10.pdf"
+      "fallbackUrl": "https://www.war.gov/medialink/ufo/release_1/fbi-photo-b10.pdf",
+      "description": "Imagen B10 de la segunda serie del FBI (24 fotogramas monocromos con retícula), publicada con el informe de entrevista del funcionario. Según el índice oficial, muestra un objeto pequeño, oscuro y circular arriba a la derecha del centro; al fondo, una sierra difusa. La leyenda dice que procede de «un sistema militar de EE. UU.» en 2025, que se alteró con tachaduras y que el operador no pudo identificar el objeto; la fecha impresa es errónea porque el reloj del sistema no estaba configurado.",
+      "description_en": "Image B10 from the FBI's second series (24 monochrome frames with a reticle), released with the official's interview report. According to the official index, it shows a small, dark, circular object above and right of center; an indistinct mountain range behind. The caption says it comes from \"a U.S. military system\" in 2025, was altered with redactions and that the operator could not identify the object; the printed date is wrong because the system clock was not set."
     },
     {
       "role": "documento",
       "src": "/pursue/fbi-photo-b11.png",
       "type": "image",
-      "title": "Foto FBI B011 — contacto IR/visión nocturna del evento (oeste de EE.UU., 2025)",
-      "title_en": "FBI Photo B011 — IR/night-vision contact from the event (Western US, 2025)",
+      "title": "Foto FBI B011 — fotograma de la segunda serie (oeste de EE.UU., 2025)",
+      "title_en": "FBI Photo B011 — frame from the second series (Western US, 2025)",
       "source": "FBI (PURSUE Release 01)",
       "license": "Dominio público · obra del Gobierno de EE. UU.",
-      "fallbackUrl": "https://www.war.gov/medialink/ufo/release_1/fbi-photo-b11.pdf"
+      "fallbackUrl": "https://www.war.gov/medialink/ufo/release_1/fbi-photo-b11.pdf",
+      "description": "Imagen B11 de la segunda serie del FBI (24 fotogramas monocromos con retícula), publicada con el informe de entrevista del funcionario. Según el índice oficial, muestra un objeto pequeño, oscuro y circular arriba a la derecha; al fondo, una sierra difusa. La leyenda dice que procede de «un sistema militar de EE. UU.» en 2025, que se alteró con tachaduras y que el operador no pudo identificar el objeto; la fecha impresa es errónea porque el reloj del sistema no estaba configurado.",
+      "description_en": "Image B11 from the FBI's second series (24 monochrome frames with a reticle), released with the official's interview report. According to the official index, it shows a small, dark, circular object at upper right; an indistinct mountain range behind. The caption says it comes from \"a U.S. military system\" in 2025, was altered with redactions and that the operator could not identify the object; the printed date is wrong because the system clock was not set."
     },
     {
       "role": "documento",
       "src": "/pursue/fbi-photo-b12.png",
       "type": "image",
-      "title": "Foto FBI B012 — contacto IR/visión nocturna del evento (oeste de EE.UU., 2025)",
-      "title_en": "FBI Photo B012 — IR/night-vision contact from the event (Western US, 2025)",
+      "title": "Foto FBI B012 — fotograma de la segunda serie (oeste de EE.UU., 2025)",
+      "title_en": "FBI Photo B012 — frame from the second series (Western US, 2025)",
       "source": "FBI (PURSUE Release 01)",
       "license": "Dominio público · obra del Gobierno de EE. UU.",
-      "fallbackUrl": "https://www.war.gov/medialink/ufo/release_1/fbi-photo-b12.pdf"
+      "fallbackUrl": "https://www.war.gov/medialink/ufo/release_1/fbi-photo-b12.pdf",
+      "description": "Imagen B12 de la segunda serie del FBI (24 fotogramas monocromos con retícula), publicada con el informe de entrevista del funcionario. Según el índice oficial, muestra un objeto pequeño, oscuro y circular arriba a la derecha; al fondo, una sierra difusa. La leyenda dice que procede de «un sistema militar de EE. UU.» en 2025, que se alteró con tachaduras y que el operador no pudo identificar el objeto; la fecha impresa es errónea porque el reloj del sistema no estaba configurado.",
+      "description_en": "Image B12 from the FBI's second series (24 monochrome frames with a reticle), released with the official's interview report. According to the official index, it shows a small, dark, circular object at upper right; an indistinct mountain range behind. The caption says it comes from \"a U.S. military system\" in 2025, was altered with redactions and that the operator could not identify the object; the printed date is wrong because the system clock was not set."
     },
     {
       "role": "documento",
       "src": "/pursue/fbi-photo-b13.png",
       "type": "image",
-      "title": "Foto FBI B013 — contacto IR/visión nocturna del evento (oeste de EE.UU., 2025)",
-      "title_en": "FBI Photo B013 — IR/night-vision contact from the event (Western US, 2025)",
+      "title": "Foto FBI B013 — fotograma de la segunda serie (oeste de EE.UU., 2025)",
+      "title_en": "FBI Photo B013 — frame from the second series (Western US, 2025)",
       "source": "FBI (PURSUE Release 01)",
       "license": "Dominio público · obra del Gobierno de EE. UU.",
-      "fallbackUrl": "https://www.war.gov/medialink/ufo/release_1/fbi-photo-b13.pdf"
+      "fallbackUrl": "https://www.war.gov/medialink/ufo/release_1/fbi-photo-b13.pdf",
+      "description": "Imagen B13 de la segunda serie del FBI (24 fotogramas monocromos con retícula), publicada con el informe de entrevista del funcionario. Según el índice oficial, muestra dos objetos pequeños, oscuros y alargados cerca del centro, abajo a la derecha. La leyenda dice que procede de «un sistema militar de EE. UU.» en 2025, que se alteró con tachaduras y que el operador no pudo identificar el objeto; la fecha impresa es errónea porque el reloj del sistema no estaba configurado.",
+      "description_en": "Image B13 from the FBI's second series (24 monochrome frames with a reticle), released with the official's interview report. According to the official index, it shows two small, dark, elongated objects near the center, at lower right. The caption says it comes from \"a U.S. military system\" in 2025, was altered with redactions and that the operator could not identify the object; the printed date is wrong because the system clock was not set."
     },
     {
       "role": "documento",
       "src": "/pursue/fbi-photo-b14.png",
       "type": "image",
-      "title": "Foto FBI B014 — contacto IR/visión nocturna del evento (oeste de EE.UU., 2025)",
-      "title_en": "FBI Photo B014 — IR/night-vision contact from the event (Western US, 2025)",
+      "title": "Foto FBI B014 — fotograma de la segunda serie (oeste de EE.UU., 2025)",
+      "title_en": "FBI Photo B014 — frame from the second series (Western US, 2025)",
       "source": "FBI (PURSUE Release 01)",
       "license": "Dominio público · obra del Gobierno de EE. UU.",
-      "fallbackUrl": "https://www.war.gov/medialink/ufo/release_1/fbi-photo-b14.pdf"
+      "fallbackUrl": "https://www.war.gov/medialink/ufo/release_1/fbi-photo-b14.pdf",
+      "description": "Imagen B14 de la segunda serie del FBI (24 fotogramas monocromos con retícula), publicada con el informe de entrevista del funcionario. Según el índice oficial, muestra dos objetos pequeños, oscuros y circulares cerca del centro, y un defecto digital junto a una tachadura. La leyenda dice que procede de «un sistema militar de EE. UU.» en 2025, que se alteró con tachaduras y que el operador no pudo identificar el objeto; la fecha impresa es errónea porque el reloj del sistema no estaba configurado.",
+      "description_en": "Image B14 from the FBI's second series (24 monochrome frames with a reticle), released with the official's interview report. According to the official index, it shows two small, dark, circular objects near the center, and a digital artifact beside a redaction box. The caption says it comes from \"a U.S. military system\" in 2025, was altered with redactions and that the operator could not identify the object; the printed date is wrong because the system clock was not set."
     },
     {
       "role": "documento",
       "src": "/pursue/fbi-photo-b15.png",
       "type": "image",
-      "title": "Foto FBI B015 — contacto IR/visión nocturna del evento (oeste de EE.UU., 2025)",
-      "title_en": "FBI Photo B015 — IR/night-vision contact from the event (Western US, 2025)",
+      "title": "Foto FBI B015 — fotograma de la segunda serie (oeste de EE.UU., 2025)",
+      "title_en": "FBI Photo B015 — frame from the second series (Western US, 2025)",
       "source": "FBI (PURSUE Release 01)",
       "license": "Dominio público · obra del Gobierno de EE. UU.",
-      "fallbackUrl": "https://www.war.gov/medialink/ufo/release_1/fbi-photo-b15.pdf"
+      "fallbackUrl": "https://www.war.gov/medialink/ufo/release_1/fbi-photo-b15.pdf",
+      "description": "Imagen B15 de la segunda serie del FBI (24 fotogramas monocromos con retícula), publicada con el informe de entrevista del funcionario. Según el índice oficial, muestra dos objetos pequeños, oscuros y circulares cerca del centro, arriba a la derecha. La leyenda dice que procede de «un sistema militar de EE. UU.» en 2025, que se alteró con tachaduras y que el operador no pudo identificar el objeto; la fecha impresa es errónea porque el reloj del sistema no estaba configurado.",
+      "description_en": "Image B15 from the FBI's second series (24 monochrome frames with a reticle), released with the official's interview report. According to the official index, it shows two small, dark, circular objects near the center, at upper right. The caption says it comes from \"a U.S. military system\" in 2025, was altered with redactions and that the operator could not identify the object; the printed date is wrong because the system clock was not set."
     },
     {
       "role": "documento",
       "src": "/pursue/fbi-photo-b16.png",
       "type": "image",
-      "title": "Foto FBI B016 — contacto IR/visión nocturna del evento (oeste de EE.UU., 2025)",
-      "title_en": "FBI Photo B016 — IR/night-vision contact from the event (Western US, 2025)",
+      "title": "Foto FBI B016 — fotograma de la segunda serie (oeste de EE.UU., 2025)",
+      "title_en": "FBI Photo B016 — frame from the second series (Western US, 2025)",
       "source": "FBI (PURSUE Release 01)",
       "license": "Dominio público · obra del Gobierno de EE. UU.",
-      "fallbackUrl": "https://www.war.gov/medialink/ufo/release_1/fbi-photo-b16.pdf"
+      "fallbackUrl": "https://www.war.gov/medialink/ufo/release_1/fbi-photo-b16.pdf",
+      "description": "Imagen B16 de la segunda serie del FBI (24 fotogramas monocromos con retícula), publicada con el informe de entrevista del funcionario. Según el índice oficial, muestra dos objetos oscuros e irregulares justo a la derecha del centro. La leyenda dice que procede de «un sistema militar de EE. UU.» en 2025, que se alteró con tachaduras y que el operador no pudo identificar el objeto; la fecha impresa es errónea porque el reloj del sistema no estaba configurado.",
+      "description_en": "Image B16 from the FBI's second series (24 monochrome frames with a reticle), released with the official's interview report. According to the official index, it shows two dark, irregular objects just right of center. The caption says it comes from \"a U.S. military system\" in 2025, was altered with redactions and that the operator could not identify the object; the printed date is wrong because the system clock was not set."
     },
     {
       "role": "documento",
       "src": "/pursue/fbi-photo-b17.png",
       "type": "image",
-      "title": "Foto FBI B017 — contacto IR/visión nocturna del evento (oeste de EE.UU., 2025)",
-      "title_en": "FBI Photo B017 — IR/night-vision contact from the event (Western US, 2025)",
+      "title": "Foto FBI B017 — fotograma de la segunda serie (oeste de EE.UU., 2025)",
+      "title_en": "FBI Photo B017 — frame from the second series (Western US, 2025)",
       "source": "FBI (PURSUE Release 01)",
       "license": "Dominio público · obra del Gobierno de EE. UU.",
-      "fallbackUrl": "https://www.war.gov/medialink/ufo/release_1/fbi-photo-b17.pdf"
+      "fallbackUrl": "https://www.war.gov/medialink/ufo/release_1/fbi-photo-b17.pdf",
+      "description": "Imagen B17 de la segunda serie del FBI (24 fotogramas monocromos con retícula), publicada con el informe de entrevista del funcionario. Según el índice oficial, muestra dos objetos pequeños, oscuros y circulares cerca del centro. La leyenda dice que procede de «un sistema militar de EE. UU.» en 2025, que se alteró con tachaduras y que el operador no pudo identificar el objeto; la fecha impresa es errónea porque el reloj del sistema no estaba configurado.",
+      "description_en": "Image B17 from the FBI's second series (24 monochrome frames with a reticle), released with the official's interview report. According to the official index, it shows two small, dark, circular objects near the center. The caption says it comes from \"a U.S. military system\" in 2025, was altered with redactions and that the operator could not identify the object; the printed date is wrong because the system clock was not set."
     },
     {
       "role": "documento",
       "src": "/pursue/fbi-photo-b18.png",
       "type": "image",
-      "title": "Foto FBI B018 — contacto IR/visión nocturna del evento (oeste de EE.UU., 2025)",
-      "title_en": "FBI Photo B018 — IR/night-vision contact from the event (Western US, 2025)",
+      "title": "Foto FBI B018 — fotograma de la segunda serie (oeste de EE.UU., 2025)",
+      "title_en": "FBI Photo B018 — frame from the second series (Western US, 2025)",
       "source": "FBI (PURSUE Release 01)",
       "license": "Dominio público · obra del Gobierno de EE. UU.",
-      "fallbackUrl": "https://www.war.gov/medialink/ufo/release_1/fbi-photo-b18.pdf"
+      "fallbackUrl": "https://www.war.gov/medialink/ufo/release_1/fbi-photo-b18.pdf",
+      "description": "Imagen B18 de la segunda serie del FBI (24 fotogramas monocromos con retícula), publicada con el informe de entrevista del funcionario. Según el índice oficial, muestra dos objetos pequeños, oscuros y alargados cerca del centro, abajo a la izquierda. La leyenda dice que procede de «un sistema militar de EE. UU.» en 2025, que se alteró con tachaduras y que el operador no pudo identificar el objeto; la fecha impresa es errónea porque el reloj del sistema no estaba configurado.",
+      "description_en": "Image B18 from the FBI's second series (24 monochrome frames with a reticle), released with the official's interview report. According to the official index, it shows two small, dark, elongated objects near the center, at lower left. The caption says it comes from \"a U.S. military system\" in 2025, was altered with redactions and that the operator could not identify the object; the printed date is wrong because the system clock was not set."
     },
     {
       "role": "documento",
       "src": "/pursue/fbi-photo-b19.png",
       "type": "image",
-      "title": "Foto FBI B019 — contacto IR/visión nocturna del evento (oeste de EE.UU., 2025)",
-      "title_en": "FBI Photo B019 — IR/night-vision contact from the event (Western US, 2025)",
+      "title": "Foto FBI B019 — fotograma de la segunda serie (oeste de EE.UU., 2025)",
+      "title_en": "FBI Photo B019 — frame from the second series (Western US, 2025)",
       "source": "FBI (PURSUE Release 01)",
       "license": "Dominio público · obra del Gobierno de EE. UU.",
-      "fallbackUrl": "https://www.war.gov/medialink/ufo/release_1/fbi-photo-b19.pdf"
+      "fallbackUrl": "https://www.war.gov/medialink/ufo/release_1/fbi-photo-b19.pdf",
+      "description": "Imagen B19 de la segunda serie del FBI (24 fotogramas monocromos con retícula), publicada con el informe de entrevista del funcionario. Según el índice oficial, muestra un pequeño grupo de píxeles oscuros en el centro exacto de la retícula. La leyenda dice que procede de «un sistema militar de EE. UU.» en 2025, que se alteró con tachaduras y que el operador no pudo identificar el objeto; la fecha impresa es errónea porque el reloj del sistema no estaba configurado.",
+      "description_en": "Image B19 from the FBI's second series (24 monochrome frames with a reticle), released with the official's interview report. According to the official index, it shows a small cluster of dark pixels at the exact center of the reticle. The caption says it comes from \"a U.S. military system\" in 2025, was altered with redactions and that the operator could not identify the object; the printed date is wrong because the system clock was not set."
     },
     {
       "role": "documento",
       "src": "/pursue/fbi-photo-b20.png",
       "type": "image",
-      "title": "Foto FBI B020 — contacto IR/visión nocturna del evento (oeste de EE.UU., 2025)",
-      "title_en": "FBI Photo B020 — IR/night-vision contact from the event (Western US, 2025)",
+      "title": "Foto FBI B020 — fotograma de la segunda serie (oeste de EE.UU., 2025)",
+      "title_en": "FBI Photo B020 — frame from the second series (Western US, 2025)",
       "source": "FBI (PURSUE Release 01)",
       "license": "Dominio público · obra del Gobierno de EE. UU.",
-      "fallbackUrl": "https://www.war.gov/medialink/ufo/release_1/fbi-photo-b20.pdf"
+      "fallbackUrl": "https://www.war.gov/medialink/ufo/release_1/fbi-photo-b20.pdf",
+      "description": "Imagen B20 de la segunda serie del FBI (24 fotogramas monocromos con retícula), publicada con el informe de entrevista del funcionario. Según el índice oficial, muestra uno o dos objetos pequeños y oscuros arriba a la derecha del centro. La leyenda dice que procede de «un sistema militar de EE. UU.» en 2025, que se alteró con tachaduras y que el operador no pudo identificar el objeto; la fecha impresa es errónea porque el reloj del sistema no estaba configurado.",
+      "description_en": "Image B20 from the FBI's second series (24 monochrome frames with a reticle), released with the official's interview report. According to the official index, it shows one or two small, dark objects above and right of center. The caption says it comes from \"a U.S. military system\" in 2025, was altered with redactions and that the operator could not identify the object; the printed date is wrong because the system clock was not set."
     },
     {
       "role": "documento",
       "src": "/pursue/fbi-photo-b21.pdf",
       "type": "pdf",
-      "title": "Foto FBI B021 — contacto IR/visión nocturna del evento (oeste de EE.UU., 2025)",
-      "title_en": "FBI Photo B021 — IR/night-vision contact from the event (Western US, 2025)",
+      "title": "Foto FBI B021 — fotograma de la segunda serie (oeste de EE.UU., 2025)",
+      "title_en": "FBI Photo B021 — frame from the second series (Western US, 2025)",
       "source": "FBI (PURSUE Release 01)",
       "license": "Dominio público · obra del Gobierno de EE. UU.",
-      "fallbackUrl": "https://www.war.gov/medialink/ufo/release_1/fbi-photo-b21.pdf"
+      "fallbackUrl": "https://www.war.gov/medialink/ufo/release_1/fbi-photo-b21.pdf",
+      "description": "Imagen B21 de la segunda serie del FBI (24 fotogramas monocromos con retícula), publicada con el informe de entrevista del funcionario. Según el índice oficial, muestra uno o dos objetos pequeños y oscuros arriba a la derecha del centro. La leyenda dice que procede de «un sistema militar de EE. UU.» en 2025, que se alteró con tachaduras y que el operador no pudo identificar el objeto; la fecha impresa es errónea porque el reloj del sistema no estaba configurado.",
+      "description_en": "Image B21 from the FBI's second series (24 monochrome frames with a reticle), released with the official's interview report. According to the official index, it shows one or two small, dark objects above and right of center. The caption says it comes from \"a U.S. military system\" in 2025, was altered with redactions and that the operator could not identify the object; the printed date is wrong because the system clock was not set."
     },
     {
       "role": "documento",
       "src": "/pursue/fbi-photo-b22.png",
       "type": "image",
-      "title": "Foto FBI B022 — contacto IR/visión nocturna del evento (oeste de EE.UU., 2025)",
-      "title_en": "FBI Photo B022 — IR/night-vision contact from the event (Western US, 2025)",
+      "title": "Foto FBI B022 — fotograma de la segunda serie (oeste de EE.UU., 2025)",
+      "title_en": "FBI Photo B022 — frame from the second series (Western US, 2025)",
       "source": "FBI (PURSUE Release 01)",
       "license": "Dominio público · obra del Gobierno de EE. UU.",
-      "fallbackUrl": "https://www.war.gov/medialink/ufo/release_1/fbi-photo-b22.pdf"
+      "fallbackUrl": "https://www.war.gov/medialink/ufo/release_1/fbi-photo-b22.pdf",
+      "description": "Imagen B22 de la segunda serie del FBI (24 fotogramas monocromos con retícula), publicada con el informe de entrevista del funcionario. Según el índice oficial, muestra dos objetos pequeños, oscuros y alargados cerca del centro, arriba a la derecha. La leyenda dice que procede de «un sistema militar de EE. UU.» en 2025, que se alteró con tachaduras y que el operador no pudo identificar el objeto; la fecha impresa es errónea porque el reloj del sistema no estaba configurado.",
+      "description_en": "Image B22 from the FBI's second series (24 monochrome frames with a reticle), released with the official's interview report. According to the official index, it shows two small, dark, elongated objects near the center, at upper right. The caption says it comes from \"a U.S. military system\" in 2025, was altered with redactions and that the operator could not identify the object; the printed date is wrong because the system clock was not set."
     },
     {
       "role": "documento",
       "src": "/pursue/fbi-photo-b23.png",
       "type": "image",
-      "title": "Foto FBI B023 — contacto IR/visión nocturna del evento (oeste de EE.UU., 2025)",
-      "title_en": "FBI Photo B023 — IR/night-vision contact from the event (Western US, 2025)",
+      "title": "Foto FBI B023 — fotograma de la segunda serie (oeste de EE.UU., 2025)",
+      "title_en": "FBI Photo B023 — frame from the second series (Western US, 2025)",
       "source": "FBI (PURSUE Release 01)",
       "license": "Dominio público · obra del Gobierno de EE. UU.",
-      "fallbackUrl": "https://www.war.gov/medialink/ufo/release_1/fbi-photo-b23.pdf"
+      "fallbackUrl": "https://www.war.gov/medialink/ufo/release_1/fbi-photo-b23.pdf",
+      "description": "Imagen B23 de la segunda serie del FBI (24 fotogramas monocromos con retícula), publicada con el informe de entrevista del funcionario. Según el índice oficial, muestra un objeto oscuro y alargado junto al borde de la retícula, a la derecha del centro. La leyenda dice que procede de «un sistema militar de EE. UU.» en 2025, que se alteró con tachaduras y que el operador no pudo identificar el objeto; la fecha impresa es errónea porque el reloj del sistema no estaba configurado.",
+      "description_en": "Image B23 from the FBI's second series (24 monochrome frames with a reticle), released with the official's interview report. According to the official index, it shows a dark, elongated object at the edge of the reticle, right of center. The caption says it comes from \"a U.S. military system\" in 2025, was altered with redactions and that the operator could not identify the object; the printed date is wrong because the system clock was not set."
     },
     {
       "role": "documento",
       "src": "/pursue/fbi-photo-b24.png",
       "type": "image",
-      "title": "Foto FBI B024 — contacto IR/visión nocturna del evento (oeste de EE.UU., 2025)",
-      "title_en": "FBI Photo B024 — IR/night-vision contact from the event (Western US, 2025)",
+      "title": "Foto FBI B024 — fotograma de la segunda serie (oeste de EE.UU., 2025)",
+      "title_en": "FBI Photo B024 — frame from the second series (Western US, 2025)",
       "source": "FBI (PURSUE Release 01)",
       "license": "Dominio público · obra del Gobierno de EE. UU.",
-      "fallbackUrl": "https://www.war.gov/medialink/ufo/release_1/fbi-photo-b24.pdf"
+      "fallbackUrl": "https://www.war.gov/medialink/ufo/release_1/fbi-photo-b24.pdf",
+      "description": "Imagen B24 de la segunda serie del FBI (24 fotogramas monocromos con retícula), publicada con el informe de entrevista del funcionario. Según el índice oficial, muestra un objeto oscuro e irregular justo encima del centro. La leyenda dice que procede de «un sistema militar de EE. UU.» en 2025, que se alteró con tachaduras y que el operador no pudo identificar el objeto; la fecha impresa es errónea porque el reloj del sistema no estaba configurado.",
+      "description_en": "Image B24 from the FBI's second series (24 monochrome frames with a reticle), released with the official's interview report. According to the official index, it shows a dark, irregular object just above center. The caption says it comes from \"a U.S. military system\" in 2025, was altered with redactions and that the operator could not identify the object; the printed date is wrong because the system clock was not set."
     }
   ],
   "patterns": [],
   "category": "incident",
-  "whatHappened": "A finales de 2025, en una instalación de pruebas sensible del Gobierno de EE. UU. en el oeste del país, un equipo federal y estatal investigaba varias noches de avistamientos de orbes y ruidos sordos en las montañas del campo de tiro. Según la entrevista FBI-302 a un alto funcionario de inteligencia que participó (caso [[usper-2025]]), una noche un puesto de escucha y observación en las montañas, equipado con una cámara infrarroja (FLIR) y gafas de visión nocturna, informó de un orbe «súper caliente» suspendido a ras de suelo que luego se desplazó a gran velocidad, mientras un helicóptero con ese funcionario a bordo intentaba alcanzarlo.\n\nLas ocho imágenes fijas de la serie A (A1 a A8) son fotogramas de un sensor que el FBI remitió a la oficina del Pentágono que investiga estos fenómenos, la All-domain Anomaly Resolution Office (AARO). Se publicaron el 8 de mayo de 2026, en la primera entrega de documentos del programa PURSUE. La leyenda oficial de cada una es escueta y casi idéntica: el FBI entregó a la AARO «una imagen fija derivada de un sistema del gobierno de EE.UU.»; la fecha y el lugar «no fueron provistos»; la imagen original «fue alterada con redacciones» antes del envío; no se adjuntó informe de misión, y el operador «no pudo identificar positivamente» el fenómeno.\n\nEl índice oficial de war.gov contradice en parte esa leyenda. Fecha las ocho imágenes a «finales de 2025», aunque su campo de lugar dice «N/A» en todas, y las empareja con dos documentos: la entrevista 302 («USPER Statement») y la narración en primera persona del mismo funcionario, ODNI-UAP-D001, publicada el 22 de mayo. La descripción oficial del 302 enumera las fotos A001 a A008 y B001 a B024 y afirma que las fotos vinculadas «están conectadas con un conjunto de encuentros UAP en una instalación de pruebas sensible del gobierno en el oeste de EE.UU. en 2025», observados por varios funcionarios y sensores; la narración D001 añade que se acompaña de imágenes infrarrojas tomadas desde tierra por otros funcionarios federales durante el mismo ejercicio. El vínculo de la serie A con esa instalación sale solo de ese emparejamiento, no de ningún campo de lugar.\n\nLos fotogramas son monocromos, de unos pocos cientos de píxeles de ancho, con una retícula de puntería en el centro, una escala graduada y bloques negros que tachan los datos del borde, donde irían la hora, las coordenadas y los datos del sensor. El fondo es terreno visto desde arriba, sin horizonte: laderas áridas con matorral en A2 a A5 y superficies lisas o veteadas en las demás.\n\nEn A1 y A8 el objeto es una mancha pequeña, oscura y algo irregular; de A2 a A6, un disco oscuro más nítido, siempre cerca de la cruz; en A7, un objeto claro con un brillo especular intenso. Si el sensor trabajaba en modo «negro caliente», habitual en las cámaras infrarrojas, lo oscuro indicaría un objeto más caliente que el suelo, lo que casaría con el orbe «súper caliente» que describió el puesto de observación. Pero no se han publicado la polaridad del sensor, la plataforma, la distancia ni el tamaño, así que esa lectura es compatible, no demostrada.",
-  "whatHappened_en": "In late 2025, at a sensitive U.S. government test installation in the western part of the country, a federal and state team was investigating several nights of orb sightings and dull thuds in the range's mountains. According to the FBI-302 interview with a senior intelligence official who took part ([[usper-2025]] case), one night a listening and observation post in the mountains, equipped with an infrared camera (FLIR) and night-vision goggles, reported a \"super-hot\" orb hovering at ground level that then moved off at high speed, while a helicopter carrying that official tried to catch it.\n\nThe eight still images of the A series (A1 to A8) are sensor frames that the FBI submitted to the Pentagon office that investigates these phenomena, the All-domain Anomaly Resolution Office (AARO). They were published on May 8, 2026, in the first batch of documents from the PURSUE program. The official caption of each one is terse and nearly identical: the FBI gave AARO \"a still image derived from a U.S. government system\"; the date and location \"have not been provided\"; the original imagery \"was altered with redactions\" before submission; no mission report was attached, and the operator was \"unable to positively identify\" the phenomenon.\n\nThe official war.gov index partly contradicts that caption. It dates all eight images to \"Late 2025,\" although its location field reads \"N/A\" for all of them, and pairs them with two documents: the 302 interview (\"USPER Statement\") and the same official's first-person narrative, ODNI-UAP-D001, published on May 22. The official description of the 302 lists photos A001 to A008 and B001 to B024 and states that the linked photos \"are connected to a set of UAP encounters on a sensitive government testing installation in the Western US in 2025,\" observed by multiple personnel and sensors; the D001 narrative adds that it comes with infrared imagery taken from the ground by other federal officials during the same exercise. The A series' link to that installation comes only from that pairing, not from any location field.\n\nThe frames are monochrome, a few hundred pixels wide, with an aiming reticle at the center, a graduated scale and black blocks over the edge data, where the time, coordinates and sensor readings would be. The background is terrain seen from above, with no horizon: arid slopes with scrub in A2 to A5 and smooth or streaked surfaces in the rest.\n\nIn A1 and A8 the object is a small, dark, slightly irregular blot; in A2 to A6, a sharper dark disc, always near the crosshair; in A7, a light object with a bright specular highlight. If the sensor was in \"black-hot\" mode, common on infrared cameras, dark would mean an object hotter than the ground, which would fit the \"super-hot\" orb the observation post described. But neither the sensor's polarity nor the platform, range or size has been published, so that reading is compatible, not proven.",
-  "whyMatters": "Las ocho fotos se publicaron sin fecha ni lugar, y la prensa las trató así. El índice oficial, al emparejarlas con la entrevista 302, las vincula al mismo ejercicio que el caso USPER: un suceso con varios testigos de las agencias implicadas, contactos de radar que el centro de operaciones transmitía al helicóptero, un puesto de observación con cámara infrarroja y cazas en el mismo espacio aéreo. Con ese vínculo, los fotogramas pasan a ser el registro de sensor de un incidente que dos documentos oficiales describen con detalle. La contradicción entre la leyenda de cada foto («fecha y lugar no provistos») y el índice que las fecha y las sitúa revela cómo se armó la publicación: el contexto existe y está publicado, pero repartido en documentos separados.\n\nLo que las ocho imágenes permiten concluir es poco. Un punto de pocos píxeles junto a una retícula, sin escala, distancia, hora ni polaridad del sensor, no permite medir tamaño, altura ni velocidad, y ningún fotograma muestra forma, estructura ni propulsión. El lugar ofrece además candidatos humanos y ordinarios serios. Era un campo de tiro con años de restos de cohetes y proyectiles, donde ese mismo día se había completado con éxito una prueba cuyo objeto está tachado; cinco aeronaves militares hacían una misión de entrenamiento en la zona, y los orbes naranjas que se encendían uno tras otro en fila sobre los cazas y se apagaban en orden inverso recuerdan a bengalas lanzadas en secuencia. Nada de eso explica por sí solo el objeto caliente a ras de suelo que el puesto de observación siguió con la cámara infrarroja, pero impide tratar la serie como una anomalía confirmada.\n\nEl 10 de octubre de 2026, el congresista Eric Burlison dijo al New York Post que estudiaría si los testigos de inteligencia de este encuentro, entre ellos un funcionario de carrera de la Oficina del Director de Inteligencia Nacional, podían declarar en público ante el Congreso, y advirtió que sacar a la luz a personal de la agencia «may expose other things» («podría destapar otras cosas»). Según ese mismo relato, algunos testigos ya se habían reunido en privado con congresistas sin entregarles todo el video grabado en la misión. A esa fecha no había ninguna audiencia anunciada ni testigo confirmado, y queda por ver si se publicarán el video del que salen los fotogramas o los datos tachados de la pantalla.",
-  "whyMatters_en": "The eight photos were published with no date or place, and the press treated them that way. By pairing them with the 302 interview, the official index links them to the same exercise as the USPER case: an event with several witnesses from the agencies involved, radar contacts the operations center relayed to the helicopter, an observation post with an infrared camera, and fighter jets in the same airspace. With that link, the frames become the sensor record of an incident that two official documents describe in detail. The contradiction between each photo's caption (\"date and location not provided\") and the index that dates and places them shows how the release was put together: the context exists and is published, but spread across separate documents.\n\nWhat the eight images allow anyone to conclude is limited. A few-pixel dot next to a reticle, with no scale, range, time or sensor polarity, does not allow size, altitude or speed to be measured, and no frame shows shape, structure or propulsion. The setting also offers serious human and ordinary candidates. It was a weapons range with years of rocket and projectile debris, where earlier that same day a test whose subject is redacted had been completed successfully; five military aircraft were flying a training mission in the area, and the orange orbs that lit up one after another in a row above the fighters and dimmed in reverse order resemble flares released in sequence. None of that on its own explains the hot object at ground level that the observation post tracked with the infrared camera, but it rules out treating the series as a confirmed anomaly.\n\nOn October 10, 2026, Representative Eric Burlison told the New York Post he would look into whether the intelligence witnesses to this encounter, among them a career official from the Office of the Director of National Intelligence, could testify publicly before Congress, warning that bringing agency personnel forward \"may expose other things.\" According to the same account, some witnesses had already met privately with members of Congress without handing over all the video recorded during the mission. As of that date no hearing had been announced and no witness confirmed, and it remains to be seen whether the video the frames come from, or the redacted on-screen data, will be released.",
+  "whatHappened": "A finales de 2025, en el campo de tiro de una instalación de pruebas del Gobierno de EE. UU. en el oeste del país, varias noches seguidas se habían visto orbes y oído golpes sordos en las montañas. Un equipo de agencias federales y estatales salió a investigar. En él iba un alto funcionario de la comunidad de inteligencia estadounidense, cuyo nombre no se ha publicado. Contó lo ocurrido dos veces: al FBI, que resumió su testimonio en un informe de entrevista, y después en un relato escrito por él mismo.\n\nEl día del encuentro, hacia las cinco de la tarde, el funcionario, un colega y dos pilotos despegaron en un helicóptero para recorrer las montañas en busca de restos. Varias veces bajaron a mirar algo en el suelo, y cada vez resultó ser chatarra de cohetes y proyectiles caídos en años de pruebas de armas. Ese mismo día, según el informe del FBI, una oficina cuyo nombre está tachado había completado con éxito una prueba en el campo. Hacia las 20:50, el colega bajó para unirse a un equipo de tierra.\n\nYa de noche, cuando el helicóptero volvía a la base, llegó un aviso: algo se movía a pocas millas, en la zona de los orbes. Según el relato escrito, el centro de operaciones les dijo que el radar detectaba señales; según el informe del FBI, el aviso vino de un puesto de observación en tierra, equipado con una cámara infrarroja y gafas de visión nocturna. Hacia las 22:00, ese puesto informó de un orbe «súper caliente» suspendido a ras de suelo, que se desplazó a gran velocidad hacia el este y luego al sur, y se partió en dos.\n\nSegún el informe del FBI, desde el helicóptero no lo encontraron. Fue el puesto de tierra el que informó de que el orbe había subido, se había acercado a unos tres metros (diez pies) del aparato y se había alejado unos 32 kilómetros (20 millas). Los pilotos intentaron seguirlo y desistieron. En ese mismo informe, el copiloto vio con visión nocturna que de las dos mitades salía algo más; en el relato escrito, en cambio, son los dos pilotos quienes ven dividirse el objeto.\n\nEn ese momento, cinco aviones militares hacían un vuelo de entrenamiento en la zona. Hacia las 22:27, con el helicóptero suspendido a unos 210 metros del suelo, el funcionario, a simple vista, y los pilotos, con visión nocturna, vieron encenderse dos orbes grandes muy cerca, por encima de las aspas: ovalados, naranjas, con el centro blanco o amarillo. Debajo se encendieron otros, uno tras otro, hasta cuatro o cinco, y luego se apagaron en orden inverso. Todo duró entre 10 y 15 segundos.\n\nDurante la media hora siguiente, la escena se repitió varias veces sobre las montañas y sobre los aviones militares: filas de cuatro a seis orbes que se encendían de uno en uno y se apagaban en el orden contrario. También vieron un enjambre de luces que se movían en todas direcciones y tres orbes en triángulo. Pasadas las 23:00, con poco combustible, el helicóptero regresó. El funcionario no tomó fotos. Ante el FBI admitió que algunas cosas no las vio a simple vista y que recordaba a los pilotos anunciándolas, y dijo que ellos grababan, pero que muchos orbes quedaban por encima del aparato, fuera del ángulo de su cámara infrarroja.\n\nEl informe del FBI se publicó el 8 de mayo de 2026, en la primera entrega de archivos sobre ovnis del Gobierno de EE. UU., junto con imágenes fijas de sensores que el FBI había remitido a la AARO, la oficina del Pentágono que investiga estos fenómenos. El relato escrito salió el 22 de mayo, emitido por la Oficina del Director de Inteligencia Nacional. Las imágenes forman dos series. Las ocho de la serie A son monocromas, con una retícula de puntería graduada y los datos del borde tachados, sobre un fondo de terreno sin cielo. En siete se ve un objeto pequeño, oscuro y redondeado junto a la cruz; en una, la A7, es claro y brillante.\n\nLas leyendas de la serie A dicen que no se facilitaron la fecha ni el lugar y que el operador no pudo identificar el objeto. El índice oficial de la publicación, sin embargo, las fecha a finales de 2025 y las empareja con los dos relatos del funcionario, y de ese emparejamiento sale su vínculo con aquella noche. La serie B, 24 imágenes de «un sistema militar», sí aparece situada en el oeste del país. Según el índice, en casi todas hay uno o dos objetos pequeños y oscuros; en una no se distingue ninguno, y en otra se ve un objeto oscuro «de aspecto compatible con un helicóptero» con otro más pequeño debajo. El índice añade que las fotos de los orbes bajo el helicóptero las tomaron con visión nocturna personas en tierra, sin decir cuáles son.\n\nEl 10 de octubre de 2026, el congresista Eric Burlison dijo al New York Post que estudiaría si los testigos de inteligencia podían declarar en público ante el Congreso. Advirtió que exponerlos «podría destapar otras cosas». Según el diario, uno de ellos es un funcionario de carrera de la Oficina del Director de Inteligencia Nacional. Burlison contó que algunos ya se habían reunido en privado con congresistas sin entregarles todo el video de la misión. No se ha anunciado ninguna audiencia.",
+  "whatHappened_en": "In late 2025, on the weapons range of a U.S. government test installation in the western part of the country, orbs had been seen and dull thuds heard in the mountains for several nights running. A team from federal and state agencies went out to investigate. With them was a senior official of the U.S. intelligence community whose name has not been released. He told the story twice: to the FBI, which summarized his testimony in an interview report, and later in a written account of his own.\n\nOn the day of the encounter, at about 5 p.m., the official, a colleague and two pilots took off in a helicopter to search the mountains for debris. Several times they dropped down to look at something on the ground, and each time it turned out to be scrap from rockets and projectiles that had crashed during years of weapons testing. Earlier that day, according to the FBI report, an office whose name is redacted had completed a successful test on the range. At about 8:50 p.m., the colleague got off to join a ground team.\n\nAfter dark, as the helicopter headed back to base, an alert came in: something was moving a few miles away, in the area of the orbs. In the written account, the operations center told them radar was picking up hits; in the FBI report, the alert came from an observation post on the ground equipped with an infrared camera and night-vision goggles. At around 10 p.m., that post reported a \"super-hot\" orb hovering at ground level, which moved off fast to the east and then to the south, and split in two.\n\nAccording to the FBI report, the crew could not find it from the helicopter. It was the ground post that reported the orb had climbed, come within ten feet of the aircraft and moved off some 20 miles. The pilots tried to follow and gave up. In the same report, the co-pilot saw through night vision something else emerge from the two halves; in the written account, both pilots see the object split.\n\nAt that point, five military aircraft were flying a training mission in the area. At about 10:27 p.m., with the helicopter hovering some 700 feet above the ground, the official, with his naked eye, and the pilots, on night vision, saw two large orbs flare up close by, just above the rotor blades: oval, orange, with a white or yellow center. Below them others lit up one after another, four or five in all, and then went out in reverse order. It all lasted 10 to 15 seconds.\n\nOver the next half hour, the scene repeated several times over the mountains and over the military aircraft: rows of four to six orbs that lit up one at a time and went dark in the opposite order. They also saw a swarm of lights moving in every direction and three orbs in a triangle. A little after 11 p.m., low on fuel, the helicopter returned. The official took no photos. He told the FBI that some things he could not see with his naked eye but recalled the pilots calling out, and that the pilots were recording, though many orbs were above the aircraft, outside the angle of its infrared camera.\n\nThe FBI report was released on May 8, 2026, in the U.S. government's first batch of UFO files, along with still images from sensors that the FBI had sent to AARO, the Pentagon office that investigates these phenomena. The written account came out on May 22, issued by the Office of the Director of National Intelligence. The images form two series. The eight in the A series are monochrome, with a graduated aiming reticle and the edge data blacked out, over a background of terrain with no sky. In seven, a small, dark, rounded object sits near the crosshair; in one, A7, it is light and bright.\n\nThe A-series captions say the date and location were not provided and that the operator could not identify the object. The official index of the release, however, dates them to late 2025 and pairs them with the official's two accounts, and that pairing is what ties them to that night. The B series, 24 images from \"a U.S. military system,\" is placed in the western U.S. According to the index, most show one or two small, dark objects; one shows none, and another shows a dark object \"consistent in appearance with a helicopter\" with a smaller one below it. The index adds that the photos of orbs beneath the helicopter were taken through night vision by people on the ground, without saying which they are.\n\nOn October 10, 2026, Rep. Eric Burlison told the New York Post he would look into whether the intelligence witnesses could testify in public before Congress. He warned that bringing them forward \"may expose other things.\" According to the paper, one of them is a career official of the Office of the Director of National Intelligence. Burlison said some had already met privately with members of Congress without handing over all the video from the mission. No hearing has been announced.",
+  "whyMatters": "En papel, el encuentro tiene lo que suele faltar: testigos de varias agencias, un radar que guía al helicóptero, un puesto en tierra con cámara infrarroja y aviones militares en el mismo cielo. Pero de los instrumentos no se ha publicado nada directo: ni trazas de radar ni video. Lo único de sensor son las imágenes fijas de las dos series, sin hora y sin relación con ningún momento concreto de la noche. Mientras falte el video que, según Burlison, los testigos no han entregado, la noche se conoce por testimonio.\n\nY ese testimonio tiene un límite propio. Los dos relatos del funcionario salen de la misma persona y no suman testigos; aun así, difieren en quién dio el aviso y en quién vio dividirse el objeto. Lo más cercano al helicóptero, el acercamiento a tres metros, lo informó el puesto de tierra, y ninguno de los dos relatos dice que alguien a bordo lo viera acercarse.\n\nLas imágenes tampoco miden nada. Un punto de pocos píxeles junto a una retícula no da tamaño, altura ni velocidad si no se conoce la distancia, y no se han publicado la plataforma, el alcance ni el tipo de sensor. Ninguna muestra forma, estructura ni propulsión.\n\nEl lugar ofrece además candidatos humanos y ordinarios. Era un campo de tiro activo, sembrado de restos de cohetes, donde ese mismo día se había hecho una prueba cuyo objeto está tachado, y cinco aviones militares se entrenaban en la zona. La secuencia de orbes naranjas que se encienden en fila sobre los aviones y se apagan en orden inverso se parece a la de bengalas lanzadas una tras otra. Es una comparación hecha para este caso, que ninguna fuente propone. Los testigos describen otra cosa: en el informe del FBI, el funcionario dice que los orbes parecieron separarse del helicóptero y «perseguir» a los aviones, y en su relato escrito, que iban «igualando la velocidad y la trayectoria» de los cazas. La comparación tampoco explica el objeto caliente a ras de suelo que siguió el puesto de tierra.",
+  "whyMatters_en": "On paper, the encounter has what such cases usually lack: witnesses from several agencies, a radar steering the helicopter, a ground post with an infrared camera and military aircraft in the same sky. But nothing direct from the instruments has been released: no radar tracks, no video. The only sensor material is the still images in the two series, with no time stamp and no tie to any particular moment of the night. Until the video that Burlison says the witnesses have not handed over comes out, the night is known through testimony.\n\nAnd that testimony has its own limit. The official's two accounts come from one person and add no witnesses; even so, they differ on who raised the alert and who saw the object split. The closest approach to the helicopter, within ten feet, was reported by the ground post, and neither account says anyone aboard saw it come close.\n\nNor do the images measure anything. A dot a few pixels wide next to a reticle cannot yield size, altitude or speed without the distance, and the platform, range and type of sensor have not been released. None shows shape, structure or propulsion.\n\nThe setting also offers human and ordinary candidates. It was an active weapons range, littered with rocket debris, where a test whose subject is redacted had been carried out that same day, and five military aircraft were training in the area. The sequence of orange orbs lighting up in a row above the aircraft and going dark in reverse order resembles flares dropped one after another. That comparison was made for this case, and no source proposes it. The witnesses describe something else. In the FBI report, the official says the orbs appeared to break off from the helicopter and \"pursue\" the aircraft, and in his written account that they were \"matching the jets' speed and flight path.\" The comparison also fails to explain the hot object at ground level that the ground post tracked.",
   "evidence": [
-    "Ocho imágenes fijas del FBI (serie A, A1–A8) remitidas a la AARO y publicadas en la primera entrega de PURSUE, el 8 de mayo de 2026.",
-    "Leyenda oficial de cada imagen: «imagen fija derivada de un sistema del gobierno de EE.UU.»; fecha y lugar no provistos; imagen alterada con redacciones; sin informe de misión; el operador no pudo identificar positivamente el fenómeno.",
-    "Índice oficial de war.gov: fecha de incidente «finales de 2025», lugar «N/A» y emparejamiento de A001–A008 con la entrevista FBI-302 del caso USPER y con la narrativa ODNI-UAP-D001",
-    "Descripción oficial del 302: las fotos vinculadas «están conectadas con un conjunto de encuentros UAP en una instalación de pruebas sensible del gobierno en el oeste de EE.UU. en 2025», observados por múltiples funcionarios y sensores",
-    "Contenido de los fotogramas: retícula de puntería, datos del borde tachados y terreno árido visto desde arriba; objeto oscuro y redondeado en siete imágenes, y claro con un brillo especular en A7.",
-    "Contexto del mismo ejercicio (302 y D001): orbe «súper caliente» a ras de suelo seguido con cámara infrarroja desde un puesto de observación, contactos de radar, cinco aeronaves militares en entrenamiento y una prueba tachada completada ese mismo día en el campo de tiro.",
-    "Sin plataforma, distancia, polaridad del sensor ni resolución de la AARO publicadas: los fotogramas no permiten medir tamaño, altura ni velocidad"
+    "Informe de entrevista del FBI (formulario 302) al funcionario, publicado el 8 de mayo de 2026: búsqueda en helicóptero desde las 17:00; aviso de «hits» del puesto de observación hacia las 21:49; a las 22:02 el puesto de observación informa de un orbe «súper caliente» a ras de suelo, visto con cámara infrarroja, que se divide en dos, se acerca a diez pies del helicóptero según el puesto y se aleja unas 20 millas.",
+    "Mismo informe: a las 22:07 el centro de operaciones avisa de cinco aviones militares en un vuelo de entrenamiento; desde las 22:27 el funcionario a simple vista y los pilotos con visión nocturna ven orbes naranjas que se encienden en fila y se apagan en orden inverso, varias veces hasta pasadas las 23:00.",
+    "Mismo informe: ese día una oficina tachada «completó con éxito una prueba» en el campo; el funcionario anota que los pilotos grababan, pero que muchos avistamientos quedaban por encima del helicóptero, fuera del ángulo de su cámara infrarroja.",
+    "Relato escrito del funcionario, publicado el 22 de mayo de 2026 por la Oficina del Director de Inteligencia Nacional (ODNI-UAP-D001): los restos hallados eran de cohetes y proyectiles de años de pruebas; el centro de operaciones les avisó de que el radar detectaba señales; los pilotos vieron dividirse el objeto; cuatro o cinco orbes en forma de «T» bajo los dos primeros; él no tomó fotos.",
+    "Leyendas de las imágenes A1 a A8: «imagen fija derivada de un sistema del gobierno de EE. UU.»; fecha y lugar no facilitados; imagen alterada con tachaduras; sin informe de misión; el operador no pudo identificar el objeto. Siete muestran un objeto oscuro y redondeado; la A7, uno claro con un brillo intenso.",
+    "Índice oficial: fecha de las ocho imágenes «finales de 2025», lugar «N/A», emparejadas con el informe del FBI y con D001. La ficha del informe dice que las fotos vinculadas son de los encuentros en «una instalación de pruebas sensible del gobierno en el oeste de EE. UU.» y que las de los orbes bajo el helicóptero se tomaron con visión nocturna desde tierra.",
+    "Serie B (B1 a B24), publicada con el mismo informe: imágenes de «un sistema militar de EE. UU.» en 2025, situadas por el índice en el oeste del país, con la fecha impresa errónea. Según el índice, B5 no muestra ningún objeto definido y B7 muestra un objeto oscuro «de aspecto compatible con un helicóptero» y otro más pequeño debajo.",
+    "IBTimes UK, 11 de octubre de 2026: el congresista Eric Burlison dijo al New York Post que estudiaría el testimonio público de los testigos; algunos se habían reunido en privado con congresistas sin compartir todo el video de la misión; no hay audiencia anunciada."
   ],
   "evidence_en": [
-    "Eight FBI still images (A series, A1–A8) submitted to AARO, declassified in the first PURSUE release (May 8, 2026)",
-    "Official caption of each image: \"still image derived from a U.S. government system\"; date and location not provided; imagery altered with redactions; no mission report; the operator was unable to positively identify the phenomenon",
-    "Official war.gov index: incident date \"Late 2025\", location \"N/A\" and pairing of A001–A008 with the USPER case's FBI-302 interview and with the ODNI-UAP-D001 narrative",
-    "Official description of the 302: the linked photos \"are connected to a set of UAP encounters on a sensitive government testing installation in the Western US in 2025\", observed by multiple personnel and sensors",
-    "Frame content: aiming reticle, redacted edge data and arid terrain seen from above; a dark rounded object in seven images, and a light one with a specular highlight in A7.",
-    "Context of the same exercise (302 and D001): a \"super-hot\" orb at ground level tracked with an infrared camera from an observation post, radar contacts, five military aircraft training, and a redacted test completed earlier that day on the range.",
-    "No platform, range, sensor polarity or AARO resolution published: the frames do not allow size, altitude or speed to be measured"
+    "FBI interview report (Form 302) with the official, released May 8, 2026: helicopter search from 5 p.m.; the observation post reports \"hits\" around 9:49 p.m.; at 10:02 p.m. the observation post reports a \"super-hot\" orb at ground level, seen on infrared, which splits in two, comes within ten feet of the helicopter according to the post and moves off some 20 miles.",
+    "Same report: at 10:07 p.m. the operations center reports five military aircraft on a training mission; from 10:27 p.m. the official with his naked eye and the pilots on night vision see orange orbs light up in a row and go dark in reverse order, several times until after 11 p.m.",
+    "Same report: that day a redacted office \"completed a successful test\" on the range; the official notes that the pilots were recording, but that many sightings were above the helicopter, outside the angle of its infrared camera.",
+    "The official's written account, released May 22, 2026, by the Office of the Director of National Intelligence (ODNI-UAP-D001): the debris found was from rockets and projectiles from years of testing; the operations center told them radar had hits; the pilots saw the object split; four or five orbs in a \"T\" below the first two; he took no photos.",
+    "Captions of images A1 to A8: \"a still image derived from a U.S. government system\"; date and location not provided; imagery altered with redactions; no mission report; the operator could not identify the object. Seven show a dark, rounded object; A7 shows a light one with a bright glint.",
+    "Official index: date of the eight images \"Late 2025,\" location \"N/A,\" paired with the FBI report and with D001. The report's entry says the linked photos are from encounters at \"a sensitive government testing installation in the Western US\" and that those of orbs under the helicopter were taken through night vision from the ground.",
+    "B series (B1 to B24), released with the same report: images from \"a U.S. military system in 2025,\" placed by the index in the western U.S., with a wrong printed date. According to the index, B5 shows no distinct object and B7 shows a dark object \"consistent in appearance with a helicopter\" and a smaller one below it.",
+    "IBTimes UK, October 11, 2026: Rep. Eric Burlison told the New York Post he would look into public testimony by the witnesses; some had met privately with members of Congress without sharing all the mission video; no hearing has been announced."
   ],
   "sources": [
     {
@@ -471,5 +523,5 @@
       "note_en": "Reports Burlison's remarks to the New York Post of Oct 10, 2026, cited through their coverage in IBTimes UK and BroBible, where the \"may expose other things\" quote matches. It places the encounter on a late-2025 helicopter mission with orange orbs near a western military base, described in the FBI interview report released in May."
     }
   ],
-  "evidenceReviewed": "2026-09-28"
+  "evidenceReviewed": "2026-11-01"
 }
