@@ -19,23 +19,23 @@
   "mundanoType": "psicosocial",
   "objectDetail": "sugestion",
   "classBasis": {
-    "es": "Según Rdułtowski, Wawrzonek «no convenció a Jan Wolski de mentir ni hizo que actores contratados se disfrazaran de hombrecillos verdes. No le hizo falta»; Wolski «estaba plenamente convencido» de lo vivido porque Wawrzonek «hipnotizó al campesino y le hizo creer en un encuentro con extraterrestres». El propio Rdułtowski reconoce que «el hecho de que Wolski fuera hipnotizado no puede confirmarse directamente. Es mi hipótesis», y la familia de Wawrzonek la niega. Blania-Bolnar admitió además que Wolski añadió, bajo su influencia, detalles falsos del aspecto de los seres.",
-    "en": "According to Rdułtowski, Wawrzonek \"did not persuade Jan Wolski to lie or have hired actors dress up as little green men. He did not need to\"; Wolski \"was fully convinced\" of what he had lived through because Wawrzonek \"hypnotized the farmer and talked him into an encounter with aliens\". Rdułtowski himself acknowledges that \"the fact that Wolski was hypnotized cannot be confirmed directly. It is my hypothesis\", and Wawrzonek's family denies it. Blania-Bolnar also admitted that Wolski added, under his influence, false details of the beings' appearance.",
-    "source": "Bartosz Rdułtowski, «Tajne operacje. PRL i UFO» (2013), según Ciekawostki Historyczne (2021)",
-    "source_en": "Bartosz Rdułtowski, \"Tajne operacje. PRL i UFO\" (2013), per Ciekawostki Historyczne (2021)",
+    "es": "Según Rdułtowski, Wawrzonek no convenció a Jan Wolski de mentir ni hizo que actores contratados se disfrazaran de hombrecillos verdes, porque no le hizo falta: Wolski estaba plenamente convencido, pues Wawrzonek lo habría hipnotizado y hecho creer en un encuentro con extraterrestres. Rdułtowski reconoce que la hipnosis de Wolski «no puede confirmarse directamente. Es mi hipótesis, que sin embargo es muy probable», y la familia de Wawrzonek la niega. El móvil tiene más apoyo: según Drozd, el programa en que hipnotizaron a Wawrzonek contra su voluntad se grabó, aunque no se emitió. Blania-Bolnar admitió además que Wolski añadió, bajo su influencia, detalles falsos de los seres.",
+    "en": "According to Rdułtowski, Wawrzonek did not persuade Jan Wolski to lie or have hired actors dress up as little green men, because he did not need to: Wolski was fully convinced, since Wawrzonek is said to have hypnotized him and talked him into an encounter with aliens. Rdułtowski acknowledges that Wolski's hypnosis \"cannot be confirmed directly. It is my hypothesis, which is however very probable\", and Wawrzonek's family denies it. The motive has more support: according to Drozd, the program in which Wawrzonek was hypnotized against his will was recorded, though never broadcast. Blania-Bolnar also admitted that Wolski added, under his influence, false details of the beings.",
+    "source": "Bartosz Rdułtowski, «Tajne operacje. PRL i UFO» (2013), según Ciekawostki Historyczne (2021), con el comentario de Krzysztof Drozd en la misma página",
+    "source_en": "Bartosz Rdułtowski, \"Tajne operacje. PRL i UFO\" (2013), per Ciekawostki Historyczne (2021), with Krzysztof Drozd's comment on the same page",
     "url": "https://ciekawostkihistoryczne.pl/2021/05/13/emilcin-hipnoza-i-falszywi-kosmici-czy-w-polskim-roswell-doszlo-do-oszustwa/"
   },
-  "probability": 48,
+  "probability": 46,
   "patterns": [
     "8a",
     "8d"
   ],
   "posterior": {
-    "mundano_natural": 0.48,
+    "mundano_natural": 0.5,
     "humana_clasificada": 0.02,
     "adversaria": 0.02,
     "nohumano_encubierto": 0.03,
-    "nohumano_abierto": 0.25,
+    "nohumano_abierto": 0.23,
     "indet": 0.2
   },
   "summary": "La mañana del 10 de mayo de 1978, Jan Wolski, un granjero polaco de unos 70 años, dijo que dos seres bajos de rostro verdoso subieron a su carro de caballos y lo llevaron a un claro donde flotaba un objeto blanco «largo como un autobús». Contó que lo subieron a bordo, lo desnudaron y lo examinaron. No tenía interés por el tema ni nada que ganar, y su sinceridad impresionó a los investigadores, pero fue el único testigo del encuentro, y en 2013 se propuso, sin poder confirmarlo, que un ufólogo le había inducido el recuerdo bajo hipnosis. En 2005 se levantó en Emilcin un monumento al suceso.",
