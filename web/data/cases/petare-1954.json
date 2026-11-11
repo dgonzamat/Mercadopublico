@@ -15,7 +15,7 @@
   },
   "tier": "B",
   "mundanoType": "sin_propuesta",
-  "probability": 44,
+  "probability": 42,
   "summary": "En la madrugada del 28 de noviembre de 1954, en Petare, en las afueras de Caracas, el repartidor cubano Gustavo González y su ayudante, José Ponce, dijeron haber visto algo así como un platillo luminoso flotando sobre la calle, y de él unos hombrecillos peludos. González contó que forcejeó con uno, que se le zafó y lo tiró al suelo. Minutos después, los agentes de tránsito anotaron que los dos llegaron nerviosos y sobrios, y los médicos le hallaron leves contusiones. Una semana después, un cable de agencia daba otra versión.",
   "summary_en": "In the early hours of November 28, 1954, in Petare, on the outskirts of Caracas, Cuban delivery man Gustavo González and his helper, José Ponce, said they saw something like a luminous saucer hovering over the street, with small hairy beings coming out of it. González said he wrestled with one, which broke free and threw him to the ground. Minutes later, traffic officers noted that the two men arrived nervous and sober, and doctors found slight bruises on González. A week later, a news agency wire gave a different version.",
   "patterns": [
@@ -82,21 +82,21 @@
     }
   ],
   "posterior": {
-    "mundano_natural": 0.53,
+    "mundano_natural": 0.55,
     "humana_clasificada": 0.02,
     "adversaria": 0.01,
     "nohumano_encubierto": 0.03,
-    "nohumano_abierto": 0.18,
+    "nohumano_abierto": 0.16,
     "indet": 0.23
   },
   "classBasis": {
-    "es": "Ninguna fuente propone una causa: el expediente de URECAT (Patrick Gross), que reúne la prensa venezolana de 1954, APRO y la literatura posterior, no recoge ninguna explicación convencional y concluye que no muestra «señal de los típicos cuentos disparatados que cabría esperar si todo esto se hubiera inventado». La falta de un análisis publicado no es prueba contra una causa ordinaria: en su informe de 2024, AARO dio por resueltos 174 casos, todos como «objetos convencionales», entre ellos globos, aves, drones, satélites y aviones. El mismo informe añade que «muchos otros casos siguen sin resolver», así que la cifra es la tasa entre los casos resueltos, no entre todos.",
-    "en": "No source proposes a cause: the URECAT file (Patrick Gross), which gathers the 1954 Venezuelan press, APRO and the later literature, records no prosaic explanation and concludes it shows \"no sign of the typically silly tall-tales that should be expected if all this had been invented\". The absence of a published analysis is not evidence against an ordinary cause: in its 2024 report AARO stated that \"all 174 cases have been finalized as resolved to prosaic objects including balloons, birds, UAS, satellites, and aircraft\". The same report adds that \"many other cases remain unresolved\", so the figure is the rate among resolved cases, not among all cases.",
+    "es": "Ninguna fuente propone una causa ordinaria. URECAT (Patrick Gross), que reúne la prensa venezolana de 1954, APRO y la literatura posterior, clasifica el caso como «visitantes extraterrestres» con certeza media y no ve en él «señal de los típicos cuentos disparatados», aunque le faltan el artículo de El Universal y los registros policiales, y no recoge el cable de SICO, que da otra versión. La falta de un análisis publicado no es prueba contra una causa ordinaria: en 2024 la AARO resolvió 174 casos, todos como «objetos convencionales» (globos, aves, drones, satélites o aviones), aunque «muchos otros casos siguen sin resolver».",
+    "en": "No source proposes an ordinary cause. URECAT (Patrick Gross), which gathers the 1954 Venezuelan press, APRO and the later literature, classifies the case as \"extraterrestrial visitors\" with medium certainty and sees \"no sign of the typically silly tall-tales\", though it lacks the El Universal article and the police records and does not include the SICO cable, which gives another version. The absence of a published analysis is not evidence against an ordinary cause: AARO's 2024 report finalized \"all 174 cases\" as \"resolved to prosaic objects including balloons, birds, UAS, satellites, and aircraft\", though \"many other cases remain unresolved\".",
     "source": "URECAT / Patrick Gross, «1954-11-29 Petare, Venezuela, González & Ponce» · AARO — Fiscal Year 2024 Consolidated Annual Report on UAP (14 nov 2024), tasa base",
     "source_en": "URECAT / Patrick Gross, “1954-11-29 Petare, Venezuela, González & Ponce” · AARO — Fiscal Year 2024 Consolidated Annual Report on UAP (14 Nov 2024), base rate",
     "url": "https://media.defense.gov/2024/Nov/14/2003583603/-1/-1/0/FY24-CONSOLIDATED-ANNUAL-REPORT-ON-UAP-508.PDF"
   },
-  "evidenceReviewed": "2026-10-03",
+  "evidenceReviewed": "2026-11-01",
   "documents": [
     {
       "role": "documento",
