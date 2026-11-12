@@ -165,7 +165,7 @@
       {
         "id": "B19",
         "title": "12 nov · Cifras de la AARO que no cuadran: harare-airport-2008 y three-objects-fixed-formation-2023 citan, para el mismo informe del año fiscal 2024, un número distinto de casos resueltos. Comprobar contra el informe cuál corresponde a qué periodo y unificar o explicar",
-        "state": "pendiente"
+        "state": "resuelto el 12 nov: las dos cifras son del mismo informe y cuentan cosas distintas; según el resumen, la AARO resolvió 118 casos dentro del periodo (mayo de 2023 a junio de 2024) y cerró otros 174 antes de publicarlo, y el cuerpo reparte el mismo total en 49 resueltos y 243 propuestos para cierre. Las dos fichas citan ahora el total de 292 y añaden que la mayoría de los casos siguen sin resolver por falta de datos (ES y EN); comprobado contra la copia del informe en odni.gov, con verificador independiente. La clase no cambia: la tasa base sigue apoyando la causa ordinaria sin identificar"
       },
       {
         "id": "B20",
@@ -180,7 +180,7 @@
       {
         "id": "P1",
         "title": "Reescribir el resto de las fichas con el método del lote R1 (tools/reescritura): plan, fuente primaria, verificador, lector Opus, segunda pasada y revisión de la clasificación si cambia la evidencia",
-        "state": "pendiente; decidir si se hace con agentes o con la API por lotes (requiere una clave de API como secreto del entorno). Prioridad Tier S, luego A y B"
+        "state": "cerrado el 12 nov por decisión del dueño: la remediación, la relectura y los retoques ya pasaron por todas las fichas, y con el criterio de cierre del 12 nov lo que queda (repeticiones, estilo) es mantenimiento que se hace cuando la ficha se toca por otro motivo, no una campaña"
       },
       {
         "id": "P2",
