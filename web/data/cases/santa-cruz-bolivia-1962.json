@@ -70,7 +70,7 @@
       "name": "Jonathan McDowell — General Catalog of Artificial Space Objects (GCAT), auxcat: 1962 Alfa Lambda (FTV 2404, Agena B 2404, cápsula E-6)",
       "name_en": "Jonathan McDowell — General Catalog of Artificial Space Objects (GCAT), auxcat: 1962 Alpha Lambda (FTV 2404, Agena B 2404, E-6 capsule)",
       "url": "https://planet4589.org/space/gcat/tsv/cat/auxcat.tsv",
-      "note": "Fechas de lanzamiento y reentrada usadas en el cálculo propio de la ficha; el satcat del mismo catálogo da las demás reentradas de agosto de 1962.",
+      "note": "Fechas de lanzamiento y reentrada usadas en el cálculo hecho para este caso; el satcat del mismo catálogo da las demás reentradas de agosto de 1962.",
       "note_en": "Launch and re-entry dates used in this case's own calculation; the satcat of the same catalog gives the other re-entries of August 1962."
     }
   ],
