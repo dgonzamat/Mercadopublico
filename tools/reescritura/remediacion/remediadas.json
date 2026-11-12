@@ -482,11 +482,6 @@
  "pendientes_lote_2026_11_06": {
   "alta_con_fuente_sin_verificar": "resuelto: las 18 aplicadas (11 tras verificar; 7 tras contrastar con la fuente la corrección del verificador)",
   "relectura": "sin hacer",
-  "fuente_pendiente_de_sources": [
-   "eastern-us-civilian-sensor-2019 (D090: parche-fuente-pendiente-fuente.json)",
-   "barra-da-tijuca-1952 (Spaulding: NYT sala de lectura CIA)",
-   "tremonton-film-1952 (título y nota de D103: «cinco días después»)",
-   "mt-etna-object-2018 (documents[0]: título dice FLIR y Fuerza Aérea; el informe de la AARO dice SWIR y U.S. military)"
-  ]
+  "fuente_pendiente_de_sources": "resuelto el 12 nov: D090 ya está en sources de Eastern US; Spaulding lo respalda Ceticismo Aberto en Barra; el título de D103 ya dice «cinco días después»; en Etna, el título y la descripción del video pasan a «infrarroja» y «Fuerzas Armadas», como el informe de la AARO"
  }
 }
