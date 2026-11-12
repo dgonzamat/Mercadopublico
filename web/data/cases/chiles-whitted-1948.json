@@ -101,18 +101,6 @@
     },
     {
       "role": "documento",
-      "src": "https://hgbvdqckoosxesixhepr.supabase.co/storage/v1/object/public/pursue/38_143685_box7_incident_summaries_1-100.pdf",
-      "type": "pdf",
-      "title": "Incident Summaries 1-100 — fichas «Check-List: Unidentified Flying Objects» (USAF)",
-      "title_en": "Incident Summaries 1-100 — 'Check-List: Unidentified Flying Objects' cards (USAF)",
-      "source": "Department of War / USAF (PURSUE Release 01)",
-      "license": "Dominio público · obra del Gobierno de EE. UU.",
-      "fallbackUrl": "https://www.war.gov/medialink/ufo/release_1/38_143685_box7_incident_summaries_1-100.pdf",
-      "description": "Tres volúmenes de «Incident Summaries» de la Fuerza Aérea de Estados Unidos, con los incidentes numerados del 1 al 233, procedentes de sus registros en los Archivos Nacionales y desclasificados en la primera entrega de PURSUE, el 8 de mayo de 2026. Cada resumen gira en torno a una ficha estandarizada, «Check-List - Unidentified Flying Objects», con fecha, lugar, descripción del objeto, rumbo, meteorología y fiabilidad del testigo, y muchos añaden listas de testigos y declaraciones. Es el instrumento con que los proyectos Sign (1948) y Grudge (1949) tabularon los informes de discos voladores, antecedente de las fichas de Blue Book. Una ficha prueba que un informe se recibió y se procesó, no que fuera anómalo: la mayoría se resolvía como globos, astros, aeronaves o errores de identificación.",
-      "description_en": "Three volumes of U.S. Air Force \"Incident Summaries\", covering incidents numbered 1 to 233, drawn from its records at the National Archives and declassified in the first PURSUE release on May 8, 2026. Each summary is built around a standardized form, \"Check-List - Unidentified Flying Objects\", recording date, place, object description, heading, weather and witness reliability, and many add witness lists and statements. It is the instrument with which Projects Sign (1948) and Grudge (1949) tabulated flying-disc reports, the forerunner of Blue Book's record cards. A form proves that a report was received and processed, not that it was anomalous: most were resolved as balloons, astronomical bodies, aircraft or misidentifications."
-    },
-    {
-      "role": "documento",
       "src": "https://hgbvdqckoosxesixhepr.supabase.co/storage/v1/object/public/pursue/38_143685_box7_incident_summaries_101-172.pdf",
       "type": "pdf",
       "title": "Incident Summaries 101-172 — fichas «Check-List: Unidentified Flying Objects» (USAF)",
@@ -120,56 +108,9 @@
       "source": "Department of War / USAF (PURSUE Release 01)",
       "license": "Dominio público · obra del Gobierno de EE. UU.",
       "fallbackUrl": "https://www.war.gov/medialink/ufo/release_1/38_143685_box7_incident_summaries_101-172.pdf",
-      "description": "Segundo de los tres volúmenes de «Incident Summaries» de la Fuerza Aérea de Estados Unidos, con los incidentes numerados del 101 al 172 en fichas «Check-List: Unidentified Flying Objects». La serie se describe en el volumen de los incidentes 1 a 100.",
-      "description_en": "Second of the three volumes of U.S. Air Force \"Incident Summaries\", covering incidents numbered 101 to 172 on \"Check-List: Unidentified Flying Objects\" forms. The series is described under the volume for incidents 1 to 100."
-    },
-    {
-      "role": "documento",
-      "src": "https://hgbvdqckoosxesixhepr.supabase.co/storage/v1/object/public/pursue/38_143685_box7_incident_summaries_173-233__part1of4.pdf",
-      "type": "pdf",
-      "title": "Incident Summaries 173-233 (parte 1/4) — fichas «Check-List: Unidentified Flying Objects» (USAF)",
-      "title_en": "Incident Summaries 173-233 (part 1/4) — 'Check-List: Unidentified Flying Objects' cards (USAF)",
-      "source": "Department of War / USAF (PURSUE Release 01)",
-      "license": "Dominio público · obra del Gobierno de EE. UU.",
-      "fallbackUrl": "https://www.war.gov/medialink/ufo/release_1/38_143685_box7_incident_summaries_173-233.pdf",
-      "description": "Primera de las cuatro partes del tercer volumen de «Incident Summaries» de la Fuerza Aérea de Estados Unidos (incidentes 173 a 233), en fichas «Check-List: Unidentified Flying Objects». La serie se describe en el volumen de los incidentes 1 a 100.",
-      "description_en": "First of the four parts of the third volume of U.S. Air Force \"Incident Summaries\" (incidents 173 to 233), on \"Check-List: Unidentified Flying Objects\" forms. The series is described under the volume for incidents 1 to 100."
-    },
-    {
-      "role": "documento",
-      "src": "https://hgbvdqckoosxesixhepr.supabase.co/storage/v1/object/public/pursue/38_143685_box7_incident_summaries_173-233__part2of4.pdf",
-      "type": "pdf",
-      "title": "Incident Summaries 173-233 (parte 2/4) — fichas «Check-List: Unidentified Flying Objects» (USAF)",
-      "title_en": "Incident Summaries 173-233 (part 2/4) — 'Check-List: Unidentified Flying Objects' cards (USAF)",
-      "source": "Department of War / USAF (PURSUE Release 01)",
-      "license": "Dominio público · obra del Gobierno de EE. UU.",
-      "fallbackUrl": "https://www.war.gov/medialink/ufo/release_1/38_143685_box7_incident_summaries_173-233.pdf",
-      "description": "Segunda de las cuatro partes del tercer volumen de «Incident Summaries» de la Fuerza Aérea de Estados Unidos (incidentes 173 a 233), en fichas «Check-List: Unidentified Flying Objects». La serie se describe en el volumen de los incidentes 1 a 100.",
-      "description_en": "Second of the four parts of the third volume of U.S. Air Force \"Incident Summaries\" (incidents 173 to 233), on \"Check-List: Unidentified Flying Objects\" forms. The series is described under the volume for incidents 1 to 100."
-    },
-    {
-      "role": "documento",
-      "src": "https://hgbvdqckoosxesixhepr.supabase.co/storage/v1/object/public/pursue/38_143685_box7_incident_summaries_173-233__part3of4.pdf",
-      "type": "pdf",
-      "title": "Incident Summaries 173-233 (parte 3/4) — fichas «Check-List: Unidentified Flying Objects» (USAF)",
-      "title_en": "Incident Summaries 173-233 (part 3/4) — 'Check-List: Unidentified Flying Objects' cards (USAF)",
-      "source": "Department of War / USAF (PURSUE Release 01)",
-      "license": "Dominio público · obra del Gobierno de EE. UU.",
-      "fallbackUrl": "https://www.war.gov/medialink/ufo/release_1/38_143685_box7_incident_summaries_173-233.pdf",
-      "description": "Tercera de las cuatro partes del tercer volumen de «Incident Summaries» de la Fuerza Aérea de Estados Unidos (incidentes 173 a 233), en fichas «Check-List: Unidentified Flying Objects». La serie se describe en el volumen de los incidentes 1 a 100.",
-      "description_en": "Third of the four parts of the third volume of U.S. Air Force \"Incident Summaries\" (incidents 173 to 233), on \"Check-List: Unidentified Flying Objects\" forms. The series is described under the volume for incidents 1 to 100."
-    },
-    {
-      "role": "documento",
-      "src": "https://hgbvdqckoosxesixhepr.supabase.co/storage/v1/object/public/pursue/38_143685_box7_incident_summaries_173-233__part4of4.pdf",
-      "type": "pdf",
-      "title": "Incident Summaries 173-233 (parte 4/4) — fichas «Check-List: Unidentified Flying Objects» (USAF)",
-      "title_en": "Incident Summaries 173-233 (part 4/4) — 'Check-List: Unidentified Flying Objects' cards (USAF)",
-      "source": "Department of War / USAF (PURSUE Release 01)",
-      "license": "Dominio público · obra del Gobierno de EE. UU.",
-      "fallbackUrl": "https://www.war.gov/medialink/ufo/release_1/38_143685_box7_incident_summaries_173-233.pdf",
-      "description": "Última de las cuatro partes del tercer volumen de «Incident Summaries» de la Fuerza Aérea de Estados Unidos (incidentes 173 a 233), en fichas «Check-List: Unidentified Flying Objects». La serie se describe en el volumen de los incidentes 1 a 100.",
-      "description_en": "Last of the four parts of the third volume of U.S. Air Force \"Incident Summaries\" (incidents 173 to 233), on \"Check-List: Unidentified Flying Objects\" forms. The series is described under the volume for incidents 1 to 100."
+      "description": "Segundo de los tres volúmenes de «Incident Summaries» de la Fuerza Aérea de Estados Unidos, con los incidentes numerados del 101 al 172, procedentes de sus registros en los Archivos Nacionales y desclasificados en la primera entrega de PURSUE, el 8 de mayo de 2026. Cada resumen gira en torno a una ficha estandarizada, «Check-List - Unidentified Flying Objects», con fecha, lugar, descripción del objeto, rumbo, meteorología y fiabilidad del testigo, y muchos añaden listas de testigos y declaraciones. Es el instrumento con que los proyectos Sign (1948) y Grudge (1949) tabularon los informes de discos voladores, antecedente de las fichas de Blue Book. Una ficha prueba que un informe se recibió y se procesó, no que fuera anómalo: la mayoría se resolvía como globos, astros, aeronaves o errores de identificación. El sumario de este caso, el incidente 144, está en la página 114; las páginas 115 a 120 recogen los avistamientos relacionados de Blackstone (144a y 144b), la declaración del pasajero McKelvie y el informe de Chiles a Eastern Air Lines.",
+      "description_en": "Second of the three volumes of U.S. Air Force \"Incident Summaries,\" covering incidents numbered 101 to 172, drawn from its records at the National Archives and declassified in the first PURSUE release on May 8, 2026. Each summary is built around a standardized form, \"Check-List - Unidentified Flying Objects,\" recording date, place, object description, heading, weather and witness reliability, and many add witness lists and statements. It is the instrument with which Projects Sign (1948) and Grudge (1949) tabulated flying-disc reports, the forerunner of Blue Book's record cards. A form proves that a report was received and processed, not that it was anomalous: most were resolved as balloons, astronomical bodies, aircraft or misidentifications. The summary of this case, incident 144, is on page 114; pages 115 to 120 hold the related Blackstone sightings (144a and 144b), passenger McKelvie's statement and Chiles's report to Eastern Air Lines.",
+      "page": 114
     },
     {
       "role": "documento",
@@ -184,7 +125,7 @@
   "evidenceReviewed": "2026-11-06",
   "classBasis": {
     "es": "La evaluación de Hynek para el Proyecto Grudge advierte que «no hay explicación astronómica si aceptamos el informe al pie de la letra», pero frases de los pilotos («llamaradas tremendas», «llama rojo-anaranjada», «visible de cinco a diez segundos») pueden satisfacerse con «un meteoro brillante y lento»; lo clasifica como astronómico de probabilidad «regular o baja», y la tarjeta anota «Probable Astro (METEOR)». Hynek deja abierta otra rama: si la hora del avistamiento de Robins, una hora antes, es correcta, era algún tipo de aeronave; y el Proyecto Sign lo había dado por no identificado.",
-    "en": "Hynek's evaluation for Project Grudge warns that \"there is no astronomical explanation if we accept the report at face value\", but phrases from the pilots (\"tremendous bursts of flame\", \"orange-red flame\", \"time in sight five to ten seconds\") could be satisfied by \"a brilliant, slow-moving meteor\"; he classes it as astronomical with \"fair or low\" probability, and the card notes \"Probable Astro (METEOR)\". Hynek leaves another branch open: if the time of the Robins sighting, an hour earlier, is correct, it was some kind of aircraft; and Project Sign had declared it unidentified.",
+    "en": "Hynek's evaluation for Project Grudge warns that \"there is no astronomical explanation if we accept the report at face value,\" but phrases from the pilots (\"tremendous bursts of flame,\" \"orange-red flame,\" \"time in sight five to ten seconds\") could be satisfied by \"a brilliant, slow-moving meteor\"; he classes it as astronomical with \"fair or low\" probability, and the card notes \"Probable Astro (METEOR).\" Hynek leaves another branch open: if the time of the Robins sighting, an hour earlier, is correct, it was some kind of aircraft; and Project Sign had declared it unidentified.",
     "source": "Project Blue Book — expediente n.º 144, «20 mi. S of Montgomery, Ala.», 24 jul 1948 (evaluación de Hynek y tarjeta)",
     "source_en": "Project Blue Book — file no. 144, “20 mi. S of Montgomery, Ala.”, 24 Jul 1948 (Hynek's evaluation and record card)",
     "url": "https://archive.org/details/1948-07-9670642-20Mi-SofMontgomery-Ala--144-"

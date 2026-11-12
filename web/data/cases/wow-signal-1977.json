@@ -91,14 +91,14 @@
       "license": "Dominio público",
       "fallbackUrl": "https://commons.wikimedia.org/wiki/File:Wow_signal.jpg",
       "description": "Fragmento de la impresión del computador del radiotelescopio Big Ear con la secuencia «6EQUJ5», que Jerry Ehman rodeó en rojo días después del 15 de agosto de 1977, y la palabra «Wow!» que escribió a mano al margen. Cada carácter codifica la intensidad de la señal en un intervalo: números del 0 al 9 y letras para los valores más altos.",
-      "description_en": "A section of the Big Ear radio telescope's computer printout showing the sequence \"6EQUJ5\", which Jerry Ehman circled in red a few days after August 15, 1977, and the word \"Wow!\" he wrote by hand in the margin. Each character encodes the signal's intensity in one interval: digits 0 to 9 and letters for the highest values."
+      "description_en": "A section of the Big Ear radio telescope's computer printout showing the sequence \"6EQUJ5,\" which Jerry Ehman circled in red a few days after August 15, 1977, and the word \"Wow!\" he wrote by hand in the margin. Each character encodes the signal's intensity in one interval: digits 0 to 9 and letters for the highest values."
     }
   ],
   "classBasis": {
     "es": "Méndez y colaboradores (2024), con datos del radiotelescopio de Arecibo: detectaron señales parecidas, más débiles, que se identifican fácilmente como pequeñas nubes interestelares de hidrógeno frío; «planteamos la hipótesis de que la señal Wow! fue causada por un abrillantamiento repentino de la línea del hidrógeno en estas nubes, desencadenado por una fuente transitoria de radiación intensa, como una fulguración de un magnetar». Es una hipótesis, no una identificación.",
     "en": "Méndez et al. (2024), with Arecibo data: they detected similar, weaker signals that are easily identified as small interstellar clouds of cold hydrogen; \"We hypothesize that the Wow! Signal was caused by a sudden brightening of the hydrogen line in these clouds triggered by a strong transient radiation source, such as a magnetar flare or a soft gamma repeater (SGR).\" It is a hypothesis, not an identification.",
     "source": "Méndez, A. et al. — «Arecibo Wow! I: An Astrophysical Explanation for the Wow! Signal», arXiv:2408.08513 (2024), resumen",
-    "source_en": "Méndez, A. et al. — “Arecibo Wow! I: An Astrophysical Explanation for the Wow! Signal”, arXiv:2408.08513 (2024), abstract",
+    "source_en": "Méndez, A. et al. — “Arecibo Wow! I: An Astrophysical Explanation for the Wow! Signal,” arXiv:2408.08513 (2024), abstract",
     "url": "https://arxiv.org/abs/2408.08513"
   },
   "evidenceReviewed": "2026-11-08"

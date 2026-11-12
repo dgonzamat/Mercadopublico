@@ -88,7 +88,7 @@
       "license": "Dominio público · obra del Gobierno de EE. UU.",
       "fallbackUrl": "https://archive.org/details/1966-03-8671584-SOUTHERNMICHIGAN",
       "description": "Tarjeta de registro de Project Blue Book (formulario FTD 0-329) que resume la oleada del sur de Michigan: fecha «Mid March 66», lugar «Southern Michigan», fuente «Multiple-Civilians» y conclusión «Other (MARSH GAS)» (otra causa: gas de los pantanos). En el apartado de resumen y análisis solo remite al expediente («See case file») y anota «Multiple Witnesses»; las casillas del número de objetos, la duración, el tipo de observación, el rumbo, las fotos y las pruebas físicas quedaron en blanco. Prueba cómo cerró la Fuerza Aérea el caso, no qué vieron los testigos.",
-      "description_en": "Project Blue Book record card (form FTD 0-329) summarizing the southern Michigan wave: date \"Mid March 66\", location \"Southern Michigan\", source \"Multiple-Civilians\" and conclusion \"Other (MARSH GAS)\". The summary and analysis box only refers to the file (\"See case file\") and notes \"Multiple Witnesses\"; the boxes for number of objects, duration, type of observation, course, photos and physical evidence were left blank. It shows how the Air Force closed the case, not what the witnesses saw."
+      "description_en": "Project Blue Book record card (form FTD 0-329) summarizing the southern Michigan wave: date \"Mid March 66,\" location \"Southern Michigan,\" source \"Multiple-Civilians\" and conclusion \"Other (MARSH GAS).\" The summary and analysis box only refers to the file (\"See case file\") and notes \"Multiple Witnesses\"; the boxes for number of objects, duration, type of observation, course, photos and physical evidence were left blank. It shows how the Air Force closed the case, not what the witnesses saw."
     },
     {
       "role": "documento",
@@ -105,9 +105,9 @@
   ],
   "classBasis": {
     "es": "Informe de Hynek a Blue Book sobre Dexter (20 de marzo) y Hillsdale (21 de marzo de 1966): «El argumento del gas de pantano no es en absoluto concluyente y no se puede probar, pero sigue siendo para mí una explicación lógica de la opinión mayoritaria sobre lo que se vio»; la tarjeta de Blue Book concluye «Other (MARSH GAS)» (otro: gas de pantano). En contra, el télex de Selfridge del 23 de marzo no hallaba «pista alguna sobre su identidad». La clase cubre el resplandor de los pantanos; las luces de Hillsdale incluyen además bromas con bengalas («ciertos jóvenes han gastado bromas con bengalas», comunicado de la Fuerza Aérea).",
-    "en": "Hynek's report to Blue Book on Dexter (March 20) and Hillsdale (March 21, 1966): \"The case for swamp gas is by no means conclusive, and is unprovable, but still remains in my mind as a logical explanation for the majority opinion as to what was sighted\"; the Blue Book card concludes \"Other (MARSH GAS)\". Against it, the Selfridge telex of March 23 found no \"clue to its identity\". The class covers the glow over the swamps; the Hillsdale lights also include pranks with flares (\"certain young men have played pranks with flares\", Air Force release).",
+    "en": "Hynek's report to Blue Book on Dexter (March 20) and Hillsdale (March 21, 1966): \"The case for swamp gas is by no means conclusive, and is unprovable, but still remains in my mind as a logical explanation for the majority opinion as to what was sighted\"; the Blue Book card concludes \"Other (MARSH GAS).\" Against it, the Selfridge telex of March 23 found no \"clue to its identity.\" The class covers the glow over the swamps; the Hillsdale lights also include pranks with flares (\"certain young men have played pranks with flares,\" Air Force release).",
     "source": "Project Blue Book — expediente «Southern Michigan», marzo de 1966 (informe de Hynek y tarjeta)",
-    "source_en": "Project Blue Book — file “Southern Michigan”, March 1966 (Hynek's report and record card)",
+    "source_en": "Project Blue Book — file “Southern Michigan,” March 1966 (Hynek's report and record card)",
     "url": "https://archive.org/details/1966-03-8671584-SOUTHERNMICHIGAN"
   },
   "evidenceReviewed": "2026-10-02"
