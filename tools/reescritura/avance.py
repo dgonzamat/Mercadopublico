@@ -55,11 +55,22 @@ sondas = [
 ]
 
 fichas_total = sum(x["fichas"] for x in tiers)
+
+# Relectura completa: hasta el 10 nov 2026 la prueba de lectura era de muestra (2 fichas por lote, #1265).
+# remediadas.json lista los lotes sin relectura completa documentada y las fichas releídas que esperan retoques.
+sin_lect = {i for k in reg.get("relectura_sin_documentar", []) for i in reg["lotes"].get(k, [])} & set(cs)
+retocar = [i for i in reg.get("retocar_tras_relectura", []) if i in cs]
 categorias = [
     {"categoria": "Prosa de las fichas", "unidad": "fichas",
      "hecho": sum(x["remediadas"] + x["aprobadas_sin_tocar"] for x in tiers), "en_curso": 0,
      "pendiente": sum(x["pendientes"] for x in tiers), "aplazado": sum(x["aplazadas"] for x in tiers),
-     "nota": "Corrector, verificador contra la fuente y relectura de cada ficha desde el 10 nov 2026 (antes, de muestra). Aplazadas: Tier B sin defectos graves."},
+     "nota": "Corrector, verificador contra la fuente y prueba de lectura. La lectura completa de cada ficha empezó el 10 nov 2026; la deuda que dejó la de muestra va en la fila siguiente."},
+    {"categoria": "Relectura de cada ficha", "unidad": "fichas",
+     "hecho": len(hechas & set(cs)) - len(sin_lect), "en_curso": 0, "pendiente": len(sin_lect), "aplazado": 0,
+     "nota": "Fichas remediadas antes del 10 nov 2026 cuyo lote solo tuvo lectura de muestra (2 por lote) y no tiene relectura completa documentada."},
+    {"categoria": "Retoques tras la relectura", "unidad": "fichas",
+     "hecho": 0, "en_curso": 0, "pendiente": len(retocar), "aplazado": 0,
+     "nota": "Fichas releídas con veredicto RETOCAR: los defectos graves ya se corrigieron; quedan los de estructura y selección («Por qué importa» que repite el relato, transcripción del registro)."},
     {"categoria": "Página en el móvil", "unidad": "hallazgos",
      "hecho": t_hecho, "en_curso": t_curso, "pendiente": len(trans) - t_hecho - t_curso, "aplazado": 0,
      "nota": "Defectos que se repiten en todo el sitio, del tablero de la auditoría."},
