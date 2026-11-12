@@ -19,7 +19,7 @@
   "epistemicStatus": "documented",
   "probability": 2,
   "summary": "El 11 de diciembre de 1998, la tripulación del transbordador Endeavour fotografió un objeto oscuro y anguloso flotando sobre la Tierra durante la primera misión de montaje de la Estación Espacial Internacional. Años después, esas fotos se convirtieron en la imagen del «Caballero Negro», un supuesto satélite alienígena en órbita desde hace milenios. El informe oficial de la misión registra que, el día anterior, una tapa térmica se soltó durante una caminata espacial y quedó flotando; el catálogo de objetos en órbita la recoge y fecha su reentrada el 14 de diciembre.",
-  "summary_en": "On December 11, 1998, the crew of the shuttle Endeavour photographed a dark, angular object floating above the Earth during the first assembly mission of the International Space Station. Years later, those photos became the image of the \"Black Knight\", a supposed alien satellite orbiting for millennia. The official mission report records that, the day before, a thermal cover came loose during a spacewalk and floated away; the catalog of objects in orbit lists it and dates its reentry to December 14.",
+  "summary_en": "On December 11, 1998, the crew of the shuttle Endeavour photographed a dark, angular object floating above the Earth during the first assembly mission of the International Space Station. Years later, those photos became the image of the \"Black Knight,\" a supposed alien satellite orbiting for millennia. The official mission report records that, the day before, a thermal cover came loose during a spacewalk and floated away; the catalog of objects in orbit lists it and dates its reentry to December 14.",
   "patterns": [
     "8e"
   ],
@@ -48,7 +48,7 @@
     "Frames STS088-724-65 to 70 of NASA's astronaut photography archive, taken on December 11, 1998 between 20:16 and 20:18 universal time, described as space debris",
     "Official STS-88 mission report (NSTS-37423, Johnson Space Center, February 1999): a trunnion pin cover separated and floated away at about 00:52 on December 10, during the second spacewalk, and only three of the four were installed",
     "The same report records that on the first spacewalk a slide-wire carrier, a work-site interface socket and a retractable tether came loose and floated away",
-    "Jonathan McDowell's satellite catalog: object 25570, \"trunnion pin cover\", separated on December 10, 1998 at 00:52 and reentered on December 14; also the first-spacewalk debris, which reentered in 1999",
+    "Jonathan McDowell's satellite catalog: object 25570, \"trunnion pin cover,\" separated on December 10, 1998 at 00:52 and reentered on December 14; also the first-spacewalk debris, which reentered in 1999",
     "The shuttle was still docked to the station when the photos were taken: undocking began on December 13",
     "Lead Stories (2024) and Skeptoid (2013) identify the object with a thermal blanket lost on a spacewalk; according to Skeptoid, silver on one side and black on the other"
   ],
@@ -104,7 +104,7 @@
       "title": "STS088-724-66 · el objeto sobre el borde de la Tierra (11 dic 1998)",
       "title_en": "STS088-724-66 · the object above the Earth's limb (11 Dec 1998)",
       "description": "La foto que se convirtió en la imagen del «Caballero Negro». La tomó la tripulación del Endeavour el 11 de diciembre de 1998 a las 20:17:04 en hora universal, con un objetivo de 250 mm, mientras el transbordador seguía acoplado a la Estación Espacial. El archivo fotográfico de los astronautas de la NASA la describe como restos espaciales.",
-      "description_en": "The photo that became the image of the \"Black Knight\". The Endeavour crew took it on December 11, 1998 at 20:17:04 universal time, with a 250 mm lens, while the shuttle was still docked to the Space Station. NASA's astronaut photography archive describes it as space debris.",
+      "description_en": "The photo that became the image of the \"Black Knight.\" The Endeavour crew took it on December 11, 1998 at 20:17:04 universal time, with a 250 mm lens, while the shuttle was still docked to the Space Station. NASA's astronaut photography archive describes it as space debris.",
       "source": "NASA · archivo fotográfico de los astronautas (STS088-724-66), vía Wikimedia Commons",
       "license": "Dominio público (NASA)",
       "fallbackUrl": "https://commons.wikimedia.org/wiki/File:Black_Knight_Satellite.jpg"

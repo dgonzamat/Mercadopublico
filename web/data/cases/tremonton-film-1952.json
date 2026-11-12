@@ -18,7 +18,7 @@
   "epistemicStatus": "documented",
   "probability": 53,
   "summary": "El 2 de julio de 1952, el suboficial fotógrafo de la Marina de EE.UU. Delbert C. Newhouse filmó en 16 mm cerca de Tremonton (Utah) un grupo de ~12 objetos brillantes moviéndose en formación. Los laboratorios fotográficos de la Marina (Anacostia) analizaron el film y concluyeron que no eran aeronaves, globos ni aves; el Panel Robertson de 1953 rechazó ese análisis y consideró que los movimientos, tamaños y brillos «sugerían fuertemente aves», aunque dejó escrito que la identificación positiva exigía más datos.",
-  "summary_en": "On July 2, 1952, U.S. Navy Chief Photographer's Mate Delbert C. Newhouse filmed in 16mm near Tremonton, Utah a group of ~12 bright objects moving in formation. The Navy photographic labs (Anacostia) analyzed the film and concluded they were not aircraft, balloons or birds; the 1953 Robertson Panel rejected that analysis and held that the motions, sizes and brightnesses \"strongly suggest birds\", while recording that positive identification required further data.",
+  "summary_en": "On July 2, 1952, U.S. Navy Chief Photographer's Mate Delbert C. Newhouse filmed in 16mm near Tremonton, Utah a group of ~12 bright objects moving in formation. The Navy photographic labs (Anacostia) analyzed the film and concluded they were not aircraft, balloons or birds; the 1953 Robertson Panel rejected that analysis and held that the motions, sizes and brightnesses \"strongly suggest birds,\" while recording that positive identification required further data.",
   "patterns": [
     "8h",
     "8a"
@@ -191,9 +191,9 @@
   "objectDetail": "ave",
   "classBasis": {
     "es": "La ficha de Blue Book anota como explicación probable «globos almohada o aves», y el Panel Robertson consideró que los movimientos, tamaños y brillos «sugerían fuertemente aves»; el propio panel dejó escrito que la identificación exigía más datos.",
-    "en": "The Blue Book card files the probable explanation as \"Pillow-Balloons or Birds\", and the Robertson Panel held that the apparent motions, sizes and brightnesses \"were considered strongly to suggest birds\"; the panel itself recorded that identification required further data.",
+    "en": "The Blue Book card files the probable explanation as \"Pillow-Balloons or Birds,\" and the Robertson Panel held that the apparent motions, sizes and brightnesses \"were considered strongly to suggest birds\"; the panel itself recorded that identification required further data.",
     "source": "Panel Robertson — «Report of Meetings of Scientific Advisory Panel on Unidentified Flying Objects», CIA, 14-18 ene 1953",
-    "source_en": "Robertson Panel — “Report of Meetings of Scientific Advisory Panel on Unidentified Flying Objects”, CIA, 14-18 Jan 1953",
+    "source_en": "Robertson Panel — “Report of Meetings of Scientific Advisory Panel on Unidentified Flying Objects,” CIA, 14-18 Jan 1953",
     "url": "https://archive.org/details/cia-readingroom-document-cia-rdp79b00752a000300100010-4"
   },
   "pursueReleases": [

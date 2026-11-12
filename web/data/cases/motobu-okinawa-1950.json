@@ -60,13 +60,13 @@
   ],
   "evidence_en": [
     "AF Form 112 IR-1-50, Part II (Twentieth Air Force): object picked up at about 1030 on March 27, 1950 at 26° 37′ N, 127° 57′ E, at 13,500 feet; stationary at first, then heading 220° at about 507 miles per hour (16.9 miles in two minutes); last position at 1040.",
-    "Same report: SCR-584 \"B\" radar, serial no. 754, \"in good condition\", in the \"Kawasake\" gun park (26° 21′ N, 127° 50′ E); no photographs.",
-    "The operator, a corporal of the 65th AAA Gun Battalion (APO 331), aged 36 with about fifteen years' service, his name blacked out; his commanding officer rates him \"outstandingly reliable and trustworthy\".",
-    "The report notes, underlined and with an arrow in the margin: \"One F-80C and 4 F-80's were flying and could have been picked up by radar, at time object was detected\".",
-    "The Twentieth Air Force radar on Yontan Mountain was inoperative and the radar station on the Motobu Peninsula \"did not pick up this object\".",
+    "Same report: SCR-584 \"B\" radar, serial no. 754, \"in good condition,\" in the \"Kawasake\" gun park (26° 21′ N, 127° 50′ E); no photographs.",
+    "The operator, a corporal of the 65th AAA Gun Battalion (APO 331), aged 36 with about fifteen years' service, his name blacked out; his commanding officer rates him \"outstandingly reliable and trustworthy.\"",
+    "The report notes, underlined and with an arrow in the margin: \"One F-80C and 4 F-80's were flying and could have been picked up by radar, at time object was detected.\"",
+    "The Twentieth Air Force radar on Yontan Mountain was inoperative and the radar station on the Motobu Peninsula \"did not pick up this object.\"",
     "Part I of the form lists three enclosures that do not survive: the corporal's affidavit and statements by the operations officer of the \"51st FI…\" and by the weather officer of a detachment.",
-    "Blue Book record card (September 1963 form): \"UNIDENTIFIED\"; \"Not submitted to Radar Analists at time of receipt in 1950. Track not consistent with A/C. Weather and other causes not apparent. Not recorded as A.P. or malfunction and Operator is considered reliable\". On the loss of the object: \"Could not track beyond this point\", \"Additional Radar in area did not pick up object. Speed faster than Operator could track\". The card gives the altitude as 13,000 feet and the range to the first point as 18 miles; in the report that range is only partly legible (\"1…\").",
-    "1950 Blue Book index: no. 678, March 27, \"Motubu, Okinawa\", \"Military RADAR\", \"UNIDENTIFIED\"."
+    "Blue Book record card (September 1963 form): \"UNIDENTIFIED\"; \"Not submitted to Radar Analists at time of receipt in 1950. Track not consistent with A/C. Weather and other causes not apparent. Not recorded as A.P. or malfunction and Operator is considered reliable.\" On the loss of the object: \"Could not track beyond this point,\" \"Additional Radar in area did not pick up object. Speed faster than Operator could track.\" The card gives the altitude as 13,000 feet and the range to the first point as 18 miles; in the report that range is only partly legible (\"1…\").",
+    "1950 Blue Book index: no. 678, March 27, \"Motubu, Okinawa,\" \"Military RADAR,\" \"UNIDENTIFIED.\""
   ],
   "sources": [
     {
@@ -84,12 +84,12 @@
       "name_en": "Patrick Gross — list of 1950 Blue Book unidentified cases",
       "url": "https://ufologie.patrickgross.org/htm/bluebooku50.htm",
       "note": "Fuente secundaria: transcribe el apellido del operador como «Bolfango», lo hace de la Fuerza Aérea (era del Ejército) y fecha el caso en 1980 por errata.",
-      "note_en": "Secondary source: it transcribes the operator's surname as \"Bolfango\", places him in the Air Force (he was Army) and dates the case 1980 by a typo."
+      "note_en": "Secondary source: it transcribes the operator's surname as \"Bolfango,\" places him in the Air Force (he was Army) and dates the case 1980 by a typo."
     }
   ],
   "classBasis": {
     "es": "La única causa del expediente está en el informe IR-1-50, subrayada y con una flecha al margen: «Un F-80C y 4 F-80 estaban volando y pudo captarlos el radar». El tramo en movimiento, 16,9 millas en dos minutos, es compatible con un avión, y ningún registro de la época lo excluye: se ha perdido la declaración del oficial de operaciones sobre los vuelos, anexa al informe. En contra: el informe dice que el blanco estaba inmóvil al captarlo, y la tarjeta, que lo estuvo diez minutos, algo que un avión no hace; y anota «Traza no compatible con avión», en un formulario de 1963, aunque según ella el caso nunca pasó por los analistas de radar. Propuesta débil y en disputa, no refutada.",
-    "en": "The only cause in the file is in report IR-1-50, underlined and marked with an arrow in the margin: \"One F-80C and 4 F-80's were flying and could have been picked up by radar\". The moving leg, 16.9 miles in two minutes, is compatible with an aircraft, and no record of the period excludes it: the operations officer's statement on the flights, enclosed with the report, has been lost. Against it: the report says the target was stationary when first picked up, and the card that it stayed so for ten minutes, which an aircraft does not do; and it notes \"Track not consistent with A/C\", on a 1963 form, although by its own account the case never went to radar analysts. A weak, disputed proposal, not a refuted one.",
+    "en": "The only cause in the file is in report IR-1-50, underlined and marked with an arrow in the margin: \"One F-80C and 4 F-80's were flying and could have been picked up by radar.\" The moving leg, 16.9 miles in two minutes, is compatible with an aircraft, and no record of the period excludes it: the operations officer's statement on the flights, enclosed with the report, has been lost. Against it: the report says the target was stationary when first picked up, and the card that it stayed so for ten minutes, which an aircraft does not do; and it notes \"Track not consistent with A/C,\" on a 1963 form, although by its own account the case never went to radar analysts. A weak, disputed proposal, not a refuted one.",
     "source": "Proyecto Blue Book — expediente 1950-03-9614443, Motobu, Okinawa (informe IR-1-50 de la 20.ª Fuerza Aérea y tarjeta)",
     "source_en": "Project Blue Book — file 1950-03-9614443, Motobu, Okinawa (Twentieth Air Force report IR-1-50 and record card)",
     "url": "https://archive.org/details/1950-03-9614443-MotobuPeninsula-Island-Okinawa"

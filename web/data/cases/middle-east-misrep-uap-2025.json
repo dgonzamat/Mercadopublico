@@ -109,13 +109,13 @@
       "name": "Department of War — DOW-UAP-D107, «Mission Report, Middle East, 2025» (PURSUE Release 06, 18 sep 2026)",
       "name_en": "Department of War — DOW-UAP-D107, 'Mission Report, Middle East, 2025' (PURSUE Release 06, 18 Sep 2026)",
       "note": "Documento primario embebido en el visor: el parte del 29 de octubre de 2025, el de la «órbita redonda blanca».",
-      "note_en": "Primary document embedded in the viewer: the October 29, 2025 report, the one with the \"white round orbit\"."
+      "note_en": "Primary document embedded in the viewer: the October 29, 2025 report, the one with the \"white round orbit.\""
     },
     {
       "name": "Department of War — DOW-UAP-D106, «Mission Report, Iraq, 2022» (PURSUE Release 06)",
       "name_en": "Department of War — DOW-UAP-D106, 'Mission Report, Iraq, 2022' (PURSUE Release 06)",
       "note": "El parte de 2022 con el que se compara la estructura del formulario; su ficha es «Irak 2022 · UAP en la narrativa, UAS en el formulario».",
-      "note_en": "The 2022 report against which the form's structure is compared; its file is \"Iraq 2022 · UAP in the narrative, UAS in the form\"."
+      "note_en": "The 2022 report against which the form's structure is compared; its file is \"Iraq 2022 · UAP in the narrative, UAS in the form.\""
     },
     {
       "name": "Department of War — DOW-UAP-PR135, «Unresolved UAP Report, Middle East, 2025» (PURSUE Release 06)",
@@ -147,7 +147,7 @@
   },
   "classBasis": {
     "es": "Ninguna fuente propone qué eran los objetos: D108 deja la propulsión, el control y la radiofrecuencia como «desconocidos» y D107 deja esos campos en blanco, y las fichas de PR133 y PR135 publican el metraje como no resuelto con una descripción que la AARO declara no analítica. La falta de un análisis publicado no es prueba contra una causa ordinaria: en su informe de 2024, AARO dio por resueltos 174 casos, todos como «objetos convencionales», aunque «muchos otros casos siguen sin resolver».",
-    "en": "No source proposes what the objects were: D108 leaves propulsion, control and radio frequency as \"unknown\" and D107 leaves those fields blank, and the PR133 and PR135 records publish the footage as unresolved with a description AARO declares non-analytical. The absence of a published analysis is not evidence against an ordinary cause: AARO's FY2024 report says \"all 174 cases have been finalized as resolved to prosaic objects\", while \"many other cases remain unresolved\".",
+    "en": "No source proposes what the objects were: D108 leaves propulsion, control and radio frequency as \"unknown\" and D107 leaves those fields blank, and the PR133 and PR135 records publish the footage as unresolved with a description AARO declares non-analytical. The absence of a published analysis is not evidence against an ordinary cause: AARO's FY2024 report says \"all 174 cases have been finalized as resolved to prosaic objects,\" while \"many other cases remain unresolved.\"",
     "source": "Department of War, DOW-UAP-D107, D108, PR133, PR135 (PURSUE Release 06) · AARO — Fiscal Year 2024 Consolidated Annual Report on UAP (14 nov 2024), tasa base",
     "source_en": "Department of War, DOW-UAP-D107, D108, PR133, PR135 (PURSUE Release 06) · AARO — Fiscal Year 2024 Consolidated Annual Report on UAP (14 Nov 2024), base rate",
     "url": "https://media.defense.gov/2024/Nov/14/2003583603/-1/-1/0/FY24-CONSOLIDATED-ANNUAL-REPORT-ON-UAP-508.PDF"
