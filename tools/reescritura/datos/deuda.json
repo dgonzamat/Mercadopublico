@@ -1072,7 +1072,7 @@
   "item": "P2 · Tercera pasada del lote R1 con los retoques de los lectores (Nimitz, Lake Huron, Washington, Skinwalker)",
   "volumen": 1,
   "unidad": "tareas",
-  "estado": "Pendiente",
+  "estado": "Hecho",
   "responsable": "Agentes",
   "origen": "Registro manual (debt-manual.json)",
   "meta": false
