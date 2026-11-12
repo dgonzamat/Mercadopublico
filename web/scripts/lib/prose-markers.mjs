@@ -26,9 +26,8 @@ export const SLOP = {
 // Fichas cuya fórmula «no es X, sino Y» se revisó y es un contraste factual
 // (el expediente no es de Blue Book, sino un informe de accidente), no un
 // recurso retórico: no son deuda. Si una deja de usarla, se avisa.
-export const FORMULA_REVIEWED = new Set([
-  "mexico-eclipse-1991", // «Venus no es una estrella, sino un planeta»: lo dice Printy, es un dato
-]);
+// mexico-eclipse-1991 salió el 12 nov 2026: la ficha ya no usa la fórmula.
+export const FORMULA_REVIEWED = new Set([]);
 
 // Lo citado entre comillas es de la fuente, no del redactor: se excluye.
 export const unquote = (t) => t.replace(/«[^»]*»|"[^"]*"|“[^”]*”|(?<![\w])'[^']*'(?![\w])/g, "");
