@@ -2231,9 +2231,11 @@ const HYPE_REVIEWED = new Set(["lakenheath-bentwaters-1956", "morocco-gendarmeri
 
 // ─── 9zf1. RULE E57: un enlace entre casos no ocupa el lugar de un nombre ─
 //
-// `[[slug]]` se dibuja solo como «↗» (lib/caseRefs.tsx), así que tras un
+// `[[slug]]` se dibujaba solo como «↗» (lib/caseRefs.tsx), así que tras un
 // artículo o una preposición («por el de [[x]]», «en [[x]] y GoFast») la frase
-// queda sin sustantivo. Lo vio el lector en la auditoría de noviembre de 2026
+// quedaba sin sustantivo. Desde nov 2026 el enlace lleva el nombre corto del
+// caso, pero la regla sigue: la frase debe nombrar el caso por sí misma, y el
+// enlace va detrás. Lo vio el lector en la auditoría de noviembre de 2026
 // y ninguna sonda lo medía. WARN hasta que el lote que lo limpia termine; la
 // lógica vive en scripts/lib/case-ref-noun.mjs y tiene su prueba unitaria.
 {
