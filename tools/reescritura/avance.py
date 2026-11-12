@@ -69,8 +69,9 @@ categorias = [
      "hecho": len(hechas & set(cs)) - len(sin_lect), "en_curso": 0, "pendiente": len(sin_lect), "aplazado": 0,
      "nota": "Fichas remediadas antes del 10 nov 2026 cuyo lote solo tuvo lectura de muestra (2 por lote) y no tiene relectura completa documentada."},
     {"categoria": "Retoques tras la relectura", "unidad": "fichas",
-     "hecho": len([i for i in reg.get("retocadas_tras_relectura", []) if i in cs]), "en_curso": 0, "pendiente": len(retocar), "aplazado": 0,
-     "nota": "Fichas releídas con veredicto RETOCAR: los defectos graves ya se corrigieron; quedan los de estructura y selección («Por qué importa» que repite el relato, transcripción del registro)."},
+     # Mantenimiento, no deuda (decisión del dueño, 12 nov 2026): los retoques se hacen cuando una ficha se toca por otro motivo.
+     "hecho": len([i for i in reg.get("retocadas_tras_relectura", []) if i in cs]), "en_curso": 0, "pendiente": 0, "aplazado": len(retocar),
+     "nota": "Mantenimiento, no deuda (decisión del dueño, 12 nov 2026): los defectos graves ya se corrigieron con la fuente; lo que queda es estilo y estructura, y se retoca cuando la ficha se toca por otro motivo."},
     {"categoria": "Página en el móvil", "unidad": "hallazgos",
      "hecho": t_hecho, "en_curso": t_curso, "pendiente": len(trans) - t_hecho - t_curso, "aplazado": 0,
      "nota": "Defectos que se repiten en todo el sitio, del tablero de la auditoría."},
