@@ -243,12 +243,22 @@ export function CasePosterior({
     detail && top.key === pk
       ? { es: shortLabel(detail.label), en: shortLabel(detail.labelEn) }
       : { es: top.label, en: top.labelEn };
+  // «Más probable» solo si esa explicación pasa de la mitad. Debajo de la cifra
+  // del grupo (p. ej. 70 %) se leía como si la explicación nombrada tuviera ese
+  // 70 %, cuando valía un 32 % (Yellow Sea, 138 fichas; nov 2026). Por debajo
+  // de la mitad se nombra con su propio porcentaje.
+  const majority = top.pct >= 50;
+  const topPct = `${top.pct}\u00a0%`;
   const topText =
     top.key === "indet"
       ? { es: "La evidencia no alcanza para decidir entre las explicaciones", en: "The evidence is not enough to decide between the explanations" }
-      : top.key === "sin_propuesta"
-        ? { es: "Lo más probable es una causa ordinaria que nadie ha identificado", en: "Most likely an ordinary cause that no one has identified" }
-        : { es: `Explicación más probable: ${topName.es.toLowerCase()}`, en: `Most likely explanation: ${topName.en.toLowerCase()}` };
+      : !majority
+        ? top.key === "sin_propuesta"
+          ? { es: `La que más pesa: una causa ordinaria que nadie ha identificado (${topPct})`, en: `The largest share: an ordinary cause no one has identified (${topPct})` }
+          : { es: `La que más pesa: ${topName.es.toLowerCase()} (${topPct})`, en: `The largest share: ${topName.en.toLowerCase()} (${topPct})` }
+        : top.key === "sin_propuesta"
+          ? { es: "Lo más probable es una causa ordinaria que nadie ha identificado", en: "Most likely an ordinary cause that no one has identified" }
+          : { es: `Explicación más probable: ${topName.es.toLowerCase()}`, en: `Most likely explanation: ${topName.en.toLowerCase()}` };
   return (
     <div>
       <p className="flex items-baseline gap-2 text-text">
