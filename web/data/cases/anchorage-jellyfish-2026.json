@@ -1,0 +1,123 @@
+{
+  "id": "anchorage-jellyfish-2026",
+  "num": 504,
+  "name": "Medusa de Anchorage · una turista filma un objeto con brazos",
+  "name_en": "Anchorage jellyfish · a visitor films an object with dangling arms",
+  "year_start": 2026,
+  "country": "US",
+  "country_name": "Estados Unidos",
+  "flag": "🇺🇸",
+  "location": {
+    "lat": 61.205,
+    "lng": -149.79,
+    "place": "Este de Anchorage, Alaska, Estados Unidos",
+    "place_en": "East Anchorage, Alaska, United States"
+  },
+  "tier": "B",
+  "probability": 16,
+  "posterior": {
+    "mundano_natural": 0.8,
+    "humana_clasificada": 0.02,
+    "adversaria": 0.02,
+    "nohumano_encubierto": 0.01,
+    "nohumano_abierto": 0.02,
+    "indet": 0.13
+  },
+  "mundanoType": "misid",
+  "misidSubtype": "aeronave",
+  "classBasis": {
+    "es": "Jeremy Corbell, que analizó el video original fotograma a fotograma, concluye que es «most likely a tethered octopus-style show kite»: un volantín de exhibición con forma de pulpo, sujeto por una cuerda. Se apoya en que el objeto se mueve con el temblor de la cámara, oscila sin alejarse y tenía viento del oeste a favor. La propia Osborn pensó primero en un volantín, aunque lo descartó por cómo se movía, y nadie ha reconocido ser el dueño.",
+    "en": "Jeremy Corbell, who analyzed the original video frame by frame, concludes it is \"most likely a tethered octopus-style show kite.\" He relies on the object moving with the camera shake, swaying without drifting away, and having a west wind behind it. Osborn herself first thought of a kite, though she dismissed it because of how it moved, and no one has come forward as its owner.",
+    "source": "Weaponized, «UAP Video Check», vol. 013 (Jeremy Corbell, 11 nov 2026)",
+    "source_en": "Weaponized, \"UAP Video Check,\" vol. 013 (Jeremy Corbell, Nov 11, 2026)"
+  },
+  "summary": "El 15 de junio de 2026, hacia las 22:13, Sara Jane Osborn, de visita en Anchorage con su esposo, filmaba un arcoíris sobre los montes Chugach cuando vio un objeto oscuro con forma de medusa, con brazos que se mecían, sobre la ladera. Lo grabó unos tres minutos y subió el video a Facebook a las 22:24. Cinco meses después se volvió viral como un ovni junto a una base militar. El video es auténtico; el análisis más detallado lo atribuye a un volantín atado con forma de pulpo.",
+  "summary_en": "On June 15, 2026, at around 10:13 p.m., Sara Jane Osborn, visiting Anchorage with her husband, was filming a rainbow over the Chugach Mountains when she saw a dark, jellyfish-shaped object with swaying arms over the slope. She recorded it for about three minutes and posted the video to Facebook at 10:24 p.m. Five months later it went viral as a UFO near a military base. The video is genuine; the most detailed analysis attributes it to a tethered octopus-shaped kite.",
+  "patterns": [
+    "8h"
+  ],
+  "category": "incident",
+  "epistemicStatus": "documented",
+  "whatHappened": "La tarde del lunes 15 de junio de 2026, Sara Jane Osborn y su esposo, Pete, estaban en Anchorage por trabajo. Según contó al Daily Mail, iban por la Sexta Avenida cuando vio un arcoíris intenso y empezó a fotografiarlo por la ventanilla abierta. Su esposo entró en un estacionamiento vacío para que pudiera hacerlo sin tráfico delante. En Alaska, a mediados de junio, el cielo sigue claro a esa hora: el Sol estaba a unos 6 grados sobre el horizonte, al noroeste.\n\nHacia las 22:13 vio una forma oscura sobre los árboles lejanos. «Me molestó, porque pensé: ¿es un mosquito?», recordó. La describió como negra y plateada, con apéndices colgantes que parecían moverse cada uno por su lado mientras el objeto giraba de un lado a otro. Primero sacó varias fotos seguidas y luego grabó video. En el audio se la oye decir: «Parece un maldito extraterrestre. No me gusta. Se mueve muy raro. ¿Qué es?».\n\nSegún su relato, el objeto estuvo a la vista unos tres minutos y desapareció casi tan rápido como había aparecido. Lo primero que pensó fue que era un volantín, pero los árboles se movían con la brisa y a ella el objeto le pareció moverse de otra manera. El matrimonio buscó durante unos 30 minutos en un parque cercano a alguien que estuviera volando o recogiendo un volantín, y después fue hacia Arctic Valley para verlo desde otro ángulo. No encontraron nada ni a nadie más que lo hubiera visto. Pete calculó que el objeto estaba a menos de unas tres millas (unos 5 km), y los dos notaron que una avioneta que pasó se veía mucho más pequeña.\n\nOsborn publicó el video en su Facebook a las 22:24, once minutos después de la hora que da para el avistamiento, con el texto «WHAT IS IT?!! Downtown Anchorage, Alaska...». Dura 57 segundos, está grabado con el teléfono en vertical y lleva su audio. En los últimos segundos la cámara baja y muestra el edificio desde el que filmaba: lleva el rótulo del Centro de Materiales Geológicos de Alaska, el depósito estatal de muestras geológicas, que está en el número 3651 de Penland Parkway, en el este de la ciudad, y no en el centro como dice el texto.\n\nEl video circuló poco hasta noviembre, cuando cuentas de ovnis lo republicaron. El 10 de noviembre el Daily Mail lo difundió con una entrevista a Osborn y lo presentó como un objeto que flotaba en dirección a la base conjunta Elmendorf-Richardson, donde operan cazas F-22. Osborn cerró la entrevista así: «Solo Dios y el gobierno saben qué es».",
+  "whatHappened_en": "On the evening of Monday, June 15, 2026, Sara Jane Osborn and her husband, Pete, were in Anchorage on business. As she told the Daily Mail, they were driving along Sixth Avenue when she saw a vivid rainbow and began photographing it through the open car window. Her husband pulled into an empty parking lot so she could shoot without traffic in front of her. In Alaska in mid-June the sky is still bright at that hour: the sun was about 6 degrees above the horizon, to the northwest.\n\nAt around 10:13 p.m. she saw a dark shape above the distant trees. \"I was annoyed, because I was like, is that a mosquito?\" she recalled. She described it as black and silver, with dangling appendages that seemed to move independently as the object turned from side to side. She first took several photos in quick succession and then recorded video. On the audio she can be heard saying: \"It looks like a friggen alien. I don't like it. It's moving very weirdly. What is it?\"\n\nBy her account, the object was in view for about three minutes and vanished almost as quickly as it had appeared. Her first thought was that it was a kite, but the trees were moving in the breeze and the object seemed to her to move differently. The couple spent about 30 minutes searching a nearby park for anyone flying or packing up a kite, and then drove toward Arctic Valley to see it from another angle. They found nothing, and no one else who had seen it. Pete estimated the object was within about three miles (about 5 km), and both noticed that a small plane passing by looked far smaller.\n\nOsborn posted the video to her Facebook page at 10:24 p.m., eleven minutes after the time she gives for the sighting, with the caption \"WHAT IS IT?!! Downtown Anchorage, Alaska...\" It runs 57 seconds, was shot with the phone held vertically, and has its audio. In the last seconds the camera drops and shows the building she was filming from: it bears the sign of the Alaska Geologic Materials Center, the state repository for geological samples, at 3651 Penland Parkway in the east of the city, not downtown as the caption says.\n\nThe video drew little attention until November, when UFO accounts reposted it. On November 10 the Daily Mail spread it with an interview with Osborn, presenting it as an object hovering in the direction of Joint Base Elmendorf-Richardson, home to F-22 fighters. Osborn ended the interview this way: \"Only God and the government know what it is.\"",
+  "whyMatters": "El caso muestra cómo un video auténtico y bien fechado puede convertirse en otra cosa al viralizarse. El original existe, está fechado once minutos después del avistamiento y conserva el audio de la testigo, así que no es un montaje ni una animación. Lo que cambió en noviembre fue el marco: el texto de Osborn decía «centro de Anchorage», la difusión de noviembre hablaba de una base militar y ninguna fuente sitúa el objeto sobre esa base.\n\nLos datos de la noche encajan con un objeto atado al suelo. La estación meteorológica de Merrill Field, el aeródromo más cercano, registró a las 21:53 viento del oeste de 11 nudos (unos 20 km/h), y el aeropuerto internacional, viento del oeste de 8 nudos y chubascos a lo lejos hacia el este, la lluvia que explica el arcoíris. La cámara miraba hacia el este, hacia los montes Chugach, así que un volantín elevado desde un parque cercano habría quedado frente a ella, a sotavento de quien lo sostenía. En el video, el objeto cambia de forma y balancea los brazos, pero se mantiene en la misma zona respecto de la montaña durante casi un minuto, en vez de alejarse con el viento como haría un globo suelto.\n\nJeremy Corbell, el documentalista que en 2024 difundió el video de la «medusa» de Irak, analizó este clip y concluyó que es muy probablemente un volantín de exhibición con forma de pulpo. Según su análisis, el objeto tiembla al mismo tiempo que la montaña, lo que descarta una capa añadida en edición, y sus brazos se comportan como colas de tela en un viento racheado. Osborn sostiene lo contrario: dijo que «claramente no era un volantín por sus movimientos». Nadie ha reconocido ser el dueño, y sin conocer la distancia, el tamaño aparente frente a la avioneta no dice nada del tamaño real. Es distinto del caso de Irak [[jellyfish-iraq-2018]]: allí el objeto quedó en el registro de un sensor militar; aquí hay una sola testigo con su teléfono.",
+  "whyMatters_en": "The case shows how a genuine, well-dated video can turn into something else as it goes viral. The original exists, is timestamped eleven minutes after the sighting, and keeps the witness's audio, so it is not a composite or an animation. What changed in November was the framing: Osborn's caption said \"downtown Anchorage,\" the November coverage spoke of a military base, and no source places the object over that base.\n\nThe night's data fit an object tied to the ground. The weather station at Merrill Field, the nearest airfield, recorded a west wind of 11 knots (about 20 km/h) at 9:53 p.m., and the international airport a west wind of 8 knots and distant showers to the east, the rain that explains the rainbow. The camera faced east, toward the Chugach Mountains, so a kite flown from a nearby park would have been in front of it, downwind of whoever held it. In the video the object changes shape and swings its arms, but it stays in the same area relative to the mountain for almost a minute, instead of drifting off with the wind as a loose balloon would.\n\nJeremy Corbell, the filmmaker who released the Iraq \"jellyfish\" video in 2024, analyzed this clip and concluded it is most likely an octopus-shaped show kite. By his analysis, the object shakes in step with the mountain, which rules out a layer added in editing, and its arms behave like fabric tails in a gusty wind. Osborn holds the opposite view: she said \"it was very clearly not a kite in its movements.\" No one has come forward as the owner, and without knowing the distance, its apparent size next to the small plane says nothing about its real size. It is different from the Iraq case [[jellyfish-iraq-2018]]: there the object was captured by a military sensor; here there is a single witness with her phone.",
+  "evidence": [
+    "Video original de Sara Jane Osborn en Facebook, publicado el 16 de junio de 2026 a las 06:24 UTC (22:24 del 15 de junio en Alaska), 57 segundos, vertical, con audio y el texto «WHAT IS IT?!! Downtown Anchorage, Alaska...».",
+    "Los últimos segundos del video muestran el edificio con el rótulo del Centro de Materiales Geológicos de Alaska, que la División de Estudios Geológicos y Geofísicos del estado sitúa en el 3651 de Penland Parkway, en el este de Anchorage.",
+    "Entrevista de Osborn al Daily Mail (10 de noviembre de 2026), recogida por IBTimes: hora de las 22:13, unos tres minutos de observación, búsqueda de 30 minutos sin hallar volantín ni operador, y su comentario de que quizá era «algo tipo dron».",
+    "METAR de Merrill Field (PAMR), 15 de junio a las 21:53 hora de Alaska: viento de 270° a 11 nudos; a las 22:53, de 250° a 4 nudos. Aeropuerto internacional (PANC), 21:53: viento de 270° a 8 nudos y chubascos a lo lejos hacia el este.",
+    "Posición del Sol calculada para las 22:13 en Anchorage: unos 6° de altura y azimut de unos 310° (noroeste), con lo que el arcoíris quedaba al este, hacia los montes Chugach.",
+    "Análisis de Jeremy Corbell (Weaponized, 11 de noviembre de 2026): video auténtico, sin señales de animación ni de IA; objeto probablemente un volantín de exhibición atado con forma de pulpo; dueño no identificado."
+  ],
+  "evidence_en": [
+    "Sara Jane Osborn's original Facebook video, posted June 16, 2026, at 06:24 UTC (10:24 p.m. on June 15 in Alaska), 57 seconds, vertical, with audio and the caption \"WHAT IS IT?!! Downtown Anchorage, Alaska...\"",
+    "The last seconds of the video show the building bearing the sign of the Alaska Geologic Materials Center, which the state Division of Geological and Geophysical Surveys places at 3651 Penland Parkway, in east Anchorage.",
+    "Osborn's interview with the Daily Mail (November 10, 2026), as reported by IBTimes: the 10:13 p.m. time, about three minutes of observation, a 30-minute search that found no kite or operator, and her remark that maybe it was \"a drone-type thing.\"",
+    "METAR from Merrill Field (PAMR), June 15 at 9:53 p.m. Alaska time: wind from 270° at 11 knots; at 10:53 p.m., from 250° at 4 knots. International airport (PANC), 9:53 p.m.: wind from 270° at 8 knots and distant showers to the east.",
+    "Sun position calculated for 10:13 p.m. in Anchorage: about 6° altitude and azimuth of about 310° (northwest), which put the rainbow to the east, toward the Chugach Mountains.",
+    "Jeremy Corbell's analysis (Weaponized, November 11, 2026): genuine video with no sign of animation or AI; object most likely a tethered octopus-shaped show kite; owner not identified."
+  ],
+  "sources": [
+    {
+      "name": "Sara Jane Osborn, video original en Facebook, «WHAT IS IT?!! Downtown Anchorage, Alaska...» (15 jun 2026)",
+      "name_en": "Sara Jane Osborn, original Facebook video, \"WHAT IS IT?!! Downtown Anchorage, Alaska...\" (Jun 15, 2026)",
+      "url": "https://www.facebook.com/reel/1526564019122540",
+      "note": "Fuente primaria: el video con audio, publicado once minutos después del avistamiento; los metadatos de la publicación dan las 06:24 UTC del 16 de junio.",
+      "note_en": "Primary source: the video with audio, posted eleven minutes after the sighting; the post metadata give 06:24 UTC on June 16."
+    },
+    {
+      "name": "IBTimes UK, «Jellyfish UFO Filmed Hovering Near Anchorage Base Before Vanishing, Witness Says» (10 nov 2026)",
+      "name_en": "IBTimes UK, \"Jellyfish UFO Filmed Hovering Near Anchorage Base Before Vanishing, Witness Says\" (Nov 10, 2026)",
+      "url": "https://www.ibtimes.co.uk/anchorage-jellyfish-shaped-ufo-sighting-1831491",
+      "note": "Recoge con detalle la entrevista de Osborn al Daily Mail: la Sexta Avenida, la búsqueda en el parque, Arctic Valley y la estimación de distancia de su esposo.",
+      "note_en": "Reports Osborn's Daily Mail interview in detail: Sixth Avenue, the search in the park, Arctic Valley and her husband's distance estimate."
+    },
+    {
+      "name": "IBTimes UK, «'Only God and the Government': Giant Jellyfish UFO Filmed Hovering Near a US Military Base in Alaska» (nov 2026)",
+      "name_en": "IBTimes UK, \"'Only God and the Government': Giant Jellyfish UFO Filmed Hovering Near a US Military Base in Alaska\" (Nov 2026)",
+      "url": "https://www.ibtimes.co.uk/only-god-government-giant-jellyfish-ufo-filmed-hovering-near-us-military-base-alaska-1831633",
+      "note": "Recoge la duda de Osborn sobre el volantín («It was very clearly not a kite in its movements») y su frase final sobre Dios y el gobierno.",
+      "note_en": "Reports Osborn's doubt about the kite (\"It was very clearly not a kite in its movements\") and her closing line about God and the government."
+    },
+    {
+      "name": "Outdoors.com, «WATCH: Woman Films Weird UFO Near Alaska Military Base» (nov 2026)",
+      "name_en": "Outdoors.com, \"WATCH: Woman Films Weird UFO Near Alaska Military Base\" (Nov 2026)",
+      "url": "https://outdoors.com/watch-woman-films-weird-ufo-near-alaska-military-base/",
+      "note": "Cita el texto del Daily Mail y las palabras de Osborn en el audio del video.",
+      "note_en": "Quotes the Daily Mail text and Osborn's words on the video's audio."
+    },
+    {
+      "name": "Iowa Environmental Mesonet, archivo de METAR de Merrill Field (PAMR) y del aeropuerto de Anchorage (PANC), 16 jun 2026 05:00 a 08:00 UTC",
+      "name_en": "Iowa Environmental Mesonet, METAR archive for Merrill Field (PAMR) and Anchorage airport (PANC), Jun 16, 2026, 05:00 to 08:00 UTC",
+      "url": "https://mesonet.agron.iastate.edu/cgi-bin/request/asos.py?station=PAMR&station=PANC&data=metar&year1=2026&month1=6&day1=16&hour1=5&year2=2026&month2=6&day2=16&hour2=8&tz=Etc/UTC&format=onlycomma",
+      "note": "Partes meteorológicos horarios de esa noche: viento del oeste de 11 nudos en Merrill Field y de 8 nudos en el aeropuerto a las 21:53 hora de Alaska.",
+      "note_en": "Hourly weather reports for that night: west wind of 11 knots at Merrill Field and 8 knots at the airport at 9:53 p.m. Alaska time."
+    },
+    {
+      "name": "División de Estudios Geológicos y Geofísicos de Alaska, Centro de Materiales Geológicos",
+      "name_en": "Alaska Division of Geological and Geophysical Surveys, Geologic Materials Center",
+      "url": "https://dggs.alaska.gov/gmc/",
+      "note": "Dirección del edificio que aparece al final del video: 3651 Penland Parkway, Anchorage.",
+      "note_en": "Address of the building seen at the end of the video: 3651 Penland Parkway, Anchorage."
+    },
+    {
+      "name": "Weaponized, «UAP Video Check», vol. 013 (Jeremy Corbell, 11 nov 2026)",
+      "name_en": "Weaponized, \"UAP Video Check,\" vol. 013 (Jeremy Corbell, Nov 11, 2026)",
+      "note": "Lámina de análisis difundida como imagen: rastreo del objeto fotograma a fotograma, prueba del temblor de cámara y conclusión de un volantín atado; el dueño no fue identificado.",
+      "note_en": "Analysis sheet circulated as an image: frame-by-frame tracking of the object, a camera-shake test and the conclusion of a tethered kite; the owner was not identified."
+    }
+  ],
+  "documents": [
+    {
+      "role": "prueba",
+      "type": "link",
+      "src": "https://www.facebook.com/reel/1526564019122540",
+      "title": "Video original de Sara Jane Osborn en Facebook (15 jun 2026, 57 s)",
+      "title_en": "Sara Jane Osborn's original Facebook video (Jun 15, 2026, 57 s)",
+      "description": "El registro del suceso: video vertical con audio, publicado a las 22:24 hora de Alaska, once minutos después del avistamiento. Muestra el arcoíris, el objeto oscuro con brazos sobre la ladera de los Chugach y, al final, el edificio del Centro de Materiales Geológicos de Alaska desde el que se filmó.",
+      "description_en": "The record of the event: a vertical video with audio, posted at 10:24 p.m. Alaska time, eleven minutes after the sighting. It shows the rainbow, the dark object with arms over the Chugach slope and, at the end, the Alaska Geologic Materials Center building it was filmed from."
+    }
+  ],
+  "evidenceReviewed": "2026-11-12"
+}

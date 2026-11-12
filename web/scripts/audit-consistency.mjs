@@ -608,6 +608,7 @@ const VISUAL_CERRADO_POR_LICENCIA = {
   "schirmer-ashland-1967": "Informe Condon de licencia dudosa; el «Herbert Schirmer» de Commons es un homónimo alemán",
   "haynesville-1966": "Informe Condon de licencia dudosa (tarjeta de enlace por decisión del dueño); Blue Book en archive.org no tiene el caso de dic 1966 (el «Hayesville La» es otro, de sep 1966); Commons seco",
   "vilas-boas-1957": "la foto de Commons es de un homónimo; Flying Saucer Review con copyright; textos de archive.org sin licencia",
+  "anchorage-jellyfish-2026": "único registro: el video de Facebook de la testigo (copyright, enlazado como tarjeta); Commons y archive.org secos",
 };
 
 // Guard: la exención no puede volverse un desván. Si un caso exento consiguió
