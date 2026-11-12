@@ -21,10 +21,10 @@
   "probability": 60,
   "mundanoType": "sin_propuesta",
   "classBasis": {
-    "es": "Ninguna fuente propone una causa. El informe de la CIA solo recoge el debate entre «un dispositivo de reconocimiento avanzado perteneciente a un gobierno extranjero» y «un objeto volador no identificado de origen extraterrestre», y la cobertura de NBC News, iHarare, New Zimbabwe y The Debrief no propone otra. Tasa base de casos parecidos: en su informe del año fiscal 2024, la AARO resolvió 118 casos, «todos ellos resueltos como objetos convencionales, como diversos tipos de globos, aves y sistemas aéreos no tripulados (UAS)», y el informe de 2023 añade que la mayoría «muestran características ordinarias de fuentes fácilmente explicables».",
-    "en": "No source proposes a cause. The CIA report only records the debate between \"an advanced reconnaissance device belonging to a foreign government\" and \"an unidentified flying object of extraterrestrial origins,\" and the coverage by NBC News, iHarare, New Zimbabwe and The Debrief proposes none. Base rate for similar cases: in its fiscal year 2024 report, AARO resolved 118 cases, \"all of which resolved to prosaic objects such as various types of balloons, birds, and unmanned aerial systems (UAS),\" and the 2023 report adds that the majority \"demonstrate ordinary characteristics of readily explainable sources.\"",
-    "source": "CIA-UAP-017 y cobertura de prensa (jun 2026); AARO — Fiscal Year 2024 Consolidated Annual Report on UAP (nov 2024) y Fiscal Year 2023 Consolidated Annual Report on UAP (oct 2023)",
-    "source_en": "CIA-UAP-017 and press coverage (Jun 2026); AARO — Fiscal Year 2024 Consolidated Annual Report on UAP (Nov 2024) and Fiscal Year 2023 Consolidated Annual Report on UAP (Oct 2023)",
+    "es": "Ninguna fuente propone una causa. El informe de la CIA solo recoge el debate entre «un dispositivo de reconocimiento avanzado perteneciente a un gobierno extranjero» y «un objeto volador no identificado de origen extraterrestre», y la prensa no propone otra. Tasa base de casos parecidos: en su informe del año fiscal 2024, que cubre de mayo de 2023 a junio de 2024, la AARO cerró 292 casos (118 dentro del periodo y 174 antes de publicarlo), todos como objetos convencionales, sobre todo globos, aves y drones. El mismo informe añade que la mayoría de sus casos siguen sin resolver «por falta de datos».",
+    "en": "No source proposes a cause. The CIA report only records the debate between \"an advanced reconnaissance device belonging to a foreign government\" and \"an unidentified flying object of extraterrestrial origins,\" and the press proposes none. Base rate for similar cases: in its fiscal year 2024 report, which covers May 2023 to June 2024, AARO closed 292 cases (118 during the period and 174 before publication), all as prosaic objects, mostly balloons, birds and drones. The same report adds that the majority of its cases \"remain unresolved due to a lack of data.\"",
+    "source": "CIA-UAP-017 y cobertura de prensa (jun 2026); AARO — Fiscal Year 2024 Consolidated Annual Report on UAP (nov 2024)",
+    "source_en": "CIA-UAP-017 and press coverage (Jun 2026); AARO — Fiscal Year 2024 Consolidated Annual Report on UAP (Nov 2024)",
     "url": "https://media.defense.gov/2024/Nov/14/2003583603/-1/-1/0/FY24-CONSOLIDATED-ANNUAL-REPORT-ON-UAP-508.PDF"
   },
   "posterior": {
@@ -108,8 +108,8 @@
     {
       "name": "AARO — «Fiscal Year 2024 Consolidated Annual Report on Unidentified Anomalous Phenomena» (nov 2024)",
       "url": "https://media.defense.gov/2024/Nov/14/2003583603/-1/-1/0/FY24-CONSOLIDATED-ANNUAL-REPORT-ON-UAP-508.PDF",
-      "note": "Tasa base: 118 casos resueltos en el periodo y 174 más cerrados después, todos como objetos convencionales (globos, aves, UAS, satélites, aeronaves).",
-      "note_en": "Base rate: 118 cases resolved in the period and 174 more closed afterwards, all as prosaic objects (balloons, birds, UAS, satellites, aircraft)."
+      "note": "Tasa base: 292 casos cerrados, todos como objetos convencionales (globos, aves, UAS, satélites, aeronaves). El resumen los reparte en 118 resueltos en el periodo y 174 cerrados antes de publicar; el cuerpo, en 49 resueltos y 243 propuestos para cierre a la espera de revisión. La mayoría de los casos siguen sin resolver por falta de datos.",
+      "note_en": "Base rate: 292 cases closed, all as prosaic objects (balloons, birds, UAS, satellites, aircraft). The summary splits them into 118 resolved in the period and 174 finalized before publication; the body, into 49 resolved and 243 recommended for closure pending peer review. Most cases remain unresolved due to a lack of data."
     },
     {
       "name": "AARO/ODNI — «Fiscal Year 2023 Consolidated Annual Report on Unidentified Anomalous Phenomena» (oct 2023), copia en la Homeland Security Digital Library",
