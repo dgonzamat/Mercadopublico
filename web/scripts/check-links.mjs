@@ -139,7 +139,13 @@ const NOT_DEAD = new Set([401, 402, 403, 406, 412, 429]);
 // o sea la familia del 403 disfrazada de 5xx. Diez documentos no desaparecen la
 // misma semana. Es la tercera vez que se amplía esta lista (403/429 → 401/406 →
 // 5xx) siempre por el mismo error, así que aquí va por rango y no por código.
-const isNotDead = (status) => NOT_DEAD.has(status) || status >= 500;
+// Y el 400 de las redes sociales de Meta (nov 2026): facebook.com responde 400 al
+// user-agent de navegador del gate y 200 a uno corto, según cómo lo perfile como
+// bot; el reel de Anchorage 2026 sigue publicado. Va acotado por dominio: un 400
+// de cualquier otro sitio sí es una URL rota.
+const SOCIAL_400 = /^https?:\/\/(www\.|m\.)?(facebook|instagram)\.com\//;
+const isNotDead = (status, url = "") =>
+  NOT_DEAD.has(status) || status >= 500 || (status === 400 && SOCIAL_400.test(url));
 const alive = new Set();
 let done = 0;
 
@@ -151,9 +157,9 @@ async function worker(queue) {
     const origins = [...urls.get(url)];
     if (r.status === 0) {
       transient.push({ url, error: r.error, origins });
-    } else if (r.status >= 400 && !isNotDead(r.status)) {
+    } else if (r.status >= 400 && !isNotDead(r.status, url)) {
       hardDead.push({ url, status: r.status, origins });
-    } else if (isNotDead(r.status)) {
+    } else if (isNotDead(r.status, url)) {
       dubious.push({ url, status: r.status, origins });
     } else {
       alive.add(url);
