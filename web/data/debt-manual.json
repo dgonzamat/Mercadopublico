@@ -180,7 +180,7 @@
       {
         "id": "P3",
         "title": "Verificación independiente de la prosa de la Armada de Chile corregida con el informe IPACO y de KONA BLUE en Skinwalker, que entraron después del verificador",
-        "state": "pendiente"
+        "state": "resuelto el 12 nov: el verificador halló dos errores en IPACO (el ángulo frente a la razón lineal, la media de 55 km) y amplió el rechazo de KONA BLUE por el DHS; corregidos contra la fuente en el PR #1290"
       },
       {
         "id": "P4",
