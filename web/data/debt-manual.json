@@ -170,7 +170,7 @@
       {
         "id": "B20",
         "title": "12 nov · Expediente FBI 62-HQ-83894 en el bucket: B2 volteó la parte escaneada en espejo, pero las demás partes no se revisaron a ojo",
-        "state": "pendiente"
+        "state": "resuelto el 12 nov: se revisaron con OCR en las cuatro orientaciones todas las partes del expediente; solo la sección 10, parte 2, tenía páginas mal orientadas, porque mezclaba páginas en espejo con páginas bien y B2 la volteó entera. Se volteó sin pérdida (jpegtran) el fondo de cada página en espejo, con la decisión página a página por OCR y, donde no había texto legible, a ojo; las páginas que ya estaban bien no se tocaron; mismas páginas y misma capa de texto; subida por la función Edge temporal (vuelta a 410 al terminar) y comprobada por md5. FLIP vaciado en tools/bucket-regray para que no se repita"
       }
     ]
   },

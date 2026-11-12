@@ -30,8 +30,12 @@ PPI, BLUR, Q = 115, 0.6, 50
 # Los escaneos de 600 ppp van a 150 y no a 115: la letra pequeña de un
 # formulario se vuelve ilegible (CLAUDE.md, Deploy).
 PPI_HIRES, HIRES_FROM = 150, 500
-# Escaneos en espejo (texto y sellos invertidos), comprobados a ojo.
-FLIP = {"65_hs1-834228961_62-hq-83894_section_10__part2of2.pdf"}
+# Escaneos en espejo (texto y sellos invertidos), comprobados a ojo. Vacío desde
+# el 12 nov 2026: la sección 10, parte 2, del expediente FBI 62-HQ-83894 tenía
+# páginas en espejo y páginas bien mezcladas, y voltearla entera (22 oct) dejó
+# mal 72 de 92; se corrigió página a página (B20). Volver a voltearla entera
+# la estropearía otra vez.
+FLIP = set()
 
 URL = os.environ.get("SUPABASE_URL", "https://hgbvdqckoosxesixhepr.supabase.co").rstrip("/")
 KEY = os.environ.get("SUPABASE_SERVICE_ROLE_KEY")
