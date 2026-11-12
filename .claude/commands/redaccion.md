@@ -71,7 +71,7 @@ Aviones muy conocidos (B-52, DC-3) pueden ir en el título si son el centro del 
 
 ## 7. Prohibido en cualquier idioma
 
-- **Voz del redactor**: «este expediente», «esta ficha» (salvo para marcar un cálculo propio: «según un cálculo de esta ficha»), «nuestro análisis».
+- **Voz del redactor**: «este expediente», «esta ficha», «nuestro análisis». Para marcar un cálculo o una lectura que no viene de una fuente: «según un cálculo hecho para este caso» / «by a calculation made for this case» (nov 2026: «esta ficha» salía 43 veces en 17 fichas y la auditoría de la página la marcó como voz del redactor).
 - **Bitácora**: «este expediente describía…», «hasta ahora se citaba…», «una versión anterior decía…». Se escribe solo lo correcto.
 - **Herramientas del redactor**: «conector», «extractor», «OCR», «barrido», «techo de extracción».
 - **Tareas pendientes**: «lo que el corpus debe…». Si algo queda abierto: «queda por ver si…».
