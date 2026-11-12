@@ -480,7 +480,8 @@
  },
  "_nota_relectura": "Hasta el 10 nov 2026 la prueba de lectura se hacía sobre una muestra de 2 fichas por lote (#1265). Lotes sin relectura completa documentada; lo lee avance.py. Al releer un lote, quítalo de aquí.",
  "relectura_sin_documentar": ["Lote 2026-11-06b", "Lote 2026-11-06c", "Lote 2026-11-06d", "Lote 2026-11-06e", "Lote 2026-11-06j", "Lote 2026-11-06k", "Lote 2026-11-08", "Lote 2026-11-08b", "Lote 2026-11-08c", "Lote 2026-11-08d", "Lote 2026-11-08e", "R2 reescritura 2026-11-08", "R3 reescritura 2026-11-09", "Lote 2026-11-09 (Tier B)"],
- "retocar_tras_relectura": ["tunguska-1908", "latakia-p8a-2016", "seoul-blue-house-1976", "canarias-ib098-1974", "northeastern-us-orbs-2021-2025", "iremi-flota-calamar-2018", "shag-harbour-1967", "portage-county-1966", "kecksburg-1965", "lubbock-lights-1951"],
+ "retocar_tras_relectura": [],
+ "retocadas_tras_relectura": ["tunguska-1908", "latakia-p8a-2016", "seoul-blue-house-1976", "canarias-ib098-1974", "northeastern-us-orbs-2021-2025", "iremi-flota-calamar-2018", "shag-harbour-1967", "portage-county-1966", "kecksburg-1965", "lubbock-lights-1951"],
  "reescribir_tras_relectura": [],
  "pendientes_lote_2026_11_06": {
   "alta_con_fuente_sin_verificar": "resuelto: las 18 aplicadas (11 tras verificar; 7 tras contrastar con la fuente la corrección del verificador)",
