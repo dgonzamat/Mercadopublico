@@ -152,18 +152,23 @@ export async function CaseDetailPage(
     .map((slug) => getEntityMorphology(slug))
     .filter((f): f is NonNullable<typeof f> => f !== undefined);
 
-  // Relacionados por lo que la ficha sí afirma: la misma explicación
-  // ordinaria (y el mismo objeto, si se precisa), el mismo país y una época
+  // Relacionados por lo que la ficha sí afirma: el mismo objeto concreto, o la
+  // misma explicación ordinaria en el mismo país, o el mismo país y una época
   // cercana. Compartir un patrón genérico (8h, 8e) enlazaba Núremberg 1561
-  // con Campeche 2004; ya no cuenta.
+  // con Campeche 2004; ya no cuenta. Tampoco la clase amplia sola con la época
+  // (nov 2026): «aeronave» o «fraude» en la misma década unía casos que el
+  // lector no ve como afines (Gran Diómedes con Nash-Fortenberry, Ariel con
+  // Meng Zhaoguo); quitó 170 enlaces en 67 fichas.
   const myKey = c.mundanoType ? prosaicKey(c.mundanoType, c.misidSubtype) : undefined;
   const similar = cases
     .filter((x) => x.id !== c.id && x.category !== "document")
     .map((x) => {
       const xKey = x.mundanoType ? prosaicKey(x.mundanoType, x.misidSubtype) : undefined;
-      const sameClass = Boolean(myKey && xKey === myKey && myKey !== "sin_propuesta");
-      const sameObject = sameClass && Boolean(c.objectDetail && x.objectDetail === c.objectDetail);
       const sameCountry = x.country === c.country;
+      const classMatch = Boolean(myKey && xKey === myKey && myKey !== "sin_propuesta");
+      const sameObject = classMatch && Boolean(c.objectDetail && x.objectDetail === c.objectDetail);
+      // La clase amplia solo cuenta junto al mismo país; el objeto concreto, solo.
+      const sameClass = classMatch && sameCountry;
       const nearYear = Math.abs(x.year_start - c.year_start) <= 10;
       return {
         caseData: x,
@@ -171,7 +176,7 @@ export async function CaseDetailPage(
         sameObject,
         sameCountry,
         nearYear,
-        score: (sameObject ? 2 : 0) + (sameClass ? 2 : 0) + (sameCountry ? 2 : 0) + (nearYear ? 1 : 0),
+        score: (sameObject ? 4 : 0) + (sameClass ? 2 : 0) + (sameCountry ? 2 : 0) + (nearYear ? 1 : 0),
       };
     })
     .filter((x) => x.score >= 3)
