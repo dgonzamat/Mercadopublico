@@ -45,7 +45,7 @@
       "description_en": "AF Form 112, report IR-700-53 of the U.S. air attaché's office in Rome, dated December 15, 1953 and signed by Lieutenant Colonel Joseph A. Woida, acting air attaché; source \"Prof. G. B. Sias,\" evaluation \"D-4,\" with a copy to the ATIAE-5 aerial phenomena section. The first page records the attaché's interview with Sias; pages 2 to 5 translate his letter of November 19, 1953 to the embassy, with the Corriere dell'Isola article of August 28, 1952, the astronomer Junkes's calculations and his personal remarks. According to the letter, Junkes, after some days of study, estimated the observers' position at 40° 45' north and 8° 33' east, and gave the Sun an azimuth of 133° 36' counted from south through west. The sketch the report lists as an enclosure is not in this five-page copy. Another copy of the same report, the one that reached the Air Technical Intelligence Center, is in Project Blue Book (folder \"1952-xx-6382799-OffPacificConsu-USA,\" pages 12 to 18), filed under August 28, 1952 together with other papers of that date, such as a B-29 crew's sighting off the Pacific coast, in a folder with no month date. It bears handwritten notes reading \"28 Aug,\" the number \"ATIC 161647\" and \"w/1 incl (A) ATISDIB 11 Feb 54,\" meaning that the sketch reached the center in February 1954; it has Sias's name blacked out in the translation and keeps the sketch, preceded by a sheet reading \"This case includes one (1) large drawing.\"",
       "source": "Agregaduría aérea de EE. UU. en Roma (PURSUE Release 07)",
       "license": "Dominio público · obra del Gobierno de EE. UU.",
-      "fallbackUrl": "https://www.war.gov/medialink/ufo/release-07/documents/DOW-UAP-D157-Air_Intelligence_Information_Report_Italy-1952.pdf",
+      "fallbackUrl": "https://archive.org/download/pursue-uap-documents-2026/Release_07/DOW-UAP-D157-Air-Intelligence_Information-Report-Italy-1953.pdf",
       "page": 3
     }
   ],
@@ -73,11 +73,11 @@
   ],
   "sources": [
     {
-      "name": "war.gov/UFO — DOW-UAP-D157, «Air Intelligence Information Report, Italy, 1952» (PURSUE Release 07)",
-      "name_en": "war.gov/UFO — DOW-UAP-D157, 'Air Intelligence Information Report, Italy, 1952' (PURSUE Release 07)",
-      "url": "https://www.war.gov/medialink/ufo/release-07/documents/DOW-UAP-D157-Air_Intelligence_Information_Report_Italy-1952.pdf",
-      "note": "Documento primario, embebido en el visor de este caso: el informe IR-700-53 del agregado aéreo en Roma, con su entrevista a Sias y la traducción de la carta del 19 de noviembre de 1953.",
-      "note_en": "Primary document, embedded in this case's viewer: report IR-700-53 of the air attaché in Rome, with his interview of Sias and the translation of the letter of November 19, 1953."
+      "name": "DOW-UAP-D157, «Air Intelligence Information Report, Italy, 1952» (PURSUE Release 07), copia del espejo de archive.org",
+      "name_en": "DOW-UAP-D157, 'Air Intelligence Information Report, Italy, 1952' (PURSUE Release 07), archive.org mirror copy",
+      "url": "https://archive.org/download/pursue-uap-documents-2026/Release_07/DOW-UAP-D157-Air-Intelligence_Information-Report-Italy-1953.pdf",
+      "note": "Documento primario, embebido en el visor de este caso: el informe IR-700-53 del agregado aéreo en Roma, con su entrevista a Sias y la traducción de la carta del 19 de noviembre de 1953. El enlace de war.gov dejó de funcionar en noviembre de 2026; esta es la copia de la misma entrega en archive.org.",
+      "note_en": "Primary document, embedded in this case's viewer: report IR-700-53 of the air attaché in Rome, with his interview of Sias and the translation of the letter of November 19, 1953. The war.gov link stopped working in November 2026; this is the copy of the same release on archive.org."
     },
     {
       "name": "Project Blue Book, carpeta «1952-xx-6382799-OffPacificConsu-USA» (archive.org)",
@@ -99,7 +99,7 @@
     "en": "Sias's letter, translated in the attaché's report: \"My first idea was that such a phenomenon was due to an aerolite.\" It is a weak, disputed proposal, not a refuted one: the witness set it aside only because it seemed \"evident\" to him that the light came from the Sun, an inference that contradicts his first impression that the object was \"very close to the earth\" and that nothing in the file tests; the astronomer Junkes calculated from that premise, untested, that it would be over a thousand kilometers away. There are no other witnesses with their own statements and no record of a fireball that night. The three to five seconds, the green-blue color, the luminous ribbon and the fading and flaring fit a bright meteor.",
     "source": "Informe IR-700-53 del agregado aéreo en Roma (15 dic 1953), traducción de la carta de G. B. Sias del 19 nov 1953",
     "source_en": "Report IR-700-53 of the air attaché in Rome (15 Dec 1953), translation of G. B. Sias's letter of 19 Nov 1953",
-    "url": "https://www.war.gov/medialink/ufo/release-07/documents/DOW-UAP-D157-Air_Intelligence_Information_Report_Italy-1952.pdf"
+    "url": "https://archive.org/download/pursue-uap-documents-2026/Release_07/DOW-UAP-D157-Air-Intelligence_Information-Report-Italy-1953.pdf"
   },
   "evidenceReviewed": "2026-10-23"
 }

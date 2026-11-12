@@ -124,7 +124,10 @@ const dubious = []; // {url, status, origins} — ver NOT_DEAD: no son link rot
 // que hubiera nada que arreglar — contradiciendo la propia regla del gate, que
 // excluye el anti-bot. Medido en el issue #746: de 7 "roturas nuevas", una era
 // 406 y otra 401.
-const NOT_DEAD = new Set([401, 403, 406, 429]);
+// 402 y 412 (nov 2026): globalsecurity.org responde 402 «Payment Required» a
+// cualquier cliente automático (muro de pago) y satobs.org responde 412 desde las
+// IP de Actions y 200 desde fuera (bloqueo anti-bot). Los dos documentos existen.
+const NOT_DEAD = new Set([401, 402, 403, 406, 412, 429]);
 
 // Y TODO el rango 5xx, por la misma razón generalizada (sep 2026). Un 5xx es el
 // servidor declarando que no puede servir AHORA; nunca es una afirmación sobre
