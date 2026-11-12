@@ -5,7 +5,10 @@ import { LocaleLink } from "@/components/LocaleLink";
 /**
  * Enlaza las referencias cruzadas entre casos en la prosa. La convención es el
  * markup `[[slug]]` incrustado en los campos de texto (whatHappened, whyMatters,
- * evidence, summary), que se renderiza como un enlace "↗" al caso destino.
+ * evidence, summary), que se renderiza como un enlace «↗ Nombre» al caso destino.
+ * El nombre visible es el corto (lo que va antes de « · » en `name`): con solo
+ * «↗» el enlace era diminuto para el dedo y no decía adónde llevaba (auditoría
+ * de la página en el móvil, nov 2026). El mapa se pasa en el idioma de la página.
  *
  * Reemplaza la vieja forma numérica "(caso N)", que era texto muerto Y frágil: el
  * "N" era el `num` del caso al momento de escribir la prosa, y dejaba de coincidir
@@ -16,7 +19,7 @@ import { LocaleLink } from "@/components/LocaleLink";
  *
  * Es un helper de SERVER COMPONENT (devuelve nodos React sin JS de cliente → no
  * consume del techo de 45 client components, compatible con el static export) y
- * DATA-FREE: el mapa `slug → nombre` (solo para el title/aria-label) se pasa por
+ * DATA-FREE: el mapa `slug → nombre` (el rótulo visible y el title) se pasa por
  * parámetro, así es seguro alcanzarlo desde cualquier módulo sin arrastrar el
  * corpus al bundle cliente.
  */
@@ -38,7 +41,9 @@ export function linkCaseRefs(
     const slug = m[1];
     const start = m.index;
     if (start > last) parts.push(src.slice(last, start));
-    const name = nameBySlug.get(slug) ?? nameBySlug.get(CASE_ALIASES[slug] ?? "") ?? slug;
+    const known = nameBySlug.get(slug) ?? nameBySlug.get(CASE_ALIASES[slug] ?? "");
+    const name = known ?? slug;
+    const short = known ? known.split(" · ")[0] : null;
     parts.push(
       <LocaleLink
         key={key++}
@@ -47,7 +52,7 @@ export function linkCaseRefs(
         aria-label={name}
         className="whitespace-nowrap font-medium text-accent underline decoration-accent/40 underline-offset-2 transition-colors hover:decoration-accent"
       >
-        ↗
+        {short ? `↗ ${short}` : "↗"}
       </LocaleLink>,
     );
     last = start + m[0].length;

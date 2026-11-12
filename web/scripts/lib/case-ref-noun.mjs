@@ -1,7 +1,8 @@
 // Enlaces entre casos usados como sustantivo. `linkCaseRefs` (lib/caseRefs.tsx)
-// dibuja cada `[[slug]]` solo como «↗» y deja el nombre del caso en el title,
-// así que «por el de [[x]]» o «como mostró la AARO en [[x]] y GoFast» se lee
-// «por el de ↗» y la frase queda sin sustantivo. La auditoría de noviembre de
+// dibujaba cada `[[slug]]` solo como «↗», así que «por el de [[x]]» o «como
+// mostró la AARO en [[x]] y GoFast» se leía «por el de ↗» y la frase quedaba sin
+// sustantivo. Desde nov 2026 el enlace muestra el nombre corto del caso, pero la
+// frase sigue debiendo nombrar el caso por sí misma. La auditoría de noviembre de
 // 2026 lo encontró en Burgos 1975, el golfo de Omán y los cohetes fantasma de
 // Finlandia. Lo comparten E57 (audit-consistency) y su prueba unitaria.
 

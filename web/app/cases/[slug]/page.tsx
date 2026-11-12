@@ -28,7 +28,8 @@ export function generateStaticParams() {
 // "[[slug]]" que linkCaseRefs enlaza en la prosa. Se construye una vez a nivel de
 // módulo desde el corpus ya importado (server component), así el helper se
 // mantiene data-free y sin coste por render.
-const NAME_BY_SLUG = new Map(cases.map((c) => [c.id, c.name_en ?? c.name]));
+const NAME_BY_SLUG_ES = new Map(cases.map((c) => [c.id, c.name]));
+const NAME_BY_SLUG_EN = new Map(cases.map((c) => [c.id, c.name_en ?? c.name]));
 
 // Grafo INVERSO de citas: para cada caso, qué otros casos lo citan en su prosa vía
 // el markup "[[slug]]" (el mismo que linkCaseRefs enlaza hacia adelante). El grafo
@@ -318,13 +319,13 @@ export async function CaseDetailPage(
           const sum = splitLead(locale === "es" ? c.summary : c.summary_en ?? c.summary, 450);
           return (
             <div className="space-y-3">
-              <p className={summaryClass}>{linkCaseRefs(sum.lead, NAME_BY_SLUG)}</p>
+              <p className={summaryClass}>{linkCaseRefs(sum.lead, (locale === "es" ? NAME_BY_SLUG_ES : NAME_BY_SLUG_EN))}</p>
               {sum.rest && (
                 <details className="group">
                   <summary className="cursor-pointer text-sm text-accent">
                     <T locale={locale} es="Seguir leyendo el resumen" en="Read the rest of the summary" />
                   </summary>
-                  <p className="mt-2 text-lg leading-relaxed text-text">{linkCaseRefs(sum.rest, NAME_BY_SLUG)}</p>
+                  <p className="mt-2 text-lg leading-relaxed text-text">{linkCaseRefs(sum.rest, (locale === "es" ? NAME_BY_SLUG_ES : NAME_BY_SLUG_EN))}</p>
                 </details>
               )}
             </div>
@@ -431,7 +432,7 @@ export async function CaseDetailPage(
                           : "text-lg leading-relaxed text-text md:text-xl"
                       }
                     >
-                      {linkCaseRefs(para, NAME_BY_SLUG)}
+                      {linkCaseRefs(para, NAME_BY_SLUG_ES)}
                     </p>
                   </div>
                 ))}
@@ -450,7 +451,7 @@ export async function CaseDetailPage(
                           : "text-lg leading-relaxed text-text md:text-xl"
                       }
                     >
-                      {linkCaseRefs(para, NAME_BY_SLUG)}
+                      {linkCaseRefs(para, NAME_BY_SLUG_EN)}
                     </p>
                   ))}
                 </div>
@@ -472,7 +473,7 @@ export async function CaseDetailPage(
               <div lang="es" data-lang="es" className="space-y-6">
                 {c.whyMatters.split("\n\n").map((para, i) => (
                   <p key={i} className={wmClass}>
-                    {linkCaseRefs(para, NAME_BY_SLUG)}
+                    {linkCaseRefs(para, NAME_BY_SLUG_ES)}
                   </p>
                 ))}
               </div>
@@ -481,7 +482,7 @@ export async function CaseDetailPage(
               <div lang="en" data-lang="en" className="space-y-6">
                 {(c.whyMatters_en ?? c.whyMatters).split("\n\n").map((para, i) => (
                   <p key={i} className={wmClass}>
-                    {linkCaseRefs(para, NAME_BY_SLUG)}
+                    {linkCaseRefs(para, NAME_BY_SLUG_EN)}
                   </p>
                 ))}
               </div>
@@ -527,8 +528,8 @@ export async function CaseDetailPage(
                       </span>
                       <span>
                         <T locale={locale}
-                          es={linkCaseRefs(item, NAME_BY_SLUG)}
-                          en={linkCaseRefs(c.evidence_en?.[i] ?? item, NAME_BY_SLUG)}
+                          es={linkCaseRefs(item, NAME_BY_SLUG_ES)}
+                          en={linkCaseRefs(c.evidence_en?.[i] ?? item, NAME_BY_SLUG_EN)}
                         />
                       </span>
                     </li>

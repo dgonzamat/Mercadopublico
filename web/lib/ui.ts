@@ -46,8 +46,11 @@ export const TIER_META: Record<TierKey, {
     color: "text-tierB",
     bg: "bg-tierB/10",
     border: "border-tierB/40",
-    description: "Evidencia limitada: un solo testigo, un testimonio recogido años después o un relato sin documentación primaria de la época",
-    description_en: "Limited evidence: a single witness, testimony gathered years later, or an account without contemporary primary documentation",
+    // «Basta una»: la lista se leía como si el caso cumpliera las tres, y en
+    // fichas con muchos testigos (Yukón 1996, 22) parecía decir que hubo uno
+    // solo (auditoría de la página en el móvil, nov 2026).
+    description: "Evidencia limitada: no llega a lo que pide el Tier A. Basta una de estas condiciones: un solo testimonio (o varios testigos que lo vieron juntos), testimonios recogidos años después o un relato sin documentación primaria de la época",
+    description_en: "Limited evidence: it falls short of what Tier A requires. Any one of these is enough: a single testimony (or several witnesses who saw it together), testimony gathered years later, or an account without contemporary primary documentation",
   },
 };
 
