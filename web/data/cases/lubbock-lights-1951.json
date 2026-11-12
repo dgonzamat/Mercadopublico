@@ -16,7 +16,7 @@
   "tier": "A",
   "mundanoType": "misid",
   "epistemicStatus": "documented",
-  "probability": 21,
+  "probability": 17,
   "summary": "Desde el 25 de agosto de 1951 y durante varias semanas, profesores del Texas Tech College vieron cruzar sobre Lubbock, en segundos, formaciones de luces azul verdosas. El 30 de agosto, el estudiante Carl Hart Jr. tomó cinco fotos de una formación en «V» que publicó LIFE. Edward Ruppelt, jefe del programa Blue Book, pensó primero en aves y luego se retractó; según él, todos los avistamientos quedaron como «desconocidos», salvo un blanco de radar atribuido a la meteorología. Tras hablar en 1959 el astrónomo J. Allen Hynek con un profesor, un informe de la Fuerza Aérea dio como causa probable aves migratorias que reflejaban el alumbrado.",
   "summary_en": "Starting on August 25, 1951, and for several weeks, Texas Tech College professors saw formations of blue-green lights cross the sky over Lubbock in seconds. On August 30, student Carl Hart Jr. took five photographs of a \"V\" formation that LIFE published. Edward Ruppelt, head of the Air Force's Project Blue Book, first thought of birds and later took it back; by his account, every sighting officially remained an \"unknown\" except a radar target put down to weather conditions. After astronomer J. Allen Hynek spoke in 1959 with one of the professors, an Air Force report gave the probable cause as migrating birds reflecting the street lights.",
   "patterns": [],
@@ -76,12 +76,12 @@
     }
   ],
   "posterior": {
-    "mundano_natural": 0.74,
+    "mundano_natural": 0.78,
     "humana_clasificada": 0.03,
     "adversaria": 0.02,
     "nohumano_encubierto": 0.01,
-    "nohumano_abierto": 0.06,
-    "indet": 0.14
+    "nohumano_abierto": 0.04,
+    "indet": 0.12
   },
   "primaryDocument": {
     "role": "documento",
@@ -96,11 +96,11 @@
   "misidSubtype": "animal",
   "objectDetail": "ave",
   "classBasis": {
-    "es": "La conclusión de la Fuerza Aérea, en un informe posterior a 1959, es que «la causa probable» fueron aves que reflejaban el alumbrado público: un profesor de Texas Tech dijo a J. Allen Hynek que había estudiado el caso y determinado «que eran definitivamente aves», y el informe añade que, como los chorlos no suelen volar en grupos de más de seis o siete, los patos «son más probables». En contra: Ruppelt escribió en 1956 que al principio pensó en aves, pero que se equivocó, y que oficialmente todos los avistamientos, salvo el eco de radar, son «desconocidos»; el jefe de biología de Texas Tech, J. C. Cross, y el profesor Grayson Mead rechazaron las aves.",
-    "en": "The Air Force conclusion, in a report later than 1959, is that birds reflecting the street lights \"were the probable cause\": a Texas Tech professor told J. Allen Hynek he had studied the case and \"determined that they were definitely birds,\" and the report adds that since plovers do not usually fly in formations of more than six or seven, \"ducks become the more probable.\" Against it: Ruppelt wrote in 1956 that he first thought of birds \"but I was wrong,\" and that officially all the sightings except the radar return \"are unknowns\"; Texas Tech biology head J. C. Cross and professor Grayson Mead rejected birds.",
-    "source": "Informe de la Fuerza Aérea citado por Lubbock Lights (lubbocklights.com), «Part of the reason we're named Lubbock Lights honors '51 UFO mystery»; E. J. Ruppelt, The Report on Unidentified Flying Objects (1956), cap. 8",
-    "source_en": "Air Force report cited by Lubbock Lights (lubbocklights.com), “Part of the reason we're named Lubbock Lights honors '51 UFO mystery”; E. J. Ruppelt, The Report on Unidentified Flying Objects (1956), ch. 8",
+    "es": "La conclusión de la Fuerza Aérea, en un informe posterior a 1959, es que «la causa probable» fueron aves que reflejaban el alumbrado público: uno de los profesores dijo a J. Allen Hynek que había estudiado el caso y determinado «que eran definitivamente aves», y como los chorlos no suelen volar en grupos de más de seis o siete, los patos «son más probables». Ruppelt reunió en 1951 indicios a favor (los chorlos de Lamesa; las esposas veían las luces desde casa y los profesores no, lejos de ella) y en 1956 descartó las aves, pero dio las luces de los profesores por «un fenómeno natural muy corriente», sin decir cuál. En contra de las aves: J. C. Cross y Grayson Mead, de Texas Tech.",
+    "en": "The Air Force conclusion, in a report later than 1959, is that birds reflecting the street lights \"were the probable cause\": a professor told J. Allen Hynek he had studied the case and \"determined that they were definitely birds,\" and since plovers do not usually fly in formations of more than six or seven, \"ducks become the more probable.\" In 1951 Ruppelt gathered clues in favor (the Lamesa plovers; the wives saw the lights from home while the professors, away from it, did not), and in 1956 he dropped birds but called the professors' lights \"a very commonplace and easily explainable natural phenomenon,\" without saying which. Against birds: J. C. Cross and Grayson Mead, of Texas Tech.",
+    "source": "Informe de la Fuerza Aérea citado por Lubbock Lights (lubbocklights.com), «Part of the reason we're named Lubbock Lights honors '51 UFO mystery»; E. J. Ruppelt, The Report on Unidentified Flying Objects (1956), cap. 8; Wikipedia, Lubbock Lights",
+    "source_en": "Air Force report cited by Lubbock Lights (lubbocklights.com), “Part of the reason we're named Lubbock Lights honors '51 UFO mystery”; E. J. Ruppelt, The Report on Unidentified Flying Objects (1956), ch. 8; Wikipedia, Lubbock Lights",
     "url": "https://lubbocklights.com/part-of-the-reason-were-named-lubbock-lights-honors-51-ufo-mystery-heres-the-story-of-how-answer-died-with-investigator/"
   },
-  "evidenceReviewed": "2026-11-06"
+  "evidenceReviewed": "2026-11-12"
 }
