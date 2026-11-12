@@ -1,8 +1,9 @@
 """Datos del panel «Avance de deuda UAP Codex» (https://claude.ai/artifact/6sozxb2TnQwbpFVfWVj71v).
-Escribe <salida>/{categorias,fichas_tier,sondas}.json midiendo en el momento: fichas remediadas
+Escribe <salida>/{categorias,fichas_tier,sondas,deuda_pendiente}.json midiendo en el momento: fichas remediadas
 (tools/reescritura/remediacion/remediadas.json), hallazgos de página del tablero (dash.py →
-auditdash/transversales.json), decisiones del dueño (deuda/deuda.json) y las sondas E57, E59
-y E60 de audit-consistency.mjs. Uso: avance.py <salida>"""
+auditdash/transversales.json), decisiones del dueño (deuda/deuda.json), las sondas E57, E59
+y E60 de audit-consistency.mjs, y la deuda pendiente (avisos de la auditoría y partidas abiertas
+de web/data/debt-manual.json). Uso: avance.py <salida>"""
 import json, glob, collections, subprocess, re, sys, os, datetime
 REPO = "/home/user/Mercadopublico"
 D = "/home/user/Mercadopublico/tools/reescritura/datos"  # datos de la auditoría del 6 nov 2026, versionados
@@ -41,6 +42,8 @@ dec = [r for r in deuda if r["categoria"] == "Decisiones del dueño" or r["estad
 d_pend = sum(r["estado"] == "Espera al dueño" for r in dec)
 
 # Sondas: lo que miden hoy y lo que medían al nacer (5 nov 2026).
+# El índice de búsqueda es gitignored: sin generarlo, E40 avisa de que está ciega y se contaría como deuda.
+subprocess.run(["node", "scripts/build-search-index.mjs"], cwd=f"{REPO}/web", capture_output=True)
 audit = subprocess.run(["node", "scripts/audit-consistency.mjs"], cwd=f"{REPO}/web", capture_output=True, text=True).stdout
 def n(pat):
     m = re.search(pat, audit)
@@ -83,10 +86,26 @@ categorias = [
      "hecho": len(dec) - d_pend, "en_curso": 0, "pendiente": d_pend, "aplazado": 0,
      "nota": "Decisiones editoriales registradas en el panel de deuda."},
 ]
+
+# Deuda pendiente, partida por partida: los avisos que la auditoría da hoy y las partidas abiertas de
+# web/data/debt-manual.json (las que el informe de deuda lleva a mano). Una partida está cerrada si su
+# estado empieza por hecho, resuelto, revertido, cerrado o «no generado».
+CERRADA = ("hecho", "resuelto", "revertido", "cerrad", "no generado")
+manual = json.load(open(f"{REPO}/web/data/debt-manual.json"))
+items = [(g["group"], it) for g in manual for it in g["items"]]
+deuda_pend = [{"partida": it["id"], "que": it["title"], "estado": it["state"], "origen": f"Deuda a mano · {grp}"}
+              for grp, it in items if not it["state"].lower().startswith(CERRADA)]
+for l in re.findall(r"^\s+\S+:\d+\s+((E\d+[a-z]?)\s.*)$", audit.split("WARNINGS")[-1], re.M) if "WARNINGS" in audit else []:
+    deuda_pend.append({"partida": l[1], "que": l[0], "estado": "aviso de la auditoría", "origen": "audit-consistency"})
+categorias.append({"categoria": "Deuda pendiente", "unidad": "partidas",
+                   "hecho": len(items) - sum(d["origen"].startswith("Deuda a mano") for d in deuda_pend), "en_curso": 0,
+                   "pendiente": len(deuda_pend), "aplazado": 0,
+                   "nota": "Partidas del informe de deuda (npm run deuda): las que se llevan a mano y los avisos de la auditoría. El detalle está en la tabla de abajo."})
 for c in categorias:
     c["total"] = c["hecho"] + c["en_curso"] + c["pendiente"] + c["aplazado"]
     c["medido"] = hoy
 json.dump(categorias, open(f"{out}/categorias.json", "w"), ensure_ascii=False, indent=1)
 json.dump(tiers, open(f"{out}/fichas_tier.json", "w"), ensure_ascii=False, indent=1)
 json.dump(sondas, open(f"{out}/sondas.json", "w"), ensure_ascii=False, indent=1)
-print(json.dumps({"categorias": categorias, "tiers": tiers, "sondas": sondas}, ensure_ascii=False, indent=1))
+json.dump(deuda_pend, open(f"{out}/deuda_pendiente.json", "w"), ensure_ascii=False, indent=1)
+print(json.dumps({"categorias": categorias, "tiers": tiers, "sondas": sondas, "deuda_pendiente": deuda_pend}, ensure_ascii=False, indent=1))

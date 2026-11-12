@@ -161,6 +161,16 @@
         "id": "B18",
         "title": "27 oct · D105 (Washington y Tremonton 1952): la capa de texto del PDF confirma las citas de la ficha salvo dos, que el OCR no deja leer: «orders of magnitude greater» en la carta de Hollywood y la fecha de la carta de Weber (la respuesta de Fournet la fecha el 2 de agosto y la ficha de Washington dice el 2 de septiembre)",
         "state": "resuelto el 31 oct: las cartas salieron del espejo de archive.org (pursue-uap-documents-2026); la carta de Hollywood dice «many times greater» y la de Weber está fechada el 2 de agosto; corregido en Washington 1952"
+      },
+      {
+        "id": "B19",
+        "title": "12 nov · Cifras de la AARO que no cuadran: harare-airport-2008 y three-objects-fixed-formation-2023 citan, para el mismo informe del año fiscal 2024, un número distinto de casos resueltos. Comprobar contra el informe cuál corresponde a qué periodo y unificar o explicar",
+        "state": "pendiente"
+      },
+      {
+        "id": "B20",
+        "title": "12 nov · Expediente FBI 62-HQ-83894 en el bucket: B2 volteó la parte escaneada en espejo, pero las demás partes no se revisaron a ojo",
+        "state": "pendiente"
       }
     ]
   },
