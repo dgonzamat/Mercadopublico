@@ -190,10 +190,6 @@ export function CasePosterior({
   const rows = expandedHypotheses([{ posterior, mundanoType, misidSubtype }], { keepIndet: true });
   const pk = prosaicKey(mundanoType, misidSubtype);
   const detail = objectDetailDef(pk, objectDetail);
-  const withDetail = (r: { key: string; label: string; labelEn: string }) =>
-    detail && r.key === pk
-      ? { es: `${r.label} · ${shortLabel(detail.label)}`, en: `${r.labelEn} · ${shortLabel(detail.labelEn)}` }
-      : { es: r.label, en: r.labelEn };
   // Porcentajes por resto mayor: la leyenda promete "suma 100%", así que los
   // enteros impresos tienen que sumarlo — redondear cada fila por separado daba
   // 101%. Las filas vienen ordenadas de mayor a menor: la primera es la más
@@ -248,7 +244,7 @@ export function CasePosterior({
   // 70 %, cuando valía un 32 % (Yellow Sea, 138 fichas; nov 2026). Por debajo
   // de la mitad se nombra con su propio porcentaje.
   const majority = top.pct >= 50;
-  const topPct = `${top.pct}\u00a0%`;
+  const topPct = `${top.pct}%`;
   const topText =
     top.key === "indet"
       ? { es: "La evidencia no alcanza para decidir entre las explicaciones", en: "The evidence is not enough to decide between the explanations" }
@@ -256,9 +252,11 @@ export function CasePosterior({
         ? top.key === "sin_propuesta"
           ? { es: `La que más pesa: una causa ordinaria que nadie ha identificado (${topPct})`, en: `The largest share: an ordinary cause no one has identified (${topPct})` }
           : { es: `La que más pesa: ${topName.es.toLowerCase()} (${topPct})`, en: `The largest share: ${topName.en.toLowerCase()} (${topPct})` }
+        // Con su propia cifra también por encima de la mitad: bajo «71 %» se leía
+        // que el contagio colectivo valía 71 % cuando valía 68 % (zepelines, nov 2026).
         : top.key === "sin_propuesta"
-          ? { es: "Lo más probable es una causa ordinaria que nadie ha identificado", en: "Most likely an ordinary cause that no one has identified" }
-          : { es: `Explicación más probable: ${topName.es.toLowerCase()}`, en: `Most likely explanation: ${topName.en.toLowerCase()}` };
+          ? { es: `Lo más probable es una causa ordinaria que nadie ha identificado (${topPct})`, en: `Most likely an ordinary cause that no one has identified (${topPct})` }
+          : { es: `Explicación más probable: ${topName.es.toLowerCase()} (${topPct})`, en: `Most likely explanation: ${topName.en.toLowerCase()} (${topPct})` };
   return (
     <div>
       <p className="flex items-baseline gap-2 text-text">
@@ -298,17 +296,30 @@ export function CasePosterior({
       <div className="mt-4 grid grid-cols-1 gap-x-8 gap-y-4 sm:grid-cols-2">
         {groups.map((g) => {
           return (
-            <div key={g.id} className="space-y-1">
-              <p className="border-b border-text/15 pb-1 text-xs text-muted">
+            <div key={g.id} className="space-y-2">
+              {/* Subtotal en el encabezado: el desglose suma a la vista hacia la cifra grande. */}
+              <p className="flex justify-between border-b border-text/15 pb-1 text-xs text-muted">
                 <T es={g.es} en={g.en} locale={locale} />
+                <span className="tabular-nums">{g.sub}%</span>
               </p>
+              {/* Una barrita por fila en lugar del cuadro de color: la barra de arriba
+                  ya no tiene un tramo por explicación, así que el cuadro era la leyenda
+                  de algo que no se veía. Letra de texto y no mono 11 px; las filas en
+                  0 % van en el gris normal (con /70 daban 3,17:1, bajo AA). */}
               {g.items.map((r) => (
-                <div key={r.key} className={`flex items-baseline justify-between pl-3 font-mono text-[11px] ${r.zero ? "text-muted/70" : ""}`}>
-                  <span className={`flex items-center gap-1.5 ${r.zero ? "" : "text-text"}`}>
-                    <span className={`inline-block h-2 w-2 shrink-0 ${r.zero ? "opacity-30" : ""}`} style={{ backgroundColor: r.color }} />
-                    <T es={r.zero ? r.label : withDetail(r).es} en={r.zero ? r.labelEn : withDetail(r).en} locale={locale} />
+                <div key={r.key} className="grid grid-cols-[1fr_4rem_2.5rem] items-center gap-3 text-[13px] leading-snug">
+                  <span className={r.zero ? "text-muted" : "text-text"}>
+                    <T es={r.label} en={r.labelEn} locale={locale} />
+                    {!r.zero && detail && r.key === pk && (
+                      <span className="block text-xs text-muted">
+                        <T es={shortLabel(detail.label)} en={shortLabel(detail.labelEn)} locale={locale} />
+                      </span>
+                    )}
                   </span>
-                  {r.zero ? <span>0%</span> : <span className="text-muted" {...(g === lead ? { "data-lead-row": "" } : {})} data-pct="">{r.pct}%</span>}
+                  <span className="h-1.5 w-full overflow-hidden rounded-full bg-text/10" aria-hidden>
+                    <span className="block h-full rounded-full" style={{ width: `${r.pct}%`, backgroundColor: r.color }} />
+                  </span>
+                  {r.zero ? <span className="text-right tabular-nums text-muted">0%</span> : <span className="text-right tabular-nums text-muted" {...(g === lead ? { "data-lead-row": "" } : {})} data-pct="">{r.pct}%</span>}
                 </div>
               ))}
             </div>
