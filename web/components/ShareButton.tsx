@@ -87,7 +87,9 @@ export function ShareButton({
       onClick={onShare}
       className="inline-flex min-h-[44px] shrink-0 items-center gap-2 border-2 border-text px-4 font-mono text-xs uppercase tracking-widest text-text hover:bg-text hover:text-bg focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-accent"
     >
-      <span aria-hidden>↗</span>
+      {/* Ícono de compartir y no «↗»: en el resto del sitio la flecha marca un
+          enlace que abre otra web, y este botón abre la hoja de compartir. */}
+      {copied ? <CheckIcon /> : <ShareIcon />}
       {copied ? (
         <T es="¡Link copiado!" en="Link copied!" locale={localeProp} />
       ) : (
