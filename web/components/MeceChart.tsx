@@ -257,27 +257,60 @@ export function CasePosterior({
         : top.key === "sin_propuesta"
           ? { es: `Lo más probable es una causa ordinaria que nadie ha identificado\u00a0(${topPct})`, en: `Most likely an ordinary cause that no one has identified\u00a0(${topPct})` }
           : { es: `Explicación más probable: ${topName.es.toLowerCase()}\u00a0(${topPct})`, en: `Most likely explanation: ${topName.en.toLowerCase()}\u00a0(${topPct})` };
+  const explanationLeads = majority && top.key !== "indet";
+  const leadName =
+    top.key === "sin_propuesta"
+      ? { es: "causa ordinaria sin identificar", en: "ordinary cause, unidentified" }
+      : { es: topName.es.toLowerCase(), en: topName.en.toLowerCase() };
   return (
     <div>
-      <p className="flex items-baseline gap-2 text-text">
-        <span className="text-4xl font-semibold tabular-nums" data-lead="">{lead.sub}%</span>
-        <span className="text-base"><T es={lead.lead.es} en={lead.lead.en} locale={locale} /></span>
-      </p>
-      <p className="mb-3 mt-1 text-base text-text"><T es={topText.es} en={topText.en} locale={locale} /></p>
+      {/* Cuando una explicación pasa de la mitad, la cifra grande es la suya y el
+          grupo baja a la segunda línea: la cifra grande pertenece siempre a lo que
+          se nombra a su lado (decisión del dueño, 13 nov 2026; 265 fichas). Por
+          debajo de la mitad, o si manda lo indeterminado, sigue mandando el grupo. */}
+      {explanationLeads ? (
+        <>
+          <p className="flex items-baseline gap-2 text-text">
+            <span className="text-4xl font-semibold tabular-nums">{top.pct}%</span>
+            <span className="text-base"><T es={leadName.es} en={leadName.en} locale={locale} /></span>
+          </p>
+          <p className="mb-3 mt-1 text-base text-text">
+            <T es="La explicación más probable. En total, " en="The most likely explanation. In total, " locale={locale} />
+            <span className="tabular-nums" data-lead="">{lead.sub}%</span>{" "}
+            <T es={lead.lead.es} en={lead.lead.en} locale={locale} />.
+          </p>
+        </>
+      ) : (
+        <>
+          <p className="flex items-baseline gap-2 text-text">
+            <span className="text-4xl font-semibold tabular-nums" data-lead="">{lead.sub}%</span>
+            <span className="text-base"><T es={lead.lead.es} en={lead.lead.en} locale={locale} /></span>
+          </p>
+          <p className="mb-3 mt-1 text-base text-text"><T es={topText.es} en={topText.en} locale={locale} /></p>
+        </>
+      )}
       {/* Un tramo por grupo, del color de la explicación que más pesa en él. Con
           un tramo por explicación salían franjas de 1–2 % sin leyenda, que solo
           el color distinguía y que el `title` no mostraba en el móvil (nov 2026);
           el reparto fino queda en el desplegable. */}
       <div
         role="img"
-        aria-label={groups.map((g) => `${g.sub}% ${locale === "es" ? g.lead.es : g.lead.en}`).join(", ")}
+        aria-label={(explanationLeads ? `${top.pct}% ${locale === "es" ? leadName.es : leadName.en}; ` : "") + groups.map((g) => `${g.sub}% ${locale === "es" ? g.lead.es : g.lead.en}`).join(", ")}
         className="flex h-4 w-full gap-1 overflow-hidden"
       >
         {groups.map((g) => {
           const main = g.items.find((r) => !r.zero);
-          return main ? (
-            <div key={g.id} className="h-full min-w-0 rounded-sm" style={{ flex: `${Math.round(g.items.reduce((a, r) => a + r.count, 0) * 1000)} 1 0%`, backgroundColor: main.color }} />
-          ) : null;
+          if (!main) return null;
+          const total = g.items.reduce((a, r) => a + r.count, 0);
+          // Con la explicación como cifra grande, su tramo se separa del resto del
+          // grupo (mismo color, más claro) para que la barra muestre esa cifra.
+          const rest = explanationLeads && g === lead ? total - main.count : 0;
+          return (
+            <div key={g.id} className="flex h-full min-w-0 overflow-hidden rounded-sm" style={{ flex: `${Math.round(total * 1000)} 1 0%` }}>
+              <div className="h-full" style={{ flex: `${Math.round((total - rest) * 1000)} 1 0%`, backgroundColor: main.color }} />
+              {rest > 0 && <div className="h-full" style={{ flex: `${Math.round(rest * 1000)} 1 0%`, backgroundColor: main.color, opacity: 0.4 }} />}
+            </div>
+          );
         })}
       </div>
       {/* Leyenda de la barra sin cifras: la única cifra visible es la de arriba. */}
