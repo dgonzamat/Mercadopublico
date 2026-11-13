@@ -15,6 +15,7 @@ type Props = {
   fallbackUrl?: string;
   /** Página inicial declarada por el documento (`page`). */
   initialPage?: number;
+  locale: "es" | "en";
 };
 
 /**
@@ -24,7 +25,8 @@ type Props = {
  * Se carga vía dynamic(ssr:false) desde PdfDoc, así que pdfjs solo corre en el
  * navegador. Capas de texto/anotación desactivadas: solo render visual.
  */
-export default function PdfPages({ src, fallbackUrl, initialPage }: Props) {
+export default function PdfPages({ src, fallbackUrl, initialPage, locale }: Props) {
+  const t = (es: string, en: string) => (locale === "es" ? es : en);
   const [numPages, setNumPages] = useState(0);
   const [page, setPage] = useState(() => startPage(initialPage));
   const [width, setWidth] = useState(0);
@@ -45,14 +47,14 @@ export default function PdfPages({ src, fallbackUrl, initialPage }: Props) {
   if (failed) {
     return (
       <div className="flex h-[60vh] min-h-[360px] w-full flex-col items-center justify-center gap-3 border border-text/15 bg-surface-2 text-center">
-        <p className="text-sm text-muted">No se pudo renderizar el PDF aquí.</p>
+        <p className="text-sm text-muted">{t("No se pudo renderizar el PDF aquí.", "The PDF couldn’t be displayed here.")}</p>
         <a
           href={fallbackUrl ?? src}
           target="_blank"
           rel="noopener noreferrer"
           className="rounded-full bg-accent px-4 py-2 text-sm text-bg"
         >
-          Abrir documento
+          {t("Abrir documento", "Open document")}
         </a>
       </div>
     );
@@ -70,12 +72,12 @@ export default function PdfPages({ src, fallbackUrl, initialPage }: Props) {
           onLoadError={() => setFailed(true)}
           loading={
             <div className="flex h-[60vh] min-h-[360px] items-center justify-center text-sm text-muted">
-              Cargando PDF…
+              {t("Cargando PDF…", "Loading PDF…")}
             </div>
           }
           error={
             <div className="flex h-[60vh] min-h-[360px] items-center justify-center text-sm text-muted">
-              Error al cargar el PDF.
+              {t("Error al cargar el PDF.", "The PDF couldn’t load.")}
             </div>
           }
         >
@@ -86,7 +88,7 @@ export default function PdfPages({ src, fallbackUrl, initialPage }: Props) {
             renderAnnotationLayer={false}
             loading={
               <div className="flex h-[60vh] min-h-[360px] items-center justify-center text-sm text-muted">
-                Cargando página…
+                {t("Cargando página…", "Loading page…")}
               </div>
             }
           />
@@ -99,7 +101,7 @@ export default function PdfPages({ src, fallbackUrl, initialPage }: Props) {
             onClick={() => setPage((p) => Math.max(1, p - 1))}
             disabled={page <= 1}
             className="px-2 py-1 disabled:opacity-30"
-            aria-label="Página anterior"
+            aria-label={t("Página anterior", "Previous page")}
           >
             ‹
           </button>
@@ -111,7 +113,7 @@ export default function PdfPages({ src, fallbackUrl, initialPage }: Props) {
             onClick={() => setPage((p) => Math.min(numPages, p + 1))}
             disabled={page >= numPages}
             className="px-2 py-1 disabled:opacity-30"
-            aria-label="Página siguiente"
+            aria-label={t("Página siguiente", "Next page")}
           >
             ›
           </button>
