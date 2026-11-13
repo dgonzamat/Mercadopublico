@@ -43,6 +43,18 @@
       "fallbackUrl": "https://archive.org/details/1961-04-8678617-EagleRiver-Wisconsin",
       "description": "Extracto de 15 páginas del caso de Eagle River en Project Blue Book, el programa de la Fuerza Aérea que registraba los avistamientos. Contiene la tarjeta de registro del Proyecto 10073, el resumen del ATIC del 2 de junio de 1961, la carta de la FDA del 8 de junio, el memorando de J. Allen Hynek, el informe del 676.º Escuadrón de Radar con el relato y el bosquejo de Simonton, la denuncia ante el sheriff del condado de Vilas del 21 de abril y el análisis del laboratorio de física de la División de Sistemas Aeronáuticos del 10 de mayo.",
       "description_en": "Fifteen-page extract of the Eagle River case in Project Blue Book, the Air Force program that logged sightings. It contains the Project 10073 record card, ATIC's summary of June 2, 1961, the FDA letter of June 8, J. Allen Hynek's memorandum, the 676th Radar Squadron's report with Simonton's account and sketch, the complaint to the Vilas County sheriff of April 21 and the Aeronautical Systems Division physics laboratory analysis of May 10."
+    },
+    {
+      "role": "contexto",
+      "src": "/pursue/eagle-river-1961-casa-simonton.jpg",
+      "type": "image",
+      "title": "Contexto · la casa de Joe Simonton en Eagle River, fotografiada para el expediente de Blue Book (1961)",
+      "title_en": "Context · Joe Simonton's house in Eagle River, photographed for the Blue Book file (1961)",
+      "source": "Project Blue Book, Fuerza Aérea de EE.UU. · Wikimedia Commons",
+      "license": "Dominio público · obra del Gobierno de EE. UU. (según Commons)",
+      "fallbackUrl": "https://commons.wikimedia.org/wiki/File:Project_Bluebook_image_of_Simonton_home_Eagle_River_Wisconsin_2.jpg",
+      "description": "Fotografía del expediente de Blue Book de la casa de Simonton, a las afueras de Eagle River, con un hombre de pie frente a la fachada. Muestra el patio donde, según su relato, aterrizó el platillo. Commons la atribuye a la investigación de la Fuerza Aérea; no consta que sea una prueba del suceso.",
+      "description_en": "Photograph from the Blue Book file of Simonton's house on the outskirts of Eagle River, with a man standing in front of the facade. It shows the yard where, by his account, the saucer landed. Commons attributes it to the Air Force investigation; it is not evidence of the event itself."
     }
   ],
   "classBasis": {
