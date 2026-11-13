@@ -106,12 +106,12 @@
     }
   ],
   "misidSubtype": "aeronave",
-  "evidenceReviewed": "2026-11-12",
+  "evidenceReviewed": "2026-11-13",
   "classBasis": {
-    "es": "Análisis de Blue Book: «Por la descripción y otra información disponible parece que el testigo observó una aeronave»; dado el denso tráfico aéreo de Nueva York, «a falta de información adicional que elimine una posible evaluación como aeronave, el caso se registra como tal». Pero el mensaje del Sector de Defensa Aérea de Nueva York en el mismo expediente lo calificó de «UNKNOWN».",
-    "en": "Blue Book analysis: \"From the description and other available information it appears that the witness observed an aircraft\"; given the dense New York air traffic, \"without additional information to eliminate a possible aircraft evaluation the case is being carried as such.\" But the New York Air Defense Sector's message in the same file rated it \"UNKNOWN.\"",
-    "source": "Project Blue Book — expediente «Wayne, New Jersey», 11 ene 1966 (ficha «Probable Aircraft» y análisis)",
-    "source_en": "Project Blue Book — file “Wayne, New Jersey,” 11 Jan 1966 (“Probable Aircraft” record card and analysis)",
+    "es": "Análisis de Blue Book: «Por la descripción y otra información disponible parece que el testigo observó una aeronave»; dado el denso tráfico aéreo de Nueva York, «a falta de información adicional que elimine una posible evaluación como aeronave, el caso se registra como tal». En contra pesa lo que anota el propio expediente: el testigo vio que la luz se detenía y se movía de lado, y el oficial de inteligencia del sector de defensa aérea la dejó en «desconocido» sin proponer causa. A favor, la batería Nike 75 vio una luz que se movía a velocidad de avión. Para el aviso sobre el embalse, Blue Book propuso Saturno y Júpiter.",
+    "en": "Blue Book analysis: \"From the description and other available information it appears that the witness observed an aircraft\"; given the dense New York air traffic, \"without additional information to eliminate a possible aircraft evaluation the case is being carried as such.\" Against it, the file itself records that the witness saw the light stop and move sideways, and the air defense sector's intelligence officer left it as \"unknown\" without proposing a cause. In its favor, Nike fire unit 75 saw a light moving at aircraft speed. For the report about the reservoir, Blue Book proposed Saturn and Jupiter.",
+    "source": "Project Blue Book — expediente «Wayne, New Jersey», 11 ene 1966 (tarjeta «Probable Aircraft», análisis y télex del Sector de Defensa Aérea de Nueva York)",
+    "source_en": "Project Blue Book — file “Wayne, New Jersey,” 11 Jan 1966 (“Probable Aircraft” record card, analysis and New York Air Defense Sector telex)",
     "url": "https://archive.org/details/1966-01-8722320-Wayne-NewJersey"
   }
 }
