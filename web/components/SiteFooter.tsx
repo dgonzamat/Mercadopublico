@@ -7,6 +7,7 @@ import { PinterestLink } from "@/components/PinterestLink";
 import { LocaleLink, chromeLocale } from "@/components/LocaleLink";
 import { T } from "@/components/T";
 import { BUILD_VERSION } from "@/lib/version";
+import { Eyebrow } from "@/lib/typography";
 
 /**
  * Footer del sitio. Client component para servir UN idioma por URL en el chrome
@@ -23,9 +24,10 @@ export function SiteFooter() {
       <div className="mx-auto max-w-6xl px-4 py-12 space-y-10">
         <div className="grid gap-10 md:grid-cols-[2fr_1fr_1fr]">
           <div className="space-y-3">
-            <p className="font-mono text-xs uppercase tracking-widest text-muted">
+            {/* Rótulos con Eyebrow, como el resto del sitio desde oct 2026 (no en mayúsculas). */}
+            <Eyebrow>
               <T es="El proyecto" en="The project" locale={locale} />
-            </p>
+            </Eyebrow>
             <p className="font-display text-2xl leading-snug text-text md:text-3xl">
               <T
                 locale={locale}
@@ -63,9 +65,7 @@ export function SiteFooter() {
           {/* aria-label en el idioma de la URL (sin espejo: inglés) y sin
               «principal», que competía con la navegación del encabezado. */}
           <nav aria-label={locale === "es" ? "Pie de página: atlas" : "Footer: atlas"} className="space-y-2">
-            <p className="font-mono text-xs uppercase tracking-widest text-muted">
-              Atlas
-            </p>
+            <Eyebrow>Atlas</Eyebrow>
             <ul className="space-y-1">
               <FooterLink href="/cases" es="Casos" en="Cases" locale={locale} />
               <FooterLink
@@ -85,9 +85,9 @@ export function SiteFooter() {
           </nav>
 
           <nav aria-label={locale === "es" ? "Pie de página: más" : "Footer: more"} className="space-y-2">
-            <p className="font-mono text-xs uppercase tracking-widest text-muted">
+            <Eyebrow>
               <T es="Más" en="More" locale={locale} />
-            </p>
+            </Eyebrow>
             <ul className="space-y-1">
               <FooterLink href="/blog" es="Blog" en="Blog" locale={locale} />
               <FooterLink href="/researchers" es="Actores" en="Actors" locale={locale} />
@@ -119,7 +119,7 @@ export function SiteFooter() {
         </div>
 
         <p
-          className="border-t border-text/15 pt-6 font-mono text-xs uppercase tracking-widest text-muted"
+          className="border-t border-text/15 pt-6 font-mono text-xs text-muted"
           title={locale === "es" ? "Versión desplegada (número de PR mergeado)" : "Deployed version (merged PR number)"}
         >
           <T
