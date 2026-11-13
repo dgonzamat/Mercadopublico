@@ -145,6 +145,18 @@
       "fallbackUrl": "https://commons.wikimedia.org/wiki/File%3AMajestic%2012%20Part%201%20of%201%20(page%204%20crop).jpg",
       "description": "Los documentos «Operation Majestic-12» aparecieron entre 1984 y 1987: un rollo de película anónimo recibido por Jaime Shandera en diciembre de 1984, difundido después por él, William Moore y Stanton Friedman. Describen un comité secreto de doce altos funcionarios creado por Truman en 1947 para gestionar ovnis estrellados y cuerpos recuperados, en relación con Roswell. En 1988 dos oficinas del FBI recibieron copias y la AFOSI respondió que eran «completamente falsos» (bogus), veredicto que consta en el expediente de The Vault. Examinadores hallaron una firma de Truman calcada de una carta de 1947, formatos de fecha anacrónicos y membrete inconsistente. No prueban ni el comité ni los ovnis; su origen exacto sigue sin esclarecer.",
       "description_en": "The \"Operation Majestic-12\" documents surfaced between 1984 and 1987: an anonymous roll of film received by Jaime Shandera in December 1984, later circulated by him, William Moore and Stanton Friedman. They describe a secret committee of twelve senior officials created by Truman in 1947 to manage crashed UFOs and recovered bodies, in connection with Roswell. In 1988 two FBI offices received copies and the AFOSI replied that they were \"completely bogus,\" a verdict recorded in the FBI's Vault file. Examiners found a Truman signature traced from a 1947 letter, anachronistic date formats and inconsistent letterhead. They prove neither the committee nor the UFOs; their exact origin remains unclear."
+    },
+    {
+      "role": "documento",
+      "src": "/pursue/roswell-1947-roswell-daily-record-1947-07-08.jpg",
+      "type": "image",
+      "title": "Portada del Roswell Daily Record del 8 de julio de 1947: «RAAF Captures Flying Saucer On Ranch in Roswell Region»",
+      "title_en": "Roswell Daily Record front page, July 8, 1947: \"RAAF Captures Flying Saucer On Ranch in Roswell Region\"",
+      "source": "Roswell Daily Record · Wikimedia Commons",
+      "license": "Dominio público (copyright no renovado, publicado en EE. UU. en 1947)",
+      "fallbackUrl": "https://commons.wikimedia.org/wiki/File:Roswell_Daily_Record._July_8,_1947._RAAF_Captures_Flying_Saucer_On_Ranch_in_Roswell_Region._Top_of_front_page.jpg",
+      "description": "Parte superior de la portada del periódico local de Roswell el día en que la base anunció el hallazgo. Es la primera versión pública del suceso: el titular da por capturado un «platillo volador» y el subtítulo aclara que no se revelan detalles del objeto. El diario recoge el comunicado de la base de Roswell, que horas después el cuartel de Fort Worth corrigió: lo recuperado era un globo meteorológico.",
+      "description_en": "Top of the front page of Roswell's local newspaper on the day the base announced the find. It is the first public version of the event: the headline says a \"flying saucer\" was captured and the subhead says no details of the object were revealed. The paper carries the Roswell base's announcement, which Fort Worth headquarters corrected hours later: what had been recovered was a weather balloon."
     }
   ]
 }
