@@ -1,21 +1,14 @@
 "use client";
 
-import { useEffect } from "react";
 import Link from "next/link";
 import { T } from "@/components/T";
-
-// Cada deploy publica gh-pages con force_orphan y borra los chunks del
-// anterior. Una pestaña abierta antes del deploy pide el chunk viejo del
-// mapa, recibe 404 y cae aquí con un ChunkLoadError. reset() vuelve a pedir
-// el mismo archivo borrado, así que solo una recarga lo arregla (nov 2026).
-const isChunkError = (e: Error) =>
-  e.name === "ChunkLoadError" || /Failed to load chunk|Loading chunk/i.test(e.message);
-const RELOAD_KEY = "atlas-chunk-reload";
+import { useChunkReload } from "@/lib/chunkReload";
 
 // Error boundary del segmento /atlas. Si el mapa (Leaflet, client-only)
 // lanza un error en runtime, mostramos un fallback con reintento en vez de
 // una pantalla en blanco. No captura un crash de proceso por OOM, pero sí
-// cualquier excepción de render del cliente.
+// cualquier excepción de render del cliente. Si el error es un chunk borrado
+// por un deploy, recarga (ver lib/chunkReload).
 export default function AtlasError({
   error,
   reset,
@@ -23,21 +16,7 @@ export default function AtlasError({
   error: Error & { digest?: string };
   reset: () => void;
 }) {
-  const chunk = isChunkError(error);
-
-  useEffect(() => {
-    if (!chunk) return;
-    // Recarga automática, pero no dos veces en 30 s: si el chunk falta
-    // también en la versión nueva, se queda el aviso con su botón.
-    try {
-      const last = Number(sessionStorage.getItem(RELOAD_KEY) ?? 0);
-      if (Date.now() - last < 30_000) return;
-      sessionStorage.setItem(RELOAD_KEY, String(Date.now()));
-    } catch {
-      return;
-    }
-    window.location.reload();
-  }, [chunk]);
+  const chunk = useChunkReload(error);
 
   return (
     <div className="flex min-h-[50vh] flex-col items-center justify-center gap-4 py-16 text-center">
