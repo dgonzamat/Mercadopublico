@@ -9,6 +9,7 @@ const COUNTRY_EN: Record<string, string> = {
   Argelia: "Algeria",
   Argentina: "Argentina",
   Australia: "Australia",
+  Austria: "Austria",
   Bolivia: "Bolivia",
   Brasil: "Brazil",
   Bélgica: "Belgium",
