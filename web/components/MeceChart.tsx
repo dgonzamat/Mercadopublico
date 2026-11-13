@@ -266,14 +266,21 @@ export function CasePosterior({
         <span className="text-base"><T es={lead.lead.es} en={lead.lead.en} locale={locale} /></span>
       </p>
       <p className="mb-3 mt-1 text-base text-text"><T es={topText.es} en={topText.en} locale={locale} /></p>
-      <div className="flex h-4 w-full gap-1 overflow-hidden">
-        {groups.map((g) => (
-          <div key={g.id} className="flex h-full min-w-0 overflow-hidden rounded-sm" style={{ flex: `${Math.round(g.items.reduce((a, r) => a + r.count, 0) * 1000)} 1 0%` }}>
-            {g.items.filter((r) => !r.zero).map((r) => (
-              <div key={r.key} title={`${r.label}: ${r.pct}%`} style={{ flex: `${Math.round(r.count * 1000)} 1 0%`, backgroundColor: r.color }} />
-            ))}
-          </div>
-        ))}
+      {/* Un tramo por grupo, del color de la explicación que más pesa en él. Con
+          un tramo por explicación salían franjas de 1–2 % sin leyenda, que solo
+          el color distinguía y que el `title` no mostraba en el móvil (nov 2026);
+          el reparto fino queda en el desplegable. */}
+      <div
+        role="img"
+        aria-label={groups.map((g) => `${g.sub}% ${locale === "es" ? g.lead.es : g.lead.en}`).join(", ")}
+        className="flex h-4 w-full gap-1 overflow-hidden"
+      >
+        {groups.map((g) => {
+          const main = g.items.find((r) => !r.zero);
+          return main ? (
+            <div key={g.id} className="h-full min-w-0 rounded-sm" style={{ flex: `${Math.round(g.items.reduce((a, r) => a + r.count, 0) * 1000)} 1 0%`, backgroundColor: main.color }} />
+          ) : null;
+        })}
       </div>
       {/* Leyenda de la barra sin cifras: la única cifra visible es la de arriba. */}
       <div className="mt-1 flex w-full gap-1 text-xs text-muted">
