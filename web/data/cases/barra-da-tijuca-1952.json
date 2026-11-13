@@ -95,6 +95,30 @@
   },
   "documents": [
     {
+      "role": "prueba",
+      "type": "image",
+      "source": "Arquivo Nacional (Brasil), ARX.0.0.1",
+      "license": "Dominio público (fotografías publicadas en 1952; Ley 9.610, art. 44, protección de 70 años)",
+      "fallbackUrl": "https://imagem.sian.an.gov.br/acervo/derivadas/BR_DFANBSB_ARX/0/0/0001/BR_DFANBSB_ARX_0_0_0001_d0001de0001.pdf",
+      "src": "/pursue/barra-da-tijuca-1952-fotos-2-3.jpg",
+      "title": "Las fotos n.º 2 y n.º 3 de Ed Keffel, como las guarda el Arquivo Nacional (7 may 1952)",
+      "title_en": "Ed Keffel's photos no. 2 and no. 3, as held by the National Archives (May 7, 1952)",
+      "description": "Página 2 de 5 del expediente ARX.0.0.1: las fotos n.º 2 y n.º 3 de Ed Keffel, con las notas a mano en portugués de la Fuerza Aérea Brasileña. En cada una el objeto es una pequeña elipse oscura sobre un cielo despejado; en la n.º 3 aparece sobre la cima de una montaña. Son las copias de la Fuerza Aérea, no las páginas de la revista.",
+      "description_en": "Page 2 of 5 of file ARX.0.0.1: Ed Keffel's photos no. 2 and no. 3, with the Brazilian Air Force's handwritten notes in Portuguese. In each, the object is a small dark ellipse in a clear sky; in no. 3 it appears above a mountain peak. These are the Air Force's copies, not the magazine pages."
+    },
+    {
+      "role": "prueba",
+      "type": "image",
+      "source": "Arquivo Nacional (Brasil), ARX.0.0.1",
+      "license": "Dominio público (fotografías publicadas en 1952; Ley 9.610, art. 44, protección de 70 años)",
+      "fallbackUrl": "https://imagem.sian.an.gov.br/acervo/derivadas/BR_DFANBSB_ARX/0/0/0001/BR_DFANBSB_ARX_0_0_0001_d0001de0001.pdf",
+      "src": "/pursue/barra-da-tijuca-1952-ampliaciones-3-1.jpg",
+      "title": "Ampliaciones de las fotos n.º 3 y n.º 1: el objeto de cerca (Arquivo Nacional)",
+      "title_en": "Enlargements of photos no. 3 and no. 1: the object up close (National Archives)",
+      "description": "Página 5 de 5 del expediente ARX.0.0.1: la Fuerza Aérea Brasileña amplió el objeto de la foto n.º 3, que se ve como un disco con un anillo interior, y el de la foto n.º 1, visto de perfil. Cada ampliación lleva notas a mano en portugués.",
+      "description_en": "Page 5 of 5 of file ARX.0.0.1: the Brazilian Air Force enlarged the object in photo no. 3, which looks like a disc with an inner ring, and the one in photo no. 1, seen edge-on. Each enlargement carries handwritten notes in Portuguese."
+    },
+    {
       "role": "documento",
       "src": "/pursue/barra-da-tijuca-1952-arx-0001.pdf",
       "type": "pdf",

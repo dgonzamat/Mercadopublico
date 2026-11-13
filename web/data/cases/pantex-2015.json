@@ -86,6 +86,18 @@
   ],
   "documents": [
     {
+      "role": "prueba",
+      "src": "/pursue/pantex-2015-imagenes-sandia.jpg",
+      "type": "image",
+      "title": "Pantex · imágenes del objeto procesadas por Sandia (página 6 del informe)",
+      "title_en": "Pantex · Sandia-processed images of the object (report page 6)",
+      "description": "Página 6 del informe de incidente de Pantex: dos imágenes del objeto que, según el rótulo «Sandia National Labs Enhanced Images of the Object», mejoraron los Laboratorios Nacionales Sandia. Se ven como manchas oscuras sin forma definida. La página no indica con qué equipo se tomaron y el informe no las interpreta.",
+      "description_en": "Page 6 of the Pantex incident report: two images of the object that, per the page label «Sandia National Labs Enhanced Images of the Object», Sandia National Laboratories enhanced. They show as dark blobs with no defined shape. The page does not say what equipment took them, and the report does not interpret them.",
+      "source": "Department of Energy / Pantex · CNS (PURSUE Release 02)",
+      "license": "Dominio público · obra del Gobierno de EE. UU.",
+      "fallbackUrl": "https://www.war.gov/medialink/ufo/052226/release_02/documents/DOE-UAP-D001_PANTEX_Image.pdf"
+    },
+    {
       "role": "contexto",
       "src": "/pursue/pantex-2015-context.jpg",
       "type": "image",

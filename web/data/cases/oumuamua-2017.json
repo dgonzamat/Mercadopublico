@@ -106,5 +106,19 @@
     "source_en": "Bergner, J. B. and Seligman, D. Z. — “Acceleration of 1I/‘Oumuamua from radiolytically produced H2 in H2O ice,” Nature 615 (2023)",
     "url": "https://www.nature.com/articles/s41586-022-05687-w"
   },
-  "evidenceReviewed": "2026-10-02"
+  "evidenceReviewed": "2026-10-02",
+  "documents": [
+    {
+      "role": "prueba",
+      "src": "/pursue/oumuamua-2017-gemini-compuesta.jpg",
+      "type": "image",
+      "title": "ʻOumuamua visto por el telescopio Gemini Sur (27 oct 2017): el punto del centro",
+      "title_en": "ʻOumuamua seen by the Gemini South telescope (Oct 27, 2017): the dot at the center",
+      "description": "Imagen real del objeto, no una ilustración: composición en color de 192 exposiciones que el telescopio Gemini Sur (Chile) tomó el 27 de octubre de 2017 con tres filtros visibles y dos infrarrojos, 1,6 horas en total. El procesado quitó las estrellas del fondo; ʻOumuamua es el punto rojizo del centro. El campo abarca unos 5.000 km a la distancia del objeto.",
+      "description_en": "A real image of the object, not an illustration: a color composite of 192 exposures taken by the Gemini South telescope (Chile) on October 27, 2017 through three visible and two near-infrared filters, 1.6 hours in total. The processing removed the background stars; ʻOumuamua is the reddish dot at the center. The field spans about 3,100 miles (5,000 km) at the object's distance.",
+      "source": "Universidad de Alaska Anchorage, con datos de Gemini Sur GMOS de Meech et al. · Gemini Observatory/AURA/NSF (NOIRLab)",
+      "license": "CC BY 4.0",
+      "fallbackUrl": "https://noirlab.edu/public/images/gemini1710b/"
+    }
+  ]
 }
