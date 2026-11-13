@@ -92,6 +92,18 @@
   ],
   "documents": [
     {
+      "role": "prueba",
+      "type": "image",
+      "src": "/pursue/antofagasta-fach922-2023-fotograma-428.jpg",
+      "title": "Fotograma 428 de la filmación de la tripulación del FACh922: dos luces sobre fondo negro",
+      "title_en": "Frame 428 of the FACh922 crew's footage: two lights on a black background",
+      "description": "Figura 1 del informe del SEFAA: el fotograma 428, de los 1.110 que tiene la filmación que entregó la tripulación, con dos objetos luminosos pequeños sobre un fondo oscuro. El rótulo del cuadro lo identifica como «1936-1 Fotograma 428».",
+      "description_en": "Figure 1 of the SEFAA report: frame 428, out of the 1,110 in the footage the crew handed in, with two small luminous objects on a dark background. The frame's label identifies it as «1936-1 Fotograma 428».",
+      "source": "SEFAA, Dirección General de Aeronáutica Civil de Chile, caso n.º 1936",
+      "license": "Informe oficial publicado por el SEFAA; el sitio no declara licencia, se reproduce con crédito a la fuente",
+      "fallbackUrl": "https://sefaa.dgac.gob.cl/wp-content/uploads/2024/01/CASO-N%C2%B01936-24112023.pdf"
+    },
+    {
       "role": "contexto",
       "src": "/pursue/antofagasta-fach922-2023-ckoirama.jpg",
       "type": "image",
@@ -105,13 +117,15 @@
     },
     {
       "role": "documento",
-      "src": "https://sefaa.dgac.gob.cl/wp-content/uploads/2024/01/CASO-N%C2%B01936-24112023.pdf",
-      "type": "link",
+      "src": "/pursue/sefaa-caso-1936-antofagasta-fach922-2023.pdf",
+      "type": "pdf",
       "title": "Informe del SEFAA (DGAC de Chile), caso n.º 1936, FL350 sobre Antofagasta, 23 de noviembre de 2023",
       "title_en": "SEFAA (Chilean DGAC) report, case no. 1936, FL350 over Antofagasta, 23 November 2023",
       "description": "Informe de cinco páginas de la sección oficial de fenómenos aéreos anómalos. Recoge el testimonio de la tripulación del FACh922, reproduce un cuadro del video, sitúa al avión con el radar, reconstruye el cielo y el tránsito espacial y concluye que lo filmado fueron tres satélites Starlink y los restos del Fengyun 1C. El aviso da el vuelo como FACh922, de Iquique (SCDA) a Santiago (SCEL) a 35.000 pies, y su posición inicial como «Vertical SCFA, rumbo 190» (SCFA es el aeropuerto de Antofagasta). La figura de radar rotula las dos trazas sobre el aeropuerto «SOBERBI 371 370» y «AVISPA 79 A025», ninguna con el indicativo FACH922. La posición fijada para la filmación es 23° 47′ 51″ S y 70° 22′ 34″ O, a 11.278 metros. El texto numera «3096» a un Starlink que la figura rotula Starlink-3696 (51965); los otros dos aparecen como Starlink-30109 y Starlink-2102, y el Fengyun 1C como «FENGYUN 1C DEB (37047)», un fragmento catalogado. La figura del tránsito espacial lleva el sello «23-12-2023 03:20:55Z», un mes después del suceso, aunque su pie y la posición del Sol corresponden al 23 de noviembre. La cabecera dice «Resuelto», una etiqueta que el SEFAA pone también en casos que cierra como «Relato». Obra de la DGAC sin licencia abierta: se enlaza, no se aloja.",
       "description_en": "Five-page report by the official anomalous aerial phenomena section. It records the testimony of the FACh922 crew, reproduces a frame of the video, places the aircraft with radar, reconstructs the sky and the space traffic, and concludes that what was filmed was three Starlink satellites and the remains of Fengyun 1C. The notice gives the flight as FACh922, from Iquique (SCDA) to Santiago (SCEL) at 35,000 feet, and its initial position as \"Vertical SCFA, heading 190\" (SCFA is Antofagasta airport). The radar figure labels the two tracks over the airport \"SOBERBI 371 370\" and \"AVISPA 79 A025,\" neither with the call sign FACH922. The position fixed for the filming is 23° 47′ 51″ S, 70° 22′ 34″ W, at 11,278 meters. The text numbers as \"3096\" a Starlink that the figure labels Starlink-3696 (51965); the other two appear as Starlink-30109 and Starlink-2102, and Fengyun 1C as \"FENGYUN 1C DEB (37047),\" a cataloged fragment. The space-traffic figure carries the stamp \"23-12-2023 03:20:55Z,\" a month after the event, although its caption and the Sun position correspond to November 23. The header says \"Resolved,\" a label SEFAA also puts on cases it closes as a \"Report\" (Relato). A DGAC work with no open license, so it is linked rather than hosted.",
-      "source": "SEFAA, Dirección General de Aeronáutica Civil de Chile"
+      "source": "SEFAA, Dirección General de Aeronáutica Civil de Chile",
+      "fallbackUrl": "https://sefaa.dgac.gob.cl/wp-content/uploads/2024/01/CASO-N%C2%B01936-24112023.pdf",
+      "license": "Informe oficial publicado por el SEFAA; el sitio no declara licencia, se reproduce con crédito a la fuente"
     }
   ],
   "classBasis": {

@@ -91,13 +91,15 @@
     },
     {
       "role": "documento",
-      "src": "https://sefaa.dgac.gob.cl/wp-content/uploads/2024/08/CASO-N%C2%B0-1984-23042024-1.pdf",
-      "type": "link",
+      "src": "/pursue/sefaa-caso-1984-caleta-lobos-2024.pdf",
+      "type": "pdf",
       "title": "Informe del SEFAA (DGAC de Chile), caso n.º 1984, al sur de caleta Lobos, 22 de abril de 2024",
       "title_en": "SEFAA (Chilean DGAC) report, case no. 1984, south of Caleta Lobos, 22 April 2024",
       "description": "Informe de cinco páginas de la sección oficial de fenómenos aéreos anómalos. Resume las comunicaciones de los vuelos ARG1364, SKU333 y un tercer vuelo con Iquique, sitúa a los aviones con el radar, reconstruye el horizonte de cada uno y lista 28 satélites bajo las Tres Marías, y considera el caso probablemente explicado como reflejos en objetos espaciales. Obra de la DGAC sin licencia abierta: se enlaza, no se aloja.",
       "description_en": "Five-page report by the official anomalous aerial phenomena section. It summarizes the communications of flights ARG1364, SKU333 and a third flight with Iquique, places the aircraft with radar, reconstructs each one's horizon and lists 28 satellites below the Three Marys, and considers the case probably explained as reflections off space objects. A DGAC work with no open license, so it is linked rather than hosted.",
-      "source": "SEFAA, Dirección General de Aeronáutica Civil de Chile"
+      "source": "SEFAA, Dirección General de Aeronáutica Civil de Chile",
+      "fallbackUrl": "https://sefaa.dgac.gob.cl/wp-content/uploads/2024/08/CASO-N%C2%B0-1984-23042024-1.pdf",
+      "license": "Informe oficial publicado por el SEFAA; el sitio no declara licencia, se reproduce con crédito a la fuente"
     }
   ],
   "classBasis": {

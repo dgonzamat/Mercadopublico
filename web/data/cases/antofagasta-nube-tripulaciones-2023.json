@@ -92,6 +92,30 @@
   ],
   "documents": [
     {
+      "role": "prueba",
+      "type": "image",
+      "src": "/pursue/antofagasta-nube-tripulaciones-2023-imagen-1967-1.jpg",
+      "title": "El objeto en la imagen 1967-1 del informe del SEFAA, junto a su versión en negativo",
+      "title_en": "The object in image 1967-1 of the SEFAA report, next to its negative version",
+      "description": "Figura 4 del informe del SEFAA: a la izquierda, el objeto en la imagen 1967-1, una masa luminosa blanca sobre fondo negro; a la derecha, la misma imagen procesada en negativo para ver su forma. Es una de las cuatro imágenes del caso 1967 que el informe amplía.",
+      "description_en": "Figure 4 of the SEFAA report: on the left, the object in image 1967-1, a white luminous mass on a black background; on the right, the same image processed as a negative to show its shape. It is one of the four images from case 1967 that the report enlarges.",
+      "source": "SEFAA, Dirección General de Aeronáutica Civil de Chile, caso n.º 1918",
+      "license": "Informe oficial publicado por el SEFAA; el sitio no declara licencia, se reproduce con crédito a la fuente",
+      "fallbackUrl": "https://sefaa.dgac.gob.cl/wp-content/uploads/2024/03/CASO-N%C2%B01918-08092023-1.pdf"
+    },
+    {
+      "role": "prueba",
+      "type": "image",
+      "src": "/pursue/antofagasta-nube-tripulaciones-2023-imagen-1967-2.jpg",
+      "title": "El objeto en la imagen 1967-2 del informe del SEFAA, junto a su versión en negativo",
+      "title_en": "The object in image 1967-2 of the SEFAA report, next to its negative version",
+      "description": "Figura 5 del informe del SEFAA: el objeto en la imagen 1967-2, más grande y con un punto brillante en su borde superior, junto a la misma imagen procesada en negativo.",
+      "description_en": "Figure 5 of the SEFAA report: the object in image 1967-2, larger and with a bright dot on its upper edge, next to the same image processed as a negative.",
+      "source": "SEFAA, Dirección General de Aeronáutica Civil de Chile, caso n.º 1918",
+      "license": "Informe oficial publicado por el SEFAA; el sitio no declara licencia, se reproduce con crédito a la fuente",
+      "fallbackUrl": "https://sefaa.dgac.gob.cl/wp-content/uploads/2024/03/CASO-N%C2%B01918-08092023-1.pdf"
+    },
+    {
       "role": "contexto",
       "src": "/pursue/antofagasta-nube-tripulaciones-2023-minotaur.jpg",
       "type": "image",
@@ -105,13 +129,15 @@
     },
     {
       "role": "documento",
-      "src": "https://sefaa.dgac.gob.cl/wp-content/uploads/2024/03/CASO-N%C2%B01918-08092023-1.pdf",
-      "type": "link",
+      "src": "/pursue/sefaa-caso-1918-antofagasta-2023.pdf",
+      "type": "pdf",
       "title": "Informe del SEFAA (DGAC de Chile), caso n.º 1918, versión final, 7 de septiembre de 2023",
       "title_en": "SEFAA (Chilean DGAC) report, case no. 1918, final version, 7 September 2023",
       "description": "Informe de ocho páginas de la sección oficial de fenómenos aéreos anómalos, reemitido en febrero de 2024. Transcribe el audio entre el control de Iquique y los vuelos SKU329 y JAT026, sitúa a los aviones con el radar, reproduce ampliadas las cuatro fotos peritadas del caso 1967 (el informe del comandante) y concluye que lo visto fue el cohete Long March 4C del satélite Yaogan 33-03. Su primera versión, de octubre de 2023, atribuía lo mismo a vuelos militares. Tiene erratas e incoherencias de detalle: el vuelo aparece como SKU329, SKU239 y SKU234, y el punto de la ruta como PUNAP y PUNAB; el parte dice que pasaron menos de 10 segundos entre los avisos de los dos aviones, pero en la transcripción median unos 20 segundos entre la segunda descripción del SKU329 y la del JAT026, y dos minutos desde su primera llamada. El comandante recordó que la controladora le dijo que el único tráfico estaba 300 millas al sur y era de LATAM, pero la grabación dice 113 millas y el avión que respondió era de JetSMART; su relato dice que el otro tráfico vio la nube «al oeste de su posición», mientras que el JAT026 dijo que pasaba «sobre nosotros», y el resumen de su informe dice que la observación «duró por más de un minuto», mientras que el relato habla de unos 30 minutos. Obra de la DGAC sin licencia abierta: se enlaza, no se aloja.",
       "description_en": "Eight-page report by the official anomalous aerial phenomena section, reissued in February 2024. It transcribes the audio between Iquique control and flights SKU329 and JAT026, places the aircraft with radar, reproduces enlarged the four examined photos from case 1967 (the captain's report) and concludes that what was seen was the Long March 4C rocket of the Yaogan 33-03 satellite. Its first version, of October 2023, attributed the same sighting to military flights. It has errors and inconsistencies of detail: the flight appears as SKU329, SKU239 and SKU234, and the waypoint as PUNAP and PUNAB; the handwritten report says fewer than 10 seconds passed between the two aircraft's reports, but in the transcript about 20 seconds separate SKU329's second description from JAT026's, and two minutes from its first call. The captain recalled the controller telling him the only traffic was 300 miles to the south and belonged to LATAM, but the recording says 113 miles and the aircraft that answered was JetSMART's; his account says the other traffic saw the cloud \"to the west of its position,\" whereas JAT026 said it was passing \"over us,\" and the summary of his report says the sighting \"lasted more than a minute,\" whereas the account speaks of about 30 minutes. A DGAC work with no open license, so it is linked rather than hosted.",
-      "source": "SEFAA, Dirección General de Aeronáutica Civil de Chile"
+      "source": "SEFAA, Dirección General de Aeronáutica Civil de Chile",
+      "fallbackUrl": "https://sefaa.dgac.gob.cl/wp-content/uploads/2024/03/CASO-N%C2%B01918-08092023-1.pdf",
+      "license": "Informe oficial publicado por el SEFAA; el sitio no declara licencia, se reproduce con crédito a la fuente"
     }
   ],
   "classBasis": {

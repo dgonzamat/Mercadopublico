@@ -90,13 +90,15 @@
     },
     {
       "role": "documento",
-      "src": "https://sefaa.dgac.gob.cl/wp-content/uploads/2023/09/CASO-N%C2%B0899-04122018.pdf",
-      "type": "link",
+      "src": "/pursue/sefaa-caso-899-iremi-2018.pdf",
+      "type": "pdf",
       "title": "Informe del SEFAA (DGAC de Chile), caso n.º 899, IREMI (UL302), reporte del 4 de diciembre de 2018",
       "title_en": "SEFAA (Chilean DGAC) report, case no. 899, IREMI (UL302), reported 4 December 2018",
       "description": "Informe de tres páginas de la sección oficial de fenómenos aéreos anómalos. Reproduce las dos fotografías del comandante, transcribe la conversación por radio entre el LXP2371 y el control oceánico, enumera las consultas a la autoridad marítima, la Armada y la policía, y concluye que fue una faena pesquera de alta mar, «probablemente de barcos de pesca de calamar gigante». Obra de la DGAC sin licencia abierta: se enlaza, no se aloja.",
       "description_en": "Three-page report by the official anomalous aerial phenomena section. It reproduces the captain's two photographs, transcribes the radio exchange between LXP2371 and oceanic control, lists the queries to the maritime authority, the Navy and the police, and concludes that it was a high-seas fishing operation, \"probably giant-squid fishing boats.\" A DGAC work with no open license, so it is linked rather than hosted.",
-      "source": "SEFAA, Dirección General de Aeronáutica Civil de Chile"
+      "source": "SEFAA, Dirección General de Aeronáutica Civil de Chile",
+      "fallbackUrl": "https://sefaa.dgac.gob.cl/wp-content/uploads/2023/09/CASO-N%C2%B0899-04122018.pdf",
+      "license": "Informe oficial publicado por el SEFAA; el sitio no declara licencia, se reproduce con crédito a la fuente"
     }
   ],
   "classBasis": {
