@@ -74,6 +74,42 @@
   },
   "documents": [
     {
+      "role": "prueba",
+      "type": "image",
+      "src": "/pursue/rex-heflin-1965-foto-ampliada-ftd.jpg",
+      "source": "Proyecto Blue Book (NARA), vía archive.org",
+      "license": "Dominio público · obra del Gobierno de EE. UU.",
+      "fallbackUrl": "https://archive.org/details/1965-08-6978001-SantaAna-California-9654-",
+      "title": "Una de las fotos de Heflin, ampliada por la División de Tecnología Extranjera de la Fuerza Aérea",
+      "title_en": "One of Heflin's photos, enlarged by the Air Force's Foreign Technology Division",
+      "description": "Copia ampliada de una de las fotografías que Rex Heflin tomó el 3 de agosto de 1965 en Santa Ana, California, hecha por la División de Tecnología Extranjera (FTD) de la Fuerza Aérea, con el rótulo «For official use only». Se ve un campo llano con un edificio blanco al fondo y, en el cielo, el objeto como una pequeña forma oscura vista de perfil.",
+      "description_en": "Enlarged copy of one of the photographs Rex Heflin took on August 3, 1965 in Santa Ana, California, made by the Air Force's Foreign Technology Division (FTD) and stamped «For official use only». It shows a flat field with a white building in the background and, in the sky, the object as a small dark shape seen edge-on."
+    },
+    {
+      "role": "prueba",
+      "type": "image",
+      "src": "/pursue/rex-heflin-1965-fotos-ventanilla.jpg",
+      "source": "Proyecto Blue Book (NARA), vía archive.org",
+      "license": "Dominio público · obra del Gobierno de EE. UU.",
+      "fallbackUrl": "https://archive.org/details/1965-08-6978001-SantaAna-California-9654-",
+      "title": "Dos de las fotos de Heflin tomadas desde la camioneta, con el espejo retrovisor en el cuadro",
+      "title_en": "Two of Heflin's photos taken from the truck, with the rear-view mirror in frame",
+      "description": "Página del expediente 9654 de Project Blue Book con dos copias de las fotografías tomadas desde el vehículo de Heflin: el marco de la ventanilla y el espejo retrovisor aparecen en la imagen, y el objeto es un punto pequeño en el cielo, sobre el campo.",
+      "description_en": "Page from Project Blue Book file 9654 with two copies of the photographs taken from Heflin's vehicle: the window frame and the rear-view mirror appear in the picture, and the object is a small dot in the sky above the field."
+    },
+    {
+      "role": "documento",
+      "type": "pdf",
+      "src": "/pursue/rex-heflin-1965-blue-book-9654-fotos.pdf",
+      "source": "Proyecto Blue Book (NARA), vía archive.org",
+      "license": "Dominio público · obra del Gobierno de EE. UU.",
+      "fallbackUrl": "https://archive.org/details/1965-08-6978001-SantaAna-California-9654-",
+      "title": "Expediente 9654 de Blue Book (11 págs.): las fotos de Heflin y sus ampliaciones",
+      "title_en": "Blue Book file 9654 (11 pp.): Heflin's photos and enlargements",
+      "description": "Las 11 páginas del expediente 9654 de Project Blue Book en el espejo de archive.org: la carátula «File 9654, August 3, 1965, Santa Ana, California, 8 photos» y las copias de las fotografías, algunas ampliadas por la División de Tecnología Extranjera de la Fuerza Aérea.",
+      "description_en": "The 11 pages of Project Blue Book file 9654 on the archive.org mirror: the cover «File 9654, August 3, 1965, Santa Ana, California, 8 photos» and the copies of the photographs, some enlarged by the Air Force's Foreign Technology Division."
+    },
+    {
       "role": "documento",
       "src": "/pursue/rex-heflin-1965-blue-book.pdf",
       "type": "pdf",
