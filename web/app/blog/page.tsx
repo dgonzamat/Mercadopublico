@@ -145,10 +145,11 @@ export function BlogView({ locale }: { locale: "es" | "en" }) {
               href={`/blog/${p.id}`}
               className="group block py-6 hover:-mx-4 hover:bg-panel hover:px-4 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-accent"
             >
-              <p className="font-mono text-xs uppercase tracking-widest text-muted">
-                <time dateTime={p.date}>{p.date}</time>
-                {p.tags && p.tags.length > 0 && <span> · {p.tags.join(" · ")}</span>}
-              </p>
+              {/* Sin fecha a la vista (decisión del dueño, 13 nov 2026): el post se lee
+                  como texto vigente, no como noticia. La fecha sigue en el RSS y el JSON-LD. */}
+              {p.tags && p.tags.length > 0 && (
+                <p className="font-mono text-xs uppercase tracking-widest text-muted">{p.tags.join(" · ")}</p>
+              )}
               <h2 className="mt-2 font-display text-2xl font-medium leading-tight text-text group-hover:text-accent">
                 <T es={p.title} en={p.title_en ?? p.title} locale={locale} />
               </h2>
