@@ -95,8 +95,8 @@ export function HomeView({ locale }: { locale: "es" | "en" }) {
               <span className="font-mono text-[11px] text-bg/55">
                 <T locale={locale} es="Síguenos" en="Follow" />
               </span>
-              <InstagramLink tone="dark" />
-              <PinterestLink tone="dark" />
+              <InstagramLink tone="dark" locale={locale} />
+              <PinterestLink tone="dark" locale={locale} />
             </div>
           </div>
         </div>

@@ -10,6 +10,8 @@
 type Props = {
   tone?: "light" | "dark";
   className?: string;
+  // Idioma del aria-label; sin él, inglés (el sitio es inglés-primario).
+  locale?: "es" | "en";
 };
 
 const TONE = {
@@ -17,13 +19,13 @@ const TONE = {
   dark: "text-bg/70 hover:text-accent-bright",
 } as const;
 
-export function InstagramLink({ tone = "light", className }: Props) {
+export function InstagramLink({ tone = "light", className, locale }: Props) {
   return (
     <a
       href="https://www.instagram.com/uapcodex2026"
       target="_blank"
       rel="me noopener noreferrer"
-      aria-label="UAP Codex en Instagram (@uapcodex2026)"
+      aria-label={locale === "es" ? "UAP Codex en Instagram (@uapcodex2026)" : "UAP Codex on Instagram (@uapcodex2026)"}
       title="Instagram · @uapcodex2026"
       className={`inline-flex min-h-[44px] min-w-[44px] items-center justify-center rounded-md transition-colors ${TONE[tone]}${
         className ? ` ${className}` : ""
