@@ -158,8 +158,10 @@ export async function CaseDetailPage(
     .filter((f): f is NonNullable<typeof f> => f !== undefined);
 
   // Relacionados por lo que la ficha sí afirma: el mismo objeto concreto, o la
-  // misma explicación ordinaria en el mismo país, o el mismo país y una época
-  // cercana. Compartir un patrón genérico (8h, 8e) enlazaba Núremberg 1561
+  // misma explicación ordinaria en el mismo país. El país y la época, solos, ya
+  // no bastan (nov 2026): en EE. UU. (147 casos) «mismo país, misma década» era
+  // casi cualquier caso, y repetía lo que ya hace «Navegar por fecha» justo
+  // debajo; 95 fichas mostraban solo tarjetas así. Compartir un patrón genérico (8h, 8e) enlazaba Núremberg 1561
   // con Campeche 2004; ya no cuenta. Tampoco la clase amplia sola con la época
   // (nov 2026): «aeronave» o «fraude» en la misma década unía casos que el
   // lector no ve como afines (Gran Diómedes con Nash-Fortenberry, Ariel con
@@ -184,7 +186,7 @@ export async function CaseDetailPage(
         score: (sameObject ? 4 : 0) + (sameClass ? 2 : 0) + (sameCountry ? 2 : 0) + (nearYear ? 1 : 0),
       };
     })
-    .filter((x) => x.score >= 3)
+    .filter((x) => x.sameObject || x.sameClass)
     .sort((a, b) => b.score - a.score || Math.abs(a.caseData.year_start - c.year_start) - Math.abs(b.caseData.year_start - c.year_start))
     .slice(0, 4);
 
@@ -751,8 +753,8 @@ export async function CaseDetailPage(
           </Eyebrow>
           <p className="-mt-3 text-sm text-muted">
             <T locale={locale}
-              es="Se parecen a este por la causa probable, el país o la época."
-              en="Similar to this one by likely cause, country or period."
+              es="Casos con la misma causa probable."
+              en="Cases with the same likely cause."
             />
           </p>
           <div className="grid gap-px border-y-2 border-text bg-text sm:grid-cols-2">
@@ -761,15 +763,16 @@ export async function CaseDetailPage(
               // «mismo objeto» sobre «contagio colectivo» no era un objeto y no se entendía.
               const myClass = myKey ? PROSAIC_CLASSES.find((k) => k.key === myKey) : undefined;
               const myDetail = myKey ? objectDetailDef(myKey, c.objectDetail) : undefined;
+              // El objeto concreto solo si lo comparten; si solo comparten la clase
+              // (astronómico), nombrar «meteoro» sería falso para un planeta.
               const causeFor = (lang: "es" | "en") =>
-                myDetail
+                s.sameObject && myDetail
                   ? shortLabel(lang === "es" ? myDetail.label : myDetail.labelEn)
                   : myClass ? (lang === "es" ? myClass.label : myClass.labelEn) : "";
+              // El subtítulo ya dice «misma causa probable»: la tarjeta solo la nombra.
               const reasonFor = (lang: "es" | "en") =>
                 [
-                  s.sameObject || s.sameClass
-                    ? `${lang === "es" ? "Misma causa probable" : "Same likely cause"}: ${causeFor(lang)}`
-                    : null,
+                  causeFor(lang) || null,
                   s.sameCountry ? (lang === "es" ? "Mismo país" : "Same country") : null,
                   s.nearYear ? (lang === "es" ? "Dentro de 10 años" : "Within 10 years") : null,
                 ]
