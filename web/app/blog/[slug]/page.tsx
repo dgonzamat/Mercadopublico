@@ -78,10 +78,8 @@ export async function PostDetailPage(
       </div>
 
       <header className="space-y-4 border-b-2 border-text pb-6">
-        <Eyebrow>
-          <time dateTime={p.date}>{p.date}</time>
-          {p.tags && p.tags.length > 0 && <> · {p.tags.join(" · ")}</>}
-        </Eyebrow>
+        {/* Sin fecha a la vista (decisión del dueño, 13 nov 2026); sigue en el JSON-LD. */}
+        {p.tags && p.tags.length > 0 && <Eyebrow>{p.tags.join(" · ")}</Eyebrow>}
         <H1>
           <T es={p.title} en={p.title_en ?? p.title} locale={locale} />
         </H1>
