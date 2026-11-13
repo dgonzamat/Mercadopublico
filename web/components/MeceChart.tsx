@@ -313,13 +313,19 @@ export function CasePosterior({
           );
         })}
       </div>
-      {/* Leyenda de la barra sin cifras: la única cifra visible es la de arriba. */}
+      {/* Leyenda de la barra: la cifra grande de arriba sigue siendo la que manda. El
+          grupo menor lleva la suya porque era el único tramo sin cifra visible (el
+          29 % había que deducirlo como 100 − 71; nov 2026). */}
       <div className="mt-1 flex w-full gap-1 text-xs text-muted">
         {groups.map((g) => (
           // Rótulo en dos líneas si hace falta: con `truncate` se leía «Sin causa c…» en el móvil.
           <span key={g.id} className="min-w-0 break-words leading-tight" style={{ flex: `${Math.round(g.items.reduce((a, r) => a + r.count, 0) * 1000)} 1 0%` }}>
             {/* El tramo del grupo mayor ya lo nombra el titular («71 % natural or human cause»); rotularlo otra vez era la tercera repetición en pocas líneas. */}
-            {g !== lead && g.sub >= 15 && <T es={g.es} en={g.en} locale={locale} />}
+            {g !== lead && g.sub >= 15 && (
+              <>
+                <span className="tabular-nums">{g.sub}%</span> · <T es={g.es} en={g.en} locale={locale} />
+              </>
+            )}
           </span>
         ))}
       </div>
