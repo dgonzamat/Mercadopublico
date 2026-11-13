@@ -124,5 +124,31 @@
     "license": "CC BY-SA 3.0",
     "href": "https://commons.wikimedia.org/wiki/File:2023_Chinese_Balloon_route.svg"
   },
-  "evidenceReviewed": "2026-09-29"
+  "evidenceReviewed": "2026-09-29",
+  "documents": [
+    {
+      "role": "prueba",
+      "src": "/pursue/chinese-balloon-montana-2023-u2.jpg",
+      "type": "image",
+      "title": "El globo visto desde la cabina de un U-2 de la Fuerza Aérea (3 feb 2023)",
+      "title_en": "The balloon seen from the cockpit of an Air Force U-2 (Feb 3, 2023)",
+      "description": "Fotografía que tomó un piloto de la Fuerza Aérea de EE. UU. desde un U-2 mientras sobrevolaba el globo de vigilancia sobre el centro del país, el 3 de febrero de 2023. Se ve la envoltura blanca del globo y, bajo ella, la carga con paneles solares; en primer plano, el ala del avión y el casco del piloto. El Departamento de Defensa la difundió después del derribo.",
+      "description_en": "Photograph taken by a U.S. Air Force pilot from a U-2 while overflying the surveillance balloon above the center of the country on February 3, 2023. It shows the balloon's white envelope and, beneath it, the payload with solar panels; in the foreground are the aircraft's wing and the pilot's helmet. The Department of Defense released it after the shootdown.",
+      "source": "Departamento de Defensa de EE. UU., vía DVIDS y Wikimedia Commons",
+      "license": "Dominio público · obra del Gobierno de EE. UU.",
+      "fallbackUrl": "https://commons.wikimedia.org/wiki/File:U-2_Pilot_over_Central_Continental_United_States_(7644960).jpg"
+    },
+    {
+      "role": "prueba",
+      "src": "/pursue/chinese-balloon-montana-2023-recuperacion.jpg",
+      "type": "image",
+      "title": "Buzos de la Marina recuperan la envoltura frente a Myrtle Beach (5 feb 2023)",
+      "title_en": "Navy divers recover the envelope off Myrtle Beach (Feb 5, 2023)",
+      "description": "Fotografía de la Marina de EE. UU. (MC1 Tyler Thompson): personal del Grupo 2 de Desactivación de Explosivos recoge la envoltura del globo desde una lancha neumática frente a Myrtle Beach, Carolina del Sur, el 5 de febrero de 2023; al fondo, el buque USS Carter Hall.",
+      "description_en": "U.S. Navy photograph (MC1 Tyler Thompson): personnel of Explosive Ordnance Disposal Group 2 pull in the balloon's envelope from an inflatable boat off Myrtle Beach, South Carolina, on February 5, 2023; the USS Carter Hall is in the background.",
+      "source": "Marina de EE. UU. (MC1 Tyler Thompson), vía Wikimedia Commons",
+      "license": "Dominio público · obra del Gobierno de EE. UU.",
+      "fallbackUrl": "https://commons.wikimedia.org/wiki/File:USS_Carter_Hall_Chinese_Balloon_Recovery.jpg"
+    }
+  ]
 }
