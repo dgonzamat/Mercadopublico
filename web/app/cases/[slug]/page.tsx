@@ -895,6 +895,8 @@ function ClassBasis({ c, locale }: { c: (typeof cases)[number]; locale: "es" | "
       : { es: `Si fue algo ordinario, lo más probable es: ${label.es.toLowerCase()}. Por qué: `, en: `If it was ordinary, the likeliest cause is: ${label.en.toLowerCase()}. Why: ` };
   const es = b ? splitOriginal(b.es) : undefined;
   const en = b ? splitOriginal(b.en) : undefined;
+  const author = src.split(/[,—(«“"]/)[0].trim();
+  const namesSource = author.length > 3 && ((locale === "es" ? es : en)?.text ?? "").slice(0, 160).includes(author);
   return (
     <div className="space-y-2 border-l-2 border-text pl-4">
       {b ? (
@@ -910,7 +912,9 @@ function ClassBasis({ c, locale }: { c: (typeof cases)[number]; locale: "es" | "
             (
             {b.url ? (
               <a href={b.url} target="_blank" rel="noopener noreferrer" className="text-accent underline-offset-4 hover:underline">
-                {src} ↗
+                {/* Si el porqué ya nombra al autor al empezar, el enlace no lo repite
+                    (unas 204 fichas leían la misma referencia dos veces, nov 2026). */}
+                {namesSource ? (locale === "es" ? "fuente" : "source") : src} ↗
               </a>
             ) : (
               src
