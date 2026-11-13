@@ -124,6 +124,7 @@ const COUNTRY_EN: Record<string, string> = {
   Groenlandia: "Greenland",
   Islandia: "Iceland",
   Nicaragua: "Nicaragua",
+  "Islas del Canal (Bailía de Guernsey)": "Channel Islands (Bailiwick of Guernsey)",
 };
 
 /** Traduce un country_name del español al inglés; fallback al valor original. */
