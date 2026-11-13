@@ -902,22 +902,10 @@ function ClassBasis({ c, locale }: { c: (typeof cases)[number]; locale: "es" | "
           <span className="font-semibold">
             <T locale={locale} es={why.es} en={why.en} />
           </span>
-          {(() => {
-            const w = splitLead((locale === "es" ? es! : en!).text, 200);
-            return (
-              <>
-                {w.lead}{" "}
-                {w.rest && (
-                  <details className="mt-1 inline">
-                    <summary className="inline cursor-pointer text-accent">
-                      <T locale={locale} es="Leer el porqué completo" en="Read the full reasoning" />
-                    </summary>
-                    <span className="mt-1 block">{w.rest}</span>
-                  </details>
-                )}{" "}
-              </>
-            );
-          })()}
+          {/* Entero, sin cortar: E52 lo limita a 700 caracteres. El corte a 200
+              escondía en 387 de 395 fichas casi todo el porqué, y en al menos 23
+              justo el «pero…» que matiza la clase (zepelines de 1909, nov 2026). */}
+          {(locale === "es" ? es! : en!).text}{" "}
           <span className="text-muted">
             (
             {b.url ? (
