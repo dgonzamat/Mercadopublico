@@ -100,5 +100,19 @@
     "source_en": "H. Manterola, M. Ramos Lara and G. Cordero — “Interpretation of the observations made in 1883 in Zacatecas (Mexico),” arXiv:1110.2798 (2011, preprint)",
     "url": "https://arxiv.org/abs/1110.2798"
   },
-  "evidenceReviewed": "2026-10-02"
+  "evidenceReviewed": "2026-10-02",
+  "documents": [
+    {
+      "role": "prueba",
+      "type": "image",
+      "src": "/pursue/bonilla-zacatecas-1883-placa-12-agosto.jpg",
+      "title": "Una de las placas de Bonilla del 12 de agosto de 1883, con una flecha sobre uno de los cuerpos",
+      "title_en": "One of Bonilla's plates of August 12, 1883, with an arrow over one of the bodies",
+      "description": "Imagen de una de las placas fotográficas que José Bonilla tomó del Sol el 12 de agosto de 1883 en Zacatecas: sobre el disco solar se ve una mancha oscura de forma irregular, señalada con una flecha roja que se añadió después. Es una reproducción pequeña (233 por 204 píxeles) de las que circulan en Wikimedia Commons, no la placa original.",
+      "description_en": "Image of one of the photographic plates José Bonilla took of the Sun on August 12, 1883 in Zacatecas: on the solar disk there is a dark, irregular blotch, marked with a red arrow added later. It is a small reproduction (233 by 204 pixels) of the kind circulating on Wikimedia Commons, not the original plate.",
+      "source": "José Bonilla (Observatorio de Zacatecas), 12 de agosto de 1883, vía Wikimedia Commons",
+      "license": "Dominio público (1883)",
+      "fallbackUrl": "https://commons.wikimedia.org/wiki/File:Jose_Bonilla_UFO_observation_12_August_1883.jpg"
+    }
+  ]
 }
