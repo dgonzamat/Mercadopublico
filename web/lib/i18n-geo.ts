@@ -100,7 +100,7 @@ const COUNTRY_EN: Record<string, string> = {
   "Angola": "Angola",
   "Malasia": "Malaysia",
   "Oriente Medio, área de responsabilidad de CENTCOM (ubicación exacta no revelada)": "Middle East, CENTCOM area of responsibility (exact location undisclosed)",
-  "Oriente Medio (ubicación exacta no revelada)": "Middle East (exact location undisclosed)",
+  "Oriente Medio (país exacto no revelado; plataforma y liberación son de EE. UU.)": "Middle East (exact country undisclosed; platform and release are U.S.)",
   "Unión Soviética (Bielorrusia)": "Soviet Union (Belarus)",
   "Kenia": "Kenya",
   "Estados Unidos (ubicación exacta no revelada)": "United States (exact location undisclosed)",
