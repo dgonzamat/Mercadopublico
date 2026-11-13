@@ -250,13 +250,13 @@ export function CasePosterior({
       ? { es: "La evidencia no alcanza para decidir entre las explicaciones", en: "The evidence is not enough to decide between the explanations" }
       : !majority
         ? top.key === "sin_propuesta"
-          ? { es: `La que más pesa: una causa ordinaria que nadie ha identificado (${topPct})`, en: `The largest share: an ordinary cause no one has identified (${topPct})` }
-          : { es: `La que más pesa: ${topName.es.toLowerCase()} (${topPct})`, en: `The largest share: ${topName.en.toLowerCase()} (${topPct})` }
+          ? { es: `La que más pesa: una causa ordinaria que nadie ha identificado\u00a0(${topPct})`, en: `The largest share: an ordinary cause no one has identified\u00a0(${topPct})` }
+          : { es: `La que más pesa: ${topName.es.toLowerCase()}\u00a0(${topPct})`, en: `The largest share: ${topName.en.toLowerCase()}\u00a0(${topPct})` }
         // Con su propia cifra también por encima de la mitad: bajo «71 %» se leía
         // que el contagio colectivo valía 71 % cuando valía 68 % (zepelines, nov 2026).
         : top.key === "sin_propuesta"
-          ? { es: `Lo más probable es una causa ordinaria que nadie ha identificado (${topPct})`, en: `Most likely an ordinary cause that no one has identified (${topPct})` }
-          : { es: `Explicación más probable: ${topName.es.toLowerCase()} (${topPct})`, en: `Most likely explanation: ${topName.en.toLowerCase()} (${topPct})` };
+          ? { es: `Lo más probable es una causa ordinaria que nadie ha identificado\u00a0(${topPct})`, en: `Most likely an ordinary cause that no one has identified\u00a0(${topPct})` }
+          : { es: `Explicación más probable: ${topName.es.toLowerCase()}\u00a0(${topPct})`, en: `Most likely explanation: ${topName.en.toLowerCase()}\u00a0(${topPct})` };
   return (
     <div>
       <p className="flex items-baseline gap-2 text-text">
@@ -285,7 +285,8 @@ export function CasePosterior({
         {groups.map((g) => (
           // Rótulo en dos líneas si hace falta: con `truncate` se leía «Sin causa c…» en el móvil.
           <span key={g.id} className="min-w-0 break-words leading-tight" style={{ flex: `${Math.round(g.items.reduce((a, r) => a + r.count, 0) * 1000)} 1 0%` }}>
-            {g.sub >= 15 && <T es={g.es} en={g.en} locale={locale} />}
+            {/* El tramo del grupo mayor ya lo nombra el titular («71 % natural or human cause»); rotularlo otra vez era la tercera repetición en pocas líneas. */}
+            {g !== lead && g.sub >= 15 && <T es={g.es} en={g.en} locale={locale} />}
           </span>
         ))}
       </div>
@@ -298,7 +299,7 @@ export function CasePosterior({
           return (
             <div key={g.id} className="space-y-2">
               {/* Subtotal en el encabezado: el desglose suma a la vista hacia la cifra grande. */}
-              <p className="flex justify-between border-b border-text/15 pb-1 text-xs text-muted">
+              <p className="flex justify-between border-b border-text/15 pb-1 text-[13px] font-semibold text-text">
                 <T es={g.es} en={g.en} locale={locale} />
                 <span className="tabular-nums">{g.sub}%</span>
               </p>
@@ -316,8 +317,10 @@ export function CasePosterior({
                       </span>
                     )}
                   </span>
-                  <span className="h-1.5 w-full overflow-hidden rounded-full bg-text/10" aria-hidden>
-                    <span className="block h-full rounded-full" style={{ width: `${r.pct}%`, backgroundColor: r.color }} />
+                  {/* Pista con contorno y no relleno: el gris de «indeterminado» sobre una
+                      pista gris daba 2,82:1. Mínimo de 3 px para que 1–2 % no se lea como 0. */}
+                  <span className="h-1.5 w-full overflow-hidden rounded-full ring-1 ring-inset ring-text/25" aria-hidden>
+                    <span className="block h-full rounded-full" style={{ width: r.pct > 0 ? `max(3px, ${r.pct}%)` : 0, backgroundColor: r.color }} />
                   </span>
                   {r.zero ? <span className="text-right tabular-nums text-muted">0%</span> : <span className="text-right tabular-nums text-muted" {...(g === lead ? { "data-lead-row": "" } : {})} data-pct="">{r.pct}%</span>}
                 </div>
