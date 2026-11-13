@@ -55,12 +55,14 @@ export function SiteFooter() {
             </p>
             <div className="flex items-center gap-3 pt-2">
               <ShareButton title="UAP Codex" locale={locale} />
-              <InstagramLink tone="light" />
-              <PinterestLink tone="light" />
+              <InstagramLink tone="light" locale={locale} />
+              <PinterestLink tone="light" locale={locale} />
             </div>
           </div>
 
-          <nav aria-label="Navegación principal del pie" className="space-y-2">
+          {/* aria-label en el idioma de la URL (sin espejo: inglés) y sin
+              «principal», que competía con la navegación del encabezado. */}
+          <nav aria-label={locale === "es" ? "Pie de página: atlas" : "Footer: atlas"} className="space-y-2">
             <p className="font-mono text-xs uppercase tracking-widest text-muted">
               Atlas
             </p>
@@ -82,7 +84,7 @@ export function SiteFooter() {
             </ul>
           </nav>
 
-          <nav aria-label="Más recursos" className="space-y-2">
+          <nav aria-label={locale === "es" ? "Pie de página: más" : "Footer: more"} className="space-y-2">
             <p className="font-mono text-xs uppercase tracking-widest text-muted">
               <T es="Más" en="More" locale={locale} />
             </p>
@@ -118,7 +120,7 @@ export function SiteFooter() {
 
         <p
           className="border-t border-text/15 pt-6 font-mono text-xs uppercase tracking-widest text-muted"
-          title="Versión desplegada (número de PR mergeado)"
+          title={locale === "es" ? "Versión desplegada (número de PR mergeado)" : "Deployed version (merged PR number)"}
         >
           <T
             es="UAP Codex · análisis institucional · 1947–2026"

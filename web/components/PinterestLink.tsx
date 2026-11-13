@@ -8,6 +8,8 @@
 type Props = {
   tone?: "light" | "dark";
   className?: string;
+  // Idioma del aria-label; sin él, inglés (el sitio es inglés-primario).
+  locale?: "es" | "en";
 };
 
 const TONE = {
@@ -15,13 +17,13 @@ const TONE = {
   dark: "text-bg/70 hover:text-accent-bright",
 } as const;
 
-export function PinterestLink({ tone = "light", className }: Props) {
+export function PinterestLink({ tone = "light", className, locale }: Props) {
   return (
     <a
       href="https://www.pinterest.com/uapcodex2026"
       target="_blank"
       rel="me noopener noreferrer"
-      aria-label="UAP Codex en Pinterest (@uapcodex2026)"
+      aria-label={locale === "es" ? "UAP Codex en Pinterest (@uapcodex2026)" : "UAP Codex on Pinterest (@uapcodex2026)"}
       title="Pinterest · @uapcodex2026"
       className={`inline-flex min-h-[44px] min-w-[44px] items-center justify-center rounded-md transition-colors ${TONE[tone]}${
         className ? ` ${className}` : ""

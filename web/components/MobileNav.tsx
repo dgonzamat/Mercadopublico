@@ -323,8 +323,8 @@ export function MobileNav({ dark = false }: { dark?: boolean } = {}) {
                 <span className="font-mono text-[11px] uppercase tracking-widest text-bg/60">
                   <T es="Síguenos" en="Follow" />
                 </span>
-                <InstagramLink tone="dark" />
-                <PinterestLink tone="dark" />
+                <InstagramLink tone="dark" locale={locale} />
+                <PinterestLink tone="dark" locale={locale} />
               </div>
 
               <p className="mt-6 font-mono text-[11px] uppercase tracking-widest text-bg/60">
