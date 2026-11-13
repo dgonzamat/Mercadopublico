@@ -70,6 +70,30 @@
   ],
   "documents": [
     {
+      "role": "prueba",
+      "type": "image",
+      "src": "/pursue/iquique-nube-lxp380-2019-foto-971-3.jpg",
+      "title": "Foto de la tripulación del LXP380 al amanecer, imagen 971-3 del informe (9 ago 2019)",
+      "title_en": "Photo by the LXP380 crew at dawn, image 971-3 of the report (Aug 9, 2019)",
+      "description": "Una de las tres fotografías que la tripulación del vuelo LXP380 envió por WhatsApp, reproducida como Figura 2 del informe del SEFAA: el cielo del amanecer sobre la silueta de las montañas, con el objeto como un punto pequeño y oscuro en la franja amarilla. La transmisión por WhatsApp eliminó gran parte de los píxeles y de los datos de la cámara, y el informe lo dice.",
+      "description_en": "One of the three photographs the crew of flight LXP380 sent by WhatsApp, reproduced as Figure 2 of the SEFAA report: the dawn sky above the silhouette of the mountains, with the object as a small dark dot in the yellow band. WhatsApp transmission removed much of the pixels and of the camera data, and the report says so.",
+      "source": "SEFAA, Dirección General de Aeronáutica Civil de Chile, caso n.º 971",
+      "license": "Informe oficial publicado por el SEFAA; el sitio no declara licencia, se reproduce con crédito a la fuente",
+      "fallbackUrl": "https://sefaa.dgac.gob.cl/wp-content/uploads/2026/06/CASO-N%C2%B0-971-09082019.pdf"
+    },
+    {
+      "role": "prueba",
+      "type": "image",
+      "src": "/pursue/iquique-nube-lxp380-2019-fotograma-29.jpg",
+      "title": "Fotograma 29 del video del LXP380, con el objeto marcado con un círculo (informe del SEFAA)",
+      "title_en": "Frame 29 of the LXP380 video, with the object circled (SEFAA report)",
+      "description": "Fotograma 29 del video de 12,6 segundos que filmó la tripulación (archivo 971-1), reproducido en el informe del SEFAA con un círculo verde sobre el objeto, cerca del horizonte. El video llegó por WhatsApp, con la resolución reducida a 848 por 480 píxeles.",
+      "description_en": "Frame 29 of the 12.6-second video the crew filmed (file 971-1), reproduced in the SEFAA report with a green circle around the object, near the horizon. The video arrived by WhatsApp, with its resolution reduced to 848 by 480 pixels.",
+      "source": "SEFAA, Dirección General de Aeronáutica Civil de Chile, caso n.º 971",
+      "license": "Informe oficial publicado por el SEFAA; el sitio no declara licencia, se reproduce con crédito a la fuente",
+      "fallbackUrl": "https://sefaa.dgac.gob.cl/wp-content/uploads/2026/06/CASO-N%C2%B0-971-09082019.pdf"
+    },
+    {
       "role": "contexto",
       "src": "/pursue/iquique-nube-lxp380-2019-a321.jpg",
       "type": "image",
@@ -83,13 +107,15 @@
     },
     {
       "role": "documento",
-      "src": "https://sefaa.dgac.gob.cl/wp-content/uploads/2026/06/CASO-N%C2%B0-971-09082019.pdf",
-      "type": "link",
+      "src": "/pursue/sefaa-caso-971-iquique-2019.pdf",
+      "type": "pdf",
       "title": "Informe del SEFAA (DGAC de Chile), caso n.º 971, Iquique, 9 de agosto de 2019 (resuelto el 11 de mayo de 2026)",
       "title_en": "SEFAA (Chilean DGAC) report, case no. 971, Iquique, 9 August 2019 (resolved 11 May 2026)",
       "description": "Informe de trece páginas de la sección oficial de fenómenos aéreos anómalos. Reproduce las fotografías y un fotograma del video del LXP380 contra el alba, la nota del libro de novedades de la torre y la transcripción del audio, analiza los metadatos y el tráfico aéreo, reúne las opiniones de meteorología, astronomía e imágenes y concluye que fue una nube. Obra de la DGAC sin licencia abierta: se enlaza, no se aloja.",
       "description_en": "Thirteen-page report by the official anomalous aerial phenomena section. It reproduces the photographs and a frame of the LXP380 video against the dawn, the tower logbook entry and the audio transcript, analyses the metadata and air traffic, gathers the meteorology, astronomy and imagery opinions and concludes it was a cloud. A DGAC work with no open license, so it is linked rather than hosted.",
-      "source": "SEFAA, Dirección General de Aeronáutica Civil de Chile"
+      "source": "SEFAA, Dirección General de Aeronáutica Civil de Chile",
+      "fallbackUrl": "https://sefaa.dgac.gob.cl/wp-content/uploads/2026/06/CASO-N%C2%B0-971-09082019.pdf",
+      "license": "Informe oficial publicado por el SEFAA; el sitio no declara licencia, se reproduce con crédito a la fuente"
     }
   ],
   "classBasis": {
