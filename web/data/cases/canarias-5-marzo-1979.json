@@ -87,6 +87,30 @@
   },
   "documents": [
     {
+      "role": "prueba",
+      "type": "image",
+      "source": "Fuente: Biblioteca Central del Ejército del Aire y del Espacio / Biblioteca Virtual de Defensa",
+      "license": "CC BY 4.0",
+      "fallbackUrl": "https://bibliotecavirtual.defensa.gob.es/BVMDefensa/exp_ovni/es/consulta/busqueda_referencia.do?campo=idtitulo&idValor=396016",
+      "src": "/pursue/canarias-1979-lamina-sur-gran-canaria-puerto-tauro.jpg",
+      "title": "Lámina «Sur G.C. – P. Tauro» (folio 0200) · dos fotos de la luz sobre el horizonte del mar",
+      "title_en": "Plate «Sur G.C. – P. Tauro» (folio 0200) · two photos of the light over the sea horizon",
+      "description": "Lámina del reportaje fotográfico del expediente 790305 del Ejército del Aire, con el rótulo «Sur G.C. – P. Tauro» (sur de Gran Canaria, Puerto Tauro). Muestra dos fotografías en color de una forma luminosa alargada sobre el horizonte del mar, con su reflejo en el agua. La lámina solo lleva el rótulo del lugar: no dice quién tomó cada foto ni a qué hora.",
+      "description_en": "Plate from the photographic section of Spanish Air Force file 790305, labeled «Sur G.C. – P. Tauro» (south Gran Canaria, Puerto Tauro). It shows two color photographs of an elongated luminous shape over the sea horizon, with its reflection on the water. The plate carries only the place label: it does not say who took each photo or when."
+    },
+    {
+      "role": "prueba",
+      "type": "image",
+      "source": "Fuente: Biblioteca Central del Ejército del Aire y del Espacio / Biblioteca Virtual de Defensa",
+      "license": "CC BY 4.0",
+      "fallbackUrl": "https://bibliotecavirtual.defensa.gob.es/BVMDefensa/exp_ovni/es/consulta/busqueda_referencia.do?campo=idtitulo&idValor=396016",
+      "src": "/pursue/canarias-1979-lamina-sw-tenerife-adeje.jpg",
+      "title": "Lámina «SW Tenerife – Adeje» (folio 0204) · dos fotos de una banda luminosa sobre el horizonte",
+      "title_en": "Plate «SW Tenerife – Adeje» (folio 0204) · two photos of a luminous band over the horizon",
+      "description": "Lámina del mismo reportaje fotográfico del expediente 790305, con el rótulo «SW Tenerife – Adeje» (suroeste de Tenerife). Muestra dos fotografías en color de una banda luminosa sobre el horizonte; en la inferior se ven además luces de tierra. La lámina solo lleva el rótulo del lugar: no dice quién tomó cada foto ni a qué hora.",
+      "description_en": "Plate from the same photographic section of file 790305, labeled «SW Tenerife – Adeje» (southwest Tenerife). It shows two color photographs of a luminous band over the horizon; the lower one also shows lights on land. The plate carries only the place label: it does not say who took each photo or when."
+    },
+    {
       "role": "documento",
       "src": "/pursue/canarias-1979-expediente-790305.pdf",
       "type": "pdf",

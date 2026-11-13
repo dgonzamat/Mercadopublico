@@ -77,6 +77,42 @@
   "evidenceReviewed": "2026-10-02",
   "documents": [
     {
+      "role": "prueba",
+      "type": "image",
+      "src": "/pursue/mantell-1948-restos-f51-1.jpg",
+      "source": "Proyecto Blue Book (NARA), vía archive.org",
+      "license": "Dominio público · obra del Gobierno de EE. UU.",
+      "fallbackUrl": "https://archive.org/details/1948-01-7272838-Godman-Kentucky-136-",
+      "title": "Restos del F-51 esparcidos en un campo, expediente 136 de Blue Book (enero de 1948)",
+      "title_en": "Wreckage of the F-51 scattered in a field, Blue Book file 136 (January 1948)",
+      "description": "Fotografía del expediente 136 de Project Blue Book, rotulado «Godman, Kentucky, 7 de enero de 1948, 14 fotos»: restos del avión desparramados en un campo, con una casa y un vehículo al fondo. El expediente no dice en estas páginas quién tomó las fotos; por el rótulo corresponden al accidente del F-51 del capitán Thomas Mantell.",
+      "description_en": "Photograph from Project Blue Book file 136, labeled «Godman, Kentucky, January 7, 1948, 14 photos»: aircraft wreckage strewn across a field, with a house and a vehicle in the background. The file does not say on these pages who took the photos; going by the label they belong to the crash of Captain Thomas Mantell's F-51."
+    },
+    {
+      "role": "prueba",
+      "type": "image",
+      "src": "/pursue/mantell-1948-restos-f51-2.jpg",
+      "source": "Proyecto Blue Book (NARA), vía archive.org",
+      "license": "Dominio público · obra del Gobierno de EE. UU.",
+      "fallbackUrl": "https://archive.org/details/1948-01-7272838-Godman-Kentucky-136-",
+      "title": "Una pieza del fuselaje clavada junto a un poste, expediente 136 de Blue Book",
+      "title_en": "A fuselage piece standing next to a post, Blue Book file 136",
+      "description": "Otra de las 14 fotos del mismo expediente: una pieza grande y clara del avión, apoyada junto a un poste en un campo.",
+      "description_en": "Another of the 14 photos in the same file: a large pale piece of the aircraft propped beside a post in a field."
+    },
+    {
+      "role": "documento",
+      "type": "pdf",
+      "src": "/pursue/mantell-1948-blue-book-136-fotos-restos.pdf",
+      "source": "Proyecto Blue Book (NARA), vía archive.org",
+      "license": "Dominio público · obra del Gobierno de EE. UU.",
+      "fallbackUrl": "https://archive.org/details/1948-01-7272838-Godman-Kentucky-136-",
+      "title": "Expediente 136 de Blue Book (17 págs.): las 14 fotos de los restos del F-51",
+      "title_en": "Blue Book file 136 (17 pp.): the 14 photos of the F-51 wreckage",
+      "description": "Las 17 páginas del expediente 136 de Project Blue Book en el espejo de archive.org: la carátula «File 136, January 7, 1948, Godman, Kentucky, 14 photos» y las fotografías de los restos del avión.",
+      "description_en": "The 17 pages of Project Blue Book file 136 on the archive.org mirror: the cover «File 136, January 7, 1948, Godman, Kentucky, 14 photos» and the photographs of the aircraft wreckage."
+    },
+    {
       "role": "documento",
       "src": "https://www.dvidshub.net/video/embed/1023407",
       "type": "video",

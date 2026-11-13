@@ -71,6 +71,18 @@
   },
   "documents": [
     {
+      "role": "prueba",
+      "src": "/pursue/montanchez-1967-foto-f86.jpg",
+      "type": "image",
+      "title": "La fotografía tomada por el piloto del F-86, ampliada al 200 % (folio 60 del expediente)",
+      "title_en": "The photograph taken by the F-86 pilot, enlarged 200% (folio 60 of the file)",
+      "description": "Folio 60 del expediente 670603, completo en la Biblioteca Virtual de Defensa: la fotocopia, ampliada al 200 %, de la fotografía que tomó el piloto del F-86 durante la persecución. Es la que el índice del expediente lista como «fotocopia de la fotografía tomada por el F-86». El resumen del propio expediente dice que de las fotografías solo figura este positivo, de muy mala calidad, en el que se aprecia un punto luminoso «a las 2» del visor.",
+      "description_en": "Folio 60 of file 670603, complete in the Spanish Defense Ministry's virtual library: the photocopy, enlarged 200%, of the photograph the F-86 pilot took during the chase. It is the item the file's index lists as «photocopy of the photograph taken by the F-86». The file's own summary says this is the only surviving print of the photographs, of very poor quality, showing a luminous dot «at the 2» of the viewfinder.",
+      "source": "Fuente: Biblioteca Central del Ejército del Aire y del Espacio / Biblioteca Virtual de Defensa",
+      "license": "CC BY 4.0",
+      "fallbackUrl": "https://bibliotecavirtual.defensa.gob.es/BVMDefensa/exp_ovni/es/consulta/busqueda_referencia.do?campo=idtitulo&idValor=396030"
+    },
+    {
       "role": "documento",
       "src": "/pursue/montanchez-1967-expediente-670603.pdf",
       "type": "pdf",
