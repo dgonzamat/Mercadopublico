@@ -3,7 +3,9 @@ import { LocaleLink } from "@/components/LocaleLink";
 import { pageMeta, hreflangFor } from "@/lib/seo";
 import { Cta } from "@/components/Cta";
 import { CorpusStats } from "@/components/CorpusStats";
+import { CaseRow } from "@/components/CaseRow";
 import { STATS } from "@/lib/siteStats";
+import { cases } from "@/lib/data";
 import { T } from "@/components/T";
 import {
   Eyebrow,
@@ -21,6 +23,23 @@ export const metadata = {
 }),
   alternates: { canonical: "/resumen/", languages: hreflangFor("/resumen/") },
 };
+
+// Lo que cambia con el archivo se DERIVA de los casos, nunca se escribe en
+// el copy: el resumen siguió contando solo la entrega de mayo de 2026
+// mientras salían seis más (nov 2026). Mismo criterio que /releases.
+const RELEASES = Array.from(
+  new Set(cases.flatMap((c) => c.pursueReleases ?? [])),
+).sort((a, b) => a - b);
+const LATEST_RELEASE = Math.max(...RELEASES);
+const LATEST_RELEASE_CASES = cases.filter((c) =>
+  c.pursueReleases?.includes(LATEST_RELEASE),
+).length;
+const PURSUE_CASES = cases.filter(
+  (c) => (c.pursueReleases?.length ?? 0) > 0,
+).length;
+// `num` es secuencial: el más alto es el último caso incorporado.
+const RECENT_CASES = [...cases].sort((a, b) => b.num - a.num).slice(0, 5);
+const pad = (n: number) => String(n).padStart(2, "0");
 
 const FINDINGS = [
   {
@@ -51,24 +70,24 @@ const FINDINGS = [
     es: {
       confidence: "Alta",
       title: "Los gobiernos saben más de lo que dicen",
-      text: "Hay una secuencia documental, papel firmado, que va de un memo del general Twining a la fuerza aérea en 1947 (el fenómeno es 'real, no visionario') a la divulgación presidencial de mayo 2026. En el medio: el panel Robertson lo declara amenaza psicológica (1953), el memo Bolender cierra Project Blue Book pero admite que hay reportes 'que sí afectan la seguridad nacional' (1969), filtraciones Wilson-Davis (2002), y el testimonio bajo juramento de David Grusch ante el Congreso (2023). Cada pieza es auditable. Ninguna es rumor.",
+      text: `Hay una secuencia documental, papel firmado, que va de un memo del general Twining a la fuerza aérea en 1947 (el fenómeno es 'real, no visionario') a la divulgación presidencial que empezó en mayo de 2026 y ya suma ${RELEASES.length} entregas de archivos. En el medio: el panel Robertson lo declara amenaza psicológica (1953), el memo Bolender cierra Project Blue Book pero admite que hay reportes 'que sí afectan la seguridad nacional' (1969), filtraciones Wilson-Davis (2002), y el testimonio bajo juramento de David Grusch ante el Congreso (2023). Cada pieza es auditable. Ninguna es rumor.`,
     },
     en: {
       confidence: "High",
       title: "Governments know more than they say",
-      text: "There is a documented chain, signed paper, going from a 1947 memo by General Twining to the Air Force ('the phenomenon is real, not visionary') to the May 2026 presidential disclosure. In between: the Robertson panel labels it a psychological threat (1953), the Bolender memo closes Project Blue Book but admits there are reports 'that do affect national security' (1969), the Wilson-Davis leaks (2002), and David Grusch's sworn testimony to Congress (2023). Every piece is auditable. None is rumor.",
+      text: `There is a documented chain, signed paper, going from a 1947 memo by General Twining to the Air Force ('the phenomenon is real, not visionary') to the presidential disclosure that began in May 2026 and now runs to ${RELEASES.length} releases of files. In between: the Robertson panel labels it a psychological threat (1953), the Bolender memo closes Project Blue Book but admits there are reports 'that do affect national security' (1969), the Wilson-Davis leaks (2002), and David Grusch's sworn testimony to Congress (2023). Every piece is auditable. None is rumor.`,
     },
   },
   {
     es: {
       confidence: "Media",
       title: "PURSUE 2026 abre archivos mientras se propone limitar a los denunciantes",
-      text: "La liberación PURSUE (Presidential Unsealing and Reporting System for UAP Encounters) de mayo 2026 abre archivos al público con una mano. Con la otra, una propuesta del 26 de mayo (de la Oficina de Personal Federal, el organismo que regula a los empleados públicos) introduce un acuerdo de confidencialidad mucho más amplio que silencia, hacia adelante, a quien quiera denunciar irregularidades desde dentro del gobierno.",
+      text: `PURSUE (Presidential Unsealing and Reporting System for UAP Encounters) abre archivos al público con una mano: ${RELEASES.length} entregas desde mayo de 2026. Con la otra, una propuesta del 26 de mayo (de la Oficina de Personal Federal, el organismo que regula a los empleados públicos) introduce un acuerdo de confidencialidad mucho más amplio que silencia, hacia adelante, a quien quiera denunciar irregularidades desde dentro del gobierno.`,
     },
     en: {
       confidence: "Medium",
       title: "PURSUE 2026 opens files while new limits on whistleblowers are proposed",
-      text: "The PURSUE release (Presidential Unsealing and Reporting System for UAP Encounters) of May 2026 opens archives to the public with one hand. With the other, a May 26 proposal (from the Office of Personnel Management, the agency that regulates federal employees) introduces a much broader non-disclosure agreement that silences, going forward, anyone who wants to report internal wrongdoing.",
+      text: `PURSUE (Presidential Unsealing and Reporting System for UAP Encounters) opens archives to the public with one hand: ${RELEASES.length} releases since May 2026. With the other, a May 26 proposal (from the Office of Personnel Management, the agency that regulates federal employees) introduces a much broader non-disclosure agreement that silences, going forward, anyone who wants to report internal wrongdoing.`,
     },
   },
   {
@@ -91,8 +110,8 @@ const THREE_FRASES = [
     en: "There is a phenomenon institutions have been documenting since 1947, and no single explanation is enough to cover all of it.",
   },
   {
-    es: "Desde mayo de 2026, el Gobierno de EE. UU. publica por entregas, en el programa PURSUE, archivos UAP antes clasificados. Los documentos salen sin una conclusión oficial: no confirman ni descartan nada.",
-    en: "Since May 2026, the U.S. government has been publishing previously classified UAP files in installments, through the PURSUE program. The documents come out with no official conclusion: they neither confirm nor rule out anything.",
+    es: `Desde mayo de 2026, el Gobierno de EE. UU. publica por entregas, en el programa PURSUE, archivos UAP antes clasificados: van ${RELEASES.length}, y ${PURSUE_CASES} casos de este archivo citan alguna. Los documentos salen sin una conclusión oficial: no confirman ni descartan nada.`,
+    en: `Since May 2026, the U.S. government has been publishing previously classified UAP files in installments, through the PURSUE program: ${RELEASES.length} so far, cited by ${PURSUE_CASES} cases in this archive. The documents come out with no official conclusion: they neither confirm nor rule out anything.`,
   },
   {
     es: "Cómo se está liberando la información importa más que el contenido mismo de lo liberado.",
@@ -262,6 +281,62 @@ export function ResumenView({ locale }: { locale: "es" | "en" }) {
           corpus permite contar literalmente (tiers, eras). Reubicado
           desde /cases, donde competía con la navegación del archivo. */}
       <CorpusStats locale={locale} />
+
+      {/* Todo derivado de los casos: la entrega más reciente y los últimos
+          casos incorporados se actualizan solos en cada build. */}
+      <section className="space-y-6">
+        <div className="space-y-3">
+          <Eyebrow>
+            <T es="Al día" en="Up to date" locale={locale} />
+          </Eyebrow>
+          <H2>
+            <T es="Lo último en el archivo" en="Latest in the archive" locale={locale} />
+          </H2>
+        </div>
+        <Body className="text-muted">
+          <T
+            locale={locale}
+            es={
+              <>
+                La entrega {pad(LATEST_RELEASE)} de PURSUE, la más reciente, aporta
+                documentos a {LATEST_RELEASE_CASES} casos.{" "}
+                <LocaleLink
+                  href={`/releases/${pad(LATEST_RELEASE)}`}
+                  className="text-accent hover:underline"
+                >
+                  Ver la entrega {pad(LATEST_RELEASE)} →
+                </LocaleLink>
+              </>
+            }
+            en={
+              <>
+                PURSUE release {pad(LATEST_RELEASE)}, the most recent, adds
+                documents to {LATEST_RELEASE_CASES} cases.{" "}
+                <LocaleLink
+                  href={`/releases/${pad(LATEST_RELEASE)}`}
+                  className="text-accent hover:underline"
+                >
+                  See release {pad(LATEST_RELEASE)} →
+                </LocaleLink>
+              </>
+            }
+          />
+        </Body>
+        <div className="space-y-2">
+          <p className="text-sm font-semibold text-muted">
+            <T
+              es="Últimos casos incorporados"
+              en="Most recently added cases"
+              locale={locale}
+            />
+          </p>
+          <div className="border-t border-border">
+            {RECENT_CASES.map((c) => (
+              <CaseRow key={c.id} caseData={c} locale={locale} />
+            ))}
+          </div>
+        </div>
+      </section>
 
       <section className="space-y-6">
         <div className="space-y-3">

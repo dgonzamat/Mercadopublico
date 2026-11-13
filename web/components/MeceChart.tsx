@@ -190,10 +190,6 @@ export function CasePosterior({
   const rows = expandedHypotheses([{ posterior, mundanoType, misidSubtype }], { keepIndet: true });
   const pk = prosaicKey(mundanoType, misidSubtype);
   const detail = objectDetailDef(pk, objectDetail);
-  const withDetail = (r: { key: string; label: string; labelEn: string }) =>
-    detail && r.key === pk
-      ? { es: `${r.label} · ${shortLabel(detail.label)}`, en: `${r.labelEn} · ${shortLabel(detail.labelEn)}` }
-      : { es: r.label, en: r.labelEn };
   // Porcentajes por resto mayor: la leyenda promete "suma 100%", así que los
   // enteros impresos tienen que sumarlo — redondear cada fila por separado daba
   // 101%. Las filas vienen ordenadas de mayor a menor: la primera es la más
@@ -248,46 +244,88 @@ export function CasePosterior({
   // 70 %, cuando valía un 32 % (Yellow Sea, 138 fichas; nov 2026). Por debajo
   // de la mitad se nombra con su propio porcentaje.
   const majority = top.pct >= 50;
-  const topPct = `${top.pct}\u00a0%`;
+  const topPct = `${top.pct}%`;
   const topText =
     top.key === "indet"
       ? { es: "La evidencia no alcanza para decidir entre las explicaciones", en: "The evidence is not enough to decide between the explanations" }
       : !majority
         ? top.key === "sin_propuesta"
-          ? { es: `La que más pesa: una causa ordinaria que nadie ha identificado (${topPct})`, en: `The largest share: an ordinary cause no one has identified (${topPct})` }
-          : { es: `La que más pesa: ${topName.es.toLowerCase()} (${topPct})`, en: `The largest share: ${topName.en.toLowerCase()} (${topPct})` }
+          ? { es: `La que más pesa: una causa ordinaria que nadie ha identificado\u00a0(${topPct})`, en: `The largest share: an ordinary cause no one has identified\u00a0(${topPct})` }
+          : { es: `La que más pesa: ${topName.es.toLowerCase()}\u00a0(${topPct})`, en: `The largest share: ${topName.en.toLowerCase()}\u00a0(${topPct})` }
+        // Con su propia cifra también por encima de la mitad: bajo «71 %» se leía
+        // que el contagio colectivo valía 71 % cuando valía 68 % (zepelines, nov 2026).
         : top.key === "sin_propuesta"
-          ? { es: "Lo más probable es una causa ordinaria que nadie ha identificado", en: "Most likely an ordinary cause that no one has identified" }
-          : { es: `Explicación más probable: ${topName.es.toLowerCase()}`, en: `Most likely explanation: ${topName.en.toLowerCase()}` };
+          ? { es: `Lo más probable es una causa ordinaria que nadie ha identificado\u00a0(${topPct})`, en: `Most likely an ordinary cause that no one has identified\u00a0(${topPct})` }
+          : { es: `Explicación más probable: ${topName.es.toLowerCase()}\u00a0(${topPct})`, en: `Most likely explanation: ${topName.en.toLowerCase()}\u00a0(${topPct})` };
+  const explanationLeads = majority && top.key !== "indet";
+  const leadName =
+    top.key === "sin_propuesta"
+      ? { es: "causa ordinaria sin identificar", en: "ordinary cause, unidentified" }
+      : { es: topName.es.toLowerCase(), en: topName.en.toLowerCase() };
   return (
     <div>
-      <p className="flex items-baseline gap-2 text-text">
-        <span className="text-4xl font-semibold tabular-nums" data-lead="">{lead.sub}%</span>
-        <span className="text-base"><T es={lead.lead.es} en={lead.lead.en} locale={locale} /></span>
-      </p>
-      <p className="mb-3 mt-1 text-base text-text"><T es={topText.es} en={topText.en} locale={locale} /></p>
+      {/* Cuando una explicación pasa de la mitad, la cifra grande es la suya y el
+          grupo baja a la segunda línea: la cifra grande pertenece siempre a lo que
+          se nombra a su lado (decisión del dueño, 13 nov 2026; 265 fichas). Por
+          debajo de la mitad, o si manda lo indeterminado, sigue mandando el grupo. */}
+      {explanationLeads ? (
+        <>
+          <p className="flex items-baseline gap-2 text-text">
+            <span className="text-4xl font-semibold tabular-nums">{top.pct}%</span>
+            <span className="text-base"><T es={leadName.es} en={leadName.en} locale={locale} /></span>
+          </p>
+          <p className="mb-3 mt-1 text-base text-text">
+            <T es="La explicación más probable. En total, " en="The most likely explanation. In total, " locale={locale} />
+            <span className="tabular-nums" data-lead="">{lead.sub}%</span>{" "}
+            <T es={lead.lead.es} en={lead.lead.en} locale={locale} />.
+          </p>
+        </>
+      ) : (
+        <>
+          <p className="flex items-baseline gap-2 text-text">
+            <span className="text-4xl font-semibold tabular-nums" data-lead="">{lead.sub}%</span>
+            <span className="text-base"><T es={lead.lead.es} en={lead.lead.en} locale={locale} /></span>
+          </p>
+          <p className="mb-3 mt-1 text-base text-text"><T es={topText.es} en={topText.en} locale={locale} /></p>
+        </>
+      )}
       {/* Un tramo por grupo, del color de la explicación que más pesa en él. Con
           un tramo por explicación salían franjas de 1–2 % sin leyenda, que solo
           el color distinguía y que el `title` no mostraba en el móvil (nov 2026);
           el reparto fino queda en el desplegable. */}
       <div
         role="img"
-        aria-label={groups.map((g) => `${g.sub}% ${locale === "es" ? g.lead.es : g.lead.en}`).join(", ")}
+        aria-label={(explanationLeads ? `${top.pct}% ${locale === "es" ? leadName.es : leadName.en}; ` : "") + groups.map((g) => `${g.sub}% ${locale === "es" ? g.lead.es : g.lead.en}`).join(", ")}
         className="flex h-4 w-full gap-1 overflow-hidden"
       >
         {groups.map((g) => {
           const main = g.items.find((r) => !r.zero);
-          return main ? (
-            <div key={g.id} className="h-full min-w-0 rounded-sm" style={{ flex: `${Math.round(g.items.reduce((a, r) => a + r.count, 0) * 1000)} 1 0%`, backgroundColor: main.color }} />
-          ) : null;
+          if (!main) return null;
+          const total = g.items.reduce((a, r) => a + r.count, 0);
+          // Con la explicación como cifra grande, su tramo se separa del resto del
+          // grupo (mismo color, más claro) para que la barra muestre esa cifra.
+          const rest = explanationLeads && g === lead ? total - main.count : 0;
+          return (
+            <div key={g.id} className="flex h-full min-w-0 overflow-hidden rounded-sm" style={{ flex: `${Math.round(total * 1000)} 1 0%` }}>
+              <div className="h-full" style={{ flex: `${Math.round((total - rest) * 1000)} 1 0%`, backgroundColor: main.color }} />
+              {rest > 0 && <div className="h-full" style={{ flex: `${Math.round(rest * 1000)} 1 0%`, backgroundColor: main.color, opacity: 0.4 }} />}
+            </div>
+          );
         })}
       </div>
-      {/* Leyenda de la barra sin cifras: la única cifra visible es la de arriba. */}
+      {/* Leyenda de la barra: la cifra grande de arriba sigue siendo la que manda. El
+          grupo menor lleva la suya porque era el único tramo sin cifra visible (el
+          29 % había que deducirlo como 100 − 71; nov 2026). */}
       <div className="mt-1 flex w-full gap-1 text-xs text-muted">
         {groups.map((g) => (
           // Rótulo en dos líneas si hace falta: con `truncate` se leía «Sin causa c…» en el móvil.
           <span key={g.id} className="min-w-0 break-words leading-tight" style={{ flex: `${Math.round(g.items.reduce((a, r) => a + r.count, 0) * 1000)} 1 0%` }}>
-            {g.sub >= 15 && <T es={g.es} en={g.en} locale={locale} />}
+            {/* El tramo del grupo mayor ya lo nombra el titular («71 % natural or human cause»); rotularlo otra vez era la tercera repetición en pocas líneas. */}
+            {g !== lead && g.sub >= 15 && (
+              <>
+                <span className="tabular-nums">{g.sub}%</span> · <T es={g.es} en={g.en} locale={locale} />
+              </>
+            )}
           </span>
         ))}
       </div>
@@ -298,17 +336,32 @@ export function CasePosterior({
       <div className="mt-4 grid grid-cols-1 gap-x-8 gap-y-4 sm:grid-cols-2">
         {groups.map((g) => {
           return (
-            <div key={g.id} className="space-y-1">
-              <p className="border-b border-text/15 pb-1 text-xs text-muted">
+            <div key={g.id} className="space-y-2">
+              {/* Subtotal en el encabezado: el desglose suma a la vista hacia la cifra grande. */}
+              <p className="flex justify-between border-b border-text/15 pb-1 text-[13px] font-semibold text-text">
                 <T es={g.es} en={g.en} locale={locale} />
+                <span className="tabular-nums">{g.sub}%</span>
               </p>
+              {/* Una barrita por fila en lugar del cuadro de color: la barra de arriba
+                  ya no tiene un tramo por explicación, así que el cuadro era la leyenda
+                  de algo que no se veía. Letra de texto y no mono 11 px; las filas en
+                  0 % van en el gris normal (con /70 daban 3,17:1, bajo AA). */}
               {g.items.map((r) => (
-                <div key={r.key} className={`flex items-baseline justify-between pl-3 font-mono text-[11px] ${r.zero ? "text-muted/70" : ""}`}>
-                  <span className={`flex items-center gap-1.5 ${r.zero ? "" : "text-text"}`}>
-                    <span className={`inline-block h-2 w-2 shrink-0 ${r.zero ? "opacity-30" : ""}`} style={{ backgroundColor: r.color }} />
-                    <T es={r.zero ? r.label : withDetail(r).es} en={r.zero ? r.labelEn : withDetail(r).en} locale={locale} />
+                <div key={r.key} className="grid grid-cols-[1fr_4rem_2.5rem] items-center gap-3 text-[13px] leading-snug">
+                  <span className={r.zero ? "text-muted" : "text-text"}>
+                    <T es={r.label} en={r.labelEn} locale={locale} />
+                    {!r.zero && detail && r.key === pk && (
+                      <span className="block text-xs text-muted">
+                        <T es={shortLabel(detail.label)} en={shortLabel(detail.labelEn)} locale={locale} />
+                      </span>
+                    )}
                   </span>
-                  {r.zero ? <span>0%</span> : <span className="text-muted" {...(g === lead ? { "data-lead-row": "" } : {})} data-pct="">{r.pct}%</span>}
+                  {/* Pista con contorno y no relleno: el gris de «indeterminado» sobre una
+                      pista gris daba 2,82:1. Mínimo de 3 px para que 1–2 % no se lea como 0. */}
+                  <span className="h-1.5 w-full overflow-hidden rounded-full ring-1 ring-inset ring-text/25" aria-hidden>
+                    <span className="block h-full rounded-full" style={{ width: r.pct > 0 ? `max(3px, ${r.pct}%)` : 0, backgroundColor: r.color }} />
+                  </span>
+                  {r.zero ? <span className="text-right tabular-nums text-muted">0%</span> : <span className="text-right tabular-nums text-muted" {...(g === lead ? { "data-lead-row": "" } : {})} data-pct="">{r.pct}%</span>}
                 </div>
               ))}
             </div>

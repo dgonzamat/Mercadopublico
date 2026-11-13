@@ -163,6 +163,16 @@ export default function WorldMap({
         <MapContainer
           center={[20, 0]}
           zoom={2}
+          // Sin esto el usuario puede arrastrar más allá de ±180° y Leaflet
+          // repite las teselas (copias del mundo), pero los marcadores solo
+          // existen en la copia 0: la vista queda con mapa y sin puntos. Con
+          // maxBounds + viscosity 1 el arrastre se frena en el borde del mundo.
+          maxBounds={[
+            [-85, -180],
+            [85, 180],
+          ]}
+          maxBoundsViscosity={1}
+          minZoom={2}
           // scrollWheelZoom desactivado: con el mapa a ancho completo, el zoom
           // por rueda "secuestraba" el scroll de la página al pasar por encima.
           // El usuario hace zoom con los controles +/− o pinch en táctil.
@@ -195,6 +205,7 @@ export default function WorldMap({
             url="https://services.arcgisonline.com/ArcGIS/rest/services/Canvas/World_Light_Gray_Base/MapServer/tile/{z}/{y}/{x}"
             maxNativeZoom={16}
             maxZoom={18}
+            noWrap
           />
           <FitBounds points={points} depKey={depKey} />
           {shown.map((c) => (
