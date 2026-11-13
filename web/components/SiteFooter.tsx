@@ -1,5 +1,6 @@
 "use client";
 
+import type { ReactNode } from "react";
 import { usePathname } from "next/navigation";
 import { ShareButton } from "@/components/ShareButton";
 import { InstagramLink } from "@/components/InstagramLink";
@@ -22,7 +23,7 @@ export function SiteFooter() {
   return (
     <footer className="mt-16 border-t-2 border-text bg-panel">
       <div className="mx-auto max-w-6xl px-4 py-12 space-y-10">
-        <div className="grid gap-10 md:grid-cols-[2fr_1fr_1fr]">
+        <div className="grid gap-10 md:grid-cols-[2fr_3fr]">
           <div className="space-y-3">
             {/* Rótulos con Eyebrow, como el resto del sitio desde oct 2026 (no en mayúsculas). */}
             <Eyebrow>
@@ -62,60 +63,32 @@ export function SiteFooter() {
             </div>
           </div>
 
-          {/* aria-label en el idioma de la URL (sin espejo: inglés) y sin
-              «principal», que competía con la navegación del encabezado. */}
-          <nav aria-label={locale === "es" ? "Pie de página: atlas" : "Footer: atlas"} className="space-y-2">
-            <Eyebrow>Atlas</Eyebrow>
-            <ul className="space-y-1">
+          {/* Tres columnas de un solo tipo cada una (decisión del dueño, 13 nov 2026):
+              antes «Atlas» tenía 4 enlaces y «More» 10, mezclando contenido con
+              páginas del proyecto. El mapa se llama «Atlas», como en el menú de arriba.
+              aria-label en el idioma de la URL (sin espejo: inglés). */}
+          <div className="grid grid-cols-2 gap-8 sm:grid-cols-3">
+            <FooterColumn label={{ es: "Explorar", en: "Explore" }} locale={locale}>
               <FooterLink href="/cases" es="Casos" en="Cases" locale={locale} />
-              <FooterLink
-                href="/probabilidades"
-                es="Probabilidades"
-                en="Probabilities"
-                locale={locale}
-              />
-              <FooterLink href="/atlas" es="Mapa" en="Map" locale={locale} />
-              <FooterLink
-                href="/resumen"
-                es="Resumen 10 min"
-                en="10-min summary"
-                locale={locale}
-              />
-            </ul>
-          </nav>
-
-          <nav aria-label={locale === "es" ? "Pie de página: más" : "Footer: more"} className="space-y-2">
-            <Eyebrow>
-              <T es="Más" en="More" locale={locale} />
-            </Eyebrow>
-            <ul className="space-y-1">
-              <FooterLink href="/blog" es="Blog" en="Blog" locale={locale} />
+              <FooterLink href="/atlas" es="Atlas" en="Atlas" locale={locale} />
+              <FooterLink href="/probabilidades" es="Probabilidades" en="Probabilities" locale={locale} />
+              <FooterLink href="/cobertura" es="Cobertura" en="Coverage" locale={locale} />
+              <FooterLink href="/releases" es="Releases PURSUE" en="PURSUE releases" locale={locale} />
+            </FooterColumn>
+            <FooterColumn label={{ es: "Contexto", en: "Context" }} locale={locale}>
               <FooterLink href="/researchers" es="Actores" en="Actors" locale={locale} />
-              <FooterLink
-                href="/frameworks"
-                es="Marcos teóricos"
-                en="Frameworks"
-                locale={locale}
-              />
               <FooterLink href="/entities" es="Entidades" en="Entities" locale={locale} />
+              <FooterLink href="/frameworks" es="Marcos teóricos" en="Frameworks" locale={locale} />
+              <FooterLink href="/fuentes" es="Fuentes (bibliografía)" en="Sources (bibliography)" locale={locale} />
+            </FooterColumn>
+            <FooterColumn label={{ es: "Proyecto", en: "Project" }} locale={locale}>
+              <FooterLink href="/resumen" es="Resumen 10 min" en="10-min summary" locale={locale} />
               <FooterLink href="/about" es="Metodología" en="Method" locale={locale} />
+              <FooterLink href="/blog" es="Blog" en="Blog" locale={locale} />
               <FooterLink href="/contact" es="Contacto" en="Contact" locale={locale} />
               <FooterLink href="/visitantes" es="Visitantes" en="Visitors" locale={locale} />
-              <FooterLink href="/cobertura" es="Cobertura" en="Coverage" locale={locale} />
-              <FooterLink
-                href="/fuentes"
-                es="Fuentes (bibliografía)"
-                en="Sources (bibliography)"
-                locale={locale}
-              />
-              <FooterLink
-                href="/releases"
-                es="Releases PURSUE"
-                en="PURSUE releases"
-                locale={locale}
-              />
-            </ul>
-          </nav>
+            </FooterColumn>
+          </div>
         </div>
 
         <p
@@ -131,6 +104,25 @@ export function SiteFooter() {
         </p>
       </div>
     </footer>
+  );
+}
+
+function FooterColumn({
+  label,
+  locale,
+  children,
+}: {
+  label: { es: string; en: string };
+  locale?: "es" | "en";
+  children: ReactNode;
+}) {
+  return (
+    <nav aria-label={locale === "es" ? `Pie de página: ${label.es.toLowerCase()}` : `Footer: ${label.en.toLowerCase()}`} className="space-y-2">
+      <Eyebrow>
+        <T es={label.es} en={label.en} locale={locale} />
+      </Eyebrow>
+      <ul className="space-y-1">{children}</ul>
+    </nav>
   );
 }
 
