@@ -744,15 +744,29 @@ export async function CaseDetailPage(
           <Eyebrow>
             <T locale={locale} es="Casos relacionados" en="Related cases" />
           </Eyebrow>
-          <div className="grid gap-px bg-text sm:grid-cols-2">
+          <p className="-mt-3 text-sm text-muted">
+            <T locale={locale}
+              es="Se parecen a este por la causa probable, el país o la época."
+              en="Similar to this one by likely cause, country or period."
+            />
+          </p>
+          <div className="grid gap-px border-y-2 border-text bg-text sm:grid-cols-2">
             {similar.map((s) => {
+              // La razón nombra lo que se comparte (la causa, no solo «mismo objeto»):
+              // «mismo objeto» sobre «contagio colectivo» no era un objeto y no se entendía.
+              const myClass = myKey ? PROSAIC_CLASSES.find((k) => k.key === myKey) : undefined;
+              const myDetail = myKey ? objectDetailDef(myKey, c.objectDetail) : undefined;
+              const causeFor = (lang: "es" | "en") =>
+                myDetail
+                  ? shortLabel(lang === "es" ? myDetail.label : myDetail.labelEn)
+                  : myClass ? (lang === "es" ? myClass.label : myClass.labelEn) : "";
               const reasonFor = (lang: "es" | "en") =>
                 [
-                  s.sameObject
-                    ? (lang === "es" ? "mismo objeto" : "same object")
-                    : s.sameClass ? (lang === "es" ? "misma explicación" : "same explanation") : null,
-                  s.sameCountry ? (lang === "es" ? "mismo país" : "same country") : null,
-                  s.nearYear ? (lang === "es" ? "misma época" : "same period") : null,
+                  s.sameObject || s.sameClass
+                    ? `${lang === "es" ? "Misma causa probable" : "Same likely cause"}: ${causeFor(lang)}`
+                    : null,
+                  s.sameCountry ? (lang === "es" ? "Mismo país" : "Same country") : null,
+                  s.nearYear ? (lang === "es" ? "Dentro de 10 años" : "Within 10 years") : null,
                 ]
                   .filter(Boolean)
                   .join(" · ");
@@ -762,7 +776,7 @@ export async function CaseDetailPage(
                   href={`/cases/${s.caseData.id}`}
                   className="group flex flex-col gap-2 bg-bg p-5 hover:bg-text hover:text-bg"
                 >
-                  <p className="font-mono text-[11px] text-muted group-hover:text-bg/60">
+                  <p className="text-xs text-muted group-hover:text-bg/60">
                     <T locale={locale} es={reasonFor("es")} en={reasonFor("en")} />
                   </p>
                   <p className="font-display text-xl font-medium leading-tight text-text group-hover:text-bg">
@@ -817,45 +831,43 @@ export async function CaseDetailPage(
       {/* ────────── PREV / NEXT NAVIGATION (solo sucesos) ────────── */}
       {c.category !== "document" && (
       <nav
-        aria-label="Navegación entre casos"
-        className="grid grid-cols-2 gap-px border-y-2 border-text bg-text"
+        aria-label={locale === "es" ? "Recorrer el archivo en orden" : "Browse the archive in order"}
+        className="space-y-3 border-t border-border pt-6"
       >
-        {prev ? (
-          <LocaleLink
-            href={`/cases/${prev.id}`}
-            className="group flex flex-col gap-1 bg-bg p-5 hover:bg-text hover:text-bg"
-          >
-            <span className="font-mono text-[11px] text-muted group-hover:text-bg/60">
-              <T locale={locale}
-                es={`← Caso anterior · #${prev.num}`}
-                en={`← Previous case · #${prev.num}`}
-              />
-            </span>
-            <span className="font-display text-lg font-medium leading-tight text-text group-hover:text-bg">
-              <T locale={locale} es={prev.name} en={prev.name_en ?? prev.name} />
-            </span>
-          </LocaleLink>
-        ) : (
-          <div className="bg-bg p-5" aria-hidden />
-        )}
-        {next ? (
-          <LocaleLink
-            href={`/cases/${next.id}`}
-            className="group flex flex-col gap-1 bg-bg p-5 text-right hover:bg-text hover:text-bg"
-          >
-            <span className="font-mono text-[11px] text-muted group-hover:text-bg/60">
-              <T locale={locale}
-                es={`Siguiente caso · #${next.num} →`}
-                en={`Next case · #${next.num} →`}
-              />
-            </span>
-            <span className="font-display text-lg font-medium leading-tight text-text group-hover:text-bg">
-              <T locale={locale} es={next.name} en={next.name_en ?? next.name} />
-            </span>
-          </LocaleLink>
-        ) : (
-          <div className="bg-bg p-5" aria-hidden />
-        )}
+        {/* No es «relacionados»: los casos van por número de registro, sin
+            relación de contenido entre vecinos. El rótulo lo dice. */}
+        <p className="text-sm text-muted">
+          <T locale={locale}
+            es="Recorrer el archivo en orden de registro (sin relación de contenido)"
+            en="Browse the archive in registry order (not related by content)"
+          />
+        </p>
+        <div className="grid grid-cols-2 gap-6">
+          {prev ? (
+            <LocaleLink href={`/cases/${prev.id}`} className="group flex flex-col gap-1">
+              <span className="text-xs text-muted">
+                <T locale={locale} es={`← Anterior · #${prev.num}`} en={`← Previous · #${prev.num}`} />
+              </span>
+              <span className="text-base font-medium leading-snug text-text underline-offset-4 group-hover:text-accent group-hover:underline">
+                <T locale={locale} es={prev.name} en={prev.name_en ?? prev.name} />
+              </span>
+            </LocaleLink>
+          ) : (
+            <div aria-hidden />
+          )}
+          {next ? (
+            <LocaleLink href={`/cases/${next.id}`} className="group flex flex-col gap-1 text-right">
+              <span className="text-xs text-muted">
+                <T locale={locale} es={`Siguiente · #${next.num} →`} en={`Next · #${next.num} →`} />
+              </span>
+              <span className="text-base font-medium leading-snug text-text underline-offset-4 group-hover:text-accent group-hover:underline">
+                <T locale={locale} es={next.name} en={next.name_en ?? next.name} />
+              </span>
+            </LocaleLink>
+          ) : (
+            <div aria-hidden />
+          )}
+        </div>
       </nav>
       )}
     </article>
