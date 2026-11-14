@@ -1,0 +1,134 @@
+{
+  "id": "pokhara-1968",
+  "num": 520,
+  "name": "Pokhara · una bola de fuego deja restos metálicos en un campo",
+  "name_en": "Pokhara · a fireball leaves metal debris in a field",
+  "year_start": 1968,
+  "country": "NP",
+  "country_name": "Nepal",
+  "flag": "🇳🇵",
+  "location": {
+    "lat": 28.255,
+    "lng": 83.995,
+    "place": "Batulechaur, al noreste de Pokhara, distrito de Kaski, Nepal",
+    "place_en": "Batulechaur, northeast of Pokhara, Kaski district, Nepal"
+  },
+  "tier": "A",
+  "epistemicStatus": "documented",
+  "probability": 3,
+  "mundanoType": "misid",
+  "misidSubtype": "espacial",
+  "objectDetail": "reentrada",
+  "posterior": {
+    "mundano_natural": 0.93,
+    "humana_clasificada": 0.02,
+    "adversaria": 0.02,
+    "nohumano_encubierto": 0,
+    "nohumano_abierto": 0.01,
+    "indet": 0.02
+  },
+  "summary": "La noche del 25 de marzo de 1968, un objeto en llamas que destellaba se deshizo con grandes estruendos sobre el distrito de Kaski, en Nepal. Al día siguiente apareció en un campo de Batulechaur, cerca de Pokhara, una pieza metálica en un cráter, y hubo restos en otras aldeas. La CIA lo incluyó en un informe sobre «objetos voladores no identificados» en el Himalaya. Técnicos de Defensa de EE. UU. concluyeron que no era estadounidense y que podía ser del Kosmos-208 soviético, cuya etapa de cohete reentró esa misma noche.",
+  "summary_en": "On the night of March 25, 1968, a blazing, flashing object broke apart with loud booms over Kaski district, Nepal. The next day a metal piece turned up in a crater in a field at Batulechaur, near Pokhara, and debris was found in other villages. The CIA included it in a report on \"unidentified flying objects\" in the Himalayas. U.S. Defense technicians concluded it was not American and could be from the Soviet Kosmos-208, whose rocket stage reentered that same night.",
+  "patterns": [],
+  "category": "incident",
+  "whatHappened": "Entre el 19 de febrero y el 25 de marzo de 1968 se vieron varias luces brillantes sobre el Himalaya, en el sur de Ladakh, el noreste de Nepal, el norte de Sikkim y el oeste de Bután. El 19 de febrero, entre las 21:00 y las 21:15, un objeto rápido, largo y delgado, con luz roja y verde, cruzó de noreste a suroeste sobre Walungchung Gola y Ghunsa, en Nepal; fue tan brillante que pareció de día, y segundos después se oyó un trueno. A la misma hora se vio una luz parecida en Lachung, Lachen y otras localidades de Sikkim. El 21 de febrero, a las 21:30, un objeto azulado y silencioso pasó a gran velocidad sobre Timbu, la capital de Bután. El 4 de marzo, a mediodía, en Ladakh se vio una luz blanca, se oyeron dos estallidos y apareció una luz rojiza seguida de humo blanco.\n\nLa noche del 25 de marzo hubo dos avistamientos. En Ladakh, a las 21:50, un objeto parecido a un cohete, con una estela blanca y amarilla, avanzó de norte a sur hacia Demchok. En Nepal, un objeto en llamas que destellaba de forma intermitente cruzó de norte a sur sobre el distrito de Kaski y se deshizo entre grandes estruendos. La hora que da la CIA para este último está borrosa en la copia publicada y se lee 20:15 o 21:15; la prensa nepalí habla de las ocho y cuarto.\n\nA la mañana siguiente, en un campo de Batulechaur, unos 8 km al noreste de Pokhara, apareció una pieza metálica dentro de un cráter. La CIA la describe como un objeto en forma de disco de unos 1,8 metros de base y 1,2 de alto, y dice que se hallaron partes de un objeto parecido en Talakot y Turpasal. Según la prensa nepalí, que recogió el relato décadas después, el campo era de Kul Prasad Timilsina, de 27 años, que guardó la pieza casi un mes en el establo de sus búfalos hasta que se la llevó el comisionado de la zona. Las descripciones de la pieza no coinciden: un disco de una pulgada de grosor en un artículo, una plancha de unos 2 por 1 metros con las esquinas redondeadas en otro.\n\nEl 11 de abril, la CIA distribuyó un informe de cuatro páginas, sin evaluar y con la fuente tachada, con la tabla de todos los avistamientos. El 25 de junio, un memorando del Departamento de Estado contaba que la División de Tecnología Extranjera de la Fuerza Aérea veía «gran valor» en los fragmentos, vinieran de una prueba de misiles china o de un cohete soviético, y que la inteligencia militar quería enviar un equipo a Nepal.\n\nEl 26 de agosto, el embajador, el agregado militar y dos técnicos de Defensa presentaron al secretario de Relaciones Exteriores de Nepal, Khanal, un informe preliminar sobre los objetos, que estaban en manos del gobierno nepalí. El cable del 28 de agosto resume sus conclusiones: los objetos no eran de origen estadounidense, algunas piezas podían ser soviéticas, «posiblemente el Cosmos 208, que reentró en la atmósfera la noche del 25 de marzo de 1968», y algunas parecían de otro objeto caído en otra fecha. La identificación definitiva exigía examinarlas en un laboratorio de EE. UU., porque la técnica soviética había influido en los cohetes chinos. Khanal contó que India y China habían pedido verlas y solo tomaron fotos, que la Unión Soviética no mostró interés y pidió de nuevo que no se diera publicidad al asunto.\n\nEn agosto de 1971, el secretario de Relaciones Exteriores, Bhandary, aceptó que EE. UU. cortara una tira de un fragmento con la condición de devolverlo «essentially intact». El 1 de marzo de 1972, un cable conjunto de Estado y Defensa, bajo el nombre del programa de recuperación de restos espaciales Moon Dust, anunció que el fragmento restaurado volvía a Katmandú en un vuelo de apoyo de la embajada hacia el 10 de marzo.",
+  "whatHappened_en": "Between February 19 and March 25, 1968, several bright lights were seen over the Himalayas, in southern Ladakh, northeastern Nepal, northern Sikkim and western Bhutan. On February 19, between 9:00 and 9:15 p.m., a fast, long, thin object with red and green light crossed from northeast to southwest over Walungchung Gola and Ghunsa, in Nepal; it was bright enough to look like daylight, and a thunderclap followed a few seconds later. At the same time a similar light was seen at Lachung, Lachen and other places in Sikkim. On February 21, at 9:30 p.m., a silent bluish object passed at high speed over Thimphu, the capital of Bhutan. On March 4, at midday, a white light was seen in Ladakh, two blasts were heard and a reddish light appeared, followed by white smoke.\n\nThere were two sightings on the night of March 25. In Ladakh, at 9:50 p.m., a rocket-like object with a white and yellow trail moved from north to south toward Demchok. In Nepal, a blazing object flashing on and off crossed from north to south over Kaski district and broke apart amid loud booms. The time the CIA gives for this one is blurred in the published copy and reads 8:15 or 9:15 p.m.; the Nepali press says a quarter past eight.\n\nThe next morning, in a field at Batulechaur, about 8 km northeast of Pokhara, a metal piece turned up inside a crater. The CIA describes it as a disc-shaped object about 6 feet across at the base and 4 feet high, and says parts of a similar object were found at Talakot and Turpasal. According to the Nepali press, which collected the story decades later, the field belonged to Kul Prasad Timilsina, then 27, who kept the piece in his buffalo shed for almost a month until the zonal commissioner took it away. The descriptions of the piece do not match: a disc one inch thick in one article, a sheet about 2 by 1 meters with rounded corners in another.\n\nOn April 11, the CIA distributed a four-page report, not evaluated and with the source blacked out, with a table of all the sightings. On June 25, a State Department memo said the Air Force's Foreign Technology Division saw \"great value\" in the fragments, whether they came from a Chinese missile test or a Soviet rocket, and that military intelligence wanted to send a team to Nepal.\n\nOn August 26, the ambassador, the military attaché and two Defense technicians presented a preliminary report on the objects, which were held by the Nepali government, to Nepal's foreign secretary, Khanal. The August 28 cable summarizes their findings: the objects were not of U.S. origin, some pieces could be Soviet, \"possibly Cosmos 208 which re-entered the earth's atmosphere on night of March 25, 1968,\" and some appeared to come from a different object that fell on a different date. A definite identification required examination in a U.S. laboratory, because Soviet technology had influenced Chinese rockets. Khanal said India and China had asked to see the pieces and only took pictures, that the Soviet Union had shown no interest, and asked again that the matter receive no publicity.\n\nIn August 1971, Foreign Secretary Bhandary agreed that the United States could cut a strip from one fragment on condition that it be returned \"essentially intact.\" On March 1, 1972, a joint State and Defense cable, under the name of the space-debris recovery program Moon Dust, announced that the restored fragment was returning to Kathmandu on an embassy support flight around March 10.",
+  "whyMatters": "El catálogo de objetos espaciales de Jonathan McDowell confirma la fecha que dio la embajada. El Kosmos-208, un satélite soviético de reconocimiento, fue lanzado el 21 de marzo de 1968. La tercera etapa del cohete que lo puso en órbita, un cilindro de unas 3 toneladas, 9,4 metros de largo y 2,7 de diámetro, reentró el 25 de marzo. Su órbita, inclinada 65 grados, pasaba sobre la latitud de Nepal. El satélite cayó después, el 2 de abril. El catálogo registra otra reentrada ese mismo 25 de marzo, una pieza del sistema de radar del Kosmos-209, también en una órbita que cruzaba el Himalaya, lo que encaja con la advertencia de que no todas las piezas eran del mismo objeto.\n\nEl catálogo da el día, no la hora ni el punto de caída, y no se pudo comprobar la trayectoria de esa noche. Con todo, los relatos de Kaski tienen la forma de una reentrada: una bola de fuego que avanza en línea recta, destella, se deshace con estampidos y deja piezas metálicas repartidas en varias aldeas. Ningún documento de la época propone otra causa, y el único análisis técnico, el de los especialistas de Defensa, descartó que fueran estadounidenses y apuntó a la Unión Soviética.\n\nEl caso muestra cómo llegaba a los archivos de ovnis algo que no lo era. La CIA tituló su informe «avistamientos de objetos voladores no identificados» y lo archivó en esa serie, que se desclasificó y volvió a publicarse en 2026. Los cables, en cambio, cuentan otra historia: un servicio de inteligencia que trata los restos como material soviético o chino de valor técnico, y un gobierno que quiere saber de quién son sin que el asunto se haga público.\n\nNo todos los avistamientos del informe se explican igual. Para la luz del 19 de febrero, que iluminó como de día el noreste de Nepal y Sikkim y fue seguida de un trueno, el catálogo no registra ninguna reentrada esa noche, y nadie ha propuesto una causa. Un bólido, un meteoro grande, produce ese brillo y ese estruendo, pero no hay registro que lo confirme. Los de Bután y Ladakh tampoco tienen una explicación publicada.",
+  "whyMatters_en": "Jonathan McDowell's catalog of space objects confirms the date the embassy gave. Kosmos-208, a Soviet reconnaissance satellite, was launched on March 21, 1968. The third stage of the rocket that put it in orbit, a cylinder of about 3 tons, 9.4 meters long and 2.7 meters wide, reentered on March 25. Its orbit, inclined at 65 degrees, passed over Nepal's latitude. The satellite came down later, on April 2. The catalog lists another reentry on that same March 25, a piece of the Kosmos-209 radar system, also in an orbit that crossed the Himalayas, which fits the warning that not all the pieces came from the same object.\n\nThe catalog gives the day, not the time or the place of the fall, and the trajectory of that night could not be checked. Even so, the Kaski accounts have the shape of a reentry: a fireball that moves in a straight line, flashes, breaks apart with booms and leaves metal pieces scattered over several villages. No document of the time proposes another cause, and the only technical analysis, by the Defense specialists, ruled out an American origin and pointed to the Soviet Union.\n\nThe case shows how something that was not a UFO ended up in UFO files. The CIA titled its report \"sightings of unidentified flying objects\" and filed it in that series, which was declassified and published again in 2026. The cables tell a different story: an intelligence service treating the debris as Soviet or Chinese material of technical value, and a government that wanted to know whose it was without the matter becoming public.\n\nNot all the sightings in the report have the same explanation. For the light of February 19, which lit up northeastern Nepal and Sikkim like daylight and was followed by a thunderclap, the catalog lists no reentry that night, and no one has proposed a cause. A bolide, a large meteor, produces that brightness and that boom, but there is no record to confirm it. The Bhutan and Ladakh sightings have no published explanation either.",
+  "evidence": [
+    "Informe de información de la CIA, distribuido el 11 de abril de 1968, «Sightings of Unidentified Flying Objects in Ladakh, Nepal, Sikkim and Bhutan», sin evaluar y con la fuente tachada: tabla de avistamientos del 19 de febrero al 25 de marzo de 1968, con fecha, hora local, lugar, rumbo y descripción.",
+    "El mismo informe, sobre Kaski el 25 de marzo: objeto en llamas que destellaba, con grandes truenos, que se deshizo; un objeto metálico en forma de disco de seis pies de base y cuatro de alto hallado en un cráter en «Baltichaur», cinco millas al noreste de Pokhara, y partes de otro parecido en Talakot y Turpasal.",
+    "Memorando del Departamento de Estado del 25 de junio de 1968 (Jerry C. Trippe): la División de Tecnología Extranjera de la Fuerza Aérea da «great value» a los fragmentos, sean «from a Chinese missile test or the Soviet launch vehicle venik».",
+    "Cable de la embajada en Katmandú del 28 de agosto de 1968: los objetos no son de origen estadounidense; algunas piezas podrían ser soviéticas, «possibly Cosmos 208», que reentró la noche del 25 de marzo de 1968; algunas parecen de otro objeto caído en otra fecha; India y China pidieron verlas.",
+    "Cables del 12 de agosto de 1971 y del 1 de marzo de 1972: Nepal acepta que se corte una tira de un fragmento si se devuelve «essentially intact»; el fragmento restaurado vuelve a Katmandú hacia el 10 de marzo de 1972.",
+    "Catálogo GCAT de McDowell: 1968-022A, Kosmos-208, lanzado el 21 de marzo de 1968, reentrada el 2 de abril; 1968-022B, tercera etapa Blok-I del Vosjod, unas 3 toneladas, órbita de 65 grados, reentrada el 25 de marzo de 1968; también reentró ese día 1968-023B, del Kosmos-209.",
+    "Prensa nepalí (Kathmandu Post, 2020; Nepali Times, 2024): el campo era de Kul Prasad Timilsina, de 27 años; la pieza pasó casi un mes en su establo antes de que se la llevara el comisionado de la zona."
+  ],
+  "evidence_en": [
+    "CIA information report, distributed April 11, 1968, \"Sightings of Unidentified Flying Objects in Ladakh, Nepal, Sikkim and Bhutan,\" not evaluated and with the source blacked out: table of sightings from February 19 to March 25, 1968, with date, local time, place, direction and description.",
+    "The same report, on Kaski on March 25: a blazing, flashing object with big thunder sounds that broke apart; a disc-shaped metal object with a six-foot base and four feet high found in a crater at \"Baltichaur,\" five miles northeast of Pokhara, and parts of a similar one at Talakot and Turpasal.",
+    "State Department memo of June 25, 1968 (Jerry C. Trippe): the Air Force's Foreign Technology Division sees \"great value\" in the fragments, whether they are \"from a Chinese missile test or the Soviet launch vehicle venik.\"",
+    "Kathmandu embassy cable of August 28, 1968: the objects are not of U.S. origin; some pieces could be Soviet, \"possibly Cosmos 208,\" which reentered on the night of March 25, 1968; some appear to come from another object that fell on a different date; India and China asked to see them.",
+    "Cables of August 12, 1971, and March 1, 1972: Nepal agrees that a strip may be cut from a fragment if it is returned \"essentially intact\"; the restored fragment returns to Kathmandu around March 10, 1972.",
+    "McDowell's GCAT catalog: 1968-022A, Kosmos-208, launched March 21, 1968, reentry April 2; 1968-022B, Voskhod Blok-I third stage, about 3 tons, 65-degree orbit, reentry March 25, 1968; 1968-023B, from Kosmos-209, also reentered that day.",
+    "Nepali press (Kathmandu Post, 2020; Nepali Times, 2024): the field belonged to Kul Prasad Timilsina, then 27; the piece spent almost a month in his shed before the zonal commissioner took it."
+  ],
+  "sources": [
+    {
+      "name": "CIA, informe de información «Sightings of Unidentified Flying Objects in Ladakh, Nepal, Sikkim and Bhutan» (11 abr 1968), CIA-UAP-016, PURSUE, tercera entrega; espejo en archive.org",
+      "name_en": "CIA, information report \"Sightings of Unidentified Flying Objects in Ladakh, Nepal, Sikkim and Bhutan\" (Apr 11, 1968), CIA-UAP-016, PURSUE, third release; archive.org mirror",
+      "url": "https://archive.org/details/pursue-uap-documents-2026",
+      "note": "Fuente primaria: la tabla de avistamientos y la descripción de la pieza hallada cerca de Pokhara. La copia de la sala de lectura de la CIA es CIA-RDP81R00560R000100070007-8.",
+      "note_en": "Primary source: the table of sightings and the description of the piece found near Pokhara. The CIA reading room copy is CIA-RDP81R00560R000100070007-8."
+    },
+    {
+      "name": "National Security Archive, «Scavenging Intelligence: U.S. Government's Secret Search for Foreign Objects During the Cold War» (31 ene 2018), documentos 34A a 34D, «Space Debris in Nepal»",
+      "name_en": "National Security Archive, \"Scavenging Intelligence: U.S. Government's Secret Search for Foreign Objects During the Cold War\" (Jan 31, 2018), documents 34A to 34D, \"Space Debris in Nepal\"",
+      "url": "https://nsarchive.gwu.edu/briefing-book/intelligence/2018-01-31/scavenging-intelligence-us-governments-secret-search-foreign-objects-during-cold-war",
+      "note": "Memorando del 25 de junio de 1968 y cables del 28 de agosto de 1968, el 12 de agosto de 1971 y el 1 de marzo de 1972, de los Archivos Nacionales de EE. UU. (RG 59).",
+      "note_en": "Memo of June 25, 1968, and cables of August 28, 1968, August 12, 1971, and March 1, 1972, from the U.S. National Archives (RG 59)."
+    },
+    {
+      "name": "Embajada de EE. UU. en Katmandú, cable 4685 al secretario de Estado (28 ago 1968), documento 34B del National Security Archive",
+      "name_en": "U.S. Embassy Kathmandu, cable 4685 to the Secretary of State (Aug 28, 1968), National Security Archive document 34B",
+      "url": "https://nsarchive.gwu.edu/dc.html?doc=4361591-Document-34B-Space-Debris-in-Nepal-Cable-from",
+      "note": "Conclusiones de los técnicos de Defensa: origen no estadounidense, posiblemente el Cosmos 208.",
+      "note_en": "Findings of the Defense technicians: not of U.S. origin, possibly Cosmos 208."
+    },
+    {
+      "name": "Jonathan McDowell, General Catalog of Artificial Space Objects (GCAT), satcat: 1968-022A/B/C y 1968-023B",
+      "name_en": "Jonathan McDowell, General Catalog of Artificial Space Objects (GCAT), satcat: 1968-022A/B/C and 1968-023B",
+      "url": "https://planet4589.org/space/gcat/tsv/cat/satcat.tsv",
+      "note": "Fechas de lanzamiento y reentrada, masa, tamaño e inclinación de la órbita.",
+      "note_en": "Launch and reentry dates, mass, size and orbital inclination."
+    },
+    {
+      "name": "Amish Raj Mulmi, «Close encounters of the terrestrial kind», The Kathmandu Post (15 oct 2020)",
+      "name_en": "Amish Raj Mulmi, \"Close encounters of the terrestrial kind,\" The Kathmandu Post (Oct 15, 2020)",
+      "url": "https://kathmandupost.com/columns/2020/10/15/close-encounters-of-the-terrestrial-kind",
+      "note": "Recoge el relato de Kul Prasad Timilsina y enlaza los documentos del National Security Archive.",
+      "note_en": "Collects Kul Prasad Timilsina's account and links the National Security Archive documents."
+    },
+    {
+      "name": "Durga Rana Magar, «UFO over Pokhara», Nepali Times (7 dic 2024)",
+      "name_en": "Durga Rana Magar, \"UFO over Pokhara,\" Nepali Times (Dec 7, 2024)",
+      "url": "https://nepalitimes.com/here-now/ufo-over-pokhara",
+      "note": "Testimonios locales recogidos décadas después; describe la pieza como una plancha de unos 2 por 1 metros.",
+      "note_en": "Local testimony collected decades later; describes the piece as a sheet about 2 by 1 meters."
+    }
+  ],
+  "documents": [
+    {
+      "role": "documento",
+      "src": "/pursue/CIA-UAP-016-himalaya-1968-informe.pdf",
+      "type": "pdf",
+      "title": "Informe de la CIA sobre avistamientos en Ladakh, Nepal, Sikkim y Bután (11 de abril de 1968)",
+      "title_en": "CIA report on sightings in Ladakh, Nepal, Sikkim and Bhutan (April 11, 1968)",
+      "description": "Informe de información de la CIA de cuatro páginas, sin evaluar y con la fuente tachada, con la tabla de los avistamientos del 19 de febrero al 25 de marzo de 1968: fecha, hora local, lugar, rumbo y descripción de cada uno. La última página describe el objeto en llamas sobre Kaski y la pieza metálica hallada en un cráter cerca de Pokhara. La copia publicada en 2026 trae además un recorte de revista y una hoja de índice que aquí no se reproducen.",
+      "description_en": "Four-page CIA information report, not evaluated and with the source blacked out, with the table of sightings from February 19 to March 25, 1968: date, local time, place, direction and description of each. The last page describes the blazing object over Kaski and the metal piece found in a crater near Pokhara. The copy published in 2026 also includes a magazine clipping and an index sheet that are not reproduced here.",
+      "source": "CIA, CIA-UAP-016 (PURSUE, tercera entrega), vía archive.org",
+      "license": "Dominio público · obra del Gobierno de EE. UU.",
+      "fallbackUrl": "https://archive.org/details/pursue-uap-documents-2026"
+    },
+    {
+      "role": "documento",
+      "src": "/pursue/nepal-restos-espaciales-cables-1968-1972.pdf",
+      "type": "pdf",
+      "title": "Memorando y cables del Departamento de Estado sobre los restos de Nepal (1968-1972)",
+      "title_en": "State Department memo and cables on the Nepal debris (1968-1972)",
+      "description": "Cuatro documentos de los Archivos Nacionales de EE. UU. publicados por el National Security Archive: el memorando del 25 de junio de 1968 sobre el interés de la Fuerza Aérea en los fragmentos; el cable del 28 de agosto de 1968 con las conclusiones de los técnicos de Defensa («possibly Cosmos 208»); el del 12 de agosto de 1971, en el que Nepal acepta que se corte una tira de un fragmento; y el del 1 de marzo de 1972, que anuncia su devolución.",
+      "description_en": "Four U.S. National Archives documents published by the National Security Archive: the memo of June 25, 1968, on the Air Force's interest in the fragments; the cable of August 28, 1968, with the Defense technicians' findings (\"possibly Cosmos 208\"); the cable of August 12, 1971, in which Nepal agrees that a strip may be cut from a fragment; and the cable of March 1, 1972, announcing its return.",
+      "source": "Departamento de Estado de EE. UU. (NARA, RG 59), vía National Security Archive",
+      "license": "Dominio público · obra del Gobierno de EE. UU.",
+      "fallbackUrl": "https://nsarchive.gwu.edu/briefing-book/intelligence/2018-01-31/scavenging-intelligence-us-governments-secret-search-foreign-objects-during-cold-war"
+    }
+  ],
+  "evidenceReviewed": "2026-11-14",
+  "classBasis": {
+    "es": "Cable de la embajada de EE. UU. en Katmandú del 28 de agosto de 1968, con las conclusiones de los técnicos de Defensa que examinaron las piezas: no eran de origen estadounidense y algunas podían ser soviéticas, «possibly Cosmos 208 which re-entered the earth's atmosphere on night of March 25, 1968». El catálogo GCAT de McDowell da la reentrada de la tercera etapa del cohete del Kosmos-208 (1968-022B) ese mismo 25 de marzo. La trayectoria de esa noche no se ha comprobado.",
+    "en": "Cable from the U.S. Embassy in Kathmandu of August 28, 1968, with the findings of the Defense technicians who examined the pieces: they were not of U.S. origin and some could be Soviet, \"possibly Cosmos 208 which re-entered the earth's atmosphere on night of March 25, 1968.\" McDowell's GCAT catalog gives the reentry of the third stage of the Kosmos-208 rocket (1968-022B) on that same March 25. The trajectory of that night has not been checked.",
+    "source": "Embajada de EE. UU. en Katmandú, cable 4685 (28 ago 1968) · J. McDowell, GCAT satcat, 1968-022B",
+    "source_en": "U.S. Embassy Kathmandu, cable 4685 (Aug 28, 1968) · J. McDowell, GCAT satcat, 1968-022B",
+    "url": "https://nsarchive.gwu.edu/dc.html?doc=4361591-Document-34B-Space-Debris-in-Nepal-Cable-from"
+  }
+}
