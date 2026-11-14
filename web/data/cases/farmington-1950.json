@@ -32,12 +32,15 @@
   "documents": [
     {
       "role": "documento",
-      "src": "https://archive.org/details/1950-03-9614269-KirtlandAFB-N-M",
-      "type": "link",
+      "src": "/pursue/blue-book-kirtland-afb-1950.pdf",
+      "type": "pdf",
       "title": "Blue Book, carpeta de Kirtland AFB, 17 de marzo de 1950",
       "title_en": "Blue Book file on Kirtland AFB, March 17, 1950",
-      "description": "Informe de inteligencia aérea de la Octava Fuerza Aérea del 21 de marzo de 1950 sobre tres objetos vistos a las 15:00 del 17 de marzo por un capitán y tres sargentos desde la plataforma de la base de Kirtland, en Albuquerque. Incluye la tarjeta de registro y una página de libro sobre Farmington rotulada «(BALLOON) Observation». Recoge la declaración de cada observador y el comentario del oficial que lo preparó.",
-      "description_en": "Eighth Air Force air intelligence information report of March 21, 1950, on three objects seen at 3:00 p.m. on March 17 by a captain and three sergeants from the ramp at Kirtland Air Force Base in Albuquerque. It includes the record card and a book page on Farmington labeled \"(BALLOON) Observation.\" It records each observer's statement and the comment of the officer who prepared it."
+      "description": "Informe de inteligencia aérea de la Octava Fuerza Aérea del 21 de marzo de 1950 sobre tres objetos vistos a las 15:00 del 17 de marzo por un capitán y tres sargentos desde la plataforma de la base de Kirtland, en Albuquerque. Tres páginas: la tarjeta de registro y las dos hojas del informe, con la declaración de cada observador y el comentario del oficial que lo preparó. La carpeta de Blue Book guarda además una página de libro sobre Farmington rotulada «(BALLOON) Observation», que aquí no se reproduce porque es de una obra con derechos de autor; está en la copia de archive.org.",
+      "description_en": "Eighth Air Force air intelligence information report of March 21, 1950, on three objects seen at 3:00 p.m. on March 17 by a captain and three sergeants from the ramp at Kirtland Air Force Base in Albuquerque. Three pages: the record card and the two sheets of the report, with each observer's statement and the comment of the officer who prepared it. The Blue Book folder also holds a book page on Farmington labeled \"(BALLOON) Observation,\" not reproduced here because it comes from a copyrighted work; it is in the archive.org copy.",
+      "source": "Proyecto Blue Book (NARA), vía archive.org",
+      "license": "Dominio público · obra del Gobierno de EE. UU.",
+      "fallbackUrl": "https://archive.org/details/1950-03-9614269-KirtlandAFB-N-M"
     },
     {
       "role": "documento",

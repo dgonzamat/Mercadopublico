@@ -103,6 +103,20 @@
       "note_en": "Secondary. University of Colorado study for the Air Force: copies the summary of circumstances, concludes that \"the first object was probably a balloon\" and that there was no UFO in the accident; it dates the balloon reports to July 1."
     }
   ],
+  "documents": [
+    {
+      "role": "documento",
+      "src": "/pursue/usaf-f94c-walesville-1954-summary.pdf",
+      "type": "pdf",
+      "title": "Resumen de circunstancias del accidente del F-94C del 2 de julio de 1954 (USAF, 1967)",
+      "title_en": "Summary of circumstances of the July 2, 1954, F-94C accident (USAF, 1967)",
+      "description": "Tres páginas. La primera es la carta de la Dirección de Seguridad Aeroespacial del cuartel general de la Fuerza Aérea, de octubre de 1967, que responde a una petición del 18 de octubre de la oficina de ovnis de la División de Tecnología Extranjera (TDET/UFO) y adjunta el resumen. Las otras dos son el resumen: hora de despegue y de caída, lugar del impacto, las víctimas en tierra, la orden del control de interceptar un avión desconocido, su identificación como un C-47 por el número de cola, el segundo avión desconocido y el aumento brusco de temperatura en la cabina con la alarma de incendio encendida antes de la eyección. Viene de un dossier de NICAP; aquí se reproducen solo las páginas de la Fuerza Aérea.",
+      "description_en": "Three pages. The first is the letter from the Directorate of Aerospace Safety at Air Force headquarters, dated October 1967, answering an October 18 request from the UFO office of the Foreign Technology Division (TDET/UFO) and attaching the summary. The other two are the summary: takeoff and crash times, the impact site, the casualties on the ground, the ground controller's order to intercept an unknown aircraft, its identification as a C-47 by tail number, the second unknown aircraft, and the sudden rise in cockpit temperature with the fire warning light on before the ejection. It comes from a NICAP dossier; only the Air Force pages are reproduced here.",
+      "source": "Fuerza Aérea de EE. UU., Dirección de Seguridad Aeroespacial, vía NICAP",
+      "license": "Dominio público · obra del Gobierno de EE. UU.",
+      "fallbackUrl": "http://www.nicap.org/docs/540702walesville_docs.pdf"
+    }
+  ],
   "posterior": {
     "mundano_natural": 0.84,
     "humana_clasificada": 0.04,
