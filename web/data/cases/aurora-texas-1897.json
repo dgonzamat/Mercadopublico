@@ -118,6 +118,18 @@
   "documents": [
     {
       "role": "documento",
+      "src": "/pursue/aurora-1897-dallas-morning-news.jpg",
+      "type": "image",
+      "title": "S. E. Haydon, «A Windmill Demolishes It», The Dallas Morning News, 19 de abril de 1897, p. 5",
+      "title_en": "S. E. Haydon, \"A Windmill Demolishes It,\" The Dallas Morning News, April 19, 1897, p. 5",
+      "source": "Haydon article, Aurora, Texas, UFO incident, 1897.jpg · Wikimedia Commons",
+      "license": "Dominio público · publicado en 1897",
+      "fallbackUrl": "https://commons.wikimedia.org/wiki/File:Haydon_article,_Aurora,_Texas,_UFO_incident,_1897.jpg",
+      "description": "El despacho original de Haydon, fechado en Aurora el 17 de abril: el dirigible choca con el molino del juez Proctor, el piloto muere, T. J. Weems lo da por «nativo del planeta Marte», los papeles que llevaba están en «jeroglíficos» y el funeral se anuncia para el día siguiente. Según Magonia, ningún otro periódico de la época publicó el relato.",
+      "description_en": "Haydon's original dispatch, datelined Aurora, April 17: the airship strikes Judge Proctor's windmill, the pilot dies, T. J. Weems judges him \"a native of the planet Mars,\" his papers are in \"hieroglyphics,\" and the funeral is announced for the next day. According to Magonia, no other newspaper of the time printed the story."
+    },
+    {
+      "role": "documento",
       "src": "https://archive.org/download/MUFON_UFO_Journal_-_Skylook/1973_09.pdf",
       "type": "link",
       "title": "Walter H. Andrus, «Report on 1897 Aurora, Texas, Investigation», SKYLOOK n.º 70, septiembre de 1973",

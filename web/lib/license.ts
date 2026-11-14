@@ -52,6 +52,20 @@ const EN: Record<string, string> = {
     "Published by the Department of War (PURSUE Release 07) · work by Documatica Research, a private contractor: public domain not guaranteed",
   "Publicado por el Departamento de Guerra (PURSUE Release 07) · informe de un contratista (BAASS): la exención del 17 USC §105 para obras del Gobierno no está garantizada":
     "Published by the Department of War (PURSUE Release 07) · contractor report (BAASS): the 17 USC §105 exemption for Government works is not guaranteed",
+  "Dominio público (1883)": "Public domain (1883)",
+  "Dominio público · publicado en 1897": "Public domain · published in 1897",
+  "Dominio público · publicado en 1904": "Public domain · published in 1904",
+  "Dominio público · publicado en 1913": "Public domain · published in 1913",
+  "Dominio público · registro del Gobierno de EE. UU. de 1904": "Public domain · 1904 US Government record",
+  "Dominio público · obra del Gobierno de EE. UU. (según Commons)": "Public domain · US Government work (per Commons)",
+  "Dominio público (copyright no renovado, publicado en EE. UU. en 1947)":
+    "Public domain (copyright not renewed, published in the US in 1947)",
+  "Obra del Gobierno de EE. UU., dominio público (17 USC §105)": "US Government work, public domain (17 USC §105)",
+  "Informe oficial publicado por el SEFAA; el sitio no declara licencia, se reproduce con crédito a la fuente":
+    "Official report published by SEFAA; the site states no license, reproduced with credit to the source",
+  "© los autores (2008); no se reproduce": "© the authors (2008); not reproduced",
+  "Dominio público (foto portuguesa anterior a 1970; publicada en 1917)":
+    "Public domain (Portuguese photo from before 1970; published in 1917)",
 };
 
 export function licenseLabel(license: string | undefined, locale: "es" | "en"): string | undefined {

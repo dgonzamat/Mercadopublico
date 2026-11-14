@@ -91,6 +91,18 @@
   ],
   "documents": [
     {
+      "role": "prueba",
+      "src": "/pursue/fatima-1917-multitud-ilustracao-portugueza.jpg",
+      "type": "image",
+      "title": "La multitud mira al cielo en Fátima el 13 de octubre de 1917 (foto de Judah Bento Ruah)",
+      "title_en": "The crowd looks up at the sky at Fátima on October 13, 1917 (photo by Judah Bento Ruah)",
+      "source": "People looking miracle sun.jpg · Wikimedia Commons (publicada en Ilustração Portugueza, 29 de octubre de 1917)",
+      "license": "Dominio público (foto portuguesa anterior a 1970; publicada en 1917)",
+      "fallbackUrl": "https://commons.wikimedia.org/wiki/File:People_looking_miracle_sun.jpg",
+      "description": "Fotografía tomada en Cova da Iria el 13 de octubre de 1917 por Judah Bento Ruah y publicada el 29 de octubre en Ilustração Portugueza junto a la crónica de Avelino de Almeida. Muestra a la multitud mirando hacia arriba; el Sol no aparece en la imagen.",
+      "description_en": "Photograph taken at Cova da Iria on October 13, 1917, by Judah Bento Ruah and published on October 29 in Ilustração Portugueza with Avelino de Almeida's report. It shows the crowd looking up; the Sun does not appear in the picture."
+    },
+    {
       "role": "documento",
       "src": "https://hemerotecadigital.cm-lisboa.pt/obras/ilustracaoport/1917/N610/N610_master/N610.pdf",
       "type": "link",
