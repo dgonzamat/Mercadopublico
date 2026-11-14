@@ -36,15 +36,16 @@ const NAME_BY_SLUG_EN = new Map(cases.map((c) => [c.id, c.name_en ?? c.name]));
 // era unidireccional —ibas de A→B por la cita, pero en B no sabías que A lo cita—;
 // esto cierra el bucle. Se construye una vez a nivel de módulo escaneando el corpus
 // (server component), sin coste por render.
+const CASE_REF = /\[\[([a-z0-9-]+)\]\]/g;
+const proseOf = (c: (typeof cases)[number]) =>
+  [
+    c.summary, c.summary_en, c.whatHappened, c.whatHappened_en,
+    c.whyMatters, c.whyMatters_en, ...(c.evidence ?? []), ...(c.evidence_en ?? []),
+  ].filter(Boolean).join("\n");
 const BACKLINKS = (() => {
-  const REF = /\[\[([a-z0-9-]+)\]\]/g;
   const map = new Map<string, Set<string>>();
   for (const c of cases) {
-    const prose = [
-      c.summary, c.summary_en, c.whatHappened, c.whatHappened_en,
-      c.whyMatters, c.whyMatters_en, ...(c.evidence ?? []), ...(c.evidence_en ?? []),
-    ].filter(Boolean).join("\n");
-    for (const m of prose.matchAll(REF)) {
+    for (const m of proseOf(c).matchAll(CASE_REF)) {
       const target = m[1];
       if (target === c.id) continue; // no auto-citas
       if (!map.has(target)) map.set(target, new Set());
@@ -167,7 +168,7 @@ export async function CaseDetailPage(
   // lector no ve como afines (Gran Diómedes con Nash-Fortenberry, Ariel con
   // Meng Zhaoguo); quitó 170 enlaces en 67 fichas.
   const myKey = c.mundanoType ? prosaicKey(c.mundanoType, c.misidSubtype) : undefined;
-  const similar = cases
+  const byCause = cases
     .filter((x) => x.id !== c.id && x.category !== "document")
     .map((x) => {
       const xKey = x.mundanoType ? prosaicKey(x.mundanoType, x.misidSubtype) : undefined;
@@ -179,6 +180,7 @@ export async function CaseDetailPage(
       const nearYear = Math.abs(x.year_start - c.year_start) <= 10;
       return {
         caseData: x,
+        cited: false,
         sameClass,
         sameObject,
         sameCountry,
@@ -187,8 +189,28 @@ export async function CaseDetailPage(
       };
     })
     .filter((x) => x.sameObject || x.sameClass)
-    .sort((a, b) => b.score - a.score || Math.abs(a.caseData.year_start - c.year_start) - Math.abs(b.caseData.year_start - c.year_start))
-    .slice(0, 4);
+    .sort((a, b) => b.score - a.score || Math.abs(a.caseData.year_start - c.year_start) - Math.abs(b.caseData.year_start - c.year_start));
+
+  // Los casos que la propia ficha cita en su texto ([[slug]]) van primero: son la
+  // relación que eligió el redactor, y la regla por clase y país, sola, ofrecía a
+  // quien llega por un video viral (Anchorage 2026) casos del FBI y de drones
+  // militares (nov 2026). Los que además citan a éste quedan en «Citado por».
+  const citesBack = BACKLINKS.get(c.id) ?? new Set<string>();
+  const cited = [...new Set([...proseOf(c).matchAll(CASE_REF)].map((m) => m[1]))]
+    .filter((id) => id !== c.id && !citesBack.has(id))
+    .map((id) => cases.find((x) => x.id === id))
+    .filter((x): x is NonNullable<typeof x> => Boolean(x) && x!.category !== "document")
+    .map((x) => ({
+      caseData: x,
+      cited: true,
+      sameClass: false,
+      sameObject: false,
+      sameCountry: x.country === c.country,
+      nearYear: Math.abs(x.year_start - c.year_start) <= 10,
+      score: 0,
+    }));
+  const citedIds = new Set(cited.map((x) => x.caseData.id));
+  const similar = [...cited, ...byCause.filter((x) => !citedIds.has(x.caseData.id))].slice(0, 4);
 
   // Backlinks: casos que CITAN a éste en su prosa (grafo inverso de [[slug]]).
   // Distinto de `similar` (heurístico por patrones/país): esto es cita explícita.
@@ -752,10 +774,17 @@ export async function CaseDetailPage(
             <T locale={locale} es="Casos relacionados" en="Related cases" />
           </Eyebrow>
           <p className="-mt-3 text-sm text-muted">
-            <T locale={locale}
-              es="Casos con la misma causa probable."
-              en="Cases with the same likely cause."
-            />
+            {similar.some((s) => s.cited) ? (
+              <T locale={locale}
+                es="Casos que este caso cita y casos con la misma causa probable."
+                en="Cases this case cites and cases with the same likely cause."
+              />
+            ) : (
+              <T locale={locale}
+                es="Casos con la misma causa probable."
+                en="Cases with the same likely cause."
+              />
+            )}
           </p>
           <div className="grid gap-px border-y-2 border-text bg-text sm:grid-cols-2">
             {similar.map((s) => {
@@ -766,7 +795,9 @@ export async function CaseDetailPage(
               // El objeto concreto solo si lo comparten; si solo comparten la clase
               // (astronómico), nombrar «meteoro» sería falso para un planeta.
               const causeFor = (lang: "es" | "en") =>
-                s.sameObject && myDetail
+                s.cited
+                  ? (lang === "es" ? "Citado en este caso" : "Cited in this case")
+                  : s.sameObject && myDetail
                   ? shortLabel(lang === "es" ? myDetail.label : myDetail.labelEn)
                   : myClass ? (lang === "es" ? myClass.label : myClass.labelEn) : "";
               // El subtítulo ya dice «misma causa probable»: la tarjeta solo la nombra.
