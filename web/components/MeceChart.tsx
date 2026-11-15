@@ -263,21 +263,22 @@ export function CasePosterior({
   // que más pesaba era la tecnología clasificada (32 %). Solo si manda lo
   // indeterminado, que no es una explicación, la cifra grande es la del grupo.
   const explanationLeads = top.key !== "indet";
-  const leadName =
-    top.key === "sin_propuesta"
-      ? { es: "causa ordinaria sin identificar", en: "ordinary cause, unidentified" }
-      : { es: topName.es.toLowerCase(), en: topName.en.toLowerCase() };
-  // Las dos explicaciones que siguen a la mayor (sin el indeterminado, que no
-  // es una explicación), con el nombre del objeto si lo hay.
+  // Solo baja la inicial («ocultado por un Estado» conserva la mayúscula) y
+  // los adjetivos sueltos pasan a sustantivo: «52 % óptico» no se entendía.
+  const lc = (t: string) => t[0].toLowerCase() + t.slice(1);
+  const NOUN: Record<string, string> = { "óptico": "fenómeno óptico", "atmosférico": "fenómeno atmosférico", optical: "optical phenomenon", atmospheric: "atmospheric phenomenon" };
+  const noun = (t: string) => NOUN[lc(t)] ?? lc(t);
   const nameOf = (r: (typeof all)[number]) =>
-    detail && r.key === pk
-      ? { es: shortLabel(detail.label).toLowerCase(), en: shortLabel(detail.labelEn).toLowerCase() }
-      : r.key === "sin_propuesta"
-        ? { es: "causa ordinaria sin identificar", en: "ordinary cause, unidentified" }
-        // Solo la inicial: con toLowerCase() salía «ocultado por un estado».
-        : { es: r.label[0].toLowerCase() + r.label.slice(1), en: r.labelEn[0].toLowerCase() + r.labelEn.slice(1) };
+    r.key === "sin_propuesta"
+      ? { es: "causa ordinaria sin identificar", en: "ordinary cause, unidentified" }
+      : detail && r.key === pk
+        ? { es: noun(shortLabel(detail.label)), en: noun(shortLabel(detail.labelEn)) }
+        : { es: noun(r.label), en: noun(r.labelEn) };
+  const leadName = nameOf(top);
+  // Las dos explicaciones que siguen a la mayor, sin el indeterminado (no es
+  // una explicación) ni las de menos de 5 %, que solo añadían cifras.
   const next = all
-    .filter((r) => !r.zero && r.key !== top.key && r.key !== "indet" && r.pct > 0)
+    .filter((r) => !r.zero && r.key !== top.key && r.key !== "indet" && r.pct >= 5)
     .sort((a, b) => b.pct - a.pct)
     .slice(0, 2)
     .map((r) => ({ ...nameOf(r), pct: r.pct }));
@@ -323,7 +324,19 @@ export function CasePosterior({
             <span className="text-4xl font-semibold tabular-nums" data-lead="">{lead.sub}%</span>
             <span className="text-base"><T es={lead.lead.es} en={lead.lead.en} locale={locale} /></span>
           </p>
-          <p className="mb-3 mt-1 text-base text-text"><T es={topText.es} en={topText.en} locale={locale} /></p>
+          <p className="mb-3 mt-1 text-base text-text">
+            <T es={topText.es + "."} en={topText.en + "."} locale={locale} />
+            {next.length > 0 && (
+              <>
+                {" "}
+                <T
+                  es={`Las que más pesan: ${next.map((r) => `${r.es}\u00a0(${r.pct}%)`).join(" y ")}.`}
+                  en={`The largest shares: ${next.map((r) => `${r.en}\u00a0(${r.pct}%)`).join(" and ")}.`}
+                  locale={locale}
+                />
+              </>
+            )}
+          </p>
         </>
       )}
       {/* Un tramo por grupo, del color de la explicación que más pesa en él. Con
