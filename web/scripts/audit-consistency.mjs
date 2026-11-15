@@ -598,7 +598,6 @@ const VISUAL_CERRADO_POR_LICENCIA = {
   "delphos-ring-1971": "Commons seco; sin imagen libre del incidente",
   "mystery-drones-east-coast-2024": "sin imagen libre; archive.org/wargovUFO sin hits",
   "val-johnson-1979": "solo una reconstrucción amateur y un doc CIA ajeno — ambos engañosos",
-  "jellyfish-iraq-2018": "metraje filtrado (Corbell), nunca liberado; sin espejo en DVIDS ni archive.org/wargovUFO",
   // Barrido de oct 2026 (Commons + archive.org + Openverse, detalle en docs/registros.md):
   "bledsoe-cape-fear-2007": "testimonio personal; solo fotos y entrevistas con copyright; barrido seco",
   "china-spiral-1981": "fotos de la prensa china de 1981 con copyright; barrido seco",
