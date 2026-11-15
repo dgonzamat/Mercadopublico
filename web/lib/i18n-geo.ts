@@ -105,6 +105,7 @@ const COUNTRY_EN: Record<string, string> = {
   "Oriente Medio (país exacto no revelado; plataforma y liberación son de EE. UU.)": "Middle East (exact country undisclosed; platform and release are U.S.)",
   "Unión Soviética (Bielorrusia)": "Soviet Union (Belarus)",
   "Kenia": "Kenya",
+  "Somalia": "Somalia",
   "Estados Unidos (ubicación exacta no revelada)": "United States (exact location undisclosed)",
   "Noreste de Estados Unidos (ubicación exacta no revelada)": "Northeastern United States (exact location undisclosed)",
   "Océano Pacífico (ubicación exacta no revelada)": "Pacific Ocean (exact location undisclosed)",

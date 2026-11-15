@@ -1,0 +1,118 @@
+{
+  "id": "gulf-of-aden-mq9-2020-2024",
+  "num": 522,
+  "name": "Golfo de Adén · drones MQ-9 siguen objetos sobre el mar",
+  "name_en": "Gulf of Aden · MQ-9 drones track objects over the sea",
+  "year_start": 2020,
+  "year_end": 2024,
+  "country": "SO",
+  "country_name": "Somalia",
+  "flag": "🇸🇴",
+  "location": {
+    "lat": 11.15,
+    "lng": 44.2,
+    "place": "Golfo de Adén, frente a la costa de Somalilandia",
+    "place_en": "Gulf of Aden, off the coast of Somaliland"
+  },
+  "tier": "S",
+  "epistemicStatus": "documented",
+  "probability": 34,
+  "mundanoType": "sin_propuesta",
+  "posterior": {
+    "mundano_natural": 0.36,
+    "humana_clasificada": 0.05,
+    "adversaria": 0.25,
+    "nohumano_encubierto": 0.03,
+    "nohumano_abierto": 0.06,
+    "indet": 0.25
+  },
+  "summary": "Tripulaciones de drones MQ-9 de la Fuerza Aérea de EE. UU. informaron en dos ocasiones de objetos que no pudieron identificar sobre el golfo de Adén, frente a Somalilandia. El 4 de septiembre de 2020, de noche, el sensor infrarrojo siguió durante ocho minutos un objeto redondo y más frío que el fondo, con cambios bruscos de dirección. El 14 de julio de 2024, otra tripulación vio un objeto a baja altura, en línea recta, que se alejó hacia el noroeste. Los partes se publicaron en 2026, sin video y sin explicación.",
+  "summary_en": "U.S. Air Force MQ-9 drone crews twice reported objects they could not identify over the Gulf of Aden, off Somaliland. On September 4, 2020, at night, the infrared sensor tracked for eight minutes a round object colder than the background, with abrupt changes of direction. On July 14, 2024, another crew saw an object at low altitude, flying straight, that moved away to the northwest. The reports were published in 2026, with no video and no explanation.",
+  "patterns": [
+    "8h",
+    "8e"
+  ],
+  "category": "incident",
+  "whatHappened": "La noche del 4 de septiembre de 2020, un dron del 172.º Escuadrón de Ataque, una unidad de la Guardia Nacional Aérea de Michigan que opera aviones MQ-9 Reaper, volaba una misión de vigilancia sobre el golfo de Adén, frente a la costa de Somalilandia y a menos de 100 km de Yibuti. A las 21:09 UTC (hora universal), con el dron a 23.819 pies sobre el agua, el sensor infrarrojo captó un objeto redondo. El sensor estaba en el modo en que lo caliente se ve negro, y el objeto aparecía blanco brillante: estaba más frío que el fondo.\n\nSegún el formulario que rellenó después un oficial de la tripulación, el objeto se desplazaba con rumbo 168, hacia el sur-sureste, a 277 millas por hora (unos 445 km/h), e hizo «algunos cambios bruscos de dirección» durante los ocho minutos que duró el contacto, hasta las 21:17. El sensor apuntaba 39 grados por debajo del horizonte del dron, a 6,17 millas náuticas en línea recta y 8,81 km en horizontal. El formulario marca un solo objeto y la forma «redonda», y deja en blanco si era metálico, si tenía propulsión visible y si hubo un seguimiento estable. En la casilla de altitud del objeto anotó 23.819, la misma cifra que la altura del dron.\n\nEl 14 de julio de 2024, un dron del 124.º Escuadrón de Ataque, de la Guardia Nacional Aérea de Iowa, apoyaba a las fuerzas navales del Mando Central en la misma zona del golfo, unos 80 km al este. A las 05:17 UTC, la tripulación observó «1X UAP»; el sensor principal de la misión era el video. Según el informe, el objeto volaba a baja altura, en línea recta y a la misma altitud, con rumbo noroeste, y su velocidad era mayor que la de vuelo de algo cuyo nombre está tachado, probablemente el propio dron. Lo siguieron «hasta que la distancia fue demasiado grande»: entre el primer y el último punto anotados hay unos 45 km hacia el noroeste. Un suboficial firmó el apartado del objeto y lo evaluó como «benigno»; no hubo efectos en el avión ni en las personas, y el tiempo no influyó. La descripción del objeto está tachada.",
+  "whatHappened_en": "On the night of September 4, 2020, a drone of the 172nd Attack Squadron, a Michigan Air National Guard unit that flies MQ-9 Reaper aircraft, was flying a surveillance mission over the Gulf of Aden, off the coast of Somaliland and less than 100 km from Djibouti. At 21:09 UTC, with the drone at 23,819 feet above the water, the infrared sensor picked up a round object. The sensor was in the mode in which hot things show black, and the object appeared bright white, so it was colder than the background.\n\nAccording to the form a crew officer filled out afterward, the object was moving on a heading of 168, south-southeast, at 277 miles per hour (about 445 km/h), and made \"a few abrupt directional changes\" during the eight-minute contact, until 21:17. The sensor was pointing 39 degrees below the drone's horizon, at 6.17 nautical miles in a straight line and 8.81 km horizontally. The form records a single object and a \"round\" shape, and leaves blank whether it was metallic, whether it had visible propulsion and whether there was a stable track. In the box for the object's altitude it entered 23,819, the same figure as the drone's height.\n\nOn July 14, 2024, a drone of the 124th Attack Squadron, of the Iowa Air National Guard, was supporting Central Command's naval forces in the same part of the Gulf, about 80 km to the east. At 05:17 UTC, the crew observed \"1X UAP\"; the mission's primary sensor was video. According to the report, the object was flying at low altitude, in a straight line and at the same altitude, heading northwest, and its speed was greater than the flying speed of something whose name is redacted, probably the drone itself. They followed it \"until the distance became too far to follow\": between the first and last points recorded there are about 45 km to the northwest. A noncommissioned officer signed the section on the object and assessed it as \"benign\"; there were no effects on the aircraft or on people, and weather was not a factor. The description of the object is redacted.",
+  "whyMatters": "El formulario de 2020 trae datos poco comunes: el ángulo del sensor, la altura del dron y las distancias en línea recta y en horizontal. Las cifras cuadran entre sí con un punto en la superficie del mar, con un error de unos 20 metros. Eso puede significar que el objeto volaba a ras del agua, o que el sensor calculó la distancia suponiendo que el punto estaba en la superficie, como hacen estos sistemas cuando no miden con láser; el formulario no dice cómo se midió. Con solo el ángulo, cada grado de error mueve la altura unos 155 metros.\n\nLa duda afecta a la velocidad. Si el objeto estaba a ras del agua, 277 millas por hora es mucho para un ave o un globo. Si estaba más alto, entre el dron y el mar, una velocidad calculada sobre su proyección en la superficie sale exagerada, y los cambios bruscos de dirección pueden venir del propio seguimiento. El formulario no explica cómo obtuvo la velocidad, y ningún documento da el tamaño del objeto. El informe de 2024 marca altitud, velocidad y rumbo como «estimados».\n\nNinguna de las dos tripulaciones propuso qué vio, y la de 2024 lo evaluó como «benigno». El golfo de Adén es una ruta de navegación muy transitada, con barcos y aves marinas, pero ningún documento compara los contactos con nada de eso. Las cintas del sensor debían guardarse, según el propio formulario, pero no se han publicado.\n\nEl caso se parece a los del golfo Pérsico de 2020 [[persian-gulf-mq9-2020]] y a los partes de 2025 de Oriente Medio [[middle-east-misrep-uap-2025]]: objetos vistos solo en el sensor, sin identificar y publicados sin análisis.",
+  "whyMatters_en": "The 2020 form includes unusual data: the sensor angle, the drone's height and the straight-line and horizontal ranges. The figures agree with each other for a point on the sea surface, to within about 20 meters. That may mean the object was flying just above the water, or that the sensor computed the range assuming the point was on the surface, as these systems do when they do not measure by laser; the form does not say how it was measured. Using the angle alone, each degree of error moves the height by about 155 meters.\n\nThe doubt affects the speed. If the object was just above the water, 277 miles per hour is a lot for a bird or a balloon. If it was higher, between the drone and the sea, a speed calculated from its projection on the surface comes out exaggerated, and the abrupt changes of direction may come from the tracking itself. The form does not explain how it obtained the speed, and no document gives the object's size. The 2024 report marks altitude, speed and heading as \"estimated.\"\n\nNeither crew proposed what it saw, and the 2024 crew assessed it as \"benign.\" The Gulf of Aden is a busy shipping lane, with ships and seabirds, but no document compares the contacts with any of that. The sensor tapes were to be kept, according to the form itself, but they have not been published.\n\nThe case resembles the 2020 Persian Gulf reports [[persian-gulf-mq9-2020]] and the 2025 Middle East reports [[middle-east-misrep-uap-2025]]: objects seen only on the sensor, unidentified and published without analysis.",
+  "evidence": [
+    "Formulario «Range Fouler Reporting Form» del 172.º Escuadrón de Ataque (DOW-UAP-D57), 4 de septiembre de 2020, de noche: de 21:09 a 21:17 UTC, en la cuadrícula 38P LT (golfo de Adén, frente a Somalilandia), «a round, cold object in IR traveling 168 degrees at 277 mph» con «a few abrupt directional changes».",
+    "El mismo formulario: dron a 23.819 pies sobre el agua, sensor 39 grados por debajo, distancia oblicua de 6,17 millas náuticas y horizontal de 8,81 km; «black hot», objeto «bright white».",
+    "Según un cálculo hecho para este caso, esas cifras cierran con un punto en la superficie del mar con un error de unos 20 m, lo que es compatible tanto con un objeto a ras del agua como con una distancia calculada por el sensor sobre la superficie.",
+    "Informe de misión 10194673 del 124.º Escuadrón de Ataque (DOW-UAP-D75), 14 de julio de 2024, 05:17 UTC, cuadrícula 38P MT: «straight flight path at same alti[tude]», altitud «low», rumbo noroeste, «UAP's speed was faster than the [...] flying speed»; evaluación «benign».",
+    "El mismo informe: primer y último punto a unos 45 km de distancia hacia el noroeste, todo marcado «estimated»; la descripción del objeto, su estado físico y sus firmas están tachados."
+  ],
+  "evidence_en": [
+    "\"Range Fouler Reporting Form\" from the 172nd Attack Squadron (DOW-UAP-D57), September 4, 2020, at night: from 21:09 to 21:17 UTC, in grid 38P LT (Gulf of Aden, off Somaliland), \"a round, cold object in IR traveling 168 degrees at 277 mph\" with \"a few abrupt directional changes.\"",
+    "The same form: drone at 23,819 feet above the water, sensor 39 degrees below, slant range of 6.17 nautical miles and ground range of 8.81 km; \"black hot,\" object \"bright white.\"",
+    "By a calculation made for this case, those figures close on a point on the sea surface to within about 20 m, which fits both an object just above the water and a range computed by the sensor on the surface.",
+    "Mission report 10194673 from the 124th Attack Squadron (DOW-UAP-D75), July 14, 2024, 05:17 UTC, grid 38P MT: \"straight flight path at same alti[tude],\" altitude \"low,\" heading northwest, \"UAP's speed was faster than the [...] flying speed\"; assessed \"benign.\"",
+    "The same report: first and last points about 45 km apart to the northwest, all marked \"estimated\"; the object's description, physical state and signatures are redacted."
+  ],
+  "sources": [
+    {
+      "name": "Departamento de Guerra, PURSUE, primera entrega: DOW-UAP-D57, «Mission Report, Gulf of Aden, September 2020», y DOW-UAP-D75, «Mission Report, Gulf of Aden, July 2024»; copia en archive.org",
+      "name_en": "Department of War, PURSUE, first release: DOW-UAP-D57, \"Mission Report, Gulf of Aden, September 2020,\" and DOW-UAP-D75, \"Mission Report, Gulf of Aden, July 2024\"; archive.org copy",
+      "url": "https://archive.org/details/pursue-uap-documents-2026",
+      "note": "Fuente primaria: el formulario de 2020 y el informe de misión de 2024.",
+      "note_en": "Primary source: the 2020 form and the 2024 mission report."
+    },
+    {
+      "name": "AARO — «Fiscal Year 2024 Consolidated Annual Report on UAP» (14 nov 2024)",
+      "name_en": "AARO — Fiscal Year 2024 Consolidated Annual Report on UAP (Nov 14, 2024)",
+      "url": "https://media.defense.gov/2024/Nov/14/2003583603/-1/-1/0/FY24-CONSOLIDATED-ANNUAL-REPORT-ON-UAP-508.PDF",
+      "note": "Tasa base: los casos resueltos en ese periodo lo fueron como objetos convencionales.",
+      "note_en": "Base rate: the cases resolved in that period were resolved as ordinary objects."
+    },
+    {
+      "name": "Wikipedia, «172nd Attack Squadron»",
+      "name_en": "Wikipedia, \"172nd Attack Squadron\"",
+      "url": "https://en.wikipedia.org/wiki/172nd_Attack_Squadron",
+      "note": "Unidad de la Guardia Nacional Aérea de Michigan equipada con MQ-9 Reaper.",
+      "note_en": "Michigan Air National Guard unit equipped with the MQ-9 Reaper."
+    },
+    {
+      "name": "Wikipedia, «124th Attack Squadron»",
+      "name_en": "Wikipedia, \"124th Attack Squadron\"",
+      "url": "https://en.wikipedia.org/wiki/124th_Attack_Squadron",
+      "note": "Unidad de la Guardia Nacional Aérea de Iowa (132.º Ala) que pasó a operar el MQ-9 Reaper.",
+      "note_en": "Iowa Air National Guard unit (132nd Wing) that moved to the MQ-9 Reaper."
+    }
+  ],
+  "documents": [
+    {
+      "role": "documento",
+      "src": "/pursue/DOW-UAP-D57-range-fouler-golfo-aden-2020-09-04.pdf",
+      "type": "pdf",
+      "title": "Formulario de la tripulación del 4 de septiembre de 2020 (DOW-UAP-D57)",
+      "title_en": "Crew form of September 4, 2020 (DOW-UAP-D57)",
+      "description": "Formulario de una página del 172.º Escuadrón de Ataque, publicado con el título «Mission Report, Gulf of Aden». Describe un objeto redondo y frío seguido en infrarrojo durante ocho minutos, con rumbo 168 a 277 mph y cambios bruscos de dirección, y da el ángulo del sensor y las distancias. La casilla «Contact Altitude» repite la altura del dron, no la del objeto. Lo desclasificó el 16 de marzo de 2026 el jefe de Estado Mayor del Mando Central.",
+      "description_en": "One-page form from the 172nd Attack Squadron, published under the title \"Mission Report, Gulf of Aden.\" It describes a round, cold object tracked in infrared for eight minutes, heading 168 at 277 mph with abrupt changes of direction, and gives the sensor angle and the ranges. The \"Contact Altitude\" box repeats the drone's height, not the object's. It was declassified on March 16, 2026, by Central Command's chief of staff.",
+      "source": "Mando Central de EE. UU., vía Departamento de Guerra (PURSUE, primera entrega)",
+      "license": "Dominio público · obra del Gobierno de EE. UU.",
+      "fallbackUrl": "https://archive.org/details/pursue-uap-documents-2026"
+    },
+    {
+      "role": "documento",
+      "src": "/pursue/DOW-UAP-D75-misrep-golfo-aden-2024-07-14.pdf",
+      "type": "pdf",
+      "title": "Informe de misión del 14 de julio de 2024 (DOW-UAP-D75)",
+      "title_en": "Mission report of July 14, 2024 (DOW-UAP-D75)",
+      "description": "Informe de misión de ocho páginas del 124.º Escuadrón de Ataque, con un apartado dedicado al objeto: hora del primer contacto, coordenadas de inicio y fin en el golfo de Adén, vuelo recto a baja altura, rumbo noroeste y evaluación «benigno»; la descripción del objeto está tachada. Lleva la recomendación de publicación del jefe de Estado Mayor del Mando Central del 2 de junio de 2025.",
+      "description_en": "Eight-page mission report from the 124th Attack Squadron, with a section devoted to the object: time of first contact, start and end coordinates in the Gulf of Aden, straight flight at low altitude, heading northwest and a \"benign\" assessment; the object's description is redacted. It carries the release recommendation of Central Command's chief of staff dated June 2, 2025.",
+      "source": "Mando Central de EE. UU., vía Departamento de Guerra (PURSUE, primera entrega)",
+      "license": "Dominio público · obra del Gobierno de EE. UU.",
+      "fallbackUrl": "https://archive.org/details/pursue-uap-documents-2026"
+    }
+  ],
+  "evidenceReviewed": "2026-11-15",
+  "classBasis": {
+    "es": "Ninguna fuente propone qué eran los objetos: el formulario de 2020 lo describe como «round, cold» sin identificarlo y el informe de 2024 deja en «unknown» la propulsión y el control, aunque juzga el objeto «benign»; el video no se ha publicado. La falta de un análisis publicado no es prueba contra una causa ordinaria: en su informe de 2024, la AARO dio por resueltos 174 casos, todos como «objetos convencionales», aunque «muchos otros casos siguen sin resolver».",
+    "en": "No source proposes what the objects were: the 2020 form describes it as \"round, cold\" without identifying it and the 2024 report leaves propulsion and control as \"unknown,\" although it judges the object \"benign\"; the video has not been published. The absence of a published analysis is not evidence against an ordinary cause: AARO's FY2024 report says \"all 174 cases have been finalized as resolved to prosaic objects,\" while \"many other cases remain unresolved.\"",
+    "source": "Departamento de Guerra, DOW-UAP-D57 y D75 (PURSUE, primera entrega) · AARO — Fiscal Year 2024 Consolidated Annual Report on UAP (14 nov 2024), tasa base",
+    "source_en": "Department of War, DOW-UAP-D57 and D75 (PURSUE, first release) · AARO — Fiscal Year 2024 Consolidated Annual Report on UAP (Nov 14, 2024), base rate",
+    "url": "https://media.defense.gov/2024/Nov/14/2003583603/-1/-1/0/FY24-CONSOLIDATED-ANNUAL-REPORT-ON-UAP-508.PDF"
+  }
+}
