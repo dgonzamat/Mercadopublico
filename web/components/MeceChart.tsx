@@ -209,7 +209,7 @@ export function CasePosterior({
       .map((k) => ({ key: k.id, label: k.label, labelEn: k.labelEn, color: k.color })),
     ...(present.has("indet") ? [] : [{ key: "indet", label: "Indeterminado", labelEn: "Indeterminate", color: INDET_COLOR }]),
   ];
-  // Dos grupos con subtotal: lo que tiene una causa (natural o humana) y lo
+  // Dos grupos con subtotal: origen terrestre (natural, humano o de otro Estado) y lo
   // que no (indeterminado + las dos no humanas). Una sola lista de seis filas
   // obligaba a sumar tres sueltas para llegar a la cifra de la cabecera, y se
   // leía como dos probabilidades que no calzaban (oct 2026).
@@ -226,7 +226,7 @@ export function CasePosterior({
   // destacar siempre «sin causa conocida» ponía arriba el 34 % de un caso
   // que es 66 % causa conocida (oct 2026).
   const groups = [
-    { id: "known", es: "Causa natural o humana", en: "Natural or human cause", lead: { es: "causa natural o humana", en: "natural or human cause" }, items: known, sub: sub(known) },
+    { id: "known", es: "Origen terrestre (humano o natural)", en: "Earthly origin (human or natural)", lead: { es: "origen terrestre", en: "earthly origin" }, items: known, sub: sub(known) },
     { id: "unknown", es: "Sin causa conocida", en: "No known cause", lead: { es: "sin causa conocida", en: "no known cause" }, items: unknown, sub: sub(unknown) },
   ].sort((a, b) => b.sub - a.sub);
   const lead = groups[0];
@@ -257,7 +257,12 @@ export function CasePosterior({
         : top.key === "sin_propuesta"
           ? { es: `Lo más probable es una causa ordinaria que nadie ha identificado\u00a0(${topPct})`, en: `Most likely an ordinary cause that no one has identified\u00a0(${topPct})` }
           : { es: `Explicación más probable: ${topName.es.toLowerCase()}\u00a0(${topPct})`, en: `Most likely explanation: ${topName.en.toLowerCase()}\u00a0(${topPct})` };
-  const explanationLeads = majority && top.key !== "indet";
+  // La cifra grande es SIEMPRE la de la explicación que más pesa en el grupo
+  // mayor, pase o no de la mitad (decisión del dueño, 15 nov 2026): con la del
+  // grupo arriba, Skinwalker se leía «54 % causa natural o humana» cuando lo
+  // que más pesaba era la tecnología clasificada (32 %). Solo si manda lo
+  // indeterminado, que no es una explicación, la cifra grande es la del grupo.
+  const explanationLeads = top.key !== "indet";
   const leadName =
     top.key === "sin_propuesta"
       ? { es: "causa ordinaria sin identificar", en: "ordinary cause, unidentified" }
@@ -275,7 +280,11 @@ export function CasePosterior({
             <span className="text-base"><T es={leadName.es} en={leadName.en} locale={locale} /></span>
           </p>
           <p className="mb-3 mt-1 text-base text-text">
-            <T es="La explicación más probable. En total, " en="The most likely explanation. In total, " locale={locale} />
+            {majority ? (
+              <T es="La explicación más probable. En total, " en="The most likely explanation. In total, " locale={locale} />
+            ) : (
+              <T es="La que más pesa, sin llegar a la mitad. En total, " en="The largest share, short of half. In total, " locale={locale} />
+            )}
             <span className="tabular-nums" data-lead="">{lead.sub}%</span>{" "}
             <T es={lead.lead.es} en={lead.lead.en} locale={locale} />.
           </p>
@@ -320,7 +329,7 @@ export function CasePosterior({
         {groups.map((g) => (
           // Rótulo en dos líneas si hace falta: con `truncate` se leía «Sin causa c…» en el móvil.
           <span key={g.id} className="min-w-0 break-words leading-tight" style={{ flex: `${Math.round(g.items.reduce((a, r) => a + r.count, 0) * 1000)} 1 0%` }}>
-            {/* El tramo del grupo mayor ya lo nombra el titular («71 % natural or human cause»); rotularlo otra vez era la tercera repetición en pocas líneas. */}
+            {/* El tramo del grupo mayor ya lo nombra el titular («71 % origen terrestre»); rotularlo otra vez era la tercera repetición en pocas líneas. */}
             {g !== lead && g.sub >= 15 && (
               <>
                 <span className="tabular-nums">{g.sub}%</span> · <T es={g.es} en={g.en} locale={locale} />

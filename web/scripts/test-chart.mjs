@@ -278,8 +278,8 @@ for (const slug of [
   );
 }
 
-// La ficha muestra UNA cifra agregada en grande (la del grupo mayor: causa
-// natural o humana, o sin causa conocida) y debajo su desglose. Antes la cabecera y el subtotal de la leyenda la
+// La ficha muestra UNA cifra agregada (la del grupo mayor: origen
+// terrestre, o sin causa conocida) y debajo su desglose. Antes la cabecera y el subtotal de la leyenda la
 // repetían con el mismo peso y se leían como dos probabilidades (oct 2026):
 // la cifra debe aparecer una sola vez y ser la suma de sus filas.
 console.log("\nCaso · una sola cifra agregada = suma de su desglose");
