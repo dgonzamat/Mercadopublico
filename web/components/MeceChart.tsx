@@ -267,6 +267,19 @@ export function CasePosterior({
     top.key === "sin_propuesta"
       ? { es: "causa ordinaria sin identificar", en: "ordinary cause, unidentified" }
       : { es: topName.es.toLowerCase(), en: topName.en.toLowerCase() };
+  // Las dos explicaciones que siguen a la mayor (sin el indeterminado, que no
+  // es una explicación), con el nombre del objeto si lo hay.
+  const nameOf = (r: (typeof all)[number]) =>
+    detail && r.key === pk
+      ? { es: shortLabel(detail.label).toLowerCase(), en: shortLabel(detail.labelEn).toLowerCase() }
+      : r.key === "sin_propuesta"
+        ? { es: "causa ordinaria sin identificar", en: "ordinary cause, unidentified" }
+        : { es: r.label.toLowerCase(), en: r.labelEn.toLowerCase() };
+  const next = all
+    .filter((r) => !r.zero && r.key !== top.key && r.key !== "indet" && r.pct > 0)
+    .sort((a, b) => b.pct - a.pct)
+    .slice(0, 2)
+    .map((r) => ({ ...nameOf(r), pct: r.pct }));
   return (
     <div>
       {/* Cuando una explicación pasa de la mitad, la cifra grande es la suya y el
@@ -279,14 +292,28 @@ export function CasePosterior({
             <span className="text-4xl font-semibold tabular-nums">{top.pct}%</span>
             <span className="text-base"><T es={leadName.es} en={leadName.en} locale={locale} /></span>
           </p>
+          {/* Sin subtotales del grupo: «En total, 60 % origen terrestre» bajo un
+              25 % sumaba una segunda cifra que mezclaba tecnología clasificada,
+              otro Estado y un dron, y se leía como contradicción (triángulo
+              negro, 15 nov 2026). Se nombran las que siguen, con su propia cifra. */}
           <p className="mb-3 mt-1 text-base text-text">
             {majority ? (
-              <T es="La explicación más probable. En total, " en="The most likely explanation. In total, " locale={locale} />
+              <T es="La explicación más probable." en="The most likely explanation." locale={locale} />
             ) : (
-              <T es="La que más pesa, sin llegar a la mitad. En total, " en="The largest share, short of half. In total, " locale={locale} />
+              <>
+                <T es="Ninguna explicación llega a la mitad." en="No explanation reaches half." locale={locale} />
+                {next.length > 0 && (
+                  <>
+                    {" "}
+                    <T
+                      es={`Le ${next.length > 1 ? "siguen" : "sigue"}: ${next.map((r) => `${r.es}\u00a0(${r.pct}%)`).join(" y ")}.`}
+                      en={`Next: ${next.map((r) => `${r.en}\u00a0(${r.pct}%)`).join(" and ")}.`}
+                      locale={locale}
+                    />
+                  </>
+                )}
+              </>
             )}
-            <span className="tabular-nums" data-lead="">{lead.sub}%</span>{" "}
-            <T es={lead.lead.es} en={lead.lead.en} locale={locale} />.
           </p>
         </>
       ) : (
@@ -349,7 +376,7 @@ export function CasePosterior({
               {/* Subtotal en el encabezado: el desglose suma a la vista hacia la cifra grande. */}
               <p className="flex justify-between border-b border-text/15 pb-1 text-[13px] font-semibold text-text">
                 <T es={g.es} en={g.en} locale={locale} />
-                <span className="tabular-nums">{g.sub}%</span>
+                <span className="tabular-nums" {...(explanationLeads && g === lead ? { "data-lead": "" } : {})}>{g.sub}%</span>
               </p>
               {/* Una barrita por fila en lugar del cuadro de color: la barra de arriba
                   ya no tiene un tramo por explicación, así que el cuadro era la leyenda

@@ -938,7 +938,9 @@ function ClassBasis({ c, locale }: { c: (typeof cases)[number]; locale: "es" | "
     ? { es: "Por qué: ", en: "Why: " }
     : pk === "sin_propuesta"
       ? { es: "Si fue algo ordinario, por qué no se sabe qué: ", en: "If it was ordinary, why no specific cause is named: " }
-      : { es: `Si fue algo ordinario, lo más probable es: ${label.es.toLowerCase()}. Por qué: `, en: `If it was ordinary, the likeliest cause is: ${label.en.toLowerCase()}. Why: ` };
+      // Rótulo neutro: «lo más probable es: dron» contradecía una cabecera que
+      // da más peso a otra explicación (triángulo negro, 15 nov 2026).
+      : { es: `Causa ordinaria que proponen las fuentes: ${(detail ? shortLabel(detail.label) : label.es).toLowerCase()}. Por qué: `, en: `Ordinary cause the sources propose: ${(detail ? shortLabel(detail.labelEn) : label.en).toLowerCase()}. Why: ` };
   const es = b ? splitOriginal(b.es) : undefined;
   const en = b ? splitOriginal(b.en) : undefined;
   const author = src.split(/[,—(«“"]/)[0].trim();
