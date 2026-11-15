@@ -229,16 +229,16 @@ export function HomeView({ locale }: { locale: "es" | "en" }) {
                 locale={locale}
                 es={
                   <>
-                    Los reportes no se distribuyen al azar.
+                    Los casos del archivo, década por década.
                     <br />
-                    Cuatro <span className="text-accent-bright italic">picos</span> marcan rupturas institucionales.
+                    La cuenta <span className="text-accent-bright italic">cambia</span> con cada caso que se suma.
                   </>
                 }
                 en={
                   <>
-                    Reports don&apos;t distribute randomly.
+                    The archive&apos;s cases, decade by decade.
                     <br />
-                    Four <span className="text-accent-bright italic">peaks</span> mark institutional ruptures.
+                    The count <span className="text-accent-bright italic">changes</span> with every case we add.
                   </>
                 }
               />
@@ -248,12 +248,12 @@ export function HomeView({ locale }: { locale: "es" | "en" }) {
                 locale={locale}
                 es={
                   <>
-                    <strong className="text-accent-bright">1947</strong> Roswell — USAF crea Project Sign · <strong className="text-accent-bright">1973</strong> oleada de otoño en EE. UU. (Pascagoula, Coyne) · <strong className="text-accent-bright">2004</strong> Nimitz — vídeo ATFLIR de un F/A-18 · <strong className="text-accent-bright">2026</strong> PURSUE — primera divulgación presidencial.
+                    Las barras en color marcan las décadas de tres hitos: <strong className="text-accent-bright">1947</strong>, Roswell y el Proyecto Sign de la Fuerza Aérea; <strong className="text-accent-bright">1973</strong>, la oleada de otoño en EE. UU. (Pascagoula, Coyne); <strong className="text-accent-bright">2026</strong>, PURSUE, la primera divulgación ordenada por un presidente.
                   </>
                 }
                 en={
                   <>
-                    <strong className="text-accent-bright">1947</strong> Roswell — USAF creates Project Sign · <strong className="text-accent-bright">1973</strong> US autumn wave (Pascagoula, Coyne) · <strong className="text-accent-bright">2004</strong> Nimitz — F/A-18 ATFLIR video · <strong className="text-accent-bright">2026</strong> PURSUE — first presidential disclosure.
+                    The colored bars mark the decades of three milestones: <strong className="text-accent-bright">1947</strong>, Roswell and the Air Force&apos;s Project Sign; <strong className="text-accent-bright">1973</strong>, the US autumn wave (Pascagoula, Coyne); <strong className="text-accent-bright">2026</strong>, PURSUE, the first disclosure ordered by a president.
                   </>
                 }
               />
