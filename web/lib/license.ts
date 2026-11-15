@@ -64,8 +64,7 @@ const EN: Record<string, string> = {
   "Informe oficial publicado por el SEFAA; el sitio no declara licencia, se reproduce con crédito a la fuente":
     "Official report published by SEFAA; the site states no license, reproduced with credit to the source",
   "© los autores (2008); no se reproduce": "© the authors (2008); not reproduced",
-  "© Sara Jane Osborn; reproductor oficial de Facebook, el video sigue en su cuenta":
-    "© Sara Jane Osborn; official Facebook player, the video stays in her account",
+  "© Sara Jane Osborn": "© Sara Jane Osborn",
   "Dominio público (foto portuguesa anterior a 1970; publicada en 1917)":
     "Public domain (Portuguese photo from before 1970; published in 1917)",
 };
