@@ -202,7 +202,7 @@ export function HomeView({ locale }: { locale: "es" | "en" }) {
               href="/probabilidades"
               variant="primary"
               onDark
-              className="whitespace-nowrap"
+              className="sm:whitespace-nowrap"
             >
               <T
                 locale={locale}
@@ -229,16 +229,14 @@ export function HomeView({ locale }: { locale: "es" | "en" }) {
                 locale={locale}
                 es={
                   <>
-                    Los reportes no se distribuyen al azar.
-                    <br />
-                    Cuatro <span className="text-accent-bright italic">picos</span> marcan rupturas institucionales.
+                    El archivo es más denso donde los gobiernos{" "}
+                    <span className="text-accent-bright italic">abrieron</span> sus expedientes.
                   </>
                 }
                 en={
                   <>
-                    Reports don&apos;t distribute randomly.
-                    <br />
-                    Four <span className="text-accent-bright italic">peaks</span> mark institutional ruptures.
+                    The archive is densest where governments{" "}
+                    <span className="text-accent-bright italic">opened</span> their files.
                   </>
                 }
               />
@@ -248,12 +246,12 @@ export function HomeView({ locale }: { locale: "es" | "en" }) {
                 locale={locale}
                 es={
                   <>
-                    <strong className="text-accent-bright">1947</strong> Roswell — USAF crea Project Sign · <strong className="text-accent-bright">1973</strong> oleada de otoño en EE. UU. (Pascagoula, Coyne) · <strong className="text-accent-bright">2004</strong> Nimitz — vídeo ATFLIR de un F/A-18 · <strong className="text-accent-bright">2026</strong> PURSUE — primera divulgación presidencial.
+                    En los años <strong className="text-accent-bright">cincuenta</strong>, la mayoría de los casos sale de los expedientes de Blue Book, el proyecto de la Fuerza Aérea de EE. UU.; desde <strong className="text-accent-bright">2020</strong>, de las entregas de la AARO y de PURSUE. Por eso la altura de cada barra mide, sobre todo, cuántos registros se han publicado de esa década.
                   </>
                 }
                 en={
                   <>
-                    <strong className="text-accent-bright">1947</strong> Roswell — USAF creates Project Sign · <strong className="text-accent-bright">1973</strong> US autumn wave (Pascagoula, Coyne) · <strong className="text-accent-bright">2004</strong> Nimitz — F/A-18 ATFLIR video · <strong className="text-accent-bright">2026</strong> PURSUE — first presidential disclosure.
+                    In the <strong className="text-accent-bright">1950s</strong>, most cases come from the files of Project Blue Book, the US Air Force project; since <strong className="text-accent-bright">2020</strong>, from AARO and the PURSUE releases. So the height of each bar mostly measures how many records from that decade have been published.
                   </>
                 }
               />

@@ -7,15 +7,17 @@ import { T } from "@/components/T";
  * primera columna («‹1940», como en /cobertura), así que las barras
  * suman el total de incidentes.
  *
- * RD-3 · Las décadas de los hitos que narra el copy van en accent-bright y
- * el párrafo de arriba hace de leyenda. 2004 (Nimitz) queda sin marcar: su
- * década es la de menos casos y en rojo se leía como un pico que no es
- * (decisión del dueño, oct 2026, al pasar de una barra por año a por década).
+ * RD-3 · Van en accent-bright las décadas en que la mayoría de los casos
+ * sale de archivos oficiales publicados: Blue Book (años cincuenta) y la
+ * AARO y PURSUE (desde 2020). En los sesenta Blue Book ya no es mayoría. El párrafo de arriba hace de
+ * leyenda. Antes se marcaban las décadas de 1947, 1973 y 2026 bajo el
+ * titular «cuatro picos», que el gráfico no mostraba (decisión del dueño,
+ * nov 2026).
  */
 
 // CC-1 · #ee6075 = accent-bright (5.4:1 sobre #1a1a1a), igual que la clase
 // text-accent-bright; las barras usan las clases de Tailwind.
-const PEAK_YEARS = [1947, 1973, 2026];
+const HIGHLIGHT_DECADES = [1950, 2020];
 
 // Solo incidentes: los casos-documento son evidencia, no sucesos.
 const incidents = cases.filter((c) => c.category !== "document");
@@ -45,7 +47,7 @@ export function TimelineByYear({ locale }: { locale: "es" | "en" }) {
       short: `${String(d).slice(2)}s`,
       count: incidents.filter((c) => c.year_start >= d && c.year_start < d + 10)
         .length,
-      peak: PEAK_YEARS.some((y) => y >= d && y < d + 10),
+      peak: HIGHLIGHT_DECADES.includes(d),
     });
   }
   const maxCount = Math.max(...buckets.map((b) => b.count));

@@ -80,7 +80,8 @@ export function dominantNarrativeLabel(p: Posterior): string {
 /** Clases de OBJETO dentro de mundanoType="misid" (`misidSubtype`): qué era el
  *  objeto. Se muestran como clases de PRIMER NIVEL (no como drill-down bajo una
  *  «misidentificación»): el sitio nombra el objeto, no el error del testigo.
- *  Los globos se archivan bajo `aeronave`. Colores separados entre sí (ΔE ≥ 12)
+ *  Globos, drones y volantines se archivan bajo `aeronave` («Objeto volador
+ *  humano» desde nov 2026; «Aeronave» se leía como «avión», decisión del dueño). Colores separados entre sí (ΔE ≥ 12)
  *  y del gris de «Indeterminado» (INDET_COLOR); `luces_tierra` (#9a6a8a, malva
  *  mudo) queda a ΔE76 ≥ 27 de toda la paleta prosaica e hipótesis y ≥ 3:1 sobre
  *  el crema y el fondo oscuro de la home. */
@@ -91,7 +92,7 @@ export const MISID_SUBTYPES: ReadonlyArray<{
   color: string;
 }> = [
   { key: "astronomico", label: "Objeto astronómico", labelEn: "Astronomical object", color: "#3d6a8f" },
-  { key: "aeronave", label: "Aeronave", labelEn: "Aircraft", color: "#7d95a6" },
+  { key: "aeronave", label: "Objeto volador humano", labelEn: "Human-made flying object", color: "#7d95a6" },
   { key: "espacial", label: "Objeto espacial", labelEn: "Space object", color: "#3f4e5a" },
   { key: "luces_tierra", label: "Luz o actividad humana", labelEn: "Human light or activity", color: "#9a6a8a" },
   { key: "animal", label: "Animal", labelEn: "Animal", color: "#2e7d8c" },
@@ -150,6 +151,7 @@ export const OBJECT_DETAILS: Readonly<Partial<Record<ProsaicKey, ReadonlyArray<O
     { key: "dron", label: "Dron", labelEn: "Drone" },
     { key: "globo", label: "Globo", labelEn: "Balloon" },
     { key: "desechos_aereos", label: "Desechos aéreos (globo de fiesta, bolsa, farolillo)", labelEn: "Airborne debris (party balloon, bag, sky lantern)" },
+    { key: "volantin", label: "Volantín o cometa", labelEn: "Kite" },
   ],
   espacial: [
     { key: "cohete_misil", label: "Cohete o misil", labelEn: "Rocket or missile" },
