@@ -83,6 +83,13 @@
       "url": "https://www.metabunk.org/threads/uap-hearing-new-video-yemen-orb.14427/page-2",
       "note": "Palabras del propio Mick West, administrador del foro: el objeto deriva con el viento y su movimiento aparente es paralaje.",
       "note_en": "Mick West's own words as the forum's administrator: the object is drifting with the wind and its apparent motion is parallax."
+    },
+    {
+      "name": "Departamento de Guerra, PURSUE, primera entrega: DOW-UAP-D52, «Email Correspondance, NA, August 2024»; copia en archive.org",
+      "name_en": "Department of War, PURSUE, first release: DOW-UAP-D52, \"Email Correspondance, NA, August 2024\"; archive.org copy",
+      "url": "https://archive.org/details/pursue-uap-documents-2026",
+      "note": "Correos sobre un orbe visto el 31 de octubre de 2024, sin lugar ni aeronave; no consta que sea el mismo suceso.",
+      "note_en": "Emails about an orb seen on October 31, 2024, with no place or aircraft; it is not established that it is the same event."
     }
   ],
   "documents": [
@@ -97,6 +104,18 @@
       "source": "Cámara de Representantes de EE. UU., Comité de Supervisión (GPO, govinfo)",
       "license": "Dominio público · obra del Gobierno de EE. UU.",
       "fallbackUrl": "https://www.govinfo.gov/content/pkg/CHRG-119hhrg61718/pdf/CHRG-119hhrg61718.pdf"
+    },
+    {
+      "role": "documento",
+      "src": "/pursue/dow-uap-d52-email-correspondance-na-august-2024.pdf",
+      "type": "pdf",
+      "title": "Correos de la 15.ª Fuerza Aérea sobre un orbe visto el 31 de octubre de 2024 (DOW-UAP-D52), 2 págs.",
+      "title_en": "15th Air Force emails about an orb seen on October 31, 2024 (DOW-UAP-D52), 2 pp.",
+      "description": "Dos correos que publicó el Departamento de Guerra con el título «Email Correspondance, NA, August 2024», aunque el suceso es de octubre. Un analista de divulgación pide autorizar el año del incidente, y un técnico de análisis de inteligencia del Destacamento 1 de la 15.ª Fuerza Aérea responde con el texto que se puede publicar: «31 OCT 24, U.S Aircraft observed a possible UAP. It appeared to be oval/orb shaped, likely moving at a low speed. The U.S Aircraft had eyes on the poss UAP for over 2 hours». No dice dónde ocurrió, qué aeronave era ni con qué sensor se vio. La fecha y la forma coinciden, con un día de diferencia, con el suceso de Yemen que mostró Burlison, pero el correo no permite saber si es el mismo.",
+      "description_en": "Two emails published by the Department of War under the title \"Email Correspondance, NA, August 2024,\" although the event is from October. A disclosure analyst asks for approval to include the year of the incident, and an intelligence data analysis technician from Detachment 1 of the 15th Air Force replies with the releasable text: \"31 OCT 24, U.S Aircraft observed a possible UAP. It appeared to be oval/orb shaped, likely moving at a low speed. The U.S Aircraft had eyes on the poss UAP for over 2 hours.\" It does not say where it happened, what aircraft it was or what sensor saw it. The date and shape match, one day apart, the Yemen event Burlison showed, but the email does not make it possible to tell whether it is the same one.",
+      "source": "Departamento de Guerra (PURSUE, primera entrega)",
+      "license": "Dominio público · obra del Gobierno de EE. UU.",
+      "fallbackUrl": "https://archive.org/details/pursue-uap-documents-2026"
     },
     {
       "role": "contexto",
