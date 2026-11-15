@@ -74,7 +74,7 @@ const COUNTRY_REGION: Record<string, Region> = {
   AU: "oceania", NZ: "oceania", PG: "oceania", FJ: "oceania", GU: "oceania",
   // África
   DZ: "africa", AO: "africa", CD: "africa", SD: "africa", TN: "africa", ZW: "africa", ZA: "africa", NG: "africa", KE: "africa", MA: "africa", LY: "africa",
-  TZ: "africa", MG: "africa",
+  TZ: "africa", MG: "africa", SO: "africa",
 };
 
 /** Región de un código ISO de país (o undefined si no está mapeado). */
