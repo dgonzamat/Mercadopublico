@@ -274,7 +274,8 @@ export function CasePosterior({
       ? { es: shortLabel(detail.label).toLowerCase(), en: shortLabel(detail.labelEn).toLowerCase() }
       : r.key === "sin_propuesta"
         ? { es: "causa ordinaria sin identificar", en: "ordinary cause, unidentified" }
-        : { es: r.label.toLowerCase(), en: r.labelEn.toLowerCase() };
+        // Solo la inicial: con toLowerCase() salía «ocultado por un estado».
+        : { es: r.label[0].toLowerCase() + r.label.slice(1), en: r.labelEn[0].toLowerCase() + r.labelEn.slice(1) };
   const next = all
     .filter((r) => !r.zero && r.key !== top.key && r.key !== "indet" && r.pct > 0)
     .sort((a, b) => b.pct - a.pct)
