@@ -197,13 +197,46 @@ export function CasesFilter({
       data-tier-filter={tier}
       className="space-y-4"
     >
-      {/* Fila de selects facetados — combinables (AND). */}
+      {/* La búsqueda va primero y a lo ancho: en el móvil quedaba debajo de
+          cuatro selects apilados y se perdía entre ellos (nov 2026). */}
+      <div className="relative w-full sm:max-w-md">
+        <input
+          type="search"
+          value={query}
+          onChange={(e) => setQuery(e.target.value)}
+          placeholder={
+            locale === "es" ? "Buscar caso, país, año…" : "Search case, country, year…"
+          }
+          aria-label={
+            locale === "es"
+              ? "Buscar caso por nombre, país o año"
+              : "Search case by name, country or year"
+          }
+          className={`block min-h-[44px] w-full border py-2 pl-3 pr-10 font-mono text-sm placeholder:text-muted focus-visible:border-accent focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-accent ${
+            query
+              ? "border-accent/50 bg-accent/10 text-accent"
+              : "border-border bg-panel text-text"
+          }`}
+        />
+        {query && (
+          <button
+            type="button"
+            onClick={() => setQuery("")}
+            aria-label={locale === "es" ? "Limpiar búsqueda" : "Clear search"}
+            className="absolute right-1 top-1/2 flex h-9 w-9 -translate-y-1/2 items-center justify-center text-muted hover:text-accent focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-accent"
+          >
+            <span aria-hidden>×</span>
+          </button>
+        )}
+      </div>
+
+      {/* Selects facetados, combinables (AND): dos por fila en el móvil. */}
       <div
-        className="flex flex-wrap items-center gap-2"
+        className="grid grid-cols-2 gap-2 sm:flex sm:flex-wrap sm:items-center"
         role="group"
         aria-label={locale === "es" ? "Filtrar casos" : "Filter cases"}
       >
-        <span className="mr-1 font-mono text-xs text-muted">
+        <span className="mr-1 hidden font-mono text-xs text-muted sm:inline">
           <T es="Filtrar" en="Filter" locale={locale} />
         </span>
         <FacetSelect
@@ -239,41 +272,6 @@ export function CasesFilter({
           allLabel={locale === "es" ? "Evidencia · toda" : "Evidence · all"}
           options={tiers.map((t) => ({ value: t.key, label: `${t[locale]} · ${t.count}` }))}
         />
-        {/* Los cuatro selects ya ocupan 964 de los 1120px del contenedor, así
-            que la caja SIEMPRE cae a la línea siguiente: los ~150px que
-            sobran no alcanzan para un campo de texto usable. Ancho fijo (no
-            `flex-1`) para que al envolver no se estire a los 1120 y siga
-            leyéndose como parte del grupo de filtros. */}
-        <div className="relative w-full sm:w-72">
-          <input
-            type="search"
-            value={query}
-            onChange={(e) => setQuery(e.target.value)}
-            placeholder={
-              locale === "es" ? "Buscar caso, país, año…" : "Search case, country, year…"
-            }
-            aria-label={
-              locale === "es"
-                ? "Buscar caso por nombre, país o año"
-                : "Search case by name, country or year"
-            }
-            className={`block min-h-[44px] w-full border py-2 pl-3 pr-10 font-mono text-sm placeholder:text-muted focus-visible:border-accent focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-accent ${
-              query
-                ? "border-accent/50 bg-accent/10 text-accent"
-                : "border-border bg-panel text-text"
-            }`}
-          />
-          {query && (
-            <button
-              type="button"
-              onClick={() => setQuery("")}
-              aria-label={locale === "es" ? "Limpiar búsqueda" : "Clear search"}
-              className="absolute right-1 top-1/2 flex h-9 w-9 -translate-y-1/2 items-center justify-center text-muted hover:text-accent focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-accent"
-            >
-              <span aria-hidden>×</span>
-            </button>
-          )}
-        </div>
       </div>
 
       {/* Filtros activos (pills removibles) + conteo vivo + limpiar todo. */}
@@ -347,12 +345,12 @@ function FacetSelect({
   options: Array<{ value: string; label: string }>;
 }) {
   return (
-    <div className="relative">
+    <div className="relative min-w-0">
       <select
         aria-label={ariaLabel}
         value={value}
         onChange={(e) => onChange(e.target.value)}
-        className={`block min-h-[44px] appearance-none border py-2 pl-3 pr-8 font-mono text-sm focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-accent ${
+        className={`block min-h-[44px] w-full appearance-none truncate border py-2 pl-2.5 pr-7 font-mono text-xs sm:w-auto sm:pl-3 sm:pr-8 sm:text-sm focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-accent ${
           value !== "all"
             ? "border-accent/50 bg-accent/10 text-accent"
             : "border-border bg-panel text-text"
