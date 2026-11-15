@@ -42,6 +42,18 @@
       "fallbackUrl": "https://www.war.gov/medialink/ufo/release_1/341_110677_numerical_file_5-2500.pdf",
       "description": "Informe de inteligencia aérea IR 193-55 (formulario AF 112) del agregado aéreo de EE. UU. en Praga, teniente coronel Thomas S. Ryan, fechado el 14 de octubre de 1955. La portada resume el avistamiento del 4 de octubre, da como fuente al teniente coronel E. U. Hathaway con calificación «B-2» e incluye el comentario de la oficina del agregado; la página 2 transcribe el cable secreto C-103 del 13 de octubre, que nombra al senador Russell, a Hathaway y a Ruben Efron, y narra la llegada del grupo a Praga. El informe consta de nueve páginas, procede del archivo numérico 341_110677 (expediente 5-2500) y se publicó en la primera entrega de PURSUE.",
       "description_en": "Air Intelligence Information Report IR 193-55 (AF Form 112) by the U.S. air attaché in Prague, Lt. Col. Thomas S. Ryan, dated October 14, 1955. The cover sheet summarizes the October 4 sighting, names Lt. Col. E. U. Hathaway as the source with a \"B-2\" rating and carries the attaché office's comment; page 2 transcribes secret cable C-103 of October 13, which names Senator Russell, Hathaway and Ruben Efron, and describes the group's arrival in Prague. The report runs to nine pages, comes from numerical file 341_110677 (file 5-2500) and was released in the first PURSUE release."
+    },
+    {
+      "role": "documento",
+      "src": "/pursue/CIA-UAP-006-trans-caucasus-1955-gros.pdf",
+      "type": "pdf",
+      "title": "Informe de la CIA 00-B-90229 con el relato de Gros (distribuido el 15 de noviembre de 1955)",
+      "title_en": "CIA report 00-B-90229 with Gros's account (distributed November 15, 1955)",
+      "description": "Informe de información de la CIA de dos páginas, sin evaluar, con el relato del cuarto acompañante del grupo de Russell. Cuenta que el tren salió de Bakú a las 16:30 y que, dos horas y cuarenta minutos después, a unas 50 a 65 millas al sur de la ciudad, vio junto a la vía un gran aeródromo con un reflector que iluminaba un objeto triangular del tamaño de un caza, con tres luces. El objeto salió en espiral y subió a unos 45 grados, «más parecido a la eyección de un misil», y un compañero dijo que era el segundo lanzamiento seguido. Un camarero bajó las cortinas por orden, según el testigo, de un agente del Ministerio del Interior soviético (MVD) que había subido al tren en Bakú.",
+      "description_en": "Two-page CIA information report, not evaluated, with the account of the fourth member of Russell's party. It says the train left Baku at 4:30 p.m. and that, two hours and forty minutes later, some 50 to 65 miles south of the city, he saw beside the track a large airfield with a searchlight shining on a triangular object the size of a fighter, with three lights. The object rose in spirals and climbed at about 45 degrees, \"more like a missile ejection,\" and a companion said it was the second launch in quick succession. A steward pulled down the blinds on the orders, according to the witness, of an officer of the Soviet Interior Ministry (MVD) who had boarded the train in Baku.",
+      "source": "CIA, CIA-UAP-006 (PURSUE, tercera entrega), vía archive.org",
+      "license": "Dominio público · obra del Gobierno de EE. UU.",
+      "fallbackUrl": "https://archive.org/details/cia-readingroom-document-0000015277"
     }
   ],
   "patterns": [
