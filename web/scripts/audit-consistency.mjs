@@ -505,7 +505,7 @@ const PAGE_MIN_BODY = 3500;
 // silenciado. Decisión del dueño, 31 oct 2026. El guard de abajo avisa si una
 // ficha exenta llega al estándar o deja de existir, para que la lista no
 // esconda progreso.
-const LONGITUD_CERRADA = new Set(["orcas-island-1994"]);
+const LONGITUD_CERRADA = new Set(["orcas-island-1994", "pacific-blue-triangle-2023"]);
 const shortBodies = [];
 for (const id of LONGITUD_CERRADA) {
   const c = cases.find((x) => x.id === id);
