@@ -65,8 +65,8 @@ const CHAPTERS = [
   {
     id: "movement",
     n: "4",
-    es: { eyebrow: "Capítulo 4", h2: "Lo decidido vs la frontera", tldr: "La mayoría de los casos tiene una causa ordinaria (sobre todo aeronaves, globos, astros y satélites); las explicaciones no humanas son minoría y se concentran en los casos mejor documentados." },
-    en: { eyebrow: "Chapter 4", h2: "What is settled vs the frontier", tldr: "Most cases have an ordinary cause (mostly aircraft, balloons, celestial bodies and satellites); the non-human explanations are a minority and concentrate in the best-documented cases." },
+    es: { eyebrow: "Capítulo 4", h2: "Lo decidido vs la frontera", tldr: "La mayoría de los casos tiene una causa ordinaria (sobre todo aeronaves, globos, astros y satélites); las explicaciones no humanas son minoría." },
+    en: { eyebrow: "Chapter 4", h2: "What is settled vs the frontier", tldr: "Most cases have an ordinary cause (mostly aircraft, balloons, celestial bodies and satellites); the non-human explanations are a minority." },
   },
   {
     id: "movers",

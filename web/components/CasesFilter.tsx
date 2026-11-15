@@ -80,6 +80,17 @@ const MISID_OBJECT_KEYS: ReadonlyArray<HypKey> = ["astronomico", "aeronave", "es
 
 export type FacetOption = { key: string; es: string; en: string; count: number };
 
+type IndexCase = {
+  type: string;
+  id: string;
+  name: string;
+  name_en?: string;
+  subtitle: string;
+  subtitle_en?: string;
+  flag: string;
+  year: string;
+};
+
 export function CasesFilter({
   locale,
   regionCounts,
@@ -107,6 +118,50 @@ export function CasesFilter({
   // casos que pasan los filtros, leídos del DOM (sin duplicar datos).
   const [suggest, setSuggest] = useState<Array<{ href: string; title: string; flag: string }>>([]);
   const [suggestOpen, setSuggestOpen] = useState(false);
+  // Mismo motor que el buscador del header (Fuse sobre /search-index.json,
+  // solo casos): tolera erratas y busca también en el resumen. Se carga al
+  // enfocar la caja; mientras tanto valen las sugerencias leídas del DOM.
+  const [fuse, setFuse] = useState<{ search: (q: string, o: { limit: number }) => Array<{ item: IndexCase }> } | null>(null);
+  const fuseLoading = useRef(false);
+  async function loadFuse() {
+    if (fuse || fuseLoading.current) return;
+    fuseLoading.current = true;
+    try {
+      const [{ default: Fuse }, res] = await Promise.all([import("fuse.js"), fetch("/search-index.json")]);
+      if (!res.ok) return;
+      const data = ((await res.json()) as IndexCase[]).filter((e) => e.type === "case");
+      setFuse(
+        new Fuse(data, {
+          keys: [
+            { name: "name", weight: 0.45 },
+            { name: "subtitle", weight: 0.15 },
+            { name: "subtitle_en", weight: 0.1 },
+            { name: "summary", weight: 0.15 },
+            { name: "summary_en", weight: 0.1 },
+            { name: "year", weight: 0.1 },
+            { name: "keywords", weight: 0.05 },
+          ],
+          threshold: 0.35,
+          ignoreLocation: true,
+          minMatchCharLength: 2,
+        }),
+      );
+    } catch {
+      /* sin índice: quedan las sugerencias del DOM */
+    } finally {
+      fuseLoading.current = false;
+    }
+  }
+  const fuzzySuggest =
+    fuse && query.trim().length >= 2
+      ? fuse.search(query.trim(), { limit: 6 }).map(({ item }) => ({
+          href: `${locale === "es" ? "/es" : ""}/cases/${item.id}`,
+          title: locale === "es" ? item.name : item.name_en ?? item.name,
+          flag: item.flag,
+          meta: [locale === "es" ? item.subtitle : item.subtitle_en ?? item.subtitle, item.year].filter(Boolean).join(" · "),
+        }))
+      : null;
+  const shown: Array<{ href: string; title: string; flag: string; meta?: string }> = fuzzySuggest ?? suggest;
   const rootRef = useRef<HTMLDivElement>(null);
 
   // Deep-link por hash (#nohumano, #aeronave…) — al montar y en cada hashchange.
@@ -229,13 +284,16 @@ export function CasesFilter({
             setQuery(e.target.value);
             setSuggestOpen(true);
           }}
-          onFocus={() => setSuggestOpen(true)}
+          onFocus={() => {
+            setSuggestOpen(true);
+            loadFuse();
+          }}
           onBlur={() => setSuggestOpen(false)}
           onKeyDown={(e) => {
             if (e.key === "Escape") setSuggestOpen(false);
           }}
           role="combobox"
-          aria-expanded={suggestOpen && suggest.length > 0}
+          aria-expanded={suggestOpen && shown.length > 0}
           aria-controls="cases-suggest"
           aria-autocomplete="list"
           placeholder={
@@ -262,7 +320,7 @@ export function CasesFilter({
             <span aria-hidden>×</span>
           </button>
         )}
-        {suggestOpen && suggest.length > 0 && (
+        {suggestOpen && shown.length > 0 && (
           <ul
             id="cases-suggest"
             role="listbox"
@@ -270,14 +328,17 @@ export function CasesFilter({
             onMouseDown={(e) => e.preventDefault()}
             className="absolute left-0 right-0 top-full z-20 mt-1 border border-border bg-panel shadow-lg"
           >
-            {suggest.map((s) => (
+            {shown.map((s) => (
               <li key={s.href} role="option" aria-selected={false}>
                 <a
                   href={s.href}
                   className="flex min-h-[44px] items-center gap-3 border-b border-border/60 px-3 py-2 text-sm text-text last:border-b-0 hover:bg-accent/10 hover:text-accent focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-accent"
                 >
                   <span aria-hidden>{s.flag}</span>
-                  <span className="min-w-0 truncate">{s.title}</span>
+                  <span className="min-w-0">
+                    <span className="block truncate">{s.title}</span>
+                    {s.meta && <span className="block truncate font-mono text-[11px] text-muted">{s.meta}</span>}
+                  </span>
                 </a>
               </li>
             ))}
@@ -349,6 +410,16 @@ export function CasesFilter({
               <T es={`${matchCount} caso`} en={`${matchCount} case`} locale={locale} />
             ) : (
               <T es={`${matchCount} casos`} en={`${matchCount} cases`} locale={locale} />
+            )}
+            {/* Cada caso cuenta bajo UNA explicación, la de mayor peso: sin
+                esta aclaración «No humano · 7 casos» se leía como el total de
+                casos con alguna posibilidad no humana (nov 2026). */}
+            {hyp !== "all" && (
+              <T
+                es=" en que es la explicación más probable"
+                en=" where it is the most likely explanation"
+                locale={locale}
+              />
             )}
           </span>
           <button
