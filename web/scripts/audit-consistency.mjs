@@ -613,6 +613,7 @@ const VISUAL_CERRADO_POR_LICENCIA = {
   "ingolstadt-1979": "solo MUFON-CES y el libro de Ludwiger (copyright); Commons seco",
   "langenargen-1977": "informe de MUFON-CES y libro de Ludwiger (copyright); Commons seco",
   "nagora-steiermark-1971": "las fotos de Nagora tienen copyright; Commons seco",
+  "omdurman-2015": "solo prensa; no se publicaron fotos de los restos ni datos del radar; Commons seco con «Wadi Seidna»",
   "vaddo-1956": "la foto de la pieza sale de UFO-Sverige y Nordic UFO Newsletter (copyright); Commons seco",
 };
 

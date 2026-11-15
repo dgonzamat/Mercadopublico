@@ -332,6 +332,7 @@
     "indet": 0.33
   },
   "misidSubtype": "aeronave",
+  "objectDetail": "avion",
   "classBasis": {
     "es": "Aeronaves militares que lanzaban bengalas infrarrojas de contramedida en un ejercicio: «aproximadamente el 60 por ciento de la actividad reportada es plausiblemente atribuible a aeronaves militares».",
     "en": "Military aircraft dispensing infrared countermeasure flares in an exercise: \"approximately 60 percent of the reported activity is plausibly attributable to military aircraft.\"",
