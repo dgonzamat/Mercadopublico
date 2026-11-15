@@ -1,0 +1,76 @@
+{
+  "id": "omdurman-2015",
+  "num": 525,
+  "name": "Omdurmán, Sudán · la antiaérea derriba un blanco luminoso",
+  "name_en": "Omdurman, Sudan · air defense downs a bright target",
+  "year_start": 2015,
+  "country": "SD",
+  "country_name": "Sudán",
+  "flag": "🇸🇩",
+  "location": {
+    "lat": 15.82,
+    "lng": 32.51,
+    "place": "Zona militar de Wadi Sayidna, al norte de Omdurmán (Jartum)",
+    "place_en": "Wadi Sayidna military zone, north of Omdurman (Khartoum)"
+  },
+  "tier": "A",
+  "epistemicStatus": "documented",
+  "probability": 30,
+  "posterior": {
+    "mundano_natural": 0.12,
+    "humana_clasificada": 0.15,
+    "adversaria": 0.43,
+    "nohumano_encubierto": 0.02,
+    "nohumano_abierto": 0.03,
+    "indet": 0.25
+  },
+  "summary": "La noche del 5 de mayo de 2015, hacia las 22:00, la defensa antiaérea de Sudán disparó contra un objeto brillante que volaba bajo sobre la zona militar de Wadi Sayidna, al norte de Omdurmán. Los vecinos oyeron explosiones y vieron fuego en el cielo, y los restos cayeron sobre barrios de la ciudad. El Ejército habló primero de un objeto «que parece un avión o un cohete» y dos días después de un dron de reconocimiento de origen desconocido. El ministro de Información, en cambio, atribuyó los disparos a un error de comunicación durante unas maniobras.",
+  "summary_en": "On the night of May 5, 2015, around 10 p.m., Sudan's air defense fired at a bright object flying low over the Wadi Sayidna military zone, north of Omdurman. Residents heard explosions and saw fire in the sky, and the debris fell on neighborhoods of the city. The army first spoke of an object that \"resembles a plane or a rocket\" and, two days later, of a reconnaissance drone of unknown origin. The information minister, by contrast, blamed the firing on a miscommunication during military exercises.",
+  "patterns": [
+    "8s",
+    "8e"
+  ],
+  "category": "incident",
+  "evidenceReviewed": "2026-11-15",
+  "whatHappened": "El martes 5 de mayo de 2015, hacia las 22:00 hora local, los vecinos de Omdurmán, la ciudad gemela de Jartum en la otra orilla del Nilo, oyeron al menos una explosión que venía del norte, de la zona de Karari. Un testigo que vivía cerca le dijo al «Sudan Tribune» que había visto «una llama en el cielo» y que la casa tembló. Según un funcionario de la Policía citado por la prensa, un vecino llamó a la comisaría para avisar de que veía «una entidad brillante en el cielo».\n\nEsa misma noche, la defensa antiaérea de la zona militar de Wadi Sayidna había disparado contra algo. En las redes sociales sudanesas corrió el rumor de un golpe de Estado contra el presidente Omar al Bashir, y el diario «Al Araby al Jadeed» publicó, citando a fuentes militares, que «aviones extranjeros» habían atacado un objetivo en Omdurmán.\n\nEl miércoles 6, el portavoz del Ejército, el coronel Al Sawarmi Jaled Saad, dijo en un comunicado que la defensa antiaérea de Wadi Sayidna se había «enfrentado a un blanco brillante» la noche anterior, y negó que hubiera habido un intento de golpe, combates o un ataque extranjero. En una entrevista con Sky News Arabia lo describió como «un objeto en movimiento que parece un avión o un cohete», y en otro comunicado añadió que una base aérea había recibido el aviso de un blanco brillante que volaba a baja altura sobre la zona militar: «Nos enfrentamos al blanco aéreo, que es un blanco de reconocimiento por imágenes cuya identidad aún no se ha descubierto». Los restos, dijo, cayeron sobre zonas residenciales de Omdurmán. El jueves 7, el Ejército afirmó que el objeto era un dron de reconocimiento, sin precisar de dónde venía.\n\nEl mismo miércoles, el ministro de Información, Ahmed Bilal Osman, dio otra versión a Radio Tamazuj: negó que hubiera habido bombardeos en la capital, explicó que había maniobras militares al norte de Omdurmán, cerca de los cuarteles de la defensa antiaérea, y dijo que las unidades abrieron fuego por un error de comunicación.",
+  "whatHappened_en": "On Tuesday, May 5, 2015, around 10 p.m. local time, residents of Omdurman, Khartoum's twin city across the Nile, heard at least one explosion coming from the north, from the Karari area. A witness who lived nearby told the \"Sudan Tribune\" he had seen \"a flame in the sky\" and that the house shook. According to a police official quoted by the press, a resident called the police station to report seeing \"a glowing entity in the sky.\"\n\nThat same night, the air defense of the Wadi Sayidna military zone had fired at something. Rumors of a coup against President Omar al-Bashir spread on Sudanese social media, and the newspaper \"Al-Araby al-Jadeed\" reported, citing military sources, that \"foreign planes\" had struck a target in Omdurman.\n\nOn Wednesday the 6th, army spokesman Col. Al-Sawarmi Khaled Saad said in a statement that the Wadi Sayidna air defense had \"confronted a bright target\" the night before, and denied there had been a coup attempt, clashes or a foreign attack. In an interview with Sky News Arabia he described it as a \"moving object that resembles a plane or a rocket,\" and in another statement he added that an air base had received notice of a bright target flying at low altitude over the military zone: \"We engaged with the aerial target, which is a reconnaissance imaging target whose identity has not yet been uncovered.\" The debris, he said, fell on residential areas of Omdurman. On Thursday the 7th, the army said the object was a reconnaissance drone, without saying where it came from.\n\nThe same Wednesday, Information Minister Ahmed Bilal Osman gave another version to Radio Tamazuj: he denied there had been any bombing in the capital, explained that there were military exercises north of Omdurman, near the air defense barracks, and said the units had opened fire because of a miscommunication.",
+  "whyMatters": "Un ejército disparó contra un objeto que no identificaba y lo dijo en público al día siguiente. El registro, sin embargo, se reduce a lo que contaron el Ejército y el Gobierno, y sus versiones no coinciden: para el portavoz fue un blanco aéreo derribado, luego un dron de reconocimiento; para el ministro, un error de comunicación durante unas maniobras, sin bombardeo. No se publicaron fotos de los restos, datos del radar ni el resultado de la investigación.\n\nLa sospecha de un dron extranjero tenía antecedentes. Sudán había acusado a Israel de bombardear una fábrica de armas en Jartum en octubre de 2012, y en 2009 unos aviones que la prensa atribuyó a Israel destruyeron un convoy de camiones en Sudán; Israel, según Reuters, no comentó o dijo que ni admitía ni negaba su participación. Esta vez, testigos citados por «Al Araby al Jadeed» creyeron que los aviones venían de Israel, y el Ejército israelí no respondió de inmediato, según su propia radio. Los rebeldes de Darfur y de la frontera con Sudán del Sur no tenían, según Reuters, capacidad aérea.\n\nQue el portavoz hablara de un blanco «de reconocimiento por imágenes» indica que el Ejército creyó que vigilaba la zona militar, pero ninguna fuente explica cómo lo supo. Si el ministro tenía razón, el objeto pudo ser un avión o un dron propio durante las maniobras, o nada en absoluto. El caso se parece a los drones de 2025 sobre aeropuertos europeos [[european-drone-incursions-2025]]: un objeto que unas fuerzas armadas no pudieron identificar y que el Gobierno explicó a medias.",
+  "whyMatters_en": "An army fired at an object it could not identify and said so in public the next day. The record, however, comes down to what the army and the government said, and their versions do not match: for the spokesman it was an aerial target that was shot down, later a reconnaissance drone; for the minister, a miscommunication during exercises, with no bombing. No photos of the debris, radar data or result of an investigation were published.\n\nThe suspicion of a foreign drone had a background. Sudan had accused Israel of bombing an arms factory in Khartoum in October 2012, and in 2009 aircraft that the press attributed to Israel destroyed a convoy of trucks in Sudan; Israel, according to Reuters, either refused to comment or said it neither admitted nor denied involvement. This time, witnesses quoted by \"Al-Araby al-Jadeed\" thought the aircraft had come from Israel, and the Israeli military did not respond immediately, according to its own radio station. The rebels in Darfur and along the border with South Sudan had, according to Reuters, no air capability.\n\nThat the spokesman spoke of a \"reconnaissance imaging\" target suggests the army believed it was surveilling the military zone, but no source explains how it knew. If the minister was right, the object may have been one of its own aircraft or drones during the exercises, or nothing at all. The case resembles the 2025 drones over European airports [[european-drone-incursions-2025]]: an object that armed forces could not identify and that the government explained only in part.",
+  "evidence": [
+    "Reuters, 7 de mayo de 2015: el portavoz Al Sawarmi Jaled Saad, «We engaged with the aerial target, which is a reconnaissance imaging target whose identity has not yet been uncovered»; los restos cayeron sobre zonas residenciales de Omdurmán.",
+    "Reuters, el mismo despacho: el jueves el Ejército dijo que era un dron de reconocimiento, «but its origins were not clear»; vecinos oyeron al menos una explosión hacia las 22:00.",
+    "Ynet, con Reuters, 6 de mayo de 2015: el portavoz, en Sky News Arabia, habló de un «moving object that resembles a plane or a rocket»; un vecino avisó a la Policía de «a glowing entity in the sky».",
+    "Dabanga, 6 de mayo de 2015: comunicado del Ejército, «The anti-air defence in the Wadi Sayedna military zone confronted a bright target late last night», con la negativa de un golpe o un ataque extranjero.",
+    "Dabanga, el mismo artículo: el ministro de Información, Ahmed Bilal Osman, negó bombardeos y atribuyó los disparos a un error de comunicación durante maniobras al norte de Omdurmán."
+  ],
+  "evidence_en": [
+    "Reuters, May 7, 2015: spokesman Al-Sawarmi Khaled Saad, \"We engaged with the aerial target, which is a reconnaissance imaging target whose identity has not yet been uncovered\"; the debris fell on residential areas of Omdurman.",
+    "Reuters, the same dispatch: on Thursday the army said it was a reconnaissance drone, \"but its origins were not clear\"; residents heard at least one explosion around 10 p.m.",
+    "Ynet, with Reuters, May 6, 2015: the spokesman, on Sky News Arabia, spoke of a \"moving object that resembles a plane or a rocket\"; a resident told the police of \"a glowing entity in the sky.\"",
+    "Dabanga, May 6, 2015: army statement, \"The anti-air defence in the Wadi Sayedna military zone confronted a bright target late last night,\" with the denial of a coup or foreign attack.",
+    "Dabanga, the same article: Information Minister Ahmed Bilal Osman denied any bombing and blamed the firing on a miscommunication during exercises north of Omdurman."
+  ],
+  "sources": [
+    {
+      "name": "Reuters (Mahmoud Mourad), «Sudan army says shot down reconnaissance drone, identity unknown», 7 de mayo de 2015 (copia en Yahoo News)",
+      "name_en": "Reuters (Mahmoud Mourad), \"Sudan army says shot down reconnaissance drone, identity unknown,\" May 7, 2015 (Yahoo News copy)",
+      "url": "https://news.yahoo.com/sudan-army-says-shot-down-reconnaissance-drone-identity-092222699.html",
+      "note": "Comunicados del portavoz del Ejército y testimonios de vecinos.",
+      "note_en": "The army spokesman's statements and residents' accounts."
+    },
+    {
+      "name": "Ynet, «Sudanese army says it downed Israeli UAV north of Khartoum», 6 de mayo de 2015",
+      "name_en": "Ynet, \"Sudanese army says it downed Israeli UAV north of Khartoum,\" May 6, 2015",
+      "url": "https://www.ynetnews.com/articles/0,7340,L-4654271,00.html",
+      "note": "Recoge la entrevista del portavoz con Sky News Arabia, el testigo del «Sudan Tribune» y el aviso a la Policía; el titular atribuye el dron a Israel, cosa que el Ejército sudanés no dijo.",
+      "note_en": "It reports the spokesman's Sky News Arabia interview, the \"Sudan Tribune\" witness and the police call; the headline attributes the drone to Israel, which the Sudanese army did not say."
+    },
+    {
+      "name": "Dabanga, «Sudan denies attack after engaging aerial target in Omdurman», 6 de mayo de 2015",
+      "name_en": "Dabanga, \"Sudan denies attack after engaging aerial target in Omdurman,\" May 6, 2015",
+      "url": "https://www.dabangasudan.org/en/all-news/article/sudan-denies-attack-after-engaging-aerial-target-in-omdurman",
+      "note": "Comunicado del Ejército y versión del ministro de Información (con Reuters y Radio Tamazuj).",
+      "note_en": "Army statement and the information minister's version (with Reuters and Radio Tamazuj)."
+    }
+  ]
+}
