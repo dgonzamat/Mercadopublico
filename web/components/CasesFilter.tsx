@@ -350,6 +350,16 @@ export function CasesFilter({
             ) : (
               <T es={`${matchCount} casos`} en={`${matchCount} cases`} locale={locale} />
             )}
+            {/* Cada caso cuenta bajo UNA explicación, la de mayor peso: sin
+                esta aclaración «No humano · 7 casos» se leía como el total de
+                casos con alguna posibilidad no humana (nov 2026). */}
+            {hyp !== "all" && (
+              <T
+                es=" en que es la explicación más probable"
+                en=" where it is the most likely explanation"
+                locale={locale}
+              />
+            )}
           </span>
           <button
             type="button"
