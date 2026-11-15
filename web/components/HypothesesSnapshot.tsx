@@ -16,18 +16,10 @@ import { LocaleLink } from "@/components/LocaleLink";
  */
 export function HypothesesSnapshot({ locale }: { locale: "es" | "en" }) {
   const scored = corpusPosteriors();
-  const N = scored.length;
 
   return (
     <div>
-      <p className="border-b border-bg/10 pb-3 font-mono text-[11px] text-bg/50">
-        <T
-          locale={locale}
-          es={`Cómo se reparten los ${N} incidentes del archivo entre las explicaciones (suman 100 %)`}
-          en={`How the archive's ${N} incidents split among the explanations (they sum to 100%)`}
-        />
-      </p>
-      <div className="mt-8">
+      <div>
         <MecePartition
           items={scored}
           locale={locale}

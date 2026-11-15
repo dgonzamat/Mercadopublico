@@ -216,8 +216,9 @@ console.log("\nHome · snapshot de hipótesis");
 const home = readOut("index.html");
 if (home == null) fail("no existe out/index.html");
 else {
-  check("renderiza el snapshot de hipótesis (header)", /Cómo se reparten los \d+ incidentes|incidents split among the explanations/.test(home));
-  check("declara que suman 100%", home.includes("suman 100%") || home.includes("sum to 100%"));
+  // El subtítulo «suman 100 %» se quitó de la portada (nov 2026, decisión del
+  // dueño); la suma la prueba el test de la leyenda del donut, más abajo.
+  check("renderiza el snapshot de hipótesis (nota al pie)", /Cada incidente cuenta una vez|Each incident counts once/.test(home));
 }
 
 console.log("\nCaso · CasePosterior");

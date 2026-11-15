@@ -175,7 +175,7 @@ export function HomeView({ locale }: { locale: "es" | "en" }) {
                 es={
                   <>
                     Los UAP{" "}
-                    <span className="text-accent-bright italic">
+                    <span className="pr-[0.12em] text-accent-bright italic">
                       no son una sola cosa
                     </span>
                     : son varias, mezcladas bajo la misma etiqueta.
@@ -184,7 +184,7 @@ export function HomeView({ locale }: { locale: "es" | "en" }) {
                 en={
                   <>
                     UAP{" "}
-                    <span className="text-accent-bright italic">
+                    <span className="pr-[0.12em] text-accent-bright italic">
                       are not one single thing
                     </span>
                     : they are several, mixed under the same label.
