@@ -202,7 +202,7 @@ export function HomeView({ locale }: { locale: "es" | "en" }) {
               href="/probabilidades"
               variant="primary"
               onDark
-              className="whitespace-nowrap"
+              className="sm:whitespace-nowrap"
             >
               <T
                 locale={locale}
@@ -229,16 +229,14 @@ export function HomeView({ locale }: { locale: "es" | "en" }) {
                 locale={locale}
                 es={
                   <>
-                    Los casos del archivo, década por década.
-                    <br />
-                    La cuenta <span className="text-accent-bright italic">cambia</span> con cada caso que se suma.
+                    El archivo es más denso donde los gobiernos{" "}
+                    <span className="text-accent-bright italic">abrieron</span> sus expedientes.
                   </>
                 }
                 en={
                   <>
-                    The archive&apos;s cases, decade by decade.
-                    <br />
-                    The count <span className="text-accent-bright italic">changes</span> with every case we add.
+                    The archive is densest where governments{" "}
+                    <span className="text-accent-bright italic">opened</span> their files.
                   </>
                 }
               />
@@ -248,12 +246,12 @@ export function HomeView({ locale }: { locale: "es" | "en" }) {
                 locale={locale}
                 es={
                   <>
-                    Las barras en color marcan las décadas de tres hitos: <strong className="text-accent-bright">1947</strong>, Roswell y el Proyecto Sign de la Fuerza Aérea; <strong className="text-accent-bright">1973</strong>, la oleada de otoño en EE. UU. (Pascagoula, Coyne); <strong className="text-accent-bright">2026</strong>, PURSUE, la primera divulgación ordenada por un presidente.
+                    En los años <strong className="text-accent-bright">cincuenta</strong>, la mayoría de los casos sale de los expedientes de Blue Book, el proyecto de la Fuerza Aérea de EE. UU.; desde <strong className="text-accent-bright">2020</strong>, de las entregas de la AARO y de PURSUE. Por eso la altura de cada barra mide, sobre todo, cuántos registros se han publicado de esa década.
                   </>
                 }
                 en={
                   <>
-                    The colored bars mark the decades of three milestones: <strong className="text-accent-bright">1947</strong>, Roswell and the Air Force&apos;s Project Sign; <strong className="text-accent-bright">1973</strong>, the US autumn wave (Pascagoula, Coyne); <strong className="text-accent-bright">2026</strong>, PURSUE, the first disclosure ordered by a president.
+                    In the <strong className="text-accent-bright">1950s</strong>, most cases come from the files of Project Blue Book, the US Air Force project; since <strong className="text-accent-bright">2020</strong>, from AARO and the PURSUE releases. So the height of each bar mostly measures how many records from that decade have been published.
                   </>
                 }
               />
