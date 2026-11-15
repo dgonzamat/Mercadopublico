@@ -1,5 +1,6 @@
 import PdfDoc from "@/components/PdfDoc";
 import DvidsVideo from "@/components/DvidsVideo";
+import FacebookVideo from "@/components/FacebookVideo";
 import { T } from "@/components/T";
 import { licenseLabel } from "@/lib/license";
 import type { DocEmbed } from "@/lib/types";
@@ -26,6 +27,8 @@ import { splitLead } from "@/lib/splitLead";
  * autoral del JSON se conserva.
  */
 const INLINE_NONVIDEO_MAX = 4;
+// Mismo prefijo que admite validate-schema.mjs para los videos de Facebook.
+const FACEBOOK_EMBED = "https://www.facebook.com/plugins/video.php?href=";
 
 // Una foto del lugar o del tipo de avión («Contexto · …») no es un documento
 // del caso: si es lo único que hay, el rótulo no puede decir «Documentos
@@ -60,7 +63,11 @@ export function DocumentsViewer({ docs, locale, heading }: { docs: DocEmbed[]; l
             {doc.type === "pdf" ? (
               <PdfDoc src={doc.src} fallbackUrl={doc.fallbackUrl} page={doc.page} locale={locale} />
             ) : doc.type === "video" ? (
-              <DvidsVideo src={doc.src} title={doc.title_en ?? doc.title} />
+              doc.src.startsWith(FACEBOOK_EMBED) ? (
+                <FacebookVideo src={doc.src} title={doc.title_en ?? doc.title} locale={locale} />
+              ) : (
+                <DvidsVideo src={doc.src} title={doc.title_en ?? doc.title} />
+              )
             ) : (
               // eslint-disable-next-line @next/next/no-img-element
               <img
