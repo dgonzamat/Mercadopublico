@@ -103,6 +103,10 @@ export function CasesFilter({
   const [tier, setTier] = useState<string | "all">("all");
   const [query, setQuery] = useState("");
   const [matchCount, setMatchCount] = useState(total);
+  // Sugerencias bajo la caja, como el buscador del header: los primeros
+  // casos que pasan los filtros, leídos del DOM (sin duplicar datos).
+  const [suggest, setSuggest] = useState<Array<{ href: string; title: string; flag: string }>>([]);
+  const [suggestOpen, setSuggestOpen] = useState(false);
   const rootRef = useRef<HTMLDivElement>(null);
 
   // Deep-link por hash (#nohumano, #aeronave…) — al montar y en cada hashchange.
@@ -145,7 +149,25 @@ export function CasesFilter({
       // búsqueda en el mismo selector, así el conteo y los encabezados de era
       // vacíos ya la tienen en cuenta sin una segunda pasada.
       const itemSel = `[data-region]${sel}:not([data-nomatch])`;
-      setMatchCount(root.querySelectorAll(itemSel).length);
+      const items = root.querySelectorAll<HTMLElement>(itemSel);
+      setMatchCount(items.length);
+      setSuggest(
+        q
+          ? Array.from(items)
+              .slice(0, 6)
+              .map((el) => ({
+                href: el.querySelector("a")?.getAttribute("href") ?? "",
+                title: (
+                  (el.querySelector(".cr-title")?.textContent ?? "").replace(
+                    el.querySelector(".cr-year-sm")?.textContent ?? "",
+                    "",
+                  )
+                ).trim(),
+                flag: el.querySelector(".cr-flag")?.textContent?.trim() ?? "",
+              }))
+              .filter((s) => s.href)
+          : [],
+      );
       root.querySelectorAll<HTMLElement>("[data-group]").forEach((g) => {
         if (g.querySelector(itemSel)) g.removeAttribute("data-empty");
         else g.setAttribute("data-empty", "");
@@ -203,7 +225,19 @@ export function CasesFilter({
         <input
           type="search"
           value={query}
-          onChange={(e) => setQuery(e.target.value)}
+          onChange={(e) => {
+            setQuery(e.target.value);
+            setSuggestOpen(true);
+          }}
+          onFocus={() => setSuggestOpen(true)}
+          onBlur={() => setSuggestOpen(false)}
+          onKeyDown={(e) => {
+            if (e.key === "Escape") setSuggestOpen(false);
+          }}
+          role="combobox"
+          aria-expanded={suggestOpen && suggest.length > 0}
+          aria-controls="cases-suggest"
+          aria-autocomplete="list"
           placeholder={
             locale === "es" ? "Buscar caso, país, año…" : "Search case, country, year…"
           }
@@ -212,7 +246,7 @@ export function CasesFilter({
               ? "Buscar caso por nombre, país o año"
               : "Search case by name, country or year"
           }
-          className={`block min-h-[44px] w-full border py-2 pl-3 pr-10 font-mono text-sm placeholder:text-muted focus-visible:border-accent focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-accent ${
+          className={`block min-h-[44px] w-full border py-2 pl-3 pr-10 font-mono text-sm placeholder:text-muted [&::-webkit-search-cancel-button]:appearance-none focus-visible:border-accent focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-accent ${
             query
               ? "border-accent/50 bg-accent/10 text-accent"
               : "border-border bg-panel text-text"
@@ -227,6 +261,27 @@ export function CasesFilter({
           >
             <span aria-hidden>×</span>
           </button>
+        )}
+        {suggestOpen && suggest.length > 0 && (
+          <ul
+            id="cases-suggest"
+            role="listbox"
+            // mousedown antes que el blur de la caja: sin esto el clic no llega.
+            onMouseDown={(e) => e.preventDefault()}
+            className="absolute left-0 right-0 top-full z-20 mt-1 border border-border bg-panel shadow-lg"
+          >
+            {suggest.map((s) => (
+              <li key={s.href} role="option" aria-selected={false}>
+                <a
+                  href={s.href}
+                  className="flex min-h-[44px] items-center gap-3 border-b border-border/60 px-3 py-2 text-sm text-text last:border-b-0 hover:bg-accent/10 hover:text-accent focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-accent"
+                >
+                  <span aria-hidden>{s.flag}</span>
+                  <span className="min-w-0 truncate">{s.title}</span>
+                </a>
+              </li>
+            ))}
+          </ul>
         )}
       </div>
 
