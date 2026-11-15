@@ -32,8 +32,8 @@ const BLURB: Record<string, { es: string; en: string }> = {
     en: "An astronomical object taken for something else: a bright planet (Venus, Jupiter), a star, the Moon or a meteor or fireball.",
   },
   aeronave: {
-    es: "Una aeronave: avión, helicóptero, dron o globo (meteorológico, de investigación, de fiesta).",
-    en: "An aircraft: plane, helicopter, drone or balloon (weather, research, party).",
+    es: "Algo que vuela y que hizo alguien: avión, helicóptero, dron, globo (meteorológico, de investigación, de fiesta) o volantín.",
+    en: "Something that flies and that people made: plane, helicopter, drone, balloon (weather, research, party) or kite.",
   },
   espacial: {
     es: "Un objeto espacial: cohete o misil, satélite o reentrada —lanzamientos, etapas y restos que reentran, trenes de satélites—.",

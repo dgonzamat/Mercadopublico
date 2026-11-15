@@ -49,7 +49,7 @@ const HYP_ORDER: ReadonlyArray<{ key: HypKey; es: string; en: string }> = [
   // testigo. Etiquetas = PROSAIC_CLASSES de lib/meceClasses (no se importa aquí
   // para mantener este componente cliente libre de lib de modelo).
   { key: "astronomico", es: "Objeto astronómico", en: "Astronomical object" },
-  { key: "aeronave", es: "Aeronave", en: "Aircraft" },
+  { key: "aeronave", es: "Objeto volador humano", en: "Human-made flying object" },
   { key: "espacial", es: "Objeto espacial", en: "Space object" },
   { key: "luces_tierra", es: "Luz o actividad humana", en: "Human light or activity" },
   { key: "animal", es: "Animal", en: "Animal" },
