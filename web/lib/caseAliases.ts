@@ -12,6 +12,8 @@ export const CASE_ALIASES: Readonly<Record<string, string>> = {
   "afghanistan-isr-disc-2020": "spherical-afghanistan-2020",
   // Mismo suceso (Western US Event, oct 2023) contado desde el testigo 3 (oct 2026).
   "western-sensitive-site-recreation-2023": "aaro-mother-orb-2023",
+  // Mismo video: la «medusa» de Corbell es el de Al Taqaddum que la AARO publicó en DVIDS (nov 2026).
+  "jellyfish-iraq-2018": "al-taqaddum-balloons-2017",
   // Identificadores con el año equivocado: el caso es de 1972 y de 1985 (oct 2026).
   "fort-beaufort-1971": "fort-beaufort-1972",
   "greece-haf-radar-1990": "greece-haf-radar-1985",
