@@ -67,6 +67,17 @@ const isArr = (v) => Array.isArray(v);
 // URL http(s) válida, o ruta absoluta bajo /public (para fotos locales).
 const SUPA_PURSUE = "https://hgbvdqckoosxesixhepr.supabase.co/storage/v1/object/public/pursue/";
 const DVIDS_EMBED = "https://www.dvidshub.net/video/embed/";
+// Reproductor oficial de Facebook (nov 2026, decisión del dueño): solo para el
+// video ORIGINAL que publicó el propio testigo cuando es el único registro del
+// suceso (Anchorage 2026). Lo primero no se puede comprobar aquí; lo que sí,
+// que apunte a facebook.com y que vaya como prueba, para que el visor no se
+// llene de reposts de redes. El componente lo carga solo al pulsar.
+const FACEBOOK_EMBED = "https://www.facebook.com/plugins/video.php?href=";
+const isFacebookVideo = (v) => {
+  if (typeof v !== "string" || !v.startsWith(FACEBOOK_EMBED)) return false;
+  const href = decodeURIComponent(v.slice(FACEBOOK_EMBED.length).split("&")[0]);
+  return /^https:\/\/www\.facebook\.com\/(reel\/\d+|watch\/\?v=\d+|[\w.]+\/videos\/\d+)\/?$/.test(href);
+};
 const isHttpUrl = (v) => typeof v === "string" && /^https?:\/\/\S+$/.test(v);
 // Bandera: dos símbolos indicadores regionales (emoji de país, p. ej. 🇦🇷).
 const isFlag = (v) =>
@@ -165,12 +176,13 @@ function validateDocEmbeds(w, docs) {
       docs.forEach((d, j) => {
         const dw = `${w}.documents[${j}]`;
         const isDvids = isStr(d.src) && d.src.startsWith(DVIDS_EMBED);
+        const isFb = isFacebookVideo(d.src);
         if (!isStr(d.src)) err(dw, "src obligatorio (string)");
         else if (d.type === "link") {
           // Tarjeta sin visor: el src es el original, fuera del sitio.
           if (!isHttpUrl(d.src)) err(dw, `type "link" exige src http(s): "${d.src}"`);
           if (!isStr(d.description)) err(dw, `type "link" exige description (es lo único que muestra)`);
-        } else if (!d.src.startsWith("/pursue/") && !d.src.startsWith(SUPA_PURSUE) && !isDvids)
+        } else if (!d.src.startsWith("/pursue/") && !d.src.startsWith(SUPA_PURSUE) && !isDvids && !isFb)
           err(dw, `src debe ser same-origin (/pursue/), el bucket Supabase pursue, o el player de DVIDS (war.gov no se puede embeber): "${d.src}"`);
         if (!["pdf", "image", "video", "link"].includes(d.type))
           err(dw, `type inválido "${d.type}" (pdf|image|video|link)`);
@@ -179,8 +191,10 @@ function validateDocEmbeds(w, docs) {
         // o un "video" a /pursue (binario que no cabe, justo lo que evitamos).
         if (isDvids && d.type !== "video")
           err(dw, `el player de DVIDS solo admite type "video", no "${d.type}": "${d.src}"`);
-        if (d.type === "video" && !isDvids)
-          err(dw, `type "video" exige src del player de DVIDS (${DVIDS_EMBED}<id>): "${d.src}"`);
+        if (d.type === "video" && !isDvids && !isFb)
+          err(dw, `type "video" exige src del player de DVIDS (${DVIDS_EMBED}<id>) o el reproductor de Facebook de un video original (${FACEBOOK_EMBED}<url del video>): "${d.src}"`);
+        if (isFb && (d.type !== "video" || d.role !== "prueba"))
+          err(dw, `el reproductor de Facebook solo admite type "video" con role "prueba" (el video original del testigo): "${d.src}"`);
         if (d.type === "video" && isDvids && !/^\d+$/.test(d.src.slice(DVIDS_EMBED.length)))
           err(dw, `src de DVIDS debe terminar en el id numérico del video: "${d.src}"`);
         if (isStr(d.src) && d.type === "pdf" && !/\.pdf$/i.test(d.src))

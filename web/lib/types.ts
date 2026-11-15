@@ -61,6 +61,10 @@ export interface CaseDocument {
  * conveniencia se pierde la garantía: un tercero puede cambiar su política
  * unilateralmente, así que la contraparte es la sonda viva
  * `check-dvids-embeds.mjs`, que vigila que sigan siendo framables.
+ *
+ * La segunda excepción (nov 2026, decisión del dueño) es el reproductor oficial
+ * de Facebook, solo para el video original del testigo cuando es el único
+ * registro del suceso (`components/FacebookVideo.tsx`, que lo carga al pulsar).
  */
 /**
  * Papel de un elemento visual en la ficha, y lo único que decide dónde se
