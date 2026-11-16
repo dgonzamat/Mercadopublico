@@ -100,7 +100,7 @@ export const DEFAULT_VISUALS: VisualConfig[] = [
   {
     id: "kpi-avg-prob",
     kind: "kpi",
-    title: { es: "Probabilidad media", en: "Average probability" },
+    title: { es: "Sin causa conocida (media)", en: "No known cause (average)" },
     measure: "probability",
     agg: "avg",
     compare: true,
@@ -108,7 +108,7 @@ export const DEFAULT_VISUALS: VisualConfig[] = [
   {
     id: "kpi-high-prob",
     kind: "kpi",
-    title: { es: "% probabilidad ≥ 70", en: "% probability ≥ 70" },
+    title: { es: "% sin causa conocida ≥ 70", en: "% no known cause ≥ 70" },
     mode: "threshold",
     measure: "probability",
     agg: "count",
@@ -184,8 +184,8 @@ export const DEFAULT_VISUALS: VisualConfig[] = [
     id: "chart-prob-tier",
     kind: "chart",
     title: {
-      es: "Probabilidad media por nivel",
-      en: "Average probability by level",
+      es: "Sin causa conocida (media) por nivel",
+      en: "No known cause (average) by level",
     },
     chartType: "bar",
     dimension: "tier",

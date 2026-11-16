@@ -68,7 +68,7 @@ const CLASS_IDS = MECE_CLASSES.map((c) => c.id);
 export { MISID_SUBTYPES, PROSAIC_CLASSES } from "./meceClasses";
 // `PROSAIC_CLASSES` y `prosaicKey` se usan localmente (expandedHypotheses) →
 // import local además del re-export (el re-export no crea binding).
-import { PROSAIC_CLASSES, prosaicKey } from "./meceClasses";
+import { NO_KNOWN_CAUSE_IDS, PROSAIC_CLASSES, prosaicKey } from "./meceClasses";
 
 export function emptyPosterior(): Posterior {
   return {
@@ -233,9 +233,21 @@ export function expandedHypotheses(items: ReadonlyArray<HypInput>, opts: { conso
     .sort((a, b) => b.count - a.count);
 }
 
-/** Hipótesis modal (display) de un caso, sobre el conjunto expandido. */
+/** Hipótesis que encabeza un caso, sobre el conjunto expandido, con la regla de
+ *  «Qué fue» de la ficha: el grupo que pesa más (origen terrestre o sin causa
+ *  conocida) y, dentro de él, la hipótesis mayor. Así /cases, /probabilidades
+ *  y la portada clasifican cada caso igual que su ficha (16 nov 2026). */
 export function modalHypothesis(s: HypInput, opts: { consolidateNonHuman?: boolean; keepIndet?: boolean } = {}): HypRow {
-  return expandedHypotheses([s], opts)[0];
+  // La elección se hace sin fundir las dos no humanas, como en la ficha: si se
+  // fundieran, «no humano» ganaría a «sin decidir» en casos donde la ficha
+  // encabeza con «sin causa conocida» (Nimitz: 27 % frente a 17 + 12 %).
+  const split = expandedHypotheses([s], { ...opts, consolidateNonHuman: false });
+  const unknownSum = split.filter((r) => NO_KNOWN_CAUSE_IDS.has(r.key)).reduce((a, r) => a + r.count, 0);
+  const knownSum = split.reduce((a, r) => a + r.count, 0) - unknownSum;
+  const leadUnknown = unknownSum > knownSum;
+  const pick = split.find((r) => NO_KNOWN_CAUSE_IDS.has(r.key) === leadUnknown) ?? split[0];
+  if (!opts.consolidateNonHuman || !pick.key.startsWith("nohumano")) return pick;
+  return expandedHypotheses([s], opts).find((r) => r.key === "nohumano") ?? pick;
 }
 
 /**

@@ -4,7 +4,7 @@ import { useEffect, useMemo, useRef, useState } from "react";
 import { casesClient as cases } from "@/lib/dataClient";
 import type { UAPCase } from "@/lib/types";
 // meceClasses es data-free (E18d) — seguro de importar en el explorer cliente.
-import { MECE_CLASSES, dominantNarrativeLabel } from "@/lib/meceClasses";
+import { MECE_CLASSES, dominantNarrativeLabel, narrativeLabel } from "@/lib/meceClasses";
 import { T } from "@/components/T";
 import {
   applyFilters,
@@ -114,7 +114,7 @@ export default function DataExplorer() {
         .filter((c) => c.category !== "document" && c.posterior)
         .map((c) => dominantNarrativeLabel(c.posterior!)),
     );
-    const narrativas = MECE_CLASSES.map((m) => m.label).filter((l) =>
+    const narrativas = MECE_CLASSES.map((m) => narrativeLabel(m.id)).filter((l) =>
       narrPresent.has(l),
     );
     return {
