@@ -15,7 +15,7 @@
     "lng": -96,
     "place": "Rutas aéreas sobre EE. UU. y el Atlántico Norte",
     "place_en": "Air routes over the U.S. and the North Atlantic",
-    "precision": "approx"
+    "precision": "none"
   },
   "tier": "B",
   "epistemicStatus": "documented",
