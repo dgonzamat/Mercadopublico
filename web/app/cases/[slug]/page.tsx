@@ -922,11 +922,6 @@ function ClassBasis({ c, locale }: { c: (typeof cases)[number]; locale: "es" | "
   const b = c.classBasis;
   // El rótulo de la fuente tiene par inglés: el sitio es inglés-primario.
   const src = b ? (locale === "es" ? b.source : b.source_en ?? b.source) : "";
-  // La clase prosaica cubre solo la parte mundana del reparto: cuando otra
-  // narrativa pesa más (Roswell), la cita no puede leerse como veredicto.
-  const post = posteriorFor(c);
-  const [topId] = (Object.entries(post) as [string, number][]).sort((x, y) => y[1] - x[1])[0];
-  const mundaneLeads = topId === "mundano_natural";
   // La barra y la leyenda de arriba ya dicen qué pesa más y cuánto; aquí solo
   // va el porqué, citado de la fuente. Cuando lo mundano no es lo más
   // probable, se aclara a qué parte del reparto se refiere la cita.
@@ -934,27 +929,27 @@ function ClassBasis({ c, locale }: { c: (typeof cases)[number]; locale: "es" | "
   // La etiqueta no mete la clase dentro de una frase: con «sin_propuesta»
   // salía «sería causa ordinaria probable, sin identificar» / «it would be
   // likely ordinary, unidentified», agramatical en los dos idiomas (oct 2026).
-  const why = mundaneLeads || !label
-    ? { es: "Por qué: ", en: "Why: " }
-    : pk === "sin_propuesta"
-      ? { es: "Si fue algo ordinario, por qué no se sabe qué: ", en: "If it was ordinary, why no specific cause is named: " }
-      // Rótulo neutro: «lo más probable es: dron» contradecía una cabecera que
-      // da más peso a otra explicación (triángulo negro, 15 nov 2026).
-      : { es: `Causa ordinaria que proponen las fuentes: ${(detail ? shortLabel(detail.label) : label.es).toLowerCase()}. Por qué: `, en: `Ordinary cause the sources propose: ${(detail ? shortLabel(detail.labelEn) : label.en).toLowerCase()}. Why: ` };
+  // Plegado tras una línea que nombra la causa: abierto, el porqué (hasta 700
+  // caracteres, a veces con un télex en mayúsculas) pesaba más que la cifra de
+  // arriba y el bloque ocupaba una pantalla de móvil (Shag Harbour, 16 nov 2026).
+  const named = label ? (detail ? { es: shortLabel(detail.label), en: shortLabel(detail.labelEn) } : label) : undefined;
+  const lcf = (t: string) => t[0].toLowerCase() + t.slice(1);
+  const why = pk === "sin_propuesta" || !named
+    ? { es: "Por qué no se identifica una causa ordinaria", en: "Why no ordinary cause is identified" }
+    : { es: `Causa ordinaria que proponen las fuentes: ${lcf(named.es)}`, en: `Ordinary cause the sources propose: ${lcf(named.en)}` };
   const es = b ? splitOriginal(b.es) : undefined;
   const en = b ? splitOriginal(b.en) : undefined;
   const author = src.split(/[,—(«“"]/)[0].trim();
   const namesSource = author.length > 3 && ((locale === "es" ? es : en)?.text ?? "").slice(0, 160).includes(author);
   return (
-    <div className="space-y-2 border-l-2 border-text pl-4">
+    <div className="space-y-2">
       {b ? (
-        <div className="text-sm text-text">
-          <span className="font-semibold">
+        <details className="text-sm text-text">
+          <summary className="cursor-pointer text-accent hover:underline">
             <T locale={locale} es={why.es} en={why.en} />
-          </span>
-          {/* Entero, sin cortar: E52 lo limita a 700 caracteres. El corte a 200
-              escondía en 387 de 395 fichas casi todo el porqué, y en al menos 23
-              justo el «pero…» que matiza la clase (zepelines de 1909, nov 2026). */}
+          </summary>
+          <div className="mt-2 border-l-2 border-text/30 pl-4">
+          {/* Entero, sin cortar: E52 lo limita a 700 caracteres. */}
           {(locale === "es" ? es! : en!).text}{" "}
           <span className="text-muted">
             (
@@ -977,7 +972,8 @@ function ClassBasis({ c, locale }: { c: (typeof cases)[number]; locale: "es" | "
               <span className="mt-1 block">{(locale === "es" ? es : en)!.original}</span>
             </details>
           )}
-        </div>
+          </div>
+        </details>
       ) : (
         <p className="text-sm italic text-muted">
           <T
