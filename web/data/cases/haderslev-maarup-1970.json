@@ -11,7 +11,8 @@
     "lat": 55.31,
     "lng": 9.55,
     "place": "Entre Kabdrup y Fjelstrup, al norte de Haderslev, Dinamarca",
-    "place_en": "Between Kabdrup and Fjelstrup, north of Haderslev, Denmark"
+    "place_en": "Between Kabdrup and Fjelstrup, north of Haderslev, Denmark",
+    "precision": "exact"
   },
   "tier": "A",
   "mundanoType": "sin_propuesta",

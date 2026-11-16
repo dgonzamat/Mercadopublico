@@ -11,7 +11,8 @@
     "lat": -32.78,
     "lng": 26.63,
     "place": "Granja Braeside, Fort Beaufort, Cabo Oriental (Sudáfrica)",
-    "place_en": "Braeside farm, Fort Beaufort, Eastern Cape (South Africa)"
+    "place_en": "Braeside farm, Fort Beaufort, Eastern Cape (South Africa)",
+    "precision": "exact"
   },
   "tier": "B",
   "mundanoType": "sin_propuesta",

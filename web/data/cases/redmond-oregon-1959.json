@@ -11,7 +11,8 @@
     "lat": 44.272,
     "lng": -121.174,
     "place": "Redmond, Oregon",
-    "place_en": "Redmond, Oregon"
+    "place_en": "Redmond, Oregon",
+    "precision": "exact"
   },
   "tier": "A",
   "mundanoType": "misid",

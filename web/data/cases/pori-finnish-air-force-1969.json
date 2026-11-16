@@ -11,7 +11,8 @@
     "lat": 61.4617,
     "lng": 21.8,
     "place": "Aeródromo de Pori, Finlandia",
-    "place_en": "Pori airfield, Finland"
+    "place_en": "Pori airfield, Finland",
+    "precision": "exact"
   },
   "tier": "B",
   "mundanoType": "sin_propuesta",

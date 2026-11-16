@@ -11,7 +11,8 @@
     "lat": 43.19,
     "lng": -0.61,
     "place": "Oloron-Sainte-Marie (y Gaillac), Francia",
-    "place_en": "Oloron-Sainte-Marie (and Gaillac), France"
+    "place_en": "Oloron-Sainte-Marie (and Gaillac), France",
+    "precision": "exact"
   },
   "tier": "B",
   "mundanoType": "misid",

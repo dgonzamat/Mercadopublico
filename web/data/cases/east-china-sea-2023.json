@@ -11,7 +11,8 @@
     "lat": 29.5,
     "lng": 125.0,
     "place": "Mar de China Oriental (ubicación exacta no revelada)",
-    "place_en": "East China Sea (exact location undisclosed)"
+    "place_en": "East China Sea (exact location undisclosed)",
+    "precision": "none"
   },
   "tier": "A",
   "probability": 34,

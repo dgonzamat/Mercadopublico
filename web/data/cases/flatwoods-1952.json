@@ -11,7 +11,8 @@
     "lat": 38.7212,
     "lng": -80.6512,
     "place": "Flatwoods, Braxton County, Virginia Occidental, EE.UU.",
-    "place_en": "Flatwoods, Braxton County, West Virginia, USA"
+    "place_en": "Flatwoods, Braxton County, West Virginia, USA",
+    "precision": "exact"
   },
   "tier": "B",
   "epistemicStatus": "documented",

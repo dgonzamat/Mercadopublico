@@ -11,7 +11,8 @@
     "lat": 34.4,
     "lng": -106.0,
     "place": "Nuevo México · ubicación no divulgada",
-    "place_en": "New Mexico · undisclosed location"
+    "place_en": "New Mexico · undisclosed location",
+    "precision": "none"
   },
   "tier": "B",
   "mundanoType": "fraude",

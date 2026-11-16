@@ -11,7 +11,8 @@
     "lat": 51.4,
     "lng": 22.42,
     "place": "Emilcin, Polonia",
-    "place_en": "Emilcin, Poland"
+    "place_en": "Emilcin, Poland",
+    "precision": "exact"
   },
   "tier": "B",
   "category": "contactee",

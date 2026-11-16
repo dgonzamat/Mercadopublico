@@ -11,7 +11,8 @@
     "lat": -26.03,
     "lng": 117.15,
     "place": "Estación ganadera de Mt Hale, Australia Occidental",
-    "place_en": "Mt Hale cattle station, Western Australia"
+    "place_en": "Mt Hale cattle station, Western Australia",
+    "precision": "exact"
   },
   "tier": "A",
   "mundanoType": "misid",

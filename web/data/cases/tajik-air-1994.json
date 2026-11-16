@@ -14,7 +14,8 @@
     "lat": 48,
     "lng": 67.5,
     "place": "Espacio aéreo de Kazajistán",
-    "place_en": "Kazakhstan airspace"
+    "place_en": "Kazakhstan airspace",
+    "precision": "approx"
   },
   "tier": "B",
   "mundanoType": "misid",

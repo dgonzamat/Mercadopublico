@@ -11,7 +11,8 @@
     "lat": 43.55,
     "lng": -80.25,
     "place": "Sur de Ontario, Canadá (visto de Saskatchewan a las Bermudas)",
-    "place_en": "Southern Ontario, Canada (seen from Saskatchewan to Bermuda)"
+    "place_en": "Southern Ontario, Canada (seen from Saskatchewan to Bermuda)",
+    "precision": "approx"
   },
   "tier": "A",
   "category": "incident",

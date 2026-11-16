@@ -12,7 +12,8 @@
     "lat": 41.06,
     "lng": 28.36,
     "place": "Kumburgaz, Estambul (Turquía)",
-    "place_en": "Kumburgaz, Istanbul, Turkey"
+    "place_en": "Kumburgaz, Istanbul, Turkey",
+    "precision": "exact"
   },
   "tier": "A",
   "epistemicStatus": "documented",

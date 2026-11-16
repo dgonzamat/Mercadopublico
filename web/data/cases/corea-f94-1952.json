@@ -11,7 +11,8 @@
     "lat": 38.215,
     "lng": 127.164,
     "place": "Sector de Chorwon (hoy Cheorwon), Corea del Sur",
-    "place_en": "Chorwon sector (today Cheorwon), South Korea"
+    "place_en": "Chorwon sector (today Cheorwon), South Korea",
+    "precision": "exact"
   },
   "tier": "S",
   "epistemicStatus": "documented",

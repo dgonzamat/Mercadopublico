@@ -14,7 +14,8 @@
     "lat": 39.05,
     "lng": -85.817,
     "place": "Al norte de Seymour, Indiana",
-    "place_en": "North of Seymour, Indiana"
+    "place_en": "North of Seymour, Indiana",
+    "precision": "exact"
   },
   "tier": "B",
   "epistemicStatus": "documented",

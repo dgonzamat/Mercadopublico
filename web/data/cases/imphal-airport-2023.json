@@ -11,7 +11,8 @@
     "lat": 24.76,
     "lng": 93.8967,
     "place": "Aeropuerto Internacional Bir Tikendrajit, Imphal (Manipur)",
-    "place_en": "Bir Tikendrajit International Airport, Imphal (Manipur)"
+    "place_en": "Bir Tikendrajit International Airport, Imphal (Manipur)",
+    "precision": "exact"
   },
   "tier": "A",
   "mundanoType": "misid",

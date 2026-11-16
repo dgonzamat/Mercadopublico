@@ -11,7 +11,8 @@
     "lat": 32.889,
     "lng": -117.934,
     "place": "Frente a San Diego (costa sur de California)",
-    "place_en": "Off San Diego (Southern California coast)"
+    "place_en": "Off San Diego (Southern California coast)",
+    "precision": "approx"
   },
   "tier": "B",
   "mundanoType": "misid",

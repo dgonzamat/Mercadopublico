@@ -11,7 +11,8 @@
     "lat": 47.08,
     "lng": 2.4,
     "place": "Francia, de un extremo a otro del país",
-    "place_en": "Across France"
+    "place_en": "Across France",
+    "precision": "approx"
   },
   "tier": "S",
   "mundanoType": "misid",

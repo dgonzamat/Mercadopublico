@@ -11,7 +11,8 @@
     "lat": -33.393,
     "lng": -70.7858,
     "place": "Aeropuerto Arturo Merino Benítez, Pudahuel (Santiago)",
-    "place_en": "Arturo Merino Benítez Airport, Pudahuel (Santiago)"
+    "place_en": "Arturo Merino Benítez Airport, Pudahuel (Santiago)",
+    "precision": "exact"
   },
   "tier": "B",
   "mundanoType": "misid",

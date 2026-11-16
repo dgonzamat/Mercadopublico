@@ -20,6 +20,12 @@ export interface Location {
   lng: number;
   place?: string;
   place_en?: string;
+  /** Qué tan bien marca el punto el lugar del suceso (16 nov 2026). «exact»:
+   *  el punto cae en el lugar, a la escala de un mapa regional; «approx»: una
+   *  zona (un mar, una ruta, una región), y el mapa dibuja un área y no un punto;
+   *  «none»: la fuente no revela el lugar o el suceso no fue en tierra (órbita,
+   *  la Luna), y la ficha no lleva mapa. */
+  precision: "exact" | "approx" | "none";
 }
 
 export interface CaseSource {

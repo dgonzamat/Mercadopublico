@@ -14,7 +14,8 @@
     "lat": 18.245,
     "lng": -65.638,
     "place": "Zona de pruebas de la Flota del Atlántico, Puerto Rico",
-    "place_en": "Atlantic Fleet Weapons Range, Puerto Rico"
+    "place_en": "Atlantic Fleet Weapons Range, Puerto Rico",
+    "precision": "exact"
   },
   "tier": "S",
   "epistemicStatus": "documented",

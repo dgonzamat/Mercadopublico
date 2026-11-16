@@ -11,7 +11,8 @@
     "lat": 28.29,
     "lng": -16.62,
     "place": "Islas Canarias",
-    "place_en": "Canary Islands"
+    "place_en": "Canary Islands",
+    "precision": "exact"
   },
   "tier": "A",
   "mundanoType": "misid",

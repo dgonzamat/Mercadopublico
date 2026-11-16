@@ -11,7 +11,8 @@
     "lat": 46.95,
     "lng": -67.886,
     "place": "Base aérea de Loring, Limestone, Maine, EE. UU.",
-    "place_en": "Loring Air Force Base, Limestone, Maine, U.S."
+    "place_en": "Loring Air Force Base, Limestone, Maine, U.S.",
+    "precision": "exact"
   },
   "tier": "S",
   "epistemicStatus": "documented",

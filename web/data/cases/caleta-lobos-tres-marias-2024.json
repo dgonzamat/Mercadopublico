@@ -11,7 +11,8 @@
     "lat": -20.9872,
     "lng": -70.2181,
     "place": "Sobre la costa al sur de la caleta Lobos (región de Tarapacá)",
-    "place_en": "Over the coast south of Caleta Lobos (Tarapacá region)"
+    "place_en": "Over the coast south of Caleta Lobos (Tarapacá region)",
+    "precision": "approx"
   },
   "tier": "A",
   "mundanoType": "misid",

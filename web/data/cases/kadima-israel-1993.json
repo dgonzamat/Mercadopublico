@@ -11,7 +11,8 @@
     "lat": 32.2756,
     "lng": 34.9189,
     "place": "Moshav Kadima, cerca de Netanya (Israel)",
-    "place_en": "Moshav Kadima, near Netanya (Israel)"
+    "place_en": "Moshav Kadima, near Netanya (Israel)",
+    "precision": "exact"
   },
   "tier": "B",
   "mundanoType": "sin_propuesta",

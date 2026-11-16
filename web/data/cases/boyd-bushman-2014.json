@@ -11,7 +11,8 @@
     "lat": 32.2226,
     "lng": -110.9747,
     "place": "Tucson, Arizona",
-    "place_en": "Tucson, Arizona"
+    "place_en": "Tucson, Arizona",
+    "precision": "exact"
   },
   "tier": "B",
   "mundanoType": "fraude",

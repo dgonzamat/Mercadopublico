@@ -11,7 +11,8 @@
     "lat": -20.98,
     "lng": -68.66,
     "place": "Mina Collahuasi, Tarapacá (Chile)",
-    "place_en": "Collahuasi mine, Tarapacá (Chile)"
+    "place_en": "Collahuasi mine, Tarapacá (Chile)",
+    "precision": "exact"
   },
   "tier": "A",
   "probability": 39,

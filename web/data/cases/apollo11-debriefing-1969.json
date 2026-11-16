@@ -14,7 +14,8 @@
     "lat": 29.55,
     "lng": -95.09,
     "place": "Trayecto entre la Tierra y la Luna, y órbita lunar",
-    "place_en": "Between the Earth and the Moon, and in lunar orbit"
+    "place_en": "Between the Earth and the Moon, and in lunar orbit",
+    "precision": "none"
   },
   "tier": "B",
   "mundanoType": "misid",

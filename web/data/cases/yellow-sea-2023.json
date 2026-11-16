@@ -11,7 +11,8 @@
     "lat": 35.6,
     "lng": 123.2,
     "place": "Mar Amarillo (ubicación exacta no revelada)",
-    "place_en": "Yellow Sea (exact location undisclosed)"
+    "place_en": "Yellow Sea (exact location undisclosed)",
+    "precision": "none"
   },
   "tier": "A",
   "mundanoType": "sin_propuesta",

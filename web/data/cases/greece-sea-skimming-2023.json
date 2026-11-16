@@ -14,7 +14,8 @@
     "lat": 38.5,
     "lng": 23.8,
     "place": "Mar Egeo y Mediterráneo oriental, misiones desde Lárisa",
-    "place_en": "Aegean and eastern Mediterranean, missions out of Larissa"
+    "place_en": "Aegean and eastern Mediterranean, missions out of Larissa",
+    "precision": "approx"
   },
   "tier": "S",
   "epistemicStatus": "documented",

@@ -11,7 +11,8 @@
     "lat": 32.96,
     "lng": -93.14,
     "place": "Carretera 79, cerca de Haynesville (norte de Luisiana)",
-    "place_en": "Highway 79, near Haynesville, northern Louisiana"
+    "place_en": "Highway 79, near Haynesville, northern Louisiana",
+    "precision": "exact"
   },
   "tier": "B",
   "probability": 81,

@@ -11,7 +11,8 @@
     "lat": -3.0674,
     "lng": 37.3556,
     "place": "Monte Kilimanjaro, Tanganica (hoy Tanzania)",
-    "place_en": "Mount Kilimanjaro, Tanganyika (today Tanzania)"
+    "place_en": "Mount Kilimanjaro, Tanganyika (today Tanzania)",
+    "precision": "exact"
   },
   "tier": "B",
   "category": "incident",

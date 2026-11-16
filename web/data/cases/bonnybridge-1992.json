@@ -12,7 +12,8 @@
     "lat": 56.002,
     "lng": -3.888,
     "place": "Bonnybridge, Falkirk (Escocia)",
-    "place_en": "Bonnybridge, Falkirk (Scotland)"
+    "place_en": "Bonnybridge, Falkirk (Scotland)",
+    "precision": "exact"
   },
   "tier": "B",
   "category": "incident",

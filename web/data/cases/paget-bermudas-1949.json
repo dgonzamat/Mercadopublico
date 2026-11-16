@@ -11,7 +11,8 @@
     "lat": 32.275,
     "lng": -64.78,
     "place": "Paget, Bermudas",
-    "place_en": "Paget, Bermuda"
+    "place_en": "Paget, Bermuda",
+    "precision": "exact"
   },
   "tier": "B",
   "epistemicStatus": "documented",

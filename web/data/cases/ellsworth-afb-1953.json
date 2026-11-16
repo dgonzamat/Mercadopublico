@@ -11,7 +11,8 @@
     "lat": 44.145,
     "lng": -103.104,
     "place": "Base aérea de Ellsworth, Rapid City, Dakota del Sur",
-    "place_en": "Ellsworth Air Force Base, Rapid City, South Dakota"
+    "place_en": "Ellsworth Air Force Base, Rapid City, South Dakota",
+    "precision": "exact"
   },
   "tier": "S",
   "mundanoType": "misid",

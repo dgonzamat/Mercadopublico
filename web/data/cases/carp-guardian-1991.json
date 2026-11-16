@@ -11,7 +11,8 @@
     "lat": 45.35,
     "lng": -76.05,
     "place": "Manion Corners, cerca de Carp (West Carleton), Ontario, Canadá",
-    "place_en": "Manion Corners, near Carp (West Carleton), Ontario, Canada"
+    "place_en": "Manion Corners, near Carp (West Carleton), Ontario, Canada",
+    "precision": "exact"
   },
   "tier": "B",
   "mundanoType": "fraude",

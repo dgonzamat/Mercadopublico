@@ -11,7 +11,8 @@
     "lat": 52.41,
     "lng": 0.56,
     "place": "Suffolk, Inglaterra",
-    "place_en": "Suffolk, England"
+    "place_en": "Suffolk, England",
+    "precision": "exact"
   },
   "tier": "S",
   "mundanoType": "natural",

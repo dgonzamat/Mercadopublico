@@ -11,7 +11,8 @@
     "lat": 44.55,
     "lng": 135.6,
     "place": "Cerro Izvestkovaya (Altura 611), Primorsky",
-    "place_en": "Izvestkovaya Hill (Height 611), Primorsky"
+    "place_en": "Izvestkovaya Hill (Height 611), Primorsky",
+    "precision": "exact"
   },
   "tier": "B",
   "mundanoType": "natural",

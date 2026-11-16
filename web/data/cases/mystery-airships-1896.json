@@ -12,7 +12,8 @@
     "lat": 38.58,
     "lng": -121.49,
     "place": "Sacramento, California (inicio de la ola), y todo EE. UU.",
-    "place_en": "Sacramento, California (start of the wave), and across the U.S."
+    "place_en": "Sacramento, California (start of the wave), and across the U.S.",
+    "precision": "exact"
   },
   "tier": "B",
   "mundanoType": "psicosocial",

@@ -12,7 +12,8 @@
     "lat": 37.75,
     "lng": 15.0,
     "place": "Mar Mediterráneo, cerca del Monte Etna, Sicilia",
-    "place_en": "Mediterranean Sea, near Mount Etna, Sicily"
+    "place_en": "Mediterranean Sea, near Mount Etna, Sicily",
+    "precision": "approx"
   },
   "tier": "A",
   "epistemicStatus": "documented",

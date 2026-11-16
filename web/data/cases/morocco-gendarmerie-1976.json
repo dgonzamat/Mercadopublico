@@ -11,7 +11,8 @@
     "lat": 34.02,
     "lng": -6.83,
     "place": "Marruecos (avistamientos en todo el país)",
-    "place_en": "Morocco (sightings nationwide)"
+    "place_en": "Morocco (sightings nationwide)",
+    "precision": "exact"
   },
   "tier": "A",
   "mundanoType": "misid",

@@ -11,7 +11,8 @@
     "lat": 38.6497,
     "lng": -0.2697,
     "place": "Estación de radar de la sierra de Aitana (Alicante)",
-    "place_en": "Radar station on the Sierra de Aitana (Alicante)"
+    "place_en": "Radar station on the Sierra de Aitana (Alicante)",
+    "precision": "exact"
   },
   "tier": "A",
   "mundanoType": "sin_propuesta",

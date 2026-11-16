@@ -14,7 +14,8 @@
     "lat": 33.79,
     "lng": 42.44,
     "place": "Base aérea Ayn al-Asad, provincia de Anbar, Irak",
-    "place_en": "Ayn al-Asad Air Base, Anbar Province, Iraq"
+    "place_en": "Ayn al-Asad Air Base, Anbar Province, Iraq",
+    "precision": "exact"
   },
   "tier": "S",
   "epistemicStatus": "documented",

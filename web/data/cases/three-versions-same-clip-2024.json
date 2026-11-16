@@ -14,7 +14,8 @@
     "lat": 18,
     "lng": 125,
     "place": "Región del Indo-Pacífico (ubicación no revelada)",
-    "place_en": "Indo-Pacific region (exact location undisclosed)"
+    "place_en": "Indo-Pacific region (exact location undisclosed)",
+    "precision": "none"
   },
   "tier": "B",
   "epistemicStatus": "documented",

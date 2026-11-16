@@ -11,7 +11,8 @@
     "lat": 40.0583,
     "lng": -74.4057,
     "place": "Nueva Jersey y costa este de EE. UU.",
-    "place_en": "New Jersey and the U.S. East Coast"
+    "place_en": "New Jersey and the U.S. East Coast",
+    "precision": "exact"
   },
   "tier": "B",
   "mundanoType": "misid",

@@ -11,7 +11,8 @@
     "lat": 41.0389,
     "lng": -96.3728,
     "place": "Ashland, Nebraska (cruce de las carreteras 6 y 63)",
-    "place_en": "Ashland, Nebraska (junction of Highways 6 and 63)"
+    "place_en": "Ashland, Nebraska (junction of Highways 6 and 63)",
+    "precision": "exact"
   },
   "tier": "A",
   "epistemicStatus": "documented",

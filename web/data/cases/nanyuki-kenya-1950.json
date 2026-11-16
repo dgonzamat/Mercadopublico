@@ -11,7 +11,8 @@
     "lat": 0.01,
     "lng": 37.07,
     "place": "Nanyuki, al pie del monte Kenia",
-    "place_en": "Nanyuki, at the foot of Mount Kenya"
+    "place_en": "Nanyuki, at the foot of Mount Kenya",
+    "precision": "exact"
   },
   "tier": "B",
   "epistemicStatus": "documented",

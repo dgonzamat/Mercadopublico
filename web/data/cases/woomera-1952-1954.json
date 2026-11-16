@@ -11,7 +11,8 @@
     "lat": -31.1983,
     "lng": 136.8253,
     "place": "Campo de pruebas de Woomera, Australia Meridional",
-    "place_en": "Woomera rocket range, South Australia"
+    "place_en": "Woomera rocket range, South Australia",
+    "precision": "exact"
   },
   "tier": "A",
   "mundanoType": "sin_propuesta",

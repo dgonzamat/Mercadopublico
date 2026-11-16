@@ -11,7 +11,8 @@
     "lat": 39.49,
     "lng": -0.47,
     "place": "Manises, Valencia (España)",
-    "place_en": "Manises, Valencia, Spain"
+    "place_en": "Manises, Valencia, Spain",
+    "precision": "exact"
   },
   "tier": "A",
   "mundanoType": "misid",

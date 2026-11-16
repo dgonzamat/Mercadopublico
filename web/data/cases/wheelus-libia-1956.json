@@ -11,7 +11,8 @@
     "lat": 33.3,
     "lng": 13.65,
     "place": "Mediterráneo, al norte de la base de Wheelus, junto a Trípoli (Libia)",
-    "place_en": "Mediterranean, north of Wheelus Air Base, near Tripoli, Libya"
+    "place_en": "Mediterranean, north of Wheelus Air Base, near Tripoli, Libya",
+    "precision": "approx"
   },
   "tier": "S",
   "epistemicStatus": "documented",

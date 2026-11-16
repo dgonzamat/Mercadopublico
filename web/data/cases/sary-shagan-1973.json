@@ -14,7 +14,8 @@
     "lat": 46,
     "lng": 73.6,
     "place": "Campo de pruebas de Sary Shagan, cerca del lago Baljash (Kazajistán)",
-    "place_en": "Sary Shagan test range, near Lake Balkhash, Kazakhstan"
+    "place_en": "Sary Shagan test range, near Lake Balkhash, Kazakhstan",
+    "precision": "exact"
   },
   "tier": "B",
   "mundanoType": "sin_propuesta",

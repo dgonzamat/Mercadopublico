@@ -14,7 +14,8 @@
     "lat": 13.6,
     "lng": 144.82,
     "place": "Noroeste de Guam, entre la base de Andersen y Agaña",
-    "place_en": "North-western Guam, between Andersen Air Force Base and Agana"
+    "place_en": "North-western Guam, between Andersen Air Force Base and Agana",
+    "precision": "approx"
   },
   "tier": "B",
   "epistemicStatus": "documented",

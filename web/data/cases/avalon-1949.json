@@ -14,7 +14,8 @@
     "lat": 33.343,
     "lng": -118.327,
     "place": "Avalon, isla Santa Catalina, California",
-    "place_en": "Avalon, Santa Catalina Island, California"
+    "place_en": "Avalon, Santa Catalina Island, California",
+    "precision": "exact"
   },
   "tier": "B",
   "epistemicStatus": "documented",

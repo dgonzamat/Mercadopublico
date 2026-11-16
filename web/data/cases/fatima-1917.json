@@ -11,7 +11,8 @@
     "lat": 39.6316,
     "lng": -8.6727,
     "place": "Cova da Iria, Fátima (Ourém), Portugal",
-    "place_en": "Cova da Iria, Fátima (Ourém), Portugal"
+    "place_en": "Cova da Iria, Fátima (Ourém), Portugal",
+    "precision": "exact"
   },
   "tier": "A",
   "mundanoType": "psicosocial",

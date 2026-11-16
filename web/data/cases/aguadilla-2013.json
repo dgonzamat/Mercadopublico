@@ -11,7 +11,8 @@
     "lat": 18.43,
     "lng": -67.15,
     "place": "Aguadilla, Puerto Rico",
-    "place_en": "Aguadilla, Puerto Rico"
+    "place_en": "Aguadilla, Puerto Rico",
+    "precision": "exact"
   },
   "tier": "A",
   "mundanoType": "misid",

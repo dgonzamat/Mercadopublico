@@ -11,7 +11,8 @@
     "lat": 35.97,
     "lng": -128.6,
     "place": "Océano Pacífico Norte, a unos 540 km al oeste de California",
-    "place_en": "North Pacific Ocean, about 540 km west of California"
+    "place_en": "North Pacific Ocean, about 540 km west of California",
+    "precision": "approx"
   },
   "tier": "A",
   "category": "incident",

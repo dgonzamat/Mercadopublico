@@ -12,7 +12,8 @@
     "lat": 34.742,
     "lng": -120.5724,
     "place": "Base Vandenberg, California",
-    "place_en": "Vandenberg Air Force Base (now Space Force Base), California"
+    "place_en": "Vandenberg Air Force Base (now Space Force Base), California",
+    "precision": "exact"
   },
   "tier": "B",
   "mundanoType": "sin_propuesta",

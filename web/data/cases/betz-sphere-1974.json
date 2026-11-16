@@ -11,7 +11,8 @@
     "lat": 30.43,
     "lng": -81.43,
     "place": "Isla Fort George, Florida",
-    "place_en": "Fort George Island, Florida"
+    "place_en": "Fort George Island, Florida",
+    "precision": "exact"
   },
   "tier": "B",
   "mundanoType": "misid",

@@ -11,7 +11,8 @@
     "lat": -8.42,
     "lng": -74.53,
     "place": "San Juan de Yarinacocha, en la localidad de Pucallpa (Perú)",
-    "place_en": "San Juan de Yarinacocha, in the Pucallpa area (Peru)"
+    "place_en": "San Juan de Yarinacocha, in the Pucallpa area (Peru)",
+    "precision": "exact"
   },
   "tier": "B",
   "mundanoType": "sin_propuesta",

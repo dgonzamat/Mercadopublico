@@ -11,7 +11,8 @@
     "lat": 37.0827,
     "lng": -76.3606,
     "place": "Base Conjunta Langley-Eustis, Hampton, Virginia",
-    "place_en": "Joint Base Langley-Eustis, Hampton, Virginia"
+    "place_en": "Joint Base Langley-Eustis, Hampton, Virginia",
+    "precision": "exact"
   },
   "tier": "B",
   "epistemicStatus": "documented",

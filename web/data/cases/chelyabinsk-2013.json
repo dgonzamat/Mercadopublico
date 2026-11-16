@@ -11,7 +11,8 @@
     "lat": 55.15,
     "lng": 61.43,
     "place": "Cheliábinsk, Rusia",
-    "place_en": "Chelyabinsk, Russia"
+    "place_en": "Chelyabinsk, Russia",
+    "precision": "exact"
   },
   "tier": "S",
   "mundanoType": "misid",

@@ -11,7 +11,8 @@
     "lat": 15.18,
     "lng": 120.55,
     "place": "Base aérea de Clark, Luzón, Filipinas",
-    "place_en": "Clark Air Base, Luzon, Philippines"
+    "place_en": "Clark Air Base, Luzon, Philippines",
+    "precision": "exact"
   },
   "tier": "A",
   "epistemicStatus": "documented",

@@ -11,7 +11,8 @@
     "lat": -29.07,
     "lng": -71.25,
     "place": "Al norte de La Serena (región de Coquimbo)",
-    "place_en": "North of La Serena (Coquimbo region)"
+    "place_en": "North of La Serena (Coquimbo region)",
+    "precision": "exact"
   },
   "tier": "A",
   "mundanoType": "misid",

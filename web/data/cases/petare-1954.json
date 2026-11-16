@@ -11,7 +11,8 @@
     "lat": 10.48,
     "lng": -66.81,
     "place": "Petare, Caracas (Venezuela)",
-    "place_en": "Petare, Caracas, Venezuela"
+    "place_en": "Petare, Caracas, Venezuela",
+    "precision": "exact"
   },
   "tier": "B",
   "mundanoType": "sin_propuesta",

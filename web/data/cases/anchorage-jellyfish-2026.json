@@ -11,7 +11,8 @@
     "lat": 61.205,
     "lng": -149.79,
     "place": "Este de Anchorage, Alaska, Estados Unidos",
-    "place_en": "East Anchorage, Alaska, United States"
+    "place_en": "East Anchorage, Alaska, United States",
+    "precision": "exact"
   },
   "tier": "A",
   "probability": 16,

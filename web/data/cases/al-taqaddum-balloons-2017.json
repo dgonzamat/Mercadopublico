@@ -12,7 +12,8 @@
     "lat": 33.34,
     "lng": 43.57,
     "place": "Cerca de la base aérea de Al Taqaddum, Irak",
-    "place_en": "Near Al Taqaddum Air Base, Iraq"
+    "place_en": "Near Al Taqaddum Air Base, Iraq",
+    "precision": "exact"
   },
   "tier": "A",
   "epistemicStatus": "documented",

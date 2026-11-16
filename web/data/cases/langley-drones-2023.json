@@ -11,7 +11,8 @@
     "lat": 37.0828,
     "lng": -76.3603,
     "place": "Joint Base Langley-Eustis, Virginia",
-    "place_en": "Joint Base Langley-Eustis, Virginia"
+    "place_en": "Joint Base Langley-Eustis, Virginia",
+    "precision": "exact"
   },
   "tier": "A",
   "mundanoType": "misid",

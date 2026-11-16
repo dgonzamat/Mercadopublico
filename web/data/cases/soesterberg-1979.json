@@ -11,7 +11,8 @@
     "lat": 52.13,
     "lng": 5.28,
     "place": "Base Aérea de Soesterberg (Vliegbasis Soesterberg)",
-    "place_en": "Soesterberg Air Base (Vliegbasis Soesterberg)"
+    "place_en": "Soesterberg Air Base (Vliegbasis Soesterberg)",
+    "precision": "exact"
   },
   "tier": "B",
   "mundanoType": "natural",

@@ -11,7 +11,8 @@
     "lat": 36.94,
     "lng": -107,
     "place": "Dulce, Nuevo México (Mesa Archuleta)",
-    "place_en": "Dulce, New Mexico (Archuleta Mesa)"
+    "place_en": "Dulce, New Mexico (Archuleta Mesa)",
+    "precision": "exact"
   },
   "tier": "B",
   "category": "contactee",

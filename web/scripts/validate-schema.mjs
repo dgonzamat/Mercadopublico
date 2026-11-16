@@ -359,6 +359,8 @@ for (const file of caseFiles) {
       err(w, `location.lng fuera de rango [-180,180]: ${lng}`);
     if (lat === 0 && lng === 0)
       err(w, "location (0,0) — coordenadas placeholder (null island); usar el ancla terrestre real");
+    if (!["exact", "approx", "none"].includes(c.location.precision))
+      err(w, `location.precision debe ser exact, approx o none (es ${JSON.stringify(c.location.precision)})`);
   }
 
   if (!isArr(c.patterns)) err(w, "patterns debe ser array");

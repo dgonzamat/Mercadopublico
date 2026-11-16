@@ -11,7 +11,8 @@
     "lat": 48.91,
     "lng": 15.81,
     "place": "Embalse Vranov nad Dyjí · Moravia del Sur",
-    "place_en": "Vranov nad Dyjí reservoir · South Moravia"
+    "place_en": "Vranov nad Dyjí reservoir · South Moravia",
+    "precision": "exact"
   },
   "tier": "B",
   "mundanoType": "sin_propuesta",

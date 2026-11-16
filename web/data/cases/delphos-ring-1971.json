@@ -11,7 +11,8 @@
     "lat": 39.2683,
     "lng": -97.77,
     "place": "Granja de la familia Johnson, Delphos, Kansas",
-    "place_en": "Johnson family farm, Delphos, Kansas"
+    "place_en": "Johnson family farm, Delphos, Kansas",
+    "precision": "exact"
   },
   "tier": "B",
   "mundanoType": "natural",

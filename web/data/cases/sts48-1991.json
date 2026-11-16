@@ -11,7 +11,8 @@
     "lat": 28.585,
     "lng": -80.65,
     "place": "Órbita terrestre (transbordador Discovery, misión STS-48)",
-    "place_en": "Earth orbit (space shuttle Discovery, mission STS-48)"
+    "place_en": "Earth orbit (space shuttle Discovery, mission STS-48)",
+    "precision": "none"
   },
   "tier": "A",
   "mundanoType": "misid",

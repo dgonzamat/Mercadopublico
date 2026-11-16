@@ -15,7 +15,8 @@
     "lat": 43.5,
     "lng": -72.3,
     "place": "Zona rural del noreste de EE. UU. (ubicación no revelada)",
-    "place_en": "Rural northeastern U.S. (exact location undisclosed)"
+    "place_en": "Rural northeastern U.S. (exact location undisclosed)",
+    "precision": "none"
   },
   "tier": "A",
   "probability": 54,

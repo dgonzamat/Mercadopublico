@@ -14,7 +14,8 @@
     "lat": 40,
     "lng": 20,
     "place": "Probablemente Europa (ubicación no revelada)",
-    "place_en": "Probably Europe (exact location undisclosed)"
+    "place_en": "Probably Europe (exact location undisclosed)",
+    "precision": "none"
   },
   "tier": "B",
   "epistemicStatus": "documented",

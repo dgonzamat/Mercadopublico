@@ -11,7 +11,8 @@
     "lat": 60.05,
     "lng": -43.2,
     "place": "Mar al suroeste del estrecho del Príncipe Cristián, sur de Groenlandia",
-    "place_en": "Sea southwest of Prince Christian Sound, southern Greenland"
+    "place_en": "Sea southwest of Prince Christian Sound, southern Greenland",
+    "precision": "approx"
   },
   "tier": "A",
   "epistemicStatus": "documented",

@@ -11,7 +11,8 @@
     "lat": 33,
     "lng": 44,
     "place": "Oriente Medio (ubicación exacta no revelada)",
-    "place_en": "Middle East (exact location undisclosed)"
+    "place_en": "Middle East (exact location undisclosed)",
+    "precision": "none"
   },
   "tier": "A",
   "epistemicStatus": "documented",

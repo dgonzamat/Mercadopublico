@@ -11,7 +11,8 @@
     "lat": 36.8508,
     "lng": -76.2859,
     "place": "Bahía de Chesapeake, cerca de Norfolk, Virginia",
-    "place_en": "Chesapeake Bay, near Norfolk, Virginia"
+    "place_en": "Chesapeake Bay, near Norfolk, Virginia",
+    "precision": "exact"
   },
   "tier": "A",
   "epistemicStatus": "documented",

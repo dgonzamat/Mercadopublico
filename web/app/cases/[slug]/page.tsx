@@ -12,6 +12,7 @@ import { ShareButton } from "@/components/ShareButton";
 import { ResearcherAvatar } from "@/components/ResearcherAvatar";
 import { researchersForCase } from "@/lib/researcherCases";
 import { DocumentsViewer } from "@/components/DocumentsViewer";
+import { RegionMap } from "@/components/RegionMap";
 import { caseVisuals } from "@/lib/caseVisuals";
 import { splitLead } from "@/lib/splitLead";
 import { Eyebrow, H1, Caption } from "@/lib/typography";
@@ -492,6 +493,8 @@ export async function CaseDetailPage(
               )}
             </div>
           )}
+
+          <RegionMap id={c.id} location={c.location} locale={locale} />
 
           {c.whyMatters && (
             <div className="space-y-8">

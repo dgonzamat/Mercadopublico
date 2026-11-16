@@ -11,7 +11,8 @@
     "lat": 37.98,
     "lng": 23.73,
     "place": "Islas de Naxos, Lemnos y Corfú, Grecia",
-    "place_en": "Islands of Naxos, Lemnos and Corfu, Greece"
+    "place_en": "Islands of Naxos, Lemnos and Corfu, Greece",
+    "precision": "exact"
   },
   "tier": "B",
   "mundanoType": "sin_propuesta",

@@ -11,7 +11,8 @@
     "lat": 40.066,
     "lng": -83.073,
     "place": "Radiotelescopio Big Ear, Delaware, Ohio",
-    "place_en": "Big Ear radio telescope, Delaware, Ohio"
+    "place_en": "Big Ear radio telescope, Delaware, Ohio",
+    "precision": "exact"
   },
   "tier": "A",
   "mundanoType": "natural",

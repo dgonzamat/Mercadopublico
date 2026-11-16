@@ -10,7 +10,8 @@
     "lat": 47.51,
     "lng": -111.18,
     "place": "Base Aérea de Malmstrom, Montana",
-    "place_en": "Malmstrom Air Force Base, Montana"
+    "place_en": "Malmstrom Air Force Base, Montana",
+    "precision": "exact"
   },
   "tier": "A",
   "mundanoType": "instrumento",

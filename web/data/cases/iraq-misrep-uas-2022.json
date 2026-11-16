@@ -11,7 +11,8 @@
     "lat": 33.3,
     "lng": 43.5,
     "place": "Irak (ubicación exacta no revelada)",
-    "place_en": "Iraq (exact location undisclosed)"
+    "place_en": "Iraq (exact location undisclosed)",
+    "precision": "none"
   },
   "tier": "S",
   "epistemicStatus": "documented",

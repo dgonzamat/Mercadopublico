@@ -11,7 +11,8 @@
     "lat": 53.3,
     "lng": -60.42,
     "place": "Sobre Labrador, Canadá, al suroeste de Goose Bay",
-    "place_en": "Over Labrador, Canada, southwest of Goose Bay"
+    "place_en": "Over Labrador, Canada, southwest of Goose Bay",
+    "precision": "approx"
   },
   "tier": "A",
   "epistemicStatus": "documented",

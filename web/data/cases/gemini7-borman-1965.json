@@ -14,7 +14,8 @@
     "lat": 28.5,
     "lng": -80.6,
     "place": "Órbita terrestre baja · misión Gemini 7 (NASA)",
-    "place_en": "Low Earth orbit · Gemini 7 mission (NASA)"
+    "place_en": "Low Earth orbit · Gemini 7 mission (NASA)",
+    "precision": "none"
   },
   "tier": "A",
   "mundanoType": "misid",

@@ -10,7 +10,8 @@
     "lat": 62.45,
     "lng": -136.66,
     "place": "Territorio del Yukón, Canadá",
-    "place_en": "Yukon Territory, Canada"
+    "place_en": "Yukon Territory, Canada",
+    "precision": "exact"
   },
   "tier": "B",
   "mundanoType": "misid",

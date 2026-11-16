@@ -11,7 +11,8 @@
     "lat": 45.36,
     "lng": -75.89,
     "place": "Shirleys Bay, Ottawa (Ontario)",
-    "place_en": "Shirleys Bay, Ottawa (Ontario)"
+    "place_en": "Shirleys Bay, Ottawa (Ontario)",
+    "precision": "exact"
   },
   "tier": "B",
   "mundanoType": "sin_propuesta",

@@ -11,7 +11,8 @@
     "lat": 40.42,
     "lng": -82.91,
     "place": "Mansfield, Ohio (EE. UU.)",
-    "place_en": "Mansfield, Ohio, USA"
+    "place_en": "Mansfield, Ohio, USA",
+    "precision": "exact"
   },
   "tier": "A",
   "mundanoType": "misid",

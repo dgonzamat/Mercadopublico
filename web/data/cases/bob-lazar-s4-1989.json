@@ -11,7 +11,8 @@
     "lat": 37.235,
     "lng": -115.811,
     "place": "S-4, junto a Groom Lake (Área 51), Nevada",
-    "place_en": "S-4, near Groom Lake (Area 51), Nevada"
+    "place_en": "S-4, near Groom Lake (Area 51), Nevada",
+    "precision": "exact"
   },
   "tier": "B",
   "mundanoType": "fraude",

@@ -11,7 +11,8 @@
     "lat": 32.4,
     "lng": 53.7,
     "place": "Espacio aéreo de Irán (ubicación exacta no divulgada)",
-    "place_en": "Iranian airspace (exact location undisclosed)"
+    "place_en": "Iranian airspace (exact location undisclosed)",
+    "precision": "none"
   },
   "tier": "B",
   "mundanoType": "sin_propuesta",

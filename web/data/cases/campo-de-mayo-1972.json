@@ -11,7 +11,8 @@
     "lat": -34.5344,
     "lng": -58.6717,
     "place": "Aeródromo de Campo de Mayo, provincia de Buenos Aires",
-    "place_en": "Campo de Mayo aerodrome, Buenos Aires province"
+    "place_en": "Campo de Mayo aerodrome, Buenos Aires province",
+    "precision": "exact"
   },
   "tier": "A",
   "mundanoType": "misid",

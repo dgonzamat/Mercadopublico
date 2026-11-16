@@ -11,7 +11,8 @@
     "lat": 10.6545,
     "lng": -71.6447,
     "place": "Cerca de Maracaibo, Venezuela",
-    "place_en": "Near Maracaibo, Venezuela"
+    "place_en": "Near Maracaibo, Venezuela",
+    "precision": "exact"
   },
   "tier": "B",
   "epistemicStatus": "documented",

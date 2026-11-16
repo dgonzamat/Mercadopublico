@@ -14,7 +14,8 @@
     "lat": 35.08,
     "lng": -2.32,
     "place": "Noreste del Marruecos francés, junto al Mediterráneo",
-    "place_en": "Northeastern French Morocco, on the Mediterranean"
+    "place_en": "Northeastern French Morocco, on the Mediterranean",
+    "precision": "approx"
   },
   "tier": "A",
   "epistemicStatus": "documented",

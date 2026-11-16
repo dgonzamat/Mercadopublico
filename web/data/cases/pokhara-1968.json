@@ -11,7 +11,8 @@
     "lat": 28.255,
     "lng": 83.995,
     "place": "Batulechaur, al noreste de Pokhara, distrito de Kaski, Nepal",
-    "place_en": "Batulechaur, northeast of Pokhara, Kaski district, Nepal"
+    "place_en": "Batulechaur, northeast of Pokhara, Kaski district, Nepal",
+    "precision": "exact"
   },
   "tier": "A",
   "epistemicStatus": "documented",

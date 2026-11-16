@@ -14,7 +14,8 @@
     "lat": 38.744,
     "lng": -104.846,
     "place": "Cheyenne Mountain / Fort Carson, Colorado Springs (Colorado)",
-    "place_en": "Cheyenne Mountain / Fort Carson, Colorado Springs (Colorado)"
+    "place_en": "Cheyenne Mountain / Fort Carson, Colorado Springs (Colorado)",
+    "precision": "exact"
   },
   "tier": "B",
   "mundanoType": "natural",

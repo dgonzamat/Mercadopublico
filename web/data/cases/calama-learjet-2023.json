@@ -11,7 +11,8 @@
     "lat": -22.9661,
     "lng": -68.4944,
     "place": "Al sureste de Calama (región de Antofagasta)",
-    "place_en": "Southeast of Calama (Antofagasta region)"
+    "place_en": "Southeast of Calama (Antofagasta region)",
+    "precision": "exact"
   },
   "tier": "B",
   "mundanoType": "misid",

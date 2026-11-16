@@ -11,7 +11,8 @@
     "lat": 44.49,
     "lng": -71.57,
     "place": "White Mountains, cerca de Lancaster, New Hampshire",
-    "place_en": "White Mountains, near Lancaster, New Hampshire"
+    "place_en": "White Mountains, near Lancaster, New Hampshire",
+    "precision": "exact"
   },
   "tier": "A",
   "mundanoType": "misid",

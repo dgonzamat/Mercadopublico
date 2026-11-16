@@ -11,7 +11,8 @@
     "lat": 41.6994,
     "lng": -0.872,
     "place": "Academia General Militar (Zaragoza)",
-    "place_en": "General Military Academy (Zaragoza)"
+    "place_en": "General Military Academy (Zaragoza)",
+    "precision": "exact"
   },
   "tier": "A",
   "mundanoType": "misid",

@@ -11,7 +11,8 @@
     "lat": 47.5053,
     "lng": -111.3008,
     "place": "Great Falls, Montana, EE.UU.",
-    "place_en": "Great Falls, Montana, U.S."
+    "place_en": "Great Falls, Montana, U.S.",
+    "precision": "exact"
   },
   "tier": "A",
   "epistemicStatus": "documented",

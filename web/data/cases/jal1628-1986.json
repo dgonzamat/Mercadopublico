@@ -11,7 +11,8 @@
     "lat": 64.5,
     "lng": -150,
     "place": "Sobre el este de Alaska (EE. UU.)",
-    "place_en": "Over eastern Alaska"
+    "place_en": "Over eastern Alaska",
+    "precision": "approx"
   },
   "tier": "S",
   "mundanoType": "misid",

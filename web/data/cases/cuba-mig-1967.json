@@ -11,7 +11,8 @@
     "lat": 22,
     "lng": -79.5,
     "place": "Espacio aéreo de Cuba",
-    "place_en": "Cuban airspace"
+    "place_en": "Cuban airspace",
+    "precision": "approx"
   },
   "tier": "B",
   "category": "incident",

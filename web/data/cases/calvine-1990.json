@@ -11,7 +11,8 @@
     "lat": 56.78,
     "lng": -3.95,
     "place": "Calvine, Perthshire, Escocia",
-    "place_en": "Calvine, Perthshire, Scotland"
+    "place_en": "Calvine, Perthshire, Scotland",
+    "precision": "exact"
   },
   "tier": "B",
   "mundanoType": "fraude",

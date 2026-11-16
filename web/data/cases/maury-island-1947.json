@@ -11,7 +11,8 @@
     "lat": 47.36,
     "lng": -122.43,
     "place": "Isla Maury, Puget Sound (Washington)",
-    "place_en": "Maury Island, Puget Sound (Washington)"
+    "place_en": "Maury Island, Puget Sound (Washington)",
+    "precision": "exact"
   },
   "tier": "B",
   "category": "incident",

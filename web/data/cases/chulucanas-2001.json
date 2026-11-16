@@ -11,7 +11,8 @@
     "lat": -5.1,
     "lng": -80.16,
     "place": "Chulucanas, Piura (Perú)",
-    "place_en": "Chulucanas, Piura, Peru"
+    "place_en": "Chulucanas, Piura, Peru",
+    "precision": "exact"
   },
   "tier": "B",
   "epistemicStatus": "documented",

@@ -11,7 +11,8 @@
     "lat": 37.917,
     "lng": 127.15,
     "place": "Unidad de radar, sector de Chorwon (hoy Cheorwon), Corea del Sur",
-    "place_en": "Radar unit, Chorwon sector (today Cheorwon), South Korea"
+    "place_en": "Radar unit, Chorwon sector (today Cheorwon), South Korea",
+    "precision": "exact"
   },
   "tier": "A",
   "epistemicStatus": "documented",

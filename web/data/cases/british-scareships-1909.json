@@ -11,7 +11,8 @@
     "lat": 52.57,
     "lng": -0.24,
     "place": "Anglia Oriental, Gales y todo el Reino Unido",
-    "place_en": "East Anglia, Wales and across the United Kingdom"
+    "place_en": "East Anglia, Wales and across the United Kingdom",
+    "precision": "exact"
   },
   "tier": "B",
   "mundanoType": "psicosocial",

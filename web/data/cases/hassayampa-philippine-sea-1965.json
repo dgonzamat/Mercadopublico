@@ -11,7 +11,8 @@
     "lat": 20.37,
     "lng": 135.83,
     "place": "Mar de Filipinas, unos 1.000 km al este de Luzón",
-    "place_en": "Philippine Sea, about 1,000 km east of Luzon"
+    "place_en": "Philippine Sea, about 1,000 km east of Luzon",
+    "precision": "approx"
   },
   "tier": "S",
   "epistemicStatus": "documented",

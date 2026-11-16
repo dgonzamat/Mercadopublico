@@ -11,7 +11,8 @@
     "lat": 31.33,
     "lng": -117.17,
     "place": "Pacífico, frente a Baja California",
-    "place_en": "Pacific, off Baja California"
+    "place_en": "Pacific, off Baja California",
+    "precision": "approx"
   },
   "tier": "S",
   "epistemicStatus": "documented",

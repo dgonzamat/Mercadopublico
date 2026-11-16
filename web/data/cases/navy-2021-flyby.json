@@ -12,7 +12,8 @@
     "lat": 36,
     "lng": -75,
     "place": "Campo de entrenamiento de la Marina de EE. UU. (lugar no revelado)",
-    "place_en": "U.S. Navy training range (location not disclosed)"
+    "place_en": "U.S. Navy training range (location not disclosed)",
+    "precision": "none"
   },
   "tier": "A",
   "epistemicStatus": "documented",

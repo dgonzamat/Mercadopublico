@@ -11,7 +11,8 @@
     "lat": 46.8772,
     "lng": -96.7898,
     "place": "Fargo, Dakota del Norte",
-    "place_en": "Fargo, North Dakota"
+    "place_en": "Fargo, North Dakota",
+    "precision": "exact"
   },
   "tier": "A",
   "mundanoType": "misid",

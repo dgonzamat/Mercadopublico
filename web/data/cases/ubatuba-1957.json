@@ -11,7 +11,8 @@
     "lat": -23.4336,
     "lng": -45.0838,
     "place": "Ubatuba, São Paulo, Brasil",
-    "place_en": "Ubatuba, São Paulo, Brazil"
+    "place_en": "Ubatuba, São Paulo, Brazil",
+    "precision": "exact"
   },
   "tier": "B",
   "mundanoType": "sin_propuesta",

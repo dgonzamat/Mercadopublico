@@ -11,7 +11,8 @@
     "lat": 44.14,
     "lng": 4.8667,
     "place": "Base aérea de Orange-Caritat (Vaucluse) y cielo de los Altos Alpes",
-    "place_en": "Orange-Caritat air base (Vaucluse) and the Hautes-Alpes sky"
+    "place_en": "Orange-Caritat air base (Vaucluse) and the Hautes-Alpes sky",
+    "precision": "exact"
   },
   "tier": "A",
   "mundanoType": "sin_propuesta",

@@ -11,7 +11,8 @@
     "lat": 45.104,
     "lng": -123.331,
     "place": "Granja de los Trent, unos 16 km al suroeste de McMinnville, Oregón",
-    "place_en": "Trent farm, about 10 miles southwest of McMinnville, Oregon"
+    "place_en": "Trent farm, about 10 miles southwest of McMinnville, Oregon",
+    "precision": "exact"
   },
   "tier": "A",
   "mundanoType": "fraude",

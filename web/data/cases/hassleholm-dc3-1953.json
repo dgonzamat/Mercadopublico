@@ -14,7 +14,8 @@
     "lat": 56.16,
     "lng": 13.77,
     "place": "Sobre las nubes cerca de Hässleholm (Escania, Suecia)",
-    "place_en": "Above the clouds near Hässleholm (Scania, Sweden)"
+    "place_en": "Above the clouds near Hässleholm (Scania, Sweden)",
+    "precision": "approx"
   },
   "tier": "A",
   "epistemicStatus": "documented",

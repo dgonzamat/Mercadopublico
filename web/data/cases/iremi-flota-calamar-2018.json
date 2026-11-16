@@ -11,7 +11,8 @@
     "lat": -18.35,
     "lng": -75.3833,
     "place": "Océano Pacífico, frente a la costa sur de Perú",
-    "place_en": "Pacific Ocean, off the southern coast of Peru"
+    "place_en": "Pacific Ocean, off the southern coast of Peru",
+    "precision": "approx"
   },
   "tier": "A",
   "mundanoType": "misid",

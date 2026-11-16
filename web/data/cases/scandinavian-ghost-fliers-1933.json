@@ -12,7 +12,8 @@
     "lat": 64.75,
     "lng": 20.95,
     "place": "Norte de Escandinavia (Suecia, Noruega, Finlandia)",
-    "place_en": "Northern Scandinavia (Sweden, Norway, Finland)"
+    "place_en": "Northern Scandinavia (Sweden, Norway, Finland)",
+    "precision": "approx"
   },
   "tier": "B",
   "mundanoType": "misid",

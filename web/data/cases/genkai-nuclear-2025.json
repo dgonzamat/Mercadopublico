@@ -11,7 +11,8 @@
     "lat": 33.515,
     "lng": 129.837,
     "place": "Central nuclear de Genkai (Saga, Japón)",
-    "place_en": "Genkai nuclear power station (Saga, Japan)"
+    "place_en": "Genkai nuclear power station (Saga, Japan)",
+    "precision": "exact"
   },
   "tier": "A",
   "mundanoType": "misid",

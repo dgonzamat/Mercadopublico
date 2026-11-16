@@ -11,7 +11,8 @@
     "lat": 30.357,
     "lng": -87.163,
     "place": "Gulf Breeze, Florida",
-    "place_en": "Gulf Breeze, Florida"
+    "place_en": "Gulf Breeze, Florida",
+    "precision": "exact"
   },
   "tier": "B",
   "mundanoType": "fraude",

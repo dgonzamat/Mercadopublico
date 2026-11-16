@@ -14,7 +14,8 @@
     "lat": 33.737,
     "lng": -118.292,
     "place": "San Pedro (Los Ángeles), frente a la isla Santa Catalina, California",
-    "place_en": "San Pedro (Los Angeles), facing Santa Catalina Island, California"
+    "place_en": "San Pedro (Los Angeles), facing Santa Catalina Island, California",
+    "precision": "exact"
   },
   "tier": "A",
   "epistemicStatus": "documented",

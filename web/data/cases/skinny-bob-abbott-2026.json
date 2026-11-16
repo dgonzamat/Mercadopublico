@@ -11,7 +11,8 @@
     "lat": 38.895,
     "lng": -77.025,
     "place": "Sin lugar conocido (videos difundidos en YouTube)",
-    "place_en": "No known location (videos posted on YouTube)"
+    "place_en": "No known location (videos posted on YouTube)",
+    "precision": "exact"
   },
   "tier": "B",
   "probability": 8,

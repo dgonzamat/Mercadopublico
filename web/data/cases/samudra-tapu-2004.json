@@ -11,7 +11,8 @@
     "lat": 32.48,
     "lng": 77.53,
     "place": "Valle de Samudra Tapu, cerca del lago Chandratal (Himachal Pradesh)",
-    "place_en": "Samudra Tapu valley, near Chandratal lake (Himachal Pradesh)"
+    "place_en": "Samudra Tapu valley, near Chandratal lake (Himachal Pradesh)",
+    "precision": "approx"
   },
   "tier": "B",
   "epistemicStatus": "documented",

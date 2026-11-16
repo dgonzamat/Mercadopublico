@@ -14,7 +14,8 @@
     "lat": 20,
     "lng": -160,
     "place": "Océano Pacífico (ubicación exacta no revelada)",
-    "place_en": "Pacific Ocean (exact location undisclosed)"
+    "place_en": "Pacific Ocean (exact location undisclosed)",
+    "precision": "none"
   },
   "tier": "A",
   "epistemicStatus": "documented",

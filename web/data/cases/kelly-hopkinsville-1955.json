@@ -11,7 +11,8 @@
     "lat": 36.93,
     "lng": -87.45,
     "place": "Kelly, cerca de Hopkinsville, Kentucky",
-    "place_en": "Kelly, near Hopkinsville, Kentucky"
+    "place_en": "Kelly, near Hopkinsville, Kentucky",
+    "precision": "exact"
   },
   "tier": "B",
   "mundanoType": "misid",

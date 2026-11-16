@@ -14,7 +14,8 @@
     "lat": 18,
     "lng": 125,
     "place": "Océano Pacífico occidental (ubicación exacta no revelada)",
-    "place_en": "Western Pacific Ocean (exact location undisclosed)"
+    "place_en": "Western Pacific Ocean (exact location undisclosed)",
+    "precision": "none"
   },
   "tier": "A",
   "epistemicStatus": "documented",

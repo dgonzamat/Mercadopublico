@@ -11,7 +11,8 @@
     "lat": 34.905,
     "lng": -117.884,
     "place": "Base aérea de Edwards, desierto de Mojave, California",
-    "place_en": "Edwards Air Force Base, Mojave Desert, California"
+    "place_en": "Edwards Air Force Base, Mojave Desert, California",
+    "precision": "exact"
   },
   "tier": "A",
   "mundanoType": "misid",

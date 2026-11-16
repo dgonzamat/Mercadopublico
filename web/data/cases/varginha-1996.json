@@ -11,7 +11,8 @@
     "lat": -21.55,
     "lng": -45.43,
     "place": "Varginha, Minas Gerais (Brasil)",
-    "place_en": "Varginha, Minas Gerais, Brazil"
+    "place_en": "Varginha, Minas Gerais, Brazil",
+    "precision": "exact"
   },
   "tier": "A",
   "mundanoType": "misid",

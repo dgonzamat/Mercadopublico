@@ -11,7 +11,8 @@
     "lat": 48.42,
     "lng": -101.36,
     "place": "Base Aérea de Minot, Dakota del Norte",
-    "place_en": "Minot Air Force Base, North Dakota"
+    "place_en": "Minot Air Force Base, North Dakota",
+    "precision": "exact"
   },
   "tier": "A",
   "mundanoType": "misid",

@@ -10,7 +10,8 @@
     "lat": -22.69,
     "lng": -64.34,
     "place": "Cerro El Taire · Bermejo · frontera Tarija",
-    "place_en": "El Taire hill · Bermejo · Tarija border"
+    "place_en": "El Taire hill · Bermejo · Tarija border",
+    "precision": "exact"
   },
   "tier": "B",
   "mundanoType": "sin_propuesta",

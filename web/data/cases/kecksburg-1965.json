@@ -14,7 +14,8 @@
     "lat": 40.18,
     "lng": -79.46,
     "place": "Kecksburg, Pensilvania (EE. UU.)",
-    "place_en": "Kecksburg, Pennsylvania, USA"
+    "place_en": "Kecksburg, Pennsylvania, USA",
+    "precision": "exact"
   },
   "tier": "A",
   "mundanoType": "misid",

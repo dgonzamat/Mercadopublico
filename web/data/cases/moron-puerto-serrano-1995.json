@@ -11,7 +11,8 @@
     "lat": 36.9236,
     "lng": -5.5436,
     "place": "Cielo de Puerto Serrano (Cádiz), cerca de la base aérea de Morón",
-    "place_en": "Sky over Puerto Serrano (Cádiz), near Morón air base"
+    "place_en": "Sky over Puerto Serrano (Cádiz), near Morón air base",
+    "precision": "approx"
   },
   "tier": "A",
   "mundanoType": "misid",

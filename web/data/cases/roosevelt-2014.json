@@ -15,7 +15,8 @@
     "lat": 31,
     "lng": -79.5,
     "place": "Atlántico, costa este de EE. UU. (Virginia–Florida)",
-    "place_en": "Atlantic, U.S. East Coast (Virginia–Florida)"
+    "place_en": "Atlantic, U.S. East Coast (Virginia–Florida)",
+    "precision": "approx"
   },
   "tier": "S",
   "mundanoType": "sin_propuesta",

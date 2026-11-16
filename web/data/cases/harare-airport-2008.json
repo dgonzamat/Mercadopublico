@@ -14,7 +14,8 @@
     "lat": -17.9319,
     "lng": 31.0928,
     "place": "Aeropuerto Internacional de Harare, Zimbabue",
-    "place_en": "Harare International Airport, Zimbabwe"
+    "place_en": "Harare International Airport, Zimbabwe",
+    "precision": "exact"
   },
   "tier": "B",
   "epistemicStatus": "documented",

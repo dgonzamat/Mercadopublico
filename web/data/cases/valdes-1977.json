@@ -11,7 +11,8 @@
     "lat": -18.2,
     "lng": -69.56,
     "place": "Pampa Lluscuma, Putre (Arica y Parinacota), Chile",
-    "place_en": "Pampa Lluscuma, Putre (Arica y Parinacota), Chile"
+    "place_en": "Pampa Lluscuma, Putre (Arica y Parinacota), Chile",
+    "precision": "exact"
   },
   "tier": "A",
   "mundanoType": "fraude",

@@ -14,7 +14,8 @@
     "lat": 36.0,
     "lng": 122.5,
     "place": "Mar Amarillo",
-    "place_en": "Yellow Sea"
+    "place_en": "Yellow Sea",
+    "precision": "approx"
   },
   "tier": "A",
   "probability": 25,

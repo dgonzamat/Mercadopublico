@@ -11,7 +11,8 @@
     "lat": -19.86,
     "lng": -49.77,
     "place": "São Francisco de Sales, Minas Gerais (Brasil)",
-    "place_en": "São Francisco de Sales, Minas Gerais (Brazil)"
+    "place_en": "São Francisco de Sales, Minas Gerais (Brazil)",
+    "precision": "exact"
   },
   "tier": "B",
   "mundanoType": "fraude",

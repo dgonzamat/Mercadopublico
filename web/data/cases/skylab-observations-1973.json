@@ -15,7 +15,8 @@
     "lat": 29.56,
     "lng": -95.09,
     "place": "Estación espacial Skylab, en órbita terrestre",
-    "place_en": "Skylab space station, in Earth orbit"
+    "place_en": "Skylab space station, in Earth orbit",
+    "precision": "none"
   },
   "tier": "A",
   "mundanoType": "misid",

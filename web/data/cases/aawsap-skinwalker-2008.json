@@ -12,7 +12,8 @@
     "lat": 40.25,
     "lng": -109.88,
     "place": "Rancho Skinwalker, cuenca del Uintah, Utah",
-    "place_en": "Skinwalker Ranch, Uintah Basin, Utah"
+    "place_en": "Skinwalker Ranch, Uintah Basin, Utah",
+    "precision": "exact"
   },
   "tier": "A",
   "epistemicStatus": "documented",

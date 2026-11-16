@@ -11,7 +11,8 @@
     "lat": 17.15,
     "lng": 107.36,
     "place": "Zona Desmilitarizada (DMZ) e isla del Tigre, costa central de Vietnam",
-    "place_en": "Demilitarized Zone (DMZ) and Tiger Island, central Vietnam coast"
+    "place_en": "Demilitarized Zone (DMZ) and Tiger Island, central Vietnam coast",
+    "precision": "exact"
   },
   "tier": "A",
   "category": "incident",

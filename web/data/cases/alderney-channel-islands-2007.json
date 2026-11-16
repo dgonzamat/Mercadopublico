@@ -11,7 +11,8 @@
     "lat": 49.7,
     "lng": -2.34,
     "place": "Mar al oeste de Alderney, Islas del Canal",
-    "place_en": "Sea west of Alderney, Channel Islands"
+    "place_en": "Sea west of Alderney, Channel Islands",
+    "precision": "approx"
   },
   "tier": "A",
   "mundanoType": "natural",

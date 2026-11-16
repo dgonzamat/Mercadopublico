@@ -11,7 +11,8 @@
     "lat": 19.4326,
     "lng": -99.1332,
     "place": "Ciudad de México y centro del país",
-    "place_en": "Mexico City and central Mexico"
+    "place_en": "Mexico City and central Mexico",
+    "precision": "exact"
   },
   "tier": "B",
   "category": "incident",

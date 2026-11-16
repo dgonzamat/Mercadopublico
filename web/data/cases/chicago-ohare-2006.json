@@ -11,7 +11,8 @@
     "lat": 41.98,
     "lng": -87.9,
     "place": "Aeropuerto Internacional O'Hare, Chicago",
-    "place_en": "O'Hare International Airport, Chicago"
+    "place_en": "O'Hare International Airport, Chicago",
+    "precision": "exact"
   },
   "tier": "A",
   "mundanoType": "sin_propuesta",

@@ -11,7 +11,8 @@
     "lat": 33.745,
     "lng": -117.868,
     "place": "Santa Ana, Condado de Orange, California",
-    "place_en": "Santa Ana, Orange County, California"
+    "place_en": "Santa Ana, Orange County, California",
+    "precision": "exact"
   },
   "tier": "A",
   "mundanoType": "fraude",

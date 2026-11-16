@@ -15,7 +15,8 @@
     "lat": -11.8167,
     "lng": -37.6167,
     "place": "Conde, Bahía, Brasil",
-    "place_en": "Conde, Bahia, Brazil"
+    "place_en": "Conde, Bahia, Brazil",
+    "precision": "exact"
   },
   "tier": "B",
   "epistemicStatus": "documented",

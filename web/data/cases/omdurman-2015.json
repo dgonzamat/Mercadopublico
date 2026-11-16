@@ -11,7 +11,8 @@
     "lat": 15.82,
     "lng": 32.51,
     "place": "Zona militar de Wadi Sayidna, al norte de Omdurmán (Jartum)",
-    "place_en": "Wadi Sayidna military zone, north of Omdurman (Khartoum)"
+    "place_en": "Wadi Sayidna military zone, north of Omdurman (Khartoum)",
+    "precision": "exact"
   },
   "tier": "A",
   "epistemicStatus": "documented",

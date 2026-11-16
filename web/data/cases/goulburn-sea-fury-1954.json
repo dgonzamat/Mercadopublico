@@ -11,7 +11,8 @@
     "lat": -34.7547,
     "lng": 149.7186,
     "place": "Cielo de Goulburn, Nueva Gales del Sur",
-    "place_en": "Sky over Goulburn, New South Wales"
+    "place_en": "Sky over Goulburn, New South Wales",
+    "precision": "approx"
   },
   "tier": "A",
   "mundanoType": "sin_propuesta",

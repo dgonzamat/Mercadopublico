@@ -14,7 +14,8 @@
     "lat": 39.95,
     "lng": 49.4,
     "place": "Vía férrea entre Aliaty y Adzhijabul, al sur de Bakú (Azerbaiyán)",
-    "place_en": "Railway between Aliaty and Adzhijabul, south of Baku, Azerbaijan"
+    "place_en": "Railway between Aliaty and Adzhijabul, south of Baku, Azerbaijan",
+    "precision": "exact"
   },
   "tier": "B",
   "mundanoType": "misid",

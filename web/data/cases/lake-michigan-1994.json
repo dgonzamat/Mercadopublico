@@ -11,7 +11,8 @@
     "lat": 42.7875,
     "lng": -86.1089,
     "place": "Holland (condado de Ottawa) y Muskegon, Michigan",
-    "place_en": "Holland (Ottawa County) and Muskegon, Michigan"
+    "place_en": "Holland (Ottawa County) and Muskegon, Michigan",
+    "precision": "exact"
   },
   "tier": "A",
   "mundanoType": "sin_propuesta",

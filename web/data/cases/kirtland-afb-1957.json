@@ -11,7 +11,8 @@
     "lat": 35.04,
     "lng": -106.61,
     "place": "Base aérea de Kirtland, Albuquerque, Nuevo México",
-    "place_en": "Kirtland Air Force Base, Albuquerque, New Mexico"
+    "place_en": "Kirtland Air Force Base, Albuquerque, New Mexico",
+    "precision": "exact"
   },
   "tier": "A",
   "mundanoType": "misid",

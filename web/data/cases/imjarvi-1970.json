@@ -11,7 +11,8 @@
     "lat": 61.25,
     "lng": 26.1,
     "place": "Imjärvi, cerca de Heinola, Finlandia",
-    "place_en": "Imjärvi, near Heinola, Finland"
+    "place_en": "Imjärvi, near Heinola, Finland",
+    "precision": "exact"
   },
   "tier": "B",
   "epistemicStatus": "documented",

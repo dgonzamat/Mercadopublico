@@ -11,7 +11,8 @@
     "lat": 60.886,
     "lng": 101.894,
     "place": "Río Podkámennaya Tunguska, Siberia",
-    "place_en": "Podkamennaya Tunguska River, Siberia"
+    "place_en": "Podkamennaya Tunguska River, Siberia",
+    "precision": "exact"
   },
   "tier": "S",
   "mundanoType": "misid",

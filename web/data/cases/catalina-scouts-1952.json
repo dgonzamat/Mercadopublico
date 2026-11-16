@@ -14,7 +14,8 @@
     "lat": 33.405,
     "lng": -118.366,
     "place": "Camp Fox, cerca de Long Point, isla Santa Catalina, California",
-    "place_en": "Camp Fox, near Long Point, Santa Catalina Island, California"
+    "place_en": "Camp Fox, near Long Point, Santa Catalina Island, California",
+    "precision": "exact"
   },
   "tier": "B",
   "epistemicStatus": "documented",

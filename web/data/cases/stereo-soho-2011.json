@@ -12,7 +12,8 @@
     "lat": 38.9916,
     "lng": -76.8526,
     "place": "Centro de Ciencia de STEREO, NASA Goddard (Greenbelt, Maryland)",
-    "place_en": "STEREO Science Center, NASA Goddard (Greenbelt, Maryland)"
+    "place_en": "STEREO Science Center, NASA Goddard (Greenbelt, Maryland)",
+    "precision": "none"
   },
   "tier": "S",
   "mundanoType": "instrumento",

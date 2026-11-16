@@ -11,7 +11,8 @@
     "lat": 18.65,
     "lng": -91.82,
     "place": "Sonda de Campeche, cerca de Ciudad del Carmen (México)",
-    "place_en": "Bay of Campeche, near Ciudad del Carmen, Mexico"
+    "place_en": "Bay of Campeche, near Ciudad del Carmen, Mexico",
+    "precision": "exact"
   },
   "tier": "S",
   "epistemicStatus": "documented",

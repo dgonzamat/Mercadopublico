@@ -11,7 +11,8 @@
     "lat": 39.68,
     "lng": -0.8,
     "place": "Cielo entre Sagunto y Teruel, ruta Palma–Madrid",
-    "place_en": "Sky between Sagunto and Teruel, on the Palma–Madrid route"
+    "place_en": "Sky between Sagunto and Teruel, on the Palma–Madrid route",
+    "precision": "approx"
   },
   "tier": "A",
   "mundanoType": "misid",

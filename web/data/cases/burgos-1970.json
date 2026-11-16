@@ -11,7 +11,8 @@
     "lat": 42.465,
     "lng": -3.29,
     "place": "Provincia de Burgos, unos 30 o 40 km al este-nordeste de la capital",
-    "place_en": "Burgos province, some 30 to 40 km east-northeast of the city"
+    "place_en": "Burgos province, some 30 to 40 km east-northeast of the city",
+    "precision": "approx"
   },
   "tier": "A",
   "mundanoType": "misid",

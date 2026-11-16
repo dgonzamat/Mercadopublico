@@ -11,7 +11,8 @@
     "lat": 4.7,
     "lng": -74.15,
     "place": "Aeropuerto El Dorado, Bogotá",
-    "place_en": "El Dorado Airport, Bogotá"
+    "place_en": "El Dorado Airport, Bogotá",
+    "precision": "exact"
   },
   "tier": "B",
   "epistemicStatus": "documented",

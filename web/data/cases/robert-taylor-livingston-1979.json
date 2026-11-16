@@ -11,7 +11,8 @@
     "lat": 55.8884,
     "lng": -3.5036,
     "place": "Dechmont Law, Livingston, West Lothian, Escocia",
-    "place_en": "Dechmont Law, Livingston, West Lothian, Scotland"
+    "place_en": "Dechmont Law, Livingston, West Lothian, Scotland",
+    "precision": "exact"
   },
   "tier": "A",
   "mundanoType": "psicosocial",

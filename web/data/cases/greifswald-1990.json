@@ -11,7 +11,8 @@
     "lat": 54.14,
     "lng": 13.68,
     "place": "Bahía de Greifswald, cerca de la central nuclear de Lubmin",
-    "place_en": "Bay of Greifswald, near the Lubmin nuclear plant"
+    "place_en": "Bay of Greifswald, near the Lubmin nuclear plant",
+    "precision": "exact"
   },
   "tier": "A",
   "mundanoType": "misid",

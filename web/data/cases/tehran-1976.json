@@ -11,7 +11,8 @@
     "lat": 35.69,
     "lng": 51.39,
     "place": "Teherán, Irán",
-    "place_en": "Tehran, Iran"
+    "place_en": "Tehran, Iran",
+    "precision": "exact"
   },
   "tier": "A",
   "mundanoType": "misid",

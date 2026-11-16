@@ -11,7 +11,8 @@
     "lat": 51.7795,
     "lng": -5.1012,
     "place": "Broad Haven, Pembrokeshire, Gales, Reino Unido",
-    "place_en": "Broad Haven, Pembrokeshire, Wales, United Kingdom"
+    "place_en": "Broad Haven, Pembrokeshire, Wales, United Kingdom",
+    "precision": "exact"
   },
   "tier": "B",
   "epistemicStatus": "documented",

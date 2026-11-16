@@ -14,7 +14,8 @@
     "lat": 52.4,
     "lng": 11.6,
     "place": "Corredor aéreo entre Berlín y Hanover, sobre la zona soviética",
-    "place_en": "Berlin–Hanover air corridor, over the Soviet zone"
+    "place_en": "Berlin–Hanover air corridor, over the Soviet zone",
+    "precision": "approx"
   },
   "tier": "B",
   "epistemicStatus": "documented",

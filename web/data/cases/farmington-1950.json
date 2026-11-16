@@ -11,7 +11,8 @@
     "lat": 36.7281,
     "lng": -108.2087,
     "place": "Farmington, Nuevo México",
-    "place_en": "Farmington, New Mexico"
+    "place_en": "Farmington, New Mexico",
+    "precision": "exact"
   },
   "tier": "A",
   "epistemicStatus": "documented",

@@ -11,7 +11,8 @@
     "lat": -50.366,
     "lng": -73.56,
     "place": "Sobre el Campo de Hielo Patagónico Sur, región de Magallanes (Chile)",
-    "place_en": "Over the Southern Patagonian Ice Field, Magallanes region, Chile"
+    "place_en": "Over the Southern Patagonian Ice Field, Magallanes region, Chile",
+    "precision": "approx"
   },
   "tier": "A",
   "mundanoType": "misid",

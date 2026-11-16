@@ -11,7 +11,8 @@
     "lat": 26.62,
     "lng": 127.95,
     "place": "Sobre la península de Motobu, norte de Okinawa (hoy Japón)",
-    "place_en": "Over the Motobu Peninsula, northern Okinawa (today Japan)"
+    "place_en": "Over the Motobu Peninsula, northern Okinawa (today Japan)",
+    "precision": "approx"
   },
   "tier": "A",
   "epistemicStatus": "documented",

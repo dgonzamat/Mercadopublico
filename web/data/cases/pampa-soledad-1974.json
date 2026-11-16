@@ -11,7 +11,8 @@
     "lat": -21.87,
     "lng": -69.6,
     "place": "Pampa Soledad, entre Oficina Victoria y Quillagua (Antofagasta)",
-    "place_en": "Pampa Soledad, between Oficina Victoria and Quillagua (Antofagasta)"
+    "place_en": "Pampa Soledad, between Oficina Victoria and Quillagua (Antofagasta)",
+    "precision": "exact"
   },
   "tier": "B",
   "mundanoType": "sin_propuesta",

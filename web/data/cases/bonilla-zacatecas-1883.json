@@ -11,7 +11,8 @@
     "lat": 22.7709,
     "lng": -102.5832,
     "place": "Observatorio de Zacatecas, México",
-    "place_en": "Zacatecas Observatory, Mexico"
+    "place_en": "Zacatecas Observatory, Mexico",
+    "precision": "exact"
   },
   "tier": "A",
   "epistemicStatus": "documented",

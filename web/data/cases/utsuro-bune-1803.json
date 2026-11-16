@@ -11,7 +11,8 @@
     "lat": 36.4,
     "lng": 140.6,
     "place": "Costa de la provincia de Hitachi (actual Ibaraki)",
-    "place_en": "Coast of Hitachi Province (present-day Ibaraki)"
+    "place_en": "Coast of Hitachi Province (present-day Ibaraki)",
+    "precision": "approx"
   },
   "tier": "B",
   "mundanoType": "folclore",

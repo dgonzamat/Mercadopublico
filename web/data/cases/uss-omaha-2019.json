@@ -11,7 +11,8 @@
     "lat": 32.6,
     "lng": -117.6,
     "place": "Zona militar restringida frente a San Diego, California",
-    "place_en": "Restricted military area off San Diego, California"
+    "place_en": "Restricted military area off San Diego, California",
+    "precision": "exact"
   },
   "tier": "S",
   "epistemicStatus": "documented",

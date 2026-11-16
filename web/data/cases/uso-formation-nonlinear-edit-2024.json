@@ -14,7 +14,8 @@
     "lat": 39,
     "lng": -98,
     "place": "Ubicación no revelada",
-    "place_en": "Undisclosed location"
+    "place_en": "Undisclosed location",
+    "precision": "none"
   },
   "tier": "B",
   "epistemicStatus": "documented",

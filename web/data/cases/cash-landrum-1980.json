@@ -11,7 +11,8 @@
     "lat": 30.1,
     "lng": -94.7,
     "place": "Cerca de Huffman, al noreste de Houston, Texas",
-    "place_en": "Near Huffman, northeast of Houston, Texas"
+    "place_en": "Near Huffman, northeast of Houston, Texas",
+    "precision": "exact"
   },
   "tier": "B",
   "epistemicStatus": "documented",

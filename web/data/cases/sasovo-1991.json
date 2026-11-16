@@ -11,7 +11,8 @@
     "lat": 54.35,
     "lng": 41.91,
     "place": "Sasovo, óblast de Riazán, Rusia",
-    "place_en": "Sasovo, Ryazan Oblast, Russia"
+    "place_en": "Sasovo, Ryazan Oblast, Russia",
+    "precision": "exact"
   },
   "tier": "A",
   "mundanoType": "natural",

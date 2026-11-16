@@ -10,7 +10,8 @@
     "lat": -20.51,
     "lng": -29.32,
     "place": "Isla de Trindade, Brasil",
-    "place_en": "Trindade Island, Brazil"
+    "place_en": "Trindade Island, Brazil",
+    "precision": "exact"
   },
   "tier": "A",
   "mundanoType": "fraude",

@@ -11,7 +11,8 @@
     "lat": 42.317,
     "lng": -83.933,
     "place": "Dexter y Hillsdale, Michigan",
-    "place_en": "Dexter and Hillsdale, Michigan"
+    "place_en": "Dexter and Hillsdale, Michigan",
+    "precision": "exact"
   },
   "tier": "A",
   "epistemicStatus": "documented",

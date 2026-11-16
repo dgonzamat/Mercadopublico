@@ -14,7 +14,8 @@
     "lat": 53.884,
     "lng": -122.679,
     "place": "Aeropuerto de Prince George, Columbia Británica (Canadá)",
-    "place_en": "Prince George Airport, British Columbia, Canada"
+    "place_en": "Prince George Airport, British Columbia, Canada",
+    "precision": "exact"
   },
   "tier": "A",
   "epistemicStatus": "documented",

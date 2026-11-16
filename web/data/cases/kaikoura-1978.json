@@ -11,7 +11,8 @@
     "lat": -42.4,
     "lng": 173.69,
     "place": "Kaikōura, Isla Sur, Nueva Zelanda",
-    "place_en": "Kaikōura, South Island, New Zealand"
+    "place_en": "Kaikōura, South Island, New Zealand",
+    "precision": "exact"
   },
   "tier": "S",
   "mundanoType": "misid",

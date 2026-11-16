@@ -11,7 +11,8 @@
     "lat": 38.96,
     "lng": -8.53,
     "place": "Entre Granada (España) y Coruche (Portugal)",
-    "place_en": "Between Granada (Spain) and Coruche (Portugal)"
+    "place_en": "Between Granada (Spain) and Coruche (Portugal)",
+    "precision": "exact"
   },
   "tier": "B",
   "mundanoType": "sin_propuesta",
