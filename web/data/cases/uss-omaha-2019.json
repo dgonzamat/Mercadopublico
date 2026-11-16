@@ -32,6 +32,16 @@
     "nohumano_abierto": 0.09,
     "indet": 0.25
   },
+  "mundanoType": "misid",
+  "misidSubtype": "aeronave",
+  "objectDetail": "globo",
+  "classBasis": {
+    "es": "El analista escéptico Mick West escribió el 14 de mayo de 2021 que el video le parecía «compatible con un globo meteorológico u otro globo científico con una carga colgante», que se mecería al tocar el mar y se hundiría al reventar; añadió que «es difícil decirlo» y dio como alternativa una fuente de calor, como una bengala, agrandada por el resplandor. En contra, el comentario de la Marina en la diapositiva que difundió Corbell dice que el Omaha observó «un posible sistema aéreo no tripulado, de forma esférica», evaluó que «se había hundido» y no halló restos. West señaló que esa categoría incluye a veces los globos. El Pentágono confirmó el video sin explicarlo.",
+    "en": "Skeptical analyst Mick West wrote on May 14, 2021 that the video \"seems consistent with a (#1) weather or other scientific balloon, with a suspended payload,\" which would bob when the payload hit the sea and sink once the wind burst the balloon; he added \"It hard to say though\" and offered a heat source such as a flare, enlarged by glare, as an alternative. Against it, the Navy comment on the slide Corbell released says the Omaha \"observed a possible UAS, spherical in shape,\" \"assessed the object had sunk,\" and \"Attempts to search the water for wreckage were ineffective.\" West noted that the category sometimes includes balloons. The Pentagon confirmed the video without explaining it.",
+    "source": "Mick West, Metabunk, «USS Omaha \"Transmedium\" Sphere Descending To the Sea», mensajes del 21 de abril y el 14 de mayo de 2021, con el texto de la diapositiva de la Marina (CCSG-9)",
+    "source_en": "Mick West, Metabunk, \"USS Omaha 'Transmedium' Sphere Descending To the Sea,\" posts of April 21 and May 14, 2021, with the text of the Navy slide (CCSG-9)",
+    "url": "https://www.metabunk.org/threads/uss-omaha-transmedium-sphere-descending-to-the-sea.11711/"
+  },
   "evidence": [
     "Video infrarrojo y de visión nocturna grabado por la tripulación en el centro de información de combate del USS Omaha (15 jul 2019): una esfera que baja al agua sin estela",
     "Según un informe de inteligencia que Corbell dice haber obtenido, al menos 14 objetos de unos dos metros alrededor de la formación, a entre 74 y 254 km/h",
@@ -63,6 +73,13 @@
       "url": "https://globalnews.ca/news/7871671/ufo-video-water-san-diego-california-2019-omaha/",
       "note": "Prensa de la época: declaración de Susan Gough y afirmaciones de Corbell sobre los 14 objetos y la búsqueda submarina",
       "note_en": "Contemporary press: Susan Gough's statement and Corbell's claims about the 14 objects and the submarine search"
+    },
+    {
+      "name": "Mick West — hilo «USS Omaha \"Transmedium\" Sphere Descending To the Sea», Metabunk (desde el 21 de abril de 2021)",
+      "name_en": "Mick West — thread \"USS Omaha 'Transmedium' Sphere Descending To the Sea,\" Metabunk (from April 21, 2021)",
+      "url": "https://www.metabunk.org/threads/uss-omaha-transmedium-sphere-descending-to-the-sea.11711/",
+      "note": "Análisis escéptico, fuente secundaria: transcribe el comentario de la Marina en la diapositiva difundida por Corbell («posible sistema aéreo no tripulado», «se había hundido») y propone un globo científico con carga o, como alternativa, una bengala.",
+      "note_en": "Skeptical analysis, secondary source: transcribes the Navy comment on the slide released by Corbell (\"possible UAS,\" \"assessed the object had sunk\") and proposes a scientific balloon with a payload or, alternatively, a flare."
     }
   ],
   "documents": [

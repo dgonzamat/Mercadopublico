@@ -74,6 +74,16 @@
     "nohumano_abierto": 0.03,
     "indet": 0.18
   },
+  "mundanoType": "misid",
+  "misidSubtype": "aeronave",
+  "objectDetail": "globo",
+  "classBasis": {
+    "es": "El expediente de Blue Book recoge que esa tarde el astrónomo Seyfert, de la Universidad de Vanderbilt, siguió al sur de Nashville un objeto que identificó como «un globo en forma de pera con cables y una barquilla», a unos 25.000 pies, entre las 15:30 y las 16:45, y la ficha del caso lleva escrito a mano «BALLOON» (globo). En contra, Seyfert empezó a observar después del último contacto por radio de Mantell, hacia las 15:15. Un memorando de inteligencia técnica del 10 de noviembre de 1948 descartó Venus y concluyó que el avistamiento «debe considerarse sin explicar».",
+    "en": "The Blue Book file records that astronomer Seyfert, of Vanderbilt University, tracked an object south of Nashville that afternoon \"that he identified as a pear shaped balloon with cables and a basket attached,\" at about 25,000 feet, between 3:30 and 4:45 p.m., and the case's record card is marked by hand \"BALLOON.\" Against it, Seyfert's observation began after Mantell's last radio contact, around 3:15 p.m.. A technical intelligence memo of November 10, 1948 ruled out Venus and concluded that \"this sighting must be considered as unexplained.\"",
+    "source": "Project Blue Book, expediente «Godman AFB, Kentucky», 7 de enero de 1948: informe de la torre de Godman y memorando del 10 de noviembre de 1948",
+    "source_en": "Project Blue Book, file \"Godman AFB, Kentucky,\" January 7, 1948: Godman tower report and memo of November 10, 1948",
+    "url": "https://archive.org/details/1948-01-9669879-GodmanAFB-Ken--33-"
+  },
   "evidenceReviewed": "2026-10-02",
   "documents": [
     {
