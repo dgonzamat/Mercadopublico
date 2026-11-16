@@ -14,6 +14,16 @@
     "place_en": "La Joya Air Base, Arequipa (Peru)"
   },
   "tier": "B",
+  "mundanoType": "misid",
+  "misidSubtype": "aeronave",
+  "objectDetail": "globo",
+  "classBasis": {
+    "es": "El físico Julio Plaza concluyó en 2013 que «todo apunta a nada más que una confusión, una estimación errónea de la distancia real al objeto», que sería «un globo estratosférico»: lo sitúa a casi 90 km y a más de 20 km de altura, no a 6 km y 600 m, y atribuye a ese error los disparos sin efecto y los ascensos súbitos. Su candidato es un globo científico lanzado en Cachoeira Paulista (Brasil) el 9 de abril de 1980. En contra, Plaza recoge que, según algunas webs, el primer avistamiento fue al sur de la base y la persecución al oeste, y que el registro de ese vuelo termina el 9 de abril a las 16:20 UTC; deduce que el globo siguió su viaje tras soltar la carga, pero deja abierto si fue así.",
+    "en": "Physicist Julio Plaza concluded in 2013 that \"everything points to nothing more than a confusion, a mistaken estimate of the real distance to the object,\" which would be \"a stratospheric balloon\": he places it almost 90 km away and over 20 km high, not 6 km away at 600 m, and ties the harmless gunfire and sudden climbs to that error. His candidate is a science balloon launched from Cachoeira Paulista (Brazil) on April 9, 1980. Against it, Plaza notes that, per some websites, the first sighting was south of the base and the chase went west, and that the flight record ends on April 9 at 16:20 UTC; he infers the balloon flew on after dropping its payload, but leaves open whether it did.",
+    "source": "Julio Plaza, «Combate a 20.000 metros», blog Gluon con Leche (1 dic 2013, ampliado en julio de 2015)",
+    "source_en": "Julio Plaza, \"Combate a 20.000 metros,\" Gluon con Leche blog (December 1, 2013, expanded July 2015)",
+    "url": "https://gluonconleche.blogspot.com/2013/12/combate-20000-metros.html"
+  },
   "epistemicStatus": "documented",
   "probability": 64,
   "summary": "El 11 de abril de 1980, en la Base Aérea de La Joya (Arequipa, Perú), el teniente Óscar Santa María Huertas despegó en un Su-22 para interceptar un objeto que la base creyó al principio un globo espía. Según su testimonio, disparó 64 proyectiles que no parecieron dañarlo, y el objeto se apartaba cada vez que lo apuntaba. Descrito como una cúpula color crema sobre una base plateada de unos 10 metros, resistió más de 20 minutos de persecución ante el personal de la base. El único documento de la época, de la agregaduría de defensa de EE. UU., describe dos avistamientos, el 9 y el 10 de mayo, y concluye que «su origen sigue siendo desconocido».",
@@ -77,6 +87,12 @@
       "url": "https://documents.theblackvault.com/documents/ufos/dia2ufo.pdf",
       "note": "Documento primario: dos avistamientos (9 y 10 de mayo de 1980) y dos salidas de Su-22 cerca de la base Mariano Melgar; origen desconocido.",
       "note_en": "Primary document: two sightings (May 9 and 10, 1980) and two Su-22 scrambles near Mariano Melgar Air Base; origin unknown."
+    },
+    {
+      "name": "Julio Plaza, «Combate a 20.000 metros», blog Gluon con Leche (2013, ampliado en 2015)",
+      "url": "https://gluonconleche.blogspot.com/2013/12/combate-20000-metros.html",
+      "note": "Análisis escéptico del físico Julio Plaza: propone que el objeto era un globo estratosférico mucho más lejano y alto de lo que creyó el piloto, y sugiere como candidato un globo científico lanzado en Brasil el 9 de abril de 1980.",
+      "note_en": "Skeptical analysis by physicist Julio Plaza: he proposes that the object was a stratospheric balloon much farther and higher than the pilot believed, and suggests as a candidate a science balloon launched in Brazil on April 9, 1980."
     }
   ],
   "documents": [

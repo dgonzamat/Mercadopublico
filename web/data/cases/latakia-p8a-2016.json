@@ -14,6 +14,14 @@
     "place_en": "Eastern Mediterranean, off Latakia, Syria"
   },
   "tier": "S",
+  "mundanoType": "sin_propuesta",
+  "classBasis": {
+    "es": "Ninguna fuente propone una causa ordinaria: el parte de misión no identifica el objeto, dice que su origen era desconocido y evalúa la posible actividad de misiles como «actividad habitual» del grupo naval ruso, una lectura militar; no se halló un análisis posterior de AARO ni de otro investigador. La falta de un análisis publicado no es prueba contra una causa ordinaria: en el año fiscal 2024 AARO resolvió 174 casos, todos como «objetos convencionales» (globos, aves, drones, satélites, aviones), aunque «muchos otros casos siguen sin resolver».",
+    "en": "No source proposes an ordinary cause: the mission report does not identify the object, gives its origin as unknown and assesses the possible missile activity as \"standard activity\" of the Russian carrier group, a military reading; no later analysis by AARO or any other researcher was found. The absence of a published analysis is not evidence against an ordinary cause: AARO's FY2024 report finalized \"all 174 cases\" as \"resolved to prosaic objects including balloons, birds, UAS, satellites, and aircraft,\" though \"many other cases remain unresolved.\"",
+    "source": "USCENTCOM, parte de misión DOW-UAP-D55 (18 nov 2016) · AARO, Fiscal Year 2024 Consolidated Annual Report on UAP (14 nov 2024), tasa base",
+    "source_en": "USCENTCOM, mission report DOW-UAP-D55 (November 18, 2016) · AARO, Fiscal Year 2024 Consolidated Annual Report on UAP (November 14, 2024), base rate",
+    "url": "https://media.defense.gov/2024/Nov/14/2003583603/-1/-1/0/FY24-CONSOLIDATED-ANNUAL-REPORT-ON-UAP-508.PDF"
+  },
   "probability": 17,
   "category": "incident",
   "patterns": [

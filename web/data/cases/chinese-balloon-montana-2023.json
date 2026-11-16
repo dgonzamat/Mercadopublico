@@ -14,6 +14,16 @@
     "place_en": "Montana and the South Carolina coast, United States"
   },
   "tier": "S",
+  "mundanoType": "misid",
+  "misidSubtype": "aeronave",
+  "objectDetail": "globo",
+  "classBasis": {
+    "es": "El Ministerio de Relaciones Exteriores de China declaró el 3 de febrero de 2023: «El dirigible es de China. Es un dirigible civil usado para investigación, principalmente meteorológica»; añadió que, «afectado por los vientos del oeste y con una capacidad limitada de autogobierno», se desvió mucho de su rumbo previsto. En contra, el Gobierno de EE. UU. lo identificó como uno de los «globos de vigilancia de gran altitud vinculados al Ejército chino» (Biden, 16 de febrero de 2023), lo derribó y recuperó del mar su carga útil.",
+    "en": "China's Foreign Ministry stated on February 3, 2023: \"The airship is from China. It is a civilian airship used for research, mainly meteorological, purposes,\" adding that, \"affected by the Westerlies and with limited self-steering capability, the airship deviated far from its planned course.\" Against it, the U.S. government identified it as one of the \"high-altitude surveillance balloons connected with the Chinese military\" (Biden, February 16, 2023), shot it down and recovered its payload from the sea.",
+    "source": "Ministerio de Relaciones Exteriores de China, declaración del portavoz (3 feb 2023) · Casa Blanca, palabras del presidente Biden (16 feb 2023)",
+    "source_en": "Ministry of Foreign Affairs of China, spokesperson's remarks (February 3, 2023) · White House, remarks by President Biden (February 16, 2023)",
+    "url": "https://www.fmprc.gov.cn/eng/xw/fyrbt/fyrbt/202405/t20240530_11349762.html"
+  },
   "epistemicStatus": "documented",
   "probability": 2,
   "summary": "Entre el 28 de enero y el 4 de febrero de 2023, un globo de gran altitud de un programa vinculado al Ejército Popular de Liberación chino entró por Alaska, cruzó Canadá y sobrevoló Estados Unidos, incluida Montana, donde están la base Malmstrom y sus silos de misiles, hasta que un caza F-22 lo derribó frente a Carolina del Sur. China reconoció que era suyo, aunque lo presentó como una aeronave civil meteorológica desviada; Washington lo identificó como plataforma de vigilancia y recuperó del fondo del mar la carga útil, que analizó el FBI. Según la evaluación posterior del Pentágono, no recopiló información mientras cruzaba Estados Unidos.",
@@ -81,7 +91,7 @@
     {
       "name": "Ministerio de Relaciones Exteriores de China — «Foreign Ministry Spokesperson's Remarks on the Unintended Entry of a Chinese Unmanned Airship into US Airspace Due to Force Majeure» (3 feb 2023)",
       "name_en": "Chinese Ministry of Foreign Affairs — Foreign Ministry Spokesperson's Remarks on the Unintended Entry of a Chinese Unmanned Airship into US Airspace Due to Force Majeure (Feb 3, 2023)",
-      "url": "https://www.fmprc.gov.cn/eng/xwfw_665399/s2510_665401/202302/t20230203_11019484.html",
+      "url": "https://www.fmprc.gov.cn/eng/xw/fyrbt/fyrbt/202405/t20240530_11349762.html",
       "note": "Reconocimiento chino del aparato como aeronave civil de investigación meteorológica. Fuente primaria.",
       "note_en": "Chinese acknowledgment of the craft as a civilian meteorological research airship. Primary source."
     },

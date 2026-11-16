@@ -113,6 +113,13 @@
       "url": "https://www.war.gov/medialink/ufo/release-07/documents/DOW-UAP-D175-BAASS_Self-Assessment_of_UAP_Analysis_Capabilities_November_2010.pdf",
       "note": "Versión oficial tachada del mismo informe que la copia de The Black Vault: sección 4.1 sobre el Tic-Tac (extracto atribuido a personal de la DIA, modelo paramétrico de velocidades y aceleraciones y simulaciones de flujo).",
       "note_en": "Official redacted version of the same report as the Black Vault copy: section 4.1 on the Tic-Tac (excerpt attributed to DIA personnel, parametric velocity and acceleration model and airflow simulations)."
+    },
+    {
+      "name": "Mick West — hilo «2004 USS Nimitz Tic Tac UFO FLIR footage (FLIR1)», Metabunk (desde el 23 de octubre de 2017)",
+      "name_en": "Mick West — thread \"2004 USS Nimitz Tic Tac UFO FLIR footage (FLIR1),\" Metabunk (from October 23, 2017)",
+      "url": "https://www.metabunk.org/threads/2004-uss-nimitz-tic-tac-ufo-flir-footage-flir1.9190/",
+      "note": "Análisis escéptico, fuente secundaria: propone que el FLIR1 muestra un avión lejano que se aleja de la cámara y que las detecciones del radar eran dudosas; el mismo hilo recoge las objeciones de otros participantes.",
+      "note_en": "Skeptical analysis, secondary source: proposes that FLIR1 shows a distant plane flying away from the camera and that the radar detections were dubious; the same thread carries other participants' objections."
     }
   ],
   "posterior": {
@@ -122,6 +129,16 @@
     "nohumano_encubierto": 0.17,
     "nohumano_abierto": 0.12,
     "indet": 0.27
+  },
+  "mundanoType": "misid",
+  "misidSubtype": "aeronave",
+  "objectDetail": "avion",
+  "classBasis": {
+    "es": "El analista escéptico Mick West escribió el 23 de octubre de 2017 que el video FLIR1 «parece compatible con un avión lejano (a más de 50 millas) que se aleja de la cámara» y que el episodio consistió probablemente en «detecciones de radar dudosas y un avión lejano que no estaba en el radar»; para el radar, el oficial meteorológico del Princeton había hablado de cristales de hielo a gran altura. En contra, el resumen ejecutivo atribuido al AATIP concluye que el objeto «no era ninguna aeronave conocida» de Estados Unidos ni de otro país, cuatro tripulantes lo vieron a una milla o menos, y la tripulación del FLIR1 no pudo vincular su objeto con el de Fravor.",
+    "en": "Skeptical analyst Mick West wrote on October 23, 2017 that the FLIR1 video \"seems consistent with a distant (>50 miles away) plane flying away from the camera\" and that the episode \"likely consisted of dodgy radar returns and a distant plane not on the radar\"; for the radar, the Princeton's weather officer had briefed on high-altitude ice crystals. Against it, the executive summary attributed to AATIP concludes the object \"was no known aircraft or air vehicle currently in the inventory of the United States or any foreign nation,\" four aircrew saw it from a mile or less, and the FLIR1 crew could not link their object to Fravor's.",
+    "source": "Mick West, Metabunk, «2004 USS Nimitz Tic Tac UFO FLIR footage (FLIR1)», mensaje del 23 de octubre de 2017 · Resumen ejecutivo atribuido al AATIP (hecho público en 2018)",
+    "source_en": "Mick West, Metabunk, \"2004 USS Nimitz Tic Tac UFO FLIR footage (FLIR1),\" post of October 23, 2017 · Executive summary attributed to AATIP (made public in 2018)",
+    "url": "https://www.metabunk.org/threads/2004-uss-nimitz-tic-tac-ufo-flir-footage-flir1.9190/"
   },
   "documents": [
     {
