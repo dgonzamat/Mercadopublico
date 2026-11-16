@@ -14,13 +14,12 @@
     "place_en": "Iranian airspace (exact location undisclosed)"
   },
   "tier": "B",
-  "mundanoType": "psicosocial",
-  "objectDetail": "medica",
+  "mundanoType": "sin_propuesta",
   "classBasis": {
-    "es": "The War Zone plantea que el piloto pudo vivir «algo completamente distinto, quizá relacionado con su conmoción», tras un período de «estrés extremo», y recoge que, según CNN, los funcionarios de inteligencia discreparon sobre si podía contar el incidente con claridad. Añade que «incluso una bandada de aves o un grupo de globos» podría parecer un enjambre de drones. En contra, el mismo análisis recuerda que «un piloto de caza experimentado normalmente sabría distinguir» entre drones y aves, aunque las circunstancias eran «muy anormales», y no descarta que un enjambre real interviniera en el derribo.",
-    "en": "The War Zone suggests the pilot may have \"experienced something else entirely, perhaps related to their concussion,\" after \"an extremely high-stress period,\" and notes that, according to CNN, intelligence officials disagreed on whether the pilot could recount the incident clearly. It adds that \"even a flock of birds or a group of balloons\" could appear as a drone swarm. Against it, the same analysis says \"an experienced fighter pilot would normally be able to tell the difference between drones or birds,\" though these were \"very much abnormal circumstances,\" and does not rule out a real swarm playing a part in the shootdown.",
-    "source": "The War Zone, «What Was The \"Jellyfish-Like\" Drone Swarm The Downed F-15E Pilot Reportedly Saw Over Iran?» (jun 2026)",
-    "source_en": "The War Zone, \"What Was The 'Jellyfish-Like' Drone Swarm The Downed F-15E Pilot Reportedly Saw Over Iran?\" (June 2026)",
+    "es": "Ninguna fuente se inclina por una causa ordinaria. The War Zone (23 de junio de 2026) enumera posibilidades sin preferir ninguna: que el piloto viviera «algo completamente distinto, quizá relacionado con su conmoción», que según CNN sufrió en la caída, o que viera «una bandada de aves o un grupo de globos», estos últimos posibles señuelos iraníes; admite que un piloto experimentado «normalmente sabría distinguir» drones de aves. La falta de un análisis publicado no es prueba contra una causa ordinaria: en el año fiscal 2024 AARO resolvió 174 casos, todos como «objetos convencionales» (globos, aves, drones, satélites, aviones), aunque «muchos otros casos siguen sin resolver».",
+    "en": "No source favors an ordinary cause. The War Zone (June 23, 2026) lists possibilities without preferring any: that the pilot \"experienced something else entirely, perhaps related to their concussion,\" which CNN says he suffered in the crash, or saw \"a flock of birds or a group of balloons,\" the latter possibly Iranian decoys; it grants that an experienced pilot \"would normally be able to tell the difference.\" The absence of a published analysis is not evidence against an ordinary cause: AARO's FY2024 report finalized \"all 174 cases\" as \"resolved to prosaic objects including balloons, birds, UAS, satellites, and aircraft,\" though \"many other cases remain unresolved.\"",
+    "source": "The War Zone (23 jun 2026) · CNN (23 jun 2026) · AARO, informe del año fiscal 2024 (tasa base)",
+    "source_en": "The War Zone (June 23, 2026) · CNN (June 23, 2026) · AARO, Fiscal Year 2024 report (base rate)",
     "url": "https://www.twz.com/air/what-was-the-jellyfish-like-drone-swarm-the-downed-f-15e-pilot-reportedly-saw-over-iran"
   },
   "probability": 35,
@@ -84,6 +83,12 @@
       "url": "https://media.defense.gov/2026/Mar/03/2003882557/-1/-1/1/OPERATION-EPIC-FURY-FACT-SHEET-260303.PDF",
       "note": "Nombre oficial de la campaña estadounidense contra Irán, iniciada el 28 de febrero de 2026.",
       "note_en": "Official name of the U.S. campaign against Iran, launched on February 28, 2026."
+    },
+    {
+      "name": "AARO — «Fiscal Year 2024 Consolidated Annual Report on Unidentified Anomalous Phenomena»",
+      "url": "https://media.defense.gov/2024/Nov/14/2003583603/-1/-1/0/FY24-CONSOLIDATED-ANNUAL-REPORT-ON-UAP-508.PDF",
+      "note": "Marco institucional que describe cómo se catalogan y resuelven los reportes militares.",
+      "note_en": "Institutional framework describing how military reports are cataloged and resolved."
     }
   ],
   "documents": [
