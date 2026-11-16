@@ -47,7 +47,8 @@
     {
       "name": "Ruppelt, E. — «The Report on UFOs» (1956)",
       "note": "Ex-director Blue Book reconstruyó el caso",
-      "note_en": "Former Blue Book director reconstructed the case"
+      "note_en": "Former Blue Book director reconstructed the case",
+      "url": "https://www.gutenberg.org/ebooks/17346"
     },
     {
       "name": "Clark, J. — UFO Encyclopedia 3rd ed. (2018)",
@@ -73,6 +74,16 @@
     "nohumano_encubierto": 0.01,
     "nohumano_abierto": 0.03,
     "indet": 0.18
+  },
+  "mundanoType": "misid",
+  "misidSubtype": "aeronave",
+  "objectDetail": "globo",
+  "classBasis": {
+    "es": "Edward Ruppelt, que dirigió Blue Book, revisó el caso y escribió en 1956 que las descripciones de la torre, un paracaídas o un cono de helado, «encajan con un globo», y que con los vientos de ese día un Skyhook lanzado desde Ohio pudo verse cerca de Godman; nunca halló el registro del lanzamiento. En el expediente, dos observadores vieron un globo con telescopio: uno en Madisonville y el astrónomo Seyfert, que lo describió «en forma de pera con cables y una barquilla». En contra, el teodolito de Godman siguió su objeto hasta las 16:45, mientras Seyfert veía el suyo lejos de allí, y un memorando del 10 de noviembre de 1948 lo dio por «sin explicar».",
+    "en": "Edward Ruppelt, who headed Blue Book, reviewed the case and wrote in 1956 that the tower's descriptions, a parachute or an ice cream cone, \"fit a balloon,\" and that on that day's winds a Skyhook launched from Ohio could have been seen near Godman; he never found the launch record. In the file, two observers saw a balloon through a telescope: one in Madisonville and astronomer Seyfert, who described \"a pear shaped balloon with cables and a basket attached.\" Against it, the Godman theodolite tracked its object until 4:45 p.m., while Seyfert watched his far away, and a memo of November 10, 1948 found the sighting \"must be considered as unexplained.\"",
+    "source": "Edward Ruppelt, «The Report on Unidentified Flying Objects» (1956), cap. 3 · Project Blue Book, expediente «Godman AFB, Kentucky»: informe de incidente del servicio de vuelo (capitán Arthur T. Jehli), declaración del teniente Orner y memorando del 10 de noviembre de 1948",
+    "source_en": "Edward Ruppelt, \"The Report on Unidentified Flying Objects\" (1956), ch. 3 · Project Blue Book, file \"Godman AFB, Kentucky\": Flight Service unusual-incident report (Capt. Arthur T. Jehli), Lt. Orner's statement and memo of November 10, 1948",
+    "url": "https://archive.org/details/1948-01-9669879-GodmanAFB-Ken--33-"
   },
   "evidenceReviewed": "2026-10-02",
   "documents": [
