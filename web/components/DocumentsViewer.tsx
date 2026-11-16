@@ -29,6 +29,7 @@ import { splitLead } from "@/lib/splitLead";
 const INLINE_NONVIDEO_MAX = 4;
 // Mismo prefijo que admite validate-schema.mjs para los videos de Facebook.
 const FACEBOOK_EMBED = "https://www.facebook.com/plugins/video.php?href=";
+const X_EMBED = "https://platform.twitter.com/embed/Tweet.html?id=";
 
 // Una foto del lugar o del tipo de avión («Contexto · …») no es un documento
 // del caso: si es lo único que hay, el rótulo no puede decir «Documentos
@@ -63,8 +64,13 @@ export function DocumentsViewer({ docs, locale, heading }: { docs: DocEmbed[]; l
             {doc.type === "pdf" ? (
               <PdfDoc src={doc.src} fallbackUrl={doc.fallbackUrl} page={doc.page} locale={locale} />
             ) : doc.type === "video" ? (
-              doc.src.startsWith(FACEBOOK_EMBED) ? (
-                <FacebookVideo src={doc.src} title={doc.title_en ?? doc.title} locale={locale} />
+              doc.src.startsWith(FACEBOOK_EMBED) || doc.src.startsWith(X_EMBED) ? (
+                <FacebookVideo
+                  src={doc.src}
+                  title={doc.title_en ?? doc.title}
+                  locale={locale}
+                  platform={doc.src.startsWith(X_EMBED) ? "x" : "facebook"}
+                />
               ) : (
                 <DvidsVideo src={doc.src} title={doc.title_en ?? doc.title} />
               )

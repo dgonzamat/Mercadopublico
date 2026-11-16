@@ -13,20 +13,32 @@ import { useState } from "react";
  * lleva miniatura: pedirla a Facebook ya sería contactar con Meta.
  *
  * Proporción 9:16 fija para que no haya salto de layout al cargar.
+ *
+ * El mismo patrón sirve el reproductor de X (`platform="x"`) para el video
+ * oficial que una institución publicó solo en X (Secretaría de Prensa de El
+ * Salvador, vuelo 15 de Starship, nov 2026): tarjeta del post con su video,
+ * de alto fijo por la misma razón.
  */
 export default function FacebookVideo({
   src,
   title,
   locale,
+  platform = "facebook",
 }: {
   src: string;
   title: string;
   locale: "es" | "en";
+  platform?: "facebook" | "x";
 }) {
   const [on, setOn] = useState(false);
   const es = locale === "es";
+  const name = platform === "x" ? "X" : "Facebook";
+  const box =
+    platform === "x"
+      ? "mx-auto h-[660px] w-full max-w-[360px] border border-text/15 bg-surface-2"
+      : "mx-auto aspect-[9/16] w-full max-w-[320px] border border-text/15 bg-surface-2";
   return (
-    <div className="mx-auto aspect-[9/16] w-full max-w-[320px] border border-text/15 bg-surface-2">
+    <div className={box}>
       {on ? (
         <iframe
           src={src}
@@ -42,12 +54,12 @@ export default function FacebookVideo({
             onClick={() => setOn(true)}
             className="min-h-[44px] border border-accent px-4 py-2 text-sm font-semibold text-accent hover:bg-accent hover:text-bg"
           >
-            {es ? "Ver el video en Facebook" : "Watch the video on Facebook"}
+            {es ? `Ver el video en ${name}` : `Watch the video on ${name}`}
           </button>
           <p className="text-xs leading-snug text-muted">
             {es
-              ? "Al pulsar, Facebook carga su reproductor y sus cookies."
-              : "When you click, Facebook loads its player and its cookies."}
+              ? `Al pulsar, ${name} carga su reproductor y sus cookies.`
+              : `When you click, ${name} loads its player and its cookies.`}
           </p>
         </div>
       )}
