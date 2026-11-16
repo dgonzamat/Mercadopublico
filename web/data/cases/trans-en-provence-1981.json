@@ -8,8 +8,8 @@
   "country_name": "Francia",
   "flag": "🇫🇷",
   "location": {
-    "lat": 43.5,
-    "lng": 6.48,
+    "lat": 43.5039,
+    "lng": 6.4867,
     "place": "Trans-en-Provence, Francia",
     "place_en": "Trans-en-Provence, France",
     "precision": "exact"

@@ -8,8 +8,8 @@
   "country_name": "Argentina",
   "flag": "🇦🇷",
   "location": {
-    "lat": -41.15,
-    "lng": -71.3,
+    "lat": -41.1526,
+    "lng": -71.1546,
     "place": "Aeropuerto Internacional de Bariloche (Argentina)",
     "place_en": "Bariloche International Airport, Argentina",
     "precision": "exact"

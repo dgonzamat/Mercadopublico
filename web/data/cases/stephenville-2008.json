@@ -12,7 +12,7 @@
     "lng": -98.2,
     "place": "Stephenville, Texas",
     "place_en": "Stephenville, Texas",
-    "precision": "exact"
+    "precision": "approx"
   },
   "tier": "A",
   "mundanoType": "misid",

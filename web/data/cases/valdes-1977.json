@@ -12,7 +12,7 @@
     "lng": -69.56,
     "place": "Pampa Lluscuma, Putre (Arica y Parinacota), Chile",
     "place_en": "Pampa Lluscuma, Putre (Arica y Parinacota), Chile",
-    "precision": "exact"
+    "precision": "approx"
   },
   "tier": "A",
   "mundanoType": "fraude",

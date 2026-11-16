@@ -8,11 +8,11 @@
   "country_name": "Unión Soviética (Ucrania)",
   "flag": "🇷🇺",
   "location": {
-    "lat": 50.95,
-    "lng": 28,
+    "lat": 51.1067,
+    "lng": 28.0155,
     "place": "Base de misiles cerca de Usovo y Byelokoroviche (Ucrania soviética)",
     "place_en": "Missile base near Usovo and Byelokoroviche (Soviet Ukraine)",
-    "precision": "exact"
+    "precision": "approx"
   },
   "tier": "A",
   "mundanoType": "misid",
