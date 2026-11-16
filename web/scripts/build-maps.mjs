@@ -29,6 +29,11 @@ const land110 = feature(world110, world110.objects.land);
 // las fichas están en EE. UU. y, sin los estados, el mapa de una ficha del
 // interior era tierra lisa (Mantell, nov 2026).
 const usTopo = require("us-atlas/states-10m.json");
+// Ciudades de referencia (Natural Earth 1:10m populated places, dominio
+// público), reducidas a [en, es|0, lat, lng, scalerank, población] y ya
+// ordenadas por importancia. Sitúan al lector sin pedir teselas a nadie.
+const CITIES = require("./data/ne-populated-places.json").rows;
+const MAX_CITIES = 6;
 const usStates = feature(usTopo, usTopo.objects.states).features;
 const usStateLines = mesh(usTopo, usTopo.objects.states, (a, b) => a !== b);
 const STATE_ES = { "New Mexico": "Nuevo México", "New York": "Nueva York", "New Jersey": "Nueva Jersey", "New Hampshire": "Nuevo Hampshire", "North Carolina": "Carolina del Norte", "South Carolina": "Carolina del Sur", "North Dakota": "Dakota del Norte", "South Dakota": "Dakota del Sur", Pennsylvania: "Pensilvania", Hawaii: "Hawái", Louisiana: "Luisiana", Mississippi: "Misisipi", Missouri: "Misuri", Oregon: "Oregón", "West Virginia": "Virginia Occidental", Michigan: "Míchigan", "District of Columbia": "Distrito de Columbia" };
@@ -135,6 +140,58 @@ function regionMap(c, locale) {
   const tx = right ? x + 12 : x - 12;
   const anchor = right ? "start" : "end";
 
+  // Ciudades: se aceptan de mayor a menor importancia si su punto y su nombre
+  // no chocan con lo ya dibujado (el suceso y su rótulo, los países, los
+  // estados, el globo, la escala y las otras ciudades).
+  const textW = (t, size) => t.length * size * 0.56;
+  const hit = (a, b) => a.x0 < b.x1 && b.x0 < a.x1 && a.y0 < b.y1 && b.y0 < a.y1;
+  const markR = precision === "exact" ? 16 : Math.max(16, APPROX_KM * pxKm);
+  const taken = [
+    { x0: x - markR, x1: x + markR, y0: y - markR, y1: y + markR },
+    { x0: W - 96, x1: W, y0: 0, y1: 96 },
+    { x0: 0, x1: 16 + barPx + 30, y0: H - 40, y1: H },
+  ];
+  const labelBox = (l) => {
+    const w = textW(l.name, l.size) * 1.15;
+    return { x0: l.x - w / 2 - 3, x1: l.x + w / 2 + 3, y0: l.y - l.size - 2, y1: l.y + 3 };
+  };
+  if (place) {
+    const w = textW(place, 13);
+    const pb = right ? { x0: tx - 2, x1: tx + w + 4, y0: y - 10, y1: y + 8 } : { x0: tx - w - 4, x1: tx + 2, y0: y - 10, y1: y + 8 };
+    taken.push(pb);
+    // Un rótulo de país o estado que pisa el nombre del lugar baja una línea
+    // (Hessdalen: «SUECIA» caía sobre «Valle de Hessdalen»).
+    for (const l of [...labels, ...stateLabels]) if (hit(labelBox(l), pb)) l.y = pb.y1 + l.size + 6;
+  }
+  // Un rótulo cortado por el borde o tapado por el globo no se dibuja
+  // (Teherán: «TURKMENIST»).
+  for (const l of [...labels, ...stateLabels]) {
+    const b = labelBox(l);
+    if (b.x0 < 0 || b.x1 > W || hit(b, taken[1])) l.drop = true;
+  }
+  for (const l of [...labels, ...stateLabels].filter((l) => !l.drop)) taken.push(labelBox(l));
+  const cityLabels = [];
+  for (const [en, es, clat, clng] of CITIES) {
+    if (cityLabels.length >= MAX_CITIES) break;
+    if (Math.abs(clat - lat) > 8 || geoDistance(center, [clng, clat]) * R_EARTH > RADIUS_KM * 1.6) continue;
+    const pt = proj([clng, clat]);
+    if (!pt) continue;
+    const [cx, cy] = pt;
+    if (!(cx > 8 && cx < W - 8 && cy > 14 && cy < H - 8)) continue;
+    const name = locale === "es" ? es || en : en;
+    const w = textW(name, 10);
+    const dot = { x0: cx - 4, x1: cx + 4, y0: cy - 4, y1: cy + 4 };
+    const sides = [
+      { x0: cx + 5, x1: cx + 7 + w, y0: cy - 7, y1: cy + 5, tx: cx + 6, anchor: "start" },
+      { x0: cx - 7 - w, x1: cx - 5, y0: cy - 7, y1: cy + 5, tx: cx - 6, anchor: "end" },
+    ];
+    if (taken.some((b) => hit(b, dot))) continue;
+    const side = sides.find((sb) => sb.x0 > 2 && sb.x1 < W - 2 && !taken.some((b) => hit(b, sb)));
+    if (!side) continue;
+    taken.push(dot, side);
+    cityLabels.push({ name, cx, cy, tx: side.tx, anchor: side.anchor });
+  }
+
   const g = geoOrthographic().rotate([-lng, -lat * 0.6]).scale(38).translate([W - 50, 50]).clipAngle(90);
   const gp = coarsePath(g);
   const [gx, gy] = g(center);
@@ -154,7 +211,8 @@ function regionMap(c, locale) {
 <path d="${p(bordersHere)}" fill="none" stroke="${C.muted}" stroke-width="0.6" stroke-dasharray="3 2"/>
 ${nearCases.map(([nx, ny]) => `<circle cx="${nx.toFixed(1)}" cy="${ny.toFixed(1)}" r="3" fill="${C.muted}" opacity="0.55"/>`).join("")}
 ${hasStates ? `<path d="${p(usStateLines)}" fill="none" stroke="${C.muted}" stroke-width="0.4" stroke-dasharray="2 2" opacity="0.8"/>` : ""}
-${[...labels.filter((l) => !l.drop), ...stateLabels].map((l) => `<text x="${l.x.toFixed(1)}" y="${l.y.toFixed(1)}" text-anchor="middle" ${FONT} font-size="${l.size}" letter-spacing="1.2" fill="${C.muted}">${esc(l.name.toUpperCase())}</text>`).join("")}
+${[...labels, ...stateLabels].filter((l) => !l.drop).map((l) => `<text x="${l.x.toFixed(1)}" y="${l.y.toFixed(1)}" text-anchor="middle" ${FONT} font-size="${l.size}" letter-spacing="1.2" fill="${C.muted}">${esc(l.name.toUpperCase())}</text>`).join("")}
+${cityLabels.map((l) => `<circle cx="${l.cx.toFixed(1)}" cy="${l.cy.toFixed(1)}" r="2" fill="${C.text}" opacity="0.7"/><text x="${l.tx.toFixed(1)}" y="${(l.cy + 3.5).toFixed(1)}" text-anchor="${l.anchor}" ${FONT} font-size="10" fill="${C.text}" opacity="0.8" stroke="${C.panel}" stroke-width="2.5" paint-order="stroke">${esc(l.name)}</text>`).join("")}
 ${mark}
 ${label}
 <g transform="translate(16 ${H - 22})" ${FONT} font-size="11" fill="${C.text}">
