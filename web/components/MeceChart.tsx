@@ -277,6 +277,7 @@ export function CasePosterior({
   const leadName = nameOf(top);
   // Las dos explicaciones que siguen a la mayor, sin el indeterminado (no es
   // una explicación) ni las de menos de 5 %, que solo añadían cifras.
+  const indetPct = all.find((r) => r.key === "indet")?.pct ?? 0;
   const next = all
     .filter((r) => !r.zero && r.key !== top.key && r.key !== "indet" && r.pct >= 5)
     .sort((a, b) => b.pct - a.pct)
@@ -312,6 +313,15 @@ export function CasePosterior({
                       en={`Next: ${next.map((r) => `${r.en}\u00a0(${r.pct}%)`).join(" and ")}.`}
                       locale={locale}
                     />
+                  </>
+                )}
+                {/* Lo indeterminado no entra en «Le siguen» (no es una explicación),
+                    pero sin nombrarlo «Le siguen: 7 % y 6 %» se leía como si el resto
+                    fuera poco cuando quedaba un 40 % sin decidir (Manston, nov 2026). */}
+                {indetPct >= 5 && (
+                  <>
+                    {" "}
+                    <T es={`La evidencia deja un ${indetPct}% sin decidir.`} en={`The evidence leaves ${indetPct}% undecided.`} locale={locale} />
                   </>
                 )}
               </>
