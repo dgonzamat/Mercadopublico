@@ -44,15 +44,25 @@ export const MECE_CLASSES: ReadonlyArray<{
 
 const CLASS_IDS = MECE_CLASSES.map((c) => c.id);
 
+/** Narrativas sin causa conocida: forman un grupo frente a las de origen
+ *  terrestre (natural, humana clasificada, de otro Estado). */
+export const NO_KNOWN_CAUSE_IDS: ReadonlySet<string> = new Set(["indet", "nohumano_encubierto", "nohumano_abierto", "nohumano"]);
+
 /**
- * Narrativa DOMINANTE de un posterior (argmax). Mismo criterio que `modal()` de
- * meceModel, pero puro y sin dependencias de datos para poder correr en el
- * cliente. Empate → la primera en orden de `MECE_CLASSES`.
+ * Narrativa que encabeza un posterior, con la misma regla que «Qué fue» de la
+ * ficha (16 nov 2026): primero el grupo que pesa más (origen terrestre o sin
+ * causa conocida) y, dentro de él, la narrativa mayor. Con el argmax simple,
+ * 26 fichas caían en el laboratorio y en /cases bajo una explicación distinta
+ * de la que muestra su ficha (Levelland, Varginha…). Pura y sin dependencias de
+ * datos para correr en el cliente. Empate → la primera en orden de `MECE_CLASSES`.
  */
 export function dominantNarrative(p: Posterior): MeceClassId {
+  const sum = (unknown: boolean) => CLASS_IDS.filter((k) => NO_KNOWN_CAUSE_IDS.has(k) === unknown).reduce((a, k) => a + (p[k] ?? 0), 0);
+  const leadUnknown = sum(true) > sum(false);
   let best: MeceClassId = "indet";
   let bestP = -Infinity;
   for (const k of CLASS_IDS) {
+    if (NO_KNOWN_CAUSE_IDS.has(k) !== leadUnknown) continue;
     const v = p[k] ?? 0;
     if (v > bestP) {
       best = k;
@@ -62,9 +72,16 @@ export function dominantNarrative(p: Posterior): MeceClassId {
   return best;
 }
 
+// En el laboratorio, «Mundano / natural» se nombra como en la ficha: la causa
+// ordinaria (natural o una confusión con algo conocido).
 const MECE_LABEL_BY_ID = Object.fromEntries(
-  MECE_CLASSES.map((c) => [c.id, c.label]),
+  MECE_CLASSES.map((c) => [c.id, c.id === "mundano_natural" ? "Causa ordinaria" : c.label]),
 ) as Record<MeceClassId, string>;
+
+/** Etiqueta (ES) de una narrativa en el laboratorio. */
+export function narrativeLabel(id: MeceClassId): string {
+  return MECE_LABEL_BY_ID[id];
+}
 
 /** Etiqueta (ES) de la narrativa dominante de un posterior. Compartida por la
  *  dimensión y el filtro del explorer para no duplicar el mapeo argmax→label. */

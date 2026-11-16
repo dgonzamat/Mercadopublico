@@ -148,7 +148,7 @@ export const MEASURES: MeasureDef[] = [
   },
   {
     key: "probability",
-    label: { es: "Probabilidad (%)", en: "Probability (%)" },
+    label: { es: "Sin causa conocida (%)", en: "No known cause (%)" },
     value: (c) => c.probability,
     aggs: ["avg", "median", "min", "max"],
   },

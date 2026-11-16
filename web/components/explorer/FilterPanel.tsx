@@ -145,7 +145,7 @@ export function FilterPanel({
       </FilterGroup>
 
       {/* PROBABILITY RANGE */}
-      <FilterGroup label={{ es: "Probabilidad (%)", en: "Probability (%)" }} locale={locale}>
+      <FilterGroup label={{ es: "Sin causa conocida (%)", en: "No known cause (%)" }} locale={locale}>
         <div className="flex items-center gap-2">
           <NumberInput
             placeholder="0"
