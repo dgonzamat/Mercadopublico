@@ -278,6 +278,9 @@ export function CasePosterior({
   // Las dos explicaciones que siguen a la mayor, sin el indeterminado (no es
   // una explicación) ni las de menos de 5 %, que solo añadían cifras.
   const indetPct = all.find((r) => r.key === "indet")?.pct ?? 0;
+  const nhPct = unknown.filter((r) => r.key !== "indet").reduce((a, r) => a + r.pct, 0);
+  const knownBest = known.filter((r) => !r.zero && r.pct > 0).sort((a, b) => b.pct - a.pct)[0];
+  const knownTop = knownBest ? { ...nameOf(knownBest), pct: knownBest.pct } : undefined;
   const next = all
     .filter((r) => !r.zero && r.key !== top.key && r.key !== "indet" && r.pct >= 5)
     .sort((a, b) => b.pct - a.pct)
@@ -336,12 +339,24 @@ export function CasePosterior({
           </p>
           <p className="mb-3 mt-1 text-base text-text">
             <T es={topText.es + "."} en={topText.en + "."} locale={locale} />
-            {next.length > 0 && (
+            {/* Se desglosa la cifra grande en vez de listar «no humano 17 %» como si
+                estuviera fuera del 56 % que ya lo incluye (Nimitz, nov 2026). */}
+            {nhPct > 0 && (
               <>
                 {" "}
                 <T
-                  es={`Las que más pesan: ${next.map((r) => `${r.es}\u00a0(${r.pct}%)`).join(" y ")}.`}
-                  en={`The largest shares: ${next.map((r) => `${r.en}\u00a0(${r.pct}%)`).join(" and ")}.`}
+                  es={`De ese ${lead.sub}%, un ${indetPct}% queda sin decidir y un ${nhPct}% apunta a un origen no humano.`}
+                  en={`Of that ${lead.sub}%, ${indetPct}% is undecided and ${nhPct}% points to a non-human origin.`}
+                  locale={locale}
+                />
+              </>
+            )}
+            {knownTop && (
+              <>
+                {" "}
+                <T
+                  es={`Entre las causas conocidas, la que más pesa: ${knownTop.es}\u00a0(${knownTop.pct}%).`}
+                  en={`Among known causes, the largest: ${knownTop.en}\u00a0(${knownTop.pct}%).`}
                   locale={locale}
                 />
               </>
