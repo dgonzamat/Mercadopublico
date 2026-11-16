@@ -8,8 +8,8 @@
   "country_name": "Estados Unidos",
   "flag": "🇺🇸",
   "location": {
-    "lat": 41.98,
-    "lng": -87.9,
+    "lat": 41.9786,
+    "lng": -87.9048,
     "place": "Aeropuerto Internacional O'Hare, Chicago",
     "place_en": "O'Hare International Airport, Chicago",
     "precision": "exact"

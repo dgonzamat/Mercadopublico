@@ -12,7 +12,7 @@
     "lng": -64.87,
     "place": "Extremo oeste de las Bermudas",
     "place_en": "West end of Bermuda",
-    "precision": "exact"
+    "precision": "approx"
   },
   "tier": "A",
   "epistemicStatus": "documented",

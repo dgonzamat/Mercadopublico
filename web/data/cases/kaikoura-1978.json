@@ -12,7 +12,7 @@
     "lng": 173.69,
     "place": "Kaikōura, Isla Sur, Nueva Zelanda",
     "place_en": "Kaikōura, South Island, New Zealand",
-    "precision": "exact"
+    "precision": "approx"
   },
   "tier": "S",
   "mundanoType": "misid",
