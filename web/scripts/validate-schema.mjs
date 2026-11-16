@@ -78,6 +78,11 @@ const isFacebookVideo = (v) => {
   const href = decodeURIComponent(v.slice(FACEBOOK_EMBED.length).split("&")[0]);
   return /^https:\/\/www\.facebook\.com\/(reel\/\d+|watch\/\?v=\d+|[\w.]+\/videos\/\d+)\/?$/.test(href);
 };
+// Reproductor de X (nov 2026): el mismo criterio, para el video oficial que una
+// institución publicó solo en X (vuelo 15 de Starship, Secretaría de Prensa
+// de El Salvador). El id del post es numérico; nada más se admite.
+const X_EMBED = "https://platform.twitter.com/embed/Tweet.html?id=";
+const isXVideo = (v) => typeof v === "string" && v.startsWith(X_EMBED) && /^\d+(&theme=light)?$/.test(v.slice(X_EMBED.length));
 const isHttpUrl = (v) => typeof v === "string" && /^https?:\/\/\S+$/.test(v);
 // Bandera: dos símbolos indicadores regionales (emoji de país, p. ej. 🇦🇷).
 const isFlag = (v) =>
@@ -176,7 +181,7 @@ function validateDocEmbeds(w, docs) {
       docs.forEach((d, j) => {
         const dw = `${w}.documents[${j}]`;
         const isDvids = isStr(d.src) && d.src.startsWith(DVIDS_EMBED);
-        const isFb = isFacebookVideo(d.src);
+        const isFb = isFacebookVideo(d.src) || isXVideo(d.src);
         if (!isStr(d.src)) err(dw, "src obligatorio (string)");
         else if (d.type === "link") {
           // Tarjeta sin visor: el src es el original, fuera del sitio.
@@ -192,9 +197,9 @@ function validateDocEmbeds(w, docs) {
         if (isDvids && d.type !== "video")
           err(dw, `el player de DVIDS solo admite type "video", no "${d.type}": "${d.src}"`);
         if (d.type === "video" && !isDvids && !isFb)
-          err(dw, `type "video" exige src del player de DVIDS (${DVIDS_EMBED}<id>) o el reproductor de Facebook de un video original (${FACEBOOK_EMBED}<url del video>): "${d.src}"`);
+          err(dw, `type "video" exige src del player de DVIDS (${DVIDS_EMBED}<id>) o el reproductor de Facebook o de X de un video original (${FACEBOOK_EMBED}<url del video>, ${X_EMBED}<id del post>): "${d.src}"`);
         if (isFb && (d.type !== "video" || d.role !== "prueba"))
-          err(dw, `el reproductor de Facebook solo admite type "video" con role "prueba" (el video original del testigo): "${d.src}"`);
+          err(dw, `el reproductor de Facebook o de X solo admite type "video" con role "prueba" (el video original del testigo): "${d.src}"`);
         if (d.type === "video" && isDvids && !/^\d+$/.test(d.src.slice(DVIDS_EMBED.length)))
           err(dw, `src de DVIDS debe terminar en el id numérico del video: "${d.src}"`);
         if (isStr(d.src) && d.type === "pdf" && !/\.pdf$/i.test(d.src))

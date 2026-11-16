@@ -615,7 +615,6 @@ const VISUAL_CERRADO_POR_LICENCIA = {
   "omdurman-2015": "solo prensa; no se publicaron fotos de los restos ni datos del radar; Commons seco con «Wadi Seidna»",
   "vaddo-1956": "la foto de la pieza sale de UFO-Sverige y Nordic UFO Newsletter (copyright); Commons seco",
   // Ficha nueva del 16 nov 2026 (detalle en docs/registros.md):
-  "starship-vuelo-15-centroamerica-2026": "videos de redes y de prensa con copyright; el video de la Presidencia de El Salvador y el comunicado de la AHAC no declaran licencia; Commons solo tiene la captura de la nave, sin el paso visto desde tierra",
 };
 
 // Guard: la exención no puede volverse un desván. Si un caso exento consiguió
