@@ -11,7 +11,8 @@
     "lat": 50.85,
     "lng": -101.7,
     "place": "Campo de colza cerca de Langenburg, Saskatchewan (Canadá)",
-    "place_en": "Rapeseed field near Langenburg, Saskatchewan, Canada"
+    "place_en": "Rapeseed field near Langenburg, Saskatchewan, Canada",
+    "precision": "exact"
   },
   "tier": "A",
   "mundanoType": "sin_propuesta",

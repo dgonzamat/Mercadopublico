@@ -11,7 +11,8 @@
     "lat": 49.094,
     "lng": 1.485,
     "place": "Vernon, Eure, Francia (sobre el Sena)",
-    "place_en": "Vernon, Eure, France (over the Seine)"
+    "place_en": "Vernon, Eure, France (over the Seine)",
+    "precision": "exact"
   },
   "tier": "B",
   "epistemicStatus": "documented",

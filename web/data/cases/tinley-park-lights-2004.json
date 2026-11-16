@@ -11,7 +11,8 @@
     "lat": 41.5731,
     "lng": -87.7845,
     "place": "Tinley Park, Illinois (área metropolitana de Chicago)",
-    "place_en": "Tinley Park, Illinois (Chicago metropolitan area)"
+    "place_en": "Tinley Park, Illinois (Chicago metropolitan area)",
+    "precision": "exact"
   },
   "tier": "A",
   "mundanoType": "misid",

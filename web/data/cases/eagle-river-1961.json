@@ -11,7 +11,8 @@
     "lat": 45.9172,
     "lng": -89.2443,
     "place": "Eagle River (condado de Vilas), Wisconsin",
-    "place_en": "Eagle River (Vilas County), Wisconsin"
+    "place_en": "Eagle River (Vilas County), Wisconsin",
+    "precision": "exact"
   },
   "tier": "B",
   "mundanoType": "psicosocial",

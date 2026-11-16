@@ -14,7 +14,8 @@
     "lat": 27,
     "lng": 47,
     "place": "Noreste de Arabia Saudita, en vuelo a 39.000 pies",
-    "place_en": "North-eastern Saudi Arabia, in flight at 39,000 ft"
+    "place_en": "North-eastern Saudi Arabia, in flight at 39,000 ft",
+    "precision": "approx"
   },
   "tier": "S",
   "epistemicStatus": "documented",

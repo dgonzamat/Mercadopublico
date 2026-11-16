@@ -11,7 +11,8 @@
     "lat": 59.99,
     "lng": 18.82,
     "place": "Isla de Väddö, Roslagen, al norte de Estocolmo, Suecia",
-    "place_en": "Island of Väddö, Roslagen, north of Stockholm, Sweden"
+    "place_en": "Island of Väddö, Roslagen, north of Stockholm, Sweden",
+    "precision": "exact"
   },
   "tier": "B",
   "mundanoType": "sin_propuesta",

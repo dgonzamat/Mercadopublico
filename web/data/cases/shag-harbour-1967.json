@@ -11,7 +11,8 @@
     "lat": 43.49,
     "lng": -65.69,
     "place": "Shag Harbour, Nueva Escocia (Canadá)",
-    "place_en": "Shag Harbour, Nova Scotia, Canada"
+    "place_en": "Shag Harbour, Nova Scotia, Canada",
+    "precision": "exact"
   },
   "tier": "A",
   "mundanoType": "sin_propuesta",

@@ -14,7 +14,8 @@
     "lat": 63.78,
     "lng": -171.74,
     "place": "Gambell, isla de San Lorenzo, Alaska",
-    "place_en": "Gambell, St. Lawrence Island, Alaska"
+    "place_en": "Gambell, St. Lawrence Island, Alaska",
+    "precision": "exact"
   },
   "tier": "A",
   "epistemicStatus": "documented",

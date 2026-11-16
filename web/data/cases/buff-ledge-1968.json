@@ -11,7 +11,8 @@
     "lat": 44.55,
     "lng": -73.25,
     "place": "Campamento Buff Ledge, Colchester, Vermont",
-    "place_en": "Buff Ledge Camp, Colchester, Vermont"
+    "place_en": "Buff Ledge Camp, Colchester, Vermont",
+    "precision": "exact"
   },
   "tier": "B",
   "mundanoType": "psicosocial",

@@ -11,7 +11,8 @@
     "lat": 44.4517,
     "lng": -83.3942,
     "place": "Base aérea de Wurtsmith, Oscoda, Michigan, EE. UU.",
-    "place_en": "Wurtsmith Air Force Base, Oscoda, Michigan, U.S."
+    "place_en": "Wurtsmith Air Force Base, Oscoda, Michigan, U.S.",
+    "precision": "exact"
   },
   "tier": "S",
   "epistemicStatus": "documented",

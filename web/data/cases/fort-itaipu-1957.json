@@ -11,7 +11,8 @@
     "lat": -23.997,
     "lng": -46.388,
     "place": "Forte de Itaipu, Praia Grande, São Paulo, Brasil",
-    "place_en": "Forte de Itaipu, Praia Grande, São Paulo, Brazil"
+    "place_en": "Forte de Itaipu, Praia Grande, São Paulo, Brazil",
+    "precision": "exact"
   },
   "tier": "B",
   "epistemicStatus": "documented",

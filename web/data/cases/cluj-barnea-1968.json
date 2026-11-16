@@ -11,7 +11,8 @@
     "lat": 46.778,
     "lng": 23.545,
     "place": "Bosque de Hoia-Baciu, cerca de Cluj",
-    "place_en": "Hoia-Baciu forest, near Cluj"
+    "place_en": "Hoia-Baciu forest, near Cluj",
+    "precision": "exact"
   },
   "tier": "A",
   "mundanoType": "misid",

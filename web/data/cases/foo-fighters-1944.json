@@ -15,7 +15,8 @@
     "lat": 48.58,
     "lng": 7.75,
     "place": "Valle del Rin (frente occidental)",
-    "place_en": "Rhine Valley (Western Front)"
+    "place_en": "Rhine Valley (Western Front)",
+    "precision": "approx"
   },
   "tier": "A",
   "category": "incident",

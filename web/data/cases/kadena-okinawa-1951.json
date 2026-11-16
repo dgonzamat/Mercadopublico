@@ -11,7 +11,8 @@
     "lat": 26.415,
     "lng": 127.797,
     "place": "Al norte de la base aérea de Kadena, Okinawa (hoy Japón)",
-    "place_en": "North of Kadena Air Base, Okinawa (today Japan)"
+    "place_en": "North of Kadena Air Base, Okinawa (today Japan)",
+    "precision": "exact"
   },
   "tier": "S",
   "epistemicStatus": "documented",

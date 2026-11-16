@@ -12,7 +12,8 @@
     "lat": 50.364,
     "lng": 30.497,
     "place": "Holosiiv (Kyiv) y Vinarivka, región de Kyiv",
-    "place_en": "Holosiiv (Kyiv) and Vinarivka, Kyiv region"
+    "place_en": "Holosiiv (Kyiv) and Vinarivka, Kyiv region",
+    "precision": "exact"
   },
   "tier": "S",
   "mundanoType": "misid",

@@ -11,7 +11,8 @@
     "lat": 35.553,
     "lng": 139.781,
     "place": "Base aérea de Haneda, bahía de Tokio",
-    "place_en": "Haneda Air Base, Tokyo Bay"
+    "place_en": "Haneda Air Base, Tokyo Bay",
+    "precision": "exact"
   },
   "tier": "S",
   "mundanoType": "misid",

@@ -11,7 +11,8 @@
     "lat": 33.089,
     "lng": 35.226,
     "place": "Arab el-Aramsha, Galilea Occidental (frontera con el Líbano, Israel)",
-    "place_en": "Arab el-Aramsha, Western Galilee (Lebanese border, Israel)"
+    "place_en": "Arab el-Aramsha, Western Galilee (Lebanese border, Israel)",
+    "precision": "exact"
   },
   "tier": "A",
   "epistemicStatus": "documented",

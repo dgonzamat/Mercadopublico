@@ -11,7 +11,8 @@
     "lat": 29.5593,
     "lng": -95.09,
     "place": "Centro Espacial Johnson de la NASA (Houston, Texas)",
-    "place_en": "NASA Johnson Space Center (Houston, Texas)"
+    "place_en": "NASA Johnson Space Center (Houston, Texas)",
+    "precision": "none"
   },
   "tier": "S",
   "mundanoType": "misid",

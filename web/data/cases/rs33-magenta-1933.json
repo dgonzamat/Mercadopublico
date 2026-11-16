@@ -11,7 +11,8 @@
     "lat": 45.72,
     "lng": 8.69,
     "place": "Vergiate / Magenta, Lombardía, Italia",
-    "place_en": "Vergiate / Magenta, Lombardy, Italy"
+    "place_en": "Vergiate / Magenta, Lombardy, Italy",
+    "precision": "exact"
   },
   "tier": "B",
   "mundanoType": "fraude",

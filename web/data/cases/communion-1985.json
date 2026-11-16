@@ -11,7 +11,8 @@
     "lat": 41.62,
     "lng": -74.3,
     "place": "Cabaña en el norte del estado de Nueva York",
-    "place_en": "Cabin in upstate New York"
+    "place_en": "Cabin in upstate New York",
+    "precision": "exact"
   },
   "tier": "B",
   "mundanoType": "psicosocial",

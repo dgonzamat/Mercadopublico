@@ -11,7 +11,8 @@
     "lat": -18.879,
     "lng": 47.508,
     "place": "Tananarive (Antananarivo), Madagascar",
-    "place_en": "Tananarive (Antananarivo), Madagascar"
+    "place_en": "Tananarive (Antananarivo), Madagascar",
+    "precision": "exact"
   },
   "tier": "B",
   "category": "incident",

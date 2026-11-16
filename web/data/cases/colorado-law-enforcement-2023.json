@@ -11,7 +11,8 @@
     "lat": 39.06,
     "lng": -105.55,
     "place": "Una autopista interestatal de Colorado",
-    "place_en": "An interstate highway in Colorado"
+    "place_en": "An interstate highway in Colorado",
+    "precision": "exact"
   },
   "tier": "A",
   "mundanoType": "instrumento",

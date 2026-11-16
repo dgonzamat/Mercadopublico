@@ -14,7 +14,8 @@
     "lat": 65.75,
     "lng": -169.05,
     "place": "Isla Gran Diómedes (entonces URSS), frente a Alaska",
-    "place_en": "Big Diomede Island (then USSR), facing Alaska"
+    "place_en": "Big Diomede Island (then USSR), facing Alaska",
+    "precision": "exact"
   },
   "tier": "B",
   "epistemicStatus": "documented",

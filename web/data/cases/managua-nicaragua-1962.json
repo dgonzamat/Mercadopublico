@@ -11,7 +11,8 @@
     "lat": 12.136,
     "lng": -86.251,
     "place": "Managua y la costa del Pacífico, Nicaragua",
-    "place_en": "Managua and the Pacific coast, Nicaragua"
+    "place_en": "Managua and the Pacific coast, Nicaragua",
+    "precision": "exact"
   },
   "tier": "B",
   "epistemicStatus": "documented",

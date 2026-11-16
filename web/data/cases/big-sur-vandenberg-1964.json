@@ -11,7 +11,8 @@
     "lat": 36.2704,
     "lng": -121.8081,
     "place": "Estación óptica de Big Sur, California",
-    "place_en": "Big Sur optical tracking station, California"
+    "place_en": "Big Sur optical tracking station, California",
+    "precision": "exact"
   },
   "tier": "B",
   "mundanoType": "misid",

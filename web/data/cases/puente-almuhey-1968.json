@@ -11,7 +11,8 @@
     "lat": 42.825,
     "lng": -4.965,
     "place": "Puente Almuhey y la carretera de Guardo (León)",
-    "place_en": "Puente Almuhey and the Guardo road (León)"
+    "place_en": "Puente Almuhey and the Guardo road (León)",
+    "precision": "exact"
   },
   "tier": "B",
   "mundanoType": "misid",

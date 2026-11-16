@@ -11,7 +11,8 @@
     "lat": 49.4521,
     "lng": 11.0767,
     "place": "Núremberg, Sacro Imperio Romano Germánico",
-    "place_en": "Nuremberg, Holy Roman Empire"
+    "place_en": "Nuremberg, Holy Roman Empire",
+    "precision": "exact"
   },
   "tier": "B",
   "mundanoType": "folclore",

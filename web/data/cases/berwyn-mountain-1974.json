@@ -11,7 +11,8 @@
     "lat": 52.943,
     "lng": -3.433,
     "place": "Montes Berwyn, Llandrillo (Gales)",
-    "place_en": "Berwyn Mountains, Llandrillo (Wales)"
+    "place_en": "Berwyn Mountains, Llandrillo (Wales)",
+    "precision": "exact"
   },
   "tier": "A",
   "category": "incident",

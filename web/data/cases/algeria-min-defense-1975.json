@@ -11,7 +11,8 @@
     "lat": 36.75,
     "lng": 3.04,
     "place": "Argel · Ministerio de Defensa Nacional",
-    "place_en": "Algiers · Ministry of National Defence"
+    "place_en": "Algiers · Ministry of National Defence",
+    "precision": "exact"
   },
   "tier": "A",
   "mundanoType": "misid",

@@ -11,7 +11,8 @@
     "lat": -62.4,
     "lng": -59.45,
     "place": "Refugio Coppermine, isla Robert, islas Shetland del Sur (Antártida)",
-    "place_en": "Coppermine refuge, Robert Island, South Shetland Islands (Antarctica)"
+    "place_en": "Coppermine refuge, Robert Island, South Shetland Islands (Antarctica)",
+    "precision": "exact"
   },
   "tier": "B",
   "mundanoType": "sin_propuesta",

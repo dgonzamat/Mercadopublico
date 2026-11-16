@@ -11,7 +11,8 @@
     "lat": 41.5,
     "lng": -73.9,
     "place": "Valle del Hudson, Nueva York y Connecticut",
-    "place_en": "Hudson Valley, New York and Connecticut"
+    "place_en": "Hudson Valley, New York and Connecticut",
+    "precision": "approx"
   },
   "tier": "A",
   "mundanoType": "misid",

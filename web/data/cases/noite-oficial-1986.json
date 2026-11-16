@@ -11,7 +11,8 @@
     "lat": -23.18,
     "lng": -45.88,
     "place": "Cielo de São Paulo, Río de Janeiro y Goiás",
-    "place_en": "Skies over São Paulo, Rio de Janeiro and Goiás"
+    "place_en": "Skies over São Paulo, Rio de Janeiro and Goiás",
+    "precision": "approx"
   },
   "tier": "S",
   "epistemicStatus": "documented",

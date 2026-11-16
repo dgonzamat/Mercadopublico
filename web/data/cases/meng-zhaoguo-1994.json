@@ -11,7 +11,8 @@
     "lat": 44.92,
     "lng": 127.15,
     "place": "Campamento maderero Hongqi (Bandera Roja), Wuchang, Heilongjiang",
-    "place_en": "Red Flag (Hongqi) logging camp, Wuchang, Heilongjiang"
+    "place_en": "Red Flag (Hongqi) logging camp, Wuchang, Heilongjiang",
+    "precision": "exact"
   },
   "tier": "B",
   "mundanoType": "psicosocial",

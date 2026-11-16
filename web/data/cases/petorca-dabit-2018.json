@@ -11,7 +11,8 @@
     "lat": -32.2515,
     "lng": -70.8352,
     "place": "Sobre la provincia de Petorca (región de Valparaíso)",
-    "place_en": "Over Petorca province (Valparaíso region)"
+    "place_en": "Over Petorca province (Valparaíso region)",
+    "precision": "approx"
   },
   "tier": "A",
   "mundanoType": "misid",

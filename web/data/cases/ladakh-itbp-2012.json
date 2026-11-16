@@ -11,7 +11,8 @@
     "lat": 33.79,
     "lng": 78.81,
     "place": "Pangong Tso · Thakung · Ladakh",
-    "place_en": "Pangong Tso · Thakung · Ladakh"
+    "place_en": "Pangong Tso · Thakung · Ladakh",
+    "precision": "exact"
   },
   "tier": "A",
   "mundanoType": "misid",

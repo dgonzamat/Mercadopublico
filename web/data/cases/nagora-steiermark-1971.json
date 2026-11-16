@@ -11,7 +11,8 @@
     "lat": 46.7,
     "lng": 15.25,
     "place": "Suroeste de Graz, Estiria, Austria (lugar exacto sin localizar)",
-    "place_en": "Southwest of Graz, Styria, Austria (exact spot not located)"
+    "place_en": "Southwest of Graz, Styria, Austria (exact spot not located)",
+    "precision": "approx"
   },
   "tier": "A",
   "category": "incident",

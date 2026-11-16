@@ -11,7 +11,8 @@
     "lat": 34.0522,
     "lng": -118.2437,
     "place": "Los Ángeles, California",
-    "place_en": "Los Angeles, California"
+    "place_en": "Los Angeles, California",
+    "precision": "exact"
   },
   "tier": "A",
   "mundanoType": "misid",

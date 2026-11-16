@@ -11,7 +11,8 @@
     "lat": 37.3059,
     "lng": -89.5181,
     "place": "Cerca de Cape Girardeau, Misuri (sitio exacto en disputa)",
-    "place_en": "Near Cape Girardeau, Missouri (exact site disputed)"
+    "place_en": "Near Cape Girardeau, Missouri (exact site disputed)",
+    "precision": "exact"
   },
   "tier": "B",
   "epistemicStatus": "documented",

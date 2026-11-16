@@ -11,7 +11,8 @@
     "lat": -25,
     "lng": 22,
     "place": "Desierto del Kalahari (frontera Sudáfrica–Botsuana)",
-    "place_en": "Kalahari Desert (South Africa–Botswana border)"
+    "place_en": "Kalahari Desert (South Africa–Botswana border)",
+    "precision": "approx"
   },
   "tier": "B",
   "category": "incident",

@@ -11,7 +11,8 @@
     "lat": 34.98,
     "lng": -78.75,
     "place": "Río Cape Fear, cerca de Fayetteville, Carolina del Norte",
-    "place_en": "Cape Fear River, near Fayetteville, North Carolina"
+    "place_en": "Cape Fear River, near Fayetteville, North Carolina",
+    "precision": "exact"
   },
   "tier": "B",
   "mundanoType": "sin_propuesta",

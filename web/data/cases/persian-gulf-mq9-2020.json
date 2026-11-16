@@ -11,7 +11,8 @@
     "lat": 28.2,
     "lng": 51.0,
     "place": "Golfo Pérsico, frente a la costa de Irán",
-    "place_en": "Persian Gulf, off the coast of Iran"
+    "place_en": "Persian Gulf, off the coast of Iran",
+    "precision": "approx"
   },
   "tier": "S",
   "epistemicStatus": "documented",

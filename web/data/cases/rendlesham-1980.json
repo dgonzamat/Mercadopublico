@@ -11,7 +11,8 @@
     "lat": 52.09,
     "lng": 1.46,
     "place": "Bosque de Rendlesham, Suffolk (Inglaterra)",
-    "place_en": "Rendlesham Forest, Suffolk, England"
+    "place_en": "Rendlesham Forest, Suffolk, England",
+    "precision": "exact"
   },
   "tier": "A",
   "mundanoType": "misid",

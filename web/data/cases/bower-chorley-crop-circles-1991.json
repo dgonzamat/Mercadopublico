@@ -12,7 +12,8 @@
     "lat": 51.0688,
     "lng": -1.795,
     "place": "Hampshire / Wiltshire, sur de Inglaterra",
-    "place_en": "Hampshire / Wiltshire, southern England"
+    "place_en": "Hampshire / Wiltshire, southern England",
+    "precision": "exact"
   },
   "tier": "B",
   "mundanoType": "fraude",

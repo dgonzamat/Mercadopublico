@@ -2313,6 +2313,28 @@ const HYPE_REVIEWED = new Set(["lakenheath-bentwaters-1956", "morocco-gendarmeri
   if (parts.length) record("WARN", casesDir, 0, `E60 texto del redactor en notas de fuentes y documentos: ${parts.join(" · ")}. El lector ve la nota tal cual: reescribirla como dato o quitarla.`);
 }
 
+// ─── 9zf4. RULE E61: la precisión del lugar casa con lo que dice el lugar ───
+//
+// El mapa de la región (16 nov 2026) dibuja un punto si `location.precision`
+// es «exact», una zona si es «approx» y nada si es «none». Al revisar las
+// coordenadas para el mapa, 32 fichas sin lugar revelado tenían coordenadas de
+// relleno (Oriente Medio en 33, 44, Bagdad) y los sucesos en órbita o en la
+// Luna apuntaban a Houston o a Cabo Cañaveral: un punto ahí afirmaría un lugar
+// que la fuente no da. ERROR si un lugar «no revelado» o fuera de la Tierra no
+// es «none», o si un punto «exact» tiene coordenadas enteras (de relleno).
+{
+  const NOT_DISCLOSED = /no revelad|no divulgad|clasificad|reservad/i;
+  const OFF_EARTH = /órbita|cislunar|interestelar|superficie de la Luna|STS-|Skylab|Salyut/i;
+  const bad = [];
+  for (const c of cases) {
+    const l = c.location ?? {};
+    const text = `${l.place ?? ""} ${c.country_name ?? ""}`;
+    if ((NOT_DISCLOSED.test(text) || OFF_EARTH.test(text)) && l.precision !== "none") bad.push(`${c.id} (${l.precision}: «${l.place}»)`);
+    else if (l.precision === "exact" && Number.isInteger(l.lat) && Number.isInteger(l.lng)) bad.push(`${c.id} (exact con coordenadas enteras ${l.lat}, ${l.lng})`);
+  }
+  if (bad.length) record("ERROR", casesDir, 0, `E61 precisión del lugar incoherente en ${bad.length} ficha(s): ${bad.slice(0, 5).join(" · ")}${bad.length > 5 ? "…" : ""}. Un lugar no revelado o fuera de la Tierra va con precision «none» (sin mapa); un punto «exact» no puede ser de relleno.`);
+}
+
 // ─── 9zg. RULE E54: comillas, ortografía y fechas de la guía de redacción ─
 //
 // El diagnóstico de los relatos (oct 2026) halló, en las 397 fichas, tres

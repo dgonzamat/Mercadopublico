@@ -14,7 +14,8 @@
     "lat": 59.33,
     "lng": 18.07,
     "place": "Suecia",
-    "place_en": "Sweden"
+    "place_en": "Sweden",
+    "precision": "exact"
   },
   "tier": "A",
   "mundanoType": "misid",

@@ -11,7 +11,8 @@
     "lat": 32.78,
     "lng": -79.35,
     "place": "Montana y costa de Carolina del Sur, Estados Unidos",
-    "place_en": "Montana and the South Carolina coast, United States"
+    "place_en": "Montana and the South Carolina coast, United States",
+    "precision": "exact"
   },
   "tier": "S",
   "mundanoType": "misid",

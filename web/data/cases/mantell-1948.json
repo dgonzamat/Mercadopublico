@@ -7,10 +7,11 @@
   "country_name": "Estados Unidos",
   "flag": "🇺🇸",
   "location": {
-    "lat": 37,
-    "lng": -85.5,
-    "place": "Kentucky",
-    "place_en": "Kentucky"
+    "lat": 37.907,
+    "lng": -85.972,
+    "place": "Godman Field, Fort Knox (Kentucky)",
+    "place_en": "Godman Field, Fort Knox, Kentucky",
+    "precision": "exact"
   },
   "tier": "A",
   "epistemicStatus": "documented",

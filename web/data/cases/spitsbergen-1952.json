@@ -11,7 +11,8 @@
     "lat": 78.0,
     "lng": 16.0,
     "place": "Spitsbergen, Svalbard, Noruega",
-    "place_en": "Spitsbergen, Svalbard, Norway"
+    "place_en": "Spitsbergen, Svalbard, Norway",
+    "precision": "approx"
   },
   "tier": "B",
   "mundanoType": "fraude",

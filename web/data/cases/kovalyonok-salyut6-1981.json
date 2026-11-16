@@ -11,7 +11,8 @@
     "lat": -33,
     "lng": 28,
     "place": "Órbita terrestre sobre el sur de África, estación Salyut-6",
-    "place_en": "Earth orbit over southern Africa, Salyut-6 space station"
+    "place_en": "Earth orbit over southern Africa, Salyut-6 space station",
+    "precision": "none"
   },
   "tier": "B",
   "mundanoType": "misid",

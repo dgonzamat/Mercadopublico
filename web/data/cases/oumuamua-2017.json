@@ -11,7 +11,8 @@
     "lat": 20.71,
     "lng": -156.26,
     "place": "Observatorio Pan-STARRS, Haleakalā (Hawái)",
-    "place_en": "Pan-STARRS Observatory, Haleakalā (Hawaii)"
+    "place_en": "Pan-STARRS Observatory, Haleakalā (Hawaii)",
+    "precision": "none"
   },
   "tier": "S",
   "mundanoType": "natural",

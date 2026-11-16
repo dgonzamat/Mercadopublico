@@ -11,7 +11,8 @@
     "lat": -17.66,
     "lng": 31.05,
     "place": "Ruwa, Zimbabwe",
-    "place_en": "Ruwa, Zimbabwe"
+    "place_en": "Ruwa, Zimbabwe",
+    "precision": "exact"
   },
   "tier": "A",
   "mundanoType": "psicosocial",

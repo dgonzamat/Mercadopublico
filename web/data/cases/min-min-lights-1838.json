@@ -11,7 +11,8 @@
     "lat": -22.9117,
     "lng": 139.9,
     "place": "Channel Country, entre Boulia y Winton, Queensland",
-    "place_en": "Channel Country, between Boulia and Winton, Queensland"
+    "place_en": "Channel Country, between Boulia and Winton, Queensland",
+    "precision": "approx"
   },
   "tier": "B",
   "mundanoType": "natural",

@@ -14,7 +14,8 @@
     "lat": 32.09,
     "lng": 36.9,
     "place": "Siria, cerca de la frontera con Jordania (lugar sin confirmar)",
-    "place_en": "Syria, near the Jordanian border (location unconfirmed)"
+    "place_en": "Syria, near the Jordanian border (location unconfirmed)",
+    "precision": "approx"
   },
   "tier": "B",
   "epistemicStatus": "documented",

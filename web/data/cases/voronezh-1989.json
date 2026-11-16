@@ -11,7 +11,8 @@
     "lat": 51.67,
     "lng": 39.21,
     "place": "Voronezh, URSS (hoy Rusia)",
-    "place_en": "Voronezh, USSR (now Russia)"
+    "place_en": "Voronezh, USSR (now Russia)",
+    "precision": "exact"
   },
   "tier": "B",
   "mundanoType": "psicosocial",

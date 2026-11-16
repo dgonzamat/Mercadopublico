@@ -11,7 +11,8 @@
     "lat": 51.2795,
     "lng": -0.7765,
     "place": "Royal Aircraft Establishment, Farnborough (Hampshire)",
-    "place_en": "Royal Aircraft Establishment, Farnborough (Hampshire)"
+    "place_en": "Royal Aircraft Establishment, Farnborough (Hampshire)",
+    "precision": "exact"
   },
   "tier": "B",
   "mundanoType": "misid",

@@ -12,7 +12,8 @@
     "lat": 38.8451,
     "lng": -82.1371,
     "place": "Point Pleasant, Virginia Occidental",
-    "place_en": "Point Pleasant, West Virginia"
+    "place_en": "Point Pleasant, West Virginia",
+    "precision": "exact"
   },
   "tier": "B",
   "mundanoType": "misid",

@@ -12,7 +12,8 @@
     "lat": 5.3626,
     "lng": 100.4661,
     "place": "Escuela Stowell, Bukit Mertajam (Penang), Malasia",
-    "place_en": "Stowell School, Bukit Mertajam (Penang), Malaysia"
+    "place_en": "Stowell School, Bukit Mertajam (Penang), Malaysia",
+    "precision": "exact"
   },
   "tier": "B",
   "category": "incident",

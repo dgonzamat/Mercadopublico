@@ -14,7 +14,8 @@
     "lat": -4.06,
     "lng": 144.07,
     "place": "Cielo de Papúa Nueva Guinea, cerca de Angoram (Sepik Oriental)",
-    "place_en": "Skies over Papua New Guinea, near Angoram (East Sepik Province)"
+    "place_en": "Skies over Papua New Guinea, near Angoram (East Sepik Province)",
+    "precision": "approx"
   },
   "tier": "B",
   "mundanoType": "misid",

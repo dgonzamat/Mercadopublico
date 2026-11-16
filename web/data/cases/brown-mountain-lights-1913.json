@@ -11,7 +11,8 @@
     "lat": 35.9333,
     "lng": -81.7833,
     "place": "Brown Mountain, condados de Burke y Caldwell, Carolina del Norte",
-    "place_en": "Brown Mountain, Burke and Caldwell counties, North Carolina"
+    "place_en": "Brown Mountain, Burke and Caldwell counties, North Carolina",
+    "precision": "exact"
   },
   "tier": "B",
   "mundanoType": "misid",

@@ -14,7 +14,8 @@
     "lat": 32,
     "lng": 54,
     "place": "Área del Comando Central de EE. UU. (ubicación no revelada)",
-    "place_en": "U.S. Central Command area (exact location undisclosed)"
+    "place_en": "U.S. Central Command area (exact location undisclosed)",
+    "precision": "none"
   },
   "tier": "B",
   "epistemicStatus": "documented",

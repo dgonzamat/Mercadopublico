@@ -11,7 +11,8 @@
     "lat": 54.85,
     "lng": -4.94,
     "place": "RAF West Freugh, Wigtownshire, Escocia",
-    "place_en": "RAF West Freugh, Wigtownshire, Scotland"
+    "place_en": "RAF West Freugh, Wigtownshire, Scotland",
+    "precision": "exact"
   },
   "tier": "S",
   "epistemicStatus": "documented",

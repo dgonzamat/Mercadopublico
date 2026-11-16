@@ -11,7 +11,8 @@
     "lat": 43.315,
     "lng": -3.0743,
     "place": "Barrio de La Florida, Gallarta (Vizcaya)",
-    "place_en": "La Florida district, Gallarta (Biscay)"
+    "place_en": "La Florida district, Gallarta (Biscay)",
+    "precision": "exact"
   },
   "tier": "B",
   "mundanoType": "fraude",

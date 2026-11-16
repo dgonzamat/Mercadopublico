@@ -11,7 +11,8 @@
     "lat": -26.98,
     "lng": -70.3925,
     "place": "Espacio aéreo al norte de Caldera (región de Atacama)",
-    "place_en": "Airspace north of Caldera (Atacama region)"
+    "place_en": "Airspace north of Caldera (Atacama region)",
+    "precision": "approx"
   },
   "tier": "B",
   "mundanoType": "sin_propuesta",

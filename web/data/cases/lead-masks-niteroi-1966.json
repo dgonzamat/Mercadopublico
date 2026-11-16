@@ -11,7 +11,8 @@
     "lat": -22.88,
     "lng": -43.1,
     "place": "Morro do Vintém, Niterói, Brasil",
-    "place_en": "Morro do Vintém, Niterói, Brazil"
+    "place_en": "Morro do Vintém, Niterói, Brazil",
+    "precision": "exact"
   },
   "tier": "B",
   "mundanoType": "psicosocial",

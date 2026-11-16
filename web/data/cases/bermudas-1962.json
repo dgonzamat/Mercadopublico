@@ -11,7 +11,8 @@
     "lat": 32.3,
     "lng": -64.87,
     "place": "Extremo oeste de las Bermudas",
-    "place_en": "West end of Bermuda"
+    "place_en": "West end of Bermuda",
+    "precision": "exact"
   },
   "tier": "A",
   "epistemicStatus": "documented",

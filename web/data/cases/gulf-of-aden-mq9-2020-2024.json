@@ -12,7 +12,8 @@
     "lat": 11.15,
     "lng": 44.2,
     "place": "Golfo de Adén, frente a la costa de Somalilandia",
-    "place_en": "Gulf of Aden, off the coast of Somaliland"
+    "place_en": "Gulf of Aden, off the coast of Somaliland",
+    "precision": "approx"
   },
   "tier": "S",
   "epistemicStatus": "documented",

@@ -11,7 +11,8 @@
     "lat": 43.83,
     "lng": 5.98,
     "place": "Valensole, Provenza (Francia)",
-    "place_en": "Valensole, Provence, France"
+    "place_en": "Valensole, Provence, France",
+    "precision": "exact"
   },
   "tier": "A",
   "mundanoType": "misid",

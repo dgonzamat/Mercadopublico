@@ -11,7 +11,8 @@
     "lat": 40.713,
     "lng": -73.999,
     "place": "Lower East Side / Puente de Brooklyn, Nueva York",
-    "place_en": "Lower East Side / Brooklyn Bridge, New York"
+    "place_en": "Lower East Side / Brooklyn Bridge, New York",
+    "precision": "exact"
   },
   "tier": "B",
   "mundanoType": "fraude",

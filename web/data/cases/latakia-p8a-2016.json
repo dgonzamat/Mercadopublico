@@ -11,7 +11,8 @@
     "lat": 36.18,
     "lng": 34.99,
     "place": "Mediterráneo oriental, frente a Latakia (Siria)",
-    "place_en": "Eastern Mediterranean, off Latakia, Syria"
+    "place_en": "Eastern Mediterranean, off Latakia, Syria",
+    "precision": "approx"
   },
   "tier": "S",
   "mundanoType": "sin_propuesta",

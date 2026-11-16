@@ -14,7 +14,8 @@
     "lat": 38.8339,
     "lng": -104.8214,
     "place": "Colorado Springs, Colorado",
-    "place_en": "Colorado Springs, Colorado"
+    "place_en": "Colorado Springs, Colorado",
+    "precision": "exact"
   },
   "tier": "B",
   "epistemicStatus": "documented",

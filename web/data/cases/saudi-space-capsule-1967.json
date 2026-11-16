@@ -11,7 +11,8 @@
     "lat": 26.43,
     "lng": 50.1,
     "place": "Provincia Oriental de Arabia Saudita (custodiado en Dammam)",
-    "place_en": "Eastern Province, Saudi Arabia (held in Dammam)"
+    "place_en": "Eastern Province, Saudi Arabia (held in Dammam)",
+    "precision": "approx"
   },
   "tier": "A",
   "epistemicStatus": "documented",

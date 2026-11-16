@@ -11,7 +11,8 @@
     "lat": 45.67,
     "lng": 12.24,
     "place": "Cerca de Treviso-Sant'Angelo (Italia)",
-    "place_en": "Near Treviso-Sant'Angelo (Italy)"
+    "place_en": "Near Treviso-Sant'Angelo (Italy)",
+    "precision": "exact"
   },
   "tier": "A",
   "mundanoType": "misid",

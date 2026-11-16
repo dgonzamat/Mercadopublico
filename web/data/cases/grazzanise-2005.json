@@ -11,7 +11,8 @@
     "lat": 41.0606,
     "lng": 14.0819,
     "place": "Base aérea de Grazzanise (Caserta)",
-    "place_en": "Grazzanise Air Base (Caserta)"
+    "place_en": "Grazzanise Air Base (Caserta)",
+    "precision": "exact"
   },
   "tier": "A",
   "mundanoType": "sin_propuesta",

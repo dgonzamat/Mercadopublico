@@ -11,7 +11,8 @@
     "lat": 38.601,
     "lng": -89.807,
     "place": "Condado de St. Clair, Illinois (Lebanon, Shiloh y Millstadt)",
-    "place_en": "St. Clair County, Illinois (Lebanon, Shiloh and Millstadt)"
+    "place_en": "St. Clair County, Illinois (Lebanon, Shiloh and Millstadt)",
+    "precision": "exact"
   },
   "tier": "A",
   "mundanoType": "sin_propuesta",

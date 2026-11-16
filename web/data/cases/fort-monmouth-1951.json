@@ -11,7 +11,8 @@
     "lat": 40.31,
     "lng": -74.03,
     "place": "Fort Monmouth, Nueva Jersey",
-    "place_en": "Fort Monmouth, New Jersey"
+    "place_en": "Fort Monmouth, New Jersey",
+    "precision": "exact"
   },
   "tier": "A",
   "mundanoType": "misid",

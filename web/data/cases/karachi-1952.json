@@ -11,7 +11,8 @@
     "lat": 24.86,
     "lng": 67.01,
     "place": "Karachi, Pakistán",
-    "place_en": "Karachi, Pakistan"
+    "place_en": "Karachi, Pakistan",
+    "precision": "exact"
   },
   "tier": "B",
   "epistemicStatus": "documented",

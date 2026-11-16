@@ -14,7 +14,8 @@
     "lat": 28.6,
     "lng": -80.6,
     "place": "Órbita terrestre baja, transbordador Columbia",
-    "place_en": "Low Earth orbit, Space Shuttle Columbia"
+    "place_en": "Low Earth orbit, Space Shuttle Columbia",
+    "precision": "none"
   },
   "tier": "A",
   "epistemicStatus": "documented",

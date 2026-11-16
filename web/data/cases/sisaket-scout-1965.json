@@ -11,7 +11,8 @@
     "lat": 15.12,
     "lng": 104.33,
     "place": "Provincia de Sisaket, noreste de Tailandia",
-    "place_en": "Sisaket province, north-eastern Thailand"
+    "place_en": "Sisaket province, north-eastern Thailand",
+    "precision": "approx"
   },
   "tier": "A",
   "epistemicStatus": "documented",

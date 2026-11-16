@@ -11,7 +11,8 @@
     "lat": 39.2253,
     "lng": -6.1508,
     "place": "Cielo de Montánchez (Cáceres) y Talavera la Real (Badajoz)",
-    "place_en": "Sky over Montánchez (Cáceres) and Talavera la Real (Badajoz)"
+    "place_en": "Sky over Montánchez (Cáceres) and Talavera la Real (Badajoz)",
+    "precision": "approx"
   },
   "tier": "S",
   "mundanoType": "misid",

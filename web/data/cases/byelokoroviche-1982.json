@@ -11,7 +11,8 @@
     "lat": 50.95,
     "lng": 28,
     "place": "Base de misiles cerca de Usovo y Byelokoroviche (Ucrania soviética)",
-    "place_en": "Missile base near Usovo and Byelokoroviche (Soviet Ukraine)"
+    "place_en": "Missile base near Usovo and Byelokoroviche (Soviet Ukraine)",
+    "precision": "exact"
   },
   "tier": "A",
   "mundanoType": "misid",

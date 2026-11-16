@@ -11,7 +11,8 @@
     "lat": 10.73,
     "lng": 34.35,
     "place": "Chali, cerca de Kurmuk, sureste de Sudán",
-    "place_en": "Chali, near Kurmuk, south-eastern Sudan"
+    "place_en": "Chali, near Kurmuk, south-eastern Sudan",
+    "precision": "exact"
   },
   "tier": "B",
   "epistemicStatus": "documented",

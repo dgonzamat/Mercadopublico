@@ -11,7 +11,8 @@
     "lat": -33.46,
     "lng": -70.69,
     "place": "Base Aérea El Bosque, Santiago (Chile)",
-    "place_en": "El Bosque Air Base, Santiago, Chile"
+    "place_en": "El Bosque Air Base, Santiago, Chile",
+    "precision": "exact"
   },
   "tier": "A",
   "mundanoType": "misid",

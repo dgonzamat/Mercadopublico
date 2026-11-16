@@ -11,7 +11,8 @@
     "lat": 8.9147,
     "lng": -79.5997,
     "place": "Zona del Canal de Panamá (bajo administración estadounidense)",
-    "place_en": "Panama Canal Zone (under U.S. administration)"
+    "place_en": "Panama Canal Zone (under U.S. administration)",
+    "precision": "exact"
   },
   "tier": "S",
   "epistemicStatus": "documented",

@@ -11,7 +11,8 @@
     "lat": 53.713,
     "lng": -2.098,
     "place": "Todmorden, West Yorkshire, Inglaterra",
-    "place_en": "Todmorden, West Yorkshire, England"
+    "place_en": "Todmorden, West Yorkshire, England",
+    "precision": "exact"
   },
   "tier": "A",
   "mundanoType": "psicosocial",

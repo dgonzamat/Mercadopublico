@@ -14,7 +14,8 @@
     "lat": 40.727,
     "lng": 8.56,
     "place": "Patio de un instituto de huérfanos de guerra, Sassari (Cerdeña)",
-    "place_en": "Courtyard of a war-orphans' school, Sassari, Sardinia"
+    "place_en": "Courtyard of a war-orphans' school, Sassari, Sardinia",
+    "precision": "exact"
   },
   "tier": "B",
   "epistemicStatus": "documented",

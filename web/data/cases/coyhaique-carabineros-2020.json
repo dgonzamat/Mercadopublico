@@ -11,7 +11,8 @@
     "lat": -45.5936,
     "lng": -72.1053,
     "place": "En vuelo sobre Coyhaique (región de Aysén)",
-    "place_en": "In flight over Coyhaique (Aysén region)"
+    "place_en": "In flight over Coyhaique (Aysén region)",
+    "precision": "exact"
   },
   "tier": "B",
   "mundanoType": "sin_propuesta",

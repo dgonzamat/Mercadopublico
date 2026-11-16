@@ -11,7 +11,8 @@
     "lat": -25.7155,
     "lng": 28.3937,
     "place": "Pretoria, Mamelodi y Cullinan, Gauteng (Sudáfrica)",
-    "place_en": "Pretoria, Mamelodi and Cullinan, Gauteng (South Africa)"
+    "place_en": "Pretoria, Mamelodi and Cullinan, Gauteng (South Africa)",
+    "precision": "exact"
   },
   "tier": "A",
   "mundanoType": "sin_propuesta",

@@ -12,7 +12,8 @@
     "lat": 55.618,
     "lng": 12.656,
     "place": "Copenhague y al menos otros siete países europeos",
-    "place_en": "Copenhagen and at least seven other European countries"
+    "place_en": "Copenhagen and at least seven other European countries",
+    "precision": "exact"
   },
   "tier": "A",
   "mundanoType": "misid",

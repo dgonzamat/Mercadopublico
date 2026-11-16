@@ -11,7 +11,8 @@
     "lat": -33,
     "lng": -71.6,
     "place": "Océano Pacífico frente a Valparaíso (Chile)",
-    "place_en": "Pacific Ocean off Valparaíso, Chile"
+    "place_en": "Pacific Ocean off Valparaíso, Chile",
+    "precision": "approx"
   },
   "tier": "S",
   "mundanoType": "misid",

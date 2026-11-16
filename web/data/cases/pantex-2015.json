@@ -14,7 +14,8 @@
     "lat": 35.32,
     "lng": -101.56,
     "place": "Planta Pantex, Amarillo (condado de Carson), Texas",
-    "place_en": "Pantex Plant, Amarillo (Carson County), Texas"
+    "place_en": "Pantex Plant, Amarillo (Carson County), Texas",
+    "precision": "exact"
   },
   "tier": "S",
   "epistemicStatus": "documented",

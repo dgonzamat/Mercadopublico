@@ -11,7 +11,8 @@
     "lat": 37.558,
     "lng": 126.791,
     "place": "Base aérea de Kimpo (hoy aeropuerto de Gimpo), Seúl, Corea del Sur",
-    "place_en": "Kimpo Air Base (today Gimpo Airport), Seoul, South Korea"
+    "place_en": "Kimpo Air Base (today Gimpo Airport), Seoul, South Korea",
+    "precision": "exact"
   },
   "tier": "A",
   "epistemicStatus": "documented",

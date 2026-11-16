@@ -14,7 +14,8 @@
     "lat": 39.5,
     "lng": -113,
     "place": "Campo de pruebas del Gobierno, oeste de EE. UU. (lugar no revelado)",
-    "place_en": "Government test range, western U.S. (location not disclosed)"
+    "place_en": "Government test range, western U.S. (location not disclosed)",
+    "precision": "none"
   },
   "tier": "B",
   "epistemicStatus": "documented",

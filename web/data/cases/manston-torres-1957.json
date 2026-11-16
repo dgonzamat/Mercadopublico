@@ -11,7 +11,8 @@
     "lat": 51.342,
     "lng": 1.346,
     "place": "Kent y East Anglia, Inglaterra",
-    "place_en": "Kent and East Anglia, England"
+    "place_en": "Kent and East Anglia, England",
+    "precision": "exact"
   },
   "tier": "B",
   "epistemicStatus": "documented",

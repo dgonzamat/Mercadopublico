@@ -11,7 +11,8 @@
     "lat": 37.0,
     "lng": -75.8,
     "place": "Costa de Virginia, Atlántico Occidental",
-    "place_en": "Virginia coast, western Atlantic"
+    "place_en": "Virginia coast, western Atlantic",
+    "precision": "approx"
   },
   "tier": "B",
   "mundanoType": "sin_propuesta",

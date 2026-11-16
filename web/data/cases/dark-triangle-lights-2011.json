@@ -14,7 +14,8 @@
     "lat": 39,
     "lng": -98,
     "place": "Zona residencial de EE.UU. (ubicación no revelada)",
-    "place_en": "U.S. residential area (undisclosed location)"
+    "place_en": "U.S. residential area (undisclosed location)",
+    "precision": "none"
   },
   "tier": "B",
   "epistemicStatus": "documented",

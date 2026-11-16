@@ -11,7 +11,8 @@
     "lat": 38.72,
     "lng": -9.14,
     "place": "Portugal, de norte a sur, y zonas de España",
-    "place_en": "Portugal, north to south, and parts of Spain"
+    "place_en": "Portugal, north to south, and parts of Spain",
+    "precision": "exact"
   },
   "tier": "A",
   "mundanoType": "misid",

@@ -10,7 +10,8 @@
     "lat": 62.78,
     "lng": 11.2,
     "place": "Valle de Hessdalen, Noruega",
-    "place_en": "Hessdalen Valley, Norway"
+    "place_en": "Hessdalen Valley, Norway",
+    "precision": "approx"
   },
   "tier": "A",
   "mundanoType": "natural",

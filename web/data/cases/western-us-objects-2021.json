@@ -12,7 +12,8 @@
     "lat": 39,
     "lng": -116,
     "place": "Campo de tiro militar, oeste de EE. UU. (ubicación no revelada)",
-    "place_en": "Military range, western U.S. (exact location undisclosed)"
+    "place_en": "Military range, western U.S. (exact location undisclosed)",
+    "precision": "none"
   },
   "tier": "A",
   "epistemicStatus": "documented",

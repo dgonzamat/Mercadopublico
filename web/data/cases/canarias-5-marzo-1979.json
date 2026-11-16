@@ -11,7 +11,8 @@
     "lat": 28.2,
     "lng": -16.2,
     "place": "Cielo del archipiélago canario",
-    "place_en": "Sky over the Canary archipelago"
+    "place_en": "Sky over the Canary archipelago",
+    "precision": "approx"
   },
   "tier": "S",
   "mundanoType": "misid",

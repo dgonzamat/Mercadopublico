@@ -11,7 +11,8 @@
     "lat": -41.15,
     "lng": -71.3,
     "place": "Aeropuerto Internacional de Bariloche (Argentina)",
-    "place_en": "Bariloche International Airport, Argentina"
+    "place_en": "Bariloche International Airport, Argentina",
+    "precision": "exact"
   },
   "tier": "A",
   "mundanoType": "misid",

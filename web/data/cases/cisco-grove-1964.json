@@ -11,7 +11,8 @@
     "lat": 39.305,
     "lng": -120.55,
     "place": "Cisco Grove, Bosque Nacional de Tahoe, California",
-    "place_en": "Cisco Grove, Tahoe National Forest, California"
+    "place_en": "Cisco Grove, Tahoe National Forest, California",
+    "precision": "exact"
   },
   "tier": "B",
   "mundanoType": "psicosocial",

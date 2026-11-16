@@ -11,7 +11,8 @@
     "lat": 50.3939,
     "lng": 3.6536,
     "place": "Quarouble, Nord, Francia",
-    "place_en": "Quarouble, Nord, France"
+    "place_en": "Quarouble, Nord, France",
+    "precision": "exact"
   },
   "tier": "B",
   "mundanoType": "psicosocial",

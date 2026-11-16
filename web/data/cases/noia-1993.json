@@ -11,7 +11,8 @@
     "lat": 42.7228,
     "lng": -8.9211,
     "place": "Escuadrón de Vigilancia Aérea n.º 10, monte Iroite (Noia, A Coruña)",
-    "place_en": "Air Surveillance Squadron No. 10, Mount Iroite (Noia, A Coruña)"
+    "place_en": "Air Surveillance Squadron No. 10, Mount Iroite (Noia, A Coruña)",
+    "precision": "exact"
   },
   "tier": "A",
   "mundanoType": "misid",

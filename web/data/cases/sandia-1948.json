@@ -16,7 +16,8 @@
     "lat": 35.05,
     "lng": -106.55,
     "place": "Base Sandia, Nuevo México",
-    "place_en": "Sandia Base, New Mexico"
+    "place_en": "Sandia Base, New Mexico",
+    "precision": "exact"
   },
   "tier": "A",
   "mundanoType": "misid",

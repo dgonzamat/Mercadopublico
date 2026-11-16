@@ -14,7 +14,8 @@
     "lat": 24.85,
     "lng": 58.75,
     "place": "Golfo de Omán",
-    "place_en": "Gulf of Oman"
+    "place_en": "Gulf of Oman",
+    "precision": "approx"
   },
   "tier": "S",
   "epistemicStatus": "documented",

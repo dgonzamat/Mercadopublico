@@ -11,7 +11,8 @@
     "lat": -18.3485,
     "lng": -70.3387,
     "place": "Aeropuerto Internacional Chacalluta, Arica (Chile)",
-    "place_en": "Chacalluta International Airport, Arica (Chile)"
+    "place_en": "Chacalluta International Airport, Arica (Chile)",
+    "precision": "exact"
   },
   "tier": "A",
   "mundanoType": "misid",

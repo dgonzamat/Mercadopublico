@@ -11,7 +11,8 @@
     "lat": 53.9,
     "lng": 27.5667,
     "place": "Cielo sobre Minsk, RSS de Bielorrusia",
-    "place_en": "Sky over Minsk, Byelorussian SSR"
+    "place_en": "Sky over Minsk, Byelorussian SSR",
+    "precision": "approx"
   },
   "tier": "A",
   "mundanoType": "misid",

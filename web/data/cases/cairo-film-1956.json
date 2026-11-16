@@ -11,7 +11,8 @@
     "lat": 30.04,
     "lng": 31.24,
     "place": "El Cairo (Egipto) y un destructor en posición incierta",
-    "place_en": "Cairo (Egypt) and a destroyer at an uncertain position"
+    "place_en": "Cairo (Egypt) and a destroyer at an uncertain position",
+    "precision": "exact"
   },
   "tier": "B",
   "epistemicStatus": "documented",

@@ -11,7 +11,8 @@
     "lat": 41.7102,
     "lng": -112.1655,
     "place": "Tremonton, Utah",
-    "place_en": "Tremonton, Utah"
+    "place_en": "Tremonton, Utah",
+    "precision": "exact"
   },
   "tier": "A",
   "mundanoType": "misid",

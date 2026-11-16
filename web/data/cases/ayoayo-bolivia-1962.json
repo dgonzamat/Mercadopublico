@@ -11,7 +11,8 @@
     "lat": -17.08,
     "lng": -68.14,
     "place": "Altiplano de La Paz, cerca de Ayoayo (Bolivia)",
-    "place_en": "La Paz Altiplano, near Ayoayo, Bolivia"
+    "place_en": "La Paz Altiplano, near Ayoayo, Bolivia",
+    "precision": "exact"
   },
   "tier": "B",
   "epistemicStatus": "documented",

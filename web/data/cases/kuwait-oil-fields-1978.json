@@ -11,7 +11,8 @@
     "lat": 29.85,
     "lng": 47.72,
     "place": "Campos petroleros del norte de Kuwait (Umm al-Aish y Sabriya)",
-    "place_en": "Northern oil fields of Kuwait (Umm al-Aish and Sabriya)"
+    "place_en": "Northern oil fields of Kuwait (Umm al-Aish and Sabriya)",
+    "precision": "exact"
   },
   "tier": "A",
   "mundanoType": "sin_propuesta",

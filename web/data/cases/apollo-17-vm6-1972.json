@@ -14,7 +14,8 @@
     "lat": 29.56,
     "lng": -95.09,
     "place": "Valle de Taurus-Littrow, superficie de la Luna",
-    "place_en": "Taurus-Littrow valley, surface of the Moon"
+    "place_en": "Taurus-Littrow valley, surface of the Moon",
+    "precision": "none"
   },
   "tier": "A",
   "mundanoType": "instrumento",

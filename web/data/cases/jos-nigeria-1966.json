@@ -11,7 +11,8 @@
     "lat": 9.9,
     "lng": 8.89,
     "place": "Jos, meseta central de Nigeria",
-    "place_en": "Jos, central plateau of Nigeria"
+    "place_en": "Jos, central plateau of Nigeria",
+    "precision": "exact"
   },
   "tier": "B",
   "epistemicStatus": "documented",

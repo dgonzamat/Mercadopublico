@@ -11,7 +11,8 @@
     "lat": 36.822,
     "lng": -107.993,
     "place": "Aztec, Nuevo México",
-    "place_en": "Aztec, New Mexico"
+    "place_en": "Aztec, New Mexico",
+    "precision": "exact"
   },
   "tier": "B",
   "mundanoType": "fraude",

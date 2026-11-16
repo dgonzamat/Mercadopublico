@@ -11,7 +11,8 @@
     "lat": -52.04,
     "lng": -71.94,
     "place": "Ruta 9, cerca de Río Rubens, entre Puerto Natales y Punta Arenas",
-    "place_en": "Route 9, near Río Rubens, between Puerto Natales and Punta Arenas"
+    "place_en": "Route 9, near Río Rubens, between Puerto Natales and Punta Arenas",
+    "precision": "exact"
   },
   "tier": "B",
   "probability": 53,

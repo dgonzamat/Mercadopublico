@@ -14,7 +14,8 @@
     "lat": 39,
     "lng": -116,
     "place": "Sitio federal sensible, oeste de EE. UU. (ubicación no revelada)",
-    "place_en": "Sensitive federal site, western U.S. (undisclosed location)"
+    "place_en": "Sensitive federal site, western U.S. (undisclosed location)",
+    "precision": "none"
   },
   "tier": "A",
   "epistemicStatus": "documented",

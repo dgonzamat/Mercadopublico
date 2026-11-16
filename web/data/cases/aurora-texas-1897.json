@@ -11,7 +11,8 @@
     "lat": 33.0559,
     "lng": -97.5095,
     "place": "Aurora, condado de Wise, Texas",
-    "place_en": "Aurora, Wise County, Texas"
+    "place_en": "Aurora, Wise County, Texas",
+    "precision": "exact"
   },
   "tier": "B",
   "mundanoType": "fraude",

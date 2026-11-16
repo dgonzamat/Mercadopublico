@@ -11,7 +11,8 @@
     "lat": 47.5596,
     "lng": 7.5886,
     "place": "Basilea, Confederación Suiza",
-    "place_en": "Basel, Swiss Confederation"
+    "place_en": "Basel, Swiss Confederation",
+    "precision": "exact"
   },
   "tier": "B",
   "mundanoType": "natural",

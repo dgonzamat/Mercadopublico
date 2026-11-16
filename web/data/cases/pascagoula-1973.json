@@ -11,7 +11,8 @@
     "lat": 30.3658,
     "lng": -88.5561,
     "place": "Ribera del río Pascagoula, Misisipi",
-    "place_en": "Bank of the Pascagoula River, Mississippi"
+    "place_en": "Bank of the Pascagoula River, Mississippi",
+    "precision": "exact"
   },
   "tier": "B",
   "mundanoType": "psicosocial",

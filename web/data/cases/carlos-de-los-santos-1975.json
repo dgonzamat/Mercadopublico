@@ -11,7 +11,8 @@
     "lat": 19.436,
     "lng": -99.072,
     "place": "Entre Tequesquitengo y Ciudad de México",
-    "place_en": "Between Tequesquitengo and Mexico City"
+    "place_en": "Between Tequesquitengo and Mexico City",
+    "precision": "exact"
   },
   "tier": "A",
   "category": "incident",

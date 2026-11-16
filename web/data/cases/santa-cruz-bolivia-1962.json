@@ -11,7 +11,8 @@
     "lat": -17.78,
     "lng": -63.18,
     "place": "Santa Cruz de la Sierra, Bolivia",
-    "place_en": "Santa Cruz de la Sierra, Bolivia"
+    "place_en": "Santa Cruz de la Sierra, Bolivia",
+    "precision": "exact"
   },
   "tier": "B",
   "epistemicStatus": "documented",

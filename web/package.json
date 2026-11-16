@@ -3,8 +3,8 @@
   "version": "0.1.0",
   "private": true,
   "scripts": {
-    "dev": "node scripts/validate-schema.mjs --warn && node scripts/build-cases.mjs && node scripts/build-posts.mjs && node scripts/build-rss.mjs && node scripts/build-search-index.mjs && node scripts/audit-consistency.mjs --warn && next dev",
-    "prebuild": "node scripts/validate-schema.mjs && node scripts/build-cases.mjs && node scripts/build-posts.mjs && node scripts/build-rss.mjs && node scripts/build-search-index.mjs && node scripts/audit-consistency.mjs && node scripts/audit-design.mjs",
+    "dev": "node scripts/validate-schema.mjs --warn && node scripts/build-cases.mjs && node scripts/build-maps.mjs && node scripts/build-posts.mjs && node scripts/build-rss.mjs && node scripts/build-search-index.mjs && node scripts/audit-consistency.mjs --warn && next dev",
+    "prebuild": "node scripts/validate-schema.mjs && node scripts/build-cases.mjs && node scripts/build-maps.mjs && node scripts/build-posts.mjs && node scripts/build-rss.mjs && node scripts/build-search-index.mjs && node scripts/audit-consistency.mjs && node scripts/audit-design.mjs",
     "build": "next build",
     "postbuild": "node scripts/test-chart.mjs",
     "test": "node scripts/test-chart.mjs",
@@ -49,11 +49,15 @@
     "@types/react": "18.3.12",
     "@types/react-dom": "18.3.1",
     "autoprefixer": "10.6.1",
+    "d3-geo": "3.1.1",
     "eslint": "9.39.4",
     "eslint-config-next": "16.4.2",
     "postcss": "8.5.31",
     "tailwindcss": "3.4.19",
-    "typescript": "5.6.3"
+    "topojson-client": "3.1.0",
+    "typescript": "5.6.3",
+    "us-atlas": "3.0.1",
+    "world-atlas": "2.0.2"
   },
   "overrides": {
     "postcss": "8.5.31"

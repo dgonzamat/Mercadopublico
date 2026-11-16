@@ -11,7 +11,8 @@
     "lat": 48.6921,
     "lng": 6.1844,
     "place": "Periferia de Nancy (Meurthe-et-Moselle)",
-    "place_en": "Outskirts of Nancy (Meurthe-et-Moselle)"
+    "place_en": "Outskirts of Nancy (Meurthe-et-Moselle)",
+    "precision": "exact"
   },
   "tier": "A",
   "mundanoType": "psicosocial",

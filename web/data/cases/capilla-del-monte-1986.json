@@ -11,7 +11,8 @@
     "lat": -30.86,
     "lng": -64.52,
     "place": "Capilla del Monte, Córdoba, Argentina",
-    "place_en": "Capilla del Monte, Córdoba, Argentina"
+    "place_en": "Capilla del Monte, Córdoba, Argentina",
+    "precision": "exact"
   },
   "tier": "B",
   "mundanoType": "natural",

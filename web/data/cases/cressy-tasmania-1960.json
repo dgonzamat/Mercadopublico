@@ -11,7 +11,8 @@
     "lat": -41.69,
     "lng": 147.08,
     "place": "Cressy, Tasmania, Australia",
-    "place_en": "Cressy, Tasmania, Australia"
+    "place_en": "Cressy, Tasmania, Australia",
+    "precision": "exact"
   },
   "tier": "B",
   "mundanoType": "natural",

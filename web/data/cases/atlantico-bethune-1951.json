@@ -11,7 +11,8 @@
     "lat": 49.8333,
     "lng": -50.05,
     "place": "Atlántico Norte, unas 200 millas al noreste de Argentia (Terranova)",
-    "place_en": "North Atlantic, about 200 miles northeast of Argentia (Newfoundland)"
+    "place_en": "North Atlantic, about 200 miles northeast of Argentia (Newfoundland)",
+    "precision": "approx"
   },
   "tier": "A",
   "mundanoType": "misid",

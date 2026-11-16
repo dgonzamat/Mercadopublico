@@ -11,7 +11,8 @@
     "lat": 69.66,
     "lng": 18.96,
     "place": "Cielo del norte de Noruega y el norte de Suecia",
-    "place_en": "Northern Norway and northern Sweden sky"
+    "place_en": "Northern Norway and northern Sweden sky",
+    "precision": "approx"
   },
   "tier": "A",
   "mundanoType": "misid",

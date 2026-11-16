@@ -11,7 +11,8 @@
     "lat": 28.05,
     "lng": -15.75,
     "place": "Cielo entre Tenerife y Gran Canaria, islas Canarias",
-    "place_en": "Sky between Tenerife and Gran Canaria, Canary Islands"
+    "place_en": "Sky between Tenerife and Gran Canaria, Canary Islands",
+    "precision": "approx"
   },
   "tier": "A",
   "mundanoType": "instrumento",

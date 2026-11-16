@@ -11,7 +11,8 @@
     "lat": 37.587,
     "lng": 126.977,
     "place": "Seúl (Gangbuk / Cheong Wa Dae)",
-    "place_en": "Seoul (Gangbuk / Cheong Wa Dae)"
+    "place_en": "Seoul (Gangbuk / Cheong Wa Dae)",
+    "precision": "exact"
   },
   "tier": "A",
   "mundanoType": "misid",

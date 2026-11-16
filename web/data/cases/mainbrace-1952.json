@@ -11,7 +11,8 @@
     "lat": 55.3,
     "lng": 4.8,
     "place": "Mar del Norte / RAF Topcliffe, Yorkshire",
-    "place_en": "North Sea / RAF Topcliffe, Yorkshire"
+    "place_en": "North Sea / RAF Topcliffe, Yorkshire",
+    "precision": "approx"
   },
   "tier": "A",
   "mundanoType": "misid",

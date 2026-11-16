@@ -11,7 +11,8 @@
     "lat": 49.71,
     "lng": -95.27,
     "place": "Falcon Lake, Manitoba (Canadá)",
-    "place_en": "Falcon Lake, Manitoba, Canada"
+    "place_en": "Falcon Lake, Manitoba, Canada",
+    "precision": "exact"
   },
   "tier": "A",
   "mundanoType": "fraude",

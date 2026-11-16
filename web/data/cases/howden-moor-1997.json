@@ -11,7 +11,8 @@
     "lat": 53.43,
     "lng": -1.75,
     "place": "Howden Moors, Peak District (Inglaterra)",
-    "place_en": "Howden Moors, Peak District (England)"
+    "place_en": "Howden Moors, Peak District (England)",
+    "precision": "exact"
   },
   "tier": "A",
   "mundanoType": "misid",

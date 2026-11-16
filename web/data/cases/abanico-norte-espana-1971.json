@@ -11,7 +11,8 @@
     "lat": 41.9,
     "lng": 0.6,
     "place": "Cielo del nordeste de España, de Mahón a San Sebastián",
-    "place_en": "Sky over north-eastern Spain, from Mahón to San Sebastián"
+    "place_en": "Sky over north-eastern Spain, from Mahón to San Sebastián",
+    "precision": "approx"
   },
   "tier": "A",
   "mundanoType": "misid",

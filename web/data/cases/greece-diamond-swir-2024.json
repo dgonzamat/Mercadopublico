@@ -14,7 +14,8 @@
     "lat": 38.8,
     "lng": 23.3,
     "place": "Espacio aéreo griego (Egeo), en vuelo desde la base de Lárisa",
-    "place_en": "Greek airspace (Aegean), on a flight out of Larissa Air Base"
+    "place_en": "Greek airspace (Aegean), on a flight out of Larissa Air Base",
+    "precision": "approx"
   },
   "tier": "S",
   "epistemicStatus": "documented",

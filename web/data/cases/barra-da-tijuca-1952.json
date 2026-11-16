@@ -11,7 +11,8 @@
     "lat": -23.0125,
     "lng": -43.3036,
     "place": "Barra da Tijuca, Río de Janeiro",
-    "place_en": "Barra da Tijuca, Rio de Janeiro"
+    "place_en": "Barra da Tijuca, Rio de Janeiro",
+    "precision": "exact"
   },
   "tier": "A",
   "mundanoType": "fraude",

@@ -11,7 +11,8 @@
     "lat": 30.3038,
     "lng": -103.6447,
     "place": "Mitchell Flat, al este de Marfa, Texas",
-    "place_en": "Mitchell Flat, east of Marfa, Texas"
+    "place_en": "Mitchell Flat, east of Marfa, Texas",
+    "precision": "exact"
   },
   "tier": "B",
   "mundanoType": "misid",

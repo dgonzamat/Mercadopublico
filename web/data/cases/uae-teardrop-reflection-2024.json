@@ -14,7 +14,8 @@
     "lat": 23.95,
     "lng": 58.8,
     "place": "Golfo de Omán, frente a la costa de Omán (posición aproximada)",
-    "place_en": "Gulf of Oman, off the coast of Oman (approximate position)"
+    "place_en": "Gulf of Oman, off the coast of Oman (approximate position)",
+    "precision": "approx"
   },
   "tier": "A",
   "epistemicStatus": "documented",

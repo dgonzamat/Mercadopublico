@@ -11,7 +11,8 @@
     "lat": 50.85,
     "lng": 4.35,
     "place": "Bélgica",
-    "place_en": "Belgium"
+    "place_en": "Belgium",
+    "precision": "exact"
   },
   "tier": "S",
   "mundanoType": "misid",

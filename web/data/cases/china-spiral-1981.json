@@ -11,7 +11,8 @@
     "lat": 34,
     "lng": 108.9,
     "place": "14 provincias de China, entre ellas Gansu, Sichuan y Yunnan",
-    "place_en": "14 Chinese provinces, including Gansu, Sichuan and Yunnan"
+    "place_en": "14 Chinese provinces, including Gansu, Sichuan and Yunnan",
+    "precision": "approx"
   },
   "tier": "A",
   "mundanoType": "misid",

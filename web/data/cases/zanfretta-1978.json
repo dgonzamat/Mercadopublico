@@ -12,7 +12,8 @@
     "lat": 44.516,
     "lng": 9.158,
     "place": "Marzano, Torriglia (Génova, Italia)",
-    "place_en": "Marzano, Torriglia (Genoa, Italy)"
+    "place_en": "Marzano, Torriglia (Genoa, Italy)",
+    "precision": "exact"
   },
   "tier": "B",
   "category": "contactee",

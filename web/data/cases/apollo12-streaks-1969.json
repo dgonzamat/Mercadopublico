@@ -15,7 +15,8 @@
     "lat": 29.55,
     "lng": -95.09,
     "place": "Trayecto a la Luna (nave Apolo 12)",
-    "place_en": "On the way to the Moon (Apollo 12 spacecraft)"
+    "place_en": "On the way to the Moon (Apollo 12 spacecraft)",
+    "precision": "none"
   },
   "tier": "B",
   "mundanoType": "natural",

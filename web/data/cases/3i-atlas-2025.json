@@ -11,7 +11,8 @@
     "lat": -30.47,
     "lng": -70.76,
     "place": "Estación ATLAS, Río Hurtado (Chile)",
-    "place_en": "ATLAS Station, Río Hurtado (Chile)"
+    "place_en": "ATLAS Station, Río Hurtado (Chile)",
+    "precision": "none"
   },
   "tier": "S",
   "mundanoType": "natural",

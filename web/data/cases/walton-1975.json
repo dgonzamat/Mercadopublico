@@ -11,7 +11,8 @@
     "lat": 34.51,
     "lng": -110.08,
     "place": "Apache-Sitgreaves National Forest, Arizona",
-    "place_en": "Apache-Sitgreaves National Forest, Arizona"
+    "place_en": "Apache-Sitgreaves National Forest, Arizona",
+    "precision": "exact"
   },
   "tier": "A",
   "mundanoType": "fraude",

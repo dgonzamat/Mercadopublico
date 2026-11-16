@@ -12,7 +12,8 @@
     "lat": 25,
     "lng": 75,
     "place": "Asia del Sur (ubicación exacta no revelada)",
-    "place_en": "South Asia (exact location undisclosed)"
+    "place_en": "South Asia (exact location undisclosed)",
+    "precision": "none"
   },
   "tier": "A",
   "epistemicStatus": "documented",

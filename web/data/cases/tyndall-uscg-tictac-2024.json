@@ -14,7 +14,8 @@
     "lat": 30.07,
     "lng": -85.58,
     "place": "Cerca de la base aérea Tyndall, Florida",
-    "place_en": "Near Tyndall Air Force Base, Florida"
+    "place_en": "Near Tyndall Air Force Base, Florida",
+    "precision": "exact"
   },
   "tier": "B",
   "epistemicStatus": "documented",

@@ -11,7 +11,8 @@
     "lat": -22.615,
     "lng": -70.3344,
     "place": "Espacio aéreo al norte de Antofagasta, Chile",
-    "place_en": "Airspace north of Antofagasta, Chile"
+    "place_en": "Airspace north of Antofagasta, Chile",
+    "precision": "approx"
   },
   "tier": "A",
   "mundanoType": "misid",

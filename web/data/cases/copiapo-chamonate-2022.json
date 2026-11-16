@@ -11,7 +11,8 @@
     "lat": -27.2989,
     "lng": -70.4142,
     "place": "Sobre el aeródromo Chamonate, al noroeste de Copiapó (Atacama)",
-    "place_en": "Over Chamonate aerodrome, northwest of Copiapó (Atacama)"
+    "place_en": "Over Chamonate aerodrome, northwest of Copiapó (Atacama)",
+    "precision": "approx"
   },
   "tier": "A",
   "mundanoType": "misid",

@@ -15,7 +15,8 @@
     "lat": 39,
     "lng": -116,
     "place": "Cerca de un sitio de seguridad nacional, oeste de EE. UU.",
-    "place_en": "Near a national security site, western U.S."
+    "place_en": "Near a national security site, western U.S.",
+    "precision": "approx"
   },
   "tier": "A",
   "mundanoType": "misid",

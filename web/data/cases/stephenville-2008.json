@@ -11,7 +11,8 @@
     "lat": 32.22,
     "lng": -98.2,
     "place": "Stephenville, Texas",
-    "place_en": "Stephenville, Texas"
+    "place_en": "Stephenville, Texas",
+    "precision": "exact"
   },
   "tier": "A",
   "mundanoType": "misid",

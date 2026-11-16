@@ -11,7 +11,8 @@
     "lat": 43.47,
     "lng": 11.62,
     "place": "Cennina, Bucine, Toscana, Italia",
-    "place_en": "Cennina, Bucine, Tuscany, Italy"
+    "place_en": "Cennina, Bucine, Tuscany, Italy",
+    "precision": "exact"
   },
   "tier": "B",
   "mundanoType": "sin_propuesta",

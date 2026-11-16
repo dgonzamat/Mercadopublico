@@ -11,7 +11,8 @@
     "lat": 53.905,
     "lng": -1.826,
     "place": "Ilkley Moor, West Yorkshire, Inglaterra",
-    "place_en": "Ilkley Moor, West Yorkshire, England"
+    "place_en": "Ilkley Moor, West Yorkshire, England",
+    "precision": "exact"
   },
   "tier": "B",
   "mundanoType": "misid",

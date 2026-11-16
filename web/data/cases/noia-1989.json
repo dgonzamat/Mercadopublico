@@ -11,7 +11,8 @@
     "lat": 42.7277,
     "lng": -8.9252,
     "place": "Monte Iroite, sobre Noia, y Sada (La Coruña), España",
-    "place_en": "Mount Iroite, above Noia, and Sada (A Coruña), Spain"
+    "place_en": "Mount Iroite, above Noia, and Sada (A Coruña), Spain",
+    "precision": "exact"
   },
   "tier": "A",
   "mundanoType": "natural",

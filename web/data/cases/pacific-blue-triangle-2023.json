@@ -11,7 +11,8 @@
     "lat": 40.0,
     "lng": -121.0,
     "place": "Zona horaria del Pacífico, EE. UU. (lugar exacto no revelado)",
-    "place_en": "Pacific Time Zone, U.S. (exact location undisclosed)"
+    "place_en": "Pacific Time Zone, U.S. (exact location undisclosed)",
+    "precision": "none"
   },
   "tier": "B",
   "epistemicStatus": "documented",

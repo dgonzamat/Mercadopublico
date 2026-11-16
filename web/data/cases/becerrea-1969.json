@@ -11,7 +11,8 @@
     "lat": 42.9126,
     "lng": -7.3108,
     "place": "Carretera N-VI, km 476, entre Becerreá y Lugo",
-    "place_en": "N-VI road, km 476, between Becerreá and Lugo"
+    "place_en": "N-VI road, km 476, between Becerreá and Lugo",
+    "precision": "exact"
   },
   "tier": "B",
   "mundanoType": "natural",

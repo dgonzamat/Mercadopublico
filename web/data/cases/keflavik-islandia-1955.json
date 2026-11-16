@@ -11,7 +11,8 @@
     "lat": 63.979,
     "lng": -22.597,
     "place": "Aeropuerto de Keflavik, Islandia",
-    "place_en": "Keflavik Airport, Iceland"
+    "place_en": "Keflavik Airport, Iceland",
+    "precision": "exact"
   },
   "tier": "A",
   "epistemicStatus": "documented",

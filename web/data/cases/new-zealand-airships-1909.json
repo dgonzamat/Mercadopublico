@@ -11,7 +11,8 @@
     "lat": -45.91,
     "lng": 169.24,
     "place": "Isla Sur (Southland y Otago), Nueva Zelanda",
-    "place_en": "South Island (Southland and Otago), New Zealand"
+    "place_en": "South Island (Southland and Otago), New Zealand",
+    "precision": "exact"
   },
   "tier": "B",
   "mundanoType": "psicosocial",

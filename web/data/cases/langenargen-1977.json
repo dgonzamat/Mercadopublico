@@ -11,7 +11,8 @@
     "lat": 47.613,
     "lng": 9.543,
     "place": "Bierkeller-Waldeck, Langenargen (lago de Constanza), Alemania",
-    "place_en": "Bierkeller-Waldeck, Langenargen (Lake Constance), Germany"
+    "place_en": "Bierkeller-Waldeck, Langenargen (Lake Constance), Germany",
+    "precision": "exact"
   },
   "tier": "A",
   "category": "incident",

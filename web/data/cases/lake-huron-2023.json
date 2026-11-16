@@ -14,7 +14,8 @@
     "lat": 44.5,
     "lng": -82.5,
     "place": "Lago Hurón",
-    "place_en": "Lake Huron"
+    "place_en": "Lake Huron",
+    "precision": "approx"
   },
   "tier": "S",
   "mundanoType": "misid",

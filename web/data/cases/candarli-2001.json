@@ -11,7 +11,8 @@
     "lat": 38.93,
     "lng": 26.93,
     "place": "Çandarlı, costa del Egeo (Turquía)",
-    "place_en": "Çandarlı, Aegean coast (Turkey)"
+    "place_en": "Çandarlı, Aegean coast (Turkey)",
+    "precision": "exact"
   },
   "tier": "B",
   "mundanoType": "misid",

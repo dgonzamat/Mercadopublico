@@ -11,7 +11,8 @@
     "lat": -9.62,
     "lng": 149.6,
     "place": "Boianai, Papúa Nueva Guinea",
-    "place_en": "Boianai, Papua New Guinea"
+    "place_en": "Boianai, Papua New Guinea",
+    "precision": "exact"
   },
   "tier": "B",
   "mundanoType": "misid",

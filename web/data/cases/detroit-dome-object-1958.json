@@ -14,7 +14,8 @@
     "lat": 42.3314,
     "lng": -83.0458,
     "place": "Detroit, Michigan",
-    "place_en": "Detroit, Michigan"
+    "place_en": "Detroit, Michigan",
+    "precision": "exact"
   },
   "tier": "B",
   "mundanoType": "sin_propuesta",

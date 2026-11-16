@@ -11,7 +11,8 @@
     "lat": 43.781,
     "lng": 11.282,
     "place": "Stadio Artemio Franchi, Florencia",
-    "place_en": "Stadio Artemio Franchi, Florence"
+    "place_en": "Stadio Artemio Franchi, Florence",
+    "precision": "exact"
   },
   "tier": "B",
   "mundanoType": "misid",

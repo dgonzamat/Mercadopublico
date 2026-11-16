@@ -11,7 +11,8 @@
     "lat": 41.06,
     "lng": -74.29,
     "place": "Embalse de Wanaque, Nueva Jersey",
-    "place_en": "Wanaque Reservoir, New Jersey"
+    "place_en": "Wanaque Reservoir, New Jersey",
+    "precision": "exact"
   },
   "tier": "A",
   "mundanoType": "misid",

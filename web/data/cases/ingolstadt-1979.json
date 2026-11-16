@@ -11,7 +11,8 @@
     "lat": 48.77,
     "lng": 11.42,
     "place": "Ingolstadt, Baviera, Alemania",
-    "place_en": "Ingolstadt, Bavaria, Germany"
+    "place_en": "Ingolstadt, Bavaria, Germany",
+    "precision": "exact"
   },
   "tier": "A",
   "mundanoType": "natural",

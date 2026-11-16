@@ -12,7 +12,8 @@
     "lat": 36.934,
     "lng": -106.999,
     "place": "Dulce, condado de Río Arriba, Nuevo México",
-    "place_en": "Dulce, Rio Arriba County, New Mexico"
+    "place_en": "Dulce, Rio Arriba County, New Mexico",
+    "precision": "exact"
   },
   "tier": "A",
   "mundanoType": "natural",

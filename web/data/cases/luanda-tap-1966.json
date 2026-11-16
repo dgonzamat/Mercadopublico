@@ -11,7 +11,8 @@
     "lat": -8.858,
     "lng": 13.231,
     "place": "Aproximación al aeropuerto de Luanda, Angola",
-    "place_en": "Approach to Luanda airport, Angola"
+    "place_en": "Approach to Luanda airport, Angola",
+    "precision": "exact"
   },
   "tier": "B",
   "epistemicStatus": "documented",

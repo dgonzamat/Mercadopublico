@@ -11,7 +11,8 @@
     "lat": -20.5352,
     "lng": -70.537,
     "place": "Sobre el mar, unos 37 km al oeste del aeropuerto de Iquique (Chile)",
-    "place_en": "Over the sea, about 37 km west of Iquique airport, Chile"
+    "place_en": "Over the sea, about 37 km west of Iquique airport, Chile",
+    "precision": "approx"
   },
   "tier": "A",
   "mundanoType": "natural",

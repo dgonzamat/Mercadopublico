@@ -11,7 +11,8 @@
     "lat": 57.5,
     "lng": 57.6,
     "place": "Molebka, junto al río Sylva, óblast de Perm (Rusia)",
-    "place_en": "Molebka, on the Sylva River, Perm Oblast, Russia"
+    "place_en": "Molebka, on the Sylva River, Perm Oblast, Russia",
+    "precision": "exact"
   },
   "tier": "B",
   "mundanoType": "sin_propuesta",

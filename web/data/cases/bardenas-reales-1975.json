@@ -11,7 +11,8 @@
     "lat": 42.1953,
     "lng": -1.4739,
     "place": "Polígono de tiro de las Bardenas Reales (Navarra)",
-    "place_en": "Bardenas Reales firing range (Navarre)"
+    "place_en": "Bardenas Reales firing range (Navarre)",
+    "precision": "exact"
   },
   "tier": "B",
   "mundanoType": "natural",

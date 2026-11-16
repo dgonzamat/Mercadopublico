@@ -11,7 +11,8 @@
     "lat": -24.9325,
     "lng": -70.3467,
     "place": "Ruta aérea al este de Paposo, al sur de Antofagasta",
-    "place_en": "Air route east of Paposo, south of Antofagasta"
+    "place_en": "Air route east of Paposo, south of Antofagasta",
+    "precision": "exact"
   },
   "tier": "A",
   "mundanoType": "misid",
