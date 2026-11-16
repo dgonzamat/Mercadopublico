@@ -234,29 +234,7 @@ export function CasePosterior({
   // sin cifra, la explicación que más pesa dentro de él. El reparto completo
   // (seis filas con su %) queda plegado como respaldo (oct 2026).
   const top = lead.items[0];
-  // Con segundo nivel (globo, meteoro…) se nombra solo el objeto concreto.
-  const topName =
-    detail && top.key === pk
-      ? { es: shortLabel(detail.label), en: shortLabel(detail.labelEn) }
-      : { es: top.label, en: top.labelEn };
-  // «Más probable» solo si esa explicación pasa de la mitad. Debajo de la cifra
-  // del grupo (p. ej. 70 %) se leía como si la explicación nombrada tuviera ese
-  // 70 %, cuando valía un 32 % (Yellow Sea, 138 fichas; nov 2026). Por debajo
-  // de la mitad se nombra con su propio porcentaje.
   const majority = top.pct >= 50;
-  const topPct = `${top.pct}%`;
-  const topText =
-    top.key === "indet"
-      ? { es: "La evidencia no alcanza para decidir entre las explicaciones", en: "The evidence is not enough to decide between the explanations" }
-      : !majority
-        ? top.key === "sin_propuesta"
-          ? { es: `La que más pesa: una causa ordinaria que nadie ha identificado\u00a0(${topPct})`, en: `The largest share: an ordinary cause no one has identified\u00a0(${topPct})` }
-          : { es: `La que más pesa: ${topName.es.toLowerCase()}\u00a0(${topPct})`, en: `The largest share: ${topName.en.toLowerCase()}\u00a0(${topPct})` }
-        // Con su propia cifra también por encima de la mitad: bajo «71 %» se leía
-        // que el contagio colectivo valía 71 % cuando valía 68 % (zepelines, nov 2026).
-        : top.key === "sin_propuesta"
-          ? { es: `Lo más probable es una causa ordinaria que nadie ha identificado\u00a0(${topPct})`, en: `Most likely an ordinary cause that no one has identified\u00a0(${topPct})` }
-          : { es: `Explicación más probable: ${topName.es.toLowerCase()}\u00a0(${topPct})`, en: `Most likely explanation: ${topName.en.toLowerCase()}\u00a0(${topPct})` };
   // La cifra grande es SIEMPRE la de la explicación que más pesa en el grupo
   // mayor, pase o no de la mitad (decisión del dueño, 15 nov 2026): con la del
   // grupo arriba, Skinwalker se leía «54 % causa natural o humana» cuando lo
@@ -275,135 +253,57 @@ export function CasePosterior({
         ? { es: noun(shortLabel(detail.label)), en: noun(shortLabel(detail.labelEn)) }
         : { es: noun(r.label), en: noun(r.labelEn) };
   const leadName = nameOf(top);
-  // Las dos explicaciones que siguen a la mayor, sin el indeterminado (no es
-  // una explicación) ni las de menos de 5 %, que solo añadían cifras.
-  const indetPct = all.find((r) => r.key === "indet")?.pct ?? 0;
-  const nhPct = unknown.filter((r) => r.key !== "indet").reduce((a, r) => a + r.pct, 0);
-  const knownBest = known.filter((r) => !r.zero && r.pct > 0).sort((a, b) => b.pct - a.pct)[0];
-  const knownTop = knownBest ? { ...nameOf(knownBest), pct: knownBest.pct } : undefined;
-  const next = all
-    .filter((r) => !r.zero && r.key !== top.key && r.key !== "indet" && r.pct >= 5)
-    .sort((a, b) => b.pct - a.pct)
-    .slice(0, 2)
-    .map((r) => ({ ...nameOf(r), pct: r.pct }));
+  // Diseño limpio (16 nov 2026, decisión del dueño): una cifra, una frase corta
+  // sin cifras y una barra de hasta tres tramos con su leyenda. Las cifras viven
+  // en la barra, no en la prosa: el párrafo «De ese 65 %, un 35 %…» sumaba seis
+  // cifras, dos repetidas con distinto sentido (35 % sin decidir y 35 % origen
+  // terrestre), y llamaba «causa conocida» a una causa sin identificar (Shag
+  // Harbour). Tramos: la explicación que más pesa, el resto de su grupo y el
+  // otro grupo; si manda lo indeterminado, sin decidir, no humano y origen
+  // terrestre.
+  const other = groups[1];
+  const restOfLead = lead.items.filter((r) => r.key !== top.key);
+  const restPct = sub(restOfLead);
+  const restMain = restOfLead.filter((r) => !r.zero).sort((a, b) => b.pct - a.pct)[0];
+  const otherMain = other.items.filter((r) => !r.zero).sort((a, b) => b.pct - a.pct)[0];
+  const segs = [
+    { key: "top", pct: top.pct, color: top.color, opacity: 1, es: explanationLeads ? leadName.es : "sin decidir", en: explanationLeads ? leadName.en : "undecided" },
+    {
+      key: "rest", pct: restPct, color: restMain?.color ?? top.color, opacity: explanationLeads ? 0.45 : 1,
+      es: !explanationLeads ? "no humano" : lead.id === "known" ? "otras causas terrestres" : "resto sin causa conocida",
+      en: !explanationLeads ? "non-human" : lead.id === "known" ? "other earthly causes" : "rest with no known cause",
+    },
+    { key: "other", pct: other.sub, color: otherMain?.color ?? INDET_COLOR, opacity: 1, es: lc(other.lead.es), en: lc(other.lead.en) },
+  ].filter((g) => g.pct > 0);
+  const verdict = !explanationLeads
+    ? { es: "La evidencia no alcanza para decidir.", en: "The evidence does not settle it." }
+    : majority
+      ? { es: "La explicación más probable.", en: "The most likely explanation." }
+      : { es: "Ninguna explicación llega a la mitad.", en: "No explanation reaches half." };
   return (
     <div>
-      {/* Cuando una explicación pasa de la mitad, la cifra grande es la suya y el
-          grupo baja a la segunda línea: la cifra grande pertenece siempre a lo que
-          se nombra a su lado (decisión del dueño, 13 nov 2026; 265 fichas). Por
-          debajo de la mitad, o si manda lo indeterminado, sigue mandando el grupo. */}
-      {explanationLeads ? (
-        <>
-          <p className="flex items-baseline gap-2 text-text">
-            <span className="text-4xl font-semibold tabular-nums">{top.pct}%</span>
-            <span className="text-base"><T es={leadName.es} en={leadName.en} locale={locale} /></span>
-          </p>
-          {/* Sin subtotales del grupo: «En total, 60 % origen terrestre» bajo un
-              25 % sumaba una segunda cifra que mezclaba tecnología clasificada,
-              otro Estado y un dron, y se leía como contradicción (triángulo
-              negro, 15 nov 2026). Se nombran las que siguen, con su propia cifra. */}
-          <p className="mb-3 mt-1 text-base text-text">
-            {majority ? (
-              <T es="La explicación más probable." en="The most likely explanation." locale={locale} />
-            ) : (
-              <>
-                <T es="Ninguna explicación llega a la mitad." en="No explanation reaches half." locale={locale} />
-                {next.length > 0 && (
-                  <>
-                    {" "}
-                    <T
-                      es={`Le ${next.length > 1 ? "siguen" : "sigue"}: ${next.map((r) => `${r.es}\u00a0(${r.pct}%)`).join(" y ")}.`}
-                      en={`Next: ${next.map((r) => `${r.en}\u00a0(${r.pct}%)`).join(" and ")}.`}
-                      locale={locale}
-                    />
-                  </>
-                )}
-                {/* Lo indeterminado no entra en «Le siguen» (no es una explicación),
-                    pero sin nombrarlo «Le siguen: 7 % y 6 %» se leía como si el resto
-                    fuera poco cuando quedaba un 40 % sin decidir (Manston, nov 2026). */}
-                {indetPct >= 5 && (
-                  <>
-                    {" "}
-                    <T es={`La evidencia deja un ${indetPct}% sin decidir.`} en={`The evidence leaves ${indetPct}% undecided.`} locale={locale} />
-                  </>
-                )}
-              </>
-            )}
-          </p>
-        </>
-      ) : (
-        <>
-          <p className="flex items-baseline gap-2 text-text">
-            <span className="text-4xl font-semibold tabular-nums" data-lead="">{lead.sub}%</span>
-            <span className="text-base"><T es={lead.lead.es} en={lead.lead.en} locale={locale} /></span>
-          </p>
-          <p className="mb-3 mt-1 text-base text-text">
-            <T es={topText.es + "."} en={topText.en + "."} locale={locale} />
-            {/* Se desglosa la cifra grande en vez de listar «no humano 17 %» como si
-                estuviera fuera del 56 % que ya lo incluye (Nimitz, nov 2026). */}
-            {nhPct > 0 && (
-              <>
-                {" "}
-                <T
-                  es={`De ese ${lead.sub}%, un ${indetPct}% queda sin decidir y un ${nhPct}% apunta a un origen no humano.`}
-                  en={`Of that ${lead.sub}%, ${indetPct}% is undecided and ${nhPct}% points to a non-human origin.`}
-                  locale={locale}
-                />
-              </>
-            )}
-            {knownTop && (
-              <>
-                {" "}
-                <T
-                  es={`Entre las causas conocidas, la que más pesa: ${knownTop.es}\u00a0(${knownTop.pct}%).`}
-                  en={`Among known causes, the largest: ${knownTop.en}\u00a0(${knownTop.pct}%).`}
-                  locale={locale}
-                />
-              </>
-            )}
-          </p>
-        </>
-      )}
-      {/* Un tramo por grupo, del color de la explicación que más pesa en él. Con
-          un tramo por explicación salían franjas de 1–2 % sin leyenda, que solo
-          el color distinguía y que el `title` no mostraba en el móvil (nov 2026);
-          el reparto fino queda en el desplegable. */}
-      <div
-        role="img"
-        aria-label={(explanationLeads ? `${top.pct}% ${locale === "es" ? leadName.es : leadName.en}; ` : "") + groups.map((g) => `${g.sub}% ${locale === "es" ? g.lead.es : g.lead.en}`).join(", ")}
-        className="flex h-4 w-full gap-1 overflow-hidden"
-      >
-        {groups.map((g) => {
-          const main = g.items.find((r) => !r.zero);
-          if (!main) return null;
-          const total = g.items.reduce((a, r) => a + r.count, 0);
-          // Con la explicación como cifra grande, su tramo se separa del resto del
-          // grupo (mismo color, más claro) para que la barra muestre esa cifra.
-          const rest = explanationLeads && g === lead ? total - main.count : 0;
-          return (
-            <div key={g.id} className="flex h-full min-w-0 overflow-hidden rounded-sm" style={{ flex: `${Math.round(total * 1000)} 1 0%` }}>
-              <div className="h-full" style={{ flex: `${Math.round((total - rest) * 1000)} 1 0%`, backgroundColor: main.color }} />
-              {rest > 0 && <div className="h-full" style={{ flex: `${Math.round(rest * 1000)} 1 0%`, backgroundColor: main.color, opacity: 0.4 }} />}
-            </div>
-          );
-        })}
-      </div>
-      {/* Leyenda de la barra: la cifra grande de arriba sigue siendo la que manda. El
-          grupo menor lleva la suya porque era el único tramo sin cifra visible (el
-          29 % había que deducirlo como 100 − 71; nov 2026). */}
-      <div className="mt-1 flex w-full gap-1 text-xs text-muted">
-        {groups.map((g) => (
-          // Rótulo en dos líneas si hace falta: con `truncate` se leía «Sin causa c…» en el móvil.
-          <span key={g.id} className="min-w-0 break-words leading-tight" style={{ flex: `${Math.round(g.items.reduce((a, r) => a + r.count, 0) * 1000)} 1 0%` }}>
-            {/* El tramo del grupo mayor ya lo nombra el titular («71 % origen terrestre»); rotularlo otra vez era la tercera repetición en pocas líneas. */}
-            {g !== lead && g.sub >= 15 && (
-              <>
-                <span className="tabular-nums">{g.sub}%</span> · <T es={g.es} en={g.en} locale={locale} />
-              </>
-            )}
-          </span>
+      <p className="flex items-baseline gap-2 text-text">
+        <span className="text-4xl font-semibold tabular-nums" {...(explanationLeads ? {} : { "data-lead": "" })}>{explanationLeads ? top.pct : lead.sub}%</span>
+        <span className="text-base">
+          {explanationLeads ? <T es={leadName.es} en={leadName.en} locale={locale} /> : <T es={lead.lead.es} en={lead.lead.en} locale={locale} />}
+        </span>
+      </p>
+      <p className="mb-3 mt-1 text-sm text-muted"><T es={verdict.es} en={verdict.en} locale={locale} /></p>
+      <div role="img" aria-label={segs.map((g) => `${g.pct}% ${locale === "es" ? g.es : g.en}`).join(", ")} className="flex h-3 w-full gap-0.5 overflow-hidden rounded-sm">
+        {segs.map((g) => (
+          <div key={g.key} className="h-full" style={{ flex: `${g.pct} 1 0%`, backgroundColor: g.color, opacity: g.opacity }} />
         ))}
       </div>
+      {/* Leyenda en línea, con su muestra de color: un rótulo bajo cada tramo no
+          cabe en el móvil cuando el tramo es estrecho. */}
+      <ul className="mt-2 flex flex-wrap gap-x-4 gap-y-1 text-xs text-muted">
+        {segs.map((g) => (
+          <li key={g.key} className="flex items-center gap-1.5">
+            <span aria-hidden className="inline-block h-2 w-2 rounded-sm" style={{ backgroundColor: g.color, opacity: g.opacity }} />
+            <span className="tabular-nums text-text">{g.pct}%</span> <T es={g.es} en={g.en} locale={locale} />
+          </li>
+        ))}
+      </ul>
       <details className="mt-3">
       <summary className="cursor-pointer text-sm text-accent hover:underline">
         <T es="Ver el reparto entre las seis explicaciones" en="See the split across the six explanations" locale={locale} />
