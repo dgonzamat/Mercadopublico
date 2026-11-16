@@ -8,11 +8,11 @@
   "country_name": "Estados Unidos",
   "flag": "🇺🇸",
   "location": {
-    "lat": 30.1,
-    "lng": -94.7,
+    "lat": 30.0272,
+    "lng": -95.0858,
     "place": "Cerca de Huffman, al noreste de Houston, Texas",
     "place_en": "Near Huffman, northeast of Houston, Texas",
-    "precision": "exact"
+    "precision": "approx"
   },
   "tier": "B",
   "epistemicStatus": "documented",

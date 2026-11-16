@@ -8,11 +8,11 @@
   "country_name": "Rusia",
   "flag": "🇷🇺",
   "location": {
-    "lat": 57.5,
-    "lng": 57.6,
+    "lat": 57.2363,
+    "lng": 57.9379,
     "place": "Molebka, junto al río Sylva, óblast de Perm (Rusia)",
     "place_en": "Molebka, on the Sylva River, Perm Oblast, Russia",
-    "precision": "exact"
+    "precision": "approx"
   },
   "tier": "B",
   "mundanoType": "sin_propuesta",
