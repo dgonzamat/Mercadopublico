@@ -137,6 +137,32 @@ a {
   }
 }
 
+/* ── Corazones del botón de apoyo (SupportButton) ─────────────────────────
+   Al pulsar «Apoya UAP Codex» suben unos corazones desde el botón y se
+   desvanecen. Cada uno trae su desvío (--dx) y su retraso inline. Sin
+   movimiento si el lector lo pide: el mensaje de agradecimiento basta. */
+@keyframes heart-float {
+  0% {
+    opacity: 0;
+    transform: translate(-50%, 0) scale(0.6);
+  }
+  15% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+    transform: translate(calc(-50% + var(--dx, 0px)), -72px) scale(1.25);
+  }
+}
+.heart-float {
+  animation: heart-float 1s ease-out both;
+}
+@media (prefers-reduced-motion: reduce) {
+  .heart-float {
+    display: none;
+  }
+}
+
 /* ── Filtros facetados de /cases (data-*-filter en el contenedor) ──────────
    Tres facetas COMBINABLES (AND): región · hipótesis · era. Cada caso lleva
    [data-region] [data-hyp] [data-era] en el mismo wrapper; cada faceta activa
