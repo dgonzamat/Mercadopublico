@@ -10,18 +10,6 @@ data/atlas-points.json
 .DS_Store
 *.tsbuildinfo
 next-env.d.ts
-# Token OAuth de suscripción del panel del cerebro (secreto, nunca versionar)
-tools/cerebro-panel/.claude-oauth-token
-tools/cerebro-panel/panel.log
-tools/cerebro-panel/jobs.json
-# Mockups de revisión: artefactos efímeros para aprobar un cambio en el
-# checkpoint, no historia del repo. Versionar el de una propuesta RECHAZADA
-# dejaría en el árbol un «después» que nadie aprobó — y una corrida futura
-# podría tomarlo por trabajo pendiente.
-tools/cerebro-panel/mockups/
-tools/cerebro-panel/aterrizajes.json
-tools/cerebro-panel/sitio.css
-tools/cerebro-panel/pendientes.json
 
 # Python
 __pycache__/

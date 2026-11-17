@@ -69,14 +69,11 @@ jobs:
       # y luego next build. Si los JSON de casos están rotos, si hay drift
       # numérico/textual (auditoría E1–E6), o si falla el type-check, este
       # paso falla y el PR no es mergeable.
-      # Contrato de los skills del loop: que cada modo del cerebro exista, se
-      # anuncie y delegue en skills que EXISTEN. Corre aparte del build porque
-      # audita `.claude/`, no el corpus — pero bloquea el merge igual: un
-      # orquestador que delega en algo inexistente falla en ejecución.
-      # `--negative-control` valida la SONDA además del contrato (invariante 4:
-      # auto-medido, no auto-afirmado). Sin él un parser roto reportaría verde
-      # sobre un archivo que ni parseó — ya pasó una vez.
-      - name: Audit skills contract
+      # Skills del repo: todo skill que un comando de `.claude/commands/` nombra
+      # debe existir. Corre aparte del build porque audita `.claude/`, no el
+      # corpus, pero bloquea el merge igual. `--negative-control` valida además
+      # la sonda: sin él, un patrón roto reportaría verde sin haber leído nada.
+      - name: Audit skills references
         run: node scripts/audit-skills.mjs --negative-control
 
       - name: Validate (build-cases → audit → next build)
