@@ -12,7 +12,10 @@
  * integridad referencial (framework → frameworks.json, patterns → patterns.json).
  * Además valida: MAPA (coordenadas en rango, sin placeholder 0,0),
  * BIBLIOGRAFÍA (todo caso/investigador cita ≥1 fuente, urls bien formadas) y
- * FOTOS (si hay foto, URL válida + licencia de atribución).
+ * FOTOS (si hay foto, URL válida + licencia de atribución). En las fichas,
+ * además: claves de primer nivel solo de la lista blanca (CASE_KEYS), pares
+ * name_en / location.place_en obligatorios y `posterior` MECE obligatorio con
+ * 6 claves que suman 1 (absorbió E11, E37 y la mitad de M1, nov 2026).
  *
  * SALIDA:
  *   - exit 0  → schema OK
@@ -166,12 +169,26 @@ researchers.forEach((r, i) => {
 // ─── 3. data/cases/*.json ────────────────────────────────────────────────
 
 const TIERS = new Set(["S", "A", "B"]);
-const CATEGORIES = new Set(["incident", "document", "contactee", "crop_circle"]);
+// Sin "document": desde el 15 oct 2026 ningún documento tiene ficha propia; vive
+// embebido en el visor del caso o del actor que respalda (decisión del dueño).
+const CATEGORIES = new Set(["incident", "contactee", "crop_circle"]);
+// Claves de primer nivel admitidas en una ficha: las de `UAPCase` (lib/types.ts)
+// que el corpus usa. Una clave fuera de la lista es un campo que ningún render
+// lee —el caso de `sources_en`, 89 fichas con 81 traducciones que nunca se
+// publicaban (sep 2026)— o un error de tecleo que deja el campo real vacío.
+// `relatedCases` queda fuera: solo existía para las fichas-documento.
+const CASE_KEYS = new Set([
+  "id", "num", "name", "name_en", "year_start", "year_end", "country", "country_name", "flag",
+  "location", "tier", "pursueReleases", "mundanoType", "misidSubtype", "objectDetail",
+  "evidenceReviewed", "classBasis", "epistemicStatus", "probability", "summary", "summary_en",
+  "seoTitle", "seoDescription", "seoTitle_en", "seoDescription_en", "featuredDoc", "documents",
+  "patterns", "entityMorphology", "category", "whatHappened", "whatHappened_en", "whyMatters",
+  "whyMatters_en", "evidence", "evidence_en", "sources", "primaryDocument", "posterior",
+]);
 const casesDir = path.join(root, "data", "cases");
 const caseFiles = fs.readdirSync(casesDir).filter((f) => f.endsWith(".json"));
 const seenCaseIds = new Set();
 const seenNums = new Set();
-const pendingRelated = [];
 
 // Visor de documentos (DocEmbed[]): lo usan los casos y los actores.
 function validateDocEmbeds(w, docs) {
@@ -270,7 +287,12 @@ for (const file of caseFiles) {
   else if (seenNums.has(c.num)) err(w, `num duplicado ${c.num}`);
   else seenNums.add(c.num);
 
+  const unknownKeys = Object.keys(c).filter((k) => !CASE_KEYS.has(k));
+  if (unknownKeys.length)
+    err(w, `claves no reconocidas [${unknownKeys}] — ningún render las lee; si es un campo nuevo, añádelo a UAPCase (lib/types.ts) y a CASE_KEYS`);
+
   if (!isStr(c.name)) err(w, "name obligatorio (string)");
+  if (!isStr(c.name_en)) err(w, "name_en obligatorio (string): el sitio es inglés-primario");
   if (!isNum(c.year_start)) err(w, "year_start obligatorio (number)");
   if (!isStr(c.country)) err(w, "country obligatorio (string)");
   if (!isStr(c.country_name)) err(w, "country_name obligatorio (string)");
@@ -283,10 +305,12 @@ for (const file of caseFiles) {
     err(w, `epistemicStatus inválido "${c.epistemicStatus}" (no hay «en desarrollo» ni «proyectado»: el caso se arma con lo que se sabe y se amplía después)`);
   if (!CATEGORIES.has(c.category)) err(w, `category inválida "${c.category}"`);
   if (!isNum(c.probability)) err(w, "probability obligatorio (number)");
-  // posterior (modelo MECE): si está presente, valida 6 claves y suma ≈ 1.
-  // En incidentes es P(narrativa|objeto); en documentos es el "lean" evidencial
-  // (a qué narrativa inclina el documento). Ambos usos son válidos.
-  if (c.posterior !== undefined) {
+  // posterior (modelo MECE): obligatorio en toda ficha (ya no hay documentos),
+  // con las 6 claves numéricas y suma ≈ 1. Es P(narrativa|objeto). Antes lo
+  // repetía M1 en audit-consistency; desde nov 2026 vive solo aquí.
+  if (c.posterior === undefined || c.posterior === null || typeof c.posterior !== "object" || Array.isArray(c.posterior)) {
+    err(w, "posterior obligatorio (objeto con las 6 narrativas MECE)");
+  } else {
     const MECE_KEYS = ["mundano_natural", "humana_clasificada", "adversaria", "nohumano_encubierto", "nohumano_abierto", "indet"];
     const miss = MECE_KEYS.filter((k) => typeof c.posterior[k] !== "number");
     const extra = Object.keys(c.posterior).filter((k) => !MECE_KEYS.includes(k));
@@ -337,19 +361,11 @@ for (const file of caseFiles) {
       const extra = Object.keys(b).filter((k) => !["es", "en", "source", "source_en", "url"].includes(k));
       if (extra.length) err(w, `classBasis con claves no válidas [${extra}]`);
     }
-    if (c.category === "document") err(w, "classBasis en un documento: los documentos no se clasifican");
   }
   // evidenceReviewed (opcional): fecha ISO en que la clasificación se contrastó
   // con la evidencia primaria.
   if (c.evidenceReviewed !== undefined && !/^\d{4}-\d{2}-\d{2}$/.test(String(c.evidenceReviewed))) {
     err(w, `evidenceReviewed inválido "${c.evidenceReviewed}" (AAAA-MM-DD)`);
-  }
-  // relatedCases (opcional, solo documentos): incidentes que el documento
-  // respalda. Los ids se comprueban al final, cuando se conocen todos.
-  if (c.relatedCases !== undefined) {
-    if (c.category !== "document") err(w, `relatedCases solo aplica a documentos (category es "${c.category}")`);
-    else if (!Array.isArray(c.relatedCases) || !c.relatedCases.every(isStr)) err(w, "relatedCases debe ser array de ids");
-    else pendingRelated.push([w, c.relatedCases]);
   }
   if (!isStr(c.summary)) err(w, "summary obligatorio (string)");
   if (!isStr(c.summary_en)) err(w, "summary_en obligatorio (string)");
@@ -366,6 +382,8 @@ for (const file of caseFiles) {
       err(w, "location (0,0) — coordenadas placeholder (null island); usar el ancla terrestre real");
     if (!["exact", "approx", "none"].includes(c.location.precision))
       err(w, `location.precision debe ser exact, approx o none (es ${JSON.stringify(c.location.precision)})`);
+    if (!isStr(c.location.place_en))
+      err(w, "location.place_en obligatorio (string): el sitio es inglés-primario");
   }
 
   if (!isArr(c.patterns)) err(w, "patterns debe ser array");
@@ -400,10 +418,6 @@ for (const file of caseFiles) {
         err(`${w}.sources[${j}]`, `url malformada: "${s.url}"`);
     });
   }
-}
-
-for (const [w, ids] of pendingRelated) {
-  for (const id of ids) if (!seenCaseIds.has(id)) err(w, `relatedCases apunta a un caso inexistente "${id}"`);
 }
 
 // ─── 4. Reporte ──────────────────────────────────────────────────────────

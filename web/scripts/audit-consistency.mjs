@@ -120,28 +120,6 @@ const STATS = {
   frameworks: frameworkList.length,
 };
 
-// ─── 4. REGLAS DE DRIFT ──────────────────────────────────────────────────
-
-/**
-/**
- * Phrases that drifted out of the rename history. Forbidden anywhere
- * user-facing (app/ pages + case rationales rendered by the slug page).
- */
-const FORBIDDEN_TERMS = [
-  { needle: "psicoespiritual", reason: "rename → ontologico-no-materialista (hypothesis layer)" },
-  { needle: "algo no humano", reason: "rename → entidades no humanas" },
-  { needle: "tratado encubierto", reason: "rename → tratado formal" },
-];
-
-/**
- * Files exempt from FORBIDDEN_TERMS scan (framework slug is allowed to
- * preserve the historical theoretical-school name).
- */
-const FORBIDDEN_EXEMPT = new Set([
-  "data/frameworks.json",
-  "data/researchers.json",
-]);
-
 // ─── 5. SCAN UTILITIES ───────────────────────────────────────────────────
 
 function walk(dir, exts) {
@@ -216,26 +194,6 @@ for (const file of sourceFiles) {
         record("WARN", file, lineNo, `hardcoded "${n} ${m[2]}" matches a STATS value — should use \${STATS.*} for drift-resistance`);
       } else if (DRIFT_NUMBERS.has(n)) {
         record("ERROR", file, lineNo, `hardcoded "${n} ${m[2]}" is close to a STATS value but doesn't match — likely drift (current STATS=${JSON.stringify(STATS)})`);
-      }
-    }
-  });
-}
-
-// ─── 8. RULE E4: forbidden terms (drift signatures) ──────────────────────
-
-const scanForForbidden = [
-  ...tsxFiles,
-  ...walk(path.join(root, "data", "cases"), [".json"]),
-  ...walk(path.join(root, "components"), [".tsx"]),
-];
-for (const file of scanForForbidden) {
-  const rel = path.relative(root, file);
-  if ([...FORBIDDEN_EXEMPT].some((p) => rel.endsWith(p))) continue;
-  const lines = fs.readFileSync(file, "utf-8").split("\n");
-  lines.forEach((line, i) => {
-    for (const { needle, reason } of FORBIDDEN_TERMS) {
-      if (line.toLowerCase().includes(needle.toLowerCase())) {
-        record("WARN", file, i + 1, `forbidden phrase "${needle}" — ${reason}`);
       }
     }
   });
@@ -445,44 +403,6 @@ for (const c of cases) {
   }
 }
 
-// ─── 9d. RULE E11: proper-noun fields with Spanish but no _en (WARN) ──────
-//
-// name y location.place pueden ser nombres propios idénticos en EN (Roswell,
-// Lake Huron) — ahí _en es innecesario. Pero si contienen español descriptivo
-// (Nuevo México, Departamento de Guerra, Cielo sobre…) y falta _en, el modo
-// inglés muestra español. Heurística conservadora (sin diacríticos sueltos,
-// para no marcar topónimos propios como Pará/Popocatépetl). WARN, no ERROR.
-
-const ES_DESC_RE =
-  /\b(sobre|cerca|entre|frente|cielo|fuerzas?|guerra|ministerio|departamento|ej[eé]rcito|a[eé]reo|a[eé]rea|nuevo|nueva|norte|sur|isla|islas|oc[eé]ano|provincias?|distrito|ubicaci[oó]n|reportes?|renombrado|defensa|nacional|c[aá]mara|esc(o|ó)cia|francia|brasil|b[eé]lgica|alemania|jap[oó]n|estado mayor|guerra)\b/i;
-for (const c of cases) {
-  const file = path.join(casesDir, c.id + ".json");
-  if (c.name && !c.name_en && ES_DESC_RE.test(c.name)) {
-    record("WARN", file, 0, `E11 i18n: "name" con español "${(c.name.match(ES_DESC_RE) || [])[0]}" sin name_en (case ${c.id})`);
-  }
-  const place = c.location && c.location.place;
-  if (place && !(c.location && c.location.place_en) && ES_DESC_RE.test(place)) {
-    record("WARN", file, 0, `E11 i18n: "place" con español "${(place.match(ES_DESC_RE) || [])[0]}" sin place_en (case ${c.id})`);
-  }
-}
-
-// ─── 9e. RULE E12: lede robustness — summary too short (WARN) ─────────────
-//
-// El summary es el lede del caso: debe cargar quién/qué/cuándo/dónde, no ser
-// una nota telegráfica. Un lede de primer nivel raramente baja de ~180 chars
-// sin sacrificar dateline o atribución. WARN, no ERROR — es estándar editorial,
-// no error de datos. (Histórico: 6 casos eran stubs <155 chars; reescritos jun
-// 2026 a datelines completos.)
-
-const LEDE_MIN = 180;
-for (const c of cases) {
-  const file = path.join(casesDir, c.id + ".json");
-  const len = (c.summary || "").length;
-  if (len > 0 && len < LEDE_MIN) {
-    record("WARN", file, 0, `E12 lede: summary de ${len} chars (<${LEDE_MIN}) — un lede debe cargar quién/qué/cuándo/dónde (case ${c.id})`);
-  }
-}
-
 // ─── 9f. RULE E13: description ≥ 1 page (editorial standard, WARN) ────────
 //
 // Línea editorial (jun 2026): la DESCRIPCIÓN narrativa de cada caso
@@ -536,33 +456,6 @@ if (shortBodies.length > 0) {
       `S×${byTier.S} A×${byTier.A} B×${byTier.B}. Expandir con investigación, ` +
       `prioridad S→A→B. Más cortos: ${shortest}`,
   );
-}
-
-// ─── 9f-ter. RULE E37: `sources_en` no vuelve (ERROR) ─────────────────────
-//
-// 89 casos arrastraban un array paralelo `sources_en` que NADIE leía: no está
-// en `UAPCase`, ningún render lo consume, y `check-links.mjs` solo mira
-// `sources`. Dentro vivían **81 nombres de fuente traducidos** que jamás
-// llegaban a la página — el sitio inglés mostraba «metraje FLIR original de
-// CBP» y «9 septiembre 2026» a lectores anglófonos. Se migraron a
-// `sources[].name_en`, que el detalle sí renderiza, y el array se borró.
-//
-// La regla existe porque el modo de falla es silencioso en las dos
-// direcciones: un array paralelo nuevo no rompe nada (nadie lo lee) y por eso
-// puede vivir años, y mientras exista la traducción parece hecha cuando no se
-// publica. Misma familia que el resto de pares bilingües consumidos crudos.
-// (sep 2026)
-const conSourcesEn = cases.filter((c) => c.sources_en !== undefined);
-if (conSourcesEn.length > 0) {
-  for (const c of conSourcesEn) {
-    record(
-      "ERROR",
-      path.join(casesDir, `${c.id}.json`),
-      0,
-      `E37: «${c.id}» reintroduce \`sources_en\`, un array paralelo que ningún render consume. ` +
-        `El par inglés del nombre va en \`sources[].name_en\`, que el detalle sí publica.`,
-    );
-  }
 }
 
 // ─── 9f-bis. RULE E21: cobertura de visual (PDF/imagen) por caso (WARN) ───
@@ -656,16 +549,15 @@ if (accionables.length > 0) {
   );
 }
 
-// ─── 9g. RULES M1/M2: invariantes del modelo MECE (posterior) ────────────
+// ─── 9g. RULE M2 + agregado MECE (posterior) ──────────────────────────────
 //
-// Modelo MECE (lib/meceModel.ts): cada caso de incidente reparte el
-// 100% sobre 6 narrativas mutuamente excluyentes. Invariantes duros:
-//   M1 · todo caso category!=="document" DEBE tener `posterior` con las 6
-//        claves exactas, sumando 1 (±0.005). ERROR si no.
-//   M1 · los documentos pueden traer posterior (= "lean" evidencial). OK.
+// Modelo MECE (lib/meceModel.ts): cada caso reparte el 100% sobre 6 narrativas
+// mutuamente excluyentes. La presencia, las 6 claves y la suma (antigua M1) las
+// valida validate-schema.mjs desde nov 2026; aquí queda lo que no está allí:
 //   M2 · si la masa mundano_natural ≥ 15%, el caso DEBE declarar `mundanoType`
 //        (misid|natural|fraude): la vista expandida abre esa masa por sub-tipo
 //        y sin el campo cae en "misid" por default (misclasificación silenciosa).
+//   + el agregado Σ esperado que imprime el resumen.
 const MECE_CLASSES_AUDIT = [
   "mundano_natural", "humana_clasificada", "adversaria", "nohumano_encubierto", "nohumano_abierto", "indet",
 ];
@@ -673,26 +565,10 @@ let mecePosteriorCount = 0;
 const meceAgg = Object.fromEntries(MECE_CLASSES_AUDIT.map((k) => [k, 0]));
 for (const c of cases) {
   const file = path.join(casesDir, c.id + ".json");
-  const isDoc = c.category === "document";
   const p = c.posterior;
-  // Incidente: posterior obligatorio (P(narrativa|objeto)).
-  // Documento: posterior OPCIONAL (= "lean" evidencial; ausente → indet en runtime).
-  if (!isDoc && !p) {
-    record("ERROR", file, 0, `M1: caso no-documento "${c.id}" sin posterior (modelo MECE)`);
-    continue;
-  }
-  if (!p) continue; // documento sin lean declarado: válido
-  const missing = MECE_CLASSES_AUDIT.filter((k) => !(k in p));
-  const extra = Object.keys(p).filter((k) => !MECE_CLASSES_AUDIT.includes(k));
-  if (missing.length || extra.length) {
-    record("ERROR", file, 0, `M1: posterior de "${c.id}" con claves mal (faltan [${missing}], sobran [${extra}])`);
-    continue;
-  }
-  const total = MECE_CLASSES_AUDIT.reduce((acc, k) => acc + (p[k] || 0), 0);
-  if (Math.abs(total - 1) > 0.005) {
-    record("ERROR", file, 0, `M1: posterior de "${c.id}" suma ${total.toFixed(4)} (debe ser 1)`);
-    continue;
-  }
+  // Forma inválida: la reporta validate-schema.mjs (corre antes en el prebuild).
+  if (!p || MECE_CLASSES_AUDIT.some((k) => typeof p[k] !== "number")) continue;
+  const total = MECE_CLASSES_AUDIT.reduce((acc, k) => acc + p[k], 0);
   // M2 · clasificación forzada sin default silencioso: si un caso tiene masa
   // mundano_natural significativa (≥15%), en la vista expandida esa masa se
   // abre en misid/natural/fraude según `mundanoType`. Sin el campo, el código
@@ -707,7 +583,6 @@ for (const c of cases) {
       `M2: "${c.id}" tiene mundano_natural=${(p.mundano_natural / total).toFixed(2)} pero sin mundanoType (caería en "misid" por default) — declarar ${MUNDANO_TYPES.join("|")}`,
     );
   }
-  if (isDoc) continue;
   mecePosteriorCount++;
   for (const k of MECE_CLASSES_AUDIT) meceAgg[k] += p[k];
 }
@@ -734,44 +609,19 @@ if (orphanPatterns.length > 0) {
   );
 }
 
-// ─── 9h-bis. RULE E30: conteo hardcodeado y drifteado en patterns.json (ERROR) ─
-//
-// El detalle de patrón (/patterns/[letter]) DERIVA y muestra el nº de casos
-// (`patternCases.length`). Si la descripción de un patrón también hornea un
-// "N casos"/"N cases", ese número driftea al crecer el corpus y contradice al
-// conteo derivado en la MISMA página — una mentira visible en un sitio que se
-// presenta como «corpus auditable» (pasó con 8b: "9 casos" vs 17 reales, jul
-// 2026). Es la regla «no hardcodear conteos, derivar» aplicada a la prosa de
-// patrones. ERROR: el número vive en los datos y el arreglo es trivial (quitarlo).
-const PATTERN_COUNT_RE = /(\d+)\s*(casos|cases)\b/i;
-for (const p of patternList) {
-  const id = p.id || p.slug;
-  if (!id) continue;
-  const derived = cases.filter((c) => (c.patterns || []).includes(id)).length;
-  for (const field of ["description", "description_en"]) {
-    const m = (p[field] || "").match(PATTERN_COUNT_RE);
-    if (m && Number(m[1]) !== derived) {
-      record(
-        "ERROR",
-        path.join(root, "data", "patterns.json"),
-        0,
-        `E30 conteo drifteado: patrón ${id} .${field} dice "${m[1]} ${m[2]}" pero ${derived} casos lo usan — quitar el conteo hardcodeado (el detalle ya lo deriva)`,
-      );
-    }
-  }
-}
-
 // ─── 9i. RULE E15: JSON-LD prohibido — @type "Event" (ERROR) ─────────────
 //
 // Anti-pattern documentado (CLAUDE.md): Google aplica el validador de eventos
 // comerciales a `Event` y exige organizer/performer/offers. Los casos usan
 // Article + contentLocation:Place. Esta regla rompe el build si reaparece un
-// JSON-LD `@type: "Event"` en cualquier .ts/.tsx (no caza addEventListener ni
-// tipos de React: exige el par `@type … "Event"` propio del JSON-LD).
+// JSON-LD `@type: "Event"` en cualquier .ts/.tsx de app/ y lib/ o .tsx de
+// components/ (no caza addEventListener ni tipos de React: exige el par
+// `@type … "Event"` propio del JSON-LD). Absorbió a la antigua E18c, que
+// repetía la misma sonda sobre app/**/*.ts.
 
 const EVENT_LD_RE = /["']?@type["']?\s*:\s*["']Event["']/;
 const ldScanFiles = [
-  ...tsxFiles,
+  ...walk(path.join(root, "app"), [".tsx", ".ts"]),
   ...walk(path.join(root, "components"), [".tsx"]),
   ...walk(path.join(root, "lib"), [".ts", ".tsx"]),
 ];
@@ -843,19 +693,6 @@ for (const f of [
   fs.readFileSync(f, "utf-8").split("\n").forEach((ln, i) => {
     if (NODE_SCHEME.test(ln) && !ln.trimStart().startsWith("//")) {
       record("ERROR", f, i + 1, `E18b: import con \`node:\` scheme (${ln.trim()}) — Next no lo resuelve en el bundle. Usar el especificador sin prefijo (fs, path…).`);
-    }
-  });
-}
-
-// 18c — sin `Event` JSON-LD (Google exige organizer/performer/offers; usar Article + Place)
-const EVENT_LD = /["']@type["']\s*:\s*["']Event["']/;
-for (const f of [
-  ...walk(path.join(root, "app"), [".tsx", ".ts"]),
-  ...walk(path.join(root, "lib"), [".tsx", ".ts"]),
-]) {
-  fs.readFileSync(f, "utf-8").split("\n").forEach((ln, i) => {
-    if (EVENT_LD.test(ln)) {
-      record("ERROR", f, i + 1, `E18c: JSON-LD "@type":"Event" — Google aplica el validador de eventos comerciales (organizer/performer/offers). Usar Article + contentLocation: Place.`);
     }
   });
 }
@@ -1152,9 +989,9 @@ if (fs.existsSync(localeLinkPath) && fs.existsSync(esDir)) {
 // Esta sonda evita la regresión: (a) /calidad agrega sobre los incidentes
 // (corpusPosteriors, sin documentos) y rotula su método; (b) la home se rotula
 // argmax y remite a /calidad; (c) las vistas navegables usan el mismo conjunto
-// con keepIndet. Estructural (grep): se exige `corpusPosteriors` y se prohíbe
-// cualquier resto del viejo `documentPosteriors` o un filtro por documento que
-// los vuelva a meter en el agregado.
+// con keepIndet. Estructural (grep): se exige `corpusPosteriors`. (La mitad que
+// prohibía `documentPosteriors` se retiró en nov 2026: ya no hay fichas-documento
+// que pudieran volver al agregado; E49 se retiró con ellas.)
 {
   const calidadPath = path.join(root, "app", "calidad", "page.tsx");
   const snapshotPath = path.join(root, "components", "HypothesesSnapshot.tsx");
@@ -1166,8 +1003,8 @@ if (fs.existsSync(localeLinkPath) && fs.existsSync(esDir)) {
   const casesSrc = fs.existsSync(casesPath) ? fs.readFileSync(casesPath, "utf-8") : "";
   // (a) /calidad agrega sobre los INCIDENTES (corpusPosteriors), mismo conjunto
   //     que las vistas navegables; los documentos no entran.
-  if (calidad && (!/corpusPosteriors/.test(calidad) || /documentPosteriors/.test(calidad))) {
-    record("ERROR", calidadPath, 0, "E24 modelo: el agregado MECE de /calidad debe sumar solo los incidentes (corpusPosteriors, sin documentPosteriors) — mismo conjunto que la home, /probabilidades y /cases, o los denominadores divergen. Ver CLAUDE.md · modelo MECE.");
+  if (calidad && !/corpusPosteriors/.test(calidad)) {
+    record("ERROR", calidadPath, 0, "E24 modelo: el agregado MECE de /calidad debe sumar los incidentes (corpusPosteriors) — mismo conjunto que la home, /probabilidades y /cases, o los denominadores divergen. Ver CLAUDE.md · modelo MECE.");
   }
   // (a bis) /calidad declara su método (valor esperado).
   if (calidad && !/[Vv]alor esperado|Expected value/.test(calidad)) {
@@ -1188,8 +1025,8 @@ if (fs.existsSync(localeLinkPath) && fs.existsSync(esDir)) {
   //     documentos) conservando «Indeterminado» (keepIndet). Si una vuelve a sumar
   //     documentos o deja de conservar el indeterminado, los denominadores divergen.
   for (const [src, p, name] of [[snapshot, snapshotPath, "HypothesesSnapshot"], [prob, probPath, "/probabilidades"], [casesSrc, casesPath, "/cases"]]) {
-    if (src && (!/corpusPosteriors/.test(src) || /documentPosteriors/.test(src))) {
-      record("ERROR", p, 0, `E24 modelo: ${name} debe clasificar solo los incidentes (corpusPosteriors, sin documentPosteriors) — igual que /calidad; los documentos son evidencia, no sucesos, o el denominador diverge.`);
+    if (src && !/corpusPosteriors/.test(src)) {
+      record("ERROR", p, 0, `E24 modelo: ${name} debe clasificar los incidentes (corpusPosteriors) — igual que /calidad, o el denominador diverge.`);
     }
     if (src && !/keepIndet/.test(src)) {
       record("ERROR", p, 0, `E24 modelo: ${name} no conserva «Indeterminado» (falta keepIndet) — sin él la masa indeterminada se reparte a la fuerza y los documentos sin lean caen en una hipótesis equivocada. Debe usar keepIndet para que «Indeterminado» sea una narrativa navegable.`);
@@ -1503,55 +1340,7 @@ for (const c of cases) {
   }
 }
 
-// ─── 9s. RULE E28: frescura de la línea base de link rot (WARN) ──────────
-// Esta auditoría es node-plain SIN RED: no puede verificar si las fuentes
-// del corpus siguen vivas. Quien lo hace es `check-links.mjs --baseline` en
-// el workflow diario. Lo que E28 sí puede vigilar offline es que esa sonda
-// siga existiendo y corriendo: si la línea base desaparece o se queda vieja,
-// las citas se están pudriendo sin que nadie mire — que es exactamente el
-// agujero de proceso que motivó el guardrail.
-
-const BASELINE_MAX_AGE_DAYS = 45; // el cron es diario; 45 d = holgura amplia
 const linkBaselinePath = path.join(root, "data", "link-health-baseline.json");
-
-if (!fs.existsSync(linkBaselinePath)) {
-  record(
-    "WARN",
-    linkBaselinePath,
-    0,
-    "E28 link rot: falta data/link-health-baseline.json — sin línea base el gate de fuentes (check-links.mjs --baseline) no puede correr y las citas se pudren en silencio. Generarla con: node scripts/check-links.mjs --update-baseline",
-  );
-} else {
-  let baseline = null;
-  try {
-    baseline = JSON.parse(fs.readFileSync(linkBaselinePath, "utf-8"));
-  } catch {
-    /* ilegible → se reporta abajo */
-  }
-  if (!baseline || typeof baseline.dead !== "object" || !baseline.generatedAt) {
-    record(
-      "WARN",
-      linkBaselinePath,
-      0,
-      "E28 link rot: link-health-baseline.json ilegible o sin `dead`/`generatedAt` — el gate de fuentes lo rechazará (exit 2). Regenerar con --update-baseline.",
-    );
-  } else {
-    const ageDays = Math.floor(
-      (Date.now() - Date.parse(baseline.generatedAt)) / 86_400_000,
-    );
-    const known = Object.keys(baseline.dead).length;
-    if (Number.isNaN(ageDays)) {
-      record("WARN", linkBaselinePath, 0, `E28 link rot: \`generatedAt\` no es una fecha parseable (${baseline.generatedAt}).`);
-    } else if (ageDays > BASELINE_MAX_AGE_DAYS) {
-      record(
-        "WARN",
-        linkBaselinePath,
-        0,
-        `E28 link rot: la línea base de fuentes tiene ${ageDays} días (>${BASELINE_MAX_AGE_DAYS}) — el workflow diario debería refrescarla al arreglar citas. O el cron dejó de correr, o hay ${known} roturas congeladas que nadie está bajando.`,
-      );
-    }
-  }
-}
 
 // ─── 9s. RULE E29: ninguna URL de Wayback congelada como rota (ERROR) ────
 // Una URL de `web.archive.org` en el corpus SIEMPRE es fruto de un arreglo
@@ -1576,7 +1365,7 @@ if (fs.existsSync(linkBaselinePath)) {
       );
     }
   } catch {
-    /* ilegible → ya lo reporta E28 */
+    /* ilegible → el propio gate de check-links.mjs lo rechaza (exit 2) */
   }
 }
 
