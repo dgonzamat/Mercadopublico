@@ -342,24 +342,38 @@ export function VisitorsPanel() {
       {/* Suscriptores (usuarios autenticados) */}
       <VisitorsSubscribers data={subscribers} />
 
-      {/* Intención de apoyo: clics en el botón, sin aportes abiertos todavía */}
+      {/* Donaciones: clics en «Apoya UAP Codex» (migración 0009). Aún no se
+          cobra nada: mide cuánta gente estaría dispuesta a aportar antes de
+          abrir donaciones. El % es sobre los visitantes-día del periodo. */}
       {support && (
-        <div className="space-y-3">
+        <div className="space-y-3 border-2 border-text bg-panel px-3 py-3">
           <p className="font-mono text-xs uppercase tracking-widest text-muted">
-            <T es="Intención de apoyo" en="Support intent" />
+            <T es="Donaciones" en="Donations" />
           </p>
-          <div className="grid grid-cols-3 gap-2">
+          <p className="text-sm text-text">
+            <T
+              es="Personas que pulsaron «Apoya UAP Codex». Las donaciones aún no están abiertas: esto mide la intención de aportar."
+              en="People who clicked “Support UAP Codex”. Donations are not open yet: this measures the intention to contribute."
+            />
+          </p>
+          <div className="grid grid-cols-2 gap-2 sm:grid-cols-4">
             {[
-              { es: "Total", en: "Total", n: support.footer + support.about },
-              { es: "Pie de página", en: "Footer", n: support.footer },
-              { es: "Metodología", en: "Method", n: support.about },
+              { es: "Dispuestos a aportar", en: "Willing to give", v: fmtNum(support.footer + support.about, "es"), vEn: fmtNum(support.footer + support.about, "en") },
+              {
+                es: "De los visitantes",
+                en: "Of visitors",
+                v: stats.total ? `${fmtNum(((support.footer + support.about) / stats.total) * 100, "es", { maximumFractionDigits: 1 })} %` : "—",
+                vEn: stats.total ? `${fmtNum(((support.footer + support.about) / stats.total) * 100, "en", { maximumFractionDigits: 1 })}%` : "—",
+              },
+              { es: "Desde el pie", en: "From footer", v: fmtNum(support.footer, "es"), vEn: fmtNum(support.footer, "en") },
+              { es: "Desde Metodología", en: "From Method", v: fmtNum(support.about, "es"), vEn: fmtNum(support.about, "en") },
             ].map((c) => (
-              <div key={c.en} className="border-2 border-text bg-panel px-3 py-3">
+              <div key={c.en} className="border-2 border-text bg-bg px-3 py-3">
                 <p className="font-mono text-xs uppercase tracking-widest text-muted">
                   <T es={c.es} en={c.en} />
                 </p>
                 <p className="mt-1 text-xl font-semibold text-text">
-                  <T es={fmtNum(c.n, "es")} en={fmtNum(c.n, "en")} />
+                  <T es={c.v} en={c.vEn} />
                 </p>
               </div>
             ))}
