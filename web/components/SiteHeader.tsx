@@ -12,6 +12,7 @@ import { LocaleToggle } from "@/components/LocaleToggle";
 import { MobileNav } from "@/components/MobileNav";
 import { AccountControl } from "@/components/auth/AccountControl";
 import { useAuth } from "@/components/auth/AuthProvider";
+import { recordSupportIntent } from "@/components/SupportButton";
 
 /**
  * Site header. On the Home it floats transparent over the dark radar hero
@@ -81,17 +82,24 @@ export function SiteHeader() {
             <ShareButton variant="icon" dark={dark} />
           </div>
           <HeaderNav dark={dark} />
-          <Link
-            href={localizeHref("/probabilidades", pathname)}
-            className={`inline-flex items-center gap-2 border-l-4 bg-accent px-4 font-display text-base font-medium text-bg ${
-              dark
-                ? "border-bg/20 hover:bg-bg hover:text-text"
-                : "border-text hover:bg-text"
-            }`}
-          >
-            <T es="Ver probabilidades" en="See probabilities" locale={locale} />
-            <span aria-hidden>→</span>
-          </Link>
+          {/* Desde el 17 nov 2026 (decisión del dueño) el botón destacado lleva
+              a «Cómo se financia» y cuenta la intención de apoyar: el de
+              Probabilidades casi no se usaba (9 vistas en 30 días). */}
+          {/* Pastilla compacta (opción C del lienzo, decisión del dueño): los
+              sitios que piden apoyo usan un botón de una palabra de ~100 px,
+              no un bloque a toda la altura. */}
+          <div className="flex items-center">
+            <Link
+              href={localizeHref("/about", pathname) + "#financiamiento"}
+              onClick={() => recordSupportIntent("header")}
+              className={`inline-flex min-h-[44px] items-center gap-1.5 whitespace-nowrap rounded-full bg-accent px-4 font-display text-[15px] font-medium text-bg focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-offset-2 focus-visible:ring-accent ${
+                dark ? "hover:bg-bg hover:text-text" : "hover:bg-text"
+              }`}
+            >
+              <span aria-hidden>♥</span>
+              <T es="Apoyar" en="Donate" locale={locale} />
+            </Link>
+          </div>
           <AccountControl dark={dark} />
           <LocaleToggle dark={dark} />
         </div>

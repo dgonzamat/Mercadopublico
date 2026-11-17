@@ -56,7 +56,7 @@ Dos innovaciones más, una por capa: **`/blindar`** (reactiva) promueve un anti-
 - Tailwind CSS 3.4 (theme claro editorial custom: fondo crema `#f7f2e8`, tinta `#1a1a1a`, acento `#c41e3a` — tokens en `tailwind.config.ts`)
 - `output: "export"` — SSG puro, deploy a GitHub Pages
 - react-leaflet para `/atlas` (dynamic import, ssr: false)
-- Client components: ~43 con `"use client"` (jul 2026; techo 45, cifra viva = la que reporta `audit-consistency.mjs`); la mayoría vive en `components/` y `components/explorer/` (laboratorio de visualización). Los interactivos clave: `components/MobileNav.tsx` (focus trap, Escape, body scroll lock) y `components/MeceDonut.tsx` (donut interactivo de /probabilidades y de la home vía `HypothesesSnapshot`, con prop `tone` light/dark; hover/tap sincroniza segmento↔leyenda + tooltip; SSR deja el donut completo, la interactividad es progresiva).
+- Client components: ~43 con `"use client"` (jul 2026; techo 46 desde nov 2026, cifra viva = la que reporta `audit-consistency.mjs`); la mayoría vive en `components/` y `components/explorer/` (laboratorio de visualización). Los interactivos clave: `components/MobileNav.tsx` (focus trap, Escape, body scroll lock) y `components/MeceDonut.tsx` (donut interactivo de /probabilidades y de la home vía `HypothesesSnapshot`, con prop `tone` light/dark; hover/tap sincroniza segmento↔leyenda + tooltip; SSR deja el donut completo, la interactividad es progresiva).
 
 ## Estructura
 

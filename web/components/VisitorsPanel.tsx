@@ -3,7 +3,7 @@
 import { useEffect, useMemo, useState } from "react";
 import { T } from "@/components/T";
 import { supabase } from "@/lib/supabase/client";
-import { fmtDateTime } from "@/lib/visitorsFormat";
+import { fmtDateTime, fmtNum } from "@/lib/visitorsFormat";
 import { VisitorsTable, type VisitorRow } from "@/components/VisitorsTable";
 import {
   VisitorsStats,
@@ -80,6 +80,10 @@ export function VisitorsPanel() {
   const [pageRowsRaw, setPageRowsRaw] = useState<PageRow[]>([]);
   const [subDayRows, setSubDayRows] = useState<DayRow[]>([]);
   const [subTotal, setSubTotal] = useState<number | null>(null);
+  // Clics en «Apoya UAP Codex» (migración 0009): mide la intención de aportar
+  // antes de abrir aportes. Pocas filas (día × lugar del botón), así que se
+  // leen crudas y se suman aquí.
+  const [support, setSupport] = useState<{ footer: number; about: number; header: number } | null>(null);
   const [updatedAt, setUpdatedAt] = useState<string | null>(null);
   const [period, setPeriod] = useState<Period>("all");
   const [state, setState] = useState<State>(
@@ -159,6 +163,17 @@ export function VisitorsPanel() {
             count: num(r.count),
           })),
         );
+      });
+
+      let q = sb.from("support_intent").select("source, clicks");
+      if (since) q = q.gte("day", since);
+      void q.then(({ data, error }) => {
+        if (!alive || error || !data) return;
+        const sum = { footer: 0, about: 0, header: 0 };
+        for (const r of data as Array<{ source: string; clicks: unknown }>) {
+          if (r.source === "footer" || r.source === "about" || r.source === "header") sum[r.source] += num(r.clicks);
+        }
+        setSupport(sum);
       });
 
       void sb
@@ -326,6 +341,46 @@ export function VisitorsPanel() {
 
       {/* Suscriptores (usuarios autenticados) */}
       <VisitorsSubscribers data={subscribers} />
+
+      {/* Donaciones: clics en «Apoya UAP Codex» (migración 0009). Aún no se
+          cobra nada: mide cuánta gente estaría dispuesta a aportar antes de
+          abrir donaciones. El % es sobre los visitantes-día del periodo. */}
+      {support && (
+        <div className="space-y-3 border-2 border-text bg-panel px-3 py-3">
+          <p className="font-mono text-xs uppercase tracking-widest text-muted">
+            <T es="Donaciones" en="Donations" />
+          </p>
+          <p className="text-sm text-text">
+            <T
+              es="Personas que pulsaron «Apoya UAP Codex». Las donaciones aún no están abiertas: esto mide la intención de aportar."
+              en="People who clicked “Support UAP Codex”. Donations are not open yet: this measures the intention to contribute."
+            />
+          </p>
+          <div className="grid grid-cols-2 gap-2 sm:grid-cols-5">
+            {[
+              { es: "Dispuestos a aportar", en: "Willing to give", v: fmtNum(support.footer + support.about + support.header, "es"), vEn: fmtNum(support.footer + support.about + support.header, "en") },
+              {
+                es: "De los visitantes",
+                en: "Of visitors",
+                v: stats.total ? `${fmtNum(((support.footer + support.about + support.header) / stats.total) * 100, "es", { maximumFractionDigits: 1 })} %` : "—",
+                vEn: stats.total ? `${fmtNum(((support.footer + support.about + support.header) / stats.total) * 100, "en", { maximumFractionDigits: 1 })}%` : "—",
+              },
+              { es: "Desde la barra superior", en: "From top bar", v: fmtNum(support.header, "es"), vEn: fmtNum(support.header, "en") },
+              { es: "Desde el pie", en: "From footer", v: fmtNum(support.footer, "es"), vEn: fmtNum(support.footer, "en") },
+              { es: "Desde Metodología", en: "From Method", v: fmtNum(support.about, "es"), vEn: fmtNum(support.about, "en") },
+            ].map((c) => (
+              <div key={c.en} className="border-2 border-text bg-bg px-3 py-3">
+                <p className="font-mono text-xs uppercase tracking-widest text-muted">
+                  <T es={c.es} en={c.en} />
+                </p>
+                <p className="mt-1 text-xl font-semibold text-text">
+                  <T es={c.v} en={c.vEn} />
+                </p>
+              </div>
+            ))}
+          </div>
+        </div>
+      )}
 
       {/* Tabla por país */}
       <p className="font-mono text-xs uppercase tracking-widest text-muted">

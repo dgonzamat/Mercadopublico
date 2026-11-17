@@ -2,6 +2,7 @@ import { LocaleLink } from "@/components/LocaleLink";
 
 import { pageMeta, hreflangFor } from "@/lib/seo";
 import { Cta } from "@/components/Cta";
+import { SupportButton } from "@/components/SupportButton";
 import {
   Eyebrow,
   H1,
@@ -443,6 +444,26 @@ export function AboutView({ locale }: { locale: "es" | "en" }) {
               <T es="Ver todas las fuentes →" en="See all sources →" locale={locale} />
             </Cta>
           </div>
+        </section>
+
+        <section id="financiamiento" className="scroll-mt-20 space-y-4 border-t border-text/15 pt-8">
+          <Eyebrow><T es="Financiamiento" en="Funding" locale={locale} /></Eyebrow>
+          <H2><T es="Cómo se financia UAP Codex" en="How UAP Codex is funded" locale={locale} /></H2>
+          <Body className="text-muted">
+            <T
+              locale={locale}
+              es="El sitio es independiente, gratuito y sin publicidad, y hoy no recibe aportes de los lectores. Estamos evaluando abrirlos para financiar el dominio y el tiempo de investigación y revisión de fuentes."
+              en="The site is independent, free and ad-free, and it does not take reader contributions today. We are considering opening them to fund the domain and the time spent on research and source review."
+            />
+          </Body>
+          <Body className="text-muted">
+            <T
+              locale={locale}
+              es="Si se abren, los aportes no comprarán contenido ni influirán en ninguna clasificación: cada caso se clasifica con su evidencia, aunque la respuesta sea un globo o un satélite."
+              en="If they open, contributions will not buy content or influence any classification: each case is classified on its evidence, even when the answer is a balloon or a satellite."
+            />
+          </Body>
+          <SupportButton source="about" locale={locale} />
         </section>
 
         <Caption className="border-t border-border pt-6">

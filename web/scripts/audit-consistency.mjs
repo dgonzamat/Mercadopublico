@@ -641,7 +641,7 @@ for (const file of ldScanFiles) {
 // vigila el total contra un techo para que el crecimiento sea visible y
 // deliberado, no por goteo. WARN, no ERROR.
 
-const CLIENT_BUDGET = 45;
+const CLIENT_BUDGET = 46; // 46 desde el 17 nov 2026: SupportButton (medición de intención de apoyo)
 const CLIENT_DIRECTIVE = /^\s*["']use client["']/;
 const clientScanFiles = [
   ...walk(path.join(root, "app"), [".tsx", ".ts"]),
