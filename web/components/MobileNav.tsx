@@ -20,8 +20,8 @@ import { recordSupportIntent } from "@/components/SupportButton";
 const PRIMARY_CTA = {
   href: "/about",
   hash: "#financiamiento",
-  es: { label: "Apoya UAP Codex", sub: "Cómo se financia el sitio y cómo apoyarlo" },
-  en: { label: "Support UAP Codex", sub: "How the site is funded and how to support it" },
+  es: { label: "Apoyar", sub: "Cómo se financia el sitio y cómo apoyarlo" },
+  en: { label: "Donate", sub: "How the site is funded and how to support it" },
 };
 
 const NAV_LINKS = [

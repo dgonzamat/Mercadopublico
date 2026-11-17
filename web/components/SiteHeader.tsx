@@ -85,18 +85,21 @@ export function SiteHeader() {
           {/* Desde el 17 nov 2026 (decisión del dueño) el botón destacado lleva
               a «Cómo se financia» y cuenta la intención de apoyar: el de
               Probabilidades casi no se usaba (9 vistas en 30 días). */}
-          <Link
-            href={localizeHref("/about", pathname) + "#financiamiento"}
-            onClick={() => recordSupportIntent("header")}
-            className={`inline-flex items-center gap-2 whitespace-nowrap border-l-4 bg-accent px-4 font-display text-base font-medium text-bg ${
-              dark
-                ? "border-bg/20 hover:bg-bg hover:text-text"
-                : "border-text hover:bg-text"
-            }`}
-          >
-            <span aria-hidden>♥</span>
-            <T es="Apoya UAP Codex" en="Support UAP Codex" locale={locale} />
-          </Link>
+          {/* Pastilla compacta (opción C del lienzo, decisión del dueño): los
+              sitios que piden apoyo usan un botón de una palabra de ~100 px,
+              no un bloque a toda la altura. */}
+          <div className="flex items-center">
+            <Link
+              href={localizeHref("/about", pathname) + "#financiamiento"}
+              onClick={() => recordSupportIntent("header")}
+              className={`inline-flex min-h-[44px] items-center gap-1.5 whitespace-nowrap rounded-full bg-accent px-4 font-display text-[15px] font-medium text-bg focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-offset-2 focus-visible:ring-accent ${
+                dark ? "hover:bg-bg hover:text-text" : "hover:bg-text"
+              }`}
+            >
+              <span aria-hidden>♥</span>
+              <T es="Apoyar" en="Donate" locale={locale} />
+            </Link>
+          </div>
           <AccountControl dark={dark} />
           <LocaleToggle dark={dark} />
         </div>
