@@ -8,8 +8,8 @@ Estás ejecutando el **blindador** del repo. La capa reactiva (`/learn`, `/retro
 Es la aplicación del principio de Boris Cherny "PostToolUse hooks / pre-allow safe permissions": lo que se puede enforcar, se enforca; la memoria pasiva se vuelve prevención activa.
 
 ## 1. Leer los anti-patterns
-Lee `## Anti-patterns conocidos` de `CLAUDE.md` (y los invariantes de dominio: MECE M1, schema, E13). Para cada regla, clasifícala:
-- **YA ENFORZADA** — un audit/validador ya la chequea (ej. `posterior` suma 1 → `validate-schema.mjs` M1; E13 → `audit-consistency.mjs`). Descártala.
+Lee `## Anti-patterns conocidos` de `CLAUDE.md` (y los invariantes de dominio: el posterior MECE, schema, E13). Para cada regla, clasifícala:
+- **YA ENFORZADA** — un audit/validador ya la chequea (ej. `posterior` suma 1 → `validate-schema.mjs`, antigua M1; E13 → `audit-consistency.mjs`). Descártala.
 - **ENFORZABLE** — se puede chequear con una sonda barata y determinista (grep/lectura de archivo/AST simple). Candidata.
 - **NO MECANIZABLE** — requiere juicio (ej. "no hardcodear cifras" en prosa libre, longitud editorial de calidad). Déjala como doc.
 

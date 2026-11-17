@@ -8,7 +8,7 @@
 import fs from "fs";
 import path from "path";
 import { spawnSync } from "child_process";
-import { MARKERS, SINCERE, SLOP, FORMULA_REVIEWED } from "./lib/prose-markers.mjs";
+import { SLOP, FORMULA_REVIEWED } from "./lib/prose-markers.mjs";
 
 const ROOT = path.resolve(path.dirname(new URL(import.meta.url).pathname), "..");
 const CASES_DIR = path.join(ROOT, "data/cases");
@@ -35,24 +35,10 @@ const totals = auditOut.match(/ERRORS:\s*\d+\s+WARNS:\s*\d+(\s+NOTES:\s*\d+)?/);
 console.log("Auditoría (audit-consistency): " + (totals ? totals[0] : "sin resumen — revisar la sonda"));
 for (const w of warns) console.log("  · " + (w.length > 220 ? w.slice(0, 217) + "…" : w));
 
-// 2 · Muletillas de prosa (brief docs/brief-prosa.md), por ficha y tier.
-const PROSE_FIELDS = ["summary", "whatHappened", "whyMatters"];
-const prose = (c) =>
-  [
-    ...PROSE_FIELDS.flatMap((k) => [c[k], c[`${k}_en`]]),
-    ...(c.evidence || []),
-    ...(c.evidence_en || []),
-  ]
-    .filter(Boolean)
-    .join("\n");
-const unquotedProse = (c) => prose(c).replace(/«[^»]*»|"[^"]*"|“[^”]*”|(?<![\w])'[^']*'(?![\w])/g, "").replace(SINCERE, "");
-console.log("\nProsa · fichas con muletillas (C3 = Tier A, C4/C5 = Tier B):");
-const anyHit = cases.filter((c) => Object.values(MARKERS).some((re) => re.test(unquotedProse(c))));
-console.log(`  total: ${anyHit.length} fichas · ${byTier(anyHit)}`);
-for (const [label, re] of Object.entries(MARKERS)) {
-  const hit = cases.filter((c) => re.test(unquotedProse(c)));
-  console.log(`  ${label}: ${hit.length} · ${byTier(hit)}`);
-}
+// (Las muletillas de prosa, la fórmula «no es X, sino Y», las comillas y los
+// límites de evidencia, resumen y porqué salieron de este informe en nov 2026:
+// son reglas ERROR de audit-consistency —E52, E54, E56—, así que en main
+// siempre valen 0 y aquí solo repetían la auditoría.)
 
 // 3 · U11: rótulos de licencia sin traducción inglesa en lib/license.ts
 // (el sitio EN los mostraría en español) o con inglés dentro del dato español.
@@ -69,11 +55,7 @@ const englishInEs = [...new Set(labels.filter((l) => /\bwork\b|Public domain/.te
 console.log(`\nU11 · licencias: ${untranslated.length} rótulos sin traducción en lib/license.ts, ${englishInEs.length} con inglés en el dato español`);
 for (const l of [...untranslated, ...englishInEs]) console.log(`  · ${l}`);
 
-// 4 · Densidad e inconsistencias en TODAS las fichas (no en una de muestra).
-// Ordenadas de menor a mayor coste de arreglo.
-const PROSE = ["summary", "whatHappened", "whyMatters"];
-const joinProse = (c, sfx) => [...PROSE.map((k) => c[k + sfx] ?? ""), ...(c["evidence" + sfx] ?? [])].join(" ");
-const actorLinked = new Set([...fs.readFileSync(path.join(ROOT, "lib/researcherCases.ts"), "utf8").matchAll(/"([a-z0-9-]+)"/g)].map((m) => m[1]));
+// 4 · Fichas sin documento del caso (no lo mide ninguna regla de la auditoría).
 function soloContexto(c) {
   const d = [...(c.documents ?? []), c.primaryDocument, c.featuredDoc].filter(Boolean);
   return d.length > 0 && d.every((x) => /^(Contexto|Context)\b/.test(x.title ?? ""));
@@ -90,15 +72,6 @@ const R6_AGOTADO = new Set([
   "min-min-lights-1838", "yukon-1996", "hangzhou-2010", "meng-zhaoguo-1994", "vranov-dyji-1987", "finland-ghost-rockets-1946", "cussac-1967", "greece-haf-radar-1985", "ireland-iaa-2018", "bower-chorley-crop-circles-1991", "kadima-israel-1993", "florence-stadium-1954", "rs33-magenta-1933", "tananarive-1954", "malaysia-tiny-humanoids-1970", "spitsbergen-1952", "new-zealand-airships-1909", "emilcin-1978", "kovalyonok-salyut6-1981", "ilopango-el-salvador-2009", "maussan-congreso-mexico-2023", "samudra-tapu-2004",
 ]);
 const checks = [
-  // Convención: «» en español (con "" dentro de «» si hay cita anidada) y "" en inglés.
-  ["comillas españolas «» en el texto inglés (prosa y fuente del porqué)", (c) => joinProse(c, "_en").includes("«") || (c.classBasis?.source && (c.classBasis.source_en ?? c.classBasis.source).includes("«"))],
-  ["comillas rectas sueltas en el texto español", (c) => /(?<![\w\d])"[A-Za-zÁÉÍÓÚáéíóúñ]/.test(joinProse(c, "").replace(/«[^«»]*(?:«[^«»]*»[^«»]*)*»/g, ""))],
-  ["evidencia con más de 8 ítems (plegada en la ficha desde el 6.º)", (c) => (c.evidence ?? []).length > 8],
-  ["porqué de más de 700 caracteres (plegado en la ficha)", (c) => (c.classBasis?.es ?? "").length > 700],
-  ["resumen de más de 700 caracteres (plegado en la ficha)", (c) => (c.summary ?? "").length > 700],
-  // Un documento se justifica si respalda un caso (relatedCases) o un actor
-  // (lib/researcherCases.ts); si no hace ninguna de las dos cosas, sobra.
-  ["documentos que no respaldan ningún caso ni actor", (c) => c.category === "document" && !(c.relatedCases ?? []).length && !actorLinked.has(c.id)],
   // Una foto de contexto cumple E21 (la ficha tiene algo visual) pero no es
   // un documento del caso: esto mide cuántas fichas no tienen ninguno. Las de
   // R6_AGOTADO se barrieron sin resultado (detalle en docs/registros.md): se
@@ -106,24 +79,23 @@ const checks = [
   ["sin documento del caso (solo foto de contexto)", (c) => soloContexto(c) && !R6_AGOTADO.has(c.id)],
   ["  · de ellas ya barridas sin documento posible", (c) => soloContexto(c) && R6_AGOTADO.has(c.id)],
 ];
-console.log("\nFichas · densidad e inconsistencias (de menor a mayor coste):");
+console.log("\nFichas · documento del caso:");
 for (const [label, fn] of checks) {
   const hit = cases.filter(fn);
   console.log(`  ${label}: ${hit.length} · ${byTier(hit)}${hit.length && hit.length <= 12 ? " — " + hit.map((c) => c.id).join(", ") : ""}`);
 }
 
-// 5 · IA slop: huellas de texto generado, en las fichas y en la interfaz.
-console.log("\nIA slop · prosa de las fichas:");
-// Lo citado entre comillas es de la fuente, no del redactor («sin duda» en
-// boca de un informe de 1951 no es relleno): se excluye, como en E7b.
-const unquoted = (t) => t.replace(/«[^»]*»|"[^"]*"|“[^”]*”|(?<![\w])'[^']*'(?![\w])/g, "");
-for (const [label, re] of Object.entries(SLOP)) {
-  const all = cases.filter((c) => re.test(unquoted(prose(c))));
-  const reviewed = label.startsWith("fórmula") ? all.filter((c) => FORMULA_REVIEWED.has(c.id)) : [];
-  const hit = all.filter((c) => !reviewed.includes(c));
-  console.log(`  ${label}: ${hit.length} fichas · ${byTier(hit)}${reviewed.length ? ` (+${reviewed.length} revisadas: contraste factual)` : ""}`);
-  if (label.startsWith("fórmula"))
-    for (const id of FORMULA_REVIEWED) if (!all.some((c) => c.id === id)) console.log(`    ⚠ ${id} ya no usa la fórmula: sácala de FORMULA_REVIEWED`);
+// 5 · IA slop en la interfaz (la de las fichas la cubre E56, ERROR).
+// Guarda de la lista de fichas revisadas: una entrada que ya no usa la fórmula
+// es una exención rancia.
+{
+  const strip = (t) => t.replace(/«[^»]*»|"[^"]*"|“[^”]*”|(?<![\w])'[^']*'(?![\w])/g, "");
+  const re = SLOP["fórmula «no es X, es/sino Y»"];
+  const prose = (c) => [c.summary, c.summary_en, c.whatHappened, c.whatHappened_en, c.whyMatters, c.whyMatters_en, ...(c.evidence || []), ...(c.evidence_en || [])].filter(Boolean).join("\n");
+  for (const id of FORMULA_REVIEWED) {
+    const c = cases.find((x) => x.id === id);
+    if (!c || !re.test(strip(prose(c)))) console.log(`\n  ⚠ ${id} ya no usa la fórmula: sácala de FORMULA_REVIEWED`);
+  }
 }
 const srcFiles = (dir) => fs.readdirSync(path.join(ROOT, dir), { recursive: true }).filter((f) => /\.tsx$/.test(f)).map((f) => path.join(dir, f));
 const ui = [...srcFiles("app"), ...srcFiles("components")].map((f) => [f, fs.readFileSync(path.join(ROOT, f), "utf8")]);

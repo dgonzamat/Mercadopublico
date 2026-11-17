@@ -87,23 +87,36 @@ const clickToggle = async (code) => {
 };
 
 console.log("Filtro de /researchers · prueba interactiva\n");
-// Truncado: 125 tarjetas en el HTML, pero solo 8 por sección a la vista.
-// A=41 B=27 C=12 D=9 E=1 F=35 → 8+8+8+8+1+8 = 41 (todas las secciones ≥8)
-check("truncado inicial: 41 visibles de 125", await evalJs(visible), 41);
-check("las 125 siguen en el HTML (SEO)", await evalJs(`document.querySelectorAll('[data-search]').length`), 125);
-check("5 secciones ofrecen 'ver todos'", await evalJs(toggles), 5);
-check("conteo cuenta el TOTAL, no lo visible", await evalJs(countText), "125 actors");
+// Las cifras se derivan de data/researchers.json y de PER_SECTION de
+// components/RegionFilter.tsx: escritas a mano envejecían con cada actor nuevo
+// (decían 125 tarjetas y A=33 restantes con 128 actores y A=42, nov 2026).
+const RESEARCHERS = JSON.parse(fs.readFileSync("data/researchers.json", "utf-8"));
+const perSectionSrc = fs.readFileSync("components/RegionFilter.tsx", "utf-8").match(/const PER_SECTION = (\d+);/);
+if (!perSectionSrc) { console.error("✗ no se pudo leer PER_SECTION en components/RegionFilter.tsx"); process.exit(2); }
+const PER_SECTION = Number(perSectionSrc[1]);
+const bySection = {};
+for (const r of RESEARCHERS) bySection[r.section] = (bySection[r.section] || 0) + 1;
+const TOTAL = Object.values(bySection).reduce((a, b) => a + b, 0);
+const SECTIONS = Object.keys(bySection).length;
+const INITIAL = Object.values(bySection).reduce((a, n) => a + Math.min(n, PER_SECTION), 0);
+const TOGGLES = Object.values(bySection).filter((n) => n > PER_SECTION).length;
+const REST_A = Math.max(0, (bySection.A || 0) - PER_SECTION);
+
+check(`truncado inicial: ${INITIAL} visibles de ${TOTAL}`, await evalJs(visible), INITIAL);
+check(`las ${TOTAL} siguen en el HTML (SEO)`, await evalJs(`document.querySelectorAll('[data-search]').length`), TOTAL);
+check(`${TOGGLES} secciones ofrecen 'ver todos'`, await evalJs(toggles), TOGGLES);
+check("conteo cuenta el TOTAL, no lo visible", await evalJs(countText), `${TOTAL} actors`);
 check("sin secciones vacías", await evalJs(emptyGroups), 0);
 
 await clickToggle("A");
-check("desplegar A suma sus 33 restantes", await evalJs(visible), 41 + 33);
+check(`desplegar A suma sus ${REST_A} restantes`, await evalJs(visible), INITIAL + REST_A);
 await clickToggle("A");
-check("plegar A vuelve a 41", await evalJs(visible), 41);
+check(`plegar A vuelve a ${INITIAL}`, await evalJs(visible), INITIAL);
 
 await type("zamora");
 check("busca 'zamora' → 1 visible", await evalJs(visible), 1);
-check("conteo refleja el filtro", await evalJs(countText), "1 of 125 actors");
-check("5 de 6 secciones vacías", await evalJs(emptyGroups), 5);
+check("conteo refleja el filtro", await evalJs(countText), `1 of ${TOTAL} actors`);
+check(`${SECTIONS - 1} de ${SECTIONS} secciones vacías`, await evalJs(emptyGroups), SECTIONS - 1);
 
 await type("antonio");                       // sin acento debe encontrar "Antônio"
 check("'antonio' encuentra a Antônio (sin diacríticos)", await evalJs(visible), (n) => n >= 1);
@@ -126,9 +139,9 @@ check("buscar LEVANTA el truncado (no esconde resultados)", await evalJs(visible
 check("buscando no se ofrece 'ver todos'", await evalJs(toggles), 0);
 
 await type("");
-check("limpiar vuelve al truncado de 41", await evalJs(visible), 41);
+check(`limpiar vuelve al truncado de ${INITIAL}`, await evalJs(visible), INITIAL);
 check("secciones vacías vuelven a 0", await evalJs(emptyGroups), 0);
-check("los toggles reaparecen", await evalJs(toggles), 5);
+check("los toggles reaparecen", await evalJs(toggles), TOGGLES);
 
 ws.close(); proc.kill(); server.close();
 console.log(fails ? `\n✗ ${fails} fallo(s)` : "\n✓ todas las aserciones pasaron");

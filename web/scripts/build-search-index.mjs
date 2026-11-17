@@ -2,7 +2,7 @@
 /**
  * Build-time generation of the client-side search index.
  *
- * Reads data/cases/*.json + data/researchers.json + data/patterns.json +
+ * Reads data/cases/*.json + data/researchers.json + data/posts/*.json +
  * data/frameworks.json and emits a unified search payload at
  * public/search-index.json. Each entry carries a `type` discriminator so
  * SiteSearch can route, badge, and rank by kind. A small set of static
@@ -119,28 +119,6 @@ const postEntries = postsData.map((p) => ({
   summary: p.summary || "",
   summary_en: p.summary_en,
   keywords: (p.tags || []).join(" "),
-}));
-
-// ── PATTERNS ─────────────────────────────────────────────────────────────
-const patternsData = JSON.parse(
-  fs.readFileSync(path.join(dataDir, "patterns.json"), "utf-8"),
-);
-
-const patternEntries = patternsData.map((p) => ({
-  type: "pattern",
-  id: p.letter, // href → /patterns/{letter}
-  num: 0,
-  name: p.name,
-  name_en: p.name_en,
-  subtitle: `Patrón ${p.id}`,
-  subtitle_en: `Pattern ${p.id}`,
-  meta: "",
-  flag: "",
-  year: "",
-  year_start: 0,
-  summary: p.description,
-  summary_en: p.description_en,
-  keywords: [p.id, p.name_en].filter(Boolean).join(" "),
 }));
 
 // ── FRAMEWORKS ───────────────────────────────────────────────────────────
@@ -277,5 +255,5 @@ fs.writeFileSync(outFile, JSON.stringify(index));
 
 const sizeKb = (fs.statSync(outFile).size / 1024).toFixed(1);
 console.log(
-  `build-search-index: ${caseEntries.length} cases + ${researcherEntries.length} researchers + ${postEntries.length} posts + ${patternEntries.length} patterns + ${frameworkEntries.length} frameworks + ${pageEntries.length} pages → public/search-index.json (${sizeKb} KB)`,
+  `build-search-index: ${caseEntries.length} cases + ${researcherEntries.length} researchers + ${postEntries.length} posts + ${frameworkEntries.length} frameworks + ${pageEntries.length} pages → public/search-index.json (${sizeKb} KB)`,
 );

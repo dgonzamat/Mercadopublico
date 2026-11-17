@@ -10,7 +10,7 @@
  *
  * Esta sonda NO juzga calidad —eso lo hace el skill /auditar-prosa con un
  * lector— y TAMPOCO la predice: en la prueba con lectores de nov 2026 (10
- * fichas, ES+EN) su puntuación no se correlacionó con la nota del lector
+ * fichas, ES+EN) su antigua puntuación no se correlacionó con la nota del lector
  * (Spearman ≈ 0). El globo chino, el peor según la sonda, fue el mejor leído
  * (7–8/10); Panamá y Goulburn, con 0 puntos, sacaron 5–6 y había que
  * reescribirlas. Lo que falla en las fichas es la SELECCIÓN (transcribir el
@@ -18,22 +18,16 @@
  * la frase), y eso no se mide contando. Por eso la muestra del skill se elige
  * al azar por tier, no por esta puntuación.
  *
- * Para qué sirve: localizar DEFECTOS CONCRETOS con su texto (`--id` lista las
- * frases más cargadas), vocabulario de España, citas largas en inglés sin
- * traducir dentro del español, y medir la tendencia del archivo entre dos
- * fechas.
+ * Para qué sirve: localizar DEFECTOS CONCRETOS con su texto —frases que
+ * apilan datos o pasan de 50 palabras, vocabulario de España y citas largas en
+ * inglés sin traducir dentro del español— para que el redactor los arregle.
+ * La puntuación 0–100 y el ranking de fichas se quitaron en nov 2026: no
+ * predecían nada (ver arriba) y se usaban para elegir muestras.
  *
- * Métricas por ficha e idioma (prosa = whatHappened + whyMatters, sin citas):
- *   frase media (palabras), % de frases > 40 palabras, frase más larga,
- *   paréntesis por frase, siglas distintas por 1.000 palabras,
- *   primera frase del resumen (palabras) y siglas del resumen,
- *   y en ES: vocabulario de España (la norma es el español latinoamericano culto).
- *
- * Es INFORME, no gate: sale con 0 salvo `--max-score N` (CI opcional).
+ * Es INFORME, no gate: sale siempre con 0 (salvo el control negativo).
  * Node plano, sin dependencias.
  *
- * Uso:  node scripts/audit-prosa.mjs                 ranking (peores 25) + resumen
- *       node scripts/audit-prosa.mjs --top 60
+ * Uso:  node scripts/audit-prosa.mjs                 fichas con defectos, con su texto
  *       node scripts/audit-prosa.mjs --id kinross-incident-1953
  *       node scripts/audit-prosa.mjs --json salida.json
  *       node scripts/audit-prosa.mjs --negative-control
@@ -45,15 +39,8 @@ const CASES = path.join(path.dirname(new URL(import.meta.url).pathname), "..", "
 const args = process.argv.slice(2);
 const arg = (k, d) => { const i = args.indexOf(k); return i >= 0 ? args[i + 1] : d; };
 
-// Umbrales: una frase cómoda en el móvil ronda 15–25 palabras; la prensa de
-// calidad alterna y admite alguna de hasta ~35. Más de 40 casi siempre apila.
-export const LIMITS = { mean: 25, long: 40, longPct: 15, paren: 0.35, sigla: 12, sumFirst: 30, sumSiglas: 2,
-  // densidad: datos sueltos por frase, % de frases con ≥ 6 datos, horas por párrafo
-  datos: 3, densa: 6, densasPct: 15, horasParrafo: 3 };
-
-// Pesos. Calibrados contra la prueba con lectores de nov 2026 (10 fichas, ES+EN);
-// ver el comentario de DENSIDAD.
-export const W = JSON.parse(process.env.PROSA_W || "null") || { media: 15, largas: 5, paren: 5, sigla: 5, res: 10, resSig: 5, datos: 30, densas: 15, horas: 10 };
+// Una frase se señala si pasa de LARGA palabras o carga DENSA datos sueltos.
+const LARGA = 50, DENSA = 8;
 
 // Vocabulario de España con equivalente latinoamericano. Conservador: solo
 // palabras que en América suenan claramente peninsulares en prosa periodística.
@@ -80,7 +67,6 @@ export function sentences(text) {
 const words = (s) => s.split(/\s+/).filter((w) => /[\p{L}\p{N}]/u.test(w)).length;
 const SIGLA = /\b[A-Z][A-Z0-9]{1,}(?:-[A-Z0-9]+)?\b/g;
 const NOT_SIGLA = new Set(["EE", "UU", "II", "III", "IV", "VI", "VII", "XX", "XIX", "XXI", "TV", "OK", "UFO", "UAP", "OVNI", "OVNIS", "US", "USA", "UK"]);
-const siglas = (t) => new Set((t.match(SIGLA) || []).filter((s) => !NOT_SIGLA.has(s)));
 
 // DENSIDAD DE DATOS. La prueba con lectores (nov 2026) mostró que la longitud
 // de la frase casi no predice la nota: Panamá 1958 tenía frases cortas y sacó
@@ -103,34 +89,12 @@ const siglasEn = (f) => (f.match(SIGLA) || []).filter((x) => !NOT_SIGLA.has(x)).
 
 export function measure(prose, summary, lang) {
   const p = unquote(prose), s = unquote(summary || "");
-  const ss = sentences(p), lens = ss.map(words);
-  const total = lens.reduce((a, b) => a + b, 0) || 1;
-  const m = {
-    frases: ss.length,
-    media: +(total / (ss.length || 1)).toFixed(1),
-    largasPct: Math.round((100 * lens.filter((n) => n > LIMITS.long).length) / (ss.length || 1)),
-    maxima: Math.max(0, ...lens),
-    parenPorFrase: +(((p.match(/\(/g) || []).length) / (ss.length || 1)).toFixed(2),
-    siglasPorMil: Math.round((1000 * siglas(p).size) / total),
-    datosPorFrase: 0, densasPct: 0, maxHorasParrafo: 0, peores: [],
-    resumen1: 0,
-    citasIngles: [],
-    resumenSiglas: siglas(s).size,
-    espana: [],
-  };
-  const ds = ss.map(datos);
-  m.datosPorFrase = +(ds.reduce((a, d) => a + d.n, 0) / (ss.length || 1)).toFixed(1);
-  m.densasPct = Math.round((100 * ds.filter((d) => d.n >= LIMITS.densa).length) / (ss.length || 1));
-  m.maxHorasParrafo = Math.max(0, ...p.split(/\n\n/).map((par) => (par.match(HORA) || []).length));
+  const ss = [...sentences(p), ...sentences(s)];
+  const m = { frases: [], citasIngles: [], espana: [] };
   // Las frases que peor se leen, con su texto: un número sin la frase no se arregla.
-  m.peores = ss.map((f, i) => ({ palabras: lens[i], datos: ds[i].n, f }))
-    .filter((x) => x.palabras > 50 || x.datos >= 8)
-    .sort((a, b) => b.datos + b.palabras / 10 - (a.datos + a.palabras / 10)).slice(0, 5)
+  m.frases = ss.map((f) => ({ palabras: words(f), datos: datos(f).n, f }))
+    .filter((x) => x.palabras > LARGA || x.datos >= DENSA)
     .map((x) => `[${x.palabras} palabras · ${x.datos} datos] ${x.f.slice(0, 220)}${x.f.length > 220 ? "…" : ""}`);
-  // La 1ª frase del resumen solo pesa si además apila datos: un resumen largo
-  // con un solo hilo se lee bien (globo chino, 7–8/10 con 38 palabras).
-  const r1 = sentences(s)[0] || "";
-  m.resumen1 = datos(r1).n >= 5 ? words(r1) : 0;
   if (lang === "es") {
     // Cita en inglés de más de 8 palabras dentro del español, sin traducir:
     // la guía pide traducirla o glosarla (Skinwalker traía varias, nov 2026).
@@ -143,28 +107,19 @@ export function measure(prose, summary, lang) {
       if (re.test(p) || re.test(s)) m.espana.push(`${w} → ${alt}`);
     }
   }
-// Puntuación 0–100: cuánto se excede cada umbral (0 = dentro de todos).
-  const over = (v, lim, w) => Math.max(0, (v - lim) / lim) * w;
-  m.score = Math.min(100, Math.round(
-    over(m.media, LIMITS.mean, W.media) + over(m.largasPct, LIMITS.longPct, W.largas) +
-    over(m.parenPorFrase, LIMITS.paren, W.paren) + over(m.siglasPorMil, LIMITS.sigla, W.sigla) +
-    over(m.resumen1, LIMITS.sumFirst, W.res) + over(m.resumenSiglas, LIMITS.sumSiglas, W.resSig) +
-    over(m.datosPorFrase, LIMITS.datos, W.datos) + over(m.densasPct, LIMITS.densasPct, W.densas) +
-    over(m.maxHorasParrafo, LIMITS.horasParrafo, W.horas) +
-    m.espana.length * 3 + m.citasIngles.length * 3));
+  m.total = m.frases.length + m.citasIngles.length + m.espana.length;
   return m;
 }
 
 export function loadCases() {
   return fs.readdirSync(CASES).filter((f) => f.endsWith(".json"))
-    .map((f) => JSON.parse(fs.readFileSync(path.join(CASES, f), "utf8")))
-    .filter((o) => o.category !== "document");
+    .map((f) => JSON.parse(fs.readFileSync(path.join(CASES, f), "utf8")));
 }
 
 export function auditCase(o) {
   const es = measure(`${o.whatHappened || ""}\n\n${o.whyMatters || ""}`, o.summary, "es");
   const en = measure(`${o.whatHappened_en || ""}\n\n${o.whyMatters_en || ""}`, o.summary_en, "en");
-  return { id: o.id, tier: o.tier, es, en, score: Math.max(es.score, en.score) };
+  return { id: o.id, tier: o.tier, es, en, total: es.total + en.total };
 }
 
 // ── control negativo: la sonda debe separar una frase apilada de una llana ──
@@ -173,12 +128,12 @@ if (args.includes("--negative-control")) {
   const good = measure("La noche del 23 de noviembre de 1953, un radar militar de Michigan detectó sobre el lago Superior un avión que no seguía ninguna ruta prevista. El controlador pensó que era un avión canadiense. Desde la base de Kinross despegó un caza para identificarlo.", "", "es");
   const abbr = sentences("Lo dijo el Dr. Hynek en EE. UU. el mismo día. Luego se fue.");
   const q = measure("El informe dice «the coins can be easily explained by fraud perpetrated by the officers» y nada más.", "", "es");
-  const ok = bad.score > 30 && good.score === 0 && bad.espana.length === 1 && abbr.length === 2 && q.citasIngles.length === 1;
-  console.log(ok ? "✅ control negativo: la sonda discrimina" : `❌ control negativo falló: malo=${bad.score} bueno=${good.score} españa=${bad.espana} frases=${abbr.length}`);
+  const ok = bad.frases.length === 1 && good.frases.length === 0 && good.total === 0 && bad.espana.length === 1 && abbr.length === 2 && q.citasIngles.length === 1;
+  console.log(ok ? "✅ control negativo: la sonda discrimina" : `❌ control negativo falló: malo=${bad.frases.length} bueno=${good.total} españa=${bad.espana} frases=${abbr.length}`);
   process.exit(ok ? 0 : 1);
 }
 
-const results = loadCases().map(auditCase).sort((a, b) => b.score - a.score);
+const results = loadCases().map(auditCase).sort((a, b) => a.id.localeCompare(b.id));
 const id = arg("--id");
 if (id) {
   const r = results.find((x) => x.id === id);
@@ -188,23 +143,17 @@ if (id) {
 }
 if (arg("--json")) fs.writeFileSync(arg("--json"), JSON.stringify(results, null, 2) + "\n");
 
-const top = +arg("--top", 25);
-const pad = (v, n) => String(v).padStart(n);
+const conDefectos = results.filter((r) => r.total > 0);
 console.log("═".repeat(78));
-console.log("audit-prosa · carga de datos y defectos concretos (NO predice la nota del lector: ver cabecera)");
-console.log(`umbrales: frase media ≤ ${LIMITS.mean} · frases > ${LIMITS.long} palabras ≤ ${LIMITS.longPct}% · paréntesis/frase ≤ ${LIMITS.paren} · siglas/1.000 ≤ ${LIMITS.sigla} · 1ª frase del resumen ≤ ${LIMITS.sumFirst} · siglas del resumen ≤ ${LIMITS.sumSiglas}`);
+console.log(`audit-prosa · defectos concretos: frases de más de ${LARGA} palabras o con ${DENSA}+ datos, vocabulario de España y citas largas en inglés sin traducir`);
 console.log("═".repeat(78));
-console.log(" pts  tier  ficha                                     ES media/larg%/1ªres   EN media/larg%/1ªres");
-for (const r of results.slice(0, top)) {
-  console.log(`${pad(r.score, 4)}  ${pad(r.tier, 4)}  ${r.id.padEnd(40).slice(0, 40)}  ${pad(r.es.media, 5)}/${pad(r.es.largasPct, 3)}%/${pad(r.es.resumen1, 3)}       ${pad(r.en.media, 5)}/${pad(r.en.largasPct, 3)}%/${pad(r.en.resumen1, 3)}${r.es.espana.length ? "   ES: " + r.es.espana.join(", ") : ""}`);
+for (const r of conDefectos) {
+  console.log(`\n${r.id} (${r.tier})`);
+  for (const [lang, m] of [["ES", r.es], ["EN", r.en]]) {
+    for (const f of m.frases) console.log(`  ${lang} frase ${f}`);
+    for (const e of m.espana) console.log(`  ${lang} España: ${e}`);
+    for (const c of m.citasIngles) console.log(`  ${lang} cita en inglés sin traducir: ${c}…`);
+  }
 }
-const med = (k, l) => { const v = results.map((r) => r[l][k]).sort((a, b) => a - b); return v[Math.floor(v.length / 2)]; };
-const byTier = {};
-for (const r of results) { byTier[r.tier] ??= [0, 0]; byTier[r.tier][1]++; if (r.score > 0) byTier[r.tier][0]++; }
 console.log("─".repeat(78));
-console.log(`fichas: ${results.length} · fuera de algún umbral: ${results.filter((r) => r.score > 0).length} (${Object.entries(byTier).sort().map(([t, [a, b]]) => `${t} ${a}/${b}`).join(" · ")})`);
-console.log(`medianas ES: frase ${med("media", "es")} · 1ª frase del resumen ${med("resumen1", "es")} · siglas del resumen ${med("resumenSiglas", "es")}`);
-console.log(`medianas EN: frase ${med("media", "en")} · 1ª frase del resumen ${med("resumen1", "en")} · siglas del resumen ${med("resumenSiglas", "en")}`);
-console.log(`vocabulario de España en ES: ${results.filter((r) => r.es.espana.length).length} fichas · citas largas en inglés sin traducir en ES: ${results.filter((r) => r.es.citasIngles.length).length} fichas`);
-const max = arg("--max-score");
-if (max && results[0].score > +max) { console.log(`❌ ${results.filter((r) => r.score > +max).length} fichas superan ${max} puntos`); process.exit(1); }
+console.log(`fichas: ${results.length} · con algún defecto: ${conDefectos.length}`);

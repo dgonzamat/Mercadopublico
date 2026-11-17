@@ -29,7 +29,7 @@ function pctParts(fracciones: number[]): number[] {
   // Normalizado: la leyenda promete "suma 100%" y esta función debe cumplirlo
   // aunque el input no sume exactamente 1 (error de coma flotante al acumular,
   // o una partición mal formada). El invariante suma=1 lo vigila aparte
-  // `audit-consistency.mjs` (M1), así que aquí no se oculta ningún dato malo.
+  // `validate-schema.mjs` (antigua M1), así que aquí no se oculta ningún dato malo.
   const suma = fracciones.reduce((s, f) => s + f, 0) || 1;
   const exactos = fracciones.map((f) => (f / suma) * 100);
   const base = exactos.map(Math.floor);

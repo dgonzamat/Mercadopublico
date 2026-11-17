@@ -37,7 +37,6 @@ try {
 const { chromium } = playwright;
 const root = path.resolve(path.dirname(new URL(import.meta.url).pathname), "..");
 const OUT = path.join(root, "out");
-const BASE = "/Mercadopublico";
 const H = 844;
 const arg = (k, d) => { const i = process.argv.indexOf(k); return i > 0 ? process.argv[i + 1] : d; };
 const MAX = Number(arg("--max", "2.5"));
@@ -46,10 +45,24 @@ if (!fs.existsSync(path.join(OUT, "es", "cases"))) {
   console.error("qa-relato: falta out/ (corre `npm run build` antes).");
   process.exit(2);
 }
+// Guarda de frescura, igual que test-chart.mjs: `out/` es artefacto gitignored
+// que queda RANCIO en un contenedor de larga vida, y medir HTML viejo contra un
+// corpus nuevo da fallos (o aprobados) falsos.
+try {
+  const html = path.join(OUT, "es", "cases", "index.html");
+  const corpus = path.join(root, "data", "cases.json");
+  if (fs.statSync(html).mtimeMs < fs.statSync(corpus).mtimeMs) {
+    console.error("✗ out/ RANCIO: es más viejo que data/cases.json — el build no corrió tras el último cambio del corpus. Corre `npm run build` (o `rm -rf out`) antes de medir.");
+    process.exit(1);
+  }
+} catch {
+  /* falta cases.json o el índice de /es/cases: el build está incompleto */
+}
+// Se sirve desde la raíz, como el sitio en uapcodex.org: bajo /Mercadopublico
+// el router del cliente no reconoce /es (CLAUDE.md · Deploy).
 const types = { ".html": "text/html", ".js": "application/javascript", ".css": "text/css", ".svg": "image/svg+xml", ".png": "image/png", ".jpg": "image/jpeg", ".woff2": "font/woff2" };
 const server = http.createServer((q, r) => {
   let u = decodeURIComponent(q.url.split("?")[0]);
-  if (u.startsWith(BASE)) u = u.slice(BASE.length);
   let f = path.join(OUT, u);
   if (fs.existsSync(f) && fs.statSync(f).isDirectory()) f = path.join(f, "index.html");
   if (!fs.existsSync(f)) { r.statusCode = 404; return r.end(); }
@@ -63,7 +76,7 @@ const browser = await chromium.launch();
 const page = await (await browser.newContext({ javaScriptEnabled: false, viewport: { width: 390, height: H }, isMobile: true })).newPage();
 const rows = [];
 for (const id of ids) {
-  await page.goto(`http://127.0.0.1:${port}${BASE}/es/cases/${id}/`, { waitUntil: "load" });
+  await page.goto(`http://127.0.0.1:${port}/es/cases/${id}/`, { waitUntil: "load" });
   // El primer contenido del caso es el registro del suceso (bloque 4, si lo
   // hay) o el relato; entre «Qué fue» y él no puede colarse nada más.
   const m = await page.evaluate(() => {

@@ -24,19 +24,18 @@ El estándar es prosa con **investigación caso por caso, fuentes primarias**. A
 `id, num, name, year_start, country, country_name, flag, location{lat,lng}, tier, probability, summary, summary_en, patterns, category`.
 - **flag**: emoji de bandera de país (dos indicadores regionales, ej. 🇧🇷).
 - **location**: `{lat, lng}` reales del ancla terrestre — lat ∈ [-90,90], lng ∈ [-180,180], **nunca (0,0)** (null island). Opcional `place`.
-- **tier**: `S` | `A` | `B`. **category**: `incident` | `document` | `contactee` | `crop_circle`.
-- **probability**: number (0-100), **derivado, no a mano**: `round(100 × (indet + nohumano_encubierto + nohumano_abierto))` del `posterior` (audit E43, ERROR si difiere). En documentos enlazados con `relatedCases` no se muestra.
+- **tier**: `S` | `A` | `B`. **category**: `incident` | `contactee` | `crop_circle` (no hay `document`: un documento va embebido en `documents[]` del caso o actor que respalda).
+- **probability**: number (0-100), **derivado, no a mano**: `round(100 × (indet + nohumano_encubierto + nohumano_abierto))` del `posterior` (audit E43, ERROR si difiere).
 - **patterns**: array de ids que **deben existir** en `data/patterns.json` (verifícalos; array vacío `[]` es válido si ninguno aplica).
 
-## 3. posterior (modelo MECE) — invariante M1
+## 3. posterior (modelo MECE) — invariante de validate-schema.mjs (antigua M1)
 Distribución sobre 6 narrativas que **suma 1** (tolerancia ±0.005):
 `mundano_natural, humana_clasificada, adversaria, nohumano_encubierto, nohumano_abierto, indet`.
-- **OBLIGATORIO** en `incident`, `contactee`, `crop_circle` (todo lo no-documento).
-- En `document` es opcional (es el "lean" evidencial, no P(objeto)).
+- **OBLIGATORIO** en toda ficha (`incident`, `contactee`, `crop_circle`).
 - Es un juicio analítico estructurado, no una frecuencia: reparte según cómo la evidencia distribuye la explicación. Ver `lib/meceModel.ts`.
 - **Se asigna después de leer la evidencia primaria** (el documento, no un resumen). Si no la pudiste leer, no clasifiques: dilo y deja el caso sin crear o con la limitación declarada. Al terminar, pon `evidenceReviewed: "AAAA-MM-DD"` con la fecha de la lectura (regla E42).
 - **Verificación independiente antes de publicar:** otro agente revisa el caso con [`docs/brief-verificacion.md`](../../docs/brief-verificacion.md) (afirmaciones, eliminaciones y omisiones del mismo expediente). No se fusiona sin ese paso.
-- Si el reparto es una misidentificación, pon `misidSubtype` con el objeto concreto: el sitio ya no muestra la categoría «Misidentificación». Si el caso es un **documento** que respalda incidentes concretos, enlázalos en `relatedCases` en vez de clasificarlo.
+- Si el reparto es una misidentificación, pon `misidSubtype` con el objeto concreto: el sitio ya no muestra la categoría «Misidentificación».
 
 ## 4. Rich content — estándar editorial (obligatorio para el estándar)
 `whatHappened(_en)` + `whyMatters(_en)` deben sumar **≥ ~550 palabras / ~3.500 caracteres, en español E inglés** (prosa; `evidence`/`sources` NO cuentan para la página). Separa párrafos con `\n\n`.
