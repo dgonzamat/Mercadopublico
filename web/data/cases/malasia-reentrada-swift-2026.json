@@ -1,0 +1,171 @@
+{
+  "id": "malasia-reentrada-swift-2026",
+  "num": 528,
+  "name": "Malasia · vecinos de varios estados graban una bola de fuego",
+  "name_en": "Malaysia · residents in several states film a fireball",
+  "seoTitle": "Bola de fuego y «ovni» en Malasia (4 nov 2026): la reentrada del satélite Swift de la NASA",
+  "seoTitle_en": "Malaysia fireball UFO of November 4, 2026: NASA Swift satellite reentry",
+  "seoDescription": "La bola de fuego que se grabó en Malasia el 4 de noviembre de 2026 fue el observatorio Swift de la NASA, que reentró sobre el norte de Sumatra a las 20:39 hora de Malasia.",
+  "seoDescription_en": "The fireball filmed across Malaysia on November 4, 2026, was NASA's Swift observatory, which reentered over northern Sumatra at 8:39 p.m. Malaysia time.",
+  "year_start": 2026,
+  "country": "MY",
+  "country_name": "Malasia",
+  "flag": "🇲🇾",
+  "location": {
+    "lat": 4.2,
+    "lng": 100.9,
+    "place": "Costa oeste de Malasia peninsular, frente a Sumatra",
+    "place_en": "West coast of Peninsular Malaysia, across from Sumatra",
+    "precision": "approx"
+  },
+  "tier": "A",
+  "probability": 5,
+  "posterior": {
+    "mundano_natural": 0.93,
+    "humana_clasificada": 0.01,
+    "adversaria": 0.01,
+    "nohumano_encubierto": 0,
+    "nohumano_abierto": 0.01,
+    "indet": 0.04
+  },
+  "mundanoType": "misid",
+  "misidSubtype": "espacial",
+  "objectDetail": "reentrada",
+  "classBasis": {
+    "es": "El Ministerio de Ciencia, Tecnología e Innovación de Malasia (MOSTI) confirmó el 6 de noviembre de 2026 que había recibido reportes de luces brillantes en varias zonas la noche del 4 de noviembre y, según Bernama, «said the sightings were also linked to the re-entry of the National Aeronautics and Space Administration's (NASA) Neil Gehrels Swift Observatory satellite» (los vinculó también con la reentrada de Swift). La NASA informó que la Fuerza Espacial de EE. UU. confirmó la reentrada «at 7:39 a.m. EST Wednesday over the North Sumatra region of Indonesia», las 20:39 en Malasia. La MYSA atribuyó parte de las luces a las Táuridas del Sur.",
+    "en": "Malaysia's Ministry of Science, Technology and Innovation (MOSTI) confirmed on November 6, 2026, that it had received reports of bright lights over several areas on the night of November 4 and, according to Bernama, \"said the sightings were also linked to the re-entry of the National Aeronautics and Space Administration's (NASA) Neil Gehrels Swift Observatory satellite.\" NASA reported that the U.S. Space Force confirmed the reentry \"at 7:39 a.m. EST Wednesday over the North Sumatra region of Indonesia,\" 8:39 p.m. in Malaysia. MYSA attributed some of the lights to the Southern Taurids.",
+    "source": "Comunicado del MOSTI recogido por Bernama (6 nov 2026); blog de Swift de la NASA (actualizado el 4 nov 2026)",
+    "source_en": "MOSTI statement reported by Bernama (Nov 6, 2026); NASA Swift blog (updated Nov 4, 2026)",
+    "url": "https://bernama.com/en/general/news.php?id=2631046"
+  },
+  "summary": "La noche del miércoles 4 de noviembre de 2026, hacia las 20:39 hora de Malasia, vecinos de varios estados de la península vieron cruzar el cielo una bola de fuego, la grabaron, y se habló de un meteoro o de una estrella fugaz. A esa misma hora, según la Fuerza Espacial de EE. UU., el observatorio Neil Gehrels Swift de la NASA, lanzado en 2004, reentraba en la atmósfera sobre el norte de Sumatra, en Indonesia, al otro lado del estrecho de Malaca. El ministerio de Ciencia de Malasia atribuyó los avistamientos a esa reentrada y dijo que no tenía reportes oficiales de restos.",
+  "summary_en": "On the night of Wednesday, November 4, 2026, at around 8:39 p.m. Malaysia time, residents in several states of the peninsula saw a fireball cross the sky, filmed it, and talk spread of a meteor or a shooting star. At that same moment, according to the U.S. Space Force, NASA's Neil Gehrels Swift Observatory, launched in 2004, was reentering the atmosphere over northern Sumatra, Indonesia, across the Strait of Malacca. Malaysia's science ministry attributed the sightings to that reentry and said it had no official reports of debris.",
+  "patterns": [
+    "8e"
+  ],
+  "category": "incident",
+  "epistemicStatus": "documented",
+  "whatHappened": "El observatorio Neil Gehrels Swift de la NASA despegó el 20 de noviembre de 2004 desde Cabo Cañaveral para estudiar los estallidos de rayos gamma, las explosiones más potentes que se conocen. Estaba pensado para una misión de dos años y funcionó casi veintidós. Pesaba unos 1.450 kilos, giraba en una órbita baja inclinada unos 20,5 grados respecto del ecuador y no tenía motor para subirla. Como todo satélite en órbita baja, el roce con la parte alta de la atmósfera lo hacía bajar poco a poco, y según la NASA la actividad solar de los últimos años, que calienta y expande esas capas, aceleró la caída.\n\nPara salvarlo, la NASA contrató en septiembre de 2025 a Katalyst Space, una empresa de Flagstaff, Arizona, para que construyera en un año un satélite capaz de alcanzar a Swift, sujetarlo y elevar su órbita. Esa nave, llamada LINK, despegó en julio de 2026 desde el atolón de Kwajalein, en las Islas Marshall, a bordo de un cohete Pegasus XL. Según la NASA, tras los primeros controles empezó a perder la comunicación a ratos y a tener problemas para orientarse. Las dos partes acordaron reducir la misión: LINK ya no intentaría sujetar ni elevar a Swift y solo haría pruebas de tecnología. Llegó a pasar a entre 12 y 15 kilómetros del observatorio, al que fotografió como una línea de luz. La NASA cerró su participación el 3 de septiembre y LINK reentró en la atmósfera el 25 de septiembre.\n\nSwift, que desde mediados de febrero había dejado de observar para frenar menos, volvió a hacerlo a fines de agosto; eso aumentó el roce y aceleró otra vez la caída. El 20 de octubre bajó a 275 kilómetros, ya no pudo compensar el frenado y entró en modo seguro; el equipo de operaciones de la Universidad Estatal de Pensilvania le envió la orden que puso fin a la misión. En los días siguientes, la Fuerza Espacial de EE. UU. publicó predicciones de la caída cada vez más precisas. Una de las primeras daba las 08:30 UTC del 4 de noviembre con un margen de once horas; una de las últimas, una ventana entre las 11:42 y las 13:42 UTC. La NASA había calculado en 1 entre 2.100 el riesgo de que algún resto hiriera a alguien en tierra.\n\nLa Fuerza Espacial dio la reentrada a las 12:39 UTC del miércoles 4 de noviembre, sobre la provincia de Sumatra del Norte, en Indonesia, cerca de 3,4 grados de latitud norte y 98,6 de longitud este. Allí eran las 19:39; en Malasia, las 20:39. Según el ingeniero aeroespacial Muhammad Hanafi Azami, de la Universidad Islámica Internacional de Malasia, citado por el New Straits Times, los avistamientos se reportaron entre las 20:35 y las 20:45. Usuarios de la red Threads publicaron videos grabados en Pahang, Johor, Terengganu y Kedah, y se habló de un meteoro o de una estrella fugaz. Hanafi dijo al diario Harian Metro que la bola de fuego se veía a través del estrecho de Malaca desde Penang, Kedah, Perak y Selangor. Desde Singapur también se vio una bola de fuego con una larga cola, hacia las 20:40, según el portal Mothership.\n\nEn Indonesia, mucha gente publicó videos del objeto ardiendo en el cielo, según el mismo portal. Según un cálculo hecho para este caso, las coordenadas de la Fuerza Espacial quedan a unos 20 kilómetros de Medan, la capital de Sumatra del Norte.\n\nAl día siguiente, el director general de la Agencia Espacial de Malasia (MYSA), Azlikamil Napiah, dijo al New Straits Times que las luces respondían a dos sucesos de esos días: la reentrada del telescopio de la NASA y el máximo de la lluvia de meteoros de las Táuridas del Sur, que su calendario situaba entre la noche del miércoles y la madrugada del jueves, con unos cinco meteoros por hora. Dijo también que la NASA había controlado la reentrada y, según el diario, que los restos ya habían caído en el océano, «dentro del continente africano». Las dos cosas chocan con los datos: la caída fue sin control y la Fuerza Espacial la situó sobre Sumatra. El diario recogió también reportes de Kuantan, Kluang, Kota Tinggi y Kota Kinabalu, en Sabah, y advirtió que no estaba claro que todos fueran el mismo fenómeno.\n\nEl 6 de noviembre, el Ministerio de Ciencia, Tecnología e Innovación de Malasia (MOSTI), por medio de su División de Autoridad Espacial, confirmó que había recibido reportes de luces brillantes en varias zonas la noche del miércoles y los vinculó con la reentrada de Swift. «So far, there are no official reports on the discovery of any suspected space object debris, such as rockets, on land or in Malaysian waters» (hasta ahora no hay reportes oficiales del hallazgo de restos de un objeto espacial en tierra ni en aguas de Malasia), dijo el ministerio, que pidió no tocar ningún objeto sospechoso y no especular. La NASA, por su parte, esperaba que casi todo el satélite se quemara, pero advirtió que algunas piezas pudieron llegar al suelo. Hasta el cierre de las fuentes consultadas nadie había informado del hallazgo de restos.",
+  "whatHappened_en": "NASA's Neil Gehrels Swift Observatory lifted off from Cape Canaveral on November 20, 2004, to study gamma-ray bursts, the most powerful explosions known. It was built for a two-year mission and worked for almost twenty-two. It weighed about 1,450 kilograms, circled in a low orbit tilted about 20.5 degrees from the equator and had no engine to raise it. Like every satellite in low orbit, it was slowly dragged down by the thin upper atmosphere, and according to NASA the solar activity of recent years, which heats and expands those layers, sped up its fall.\n\nTo save it, NASA hired Katalyst Space, a company based in Flagstaff, Arizona, in September 2025 to build within a year a satellite that could reach Swift, grab it and raise its orbit. That spacecraft, called LINK, lifted off in July 2026 from Kwajalein Atoll in the Marshall Islands aboard a Pegasus XL rocket. According to NASA, after its first checkouts it began losing contact at times and had trouble controlling its orientation. The two sides agreed to scale back the mission: LINK would no longer try to grab or boost Swift and would only run technology tests. It came within 12 to 15 kilometers of the observatory, which it photographed as a streak of light. NASA ended its involvement on September 3, and LINK reentered the atmosphere on September 25.\n\nSwift, which had stopped observing in mid-February to reduce drag, resumed in late August; that increased the drag and sped up its fall again. On October 20 it dropped to 275 kilometers, could no longer make up for the braking and went into safe mode; the operations team at Penn State sent the command that ended the mission. In the days that followed, the U.S. Space Force issued ever more precise predictions of the fall. One of the first gave 08:30 UTC on November 4, with a margin of eleven hours; one of the last, a window from 11:42 to 13:42 UTC. NASA had put the risk that a piece would hurt someone on the ground at 1 in 2,100.\n\nThe Space Force placed the reentry at 12:39 UTC on Wednesday, November 4, over the province of North Sumatra, Indonesia, near 3.4 degrees north latitude and 98.6 degrees east longitude. It was 7:39 p.m. there and 8:39 p.m. in Malaysia. According to aerospace engineer Muhammad Hanafi Azami, of the International Islamic University Malaysia, quoted by the New Straits Times, the sightings were reported between 8:35 and 8:45 p.m. Users of the Threads network posted videos recorded in Pahang, Johor, Terengganu and Kedah, and talk spread of a meteor or a shooting star. Hanafi told the newspaper Harian Metro that the fireball could be seen across the Strait of Malacca from Penang, Kedah, Perak and Selangor. A fireball with a long tail was also seen from Singapore, at around 8:40 p.m., according to the news site Mothership.\n\nIn Indonesia, many people posted videos of the object burning up in the sky, the same site reported. By a calculation made for this case, the Space Force coordinates lie about 20 kilometers from Medan, the capital of North Sumatra.\n\nThe next day, the director general of the Malaysian Space Agency (MYSA), Azlikamil Napiah, told the New Straits Times that the lights came from two events of those days: the reentry of the NASA telescope and the peak of the Southern Taurids meteor shower, which his agency's calendar placed between Wednesday night and early Thursday, at about five meteors an hour. He also said NASA had controlled the reentry and, according to the paper, that the debris had already fallen in the ocean, \"within the African continent.\" Both clash with the record: the fall was uncontrolled, and the Space Force placed it over Sumatra. The paper also gathered reports from Kuantan, Kluang, Kota Tinggi and Kota Kinabalu, in Sabah, and noted that it was not clear they were all the same phenomenon.\n\nOn November 6, Malaysia's Ministry of Science, Technology and Innovation (MOSTI), through its Space Authority Division, confirmed it had received reports of bright lights over several areas on Wednesday night and linked them to Swift's reentry. \"So far, there are no official reports on the discovery of any suspected space object debris, such as rockets, on land or in Malaysian waters,\" the ministry said, asking people not to touch any suspicious object and not to speculate. NASA, for its part, expected most of the satellite to burn up but warned that some parts may have reached the ground. As of the sources consulted, no one had reported finding any debris.",
+  "whyMatters": "Lo que se vio en Malasia encaja con la caída de un satélite y no con la de una roca. Un meteoro entra en la atmósfera a entre 11 y 72 kilómetros por segundo y suele apagarse en uno a tres segundos, explicó Hanafi; un satélite que reentra va más despacio, a la velocidad de su órbita, de casi 8 kilómetros por segundo, y puede verse hasta dos minutos. Al romperse, sus paneles, piezas de metal y antenas pueden formar varios puntos de luz en la misma línea, y los videos de Kuantan y Johor mostraban varios objetos encendidos cruzando el cielo, según el New Straits Times. Y la hora cuadra: los reportes de Malasia van de las 20:35 a las 20:45, y la Fuerza Espacial dio la reentrada a las 20:39 hora de Malasia.\n\nSegún un cálculo hecho para este caso con la última órbita publicada de Swift (del 3 de noviembre a las 21:22 UTC), a las 12:39 UTC el satélite bajaba hacia el sureste: venía del océano Índico, entró por la costa oeste de Aceh y cruzaba el norte de Sumatra en dirección al estrecho de Malaca. El punto que dio la Fuerza Espacial queda a unos 300 kilómetros de Penang, Ipoh y Klang. Para un objeto a entre 80 y 100 kilómetros de altura, donde se desintegran los satélites, eso lo pone a entre 13 y 17 grados sobre el horizonte, al oeste o al suroeste. El tramo encendido, que venía antes desde Aceh, estuvo más lejos y más bajo. Desde Kuantan y Kluang, a entre 530 y 550 kilómetros, quedaba a entre 6 y 8 grados, muy bajo pero visible con el cielo despejado.\n\nKota Kinabalu está a casi 2.000 kilómetros: desde allí ese punto quedaba bajo el horizonte, así que los reportes de Sabah, si eran de esa noche, corresponden a otra cosa.\n\nEl mismo cálculo da el Sol unos 25 grados bajo el horizonte en la costa oeste de Malasia: era noche cerrada, y nada por debajo de unos 640 kilómetros de altura sobre la costa recibía su luz. La luz que se vio venía del calor del propio satélite al atravesar el aire, no de un reflejo.\n\nQueda una alternativa que planteó la propia MYSA: las Táuridas del Sur tenían su máximo esa misma noche, y su calendario esperaba unos cinco meteoros por hora. Un bólido de las Táuridas pudo explicar algún reporte suelto. Pero los reportes caen en la misma ventana de diez minutos que la reentrada de un objeto de 1.450 kilos a unos cientos de kilómetros, y la luz se vio en la dirección por la que pasaba Swift; eso apunta al satélite para los avistamientos de la península y de Singapur. Solo los de Sabah quedan fuera de su alcance. Ningún medio ha verificado los videos de forma independiente, y ninguna cámara científica registró la caída.\n\nEl caso muestra también cómo se resuelve hoy una luz en el cielo: la Fuerza Espacial publicó la hora y el lugar, la NASA los difundió el mismo día y el gobierno de Malasia respondió en dos días. Swift cayó sin control con un riesgo calculado de 1 entre 2.100, más alto que el límite de 1 entre 10.000 que fijan para las reentradas sin control las normas de EE. UU. de 2019, según la Aerospace Corporation; un satélite como él, lanzado hoy, probablemente tendría que planear su final con reglas mucho más estrictas.",
+  "whyMatters_en": "What people in Malaysia saw fits the fall of a satellite, not of a rock. A meteor enters the atmosphere at 11 to 72 kilometers per second and usually fades within one to three seconds, Hanafi explained; a reentering satellite moves more slowly, at its orbital speed of almost 8 kilometers per second, and can stay visible for up to two minutes. As it breaks up, its panels, metal parts and antennas can form several points of light along the same line, and the videos from Kuantan and Johor showed several fiery objects streaking across the sky, according to the New Straits Times. And the timing fits: the Malaysian reports run from 8:35 to 8:45 p.m., and the Space Force put the reentry at 8:39 p.m. Malaysia time.\n\nBy a calculation made for this case with Swift's last published orbit (from 21:22 UTC on November 3), at 12:39 UTC the satellite was heading southeast: it came in from the Indian Ocean over Aceh's west coast and crossed northern Sumatra toward the Strait of Malacca. The point the Space Force gave lies about 300 kilometers from Penang, Ipoh and Klang. For an object 80 to 100 kilometers up, where satellites break apart, that puts it 13 to 17 degrees above the horizon, to the west or southwest. The glowing stretch, which came earlier from Aceh, was farther away and lower. From Kuantan and Kluang, 530 to 550 kilometers away, it sat 6 to 8 degrees up, very low but visible under a clear sky.\n\nKota Kinabalu is almost 2,000 kilometers away: from there the point lay below the horizon, so the Sabah reports, if they were from that night, belong to something else.\n\nThe same calculation puts the Sun about 25 degrees below the horizon on Malaysia's west coast: it was full night, and nothing below about 640 kilometers above the coast was getting sunlight. The light people saw came from the heat of the satellite itself as it tore through the air, not from a reflection.\n\nOne alternative, raised by MYSA itself, remains: the Southern Taurids peaked that same night, and its calendar expected about five meteors an hour. A Taurid fireball could account for a stray report. But the reports fall in the same ten-minute window as the reentry of a 1,450-kilogram object a few hundred kilometers away, and the light was seen in the direction of Swift's path; that points to the satellite for the sightings from the peninsula and Singapore. Only the Sabah reports lie beyond its reach. No outlet has independently verified the videos, and no scientific camera recorded the fall.\n\nThe case also shows how a light in the sky gets resolved today: the Space Force released the time and place, NASA published them the same day and the Malaysian government responded within two days. Swift fell uncontrolled with a calculated risk of 1 in 2,100, higher than the 1 in 10,000 limit that the 2019 U.S. standards set for uncontrolled reentries, according to The Aerospace Corporation; a satellite like it, launched today, would likely have to plan its end under much stricter rules.",
+  "evidence": [
+    "La NASA, en su blog de Swift actualizado el 4 de noviembre de 2026: la Fuerza Espacial de EE. UU. confirmó que el observatorio «re-entered Earth's atmosphere at 7:39 a.m. EST Wednesday over the North Sumatra region of Indonesia, at approximately 3.4 degrees north latitude and 98.6 degrees east longitude» (las 12:39 UTC).",
+    "La NASA, el 23 de octubre de 2026: Swift bajó a 275 kilómetros el 20 de octubre, entró en modo seguro y el equipo de Penn State le envió la orden que terminó sus operaciones; el 28 de septiembre explicó que la misión de rescate de Katalyst «concluded without raising the spacecraft's orbit».",
+    "El ministerio MOSTI de Malasia, en un comunicado del 6 de noviembre recogido por Bernama: recibió reportes de luces brillantes en varias zonas la noche del 4 de noviembre, los vinculó con la reentrada de Swift y no tenía reportes oficiales de restos en tierra ni en aguas de Malasia.",
+    "El New Straits Times, 5 de noviembre: según Muhammad Hanafi Azami (Universidad Islámica Internacional de Malasia), los reportes se situaron entre las 20:35 y las 20:45 hora de Malasia; videos publicados en Threads mostraban la luz en Pahang, Johor, Terengganu y Kedah, y según él se vio a través del estrecho de Malaca desde Penang, Kedah, Perak y Selangor.",
+    "El director general de la MYSA, Azlikamil Napiah, al New Straits Times el 5 de noviembre: las luces se debían a la reentrada del telescopio de la NASA y al máximo de las Táuridas del Sur; el diario dejó abierto si los reportes de Kota Kinabalu (Sabah) eran el mismo fenómeno.",
+    "Los catálogos de CelesTrak y de Jonathan McDowell (GCAT) registran a Swift como 2004-047A (NORAD 28485), lanzado el 20 de noviembre de 2004, con una inclinación de unos 20,5 grados; CelesTrak le da como fecha de caída el 4 de noviembre de 2026.",
+    "Según un cálculo hecho para este caso con la última órbita de Swift (3 de noviembre, 21:22 UTC), a las 12:39 UTC del 4 de noviembre el satélite bajaba hacia el sureste sobre el norte de Sumatra, a unos 300 kilómetros de la costa oeste de Malasia, con el Sol unos 25 grados bajo el horizonte."
+  ],
+  "evidence_en": [
+    "NASA, in its Swift blog updated on November 4, 2026: the U.S. Space Force confirmed that the observatory \"re-entered Earth's atmosphere at 7:39 a.m. EST Wednesday over the North Sumatra region of Indonesia, at approximately 3.4 degrees north latitude and 98.6 degrees east longitude\" (12:39 UTC).",
+    "NASA, October 23, 2026: Swift dropped to 275 kilometers on October 20, went into safe mode and the Penn State team sent the command that ended its operations; on September 28, NASA explained that Katalyst's rescue mission \"concluded without raising the spacecraft's orbit.\"",
+    "Malaysia's MOSTI ministry, in a November 6 statement reported by Bernama: it received reports of bright lights over several areas on the night of November 4, linked them to Swift's reentry and had no official reports of debris on land or in Malaysian waters.",
+    "New Straits Times, November 5: according to Muhammad Hanafi Azami (International Islamic University Malaysia), the reports were placed between 8:35 and 8:45 p.m. Malaysia time; videos posted on Threads showed the light in Pahang, Johor, Terengganu and Kedah, and according to him it was seen across the Strait of Malacca from Penang, Kedah, Perak and Selangor.",
+    "MYSA director general Azlikamil Napiah, to the New Straits Times on November 5: the lights came from the reentry of the NASA telescope and the peak of the Southern Taurids; the paper left open whether the reports from Kota Kinabalu (Sabah) were the same phenomenon.",
+    "The CelesTrak and Jonathan McDowell (GCAT) catalogs list Swift as 2004-047A (NORAD 28485), launched November 20, 2004, with an inclination of about 20.5 degrees; CelesTrak gives November 4, 2026, as its decay date.",
+    "By a calculation made for this case with Swift's last orbit (November 3, 21:22 UTC), at 12:39 UTC on November 4 the satellite was heading southeast over northern Sumatra, about 300 kilometers from Malaysia's west coast, with the Sun about 25 degrees below the horizon."
+  ],
+  "sources": [
+    {
+      "name": "NASA, «NASA's Swift Observatory Re-Entered Atmosphere», blog de Swift, por Alise Fisher (2 nov 2026, actualizado el 4 nov 2026)",
+      "name_en": "NASA, \"NASA's Swift Observatory Re-Entered Atmosphere,\" Swift blog, by Alise Fisher (Nov 2, 2026, updated Nov 4, 2026)",
+      "url": "https://science.nasa.gov/blogs/swift/2026/11/02/nasas-swift-observatory-to-re-enter-atmosphere/",
+      "note": "Fuente primaria: hora y lugar de la reentrada que confirmó la Fuerza Espacial de EE. UU.",
+      "note_en": "Primary source: the time and place of the reentry confirmed by the U.S. Space Force."
+    },
+    {
+      "name": "NASA, «NASA's Swift Mission Ends Ahead of Re-Entry», por Jeanette Kazmierczak (23 oct 2026)",
+      "name_en": "NASA, \"NASA's Swift Mission Ends Ahead of Re-Entry,\" by Jeanette Kazmierczak (Oct 23, 2026)",
+      "url": "https://science.nasa.gov/blogs/swift/2026/10/23/nasas-swift-mission-ends-ahead-of-re-entry/",
+      "note": "Fuente primaria: fin de las operaciones el 20 de octubre a 275 kilómetros de altura.",
+      "note_en": "Primary source: the end of operations on October 20 at an altitude of 275 kilometers."
+    },
+    {
+      "name": "NASA, «NASA Highlights Lessons Learned from Swift Boost Mission» (28 sep 2026)",
+      "name_en": "NASA, \"NASA Highlights Lessons Learned from Swift Boost Mission\" (Sep 28, 2026)",
+      "url": "https://science.nasa.gov/missions/swift/nasa-highlights-lessons-learned-from-swift-boost-mission/",
+      "note": "Fuente primaria: contrato con Katalyst, lanzamiento de LINK, sus fallos y el fin de la misión de rescate.",
+      "note_en": "Primary source: the Katalyst contract, LINK's launch, its failures and the end of the rescue mission."
+    },
+    {
+      "name": "Bernama, «MOSTI Confirms Bright Light Sighting, No Space Debris Found» (6 nov 2026)",
+      "name_en": "Bernama, \"MOSTI Confirms Bright Light Sighting, No Space Debris Found\" (Nov 6, 2026)",
+      "url": "https://bernama.com/en/general/news.php?id=2631046",
+      "note": "Agencia estatal de noticias de Malasia: recoge el comunicado del MOSTI, con citas literales.",
+      "note_en": "Malaysia's state news agency: carries the MOSTI statement, with direct quotes."
+    },
+    {
+      "name": "The Star, «QuickCheck: Was a bright light spotted streaking across Malaysian skies recently?» (6 nov 2026)",
+      "name_en": "The Star, \"QuickCheck: Was a bright light spotted streaking across Malaysian skies recently?\" (Nov 6, 2026)",
+      "url": "https://www.thestar.com.my/news/true-or-not/2026/11/06/quickcheck-was-a-bright-light-spotted-treaking-across-malaysian-skies-recently",
+      "note": "Prensa: verificación que resume el mismo comunicado del MOSTI.",
+      "note_en": "Press: a fact check summarizing the same MOSTI statement."
+    },
+    {
+      "name": "New Straits Times, «Nasa satellite likely behind glowing object over Malaysian skies» (5 nov 2026)",
+      "name_en": "New Straits Times, \"Nasa satellite likely behind glowing object over Malaysian skies\" (Nov 5, 2026)",
+      "url": "https://www.nst.com.my/amp/news/nation/2026/11/1571504/nasa-satellite-likely-behind-glowing-object-over-malaysian-skies-watch",
+      "note": "Prensa: horas de los reportes, estados donde se grabó la luz y declaraciones de Muhammad Hanafi Azami a Harian Metro.",
+      "note_en": "Press: the times of the reports, the states where the light was filmed and Muhammad Hanafi Azami's remarks to Harian Metro."
+    },
+    {
+      "name": "New Straits Times, «MYSA: Mysterious lights over Malaysia were NASA space debris, meteor shower» (5 nov 2026)",
+      "name_en": "New Straits Times, \"MYSA: Mysterious lights over Malaysia were NASA space debris, meteor shower\" (Nov 5, 2026)",
+      "url": "https://www.nst.com.my/amp/news/nation/2026/11/1571540/mysa-mysterious-lights-over-malaysia-were-nasa-space-debris-meteor",
+      "note": "Prensa: declaraciones del director general de la MYSA y reportes de Kuantan, Johor y Sabah.",
+      "note_en": "Press: remarks by MYSA's director general and reports from Kuantan, Johor and Sabah."
+    },
+    {
+      "name": "Mothership, «'Meteor' seen from S'pore actually a NASA space telescope burning up over Sumatra during re-entry» (nov 2026)",
+      "name_en": "Mothership, \"'Meteor' seen from S'pore actually a NASA space telescope burning up over Sumatra during re-entry\" (Nov 2026)",
+      "url": "https://mothership.sg/2026/11/meteor-nasa-space-telescope/",
+      "note": "Prensa: la bola de fuego vista desde Singapur.",
+      "note_en": "Press: the fireball seen from Singapore."
+    },
+    {
+      "name": "Reuters, en The Star, «22-year-old Nasa satellite telescope falls from orbit in fiery finale» (6 nov 2026)",
+      "name_en": "Reuters, in The Star, \"22-year-old Nasa satellite telescope falls from orbit in fiery finale\" (Nov 6, 2026)",
+      "url": "https://www.thestar.com.my/aseanplus/aseanplus-news/2026/11/06/22-year-old-nasa-satellite-telescope-falls-from-orbit-in-fiery-finale",
+      "note": "Prensa: hora de la reentrada en GMT, abandono del rescate a mediados de agosto y riesgo de 1 entre 2.100.",
+      "note_en": "Press: the reentry time in GMT, the rescue being abandoned in mid-August and the 1 in 2,100 risk."
+    },
+    {
+      "name": "ABC7, «A 3,200-pound NASA observatory plunged back to Earth: Here's what to know» (4 nov 2026)",
+      "name_en": "ABC7, \"A 3,200-pound NASA observatory plunged back to Earth: Here's what to know\" (Nov 4, 2026)",
+      "url": "https://abc7news.com/story/nasas-neil-gehrels-swift-observatory-is-careening-back-earth-heres-what-know/20015487/",
+      "note": "Prensa: riesgo calculado por la NASA y el límite de 1 entre 10.000 que cita la Aerospace Corporation.",
+      "note_en": "Press: NASA's calculated risk and the 1 in 10,000 limit cited by The Aerospace Corporation."
+    },
+    {
+      "name": "Nature World News, «NASA's Swift Telescope Burns Up Over Sumatra After Robotic Rescue Fell Short» (6 nov 2026)",
+      "name_en": "Nature World News, \"NASA's Swift Telescope Burns Up Over Sumatra After Robotic Rescue Fell Short\" (Nov 6, 2026)",
+      "url": "https://www.natureworldnews.com/articles/73749/20261106/nasas-swift-telescope-burns-over-sumatra-after-robotic-rescue-fell-short-ending-22-year.htm",
+      "note": "Prensa: primera predicción de la Fuerza Espacial (3:30 a. m. hora del este, las 08:30 UTC) con su margen de once horas, y videos sin verificar.",
+      "note_en": "Press: the Space Force's early prediction (3:30 a.m. EST, 08:30 UTC) with its eleven-hour margin, and the unverified videos."
+    },
+    {
+      "name": "KeepTrack, «NASA's Swift Reenters After Failed Rescue» (5 nov 2026)",
+      "name_en": "KeepTrack, \"NASA's Swift Reenters After Failed Rescue\" (Nov 5, 2026)",
+      "url": "https://keeptrack.space/space-brief/space-brief-2026-11-05",
+      "note": "Sitio de seguimiento, fuente secundaria: ventana de la última predicción de la Fuerza Espacial (11:42 a 13:42 UTC).",
+      "note_en": "Tracking site, secondary source: the window of the Space Force's last prediction (11:42 to 13:42 UTC)."
+    },
+    {
+      "name": "CelesTrak, registro del catálogo de satélites de SWIFT (NORAD 28485)",
+      "name_en": "CelesTrak, satellite catalog record for SWIFT (NORAD 28485)",
+      "url": "https://celestrak.org/satcat/records.php?CATNR=28485",
+      "note": "Catálogo: fecha de caída (4 nov 2026) e inclinación de la última órbita (20,54 grados).",
+      "note_en": "Catalog: the decay date (Nov 4, 2026) and the inclination of the last orbit (20.54 degrees)."
+    },
+    {
+      "name": "Jonathan McDowell, General Catalog of Artificial Space Objects (GCAT), catálogo de satélites, objeto 2004-047A «Swift»",
+      "name_en": "Jonathan McDowell, General Catalog of Artificial Space Objects (GCAT), satellite catalog, object 2004-047A \"Swift\"",
+      "url": "https://planet4589.org/space/gcat/tsv/cat/satcat.tsv",
+      "note": "Catálogo: fecha de lanzamiento, masa (1.470 kilos) e inclinación inicial; la versión del 15 de noviembre de 2026 aún no registraba la caída.",
+      "note_en": "Catalog: the launch date, the mass (1,470 kilograms) and the initial inclination; the November 15, 2026, version did not yet record the decay."
+    }
+  ],
+  "evidenceReviewed": "2026-11-17"
+}
