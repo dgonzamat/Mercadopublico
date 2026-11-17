@@ -56,6 +56,8 @@ export function VisitorsStats({ data }: { data: VisitorsStatsData }) {
   const { total, countries, avgPerDay, peak, dailyTotals, byContinent } = data;
   const maxDay = dailyTotals.reduce((m, d) => Math.max(m, d.count), 0) || 1;
   const regionMax = byContinent.reduce((m, r) => Math.max(m, r.count), 0) || 1;
+  const showDayLabels = dailyTotals.length <= 31;
+  const verticalDayLabels = dailyTotals.length > 14;
 
   return (
     <div className="space-y-5">
@@ -104,18 +106,36 @@ export function VisitorsStats({ data }: { data: VisitorsStatsData }) {
             <T es="Tendencia diaria" en="Daily trend" />
           </p>
           <div
-            className="flex h-20 items-end gap-[2px]"
+            className={`flex items-end gap-[2px] ${showDayLabels ? "h-28" : "h-20"}`}
             role="img"
             aria-label={`Tendencia diaria de visitas · ${dailyTotals.length} días · pico ${maxDay}`}
           >
             {dailyTotals.map((d) => (
               <div
                 key={d.day}
-                className="flex-1 bg-accent/70"
-                style={{ height: `${Math.max((d.count / maxDay) * 100, 3)}%` }}
+                className="flex h-full min-w-0 flex-1 flex-col items-center justify-end"
                 title={`${fmtDay(d.day, "es")} · ${d.count}`}
                 aria-hidden
-              />
+              >
+                {/* Con 7 o 30 días cada barra lleva su cifra; con más no caben.
+                    Pasadas las 14 barras la cifra va en vertical para no
+                    desbordar el ancho de la barra en el móvil. */}
+                {showDayLabels && (
+                  <span
+                    className={`mb-0.5 font-mono text-[10px] leading-none text-text ${
+                      verticalDayLabels ? "[writing-mode:vertical-rl] rotate-180" : ""
+                    }`}
+                  >
+                    <T es={fmtNum(d.count, "es")} en={fmtNum(d.count, "en")} />
+                  </span>
+                )}
+                <div
+                  className="w-full bg-accent/70"
+                  style={{
+                    height: `${Math.max((d.count / maxDay) * (showDayLabels ? (verticalDayLabels ? 70 : 82) : 100), 3)}%`,
+                  }}
+                />
+              </div>
             ))}
           </div>
           <div className="mt-1 flex justify-between font-mono text-xs uppercase tracking-widest text-muted">
