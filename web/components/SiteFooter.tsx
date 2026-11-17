@@ -5,6 +5,7 @@ import { usePathname } from "next/navigation";
 import { ShareButton } from "@/components/ShareButton";
 import { InstagramLink } from "@/components/InstagramLink";
 import { PinterestLink } from "@/components/PinterestLink";
+import { SupportButton } from "@/components/SupportButton";
 import { LocaleLink, chromeLocale } from "@/components/LocaleLink";
 import { T } from "@/components/T";
 import { BUILD_VERSION } from "@/lib/version";
@@ -60,6 +61,19 @@ export function SiteFooter() {
               <ShareButton title="UAP Codex" locale={locale} />
               <InstagramLink tone="light" locale={locale} />
               <PinterestLink tone="light" locale={locale} />
+            </div>
+            <div className="space-y-2 pt-4">
+              <Eyebrow>
+                <T es="Apoya el proyecto" en="Support the project" locale={locale} />
+              </Eyebrow>
+              <p className="text-sm text-text">
+                <T
+                  locale={locale}
+                  es="El sitio es gratuito y sin publicidad. Estamos evaluando abrir aportes de los lectores para financiar la investigación."
+                  en="The site is free and ad-free. We are considering opening reader contributions to fund the research."
+                />
+              </p>
+              <SupportButton source="footer" locale={locale} />
             </div>
           </div>
 

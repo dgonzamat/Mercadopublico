@@ -103,7 +103,7 @@ const HOSTING_RE =
   /amazon|\baws\b|google cloud|google llc|azure|microsoft corporation|alibaba|aliyun|tencent|huawei cloud|oracle|\bovh\b|hetzner|digital ?ocean|linode|vultr|choopa|contabo|scaleway|leaseweb|m247|colocrossing|colocation|hostinger|hosting|\bvps\b|server|data ?cent(?:er|re)/i;
 
 /** No contar: bots/crawlers, IP de datacenter u opt-out del dueño (`?notrack=1`). */
-function skipTracking(): boolean {
+export function skipTracking(): boolean {
   return isBot() || ownerOptedOut() || dcFlagged();
 }
 

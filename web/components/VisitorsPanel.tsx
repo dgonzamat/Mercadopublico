@@ -3,7 +3,7 @@
 import { useEffect, useMemo, useState } from "react";
 import { T } from "@/components/T";
 import { supabase } from "@/lib/supabase/client";
-import { fmtDateTime } from "@/lib/visitorsFormat";
+import { fmtDateTime, fmtNum } from "@/lib/visitorsFormat";
 import { VisitorsTable, type VisitorRow } from "@/components/VisitorsTable";
 import {
   VisitorsStats,
@@ -80,6 +80,10 @@ export function VisitorsPanel() {
   const [pageRowsRaw, setPageRowsRaw] = useState<PageRow[]>([]);
   const [subDayRows, setSubDayRows] = useState<DayRow[]>([]);
   const [subTotal, setSubTotal] = useState<number | null>(null);
+  // Clics en «Apoya UAP Codex» (migración 0009): mide la intención de aportar
+  // antes de abrir aportes. Pocas filas (día × lugar del botón), así que se
+  // leen crudas y se suman aquí.
+  const [support, setSupport] = useState<{ footer: number; about: number } | null>(null);
   const [updatedAt, setUpdatedAt] = useState<string | null>(null);
   const [period, setPeriod] = useState<Period>("all");
   const [state, setState] = useState<State>(
@@ -159,6 +163,17 @@ export function VisitorsPanel() {
             count: num(r.count),
           })),
         );
+      });
+
+      let q = sb.from("support_intent").select("source, clicks");
+      if (since) q = q.gte("day", since);
+      void q.then(({ data, error }) => {
+        if (!alive || error || !data) return;
+        const sum = { footer: 0, about: 0 };
+        for (const r of data as Array<{ source: string; clicks: unknown }>) {
+          if (r.source === "footer" || r.source === "about") sum[r.source] += num(r.clicks);
+        }
+        setSupport(sum);
       });
 
       void sb
@@ -326,6 +341,31 @@ export function VisitorsPanel() {
 
       {/* Suscriptores (usuarios autenticados) */}
       <VisitorsSubscribers data={subscribers} />
+
+      {/* Intención de apoyo: clics en el botón, sin aportes abiertos todavía */}
+      {support && (
+        <div className="space-y-3">
+          <p className="font-mono text-xs uppercase tracking-widest text-muted">
+            <T es="Intención de apoyo" en="Support intent" />
+          </p>
+          <div className="grid grid-cols-3 gap-2">
+            {[
+              { es: "Total", en: "Total", n: support.footer + support.about },
+              { es: "Pie de página", en: "Footer", n: support.footer },
+              { es: "Metodología", en: "Method", n: support.about },
+            ].map((c) => (
+              <div key={c.en} className="border-2 border-text bg-panel px-3 py-3">
+                <p className="font-mono text-xs uppercase tracking-widest text-muted">
+                  <T es={c.es} en={c.en} />
+                </p>
+                <p className="mt-1 text-xl font-semibold text-text">
+                  <T es={fmtNum(c.n, "es")} en={fmtNum(c.n, "en")} />
+                </p>
+              </div>
+            ))}
+          </div>
+        </div>
+      )}
 
       {/* Tabla por país */}
       <p className="font-mono text-xs uppercase tracking-widest text-muted">
