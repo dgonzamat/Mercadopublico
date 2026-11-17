@@ -616,6 +616,8 @@ const VISUAL_CERRADO_POR_LICENCIA = {
   "vaddo-1956": "la foto de la pieza sale de UFO-Sverige y Nordic UFO Newsletter (copyright); Commons seco",
   // Ficha nueva del 16 nov 2026 (detalle en docs/registros.md):
   "victoria-soyuz-reentrada-2023": "el post de la ASA trae una foto de autor no identificado (no es video); el informe de la DFN no declara licencia; Commons seco",
+  // Ficha nueva del 17 nov 2026 (detalle en docs/registros.md):
+  "malasia-reentrada-swift-2026": "MOSTI y MYSA no publicaron imagen ni video propios; los videos de Threads y de la prensa tienen copyright; la NASA solo tiene imágenes de contexto",
 };
 
 // Guard: la exención no puede volverse un desván. Si un caso exento consiguió
