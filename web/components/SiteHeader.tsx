@@ -12,6 +12,7 @@ import { LocaleToggle } from "@/components/LocaleToggle";
 import { MobileNav } from "@/components/MobileNav";
 import { AccountControl } from "@/components/auth/AccountControl";
 import { useAuth } from "@/components/auth/AuthProvider";
+import { recordSupportIntent } from "@/components/SupportButton";
 
 /**
  * Site header. On the Home it floats transparent over the dark radar hero
@@ -81,16 +82,20 @@ export function SiteHeader() {
             <ShareButton variant="icon" dark={dark} />
           </div>
           <HeaderNav dark={dark} />
+          {/* Desde el 17 nov 2026 (decisión del dueño) el botón destacado lleva
+              a «Cómo se financia» y cuenta la intención de apoyar: el de
+              Probabilidades casi no se usaba (9 vistas en 30 días). */}
           <Link
-            href={localizeHref("/probabilidades", pathname)}
-            className={`inline-flex items-center gap-2 border-l-4 bg-accent px-4 font-display text-base font-medium text-bg ${
+            href={localizeHref("/about", pathname) + "#financiamiento"}
+            onClick={() => recordSupportIntent("header")}
+            className={`inline-flex items-center gap-2 whitespace-nowrap border-l-4 bg-accent px-4 font-display text-base font-medium text-bg ${
               dark
                 ? "border-bg/20 hover:bg-bg hover:text-text"
                 : "border-text hover:bg-text"
             }`}
           >
-            <T es="Ver probabilidades" en="See probabilities" locale={locale} />
-            <span aria-hidden>→</span>
+            <span aria-hidden>♥</span>
+            <T es="Apoya UAP Codex" en="Support UAP Codex" locale={locale} />
           </Link>
           <AccountControl dark={dark} />
           <LocaleToggle dark={dark} />

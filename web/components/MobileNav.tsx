@@ -12,11 +12,16 @@ import { PinterestLink } from "@/components/PinterestLink";
 import { AccountControl } from "@/components/auth/AccountControl";
 import { useAuth } from "@/components/auth/AuthProvider";
 import { STATS } from "@/lib/siteStats";
+import { recordSupportIntent } from "@/components/SupportButton";
 
+// Desde el 17 nov 2026 (decisión del dueño) el botón destacado lleva a
+// «Cómo se financia» y mide la intención de apoyar (ver SupportButton): el de
+// Probabilidades casi no se usaba. Probabilidades sigue en SECONDARY_LINKS.
 const PRIMARY_CTA = {
-  href: "/probabilidades",
-  es: { label: "Ver probabilidades", sub: "El reparto de explicaciones del corpus y dónde está la frontera" },
-  en: { label: "See probabilities", sub: "How the corpus splits among explanations, and where the frontier is" },
+  href: "/about",
+  hash: "#financiamiento",
+  es: { label: "Apoya UAP Codex", sub: "Cómo se financia el sitio y cómo apoyarlo" },
+  en: { label: "Support UAP Codex", sub: "How the site is funded and how to support it" },
 };
 
 const NAV_LINKS = [
@@ -53,6 +58,7 @@ const NAV_LINKS = [
 ];
 
 const SECONDARY_LINKS = [
+  { href: "/probabilidades", es: "Probabilidades", en: "Probabilities" },
   { href: "/frameworks", es: "Marcos teóricos", en: "Frameworks" },
   { href: "/entities", es: "Entidades", en: "Entities" },
   { href: "/cobertura", es: "Cobertura", en: "Coverage" },
@@ -224,14 +230,18 @@ export function MobileNav({ dark = false }: { dark?: boolean } = {}) {
               {/* PRIMARY CTA */}
               <Link
                 ref={firstLinkRef}
-                href={hrefFor(PRIMARY_CTA.href)}
-                onClick={() => setOpen(false)}
+                href={hrefFor(PRIMARY_CTA.href) + PRIMARY_CTA.hash}
+                onClick={() => {
+                  recordSupportIntent("header");
+                  setOpen(false);
+                }}
                 className="group mt-8 block bg-accent p-6 hover:bg-bg hover:text-text"
               >
                 <p className="font-mono text-xs uppercase tracking-widest text-text/70 group-hover:text-muted">
-                  <T es="Empezar aquí" en="Start here" />
+                  <T es="Apoya el proyecto" en="Support the project" />
                 </p>
                 <p className="mt-2 font-display text-3xl font-medium leading-tight text-text">
+                  <span aria-hidden>♥</span>{" "}
                   <T es={PRIMARY_CTA.es.label} en={PRIMARY_CTA.en.label} />{" "}
                   <span aria-hidden>→</span>
                 </p>

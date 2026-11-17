@@ -15,29 +15,36 @@ import { skipTracking } from "@/components/VisitorBeacon";
  * se abran, este botón pasa a ser un enlace a la plataforma.
  */
 const KEY = "uap-support-intent";
+export type SupportSource = "footer" | "about" | "header";
+
+/** Cuenta la intención una sola vez por dispositivo (y el servidor, una por IP
+ *  y día). La usan el botón y el enlace «Apoya» de la barra superior. */
+export function recordSupportIntent(source: SupportSource): void {
+  let already = false;
+  try {
+    already = localStorage.getItem(KEY) === "1";
+    localStorage.setItem(KEY, "1");
+  } catch {
+    // Sin localStorage: decide el dedup por IP del servidor.
+  }
+  const sb = supabase;
+  if (!already && sb && !skipTracking()) {
+    fireRpc(sb, "increment_support_intent", { p_source: source });
+  }
+}
 
 export function SupportButton({
   source,
   locale,
 }: {
-  source: "footer" | "about";
+  source: SupportSource;
   locale?: "es" | "en";
 }) {
   const [thanked, setThanked] = useState(false);
 
   const onClick = () => {
     setThanked(true);
-    let already = false;
-    try {
-      already = localStorage.getItem(KEY) === "1";
-      localStorage.setItem(KEY, "1");
-    } catch {
-      // Sin localStorage: decide el dedup por IP del servidor.
-    }
-    const sb = supabase;
-    if (!already && sb && !skipTracking()) {
-      fireRpc(sb, "increment_support_intent", { p_source: source });
-    }
+    recordSupportIntent(source);
   };
 
   return (
