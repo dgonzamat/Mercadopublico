@@ -28,6 +28,15 @@ Disciplina no-negociable:
 - **Solo institucional/documentado** — filtra tabloide y especulación (este dominio está lleno).
 - **Caveat de entorno**: `WebSearch` funciona (US-only), pero **fetchear la fuente primaria a veces choca con la allowlist** (war.gov, media.defense.gov bloqueados) — usa los mirrors alcanzables (congress.gov, archive.org, rev.com para transcripts). Si no se puede anclar la fuente primaria, se descarta (regla anti-relleno).
 
+### 1c. Casos en tendencia primero (17 nov 2026, decisión del dueño)
+**Estrategia de crecimiento: los sucesos virales recientes van delante de los huecos históricos**, porque son los que la gente busca esa semana y traen lectores desde el buscador. Señal que la sostiene: en el panel de `/visitantes` del 17 nov, Anchorage 2026 (un video viral de junio) sumaba 59 + 6 vistas, el 50 % de las 129 del periodo, y la ficha del vuelo 15 de Starship, publicada el día anterior y cinco días después del suceso, ya era la segunda página más vista (7 + 4). Son cifras pequeñas de unos pocos días: la estrategia se revisa con la serie de Search Console, no con un pantallazo.
+
+Cómo se aplica:
+- En el news-sweep de §1b, busca también **avistamientos virales de los últimos 7–14 días** (videos de redes recogidos por la prensa, luces vistas en varios países), no solo hechos institucionales. Lo viral entra si tiene **una explicación oficial o una fuente primaria** (comunicado de una autoridad aeronáutica o espacial, catálogo GCAT, informe de una red de cámaras): Starship 15 (AHAC y Presidencia de El Salvador) y Victoria 2023 (ASA y DFN) son el modelo.
+- La **rapidez** es parte del valor: una ficha publicada en la semana del suceso compite cuando la búsqueda está viva. El proceso no se acorta por eso (fuente primaria, verificador aparte, `/redaccion`); se acorta la espera para empezar.
+- Título, resumen y `seoTitle_en` llevan las palabras con las que la gente lo busca (lugar, «UFO», el nombre del cohete o del fenómeno), sin romper la forma «Lugar · quién vio qué».
+- Un viral sin fuente primaria ni explicación oficial no entra por ser tendencia: la regla anti-relleno sigue mandando.
+
 ## 2. Proponer candidatos concretos (reales, no inventados)
 Para cada hueco de alto leverage, sugiere **eventos UAP históricos reales y documentados** que lo llenarían — con una línea de por qué encaja (país/década/tier que cubre) y una pista de fuente. Ejemplos de tipo de propuesta:
 - "Década 1930s tiene 2 casos y 0 en Asia → *foo-fighters* documentados / avistamientos militares de la época."
