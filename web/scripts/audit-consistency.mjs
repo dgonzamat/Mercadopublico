@@ -71,6 +71,7 @@ import { caseRefNounFindings } from "./lib/case-ref-noun.mjs";
 import { longParagraphs, MAX_PARAGRAPH } from "./lib/long-paragraphs.mjs";
 import { noteFindings } from "./lib/note-hygiene.mjs";
 import { flagMatches } from "./lib/flag.mjs";
+import { logProbeHits, ruleOf } from "./lib/probe-log.mjs";
 
 const __dirname = path.dirname(fileURLToPath(import.meta.url));
 const root = path.join(__dirname, "..");
@@ -2184,6 +2185,7 @@ out.push(`─ Findings ───────────────────
 out.push(`  ERRORS: ${errors.length}    WARNS: ${warns.length}    NOTES: ${notes.length}`);
 out.push("");
 
+logProbeHits("audit-consistency", errors.map((f) => ({ rule: ruleOf(f.msg), where: f.file })));
 if (errors.length > 0) {
   out.push("  🔴 ERRORS (must fix — break the build in CI):");
   for (const f of errors) {

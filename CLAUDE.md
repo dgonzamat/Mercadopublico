@@ -44,6 +44,8 @@ La pieza **proactiva** (fuera del loop reactivo) es **`/innovar`** — corre las
 
 Dos innovaciones más, una por capa: **`/blindar`** (reactiva) promueve un anti-pattern documentado a un **guardrail automático** — detecta cuáles se pueden enforcar mecánicamente y crea la sonda en `audit-consistency.mjs`/`validate-schema.mjs` o un hook, cerrando la brecha entre "documentado" y "imposible". **`/proximo-caso`** (operación) lee los huecos de cobertura (país×década, tier) + el backlog de `/innovar` y elige el próximo caso a crear, encadenando con `/nuevo-caso`.
 
+**Registro de frenos de las sondas** (nov 2026): `scripts/lib/probe-log.mjs` anota en `web/data/probe-hits.jsonl` cada ERROR de `validate-schema` y `audit-consistency` que salta en local (una vez por día, regla y archivo; nunca en CI ni con `PROBE_LOG=0`, que es lo que usa un control negativo). Existe porque la medición de 2.345 corridas de CI solo veía las reglas de estructura: lo que las sondas frenan antes del commit no dejaba rastro. Resumen con `npm run sondas:frenos`; es la base para decidir qué regla da valor.
+
 **Hook de validación de schema** (`.claude/hooks/validate-schema-on-edit.sh`, registrado como `PostToolUse` en `.claude/settings.json`): al editar un `data/cases/*.json` o `data/researchers.json`, corre `validate-schema.mjs` en el acto y **bloquea** (exit 2) si el schema se rompe. Adelanta al momento del edit el mismo gate que antes solo corría en prebuild/CI — un `posterior` MECE que no suma 1, un `id`/`num` duplicado, un JSON roto o una foto sin licencia se ven al instante.
 
 ---

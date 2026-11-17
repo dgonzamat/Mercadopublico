@@ -29,6 +29,7 @@
 import fs from "node:fs";
 import path from "node:path";
 import { fileURLToPath } from "node:url";
+import { logProbeHits } from "./lib/probe-log.mjs";
 
 const __dirname = path.dirname(fileURLToPath(import.meta.url));
 const root = path.join(__dirname, "..");
@@ -426,6 +427,14 @@ console.log(
   `\nUAP Codex · Schema validation` +
     `\n  researchers: ${researchers.length}   cases: ${caseFiles.length}` +
     `\n  errores de schema: ${errors.length}\n`,
+);
+logProbeHits(
+  "validate-schema",
+  errors.map((e) => {
+    const [where, ...rest] = e.split(": ");
+    const rule = rest.join(": ").replace(/"[^"]*"/g, '"…"').replace(/\d+(\.\d+)?/g, "N").slice(0, 60);
+    return { rule, where: where.replace(/\.json[.[].*$/, ".json") };
+  }),
 );
 if (errors.length > 0) {
   console.log("  🔴 ERRORES:");
