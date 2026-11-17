@@ -37,7 +37,7 @@ Cada línea que salga es un claim que **puede** driftear: contrástalo contra el
 
 ### 2. Sondas de referencias muertas
 - Rutas/archivos citados en `CLAUDE.md` que ya no existen (`scripts/*.mjs`, `lib/*.ts`, componentes). Verifica con `ls`/Glob los paths mencionados.
-- Reglas de audit (E13, M1, etc.) que ya no aparecen en `audit-consistency.mjs` / `validate-schema.mjs`.
+- Reglas de audit (E13, M2, etc.) que ya no aparecen en `audit-consistency.mjs` / `validate-schema.mjs`.
 - **Los propios skills** (`.claude/commands/*.md`): el curador solía auditar solo `CLAUDE.md`, pero los skills tienen sus propios números y paths que también se pudren (jul 2026: la tabla de este mismo comando citaba «~316»/«~39 client», ya rancios cuando el corpus era 327/42). Corre el barrido de 1b y la verificación de paths **también** sobre `.claude/commands/*.md`.
 
 ### 3. Pasada cualitativa

@@ -33,8 +33,8 @@ const inter = localFont({
 // /es/ y en el toggle del cliente. (El español primario fue la decisión previa;
 // se invirtió por SEO internacional.)
 const TITLE = "UAP Codex — Institutional analysis of the UAP phenomenon";
-const DESCRIPTION = `${STATS.years} years of institutionally documented UAP phenomena. ${STATS.cases} cases, ${STATS.patterns} patterns, ${STATS.frameworks} theoretical frameworks compared.`;
-const SHORT_DESCRIPTION = `${STATS.years} years of UAP phenomena, ${STATS.cases} cases, ${STATS.patterns} patterns.`;
+const DESCRIPTION = `${STATS.years} years of institutionally documented UAP phenomena. ${STATS.cases} cases and ${STATS.frameworks} theoretical frameworks compared.`;
+const SHORT_DESCRIPTION = `${STATS.years} years of UAP phenomena, ${STATS.cases} cases.`;
 
 export const metadata: Metadata = {
   metadataBase: new URL(SITE_URL),

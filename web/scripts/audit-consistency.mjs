@@ -16,8 +16,6 @@
  * REGLAS:
  *   E3  Conteos hardcoded (78/77/79 etc.) en /app y /components deben
  *       coincidir con STATS calculado del corpus.
- *   E4  Términos prohibidos (drift de renames) no deben aparecer en /app
- *       ni en case rationales rendered to user.
  *   E7  Spanglish: los campos ES-first de casos (name, summary) no deben
  *       contener inglés descriptivo — el inglés vive en *_en. Heurística
  *       curada con exenciones para nombres propios y texto entre comillas.
@@ -28,13 +26,12 @@
  *       researchers.json sin mención (por nombre/apellido) en ningún caso.
  *       Heurística por substring, conservadora (ver nota en la regla).
  *   E10 (ERROR) Completitud bilingüe de prosa: campos ES con su par *_en.
- *   E11 (WARN) Campos de nombre propio con español pero sin *_en.
- *   E12 (WARN) Robustez del lede: summary demasiado corto.
  *   E13 (WARN) Estándar editorial: descripción narrativa ≥ ~1 página A4.
  *   E14 (WARN) Taxonomía huérfana: patrones de patterns.json que ningún caso
  *       referencia (vía case.patterns) — candidatos a enlazar o retirar.
- *   E15 (ERROR) JSON-LD prohibido: ningún `@type: "Event"` (Google aplica el
- *       validador de eventos comerciales; usar Article + contentLocation).
+ *   E15 (ERROR) JSON-LD prohibido: ningún `@type: "Event"` en app/ (.ts/.tsx),
+ *       lib/ ni components/ (Google aplica el validador de eventos comerciales;
+ *       usar Article + contentLocation). Absorbió a E18c (nov 2026).
  *   E16 (WARN) Presupuesto SSG: nº de client components ("use client") bajo un
  *       techo — protege el "zero JS shipped" del proyecto (crecimiento visible).
  *   E17 (WARN) Visor de documentos: cada asset same-origin embebido
@@ -58,14 +55,12 @@
  *       vista rotula su método, la home remite a /calidad, y las cuatro usan
  *       corpusPosteriors con keepIndet — si una vuelve a sumar documentos, los
  *       denominadores divergen.
- *   E28 (WARN) Frescura de la línea base de link rot: data/link-health-baseline.json
- *       existe, es parseable y no está rancia. Esta auditoría no tiene red —
- *       quien verifica las fuentes es check-links.mjs --baseline en el cron
- *       diario; E28 vigila que esa sonda siga viva (el agujero de proceso que
- *       dejó pudrirse 74 citas en silencio).
- *   M1  (ERROR) Invariante del modelo MECE: cada caso de incidente reparte
- *       el 100% sobre las 6 narrativas (posterior con 6 claves, suma 1);
- *       los casos-documento no llevan posterior.
+ *   M2  (ERROR) mundanoType obligatorio con masa mundano ≥ 15 %. La antigua
+ *       M1 (posterior presente, 6 claves, suma 1) vive en validate-schema.mjs.
+ *
+ * Retiradas en nov 2026 (limpieza de sondas aprobada por el dueño): E4, E11
+ * (→ validate-schema), E12 (cubierta por E52), E18c (→ E15), E28, E30, E37
+ * (→ validate-schema, claves desconocidas) y E49 (→ enum de category).
  */
 
 import fs from "node:fs";
@@ -108,9 +103,8 @@ const patternList = readJsonList("patterns.json", "patterns");
 const frameworkList = readJsonList("frameworks.json", "frameworks");
 
 const STATS = {
-  // Incidentes: los documentos no cuentan como casos (ver build-cases.mjs).
-  cases: cases.filter((c) => c.category !== "document").length,
-  countries: new Set(cases.filter((c) => c.category !== "document").map((c) => c.country)).size,
+  cases: cases.length,
+  countries: new Set(cases.map((c) => c.country)).size,
   tierS: cases.filter((c) => c.tier === "S").length,
   tierA: cases.filter((c) => c.tier === "A").length,
   tierB: cases.filter((c) => c.tier === "B").length,
@@ -386,8 +380,8 @@ if (e7bHits.length > 0) {
 // whyMatters son strings; evidence es array. (sources se exime: suele ser
 // URLs/nombres propios neutrales.)
 
+// (summary_en lo exige validate-schema.mjs, que corre antes en el prebuild.)
 const PROSE_PAIRS = [
-  ["summary", "summary_en"],
   ["whatHappened", "whatHappened_en"],
   ["whyMatters", "whyMatters_en"],
 ];
@@ -666,7 +660,7 @@ if (clientComponents.length > CLIENT_BUDGET) {
 
 // ─── 9j-bis. RULE E18: guardrails de anti-patterns (enforce lo documentado) ─
 //
-// Promueve tres anti-patterns de `## Anti-patterns conocidos` (CLAUDE.md) de
+// Promueve anti-patterns de `## Anti-patterns conocidos` (CLAUDE.md) de
 // "desaconsejado" a "rompe el build": una violación es ERROR en CI en vez de
 // depender de que alguien recuerde la regla. Sondas deterministas y baratas
 // (lectura + regex), sin node_modules. La cuarta candidata —clases Tailwind
@@ -1299,8 +1293,8 @@ if (fs.existsSync(localeLinkPath) && fs.existsSync(esDir)) {
 // alcance viejo. Su propio summary lo confesaba —"abarca AHORA … varios
 // teatros"— y ninguna regla lo veía, porque las ~34 sondas verifican schema,
 // sumas, enlaces e idioma, pero NINGUNA compara los documentos de un caso
-// contra el alcance que el caso declara. Se corrigió reclasificándolo a
-// `document`, que es lo que ya eran todos los demás agregadores del corpus.
+// contra el alcance que el caso declara. Entonces se reclasificó a `document`;
+// desde oct 2026 no hay fichas-documento, así que la salida es partirlo.
 //
 // La presión que lo causó sigue intacta con cada release nueva, así que la
 // lección se mecaniza. Es ERROR y no WARN porque el caso sano es trivial: al
@@ -1320,7 +1314,6 @@ const THEATER_TOKENS = [
 const MAX_THEATERS_PER_INCIDENT = 2; // ≥3 dispara
 
 for (const c of cases) {
-  if (c.category === "document") continue; // los agregadores VIVEN aquí, es su sitio
   const docs = Array.isArray(c.documents) ? c.documents : [];
   if (docs.length === 0) continue;
   const theaters = new Set();
@@ -1335,7 +1328,7 @@ for (const c of cases) {
       "ERROR",
       path.join(root, "data", "cases", `${c.id}.json`),
       0,
-      `E34 alcance: el caso \`${c.id}\` es \`category:"${c.category}"\` pero sus ${docs.length} documentos abarcan ${theaters.size} teatros distintos (${[...theaters].sort().join(", ")}) — ya no es un evento sino una colección, y su \`posterior\` estaría promediando objetos sin relación mientras entra a la partición MECE con peso 1. Reclasificar a \`category:"document"\` (como el resto de los agregadores del corpus) o partirlo en casos por incidente.`,
+      `E34 alcance: el caso \`${c.id}\` es \`category:"${c.category}"\` pero sus ${docs.length} documentos abarcan ${theaters.size} teatros distintos (${[...theaters].sort().join(", ")}) — ya no es un evento sino una colección, y su \`posterior\` estaría promediando objetos sin relación mientras entra a la partición MECE con peso 1. Pártelo en casos por incidente, uno por teatro (los documentos ya no tienen ficha propia: no hay categoría «documento» a la que mandarlo).`,
     );
   }
 }
@@ -1624,7 +1617,7 @@ if (fs.existsSync(regionsPath)) {
 // CUARTA superficie de la clase "campo con par bilingüe consumido crudo".
 // E33 vigila lib/jsonld.ts; el render y la metadata tienen sus propias
 // reglas; `public/search-index.json` se escapaba de las cuatro, y el
-// desplegable de búsqueda mostraba «Estados Unidos», «Patrón 8a» o
+// desplegable de búsqueda mostraba «Estados Unidos» o
 // «Investigadores científicos» a un lector inglés — y además NO casaba al
 // teclear "United States", porque el subtítulo también se indexa (sep 2026).
 //
@@ -1652,7 +1645,9 @@ if (fs.existsSync(regionsPath)) {
       // `name_en` sólo donde el nombre SE TRADUCE. Quedan fuera a propósito:
       // researcher (nombres propios) y case (48 tienen el `name` ya en inglés
       // y por eso no llevan par en el dato — no es un hueco).
-      for (const t of ["framework", "pattern", "page", "post"]) {
+      // (`pattern` salió en nov 2026: la taxonomía no tiene página pública y el
+      // índice ya no la lista.)
+      for (const t of ["framework", "page", "post"]) {
         const faltan = idx.filter((e) => e.type === t && !e.name_en);
         if (faltan.length) {
           record("ERROR", "public/search-index.json", 0,
@@ -1695,15 +1690,11 @@ if (fs.existsSync(regionsPath)) {
 // primaria exageraban el misterio. Regla: clasificar después de leer la
 // evidencia, y dejar constancia en `evidenceReviewed`. WARN agregado por tier
 // (mismo patrón que E13/E21/E26): el backlog queda medible y no crece.
-// Los documentos quedan fuera: su posterior es el «lean» evidencial (a qué
-// narrativa inclina el documento), no una clasificación de un objeto, y no
-// entra en ningún agregado. Contarlos inflaba el backlog con 66 fichas que
-// no tienen nada que contrastar (decisión del dueño, oct 2026).
 {
   const byTier = { S: 0, A: 0, B: 0 };
   let pending = 0, reviewed = 0;
   for (const c of cases) {
-    if (!c.posterior || c.category === "document") continue;
+    if (!c.posterior) continue;
     if (c.evidenceReviewed) { reviewed++; continue; }
     pending++; byTier[c.tier] = (byTier[c.tier] || 0) + 1;
   }
@@ -1722,7 +1713,7 @@ if (fs.existsSync(regionsPath)) {
   const byTier = { S: 0, A: 0, B: 0 };
   let pending = 0, done = 0;
   for (const c of cases) {
-    if (c.category === "document" || !c.posterior || !c.mundanoType) continue;
+    if (!c.posterior || !c.mundanoType) continue;
     if (c.classBasis) { done++; continue; }
     pending++; byTier[c.tier] = (byTier[c.tier] || 0) + 1;
   }
@@ -1858,26 +1849,12 @@ const HYPE_REVIEWED = new Set(["lakenheath-bentwaters-1956", "morocco-gendarmeri
     const cited = [
       ...(c.sources ?? []).map((s) => s.url),
       ...(c.documents ?? []).map((d) => d.src),
-      c.primaryDocument?.src,
-      typeof fd === "string" ? fd : fd?.src,
+      c.primaryDocument?.url,
+      typeof fd === "string" ? fd : fd?.url,
     ].filter(Boolean);
     const base = (x) => x.split(/[?#]/)[0].split("/").pop();
     const ok = cited.includes(u) || (u.startsWith("/pursue/") && cited.some((x) => base(x) === base(u)));
     if (!ok) record("ERROR", path.join("data", "cases", `${c.id}.json`), 0, `E48 classBasis.url no figura entre las fuentes de la ficha: ${u}. Añádelo a sources (es el documento que fija la clase) o corrige la URL.`);
-  }
-}
-
-// ─── 9za7. RULE E49: ninguna ficha de tipo documento ────────────────────
-//
-// Decisión del dueño (oct 2026): un documento no tiene ficha propia. Vive
-// embebido en el visor del caso o del actor que respalda (`documents[]`, con su
-// `description`), y la URL de la ficha vieja redirige ahí (lib/caseAliases.ts).
-// Primero se borraron los documentos que no respaldaban nada (12 oct); el 15
-// oct se integraron los 66 restantes. Esta regla impide que vuelva a entrar una.
-{
-  for (const c of cases) {
-    if (c.category !== "document") continue;
-    record("ERROR", path.join("data", "cases", `${c.id}.json`), 0, `E49 ficha de tipo documento: los documentos no tienen ficha propia. Embébelo en el caso o el actor que respalda (documents[] con description), borra la ficha, anota su num en data/retired-nums.json y su id en lib/caseAliases.ts.`);
   }
 }
 
@@ -1892,7 +1869,7 @@ const HYPE_REVIEWED = new Set(["lakenheath-bentwaters-1956", "morocco-gendarmeri
 {
   const bad = [];
   for (const c of cases) {
-    if (c.category === "document" || !c.posterior) continue;
+    if (!c.posterior) continue;
     const p = c.posterior;
     const tot = Object.values(p).reduce((a, b) => a + b, 0);
     const derived = Math.round((100 * (p.indet + p.nohumano_encubierto + p.nohumano_abierto)) / tot);
@@ -1967,7 +1944,6 @@ const HYPE_REVIEWED = new Set(["lakenheath-bentwaters-1956", "morocco-gendarmeri
     "lugar > 70": (c) => (c.location?.place || "").length > 70,
     "resumen fuera de 400–650": (c) => c.summary.length < 400 || c.summary.length > 650,
     "evidence fuera de 3–8 o ítem > 600": (c) => c.evidence && (c.evidence.length < 3 || c.evidence.length > 8 || c.evidence.some((e) => e.length > 600)),
-    "párrafo > 1.200": (c) => [c.whatHappened, c.whyMatters].some((t) => (t || "").split("\n\n").some((p) => p.length > 1200)),
     "relato > 12.000": (c) => (c.whatHappened || "").length + (c.whyMatters || "").length > 12000,
     // Cerrados el 31 oct 2026 (/blindar): el porqué de clase se pliega en la
     // ficha a partir de 700 caracteres, y el detalle no tiene pipeline de
@@ -2034,11 +2010,11 @@ const HYPE_REVIEWED = new Set(["lakenheath-bentwaters-1956", "morocco-gendarmeri
 // quedaba sin sustantivo. Desde nov 2026 el enlace lleva el nombre corto del
 // caso, pero la regla sigue: la frase debe nombrar el caso por sí misma, y el
 // enlace va detrás. Lo vio el lector en la auditoría de noviembre de 2026
-// y ninguna sonda lo medía. WARN hasta que el lote que lo limpia termine; la
-// lógica vive en scripts/lib/case-ref-noun.mjs y tiene su prueba unitaria.
+// y ninguna sonda lo medía. ERROR desde nov 2026, cuando el lote que lo limpió
+// terminó; la lógica vive en scripts/lib/case-ref-noun.mjs con su prueba unitaria.
 {
   const hits = cases.flatMap((c) => caseRefNounFindings(c).map((h) => `${c.id} (${h.field}: «${h.before} [[${h.slug}]]»)`));
-  if (hits.length) record("WARN", casesDir, 0, `E57 enlace a otro caso usado como sustantivo: ${hits.length} — ${hits.slice(0, 6).join(", ")}${hits.length > 6 ? "…" : ""}. Nombrar el caso en el texto y dejar el «↗» detrás.`);
+  if (hits.length) record("ERROR", casesDir, 0, `E57 enlace a otro caso usado como sustantivo: ${hits.length} — ${hits.slice(0, 6).join(", ")}${hits.length > 6 ? "…" : ""}. Nombrar el caso en el texto y dejar el «↗» detrás.`);
 }
 
 // ─── 9zf2. RULE E58: la bandera es la del país de la ficha ────────────────
@@ -2077,16 +2053,16 @@ const HYPE_REVIEWED = new Set(["lakenheath-bentwaters-1956", "morocco-gendarmeri
 
 // ─── 9zf2. RULE E59: párrafos de más de 900 caracteres (muro en el móvil) ─
 //
-// E52 corta en 1.200, que en 390 px son 25 a 31 líneas: la auditoría de
+// E52 cortaba en 1.200, que en 390 px son 25 a 31 líneas: la auditoría de
 // noviembre de 2026 halló 401 muros en 283 fichas que esa regla aprobaba. La
-// fase 1 del plan de remediación baja el umbral a 900 (unas 19 líneas) como
-// WARN; pasa a ERROR cuando los lotes que parten esos párrafos terminen, y
-// entonces E52 puede bajar su límite. Lógica y prueba unitaria en
+// fase 1 del plan de remediación bajó el umbral a 900 (unas 19 líneas) como
+// WARN; es ERROR desde que los lotes que partían esos párrafos terminaron (nov
+// 2026), y E52 dejó de medir párrafos. Lógica y prueba unitaria en
 // scripts/lib/long-paragraphs.mjs.
 {
   const hit = cases.map((c) => [c.id, longParagraphs(c)]).filter(([, h]) => h.length);
   const n = hit.reduce((a, [, h]) => a + h.length, 0);
-  if (n) record("WARN", casesDir, 0, `E59 párrafos de más de ${MAX_PARAGRAPH} caracteres: ${n} en ${hit.length} fichas (${hit.slice(0, 4).map(([id, h]) => `${id} ×${h.length}`).join(", ")}${hit.length > 4 ? "…" : ""}). Partir por donde cambia la idea, igual en ES y EN.`);
+  if (n) record("ERROR", casesDir, 0, `E59 párrafos de más de ${MAX_PARAGRAPH} caracteres: ${n} en ${hit.length} fichas (${hit.slice(0, 4).map(([id, h]) => `${id} ×${h.length}`).join(", ")}${hit.length > 4 ? "…" : ""}). Partir por donde cambia la idea, igual en ES y EN.`);
 }
 
 // ─── 9zf3. RULE E60: notas del redactor en fuentes y documentos ─────────────
@@ -2094,8 +2070,8 @@ const HYPE_REVIEWED = new Set(["lakenheath-bentwaters-1956", "morocco-gendarmeri
 // E47 y E56 miran la prosa del caso, no las notas de las fuentes ni las
 // descripciones de los documentos, y ahí la auditoría de noviembre de 2026 halló
 // nombres internos de campos, notas de trabajo («no es accesible desde el
-// entorno de revisión», «enlace heredado») y URL crudas. WARN hasta que el lote
-// que las limpia termine. Lógica y prueba en scripts/lib/note-hygiene.mjs.
+// entorno de revisión», «enlace heredado») y URL crudas. ERROR desde nov 2026,
+// cuando el lote que las limpió terminó. Lógica y prueba en scripts/lib/note-hygiene.mjs.
 {
   const all = cases.flatMap((c) => noteFindings(c).map((h) => ({ id: c.id, ...h })));
   const by = (k) => all.filter((h) => h.kind === k);
@@ -2103,7 +2079,7 @@ const HYPE_REVIEWED = new Set(["lakenheath-bentwaters-1956", "morocco-gendarmeri
     .map(([k, label]) => [label, by(k)])
     .filter(([, h]) => h.length)
     .map(([label, h]) => `${label}: ${h.length} en ${new Set(h.map((x) => x.id)).size} fichas (${h.slice(0, 2).map((x) => `${x.id} «${x.match}»`).join(", ")}${h.length > 2 ? "…" : ""})`);
-  if (parts.length) record("WARN", casesDir, 0, `E60 texto del redactor en notas de fuentes y documentos: ${parts.join(" · ")}. El lector ve la nota tal cual: reescribirla como dato o quitarla.`);
+  if (parts.length) record("ERROR", casesDir, 0, `E60 texto del redactor en notas de fuentes y documentos: ${parts.join(" · ")}. El lector ve la nota tal cual: reescribirla como dato o quitarla.`);
 }
 
 // ─── 9zf4. RULE E61: la precisión del lugar casa con lo que dice el lugar ───

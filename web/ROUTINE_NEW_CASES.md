@@ -71,7 +71,7 @@ aguadilla/bolender).
   los testigos/documentos describen**, no la interpretación del investigador.
 - Vocabulario: usar "entidades no humanas" (no "algo no humano"),
   "ontológico no materialista" (no "psicoespiritual"), "tratado formal"
-  (no "tratado encubierto"). La auditoría (E4) rechaza los términos viejos.
+  (no "tratado encubierto"). (La sonda E4 que los rechazaba se retiró en nov 2026.)
 - Al citar % en cualquier texto, taggear con "prior" o "effective"
   (COPY NUMERIC DISCIPLINE — ver JSDoc de `lib/hypotheses.ts`).
 

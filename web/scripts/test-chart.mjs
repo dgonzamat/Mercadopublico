@@ -85,7 +85,7 @@ try {
     expectedModal = new Map();
     for (const c of incidents) {
       const p = c.posterior;
-      if (!p) continue; // sin posterior = seed (M1 lo impide); no se replica aquí
+      if (!p) continue; // sin posterior = seed (validate-schema lo impide); no se replica aquí
       const tot = Object.values(p).reduce((a, b) => a + b, 0) || 1;
       const cand = [
         [prosaicKey(c), p.mundano_natural / tot],

@@ -1,17 +1,16 @@
 name: Weekly Audit
 
-# Auditoría semanal independiente del flujo de PRs. Corre `npm run audit`
-# sobre el corpus actual de `main`. Si encuentra ERRORS (drift numérico,
-# frases prohibidas, evidenceContribution rota, JSON inválido), abre un
-# GitHub issue con el reporte completo.
+# Auditoría semanal independiente del flujo de PRs: las dos sondas que
+# necesitan red (link rot de las fuentes y embeds de DVIDS), que no pueden
+# vivir en el prebuild offline. Cada una mantiene un issue persistente.
 #
-# Por qué existe: la auditoría que ya corre en deploy (deploy-pages.yml)
-# y en PRs (ci.yml) solo se dispara cuando alguien empuja código. Esta
-# corrida detecta drift que entró por commits manuales o renames a
-# medias, sin depender de que haya actividad esa semana.
+# La auditoría de consistencia (`npm run audit`) corría aquí también y se
+# retiró en nov 2026: es offline y ya es gate de cada PR (ci.yml, check
+# `validate` exigido por el ruleset de main) y de cada deploy, así que no
+# hay vía para que entre drift a `main` sin pasarla.
 #
-# Por qué SEMANAL y no diaria (ago 2026): las tres cosas que este workflow
-# vigila —drift de consistencia, link rot externo, framing de DVIDS—
+# Por qué SEMANAL y no diaria (ago 2026): las dos cosas que este workflow
+# vigila —link rot externo y framing de DVIDS—
 # cambian a escala de semanas, no de horas. Corriendo a diario, el gate de
 # link rot marcaba el run como fallido casi todos los días apenas
 # cualquiera de las miles de citas del corpus se pudría, generando un
@@ -50,16 +49,6 @@ jobs:
 
       - name: Install dependencies
         run: npm ci --no-audit --no-fund
-
-      # Captura todo el output a un archivo y al log a la vez. `audit`
-      # falla con exit 1 si hay ERRORS; usamos `|| true` para no abortar
-      # el job y poder abrir el issue con el reporte abajo.
-      - name: Run consistency audit
-        id: audit
-        run: |
-          set +e
-          npm run audit 2>&1 | tee /tmp/audit.log
-          echo "exit_code=${PIPESTATUS[0]}" >> "$GITHUB_OUTPUT"
 
       # Gate de link rot. Necesita red, así que no puede vivir en el prebuild
       # (las sondas de build son node-plain y offline). Compara contra la
@@ -274,98 +263,6 @@ jobs:
               });
             }
 
-      # Si la auditoría falla, abre (o reusa) un issue con el reporte.
-      # Se usa el script de GitHub Actions oficial para no agregar deps.
-      - name: Open issue on drift
-        if: steps.audit.outputs.exit_code != '0'
-        uses: actions/github-script@ed597411d8f924073f98dfc5c65a23a2325f34cd # v8.0.0
-        with:
-          script: |
-            const fs = require('fs');
-            const report = fs.readFileSync('/tmp/audit.log', 'utf8');
-            const today = new Date().toISOString().slice(0, 10);
-            // Issue PERSISTENTE, igual que los gates de link rot y DVIDS. Este
-            // paso era el último que seguía abriendo uno NUEVO por corrida: hoy
-            // no se nota porque la auditoría está en verde, pero en cuanto
-            // entre un ERROR recurrente reproduce las 82 issues de agosto —el
-            // mismo fallo, esperando—. La política de notificación es parte del
-            // guardrail. (sep 2026)
-            const MARKER = '<!-- audit-drift -->';
-            const title = `audit: drift detectado (actualizado ${today})`;
-            const body = [
-              MARKER,
-              'La auditoría semanal encontró inconsistencias en `main`.',
-              '',
-              '<details><summary>Reporte completo</summary>',
-              '',
-              '```',
-              report.slice(-6000),  // últimas ~6KB del reporte
-              '```',
-              '',
-              '</details>',
-              '',
-              `Workflow run: ${context.serverUrl}/${context.repo.owner}/${context.repo.repo}/actions/runs/${context.runId}`,
-            ].join('\n');
-            const { data: open } = await github.rest.issues.listForRepo({
-              owner: context.repo.owner,
-              repo: context.repo.repo,
-              state: 'open',
-              labels: 'audit',
-              per_page: 100,
-            });
-            const existing = open.find((i) => (i.body || '').includes(MARKER));
-            if (existing) {
-              await github.rest.issues.update({
-                owner: context.repo.owner,
-                repo: context.repo.repo,
-                issue_number: existing.number,
-                title,
-                body,
-              });
-              core.info(`Actualizado issue #${existing.number}`);
-            } else {
-              await github.rest.issues.create({
-                owner: context.repo.owner,
-                repo: context.repo.repo,
-                title,
-                body,
-                labels: ['audit', 'automated'],
-              });
-            }
-
-      # Contraparte del paso anterior: sin ruta de cierre, el hilo único hereda
-      # el problema de los 82 —nadie sabe si sigue vigente—. Mismo patrón que
-      # "Close link rot issue when green".
-      - name: Close drift issue when green
-        if: steps.audit.outputs.exit_code == '0'
-        uses: actions/github-script@ed597411d8f924073f98dfc5c65a23a2325f34cd # v8.0.0
-        with:
-          script: |
-            const MARKER = '<!-- audit-drift -->';
-            const { data: open } = await github.rest.issues.listForRepo({
-              owner: context.repo.owner,
-              repo: context.repo.repo,
-              state: 'open',
-              labels: 'audit',
-              per_page: 100,
-            });
-            const existing = open.find((i) => (i.body || '').includes(MARKER));
-            if (existing) {
-              await github.rest.issues.createComment({
-                owner: context.repo.owner,
-                repo: context.repo.repo,
-                issue_number: existing.number,
-                body: `Auditoría en verde el ${new Date().toISOString().slice(0, 10)}: sin drift en \`main\`. Cerrando.`,
-              });
-              await github.rest.issues.update({
-                owner: context.repo.owner,
-                repo: context.repo.repo,
-                issue_number: existing.number,
-                state: 'closed',
-                state_reason: 'completed',
-              });
-            }
-
-      - name: Fail the job if drift
-        if: steps.audit.outputs.exit_code != '0' || steps.links.outputs.exit_code != '0'
+      - name: Fail the job if new link rot
+        if: steps.links.outputs.exit_code != '0'
         run: exit 1

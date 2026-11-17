@@ -105,12 +105,6 @@ const HEX_ALLOWLIST = new Set([
   "#3a7d44", // verde — serie 6
   "#7a4fb8", // morado — serie 7
   "#0f8b8d", // teal — serie 8
-  // Logo oficial de Google en el botón "Continuar con Google" (AccessForm):
-  // los colores de marca son obligatorios por las guías de Google, no decorativos.
-  "#4285f4", // Google blue
-  "#34a853", // Google green
-  "#fbbc05", // Google yellow
-  "#ea4335", // Google red
 ]);
 for (const f of FILES) {
   read(f).split("\n").forEach((line, i) => {

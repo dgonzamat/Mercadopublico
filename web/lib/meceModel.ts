@@ -103,8 +103,8 @@ export function heterogeneidad(p: Posterior): number {
 
 // ─── Fallback de posterior ───────────────────────────────────────────────
 //
-// Todos los casos no-documento llevan un `posterior` hand-coded (invariante M1
-// del audit). Esta función es solo una red de seguridad para un caso futuro
+// Todos los casos no-documento llevan un `posterior` hand-coded (invariante de
+// validate-schema.mjs). Esta función es solo una red de seguridad para un caso futuro
 // sin posterior: deja la masa anómala como indeterminable (no inventa clase).
 
 export function seedPosterior(c: UAPCase): Posterior {
