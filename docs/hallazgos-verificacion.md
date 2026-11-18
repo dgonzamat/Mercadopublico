@@ -188,6 +188,13 @@ Conteo hecho a mano a partir de los informes de los verificadores (17-18 nov 202
 
 **Auditoría de prosa de las seis (18 nov 2026, `/auditar-prosa`):** con el verificador en verde, cuatro lectores Opus sin fuentes y un editor no aprobaron ninguna: cuatro a reescribir (Puddy, Cergy, Adamski, Moody) y dos a retocar. Personas sin presentar en las seis y recuentos que no cuadran en cinco. El verificador no tenía por qué verlo: no son errores de hecho. Por eso el paso 5d de `/nuevo-caso` pone la prueba del lector antes de fusionar.
 
+## Propuestas en espera (flujo congelado hasta la ficha 556)
+
+Se revisan al cerrar la 556, con la regla de las 3 de 10 fichas:
+- **Cálculo propio sin «para este caso»:** decir de qué datos sale el cálculo («con las coordenadas que da la AMS»). Los cuatro lectores de la 545 y la 546 leyeron la fórmula de `/redaccion` §7 como nota interna.
+- **Fuente leída por resumen automático:** cotejar citas y datos concretos con el texto literal antes de publicar. En la 545 el resumen de KLAS cambió la máquina del patio.
+- **Filtro de casos virales en `/proximo-caso`:** entran sucesos con fuente primaria o explicación oficial y hechos institucionales documentados; no, declaraciones en entrevistas, videos sin fuente ni disputas personales (diez publicaciones filtradas a mano el 18 nov 2026).
+
 ## Deuda detectada por el PoC (sin tocar)
 
 `npm run caso:check -- --all` sobre el corpus de 433 fichas (18 nov 2026): léxico de España en 58 pares ficha-palabra (`coche` en 42, `rueda de prensa` en 10, `móviles` en 4, `aparcado` en 2); medido de nuevo por apariciones fuera de comillas son 128 en 50 fichas, y `móvil` da falsos positivos («piezas móviles», «blancos móviles» de un radar), afirmaciones de ausencia en 262 frases, párrafos de 880 a 900 caracteres en 70 y cifras de tres o más dígitos que no coinciden entre ES y EN en 107. Los números de ausencia y de cifras incluyen mucho ruido (frases que cuentan lo que dice una fuente): no son deuda hasta revisarlos. El léxico sí es deuda real, porque la guía `/redaccion` lo prohíbe.
