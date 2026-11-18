@@ -46,8 +46,11 @@ if (!targets.length) { console.log("caso-check: ninguna ficha nueva o editada fr
 // 1. Afirmaciones de ausencia: la causa de 4 de 5 fichas con hallazgo. Una frase
 //    «nadie halló…» es un resultado de búsqueda disfrazado de hecho. No es un error:
 //    obliga a preguntarse qué búsqueda la respalda y a escribir «no lo tenemos».
-const AUS_ES = /[^.]*\b(no consta(n)?|no se (ha |han )?(hall|encontr|conserv)\w*|no (hall|encontr)(ó|aron|amos)|no hemos (hall|encontr)\w*|no hay (ning[uú]n|ninguna) (registro|an[aá]lisis|documento|prensa|fuente)|ninguna fuente|no existe(n)? (ning|registro))[^.]*\./gi;
-const AUS_EN = /[^.]*\b(no record (from|of)|has not been found|have not been found|we have found no|we have not found|is no (record|independent|evidence from)|no independent (analysis|examination))\b[^.]*\./gi;
+//    También las ausencias de alcance global («los documentos no dan…», «ningún
+//    documento dice…»): en Fürstenfeldbruck (nov 2026) otra página del mismo legajo
+//    sí daba la hora que la frase negaba. El aviso pide acotarla al documento leído.
+const AUS_ES = /[^.]*\b(no consta(n)?|no se (ha |han )?(hall|encontr|conserv)\w*|no (hall|encontr)(ó|aron|amos)|no hemos (hall|encontr)\w*|no hay (ning[uú]n|ninguna) (registro|an[aá]lisis|documento|prensa|fuente)|ninguna fuente|no existe(n)? (ning|registro)|ning[uú]n documento|los documentos no|ninguna (otra )?p[aá]gina|el (legajo|expediente) no (trae|dice|da|recoge))[^.]*\./gi;
+const AUS_EN = /[^.]*\b(no record (from|of)|has not been found|have not been found|we have found no|we have not found|is no (record|independent|evidence from)|no independent (analysis|examination)|no document|the documents do not|no other page|the file (holds no|does not))\b[^.]*\./gi;
 // 2. Voz del redactor (la guía /redaccion la prohíbe).
 const VOZ_ES = /\b(cito|citamos|hemos|este expediente|esta ficha|nuestro an[aá]lisis|el corpus)\b/gi;
 const VOZ_EN = /\b(I cite|we cite|this file|this entry|our analysis|the corpus)\b/gi;
