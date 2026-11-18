@@ -31,7 +31,7 @@ Esta guía nació de un fallo real (oct 2026): la ficha de Skinwalker había cre
 2. **Integrar un documento no es añadir un párrafo.** Se escribe su `description` y, como mucho, **una frase** en el relato si cambia lo que sabemos del caso (un dato nuevo, una corrección). Si un documento corrige el relato, se reescribe la frase afectada en su sitio: el relato dice solo lo correcto, sin contar que antes decía otra cosa.
 3. **Nada de inventarios en prosa.** Listas de títulos, de códigos de documento o de modificaciones de contrato van a las descripciones de los documentos.
 4. **Cada hecho, una vez.** Si una disputa, una cifra o una explicación ya se dijo, no se vuelve a exponer en otro párrafo ni en `evidence`.
-5. **Longitud.** El mínimo es ~3.500 caracteres de `whatHappened` + `whyMatters` por idioma; el techo práctico, ~10.000. Más allá casi siempre hay acumulación o repetición, no información.
+5. **Longitud.** El mínimo es ~3.500 caracteres de `whatHappened` + `whyMatters` por idioma; el techo práctico, ~10.000. Más allá casi siempre hay acumulación o repetición, no información. El tope duro es 12.000 en español: por encima, E52 rompe el build (en Puddy, nov 2026, la ficha vivía a pocos caracteres del tope y cada corrección lo cruzaba; se ganó espacio quitando trámites de archivo, no datos del suceso).
 6. **Tiempo verbal.** Pretérito para el suceso, de principio a fin. No mezclar presente histórico y pasado sin motivo.
 7. **Cada persona, obra o documento se presenta la primera vez que aparece**, en pocas palabras: «el investigador Keith Basterfield», «la revista Flying Saucer Review». El lector no sabe quién es Fowler, Walton o «el Mammoth»; si no hay nada que decir de alguien, sobra su nombre. *(Lo halló la auditoría de prosa en las seis fichas de la serie de abducciones, nov 2026.)*
 8. **Si dos fuentes divergen, el texto lo dice y dice qué implica.** Una hora, un recuento o una fecha que no cuadran, dejados sin comentario, el lector los toma por un error de la ficha. *(Misma auditoría: cinco de seis fichas.)*
@@ -73,7 +73,7 @@ Aviones muy conocidos (B-52, DC-3) pueden ir en el título si son el centro del 
 
 ## 7. Prohibido en cualquier idioma
 
-- **Voz del redactor**: «este expediente», «esta ficha», «nuestro análisis». Una ausencia tampoco va en primera persona («no tenemos», «no hemos hallado», «we have found no»): se escribe impersonal, «no se conoce un análisis independiente», «no independent analysis is known» (E56 lo frena). Para marcar un cálculo o una lectura que no viene de una fuente: «según un cálculo hecho para este caso» / «by a calculation made for this case» (nov 2026: «esta ficha» salía 43 veces en 17 fichas y la auditoría de la página la marcó como voz del redactor).
+- **Voz del redactor**: «este expediente», «esta ficha», «nuestro análisis». Una ausencia tampoco va en primera persona («no tenemos», «no hemos hallado», «we have found no»): se escribe impersonal, «no se conoce un análisis independiente» (E56 lo frena). En inglés no se calca la pasiva («No radar record is known» se lee como traducción, según la prueba del lector de nov 2026): se escribe «No radar record survives», «There is no known radar record» o «No independent analysis has been published». Para marcar un cálculo o una lectura que no viene de una fuente: «según un cálculo hecho para este caso» / «by a calculation made for this case» (nov 2026: «esta ficha» salía 43 veces en 17 fichas y la auditoría de la página la marcó como voz del redactor).
 - **Bitácora**: «este expediente describía…», «hasta ahora se citaba…», «una versión anterior decía…». Se escribe solo lo correcto.
 - **Herramientas del redactor**: «conector», «extractor», «OCR», «barrido», «techo de extracción».
 - **Tareas pendientes**: «lo que el corpus debe…». Si algo queda abierto: «queda por ver si…».
@@ -94,3 +94,8 @@ Aviones muy conocidos (B-52, DC-3) pueden ir en el título si son el centro del 
 5. Corre desde `web/`: `node scripts/validate-schema.mjs` y `node scripts/audit-consistency.mjs` (E7, E7b, E13 y E47 vigilan parte de esta guía; no toda: lo que la sonda no ve, lo ves tú).
 
 Un verificador revisa con esta misma guía. Si se aparta de ella, lo señala con la frase exacta y la reescritura propuesta.
+
+## 9. Qué es deuda y qué es mantenimiento
+
+Criterio del dueño (12 nov 2026). **Es deuda** lo que hace falso o incoherente el texto: una contradicción, un recuento que no cuadra, una cifra, hora o fecha sin situar, una persona sin presentar, un texto roto. Se corrige con la fuente hasta llegar a cero. **Es mantenimiento** todo lo demás: repeticiones, un «Por qué importa» que resume, trámites de archivo en la prosa, la selección de detalles, el estilo. Se arregla cuando la ficha se toca por otro motivo, nunca en campaña. Ninguna auditoría nueva abre una categoría de deuda sin que el dueño fije antes qué cuenta como terminado. La historia de esta decisión está en `CLAUDE.md`, «Criterio de cierre de la deuda de prosa».
+

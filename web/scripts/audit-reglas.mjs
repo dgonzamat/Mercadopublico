@@ -40,6 +40,7 @@ const REGLAS = [
   { id: "longitud-3500", cat: "escritura", hogar: RED, re: /3\.?500 caracteres|550 palabras/ },
   { id: "enlaces-slug", cat: "escritura", hogar: RED, re: /Enlaces a otros casos: `\[\[slug\]\]`|se enlaza con `\[\[slug\]\]`/ },
   { id: "comillas", cat: "escritura", hogar: RED, re: /comillas «»|«» y, dentro/ },
+  { id: "criterio-deuda", cat: "escritura", hogar: RED, re: /\*\*Es deuda\*\*|es deuda lo que/i },
   { id: "persona-sin-presentar", cat: "escritura", hogar: { ...RED, puntero: /\/redaccion|criterio de cierre|CLAUDE\.md|paso 5d|«lectura»/i }, re: /sin presentar|se presenta la primera vez/i },
   { id: "fuente-primaria-antes", cat: "clasificacion", hogar: { ...C, seccion: "## Modelo de probabilidad (MECE)", puntero: /Modelo de probabilidad|CLAUDE\.md/ }, re: /solo después de leer la evidencia primaria|se asigna después de leer/i },
   { id: "posterior-suma-1", cat: "clasificacion", hogar: { ...C, seccion: "## Modelo de probabilidad (MECE)", puntero: /Modelo de probabilidad|CLAUDE\.md|validate-schema/ }, re: /suma 1|suma=1/ },
