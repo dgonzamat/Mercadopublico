@@ -175,3 +175,11 @@ Un `ficha-trabajo` reescribió «Qué pasó» con una sola versión del suceso, 
 | Reordenada por el suceso | 8 | 10 | 6 y 6 |
 
 **Conclusión de las tres lecturas:** ni recortar ni reordenar mueve la nota. Los defectos que se repiten en las seis lecturas (dos puntos o tres puntas, sur o este, el turno, las millas, si el pasajero vio algo) son ambigüedades de la propia fuente: el texto no puede resolverlas sin inventar ni borrar hechos. Para un caso de archivo con documentos que se contradicen, 6/10 parece el techo de lectura con este cuestionario, y el criterio de «3 defectos o menos» no distingue un defecto de redacción de una ambigüedad del registro. Antes de otra prueba de proceso, conviene separar en el conteo esas dos cosas.
+
+## Decisiones tras las pruebas (18 nov 2026, decisión del dueño)
+
+1. **El proceso queda como está**: un redactor y un verificador `ficha-trabajo` por ficha, lectores `ficha-lector`, campo `"añade"` en los parches, `npm run hallazgos:resumen` en el paso 0.5 y `CLAUDE.md` recortado.
+2. **No se añaden pasos ni reglas para la lectura**: el editor que recorta y el reordenamiento por el suceso no movieron la nota en la misma ficha.
+3. **Nuevo criterio de lectura** (sustituye a «3 defectos o menos por lectura» para las tandas siguientes; los criterios de arriba se mantienen como estaban para comparar): **0 defectos de redacción** por lectura, contando solo lo que el redactor puede arreglar sin añadir ni quitar hechos (frase rota o ambigua, persona sin presentar, cifra o fecha sin situar, jerga sin explicar, repetición). Las contradicciones que trae la propia fuente se anotan aparte y no penalizan; el texto debe declararlas, no resolverlas.
+4. **No se adoptan agentes compartidos entre fichas** (palanca G): ahorra tokens, pero no hay evidencia de que verifique igual.
+5. **Siguiente paso: producir fichas** con este proceso, no seguir optimizándolo.
