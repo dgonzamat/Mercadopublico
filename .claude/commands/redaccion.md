@@ -33,6 +33,8 @@ Esta guía nació de un fallo real (oct 2026): la ficha de Skinwalker había cre
 4. **Cada hecho, una vez.** Si una disputa, una cifra o una explicación ya se dijo, no se vuelve a exponer en otro párrafo ni en `evidence`.
 5. **Longitud.** El mínimo es ~3.500 caracteres de `whatHappened` + `whyMatters` por idioma; el techo práctico, ~10.000. Más allá casi siempre hay acumulación o repetición, no información.
 6. **Tiempo verbal.** Pretérito para el suceso, de principio a fin. No mezclar presente histórico y pasado sin motivo.
+7. **Cada persona, obra o documento se presenta la primera vez que aparece**, en pocas palabras: «el investigador Keith Basterfield», «la revista Flying Saucer Review». El lector no sabe quién es Fowler, Walton o «el Mammoth»; si no hay nada que decir de alguien, sobra su nombre. *(Lo halló la auditoría de prosa en las seis fichas de la serie de abducciones, nov 2026.)*
+8. **Si dos fuentes divergen, el texto lo dice y dice qué implica.** Una hora, un recuento o una fecha que no cuadran, dejados sin comentario, el lector los toma por un error de la ficha. *(Misma auditoría: cinco de seis fichas.)*
 
 ## 4. Lenguaje llano
 

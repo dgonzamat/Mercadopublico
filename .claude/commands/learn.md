@@ -20,7 +20,7 @@ Estás ejecutando el **loop de self-learning** del repo. Objetivo: convertir un 
 
 3. **Chequea duplicados.** Lee la sección destino. Si ya existe una regla equivalente, **consolídala/afínala** en vez de agregar una redundante. Menos reglas y más nítidas > muchas difusas.
 
-4. **Redacta la lección** en el formato de la casa: una línea, imperativa, con el porqué entre paréntesis. Español. Fecha los registros de investigación.
+4. **Redacta la lección** en el formato de la casa (el del `## Protocolo de aprendizaje` de `CLAUDE.md`): una línea, imperativa, con el porqué entre paréntesis. Español. Fecha los registros de investigación.
 
 5. **Aplica el edit** a `CLAUDE.md` con la herramienta Edit (inserción quirúrgica, sin reordenar el resto del archivo).
 

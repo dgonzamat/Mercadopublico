@@ -13,7 +13,7 @@ El estándar es prosa con **investigación caso por caso, fuentes primarias**. A
 **Redacción:** todo el texto de la ficha (ES y EN) sigue el skill `/redaccion` (`.claude/commands/redaccion.md`): léelo antes de escribir y repasa su lista final («Antes de entregar») antes de entregar.
 
 ## 0.5 Antes de redactar: lee lo que ya falló
-Lee las categorías con más filas en [`docs/hallazgos-verificacion.md`](../../docs/hallazgos-verificacion.md) (y, si existe, `cd web && npm run sondas:frenos`). Son los errores que el verificador halló en las fichas anteriores; escribe con esa lista delante. Las dos más repetidas, hoy: **atribución** (quién dijo o hizo qué, y de qué fecha es el documento que lo recoge) y **afirmaciones de ausencia** («no consta», «nadie halló»: o se respaldan con la búsqueda hecha, o se escriben en forma impersonal, «no se conoce», nunca «no lo tenemos»).
+Lee las categorías con más filas en [`docs/hallazgos-verificacion.md`](../../docs/hallazgos-verificacion.md) (y, si existe, `cd web && npm run sondas:frenos`). Son los errores que el verificador halló en las fichas anteriores; escribe con esa lista delante. Las dos más repetidas, hoy: **atribución** (quién dijo o hizo qué, y de qué fecha es el documento que lo recoge) y **afirmaciones de ausencia** («no consta», «nadie halló»: o se respaldan con la búsqueda hecha, o se escriben en forma impersonal, según `/redaccion` §7).
 
 Tres comprobaciones más, de lo que el verificador halló en las seis primeras fichas y ninguna sonda ve. Hazlas al terminar el borrador, con el documento delante:
 - **Un documento dice lo que comprobó, no lo que descartó.** «La RAAF descartó helicópteros» pasó por la nota que solo decía «no operaba ningún helicóptero militar; consultado con la DCA». Escribe el alcance exacto.
@@ -22,7 +22,7 @@ Tres comprobaciones más, de lo que el verificador halló en las seis primeras f
 
 ## 1. Identidad del caso
 - **id**: slug kebab-case estable, típicamente `<lugar>-<año>` (ej. `trindade-1958`). Debe ser único y `<id>.json` **tiene que coincidir** con el nombre de archivo (lo valida el schema).
-- **num**: secuencial único = (num máximo actual) + 1. Calcúlalo, **no rellenes huecos**:
+- **num**: la regla vive en `CLAUDE.md` › Workflow de datos (máximo + 1, sin rellenar huecos). Calcúlalo así:
   ```
   node -e 'const fs=require("fs");const d="web/data/cases";console.log(Math.max(...fs.readdirSync(d).filter(f=>f.endsWith(".json")).map(f=>JSON.parse(fs.readFileSync(d+"/"+f)).num))+1)'
   ```
@@ -37,16 +37,16 @@ Tres comprobaciones más, de lo que el verificador halló en las seis primeras f
 - **patterns**: array de ids que **deben existir** en `data/patterns.json` (verifícalos; array vacío `[]` es válido si ninguno aplica).
 
 ## 3. posterior (modelo MECE) — invariante de validate-schema.mjs (antigua M1)
-Distribución sobre 6 narrativas que **suma 1** (tolerancia ±0.005):
+Distribución sobre 6 narrativas; la definición y el invariante (suma 1) viven en `CLAUDE.md` › Modelo de probabilidad:
 `mundano_natural, humana_clasificada, adversaria, nohumano_encubierto, nohumano_abierto, indet`.
 - **OBLIGATORIO** en toda ficha (`incident`, `contactee`, `crop_circle`).
 - Es un juicio analítico estructurado, no una frecuencia: reparte según cómo la evidencia distribuye la explicación. Ver `lib/meceModel.ts`.
-- **Se asigna después de leer la evidencia primaria** (el documento, no un resumen). Si no la pudiste leer, no clasifiques: dilo y deja el caso sin crear o con la limitación declarada. Al terminar, pon `evidenceReviewed: "AAAA-MM-DD"` con la fecha de la lectura (regla E42).
+- **Se asigna según `CLAUDE.md` › Modelo de probabilidad** (solo después de leer la evidencia primaria). Si no la pudiste leer, no clasifiques: dilo y deja el caso sin crear o con la limitación declarada. Al terminar, pon `evidenceReviewed: "AAAA-MM-DD"` (regla E42).
 - **Verificación independiente antes de publicar:** otro agente revisa el caso con la sección «New cases: fixed brief» de [`docs/brief-verificacion.md`](../../docs/brief-verificacion.md), sin reescribirla (el registro compara fichas, y un brief distinto en cada una mide el brief y no la ficha) (afirmaciones, eliminaciones y omisiones del mismo expediente). No se fusiona sin ese paso.
 - Si el reparto es una misidentificación, pon `misidSubtype` con el objeto concreto: el sitio ya no muestra la categoría «Misidentificación».
 
 ## 4. Rich content — estándar editorial (obligatorio para el estándar)
-`whatHappened(_en)` + `whyMatters(_en)` deben sumar **≥ ~550 palabras / ~3.500 caracteres, en español E inglés** (prosa; `evidence`/`sources` NO cuentan para la página). Separa párrafos con `\n\n`.
+`whatHappened(_en)` + `whyMatters(_en)` deben alcanzar la longitud mínima de `/redaccion` §3 en español E inglés (prosa; `evidence`/`sources` no cuentan; la mide E13). Separa párrafos con `\n\n`.
 - `whatHappened` / `whatHappened_en`: cronología + contexto documentado.
 - `whyMatters` / `whyMatters_en`: significancia analítica.
 - `evidence` / `evidence_en`: array de 3-8 ítems documentados.
@@ -78,7 +78,7 @@ Con el informe del verificador en la mano, antes de fusionar:
 5. Si el hallazgo es una regla que **el propio skill** debería hacer cumplir al agente (la forma del título, el orden de los pasos, no escribir una ausencia sin búsqueda), añade o ajusta un caso en [`tools/evals/`](../../tools/evals/README.md) y córrelo tras tocar el skill: es el test unitario del skill, no de la ficha.
 
 ## 5d. Prueba del lector antes de fusionar
-Dos agentes lectores (modelo Opus), uno en español y otro en inglés, que no ven fuentes, guía ni este skill: reciben solo título, lugar, resumen, «Qué pasó» y «Por qué importa», con cada `[[slug]]` cambiado por «↗», y responden el cuestionario del paso 2 de `/auditar-prosa`. Se corrige antes de fusionar lo que el dueño definió como deuda (12 nov 2026): contradicción, recuento que no cuadra, cifra o fecha sin situar, persona sin presentar, texto roto. Cada «incoherencia» se contrasta primero con la fuente: puede ser una divergencia real del registro que el texto debe explicar. Anota lo hallado en el registro con la categoría «lectura». Existe porque las seis fichas de la serie de abducciones (nov 2026) se publicaron con el verificador en verde y la auditoría de prosa posterior no aprobó ninguna: personas sin presentar en las seis, recuentos que no cuadraban en cinco.
+Dos agentes lectores (modelo Opus), uno en español y otro en inglés, que no ven fuentes, guía ni este skill: reciben solo título, lugar, resumen, «Qué pasó» y «Por qué importa», con cada `[[slug]]` cambiado por «↗», y responden el cuestionario del paso 2 de `/auditar-prosa`. Se corrige antes de fusionar lo que el dueño definió como deuda (criterio de cierre de la deuda de prosa, `CLAUDE.md`, 12 nov 2026): contradicción, recuento que no cuadra, cifra o fecha sin situar, persona sin presentar, texto roto. Cada «incoherencia» se contrasta primero con la fuente: puede ser una divergencia real del registro que el texto debe explicar. Anota lo hallado en el registro con la categoría «lectura». Existe porque las seis fichas de la serie de abducciones (nov 2026) se publicaron con el verificador en verde y la auditoría de prosa posterior no aprobó ninguna: personas sin presentar en las seis, recuentos que no cuadraban en cinco.
 
 **El build lo exige** (`audit-consistency.mjs` E63): toda ficha nueva necesita al menos una fila en el registro (o una fila «sin hallazgos»), y desde el `num` 535 un visual embebido o una exención con su barrido en `docs/registros.md`.
 
