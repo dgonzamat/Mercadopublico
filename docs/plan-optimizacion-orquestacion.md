@@ -59,3 +59,72 @@ Las palancas A a F se aplican juntas. G solo se adopta si la prueba A/B lo sosti
 1. PR de reglas y herramientas: tipos de agente, formato de parches en `docs/brief-verificacion.md`, script aplicador, sonda de frase en `caso:check`, pasos 0.5, 5c y 5d de `/nuevo-caso`.
 2. Tanda de cuatro fichas desde una sesión nueva, con la prueba A/B de G.
 3. Resultados anexados a este archivo, sin tocar los criterios.
+
+---
+
+## Resultados de la tanda (18 nov 2026)
+
+Escrito después de ejecutar; los criterios de arriba no se tocaron. Cuatro fichas, `num` 539 a 542, de dos familias de archivo oficial: Arquivo Nacional de Brasil (fondo ARX de la Fuerza Aérea) y archivo OVNI de la Fuerza Aérea danesa (Flyvertaktisk Kommando). Cada brazo de la prueba G lleva una ficha de cada familia para que compare igual con igual. El barrido de noticias de `/proximo-caso` no dio ningún viral nuevo con fuente primaria (Starship del 13 de noviembre y Anchorage ya estaban en el corpus).
+
+| `num` | Ficha | Brazo | Familia | Tier |
+|---|---|---|---|---|
+| 539 | `caioba-seahorse-1980` | A (agentes propios) | Brasil, ARX.0.0.201 | A |
+| 540 | `aalborg-haesum-1976` | A (agentes propios) | Dinamarca, FTK pp. 185–203 | A |
+| 541 | `anapolis-2001` | B (compartidos) | Brasil, ARX.0.0.601–603 | A |
+| 542 | `odense-kalundborg-1991` | B (compartidos) | Dinamarca, FTK pp. 24–26 y FBIS | A |
+
+### Tokens por agente
+Cifras que reporta cada agente al terminar. Sigue valiendo el límite de la métrica que el plan anotó: parece medir el contexto al final y no el consumo acumulado de todos los turnos. Agente vacío medido justo antes: `ficha-trabajo` 47.038 y `ficha-lector` 41.750 (en la sesión anterior, 46.960 y 41.672).
+
+| Agente | Brazo | Ficha(s) | Tokens | Llamadas | Duración |
+|---|---|---|---|---|---|
+| Redactor | A | 539 | 275.316 | 97 | 13,7 min |
+| Verificador | A | 539 | 197.112 | 53 | 8,4 min |
+| Redactor | A | 540 | 223.658 | 72 | 12,0 min |
+| Verificador | A | 540 | 163.653 | 43 | 7,4 min |
+| Redactor compartido | B | 541 + 542 | 277.887 | 125 | 17,0 min |
+| Verificador compartido | B | 541 + 542 | 204.657 | 56 | 10,4 min |
+| Lector ES | — | las cuatro | 67.113 | 1 | 1,3 min |
+| Lector EN | — | las cuatro | 64.192 | 1 | 1,4 min |
+| **Total** | | | **1.473.588** | | |
+
+Por ficha, con los lectores repartidos entre las cuatro (32.826 cada una): 539, 505.254; 540, 420.137; 541 y 542, 274.098 cada una. El costo fijo de los 8 agentes suma 365.728, el 24,8 % del total (52 % en el piloto). Los tokens del orquestador (esta sesión) no se pueden medir desde dentro.
+
+### Criterio por criterio
+
+| Criterio | Resultado | Veredicto |
+|---|---|---|
+| **Costo** (≤380k por ficha con A; G aparte) | Brazo A: 462.696 por ficha. Brazo G: 274.098. Tanda entera: 368.397 (−32 % frente a 539k del piloto), pero por debajo de 380k solo gracias a G | **No cumplido** en el brazo A |
+| **Hechos** (0 ALTA en al menos 3 de 4) | 0 ALTA en las cuatro. Hallazgos: 14, 9, 8 y 8 (39; 9,75 por ficha, frente a 14 del piloto) | Cumplido |
+| **Lectura** (≤3 defectos de deuda en cada lectura) | ES 7, 7, 7, 4; EN 7, 8, 5, 6. Ninguna de las 8 lecturas llega a 3 o menos (piloto: 1 de 8). Notas ES 6, 5, 6, 8; EN 6, 5, 6, 7,5 | **No cumplido** |
+| **Defectos nacidos de arreglos** (0) | 14 defectos de lectura distintos en frases que tocaron los parches (Caioba 4, Aalborg 3, Anápolis 1, Odense 6). `caso:check` atrapó además, tras aplicar parches, 4 párrafos de más de 880 caracteres, una frase de 73 palabras y un referente ambiguo | **No cumplido** |
+| **Gates** (0 errores al entregar el redactor) | 0 errores propios en los tres redactores. El de la 540 entregó con un ERROR E45 ajeno y transitorio (el `num` 539 aún no estaba escrito); el compartido vio dos ERROR ajenos a mitad del trabajo, que se resolvieron solos. `caso:check` sin avisos en las cuatro al entregar | Cumplido |
+| **Cumplimiento** (cada parche aplicado con cita) | 109 parches (36, 24 y 49), todos con cita. El orquestador abrió la fuente de todos los que cambiaban un hecho, mirando la imagen en los manuscritos: la fecha «29 Dez 80» a 500 ppp, las «83 milhas» (el OCR leía 33), «07/08/1980», los formularios daneses y brasileños y el sello del FBIS. Rehízo el cálculo del azimut de Paracatu y consultó el GCAT. Rechazados: 0. Un hueco que declaró el verificador (la nota del GCAT) lo cerró el orquestador con el catálogo | Cumplido |
+| **Prueba G** (brazo compartido no peor en hallazgos ni en lectura) | Hallazgos: A 14 y 9 (0 ALTA), B 8 y 8 (0 ALTA). Defectos de lectura: A 29 en 4 lecturas, B 22 en 4. Nacidos de parches: 7 en cada brazo | Cumplido según la medida; ver límites abajo |
+
+### Hallazgos ALTA por ficha
+Ninguno en las cuatro. Los MEDIA, por ficha: Caioba 6, Aalborg 5, Anápolis 3, Odense 3. Las categorías siguen siendo las del piloto: **omisión** (9 filas del registro), **cifra/hora** (7) y **atribución** (6).
+
+### Defectos de lectura por lectura
+Cuenta del orquestador a partir de los dos informes. Entran solo los puntos concretos que caen en la deuda de `/redaccion` §9 (contradicción, recuento, cifra o fecha sin situar, persona sin presentar, texto roto). Quedan fuera las quejas generales («demasiadas horas») y las divergencias del registro que el propio texto declara. El piloto no dejó escrito su criterio de conteo, así que la comparación con su «1 de 8» es aproximada.
+
+| Ficha | ES | EN | Corregidos tras la lectura |
+|---|---|---|---|
+| Caioba 1980 | 7 | 7 | 5 (sujeto del cálculo, posición de las 83 millas, canal de São Roque, técnico, faros) |
+| Aalborg 1976 | 7 | 8 | 7 (altura en grados, orden de las luces, Frejlev, 15°, llamada, testigos principales, duraciones) |
+| Anápolis 2001 | 7 | 5 | 4 (frase con dos «que», 25 a 35 millas, distancias, 260°) |
+| Odense 1991 | 4 | 6 | 5 (Lemvig, «y más grandes», letra de la nota, fechas del GCAT, Uherský Brod) |
+
+Las correcciones son cambios mínimos y cada una se contrastó con la página que ya se había abierto (detalle en `docs/hallazgos-verificacion.md`). Ninguna pasó por una segunda lectura, como manda `/nuevo-caso` 5d.
+
+### Lo que la tanda enseña
+
+1. **El archivo de parches no evita los defectos de lectura; los traslada.** El brief pide escribir `new` con el estándar de `/redaccion`, y los parches cumplen las reglas de forma: ninguno pasó de 60 palabras. Aun así, la mayoría añade un dato más del mismo documento: un ángulo, otro faro, un tachón, una fecha de embarque. El lector tropieza justo ahí. De los defectos de lectura, 14 están en frases de parches. Es la misma causa que en el piloto: la corrección del verificador acierta en el hecho y empeora la lectura. La palanca B no la ataca.
+2. **El brazo A no baja de 380k.** Los dos tipos propios (A) cumplieron lo previsto en el costo fijo (del 52 % al 25 %), pero el trabajo propio por ficha subió. Archivos manuscritos en portugués y danés, renderizados como imagen, cuestan más llamadas que los expedientes del piloto. El costo depende más de la fuente que del tipo de agente.
+3. **La prueba G sostiene la palanca por la medida, pero la medida no basta para adoptarla.** El verificador compartido halló menos (8 y 8 frente a 14 y 9). Eso puede significar que el redactor compartido escribió mejor o que el verificador compartido buscó menos, y con dos fichas por brazo no se puede distinguir. La cifra de tokens favorece todavía más a B por su límite conocido: los agentes de B hicieron más llamadas (125 y 56 frente a 72–97 y 43–53), así que su consumo acumulado real está más infravalorado. Las fichas de B son, además, más cortas de expediente (6 páginas y 3 formularios, frente a 43 páginas y 19 páginas).
+4. **El orquestador pagó el contraste.** Abrir la fuente de 1–8, 1–13 y 1–108, mirar seis manuscritos y rehacer un cálculo es trabajo que el plan dejaba sin medir. No hubo ningún rechazo, frente a 1 de 56 en el piloto: la regla aseguró y esta vez no atrapó nada.
+
+### Pendientes para el dueño
+- **Licencias:** el extracto del FTK de Aalborg se aloja citando el artículo 9 de la ley danesa de derechos de autor, sin certeza de que cubra cuestionarios militares internos. Los formularios de Odense van «con crédito», sin licencia declarada.
+- **Tier en el borde:** Caioba (testigos identificados con declaraciones de 15 días a 5 semanas después; solo el télex es del día siguiente) y Anápolis (informe al menos 11 días posterior, entre la semana que cuenta y las dos semanas que no). Ningún verificador propuso cambiarlos, así que el método de dos pasos no se activó.
+- **Defectos sin corregir:** en Caioba, la portada de septiembre, la circular de 1978 sin emisor y la Luna a 24°; en Odense, la lista de satélites.
