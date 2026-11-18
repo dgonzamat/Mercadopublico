@@ -49,8 +49,23 @@ Conteo hecho a mano a partir de los informes de los verificadores (17-18 nov 202
 | adamski-desert-center-1952 | omisión | El FBI dio el caso por cerrado; Marshall lo llamó «oportunista» | no |
 | adamski-desert-center-1952 | cifra/hora | El cigarro apareció unos minutos después del avión, no justo detrás | no |
 | adamski-desert-center-1952 | nombre | Marc Hallet, no «Michael» | no |
+| puddy-moorooduc-1972 | omisión | La nota de la RAAF recoge que el agente Cox contó que Beale vio una luz azul «en términos parecidos» a los de Puddy; la ficha decía que nadie describió algo parecido | no |
+| puddy-moorooduc-1972 | atribución | El segundo suceso tiene tres fechas (martes 25 en los formularios, 27 en el boletín de 1972, «lunes» en la nota del oficial); la ficha daba el 25 por cerrado | no |
+| puddy-moorooduc-1972 | ausencia | «La RAAF descartó helicópteros y aviones»: la nota solo dice que ningún helicóptero militar operaba y que consultó a la DCA; las preguntas de causa quedaron en blanco | no (marcó la frase ya reescrita, falso positivo) |
+| puddy-moorooduc-1972 | cifra/hora | El resumen daba 21:15 (hora del aviso a la policía) como hora del suceso; el formulario dice 21:00 con diez minutos de margen | no |
+| puddy-moorooduc-1972 | cifra/hora | «Otros tres vecinos» (son cuatro personas de otras localidades) y «a otras horas» (la franja de Davis incluye las 21:15) | no |
+| puddy-moorooduc-1972 | atribución | Magee firma el relato de 1980 y Norman escribe aparte; el texto de 1997 es otro, no una reimpresión | no |
+| puddy-moorooduc-1972 | atribución | Frases de Little y Stapleton (vía Basterfield) sin decir de quién eran; el mensaje varía entre fuentes | no |
+| puddy-moorooduc-1972 | ausencia | «Sin documento de la época» sobre el tercer episodio: el informe de Little y Stapleton no está fechado | no |
+| puddy-moorooduc-1972 | omisión | El segundo formulario llegó a la RAAF el 17 de agosto; Magee escribe «creo que no lo devolvió», no «no lo devolvió» | no |
+| puddy-moorooduc-1972 | atribución | «Primera publicación del caso» no se puede verificar; «el hombre de la vaca, único testigo del primer tramo» es del segundo suceso | no |
+| puddy-moorooduc-1972 | omisión | Magee (1997) dice que los tres episodios fueron en 1972 aunque los sitúa seis meses después de julio | no |
+| puddy-moorooduc-1972 | léxico/voz | «Sin capa de texto» (herramienta del redactor), «Lo que sostiene este caso es que existió» (fórmula), citas en inglés sin glosar, siglas sin explicar | no |
+| puddy-moorooduc-1972 | extensión | Prosa de 11.085 caracteres antes de los arreglos y 12.771 después; E52 frenó a más de 12.000 y se recortó el tercer episodio | sí, pero lo vio E52, no `caso:check` |
 
-**Lectura (18 nov 2026):** de 29 filas, `caso:check` habría marcado 4 y 2 más con una regla ampliada («no halló», «no se conserva»). Las 23 restantes solo las ve un lector que abra la fuente. Las categorías con filas en las cinco fichas son **atribución** y **omisión**; ninguna se puede vigilar con una sonda.
+**Lectura (18 nov 2026, tras la sexta ficha):** de 42 filas, `caso:check` habría marcado 4 (ninguna de Puddy; sus avisos eran falsos positivos) y 2 más con la regla ampliada. Las categorías **atribución, omisión, cifra/hora y ausencia** aparecieron en las cinco últimas fichas (Moody a Puddy): el paso 0.5 y el autochequeo **no las redujeron**. El léxico (3 de 5) sí era mecánico y pasó a E62. Puddy es una ficha más difícil que las anteriores (tres episodios, manuscritos de la RAAF, tres versiones de los investigadores), así que no es un experimento limpio: la comparación solo valdrá con tres fichas más.
+
+**Predicciones del redactor antes del verificador** (guardadas antes del informe): acertó dónde estaba el riesgo en atribución (Magee frente a Basterfield), en la omisión de Cox y Beale y en la hora de las 21:15; falló en las tres frases de ausencia que marcó (el verificador las halló correctas: «la evaluación no responde», «nadie entrevistó al hombre de la vaca») y no vio tres hallazgos graves: las tres fechas del segundo suceso, el «descartó» y el recuento de testigos. Saber dónde está el riesgo no basta para hallar el error.
 
 ## Deuda detectada por el PoC (sin tocar)
 

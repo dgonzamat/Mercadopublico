@@ -15,6 +15,11 @@ El estándar es prosa con **investigación caso por caso, fuentes primarias**. A
 ## 0.5 Antes de redactar: lee lo que ya falló
 Lee las categorías con más filas en [`docs/hallazgos-verificacion.md`](../../docs/hallazgos-verificacion.md) (y, si existe, `cd web && npm run sondas:frenos`). Son los errores que el verificador halló en las fichas anteriores; escribe con esa lista delante. Las dos más repetidas, hoy: **atribución** (quién dijo o hizo qué, y de qué fecha es el documento que lo recoge) y **afirmaciones de ausencia** («no consta», «nadie halló»: o se respaldan con la búsqueda hecha, o se escriben como «no lo tenemos»).
 
+Tres comprobaciones más, de lo que el verificador halló en las seis primeras fichas y ninguna sonda ve. Hazlas al terminar el borrador, con el documento delante:
+- **Un documento dice lo que comprobó, no lo que descartó.** «La RAAF descartó helicópteros» pasó por la nota que solo decía «no operaba ningún helicóptero militar; consultado con la DCA». Escribe el alcance exacto.
+- **Relee entera cada página citada buscando lo que contradice la ficha.** La nota que citaba la ficha recogía, dos párrafos más abajo, el relato de un testigo que se parecía al de Puddy. Si la ficha afirma que nadie hizo o vio algo, esa frase se prueba contra el documento completo.
+- **Un día de la semana y una fecha pueden no cuadrar entre manos del mismo expediente** (lunes 20, martes 25, día 27). Se anota el conflicto; no se elige en silencio.
+
 ## 1. Identidad del caso
 - **id**: slug kebab-case estable, típicamente `<lugar>-<año>` (ej. `trindade-1958`). Debe ser único y `<id>.json` **tiene que coincidir** con el nombre de archivo (lo valida el schema).
 - **num**: secuencial único = (num máximo actual) + 1. Calcúlalo, **no rellenes huecos**:
