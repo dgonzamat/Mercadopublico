@@ -4,6 +4,8 @@ Second step of the mandatory two-step method (see CLAUDE.md, "Modelo de probabil
 
 **Writing:** also check the corrected text against the `/redaccion` guide (`.claude/commands/redaccion.md`): flag any departure with the exact sentence and a proposed rewrite.
 
+**Do not use the researcher's notes or any summary as evidence**, only the primary sources themselves: a summary carries the writer's reading, and checking against it confirms what the writer already believed (Nov 2026).
+
 Repo: /home/user/Mercadopublico. Case files: web/data/cases/<id>.json. See what changed with
 `git diff origin/main -- web/data/cases/<id>.json` (unmerged work) or `git diff <commit>~1 <commit> -- …` (merged work).
 
