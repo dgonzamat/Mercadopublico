@@ -7,6 +7,8 @@ Estás creando un **caso nuevo** para el corpus UAP Codex. La fuente de verdad e
 
 `$ARGUMENTS` trae el caso a crear. Si falta info clave (país, año, qué pasó), pregunta antes de inventar.
 
+**Flujo congelado desde la ficha 547 hasta la 556 (18 nov 2026, decisión del dueño):** no se cambian reglas, briefs ni sondas del proceso; lo que se halle va al registro de hallazgos y una ficha con un error de hecho se corrige en la ficha. Al cerrar la 556, una sola revisión: solo cambia lo que se repita en al menos 3 de esas 10 fichas. Existe porque tres fichas seguidas (544–546) movieron la nota de lectura entre 6 y 7 con un cambio de proceso en cada una, y con tan pocas fichas no se distingue una mejora del ruido.
+
 ## 0. Investigación primero (no relleno)
 El estándar es prosa con **investigación caso por caso, fuentes primarias**. Antes de escribir: busca el caso (WebSearch), identifica ≥2-3 fuentes verificables (informe oficial, prensa de la época, investigación seria) y extrae los hechos. Si no puedes documentarlo, dilo — es mejor no crear el caso que rellenarlo.
 
