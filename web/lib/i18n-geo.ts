@@ -94,6 +94,7 @@ const COUNTRY_EN: Record<string, string> = {
   "Golfo de América (ubicación exacta no revelada)": "Gulf of America (exact location undisclosed)",
   "Omán": "Oman",
   "Nigeria": "Nigeria",
+  "Ghana": "Ghana",
   "Nepal": "Nepal",
   "Pakistán": "Pakistan",
   "República Democrática del Congo": "Democratic Republic of the Congo",
