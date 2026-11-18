@@ -21,6 +21,13 @@
 // Por eso el script, sin --contrastado, solo aplica los BAJA sin "hecho" y lista
 // el resto para contrastar.
 //
+// Campo "añade" (18 nov 2026, tras la tanda 539–542): true si el parche suma un
+// dato que la ficha no traía, false si solo corrige o quita. En esa tanda, 14 de
+// los defectos de lectura estaban en frases que añadieron parches bien escritos:
+// el problema era el dato de más, no la forma. Por eso un parche con "añade": true
+// sobre la prosa (summary, whatHappened, whyMatters y sus _en) no se aplica: el
+// dato va a evidence o a la nota de la fuente. Sin el campo, avisa y aplica.
+//
 // Uso (desde web/):
 //   node scripts/aplicar-parches.mjs parches.json                 # aplica solo BAJA de forma
 //   node scripts/aplicar-parches.mjs parches.json --contrastado 1,4,7   # además, esos hallazgos ya contrastados
@@ -42,7 +49,14 @@ const esc = (s) => JSON.stringify(s).slice(1, -1); // mismo escape que el JSON d
 const textos = {};
 const leer = (id) => (textos[id] ??= fs.readFileSync(path.join(WEB, "data", "cases", id + ".json"), "utf8"));
 
-let aplicados = 0, pendientes = 0, fallos = 0;
+const PROSA = new Set(["summary", "whatHappened", "whyMatters"].flatMap((k) => [k, k + "_en"]));
+const contiene = (v, s) => typeof v === "string" ? v.includes(s) : v && typeof v === "object" ? Object.values(v).some((x) => contiene(x, s)) : false;
+const campoDe = (id, old) => {
+  const c = JSON.parse(leer(id));
+  return Object.keys(c).find((k) => contiene(c[k], old)) ?? "otro";
+};
+
+let aplicados = 0, pendientes = 0, fallos = 0, desviados = 0;
 for (const p of parches) {
   const tag = `${p.ficha} #${p.hallazgo} (${p.severidad}${p.hecho ? ", hecho" : ""})`;
   if (!p.cita || !String(p.cita).trim()) { console.log(`✗ ${tag}: sin cita; no se aplica`); fallos++; continue; }
@@ -52,6 +66,11 @@ for (const p of parches) {
   const o = esc(p.old), n = esc(p.new);
   const veces = t.split(o).length - 1;
   if (veces !== 1) { console.log(`✗ ${tag}: el texto viejo aparece ${veces} veces; no se aplica`); fallos++; continue; }
+  const campo = campoDe(p.ficha, p.old);
+  if (p["añade"] === true && PROSA.has(campo)) {
+    console.log(`→ ${tag}: añade un dato a ${campo}; no se aplica: llévalo a evidence o a la nota de la fuente`); desviados++; continue;
+  }
+  if (p["añade"] === undefined) console.log(`  ${tag}: sin campo "añade"; se trata como corrección`);
   textos[p.ficha] = t.replace(o, n);
   console.log(`✓ ${tag}`); aplicados++;
 }
@@ -59,6 +78,6 @@ for (const [id, t] of Object.entries(textos)) {
   try { JSON.parse(t); } catch (e) { console.log(`✗ ${id}: el resultado no es JSON válido (${e.message}); no se escribe`); fallos++; continue; }
   if (!dry) fs.writeFileSync(path.join(WEB, "data", "cases", id + ".json"), t);
 }
-console.log(`\n${aplicados} aplicados, ${pendientes} pendientes de contraste, ${fallos} fallos${dry ? " (dry-run: nada escrito)" : ""}.`);
+console.log(`\n${aplicados} aplicados, ${pendientes} pendientes de contraste, ${desviados} desviados fuera de la prosa, ${fallos} fallos${dry ? " (dry-run: nada escrito)" : ""}.`);
 console.log("Después: node scripts/validate-schema.mjs, node scripts/build-cases.mjs, node scripts/audit-consistency.mjs y npm run caso:check -- <id>.");
 if (fallos) process.exit(1);
