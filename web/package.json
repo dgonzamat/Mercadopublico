@@ -31,7 +31,8 @@
     "qa:relato": "node scripts/qa-relato.mjs",
     "sondas:frenos": "node scripts/probe-hits-report.mjs",
     "caso:check": "node scripts/caso-check.mjs",
-    "parches": "node scripts/aplicar-parches.mjs"
+    "parches": "node scripts/aplicar-parches.mjs",
+    "hallazgos:resumen": "node scripts/hallazgos-resumen.mjs"
   },
   "dependencies": {
     "@supabase/supabase-js": "^2.108.2",
