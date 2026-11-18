@@ -120,6 +120,9 @@ Conteo hecho a mano a partir de los informes de los verificadores (17-18 nov 202
 | agoncillo-1978 | lectura | Piloto, ES 7/10 y EN 6/10: «accidental» sin explicar, papeleo de números de escrito, «nombre y empleo» frente a nombres borrados sin reconciliar, frase larga del «guardhouse», sigla MOA con nombre en español | no |
 | clarenville-1978 | lectura | Piloto, ES 5/10 y EN 5/10: la ventana horaria del télex (tres cláusulas, McNamara antes de presentarlo, ambos introducidos al aplicar arreglos), «at the time» sin hora, «rumbo» y «verdadero o magnético» sin explicar, Chester fuera de la lista de testigos | no |
 | blenheim-1959 | lectura | Piloto, ES 6/10 y EN 6/10: «partly missing» sin explicar, «did not move ???» con paréntesis confuso, «un grupo civil de platillos» sin contexto, «5 de marzo» sin año, correspondencia de 1979 pesada | no |
+| anapolis-2001 | pendiente | Fila provisional del redactor; la sustituye el orquestador con los hallazgos del verificador | no |
+| caioba-seahorse-1980 | pendiente | Fila provisional del redactor; la sustituye el orquestador con los hallazgos del verificador | no |
+| aalborg-haesum-1976 | pendiente | Fila provisional del redactor; la sustituye el orquestador con los hallazgos del verificador | no |
 
 **Lectura (18 nov 2026, tras la sexta ficha):** de 42 filas, `caso:check` habría marcado 4 (ninguna de Puddy; sus avisos eran falsos positivos) y 2 más con la regla ampliada. Las categorías **atribución, omisión, cifra/hora y ausencia** aparecieron en las cinco últimas fichas (Moody a Puddy): el paso 0.5 y el autochequeo **no las redujeron**. El léxico (3 de 5) sí era mecánico y pasó a E62. Puddy es una ficha más difícil que las anteriores (tres episodios, manuscritos de la RAAF, tres versiones de los investigadores), así que no es un experimento limpio: la comparación solo valdrá con tres fichas más.
 
