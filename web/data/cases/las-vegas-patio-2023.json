@@ -23,8 +23,8 @@
   "misidSubtype": "astronomico",
   "objectDetail": "meteoro",
   "classBasis": {
-    "es": "Lindley Johnson, oficial de defensa planetaria de la NASA, dijo a Motherboard que la bola de fuego que grabó la cámara del policía fue con probabilidad un meteoro brillante de menos de un metro que, por su velocidad, iba muy alto y a cientos de millas de Las Vegas: «nothing from the meteor landed in anyone's backyard in Vegas». La clase cubre solo la luz. Para los seres, Ben Hansen y un experto británico ven la sombra de una linterna en la figura del clip que Angel Kenmore presenta como el momento en que la familia vio a la criatura (NewsNation), y Scott Roder lo discute; no se conoce una propuesta para lo que describe la llamada al 911. La LVMPD cerró el aviso como infundado.",
-    "en": "Lindley Johnson, NASA's planetary defense officer, told Motherboard that the fireball the police camera recorded was most likely a bright meteor less than a meter across that, given its speed, was high up and hundreds of miles from Las Vegas: \"nothing from the meteor landed in anyone's backyard in Vegas.\" The class covers only the light. For the beings, Ben Hansen and a British expert see a flashlight shadow in the figure in the clip Angel Kenmore presents as the moment the family saw the creature (NewsNation), and Scott Roder disputes it; there is no known proposal for what the 911 call describes. The LVMPD closed the call as unfounded.",
+    "es": "Lindley Johnson, oficial de defensa planetaria de la NASA, dijo a Motherboard que la bola de fuego que grabó la cámara del policía fue con probabilidad un meteoro brillante de menos de un metro que, por su velocidad, iba muy alto y a cientos de millas de Las Vegas: «nothing from the meteor landed in anyone's backyard in Vegas». La clase cubre solo la luz. Del relato de los seres, Fox News recoge que algunos lo llaman engaño, y George Knapp dijo no haber notado indicio de ello. En el clip que Angel Kenmore presenta como el momento en que la familia vio a la criatura, Ben Hansen y un experto británico ven la sombra de una linterna (NewsNation); Scott Roder lo discute.",
+    "en": "Lindley Johnson, NASA's planetary defense officer, told Motherboard that the fireball the police camera recorded was most likely a bright meteor less than a meter across that, given its speed, was high up and hundreds of miles from Las Vegas: \"nothing from the meteor landed in anyone's backyard in Vegas.\" The class covers only the light. Of the beings, Fox News reports that some call the account a hoax, and George Knapp said he did not detect a hint of one. In the clip Angel Kenmore presents as the moment the family saw the creature, Ben Hansen and a British expert see a flashlight shadow (NewsNation); Scott Roder disputes it.",
     "source": "Tim Marchman, «NASA Says 'UFO' Spotted Crashing in Las Vegas Was a Small Meteor; Cops Say They Hope to Find Aliens», Motherboard (Vice), 13 jun 2023",
     "source_en": "Tim Marchman, \"NASA Says 'UFO' Spotted Crashing in Las Vegas Was a Small Meteor; Cops Say They Hope to Find Aliens,\" Motherboard (Vice), June 13, 2023",
     "url": "https://www.vice.com/en/article/nasa-las-vegas-ufo-crash-meteor/"
@@ -137,8 +137,15 @@
       "name": "Chris Eberhart, «Las Vegas alien video's previously missed detail proves 'authenticity,' expert says», Fox News, 9 may 2024",
       "name_en": "Chris Eberhart, \"Las Vegas alien video's previously missed detail proves 'authenticity,' expert says,\" Fox News, May 9, 2024",
       "url": "https://www.foxnews.com/us/las-vegas-alien-videos-previously-missed-detail-proves-authenticity-expert-says-you-cant-deny-it",
-      "note": "Opinión televisiva de Scott Roder sobre el video de Angel Kenmore y la objeción de Ben Hansen; no es una fuente del suceso.",
-      "note_en": "Scott Roder's television opinion on Angel Kenmore's video and Ben Hansen's objection; not a source on the event."
+      "note": "Opinión televisiva de Scott Roder sobre el video de Angel Kenmore y la objeción de Ben Hansen; recoge además que algunos llaman engaño al relato y que George Knapp dijo no haber notado indicio de ello. No es una fuente del suceso.",
+      "note_en": "Scott Roder's television opinion on Angel Kenmore's video and Ben Hansen's objection; it also reports that some call the account a hoax and that George Knapp said he did not detect a hint of one. Not a source on the event."
+    },
+    {
+      "name": "Chris Eberhart, «Las Vegas alien video shows at least 2 'beings' using 'cloaking' device: 'I'm opening up to peer review'», Fox News, 28 de mayo de 2024",
+      "name_en": "Chris Eberhart, \"Las Vegas alien video shows at least 2 'beings' using 'cloaking' device: 'I'm opening up to peer review',\" Fox News, May 28, 2024",
+      "url": "https://www.foxnews.com/us/las-vegas-alien-video-shows-least-2-beings-using-cloaking-device-im-opening-up-peer-review",
+      "note": "Describe el clip de Angel Kenmore como el momento en que él y su familia vieron a la criatura, y recoge que los escépticos lo atribuyen a una sombra, a una mancha, a un engaño o a una reacción exagerada.",
+      "note_en": "Describes Angel Kenmore's clip as the moment he and his family saw the creature, and reports that skeptics put it down to a shadow, a smudge, a hoax or an overreaction."
     },
     {
       "name": "Rich Johnson, «Las Vegas alien video is original: Expert», NewsNation (programa Banfield), 26 abr 2024",
