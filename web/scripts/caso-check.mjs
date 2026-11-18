@@ -53,6 +53,12 @@ const VOZ_ES = /\b(cito|citamos|hemos|este expediente|esta ficha|nuestro an[aá]
 const VOZ_EN = /\b(I cite|we cite|this file|this entry|our analysis|the corpus)\b/gi;
 // 3. Párrafos largos (E59 corta en 900; aquí se avisa antes).
 const MAX_PARA = 880;
+// 4. Frases que el lector tiene que releer. En el piloto de nov 2026, los dos
+//    lectores marcaron sobre todo frases de más de ~45 palabras y cadenas de dos o
+//    más punto y coma, varias nacidas al aplicar arreglos del verificador. Se cuentan
+//    las palabras con lo citado entre comillas reducido a «…».
+const MAX_WORDS = 70;
+const splitSentences = (t) => (t || "").split(/\n\n/).flatMap((p) => p.split(/(?<=[.!?])\s+(?=[A-ZÁÉÍÓÚÑ¿«"(])/));
 
 const strip = (t) => (t || "").replace(/«[^»]*»|"[^"]*"|\[\[[^\]]*\]\]/g, "«…»");
 
@@ -96,6 +102,18 @@ for (const id of targets) {
   for (const [k, t] of [["whatHappened", c.whatHappened], ["whyMatters", c.whyMatters], ["whatHappened_en", c.whatHappened_en], ["whyMatters_en", c.whyMatters_en]]) {
     const long = (t || "").split("\n\n").filter((p) => p.length > MAX_PARA).length;
     if (long) { out.push(["WARN", "párrafo", `${k}: ${long} párrafo(s) de más de ${MAX_PARA} caracteres`]); bump("párrafo"); }
+  }
+
+  // WARN: frases largas o con cadenas de punto y coma
+  for (const [k, txt] of [["summary", c.summary], ["whatHappened", c.whatHappened], ["whyMatters", c.whyMatters], ["summary_en", c.summary_en], ["whatHappened_en", c.whatHappened_en], ["whyMatters_en", c.whyMatters_en]]) {
+    for (const s of splitSentences(strip(txt))) {
+      const words = s.split(/\s+/).filter(Boolean).length;
+      const semis = (s.match(/;/g) || []).length;
+      if (words > MAX_WORDS || semis >= 2) {
+        const why = [words > MAX_WORDS ? `${words} palabras` : "", semis >= 2 ? `${semis} punto y coma` : ""].filter(Boolean).join(", ");
+        out.push(["WARN", "frase", `${k} (${why}): ${s.length > 120 ? s.slice(0, 120) + "…" : s}`]); bump("frase");
+      }
+    }
   }
 
   console.log(`\n${id} (num ${c.num}, Tier ${c.tier}): ${out.length ? out.length + " aviso(s)" : "sin avisos"}`);

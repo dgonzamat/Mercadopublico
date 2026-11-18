@@ -20,6 +20,12 @@ Tres comprobaciones más, de lo que el verificador halló en las seis primeras f
 - **Relee entera cada página citada buscando lo que contradice la ficha.** La nota que citaba la ficha recogía, dos párrafos más abajo, el relato de un testigo que se parecía al de Puddy. Si la ficha afirma que nadie hizo o vio algo, esa frase se prueba contra el documento completo.
 - **Un día de la semana y una fecha pueden no cuadrar entre manos del mismo expediente** (lunes 20, martes 25, día 27). Se anota el conflicto; no se elige en silencio.
 
+Cuatro más, de lo que se repitió en las cuatro fichas del piloto (nov 2026; registro de hallazgos):
+- **Cita literal contra la imagen.** Toda cita entre comillas se copia mirando la página, no la capa de texto: el OCR cambió «STRONG SUGGEST» por «strongly suggest» y recortó la frase.
+- **El resumen atribuye igual que el relato.** Si un dato es de un solo testigo (el rumbo del piloto en Ghana), el resumen no lo da a todos.
+- **Una ausencia se prueba contra el legajo entero, no contra las páginas citadas.** «La copia publicada no muestra qué se reveló» era falso: el dibujo estaba diez páginas más allá (Blenheim).
+- **Fecha del documento frente a fecha del suceso.** El 27 de julio era el suceso de Ghana y el informe es del 20 de agosto; la firma de un formulario no es el día de la observación.
+
 ## 1. Identidad del caso
 - **id**: slug kebab-case estable, típicamente `<lugar>-<año>` (ej. `trindade-1958`). Debe ser único y `<id>.json` **tiene que coincidir** con el nombre de archivo (lo valida el schema).
 - **num**: la regla vive en `CLAUDE.md` › Workflow de datos (máximo + 1, sin rellenar huecos). Calcúlalo así:
@@ -60,21 +66,22 @@ Escribe la versión ES y traduce a EN con fidelidad (no resumas la EN por debajo
   ```
   cd web && node scripts/build-cases.mjs && node scripts/validate-schema.mjs && node scripts/audit-consistency.mjs --warn
   ```
-- `audit-consistency.mjs` (regla **E13**) reporta si la prosa quedó bajo el umbral; ajústala hasta pasar.
+- `audit-consistency.mjs` (regla **E13**) reporta si la prosa quedó bajo el umbral; ajústala hasta pasar. El redactor entrega con `audit-consistency` en cero: en el piloto, E7 (inglés en el resumen) y E59 (párrafos de más de 900) llegaron tarde porque el redactor no la corrió.
+- **País nuevo:** si el `country_name` no existe en el corpus, añádelo a `COUNTRY_EN` (`lib/i18n-geo.ts`) y su código a `lib/regions.ts` (E50 y E35 lo exigen).
 
 ## Orquestación: cuántos agentes y por qué
-Por ficha, **dos agentes**: el redactor (o corrector) y el verificador independiente. Los arreglos del verificador los aplica quien orquesta, cada uno con su cita (paso 5c), sin relanzar al redactor. Los lectores del paso 5d van **por tanda**, no por ficha. Existe porque cada agente paga un costo fijo antes de trabajar: medido en nov 2026, un agente vacío que solo responde «OK» gastó ~140k tokens, y un lector que leyó un archivo de 12.000 caracteres, ~154k. El PoC de Puddy usó nueve agentes (dos correctores, un verificador, cuatro lecturas y una revisión de clase), ~1,8 millones de tokens, y el 70 % fue ese costo fijo. Lo que no se toca para ahorrar: la independencia entre redactor y verificador, los lectores Opus y la cita por arreglo.
+Por ficha, **dos agentes**: el redactor (o corrector) y el verificador independiente, los dos del tipo **`ficha-trabajo`** (`.claude/agents/`); los lectores son del tipo **`ficha-lector`**. Vacíos, cuestan 46.960 y 41.672 tokens, frente a 111.936 del `general-purpose` (medido el 18 nov 2026). Los arreglos del verificador llegan como parches con su cita y los aplica quien orquesta con `npm run parches` (paso 5c), sin relanzar al redactor. Los lectores del paso 5d van **por tanda**, no por ficha. Existe porque cada agente paga un costo fijo antes de trabajar: medido en nov 2026, un agente vacío que solo responde «OK» gastó ~140k tokens, y un lector que leyó un archivo de 12.000 caracteres, ~154k. El PoC de Puddy usó nueve agentes (dos correctores, un verificador, cuatro lecturas y una revisión de clase), ~1,8 millones de tokens, y el 70 % fue ese costo fijo. Lo que no se toca para ahorrar: la independencia entre redactor y verificador, los lectores Opus y la cita por arreglo.
 
 ## 5b. Autochequeo antes del verificador
 Antes de lanzar al verificador independiente, corre desde `web/`:
 ```
 npm run caso:check -- <id>
 ```
-Avisa de lo que se puede ver sin abrir una fuente: afirmaciones de ausencia, voz del redactor, párrafos largos y `num` ya ocupado en `origin/main`. Son **avisos, no errores** (salvo el `num`): léelos y corrige lo que sea real. **No sustituye al verificador**: la atribución y las omisiones del mismo documento solo las halla un lector que abra la fuente.
+Avisa de lo que se puede ver sin abrir una fuente: afirmaciones de ausencia, voz del redactor, párrafos largos, frases de más de 60 palabras o con dos o más punto y coma, y `num` ya ocupado en `origin/main`. Córrelo también después de aplicar los parches del verificador: en el piloto, varios defectos de lectura nacieron de arreglos. Son **avisos, no errores** (salvo el `num`): léelos y corrige lo que sea real. **No sustituye al verificador**: la atribución y las omisiones del mismo documento solo las halla un lector que abra la fuente.
 
 ## 5c. Después del verificador: cierre de aprendizaje
 Con el informe del verificador en la mano, antes de fusionar:
-1. Contrasta cada arreglo con la fuente (regla del repo) y aplícalo **solo si puedes citar la página o la línea que lo sostiene**; la cita va en la fila del registro. Un arreglo sin cita no se aplica: en el PoC de Puddy (nov 2026) se aplicaron dos arreglos del verificador sin volver a la fuente, «civil» en la nota de Gibbs y «el boletín no menciona persecución», y los dos eran erróneos.
+1. Ningún arreglo se aplica sin la cita de página o línea que lo sostiene; la cita va en la fila del registro. **Quien orquesta abre la fuente de todo arreglo ALTA o MEDIA y de todo el que cambie un hecho** antes de aplicarlo; los BAJA de forma (fechas en inglés, comillas, calcos) se aplican con la cita del verificador (decisión del dueño, 18 nov 2026). `npm run parches -- <archivo> --contrastado <n,…>` aplica así: los BAJA de forma de inmediato y los demás solo si están en la lista de contrastados. Por qué: en el PoC de Puddy se aplicaron dos arreglos sin volver a la fuente y los dos eran erróneos; en el piloto, abrir la fuente rechazó uno del verificador de Blenheim («an extremely worried person» describía a Jennings, no a la testigo).
 2. **Anota los hallazgos** en [`docs/hallazgos-verificacion.md`](../../docs/hallazgos-verificacion.md): una fila por hallazgo, con su categoría y si `caso:check` lo habría marcado.
 3. Aplica la regla de cierre de ese archivo: una categoría con filas en **dos o más de las últimas cinco fichas** es candidata a `/blindar`; con una sola, vale una línea de `/learn`.
 4. Si la categoría no se puede vigilar con una sonda (atribución, omisiones), añade una línea a la lista de comprobación que lees en el paso 0.5.
