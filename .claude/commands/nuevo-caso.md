@@ -67,6 +67,7 @@ Escribe la versión ES y traduce a EN con fidelidad (no resumas la EN por debajo
   cd web && node scripts/build-cases.mjs && node scripts/validate-schema.mjs && node scripts/audit-consistency.mjs --warn
   ```
 - `audit-consistency.mjs` (regla **E13**) reporta si la prosa quedó bajo el umbral; ajústala hasta pasar. El redactor entrega con `audit-consistency` en cero: en el piloto, E7 (inglés en el resumen) y E59 (párrafos de más de 900) llegaron tarde porque el redactor no la corrió.
+- **Dos ERROR que el redactor no causa:** E63 exige una fila en `docs/hallazgos-verificacion.md` antes de que haya verificador, así que el redactor añade una provisional (`| <id> | pendiente | … | no |`) que el orquestador sustituye por los hallazgos; y con redactores en paralelo, E45 marca los `num` que otro aún no escribió. El segundo desaparece solo y no cuenta contra el redactor (tanda 539–542, nov 2026).
 - **País nuevo:** si el `country_name` no existe en el corpus, añádelo a `COUNTRY_EN` (`lib/i18n-geo.ts`) y su código a `lib/regions.ts` (E50 y E35 lo exigen).
 
 ## Orquestación: cuántos agentes y por qué
