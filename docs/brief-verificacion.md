@@ -18,3 +18,22 @@ For each case:
 Be as skeptical of the corrector as of the original ficha.
 
 Report per case: a table claim | VERIFIED / NOT VERIFIABLE from here / WRONG | source + quote; a verdict OK / needs fix, with the exact corrected wording and its source. End with one line: over-deflated, over-inflated, or neither.
+
+---
+
+## New cases: fixed brief (Nov 2026)
+
+Use this section, unchanged, for every NEW case created with `/nuevo-caso`. It is fixed on purpose: the findings ledger (`docs/hallazgos-verificacion.md`) compares cases, and a brief rewritten for each case measures the brief instead of the case (the Puddy verifier got a sharper ad hoc brief than the five before it, so its higher count could not be compared).
+
+The orchestrator fills in only three things: the case path (`web/data/cases/<id>.json`), the list of primary-source files or URLs, and a scratch directory for your notes. You work READ-ONLY.
+
+1. Read, in this order: this brief, the `/redaccion` guide, then the primary sources themselves (images for handwritten pages: open them and look). Do not use the researcher's notes or any summary as evidence.
+2. Check every claim in `summary`, `whatHappened`, `whyMatters`, `evidence`, `documents[].description`, `classBasis` and `sources[].note`, in both languages, by these categories, in this order of priority (they are the ones that failed in earlier cases):
+   - A. **Attribution**: who said or did what, and the date of the document that records it.
+   - B. **Omissions**: anything in the SAME document that qualifies or contradicts the case; reread every cited page whole.
+   - C. **Absence claims** ("no record", "nobody interviewed"): check each against the source; they must be impersonal ("no ... is known"), never first person.
+   - D. **Figures, times and dates**, including conversions and stamps; a weekday and a date may not agree between hands of the same file.
+   - E. **Quotes**: literal in the source? Faithful translation?
+   - F. **ES/EN parity**, American English, quotes and dates per the guide.
+   - G. **Classification** (read only): anything in the sources against the tier, `mundanoType` or `classBasis`?
+3. Report a NUMBERED list of findings, most severe first. Each one: (a) field and exact sentence; (b) what the source says, with file and page or line; (c) severity HIGH / MEDIUM / LOW and category letter; (d) proposed rewrite in ES and EN. Then, separately, one line per block of what you checked and found correct, and what you could not check and why. No general conclusions.

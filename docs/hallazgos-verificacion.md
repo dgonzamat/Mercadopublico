@@ -11,7 +11,9 @@ Lo usan `/nuevo-caso` (paso 0.5 antes de redactar, paso 5c al cerrar) y `/blinda
 - Si la categoría **no se puede vigilar con una sonda** (atribución, omisiones), pasa a la lista de comprobación del paso 0.5 de `/nuevo-caso`.
 - Cada fila dice si `npm run caso:check` **habría marcado** el hallazgo. Una categoría que `caso:check` no marca nunca tras cinco fichas no merece sonda: se retira esa regla.
 
-Categorías: **atribución** (quién dijo o hizo qué; de qué fecha es el documento que lo recoge) · **omisión** (algo del mismo documento que matiza la ficha) · **ausencia** (una frase «no consta», «nadie halló» sin la búsqueda que la respalde) · **cifra/hora** (un dato desplazado o mal medido) · **léxico/voz** (vocabulario de España, voz del redactor) · **clasificación** (tier, clase o reparto) · **nombre** (autor, cargo o seudónimo mal escrito).
+Categorías: **atribución** (quién dijo o hizo qué; de qué fecha es el documento que lo recoge) · **omisión** (algo del mismo documento que matiza la ficha) · **ausencia** (una frase «no consta», «nadie halló» sin la búsqueda que la respalde) · **cifra/hora** (un dato desplazado o mal medido) · **léxico/voz** (vocabulario de España, voz del redactor) · **clasificación** (tier, clase o reparto) · **nombre** (autor, cargo o seudónimo mal escrito) · **lectura** (lo que halla el lector sin fuentes del paso 5d: persona sin presentar, recuento o fecha que no cuadra, contradicción aparente).
+
+Toda ficha nueva desde el `num` 529 necesita al menos una fila aquí; si el verificador y el lector no hallan nada, una fila con la categoría «sin hallazgos». Lo exige `audit-consistency.mjs` (E63), que lee la primera columna de la tabla.
 
 ## Registro
 
@@ -62,10 +64,18 @@ Conteo hecho a mano a partir de los informes de los verificadores (17-18 nov 202
 | puddy-moorooduc-1972 | omisión | Magee (1997) dice que los tres episodios fueron en 1972 aunque los sitúa seis meses después de julio | no |
 | puddy-moorooduc-1972 | léxico/voz | «Sin capa de texto» (herramienta del redactor), «Lo que sostiene este caso es que existió» (fórmula), citas en inglés sin glosar, siglas sin explicar | no |
 | puddy-moorooduc-1972 | extensión | Prosa de 11.085 caracteres antes de los arreglos y 12.771 después; E52 frenó a más de 12.000 y se recortó el tercer episodio | sí, pero lo vio E52, no `caso:check` |
+| puddy-moorooduc-1972 | lectura | Basterfield, Little y Stapleton citados sin presentar; el resumen da la persecución por hecho; «esa noche» sin día; la radio «la mañana del 25» sin explicar qué implica | no |
+| cergy-pontoise-1979 | lectura | «Dos amigos» en el resumen frente a «los tres» en el relato; siete u ocho días; Vallée, Bouchon y «otro autor» sin presentar; «la versión de la visita del GEPAN», nunca contada | no |
+| adamski-desert-center-1952 | lectura | Keyhoe, Moseley, los Baker, el memorando de 1956 y la declaración del 17 de marzo sin presentar; un párrafo sin sujeto; el FBI «nunca investigó» sin comentar | no |
+| moody-alamogordo-1975 | lectura | Walton, los Hill, Klass, McQuiston y el Mammoth sin presentar; «dos semanas» frente a «un par de meses»; una frase de 85 palabras | no |
+| aveley-1974 | lectura | «Tres horas» frente a unas 2 h 40 entre las horas dadas; la hermana recogida esa noche sin explicar; Creighton y Randles sin presentar | no |
+| andreasson-ashburnham-1967 | lectura | Fowler sin presentar en el resumen; Bozo (16:30-17:30) frente a las 18:35 sin decir qué implica; «primary loop cutoff» sin traducir | no |
 
 **Lectura (18 nov 2026, tras la sexta ficha):** de 42 filas, `caso:check` habría marcado 4 (ninguna de Puddy; sus avisos eran falsos positivos) y 2 más con la regla ampliada. Las categorías **atribución, omisión, cifra/hora y ausencia** aparecieron en las cinco últimas fichas (Moody a Puddy): el paso 0.5 y el autochequeo **no las redujeron**. El léxico (3 de 5) sí era mecánico y pasó a E62. Puddy es una ficha más difícil que las anteriores (tres episodios, manuscritos de la RAAF, tres versiones de los investigadores), así que no es un experimento limpio: la comparación solo valdrá con tres fichas más.
 
 **Predicciones del redactor antes del verificador** (guardadas antes del informe): acertó dónde estaba el riesgo en atribución (Magee frente a Basterfield), en la omisión de Cox y Beale y en la hora de las 21:15; falló en las tres frases de ausencia que marcó (el verificador las halló correctas: «la evaluación no responde», «nadie entrevistó al hombre de la vaca») y no vio tres hallazgos graves: las tres fechas del segundo suceso, el «descartó» y el recuento de testigos. Saber dónde está el riesgo no basta para hallar el error.
+
+**Auditoría de prosa de las seis (18 nov 2026, `/auditar-prosa`):** con el verificador en verde, cuatro lectores Opus sin fuentes y un editor no aprobaron ninguna: cuatro a reescribir (Puddy, Cergy, Adamski, Moody) y dos a retocar. Personas sin presentar en las seis y recuentos que no cuadran en cinco. El verificador no tenía por qué verlo: no son errores de hecho. Por eso el paso 5d de `/nuevo-caso` pone la prueba del lector antes de fusionar.
 
 ## Deuda detectada por el PoC (sin tocar)
 

@@ -10,6 +10,10 @@ export const MARKERS = {
   "nota de sesión": /\besta (?:misma )?sesión\b|\bthis (?:same )?session\b|\bthis session's\b/i,
   "«honesto»": /\bhonest/i,
   "«Es uno de los»": /\bEs uno de los\b|\bIt is one of the\b/,
+  // Una ausencia en primera persona («no tenemos», «no hemos hallado») es voz
+  // del redactor; la regla de ausencias pide la forma impersonal, «no se conoce»
+  // (decisión del dueño, nov 2026, al chocar con /redaccion).
+  "ausencia en primera persona": /\b(?:no )?tenemos\b|\bno hemos (?:hallado|encontrado|podido|visto)\b|\bno (?:hallamos|encontramos)\b|\bwe (?:have found|found no|have no|have not been able|could not find)\b|\b(?:text|texts|ones) we have\b/i,
 };
 
 // Lo citado es de la fuente, y la sinceridad de un testigo («hombre honesto»,

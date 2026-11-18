@@ -544,6 +544,36 @@ if (accionables.length > 0) {
   );
 }
 
+// ─── 9f2. RULE E63: proceso de las fichas nuevas (ERROR) ──────────────────
+//
+// Dos pasos de /nuevo-caso dependían de que alguien se acordara, y los dos
+// fallaron en la serie de abducciones de nov 2026 (análisis de la
+// orquestación): (a) el registro de hallazgos del verificador
+// (docs/hallazgos-verificacion.md) solo existe si se anota, y nada lo
+// comprobaba; (b) E21 es WARN, y la serie llevó su backlog accionable de 0 a 6
+// con todos los checks en verde. Desde el num 529 (la primera ficha del
+// registro) toda ficha debe tener al menos una fila en el registro, aunque sea
+// «sin hallazgos»; desde el 535 (la primera creada después de esta regla),
+// un visual embebido o una exención en VISUAL_CERRADO_POR_LICENCIA con su
+// barrido en docs/registros.md. Las seis de la serie siguen como deuda de E21.
+{
+  const LEDGER_DESDE_NUM = 529;
+  const VISUAL_DESDE_NUM = 535;
+  const ledgerPath = path.join(root, "..", "docs", "hallazgos-verificacion.md");
+  if (!fs.existsSync(ledgerPath)) {
+    record("ERROR", "docs/hallazgos-verificacion.md", 0, "E63 el registro de hallazgos no existe: la regla está ciega, no verde.");
+  } else {
+    const ledger = fs.readFileSync(ledgerPath, "utf-8");
+    const enRegistro = new Set([...ledger.matchAll(/^\|\s*([a-z0-9-]+)\s*\|/gm)].map((m) => m[1]));
+    const sinFila = cases.filter((c) => c.num >= LEDGER_DESDE_NUM && !enRegistro.has(c.id)).map((c) => c.id);
+    if (sinFila.length)
+      record("ERROR", casesDir, 0, `E63 fichas nuevas sin fila en docs/hallazgos-verificacion.md: ${sinFila.join(", ")}. Anota los hallazgos del verificador y del lector (paso 5c de /nuevo-caso), o una fila «sin hallazgos».`);
+  }
+  const sinVisual = cases.filter((c) => c.num >= VISUAL_DESDE_NUM && !hasVisualAsset(c) && !(c.id in VISUAL_CERRADO_POR_LICENCIA)).map((c) => c.id);
+  if (sinVisual.length)
+    record("ERROR", casesDir, 0, `E63 fichas nuevas sin visual: ${sinVisual.join(", ")}. Embebe un documento o imagen de la fuente, o anota el barrido agotado en docs/registros.md y la exención en VISUAL_CERRADO_POR_LICENCIA.`);
+}
+
 // ─── 9g. RULE M2 + agregado MECE (posterior) ──────────────────────────────
 //
 // Modelo MECE (lib/meceModel.ts): cada caso reparte el 100% sobre 6 narrativas
@@ -2108,7 +2138,8 @@ const HYPE_REVIEWED = new Set(["lakenheath-bentwaters-1956", "morocco-gendarmeri
 // ─── 9zh. RULE E62: vocabulario de España en la prosa ES (ERROR) ──────────
 //
 // La guía /redaccion fija la norma latinoamericana: coche → auto, ordenador →
-// computadora, aparcar → estacionar. El verificador lo halló en dos de las
+// computadora, aparcar → estacionar, permiso de conducir → licencia de
+// conducir, centralita → conmutador (estas dos, de la auditoría de prosa de nov 2026). El verificador lo halló en dos de las
 // cinco fichas de abducción de nov 2026 (registro en docs/hallazgos-
 // verificacion.md) y un barrido halló 140 apariciones en 47 fichas, que se
 // corrigieron de una vez comprobando palabra por palabra que no cambió nada
@@ -2116,7 +2147,7 @@ const HYPE_REVIEWED = new Set(["lakenheath-bentwaters-1956", "morocco-gendarmeri
 // prohíbe la guía y «móvil» da falsos positivos («piezas móviles»). Lo citado
 // entre comillas (cita literal de una fuente en español de España) queda fuera.
 {
-  const ESPANA = /\b(?:coches?|ordenadores?|aparcar|aparcad[oa]s?)\b/i;
+  const ESPANA = /\b(?:coches?|ordenadores?|aparcar|aparcad[oa]s?|permiso de conducir|centralitas?)\b/i;
   const fieldsOf = (c) => [c.name, c.summary, c.whatHappened, c.whyMatters, ...(c.evidence || []), c.classBasis?.es, c.location?.place,
     ...(c.documents || []).flatMap((d) => [d.title, d.description]), ...(c.sources || []).flatMap((s) => [s.name, s.note])].filter(Boolean).join("\n");
   const hit = [];
@@ -2124,7 +2155,7 @@ const HYPE_REVIEWED = new Set(["lakenheath-bentwaters-1956", "morocco-gendarmeri
     const m = unquote(fieldsOf(c)).replace(/\[\[[^\]]*\]\]/g, "").match(ESPANA);
     if (m) hit.push(`${c.id} («${m[0]}»)`);
   }
-  if (hit.length) record("ERROR", casesDir, 0, `E62 vocabulario de España en la prosa ES: ${hit.length} ficha(s): ${hit.slice(0, 6).join(", ")}${hit.length > 6 ? "…" : ""}. Usar auto, computadora, estacionar (guía /redaccion §5); lo citado entre comillas no cuenta.`);
+  if (hit.length) record("ERROR", casesDir, 0, `E62 vocabulario de España en la prosa ES: ${hit.length} ficha(s): ${hit.slice(0, 6).join(", ")}${hit.length > 6 ? "…" : ""}. Usar auto, computadora, estacionar, licencia de conducir, conmutador (guía /redaccion §5); lo citado entre comillas no cuenta.`);
 }
 
 // ─── 9zg. RULE E54: comillas, ortografía y fechas de la guía de redacción ─
