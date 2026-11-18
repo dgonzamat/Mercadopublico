@@ -328,6 +328,8 @@ Detalle e historia: [`docs/bitacora-reglas.md`](docs/bitacora-reglas.md#contador
 
 ### Proceso y agentes
 
+- **No** dar por cerrada una corrección de prosa (parche, deuda de lectura) sin releer el párrafo entero, ni dejar en la prosa una frase que remite a un dato que se movió a `evidence`: el lector solo ve la prosa. En la ficha de Belo Horizonte 1985 (18 nov 2026), dos de los defectos que quedaron tras tres lecturas los escribió el orquestador al corregir, y «encaja con el final de la grabación» remitía a un dato que solo estaba en `evidence`.
+
 - **No** lanzar un agente para lo que cabe en otro que ya corre o en el orquestador, ni usar `general-purpose` para el trabajo por ficha: cada agente paga su contexto antes de trabajar, y un `general-purpose` vacío cuesta ~112k tokens frente a ~47k del tipo propio `ficha-trabajo` (medido el 18 nov 2026). En el piloto de cuatro fichas ese costo fijo fue el 52 % de 2,16 millones. El reparto por ficha y los tipos de agente viven en `/nuevo-caso` › Orquestación.
 
 - **No** lanzar más de ~4 agentes pesados a la vez ni poner dos a editar el mismo fichero: con seis simultáneos la sesión chocó con el límite de uso y dos murieron sin editar nada; y los commits WIP periódicos del Stop hook recogen a medias el trabajo de un agente que sigue escribiendo. Tandas de 4 correctores, y el verificador de una tanda solo cuando su corrector terminó. *(sep 2026)*
