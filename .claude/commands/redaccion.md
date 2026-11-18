@@ -35,6 +35,8 @@ Esta guía nació de un fallo real (oct 2026): la ficha de Skinwalker había cre
 6. **Tiempo verbal.** Pretérito para el suceso, de principio a fin. No mezclar presente histórico y pasado sin motivo.
 7. **Cada persona, obra o documento se presenta la primera vez que aparece**, en pocas palabras: «el investigador Keith Basterfield», «la revista Flying Saucer Review». El lector no sabe quién es Fowler, Walton o «el Mammoth»; si no hay nada que decir de alguien, sobra su nombre. *(Lo halló la auditoría de prosa en las seis fichas de la serie de abducciones, nov 2026.)*
 8. **Si dos fuentes divergen, el texto lo dice y dice qué implica.** Una hora, un recuento o una fecha que no cuadran, dejados sin comentario, el lector los toma por un error de la ficha. *(Misma auditoría: cinco de seis fichas.)*
+9. **Todo referente tiene un antecedente inequívoco.** «Su informe», «le contó», «la nota», «she»: si en las frases anteriores hay dos personas o dos documentos que podrían serlo, se repite el nombre («el informe de Little y Stapleton», «la nota del oficial»). *(Puddy, nov 2026: con las personas ya presentadas, los dos lectores tropezaron en cinco referentes así.)*
+10. **Si las fuentes dan fechas distintas, se cuentan como cronologías completas**, no como fechas sueltas: qué pasó cada día según cada fuente, de modo que el lector compruebe que cada versión es coherente consigo misma. *(Puddy: «la radio la mañana del 25» parecía contradecir el suceso del 25 hasta que se contó la versión de la nota entera, con el suceso un lunes.)*
 
 ## 4. Lenguaje llano
 
@@ -91,7 +93,8 @@ Aviones muy conocidos (B-52, DC-3) pueden ir en el título si son el centro del 
 2. Lee el relato en voz alta: ¿hay alguna frase que tengas que releer? Reescríbela.
 3. Busca en tu texto: «expediente», «ficha», «entrega», «conviene», «es decir», y palabras en inglés fuera de comillas en el campo ES.
 4. Compara ES y EN párrafo a párrafo: mismos hechos, misma longitud aproximada.
-5. Corre desde `web/`: `node scripts/validate-schema.mjs` y `node scripts/audit-consistency.mjs` (E7, E7b, E13 y E47 vigilan parte de esta guía; no toda: lo que la sonda no ve, lo ves tú).
+5. Contrasta el resumen con el relato y `evidence`: cada dato del resumen está en el relato atribuido a la misma fuente, y ningún dato del documento que el resumen cita falta en el relato. *(En Puddy el resumen decía, bien, que el formulario anotaba la persecución, y el relato lo omitía; el lector lo leyó como contradicción.)*
+6. Corre desde `web/`: `node scripts/validate-schema.mjs` y `node scripts/audit-consistency.mjs` (E7, E7b, E13 y E47 vigilan parte de esta guía; no toda: lo que la sonda no ve, lo ves tú).
 
 Un verificador revisa con esta misma guía. Si se aparta de ella, lo señala con la frase exacta y la reescritura propuesta.
 
