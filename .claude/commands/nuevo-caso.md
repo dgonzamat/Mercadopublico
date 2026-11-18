@@ -70,6 +70,7 @@ Con el informe del verificador en la mano, antes de fusionar:
 2. **Anota los hallazgos** en [`docs/hallazgos-verificacion.md`](../../docs/hallazgos-verificacion.md): una fila por hallazgo, con su categoría y si `caso:check` lo habría marcado.
 3. Aplica la regla de cierre de ese archivo: una categoría con filas en **dos o más de las últimas cinco fichas** es candidata a `/blindar`; con una sola, vale una línea de `/learn`.
 4. Si la categoría no se puede vigilar con una sonda (atribución, omisiones), añade una línea a la lista de comprobación que lees en el paso 0.5.
+5. Si el hallazgo es una regla que **el propio skill** debería hacer cumplir al agente (la forma del título, el orden de los pasos, no escribir una ausencia sin búsqueda), añade o ajusta un caso en [`tools/evals/`](../../tools/evals/README.md) y córrelo tras tocar el skill: es el test unitario del skill, no de la ficha.
 
 ## 6. Confirmar
 Muestra al usuario: `id`, `num`, `tier`, categoría, longitud de prosa ES/EN (chars), suma del posterior y nº de fuentes. No commitees ni pushees salvo que el usuario lo pida.
