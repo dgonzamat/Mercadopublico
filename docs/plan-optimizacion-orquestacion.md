@@ -128,3 +128,8 @@ Las correcciones son cambios mínimos y cada una se contrastó con la página qu
 - **Licencias:** el extracto del FTK de Aalborg se aloja citando el artículo 9 de la ley danesa de derechos de autor, sin certeza de que cubra cuestionarios militares internos. Los formularios de Odense van «con crédito», sin licencia declarada.
 - **Tier en el borde:** Caioba (testigos identificados con declaraciones de 15 días a 5 semanas después; solo el télex es del día siguiente) y Anápolis (informe al menos 11 días posterior, entre la semana que cuenta y las dos semanas que no). Ningún verificador propuso cambiarlos, así que el método de dos pasos no se activó.
 - **Defectos sin corregir:** en Caioba, la portada de septiembre, la circular de 1978 sin emisor y la Luna a 24°; en Odense, la lista de satélites.
+
+### Para la próxima tanda (18 nov 2026)
+- **Criterio de conteo de lectura**, el usado en esta tanda, para que las tandas se puedan comparar: cuenta cada punto concreto que el lector señala y cae en la deuda de `/redaccion` §9 (contradicción, recuento que no cuadra, cifra o fecha sin situar, persona sin presentar, texto roto). No cuentan las quejas generales («demasiadas horas») ni las divergencias del registro que el propio texto declara.
+- **Campo `"añade"` en los parches** (PR #1426): el script ya no aplica a la prosa un parche que suma un dato; ese dato va a `evidence` o a la nota de la fuente. Se mide con los defectos nacidos de parches, que fueron 14 en esta tanda.
+- **Recall del verificador**: para que la prueba G distinga «escribió mejor» de «verificó menos», se siembran tres errores conocidos (fecha, atribución y omisión) en una copia de cada ficha que solo ve el verificador, y se cuenta cuántos halla cada brazo.
