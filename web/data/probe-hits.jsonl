@@ -4,3 +4,5 @@
 {"date":"2026-11-18","probe":"audit-consistency","rule":"E45","where":"data/retired-nums.json"}
 {"date":"2026-11-18","probe":"audit-consistency","rule":"E59","where":"data/cases"}
 {"date":"2026-11-18","probe":"audit-consistency","rule":"E60","where":"data/cases"}
+{"date":"2026-11-18","probe":"validate-schema","rule":"misidSubtype inválido \"…\" (astronomico|aeronave|espacial|luc","where":"cases/belo-horizonte-1985.json"}
+{"date":"2026-11-18","probe":"validate-schema","rule":"objectDetail \"…\" no admitido: la clase \"…\" no tiene detalle ","where":"cases/belo-horizonte-1985.json"}
