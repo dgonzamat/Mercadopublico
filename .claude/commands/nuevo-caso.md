@@ -62,7 +62,7 @@ Antes de lanzar al verificador independiente, corre desde `web/`:
 ```
 npm run caso:check -- <id>
 ```
-Avisa de lo que se puede ver sin abrir una fuente: afirmaciones de ausencia, léxico de España, voz del redactor, párrafos largos, `num` ya ocupado en `origin/main` y cifras que no coinciden entre ES y EN. Son **avisos, no errores** (salvo el `num`): léelos y corrige lo que sea real. **No sustituye al verificador**: la atribución y las omisiones del mismo documento solo las halla un lector que abra la fuente.
+Avisa de lo que se puede ver sin abrir una fuente: afirmaciones de ausencia, voz del redactor, párrafos largos y `num` ya ocupado en `origin/main`. Son **avisos, no errores** (salvo el `num`): léelos y corrige lo que sea real. **No sustituye al verificador**: la atribución y las omisiones del mismo documento solo las halla un lector que abra la fuente.
 
 ## 5c. Después del verificador: cierre de aprendizaje
 Con el informe del verificador en la mano, antes de fusionar:

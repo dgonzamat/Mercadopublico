@@ -3,11 +3,12 @@
 // verificador independiente. Informa, no bloquea (salvo `num` repetido).
 //
 // Por qué existe: en las cinco fichas de abducción de nov 2026 el verificador
-// halló errores de cinco clases (ver docs/hallazgos-verificacion.md). Dos de
-// ellas se pueden vigilar con un patrón de texto (afirmaciones de ausencia y
-// léxico de España) y otra con una cuenta (las cifras de ES y EN deben ser las
-// mismas). Lo demás (atribución, omisiones) solo lo ve un lector que abra la
-// fuente: este script no lo sustituye, le quita trabajo.
+// halló errores de varias clases (ver docs/hallazgos-verificacion.md). Solo una
+// se vigila con un patrón de texto sin falsos positivos graves: las afirmaciones
+// de ausencia. El léxico de España pasó a E62 de audit-consistency (ERROR) y la
+// paridad de cifras ES/EN se retiró (cero hallazgos reales en cinco fichas, 107
+// avisos de ruido en el corpus). Lo demás (atribución, omisiones) solo lo ve un
+// lector que abra la fuente: este script no lo sustituye, le quita trabajo.
 //
 // Uso (desde web/, node plano, sin node_modules):
 //   node scripts/caso-check.mjs                 # fichas nuevas o editadas frente a origin/main
@@ -45,21 +46,15 @@ if (!targets.length) { console.log("caso-check: ninguna ficha nueva o editada fr
 // 1. Afirmaciones de ausencia: la causa de 4 de 5 fichas con hallazgo. Una frase
 //    «nadie halló…» es un resultado de búsqueda disfrazado de hecho. No es un error:
 //    obliga a preguntarse qué búsqueda la respalda y a escribir «no lo tenemos».
-const AUS_ES = /[^.]*\b(no consta(n)?|no se (ha |han )?(hall|encontr)\w*|no hemos (hall|encontr)\w*|no hay (ning[uú]n|ninguna) (registro|an[aá]lisis|documento|prensa|fuente)|ninguna fuente|no existe(n)? (ning|registro))[^.]*\./gi;
+const AUS_ES = /[^.]*\b(no consta(n)?|no se (ha |han )?(hall|encontr|conserv)\w*|no (hall|encontr)(ó|aron|amos)|no hemos (hall|encontr)\w*|no hay (ning[uú]n|ninguna) (registro|an[aá]lisis|documento|prensa|fuente)|ninguna fuente|no existe(n)? (ning|registro))[^.]*\./gi;
 const AUS_EN = /[^.]*\b(no record (from|of)|has not been found|have not been found|we have found no|we have not found|is no (record|independent|evidence from)|no independent (analysis|examination))\b[^.]*\./gi;
-// 2. Léxico de España y voz del redactor (la guía /redaccion lo prohíbe).
-const ESPANA = /\b(coches?|ordenadores?|aparcar|aparcad[oa]s?|vaqueros|rueda de prensa|m[oó]viles?|conducir un coche)\b/gi;
+// 2. Voz del redactor (la guía /redaccion la prohíbe).
 const VOZ_ES = /\b(cito|citamos|hemos|este expediente|esta ficha|nuestro an[aá]lisis|el corpus)\b/gi;
 const VOZ_EN = /\b(I cite|we cite|this file|this entry|our analysis|the corpus)\b/gi;
 // 3. Párrafos largos (E59 corta en 900; aquí se avisa antes).
 const MAX_PARA = 880;
 
-// Cifras comparables: se quitan las horas (18:35 / 6:35 p.m.) y las magnitudes con
-// unidad, que cambian de número al pasar de un sistema a otro (30 m = 100 feet).
-const UNIDADES = /\d[\d.,]*\s?(?:m|km|kg|pies|pie|feet|ft|yardas|yards|millas|miles|metros|meters|kil[oó]metros|kilometers|libras|pounds|°[CF]|grados|degrees)\b/gi;
-const num = (t) => (t.replace(/\d{1,2}:\d{2}(\s?[ap]\.m\.)?/gi, " ").replace(UNIDADES, " ").match(/\d[\d.,]*\d/g) || []).map((n) => n.replace(/[.,]/g, ""));
 const strip = (t) => (t || "").replace(/«[^»]*»|"[^"]*"|\[\[[^\]]*\]\]/g, "«…»");
-const multiset = (a) => a.reduce((m, x) => ((m[x] = (m[x] || 0) + 1), m), {});
 
 const maxRemote = (() => {
   const files = sh("git ls-tree -r origin/main --name-only").split("\n").filter((f) => /^web\/data\/cases\/.*\.json$/.test(f));
@@ -95,19 +90,8 @@ for (const id of targets) {
   // WARN: ausencia
   const aus = [...(esN.match(AUS_ES) || []), ...(enN.match(AUS_EN) || [])].map((s) => s.trim().replace(/\s+/g, " "));
   for (const s of aus) { out.push(["WARN", "ausencia", s.length > 170 ? s.slice(0, 170) + "…" : s]); bump("ausencia"); }
-  // WARN: léxico de España
-  for (const m of new Set(esN.match(ESPANA) || [])) { out.push(["WARN", "léxico", `«${m}» (vocabulario de España; la norma es latinoamericana)`]); bump("léxico"); }
   // WARN: voz del redactor
   for (const m of new Set([...(esN.match(VOZ_ES) || []), ...(enN.match(VOZ_EN) || [])])) { out.push(["WARN", "voz", `«${m}» (voz del redactor)`]); bump("voz"); }
-  // WARN: paridad de cifras ES/EN (cuerpo largo)
-  const body = (x, y) => [x, y].filter(Boolean).join("\n\n");
-  const nEs = multiset(num(strip(body(c.whatHappened, c.whyMatters)))), nEn = multiset(num(strip(body(c.whatHappened_en, c.whyMatters_en))));
-  const faltanEn = Object.keys(nEs).filter((k) => !(k in nEn) && k.length >= 3);
-  const faltanEs = Object.keys(nEn).filter((k) => !(k in nEs) && k.length >= 3);
-  if (faltanEn.length || faltanEs.length) {
-    out.push(["WARN", "cifras", `solo en ES: [${faltanEn.slice(0, 8).join(", ")}] · solo en EN: [${faltanEs.slice(0, 8).join(", ")}] (misma cifra en los dos idiomas)`]);
-    bump("cifras");
-  }
   // WARN: párrafos largos
   for (const [k, t] of [["whatHappened", c.whatHappened], ["whyMatters", c.whyMatters], ["whatHappened_en", c.whatHappened_en], ["whyMatters_en", c.whyMatters_en]]) {
     const long = (t || "").split("\n\n").filter((p) => p.length > MAX_PARA).length;
