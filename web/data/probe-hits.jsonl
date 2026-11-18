@@ -1,3 +1,6 @@
 {"date":"2026-11-17","probe":"audit-consistency","rule":"E7","where":"data/cases/aveley-1974.json"}
 {"date":"2026-11-17","probe":"audit-consistency","rule":"E52","where":"data/cases"}
 {"date":"2026-11-18","probe":"validate-schema","rule":"claves no reconocidas [sources_en] — ningún render las lee; ","where":"cases/clarenville-1978.json"}
+{"date":"2026-11-18","probe":"audit-consistency","rule":"E45","where":"data/retired-nums.json"}
+{"date":"2026-11-18","probe":"audit-consistency","rule":"E59","where":"data/cases"}
+{"date":"2026-11-18","probe":"audit-consistency","rule":"E60","where":"data/cases"}
