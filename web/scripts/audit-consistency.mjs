@@ -2105,6 +2105,28 @@ const HYPE_REVIEWED = new Set(["lakenheath-bentwaters-1956", "morocco-gendarmeri
   if (bad.length) record("ERROR", casesDir, 0, `E61 precisión del lugar incoherente en ${bad.length} ficha(s): ${bad.slice(0, 5).join(" · ")}${bad.length > 5 ? "…" : ""}. Un lugar no revelado o fuera de la Tierra va con precision «none» (sin mapa); un punto «exact» no puede ser de relleno.`);
 }
 
+// ─── 9zh. RULE E62: vocabulario de España en la prosa ES (ERROR) ──────────
+//
+// La guía /redaccion fija la norma latinoamericana: coche → auto, ordenador →
+// computadora, aparcar → estacionar. El verificador lo halló en dos de las
+// cinco fichas de abducción de nov 2026 (registro en docs/hallazgos-
+// verificacion.md) y un barrido halló 140 apariciones en 47 fichas, que se
+// corrigieron de una vez comprobando palabra por palabra que no cambió nada
+// más. Solo estas palabras: «rueda de prensa», «vaqueros» y «móvil» no las
+// prohíbe la guía y «móvil» da falsos positivos («piezas móviles»). Lo citado
+// entre comillas (cita literal de una fuente en español de España) queda fuera.
+{
+  const ESPANA = /\b(?:coches?|ordenadores?|aparcar|aparcad[oa]s?)\b/i;
+  const fieldsOf = (c) => [c.name, c.summary, c.whatHappened, c.whyMatters, ...(c.evidence || []), c.classBasis?.es, c.location?.place,
+    ...(c.documents || []).flatMap((d) => [d.title, d.description]), ...(c.sources || []).flatMap((s) => [s.name, s.note])].filter(Boolean).join("\n");
+  const hit = [];
+  for (const c of cases) {
+    const m = unquote(fieldsOf(c)).replace(/\[\[[^\]]*\]\]/g, "").match(ESPANA);
+    if (m) hit.push(`${c.id} («${m[0]}»)`);
+  }
+  if (hit.length) record("ERROR", casesDir, 0, `E62 vocabulario de España en la prosa ES: ${hit.length} ficha(s): ${hit.slice(0, 6).join(", ")}${hit.length > 6 ? "…" : ""}. Usar auto, computadora, estacionar (guía /redaccion §5); lo citado entre comillas no cuenta.`);
+}
+
 // ─── 9zg. RULE E54: comillas, ortografía y fechas de la guía de redacción ─
 //
 // El diagnóstico de los relatos (oct 2026) halló, en las 397 fichas, tres

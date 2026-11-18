@@ -1,0 +1,5 @@
+{
+  "name": "uap-skills",
+  "version": "0.1.0",
+  "description": "Skills del repo UAP Codex (enlazados desde .claude/commands) empaquetados para probarlos con claude plugin eval."
+}

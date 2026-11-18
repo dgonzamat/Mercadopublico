@@ -12,6 +12,14 @@ El estándar es prosa con **investigación caso por caso, fuentes primarias**. A
 
 **Redacción:** todo el texto de la ficha (ES y EN) sigue el skill `/redaccion` (`.claude/commands/redaccion.md`): léelo antes de escribir y repasa su lista final («Antes de entregar») antes de entregar.
 
+## 0.5 Antes de redactar: lee lo que ya falló
+Lee las categorías con más filas en [`docs/hallazgos-verificacion.md`](../../docs/hallazgos-verificacion.md) (y, si existe, `cd web && npm run sondas:frenos`). Son los errores que el verificador halló en las fichas anteriores; escribe con esa lista delante. Las dos más repetidas, hoy: **atribución** (quién dijo o hizo qué, y de qué fecha es el documento que lo recoge) y **afirmaciones de ausencia** («no consta», «nadie halló»: o se respaldan con la búsqueda hecha, o se escriben como «no lo tenemos»).
+
+Tres comprobaciones más, de lo que el verificador halló en las seis primeras fichas y ninguna sonda ve. Hazlas al terminar el borrador, con el documento delante:
+- **Un documento dice lo que comprobó, no lo que descartó.** «La RAAF descartó helicópteros» pasó por la nota que solo decía «no operaba ningún helicóptero militar; consultado con la DCA». Escribe el alcance exacto.
+- **Relee entera cada página citada buscando lo que contradice la ficha.** La nota que citaba la ficha recogía, dos párrafos más abajo, el relato de un testigo que se parecía al de Puddy. Si la ficha afirma que nadie hizo o vio algo, esa frase se prueba contra el documento completo.
+- **Un día de la semana y una fecha pueden no cuadrar entre manos del mismo expediente** (lunes 20, martes 25, día 27). Se anota el conflicto; no se elige en silencio.
+
 ## 1. Identidad del caso
 - **id**: slug kebab-case estable, típicamente `<lugar>-<año>` (ej. `trindade-1958`). Debe ser único y `<id>.json` **tiene que coincidir** con el nombre de archivo (lo valida el schema).
 - **num**: secuencial único = (num máximo actual) + 1. Calcúlalo, **no rellenes huecos**:
@@ -53,6 +61,21 @@ Escribe la versión ES y traduce a EN con fidelidad (no resumas la EN por debajo
   cd web && node scripts/build-cases.mjs && node scripts/validate-schema.mjs && node scripts/audit-consistency.mjs --warn
   ```
 - `audit-consistency.mjs` (regla **E13**) reporta si la prosa quedó bajo el umbral; ajústala hasta pasar.
+
+## 5b. Autochequeo antes del verificador
+Antes de lanzar al verificador independiente, corre desde `web/`:
+```
+npm run caso:check -- <id>
+```
+Avisa de lo que se puede ver sin abrir una fuente: afirmaciones de ausencia, voz del redactor, párrafos largos y `num` ya ocupado en `origin/main`. Son **avisos, no errores** (salvo el `num`): léelos y corrige lo que sea real. **No sustituye al verificador**: la atribución y las omisiones del mismo documento solo las halla un lector que abra la fuente.
+
+## 5c. Después del verificador: cierre de aprendizaje
+Con el informe del verificador en la mano, antes de fusionar:
+1. Contrasta cada arreglo con la fuente (regla del repo) y aplícalo.
+2. **Anota los hallazgos** en [`docs/hallazgos-verificacion.md`](../../docs/hallazgos-verificacion.md): una fila por hallazgo, con su categoría y si `caso:check` lo habría marcado.
+3. Aplica la regla de cierre de ese archivo: una categoría con filas en **dos o más de las últimas cinco fichas** es candidata a `/blindar`; con una sola, vale una línea de `/learn`.
+4. Si la categoría no se puede vigilar con una sonda (atribución, omisiones), añade una línea a la lista de comprobación que lees en el paso 0.5.
+5. Si el hallazgo es una regla que **el propio skill** debería hacer cumplir al agente (la forma del título, el orden de los pasos, no escribir una ausencia sin búsqueda), añade o ajusta un caso en [`tools/evals/`](../../tools/evals/README.md) y córrelo tras tocar el skill: es el test unitario del skill, no de la ficha.
 
 ## 6. Confirmar
 Muestra al usuario: `id`, `num`, `tier`, categoría, longitud de prosa ES/EN (chars), suma del posterior y nº de fuentes. No commitees ni pushees salvo que el usuario lo pida.
