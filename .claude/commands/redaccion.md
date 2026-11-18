@@ -52,7 +52,7 @@ Aviones muy conocidos (B-52, DC-3) pueden ir en el título si son el centro del 
 
 ## 5. Español
 
-- **Norma**: español latinoamericano culto de prensa (referencia: BBC Mundo), RAE y Fundéu. Sin vocabulario de España: coche → auto, ordenador → computadora, aparcar → estacionar *(coche, ordenador y aparcar: enforzado por E62)*, pliego → bases de la licitación, emitir una serie → transmitirla, de aquí a → hasta.
+- **Norma**: español latinoamericano culto de prensa (referencia: BBC Mundo), RAE y Fundéu. Sin vocabulario de España: coche → auto, ordenador → computadora, aparcar → estacionar, permiso de conducir → licencia de conducir, centralita → conmutador *(estas cinco: enforzado por E62)*, pliego → bases de la licitación, emitir una serie → transmitirla, de aquí a → hasta.
 - **Ritmo**: frases de 15–25 palabras de media, alguna hasta ~35; ninguna apila más de tres datos. Una sigla que el lector no necesita se quita en vez de glosarla dentro de la frase. La calidad la audita `/auditar-prosa` (prueba del lector + rúbrica) con la sonda `audit-prosa.mjs` como triaje.
 - Sin voseo ni regionalismos. Donde la RAE admite dos formas, se usa una sola en todo el corpus: **«video»** (sin tilde, la forma del español de América y la mayoritaria en el corpus; unificado el 24 oct 2026).
 - **Comillas**: «» y, dentro, “”. Las citas en inglés van literales entre «» y se traducen o glosan si el lector las necesita. Nunca comillas simples rectas ('así') como comillas: el apóstrofo solo va dentro de una palabra o un nombre (O'Brien). *(enforzado: E54.)*
@@ -71,7 +71,7 @@ Aviones muy conocidos (B-52, DC-3) pueden ir en el título si son el centro del 
 
 ## 7. Prohibido en cualquier idioma
 
-- **Voz del redactor**: «este expediente», «esta ficha», «nuestro análisis». Para marcar un cálculo o una lectura que no viene de una fuente: «según un cálculo hecho para este caso» / «by a calculation made for this case» (nov 2026: «esta ficha» salía 43 veces en 17 fichas y la auditoría de la página la marcó como voz del redactor).
+- **Voz del redactor**: «este expediente», «esta ficha», «nuestro análisis». Una ausencia tampoco va en primera persona («no tenemos», «no hemos hallado», «we have found no»): se escribe impersonal, «no se conoce un análisis independiente», «no independent analysis is known» (E56 lo frena). Para marcar un cálculo o una lectura que no viene de una fuente: «según un cálculo hecho para este caso» / «by a calculation made for this case» (nov 2026: «esta ficha» salía 43 veces en 17 fichas y la auditoría de la página la marcó como voz del redactor).
 - **Bitácora**: «este expediente describía…», «hasta ahora se citaba…», «una versión anterior decía…». Se escribe solo lo correcto.
 - **Herramientas del redactor**: «conector», «extractor», «OCR», «barrido», «techo de extracción».
 - **Tareas pendientes**: «lo que el corpus debe…». Si algo queda abierto: «queda por ver si…».
