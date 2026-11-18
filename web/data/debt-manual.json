@@ -51,6 +51,16 @@
         "id": "X1",
         "title": "Juicios del Historical Record de AARO",
         "state": "resuelto el 16 oct: la objeción era sobre los dos juicios de reparto de la ficha-documento del Historical Record; con la integración de los documentos (15 oct) esa ficha dejó de existir, el informe vive en el perfil de Kirkpatrick y los documentos ya no llevan reparto"
+      },
+      {
+        "id": "D1",
+        "title": "Licencia de los extractos alojados en /pursue de las fichas de archivo de noviembre: los dos daneses (aalborg-haesum-1976, citando el artículo 9 de la ley danesa sin certeza de que cubra cuestionarios militares internos, y odense-kalundborg-1991, «con crédito», sin licencia declarada) y el de Clarenville (RG 77 de Canadá). Decidir si se alojan o si se dejan solo como enlace, como en Shag Harbour y Falconbridge",
+        "state": "pendiente desde el 18 nov (piloto y tanda 539-542)"
+      },
+      {
+        "id": "D2",
+        "title": "Tier en el borde: caioba-seahorse-1980 (testigos identificados, pero sus declaraciones llegan de dos a cinco semanas después; solo el télex es del día siguiente) y anapolis-2001 (informe de la base al menos once días posterior, entre la semana que cuenta y las dos semanas que no). Ningún verificador propuso cambiarlos",
+        "state": "pendiente desde el 18 nov (tanda 539-542)"
       }
     ]
   },
@@ -171,6 +181,21 @@
         "id": "B20",
         "title": "12 nov · Expediente FBI 62-HQ-83894 en el bucket: B2 volteó la parte escaneada en espejo, pero las demás partes no se revisaron a ojo",
         "state": "resuelto el 12 nov: se revisaron con OCR en las cuatro orientaciones todas las partes del expediente; solo la sección 10, parte 2, tenía páginas mal orientadas, porque mezclaba páginas en espejo con páginas bien y B2 la volteó entera. Se volteó sin pérdida (jpegtran) el fondo de cada página en espejo, con la decisión página a página por OCR y, donde no había texto legible, a ojo; las páginas que ya estaban bien no se tocaron; mismas páginas y misma capa de texto; subida por la función Edge temporal (vuelta a 410 al terminar) y comprobada por md5. FLIP vaciado en tools/bucket-regray para que no se repita"
+      },
+      {
+        "id": "B21",
+        "title": "Lectura humana de control de dos fichas del piloto (agoncillo-1978 y ghana-accra-1987), sin ver el informe de los lectores, para calibrar a los lectores Opus",
+        "state": "pendiente desde el 18 nov (piloto)"
+      },
+      {
+        "id": "B22",
+        "title": "Cálculos del verificador del piloto que quedaron sin aplicar a la espera de un segundo agente: el de Clarenville se aplicó tras repetirlo otro agente (registro de hallazgos); comprobar si quedan otros y cerrarlos o descartarlos",
+        "state": "pendiente de comprobar (18 nov)"
+      },
+      {
+        "id": "B23",
+        "title": "belo-horizonte-1985: location apunta al centro de Belo Horizonte, y según la transcripción de radio el objeto estaba al este o nordeste, cerca de la Serra da Piedade (hallazgo del verificador, sin parche por ser numérico). Revisar las coordenadas y la precisión",
+        "state": "pendiente desde el 18 nov"
       }
     ]
   },
