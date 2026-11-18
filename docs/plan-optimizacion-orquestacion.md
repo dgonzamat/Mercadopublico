@@ -164,3 +164,14 @@ Un `ficha-trabajo` con un solo encargo: quitar de la prosa lo que el lector no n
 | EN | 10 defectos, nota 6 | 9 defectos, nota 6 («casi nativo»; antes, «traducción cuidada») |
 
 **Lo que dice:** el editor quita lo que sobra y baja los defectos un poco, pero la nota no se mueve. Lo que queda no es exceso: es que el relato coteja documentos que se contradicen (dos puntos frente a tres puntas, sur frente a este) sin darle al lector una imagen de qué se vio. Eso es estructura, y recortar no lo arregla. Dos de los defectos que quedan los escribió el orquestador al corregir la deuda, lo que confirma que cualquier mano que toca la prosa sin releerla crea defectos.
+
+### Reordenar por el suceso (misma ficha, 18 nov 2026)
+Un `ficha-trabajo` reescribió «Qué pasó» con una sola versión del suceso, según la grabación de radio, y un párrafo final con lo que difiere entre documentos, sin añadir hechos (comprobado con el diff y con la p. 3 del registro). Costó 70.480 tokens. Lectores nuevos: ES 8 defectos y EN 10, notas 6 y 6. **No se publicó**: queda la versión del editor.
+
+| Versión | ES | EN | Notas |
+|---|---|---|---|
+| Verificada | 9 | 10 | 6 y 6 |
+| Editor que recorta | 7 | 9 | 6 y 6 |
+| Reordenada por el suceso | 8 | 10 | 6 y 6 |
+
+**Conclusión de las tres lecturas:** ni recortar ni reordenar mueve la nota. Los defectos que se repiten en las seis lecturas (dos puntos o tres puntas, sur o este, el turno, las millas, si el pasajero vio algo) son ambigüedades de la propia fuente: el texto no puede resolverlas sin inventar ni borrar hechos. Para un caso de archivo con documentos que se contradicen, 6/10 parece el techo de lectura con este cuestionario, y el criterio de «3 defectos o menos» no distingue un defecto de redacción de una ambigüedad del registro. Antes de otra prueba de proceso, conviene separar en el conteo esas dos cosas.
