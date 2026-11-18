@@ -17,11 +17,8 @@ Campos: `summary`, `whatHappened`, `whyMatters`, `evidence` y sus `_en`.
 - No cambies hechos, cifras, fechas, nombres, citas, fuentes ni `posterior`/`probability`/`mundanoType`/`classBasis`/`tier`. Esto es solo estilo.
 - No borres información: si una frase con muletilla trae un dato, conserva el dato.
 - No califiques la probabilidad en la prosa («probabilidad baja», «sube la probabilidad…»).
-- No añadas rayas (—); si reescribes un inciso, prefiere comas o paréntesis.
-- Nada de markdown (**, listas con «- », #) ni código entre comillas invertidas. Enlaces a otros casos: `[[slug]]`.
-- Español neutro, sin voseo. En los campos ES no metas inglés sin traducir salvo citas literales entre «» y nombres propios.
 - Mantén la estructura de párrafos (`\n\n`) y la paridad ES/EN: lo que cambies en ES, cámbialo igual en EN.
-- `whatHappened` + `whyMatters` deben seguir sumando 3.500 caracteres o más en cada idioma (regla E13). Si un recorte te deja por debajo, recorta menos.
+- Todo lo demás de `/redaccion` sigue valiendo (§5 español, §7 lo prohibido: rayas, markdown, voz del redactor), y la prosa no puede quedar bajo el mínimo de §3, que mide E13: si un recorte te deja por debajo, recorta menos.
 
 ## Cómo editar
 Edita el JSON en su sitio sin reformatearlo (no hagas `json.dump` del fichero entero: cambia solo los strings). Después, desde `/home/user/Mercadopublico/web`:

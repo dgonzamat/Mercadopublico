@@ -40,6 +40,9 @@ Cada línea que salga es un claim que **puede** driftear: contrástalo contra el
 - Reglas de audit (E13, M2, etc.) que ya no aparecen en `audit-consistency.mjs` / `validate-schema.mjs`.
 - **Los propios skills** (`.claude/commands/*.md`): el curador solía auditar solo `CLAUDE.md`, pero los skills tienen sus propios números y paths que también se pudren (jul 2026: la tabla de este mismo comando citaba «~316»/«~39 client», ya rancios cuando el corpus era 327/42). Corre el barrido de 1b y la verificación de paths **también** sobre `.claude/commands/*.md`.
 
+### 2b. Mapa MECE de reglas (`cd web && npm run audit:reglas -- --copias`)
+Cada regla vive en un solo hogar (`CLAUDE.md`, «Mapa de reglas»). La sonda lista, para las reglas registradas, las líneas de otros archivos que la repiten sin nombrar su hogar («posible copia») y los hogares que ya no la contienen («hogar vacío»), y avisa si una de las 10 categorías se queda sin ninguna regla registrada. Una posible copia se lee: si repite la regla, se cambia por una línea que apunta al hogar; si solo la cita como ejemplo, se deja. Al escribir una regla nueva, regístrala en `scripts/audit-reglas.mjs` con su hogar. Solo vigila las reglas registradas: que dé cero no prueba que no haya otras copias.
+
 ### 3. Pasada cualitativa
 Lee `CLAUDE.md` completo y marca:
 - **DUPLICADO**: dos reglas que dicen lo mismo → propón fusión.
