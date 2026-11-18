@@ -5148,8 +5148,8 @@
     "flag": "🇺🇸",
     "section": "B",
     "section_label": "Informantes / denunciantes",
-    "credentials": "ex-operador/piloto (alegado) + denunciante público (2025)",
-    "bio_short": "Se presentó públicamente en 2025, en el documental y la cobertura de News Nation con Ross Coulthart, afirmando haber participado en un programa de recuperación de objetos no identificados —incluyendo una nave con forma de 'huevo'—. Es uno de los testimonios más recientes y mediáticos de la ola de denunciantes, pero también de los más contestados: sus afirmaciones, a la fecha, no cuentan con verificación documental independiente. Se incluye como dato del ciclo de divulgación, con el caveat explícito de que está sin corroborar.",
+    "credentials": "ex-operador/piloto (alegado) + denunciante público (2025) + asesor sénior de UAP del congresista Eric Burlison (2026)",
+    "bio_short": "Se presentó públicamente en 2025, en el documental y la cobertura de News Nation con Ross Coulthart, afirmando haber participado en un programa de recuperación de objetos no identificados —incluyendo una nave con forma de 'huevo'—. Es uno de los testimonios más recientes y mediáticos de la ola de denunciantes, pero también de los más contestados: sus afirmaciones, a la fecha, no cuentan con verificación documental independiente. Se incluye como dato del ciclo de divulgación, con el caveat explícito de que está sin corroborar. El 18 de noviembre de 2026, el congresista Eric Burlison, de Misuri, lo nombró asesor sénior de su oficina para fenómenos anómalos no identificados, para apoyar investigaciones del Congreso, el contacto con testigos y la verificación independiente de pruebas.",
     "works": [
       {
         "year": 2025,
@@ -5159,13 +5159,20 @@
       }
     ],
     "section_label_en": "Insiders / whistleblowers",
-    "credentials_en": "Former operator/pilot (alleged) + public whistleblower (2025)",
-    "bio_short_en": "He came forward publicly in 2025, in the documentary and News Nation coverage with Ross Coulthart, claiming to have taken part in a program to recover unidentified objects —including an 'egg'-shaped craft. He is one of the most recent and high-profile testimonies of the whistleblower wave, but also one of the most contested: his claims, to date, lack independent documentary verification. He is included as a datum of the disclosure cycle, with the explicit caveat that it is uncorroborated.",
+    "credentials_en": "Former operator/pilot (alleged) + public whistleblower (2025) + senior UAP adviser to Rep. Eric Burlison (2026)",
+    "bio_short_en": "He came forward publicly in 2025, in the documentary and News Nation coverage with Ross Coulthart, claiming to have taken part in a program to recover unidentified objects —including an 'egg'-shaped craft. He is one of the most recent and high-profile testimonies of the whistleblower wave, but also one of the most contested: his claims, to date, lack independent documentary verification. He is included as a datum of the disclosure cycle, with the explicit caveat that it is uncorroborated. On November 18, 2026, Representative Eric Burlison of Missouri named him a senior adviser on unidentified anomalous phenomena in his office, to support congressional investigations, witness engagement and the independent verification of evidence.",
     "sources": [
       {
         "name": "News Nation / Ross Coulthart — cobertura de Jake Barber (2025)",
         "note": "Testimonio sin corroboración documental independiente.",
         "note_en": "Testimony without independent documentary corroboration."
+      },
+      {
+        "name": "Oficina del congresista Eric Burlison, «Burlison Names UAP Whistleblower Jake Barber Senior Adviser», comunicado del 18 de noviembre de 2026",
+        "name_en": "Office of Representative Eric Burlison, \"Burlison Names UAP Whistleblower Jake Barber Senior Adviser,\" press release, November 18, 2026",
+        "url": "https://burlison.house.gov/media/press-releases/burlison-names-uap-whistleblower-jake-barber-senior-adviser",
+        "note": "Anuncia el nombramiento y sus tareas. El cargo es «senior adviser», no «Special Adviser» como lo llamaron algunas cuentas en redes.",
+        "note_en": "Announces the appointment and its duties. The title is \"senior adviser,\" not \"Special Adviser\" as some social media accounts called it."
       }
     ],
     "documents": [
