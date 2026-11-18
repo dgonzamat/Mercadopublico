@@ -134,3 +134,23 @@ Las correcciones son cambios mínimos y cada una se contrastó con la página qu
 - **Campo `"añade"` en los parches** (PR #1426): el script ya no aplica a la prosa un parche que suma un dato; ese dato va a `evidence` o a la nota de la fuente. Se mide con los defectos nacidos de parches, que fueron 14 en esta tanda.
 - **Recall del verificador**: para que la prueba G distinga «escribió mejor» de «verificó menos», se siembran tres errores conocidos (fecha, atribución y omisión) en una copia de cada ficha que solo ve el verificador, y se cuenta cuántos halla cada brazo.
 - **¿Viaja `CLAUDE.md` en cada agente?** Sin resolver. Con `CLAUDE.md` recortado de 90,6 a 66,7 mil caracteres (PR #1427), un `ficha-trabajo` vacío midió 47.127 tokens en la misma sesión, frente a 47.038 antes: o los subagentes no lo cargan, o lo cargan desde la copia del inicio de la sesión. La medición de partida de la próxima tanda, en una sesión nueva, lo decide: si baja a unos 40 mil, viaja, y conviene sacar del camino de las fichas las secciones de código, UI, visitas y deploy; si sigue en unos 47 mil, ese recorte no ahorra nada.
+
+## Prueba de una ficha con el flujo nuevo (18 nov 2026)
+
+`belo-horizonte-1985` (`num` 543, Tier A; Arquivo Nacional ARX.0.0.250), con el campo `"añade"` (#1426), el resumen del registro y `CLAUDE.md` recortado (#1427). Un redactor, un verificador y dos lectores. Una sola ficha da señal, no prueba.
+
+| Medida | Tanda 539–542 | Esta ficha |
+|---|---|---|
+| Agente vacío `ficha-trabajo` | 47.038 | 37.305 (sesión nueva; ver abajo) |
+| Redactor + verificador | 387–472 mil (brazo A) | 393.912 (231.831 + 162.081) |
+| Con los dos lectores | 463 mil por ficha (brazo A) | 473.729 (los dos lectores, 79.817, para una sola ficha) |
+| Hallazgos del verificador | 9,75 por ficha, 0 ALTA | 11, 1 ALTA (omisión) |
+| Parches con `"añade": true` | — | 3, todos en `evidence` y `classBasis`; el script no desvió ninguno |
+| Defectos de lectura | 6,4 por lectura | ES 9, EN 10 (notas 6 y 6) |
+| Defectos nacidos de parches | 3,5 por ficha | 1 |
+
+**Lo que dice:**
+1. **El campo `"añade"` cambió lo que escribe el verificador**: llevó por sí mismo los datos nuevos a `evidence`, y los defectos nacidos de parches bajaron de 3,5 a 1.
+2. **Abrió un fallo nuevo**: el parche que corregía la prosa remitía al dato que se había ido a `evidence` («encaja con el final de la grabación») y los dos lectores no pudieron situarlo. Una corrección de prosa que se apoya en un dato nuevo necesita el mínimo de ese dato en la prosa.
+3. **La lectura no mejoró**: 9 y 10 defectos, la mayoría ajenos a los parches (fechas de oficios, jerga de radiales, distancias). Coincide con la tanda: el defecto de lectura nace sobre todo al redactar, no al parchear.
+4. **Costo**: el agente vacío bajó de 47.038 a 37.305 tokens. Es compatible con que `CLAUDE.md` viaje en cada agente, pero no está aislado: la sesión también es otra y la bajada supera lo que el recorte explica (~7 mil). Con todo, el redactor gastó lo mismo que en la tanda.
