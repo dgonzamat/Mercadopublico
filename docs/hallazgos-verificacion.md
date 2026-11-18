@@ -76,6 +76,15 @@ Conteo hecho a mano a partir de los informes de los verificadores (17-18 nov 202
 | moody-alamogordo-1975 | lectura | Walton, los Hill, Klass, McQuiston y el Mammoth sin presentar; «dos semanas» frente a «un par de meses»; una frase de 85 palabras | no |
 | aveley-1974 | lectura | «Tres horas» frente a unas 2 h 40 entre las horas dadas; la hermana recogida esa noche sin explicar; Creighton y Randles sin presentar | no |
 | andreasson-ashburnham-1967 | lectura | Fowler sin presentar en el resumen; Bozo (16:30-17:30) frente a las 18:35 sin decir qué implica; «primary loop cutoff» sin traducir | no |
+| ghana-accra-1987 | atribución | Piloto 18 nov 2026: el `summary` daba a todos los testigos del diario el rumbo hacia el golfo; el IIR (p. 2, §1) dice «over southeastern Ghana and the Gulf of Guinea briefly between 2300 and 2400 hours GMT» y «in the vicinity of Accra», sin dirección; el rumbo es solo del piloto (p. 2, §2) | no |
+| ghana-accra-1987 | omisión | Se perdía «briefly» (p. 2, §1), «yellowish» y «apparently not aware of any sound» (p. 3) | no |
+| ghana-accra-1987 | atribución | Cita de la DIA no literal: «STRONG SUGGEST SPACE DEBRIS FROM ATMOSPHERIC GRIDLOCK» (p. 6, §1, con la broma incluida); «Harmonics Convergence» (p. 6) | no |
+| ghana-accra-1987 | atribución | La nota (p. 5) es un mensaje aparte seis minutos después del informe («R 201418Z» frente a «R 201412Z», p. 1): lo tachado es una identidad, no un nombre; «el comandante» sin «de Ghana» en el documento (p. 3) | no |
+| ghana-accra-1987 | atribución | Yukón 1996 lo identificó el analista Ted Molczan (2012), que sí calculó la hora; la ficha no decía quién | no |
+| ghana-accra-1987 | ausencia | «El resumen ocupa una frase» (son dos, p. 2, §1) y «el último» párrafo (tras el tercero sigue otro tachado, p. 6) | no |
+| ghana-accra-1987 | léxico/voz | Fórmula «no es X, es Y» dos veces en párrafos seguidos; E57 marcó cuatro enlaces a otros casos usados como sustantivo | parcial (E57; la fórmula no) |
+| ghana-accra-1987 | omisión | NO APLICADO: con el GCAT, la única pasada norte-sur del día de la etapa 1987-064B sobre Accra cae hacia las 23:00–23:45 UTC, la hora de los testigos. Es un cálculo del verificador; por el método de dos pasos otro agente debe repetirlo antes de tocar `posterior` o `classBasis` | no |
+| ghana-accra-1987 | proceso | País nuevo: faltaban `COUNTRY_EN` (`lib/i18n-geo.ts`) y `regions.ts`, que el redactor no podía editar según el brief; E50/E35 habrían roto el build | sí (E50, E35) |
 
 **Lectura (18 nov 2026, tras la sexta ficha):** de 42 filas, `caso:check` habría marcado 4 (ninguna de Puddy; sus avisos eran falsos positivos) y 2 más con la regla ampliada. Las categorías **atribución, omisión, cifra/hora y ausencia** aparecieron en las cinco últimas fichas (Moody a Puddy): el paso 0.5 y el autochequeo **no las redujeron**. El léxico (3 de 5) sí era mecánico y pasó a E62. Puddy es una ficha más difícil que las anteriores (tres episodios, manuscritos de la RAAF, tres versiones de los investigadores), así que no es un experimento limpio: la comparación solo valdrá con tres fichas más.
 
