@@ -36,6 +36,8 @@ Límite de la métrica: la cifra que reporta cada agente parece ser el tamaño d
 
 Las palancas A a F se aplican juntas. G solo se adopta si la prueba A/B lo sostiene.
 
+**Corrección (18 nov 2026, al ejecutar):** la palanca C partía de una premisa falsa. En el piloto los lectores ya leyeron el texto con los arreglos del verificador aplicados; por eso vieron los defectos que esos arreglos crearon. Lo que no lee nadie es lo que se corrige después de la lectura, que son cambios mínimos de deuda. C se sustituye por dos cosas que sí atacan el problema: el verificador escribe el texto del arreglo con el estándar de `/redaccion` en el archivo de parches (B), y `caso:check` se corre también después de aplicarlos (D).
+
 ## Criterios de éxito de la próxima tanda (los del piloto, sin rebajar)
 
 | Criterio | Medida | Éxito |

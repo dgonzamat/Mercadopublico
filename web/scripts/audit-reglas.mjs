@@ -54,6 +54,7 @@ const REGLAS = [
   { id: "referente-antecedente", cat: "escritura", hogar: RED, re: /antecedente inequívoco/i },
   { id: "cronologias-completas", cat: "escritura", hogar: RED, re: /cronologías completas/i },
   { id: "agentes-por-ficha", cat: "proceso", hogar: { file: ".claude/commands/nuevo-caso.md", seccion: null, puntero: /\/nuevo-caso|nuevo-caso\.md/ }, re: /~140k tokens/ },
+  { id: "contraste-arreglos", cat: "proceso", hogar: { file: ".claude/commands/nuevo-caso.md", seccion: null, puntero: /\/nuevo-caso|nuevo-caso\.md/ }, re: /abre la fuente de todo arreglo/i },
   { id: "registro-hallazgos", cat: "proceso", hogar: { file: ".claude/commands/nuevo-caso.md", seccion: null, puntero: /\/nuevo-caso|nuevo-caso\.md/ }, re: /Anota los hallazgos/i },
   { id: "basePath-local", cat: "codigo", hogar: { ...C, seccion: "## Deploy", puntero: /Deploy|CLAUDE\.md/ }, re: /basePath/ },
   { id: "skip-ci-squash", cat: "operacion", hogar: { ...C, seccion: "## Branch protocol", puntero: /Branch protocol|CLAUDE\.md/ }, re: /\[skip ci\]/ },
