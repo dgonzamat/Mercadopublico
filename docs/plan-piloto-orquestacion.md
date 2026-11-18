@@ -42,3 +42,28 @@ Los candidatos 537 y 538 los elige cada redactor: tienen que ser sucesos reales,
 
 ## Qué se hace con el resultado
 Si se cumplen C, G y P y L está en 3 o menos, la orquestación queda como está. Si falla L con R alto, las reglas 9 y 10 no bastan y se refuerzan antes de otra tanda. Si falla C, se revisa el reparto de agentes. Si falla H, se mira qué categoría repite el redactor y va a `/blindar` según la regla de cierre del registro.
+
+---
+
+## Resultados (18 nov 2026)
+
+Escrito después de ejecutar. Los criterios de arriba no se tocaron. Los conteos de defectos de lectura son míos, a partir de los informes de los dos lectores; las cifras de tokens son las que reporta cada agente.
+
+| Criterio | Resultado | Veredicto |
+|---|---|---|
+| **C · costo** | 10 agentes (4 redactores, 4 verificadores, 2 lectores): 2.155.793 tokens, **539k por ficha**. El costo fijo del agente vacío (111.936, medido justo antes) explica 1.119.360, el 52 %; el trabajo propio, unos 259k por ficha. No incluye los tokens del orquestador (esta sesión), que no se midieron. | Cumplido, con esa salvedad |
+| **H · hechos** | Hallazgos del verificador: 14, 12, 14 y 16 (56; 4 altos). La referencia eran ~7 por ficha en las seis de abducción. | **No cumplido** (2×) |
+| **L · lectura** | Defectos de deuda por lectura: ES 3, 4, 5, 5; EN 5, 4, 5, 5. Solo 1 de 8 lecturas llega a 3 o menos. Notas ES 7, 7, 5, 6; EN 7, 6, 5, 6. | **No cumplido** |
+| **R · reglas nuevas** | Referentes y cronologías siguen entre los defectos (McNamara antes de presentarlo, «he / the other man», «5 de marzo» sin año, la ventana horaria de Clarenville). Al menos 6 de ~37 defectos salen de frases escritas o aceptadas por el orquestador al aplicar arreglos del verificador. | **No cumplido** |
+| **G · gates** | 0 errores al final. E7, E59 y el país nuevo (`COUNTRY_EN`, `regions.ts`) los halló el verificador o la auditoría del orquestador, no los redactores: el brief del piloto les prohibía correr `audit-consistency` y editar esos archivos por el trabajo en paralelo. | Cumplido, con esa salvedad |
+| **P · cumplimiento** | Cada arreglo aplicado lleva cita de página o línea; 1 hallazgo rechazado tras abrir la fuente (Blenheim: «an extremely worried person» describe a Jennings, no a la testigo); 3 cálculos del verificador quedan sin aplicar a la espera de un segundo agente. | Cumplido |
+
+### Qué dice el plan que se haga
+Falla L con R alto: las reglas 9 y 10 no bastan, y se refuerzan antes de otra tanda. Falla H: la categoría que más repite (atribución, omisión y cifra/hora en las cuatro fichas) va al registro; no se puede vigilar con sonda, así que pasa a la lista de comprobación del paso 0.5 de `/nuevo-caso`.
+
+### Lo que el piloto enseñó y el plan no previó
+1. **Lo que se corrige tras el verificador no lo lee nadie.** Los lectores ven el texto final. Varios defectos de lectura nacieron de arreglos aplicados después (frases con dos puntos y coma encadenados, una ventana horaria con un apellido sin presentar, un paréntesis explicativo). Ninguna regla ni sonda ve ese paso.
+2. **El brief del piloto desvió dos resultados.** Prohibir `audit-consistency` y la edición de `lib/` a los redactores, para no pisarse en paralelo, hizo que E7, E59 y el país nuevo llegaran tarde. No es una conclusión sobre el flujo de una sola ficha.
+3. **Los verificadores también se equivocan, y la regla de citar la fuente lo atrapó.** Una de 56 propuestas se rechazó al abrir la página.
+4. **Los archivos oficiales dan más hallazgos que los relatos secundarios.** Las cuatro fichas parten de expedientes de archivo (DIA, Defensa de España, RG 77 de Canadá, AIR 244 de Nueva Zelanda): más material primario por ficha, más ocasiones de atribución y omisión.
+5. **Decisión de licencia pendiente del dueño:** alojar el extracto de RG 77 (Clarenville) frente a dejar solo un enlace, como en Shag Harbour y Falconbridge.
