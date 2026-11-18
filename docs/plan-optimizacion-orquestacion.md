@@ -154,3 +154,13 @@ Las correcciones son cambios mínimos y cada una se contrastó con la página qu
 2. **Abrió un fallo nuevo**: el parche que corregía la prosa remitía al dato que se había ido a `evidence` («encaja con el final de la grabación») y los dos lectores no pudieron situarlo. Una corrección de prosa que se apoya en un dato nuevo necesita el mínimo de ese dato en la prosa.
 3. **La lectura no mejoró**: 9 y 10 defectos, la mayoría ajenos a los parches (fechas de oficios, jerga de radiales, distancias). Coincide con la tanda: el defecto de lectura nace sobre todo al redactar, no al parchear.
 4. **Costo**: el agente vacío bajó de 47.038 a 37.305 tokens. Es compatible con que `CLAUDE.md` viaje en cada agente, pero no está aislado: la sesión también es otra y la bajada supera lo que el recorte explica (~7 mil). Con todo, el redactor gastó lo mismo que en la tanda.
+
+### Editor que solo recorta (misma ficha, 18 nov 2026)
+Un `ficha-trabajo` con un solo encargo: quitar de la prosa lo que el lector no necesita, sin añadir hechos ni abrir fuentes, y sin ver los informes de lectura anteriores. Costó 69.965 tokens. Recortó un 16 % (ES 7.096 → 5.972; EN 7.251 → 6.149): trámites de archivo, jerga de radiales, horas y alturas secundarias. El diff solo quita y reordena; una frase simplificada volvía a acercarse a un error de atribución ya corregido y se ajustó.
+
+| Lectura | Antes del editor | Después |
+|---|---|---|
+| ES | 9 defectos, nota 6 | 7 defectos, nota 6 |
+| EN | 10 defectos, nota 6 | 9 defectos, nota 6 («casi nativo»; antes, «traducción cuidada») |
+
+**Lo que dice:** el editor quita lo que sobra y baja los defectos un poco, pero la nota no se mueve. Lo que queda no es exceso: es que el relato coteja documentos que se contradicen (dos puntos frente a tres puntas, sur frente a este) sin darle al lector una imagen de qué se vio. Eso es estructura, y recortar no lo arregla. Dos de los defectos que quedan los escribió el orquestador al corregir la deuda, lo que confirma que cualquier mano que toca la prosa sin releerla crea defectos.
