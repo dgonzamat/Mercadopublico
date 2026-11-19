@@ -133,6 +133,7 @@ const COUNTRY_EN: Record<string, string> = {
   Groenlandia: "Greenland",
   Islandia: "Iceland",
   Nicaragua: "Nicaragua",
+  "Taiwán": "Taiwan",
 };
 
 /** Traduce un country_name del español al inglés; fallback al valor original. */
