@@ -243,12 +243,17 @@ Conteo hecho a mano a partir de los informes de los verificadores (17-18 nov 202
 
 **Auditoría de prosa de las seis (18 nov 2026, `/auditar-prosa`):** con el verificador en verde, cuatro lectores Opus sin fuentes y un editor no aprobaron ninguna: cuatro a reescribir (Puddy, Cergy, Adamski, Moody) y dos a retocar. Personas sin presentar en las seis y recuentos que no cuadran en cinco. El verificador no tenía por qué verlo: no son errores de hecho. Por eso el paso 5d de `/nuevo-caso` pone la prueba del lector antes de fusionar.
 
-## Propuestas en espera (flujo congelado hasta la ficha 556)
+## Revisión de las fichas 547–556 (19 nov 2026, decisión del dueño)
 
-Se revisan al cerrar la 556, con la regla de las 3 de 10 fichas:
-- **Cálculo propio sin «para este caso»:** decir de qué datos sale el cálculo («con las coordenadas que da la AMS»). Los cuatro lectores de la 545 y la 546 leyeron la fórmula de `/redaccion` §7 como nota interna.
-- **Fuente leída por resumen automático:** cotejar citas y datos concretos con el texto literal antes de publicar. En la 545 el resumen de KLAS cambió la máquina del patio.
-- **Filtro de casos virales en `/proximo-caso`:** entran sucesos con fuente primaria o explicación oficial y hechos institucionales documentados; no, declaraciones en entrevistas, videos sin fuente ni disputas personales (diez publicaciones filtradas a mano el 18 nov 2026).
+Regla: solo cambia lo que se repite en al menos 3 de las 10 fichas. Notas de los lectores Opus: entre 6 y 7 en todas (media 6,7).
+
+- **Adoptado · inventarios y cálculos en prosa** (`/redaccion` §3.11): los lectores perdieron el interés en cadenas de reenvíos, sellos y coordenadas en seis fichas (549, 550, 551, 553, 554, 556).
+- **Adoptado · «un cálculo hecho para este caso»** (`/redaccion` §7): cinco fichas con lectores que preguntaron quién hizo el cálculo (549, 551, 552, 554, 556). Era la propuesta en espera desde la 545.
+- **Adoptado · difusión sin fuente** (`caso:check`, aviso «difusión»): «la versión que más circula», «apenas circula», en 548, 549, 550 y 555. En el corpus el patrón salta en 3 fichas anteriores (chulucanas-2001, hangzhou-2010, pretoria-mamelodi-1996), que quedan para revisar contra su fuente.
+- **Adoptado · encargo sin datos del OCR** (`/nuevo-caso`): 550, 551, 555 y 556.
+- **Archivado · fuente leída por resumen automático**: no se repitió desde la 545.
+- **En espera · filtro de casos virales en `/proximo-caso`**: las 10 fichas fueron de Blue Book; se mide en la próxima que salga de un viral.
+- **Sin umbral · parches que empeoran la redacción**: 553 (parche del verificador) y 556 (reescritura del orquestador). Dos de diez; se sigue anotando.
 
 ## Deuda detectada por el PoC (sin tocar)
 

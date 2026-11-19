@@ -51,6 +51,10 @@ if (!targets.length) { console.log("caso-check: ninguna ficha nueva o editada fr
 //    sí daba la hora que la frase negaba. El aviso pide acotarla al documento leído.
 const AUS_ES = /[^.]*\b(no consta(n)?|no se (ha |han )?(hall|encontr|conserv)\w*|no (hall|encontr)(ó|aron|amos)|no hemos (hall|encontr)\w*|no hay (ning[uú]n|ninguna) (registro|an[aá]lisis|documento|prensa|fuente)|ninguna fuente|no existe(n)? (ning|registro)|ning[uú]n documento|los documentos no|ninguna (otra )?p[aá]gina|el (legajo|expediente) no (trae|dice|da|recoge))[^.]*\./gi;
 const AUS_EN = /[^.]*\b(no record (from|of)|has not been found|have not been found|we have found no|we have not found|is no (record|independent|evidence from)|no independent (analysis|examination)|no document|the documents do not|no other page|the file (holds no|does not))\b[^.]*\./gi;
+// Cuánto circula una versión: es una afirmación sobre el mundo y necesita fuente.
+// En la serie 547–556 salió en tres fichas («la versión que más circula», «apenas
+// circula fuera del archivo») y solo la vieron el verificador o los lectores.
+const DIFUSION = /[^.]*\b(que m[aá]s circula|apenas circula|circula poco|(versi[oó]n|explicaci[oó]n) m[aá]s difundida|most widely circulated|circulates (the )?most|barely circulates|version that circulates most)[^.]*\./gi;
 // 2. Voz del redactor (la guía /redaccion la prohíbe).
 const VOZ_ES = /\b(cito|citamos|hemos|este expediente|esta ficha|nuestro an[aá]lisis|el corpus)\b/gi;
 const VOZ_EN = /\b(I cite|we cite|this file|this entry|our analysis|the corpus)\b/gi;
@@ -99,6 +103,8 @@ for (const id of targets) {
   // WARN: ausencia
   const aus = [...(esN.match(AUS_ES) || []), ...(enN.match(AUS_EN) || [])].map((s) => s.trim().replace(/\s+/g, " "));
   for (const s of aus) { out.push(["WARN", "ausencia", s.length > 170 ? s.slice(0, 170) + "…" : s]); bump("ausencia"); }
+  // WARN: difusión de una versión sin fuente
+  for (const s of [...(esN.match(DIFUSION) || []), ...(enN.match(DIFUSION) || [])].map((s) => s.trim().replace(/\s+/g, " "))) { out.push(["WARN", "difusión", `${s.length > 170 ? s.slice(0, 170) + "…" : s} (¿qué fuente dice cuánto circula?)`]); bump("difusión"); }
   // WARN: voz del redactor
   for (const m of new Set([...(esN.match(VOZ_ES) || []), ...(enN.match(VOZ_EN) || [])])) { out.push(["WARN", "voz", `«${m}» (voz del redactor)`]); bump("voz"); }
   // WARN: párrafos largos
