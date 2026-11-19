@@ -62,6 +62,28 @@
     "PolitiFact (June 15, 2023) and Reuters: the viral video of a creature in a backyard is computer animation by the TikTok account @owltreestump, dated May 26",
     "KLAS, in KTLA (June 2023): after a call from the house on June 10, the LVMPD installed temporary cameras at the home, according to a spokesperson"
   ],
+  "documents": [
+    {
+      "role": "prueba",
+      "src": "https://www.youtube.com/watch?v=YWGOkut_-Xw",
+      "type": "link",
+      "title": "Cámaras corporales de la policía de Las Vegas, aviso LLV230500000097 (parte 1 de 2)",
+      "title_en": "Las Vegas police body-camera footage, call LLV230500000097 (part 1 of 2)",
+      "description": "Video de las cámaras corporales de los agentes que acudieron al aviso, en el canal de registros públicos de la Policía Metropolitana de Las Vegas (LVMPD Public Records Unit). Se abre en YouTube.",
+      "description_en": "Body-camera footage from the officers who answered the call, on the Las Vegas Metropolitan Police Department's public records channel (LVMPD Public Records Unit). Opens on YouTube.",
+      "source": "LVMPD Public Records Unit (YouTube)"
+    },
+    {
+      "role": "prueba",
+      "src": "https://www.youtube.com/watch?v=A0Yrjz7Vt0U",
+      "type": "link",
+      "title": "Cámaras corporales de la policía de Las Vegas, aviso LLV230500000097 (parte 2 de 2)",
+      "title_en": "Las Vegas police body-camera footage, call LLV230500000097 (part 2 of 2)",
+      "description": "Video de las cámaras corporales de los agentes que acudieron al aviso, en el canal de registros públicos de la Policía Metropolitana de Las Vegas (LVMPD Public Records Unit), publicada el 8 de junio de 2023. Se abre en YouTube.",
+      "description_en": "Body-camera footage from the officers who answered the call, on the Las Vegas Metropolitan Police Department's public records channel (LVMPD Public Records Unit), posted on June 8, 2023. Opens on YouTube.",
+      "source": "LVMPD Public Records Unit (YouTube)"
+    }
+  ],
   "sources": [
     {
       "name": "American Meteor Society, evento 2408-2023 (en el visor nuevo, 20230501_0650)",
