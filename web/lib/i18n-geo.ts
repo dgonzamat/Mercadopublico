@@ -107,6 +107,7 @@ const COUNTRY_EN: Record<string, string> = {
   "Kuwait": "Kuwait",
   "Siria": "Syria",
   "Líbano": "Lebanon",
+  "Chipre": "Cyprus",
   "Angola": "Angola",
   "Malasia": "Malaysia",
   "Oriente Medio, área de responsabilidad de CENTCOM (ubicación exacta no revelada)": "Middle East, CENTCOM area of responsibility (exact location undisclosed)",
