@@ -513,6 +513,9 @@ const VISUAL_CERRADO_POR_LICENCIA = {
   "moody-alamogordo-1975": "sin documento oficial (posterior a Blue Book); los boletines de APRO llevan aviso de copyright de 1975-1976; la búsqueda en Commons y Openverse no da nada",
   "cergy-pontoise-1979": "la nota técnica n.º 6 del GEPAN es © CNES (va como enlace); prensa y BUFORA con copyright; Openverse seco y Wikipedia sin imágenes del caso",
   "aveley-1974": "investigación civil sin expediente del MoD en The National Archives; Flying Saucer Review con copyright; Openverse seco y Wikipedia sin imágenes del caso",
+  // Decisión del dueño del 19 nov 2026 (D1): los extractos de licencia dudosa pasan a enlace (detalle en docs/registros.md):
+  "aalborg-haesum-1976": "el archivo OVNI del FTK danés se publicó sin licencia declarada y la ley danesa (art. 9) no consta que cubra cuestionarios militares internos; queda como enlace al espejo de UFOScans",
+  "clarenville-1978": "el RG 77 de Biblioteca y Archivos de Canadá no declara licencia para reproducir; queda como enlace a la copia de archive.org (CanadaUFO)",
 };
 
 // Guard: la exención no puede volverse un desván. Si un caso exento consiguió

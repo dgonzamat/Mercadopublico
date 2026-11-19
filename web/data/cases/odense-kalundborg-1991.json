@@ -92,13 +92,11 @@
   "documents": [
     {
       "role": "documento",
-      "src": "/pursue/odense-kalundborg-1991-skemaer.pdf",
-      "type": "pdf",
+      "src": "https://www.ufoscans.com/flv-ufo-materiale-side1-99/",
+      "type": "link",
       "title": "Cuestionarios de la Fuerza Aérea danesa del 18 de enero de 1991: Odense, nota al dorso y Kalundborg (3 págs.)",
       "title_en": "Danish Air Force questionnaires of January 18, 1991: Odense, note on the back, and Kalundborg (3 pp.)",
       "source": "Fuente: Flyvertaktisk Kommando, archivo OVNI (2009), vía UFOScans",
-      "license": "Documento oficial publicado por la Fuerza Aérea danesa (2009); el espejo no declara licencia, se reproduce con crédito a la fuente",
-      "fallbackUrl": "https://www.ufoscans.com/flv-ufo-materiale-side1-99/",
       "description": "Tres páginas del archivo OVNI que la Fuerza Aérea danesa abrió en 2009, con los relatos del paso del 18 de enero de 1991. La primera es el cuestionario de un policía que lo vio desde su casa, cerca de Odense; la segunda, la nota manuscrita a su dorso, con el tiempo, la lista de lugares desde donde se vio lo mismo, una línea del 21 de enero y la consulta al centro de defensa aérea de Vedbæk; la tercera, el cuestionario de un consultor que lo vio desde una playa cerca de Kalundborg, anexo a un escrito de la base aérea de Værløse. Nombres y direcciones tachados en el original publicado. Páginas 24 a 26 de la compilación de cuestionarios de 1987 a 2002; copia en escala de grises.",
       "description_en": "Three pages from the UFO archive the Danish Air Force opened in 2009, with the accounts of the January 18, 1991, passage. The first is the questionnaire of a police officer who saw it from his home near Odense; the second, the handwritten note on its back, with the weather, the list of places from which the same thing was seen, a line dated January 21 and the inquiry to the Vedbæk air defense center; the third, the questionnaire of a consultant who saw it from a beach near Kalundborg, attached to a letter from Værløse air base. Names and addresses blacked out in the published original. Pages 24 to 26 of the 1987-2002 questionnaire compilation; grayscale copy."
     },
