@@ -110,7 +110,6 @@ const COUNTRY_EN: Record<string, string> = {
   "Chipre": "Cyprus",
   Laos: "Laos",
   Bulgaria: "Bulgaria",
-  Singapur: "Singapore",
   Kiribati: "Kiribati",
   Hungría: "Hungary",
   "Angola": "Angola",

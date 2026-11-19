@@ -238,7 +238,7 @@ Conteo hecho a mano a partir de los informes de los verificadores (17-18 nov 202
 | nicosia-1965 | lectura | Lectores Opus ES 7/10 y EN 6/10. Defectos de redacción, corregidos: una frase de ausencia (de la reescritura del orquestador) que citaba «las tres páginas» y «la ficha» antes de presentarlas; la altura dada como dato a favor del globo y luego como su dificultad sin decirlo; el viento contrario sin decir si apoya o no el globo; la Battle Flight que confirma la altura sin decir si despegó; la marca de 1972 sin conclusión; la cadena de reenvíos con copias y sellos; «el 5 y el 6 de julio»; 48 frente a 48,5 km | no |
 | laos-1966 | pendiente | Fila provisional del redactor; la sustituye el orquestador con los hallazgos del verificador | no |
 | uzundzhovo-1957 | pendiente | Fila provisional del redactor; la sustituye el orquestador con los hallazgos del verificador | no |
-| singapore-1952 | pendiente | Fila provisional del redactor; la sustituye el orquestador con los hallazgos del verificador | no |
+| seremban-1952 | pendiente | Fila provisional del redactor; la sustituye el orquestador con los hallazgos del verificador | no |
 | nadi-fiji-1962 | pendiente | Fila provisional del redactor; la sustituye el orquestador con los hallazgos del verificador | no |
 | budapest-1947 | pendiente | Fila provisional del redactor; la sustituye el orquestador con los hallazgos del verificador | no |
 
