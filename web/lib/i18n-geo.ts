@@ -41,6 +41,7 @@ const COUNTRY_EN: Record<string, string> = {
   Francia: "France",
   Grecia: "Greece",
   Guatemala: "Guatemala",
+  Haití: "Haiti",
   Honduras: "Honduras",
   India: "India",
   Indonesia: "Indonesia",
