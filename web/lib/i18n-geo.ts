@@ -54,7 +54,6 @@ const COUNTRY_EN: Record<string, string> = {
   Kazajistán: "Kazakhstan",
   Libia: "Libya",
   Birmania: "Burma",
-  Yugoslavia: "Yugoslavia",
   Marruecos: "Morocco",
   "Multi-país (Persian Gulf)": "Multi-country (Persian Gulf)",
   "Multi-país (Oriente Medio)": "Multi-country (Middle East)",

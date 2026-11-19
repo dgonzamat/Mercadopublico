@@ -263,7 +263,6 @@ Conteo hecho a mano a partir de los informes de los verificadores (17-18 nov 202
 | budapest-1947 | proceso | 18 parches, todos aplicados; el verificador confirmó el «#38» en la imagen y en Grudge | no |
 | budapest-1947 | lectura | Lectores Opus ES 6/10 y EN 6/10. Los dos tropezaron en «dejó fuera uno» de Bloecher (¿séptimo o uno de los seis?), en la fecha de Bloecher sin la conclusión que la justifica y en el Proyecto 364 sin explicar; el ES, en la descripción «escasa» que no está y en la frase del formulario de 1963; el EN, en «apart from 3.b», en «el sentido fuerte» y en un «hacia el 10 de junio» atribuido a la tarjeta, que da la fecha exacta. Se corrigieron todos. Los dos notaron que el resumen adelanta el relato y que el testigo de Hall, lo más llamativo, llega al final | no |
 | rangun-1965 | pendiente | Fila provisional del redactor; la sustituye el orquestador con los hallazgos del verificador | no |
-| belgrado-1954 | pendiente | Fila provisional del redactor; la sustituye el orquestador con los hallazgos del verificador | no |
 | karachi-1961 | pendiente | Fila provisional del redactor; la sustituye el orquestador con los hallazgos del verificador | no |
 | taichung-1957 | pendiente | Fila provisional del redactor; la sustituye el orquestador con los hallazgos del verificador | no |
 | bengasi-1959 | pendiente | Fila provisional del redactor; la sustituye el orquestador con los hallazgos del verificador | no |

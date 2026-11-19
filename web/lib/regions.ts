@@ -59,7 +59,7 @@ const COUNTRY_REGION: Record<string, Region> = {
   CU: "latinoamerica", SV: "latinoamerica", NI: "latinoamerica", HN: "latinoamerica",
   HT: "latinoamerica", TT: "latinoamerica",
   // Europa
-  BE: "europa", CZ: "europa", RS: "europa", ES: "europa", FR: "europa", GB: "europa", IT: "europa",
+  BE: "europa", CZ: "europa", ES: "europa", FR: "europa", GB: "europa", IT: "europa",
   NO: "europa", SE: "europa", DE: "europa", NL: "europa", PT: "europa", IE: "europa",
   PL: "europa", CH: "europa", AT: "europa", DK: "europa", FI: "europa", GG: "europa",
   GR: "europa", RO: "europa", UA: "europa", IS: "europa", BG: "europa", HU: "europa",
