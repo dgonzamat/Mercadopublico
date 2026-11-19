@@ -10,3 +10,4 @@
 {"date":"2026-11-19","probe":"audit-consistency","rule":"E63","where":"data/cases"}
 {"date":"2026-11-19","probe":"audit-consistency","rule":"E59","where":"data/cases"}
 {"date":"2026-11-19","probe":"audit-consistency","rule":"E25","where":"data/cases"}
+{"date":"2026-11-19","probe":"audit-consistency","rule":"E56","where":"data/cases"}
