@@ -6,6 +6,12 @@ El protocolo de captura sigue en `CLAUDE.md` → *Protocolo de aprendizaje*. Al 
 
 ---
 
+### Registro (NO re-buscar) · D1, extractos de licencia dudosa pasados a enlace (19 nov 2026, decisión del dueño)
+
+- **aalborg-haesum-1976**: el extracto del archivo OVNI del Mando Aéreo Táctico danés (FTK, publicado por las Fuerzas Armadas en 2009) se alojaba amparado en el artículo 9 de la ley danesa de derechos de autor, sin certeza de que cubra cuestionarios militares internos. Pasa a tarjeta con enlace al escaneo de UFOScans. Commons y archive.org no tienen otra copia con licencia.
+- **odense-kalundborg-1991**: el extracto de los cuestionarios daneses, «con crédito» y sin licencia declarada, pasa a enlace; la ficha conserva su visual alojado (el informe de la FBIS, dominio público de EE. UU.).
+- **clarenville-1978**: el extracto del RG 77 de Biblioteca y Archivos de Canadá no declara licencia de reproducción; pasa a enlace a la copia de archive.org (CanadaUFO), como Shag Harbour y Falconbridge.
+
 ## Documentos y assets visuales (PURSUE, Commons, archive.org)
 
 **Registro (NO re-buscar) · origen de los binarios PURSUE (jul 2026)**: los documentos/imágenes de los releases PURSUE viven en el **Google Drive del dueño** (carpeta `release_04_documents_071026` para R04; conector Google Drive MCP conectado). Es la vía para (re)hostear cualquier asset que `war.gov` bloquee desde el entorno (la allowlist rechaza el fetcher). Protocolo probado: buscar en Drive por doc-ID (`NASA-UAP-D030…`), `download_file_content` devuelve base64 (se guarda a un tool-result file), decodificar con python a `web/public/pursue/` (< 30 MB) o subir al bucket Supabase (≥ 30 MB), y montar en `documents[]`. Así se cerró el hueco de las 3 imágenes STS-80 (D030/031/032) que war.gov no dejaba hostear.

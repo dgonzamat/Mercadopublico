@@ -508,6 +508,9 @@ const VISUAL_CERRADO_POR_LICENCIA = {
   "malasia-reentrada-swift-2026": "MOSTI y MYSA no publicaron imagen ni video propios; los videos de Threads y de la prensa tienen copyright; la NASA solo tiene imágenes de contexto",
   // Ficha nueva del 18 nov 2026 (detalle en docs/registros.md):
   "las-vegas-patio-2023": "los videos de la LVMPD están en YouTube, sin licencia y fuera de los reproductores del visor; los datos de la AMS prohíben redistribuir; Commons y archive.org secos",
+  // Decisión del dueño del 19 nov 2026 (D1): los extractos de licencia dudosa pasan a enlace (detalle en docs/registros.md):
+  "aalborg-haesum-1976": "el archivo OVNI del FTK danés se publicó sin licencia declarada y la ley danesa (art. 9) no consta que cubra cuestionarios militares internos; queda como enlace al espejo de UFOScans",
+  "clarenville-1978": "el RG 77 de Biblioteca y Archivos de Canadá no declara licencia para reproducir; queda como enlace a la copia de archive.org (CanadaUFO)",
 };
 
 // Guard: la exención no puede volverse un desván. Si un caso exento consiguió
