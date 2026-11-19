@@ -97,13 +97,11 @@
   "documents": [
     {
       "role": "documento",
-      "src": "/pursue/aalborg-haesum-1976-ftk.pdf",
-      "type": "pdf",
+      "src": "https://www.ufoscans.com/raw/Danish%20UFO%20Files/-flv_ufo_materiale_side100-199-.pdf",
+      "type": "link",
       "title": "Archivo del FTK, caso del 5 de julio de 1976 (4 págs.): cuestionario militar y las dos respuestas del FTK de 1983",
       "title_en": "FTK archive, the July 5, 1976 case (4 pp.): the military questionnaire and the FTK's two replies of 1983",
       "source": "Fuente: Flyvertaktisk Kommando, archivo OVNI publicado por las Fuerzas Armadas danesas (2009); copia del escaneo de UFOScans",
-      "license": "Documentos oficiales daneses (ley danesa de derechos de autor, art. 9); solo las páginas del FTK, sin los papeles de SUFOI ni de particulares",
-      "fallbackUrl": "https://www.ufoscans.com/raw/Danish%20UFO%20Files/-flv_ufo_materiale_side100-199-.pdf",
       "description": "Las cuatro páginas oficiales del caso en el archivo del Mando Aéreo Táctico danés. Las dos primeras son el cuestionario militar sobre el suceso, a mano y en danés, con la anotación «OP-2» de la sección del FTK que lo recibió: hora, ángulos, la luz vista desde la oficina de operaciones del ala de Aalborg y las tres luces posteriores (pp. 194-195 del archivo). La tercera es la carta del FTK a SUFOI del 8 de junio de 1983, que atribuye el fenómeno «probablemente» a un meteoro y dice que los F-104 no intervinieron (p. 191). La cuarta, del 8 de septiembre de 1983, se niega a ampliar la respuesta (p. 185). Casi todos los nombres están tachados en el original; copia en escala de grises.",
       "description_en": "The four official pages on the case in the Danish Tactical Air Command archive. The first two are the military questionnaire on the event, handwritten in Danish and marked \"OP-2\" for the FTK section that received it: time, angles, the light seen from the Aalborg wing operations office, and the three later lights (pp. 194-195 of the archive). The third is the FTK's letter to SUFOI of June 8, 1983, which puts the phenomenon down \"probably\" to a meteor and says the F-104s were not involved (p. 191). The fourth, dated September 8, 1983, declines to expand on that answer (p. 185). Most names are blacked out in the original; grayscale copy."
     }
