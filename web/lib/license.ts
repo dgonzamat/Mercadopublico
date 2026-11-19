@@ -71,6 +71,8 @@ const EN: Record<string, string> = {
     "Crown copyright (New Zealand) · released by the New Zealand Defence Force in 2010 under the Official Information Act; Internet Archive marks it as public domain",
   "© Secretaría de Prensa de la Presidencia de El Salvador": "© Press Office of the Presidency of El Salvador",
   "© Universidad de Curtin": "© Curtin University",
+  "Dominio público en Australia · documento del Commonwealth de 1972 cuyo copyright venció a los 50 años de hacerse (Copyright Act 1968, reforma vigente desde 2019)":
+    "Public domain in Australia · 1972 Commonwealth document whose copyright expired 50 years after it was made (Copyright Act 1968, as amended from 2019)",
 };
 
 export function licenseLabel(license: string | undefined, locale: "es" | "en"): string | undefined {
