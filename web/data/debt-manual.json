@@ -190,12 +190,12 @@
       {
         "id": "B22",
         "title": "Cálculos del verificador del piloto que quedaron sin aplicar a la espera de un segundo agente: el de Clarenville se aplicó tras repetirlo otro agente (registro de hallazgos); comprobar si quedan otros y cerrarlos o descartarlos",
-        "state": "pendiente de comprobar (18 nov)"
+        "state": "cerrado el 19 nov: solo quedaban dos cálculos (ghana-accra-1987 y clarenville-1978) y los dos se aplicaron tras repetirlos un segundo agente; lo demás marcado como no aplicado en el registro son retoques opcionales, no cálculos"
       },
       {
         "id": "B23",
         "title": "belo-horizonte-1985: location apunta al centro de Belo Horizonte, y según la transcripción de radio el objeto estaba al este o nordeste, cerca de la Serra da Piedade (hallazgo del verificador, sin parche por ser numérico). Revisar las coordenadas y la precisión",
-        "state": "pendiente desde el 18 nov"
+        "state": "cerrado el 19 nov sin cambios: el registro da dos posiciones del objeto (la torre, a unas siete millas al sur de la ciudad; el final de la grabación, al este, hacia el Pico da Piedade); la zona aproximada sobre la ciudad cubre las dos, y moverla a la sierra elegiría una en silencio"
       }
     ]
   },

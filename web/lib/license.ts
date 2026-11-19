@@ -67,6 +67,10 @@ const EN: Record<string, string> = {
   "© Sara Jane Osborn": "© Sara Jane Osborn",
   "Dominio público (foto portuguesa anterior a 1970; publicada en 1917)":
     "Public domain (Portuguese photo from before 1970; published in 1917)",
+  "Crown copyright (Nueva Zelanda) · publicado por la Fuerza de Defensa de Nueva Zelanda en 2010 bajo la Ley de Información Oficial; Internet Archive lo marca como dominio público":
+    "Crown copyright (New Zealand) · released by the New Zealand Defence Force in 2010 under the Official Information Act; Internet Archive marks it as public domain",
+  "© Secretaría de Prensa de la Presidencia de El Salvador": "© Press Office of the Presidency of El Salvador",
+  "© Universidad de Curtin": "© Curtin University",
 };
 
 export function licenseLabel(license: string | undefined, locale: "es" | "en"): string | undefined {
