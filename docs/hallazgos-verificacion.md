@@ -262,6 +262,11 @@ Conteo hecho a mano a partir de los informes de los verificadores (17-18 nov 202
 | budapest-1947 | atribución | BAJA: Bloecher «lo excluye por ser extranjero» (el motivo lo ponen Hobana y Weverbergh); «la misma página» de Grudge cuando son dos copias físicas distintas; «cientos de avisos» suecos, que eran miles; un «eso» de referente ambiguo | no |
 | budapest-1947 | proceso | 18 parches, todos aplicados; el verificador confirmó el «#38» en la imagen y en Grudge | no |
 | budapest-1947 | lectura | Lectores Opus ES 6/10 y EN 6/10. Los dos tropezaron en «dejó fuera uno» de Bloecher (¿séptimo o uno de los seis?), en la fecha de Bloecher sin la conclusión que la justifica y en el Proyecto 364 sin explicar; el ES, en la descripción «escasa» que no está y en la frase del formulario de 1963; el EN, en «apart from 3.b», en «el sentido fuerte» y en un «hacia el 10 de junio» atribuido a la tarjeta, que da la fecha exacta. Se corrigieron todos. Los dos notaron que el resumen adelanta el relato y que el testigo de Hall, lo más llamativo, llega al final | no |
+| rangun-1965 | pendiente | Fila provisional del redactor; la sustituye el orquestador con los hallazgos del verificador | no |
+| belgrado-1954 | pendiente | Fila provisional del redactor; la sustituye el orquestador con los hallazgos del verificador | no |
+| karachi-1961 | pendiente | Fila provisional del redactor; la sustituye el orquestador con los hallazgos del verificador | no |
+| taichung-1957 | pendiente | Fila provisional del redactor; la sustituye el orquestador con los hallazgos del verificador | no |
+| bengasi-1959 | pendiente | Fila provisional del redactor; la sustituye el orquestador con los hallazgos del verificador | no |
 
 **Lectura (18 nov 2026, tras la sexta ficha):** de 42 filas, `caso:check` habría marcado 4 (ninguna de Puddy; sus avisos eran falsos positivos) y 2 más con la regla ampliada. Las categorías **atribución, omisión, cifra/hora y ausencia** aparecieron en las cinco últimas fichas (Moody a Puddy): el paso 0.5 y el autochequeo **no las redujeron**. El léxico (3 de 5) sí era mecánico y pasó a E62. Puddy es una ficha más difícil que las anteriores (tres episodios, manuscritos de la RAAF, tres versiones de los investigadores), así que no es un experimento limpio: la comparación solo valdrá con tres fichas más.
 
