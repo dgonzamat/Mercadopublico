@@ -62,10 +62,10 @@ const COUNTRY_REGION: Record<string, Region> = {
   BE: "europa", CZ: "europa", ES: "europa", FR: "europa", GB: "europa", IT: "europa",
   NO: "europa", SE: "europa", DE: "europa", NL: "europa", PT: "europa", IE: "europa",
   PL: "europa", CH: "europa", AT: "europa", DK: "europa", FI: "europa", GG: "europa",
-  GR: "europa", RO: "europa", UA: "europa", IS: "europa",
+  GR: "europa", RO: "europa", UA: "europa", IS: "europa", BG: "europa", HU: "europa",
   // Asia (incluye Rusia/Eurasia)
   RU: "asia", IN: "asia", NP: "asia", PK: "asia", PH: "asia", JP: "asia", CN: "asia", KR: "asia", ID: "asia", TH: "asia",
-  SU: "asia", KZ: "asia", AF: "asia", VN: "asia", MY: "asia", KP: "asia", TW: "asia",
+  SU: "asia", KZ: "asia", AF: "asia", VN: "asia", MY: "asia", KP: "asia", TW: "asia", LA: "asia",
   // Medio Oriente
   IR: "medio-oriente", TR: "medio-oriente", IL: "medio-oriente", SA: "medio-oriente",
   AE: "medio-oriente", EG: "medio-oriente", IQ: "medio-oriente", OM: "medio-oriente", YE: "medio-oriente",
@@ -74,7 +74,7 @@ const COUNTRY_REGION: Record<string, Region> = {
   LB: "medio-oriente",
   CY: "medio-oriente",
   // Oceanía
-  AU: "oceania", NZ: "oceania", PG: "oceania", FJ: "oceania", GU: "oceania",
+  AU: "oceania", NZ: "oceania", PG: "oceania", FJ: "oceania", GU: "oceania", KI: "oceania",
   // África
   DZ: "africa", AO: "africa", CD: "africa", SD: "africa", TN: "africa", ZW: "africa", ZA: "africa", NG: "africa", GH: "africa", KE: "africa", MA: "africa", LY: "africa",
   TZ: "africa", MG: "africa", SO: "africa",
