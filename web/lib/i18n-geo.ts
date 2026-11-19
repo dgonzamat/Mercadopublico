@@ -70,6 +70,7 @@ const COUNTRY_EN: Record<string, string> = {
   Sudáfrica: "South Africa",
   Suecia: "Sweden",
   Suiza: "Switzerland",
+  "Trinidad y Tobago": "Trinidad and Tobago",
   Turquía: "Turkey",
   "URSS / Rusia": "USSR / Russia",
   Ucrania: "Ukraine",
