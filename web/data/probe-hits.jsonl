@@ -15,3 +15,5 @@
 {"date":"2026-11-19","probe":"audit-consistency","rule":"E45","where":"data/retired-nums.json"}
 {"date":"2026-11-19","probe":"audit-consistency","rule":"E50","where":"lib/i18n-geo.ts"}
 {"date":"2026-11-19","probe":"audit-consistency","rule":"E7","where":"data/cases/singapore-1952.json"}
+{"date":"2026-11-19","probe":"validate-schema","rule":"misidSubtype inválido \"…\" (astronomico|aeronave|espacial|luc","where":"cases/budapest-1947.json"}
+{"date":"2026-11-19","probe":"validate-schema","rule":"objectDetail \"…\" no admitido: la clase \"…\" no tiene detalle ","where":"cases/budapest-1947.json"}
