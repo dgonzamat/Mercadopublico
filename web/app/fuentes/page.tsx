@@ -1,3 +1,4 @@
+import Link from "next/link";
 import { getAllSources, groupByCategory, CATEGORY_LABELS } from "@/lib/sources";
 import { pageMeta } from "@/lib/seo";
 import { T } from "@/components/T";
@@ -55,24 +56,30 @@ export default function FuentesPage() {
 
       <nav
         aria-label="Categorías de fuentes · Source categories"
-        className="grid gap-2 border-y-2 border-text/15 py-6 sm:grid-cols-2"
+        className="grid gap-3 border-y-2 border-text/15 py-6 sm:grid-cols-2"
       >
+        {/* Tarjetas con la descripción de cada categoría (nov 2026): antes eran
+            enlaces desnudos de ~36 px sin decir qué guarda cada una. */}
         {grouped.map((g) => (
-          <a
+          <Link
             key={g.category}
             href={`/fuentes/${g.category}/`}
-            className="flex items-baseline justify-between gap-3 py-2 text-sm text-text hover:text-accent"
+            className="block min-h-[44px] border border-border bg-panel p-4 transition hover:border-accent/50"
           >
-            <span>
+            <span className="flex items-baseline justify-between gap-3 text-sm font-medium text-text">
               <T
                 es={CATEGORY_LABELS[g.category].es}
                 en={CATEGORY_LABELS[g.category].en}
               />
+              <span className="shrink-0 tabular-nums">{g.items.length}</span>
             </span>
-            <span className="shrink-0 tabular-nums text-text">
-              {g.items.length}
+            <span className="mt-1 block text-xs leading-snug text-muted">
+              <T
+                es={CATEGORY_LABELS[g.category].description_es}
+                en={CATEGORY_LABELS[g.category].description_en}
+              />
             </span>
-          </a>
+          </Link>
         ))}
       </nav>
 

@@ -1,4 +1,5 @@
-import { frameworks } from "@/lib/data";
+import { frameworks, researchers } from "@/lib/data";
+import { LocaleLink } from "@/components/LocaleLink";
 import { pageMeta, hreflangFor } from "@/lib/seo";
 import { STATS } from "@/lib/siteStats";
 import { T } from "@/components/T";
@@ -102,6 +103,22 @@ export function FrameworksView({ locale }: { locale: "es" | "en" }) {
                 </td>
                 <td className="px-4 py-3 text-xs text-muted">
                   <T es={f.author} en={f.author_en ?? f.author} locale={locale} />
+                  {/* Actores del corpus con este marco como principal: cierra el
+                      enlace que ya existe desde su perfil (nov 2026). */}
+                  {researchers.some((r) => r.framework === f.id) && (
+                    <span className="mt-1 block">
+                      {researchers
+                        .filter((r) => r.framework === f.id)
+                        .map((r, i) => (
+                          <span key={r.id}>
+                            {i > 0 && " · "}
+                            <LocaleLink href={`/researchers/${r.id}`} className="text-text underline-offset-4 hover:text-accent hover:underline">
+                              {r.name}
+                            </LocaleLink>
+                          </span>
+                        ))}
+                    </span>
+                  )}
                 </td>
                 <td className="px-4 py-3">
                   <span

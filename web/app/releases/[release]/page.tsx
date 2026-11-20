@@ -1,5 +1,8 @@
 import { notFound } from "next/navigation";
 import { LocaleLink } from "@/components/LocaleLink";
+import { Breadcrumb } from "@/components/Breadcrumb";
+import { PrevNext } from "@/components/PrevNext";
+import { ShareButton } from "@/components/ShareButton";
 
 import { pageMeta, hreflangFor } from "@/lib/seo";
 import { cases } from "@/lib/data";
@@ -154,8 +157,31 @@ export async function ReleasePage({
     blurbEn: "",
   };
 
+  // Entregas vecinas para la navegación secuencial (mismo patrón que actores,
+  // formas y posts; nov 2026).
+  const idx = RELEASES.indexOf(n);
+  const prevN = idx > 0 ? RELEASES[idx - 1] : null;
+  const nextN = idx >= 0 && idx < RELEASES.length - 1 ? RELEASES[idx + 1] : null;
+  const neighbor = (m: number, es: string, en: string) => ({
+    href: `/releases/${pad(m)}`,
+    es,
+    en,
+    title: <T es={RELEASE_META[m]?.es ?? `Release ${pad(m)}`} en={RELEASE_META[m]?.en ?? `Release ${pad(m)}`} locale={locale} />,
+  });
+
   return (
     <div className="space-y-8 py-8">
+      <div className="flex items-center justify-between gap-4">
+        <Breadcrumb
+          items={[
+            { href: "/", es: "Inicio", en: "Home" },
+            { href: "/releases", es: "Entregas", en: "Releases" },
+            { es: `Release ${pad(n)}`, en: `Release ${pad(n)}` },
+          ]}
+          locale={locale}
+        />
+        <ShareButton title={locale === "es" ? meta.es : meta.en} locale={locale} />
+      </div>
       <header className="space-y-4">
         <Eyebrow>
           <T
@@ -197,6 +223,13 @@ export async function ReleasePage({
           <CaseRow key={c.id} caseData={c} locale={locale} />
         ))}
       </section>
+
+      <PrevNext
+        label={locale === "es" ? "Navegación entre entregas" : "Release navigation"}
+        locale={locale}
+        prev={prevN != null ? neighbor(prevN, "← Entrega anterior", "← Previous release") : null}
+        next={nextN != null ? neighbor(nextN, "Entrega siguiente →", "Next release →") : null}
+      />
 
       <nav className="flex flex-wrap gap-3 border-t border-border pt-6 text-sm">
         <LocaleLink

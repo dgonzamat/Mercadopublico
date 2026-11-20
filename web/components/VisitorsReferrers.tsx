@@ -21,7 +21,7 @@ const LABEL: Record<string, { es: string; en: string }> = {
  */
 export function VisitorsReferrers({ rows, limit = 12 }: { rows: ReferrerRow[]; limit?: number }) {
   const heading = (
-    <p className="font-mono text-xs uppercase tracking-widest text-muted">
+    <p className="text-sm font-semibold text-muted">
       <T es="De dónde llegan" en="Where visitors come from" />
     </p>
   );

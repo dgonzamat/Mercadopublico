@@ -22,7 +22,7 @@ export function VisitorsPages({
   if (rows.length === 0) {
     return (
       <div className="space-y-1.5">
-        <p className="font-mono text-xs uppercase tracking-widest text-muted">
+        <p className="text-sm font-semibold text-muted">
           <T es="Páginas más visitadas" en="Most visited pages" />
         </p>
         <p className="border-2 border-text bg-panel px-4 py-4 text-sm text-muted">
@@ -41,7 +41,7 @@ export function VisitorsPages({
 
   return (
     <div className="space-y-1.5">
-      <p className="font-mono text-xs uppercase tracking-widest text-muted">
+      <p className="text-sm font-semibold text-muted">
         <T es="Páginas más visitadas" en="Most visited pages" />
       </p>
       {/* Denominador distinto al de la tarjeta "Visitantes": ahí se cuenta 1 por

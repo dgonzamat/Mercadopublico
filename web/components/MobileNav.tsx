@@ -241,15 +241,15 @@ export function MobileNav({ dark = false }: { dark?: boolean } = {}) {
                 }}
                 className="group mt-8 block bg-accent p-6 hover:bg-bg hover:text-text"
               >
-                <p className="font-mono text-xs uppercase tracking-widest text-text/70 group-hover:text-muted">
+                <p className="font-mono text-xs uppercase tracking-widest text-bg/85 group-hover:text-muted">
                   <T es="Apoya el proyecto" en="Support the project" locale={tLocale} />
                 </p>
-                <p className="mt-2 font-display text-3xl font-medium leading-tight text-text">
+                <p className="mt-2 font-display text-3xl font-medium leading-tight text-bg group-hover:text-text">
                   <span aria-hidden>♥</span>{" "}
                   <T es={PRIMARY_CTA.es.label} en={PRIMARY_CTA.en.label} locale={tLocale} />{" "}
                   <span aria-hidden>→</span>
                 </p>
-                <p className="mt-2 text-sm text-text/80 group-hover:text-muted">
+                <p className="mt-2 text-sm text-bg/90 group-hover:text-muted">
                   <T es={PRIMARY_CTA.es.sub} en={PRIMARY_CTA.en.sub} locale={tLocale} />
                 </p>
               </Link>
@@ -268,14 +268,14 @@ export function MobileNav({ dark = false }: { dark?: boolean } = {}) {
                       className="group flex min-h-[68px] items-center justify-between gap-4 py-5 hover:bg-bg hover:px-4 hover:-mx-4 hover:text-text"
                     >
                       <div className="min-w-0 space-y-1">
-                        <p className="font-display text-2xl font-medium leading-tight text-accent group-hover:text-text">
+                        <p className="font-display text-2xl font-medium leading-tight text-accent-bright group-hover:text-text">
                           ◆ <T es="Laboratorio" en="Data Lab" locale={tLocale} />
                         </p>
                         <p className="text-xs text-bg/60 group-hover:text-muted">
                           <T es="Tu tablero: gráficos, KPIs y reportes" en="Your dashboard: charts, KPIs and reports" locale={tLocale} />
                         </p>
                       </div>
-                      <span aria-hidden className="shrink-0 font-mono text-lg text-accent">→</span>
+                      <span aria-hidden className="shrink-0 font-mono text-lg text-accent-bright group-hover:text-accent">→</span>
                     </Link>
                   </li>
                 )}
@@ -290,7 +290,7 @@ export function MobileNav({ dark = false }: { dark?: boolean } = {}) {
                       <div className="min-w-0 space-y-1">
                         <p
                           className={`font-display text-2xl font-medium leading-tight group-hover:text-text ${
-                            isActive(l.href) ? "text-accent" : "text-bg"
+                            isActive(l.href) ? "text-accent-bright" : "text-bg"
                           }`}
                         >
                           <T es={l.es.label} en={l.en.label} locale={tLocale} />
@@ -321,8 +321,8 @@ export function MobileNav({ dark = false }: { dark?: boolean } = {}) {
                       href={hrefFor(l.href)}
                       onClick={() => setOpen(false)}
                       aria-current={isActive(l.href) ? "page" : undefined}
-                      className={`block min-h-[48px] py-3 text-sm font-medium underline-offset-4 hover:text-accent hover:underline focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-accent ${
-                        isActive(l.href) ? "text-accent underline" : "text-bg"
+                      className={`block min-h-[48px] py-3 text-sm font-medium underline-offset-4 hover:text-accent-bright hover:underline focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-accent ${
+                        isActive(l.href) ? "text-accent-bright underline" : "text-bg"
                       }`}
                     >
                       <T es={l.es} en={l.en} locale={tLocale} />

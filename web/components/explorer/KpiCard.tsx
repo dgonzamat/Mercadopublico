@@ -126,7 +126,7 @@ export function CardActions({
           type="button"
           onClick={onExport}
           aria-label={locale === "en" ? "Export PNG" : "Exportar PNG"}
-          className="inline-flex h-7 w-7 items-center justify-center border border-border bg-bg text-sm text-muted hover:border-accent hover:text-accent"
+          className="inline-flex h-11 w-11 items-center justify-center border border-border bg-bg text-sm text-muted hover:border-accent hover:text-accent"
         >
           ⤓
         </button>
@@ -136,7 +136,7 @@ export function CardActions({
           type="button"
           onClick={onEdit}
           aria-label={locale === "en" ? "Edit visual" : "Editar visual"}
-          className="inline-flex h-7 w-7 items-center justify-center border border-border bg-bg text-sm text-muted hover:border-accent hover:text-accent"
+          className="inline-flex h-11 w-11 items-center justify-center border border-border bg-bg text-sm text-muted hover:border-accent hover:text-accent"
         >
           ✎
         </button>
@@ -146,7 +146,7 @@ export function CardActions({
           type="button"
           onClick={onRemove}
           aria-label={locale === "en" ? "Remove visual" : "Eliminar visual"}
-          className="inline-flex h-7 w-7 items-center justify-center border border-border bg-bg text-sm text-muted hover:border-accent hover:text-accent"
+          className="inline-flex h-11 w-11 items-center justify-center border border-border bg-bg text-sm text-muted hover:border-accent hover:text-accent"
         >
           ✕
         </button>

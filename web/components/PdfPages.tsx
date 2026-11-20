@@ -52,7 +52,7 @@ export default function PdfPages({ src, fallbackUrl, initialPage, locale }: Prop
           href={fallbackUrl ?? src}
           target="_blank"
           rel="noopener noreferrer"
-          className="rounded-full bg-accent px-4 py-2 text-sm text-bg"
+          className="inline-flex min-h-[44px] items-center bg-accent px-4 py-2 text-sm text-bg hover:bg-text"
         >
           {t("Abrir documento", "Open document")}
         </a>
@@ -100,7 +100,7 @@ export default function PdfPages({ src, fallbackUrl, initialPage, locale }: Prop
             type="button"
             onClick={() => setPage((p) => Math.max(1, p - 1))}
             disabled={page <= 1}
-            className="px-2 py-1 disabled:opacity-30"
+            className="inline-flex min-h-[44px] min-w-[44px] items-center justify-center border border-border bg-panel px-3 text-sm text-text hover:border-accent/50 disabled:opacity-30"
             aria-label={t("Página anterior", "Previous page")}
           >
             ‹
@@ -112,7 +112,7 @@ export default function PdfPages({ src, fallbackUrl, initialPage, locale }: Prop
             type="button"
             onClick={() => setPage((p) => Math.min(numPages, p + 1))}
             disabled={page >= numPages}
-            className="px-2 py-1 disabled:opacity-30"
+            className="inline-flex min-h-[44px] min-w-[44px] items-center justify-center border border-border bg-panel px-3 text-sm text-text hover:border-accent/50 disabled:opacity-30"
             aria-label={t("Página siguiente", "Next page")}
           >
             ›

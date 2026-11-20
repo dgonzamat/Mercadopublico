@@ -363,7 +363,7 @@ export function VisitorsPanel() {
           abrir donaciones. El % es sobre los visitantes-día del periodo. */}
       {support && (
         <div className="space-y-3 border-2 border-text bg-panel px-3 py-3">
-          <p className="font-mono text-xs uppercase tracking-widest text-muted">
+          <p className="text-sm font-semibold text-muted">
             <T es="Donaciones" en="Donations" />
           </p>
           <p className="text-sm text-text">
@@ -399,7 +399,7 @@ export function VisitorsPanel() {
       )}
 
       {/* Tabla por país */}
-      <p className="font-mono text-xs uppercase tracking-widest text-muted">
+      <p className="text-sm font-semibold text-muted">
         <T es="Por país" en="By country" />
       </p>
       <VisitorsTable rows={rows} total={total} />

@@ -1,6 +1,6 @@
 import { notFound } from "next/navigation";
 import { pageMeta, hreflangFor } from "@/lib/seo";
-import { posts, getPost } from "@/lib/posts";
+import { posts, getPost, tagLabel } from "@/lib/posts";
 import { postJsonLd, serializeJsonLd } from "@/lib/jsonld";
 import { BreadcrumbJsonLd } from "@/components/BreadcrumbJsonLd";
 import { T } from "@/components/T";
@@ -79,7 +79,7 @@ export async function PostDetailPage(
 
       <header className="space-y-4 border-b-2 border-text pb-6">
         {/* Sin fecha a la vista (decisión del dueño, 13 nov 2026); sigue en el JSON-LD. */}
-        {p.tags && p.tags.length > 0 && <Eyebrow>{p.tags.join(" · ")}</Eyebrow>}
+        {p.tags && p.tags.length > 0 && <Eyebrow>{p.tags.map((t) => tagLabel(t, locale)).join(" · ")}</Eyebrow>}
         <H1>
           <T es={p.title} en={p.title_en ?? p.title} locale={locale} />
         </H1>

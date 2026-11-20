@@ -118,6 +118,8 @@ export function CasesFilter({
   // casos que pasan los filtros, leídos del DOM (sin duplicar datos).
   const [suggest, setSuggest] = useState<Array<{ href: string; title: string; flag: string }>>([]);
   const [suggestOpen, setSuggestOpen] = useState(false);
+  // Opción resaltada con ↑/↓ (-1 = ninguna), como en SiteSearch.
+  const [activeOpt, setActiveOpt] = useState(-1);
   // Mismo motor que el buscador del header (Fuse sobre /search-index.json,
   // solo casos): tolera erratas y busca también en el resumen. Se carga al
   // enfocar la caja; mientras tanto valen las sugerencias leídas del DOM.
@@ -134,6 +136,7 @@ export function CasesFilter({
         new Fuse(data, {
           keys: [
             { name: "name", weight: 0.45 },
+            { name: "name_en", weight: 0.45 },
             { name: "subtitle", weight: 0.15 },
             { name: "subtitle_en", weight: 0.1 },
             { name: "summary", weight: 0.15 },
@@ -170,6 +173,14 @@ export function CasesFilter({
     const sync = () => {
       const h = window.location.hash.replace(/^#/, "");
       if (HYP_KEYS.has(h) || h === LEGACY_MISID) setHyp(h as HypFilter);
+      // #q=<texto>: búsqueda precargada (enlaces de país desde /cobertura).
+      else if (h.startsWith("q=")) {
+        try {
+          setQuery(decodeURIComponent(h.slice(2)));
+        } catch {
+          // hash mal codificado: se ignora.
+        }
+      }
     };
     sync();
     window.addEventListener("hashchange", sync);
@@ -283,6 +294,7 @@ export function CasesFilter({
           onChange={(e) => {
             setQuery(e.target.value);
             setSuggestOpen(true);
+            setActiveOpt(-1);
           }}
           onFocus={() => {
             setSuggestOpen(true);
@@ -290,11 +302,25 @@ export function CasesFilter({
           }}
           onBlur={() => setSuggestOpen(false)}
           onKeyDown={(e) => {
-            if (e.key === "Escape") setSuggestOpen(false);
+            if (e.key === "Escape") {
+              setSuggestOpen(false);
+              setActiveOpt(-1);
+            } else if (e.key === "ArrowDown" && shown.length > 0) {
+              e.preventDefault();
+              setSuggestOpen(true);
+              setActiveOpt((i) => (i + 1) % shown.length);
+            } else if (e.key === "ArrowUp" && shown.length > 0) {
+              e.preventDefault();
+              setActiveOpt((i) => (i <= 0 ? shown.length - 1 : i - 1));
+            } else if (e.key === "Enter" && suggestOpen && activeOpt >= 0 && shown[activeOpt]) {
+              e.preventDefault();
+              window.location.href = shown[activeOpt].href;
+            }
           }}
           role="combobox"
           aria-expanded={suggestOpen && shown.length > 0}
           aria-controls="cases-suggest"
+          aria-activedescendant={suggestOpen && activeOpt >= 0 ? `cases-suggest-${activeOpt}` : undefined}
           aria-autocomplete="list"
           placeholder={
             locale === "es" ? "Buscar caso, país, año…" : "Search case, country, year…"
@@ -328,11 +354,11 @@ export function CasesFilter({
             onMouseDown={(e) => e.preventDefault()}
             className="absolute left-0 right-0 top-full z-20 mt-1 border border-border bg-panel shadow-lg"
           >
-            {shown.map((s) => (
-              <li key={s.href} role="option" aria-selected={false}>
+            {shown.map((s, i) => (
+              <li key={s.href} id={`cases-suggest-${i}`} role="option" aria-selected={i === activeOpt}>
                 <a
                   href={s.href}
-                  className="flex min-h-[44px] items-center gap-3 border-b border-border/60 px-3 py-2 text-sm text-text last:border-b-0 hover:bg-accent/10 hover:text-accent focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-accent"
+                  className={`flex min-h-[44px] items-center gap-3 border-b border-border/60 px-3 py-2 text-sm last:border-b-0 hover:bg-accent/10 hover:text-accent ${i === activeOpt ? "bg-accent/10 text-accent" : "text-text"} focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-accent`}
                 >
                   <span aria-hidden>{s.flag}</span>
                   <span className="min-w-0">

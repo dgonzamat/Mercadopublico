@@ -28,7 +28,7 @@ import { T } from "@/components/T";
  */
 
 interface IndexEntry {
-  type: "case" | "researcher" | "post" | "pattern" | "framework" | "page";
+  type: "case" | "researcher" | "post" | "pattern" | "framework" | "entity" | "page";
   id: string;
   num: number;
   name: string;
@@ -58,6 +58,8 @@ function hrefFor(e: IndexEntry): string {
       return `/blog/${e.id}`;
     case "framework":
       return `/frameworks/#${e.id}`;
+    case "entity":
+      return `/entities/${e.id}`;
     case "page":
       return `/${e.id}`;
     default:
@@ -75,6 +77,8 @@ function badgeLabelFor(type: IndexEntry["type"]): { es: string; en: string } {
       return { es: "PATRÓN", en: "PATTERN" };
     case "framework":
       return { es: "MARCO", en: "FRAMEWORK" };
+    case "entity":
+      return { es: "ENTIDAD", en: "ENTITY" };
     case "page":
       return { es: "PÁGINA", en: "PAGE" };
     default:
