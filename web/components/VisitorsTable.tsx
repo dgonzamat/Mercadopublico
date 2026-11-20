@@ -1,5 +1,3 @@
-"use client";
-
 import { T } from "@/components/T";
 import { flagEmoji, countryName, fmtNum } from "@/lib/visitorsFormat";
 
