@@ -196,7 +196,13 @@ export function MeceDonut({ rows, N, tone = "light", locale }: { rows: DonutDatu
         <div className="pointer-events-none absolute inset-0 flex flex-col items-center justify-center px-6 text-center">
           {activeRow ? (
             <>
-              <span className="font-mono text-3xl font-semibold tabular-nums transition-colors" style={{ color: activeRow.color }}>
+              {/* Sobre fondo oscuro varios colores de clase no llegan a 3:1 (espacial
+                  2,03:1): el número va en el color del texto y el color de la
+                  clase queda en el segmento y la leyenda. */}
+              <span
+                className={`font-mono text-3xl font-semibold tabular-nums transition-colors ${dark ? txt : ""}`}
+                style={dark ? undefined : { color: activeRow.color }}
+              >
                 {shares[activeRow.key]}%
               </span>
               <span className={`mt-1 font-mono text-[10px] leading-tight ${muted}`}>

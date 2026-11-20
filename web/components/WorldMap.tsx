@@ -99,7 +99,7 @@ export default function WorldMap({
   return (
     <div className="space-y-3">
       <div className="space-y-2">
-        <span className="font-mono text-xs uppercase tracking-widest text-muted">
+        <span className="text-sm font-semibold text-muted">
           <T es="Filtrar por nivel de evidencia" en="Filter by evidence level" />
         </span>
         <div
@@ -140,7 +140,7 @@ export default function WorldMap({
       <div className="space-y-2">
         <label
           htmlFor="atlas-country"
-          className="block font-mono text-xs uppercase tracking-widest text-muted"
+          className="block text-sm font-semibold text-muted"
         >
           <T es="Filtrar por país" en="Filter by country" />
         </label>
@@ -241,7 +241,7 @@ export default function WorldMap({
       </div>
 
       {/* AT-3 · la codificación central del mapa, explicada en una línea */}
-      <p className="font-mono text-xs uppercase tracking-widest text-muted">
+      <p className="text-sm font-semibold text-muted">
         <T
           es="○ tamaño = probabilidad del caso · color = nivel de evidencia"
           en="○ size = case probability · color = evidence level"
@@ -250,7 +250,7 @@ export default function WorldMap({
 
       {country !== "all" && (
         <div className="space-y-2">
-          <span className="block font-mono text-xs uppercase tracking-widest text-muted">
+          <span className="block text-sm font-semibold text-muted">
             <T es="Actores asociados" en="Associated actors" />
           </span>
           {assocResearchers.length > 0 ? (

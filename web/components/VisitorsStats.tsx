@@ -100,7 +100,7 @@ export function VisitorsStats({ data, locale = "en" }: { data: VisitorsStatsData
       {/* Tendencia diaria */}
       {dailyTotals.length >= 2 && (
         <div className="border-2 border-text bg-panel px-3 py-3">
-          <p className="mb-2 font-mono text-xs uppercase tracking-widest text-muted">
+          <p className="mb-2 text-sm font-semibold text-muted">
             <T es="Tendencia diaria" en="Daily trend" />
           </p>
           <div
@@ -152,7 +152,7 @@ export function VisitorsStats({ data, locale = "en" }: { data: VisitorsStatsData
       {/* Desglose por continente */}
       {byContinent.length > 1 && (
         <div className="space-y-1.5">
-          <p className="font-mono text-xs uppercase tracking-widest text-muted">
+          <p className="text-sm font-semibold text-muted">
             <T es="Por continente" en="By continent" />
           </p>
           <ul className="space-y-1.5">

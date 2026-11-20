@@ -51,7 +51,13 @@ export function FuentesCategoryView({ category, page }: { category: string; page
       </header>
       <SourceList items={items} />
       {pages > 1 && (
-        <nav aria-label="Pages" className="flex flex-wrap gap-2 border-t border-border pt-6 font-mono text-sm">
+        <nav aria-label="Páginas · Pages" className="flex flex-wrap gap-2 border-t border-border pt-6 font-mono text-sm">
+          {/* /fuentes es bilingüe en una sola URL: el rótulo lleva los dos idiomas. */}
+          {page > 1 && (
+            <Link href={href(page - 1)} rel="prev" className="inline-flex min-h-[44px] items-center border border-border px-3 text-text hover:border-accent/50">
+              <T es="← Anterior" en="← Previous" />
+            </Link>
+          )}
           {Array.from({ length: pages }, (_, i) => i + 1).map((n) =>
             n === page ? (
               <span key={n} aria-current="page" className="inline-flex min-h-[44px] min-w-[44px] items-center justify-center border border-text px-3 text-text">
@@ -62,6 +68,11 @@ export function FuentesCategoryView({ category, page }: { category: string; page
                 {n}
               </Link>
             ),
+          )}
+          {page < pages && (
+            <Link href={href(page + 1)} rel="next" className="inline-flex min-h-[44px] items-center border border-border px-3 text-text hover:border-accent/50">
+              <T es="Siguiente →" en="Next →" />
+            </Link>
           )}
         </nav>
       )}

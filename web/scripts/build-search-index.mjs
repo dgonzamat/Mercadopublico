@@ -143,6 +143,30 @@ const frameworkEntries = frameworksData.map((f) => ({
   keywords: [f.name_en, f.origin].filter(Boolean).join(" "),
 }));
 
+// ── FORMAS DE ENTIDAD (nov 2026) ─────────────────────────────────────────
+// Solo las presentes (las que tienen página en /entities/[slug]): buscar
+// «nórdico» o «Grey» no llevaba a su ficha.
+const entityEntries = JSON.parse(
+  fs.readFileSync(path.join(dataDir, "entity-morphology.json"), "utf-8"),
+)
+  .filter((m) => m.present)
+  .map((m) => ({
+    type: "entity",
+    id: m.slug, // href → /entities/{slug}
+    num: 0,
+    name: m.name,
+    name_en: m.name_en,
+    subtitle: "Forma de entidad",
+    subtitle_en: "Entity form",
+    meta: "",
+    flag: "",
+    year: "",
+    year_start: 0,
+    summary: m.description,
+    summary_en: m.description_en,
+    keywords: [m.name_en, "entidad entity"].join(" "),
+  }));
+
 // ── STATIC PAGES ─────────────────────────────────────────────────────────
 const pageEntries = [
   // Las secciones principales también se buscan por su nombre (nov 2026):
@@ -300,6 +324,7 @@ const index = [
   ...researcherEntries,
   ...postEntries,
   ...frameworkEntries,
+  ...entityEntries,
   ...pageEntries,
 ];
 fs.mkdirSync(path.dirname(outFile), { recursive: true });
@@ -307,5 +332,5 @@ fs.writeFileSync(outFile, JSON.stringify(index));
 
 const sizeKb = (fs.statSync(outFile).size / 1024).toFixed(1);
 console.log(
-  `build-search-index: ${caseEntries.length} cases + ${researcherEntries.length} researchers + ${postEntries.length} posts + ${frameworkEntries.length} frameworks + ${pageEntries.length} pages → public/search-index.json (${sizeKb} KB)`,
+  `build-search-index: ${caseEntries.length} cases + ${researcherEntries.length} researchers + ${postEntries.length} posts + ${frameworkEntries.length} frameworks + ${entityEntries.length} entities + ${pageEntries.length} pages → public/search-index.json (${sizeKb} KB)`,
 );

@@ -1,5 +1,6 @@
 import { LocaleLink } from "@/components/LocaleLink";
 import { metaDescription } from "@/lib/seo";
+import { PrevNext } from "@/components/PrevNext";
 import { notFound } from "next/navigation";
 import { cases, getEntityMorphology, getResearcher } from "@/lib/data";
 import { CATEGORY_META, DOC_TIER_META, TIER_META } from "@/lib/ui";
@@ -892,41 +893,32 @@ export async function CaseDetailPage(
       )}
 
       {/* ────────── PREV / NEXT NAVIGATION (solo sucesos) ────────── */}
+      {/* Mismo componente que actores, formas, posts y entregas (nov 2026). */}
       {c.category !== "document" && (
-      <nav
-        aria-label={locale === "es" ? "Navegar por fecha" : "Browse by date"}
-        className="space-y-3 border-t border-border pt-6"
-      >
-        <p className="text-sm text-muted">
-          <T locale={locale} es="Navegar por fecha" en="Browse by date" />
-        </p>
-        <div className="grid grid-cols-2 gap-6">
-          {prev ? (
-            <LocaleLink href={`/cases/${prev.id}`} className="group flex flex-col gap-1">
-              <span className="text-xs text-muted">
-                <T locale={locale} es={`← Anterior · ${prev.year_start}`} en={`← Earlier · ${prev.year_start}`} />
-              </span>
-              <span className="text-base font-medium leading-snug text-text underline-offset-4 group-hover:text-accent group-hover:underline">
-                <T locale={locale} es={prev.name} en={prev.name_en ?? prev.name} />
-              </span>
-            </LocaleLink>
-          ) : (
-            <div aria-hidden />
-          )}
-          {next ? (
-            <LocaleLink href={`/cases/${next.id}`} className="group flex flex-col gap-1 text-right">
-              <span className="text-xs text-muted">
-                <T locale={locale} es={`Posterior · ${next.year_start} →`} en={`Later · ${next.year_start} →`} />
-              </span>
-              <span className="text-base font-medium leading-snug text-text underline-offset-4 group-hover:text-accent group-hover:underline">
-                <T locale={locale} es={next.name} en={next.name_en ?? next.name} />
-              </span>
-            </LocaleLink>
-          ) : (
-            <div aria-hidden />
-          )}
-        </div>
-      </nav>
+        <PrevNext
+          label={locale === "es" ? "Navegar por fecha" : "Browse by date"}
+          locale={locale}
+          prev={
+            prev
+              ? {
+                  href: `/cases/${prev.id}`,
+                  es: `← Anterior · ${prev.year_start}`,
+                  en: `← Earlier · ${prev.year_start}`,
+                  title: <T locale={locale} es={prev.name} en={prev.name_en ?? prev.name} />,
+                }
+              : null
+          }
+          next={
+            next
+              ? {
+                  href: `/cases/${next.id}`,
+                  es: `Posterior · ${next.year_start} →`,
+                  en: `Later · ${next.year_start} →`,
+                  title: <T locale={locale} es={next.name} en={next.name_en ?? next.name} />,
+                }
+              : null
+          }
+        />
       )}
     </article>
     </>

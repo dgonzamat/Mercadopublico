@@ -7,6 +7,7 @@ import {
   getFramework,
 } from "@/lib/data";
 import { CaseRow } from "@/components/CaseRow";
+import { LocaleLink } from "@/components/LocaleLink";
 import { Breadcrumb } from "@/components/Breadcrumb";
 import { ShareButton } from "@/components/ShareButton";
 import { PrevNext } from "@/components/PrevNext";
@@ -132,13 +133,14 @@ export async function EntityDetailPage(
         ) : (
           <div className="mt-2 flex flex-wrap gap-2">
             {origins.map((fw) => (
-              <span
+              <LocaleLink
                 key={fw.id}
-                className="inline-flex min-h-[44px] items-center border-2 border-tierB px-3 py-1.5 text-xs"
+                href={`/frameworks/#${fw.id}`}
+                className="inline-flex min-h-[44px] items-center border-2 border-tierB px-3 py-1.5 text-xs hover:bg-text hover:text-bg"
                 title={locale === "es" ? fw.one_sentence_es : fw.one_sentence_en}
               >
                 <T es={fw.name} en={fw.name_en} locale={locale} />
-              </span>
+              </LocaleLink>
             ))}
           </div>
         )}

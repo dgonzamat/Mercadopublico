@@ -1,7 +1,7 @@
 import { LocaleLink } from "@/components/LocaleLink";
 
 import { pageMeta, hreflangFor } from "@/lib/seo";
-import { posts } from "@/lib/posts";
+import { posts, tagLabel } from "@/lib/posts";
 import { cases } from "@/lib/data";
 import { T } from "@/components/T";
 import { Eyebrow, H1, Lede } from "@/lib/typography";
@@ -148,7 +148,7 @@ export function BlogView({ locale }: { locale: "es" | "en" }) {
               {/* Sin fecha a la vista (decisión del dueño, 13 nov 2026): el post se lee
                   como texto vigente, no como noticia. La fecha sigue en el RSS y el JSON-LD. */}
               {p.tags && p.tags.length > 0 && (
-                <p className="font-mono text-xs uppercase tracking-widest text-muted">{p.tags.join(" · ")}</p>
+                <p className="font-mono text-xs uppercase tracking-widest text-muted">{p.tags.map((t) => tagLabel(t, locale)).join(" · ")}</p>
               )}
               <h2 className="mt-2 font-display text-2xl font-medium leading-tight text-text group-hover:text-accent">
                 <T es={p.title} en={p.title_en ?? p.title} locale={locale} />

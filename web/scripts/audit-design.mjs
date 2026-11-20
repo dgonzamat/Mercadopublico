@@ -76,6 +76,9 @@ const PAIRS = [
   ["text", "bg"], ["text", "panel"], ["text", "surface-2"],
   ["muted", "bg"], ["muted", "panel"], ["muted", "surface-2"],
   ["accent", "bg"],
+  // Superficies oscuras y de acento (nov 2026): texto crema sobre el acento y
+  // el acento claro sobre el fondo oscuro del menú y las bandas.
+  ["bg", "accent"], ["accent-bright", "text"],
   ["tierS", "bg"], ["tierA", "bg"], ["tierB", "bg"],
 ];
 for (const [fg, bgk] of PAIRS) {
@@ -132,15 +135,42 @@ function declaredHeightPx(line) {
   for (const m of line.matchAll(/\bh-(\d+(?:\.\d+)?)\b/g)) px.push(Number(m[1]) * 4);
   return px.length ? Math.max(...px) : null; // mayor altura declarada = la del elemento
 }
+// Etiqueta de apertura completa (nov 2026): en JSX `<button` va en una línea y
+// su `className` varias líneas más abajo, así que la lectura por línea nunca
+// veía la altura (KpiCard con h-7, el paginador del PDF). Se recorre la etiqueta
+// hasta el `>` que cierra fuera de llaves, para no cortarse en un `=>`.
+const TAG_START = /<(button|a|Link|LocaleLink)\b/g;
+function openingTag(src, start) {
+  let depth = 0;
+  for (let i = start; i < src.length; i++) {
+    const ch = src[i];
+    if (ch === "{") depth++;
+    else if (ch === "}") depth--;
+    else if (ch === ">" && depth === 0) return src.slice(start, i + 1);
+  }
+  return src.slice(start);
+}
 for (const f of FILES) {
-  const lines = read(f).split("\n");
-  lines.forEach((line, i) => {
-    if (!INTERACTIVE.test(line)) return;
-    const px = declaredHeightPx(line);
-    if (px == null) return;
-    const where = `${f}:${i + 1}`;
+  const src = read(f);
+  const lines = src.split("\n");
+  const seen = new Set();
+  const report = (px, lineNo) => {
+    const where = `${f}:${lineNo}`;
+    if (seen.has(where)) return;
+    seen.add(where);
     if (px < WCAG_MIN) errors.push(`D4 touch target: ${px}px < WCAG ${WCAG_MIN}px en ${where}`);
     else if (px < RECOMMENDED) warns.push(`D4 touch target: ${px}px < recomendado ${RECOMMENDED}px en ${where}`);
+  };
+  for (const m of src.matchAll(TAG_START)) {
+    const tag = openingTag(src, m.index).replace(/\s+/g, " ");
+    const px = declaredHeightPx(tag);
+    if (px != null) report(px, src.slice(0, m.index).split("\n").length);
+  }
+  lines.forEach((line, i) => {
+    if (!INTERACTIVE.test(line) || TAG_START.test(line)) { TAG_START.lastIndex = 0; return; }
+    TAG_START.lastIndex = 0;
+    const px = declaredHeightPx(line);
+    if (px != null) report(px, i + 1);
   });
 }
 
