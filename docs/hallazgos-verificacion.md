@@ -393,7 +393,11 @@ Conteo hecho a mano a partir de los informes de los verificadores (17-18 nov 202
 | white-sands-1957 | cifra/hora | BAJA: el índice dice «DR. MENSEL'S EVALUATION» y la página impresa da la Luna «roughly half full» (estaba al 84 %) | no |
 | white-sands-1957 | léxico/voz | BAJA: muletilla «es decir» | sí |
 | white-sands-1957 | cifra/hora | BAJA: «la siguieron» por «viewed»; las estrellas visibles en el télex frente a «no stars» de Toy; Barlow la vio varias veces; el ATIC evaluó a Stokes «UNRELIABLE» | no |
-| kearney-schmidt-1957 | pendiente | Fila provisional del redactor; la sustituye el orquestador con los hallazgos del verificador | no |
+| kearney-schmidt-1957 | omisión | MEDIA: el mismo legajo trae el veredicto de engaño («The incident was adjudged a Hoax», p. 45; «obviously a "hoax"», p. 17); el classBasis solo daba la alucinación | no |
+| kearney-schmidt-1957 | omisión | MEDIA: el jefe de policía dijo ver también las marcas de las patas (télex de la OSI del 7 nov, p. 22) | no |
+| kearney-schmidt-1957 | atribución | MEDIA: fue el fiscal del condado quien dijo que la lata del maletero estaba «partly filled», no «a medio llenar» (p. 50) | no |
+| kearney-schmidt-1957 | léxico/voz | BAJA: fórmula vacía sobre la salud mental; el diagnóstico está tachado y la prensa citó a los psiquiatras | no |
+| kearney-schmidt-1957 | cifra/hora | BAJA: el rotor se cambió diez días antes según el informe y «day before» según el mensaje del ATIC | no |
 | sunchubamba-cajamarca-1957 | clasificación | ALTA: tier S → A: teodolito de una empresa privada y operador con el nombre tachado en Blue Book (precisión 6); la capa de texto de PURSUE D202 lo nombra (John F. Withrow) y apunta a la Sra. Hildebrand como testigo del 7 nov, pero solo por OCR; decisión del orquestador, conservadora | no |
 | sunchubamba-cajamarca-1957 | atribución | ALTA: la reserva sobre la dirección es del 28 oct y de las 12:51 del 29; a las 13:39 da «moving slowly to approximately 300°-310°» (BB p. 3) | no |
 | sunchubamba-cajamarca-1957 | atribución | MEDIA: «un movimiento hacia el noroeste que las tablas no muestran» no lo dice ninguna fuente, y las tablas no lo contradicen | no |
