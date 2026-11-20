@@ -104,7 +104,7 @@ web/
     posts/              # blog posts (mismo patrón que cases)
     patterns.json
     frameworks.json
-    researchers.json    # 128 actores (oct 2026; cifra viva = su .length)
+    researchers.json    # 139 actores (nov 2026; cifra viva = su .length)
   scripts/
     build-cases.mjs     # agrega data/cases/*.json → data/cases.json
     build-posts.mjs     # agrega data/posts/*.json → data/posts.json
@@ -369,5 +369,5 @@ Historia, registro y vías de reparación: [`docs/bitacora-reglas.md`](docs/bita
 
 ## Deuda pendiente · fotos de actores
 
-45/128 actores con foto (31 oct 2026). El techo es la licencia, no la búsqueda. El campo `photo` es `https://commons.wikimedia.org/wiki/Special:FilePath/<filename exacto>?width=400`, con el nombre verificado, nunca adivinado. Vías que funcionan: la ficha de la página de Wikipedia del actor (también las locales) y la búsqueda de archivos de Commons por nombre entre comillas (en HTML, no por la API). Lee siempre la descripción: los homónimos abundan y «fair use» no es libre. Barrido hecho (NO re-buscar): [`docs/registros.md`](docs/registros.md#fotos-de-actores--barrido-de-commons); historia: [`docs/bitacora-reglas.md`](docs/bitacora-reglas.md#fotos-de-actores).
+54/139 actores con foto (20 nov 2026). El techo es la licencia, no la búsqueda. El campo `photo` es `https://commons.wikimedia.org/wiki/Special:FilePath/<filename exacto>?width=400`, con el nombre verificado, nunca adivinado. Vías que funcionan: la ficha de la página de Wikipedia del actor (también las locales) y la búsqueda de archivos de Commons por nombre entre comillas (en HTML, no por la API); si la API de Commons o de Wikipedia da 429 a la sesión, la página `File:` sigue respondiendo por WebFetch (nov 2026). Lee siempre la descripción: los homónimos abundan y «fair use» no es libre. Barrido hecho (NO re-buscar): [`docs/registros.md`](docs/registros.md#fotos-de-actores--barrido-de-commons); historia: [`docs/bitacora-reglas.md`](docs/bitacora-reglas.md#fotos-de-actores).
 
