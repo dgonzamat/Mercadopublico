@@ -22,6 +22,9 @@ const soloCopias = process.argv.includes("--copias");
 const FILES = [
   "CLAUDE.md",
   ...fs.readdirSync(path.join(ROOT, ".claude/commands")).filter((f) => f.endsWith(".md")).map((f) => ".claude/commands/" + f),
+  // Reglas por ruta (nov 2026): codigo-sitio.md es el hogar de la categoría 8 y
+  // la sonda no lo leía, así que una copia allí pasaba inadvertida.
+  ...fs.readdirSync(path.join(ROOT, ".claude/rules")).filter((f) => f.endsWith(".md")).map((f) => ".claude/rules/" + f),
   ...fs.readdirSync(path.join(ROOT, "docs")).filter((f) => /^brief-.*\.md$|^hallazgos-verificacion\.md$/.test(f)).map((f) => "docs/" + f),
 ];
 const CATS = ["evidencia", "clasificacion", "escritura", "datos", "visuales", "seleccion", "proceso", "codigo", "operacion", "memoria"];

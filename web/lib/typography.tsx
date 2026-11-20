@@ -64,18 +64,6 @@ export function H2({ children, className, id }: Props) {
   );
 }
 
-// Sub-section heading. Sans, larger than body.
-export function H3({ children, className, id }: Props) {
-  return (
-    <h3
-      id={id}
-      className={cx("text-xl font-semibold leading-snug text-text", className)}
-    >
-      {children}
-    </h3>
-  );
-}
-
 // Lede — first paragraph after a headline. Larger, snug leading.
 export function Lede({ children, className }: Props) {
   return (

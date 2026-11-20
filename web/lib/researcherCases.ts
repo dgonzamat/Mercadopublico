@@ -145,6 +145,7 @@ export const RESEARCHER_CASES: Record<string, string[]> = {
   corbell: ["uss-omaha-2019", "spherical-afghanistan-2020"],
   clarke: ["rendlesham-1980", "calvine-1990", "howden-moor-1997"],
   blumenthal: ["nimitz-2004"],
+  cooper: ["aawsap-skinwalker-2008", "nimitz-2004", "roosevelt-2014"],
   gevaerd: ["varginha-1996", "colares-1977", "noite-oficial-1986"],
   maussan: ["mexico-eclipse-1991", "campeche-2004", "popocatepetl-1992", "maussan-congreso-mexico-2023"],
 

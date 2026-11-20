@@ -15,6 +15,32 @@ import type { Metadata } from "next";
  * resuelve contra `metadataBase` (definido en el layout) tanto para `canonical`
  * como para `og:url`.
  */
+/**
+ * Meta descripción que Google no corta a ciegas (auditoría SEO S2, nov 2026):
+ * 1.096 páginas usaban el resumen entero, de hasta 650 caracteres, y la SERP
+ * lo cortaba hacia los 155–160 en mitad de una palabra. Hasta `max` se deja
+ * igual; si no, se corta en el último fin de frase que deje al menos 80
+ * caracteres, o en el último espacio con «…». Solo afecta a las etiquetas
+ * meta y las tarjetas sociales, nunca al texto de la página.
+ */
+export function metaDescription(text: string, max = 155): string {
+  const t = text.replace(/\s+/g, " ").trim();
+  if (t.length <= max) return t;
+  const head = t.slice(0, max);
+  const sentence = Math.max(head.lastIndexOf(". "), head.lastIndexOf("? "), head.lastIndexOf("! "));
+  if (sentence >= 80) return head.slice(0, sentence + 1);
+  const space = head.slice(0, max - 1).lastIndexOf(" ");
+  let cut = head.slice(0, space > 0 ? space : max - 1);
+  // Ni puntuación ni una palabra vacía antes de «…» («su carro de…»).
+  for (let i = 0; i < 3; i++) {
+    cut = cut.replace(/[\s,;:—–(«"'-]+$/u, "");
+    const stripped = cut.replace(/\s(?:de|del|la|las|el|los|lo|un|una|y|o|a|al|en|con|por|para|que|su|sus|se|of|the|a|an|and|or|to|in|on|at|by|for|with|from|that|his|her|its|their)$/iu, "");
+    if (stripped === cut) break;
+    cut = stripped;
+  }
+  return `${cut}…`;
+}
+
 export function pageMeta(opts: {
   title: string;
   description: string;
@@ -22,7 +48,8 @@ export function pageMeta(opts: {
   image?: string;
   locale?: string;
 }): Metadata {
-  const { title, description, path, image = "/og.png", locale = "en_US" } = opts;
+  const { title, path, image = "/og.png", locale = "en_US" } = opts;
+  const description = metaDescription(opts.description);
   const alternateLocale = locale === "en_US" ? ["es_ES"] : ["en_US"];
   return {
     title,

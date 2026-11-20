@@ -18,7 +18,9 @@ export async function generateMetadata({ params }: { params: Promise<{ category:
   const label = CATEGORY_LABELS[category as SourceCategory];
   return pageMeta({
     title: label ? `Sources: ${label.en} (page ${page})` : "Sources",
-    description: label ? label.description_en : "Sources cited in the UAP corpus.",
+    // Cada página de la paginación con su número: si no, todas repiten la
+    // misma descripción (auditoría SEO S6, nov 2026).
+    description: label ? `${label.description_en} Page ${page}.` : "Sources cited in the UAP corpus.",
     path: `/fuentes/${category}/${page}/`,
   });
 }

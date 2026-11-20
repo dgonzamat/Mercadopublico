@@ -122,6 +122,38 @@ const patternIds = new Set(read("data/patterns.json").map((p) => p.id));
 // catálogo, no las fichas).
 const morphSlugs = new Set(read("data/entity-morphology.json").map((m) => m.slug));
 
+// Catálogos (nov 2026): se leían solo para sacar sus ids, así que un
+// `name_en` olvidado o un `readsToward` a un marco inexistente pasaba en verde.
+// Mismo contrato que lib/types.ts (Framework, Pattern, EntityMorphology).
+{
+  const VERDICTS = new Set(["neutral", "hostile", "positive", "variable"]); // VerdictMoral en lib/types.ts
+  const catalog = (file, idKey, required, optional, extra) => {
+    const seen = new Set();
+    read(file).forEach((x, i) => {
+      const w = `${file}[${i}]${x[idKey] ? ` (${x[idKey]})` : ""}`;
+      if (seen.has(x[idKey])) err(w, `${idKey} duplicado`);
+      seen.add(x[idKey]);
+      for (const k of required) if (!isStr(x[k])) err(w, `${k} obligatorio (string)`);
+      const allowed = new Set([...required, ...optional]);
+      const unknown = Object.keys(x).filter((k) => !allowed.has(k));
+      if (unknown.length) err(w, `claves no reconocidas [${unknown}]`);
+      extra?.(w, x);
+    });
+  };
+  catalog("data/frameworks.json", "id",
+    ["id", "name", "name_en", "author", "origin", "verdict_moral", "one_sentence_es", "one_sentence_en"], ["author_en"],
+    (w, x) => { if (!VERDICTS.has(x.verdict_moral)) err(w, `verdict_moral desconocido: ${JSON.stringify(x.verdict_moral)}`); });
+  catalog("data/patterns.json", "id",
+    ["id", "letter", "name", "name_en", "description", "description_en", "color"], []);
+  catalog("data/entity-morphology.json", "slug",
+    ["slug", "name", "name_en", "description", "description_en", "color"], ["present", "readsToward"],
+    (w, x) => {
+      if (typeof x.present !== "boolean") err(w, "present obligatorio (boolean)");
+      if (!isArr(x.readsToward)) err(w, "readsToward debe ser array");
+      else x.readsToward.forEach((f) => { if (!frameworkIds.has(f)) err(w, `readsToward "${f}" no existe en frameworks.json`); });
+    });
+}
+
 // ─── 2. researchers.json ─────────────────────────────────────────────────
 
 const SECTIONS = new Set(["A", "B", "C", "D", "E", "F"]);

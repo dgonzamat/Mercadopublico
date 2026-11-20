@@ -288,6 +288,9 @@ export interface Framework {
   name: string;
   name_en: string;
   author: string;
+  /** Autor con sus acotaciones en inglés («(partial)», «(taxonomy)»), cuando
+   *  difieren del español. */
+  author_en?: string;
   origin: string;
   verdict_moral: VerdictMoral;
   one_sentence_es: string;

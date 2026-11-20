@@ -17,7 +17,7 @@ export async function generateMetadata(props: {
     title: r.name,
     // `seoTitle` está en español: esta es su ruta (como /es/cases/[slug]).
     absoluteTitle: r.seoTitle,
-    description: r.seoDescription ?? r.bio_short.slice(0, 160),
+    description: r.seoDescription ?? r.bio_short,
     enPath: `/researchers/${r.id}/`,
   });
 }
