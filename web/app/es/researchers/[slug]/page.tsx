@@ -15,6 +15,8 @@ export async function generateMetadata(props: {
   if (!r) return { title: "No encontrado" };
   return esMeta({
     title: r.name,
+    // `seoTitle` está en español: esta es su ruta (como /es/cases/[slug]).
+    absoluteTitle: r.seoTitle,
     description: r.seoDescription ?? r.bio_short.slice(0, 160),
     enPath: `/researchers/${r.id}/`,
   });

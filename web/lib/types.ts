@@ -43,6 +43,8 @@ export interface CaseSource {
 export interface CaseDocument {
   url: string;
   alt: string;
+  /** Texto alternativo en inglés (tarjeta social de la ruta inglesa). */
+  alt_en?: string;
   caption: string;
   caption_en?: string;
   source: string;
