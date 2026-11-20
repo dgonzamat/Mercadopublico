@@ -118,7 +118,7 @@ export function MeceDonut({ rows, N, tone = "light", locale }: { rows: DonutDatu
           viewBox={`0 0 ${size} ${size}`}
           className="donut-in h-60 w-60 overflow-visible"
           role="img"
-          aria-label={rows.map((rw) => `${rw.label} ${shares[rw.key]}%`).join(", ")}
+          aria-label={rows.map((rw) => `${locale === "es" ? rw.label : rw.labelEn} ${shares[rw.key]}%`).join(", ")}
         >
           <defs>
             {/* Lift sutil para el segmento activo (profundidad, no glow chillón) */}
@@ -150,7 +150,7 @@ export function MeceDonut({ rows, N, tone = "light", locale }: { rows: DonutDatu
                   dim={dim}
                   dasharray={dasharray}
                   dashoffset={dashoffset}
-                  title={`${row.label}: ${shares[row.key]}%`}
+                  title={`${locale === "es" ? row.label : row.labelEn}: ${shares[row.key]}%`}
                   onActivate={() => setActive(row.key)}
                   onDeactivate={clear}
                 />

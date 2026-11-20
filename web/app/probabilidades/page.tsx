@@ -174,7 +174,7 @@ export function ProbabilidadesView({ locale }: { locale: "es" | "en" }) {
           <T es="Lo que queda sin explicación ordinaria, década a década" en="What lacks an ordinary explanation, decade by decade" locale={locale} />
         </H2>
         <div className="mt-6 rounded-sm border border-border bg-panel p-5">
-          <HeterogeneityByDecade />
+          <HeterogeneityByDecade locale={locale} />
         </div>
       </section>
 
