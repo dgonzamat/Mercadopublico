@@ -385,6 +385,7 @@ Conteo hecho a mano a partir de los informes de los verificadores (17-18 nov 202
 | abingdon-1957 | cifra/hora | BAJA: la tarjeta dice «Often considerable traffic», no «mucho tráfico» | no |
 | abingdon-1957 | cifra/hora | BAJA: la nota de la p. 2 dice «Airline/airports» | no |
 | white-sands-1957 | pendiente | Fila provisional del redactor; la sustituye el orquestador con los hallazgos del verificador | no |
+| kearney-schmidt-1957 | pendiente | Fila provisional del redactor; la sustituye el orquestador con los hallazgos del verificador | no |
 | aawsap-skinwalker-2008 | cifra/hora | ALTA (documentos de la entrega 08): D188 no da por positivas «todas las reseñas de los 26»: solo se reseñaron 13 (p. 1, «highlighted… are the ones that were reviewed») | no |
 | aawsap-skinwalker-2008 | atribución | MEDIA: D185 no es una respuesta de la DIA a Reid, sino un dictamen para la oficina de Programas Especiales del subsecretario de Inteligencia | no |
 | aawsap-skinwalker-2008 | atribución | MEDIA: en la carta de Reid (D183), la «protección extraordinaria» la requerirían los avances futuros, no los hallazgos | no |
