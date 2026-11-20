@@ -363,6 +363,8 @@ Conteo hecho a mano a partir de los informes de los verificadores (17-18 nov 202
 | la-jolla-1949 | omisión | BAJA: el cuestionario de Glendale lleva la anotación «A/C» y el de La Jolla no | no |
 | la-jolla-1949 | cifra/hora | BAJA: la descripción del documento enumeraba 16 de las 17 páginas | no |
 | la-jolla-1949 | lectura | ES 7/10 (lector ciego). Corregido: referente ambiguo de la evaluación, cadena de llamadas, 11.º Distrito Naval y 18.º Distrito de la OSI sin situar, números 372 y 372A, «las dos copias» sin presentar. Sin tocar: repeticiones; contradicciones de la fuente ya declaradas | no |
+| palos-verdes-1965 | pendiente | Fila provisional del redactor; la sustituye el orquestador con los hallazgos del verificador | no |
+| abingdon-1957 | pendiente | Fila provisional del redactor; la sustituye el orquestador con los hallazgos del verificador | no |
 
 **Lectura (18 nov 2026, tras la sexta ficha):** de 42 filas, `caso:check` habría marcado 4 (ninguna de Puddy; sus avisos eran falsos positivos) y 2 más con la regla ampliada. Las categorías **atribución, omisión, cifra/hora y ausencia** aparecieron en las cinco últimas fichas (Moody a Puddy): el paso 0.5 y el autochequeo **no las redujeron**. El léxico (3 de 5) sí era mecánico y pasó a E62. Puddy es una ficha más difícil que las anteriores (tres episodios, manuscritos de la RAAF, tres versiones de los investigadores), así que no es un experimento limpio: la comparación solo valdrá con tres fichas más.
 
@@ -385,3 +387,13 @@ Regla: solo cambia lo que se repite en al menos 3 de las 10 fichas. Notas de los
 ## Deuda detectada por el PoC (sin tocar)
 
 `npm run caso:check -- --all` sobre el corpus de 433 fichas (18 nov 2026): léxico de España en 58 pares ficha-palabra (`coche` en 42, `rueda de prensa` en 10, `móviles` en 4, `aparcado` en 2); medido de nuevo por apariciones fuera de comillas son 128 en 50 fichas, y `móvil` da falsos positivos («piezas móviles», «blancos móviles» de un radar), afirmaciones de ausencia en 262 frases, párrafos de 880 a 900 caracteres en 70 y cifras de tres o más dígitos que no coinciden entre ES y EN en 107. Los números de ausencia y de cifras incluyen mucho ruido (frases que cuentan lo que dice una fuente): no son deuda hasta revisarlos. El léxico sí es deuda real, porque la guía `/redaccion` lo prohíbe.
+| aawsap-skinwalker-2008 | cifra/hora | ALTA (documentos de la entrega 08): D188 no da por positivas «todas las reseñas de los 26»: solo se reseñaron 13 (p. 1, «highlighted… are the ones that were reviewed») | no |
+| aawsap-skinwalker-2008 | atribución | MEDIA: D185 no es una respuesta de la DIA a Reid, sino un dictamen para la oficina de Programas Especiales del subsecretario de Inteligencia | no |
+| aawsap-skinwalker-2008 | atribución | MEDIA: en la carta de Reid (D183), la «protección extraordinaria» la requerirían los avances futuros, no los hallazgos | no |
+| aawsap-skinwalker-2008 | ausencia | MEDIA: «la diferencia no cambió el resultado» no lo dice ninguna fuente; se quita | no |
+| aawsap-skinwalker-2008 | cifra/hora | MEDIA (perfil reid): el dinero llegó en la ley suplementaria del año fiscal 2008 a propuesta de Reid e Inouye (D186), no en 2007 con Stevens | no |
+| washington-dc-1952 | omisión | MEDIA: la descripción de D026 omitía que Tauss veía probable que también los menos de 100 sin explicar se explicaran con información completa | no |
+| aawsap-skinwalker-2008 | atribución | BAJA: tres matices de D186 y D188 (Burgess «sugirió», D188 sin firma y «apparently», nada marca D186 como «final») | no |
+| ube-f86d-1956 | cifra/hora | BAJA: D198 escribe «ZZONJAIN (Phonetic)» y el vacío se forma en parte de la superficie | no |
+| detroit-dome-object-1958 | atribución | BAJA: en D197 el Mando de Defensa Aérea es el origen, no el destinatario; la regla de testimonio único no está en el documento | no |
+| tremonton-film-1952 | cifra/hora | BAJA: D025 sí lleva «1952» escrito a mano en las pp. 1 y 11 | no |
