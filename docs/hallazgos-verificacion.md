@@ -386,6 +386,12 @@ Conteo hecho a mano a partir de los informes de los verificadores (17-18 nov 202
 | abingdon-1957 | cifra/hora | BAJA: la tarjeta dice «Often considerable traffic», no «mucho tráfico» | no |
 | abingdon-1957 | cifra/hora | BAJA: la nota de la p. 2 dice «Airline/airports» | no |
 | abingdon-1957 | lectura | EN 6/10 (lector ciego). Corregido: rumbo, recuento de testigos de la casa de Cooms, testigo tachado, 17:30 frente a 17:35, la comprobación imposible del Sputnik 1. Sin tocar: duraciones de la fuente, siglas y repeticiones | no |
+| abingdon-1957 | atribución | MEDIA (cotejo con D204): la ficha decía que cada testigo dibujó su croquis; el informe solo dice «was discribed and illustrated as follows» (p. 9) | no |
+| abingdon-1957 | omisión | MEDIA (Blue Book): la tabla del analista pone «NE» junto a Booth, contra su entrevista (noroeste), y resume «N-NE» | no |
+| abingdon-1957 | omisión | MEDIA (Blue Book): faltaba la nota a lápiz junto al rumbo de Cooms, que parece decir «Disappeared to the N, E…» | no |
+| abingdon-1957 | proceso | MEDIA: el classBasis apoyaba el rumbo de Mast en un cálculo propio cuando el informe dice «which would be a Northerly direction» (p. 8) | no |
+| abingdon-1957 | atribución | BAJA: las alturas de 6.000 y 12.000 m no decían que salen de la hora y la posición | no |
+| abingdon-1957 | lectura | BAJA: la descripción del visor de Blue Book situaba las notas «Dusk» y «Clues» junto a Cooms; están junto a Booth | no |
 | white-sands-1957 | atribución | ALTA: el mensaje del ATIC del 10 nov no propone la Luna para la segunda patrulla: repite por teléfono los datos del escuadrón con las patrullas numeradas al revés (pp. 19 y 30); y los soldados vieron la Luna a la vez que la luz (p. 6) | no |
 | white-sands-1957 | clasificación | ALTA: segundo paso con otro agente: la Luna cubre solo la primera luz; la segunda queda sin propuesta (Venus refutada) y su masa va a lo ordinario por tasa base: mundano 0,68, indet 0,21, probability 25 | no |
 | white-sands-1957 | atribución | MEDIA: Barlow miraba hacia la zona de impacto oeste, que no contradice a Venus; la refutación es por la hora | no |
