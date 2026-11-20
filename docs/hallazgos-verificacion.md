@@ -363,6 +363,75 @@ Conteo hecho a mano a partir de los informes de los verificadores (17-18 nov 202
 | la-jolla-1949 | omisión | BAJA: el cuestionario de Glendale lleva la anotación «A/C» y el de La Jolla no | no |
 | la-jolla-1949 | cifra/hora | BAJA: la descripción del documento enumeraba 16 de las 17 páginas | no |
 | la-jolla-1949 | lectura | ES 7/10 (lector ciego). Corregido: referente ambiguo de la evaluación, cadena de llamadas, 11.º Distrito Naval y 18.º Distrito de la OSI sin situar, números 372 y 372A, «las dos copias» sin presentar. Sin tocar: repeticiones; contradicciones de la fuente ya declaradas | no |
+| palos-verdes-1965 | ausencia | MEDIA: «nadie anotó hacia dónde miraban»: los tres papeles de la época sitúan el objeto sobre Catalina (D208 pp. 1, 4, 5); solo falta el azimut numérico | no |
+| palos-verdes-1965 | clasificación | MEDIA: el registro refuta Marte (Catalina a 173–213°, Marte a 246–248° y 15–17° de altura a la hora de los partes; la nota de 260° corresponde a la hora errónea de la tarjeta; dos objetos). Segundo paso con otro agente: pasa a sin_propuesta, mundano 0,58 e indet 0,35 | no |
+| palos-verdes-1965 | omisión | MEDIA: el chico contestó que no podía estimar la velocidad y que la cabeza de un fósforo tapaba «The whole object» (pp. 9-10) | no |
+| palos-verdes-1965 | cifra/hora | BAJA: la línea del saludo de la carta de Quintanilla está tachada, no ausente | no |
+| palos-verdes-1965 | atribución | BAJA: «se consultó a un hombre» está en pasiva; no dice quién llamó ni cómo | no |
+| palos-verdes-1965 | cifra/hora | BAJA: el literal es «Traviling back and forth» | no |
+| palos-verdes-1965 | lectura | BAJA: el resumen hablaba de «la nota» y de «esa hora» sin presentarlas | no |
+| palos-verdes-1965 | cifra/hora | BAJA: posición de la nota mecanografiada en la tarjeta | no |
+| palos-verdes-1965 | atribución | BAJA: el extracto lo remite la oficina administrativa a nombre del teniente Ruane | no |
+| palos-verdes-1965 | atribución | BAJA: el parte dice «round object, red, white and blue flashing lights», no «luz redonda» | no |
+| palos-verdes-1965 | léxico/voz | BAJA: el título no decía lo mismo en ES y EN | no |
+| palos-verdes-1965 | cifra/hora | BAJA: la tarjeta dice «Civilians», no «fuente civil» | no |
+| palos-verdes-1965 | lectura | ES 6/10 (lector ciego). Corregido: la tarjeta en el resumen sin presentar, cuentas de husos horarios, el hombre consultado sin presentar, la nota del formulario sin situar, referente de «la nota», recuento de páginas. Sin tocar: repeticiones; contradicciones de la fuente ya declaradas | no |
+| abingdon-1957 | omisión | MEDIA: la nota del analista junto a los croquis tiene una palabra añadida encima de «Definitely same object» que parece «not»; la ficha citaba solo «all 3 diff». El verificador lo leyó «not» con seguridad y el redactor no: van las dos cosas | no |
+| abingdon-1957 | cifra/hora | MEDIA: el avión iluminado por el sol a más de 6.000 m solo vale para las 17:35; cinco minutos después hacían falta unos 12.000 m | no |
+| abingdon-1957 | atribución | MEDIA: Cooms no negó que el objeto fuera una estela: dijo que su cola no se parecía a una (p. 6) | no |
+| abingdon-1957 | omisión | BAJA: Cooms no dio rumbo y el analista lo anotó al margen | no |
+| abingdon-1957 | omisión | BAJA: la forma de rombo de Mast está también en el texto mecanografiado (p. 8) | no |
+| abingdon-1957 | omisión | BAJA: Booth sacó a su esposa y, con probabilidad, a un hijo (p. 6); a evidence | no |
+| abingdon-1957 | omisión | BAJA: Booth dice que el objeto «seemed to maintain its position» mientras bajaba | no |
+| abingdon-1957 | cifra/hora | BAJA: la tarjeta dice «Often considerable traffic», no «mucho tráfico» | no |
+| abingdon-1957 | cifra/hora | BAJA: la nota de la p. 2 dice «Airline/airports» | no |
+| abingdon-1957 | lectura | EN 6/10 (lector ciego). Corregido: rumbo, recuento de testigos de la casa de Cooms, testigo tachado, 17:30 frente a 17:35, la comprobación imposible del Sputnik 1. Sin tocar: duraciones de la fuente, siglas y repeticiones | no |
+| white-sands-1957 | atribución | ALTA: el mensaje del ATIC del 10 nov no propone la Luna para la segunda patrulla: repite por teléfono los datos del escuadrón con las patrullas numeradas al revés (pp. 19 y 30); y los soldados vieron la Luna a la vez que la luz (p. 6) | no |
+| white-sands-1957 | clasificación | ALTA: segundo paso con otro agente: la Luna cubre solo la primera luz; la segunda queda sin propuesta (Venus refutada) y su masa va a lo ordinario por tasa base: mundano 0,68, indet 0,21, probability 25 | no |
+| white-sands-1957 | atribución | MEDIA: Barlow miraba hacia la zona de impacto oeste, que no contradice a Venus; la refutación es por la hora | no |
+| white-sands-1957 | atribución | MEDIA: los datos de Venus y de la puesta de la Luna salen de registros meteorológicos, no de LaPaz (p. 8) | no |
+| white-sands-1957 | omisión | MEDIA: ningún testigo da la dirección de la primera luz; el «west» de la tarjeta sale del azimut de la Luna, así que usarlo como corroboración es circular | no |
+| white-sands-1957 | omisión | MEDIA: la luz de la segunda patrulla «appeared blurred and fuzzy» (pp. 6, 14) | no |
+| white-sands-1957 | cifra/hora | BAJA: el índice dice «DR. MENSEL'S EVALUATION» y la página impresa da la Luna «roughly half full» (estaba al 84 %) | no |
+| white-sands-1957 | léxico/voz | BAJA: muletilla «es decir» | sí |
+| white-sands-1957 | cifra/hora | BAJA: «la siguieron» por «viewed»; las estrellas visibles en el télex frente a «no stars» de Toy; Barlow la vio varias veces; el ATIC evaluó a Stokes «UNRELIABLE» | no |
+| white-sands-1957 | lectura | ES 6/10 (lector ciego). Corregido: «hacia la puerta sur», «esa misma noche» para la patrulla de la tarde, el párrafo del ATIC, el relato «idéntico» frente a declaraciones juradas distintas, Sirio. Sin tocar: códigos de archivo y repeticiones | no |
+| kearney-schmidt-1957 | omisión | MEDIA: el mismo legajo trae el veredicto de engaño («The incident was adjudged a Hoax», p. 45; «obviously a "hoax"», p. 17); el classBasis solo daba la alucinación | no |
+| kearney-schmidt-1957 | omisión | MEDIA: el jefe de policía dijo ver también las marcas de las patas (télex de la OSI del 7 nov, p. 22) | no |
+| kearney-schmidt-1957 | atribución | MEDIA: fue el fiscal del condado quien dijo que la lata del maletero estaba «partly filled», no «a medio llenar» (p. 50) | no |
+| kearney-schmidt-1957 | léxico/voz | BAJA: fórmula vacía sobre la salud mental; el diagnóstico está tachado y la prensa citó a los psiquiatras | no |
+| kearney-schmidt-1957 | cifra/hora | BAJA: el rotor se cambió diez días antes según el informe y «day before» según el mensaje del ATIC | no |
+| kearney-schmidt-1957 | lectura | EN 8/10 (lector ciego). Corregido: medidas del casco, recuento de motivos, el verbo borroso, dirección del argumento, la lata «partly full». Sin tocar: la condena sin fecha (ya declarada) y repeticiones | no |
+| sunchubamba-cajamarca-1957 | clasificación | ALTA: tier S → A: teodolito de una empresa privada y operador con el nombre tachado en Blue Book (precisión 6); la capa de texto de PURSUE D202 lo nombra (John F. Withrow) y apunta a la Sra. Hildebrand como testigo del 7 nov, pero solo por OCR; decisión del orquestador, conservadora | no |
+| sunchubamba-cajamarca-1957 | atribución | ALTA: la reserva sobre la dirección es del 28 oct y de las 12:51 del 29; a las 13:39 da «moving slowly to approximately 300°-310°» (BB p. 3) | no |
+| sunchubamba-cajamarca-1957 | atribución | MEDIA: «un movimiento hacia el noroeste que las tablas no muestran» no lo dice ninguna fuente, y las tablas no lo contradicen | no |
+| sunchubamba-cajamarca-1957 | atribución | MEDIA: el 28 oct ya usó el teodolito Zeiss; «esta vez» sugería otro instrumento | no |
+| sunchubamba-cajamarca-1957 | cifra/hora | MEDIA: a las 17:39 GMT la Luna estaba unos 3° más baja de lo medido; la conversión UTC−5 se sostiene | no |
+| sunchubamba-cajamarca-1957 | cifra/hora | BAJA: Venus se ponía algo más de tres horas después del Sol, no tres y media | no |
+| sunchubamba-cajamarca-1957 | cifra/hora | BAJA: las coordenadas sitúan el observatorio a unos 34 km de Cajamarca, no a 35 millas | no |
+| sunchubamba-cajamarca-1957 | cifra/hora | BAJA: el telegrama de Andahuaylas es del 29 oct y el expediente trae solo la primera hoja del IR-350-57 | no |
+| sunchubamba-cajamarca-1957 | atribución | BAJA: «durante nuestra estancia», sin decir cuántos días | no |
+| sunchubamba-cajamarca-1957 | omisión | MEDIA: la ficha decía que no se podía saber si el observador era Schnell; la capa de texto de la copia de PURSUE lo nombra (Withrow): se dice, con la reserva de que no se cotejó sobre la imagen | no |
+| sunchubamba-cajamarca-1957 | lectura | ES 7,5/10 (lector ciego). Corregido: frase del 28 oct, frase de la Luna y la hora GMT, «minuto a minuto» frente a 48 + 10 lecturas, jerga «capa de texto», el día equivocado del memorando. Sin tocar: códigos y repeticiones | no |
+| aawsap-skinwalker-2008 | cifra/hora | ALTA (documentos de la entrega 08): D188 no da por positivas «todas las reseñas de los 26»: solo se reseñaron 13 (p. 1, «highlighted… are the ones that were reviewed») | no |
+| aawsap-skinwalker-2008 | atribución | MEDIA: D185 no es una respuesta de la DIA a Reid, sino un dictamen para la oficina de Programas Especiales del subsecretario de Inteligencia | no |
+| aawsap-skinwalker-2008 | atribución | MEDIA: en la carta de Reid (D183), la «protección extraordinaria» la requerirían los avances futuros, no los hallazgos | no |
+| aawsap-skinwalker-2008 | ausencia | MEDIA: «la diferencia no cambió el resultado» no lo dice ninguna fuente; se quita | no |
+| aawsap-skinwalker-2008 | cifra/hora | MEDIA (perfil reid): el dinero llegó en la ley suplementaria del año fiscal 2008 a propuesta de Reid e Inouye (D186), no en 2007 con Stevens | no |
+| washington-dc-1952 | omisión | MEDIA: la descripción de D026 omitía que Tauss veía probable que también los menos de 100 sin explicar se explicaran con información completa | no |
+| aawsap-skinwalker-2008 | atribución | BAJA: tres matices de D186 y D188 (Burgess «sugirió», D188 sin firma y «apparently», nada marca D186 como «final») | no |
+| ube-f86d-1956 | cifra/hora | BAJA: D198 escribe «ZZONJAIN (Phonetic)» y el vacío se forma en parte de la superficie | no |
+| detroit-dome-object-1958 | atribución | BAJA: en D197 el Mando de Defensa Aérea es el origen, no el destinatario; la regla de testimonio único no está en el documento | no |
+| tremonton-film-1952 | cifra/hora | BAJA: D025 sí lleva «1952» escrito a mano en las pp. 1 y 11 | no |
+| levelland-1957 | atribución | ALTA (documento D191 de la entrega 08): el informe de campo no deja el caso sin causa: baraja cuatro causas convencionales (fuego de San Telmo, rayo en bola con nubes nimbo, gas quemado reflejado, combinación) y lo remite «unresolved» por falta de conocimiento de esos fenómenos (p. 19); el caso del sargento va «as a possible explanation» | no |
+| levelland-1957 | cifra/hora | MEDIA: el sargento da 02/2335 en el formulario y 2350–2355 en su declaración, con relámpagos cerca de Anton (pp. 11-12) | no |
+| levelland-1957 | atribución | MEDIA: la Parte Tres vio «just a streak of light one time», no una luz oval que iluminó el pavimento; el verificador la identifica con el sheriff Clem por inferencia, y no se publica | no |
+| levelland-1957 | omisión | MEDIA: los otros testigos de la prensa no se encontraron (p. 17); el investigador entrevistó a seis | no |
+| levelland-1957 | cifra/hora | MEDIA: del 4 al 6 nov es la fecha de recogida de la cabecera, no la duración de la investigación | no |
+| levelland-1957 | omisión | MEDIA: Saucedo se dijo barbero y al principio lo tomó por un rayo; motivos del «cannot be relied upon» (p. 19) | no |
+| levelland-1957 | omisión | BAJA: Underwood (profesor de Matemáticas y Astronomía) admitió que un rayo podía parar un auto; los globos «not likely to be in the area»; cielo cubierto e inversión | no |
+| levelland-1957 | cifra/hora | BAJA: seis relatos y cinco declaraciones firmadas | no |
+| levelland-1957 | omisión | MEDIA: la prosa no decía que el informe final de la unidad remitió el caso sin resolver tras barajar causas convencionales; añadido al párrafo de Barth | no |
 
 **Lectura (18 nov 2026, tras la sexta ficha):** de 42 filas, `caso:check` habría marcado 4 (ninguna de Puddy; sus avisos eran falsos positivos) y 2 más con la regla ampliada. Las categorías **atribución, omisión, cifra/hora y ausencia** aparecieron en las cinco últimas fichas (Moody a Puddy): el paso 0.5 y el autochequeo **no las redujeron**. El léxico (3 de 5) sí era mecánico y pasó a E62. Puddy es una ficha más difícil que las anteriores (tres episodios, manuscritos de la RAAF, tres versiones de los investigadores), así que no es un experimento limpio: la comparación solo valdrá con tres fichas más.
 
