@@ -394,7 +394,16 @@ Conteo hecho a mano a partir de los informes de los verificadores (17-18 nov 202
 | white-sands-1957 | léxico/voz | BAJA: muletilla «es decir» | sí |
 | white-sands-1957 | cifra/hora | BAJA: «la siguieron» por «viewed»; las estrellas visibles en el télex frente a «no stars» de Toy; Barlow la vio varias veces; el ATIC evaluó a Stokes «UNRELIABLE» | no |
 | kearney-schmidt-1957 | pendiente | Fila provisional del redactor; la sustituye el orquestador con los hallazgos del verificador | no |
-| sunchubamba-cajamarca-1957 | pendiente | Fila provisional del redactor; la sustituye el orquestador con los hallazgos del verificador | no |
+| sunchubamba-cajamarca-1957 | clasificación | ALTA: tier S → A: teodolito de una empresa privada y operador con el nombre tachado en Blue Book (precisión 6); la capa de texto de PURSUE D202 lo nombra (John F. Withrow) y apunta a la Sra. Hildebrand como testigo del 7 nov, pero solo por OCR; decisión del orquestador, conservadora | no |
+| sunchubamba-cajamarca-1957 | atribución | ALTA: la reserva sobre la dirección es del 28 oct y de las 12:51 del 29; a las 13:39 da «moving slowly to approximately 300°-310°» (BB p. 3) | no |
+| sunchubamba-cajamarca-1957 | atribución | MEDIA: «un movimiento hacia el noroeste que las tablas no muestran» no lo dice ninguna fuente, y las tablas no lo contradicen | no |
+| sunchubamba-cajamarca-1957 | atribución | MEDIA: el 28 oct ya usó el teodolito Zeiss; «esta vez» sugería otro instrumento | no |
+| sunchubamba-cajamarca-1957 | cifra/hora | MEDIA: a las 17:39 GMT la Luna estaba unos 3° más baja de lo medido; la conversión UTC−5 se sostiene | no |
+| sunchubamba-cajamarca-1957 | cifra/hora | BAJA: Venus se ponía algo más de tres horas después del Sol, no tres y media | no |
+| sunchubamba-cajamarca-1957 | cifra/hora | BAJA: las coordenadas sitúan el observatorio a unos 34 km de Cajamarca, no a 35 millas | no |
+| sunchubamba-cajamarca-1957 | cifra/hora | BAJA: el telegrama de Andahuaylas es del 29 oct y el expediente trae solo la primera hoja del IR-350-57 | no |
+| sunchubamba-cajamarca-1957 | atribución | BAJA: «durante nuestra estancia», sin decir cuántos días | no |
+| sunchubamba-cajamarca-1957 | omisión | MEDIA: la ficha decía que no se podía saber si el observador era Schnell; la capa de texto de la copia de PURSUE lo nombra (Withrow): se dice, con la reserva de que no se cotejó sobre la imagen | no |
 | aawsap-skinwalker-2008 | cifra/hora | ALTA (documentos de la entrega 08): D188 no da por positivas «todas las reseñas de los 26»: solo se reseñaron 13 (p. 1, «highlighted… are the ones that were reviewed») | no |
 | aawsap-skinwalker-2008 | atribución | MEDIA: D185 no es una respuesta de la DIA a Reid, sino un dictamen para la oficina de Programas Especiales del subsecretario de Inteligencia | no |
 | aawsap-skinwalker-2008 | atribución | MEDIA: en la carta de Reid (D183), la «protección extraordinaria» la requerirían los avances futuros, no los hallazgos | no |
