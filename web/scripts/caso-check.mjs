@@ -69,6 +69,24 @@ const splitSentences = (t) => (t || "").split(/\n\n/).flatMap((p) => p.split(/(?
 
 const strip = (t) => (t || "").replace(/«[^»]*»|"[^"]*"|\[\[[^\]]*\]\]/g, "«…»");
 
+// 5. Párrafos cargados de datos técnicos (grados, horas GMT, rumbos compuestos,
+//    números de informe o catálogo, cálculos). En las tandas 557–565 (nov 2026) los
+//    lectores se perdieron sobre todo en esos párrafos, y pedir en el encargo que el
+//    detalle fuera a `evidence` no bastó. Umbral calibrado con los borradores de esas
+//    nueve fichas: 3 datos por párrafo marcó 10 párrafos, 8 de ellos señalados por un
+//    lector. Lo citado entre comillas no cuenta.
+const TECNICOS = [
+  /\b\d+(?:[.,]\d+)?\s*(?:°|grados?\b|degrees?\b)/gi,
+  /\b\d{1,2}[:.]\d{2}\s*(?:GMT|UTC)\b|\b\d{2}\/?\d{4}Z\b|\bhora de Greenwich|Greenwich time/gi,
+  /\b(?:acimut|azimut|azimuth|cénit|zenith|efemérides|ephemer\w*|magnitud|magnitude|elevación|elevation)\b/gi,
+  /\b(?:IR|AF IN|AFL|ATIC|AFCIN|FTD)[- ]?\d[\w-]*/g,
+  /\b\d{4}-\d{2,3}[A-Z]{1,2}\b|n[uú]mero de cat[aá]logo|catalog number/gi,
+  /\b\d[\d.,]*\s*(?:pies|feet|ft|nudos|knots|millas náuticas|nautical miles)\b/gi,
+  /\b(?:un|el mismo|según un|del) cálculo\b|\b(?:a|the same) calculation\b|\bworking out where\b/gi,
+  /\b(?:nor|sur)-(?:nordeste|noroeste|sureste|suroeste|este|oeste)\b|\b(?:north|south)-(?:northeast|northwest|southeast|southwest|east|west)\b|\bhorizonte\b|\bhorizon\b/gi,
+];
+const MAX_TECNICOS = 3;
+
 const maxRemote = (() => {
   const files = sh("git ls-tree -r origin/main --name-only").split("\n").filter((f) => /^web\/data\/cases\/.*\.json$/.test(f));
   if (!files.length) return null;
@@ -111,6 +129,17 @@ for (const id of targets) {
   for (const [k, t] of [["whatHappened", c.whatHappened], ["whyMatters", c.whyMatters], ["whatHappened_en", c.whatHappened_en], ["whyMatters_en", c.whyMatters_en]]) {
     const long = (t || "").split("\n\n").filter((p) => p.length > MAX_PARA).length;
     if (long) { out.push(["WARN", "párrafo", `${k}: ${long} párrafo(s) de más de ${MAX_PARA} caracteres`]); bump("párrafo"); }
+  }
+
+  // WARN: párrafos cargados de datos técnicos
+  for (const [k, t] of [["whatHappened", c.whatHappened], ["whyMatters", c.whyMatters], ["whatHappened_en", c.whatHappened_en], ["whyMatters_en", c.whyMatters_en]]) {
+    (t || "").split("\n\n").forEach((p, i) => {
+      const hits = TECNICOS.flatMap((r) => strip(p).match(r) || []);
+      if (hits.length >= MAX_TECNICOS) {
+        out.push(["WARN", "tecnicismo", `${k} §${i + 1}: ${hits.length} datos técnicos (${[...new Set(hits)].slice(0, 5).join(", ")}). ¿Cabe la conclusión en una frase y el detalle en evidence?`]);
+        bump("tecnicismo");
+      }
+    });
   }
 
   // WARN: frases largas o con cadenas de punto y coma
