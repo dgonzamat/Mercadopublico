@@ -384,7 +384,15 @@ Conteo hecho a mano a partir de los informes de los verificadores (17-18 nov 202
 | abingdon-1957 | omisión | BAJA: Booth dice que el objeto «seemed to maintain its position» mientras bajaba | no |
 | abingdon-1957 | cifra/hora | BAJA: la tarjeta dice «Often considerable traffic», no «mucho tráfico» | no |
 | abingdon-1957 | cifra/hora | BAJA: la nota de la p. 2 dice «Airline/airports» | no |
-| white-sands-1957 | pendiente | Fila provisional del redactor; la sustituye el orquestador con los hallazgos del verificador | no |
+| white-sands-1957 | atribución | ALTA: el mensaje del ATIC del 10 nov no propone la Luna para la segunda patrulla: repite por teléfono los datos del escuadrón con las patrullas numeradas al revés (pp. 19 y 30); y los soldados vieron la Luna a la vez que la luz (p. 6) | no |
+| white-sands-1957 | clasificación | ALTA: segundo paso con otro agente: la Luna cubre solo la primera luz; la segunda queda sin propuesta (Venus refutada) y su masa va a lo ordinario por tasa base: mundano 0,68, indet 0,21, probability 25 | no |
+| white-sands-1957 | atribución | MEDIA: Barlow miraba hacia la zona de impacto oeste, que no contradice a Venus; la refutación es por la hora | no |
+| white-sands-1957 | atribución | MEDIA: los datos de Venus y de la puesta de la Luna salen de registros meteorológicos, no de LaPaz (p. 8) | no |
+| white-sands-1957 | omisión | MEDIA: ningún testigo da la dirección de la primera luz; el «west» de la tarjeta sale del azimut de la Luna, así que usarlo como corroboración es circular | no |
+| white-sands-1957 | omisión | MEDIA: la luz de la segunda patrulla «appeared blurred and fuzzy» (pp. 6, 14) | no |
+| white-sands-1957 | cifra/hora | BAJA: el índice dice «DR. MENSEL'S EVALUATION» y la página impresa da la Luna «roughly half full» (estaba al 84 %) | no |
+| white-sands-1957 | léxico/voz | BAJA: muletilla «es decir» | sí |
+| white-sands-1957 | cifra/hora | BAJA: «la siguieron» por «viewed»; las estrellas visibles en el télex frente a «no stars» de Toy; Barlow la vio varias veces; el ATIC evaluó a Stokes «UNRELIABLE» | no |
 | kearney-schmidt-1957 | pendiente | Fila provisional del redactor; la sustituye el orquestador con los hallazgos del verificador | no |
 | sunchubamba-cajamarca-1957 | pendiente | Fila provisional del redactor; la sustituye el orquestador con los hallazgos del verificador | no |
 | aawsap-skinwalker-2008 | cifra/hora | ALTA (documentos de la entrega 08): D188 no da por positivas «todas las reseñas de los 26»: solo se reseñaron 13 (p. 1, «highlighted… are the ones that were reviewed») | no |
