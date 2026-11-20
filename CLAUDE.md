@@ -273,6 +273,7 @@ Las convenciones de código y de UI que no tocan los datos (componentes, tokens,
 ## Contador de visitas (/visitantes) (jul 2026)
 
 - **Dos capas**: beacon cliente (`components/VisitorBeacon.tsx`) y gate server-side en la función SECURITY DEFINER de Supabase (migraciones `0005`–`0007`: 1 visita/día por IP hasheada con salt, tope de 15 pageviews/día/IP, exención `tracking_exempt`). Solo la capa server es inescapable; el país lo pone el servidor (`cf-ipcountry`), no el cliente. *(E19 y sonda viva diaria)*
+- **Origen de la visita** (migración `0011`, 20 nov 2026, decisión del dueño): solo el dominio de la página de entrada (`document.referrer` guardado al inicio de la sesión), reducido a dominio en el servidor y contado una vez por visita con el mismo gate. Nunca la URL completa; cubre a todo visitante, no solo a quien acepta cookies como GA4.
 - **Los cuatro totales del panel no cuadran entre sí, y es correcto**: visitantes-día frente a pageviews, con series que arrancan en fechas distintas. No «arreglarlo».
 - **Probar el gate desde una sesión remota**: `pg_net` (la base llama a su propia API REST). El gate falla abierto sin contexto PostgREST, así que no se prueba por SQL directo.
 - **`public.app_content` es de otra app** del mismo proyecto Supabase: no borrarla.

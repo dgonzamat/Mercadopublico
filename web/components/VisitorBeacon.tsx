@@ -265,6 +265,30 @@ function visitAlreadyCounted(): boolean {
     return false;
   }
 }
+/**
+ * Origen de la visita (nov 2026): `document.referrer` de la PÁGINA DE ENTRADA.
+ * La visita se cuenta cuando hay engagement, que puede llegar varias páginas
+ * después; para entonces el referrer ya es el propio sitio. Por eso se guarda
+ * en sessionStorage al cargar la primera página de la sesión. El servidor lo
+ * reduce a dominio (migración 0011); aquí no se filtra nada.
+ */
+const LANDING_REF_KEY = "uap-landing-ref";
+function rememberLandingReferrer(): void {
+  try {
+    if (sessionStorage.getItem(LANDING_REF_KEY) === null)
+      sessionStorage.setItem(LANDING_REF_KEY, document.referrer || "");
+  } catch {
+    // sessionStorage no disponible: se usará el referrer actual.
+  }
+}
+function landingReferrer(): string {
+  try {
+    return sessionStorage.getItem(LANDING_REF_KEY) ?? document.referrer ?? "";
+  } catch {
+    return document.referrer ?? "";
+  }
+}
+
 function markVisitCounted(): void {
   try {
     localStorage.setItem(VISIT_AT_KEY, String(Date.now()));
@@ -370,6 +394,7 @@ export function VisitorBeacon() {
   }, []);
 
   useEffect(() => {
+    rememberLandingReferrer();
     const sb = supabase;
     if (!sb || skipTracking()) return;
     if (visitAlreadyCounted()) return; // ya contada en las últimas 24 h
@@ -387,7 +412,7 @@ export function VisitorBeacon() {
           flagDc();
           return;
         }
-        const { error } = await sb.rpc("increment_visit", { cc });
+        const { error } = await sb.rpc("increment_visit", { cc, ref: landingReferrer() });
         if (error) {
           // Reintento defensivo: si falló (p. ej. red intermitente), se
           // desmarca para que un reload lo reintente.
