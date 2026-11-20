@@ -288,7 +288,14 @@ Conteo hecho a mano a partir de los informes de los verificadores (17-18 nov 202
 | uruguay-luces-starlink-2026 | cifra/hora | BAJA: las órbitas de 97,28° no pasan «sobre todas las latitudes» (llegan a ~82,7°): «casi todas» | no |
 | uruguay-luces-starlink-2026 | lectura | ES 6/10 (lector ciego) y 6/10 (lector con CLAUDE.md, A/B del pendiente L1). Corregido: «de bajas a medianas» suelto, «y al sol», la frase de latitudes (los dos), «En mayo» sin año (ciego no lo situó), «si la emisora se refería a ese episodio» (releída por el lector con reglas). Anotado sin tocar (mantenimiento): repeticiones (el cotejo ×3, 25 reportes/nueve departamentos/fechas, qué es la CRIDOVNI), el párrafo de la AARO como añadido, sin hora de ningún reporte de 2026 | no |
 | ube-f86d-1956 | pendiente | Fila provisional del redactor; el orquestador la sustituye por los hallazgos del verificador | no |
-| fontana-goc-1956 | pendiente | Fila provisional del redactor; la sustituyen los hallazgos del verificador | no |
+| fontana-goc-1956 | atribución | MEDIA: «demasiado separadas para luces de ala» era lo que informó la testigo de La Jolla, no un juicio del télex (D207 p. 4: «REPORTED THAT THE LIGHTS WERE TO FAR APART…»); en classBasis y whyMatters | no |
+| fontana-goc-1956 | atribución | MEDIA: la ficha asignaba «observador jefe» y «ayudante» al marido y a la esposa; el télex dice «ASST AND CHIEF OBS» sin precisar cuál era cada uno (D207 p. 2, 6.A) | no |
+| fontana-goc-1956 | atribución | BAJA: la cola «como la de un reactor con posquemador» es del relato de los testigos que transcribe el télex, no una comparación del télex (D207 pp. 3-4) | no |
+| fontana-goc-1956 | clasificación | BAJA: el radar fuera de servicio no se opone a la explicación de avión; solo deja el caso sin corroborar (classBasis; clase sin cambio) | no |
+| fontana-goc-1956 | ausencia | BAJA: «no hay manera de saber» la grafía del apellido; solo los dos télex no lo permiten | no |
+| fontana-goc-1956 | cifra/hora | BAJA: el télex da dos horas para el primer aviso, 0225Z (parte 1) y 0223Z (parte 4); se añadió la segunda en evidence | no |
+| fontana-goc-1956 | cifra/hora | BAJA: lecturas de la descripción de D207: la tarjeta pone «1,1and2» (no «1, land2») y el télex cierra en «23/18ØØZ» (no un dígito ilegible) | no |
+| fontana-goc-1956 | omisión | BAJA: faltaban en la descripción de D211 la fecha local de la tarjeta (21 ago), el grupo fecha-hora M 242240Z, los sellos del 27 ago y el lugar del observador (orquestador, comprobado sobre la imagen) | no |
 | agoura-kelly-johnson-1953 | pendiente | Fila provisional del redactor; la sustituyen los hallazgos del verificador | no |
 | bolido-sur-california-1957 | pendiente | Ficha 570, a la espera del verificador | no |
 
