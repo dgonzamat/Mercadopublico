@@ -56,7 +56,7 @@ const AUS_EN = /[^.]*\b(no record (from|of)|has not been found|have not been fou
 // circula fuera del archivo») y solo la vieron el verificador o los lectores.
 // «Cálculo propio»: no dice de qué datos sale el cálculo (/redaccion §7; los dos
 // lectores de Woomera releyeron la frase, nov 2026).
-const CALCULO_PROPIO = /[^.]*(c[aá]lculo propio|own calculation)[^.]*\./giu;
+const CALCULO_PROPIO = /[^.]*(c[aá]lculo propio|razonamiento propio|lectura propia|deducci[oó]n propia|own calculation|our own (reasoning|reading)|\(own deduction\))[^.]*\./giu;
 const DIFUSION = /[^.]*\b(que m[aá]s circula|apenas circula|circula poco|(versi[oó]n|explicaci[oó]n) m[aá]s difundida|most widely circulated|circulates (the )?most|barely circulates|version that circulates most)[^.]*\./gi;
 // 2. Voz del redactor (la guía /redaccion la prohíbe).
 // Límites de palabra Unicode: con `\b`, que es solo ASCII, la «í» contaba como
