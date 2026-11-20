@@ -5844,5 +5844,613 @@
         "description_en": "On September 14, 2020, Japan's Ministry of Defense, under Minister Taro Kono, set a procedure for the Self-Defense Forces, and the Air Self-Defense Force in particular, to record and photograph any unidentifiable aerial object, document the circumstances of the observation and report it up the chain of command. It came months after the Pentagon released the three Navy videos in April, and the government presented it as alignment with U.S. practice and as a matter of airspace defense. Kono described himself as skeptical and said he had never received a report from pilots. According to an official answer before the Diet in March 2023, no such object has been confirmed since the directive."
       }
     ]
+  },
+  {
+    "id": "arnold",
+    "name": "Kenneth Arnold",
+    "flag": "🇺🇸",
+    "photo": "https://commons.wikimedia.org/wiki/Special:FilePath/Kenneth_Arnold.jpg?width=400",
+    "photo_credit": "Associated Press, 8 jul 1947 (Wikimedia Commons)",
+    "photo_license": "Dominio público en EE. UU. (publicada entre 1931 y 1963 sin renovar el copyright)",
+    "born": 1915,
+    "death": 1984,
+    "section": "F",
+    "section_label": "Experiencers · abducidos, contactados y testigos de entidad",
+    "section_label_en": "Experiencers · abductees, contactees and entity witnesses",
+    "credentials": "Empresario de equipos contra incendios de Boise (Idaho) · piloto privado · testigo del avistamiento del monte Rainier (1947)",
+    "credentials_en": "Fire-control equipment businessman from Boise, Idaho · private pilot · witness of the Mount Rainier sighting (1947)",
+    "bio_short": "Vendía e instalaba equipos contra incendios en el noroeste de EE. UU. y volaba en su propia avioneta. El 24 de junio de 1947, cerca del monte Rainier (Washington), dijo haber visto nueve objetos brillantes que volaban en cadena; la prensa difundió su relato en todo el país, y su comparación del movimiento con un platillo que rebota en el agua dio origen al término «flying saucer» (platillo volador). En julio, a pedido de Raymond Palmer, editor de revistas de ciencia ficción, viajó a Tacoma para investigar el relato de la isla Maury y avisó a la inteligencia militar. Mantuvo su versión hasta su muerte. En el expediente de la Fuerza Aérea, el astrónomo J. Allen Hynek calculó que la distancia y el tamaño que Arnold estimó no podían ser ciertos a la vez.",
+    "bio_short_en": "He sold and installed fire-control equipment across the U.S. Northwest and flew his own light plane. On June 24, 1947, near Mount Rainier, Washington, he said he saw nine bright objects flying in a chain; the press carried his account nationwide, and his comparison of their motion to a saucer skipping across water gave rise to the term \"flying saucer.\" In July, at the request of science fiction magazine editor Raymond Palmer, he went to Tacoma to investigate the Maury Island story and alerted military intelligence. He stood by his account until his death. In the Air Force file, astronomer J. Allen Hynek calculated that the distance and size Arnold estimated could not both be right.",
+    "works": [
+      {
+        "year": 1947,
+        "title": "Informe escrito a la inteligencia de las Fuerzas Aéreas del Ejército",
+        "title_en": "Written report to Army Air Forces intelligence",
+        "contribution": "Su relato del 24 de junio, entregado el 12 de julio: nueve objetos en cadena a unas 20 o 25 millas, cronometrados entre el Rainier y el Adams",
+        "contribution_en": "His account of June 24, delivered on July 12: nine objects in a chain some 20 to 25 miles away, timed between Rainier and Adams"
+      },
+      {
+        "year": 1950,
+        "title": "The Flying Saucer As I Saw It",
+        "contribution": "Folleto de 16 páginas que publicó por su cuenta con su versión del avistamiento",
+        "contribution_en": "Sixteen-page booklet he self-published with his version of the sighting"
+      },
+      {
+        "year": 1952,
+        "title": "The Coming of the Saucers",
+        "contribution": "Libro escrito con Raymond Palmer sobre su avistamiento y su investigación de la isla Maury",
+        "contribution_en": "Book written with Raymond Palmer on his sighting and his Maury Island investigation"
+      }
+    ],
+    "sources": [
+      {
+        "name": "Proyecto Blue Book, expediente del monte Rainier, 24 de junio de 1947 (archive.org)",
+        "name_en": "Project Blue Book, Mount Rainier file, June 24, 1947 (archive.org)",
+        "url": "https://archive.org/details/1947-06-9668731-Mt-Rainer-Washington",
+        "note": "Fuente primaria: informe escrito de Arnold, entrevista en Boise y evaluación de Hynek.",
+        "note_en": "Primary source: Arnold's written report, the Boise interview and Hynek's evaluation."
+      },
+      {
+        "name": "Wikipedia, «Kenneth Arnold»",
+        "name_en": "Wikipedia, \"Kenneth Arnold\"",
+        "url": "https://en.wikipedia.org/wiki/Kenneth_Arnold",
+        "note": "Datos biográficos, investigación de la isla Maury y publicaciones.",
+        "note_en": "Biographical data, the Maury Island investigation and publications."
+      }
+    ]
+  },
+  {
+    "id": "oberg",
+    "name": "James Oberg",
+    "flag": "🇺🇸",
+    "photo": "https://commons.wikimedia.org/wiki/Special:FilePath/ObergTrainer.jpg?width=400",
+    "photo_credit": "RobertoTenore, entrenador del transbordador en el Centro Espacial Johnson, 1978 (Wikimedia Commons)",
+    "photo_license": "CC-BY-SA 4.0",
+    "born": 1944,
+    "section": "A",
+    "section_label": "Análisis aeroespacial escéptico",
+    "section_label_en": "Skeptical aerospace analysis",
+    "credentials": "Ingeniero de la NASA en el Centro Espacial Johnson (Houston) durante 22 años (1975–1997), especialista en encuentros orbitales · periodista e historiador del programa espacial soviético",
+    "credentials_en": "NASA engineer at Johnson Space Center, Houston, for 22 years (1975–1997), specializing in orbital rendezvous · journalist and historian of the Soviet space program",
+    "bio_short": "Trabajó 22 años como ingeniero en el Centro Espacial Johnson de la NASA, especializado en encuentros orbitales, y desde 1997 se dedica al periodismo espacial; es autor de varios libros sobre el programa espacial soviético. Desde los años setenta propone explicaciones convencionales para los avistamientos de astronautas y cosmonautas: restos, hielo o etapas de cohete de la propia nave (Gemini 4 y 7, Skylab, STS-48) y lanzamientos lejanos de cohetes o misiles (Salyut 6, el vuelo de Aeroflot sobre Minsk). Él mismo presenta algunas de esas propuestas como hipótesis. Otras tienen objeciones: según el propio Oberg, James McDivitt, el astronauta del Gemini 4, rechazó la etapa del Titan II, y para el avistamiento de Vladímir Kovalyonok en la Salyut 6 el catálogo de lanzamientos no registra ningún candidato esos días, aunque deja sin fecha una treintena de lanzamientos militares de 1981.",
+    "bio_short_en": "He worked for 22 years as an engineer at NASA's Johnson Space Center, specializing in orbital rendezvous, and has worked as a space journalist since 1997; he has written several books on the Soviet space program. Since the 1970s he has proposed conventional explanations for sightings by astronauts and cosmonauts: debris, ice or rocket stages from the spacecraft itself (Gemini 4 and 7, Skylab, STS-48) and distant rocket or missile launches (Salyut 6, the Aeroflot flight over Minsk). He presents some of these proposals as hypotheses himself. Others face objections: according to Oberg himself, James McDivitt, the Gemini 4 astronaut, rejected the Titan II stage, and for Vladimir Kovalyonok's sighting aboard Salyut 6 the launch catalog lists no candidate on those days, although it leaves some thirty 1981 military launches undated.",
+    "works": [
+      {
+        "year": 1981,
+        "title": "Red Star in Orbit",
+        "contribution": "Historia de las dos primeras décadas del programa espacial soviético (Random House)",
+        "contribution_en": "History of the first two decades of the Soviet space program (Random House)"
+      },
+      {
+        "year": 1982,
+        "title": "UFOs and Outer Space Mysteries",
+        "contribution": "Sus análisis escépticos de los avistamientos de astronautas y de otros misterios del espacio",
+        "contribution_en": "His skeptical analyses of astronaut sightings and other space mysteries"
+      },
+      {
+        "year": 2014,
+        "title": "Estudio sobre el «Caballero Negro»",
+        "title_en": "Study of the \"Black Knight\"",
+        "contribution": "Estudio de 43 páginas que identifica el objeto fotografiado en 1998 con una tapa térmica perdida en una caminata espacial",
+        "contribution_en": "A 43-page study identifying the object photographed in 1998 as a thermal cover lost during a spacewalk"
+      }
+    ],
+    "sources": [
+      {
+        "name": "James Oberg, currículo aeroespacial (jamesoberg.com)",
+        "name_en": "James Oberg, aerospace résumé (jamesoberg.com)",
+        "url": "https://jamesoberg.com/resumeaerospace.html",
+        "note": "Su carrera en la NASA y su especialidad.",
+        "note_en": "His NASA career and specialty."
+      },
+      {
+        "name": "Wikipedia, «James Oberg»",
+        "name_en": "Wikipedia, \"James Oberg\"",
+        "url": "https://en.wikipedia.org/wiki/James_Oberg",
+        "note": "Datos biográficos y bibliografía.",
+        "note_en": "Biographical data and bibliography."
+      },
+      {
+        "name": "The Christian Science Monitor, reseña de «UFOs and Outer Space Mysteries» (3 de diciembre de 1982)",
+        "name_en": "The Christian Science Monitor, review of \"UFOs and Outer Space Mysteries\" (December 3, 1982)",
+        "url": "https://www.csmonitor.com/1982/1203/1203104.html",
+        "note": "Fecha y editorial del libro.",
+        "note_en": "Date and publisher of the book."
+      }
+    ]
+  },
+  {
+    "id": "menzel",
+    "name": "Donald H. Menzel",
+    "flag": "🇺🇸",
+    "photo": "https://commons.wikimedia.org/wiki/Special:FilePath/Donald_Howard_Menzel_Portrait.jpg?width=400",
+    "photo_credit": "Babette Whipple; retrato cedido por Elizabeth Menzel Davis (Wikimedia Commons)",
+    "photo_license": "CC-BY-SA 3.0",
+    "born": 1901,
+    "death": 1976,
+    "section": "A",
+    "section_label": "Investigadores científicos (histórico)",
+    "section_label_en": "Scientific researchers (historical)",
+    "credentials": "Astrofísico · director del Observatorio del Harvard College (interino desde 1952, titular de 1954 a 1966)",
+    "credentials_en": "Astrophysicist · director of the Harvard College Observatory (acting from 1952, director from 1954 to 1966)",
+    "bio_short": "Astrofísico teórico de la Universidad de Harvard, estudió la cromosfera del Sol y las nebulosas gaseosas y dirigió el observatorio de la universidad. Fue uno de los primeros científicos conocidos que opinaron en público sobre los platillos voladores, y en tres libros (1953, 1963 y 1977) sostuvo que los avistamientos se explican por estrellas, planetas, aviones o efectos de la atmósfera, como reflejos, espejismos e inversiones de temperatura. Sus propuestas figuran en varios casos: luces de la ciudad refractadas en Lubbock, un reflector visto a través de capas de calima en el vuelo de Nash y Fortenberry, rayo en bola en Levelland y fraude en las fotos de Barra da Tijuca y en Falcon Lake. Otros científicos rechazaron algunas de ellas: J. Allen Hynek descartó su versión del globo en Socorro, y el físico James E. McDonald, la explicación meteorológica que Menzel respaldó para los radares de Washington.",
+    "bio_short_en": "A theoretical astrophysicist at Harvard University, he studied the Sun's chromosphere and gaseous nebulae and directed the university's observatory. He was one of the first well-known scientists to speak publicly about flying saucers, and in three books (1953, 1963 and 1977) he argued that sightings are explained by stars, planets, aircraft or atmospheric effects such as reflections, mirages and temperature inversions. His proposals appear in several cases: refracted city lights at Lubbock, a searchlight seen through layers of haze on the Nash and Fortenberry flight, ball lightning at Levelland, and a hoax in the Barra da Tijuca photos and at Falcon Lake. Other scientists rejected some of them: J. Allen Hynek dismissed his balloon version of Socorro, and physicist James E. McDonald the weather explanation Menzel backed for the Washington radar sightings.",
+    "works": [
+      {
+        "year": 1953,
+        "title": "Flying Saucers",
+        "contribution": "Su primer libro sobre el tema (Harvard University Press): los platillos como fenómenos atmosféricos y errores de identificación",
+        "contribution_en": "His first book on the subject (Harvard University Press): saucers as atmospheric phenomena and misidentifications"
+      },
+      {
+        "year": 1963,
+        "title": "The World of Flying Saucers",
+        "contribution": "Escrito con Lyle G. Boyd; revisa casos concretos, entre ellos las fotos de Barra da Tijuca",
+        "contribution_en": "Written with Lyle G. Boyd; reviews specific cases, among them the Barra da Tijuca photos"
+      },
+      {
+        "year": 1968,
+        "title": "Declaración ante el simposio sobre ovnis del Comité de Ciencia y Astronáutica de la Cámara de Representantes",
+        "title_en": "Statement to the House Committee on Science and Astronautics symposium on UFOs",
+        "contribution": "Sostuvo ante el Congreso que todos los avistamientos tienen explicación natural",
+        "contribution_en": "Told Congress that all sightings have natural explanations"
+      },
+      {
+        "year": 1977,
+        "title": "The UFO Enigma",
+        "contribution": "Escrito con Ernest H. Taves; califica de fraude el caso de Falcon Lake",
+        "contribution_en": "Written with Ernest H. Taves; calls the Falcon Lake case a hoax"
+      }
+    ],
+    "sources": [
+      {
+        "name": "Donald H. Menzel y Lyle G. Boyd, «The World of Flying Saucers» (1963), texto completo en Project Gutenberg",
+        "name_en": "Donald H. Menzel and Lyle G. Boyd, \"The World of Flying Saucers\" (1963), full text at Project Gutenberg",
+        "url": "https://www.gutenberg.org/ebooks/66639",
+        "note": "Fuente primaria: sus argumentos en sus propias palabras.",
+        "note_en": "Primary source: his arguments in his own words."
+      },
+      {
+        "name": "Wikipedia, «Donald Howard Menzel»",
+        "name_en": "Wikipedia, \"Donald Howard Menzel\"",
+        "url": "https://en.wikipedia.org/wiki/Donald_Howard_Menzel",
+        "note": "Carrera científica, dirección del observatorio, libros sobre ovnis y declaración de 1968.",
+        "note_en": "Scientific career, observatory directorship, UFO books and 1968 statement."
+      }
+    ]
+  },
+  {
+    "id": "klass",
+    "name": "Philip J. Klass",
+    "flag": "🇺🇸",
+    "photo": "https://commons.wikimedia.org/wiki/Special:FilePath/PJKlass.jpg?width=400",
+    "photo_credit": "Robert Sheaffer, congreso del CSICOP en Buffalo, 1983 (Wikimedia Commons)",
+    "photo_license": "CC-BY-SA 3.0",
+    "born": 1919,
+    "death": 2005,
+    "section": "A",
+    "section_label": "Investigadores científicos (histórico)",
+    "section_label_en": "Scientific researchers (historical)",
+    "credentials": "Ingeniero eléctrico · editor sénior de aviónica de Aviation Week & Space Technology (1952–1986) · cofundador del CSICOP (1976)",
+    "credentials_en": "Electrical engineer · senior avionics editor at Aviation Week & Space Technology (1952–1986) · co-founder of CSICOP (1976)",
+    "bio_short": "Ingeniero eléctrico, trabajó en General Electric y desde 1952 en la revista Aviation Week & Space Technology, donde fue editor de aviónica. Empezó a investigar casos ovni en 1966 y siguió hasta 2003. Su primer libro (1968) atribuía muchos avistamientos a plasmas parecidos al rayo en bola, una idea que luego abandonó; desde entonces propuso causas caso por caso: radares de tierra y un avión de línea en el RB-47, Venus en St. Clair, fraude en Socorro y Pascagoula, y fantasía en las sesiones de hipnosis de Betty Andreasson. En 1976 participó en la fundación del CSICOP, el comité escéptico que edita la revista Skeptical Inquirer, y de 1989 a 2002 publicó el boletín Skeptics UFO Newsletter. Algunas de sus acusaciones de fraude no llegaron a probarse: en el caso del agente Val Johnson sostuvo que el propio Johnson había dañado su patrullero.",
+    "bio_short_en": "An electrical engineer, he worked for General Electric and from 1952 at Aviation Week & Space Technology magazine, where he was avionics editor. He began investigating UFO cases in 1966 and continued until 2003. His first book (1968) attributed many sightings to plasmas similar to ball lightning, an idea he later dropped; from then on he proposed causes case by case: ground radars and an airliner in the RB-47 case, Venus at St. Clair, a hoax at Socorro and Pascagoula, and fantasy in Betty Andreasson's hypnosis sessions. In 1976 he helped found CSICOP, the skeptics' committee that publishes Skeptical Inquirer magazine, and from 1989 to 2002 he put out the Skeptics UFO Newsletter. Some of his fraud accusations were never proved: in the case of deputy Val Johnson, he argued that Johnson himself had damaged his patrol car.",
+    "works": [
+      {
+        "year": 1968,
+        "title": "UFOs—Identified",
+        "contribution": "Plasmas parecidos al rayo en bola como causa de muchos avistamientos; ya trataba Socorro como un fraude",
+        "contribution_en": "Plasmas similar to ball lightning as the cause of many sightings; it already treated Socorro as a hoax"
+      },
+      {
+        "year": 1974,
+        "title": "UFOs Explained",
+        "contribution": "Causas caso por caso para el RB-47, Pascagoula y otros casos muy citados",
+        "contribution_en": "Case-by-case causes for the RB-47, Pascagoula and other widely cited cases"
+      },
+      {
+        "year": 1983,
+        "title": "UFOs: The Public Deceived",
+        "contribution": "Crítica de la cobertura de los casos y de los argumentos sobre un encubrimiento oficial",
+        "contribution_en": "Critique of how cases were covered and of the arguments for an official cover-up"
+      }
+    ],
+    "sources": [
+      {
+        "name": "Robert Sheaffer, «In Memoriam: Philip J. Klass (1919–2005)», Skeptical Inquirer, vol. 29, n.º 6 (2005)",
+        "name_en": "Robert Sheaffer, \"In Memoriam: Philip J. Klass (1919–2005),\" Skeptical Inquirer, vol. 29, no. 6 (2005)",
+        "url": "https://cdn.centerforinquiry.org/wp-content/uploads/sites/29/2005/11/22164619/p16.pdf",
+        "note": "Obituario: formación, carrera en Aviation Week, libros, CSICOP y Skeptics UFO Newsletter.",
+        "note_en": "Obituary: education, Aviation Week career, books, CSICOP and the Skeptics UFO Newsletter."
+      },
+      {
+        "name": "Aviation Week & Space Technology, obituario de Philip J. Klass (agosto de 2005)",
+        "name_en": "Aviation Week & Space Technology, obituary of Philip J. Klass (August 2005)",
+        "url": "https://aviationweek.com/philip-j-klass",
+        "note": "Su retiro como editor sénior de aviónica en 1986 y su muerte en Merritt Island (Florida).",
+        "note_en": "His 1986 retirement as senior avionics editor and his death in Merritt Island, Florida."
+      },
+      {
+        "name": "Wikipedia, «Philip J. Klass»",
+        "name_en": "Wikipedia, \"Philip J. Klass\"",
+        "url": "https://en.wikipedia.org/wiki/Philip_J._Klass",
+        "note": "Datos biográficos y bibliografía.",
+        "note_en": "Biographical data and bibliography."
+      }
+    ]
+  },
+  {
+    "id": "sparks",
+    "name": "Brad Sparks",
+    "flag": "🇺🇸",
+    "section": "A",
+    "section_label": "Investigación documental de casos (NICAP)",
+    "section_label_en": "Documentary case investigation (NICAP)",
+    "credentials": "Investigador de casos ovni · compilador del catálogo de casos sin identificar de Blue Book publicado por NICAP · cofundador de Citizens Against UFO Secrecy (1977)",
+    "credentials_en": "UFO case researcher · compiler of the catalog of Blue Book unknowns published by NICAP · co-founder of Citizens Against UFO Secrecy (1977)",
+    "bio_short": "Investigador estadounidense que trabaja sobre los expedientes del Proyecto Blue Book, el programa de la Fuerza Aérea que estudiaba los ovnis. Desde 2001 compila un catálogo de los casos que quedaron sin identificar, publicado en el sitio del NICAP (Comité Nacional de Investigación de Fenómenos Aéreos); su versión de febrero de 2026 reúne unos 2.200 y advierte que es una base de datos y no una lista de las mejores pruebas. En 1977 participó en la fundación de Citizens Against UFO Secrecy, un grupo que pedía documentos al gobierno por la ley de libertad de información. Sus evaluaciones van en los dos sentidos: vio un globo estratosférico en el radar de Falconbridge y un meteoro fragmentado en el USS Supply, situó parte de las señales de Campeche sobre una carretera, señaló errores en el mensaje de Ellsworth y objetó que los síntomas de Betty Cash y Vickie Landrum no encajan con radiación a dosis no mortal. En cambio, según James Oberg, con el físico Bruce Maccabee leyó las fotos del Skylab como las de un objeto grande y lejano.",
+    "bio_short_en": "An American researcher who works on the files of Project Blue Book, the Air Force program that studied UFOs. Since 2001 he has compiled a catalog of the cases left unidentified, published on the website of NICAP (National Investigations Committee on Aerial Phenomena); its February 2026 version lists some 2,200 and warns that it is a database, not a list of the best evidence. In 1977 he helped found Citizens Against UFO Secrecy, a group that sought government documents under the Freedom of Information Act. His assessments cut both ways: he saw a stratospheric balloon in the Falconbridge radar track and a fragmenting meteor in the USS Supply sighting, placed some of the Campeche signals on a highway, pointed out errors in the Ellsworth message and argued that Betty Cash and Vickie Landrum's symptoms do not fit radiation at a non-lethal dose. On the other hand, according to James Oberg, he and physicist Bruce Maccabee read the Skylab photos as showing a large, distant object.",
+    "works": [
+      {
+        "year": 1977,
+        "title": "Fundación de Citizens Against UFO Secrecy (CAUS)",
+        "title_en": "Founding of Citizens Against UFO Secrecy (CAUS)",
+        "contribution": "Con W. Todd Zechel y Peter Gersten, un grupo que reclamó documentos ovni al gobierno por la ley de libertad de información",
+        "contribution_en": "With W. Todd Zechel and Peter Gersten, a group that sought UFO documents from the government under the Freedom of Information Act"
+      },
+      {
+        "year": 1999,
+        "title": "Objeción médica al caso Cash-Landrum",
+        "title_en": "Medical objection in the Cash-Landrum case",
+        "contribution": "Con el radio-oncólogo Richard Niemtzow: la rapidez y el cuadro de los síntomas no encajan con radiación a dosis no mortal",
+        "contribution_en": "With radiation oncologist Richard Niemtzow: the speed and pattern of the symptoms do not fit radiation at a non-lethal dose"
+      },
+      {
+        "year": 2001,
+        "title": "Comprehensive Catalog of Project Blue Book UFO Unknowns",
+        "contribution": "Catálogo de casos sin identificar de Blue Book, ampliado desde entonces (versión 1.35, febrero de 2026)",
+        "contribution_en": "Catalog of Blue Book unknowns, expanded since (version 1.35, February 2026)"
+      }
+    ],
+    "sources": [
+      {
+        "name": "Brad Sparks, «Comprehensive Catalog of 2,200 Project Blue Book UFO Unknowns», versión 1.35 (NICAP, 3 de febrero de 2026)",
+        "name_en": "Brad Sparks, \"Comprehensive Catalog of 2,200 Project Blue Book UFO Unknowns,\" version 1.35 (NICAP, February 3, 2026)",
+        "url": "https://www.nicap.org/bb/BB_Unknowns.pdf",
+        "note": "Fuente primaria: el catálogo, con su alcance y sus advertencias.",
+        "note_en": "Primary source: the catalog, with its scope and caveats."
+      },
+      {
+        "name": "Encyclopedia.com, «Citizens Against UFO Secrecy (CAUS)»",
+        "name_en": "Encyclopedia.com, \"Citizens Against UFO Secrecy (CAUS)\"",
+        "url": "https://www.encyclopedia.com/science/encyclopedias-almanacs-transcripts-and-maps/citizens-against-ufo-secrecy-caus",
+        "note": "Fundación del grupo en 1977 por W. Todd Zechel, Brad Sparks y Peter Gersten. Otras fuentes la sitúan en 1978.",
+        "note_en": "Founding of the group in 1977 by W. Todd Zechel, Brad Sparks and Peter Gersten. Other sources place it in 1978."
+      }
+    ]
+  },
+  {
+    "id": "sheaffer",
+    "name": "Robert Sheaffer",
+    "flag": "🇺🇸",
+    "photo": "https://commons.wikimedia.org/wiki/Special:FilePath/Robert_Sheaffer.jpg?width=400",
+    "photo_credit": "Susan Gerbic (Sgerbic), enero de 2012 (Wikimedia Commons)",
+    "photo_license": "CC-BY-SA 3.0",
+    "born": 1949,
+    "section": "A",
+    "section_label": "Periodismo crítico / escéptico",
+    "section_label_en": "Critical / skeptical journalism",
+    "credentials": "Escritor escéptico · autor de la columna «Psychic Vibrations» de Skeptical Inquirer (1977–2017) · miembro fundador del subcomité de ovnis del CSICOP (hoy Committee for Skeptical Inquiry)",
+    "credentials_en": "Skeptical writer · author of the \"Psychic Vibrations\" column in Skeptical Inquirer (1977–2017) · founding member of CSICOP's UFO subcommittee (now the Committee for Skeptical Inquiry)",
+    "bio_short": "Escritor estadounidense, firmó durante cuarenta años la columna «Psychic Vibrations» de la revista Skeptical Inquirer y fue miembro fundador del subcomité de ovnis del CSICOP, donde trabajó con Philip Klass. Sus análisis proponen causas convencionales para casos muy citados: por las sombras del alero de un garaje sostuvo que las fotos de McMinnville se tomaron por la mañana y no al atardecer; con asesoramiento de un ingeniero en infrarrojos, atribuyó las luces del video de Campeche a las llamas de las plataformas petroleras de Cantarell; y explicó la formación de luces de Phoenix con un vuelo de cinco aviones A-10. Esas lecturas tienen objeciones: el físico Bruce Maccabee disputó la de McMinnville. En el caso Cash-Landrum, Sheaffer relacionó a Betty Cash con el síndrome de Münchausen sin prueba documental.",
+    "bio_short_en": "An American writer, he wrote the \"Psychic Vibrations\" column in Skeptical Inquirer magazine for forty years and was a founding member of CSICOP's UFO subcommittee, where he worked with Philip Klass. His analyses propose conventional causes for widely cited cases: from the shadows under a garage eave he argued that the McMinnville photos were taken in the morning, not at dusk; advised by an infrared engineer, he attributed the lights in the Campeche video to the flares of the Cantarell oil platforms; and he explained the Phoenix light formation as a flight of five A-10 aircraft. Those readings face objections: physicist Bruce Maccabee disputed the McMinnville one. In the Cash-Landrum case, Sheaffer linked Betty Cash to Munchausen syndrome without documentary evidence.",
+    "works": [
+      {
+        "year": 1977,
+        "title": "Psychic Vibrations",
+        "contribution": "Columna fija de Skeptical Inquirer sobre ovnis y otras afirmaciones paranormales, hasta 2017",
+        "contribution_en": "Regular Skeptical Inquirer column on UFOs and other paranormal claims, until 2017"
+      },
+      {
+        "year": 1981,
+        "title": "The UFO Verdict: Examining the Evidence",
+        "contribution": "Su primer libro sobre los casos clásicos, publicado por Prometheus Books",
+        "contribution_en": "His first book on the classic cases, published by Prometheus Books"
+      },
+      {
+        "year": 1998,
+        "title": "UFO Sightings: The Evidence",
+        "contribution": "Revisión escéptica de los casos más citados (Prometheus Books)",
+        "contribution_en": "Skeptical review of the most cited cases (Prometheus Books)"
+      }
+    ],
+    "sources": [
+      {
+        "name": "Wikipedia, «Robert Sheaffer»",
+        "name_en": "Wikipedia, \"Robert Sheaffer\"",
+        "url": "https://en.wikipedia.org/wiki/Robert_Sheaffer",
+        "note": "Datos biográficos, la columna «Psychic Vibrations» y bibliografía.",
+        "note_en": "Biographical data, the \"Psychic Vibrations\" column and bibliography."
+      },
+      {
+        "name": "Robert Sheaffer, «In Memoriam: Philip J. Klass (1919–2005)», Skeptical Inquirer, vol. 29, n.º 6 (2005)",
+        "name_en": "Robert Sheaffer, \"In Memoriam: Philip J. Klass (1919–2005),\" Skeptical Inquirer, vol. 29, no. 6 (2005)",
+        "url": "https://cdn.centerforinquiry.org/wp-content/uploads/sites/29/2005/11/22164619/p16.pdf",
+        "note": "Nota del autor: fellow del CSICOP, miembro fundador de su subcomité de ovnis y colaborador de Klass durante más de treinta años.",
+        "note_en": "Author's note: CSICOP fellow, founding member of its UFO subcommittee and Klass's collaborator for more than thirty years."
+      },
+      {
+        "name": "Reason, «Bringing UFOs Down to Earth» (junio de 1982), reseña de «The UFO Verdict»",
+        "name_en": "Reason, \"Bringing UFOs Down to Earth\" (June 1982), review of \"The UFO Verdict\"",
+        "url": "https://reason.com/1982/06/01/bringing-ufos-down-to-earth/",
+        "note": "Fecha y editorial del libro de 1981.",
+        "note_en": "Date and publisher of the 1981 book."
+      }
+    ]
+  },
+  {
+    "id": "quintanilla",
+    "name": "Hector Quintanilla",
+    "flag": "🇺🇸",
+    "born": 1923,
+    "death": 1998,
+    "section": "B",
+    "section_label": "Investigador oficial (USAF · Proyecto Blue Book)",
+    "section_label_en": "Official investigator (USAF · Project Blue Book)",
+    "credentials": "Oficial de la Fuerza Aérea de EE. UU., llegó a teniente coronel · jefe del Proyecto Blue Book (agosto de 1963–enero de 1970)",
+    "credentials_en": "U.S. Air Force officer who rose to lieutenant colonel · head of Project Blue Book (August 1963–January 1970)",
+    "bio_short": "Dirigió el Proyecto Blue Book, el programa de la Fuerza Aérea de EE. UU. que investigaba los ovnis, desde agosto de 1963 hasta su cierre en enero de 1970; fue su último jefe. Varios casos de esos años llevan su firma o sus decisiones: la noche de Kecksburg consultó el sistema militar de seguimiento de objetos en órbita, que no sabía de ningún resto espacial que hubiera entrado ese día; en 1966 redactó la respuesta interna que juzgaba posible que un avión causara el avistamiento de Exeter; y en Portage County trató el caso por teléfono antes de entrevistar a los policías, y el expediente concluyó que habían visto un satélite y luego Venus. Según un testimonio firmado del agente Dale Spaur que recoge J. Allen Hynek, asesor científico del proyecto, Quintanilla quería que dijera que vio el objeto solo unos minutos; Hynek calificó el caso de «un fuerte No identificado». En 1975 escribió unas memorias que no llegó a publicar; las difundió en internet el NIDS (Instituto Nacional para la Ciencia del Descubrimiento), una organización privada de investigación.",
+    "bio_short_en": "He headed Project Blue Book, the U.S. Air Force program that investigated UFOs, from August 1963 until it closed in January 1970; he was its last chief. Several cases from those years bear his signature or his decisions: on the night of Kecksburg he checked with the military system that tracked objects in orbit, which knew of no space debris reentering that day; in 1966 he drafted the internal reply that judged it possible that an aircraft caused the Exeter sighting; and at Portage County he handled the case by phone before interviewing the officers, and the file concluded that they had seen a satellite and then Venus. According to a signed statement by deputy Dale Spaur quoted by J. Allen Hynek, the project's scientific adviser, Quintanilla wanted him to say he had seen the object for only a few minutes; Hynek rated the case \"a strong Unidentified.\" In 1975 he wrote a memoir he never published; it was later posted online by the National Institute for Discovery Science (NIDS), a private research group.",
+    "works": [
+      {
+        "year": 1966,
+        "title": "Memorando de Blue Book sobre Exeter (3 de marzo de 1966)",
+        "title_en": "Blue Book memorandum on Exeter (March 3, 1966)",
+        "contribution": "Atribuye el avistamiento, como posibilidad, a un avión con balizas giratorias o luces infrarrojas",
+        "contribution_en": "Attributes the sighting, as a possibility, to an aircraft with rotating beacons or infrared lights"
+      },
+      {
+        "year": 1966,
+        "title": "Entrevista con los policías de Portage County",
+        "title_en": "Interview with the Portage County officers",
+        "contribution": "Grabada a pedido de Spaur; Hynek reprodujo extractos en «The UFO Experience» (1972)",
+        "contribution_en": "Recorded at Spaur's request; Hynek reproduced excerpts in \"The UFO Experience\" (1972)"
+      },
+      {
+        "year": 1975,
+        "title": "UFOs, An Air Force Dilemma",
+        "contribution": "Memorias inéditas sobre su etapa en Blue Book; la copia de The Black Vault lo fecha en 1974 y el NIDS lo publicó en internet en los años noventa",
+        "contribution_en": "Unpublished memoir of his years at Blue Book; The Black Vault's copy dates it to 1974, and NIDS published it online in the 1990s"
+      }
+    ],
+    "sources": [
+      {
+        "name": "Hector Quintanilla, «UFOs, An Air Force Dilemma» (manuscrito, publicado en internet por el NIDS; copia en The Black Vault)",
+        "name_en": "Hector Quintanilla, \"UFOs, An Air Force Dilemma\" (manuscript, published online by NIDS; copy at The Black Vault)",
+        "url": "https://www.theblackvault.com/casefiles/ufos-an-air-force-dilemma-by-hector-quintanilla-usaf-retired-published-1974/",
+        "note": "Fuente primaria: sus memorias. Según el NIDS, el texto se escribió en 1975.",
+        "note_en": "Primary source: his memoir. According to NIDS, the text was written in 1975."
+      },
+      {
+        "name": "Wikipedia, «Hector Quintanilla»",
+        "name_en": "Wikipedia, \"Hector Quintanilla\"",
+        "url": "https://en.wikipedia.org/wiki/Hector_Quintanilla",
+        "note": "Fechas de nacimiento y muerte y de su jefatura de Blue Book.",
+        "note_en": "Dates of birth and death and of his tenure as head of Blue Book."
+      }
+    ]
+  },
+  {
+    "id": "maussan",
+    "name": "Jaime Maussan",
+    "flag": "🇲🇽",
+    "photo": "https://commons.wikimedia.org/wiki/Special:FilePath/Wiki_JM.jpg?width=400",
+    "photo_credit": "Dimaussan, 2015 (Wikimedia Commons)",
+    "photo_license": "CC-BY-SA 4.0",
+    "born": 1953,
+    "section": "D",
+    "section_label": "Periodista de televisión · divulgación ovni (México)",
+    "section_label_en": "Television journalist · UFO popularizer (Mexico)",
+    "credentials": "Periodista de televisión mexicano · conductor del programa «Tercer Milenio»",
+    "credentials_en": "Mexican television journalist · host of the program \"Tercer Milenio\"",
+    "bio_short": "José Jaime Maussan Flota empezó como reportero de televisión en los años setenta, en el equipo de Jacobo Zabludovsky, y desde comienzos de los noventa se dedica sobre todo a los ovnis. En 1991 transmitió el video que Guillermo Arreola grabó durante el eclipse en la Ciudad de México, que generó miles de llamadas y nuevas grabaciones; en 2004 difundió, con permiso de la Secretaría de la Defensa Nacional, el video infrarrojo de Campeche; y en 2023 presentó en la Cámara de Diputados dos cuerpos momificados que dijo hallados en Nazca (Perú) y ajenos a la evolución terrestre. Lo que presentó tiene objeciones documentadas: Robert Sheaffer y el piloto Alejandro Franz atribuyen las luces de Campeche a las llamas de las plataformas petroleras de Cantarell; la UNAM volvió a publicar su comunicado de 2017, según el cual solo había fechado por carbono 14 la muestra que recibió, sin concluir nada sobre su origen, y en 2017 la fiscalía de Perú había descrito momias parecidas como muñecos recién fabricados.",
+    "bio_short_en": "José Jaime Maussan Flota started out as a television reporter in the 1970s, on Jacobo Zabludovsky's team, and since the early 1990s has worked mainly on UFOs. In 1991 he aired the video Guillermo Arreola shot during the eclipse in Mexico City, which drew thousands of calls and new recordings; in 2004 he released, with the Mexican Defense Ministry's permission, the Campeche infrared video; and in 2023 he presented two mummified bodies to the Chamber of Deputies, saying they had been found in Nazca, Peru, and were alien to terrestrial evolution. What he presented faces documented objections: Robert Sheaffer and pilot Alejandro Franz attribute the Campeche lights to the flares of the Cantarell oil platforms; the National Autonomous University of Mexico (UNAM) reissued its 2017 statement that it had only carbon-dated the sample it received, without concluding anything about its origin, and in 2017 Peruvian prosecutors had described similar mummies as recently made dolls.",
+    "works": [
+      {
+        "year": 1991,
+        "title": "Transmisión del video del eclipse de Guillermo Arreola",
+        "title_en": "Broadcast of Guillermo Arreola's eclipse video",
+        "contribution": "Abrió una oleada de llamadas y de grabaciones de aficionados en México",
+        "contribution_en": "Set off a wave of calls and amateur recordings in Mexico"
+      },
+      {
+        "year": 2004,
+        "title": "Presentación del video infrarrojo de Campeche (11 de mayo)",
+        "title_en": "Presentation of the Campeche infrared video (May 11)",
+        "contribution": "Grabación de un avión de la Secretaría de la Defensa Nacional, cedida por la propia secretaría",
+        "contribution_en": "Footage from a Mexican Defense Ministry aircraft, released to him by the ministry"
+      },
+      {
+        "year": 2023,
+        "title": "Audiencia sobre fenómenos aéreos anómalos en la Cámara de Diputados (12 de septiembre)",
+        "title_en": "Hearing on unidentified anomalous phenomena at Mexico's Chamber of Deputies (September 12)",
+        "contribution": "Presentó dos cuerpos momificados que dijo no humanos",
+        "contribution_en": "Presented two mummified bodies he said were not human"
+      }
+    ],
+    "sources": [
+      {
+        "name": "El Financiero, «Perfil: ¿quién es Jaime Maussan?» (27 de julio de 2023)",
+        "name_en": "El Financiero, profile of Jaime Maussan (July 27, 2023)",
+        "url": "https://www.elfinanciero.com.mx/espectaculos/2023/07/27/perfil-quien-es-jaime-maussan-investigador-mexicano-que-ha-estudiado-el-fenomeno-ovni/",
+        "note": "Trayectoria periodística y programas.",
+        "note_en": "Journalism career and programs."
+      },
+      {
+        "name": "Wikipedia, «Jaime Maussan»",
+        "name_en": "Wikipedia, \"Jaime Maussan\"",
+        "url": "https://en.wikipedia.org/wiki/Jaime_Maussan",
+        "note": "Datos biográficos y controversias.",
+        "note_en": "Biographical data and controversies."
+      }
+    ]
+  },
+  {
+    "id": "marcel",
+    "name": "Jesse Marcel",
+    "flag": "🇺🇸",
+    "photo": "https://commons.wikimedia.org/wiki/Special:FilePath/JesseMarcel1947.png?width=400",
+    "photo_credit": "Anuario del Roswell Army Air Field, 1947 (Wikimedia Commons)",
+    "photo_license": "Dominio público · obra del Gobierno de EE. UU.",
+    "born": 1907,
+    "death": 1986,
+    "section": "B",
+    "section_label": "Testigo militar · Fuerzas Aéreas del Ejército (Roswell)",
+    "section_label_en": "Military witness · Army Air Forces (Roswell)",
+    "credentials": "Mayor, oficial de inteligencia del 509.º Grupo de Bombarderos en Roswell (1947) · después teniente coronel de la reserva",
+    "credentials_en": "Major, intelligence officer of the 509th Bomb Group at Roswell (1947) · later a lieutenant colonel in the reserve",
+    "bio_short": "En julio de 1947 era el oficial de inteligencia de la base aérea de Roswell. Fue con el ranchero Mac Brazel y con un oficial de contrainteligencia, el capitán Sheridan Cavitt, a recoger los restos del rancho Foster y los llevó a la base; después los acompañó a Fort Worth, donde el general Roger Ramey los presentó como un globo meteorológico. En febrero de 1978 le dijo al físico Stanton Friedman que aquel material era extraterrestre, y su testimonio fue la base del libro «The Roswell Incident» (1980). Describió un metal que volvía a su forma tras arrugarse, un rasgo que solo aparece en testimonios de las décadas de 1970 a 1990: en 1947 Brazel habló de papel de aluminio y goma. El investigador Robert Todd comprobó que varias afirmaciones de Marcel sobre su pasado no constan en los registros: la Universidad George Washington y la Universidad Estatal de Luisiana, que él citaba, no tienen constancia de que asistiera a clases, y sus hojas de servicio dicen que no tenía experiencia de vuelo, aunque él decía tener licencia de piloto desde 1928.",
+    "bio_short_en": "In July 1947 he was the intelligence officer at Roswell Army Air Field. He went with rancher Mac Brazel and a counterintelligence officer, Captain Sheridan Cavitt, to collect the debris from the Foster ranch and took it to the base; he then accompanied it to Fort Worth, where General Roger Ramey presented it as a weather balloon. In February 1978 he told physicist Stanton Friedman that the material was extraterrestrial, and his testimony was the basis of the book \"The Roswell Incident\" (1980). He described a metal that sprang back into shape after being crumpled, a feature that appears only in testimony from the 1970s to the 1990s: in 1947 Brazel spoke of tinfoil and rubber. Researcher Robert Todd found that several of Marcel's claims about his past are not borne out by the records: George Washington University and Louisiana State University, which he cited, have no record of him attending classes, and his service records say he had no flying experience, although he said he had held a pilot's license since 1928.",
+    "works": [
+      {
+        "year": 1947,
+        "title": "Recogida de los restos del rancho Foster",
+        "title_en": "Collection of the debris from the Foster ranch",
+        "contribution": "Con Brazel y Cavitt; según la declaración jurada de su hijo (1991), llevó parte del material a su casa",
+        "contribution_en": "With Brazel and Cavitt; according to his son's 1991 affidavit, he took some of the material home"
+      },
+      {
+        "year": 1978,
+        "title": "Entrevista con Stanton Friedman",
+        "title_en": "Interview with Stanton Friedman",
+        "contribution": "Primera vez que sostuvo que los restos no eran de un globo; reabrió el caso",
+        "contribution_en": "The first time he said the debris was not from a balloon; it reopened the case"
+      }
+    ],
+    "sources": [
+      {
+        "name": "Wikipedia, «Jesse Marcel»",
+        "name_en": "Wikipedia, \"Jesse Marcel\"",
+        "url": "https://en.wikipedia.org/wiki/Jesse_Marcel",
+        "note": "Datos biográficos, entrevistas de 1978 a 1980 y las discrepancias halladas por Robert Todd en su historial.",
+        "note_en": "Biographical data, the 1978 to 1980 interviews and the discrepancies Robert Todd found in his record."
+      },
+      {
+        "name": "USAF, «The Roswell Report: Fact vs. Fiction in the New Mexico Desert» (1995), copia DTIC ADA326148",
+        "name_en": "USAF, \"The Roswell Report: Fact vs. Fiction in the New Mexico Desert\" (1995), DTIC copy ADA326148",
+        "url": "https://archive.org/download/DTIC_ADA326148/DTIC_ADA326148.pdf",
+        "note": "Informe oficial que atribuye los restos al Project Mogul y recoge el papel de Marcel en 1947.",
+        "note_en": "Official report attributing the debris to Project Mogul and covering Marcel's role in 1947."
+      }
+    ]
+  },
+  {
+    "id": "adamski",
+    "name": "George Adamski",
+    "flag": "🇺🇸",
+    "photo": "https://commons.wikimedia.org/wiki/Special:FilePath/George_Adamski.jpg?width=400",
+    "photo_credit": "Los Angeles Times, 1938 · Los Angeles Times Photographic Archive, UCLA Library (Wikimedia Commons)",
+    "photo_license": "CC-BY 4.0",
+    "born": 1891,
+    "death": 1965,
+    "section": "F",
+    "section_label": "Experiencers · abducidos, contactados y testigos de entidad",
+    "section_label_en": "Experiencers · abductees, contactees and entity witnesses",
+    "credentials": "Contactado · conferenciante de filosofía y religión en Palomar Gardens (California) · autor de «Flying Saucers Have Landed» (1953, con Desmond Leslie)",
+    "credentials_en": "Contactee · lecturer on philosophy and religion at Palomar Gardens, California · author of \"Flying Saucers Have Landed\" (1953, with Desmond Leslie)",
+    "bio_short": "Nació en 1891 en Bromberg, entonces en el Imperio alemán y hoy Bydgoszcz (Polonia), y llegó de niño a Estados Unidos. En los años treinta enseñaba en California una mezcla de cristianismo y religiones orientales, y desde 1944 atendía un café al pie del monte Palomar, donde daba charlas y mostraba fotos que decía de naves espaciales. Es el más conocido de los «contactados» de los años cincuenta: contó que el 20 de noviembre de 1952, cerca de Desert Center, se comunicó por gestos y telepatía con un hombre venido de Venus, y en libros posteriores añadió viajes en naves a la Luna y otros planetas. Su relato tuvo gran difusión; la Fuerza Aérea no le daba crédito, el FBI lo amonestó por decir que había aprobado sus charlas y la mayoría de los investigadores del tema lo consideró un fraude. Según el investigador Peter Rogerson, la descripción de la mujer del caso Vilas-Boas sugiere su influencia.",
+    "bio_short_en": "He was born in 1891 in Bromberg, then in the German Empire and today Bydgoszcz, Poland, and came to the United States as a child. In the 1930s he taught a blend of Christianity and Eastern religions in California, and from 1944 he ran a café at the foot of Palomar Mountain, where he gave talks and showed photos he said were of spacecraft. He is the best known of the 1950s \"contactees\": he said that on November 20, 1952, near Desert Center, he communicated by gestures and telepathy with a man from Venus, and in later books he added trips aboard spacecraft to the Moon and other planets. His story spread widely; the Air Force gave it no credence, the FBI warned him for claiming it had approved his lectures, and most UFO researchers considered him a fraud. According to researcher Peter Rogerson, the description of the woman in the Vilas-Boas case suggests his influence.",
+    "works": [
+      {
+        "year": 1953,
+        "title": "Flying Saucers Have Landed",
+        "contribution": "Escrito con Desmond Leslie; su relato del encuentro de Desert Center, con las declaraciones firmadas de seis acompañantes",
+        "contribution_en": "Written with Desmond Leslie; his account of the Desert Center encounter, with the signed statements of six companions"
+      },
+      {
+        "year": 1955,
+        "title": "Inside the Space Ships",
+        "contribution": "Relato de viajes en naves espaciales con sus tripulantes",
+        "contribution_en": "Account of trips aboard spacecraft with their crews"
+      },
+      {
+        "year": 1961,
+        "title": "Flying Saucers Farewell",
+        "contribution": "Su tercer libro sobre sus contactos",
+        "contribution_en": "His third book about his contacts"
+      }
+    ],
+    "sources": [
+      {
+        "name": "George Adamski y Desmond Leslie, «Flying Saucers Have Landed» (1953), en archive.org",
+        "name_en": "George Adamski and Desmond Leslie, \"Flying Saucers Have Landed\" (1953), at archive.org",
+        "url": "https://archive.org/details/george-adamski-flying-saucers-have-landed",
+        "note": "Fuente primaria: su relato del encuentro.",
+        "note_en": "Primary source: his account of the encounter."
+      },
+      {
+        "name": "FBI, expediente de George Adamski (memorandos de 1952 a 1956), en archive.org",
+        "name_en": "FBI, George Adamski file (memoranda from 1952 to 1956), at archive.org",
+        "url": "https://archive.org/details/george-adamski-final",
+        "note": "Fuente primaria: la amonestación del FBI y la opinión de la Fuerza Aérea.",
+        "note_en": "Primary source: the FBI warning and the Air Force's view."
+      },
+      {
+        "name": "Wikipedia, «George Adamski»",
+        "name_en": "Wikipedia, \"George Adamski\"",
+        "url": "https://en.wikipedia.org/wiki/George_Adamski",
+        "note": "Datos biográficos y bibliografía.",
+        "note_en": "Biographical data and bibliography."
+      }
+    ]
+  },
+  {
+    "id": "jung",
+    "name": "Carl Gustav Jung",
+    "flag": "🇨🇭",
+    "photo": "https://commons.wikimedia.org/wiki/Special:FilePath/ETH-BIB-Jung%2C%20Carl%20Gustav%20%281875-1961%29-Portrait-Portr%2014163%20%28cropped%29.tif?width=400",
+    "photo_credit": "Fotógrafo desconocido, hacia 1935 · ETH-Bibliothek Zürich, Portr_14163 (Wikimedia Commons)",
+    "photo_license": "Dominio público (Public Domain Mark 1.0)",
+    "born": 1875,
+    "death": 1961,
+    "section": "E",
+    "section_label": "Psicología analítica (histórico)",
+    "section_label_en": "Analytical psychology (historical)",
+    "credentials": "Psiquiatra suizo · fundador de la psicología analítica",
+    "credentials_en": "Swiss psychiatrist · founder of analytical psychology",
+    "bio_short": "Psiquiatra suizo, discípulo y después disidente de Sigmund Freud, fundó la psicología analítica, conocida por las ideas de inconsciente colectivo y arquetipo. En 1958 publicó «Ein moderner Mythus. Von Dingen, die am Himmel gesehen werden» (Un mito moderno de cosas que se ven en el cielo), donde estudió los platillos voladores como fenómeno psicológico: sin pronunciarse sobre su realidad física, los leyó como proyecciones de contenidos inconscientes, en particular del círculo o mandala, un símbolo de totalidad, en una época de angustia colectiva. En el libro reprodujo y comentó la hoja impresa de Núremberg de 1561, que interpretó como imaginería bélica y religiosa proyectada sobre un fenómeno atmosférico real, y citó la de Basilea de 1566.",
+    "bio_short_en": "A Swiss psychiatrist, first a follower and then a dissenter from Sigmund Freud, he founded analytical psychology, known for the ideas of the collective unconscious and the archetype. In 1958 he published \"Ein moderner Mythus. Von Dingen, die am Himmel gesehen werden\" (translated as \"Flying Saucers: A Modern Myth of Things Seen in the Skies\"), in which he studied flying saucers as a psychological phenomenon: without ruling on their physical reality, he read them as projections of unconscious contents, especially the circle or mandala, a symbol of wholeness, in an age of collective anxiety. In the book he reproduced and discussed the Nuremberg broadsheet of 1561, which he interpreted as martial and religious imagery projected onto a real atmospheric phenomenon, and cited the Basel broadsheet of 1566.",
+    "works": [
+      {
+        "year": 1921,
+        "title": "Psychologische Typen",
+        "title_en": "Psychological Types",
+        "contribution": "Su teoría de los tipos psicológicos (introversión y extraversión)",
+        "contribution_en": "His theory of psychological types (introversion and extraversion)"
+      },
+      {
+        "year": 1958,
+        "title": "Ein moderner Mythus. Von Dingen, die am Himmel gesehen werden",
+        "title_en": "Flying Saucers: A Modern Myth of Things Seen in the Skies",
+        "contribution": "Los platillos voladores como mito moderno y proyección psicológica; traducido al inglés por R. F. C. Hull en 1959",
+        "contribution_en": "Flying saucers as a modern myth and a psychological projection; translated into English by R. F. C. Hull in 1959"
+      }
+    ],
+    "sources": [
+      {
+        "name": "Princeton University Press, «Flying Saucers: A Modern Myth of Things Seen in the Sky» (de los volúmenes 10 y 18 de las Obras completas)",
+        "name_en": "Princeton University Press, \"Flying Saucers: A Modern Myth of Things Seen in the Sky\" (from volumes 10 and 18 of the Collected Works)",
+        "url": "https://press.princeton.edu/isbn/9780691018225",
+        "note": "Edición del libro de 1958 en las Obras completas.",
+        "note_en": "Edition of the 1958 book in the Collected Works."
+      },
+      {
+        "name": "Wikipedia, «Carl Jung»",
+        "name_en": "Wikipedia, \"Carl Jung\"",
+        "url": "https://en.wikipedia.org/wiki/Carl_Jung",
+        "note": "Datos biográficos y obra.",
+        "note_en": "Biographical data and works."
+      }
+    ]
   }
 ]

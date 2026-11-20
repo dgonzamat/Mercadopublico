@@ -58,6 +58,46 @@ export const RESEARCHER_CASES: Record<string, string[]> = {
   knuth: ["nimitz-2004"],
   sturrock: ["trans-en-provence-1981"],
   nickell: ["kelly-hopkinsville-1955"],
+  menzel: [
+    "kenneth-arnold-1947",
+    "lubbock-lights-1951",
+    "washington-dc-1952",
+    "nash-fortenberry-1952",
+    "barra-da-tijuca-1952",
+    "levelland-1957",
+    "socorro-1964",
+    "falcon-lake-1967",
+  ],
+  klass: [
+    "cape-girardeau-1941",
+    "mcminnville-trent-1950",
+    "rb47-1957",
+    "socorro-1964",
+    "andreasson-ashburnham-1967",
+    "pascagoula-1973",
+    "val-johnson-1979",
+    "st-clair-triangle-2000",
+  ],
+  oberg: [
+    "big-sur-vandenberg-1964",
+    "gemini4-mcdivitt-1965",
+    "gemini7-borman-1965",
+    "skylab-observations-1973",
+    "kovalyonok-salyut6-1981",
+    "minsk-aeroflot-1984",
+    "france-wave-1990",
+    "sts48-1991",
+    "caballero-negro-1998",
+  ],
+  sheaffer: ["mcminnville-trent-1950", "aztec-1948", "cash-landrum-1980", "phoenix-lights-1997", "campeche-2004"],
+  sparks: [
+    "uss-supply-1904",
+    "skylab-observations-1973",
+    "falconbridge-norad-1975",
+    "ellsworth-woods-1977",
+    "cash-landrum-1980",
+    "campeche-2004",
+  ],
 
   // A — teóricos anclados al caso que estudiaron
   nolan: ["council-bluffs-1977", "american-cosmic-2017"],
@@ -85,6 +125,8 @@ export const RESEARCHER_CASES: Record<string, string[]> = {
   stratton: ["roswell-1947"],
   corso: ["roswell-1947"],
   gallaudet: ["nimitz-2004"],
+  quintanilla: ["hassayampa-philippine-sea-1965", "exeter-1965", "kecksburg-1965", "portage-county-1966"],
+  marcel: ["roswell-1947"],
 
   // C — actores políticos
   burlison: ["yemen-orb-2024"],
@@ -100,6 +142,10 @@ export const RESEARCHER_CASES: Record<string, string[]> = {
   clarke: ["rendlesham-1980", "calvine-1990", "howden-moor-1997"],
   blumenthal: ["nimitz-2004"],
   gevaerd: ["varginha-1996", "colares-1977", "noite-oficial-1986"],
+  maussan: ["mexico-eclipse-1991", "campeche-2004", "popocatepetl-1992", "maussan-congreso-mexico-2023"],
+
+  // E — psicología analítica
+  jung: ["nuremberg-1561", "basel-1566"],
 
   // E — comisiones oficiales latinoamericanas
   chamorro: ["pucallpa-2008", "chulucanas-2001"],
@@ -156,6 +202,8 @@ export const RESEARCHER_CASES: Record<string, string[]> = {
   "jack-weiner": ["allagash-1976"],
   foltz: ["allagash-1976"],
   rak: ["allagash-1976"],
+  arnold: ["kenneth-arnold-1947", "maury-island-1947"],
+  adamski: ["adamski-desert-center-1952", "vilas-boas-1957"],
 };
 
 /** Casos asociados a un investigador (resueltos a objetos UAPCase, en orden). */
