@@ -1,4 +1,4 @@
-import type { UAPCase, Pattern } from "./types";
+import type { UAPCase } from "./types";
 
 /**
  * Pure descriptive statistics over the corpus. NO inference — these are
@@ -21,34 +21,6 @@ export function tierDistribution(cases: UAPCase[]): TierDistribution {
     B: cases.filter((c) => c.tier === "B").length,
     total: cases.length,
   };
-}
-
-export interface PatternFrequency {
-  id: string;
-  letter: string;
-  name: string;
-  name_en: string;
-  count: number;
-  color: string;
-}
-
-export function topPatterns(
-  cases: UAPCase[],
-  patterns: Pattern[],
-  n: number = 5,
-): PatternFrequency[] {
-  return patterns
-    .map((p) => ({
-      id: p.id,
-      letter: p.letter,
-      name: p.name,
-      name_en: p.name_en,
-      color: p.color,
-      count: cases.filter((c) => c.patterns.includes(p.id)).length,
-    }))
-    .filter((p) => p.count > 0)
-    .sort((a, b) => b.count - a.count)
-    .slice(0, n);
 }
 
 export interface EraDistribution {
@@ -89,8 +61,4 @@ export function eraDistribution(cases: UAPCase[]): EraDistribution[] {
     ...e,
     count: cases.filter((c) => c.year_start >= e.start && c.year_start <= e.end).length,
   }));
-}
-
-export function countryCount(cases: UAPCase[]): number {
-  return new Set(cases.map((c) => c.country)).size;
 }

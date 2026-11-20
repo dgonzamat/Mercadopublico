@@ -2,6 +2,7 @@
 
 import { useEffect, useMemo, useState } from "react";
 import { T } from "@/components/T";
+import { useLocale } from "@/components/explorer/useLocale";
 import { supabase } from "@/lib/supabase/client";
 import { fmtDateTime, fmtNum } from "@/lib/visitorsFormat";
 import { VisitorsTable, type VisitorRow } from "@/components/VisitorsTable";
@@ -72,6 +73,7 @@ function cutoffFor(period: Period): string | null {
 }
 
 export function VisitorsPanel() {
+  const locale = useLocale();
   // Agregados YA calculados por el servidor para el periodo activo (RPCs
   // *_agg). No traemos filas crudas: PostgREST corta en 1000 filas y la
   // agregación en cliente se truncaba en silencio al crecer las tablas.
@@ -275,7 +277,7 @@ export function VisitorsPanel() {
       <section
         className="space-y-5"
         aria-busy="true"
-        aria-label="Cargando estadísticas"
+        aria-label={locale === "es" ? "Cargando estadísticas" : "Loading statistics"}
       >
         <div className="flex flex-wrap gap-2">
           {PERIODS.map((p) => (
@@ -315,7 +317,7 @@ export function VisitorsPanel() {
   return (
     <section className="space-y-5">
       {/* Filtro de periodo */}
-      <div className="flex flex-wrap gap-2" role="group" aria-label="Periodo">
+      <div className="flex flex-wrap gap-2" role="group" aria-label={locale === "es" ? "Periodo" : "Period"}>
         {PERIODS.map((p) => {
           const active = p.key === period;
           return (
@@ -337,10 +339,10 @@ export function VisitorsPanel() {
       </div>
 
       {/* Estadísticas derivadas */}
-      <VisitorsStats data={stats} />
+      <VisitorsStats data={stats} locale={locale} />
 
       {/* Suscriptores (usuarios autenticados) */}
-      <VisitorsSubscribers data={subscribers} />
+      <VisitorsSubscribers data={subscribers} locale={locale} />
 
       {/* Donaciones: clics en «Apoya UAP Codex» (migración 0009). Aún no se
           cobra nada: mide cuánta gente estaría dispuesta a aportar antes de

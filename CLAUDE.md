@@ -93,7 +93,7 @@ web/
     researchers/        # ecosistema disclosure (5 secciones)
     frameworks/         # 11 frameworks teóricos comparados
     about/, resumen/    # metodología + 10-min summary
-  components/           # Badge, MobileNav, MeceChart, CorpusStats, WorldMap...
+  components/           # MobileNav, MeceChart, CorpusStats, WorldMap...
   lib/
     data.ts             # carga cases / patterns / frameworks / researchers
     types.ts            # UAPCase, Posterior (MECE), MeceClassId, etc.

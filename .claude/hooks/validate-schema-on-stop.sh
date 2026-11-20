@@ -15,7 +15,7 @@ repo_root=$(cd "$(dirname "$0")/../.." && pwd)
 cd "$repo_root" || exit 0
 
 # Solo actuar si hay cambios (staged, unstaged o nuevos) en los datos validados.
-changed=$(git status --porcelain -- web/data/cases web/data/researchers.json 2>/dev/null)
+changed=$(git status --porcelain -- web/data/cases web/data/researchers.json web/data/posts 2>/dev/null)
 [ -z "$changed" ] && exit 0
 
 cd web || exit 0

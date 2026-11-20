@@ -73,12 +73,12 @@ export function DocumentsViewer({ docs, locale, heading }: { docs: DocEmbed[]; l
               doc.src.startsWith(FACEBOOK_EMBED) || doc.src.startsWith(X_EMBED) ? (
                 <FacebookVideo
                   src={doc.src}
-                  title={doc.title_en ?? doc.title}
+                  title={locale === "es" ? doc.title : doc.title_en ?? doc.title}
                   locale={locale}
                   platform={doc.src.startsWith(X_EMBED) ? "x" : "facebook"}
                 />
               ) : (
-                <DvidsVideo src={doc.src} title={doc.title_en ?? doc.title} />
+                <DvidsVideo src={doc.src} title={locale === "es" ? doc.title : doc.title_en ?? doc.title} />
               )
             ) : (
               // eslint-disable-next-line @next/next/no-img-element

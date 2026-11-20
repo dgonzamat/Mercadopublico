@@ -50,7 +50,7 @@ function Card({
  * diaria y desglose por continente. Todo se recalcula según el periodo elegido
  * en VisitorsPanel, que pasa los agregados ya listos.
  */
-export function VisitorsStats({ data }: { data: VisitorsStatsData }) {
+export function VisitorsStats({ data, locale = "en" }: { data: VisitorsStatsData; locale?: "es" | "en" }) {
   const { total, countries, avgPerDay, peak, dailyTotals, byContinent } = data;
   const maxDay = dailyTotals.reduce((m, d) => Math.max(m, d.count), 0) || 1;
   const regionMax = byContinent.reduce((m, r) => Math.max(m, r.count), 0) || 1;
@@ -106,13 +106,13 @@ export function VisitorsStats({ data }: { data: VisitorsStatsData }) {
           <div
             className={`flex items-end gap-[2px] ${showDayLabels ? "h-28" : "h-20"}`}
             role="img"
-            aria-label={`Tendencia diaria de visitas · ${dailyTotals.length} días · pico ${maxDay}`}
+            aria-label={locale === "es" ? `Tendencia diaria de visitas · ${dailyTotals.length} días · pico ${maxDay}` : `Daily visits trend · ${dailyTotals.length} days · peak ${maxDay}`}
           >
             {dailyTotals.map((d) => (
               <div
                 key={d.day}
                 className="flex h-full min-w-0 flex-1 flex-col items-center justify-end"
-                title={`${fmtDay(d.day, "es")} · ${d.count}`}
+                title={`${fmtDay(d.day, locale)} · ${d.count}`}
                 aria-hidden
               >
                 {/* Con 7 o 30 días cada barra lleva su cifra; con más no caben.

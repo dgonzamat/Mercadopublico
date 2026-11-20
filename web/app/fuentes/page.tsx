@@ -54,7 +54,7 @@ export default function FuentesPage() {
       </header>
 
       <nav
-        aria-label="Categorías de fuentes"
+        aria-label="Categorías de fuentes · Source categories"
         className="grid gap-2 border-y-2 border-text/15 py-6 sm:grid-cols-2"
       >
         {grouped.map((g) => (

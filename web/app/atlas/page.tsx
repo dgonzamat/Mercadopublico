@@ -13,6 +13,9 @@ export const metadata = pageMeta({
   path: "/atlas/",
 });
 
+const ARCHIVE_LINK =
+  "inline-flex min-h-[44px] items-center border border-border bg-panel px-4 py-2 text-text hover:border-accent/50";
+
 export default function AtlasPage() {
   // Índice país → investigadores asociados (reverse lookup), computado en el
   // server y pasado como prop slim para no bundlear researchers.json al cliente.
@@ -60,15 +63,19 @@ export default function AtlasPage() {
 
       <nav className="flex flex-wrap gap-3 border-t border-border pt-6 text-sm">
         {/* AT-4 · puente al archivo · T-1 esquinas vivas · T-2 sin emoji */}
-        <Link
-          href="/cases"
-          className="inline-flex min-h-[44px] items-center border border-border bg-panel px-4 py-2 text-text hover:border-accent/50"
-        >
-          <T
-            es={`Los ${STATS.cases} casos en el archivo →`}
-            en={`The ${STATS.cases} cases in the archive →`}
-          />
-        </Link>
+        {/* /atlas es bilingüe en una sola URL: cada idioma enlaza a su archivo. */}
+        <T
+          es={
+            <Link href="/es/cases" className={ARCHIVE_LINK}>
+              {`Los ${STATS.cases} casos en el archivo →`}
+            </Link>
+          }
+          en={
+            <Link href="/cases" className={ARCHIVE_LINK}>
+              {`The ${STATS.cases} cases in the archive →`}
+            </Link>
+          }
+        />
       </nav>
     </div>
   );

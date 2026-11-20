@@ -22,16 +22,8 @@ export function getCase(id: string): UAPCase | undefined {
   return cases.find((c) => c.id === id);
 }
 
-export function getPattern(id: string): Pattern | undefined {
-  return patterns.find((p) => p.id === id);
-}
-
 export function getFramework(id: string): Framework | undefined {
   return frameworks.find((f) => f.id === id);
-}
-
-export function getCasesByPattern(patternId: string): UAPCase[] {
-  return cases.filter((c) => c.patterns.includes(patternId));
 }
 
 export function getEntityMorphology(slug: string): EntityMorphology | undefined {
@@ -47,12 +39,4 @@ export function getCasesByEntityMorphology(slug: string): UAPCase[] {
       (a, b) =>
         TIER_ORDER[a.tier] - TIER_ORDER[b.tier] || a.year_start - b.year_start,
     );
-}
-
-export function tierLabel(tier: "S" | "A" | "B"): string {
-  return `Tier ${tier}`;
-}
-
-export function tierColor(tier: "S" | "A" | "B"): string {
-  return tier === "S" ? "tierS" : tier === "A" ? "tierA" : "tierB";
 }
