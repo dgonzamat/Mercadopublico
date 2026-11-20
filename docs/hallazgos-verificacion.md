@@ -405,6 +405,15 @@ Conteo hecho a mano a partir de los informes de los verificadores (17-18 nov 202
 | ube-f86d-1956 | cifra/hora | BAJA: D198 escribe «ZZONJAIN (Phonetic)» y el vacío se forma en parte de la superficie | no |
 | detroit-dome-object-1958 | atribución | BAJA: en D197 el Mando de Defensa Aérea es el origen, no el destinatario; la regla de testimonio único no está en el documento | no |
 | tremonton-film-1952 | cifra/hora | BAJA: D025 sí lleva «1952» escrito a mano en las pp. 1 y 11 | no |
+| levelland-1957 | atribución | ALTA (documento D191 de la entrega 08): el informe de campo no deja el caso sin causa: baraja cuatro causas convencionales (fuego de San Telmo, rayo en bola con nubes nimbo, gas quemado reflejado, combinación) y lo remite «unresolved» por falta de conocimiento de esos fenómenos (p. 19); el caso del sargento va «as a possible explanation» | no |
+| levelland-1957 | cifra/hora | MEDIA: el sargento da 02/2335 en el formulario y 2350–2355 en su declaración, con relámpagos cerca de Anton (pp. 11-12) | no |
+| levelland-1957 | atribución | MEDIA: la Parte Tres vio «just a streak of light one time», no una luz oval que iluminó el pavimento; el verificador la identifica con el sheriff Clem por inferencia, y no se publica | no |
+| levelland-1957 | omisión | MEDIA: los otros testigos de la prensa no se encontraron (p. 17); el investigador entrevistó a seis | no |
+| levelland-1957 | cifra/hora | MEDIA: del 4 al 6 nov es la fecha de recogida de la cabecera, no la duración de la investigación | no |
+| levelland-1957 | omisión | MEDIA: Saucedo se dijo barbero y al principio lo tomó por un rayo; motivos del «cannot be relied upon» (p. 19) | no |
+| levelland-1957 | omisión | BAJA: Underwood (profesor de Matemáticas y Astronomía) admitió que un rayo podía parar un auto; los globos «not likely to be in the area»; cielo cubierto e inversión | no |
+| levelland-1957 | cifra/hora | BAJA: seis relatos y cinco declaraciones firmadas | no |
+| levelland-1957 | omisión | MEDIA: la prosa no decía que el informe final de la unidad remitió el caso sin resolver tras barajar causas convencionales; añadido al párrafo de Barth | no |
 
 **Lectura (18 nov 2026, tras la sexta ficha):** de 42 filas, `caso:check` habría marcado 4 (ninguna de Puddy; sus avisos eran falsos positivos) y 2 más con la regla ampliada. Las categorías **atribución, omisión, cifra/hora y ausencia** aparecieron en las cinco últimas fichas (Moody a Puddy): el paso 0.5 y el autochequeo **no las redujeron**. El léxico (3 de 5) sí era mecánico y pasó a E62. Puddy es una ficha más difícil que las anteriores (tres episodios, manuscritos de la RAAF, tres versiones de los investigadores), así que no es un experimento limpio: la comparación solo valdrá con tres fichas más.
 
