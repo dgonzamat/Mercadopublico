@@ -334,7 +334,14 @@ Conteo hecho a mano a partir de los informes de los verificadores (17-18 nov 202
 | bolido-sur-california-1957 | lectura | BAJA: «su director de Inteligencia» podía leerse como el del ATIC; era el del cuartel general de la Fuerza Aérea | no |
 | bolido-sur-california-1957 | lectura | BAJA: el título decía «seis testigos ven cruzar» con la misma duda de la hora; pasa a «seis personas avisan» | no |
 | bolido-sur-california-1957 | lectura | EN 6/10 (lector ciego). Corregido: entradilla críptica sobre la hora del marinero, «five people» frente a «six», «below his line of sight» (30° bajo la horizontal, télex), frase con demasiados incisos, párrafo de la etapa del Sputnik 1 colgando, orden de los cazas, Departamento de Guerra y PURSUE | no |
-| middle-east-two-contrasts-2026 | pendiente | Fila provisional del redactor (ficha 573); el orquestador la sustituye por los hallazgos del verificador | no |
+| middle-east-two-contrasts-2026 | ausencia | ALTA: «no se distinguen las dos áreas» era falso en parte: de los s. 39 a 53 se ve un punto claro fijo; el círculo y los bloques de compresión eran lecturas sin fuente y salen de la prosa | no |
+| middle-east-two-contrasts-2026 | léxico/voz | MEDIA: «se acerca» por «zooms in» sugería que la plataforma se acercaba | no |
+| middle-east-two-contrasts-2026 | cifra/hora | MEDIA: faltaba el corte del s. 21,7 y los fondos lisos son negros o casi blancos, no grises | no |
+| middle-east-two-contrasts-2026 | atribución | MEDIA: «es el tipo de informe que acaba en ese archivo» mezclaba lo publicado con lo que tiene la AARO; el informe solo dice que 42 casos fueron al archivo por falta de información | no |
+| middle-east-two-contrasts-2026 | léxico/voz | BAJA: «destello» por «glare» (deslumbramiento) | no |
+| middle-east-two-contrasts-2026 | cifra/hora | BAJA: evidence perdía el «generally» de la fuente | no |
+| middle-east-two-contrasts-2026 | atribución | BAJA: PR169 descrito como «un punto claro»; la AARO dice «an area of contrast» | no |
+| middle-east-two-contrasts-2026 | clasificación | MEDIA: adversaria 0,10 no se sostenía (informe FY24 p. 2: «None of these resolved cases substantiated advanced foreign adversarial capabilities»); vuelve a 0,05 y mundano a 0,50, como las hermanas; contrastado por el orquestador en la fuente | no |
 | middle-east-ir-contrast-2020 | atribución | MEDIA: el comentario de la AARO en PR45 habla de acercarse a «the source of the detection», no al «objeto»; la ficha le atribuía más de lo que dijo | no |
 | middle-east-ir-contrast-2020 | atribución | MEDIA: los 174 casos son de todo el informe FY2024 (p. 2), no de Oriente Medio, y «sobre todo» no está en la p. 2 (lo respalda la p. 13) | no |
 | middle-east-ir-contrast-2020 | clasificación | BAJA: la tasa base de 57 informes es de may 2023–jun 2024 y el classBasis no lo decía | no |
@@ -343,8 +350,15 @@ Conteo hecho a mano a partir de los informes de los verificadores (17-18 nov 202
 | middle-east-ir-contrast-2020 | cifra/hora | BAJA: «ese mismo 1 de enero» inexacto: PR115 lleva 01.01.2019 | no |
 | middle-east-ir-contrast-2020 | léxico/voz | BAJA: ranking sin fuente («lo mínimo que puede traer un informe de la serie») | sí |
 | middle-east-ir-contrast-2020 | léxico/voz | BAJA: voz del redactor en EN («The record tells us little») | sí |
-| middle-east-eoir-track-2023 | pendiente | Fila provisional del redactor (ficha 574); el orquestador la sustituye por los hallazgos del verificador | no |
-| la-jolla-1949 | pendiente | Fila provisional del redactor (20 nov 2026); el orquestador la sustituye por los hallazgos del verificador | no |
+| middle-east-eoir-track-2023 | omisión | ALTA: la ficha describía un punto que recorre los bordes de la pantalla y sugería tensión con la AARO; los fotogramas lo muestran desde el primer cuadro y luego dentro del rectángulo central, en línea con «generally within the center of the frame» | no |
+| middle-east-eoir-track-2023 | cifra/hora | BAJA: la coincidencia entre Date Taken y creation_time solo sugiere la fecha de preparación del archivo; lo que descarta 2026 es el «in 2023» de la descripción | no |
+| middle-east-eoir-track-2023 | omisión | BAJA: la nota del informe FY24 omitía el deslumbramiento de sensores EO/IR (p. 10) | no |
+| la-jolla-1949 | atribución | MEDIA: «la única evaluación oficial no se escribió para ella»: el índice de 1949 la nombra («Whitton, Selby · AIRCRAFT»); lo que describe solo Glendale es la tarjeta 372 | no |
+| la-jolla-1949 | ausencia | MEDIA: «ningún instrumento registró el objeto» y «nada midió la distancia» pasan a lo comprobable: el legajo no contiene registro instrumental | sí |
+| la-jolla-1949 | cifra/hora | BAJA: el resumen convertía la posición («in the direction of San Diego») en un rumbo | no |
+| la-jolla-1949 | omisión | BAJA: el aviso telefónico decía «flying over her home» y su relato lo sitúa a cuatro millas al sureste | no |
+| la-jolla-1949 | omisión | BAJA: el cuestionario de Glendale lleva la anotación «A/C» y el de La Jolla no | no |
+| la-jolla-1949 | cifra/hora | BAJA: la descripción del documento enumeraba 16 de las 17 páginas | no |
 
 **Lectura (18 nov 2026, tras la sexta ficha):** de 42 filas, `caso:check` habría marcado 4 (ninguna de Puddy; sus avisos eran falsos positivos) y 2 más con la regla ampliada. Las categorías **atribución, omisión, cifra/hora y ausencia** aparecieron en las cinco últimas fichas (Moody a Puddy): el paso 0.5 y el autochequeo **no las redujeron**. El léxico (3 de 5) sí era mecánico y pasó a E62. Puddy es una ficha más difícil que las anteriores (tres episodios, manuscritos de la RAAF, tres versiones de los investigadores), así que no es un experimento limpio: la comparación solo valdrá con tres fichas más.
 
