@@ -335,7 +335,14 @@ Conteo hecho a mano a partir de los informes de los verificadores (17-18 nov 202
 | bolido-sur-california-1957 | lectura | BAJA: el título decía «seis testigos ven cruzar» con la misma duda de la hora; pasa a «seis personas avisan» | no |
 | bolido-sur-california-1957 | lectura | EN 6/10 (lector ciego). Corregido: entradilla críptica sobre la hora del marinero, «five people» frente a «six», «below his line of sight» (30° bajo la horizontal, télex), frase con demasiados incisos, párrafo de la etapa del Sputnik 1 colgando, orden de los cazas, Departamento de Guerra y PURSUE | no |
 | middle-east-two-contrasts-2026 | pendiente | Fila provisional del redactor (ficha 573); el orquestador la sustituye por los hallazgos del verificador | no |
-| middle-east-ir-contrast-2020 | pendiente | Fila provisional del redactor; la sustituye el orquestador por los hallazgos del verificador | no |
+| middle-east-ir-contrast-2020 | atribución | MEDIA: el comentario de la AARO en PR45 habla de acercarse a «the source of the detection», no al «objeto»; la ficha le atribuía más de lo que dijo | no |
+| middle-east-ir-contrast-2020 | atribución | MEDIA: los 174 casos son de todo el informe FY2024 (p. 2), no de Oriente Medio, y «sobre todo» no está en la p. 2 (lo respalda la p. 13) | no |
+| middle-east-ir-contrast-2020 | clasificación | BAJA: la tasa base de 57 informes es de may 2023–jun 2024 y el classBasis no lo decía | no |
+| middle-east-ir-contrast-2020 | omisión | BAJA: hay un segundo blanqueo de la imagen hacia el segundo 15 | no |
+| middle-east-ir-contrast-2020 | léxico/voz | BAJA: «second-by-second description» frente a «por tramos» en ES | no |
+| middle-east-ir-contrast-2020 | cifra/hora | BAJA: «ese mismo 1 de enero» inexacto: PR115 lleva 01.01.2019 | no |
+| middle-east-ir-contrast-2020 | léxico/voz | BAJA: ranking sin fuente («lo mínimo que puede traer un informe de la serie») | sí |
+| middle-east-ir-contrast-2020 | léxico/voz | BAJA: voz del redactor en EN («The record tells us little») | sí |
 | middle-east-eoir-track-2023 | pendiente | Fila provisional del redactor (ficha 574); el orquestador la sustituye por los hallazgos del verificador | no |
 | la-jolla-1949 | pendiente | Fila provisional del redactor (20 nov 2026); el orquestador la sustituye por los hallazgos del verificador | no |
 
