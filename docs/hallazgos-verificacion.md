@@ -432,6 +432,12 @@ Conteo hecho a mano a partir de los informes de los verificadores (17-18 nov 202
 | levelland-1957 | omisión | BAJA: Underwood (profesor de Matemáticas y Astronomía) admitió que un rayo podía parar un auto; los globos «not likely to be in the area»; cielo cubierto e inversión | no |
 | levelland-1957 | cifra/hora | BAJA: seis relatos y cinco declaraciones firmadas | no |
 | levelland-1957 | omisión | MEDIA: la prosa no decía que el informe final de la unidad remitió el caso sin resolver tras barajar causas convencionales; añadido al párrafo de Barth | no |
+| orogrande-stokes-1957 | pendiente | Fila provisional del redactor (20 nov 2026); el orquestador la sustituye por los hallazgos del verificador | no |
+| kirtland-afb-1957 | cifra/hora | ALTA (documento D195 de la entrega 08, leído por su texto digital): la fecha «8 Nov 57» está en la cabecera revuelta y no se sabe a qué campo pertenece; D195 puede ser la carta del 8 nov o el informe del 13 que cita McDonald. Se quita la fecha y se devuelve a McDonald su «carta» | no |
+| kirtland-afb-1957 | atribución | MEDIA: D195 cita el radar «N-16 Surface» de la estación de Kirtland, no la unidad de aproximación de la CAA; «la misma declaración» pasa a «una declaración parecida» | no |
+| kirtland-afb-1957 | omisión | BAJA: McDonald dice que Shere no consultó al personal de radar y D195 sí registra una consulta; y la meteorología de D195 difiere del techo alto de Condon. Sin tocar en la prosa | no |
+| kirtland-afb-1957 | atribución | BAJA: solo los puntos b y c de la cita de McDonald son legibles en D195 | no |
+| kirtland-afb-1957 | léxico/voz | BAJA: comillas simples en el name_en de la fuente | no |
 
 **Lectura (18 nov 2026, tras la sexta ficha):** de 42 filas, `caso:check` habría marcado 4 (ninguna de Puddy; sus avisos eran falsos positivos) y 2 más con la regla ampliada. Las categorías **atribución, omisión, cifra/hora y ausencia** aparecieron en las cinco últimas fichas (Moody a Puddy): el paso 0.5 y el autochequeo **no las redujeron**. El léxico (3 de 5) sí era mecánico y pasó a E62. Puddy es una ficha más difícil que las anteriores (tres episodios, manuscritos de la RAAF, tres versiones de los investigadores), así que no es un experimento limpio: la comparación solo valdrá con tres fichas más.
 
