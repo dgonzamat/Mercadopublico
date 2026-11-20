@@ -191,6 +191,18 @@ El hallazgo real: `950338`, "The Satellite Flaring Phenomenon" — una animació
 - [x] `PR142` · 01.01.2025 — unresolved-uap-report-middle-east-2025 → `dow-uap-release04-05-catalog-2025`(https://www.dvidshub.net/video/1017797)
 - [x] `PR149` · 01.01.2023 — unresolved-uap-report-middle-east-2023 → `dow-uap-release04-05-catalog-2025` · [ver](https://www.dvidshub.net/video/1017799)
 
+## Release 08 — 20 nov 2026 (3 videos)
+
+Etiqueta `AARO112026`, publicados el 20 nov 2026 (la página de DVIDS da «Date Taken» 01.01.AAAA como marcador de año, o la fecha de preparación del archivo, nunca el día del suceso). Los tres son de CENTCOM, sin parte acompañante ni comentario de la AARO, y por decisión del dueño cada uno tiene ficha propia:
+
+| Código | DVIDS | Ficha |
+|---|---|---|
+| DOW-UAP-PR166 (IR, 20 s, 2020) | 1030270 | `middle-east-ir-contrast-2020` |
+| DOW-UAP-PR168 (EO/IR, 54 s, 2026) | 1030274 | `middle-east-two-contrasts-2026` |
+| DOW-UAP-PR169 (EO/IR, 13 s, 2023) | 1030277 | `middle-east-eoir-track-2023` |
+
+**PR167 no aparece**: `/unit/AARO` lista solo los tres; los IDs 1030255–1030300 (y 1030100–1030450 por título) se recorrieron uno a uno; 1030271, 1030272 y 1030275 dan 404 y 1030273 y 1030276 son videos ajenos. El buscador de DVIDS no indexa la etiqueta, así que su silencio no prueba nada.
+
 ## Serie separada · AARO Case Resolution Reports (hallada vía `q=Anomaly+Resolution+Office`)
 
 Búsqueda más amplia que `q=DOW-UAP` destapó **27 videos adicionales**, ninguno relacionado con PURSUE: son la serie propia de la AARO (`PR-001`…`PR-018`, EUCOM/AFRICOM) más metraje de audiencias públicas (Senado, panel de la NASA). Todos con evaluación oficial adjunta como texto.
