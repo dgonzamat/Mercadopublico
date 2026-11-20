@@ -674,7 +674,7 @@ export async function CaseDetailPage(
                 <LocaleLink
                   key={f.slug}
                   href={`/entities/${f.slug}`}
-                  className="inline-flex min-h-[44px] items-center border-2 px-3 py-1.5 text-xs hover:bg-text hover:text-bg"
+                  className="inline-flex min-h-[44px] items-center border-2 px-3 py-1.5 text-xs hover:bg-text hover:text-bg transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-accent"
                   style={{ borderColor: f.color }}
                   title={locale === "es" ? f.description : f.description_en ?? f.description}
                 >

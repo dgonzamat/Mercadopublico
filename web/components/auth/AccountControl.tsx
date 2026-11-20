@@ -30,7 +30,7 @@ export function AccountControl({
       return (
         <Link
           href="/acceso"
-          className="inline-flex h-10 items-center px-1 font-mono text-xs uppercase tracking-widest text-bg/70 underline-offset-4 hover:text-bg hover:underline"
+          className="inline-flex h-11 items-center px-1 font-mono text-xs uppercase tracking-widest text-bg/70 underline-offset-4 hover:text-bg hover:underline"
         >
           <T es="Entrar" en="Sign in" locale={locale} />
         </Link>
@@ -99,7 +99,7 @@ function SignOutButton({
       <button
         type="button"
         onClick={() => signOut()}
-        className="inline-flex h-10 items-center border-2 border-bg/40 px-3 font-mono text-xs uppercase tracking-widest text-bg hover:bg-bg hover:text-text"
+        className="inline-flex h-11 items-center border-2 border-bg/40 px-3 font-mono text-xs uppercase tracking-widest text-bg hover:bg-bg hover:text-text"
       >
         <T es="Salir" en="Sign out" locale={locale} />
       </button>

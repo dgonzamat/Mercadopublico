@@ -31,7 +31,10 @@ export function AnchorExpander() {
       });
       // Re-scroll after opening (browser default scroll happens before expand)
       requestAnimationFrame(() => {
-        el.scrollIntoView({ behavior: "smooth", block: "start" });
+        // La opción explícita "smooth" ignora el `scroll-behavior: auto` del CSS
+        // de movimiento reducido: se consulta la preferencia aquí (nov 2026).
+        const reduce = window.matchMedia("(prefers-reduced-motion: reduce)").matches;
+        el.scrollIntoView({ behavior: reduce ? "auto" : "smooth", block: "start" });
       });
     }
 

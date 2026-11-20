@@ -1,6 +1,6 @@
 "use client";
 
-import { useEffect, useState } from "react";
+import { useEffect, useState, useRef } from "react";
 import { T } from "@/components/T";
 import {
   AGG_LABEL,
@@ -109,13 +109,46 @@ export function AddVisualDialog({
     if (!allowedAggs.includes(agg)) setAgg(allowedAggs[0]);
   }
 
+  // Modal accesible (nov 2026), mismo patrón que MobileNav: foco inicial dentro
+  // del diálogo, Tab/Shift+Tab atrapados y foco devuelto a quien lo abrió.
+  const dialogRef = useRef<HTMLDivElement>(null);
+  // onClose en una referencia: si el padre pasa una función nueva en cada
+  // render, el efecto no se repite (el foco volvería al primer control).
+  const onCloseRef = useRef(onClose);
   useEffect(() => {
+    onCloseRef.current = onClose;
+  }, [onClose]);
+  useEffect(() => {
+    const previouslyFocused = document.activeElement as HTMLElement | null;
+    const focusables = () =>
+      dialogRef.current?.querySelectorAll<HTMLElement>(
+        'button:not([disabled]), [href], input:not([disabled]), select:not([disabled]), textarea:not([disabled]), [tabindex]:not([tabindex="-1"])',
+      ) ?? [];
+    focusables()[0]?.focus();
     function onKey(e: KeyboardEvent) {
-      if (e.key === "Escape") onClose();
+      if (e.key === "Escape") {
+        onCloseRef.current();
+        return;
+      }
+      if (e.key !== "Tab") return;
+      const list = focusables();
+      if (list.length === 0) return;
+      const first = list[0];
+      const last = list[list.length - 1];
+      if (e.shiftKey && document.activeElement === first) {
+        e.preventDefault();
+        last.focus();
+      } else if (!e.shiftKey && document.activeElement === last) {
+        e.preventDefault();
+        first.focus();
+      }
     }
     document.addEventListener("keydown", onKey);
-    return () => document.removeEventListener("keydown", onKey);
-  }, [onClose]);
+    return () => {
+      document.removeEventListener("keydown", onKey);
+      previouslyFocused?.focus?.();
+    };
+  }, []);
 
   const deriveTitle = (): { es: string; en: string } => {
     const meas = getMeasure(measure);
@@ -200,16 +233,18 @@ export function AddVisualDialog({
         onClick={(e) => e.stopPropagation()}
         role="dialog"
         aria-modal="true"
+        aria-labelledby="add-visual-title"
+        ref={dialogRef}
       >
         <div className="flex items-center justify-between">
-          <p className="font-display text-xl font-medium text-text">
+          <p id="add-visual-title" className="font-display text-xl font-medium text-text">
             {editing ? <T es="Editar visual" en="Edit visual" /> : <T es="Agregar visual" en="Add visual" />}
           </p>
           <button
             type="button"
             onClick={onClose}
             aria-label={locale === "en" ? "Close" : "Cerrar"}
-            className="text-xl text-muted hover:text-accent"
+            className="inline-flex h-11 w-11 items-center justify-center text-xl text-muted hover:text-accent focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-accent"
           >
             ✕
           </button>

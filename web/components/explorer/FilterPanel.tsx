@@ -3,7 +3,7 @@
 import { useState } from "react";
 import type { UAPCase } from "@/lib/types";
 import { T } from "@/components/T";
-import { CATEGORY_LABEL, pickLabel, type Locale } from "@/lib/explorer/fields";
+import { CATEGORY_LABEL, localizeDimValue, pickLabel, type Locale } from "@/lib/explorer/fields";
 import {
   type Filters,
   EMPTY_FILTERS,
@@ -48,6 +48,7 @@ export function FilterPanel({
   };
 
   const countries = options.countries.filter((c) =>
+    localizeDimValue(c, locale).toLowerCase().includes(countryQuery.toLowerCase()) ||
     c.toLowerCase().includes(countryQuery.toLowerCase()),
   );
 
@@ -120,7 +121,7 @@ export function FilterPanel({
                 active={filters.narrativas.includes(n)}
                 onClick={() => toggle("narrativas", n)}
               >
-                {n}
+                {localizeDimValue(n, locale)}
               </Chip>
             ))}
           </div>
@@ -183,7 +184,7 @@ export function FilterPanel({
                 onClick={() => toggle("countries", c)}
                 className="inline-flex items-center gap-1 border border-accent bg-accent px-2 py-0.5 text-xs text-bg hover:opacity-90"
               >
-                <span className="max-w-[120px] truncate">{c}</span>
+                <span className="max-w-[120px] truncate">{localizeDimValue(c, locale)}</span>
                 <span aria-hidden>✕</span>
               </button>
             ))}
@@ -211,7 +212,7 @@ export function FilterPanel({
                     : "text-text hover:bg-panel"
                 }`}
               >
-                <span className="truncate">{c}</span>
+                <span className="truncate">{localizeDimValue(c, locale)}</span>
                 {active && <span aria-hidden className="shrink-0 text-accent">✓</span>}
               </button>
             );

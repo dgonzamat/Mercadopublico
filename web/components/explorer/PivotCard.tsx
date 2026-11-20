@@ -31,6 +31,7 @@ export function PivotCard({
   const dim = getDimension(config.dimension);
   const meas = getMeasure(config.measure);
   const data = groupAggregate(rows, config.dimension, config.measure, config.agg, {
+    locale,
     topN: config.topN,
     sort: config.sort ?? "value",
   });

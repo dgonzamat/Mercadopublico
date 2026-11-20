@@ -2,12 +2,28 @@ import type { UAPCase } from "@/lib/types";
 import {
   DETAIL_UNSPECIFIED,
   dominantNarrativeLabel,
+  MECE_CLASSES,
   MISID_SUBTYPES,
   OBJECT_DETAILS,
   objectDetailDef,
   PROSAIC_CLASSES,
   prosaicKey,
 } from "@/lib/meceClasses";
+
+// País canónico por código ISO (nov 2026). La dimensión agrupaba por
+// `country_name` crudo y partía los 98 países en 133 variantes («Alaska, EE.UU.»,
+// «Estados Unidos (ubicación exacta no revelada)»…). DataExplorer registra el
+// mapa calculado con lib/countryNames sobre el corpus cliente; este módulo
+// sigue sin importar datos.
+let COUNTRY_NAMES: Record<string, { es: string; en: string }> = {};
+let COUNTRY_EN_BY_ES: Record<string, string> = {};
+export function registerCountryNames(map: Record<string, { es: string; en: string }>) {
+  COUNTRY_NAMES = map;
+  COUNTRY_EN_BY_ES = Object.fromEntries(Object.values(map).map((n) => [n.es, n.en]));
+}
+export function countryLabel(c: UAPCase): string {
+  return COUNTRY_NAMES[c.country]?.es ?? c.country_name.split(" · ")[0];
+}
 
 // Etiquetas de subtipos por key. Importadas de `lib/meceClasses` (data-free) —
 // NO de `lib/meceModel`, que arrastra el corpus completo al chunk cliente del
@@ -79,7 +95,7 @@ export const DIMENSIONS: DimensionDef[] = [
   {
     key: "country",
     label: { es: "País", en: "Country" },
-    values: (c) => [c.country_name || c.country],
+    values: (c) => [countryLabel(c)],
   },
   {
     key: "decade",
@@ -101,8 +117,9 @@ export const DIMENSIONS: DimensionDef[] = [
     label: { es: "Explicación más probable", en: "Most likely explanation" },
     // Narrativa más probable del posterior (argmax). Los documentos no llevan
     // posterior (la partición «qué era el objeto» no les aplica) → "—", como la
-    // convención de `patterns` vacío (kpiDistinct la ignora). Etiqueta en ES
-    // igual que la dimensión `category`: el laboratorio es solo-ES (no /en).
+    // convención de `patterns` vacío (kpiDistinct la ignora). Los valores son
+    // la etiqueta ES (clave estable de agrupación); `localizeDimValue` los
+    // traduce al mostrarlos.
     values: (c) =>
       c.category === "document" || !c.posterior
         ? ["—"]
@@ -197,4 +214,20 @@ export function getMeasure(key: string): MeasureDef | undefined {
 
 export function pickLabel(b: Bilingual, locale: Locale): string {
   return locale === "en" ? b.en : b.es;
+}
+
+// Traducción de los valores de dimensión al mostrarlos (nov 2026): los valores
+// son la etiqueta ES, que sirve de clave estable; en la ruta inglesa la tabla,
+// los gráficos y los filtros los pasan por aquí.
+const EN_BY_ES: Record<string, string> = Object.fromEntries([
+  ...Object.values(CATEGORY_LABEL).map((b) => [b.es, b.en]),
+  ...MECE_CLASSES.map((m) => [m.label, m.labelEn]),
+  ...PROSAIC_CLASSES.map((p) => [p.label, p.labelEn]),
+  ...MISID_SUBTYPES.map((m) => [m.label, m.labelEn]),
+  ...Object.values(OBJECT_DETAILS).flatMap((ds) => (ds ?? []).map((d) => [d.label, d.labelEn])),
+  [DETAIL_UNSPECIFIED.label, DETAIL_UNSPECIFIED.labelEn],
+]);
+export function localizeDimValue(value: string, locale: Locale): string {
+  if (locale === "es") return value;
+  return COUNTRY_EN_BY_ES[value] ?? EN_BY_ES[value] ?? value;
 }

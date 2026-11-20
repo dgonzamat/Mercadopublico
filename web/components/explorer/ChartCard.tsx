@@ -115,14 +115,14 @@ export function ChartCard({
             {locale === "en" ? "No data for current filters" : "Sin datos para los filtros actuales"}
           </div>
         ) : (
-          <ChartBody config={config} rows={rows} />
+          <ChartBody config={config} rows={rows} locale={locale} />
         )}
       </div>
     </article>
   );
 }
 
-function ChartBody({ config, rows }: { config: ChartConfig; rows: UAPCase[] }) {
+function ChartBody({ config, rows, locale }: { config: ChartConfig; rows: UAPCase[]; locale: Locale }) {
   if (config.chartType === "scatter") {
     const points = rows.map((c) => ({
       x: c.year_start,
@@ -144,6 +144,7 @@ function ChartBody({ config, rows }: { config: ChartConfig; rows: UAPCase[] }) {
   }
 
   let data = groupAggregate(rows, config.dimension, config.measure, config.agg, {
+    locale,
     topN: config.topN,
     sort: config.sort ?? "value",
   });

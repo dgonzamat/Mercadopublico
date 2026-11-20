@@ -48,7 +48,7 @@ export function HeatmapCard({
     config.dimensionY,
     config.measure,
     config.agg,
-    { topNX: config.topNX, topNY: config.topNY },
+    { topNX: config.topNX, topNY: config.topNY, locale },
   );
 
   return (

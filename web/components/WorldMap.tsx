@@ -249,6 +249,27 @@ export default function WorldMap({
       </p>
 
       {country !== "all" && (
+        /* Puente al archivo filtrado por el país exacto (nov 2026). Sin cifra:
+           el mapa no dibuja los casos sin lugar revelado y /cases sí los
+           cuenta, así que el número no cuadraría. */
+        <div className="flex flex-wrap gap-3">
+          <a
+            href={`${basePath}${locale === "es" ? "/es" : ""}/cases/#country=${country}`}
+            className="inline-flex min-h-[44px] items-center border border-border bg-panel px-4 py-2 text-sm text-text transition hover:border-accent/50 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-accent"
+          >
+            <T es="Ver los casos de este país en el archivo →" en="See this country's cases in the archive →" />
+          </a>
+          <button
+            type="button"
+            onClick={() => setCountry("all")}
+            className="inline-flex min-h-[44px] items-center border border-border px-4 py-2 text-sm text-muted transition hover:border-accent/50 hover:text-text focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-accent"
+          >
+            <T es="Todos los países" en="All countries" />
+          </button>
+        </div>
+      )}
+
+      {country !== "all" && (
         <div className="space-y-2">
           <span className="block text-sm font-semibold text-muted">
             <T es="Actores asociados" en="Associated actors" />

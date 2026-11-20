@@ -70,7 +70,7 @@ export function ShareButton({
         onClick={onShare}
         aria-label={copied ? copiedLabel : shareLabel}
         title={copied ? copiedLabel : shareLabel}
-        className={`inline-flex h-9 w-9 items-center justify-center border focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-accent ${
+        className={`inline-flex h-11 w-11 items-center justify-center border focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-accent ${
           dark
             ? "border-bg/30 bg-transparent text-bg hover:bg-bg hover:text-text"
             : "border-border bg-bg text-text hover:bg-text hover:text-bg"

@@ -10,6 +10,7 @@ import { regionOf, type Region } from "@/lib/regions";
 import { TIER_META } from "@/lib/ui";
 import { searchKey } from "@/lib/searchKey";
 import { countryEn } from "@/lib/i18n-geo";
+import { canonicalCountryNames } from "@/lib/countryNames";
 import { T } from "@/components/T";
 import { Eyebrow, H1, Lede } from "@/lib/typography";
 import { AnalyzerCta } from "@/components/AnalyzerCta";
@@ -177,6 +178,7 @@ export function CasesView({ locale }: { locale: "es" | "en" }) {
 
       <CasesFilter
         locale={locale}
+        countryNames={canonicalCountryNames(cases.filter((c) => c.category !== "document"))}
         regionCounts={regionCounts}
         hypCounts={hypCounts}
         eras={eras.map(({ era, eraCases }) => ({
@@ -234,6 +236,7 @@ export function CasesView({ locale }: { locale: "es" | "en" }) {
                     <div
                       key={c.id}
                       data-region={regionOf(c.country) ?? "otro"}
+                      data-country={c.country}
                       data-hyp={modalById.get(c.id) ?? "documento"}
                       data-era={String(era.start)}
                       data-tier={c.tier}
