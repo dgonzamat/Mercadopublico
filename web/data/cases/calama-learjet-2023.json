@@ -110,7 +110,8 @@
       "title_en": "SEFAA (Chilean DGAC) report, case no. 1937, Calama, 8 November 2023",
       "description": "Informe de cuatro páginas de la sección oficial de fenómenos aéreos anómalos. Cita el reporte de la controladora de Iquique con la conversación sobre la planta fotovoltaica, busca el vuelo en los registros de tráfico, descarta el lanzamiento Starlink de ese día, modela el cielo y el tránsito espacial hacia los 233° y concluye que varios objetos orbitales pudieron originar lo reportado. Lo cierra como «Relato», aunque su cabecera dice «Resuelto». Obra de la DGAC sin licencia abierta: se enlaza, no se aloja.",
       "description_en": "Four-page report by the official anomalous aerial phenomena section. It quotes the Iquique controller's report with the exchange about the solar plant, searches for the flight in traffic records, rules out that day's Starlink launch, models the sky and space traffic toward 233° and concludes that several orbiting objects could have produced what was reported. It closes it as \"Report\" (Relato), although its header says \"Resolved.\" A DGAC work with no open license, so it is linked rather than hosted.",
-      "source": "SEFAA, Dirección General de Aeronáutica Civil de Chile"
+      "source": "SEFAA, Dirección General de Aeronáutica Civil de Chile",
+      "source_en": "SEFAA, Chile's Directorate General of Civil Aviation (DGAC)"
     }
   ],
   "classBasis": {

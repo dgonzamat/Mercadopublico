@@ -3,7 +3,7 @@
 import { useEffect, useRef, useState } from "react";
 import Link from "next/link";
 import { usePathname, useRouter } from "next/navigation";
-import { localizeHref } from "@/components/LocaleLink";
+import { chromeLocale, localizeHref } from "@/components/LocaleLink";
 import Fuse from "fuse.js";
 import { T } from "@/components/T";
 
@@ -114,16 +114,20 @@ export function SiteSearch({ variant = "default", onSelect, dark = false }: Prop
   const [fuse, setFuse] = useState<Fuse<IndexEntry> | null>(null);
   const inputRef = useRef<HTMLInputElement>(null);
   // Locale activo para atributos que no pueden usar <T> (placeholder, label).
-  const [locale, setLocale] = useState<"es" | "en">("es");
+  // En las rutas con espejo lo fija la URL desde el prerender; las bilingües
+  // esperan al data-locale de LocaleToggle (antes nacía en "es" en todas).
+  const [observed, setObserved] = useState<"es" | "en">("en");
 
   useEffect(() => {
     const el = document.documentElement;
-    const read = () => setLocale((el.dataset.locale as "es" | "en") || "es");
+    const read = () => setObserved((el.dataset.locale as "es" | "en") || "en");
     read();
     const obs = new MutationObserver(read);
     obs.observe(el, { attributes: true, attributeFilter: ["data-locale"] });
     return () => obs.disconnect();
   }, []);
+
+  const locale = chromeLocale(pathname) ?? observed;
 
   async function loadIndex() {
     if (index) return;

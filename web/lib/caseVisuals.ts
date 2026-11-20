@@ -26,7 +26,7 @@ export function caseVisuals(c: UAPCase): { top: DocEmbed[]; paper: DocEmbed[]; c
   items.push(...(c.documents ?? []));
   if (c.primaryDocument) {
     const p = c.primaryDocument;
-    items.push({ type: "image", src: p.url, title: p.caption, title_en: p.caption_en, source: p.source, license: p.license, fallbackUrl: p.href, role: p.role });
+    items.push({ type: "image", src: p.url, title: p.caption, title_en: p.caption_en, source: p.source, source_en: p.source_en, license: p.license, fallbackUrl: p.href, role: p.role });
   }
   const proof = items.filter((d) => visualRole(d) === "prueba");
   return {

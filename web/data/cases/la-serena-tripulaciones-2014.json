@@ -88,7 +88,8 @@
       "title_en": "CEFAA (Chilean DGAC) report, case no. 510, north of La Serena, end of 2014",
       "description": "Informe de ocho páginas del comité oficial de fenómenos aéreos anómalos, hoy SEFAA. Recoge la nota del control de Santiago sobre las cinco tripulaciones, una captura del radar con anotaciones del controlador, los relatos del piloto y el copiloto del avión ambulancia CC-CDY y del piloto del LXP325, la meteorología de La Serena, una carta del cielo y los datos del lanzamiento del satélite chino FY-2G, que propone como origen más probable. No lleva clasificación en la cabecera. Obra de la DGAC sin licencia abierta: se enlaza, no se aloja.",
       "description_en": "Eight-page report by the official anomalous aerial phenomena committee, now SEFAA. It records the Santiago control note on the five crews, a radar screenshot with controller annotations, the accounts of the CC-CDY air ambulance pilot and co-pilot and of the LXP325 pilot, the La Serena weather, a sky chart and the launch data for the Chinese FY-2G satellite, which it proposes as the most probable origin. Its header carries no classification. A DGAC work with no open license, so it is linked rather than hosted.",
-      "source": "SEFAA, Dirección General de Aeronáutica Civil de Chile"
+      "source": "SEFAA, Dirección General de Aeronáutica Civil de Chile",
+      "source_en": "SEFAA, Chile's Directorate General of Civil Aviation (DGAC)"
     },
     {
       "role": "contexto",

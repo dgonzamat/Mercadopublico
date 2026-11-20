@@ -1217,6 +1217,28 @@ if (fs.existsSync(localeLinkPath) && fs.existsSync(esDir)) {
   if (total > 0) {
     record("WARN", casesDir, 0, `E26 i18n fuentes: ${total} nota(s) de fuente con \`note\` (ES) sin \`note_en\` → el detalle de caso muestra español en el sitio EN. Backlog por tier: S×${byTier.S} A×${byTier.A} B×${byTier.B}. Traducir por tandas (S→A→B).`);
   }
+  // Perfiles de actores (nov 2026): /researchers/[slug] renderiza
+  // `note_en ?? note` igual que los casos, y E26 no los miraba (la nota de VASCO
+  // en villarroel salía en español). Su backlog llegó a 0, así que aquí es ERROR:
+  // toda fuente nueva de un actor nace con su par.
+  for (const r of researchers)
+    for (const s of r.sources || [])
+      if (s.note && !s.note_en)
+        record("ERROR", path.join(root, "data", "researchers.json"), 0, `E26 i18n fuentes de actor: «${r.id}» tiene una fuente con \`note\` sin \`note_en\` (${s.name}) → /researchers/${r.id}/ la muestra en español en el sitio EN.`);
+  // Pies de atribución del visor (nov 2026): `source` de cada documento se
+  // mostraba crudo en la ruta inglesa (361 en español). El visor usa
+  // `source_en ?? source`; aquí se cuentan los que parecen español y no tienen
+  // par. El detector es léxico (palabras de atribución en español, no tildes:
+  // «Attaché» o «études» son nombres propios) y no mira el nombre de archivo de
+  // Commons, que es literal. WARN porque una palabra suelta puede fallar.
+  const ES_SOURCE = /(^|[^\p{L}])(vía|Fuente|Archivos?|Biblioteca|Fuerza|Departamento|Mando|Armada|Ejército|entrega|transferid[oa]|Proyecto|copia|escaneo|págs?\.|n\.º|del|de la|de los|de las)(?![\p{L}])/u;
+  const sinArchivo = (s) => s.replace(/^.*\.(jpe?g|png|tiff?|svg|webp|gif)\s*·\s*Wikimedia Commons$/i, "Wikimedia Commons");
+  const pendientes = [];
+  for (const x of [...cases, ...researchers])
+    for (const d of [...(x.documents || []), x.primaryDocument, x.featuredDoc].filter(Boolean))
+      if (d.source && !d.source_en && ES_SOURCE.test(sinArchivo(d.source))) pendientes.push(x.id);
+  if (pendientes.length)
+    record("WARN", casesDir, 0, `E26 i18n pies de documento: ${pendientes.length} \`source\` en español sin \`source_en\` → el visor lo muestra en español en el sitio EN (${[...new Set(pendientes)].slice(0, 8).join(", ")}${new Set(pendientes).size > 8 ? "…" : ""}).`);
 }
 
 // ─── 9r. RULE E27: completitud del sitemap (ERROR) ───────────────────────

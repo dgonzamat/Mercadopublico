@@ -98,7 +98,8 @@
       "title_en": "SEFAA (Chilean DGAC) report, case no. 820, Pudahuel, 2008 (resolved 12 October 2022)",
       "description": "Informe de cuatro páginas de la sección oficial de fenómenos aéreos anómalos. Reúne los partes meteorológicos y el perfil de vientos, las entrevistas de 2010 en la torre de control y la ficha del CEFAA de ese año, y mantiene la conclusión de una bolsa arrastrada por el viento. Obra de la DGAC sin licencia abierta: se enlaza, no se aloja.",
       "description_en": "Four-page report by the official anomalous aerial phenomena section. It gathers the weather reports and wind profile, the 2010 interviews in the control tower and that year's CEFAA record, and upholds the conclusion of a bag carried by the wind. A DGAC work with no open license, so it is linked rather than hosted.",
-      "source": "SEFAA, Dirección General de Aeronáutica Civil de Chile"
+      "source": "SEFAA, Dirección General de Aeronáutica Civil de Chile",
+      "source_en": "SEFAA, Chile's Directorate General of Civil Aviation (DGAC)"
     },
     {
       "role": "documento",
@@ -108,7 +109,8 @@
       "title_en": "SEFAA publication report, case no. 820",
       "description": "Versión de tres páginas preparada para la publicación del mismo caso. Atribuye las citas al meteorólogo y al controlador, indica que no se pudo contar con las imágenes originales y lo clasifica como «Probablemente explicado»; su cabecera fecha el suceso, por error, en 2018. Obra de la DGAC sin licencia abierta: se enlaza, no se aloja.",
       "description_en": "Three-page version prepared for publication of the same case. It attributes the quotations to the meteorologist and the controller, states that the original images could not be obtained and classifies it as \"Probably explained\"; its header mistakenly dates the event to 2018. A DGAC work with no open license, so it is linked rather than hosted.",
-      "source": "SEFAA, Dirección General de Aeronáutica Civil de Chile"
+      "source": "SEFAA, Dirección General de Aeronáutica Civil de Chile",
+      "source_en": "SEFAA, Chile's Directorate General of Civil Aviation (DGAC)"
     }
   ],
   "classBasis": {

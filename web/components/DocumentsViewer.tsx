@@ -36,6 +36,12 @@ const X_EMBED = "https://platform.twitter.com/embed/Tweet.html?id=";
 // primarios» (204 fichas lo decían de una foto de contexto).
 const isContextDoc = (d: { title?: string }) => /^(Contexto|Context)\b/.test(d.title ?? "");
 
+/** Pie de atribución en el idioma de la URL: `source_en` en la ruta inglesa
+ *  (nov 2026: 361 pies salían en español en el sitio inglés; E26 vigila el par). */
+function sourceLabel(doc: DocEmbed, locale: "es" | "en"): string | undefined {
+  return locale === "en" ? doc.source_en ?? doc.source : doc.source;
+}
+
 export function DocumentsViewer({ docs, locale, heading }: { docs: DocEmbed[]; locale: "es" | "en"; heading?: { es: string; en: string } }) {
   if (docs.length === 0) return null;
   const docsVideo = docs.filter((d) => d.type === "video");
@@ -89,7 +95,7 @@ export function DocumentsViewer({ docs, locale, heading }: { docs: DocEmbed[]; l
               </p>
               <DocDescription doc={doc} locale={locale} />
               <p className="font-mono text-[11px] text-muted">
-                {[doc.source, licenseLabel(doc.license, locale)].filter(Boolean).join(" · ")}
+                {[sourceLabel(doc, locale), licenseLabel(doc.license, locale)].filter(Boolean).join(" · ")}
                 {doc.fallbackUrl && (
                   <>
                     {doc.source || doc.license ? " · " : ""}
@@ -129,7 +135,7 @@ export function DocumentsViewer({ docs, locale, heading }: { docs: DocEmbed[]; l
                 </p>
                 <DocDescription doc={doc} locale={locale} />
                 <p className="font-mono text-[11px] text-muted">
-                  {[doc.source, licenseLabel(doc.license, locale)].filter(Boolean).join(" · ")}
+                  {[sourceLabel(doc, locale), licenseLabel(doc.license, locale)].filter(Boolean).join(" · ")}
                   {" · "}
                   <a
                     href={doc.fallbackUrl ?? doc.src}
@@ -154,7 +160,7 @@ export function DocumentsViewer({ docs, locale, heading }: { docs: DocEmbed[]; l
           </p>
           <DocDescription doc={doc} locale={locale} />
           <p className="font-mono text-[11px] text-muted">
-            {doc.source && <>{doc.source} · </>}
+            {doc.source && <>{sourceLabel(doc, locale)} · </>}
             <a
               href={doc.src}
               target="_blank"

@@ -46,6 +46,7 @@ export interface CaseDocument {
   caption: string;
   caption_en?: string;
   source: string;
+  source_en?: string;
   license: string;
   href?: string;
   role?: VisualRole;
@@ -99,6 +100,8 @@ export interface DocEmbed {
   description?: string;
   description_en?: string;
   source?: string;
+  /** Pie de atribución en inglés; el visor lo usa en la ruta inglesa. */
+  source_en?: string;
   license?: string;
   fallbackUrl?: string;
   /** Página en la que abre el visor de un PDF (1 = la primera). Para documentos

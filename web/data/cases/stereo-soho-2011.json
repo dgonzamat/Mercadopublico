@@ -110,6 +110,7 @@
       "description": "Imagen anotada que publicó el Centro de Ciencia de STEREO para explicar el triángulo. Señala Venus, la Tierra y la cola del cometa Lovejoy a la izquierda, y el artefacto a la derecha, sobre el ocultador: el reflejo está en el lado opuesto del detector respecto del planeta que lo produce.",
       "description_en": "Annotated image published by the STEREO Science Center to explain the triangle. It marks Venus, the Earth and the tail of Comet Lovejoy on the left, and the artifact on the right, above the occulter: the reflection sits on the opposite side of the detector from the planet that causes it.",
       "source": "NASA / Centro de Ciencia de STEREO",
+      "source_en": "NASA / STEREO Science Center",
       "license": "Dominio público (NASA)",
       "fallbackUrl": "https://stereo-ssc.nascom.nasa.gov/artifacts/triangle/"
     },
@@ -122,6 +123,7 @@
       "description": "Imagen anotada del episodio de 2020: el equipo de STEREO marca la nebulosa de la Laguna, Venus, la Tierra, el ocultador y, en un círculo, el reflejo que se tomó por una nave. Es el mismo mecanismo que en 2011, en la otra nave gemela.",
       "description_en": "Annotated image of the 2020 episode: the STEREO team marks the Lagoon Nebula, Venus, the Earth, the occulter and, inside a circle, the reflection that was taken for a craft. It is the same mechanism as in 2011, on the other twin spacecraft.",
       "source": "NASA / Centro de Ciencia de STEREO",
+      "source_en": "NASA / STEREO Science Center",
       "license": "Dominio público (NASA)",
       "fallbackUrl": "https://stereo-ssc.nascom.nasa.gov/artifacts/wheel/"
     },

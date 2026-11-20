@@ -82,16 +82,20 @@ export function MobileNav({ dark = false }: { dark?: boolean } = {}) {
     return pathname === h || pathname.startsWith(`${h}/`);
   };
 
-  // Locale activo para los aria-label (atributos, no pueden usar <T>).
-  const [locale, setLocale] = useState<"es" | "en">("es");
+  // Locale activo para los aria-label (atributos, no pueden usar <T>). En las
+  // rutas con espejo lo fija la URL ya en el prerender (`tLocale`); antes nacía
+  // en "es" y el HTML estático inglés salía con «Abrir menú». Solo las rutas sin
+  // espejo (bilingües) esperan al data-locale que pone LocaleToggle.
+  const [observed, setObserved] = useState<"es" | "en">("en");
   useEffect(() => {
     const el = document.documentElement;
-    const read = () => setLocale((el.dataset.locale as "es" | "en") || "es");
+    const read = () => setObserved((el.dataset.locale as "es" | "en") || "en");
     read();
     const obs = new MutationObserver(read);
     obs.observe(el, { attributes: true, attributeFilter: ["data-locale"] });
     return () => obs.disconnect();
   }, []);
+  const locale = tLocale ?? observed;
   const closeLabel = locale === "es" ? "Cerrar menú" : "Close menu";
   const openLabel = locale === "es" ? "Abrir menú" : "Open menu";
   const navLabel = locale === "es" ? "Navegación principal" : "Main navigation";
@@ -199,7 +203,7 @@ export function MobileNav({ dark = false }: { dark?: boolean } = {}) {
             {/* TOP BAR — matches header height + close button */}
             <div className="sticky top-0 z-10 flex items-center justify-between border-b border-bg/15 bg-text px-4 py-5">
               <p className="font-mono text-xs uppercase tracking-widest text-bg/60">
-                <T es="Menú · UAP Codex" en="Menu · UAP Codex" />
+                <T es="Menú · UAP Codex" en="Menu · UAP Codex" locale={tLocale} />
               </p>
               <div className="flex items-center gap-2">
                 {/* Acceso/cuenta · esquina superior (convención), discreto */}
@@ -217,7 +221,7 @@ export function MobileNav({ dark = false }: { dark?: boolean } = {}) {
                     ✕
                   </span>
                   <span>
-                    <T es="Cerrar" en="Close" />
+                    <T es="Cerrar" en="Close" locale={tLocale} />
                   </span>
                 </button>
               </div>
@@ -238,21 +242,21 @@ export function MobileNav({ dark = false }: { dark?: boolean } = {}) {
                 className="group mt-8 block bg-accent p-6 hover:bg-bg hover:text-text"
               >
                 <p className="font-mono text-xs uppercase tracking-widest text-text/70 group-hover:text-muted">
-                  <T es="Apoya el proyecto" en="Support the project" />
+                  <T es="Apoya el proyecto" en="Support the project" locale={tLocale} />
                 </p>
                 <p className="mt-2 font-display text-3xl font-medium leading-tight text-text">
                   <span aria-hidden>♥</span>{" "}
-                  <T es={PRIMARY_CTA.es.label} en={PRIMARY_CTA.en.label} />{" "}
+                  <T es={PRIMARY_CTA.es.label} en={PRIMARY_CTA.en.label} locale={tLocale} />{" "}
                   <span aria-hidden>→</span>
                 </p>
                 <p className="mt-2 text-sm text-text/80 group-hover:text-muted">
-                  <T es={PRIMARY_CTA.es.sub} en={PRIMARY_CTA.en.sub} />
+                  <T es={PRIMARY_CTA.es.sub} en={PRIMARY_CTA.en.sub} locale={tLocale} />
                 </p>
               </Link>
 
               {/* NAV PRINCIPAL */}
               <p className="mt-10 font-mono text-xs uppercase tracking-widest text-bg/60">
-                <T es={`Explorar los ${STATS.cases} casos`} en={`Explore the ${STATS.cases} cases`} />
+                <T es={`Explorar los ${STATS.cases} casos`} en={`Explore the ${STATS.cases} cases`} locale={tLocale} />
               </p>
               <ul className="mt-4 divide-y divide-bg/15 border-y border-bg/15">
                 {user && (
@@ -265,10 +269,10 @@ export function MobileNav({ dark = false }: { dark?: boolean } = {}) {
                     >
                       <div className="min-w-0 space-y-1">
                         <p className="font-display text-2xl font-medium leading-tight text-accent group-hover:text-text">
-                          ◆ <T es="Laboratorio" en="Data Lab" />
+                          ◆ <T es="Laboratorio" en="Data Lab" locale={tLocale} />
                         </p>
                         <p className="text-xs text-bg/60 group-hover:text-muted">
-                          <T es="Tu tablero: gráficos, KPIs y reportes" en="Your dashboard: charts, KPIs and reports" />
+                          <T es="Tu tablero: gráficos, KPIs y reportes" en="Your dashboard: charts, KPIs and reports" locale={tLocale} />
                         </p>
                       </div>
                       <span aria-hidden className="shrink-0 font-mono text-lg text-accent">→</span>
@@ -289,10 +293,10 @@ export function MobileNav({ dark = false }: { dark?: boolean } = {}) {
                             isActive(l.href) ? "text-accent" : "text-bg"
                           }`}
                         >
-                          <T es={l.es.label} en={l.en.label} />
+                          <T es={l.es.label} en={l.en.label} locale={tLocale} />
                         </p>
                         <p className="text-xs text-bg/60 group-hover:text-muted">
-                          <T es={l.es.sub} en={l.en.sub} />
+                          <T es={l.es.sub} en={l.en.sub} locale={tLocale} />
                         </p>
                       </div>
                       <span
@@ -308,7 +312,7 @@ export function MobileNav({ dark = false }: { dark?: boolean } = {}) {
 
               {/* NAV SECUNDARIO */}
               <p className="mt-10 font-mono text-xs uppercase tracking-widest text-bg/60">
-                <T es="Material complementario" en="Supplementary material" />
+                <T es="Material complementario" en="Supplementary material" locale={tLocale} />
               </p>
               <ul className="mt-3 grid grid-cols-2 gap-x-4">
                 {SECONDARY_LINKS.map((l) => (
@@ -321,7 +325,7 @@ export function MobileNav({ dark = false }: { dark?: boolean } = {}) {
                         isActive(l.href) ? "text-accent underline" : "text-bg"
                       }`}
                     >
-                      <T es={l.es} en={l.en} />
+                      <T es={l.es} en={l.en} locale={tLocale} />
                     </Link>
                   </li>
                 ))}
@@ -331,7 +335,7 @@ export function MobileNav({ dark = false }: { dark?: boolean } = {}) {
                   el pliegue). Drawer oscuro → tono "dark". */}
               <div className="mt-12 flex items-center gap-3 border-t border-bg/15 pt-5">
                 <span className="font-mono text-[11px] uppercase tracking-widest text-bg/60">
-                  <T es="Síguenos" en="Follow" />
+                  <T es="Síguenos" en="Follow" locale={tLocale} />
                 </span>
                 <InstagramLink tone="dark" locale={locale} />
                 <PinterestLink tone="dark" locale={locale} />

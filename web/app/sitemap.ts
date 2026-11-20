@@ -1,4 +1,6 @@
 import { execSync } from "child_process";
+import fs from "fs";
+import path from "path";
 import type { MetadataRoute } from "next";
 import { cases, researchers, entityMorphologies } from "@/lib/data";
 import { posts } from "@/lib/posts";
@@ -130,12 +132,44 @@ export default function sitemap(): MetadataRoute.Sitemap {
       priority: 0.6,
     }));
 
-  return [
+  return withSpanishMirrors([
     ...staticRoutes,
     ...caseRoutes,
     ...entityRoutes,
     ...researcherRoutes,
     ...postRoutes,
     ...releaseRoutes,
-  ];
+  ]);
+}
+
+/**
+ * Espejo español en el sitemap (nov 2026). Hasta entonces el sitemap listaba
+ * solo las URL inglesas: las ~640 páginas /es/ existían con canonical y
+ * hreflang propios, pero Google solo podía descubrirlas por esos enlaces. Cada
+ * URL con espejo lleva ahora su gemela /es/ y las dos declaran las alternativas
+ * por idioma (xhtml:link), igual que el hreflang de la página (`hreflangFor`).
+ *
+ * Qué secciones tienen espejo se lee de `app/es/<sección>` en el build, la
+ * misma fuente que vigila E23 frente a MIRRORED, para que no haya una tercera
+ * lista que mantener (atlas, fuentes, visitantes y contact no tienen espejo).
+ */
+function withSpanishMirrors(entries: MetadataRoute.Sitemap): MetadataRoute.Sitemap {
+  const esDir = path.join(process.cwd(), "app", "es");
+  const hasMirror = (url: string) => {
+    const section = url.slice(SITE_URL.length).split("/")[1] ?? "";
+    return section === "" || fs.existsSync(path.join(esDir, section));
+  };
+  return entries.flatMap((e) => {
+    if (!hasMirror(e.url)) return [e];
+    const enPath = e.url.slice(SITE_URL.length);
+    const languages = {
+      en: e.url,
+      es: `${SITE_URL}/es${enPath}`,
+      "x-default": e.url,
+    };
+    return [
+      { ...e, alternates: { languages } },
+      { ...e, url: languages.es, alternates: { languages } },
+    ];
+  });
 }
