@@ -262,7 +262,7 @@ export function getAllSources(): AggregatedSource[] {
     add(
       {
         name: `${f.name} — ${f.author}`,
-        name_en: `${f.name_en ?? f.name} — ${f.author}`,
+        name_en: `${f.name_en ?? f.name} — ${f.author_en ?? f.author}`,
         note: f.one_sentence_es,
       },
       {

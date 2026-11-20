@@ -133,7 +133,7 @@ const frameworkEntries = frameworksData.map((f) => ({
   name: f.name,
   name_en: f.name_en,
   subtitle: f.author || "Marco teórico",
-  subtitle_en: f.author || "Theoretical framework",
+  subtitle_en: f.author_en || f.author || "Theoretical framework",
   meta: "",
   flag: "",
   year: "",

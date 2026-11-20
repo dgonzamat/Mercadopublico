@@ -31,7 +31,7 @@ export async function generateMetadata(props: { params: Promise<{ slug: string }
       // /es/researchers (nov 2026: siete perfiles servían su título SEO en
       // español aquí). Mismo arreglo que /cases/[slug].
       title: r.name,
-      description: r.bio_short_en ?? r.bio_short.slice(0, 160),
+      description: r.bio_short_en ?? r.bio_short,
       path: `/researchers/${r.id}/`,
     }),
     alternates: {

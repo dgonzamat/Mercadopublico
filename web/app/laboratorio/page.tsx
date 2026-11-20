@@ -8,6 +8,9 @@ export const metadata = {
   title: "Laboratorio de datos — análisis interactivo del corpus UAP",
   description: `Laboratorio interactivo tipo BI sobre los ${TOTAL_CASES} casos UAP: filtra por valor, arma gráficos y KPIs, y analiza la planilla en vivo.`,
   alternates: { canonical: "/laboratorio/" },
+  // Va tras RequireAuth: Google solo vería el muro de acceso, así que no se
+  // indexa (auditoría SEO S5, nov 2026; E27 ya la excluía del sitemap por gated).
+  robots: { index: false, follow: true },
 };
 
 export default function LaboratorioPage() {

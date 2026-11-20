@@ -43,18 +43,6 @@ export async function saveReport(
   return data as SavedReport;
 }
 
-export async function updateReport(
-  id: string,
-  config: ReportConfig,
-): Promise<void> {
-  if (!supabase) throw new Error("Supabase no está configurado.");
-  const { error } = await supabase
-    .from("reports")
-    .update({ config, updated_at: new Date().toISOString() })
-    .eq("id", id);
-  if (error) throw new Error(error.message);
-}
-
 export async function deleteReport(id: string): Promise<void> {
   if (!supabase) throw new Error("Supabase no está configurado.");
   const { error } = await supabase.from("reports").delete().eq("id", id);

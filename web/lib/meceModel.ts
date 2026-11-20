@@ -150,26 +150,6 @@ export function expectedCounts(items: Array<{ posterior: Posterior }>): Posterio
   return out;
 }
 
-/** % enteros por mayor-resto (Hamilton): SIEMPRE suman 100. */
-export function roundedShares(items: Array<{ posterior: Posterior }>): Posterior {
-  const counts = expectedCounts(items);
-  const n = items.length || 1;
-  const rows = CLASS_IDS.map((id) => {
-    const v = (counts[id] / n) * 100;
-    return { id, floor: Math.floor(v), rem: v - Math.floor(v) };
-  });
-  let left = 100 - rows.reduce((s, r) => s + r.floor, 0);
-  const out = emptyPosterior();
-  const bump = new Set<MeceClassId>();
-  for (const r of [...rows].sort((a, b) => b.rem - a.rem)) {
-    if (left <= 0) break;
-    bump.add(r.id);
-    left--;
-  }
-  for (const r of rows) out[r.id] = r.floor + (bump.has(r.id) ? 1 : 0);
-  return out;
-}
-
 export interface ScoredCase {
   id: string;
   name: string;

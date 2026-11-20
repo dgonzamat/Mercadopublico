@@ -100,7 +100,9 @@ export function FrameworksView({ locale }: { locale: "es" | "en" }) {
                     <T es={f.one_sentence_es} en={f.one_sentence_en} locale={locale} />
                   </p>
                 </td>
-                <td className="px-4 py-3 text-xs text-muted">{f.author}</td>
+                <td className="px-4 py-3 text-xs text-muted">
+                  <T es={f.author} en={f.author_en ?? f.author} locale={locale} />
+                </td>
                 <td className="px-4 py-3">
                   <span
                     className={`font-mono text-xs ${verdictColor[f.verdict_moral]}`}

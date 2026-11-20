@@ -11,7 +11,7 @@ import { STATS } from "@/lib/siteStats";
 
 export const metadata = {
   title: "UAP Codex — The institutional evidence",
-  description: `${STATS.cases} UAP cases (${STATS.startYear}–${STATS.endYear}) documented by governments, militaries and the press, each with its sources, evidence tier and a comparable probability across six explanations.`,
+  description: `${STATS.cases} UAP cases (${STATS.startYear}–${STATS.endYear}) from governments, militaries and the press, each with its sources, evidence tier and a comparable probability across six explanations.`,
   // Canonical/hreflang específicos de la home. NO van en el layout: ahí se
   // heredan a todas las páginas y hacían que cada ruta canonicalizara a "/".
   alternates: {

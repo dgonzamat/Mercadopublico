@@ -1,4 +1,5 @@
 import { LocaleLink } from "@/components/LocaleLink";
+import { metaDescription } from "@/lib/seo";
 import { notFound } from "next/navigation";
 import { cases, getEntityMorphology, getResearcher } from "@/lib/data";
 import { CATEGORY_META, DOC_TIER_META, TIER_META } from "@/lib/ui";
@@ -85,7 +86,7 @@ export async function generateMetadata(props: { params: Promise<{ slug: string }
   const path = `/cases/${c.id}/`;
   // Ruta INGLESA: solo campos _en. Antes usaba `seoDescription`/`seoTitle`, que
   // están en español, y los servía tal cual a la SERP anglófona.
-  const description = c.seoDescription_en ?? c.summary_en ?? c.summary;
+  const description = metaDescription(c.seoDescription_en ?? c.summary_en ?? c.summary);
   return {
     // `seoTitle_en` (cuando existe) reemplaza el título completo, sin el sufijo
     // "· UAP Codex" del template, para controlar la longitud del snippet y
@@ -116,7 +117,7 @@ export async function generateMetadata(props: { params: Promise<{ slug: string }
     twitter: {
       card: "summary_large_image",
       title: `${c.name_en ?? c.name} — UAP Codex`,
-      description: c.summary_en ?? c.summary,
+      description,
       images: c.primaryDocument?.url ? [c.primaryDocument.url] : ["/og.png"],
     },
   };
