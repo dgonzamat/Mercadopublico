@@ -9,7 +9,7 @@ import {
   INDET_COLOR,
   type ScoredCase,
 } from "@/lib/meceModel";
-import { MECE_CLASSES, objectDetailDef, prosaicKey, shortLabel } from "@/lib/meceClasses";
+import { CLASS_HINTS, MECE_CLASSES, objectDetailDef, prosaicKey, shortLabel } from "@/lib/meceClasses";
 import type { MisidSubtype } from "@/lib/types";
 import type { Posterior } from "@/lib/types";
 
@@ -328,6 +328,11 @@ export function CasePosterior({
                     {!r.zero && detail && r.key === pk && (
                       <span className="block text-xs text-muted">
                         <T es={shortLabel(detail.label)} en={shortLabel(detail.labelEn)} locale={locale} />
+                      </span>
+                    )}
+                    {!r.zero && CLASS_HINTS[r.key] && (
+                      <span className="block text-xs text-muted">
+                        <T es={CLASS_HINTS[r.key].es} en={CLASS_HINTS[r.key].en} locale={locale} />
                       </span>
                     )}
                   </span>

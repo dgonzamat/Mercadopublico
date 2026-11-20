@@ -139,6 +139,20 @@ export const PROSAIC_CLASSES: ReadonlyArray<{ key: ProsaicKey; label: string; la
   { key: "folclore", label: "Relato folclórico o literario", labelEn: "Folklore or literary account", color: "#9a7b4f" },
 ];
 
+/** Pista de una línea bajo las dos filas que se confunden en el reparto de la
+ *  ficha: las dos se leían como «no se sabe qué era», y una suma a lo ordinario
+ *  y la otra a la probabilidad de anomalía (pregunta del dueño, 20 nov 2026). */
+export const CLASS_HINTS: Readonly<Record<string, { es: string; en: string }>> = {
+  sin_propuesta: {
+    es: "Ninguna fuente propuso una causa; los casos parecidos solían ser algo común.",
+    en: "No source proposed a cause; similar cases usually turned out to be ordinary.",
+  },
+  indet: {
+    es: "La evidencia del caso no permite decidir.",
+    en: "The case's own evidence does not settle it.",
+  },
+};
+
 /** Clase prosaica mostrada para un caso: `mundanoType` + `misidSubtype` del dato.
  *  Sin `mundanoType` el modelo ya caía en misid (M2 de audit-consistency lo
  *  vigila); misid sin subtipo → «objeto convencional no precisado». */
