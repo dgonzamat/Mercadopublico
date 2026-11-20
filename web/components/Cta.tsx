@@ -5,7 +5,7 @@ import type { ReactNode } from "react";
  * CE-1 · Primitiva de CTA — tres variantes, una regla editorial:
  * primary = fill carmesí, máximo UNO por sección.
  * `onDark` invierte los colores para las bandas full-bleed bg-text.
- * Mismo movimiento que Badge: una sola fuente de verdad en vez de
+ * Una sola fuente de verdad en vez de
  * re-declarar ~10 utilidades a mano en cada <Link>.
  */
 

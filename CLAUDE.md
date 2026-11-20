@@ -76,7 +76,7 @@ Cada regla vive en **un solo hogar**, según lo que gobierna; los demás archivo
 - Tailwind CSS 3.4 (theme claro editorial custom: fondo crema `#f7f2e8`, tinta `#1a1a1a`, acento `#c41e3a` — tokens en `tailwind.config.ts`)
 - `output: "export"` — SSG puro, deploy a GitHub Pages
 - react-leaflet para `/atlas` (dynamic import, ssr: false)
-- Client components: 44 con `"use client"` (nov 2026, techo de 46 en E16; cifra viva = la que reporta `audit-consistency.mjs`); la mayoría vive en `components/` y `components/explorer/` (laboratorio de visualización). Los interactivos clave: `components/MobileNav.tsx` (focus trap, Escape, body scroll lock) y `components/MeceDonut.tsx` (donut interactivo de /probabilidades y de la home vía `HypothesesSnapshot`, con prop `tone` light/dark; hover/tap sincroniza segmento↔leyenda + tooltip; SSR deja el donut completo, la interactividad es progresiva).
+- Client components: 42 con `"use client"` (nov 2026, techo de 46 en E16; cifra viva = la que reporta `audit-consistency.mjs`); la mayoría vive en `components/` y `components/explorer/` (laboratorio de visualización). Los interactivos clave: `components/MobileNav.tsx` (focus trap, Escape, body scroll lock) y `components/MeceDonut.tsx` (donut interactivo de /probabilidades y de la home vía `HypothesesSnapshot`, con prop `tone` light/dark; hover/tap sincroniza segmento↔leyenda + tooltip; SSR deja el donut completo, la interactividad es progresiva).
 
 ## Estructura
 
@@ -100,7 +100,7 @@ web/
     meceModel.ts        # modelo MECE: posterior por caso + agregación comparable
     sources.ts, ui.ts, jsonld.ts, siteStats.ts, corpusStats.ts, typography.tsx
   data/
-    cases/              # SOURCE OF TRUTH: un archivo JSON por caso (~404 a oct 2026; cifra viva = STATS.cases)
+    cases/              # SOURCE OF TRUTH: un archivo JSON por caso (466 a nov 2026; cifra viva = STATS.cases)
     cases.json          # GENERADO por scripts/build-cases.mjs — gitignored
     posts/              # blog posts (mismo patrón que cases)
     patterns.json

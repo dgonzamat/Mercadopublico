@@ -17,9 +17,9 @@ Corre cada sonda y compárala con la cifra que `CLAUDE.md` afirma a mano. Report
 | Afirmación en CLAUDE.md | Sonda de ground truth |
 |---|---|
 | Nº de casos (prosa, ej. "~327") | `ls web/data/cases/*.json \| wc -l` |
-| "128 actores" / researchers (oct 2026) | `node -e 'console.log(require("./web/data/researchers.json").length)'` |
-| "~43 client components (techo 45)" (oct 2026) | `grep -rl '"use client"' web/components web/app \| wc -l` |
-| "45/128 actores tienen foto" (oct 2026) | `node -e 'const r=require("./web/data/researchers.json");console.log(r.filter(x=>x.photo).length+"/"+r.length)'` |
+| Nº de actores (ej. "139 actores") | `node -e 'console.log(require("./web/data/researchers.json").length)'` |
+| Nº de client components y su techo (ej. "44 … techo de 46", E16) | `grep -rl '"use client"' web/components web/app \| wc -l` |
+| Actores con foto (ej. "54/139") | `node -e 'const r=require("./web/data/researchers.json");console.log(r.filter(x=>x.photo).length+"/"+r.length)'` |
 | "11 frameworks" | `node -e 'console.log(require("./web/data/frameworks.json").length)'` |
 | "17 patrones" (oct 2026) | `node -e 'console.log(require("./web/data/patterns.json").length)'` |
 | Tiers S/A/B (subconjuntos citados en E21 y prosa) | `node -e 'const fs=require("fs"),d="web/data/cases",t={};fs.readdirSync(d).filter(f=>f.endsWith(".json")).forEach(f=>{const x=JSON.parse(fs.readFileSync(d+"/"+f));t[x.tier]=(t[x.tier]||0)+1});console.log(t)'` |
