@@ -447,6 +447,11 @@ Conteo hecho a mano a partir de los informes de los verificadores (17-18 nov 202
 | orogrande-stokes-1957 | léxico/voz | BAJA: «diligent» suelto en la prosa en español | sí |
 | orogrande-stokes-1957 | omisión | BAJA: el OCR dice que nadie más informó de un avistamiento así | no |
 | orogrande-stokes-1957 | lectura | ES 7/10 (lector ciego). Corregido: fecha del mensaje del ATIC, dirección del objeto, «cuando volvió al auto», distancias y alturas sin unidad (informe: 3 a 5 millas del primer auto), sujeto de Kearney, Orogrande sin situar, «único testigo identificado», quién retiró lo de la quemadura. Sin tocar: repeticiones; edad y número de autos de las fuentes | no |
+| orogrande-stokes-1957 | lectura | MEDIA (cotejo con el escaneo de D194): la emisora de El Paso no «se oía mal»; el informe dice «gives good reception in a rather spotty area» (p. 2) | no |
+| orogrande-stokes-1957 | atribución | MEDIA (D194): el informe no da los nombres de los dos conductores; los anotó Stokes y no se los encontró (p. 3) | no |
+| orogrande-stokes-1957 | omisión | BAJA (D194): faltaba que Stokes lo describió «sharply outlined», sin cambiar de forma ni parpadear (p. 3), que pesa contra el fenómeno óptico | no |
+| orogrande-stokes-1957 | cifra/hora | BAJA (D194): «capa alta que cubría casi todo el cielo» exageraba el «broken high overcast» (p. 3) | no |
+| orogrande-stokes-1957 | atribución | BAJA (mensaje del ATIC, 10 nov 1957): la fuente del camión parado de Kearney no es «un granjero» sino «another source in area» | no |
 | white-sands-1957 | cifra/hora | BAJA (hallado al verificar orogrande-stokes-1957): la p. 3 del informe FY2024 de la AARO dice «prosaic objects», no «conventional objects»; la cita del classBasis no era literal. También en palos-verdes-1965 | no |
 | kirtland-afb-1957 | cifra/hora | ALTA (documento D195 de la entrega 08, leído por su texto digital): la fecha «8 Nov 57» está en la cabecera revuelta y no se sabe a qué campo pertenece; D195 puede ser la carta del 8 nov o el informe del 13 que cita McDonald. Se quita la fecha y se devuelve a McDonald su «carta» | no |
 | kirtland-afb-1957 | atribución | MEDIA: D195 cita el radar «N-16 Surface» de la estación de Kirtland, no la unidad de aproximación de la CAA; «la misma declaración» pasa a «una declaración parecida» | no |
