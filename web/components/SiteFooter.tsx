@@ -155,7 +155,7 @@ function FooterLink({
     <li>
       <LocaleLink
         href={href}
-        className="inline-block min-h-[36px] py-1 text-sm text-text underline-offset-4 hover:text-accent hover:underline"
+        className="inline-flex min-h-[44px] items-center py-1.5 text-sm text-text underline-offset-4 hover:text-accent hover:underline"
       >
         <T es={es} en={en} locale={locale} />
       </LocaleLink>

@@ -47,13 +47,13 @@ export default function ContactPage() {
         href={`mailto:${CONTACT_EMAIL}`}
         className="group flex min-h-[160px] flex-col justify-between border-2 border-text p-6 hover:bg-text hover:text-bg focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-accent"
       >
-        <span className="font-mono text-[11px] text-muted">
+        <span className="font-mono text-[11px] text-muted group-hover:text-bg/70">
           <T es="Email" en="Email" />
         </span>
         <span className="font-display text-2xl font-medium leading-tight text-text group-hover:text-bg md:text-3xl">
           {CONTACT_EMAIL}
         </span>
-        <span className="text-sm text-muted">
+        <span className="text-sm text-muted group-hover:text-bg/70">
           <T
             es="Correcciones, casos, fuentes o contactos sensibles."
             en="Corrections, cases, sources or sensitive contacts."
@@ -67,13 +67,13 @@ export default function ContactPage() {
         rel="me noopener noreferrer"
         className="group flex min-h-[160px] flex-col justify-between border-2 border-text p-6 hover:bg-text hover:text-bg focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-accent"
       >
-        <span className="font-mono text-[11px] text-muted">
+        <span className="font-mono text-[11px] text-muted group-hover:text-bg/70">
           Instagram
         </span>
         <span className="font-display text-2xl font-medium leading-tight text-text group-hover:text-bg md:text-3xl">
           @uapcodex2026
         </span>
-        <span className="text-sm text-muted">
+        <span className="text-sm text-muted group-hover:text-bg/70">
           <T
             es="Casos y probabilidades del archivo, en formato visual."
             en="Cases and probabilities from the archive, in visual form."
@@ -87,13 +87,13 @@ export default function ContactPage() {
         rel="me noopener noreferrer"
         className="group flex min-h-[160px] flex-col justify-between border-2 border-text p-6 hover:bg-text hover:text-bg focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-accent"
       >
-        <span className="font-mono text-[11px] text-muted">
+        <span className="font-mono text-[11px] text-muted group-hover:text-bg/70">
           Pinterest
         </span>
         <span className="font-display text-2xl font-medium leading-tight text-text group-hover:text-bg md:text-3xl">
           @uapcodex2026
         </span>
-        <span className="text-sm text-muted">
+        <span className="text-sm text-muted group-hover:text-bg/70">
           <T
             es="Tableros visuales de casos, mapas y patrones del archivo."
             en="Visual boards of cases, maps and patterns from the archive."

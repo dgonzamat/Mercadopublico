@@ -32,6 +32,8 @@ import { HeatmapCard } from "./HeatmapCard";
 import { DataTable } from "./DataTable";
 import { AddVisualDialog } from "./AddVisualDialog";
 import { useLocale } from "./useLocale";
+import { canonicalCountryNames } from "@/lib/countryNames";
+import { countryLabel, registerCountryNames } from "@/lib/explorer/fields";
 
 const STORAGE_KEY = "uap-explorer-state-v2";
 
@@ -60,6 +62,10 @@ function readInitialState(): { filters: Filters; visuals: VisualConfig[] } {
   }
   return { filters: EMPTY_FILTERS, visuals: DEFAULT_VISUALS };
 }
+
+// País canónico por código para la dimensión y el filtro (los mismos países que
+// /cobertura y /atlas). El corpus cliente es estático: basta registrarlo una vez.
+registerCountryNames(canonicalCountryNames(cases));
 
 export default function DataExplorer() {
   const locale = useLocale();
@@ -102,7 +108,7 @@ export default function DataExplorer() {
   }, []);
 
   const options: FacetOptions = useMemo(() => {
-    const countries = Array.from(new Set(cases.map((c) => c.country_name)))
+    const countries = Array.from(new Set(cases.map((c) => countryLabel(c))))
       .filter(Boolean)
       .sort((a, b) => a.localeCompare(b));
     const categories = Array.from(new Set(cases.map((c) => c.category))) as UAPCase["category"][];

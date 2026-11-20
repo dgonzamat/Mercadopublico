@@ -4,24 +4,24 @@ import { useMemo, useState } from "react";
 import Link from "next/link";
 import type { UAPCase } from "@/lib/types";
 import { T } from "@/components/T";
-import { CATEGORY_LABEL, pickLabel, type Locale } from "@/lib/explorer/fields";
+import { CATEGORY_LABEL, countryLabel, localizeDimValue, pickLabel, type Locale } from "@/lib/explorer/fields";
 import { toCsv, type CsvColumn } from "@/lib/explorer/aggregate";
 
 interface Column {
   key: string;
   header: { es: string; en: string };
-  get: (c: UAPCase) => string | number;
+  get: (c: UAPCase, locale: Locale) => string | number;
   numeric?: boolean;
   align?: "left" | "right";
 }
 
 const COLUMNS: Column[] = [
   { key: "num", header: { es: "Nº", en: "No." }, get: (c) => c.num, numeric: true, align: "right" },
-  { key: "name", header: { es: "Caso", en: "Case" }, get: (c) => c.name },
+  { key: "name", header: { es: "Caso", en: "Case" }, get: (c, locale) => (locale === "en" ? c.name_en ?? c.name : c.name) },
   { key: "year_start", header: { es: "Año", en: "Year" }, get: (c) => c.year_start, numeric: true, align: "right" },
-  { key: "country_name", header: { es: "País", en: "Country" }, get: (c) => c.country_name },
+  { key: "country_name", header: { es: "País", en: "Country" }, get: (c, locale) => localizeDimValue(countryLabel(c), locale) },
   { key: "tier", header: { es: "Tier", en: "Tier" }, get: (c) => c.tier },
-  { key: "category", header: { es: "Categoría", en: "Category" }, get: (c) => c.category },
+  { key: "category", header: { es: "Categoría", en: "Category" }, get: (c, locale) => pickLabel(CATEGORY_LABEL[c.category], locale) },
   { key: "probability", header: { es: "%", en: "%" }, get: (c) => c.probability, numeric: true, align: "right" },
   { key: "patterns", header: { es: "Patrones", en: "Patterns" }, get: (c) => c.patterns?.length ?? 0, numeric: true, align: "right" },
 ];
@@ -44,14 +44,16 @@ export function DataTable({ rows, locale }: { rows: UAPCase[]; locale: Locale })
       ? rows.filter(
           (c) =>
             c.name.toLowerCase().includes(q) ||
-            c.country_name.toLowerCase().includes(q),
+            (c.name_en ?? "").toLowerCase().includes(q) ||
+            c.country_name.toLowerCase().includes(q) ||
+            localizeDimValue(countryLabel(c), "en").toLowerCase().includes(q),
         )
       : rows;
     const col = COLUMNS.find((c) => c.key === sortKey);
     if (col) {
       r = [...r].sort((a, b) => {
-        const va = col.get(a);
-        const vb = col.get(b);
+        const va = col.get(a, locale);
+        const vb = col.get(b, locale);
         const cmp =
           typeof va === "number" && typeof vb === "number"
             ? va - vb
@@ -60,7 +62,7 @@ export function DataTable({ rows, locale }: { rows: UAPCase[]; locale: Locale })
       });
     }
     return r;
-  }, [rows, query, sortKey, sortDir]);
+  }, [rows, query, sortKey, sortDir, locale]);
 
   // Paginación: volver a la página 1 cuando cambia el conjunto o el orden.
   // Ajuste de estado durante el render (patrón soportado por React) en lugar de
@@ -94,7 +96,7 @@ export function DataTable({ rows, locale }: { rows: UAPCase[]; locale: Locale })
     const csvCols: CsvColumn[] = cols.map((c) => ({
       key: c.key,
       header: pickLabel(c.header, locale),
-      get: c.get,
+      get: (row: UAPCase) => c.get(row, locale),
     }));
     const csv = toCsv(display, csvCols);
     const blob = new Blob(["﻿" + csv], { type: "text/csv;charset=utf-8;" });
@@ -184,12 +186,12 @@ export function DataTable({ rows, locale }: { rows: UAPCase[]; locale: Locale })
                         href={`/cases/${c.id}`}
                         className="text-text underline-offset-2 hover:text-accent hover:underline"
                       >
-                        {c.flag} {c.name}
+                        {c.flag} {locale === "en" ? c.name_en ?? c.name : c.name}
                       </Link>
                     ) : col.key === "category" ? (
                       pickLabel(CATEGORY_LABEL[c.category], locale)
                     ) : (
-                      col.get(c)
+                      col.get(c, locale)
                     )}
                   </td>
                 ))}
@@ -235,7 +237,7 @@ export function DataTable({ rows, locale }: { rows: UAPCase[]; locale: Locale })
               onClick={() => setPage((p) => Math.max(0, p - 1))}
               disabled={safePage === 0}
               aria-label={locale === "en" ? "Previous page" : "Página anterior"}
-              className="border border-border bg-bg px-2.5 py-1 text-sm text-muted hover:border-accent hover:text-accent disabled:opacity-40 disabled:hover:border-border disabled:hover:text-muted"
+              className="inline-flex min-h-[44px] min-w-[44px] items-center justify-center border border-border bg-bg px-2.5 py-1 text-sm text-muted hover:border-accent hover:text-accent disabled:opacity-40 disabled:hover:border-border disabled:hover:text-muted"
             >
               ‹
             </button>
@@ -247,7 +249,7 @@ export function DataTable({ rows, locale }: { rows: UAPCase[]; locale: Locale })
               onClick={() => setPage((p) => Math.min(totalPages - 1, p + 1))}
               disabled={safePage >= totalPages - 1}
               aria-label={locale === "en" ? "Next page" : "Página siguiente"}
-              className="border border-border bg-bg px-2.5 py-1 text-sm text-muted hover:border-accent hover:text-accent disabled:opacity-40 disabled:hover:border-border disabled:hover:text-muted"
+              className="inline-flex min-h-[44px] min-w-[44px] items-center justify-center border border-border bg-bg px-2.5 py-1 text-sm text-muted hover:border-accent hover:text-accent disabled:opacity-40 disabled:hover:border-border disabled:hover:text-muted"
             >
               ›
             </button>

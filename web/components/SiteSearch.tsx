@@ -353,7 +353,7 @@ export function SiteSearch({ variant = "default", onSelect, dark = false }: Prop
         aria-label={locale === "es" ? "Buscar  ( / )" : "Search  ( / )"}
         aria-expanded={expanded}
         onClick={() => (expanded ? closeSearch() : openSearch())}
-        className={`inline-flex h-9 w-9 items-center justify-center border focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-accent ${
+        className={`inline-flex h-11 w-11 items-center justify-center border focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-accent ${
           dark
             ? "border-bg/30 bg-transparent text-bg hover:bg-bg hover:text-text"
             : "border-border bg-bg text-text hover:bg-text hover:text-bg"

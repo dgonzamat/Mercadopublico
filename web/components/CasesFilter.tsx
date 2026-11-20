@@ -93,6 +93,7 @@ type IndexCase = {
 
 export function CasesFilter({
   locale,
+  countryNames,
   regionCounts,
   hypCounts,
   eras,
@@ -101,6 +102,8 @@ export function CasesFilter({
   children,
 }: {
   locale: "es" | "en";
+  /** Nombre canónico por código de país, para la etiqueta del filtro #country=. */
+  countryNames: Record<string, { es: string; en: string }>;
   regionCounts: Partial<Record<Region, number>>;
   hypCounts: Partial<Record<HypKey, number>>;
   eras: FacetOption[];
@@ -113,6 +116,8 @@ export function CasesFilter({
   const [era, setEra] = useState<string | "all">("all");
   const [tier, setTier] = useState<string | "all">("all");
   const [query, setQuery] = useState("");
+  // País exacto por código (#country=US), desde /cobertura y /atlas.
+  const [country, setCountry] = useState<string>("all");
   const [matchCount, setMatchCount] = useState(total);
   // Sugerencias bajo la caja, como el buscador del header: los primeros
   // casos que pasan los filtros, leídos del DOM (sin duplicar datos).
@@ -173,7 +178,12 @@ export function CasesFilter({
     const sync = () => {
       const h = window.location.hash.replace(/^#/, "");
       if (HYP_KEYS.has(h) || h === LEGACY_MISID) setHyp(h as HypFilter);
-      // #q=<texto>: búsqueda precargada (enlaces de país desde /cobertura).
+      // #country=XX: país exacto por código (enlaces de /cobertura y /atlas).
+      else if (h.startsWith("country=")) {
+        const code = h.slice(8).toUpperCase();
+        if (countryNames[code]) setCountry(code);
+      }
+      // #q=<texto>: búsqueda precargada.
       else if (h.startsWith("q=")) {
         try {
           setQuery(decodeURIComponent(h.slice(2)));
@@ -198,7 +208,9 @@ export function CasesFilter({
       // escribió `data-search`, para que la comparación sea substring pelado.
       const q = searchKey(query.trim());
       root.querySelectorAll<HTMLElement>("[data-search]").forEach((el) => {
-        if (!q || (el.dataset.search ?? "").includes(q)) el.removeAttribute("data-nomatch");
+        const textOk = !q || (el.dataset.search ?? "").includes(q);
+        const countryOk = country === "all" || el.dataset.country === country;
+        if (textOk && countryOk) el.removeAttribute("data-nomatch");
         else el.setAttribute("data-nomatch", "");
       });
 
@@ -240,7 +252,7 @@ export function CasesFilter({
       });
     };
     measure();
-  }, [region, hyp, era, tier, query]);
+  }, [region, hyp, era, tier, query, country]);
 
   const availRegions = REGION_ORDER.filter((r) => (regionCounts[r] ?? 0) > 0);
   const availHyps = HYP_ORDER.filter((h) => (hypCounts[h.key] ?? 0) > 0);
@@ -259,11 +271,18 @@ export function CasesFilter({
   if (region !== "all")
     active.push({ key: `region:${region}`, label: regionLabel(region), clear: () => setRegion("all") });
   if (hyp !== "all")
-    active.push({ key: `hyp:${hyp}`, label: hypLabel(hyp), clear: () => setHyp("all") });
+    active.push({ key: `hyp:${hyp}`, label: hypLabel(hyp), clear: () => { setHyp("all"); dropHash(); } });
   if (tier !== "all")
     active.push({ key: `tier:${tier}`, label: optLabel(tiers, tier), clear: () => setTier("all") });
+  // Quitar un filtro que llegó por el hash (#nohumano, #country=US…) también
+  // lo quita de la URL: si no, al recargar o compartir volvía (nov 2026).
+  const dropHash = () => {
+    if (window.location.hash) history.replaceState(null, "", window.location.pathname + window.location.search);
+  };
+  if (country !== "all" && countryNames[country])
+    active.push({ key: `country:${country}`, label: countryNames[country][locale], clear: () => { setCountry("all"); dropHash(); } });
   if (query.trim())
-    active.push({ key: "q", label: `“${query.trim()}”`, clear: () => setQuery("") });
+    active.push({ key: "q", label: `“${query.trim()}”`, clear: () => { setQuery(""); dropHash(); } });
 
   const clearAll = () => {
     setEra("all");
@@ -271,6 +290,8 @@ export function CasesFilter({
     setHyp("all");
     setTier("all");
     setQuery("");
+    setCountry("all");
+    dropHash();
   };
 
   const anyActive = active.length > 0;
@@ -330,7 +351,7 @@ export function CasesFilter({
               ? "Buscar caso por nombre, país o año"
               : "Search case by name, country or year"
           }
-          className={`block min-h-[44px] w-full border py-2 pl-3 pr-10 font-mono text-sm placeholder:text-muted [&::-webkit-search-cancel-button]:appearance-none focus-visible:border-accent focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-accent ${
+          className={`block min-h-[44px] w-full border py-2 pl-3 pr-12 font-mono text-sm placeholder:text-muted [&::-webkit-search-cancel-button]:appearance-none focus-visible:border-accent focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-accent ${
             query
               ? "border-accent/50 bg-accent/10 text-accent"
               : "border-border bg-panel text-text"
@@ -341,7 +362,7 @@ export function CasesFilter({
             type="button"
             onClick={() => setQuery("")}
             aria-label={locale === "es" ? "Limpiar búsqueda" : "Clear search"}
-            className="absolute right-1 top-1/2 flex h-9 w-9 -translate-y-1/2 items-center justify-center text-muted hover:text-accent focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-accent"
+            className="absolute right-0 top-1/2 flex h-11 w-11 -translate-y-1/2 items-center justify-center text-muted hover:text-accent focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-accent"
           >
             <span aria-hidden>×</span>
           </button>
@@ -425,7 +446,7 @@ export function CasesFilter({
               type="button"
               onClick={a.clear}
               aria-label={`${removeLabel}: ${a.label}`}
-              className="inline-flex min-h-[36px] items-center gap-1.5 border border-accent/40 bg-accent/10 px-2.5 py-1 font-mono text-xs text-accent hover:bg-accent/20 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-accent"
+              className="inline-flex min-h-[44px] items-center gap-1.5 border border-accent/40 bg-accent/10 px-2.5 py-1 font-mono text-xs text-accent hover:bg-accent/20 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-accent"
             >
               <span>{a.label}</span>
               <span aria-hidden>✕</span>
@@ -451,7 +472,7 @@ export function CasesFilter({
           <button
             type="button"
             onClick={clearAll}
-            className="min-h-[36px] font-mono text-xs text-muted underline-offset-4 hover:text-accent hover:underline focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-accent"
+            className="inline-flex min-h-[44px] items-center font-mono text-xs text-muted underline-offset-4 hover:text-accent hover:underline focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-accent"
           >
             <T es="Limpiar todo" en="Clear all" locale={locale} />
           </button>

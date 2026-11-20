@@ -1,7 +1,7 @@
 import { cases } from "@/lib/data";
 import { pageMeta, hreflangFor } from "@/lib/seo";
 import { STATS } from "@/lib/siteStats";
-import { countryEn } from "@/lib/i18n-geo";
+import { canonicalCountryNames } from "@/lib/countryNames";
 import { T } from "@/components/T";
 import { LocaleLink } from "@/components/LocaleLink";
 import { Eyebrow, H1, Lede } from "@/lib/typography";
@@ -39,10 +39,11 @@ export function CoberturaView({ locale }: { locale: "es" | "en" }) {
   // Agrega por código de país (coincide con STATS.countries); el label toma el
   // primer segmento del country_name (antes de " · ") para limpiar sufijos.
   const map = new Map<string, Row>();
+  const names = canonicalCountryNames(cases);
   for (const c of cases) {
     let row = map.get(c.country);
     if (!row) {
-      row = { code: c.country, name: (locale === "es" ? c.country_name : countryEn(c.country_name)).split(" · ")[0], flag: c.flag, total: 0, byDecade: {}, firstId: c.id };
+      row = { code: c.country, name: names[c.country][locale], flag: c.flag, total: 0, byDecade: {}, firstId: c.id };
       map.set(c.country, row);
     }
     const d = decadeOf(c.year_start);
@@ -112,9 +113,12 @@ export function CoberturaView({ locale }: { locale: "es" | "en" }) {
                   className="sticky left-0 bg-bg px-2 py-1.5 text-left font-normal text-text"
                 >
                   {/* Cada país lleva a sus casos (nov 2026): un solo caso, a su
-                      ficha; varios, al listado filtrado por el país (#q=). */}
+                      ficha; varios, al listado filtrado por su código exacto
+                      (#country=XX). El filtro por texto (#q=) descuadraba 11
+                      países: «Omán» calzaba en «Romania», y los casos de EE. UU.
+                      con lugar no revelado no decían «Estados Unidos». */}
                   <LocaleLink
-                    href={r.total === 1 ? `/cases/${r.firstId}` : `/cases/#q=${encodeURIComponent(r.name)}`}
+                    href={r.total === 1 ? `/cases/${r.firstId}` : `/cases/#country=${r.code}`}
                     className="inline-flex items-center text-text underline-offset-4 hover:text-accent hover:underline"
                   >
                     <span className="mr-1.5">{r.flag}</span>
