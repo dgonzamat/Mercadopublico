@@ -2478,29 +2478,41 @@
     "section": "B",
     "section_label": "Informantes / denunciantes",
     "credentials": "Colonel (ret) US Army + 30 años Defense Intelligence + ex-Adviser UAP Task Force + Co-founder Skyfort Group",
-    "bio_short": "Coronel retirado del Ejército con treinta años en inteligencia de defensa. En 2023 confirmó en público, sin contradicción institucional, el testimonio de Grusch, y se convirtió en el primer militar de ese rango en validar el marco de la 'inteligencia no humana'. Tras retirarse, su consultora Skyfort opera entre el Pentágono y el sector privado en programas vinculados al fenómeno.",
+    "bio_short": "Coronel retirado del Ejército de EE. UU. que trabajó con David Grusch en la UAP Task Force. En junio de 2023 dijo a The Debrief que lo que afirmaba Grusch sobre programas de ingeniería inversa era «fundamentalmente correcto». En mayo de 2024, en el congreso SALT iConnections de Nueva York, dijo no tener «ninguna duda» de que existe una inteligencia no humana en la Tierra.",
     "works": [
       {
-        "year": 2023,
-        "title": "SALT iConnections panel statement",
-        "contribution": "Confirmación pública del frame Grusch desde dentro del estamento",
-        "contribution_en": "Public confirmation of the Grusch frame from inside the establishment"
+        "year": 2024,
+        "title": "SALT iConnections New York, conversación con Alex Klokus",
+        "title_en": "SALT iConnections New York, conversation with Alex Klokus",
+        "contribution": "Dijo no tener «ninguna duda» de que existe una inteligencia no humana en la Tierra",
+        "contribution_en": "Said he had \"zero doubt\" that non-human intelligence exists on Earth"
       }
     ],
     "section_label_en": "Insiders / whistleblowers",
     "credentials_en": "Colonel (ret.), US Army + 30 years in Defense Intelligence + former Adviser to the UAP Task Force + co-founder of the Skyfort Group",
-    "bio_short_en": "A retired Army colonel with thirty years in defense intelligence. In 2023 he publicly confirmed, without institutional contradiction, Grusch's testimony, becoming the first officer of that rank to validate the 'non-human intelligence' frame. After retiring, his consultancy Skyfort operates between the Pentagon and the private sector on programs tied to the phenomenon.",
+    "bio_short_en": "A retired US Army colonel who worked with David Grusch on the UAP Task Force. In June 2023 he told The Debrief that Grusch's claims about reverse-engineering programs were \"fundamentally correct.\" In May 2024, at the SALT iConnections conference in New York, he said he had \"zero doubt\" that non-human intelligence exists on Earth.",
     "sources": [
       {
-        "name": "Declaración de Karl Nell, panel SALT iConnections (2023)",
-        "name_en": "Statement by Karl Nell, SALT iConnections panel (2023)",
-        "note": "Confirmación pública del testimonio de Grusch.",
-        "note_en": "Public confirmation of Grusch's testimony."
+        "name": "SALT, «\"Zero Doubt\" Non-Human Intelligence on Earth - Col. Karl Nell & Alex Klokus | SALT iConnections NY», video en YouTube (mayo de 2024)",
+        "name_en": "SALT, \"'Zero Doubt' Non-Human Intelligence on Earth - Col. Karl Nell & Alex Klokus | SALT iConnections NY,\" YouTube video (May 2024)",
+        "url": "https://www.youtube.com/watch?v=Rpl0FrdJWfs",
+        "note": "Grabación oficial del canal de SALT.",
+        "note_en": "Official recording from SALT's channel."
       },
       {
         "name": "Fox News — 'Military whistleblower goes public… Terrestrial arms race' (Grusch, jun 2023, con la corroboración de Nell)",
         "name_en": "Fox News — 'Military whistleblower goes public… Terrestrial arms race' (Grusch, Jun 2023, with Nell's corroboration)",
         "url": "https://www.foxnews.com/politics/military-whistleblower-public-claims-us-secret-ufo-retrieval-program-terrestrial-arms-race"
+      }
+    ],
+    "documents": [
+      {
+        "src": "https://www.youtube.com/watch?v=Rpl0FrdJWfs",
+        "type": "link",
+        "title": "SALT iConnections New York (mayo de 2024): Karl Nell y Alex Klokus",
+        "title_en": "SALT iConnections New York (May 2024): Karl Nell and Alex Klokus",
+        "description": "Grabación oficial, en el canal de SALT, de la conversación de Karl Nell con Alex Klokus, fundador del fondo SALT, en el congreso SALT iConnections de Nueva York de mayo de 2024. Ahí Nell dijo no tener «ninguna duda» de que existe una inteligencia no humana en la Tierra.",
+        "description_en": "Official recording, on SALT's channel, of Karl Nell's conversation with Alex Klokus, founder of the SALT fund, at the SALT iConnections conference in New York in May 2024. There Nell said he had \"zero doubt\" that non-human intelligence exists on Earth."
       }
     ],
     "seoTitle": "Karl Nell y los UAP: el coronel del 'sin ninguna duda'",

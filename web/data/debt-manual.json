@@ -240,7 +240,7 @@
       {
         "id": "L2",
         "title": "Actores sin casos enlazados en su perfil: los que solo se respaldan con documentos propios (Mellon, DeLonge, Schumer, Sheehan, Farah, Villarroel, Barber, Ziegel, McConnell, Ramirez, Greer, Hellyer, Kono, Matthew Brown) y Karl Nell, que no tiene ni casos ni documentos",
-        "state": "anotado el 20 nov por decisión del dueño: los documentos propios son su respaldo por diseño y se dejan así; Nell necesita una ficha donde tenga papel o un documento propio. E9 de audit-consistency ya mide el mapa RESEARCHER_CASES y avisa de Nell"
+        "state": "cerrado el 20 nov: los actores con documentos propios se dejan así por decisión del dueño (su respaldo es el documento); Nell tiene ya un documento propio, la grabación oficial de SALT iConnections de mayo de 2024, y su perfil corrige el año del panel (era 2024, no 2023) y quita afirmaciones sin fuente. E9 mide el mapa RESEARCHER_CASES y queda sin huérfanos"
       }
     ]
   }
