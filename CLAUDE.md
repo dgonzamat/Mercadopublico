@@ -311,7 +311,7 @@ Las líneas que terminan en ↪ tienen su relato completo (casos, cifras, diagn�
 
 - **No** escribir markdown en la prosa de los casos (regla en `/redaccion` §7): el detalle solo interpreta `[[slug]]`, así que `**`, `- ` y `#` salen crudos, y un `\n` simple colapsa a espacio. Para enumerar, funde los ítems con «;». El defecto no se ve en el JSON sino en `out/cases/<slug>/index.html`: antes de usar un markup, confirma quién lo renderiza. *(E52, ERROR)* ↪
 
-- **No** dejar en la prosa (regla en `/redaccion` §7) tareas del redactor, bitácoras de corrección, rankings dentro del corpus, código entre comillas invertidas ni descripciones del reparto («el posterior carga…»): el lector toma lo primero por análisis, y lo demás caduca o sale crudo. Lo pendiente se escribe como hecho («queda por ver si…»), se enlaza con `[[slug]]` y se explica la evidencia. Las muletillas del redactor rompen el build (E56, marcadores en `scripts/lib/prose-markers.mjs`; lo citado no cuenta). *(E47, ERROR)* ↪
+- **No** dejar en la prosa (regla en `/redaccion` §7) tareas del redactor, bitácoras de corrección, rankings dentro del corpus, código entre comillas invertidas ni descripciones del reparto («el posterior carga…»): el lector toma lo primero por análisis, y lo demás caduca o sale crudo. Lo pendiente se escribe como hecho («queda por ver si…»), lo corregido solo en su versión correcta, se enlaza con `[[slug]]` y se explica la evidencia. Las muletillas del redactor rompen el build (E56, marcadores en `scripts/lib/prose-markers.mjs`; lo citado no cuenta). *(E47, ERROR)* ↪
 
 - **No** mostrar en la ficha texto extraído automáticamente de la prosa (la «cita destacada» en rojo que sacaba una frase de `whatHappened`): un corte por heurística parte frases, pierde el sujeto o el contexto y queda como titular de la página; estaba mal en más de 60 de las 109 fichas que la mostraban y se quitó del detalle (oct 2026). Lo que se destaca lo escribe un redactor en un campo propio, o no se destaca.
 
@@ -345,7 +345,7 @@ Las líneas que terminan en ↪ tienen su relato completo (casos, cifras, diagn�
 
 - **No** filtrar bots solo en el cliente — cualquier cliente con la anon key llama los RPC de conteo directo, y un crawler con Chrome "real" pasa UA + engagement; el gate tiene que vivir en la función SECURITY DEFINER (ver sección Contador de visitas). *(enforzado: sonda viva diaria; jul 2026)*
 
-- **No** tratar como link rot lo que solo dice que *nuestra sonda* falló: un 5xx es el servidor declinando, no una cita muerta, y un 404 visto solo con `HEAD` suele ser falso; cuando varias roturas nuevas comparten dominio, sospecha del dominio (diez de quince eran el captcha de un mismo hosting, sep 2026). Las reglas del gate están en «Fuentes rotas». ↪
+- **No** tratar como link rot lo que solo dice que *nuestra sonda* falló: un 5xx es el servidor declinando, no una cita muerta, y un 404 visto solo con `HEAD` puede ser falso, así que se reintenta con GET; cuando varias roturas nuevas comparten dominio, sospecha del dominio (diez de quince eran el captcha de un mismo hosting, sep 2026). Las reglas del gate están en «Fuentes rotas». ↪
 
 - **No** versionar `__pycache__/` ni `.pyc`: `tools/bucket-regray/__pycache__/regray_bucket.cpython-311.pyc` estaba en el repo y cada ejecución del script lo modificaba, con el Stop hook pidiendo commitearlo (oct 2026). Están en `.gitignore` desde entonces.
 
