@@ -21,3 +21,4 @@
 {"date":"2026-11-19","probe":"audit-consistency","rule":"E57","where":"data/cases"}
 {"date":"2026-11-20","probe":"audit-consistency","rule":"E52","where":"data/cases"}
 {"date":"2026-11-20","probe":"audit-consistency","rule":"E59","where":"data/cases"}
+{"date":"2026-11-20","probe":"audit-consistency","rule":"E34","where":"data/cases/persian-gulf-mq9-2020.json"}
