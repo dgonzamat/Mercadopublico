@@ -145,6 +145,58 @@ const frameworkEntries = frameworksData.map((f) => ({
 
 // ── STATIC PAGES ─────────────────────────────────────────────────────────
 const pageEntries = [
+  // Las secciones principales también se buscan por su nombre (nov 2026):
+  // «PURSUE», «actores» o «cobertura» no llevaban a la página de la sección.
+  {
+    id: "cases",
+    name: "Casos",
+    name_en: "Cases",
+    subtitle: "Archivo de casos",
+    subtitle_en: "Case archive",
+    summary: "Todos los casos del corpus, con filtros por tier, país y década.",
+    summary_en: "Every case in the corpus, filterable by tier, country and decade.",
+    keywords: "casos cases archivo archive incidentes incidents listado",
+  },
+  {
+    id: "researchers",
+    name: "Actores",
+    name_en: "Actors",
+    subtitle: "Personas del ecosistema",
+    subtitle_en: "People in the ecosystem",
+    summary: "Investigadores, testigos, funcionarios y periodistas del ecosistema UAP.",
+    summary_en: "Researchers, witnesses, officials and journalists in the UAP ecosystem.",
+    keywords: "actores actors investigadores researchers personas people testigos witnesses",
+  },
+  {
+    id: "cobertura",
+    name: "Cobertura",
+    name_en: "Coverage",
+    subtitle: "País × década",
+    subtitle_en: "Country × decade",
+    summary: "Matriz de cobertura del corpus por país y década.",
+    summary_en: "Coverage matrix of the corpus by country and decade.",
+    keywords: "cobertura coverage matriz matrix pais country decada decade",
+  },
+  {
+    id: "releases",
+    name: "Entregas de PURSUE / AARO",
+    name_en: "PURSUE / AARO releases",
+    subtitle: "Desclasificación 2026",
+    subtitle_en: "2026 declassification",
+    summary: "Los lotes de archivos UAP desclasificados por el Departamento de Guerra y los casos que cita cada uno.",
+    summary_en: "The batches of UAP files declassified by the Department of War and the cases that cite each one.",
+    keywords: "pursue releases entregas desclasificacion declassification war.gov dvids",
+  },
+  {
+    id: "entities",
+    name: "Hipótesis de entidades no humanas",
+    name_en: "Non-human entity hypotheses",
+    subtitle: "Formas atribuidas",
+    subtitle_en: "Attributed forms",
+    summary: "Las formas físicas atribuidas a entidades no humanas en los casos del archivo.",
+    summary_en: "The physical forms attributed to non-human entities in the archive's cases.",
+    keywords: "entidades entities humanoides humanoids formas shapes morfologia morphology",
+  },
   {
     id: "probabilidades",
     name: "Probabilidades",

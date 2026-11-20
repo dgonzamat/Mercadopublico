@@ -63,13 +63,14 @@ function soloContexto(c) {
 // R6 agotado: barrido hecho y sin documento primario posible (relato en libro o
 // video, sin registro oficial, o archivo sin digitalizar). Detalle y fecha de
 // cada barrido en docs/registros.md. Si una de estas fichas consigue documento,
-// sale sola de la cuenta.
+// sale sola de la cuenta y el guard de abajo pide sacarla de la lista
+// (maussan-congreso-mexico-2023 se quedó rancia tras embeber su cable, nov 2026).
 const R6_AGOTADO = new Set([
   "belgian-wave-1989", "naval-chile-2014", "west-freugh-1957", "cluj-barnea-1968", "robert-taylor-livingston-1979",
   "american-cosmic-2017", "boyd-bushman-2014", "buff-ledge-1968", "cape-girardeau-1941", "communion-1985",
   "ellsworth-woods-1977", "skinny-bob-abbott-2026",
   "bianchi-magallanes-2012", "chulucanas-2001", "fh227-pluna-1975", "mexico-eclipse-1991", "pucallpa-2008", "lead-masks-niteroi-1966",
-  "min-min-lights-1838", "yukon-1996", "hangzhou-2010", "meng-zhaoguo-1994", "vranov-dyji-1987", "finland-ghost-rockets-1946", "cussac-1967", "greece-haf-radar-1985", "ireland-iaa-2018", "bower-chorley-crop-circles-1991", "kadima-israel-1993", "florence-stadium-1954", "rs33-magenta-1933", "tananarive-1954", "malaysia-tiny-humanoids-1970", "spitsbergen-1952", "new-zealand-airships-1909", "emilcin-1978", "kovalyonok-salyut6-1981", "ilopango-el-salvador-2009", "maussan-congreso-mexico-2023", "samudra-tapu-2004",
+  "min-min-lights-1838", "yukon-1996", "hangzhou-2010", "meng-zhaoguo-1994", "vranov-dyji-1987", "finland-ghost-rockets-1946", "cussac-1967", "greece-haf-radar-1985", "ireland-iaa-2018", "bower-chorley-crop-circles-1991", "kadima-israel-1993", "florence-stadium-1954", "rs33-magenta-1933", "tananarive-1954", "malaysia-tiny-humanoids-1970", "spitsbergen-1952", "new-zealand-airships-1909", "emilcin-1978", "kovalyonok-salyut6-1981", "ilopango-el-salvador-2009", "samudra-tapu-2004",
 ]);
 const checks = [
   // Una foto de contexto cumple E21 (la ficha tiene algo visual) pero no es
@@ -79,6 +80,10 @@ const checks = [
   ["sin documento del caso (solo foto de contexto)", (c) => soloContexto(c) && !R6_AGOTADO.has(c.id)],
   ["  · de ellas ya barridas sin documento posible", (c) => soloContexto(c) && R6_AGOTADO.has(c.id)],
 ];
+for (const id of R6_AGOTADO) {
+  const c = cases.find((x) => x.id === id);
+  if (!c || !soloContexto(c)) console.log(`\n  ⚠ ${id} ya tiene documento del caso (o no existe): sácala de R6_AGOTADO`);
+}
 console.log("\nFichas · documento del caso:");
 for (const [label, fn] of checks) {
   const hit = cases.filter(fn);

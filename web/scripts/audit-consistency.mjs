@@ -1217,6 +1217,14 @@ if (fs.existsSync(localeLinkPath) && fs.existsSync(esDir)) {
   if (total > 0) {
     record("WARN", casesDir, 0, `E26 i18n fuentes: ${total} nota(s) de fuente con \`note\` (ES) sin \`note_en\` → el detalle de caso muestra español en el sitio EN. Backlog por tier: S×${byTier.S} A×${byTier.A} B×${byTier.B}. Traducir por tandas (S→A→B).`);
   }
+  // Perfiles de actores (nov 2026): /researchers/[slug] renderiza
+  // `note_en ?? note` igual que los casos, y E26 no los miraba (la nota de VASCO
+  // en villarroel salía en español). Su backlog llegó a 0, así que aquí es ERROR:
+  // toda fuente nueva de un actor nace con su par.
+  for (const r of researchers)
+    for (const s of r.sources || [])
+      if (s.note && !s.note_en)
+        record("ERROR", path.join(root, "data", "researchers.json"), 0, `E26 i18n fuentes de actor: «${r.id}» tiene una fuente con \`note\` sin \`note_en\` (${s.name}) → /researchers/${r.id}/ la muestra en español en el sitio EN.`);
 }
 
 // ─── 9r. RULE E27: completitud del sitemap (ERROR) ───────────────────────
