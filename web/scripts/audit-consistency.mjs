@@ -38,6 +38,8 @@
  *       (documents[].src / primaryDocument.url bajo /pursue/) debe existir en
  *       web/public/ — si falta, el iframe/img queda roto. Backlog medible de
  *       subida que se pone en verde al subir los binarios.
+ *   E17c (WARN) Inversa de E17: archivos de web/public/pursue/ que ningún
+ *       caso, actor ni página referencia (peso muerto del presupuesto E38).
  *   E20 (ERROR) Visor de documentos · bucket Supabase: todo documento cuyo
  *       `src` apunta al bucket Storage `pursue` debe tener su objeto listado
  *       en data/pursue-bucket-manifest.json (verificación offline; la sonda
@@ -872,6 +874,46 @@ if (missingAssets.length > 0) {
     0,
     `E17 visor: ${missingAssets.length}/${docAssetRefs.length} assets de documento same-origin no existen aún en web/public/ — el visor queda roto hasta subirlos: ${list}`,
   );
+}
+
+// ─── 9k-ter. RULE E17c: archivos de /pursue que nada usa (WARN) ────────────
+//
+// La inversa de E17. Al retirar fichas-documento (oct 2026) quedaron en
+// web/public/pursue/ 105 archivos que ningún caso, actor ni página referencia
+// (146 MB), y el presupuesto de GitHub Pages (E38) pasó del 75 %. Cuenta como
+// referencia solo lo que usa el sitio: los datos y el código (data/, lib/, app/,
+// components/). Una mención en docs/ no publica nada. WARN, no ERROR: un archivo
+// puede esperar a que su ficha lo embeba, pero así no se acumula en silencio.
+{
+  const pursueDir = path.join(publicDir, "pursue");
+  if (fs.existsSync(pursueDir)) {
+    const SITE_SRC = ["data", "lib", "app", "components"];
+    const GENERATED = /^(cases|posts|cases-client|atlas-points)\.json$|search-index/;
+    const texts = [];
+    const walkSrc = (dir) => {
+      for (const e of fs.readdirSync(dir, { withFileTypes: true })) {
+        const p = path.join(dir, e.name);
+        if (e.isDirectory()) walkSrc(p);
+        else if (/\.(json|ts|tsx|mjs|js)$/.test(e.name) && !GENERATED.test(e.name)) texts.push(fs.readFileSync(p, "utf8"));
+      }
+    };
+    for (const d of SITE_SRC) if (fs.existsSync(path.join(root, d))) walkSrc(path.join(root, d));
+    const siteText = texts.join("\n");
+    const unused = fs
+      .readdirSync(pursueDir)
+      .filter((f) => fs.statSync(path.join(pursueDir, f)).isFile())
+      .filter((f) => !siteText.includes(f) && !siteText.includes(encodeURIComponent(f)));
+    if (unused.length > 0) {
+      const mb = (unused.reduce((a, f) => a + fs.statSync(path.join(pursueDir, f)).size, 0) / 1e6).toFixed(1);
+      const shown = unused.slice(0, 8).join(", ");
+      record(
+        "WARN",
+        pursueDir,
+        0,
+        `E17c /pursue sin uso: ${unused.length} archivos (${mb} MB) que ningún caso, actor ni página referencia — embeber donde respalden algo o borrar: ${shown}${unused.length > 8 ? ", …" : ""}`,
+      );
+    }
+  }
 }
 
 // ─── 9k-bis. RULE E17b: peso de los assets same-origin del visor ───────────

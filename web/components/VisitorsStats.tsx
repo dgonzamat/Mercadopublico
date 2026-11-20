@@ -1,5 +1,3 @@
-"use client";
-
 import { T } from "@/components/T";
 import { fmtDay, fmtNum } from "@/lib/visitorsFormat";
 import { CONTINENT_NAME, CONTINENT_GLYPH, type Continent } from "@/lib/continents";

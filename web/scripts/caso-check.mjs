@@ -56,7 +56,9 @@ const AUS_EN = /[^.]*\b(no record (from|of)|has not been found|have not been fou
 // circula fuera del archivo») y solo la vieron el verificador o los lectores.
 const DIFUSION = /[^.]*\b(que m[aá]s circula|apenas circula|circula poco|(versi[oó]n|explicaci[oó]n) m[aá]s difundida|most widely circulated|circulates (the )?most|barely circulates|version that circulates most)[^.]*\./gi;
 // 2. Voz del redactor (la guía /redaccion la prohíbe).
-const VOZ_ES = /\b(cito|citamos|hemos|este expediente|esta ficha|nuestro an[aá]lisis|el corpus)\b/gi;
+// Límites de palabra Unicode: con `\b`, que es solo ASCII, la «í» contaba como
+// frontera y «explícito» daba «cito» (latakia-p8a-2016, nov 2026).
+const VOZ_ES = /(?<![\p{L}\p{N}_])(cito|citamos|hemos|este expediente|esta ficha|nuestro an[aá]lisis|el corpus)(?![\p{L}\p{N}_])/giu;
 const VOZ_EN = /\b(I cite|we cite|this file|this entry|our analysis|the corpus)\b/gi;
 // 3. Párrafos largos (E59 corta en 900; aquí se avisa antes).
 const MAX_PARA = 880;

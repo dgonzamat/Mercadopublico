@@ -14,7 +14,7 @@ node scripts/audit-consistency.mjs   # tiers, cobertura países/años, E13 backl
 node scripts/audit-design.mjs        # WCAG AA, contraste, drift de color de tier, touch targets
 node scripts/validate-schema.mjs     # integridad estructural (debería estar limpio)
 ```
-Deriva además: fotos de actores (`filter(x=>x.photo).length`/total), distribución Tier S/A/B, países y décadas cubiertos, headroom de client components vs el techo 45.
+Deriva además: fotos de actores (`filter(x=>x.photo).length`/total), distribución Tier S/A/B, países y décadas cubiertos, headroom de client components vs el techo (lo da E16 de `audit-consistency.mjs`).
 
 Si las auditorías están **todas en verde** (lo normal), NO te detengas ahí — el trabajo entonces es surfacear *oportunidades*, no *fallos*.
 
@@ -43,7 +43,7 @@ Si las auditorías están **todas en verde** (lo normal), NO te detengas ahí �
 - Antes de proponer un COMPONENTE nuevo, revisa `components/` + `components/explorer/` para no reinventarlo (mismo anti-pattern que casi duplica `/cobertura`).
 
 ## 3. Respetar las restricciones del repo (no proponer lo que las viola)
-- Techo de **45 client components** (vigilado por audit) — una innovación interactiva debe caber o justificar el costo.
+- Techo de **client components** que vigila E16 (46 en nov 2026; cifra viva en la salida del audit) — una innovación interactiva debe caber o justificar el costo.
 - **SSG puro** (`output: "export"`) — nada que exija servidor en runtime.
 - Anti-patterns de `CLAUDE.md` (no `Event` JSON-LD, no `fs` en `lib/data.ts`, JIT no compila clases dinámicas, etc.).
 
