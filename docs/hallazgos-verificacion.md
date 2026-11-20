@@ -287,8 +287,10 @@ Conteo hecho a mano a partir de los informes de los verificadores (17-18 nov 202
 | uruguay-luces-starlink-2026 | clasificación | MEDIA: tier B → A por la regla 12 (muchas fotos civiles publicadas, sin fotógrafos identificados ni expediente publicado); segundo paso con otro agente; posterior y classBasis sin cambio | no |
 | uruguay-luces-starlink-2026 | cifra/hora | BAJA: las órbitas de 97,28° no pasan «sobre todas las latitudes» (llegan a ~82,7°): «casi todas» | no |
 | uruguay-luces-starlink-2026 | lectura | ES 6/10 (lector ciego) y 6/10 (lector con CLAUDE.md, A/B del pendiente L1). Corregido: «de bajas a medianas» suelto, «y al sol», la frase de latitudes (los dos), «En mayo» sin año (ciego no lo situó), «si la emisora se refería a ese episodio» (releída por el lector con reglas). Anotado sin tocar (mantenimiento): repeticiones (el cotejo ×3, 25 reportes/nueve departamentos/fechas, qué es la CRIDOVNI), el párrafo de la AARO como añadido, sin hora de ningún reporte de 2026 | no |
+| ube-f86d-1956 | pendiente | Fila provisional del redactor; el orquestador la sustituye por los hallazgos del verificador | no |
 | fontana-goc-1956 | pendiente | Fila provisional del redactor; la sustituyen los hallazgos del verificador | no |
 | agoura-kelly-johnson-1953 | pendiente | Fila provisional del redactor; la sustituyen los hallazgos del verificador | no |
+| bolido-sur-california-1957 | pendiente | Ficha 570, a la espera del verificador | no |
 
 **Lectura (18 nov 2026, tras la sexta ficha):** de 42 filas, `caso:check` habría marcado 4 (ninguna de Puddy; sus avisos eran falsos positivos) y 2 más con la regla ampliada. Las categorías **atribución, omisión, cifra/hora y ausencia** aparecieron en las cinco últimas fichas (Moody a Puddy): el paso 0.5 y el autochequeo **no las redujeron**. El léxico (3 de 5) sí era mecánico y pasó a E62. Puddy es una ficha más difícil que las anteriores (tres episodios, manuscritos de la RAAF, tres versiones de los investigadores), así que no es un experimento limpio: la comparación solo valdrá con tres fichas más.
 
