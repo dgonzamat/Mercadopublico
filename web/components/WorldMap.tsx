@@ -105,7 +105,7 @@ export default function WorldMap({
         <div
           className="flex flex-wrap gap-2 text-xs"
           role="group"
-          aria-label="Filtro por nivel de evidencia"
+          aria-label={locale === "es" ? "Filtro por nivel de evidencia" : "Evidence level filter"}
         >
         {TIERS.map((t) => (
           <button
@@ -221,7 +221,7 @@ export default function WorldMap({
               }}
               eventHandlers={{
                 click: () => {
-                  router.push(`/cases/${c.id}/`);
+                  router.push(`${locale === "es" ? "/es" : ""}/cases/${c.id}/`);
                 },
               }}
             >
@@ -258,7 +258,7 @@ export default function WorldMap({
               {assocResearchers.map((r) => (
                 <a
                   key={r.id}
-                  href={`${basePath}/researchers/${r.id}/`}
+                  href={`${basePath}${locale === "es" ? "/es" : ""}/researchers/${r.id}/`}
                   className="inline-flex min-h-[44px] items-center gap-1.5 border border-border bg-panel px-3 py-1.5 text-sm text-text transition hover:border-accent/50 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-accent"
                 >
                   {r.name}

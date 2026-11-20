@@ -19,7 +19,7 @@ export interface VisitorsSubscribersData {
  * conteos agregados — nunca identidades ni emails. "Activos" = suscriptores
  * únicos que entraron ese día.
  */
-export function VisitorsSubscribers({ data }: { data: VisitorsSubscribersData }) {
+export function VisitorsSubscribers({ data, locale = "en" }: { data: VisitorsSubscribersData; locale?: "es" | "en" }) {
   const { total, activeToday, daily } = data;
   const hasData = total !== null || activeToday > 0 || daily.length > 0;
   if (!hasData) return null;
@@ -63,14 +63,14 @@ export function VisitorsSubscribers({ data }: { data: VisitorsSubscribersData })
           <div
             className="flex h-16 items-end gap-[2px]"
             role="img"
-            aria-label={`Suscriptores activos por día · ${daily.length} días · pico ${maxDay}`}
+            aria-label={locale === "es" ? `Suscriptores activos por día · ${daily.length} días · pico ${maxDay}` : `Active subscribers per day · ${daily.length} days · peak ${maxDay}`}
           >
             {daily.map((d) => (
               <div
                 key={d.day}
                 className="flex-1 bg-accent/70"
                 style={{ height: `${Math.max((d.count / maxDay) * 100, 3)}%` }}
-                title={`${fmtDay(d.day, "es")} · ${d.count}`}
+                title={`${fmtDay(d.day, locale)} · ${d.count}`}
                 aria-hidden
               />
             ))}

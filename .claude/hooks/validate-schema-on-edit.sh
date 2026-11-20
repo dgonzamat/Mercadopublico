@@ -15,7 +15,7 @@ file_path=$(node -e 'let s="";process.stdin.on("data",d=>s+=d).on("end",()=>{try
 
 # Solo actuar sobre las fuentes de verdad del corpus.
 case "$file_path" in
-  *data/cases/*.json|*data/researchers.json) ;;
+  *data/cases/*.json|*data/researchers.json|*data/posts/*.json) ;;
   *) exit 0 ;;
 esac
 

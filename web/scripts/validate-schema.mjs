@@ -117,6 +117,10 @@ const isPhotoRef = (v) => isHttpUrl(v) || (typeof v === "string" && v.startsWith
 
 const frameworkIds = new Set(read("data/frameworks.json").map((f) => f.id));
 const patternIds = new Set(read("data/patterns.json").map((p) => p.id));
+// Morfologías de entidades (nov 2026): un slug mal escrito en entityMorphology
+// pasaba en verde y la etiqueta desaparecía del detalle (E46 solo recorre el
+// catálogo, no las fichas).
+const morphSlugs = new Set(read("data/entity-morphology.json").map((m) => m.slug));
 
 // ─── 2. researchers.json ─────────────────────────────────────────────────
 
@@ -418,6 +422,14 @@ for (const file of caseFiles) {
         err(w, `pattern "${p}" no existe en patterns.json`);
     });
 
+  if (c.entityMorphology !== undefined) {
+    if (!isArr(c.entityMorphology)) err(w, "entityMorphology debe ser array");
+    else
+      c.entityMorphology.forEach((m) => {
+        if (!morphSlugs.has(m)) err(w, `entityMorphology "${m}" no existe en entity-morphology.json`);
+      });
+  }
+
   // VISOR DE DOCUMENTOS (DocEmbed[]): documentos primarios embebidos inline.
   // Invariante clave del diseño: `src` debe ser embebible — war.gov bloquea el
   // framing/fetch de terceros, así que solo se admiten dos orígenes que SÍ se
@@ -472,6 +484,32 @@ for (const file of caseFiles) {
       if (s.url !== undefined && !isHttpUrl(s.url))
         err(`${w}.sources[${j}]`, `url malformada: "${s.url}"`);
     });
+  }
+}
+
+// ─── 3b. data/posts/*.json ───────────────────────────────────────────────
+// Los posts del blog no pasaban por ningún validador (nov 2026). Mismo
+// contrato que `Post` en lib/types.ts: el sitio es inglés-primario, así que
+// los pares _en son obligatorios, igual que en las fichas.
+{
+  const POST_KEYS = ["id", "num", "title", "title_en", "date", "summary", "summary_en", "tags", "body", "body_en"];
+  const postsDir = path.join(root, "data", "posts");
+  const seenPostNums = new Set();
+  for (const f of fs.existsSync(postsDir) ? fs.readdirSync(postsDir).filter((x) => x.endsWith(".json")) : []) {
+    const w = `posts/${f}`;
+    let p;
+    try { p = JSON.parse(fs.readFileSync(path.join(postsDir, f), "utf-8")); }
+    catch (e) { err(w, `JSON inválido: ${e.message}`); continue; }
+    if (p.id !== f.replace(/\.json$/, "")) err(w, `id "${p.id}" debe coincidir con el nombre de archivo`);
+    if (!isNum(p.num)) err(w, "num obligatorio (number)");
+    else if (seenPostNums.has(p.num)) err(w, `num duplicado ${p.num}`);
+    else seenPostNums.add(p.num);
+    for (const k of ["title", "title_en", "summary", "summary_en", "body", "body_en"])
+      if (!isStr(p[k])) err(w, `${k} obligatorio (string)`);
+    if (!isStr(p.date) || !/^\d{4}-\d{2}-\d{2}$/.test(p.date)) err(w, `date debe ser AAAA-MM-DD: ${JSON.stringify(p.date)}`);
+    if (p.tags !== undefined && (!isArr(p.tags) || !p.tags.every(isStr))) err(w, "tags debe ser array de strings");
+    const extra = Object.keys(p).filter((k) => !POST_KEYS.includes(k));
+    if (extra.length) err(w, `claves no reconocidas [${extra}] — ningún render las lee`);
   }
 }
 
