@@ -56,6 +56,8 @@ const EN: Record<string, string> = {
     "Published by the Department of War (PURSUE Release 07) · work by Documatica Research, a private contractor: public domain not guaranteed",
   "Publicado por el Departamento de Guerra (PURSUE Release 07) · informe de un contratista (BAASS): la exención del 17 USC §105 para obras del Gobierno no está garantizada":
     "Published by the Department of War (PURSUE Release 07) · contractor report (BAASS): the 17 USC §105 exemption for Government works is not guaranteed",
+  "Publicado por el Departamento de Guerra (PURSUE Release 08) · informe de un contratista (BAASS): la exención del 17 USC §105 para obras del Gobierno no está garantizada":
+    "Published by the Department of War (PURSUE Release 08) · contractor report (BAASS): the 17 USC §105 exemption for Government works is not guaranteed",
   "Dominio público (1883)": "Public domain (1883)",
   "Dominio público · publicado en 1897": "Public domain · published in 1897",
   "Dominio público · publicado en 1904": "Public domain · published in 1904",

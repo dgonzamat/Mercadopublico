@@ -386,6 +386,12 @@ Conteo hecho a mano a partir de los informes de los verificadores (17-18 nov 202
 | abingdon-1957 | cifra/hora | BAJA: la tarjeta dice «Often considerable traffic», no «mucho tráfico» | no |
 | abingdon-1957 | cifra/hora | BAJA: la nota de la p. 2 dice «Airline/airports» | no |
 | abingdon-1957 | lectura | EN 6/10 (lector ciego). Corregido: rumbo, recuento de testigos de la casa de Cooms, testigo tachado, 17:30 frente a 17:35, la comprobación imposible del Sputnik 1. Sin tocar: duraciones de la fuente, siglas y repeticiones | no |
+| abingdon-1957 | atribución | MEDIA (cotejo con D204): la ficha decía que cada testigo dibujó su croquis; el informe solo dice «was discribed and illustrated as follows» (p. 9) | no |
+| abingdon-1957 | omisión | MEDIA (Blue Book): la tabla del analista pone «NE» junto a Booth, contra su entrevista (noroeste), y resume «N-NE» | no |
+| abingdon-1957 | omisión | MEDIA (Blue Book): faltaba la nota a lápiz junto al rumbo de Cooms, que parece decir «Disappeared to the N, E…» | no |
+| abingdon-1957 | proceso | MEDIA: el classBasis apoyaba el rumbo de Mast en un cálculo propio cuando el informe dice «which would be a Northerly direction» (p. 8) | no |
+| abingdon-1957 | atribución | BAJA: las alturas de 6.000 y 12.000 m no decían que salen de la hora y la posición | no |
+| abingdon-1957 | lectura | BAJA: la descripción del visor de Blue Book situaba las notas «Dusk» y «Clues» junto a Cooms; están junto a Booth | no |
 | white-sands-1957 | atribución | ALTA: el mensaje del ATIC del 10 nov no propone la Luna para la segunda patrulla: repite por teléfono los datos del escuadrón con las patrullas numeradas al revés (pp. 19 y 30); y los soldados vieron la Luna a la vez que la luz (p. 6) | no |
 | white-sands-1957 | clasificación | ALTA: segundo paso con otro agente: la Luna cubre solo la primera luz; la segunda queda sin propuesta (Venus refutada) y su masa va a lo ordinario por tasa base: mundano 0,68, indet 0,21, probability 25 | no |
 | white-sands-1957 | atribución | MEDIA: Barlow miraba hacia la zona de impacto oeste, que no contradice a Venus; la refutación es por la hora | no |
@@ -402,6 +408,8 @@ Conteo hecho a mano a partir de los informes de los verificadores (17-18 nov 202
 | kearney-schmidt-1957 | léxico/voz | BAJA: fórmula vacía sobre la salud mental; el diagnóstico está tachado y la prensa citó a los psiquiatras | no |
 | kearney-schmidt-1957 | cifra/hora | BAJA: el rotor se cambió diez días antes según el informe y «day before» según el mensaje del ATIC | no |
 | kearney-schmidt-1957 | lectura | EN 8/10 (lector ciego). Corregido: medidas del casco, recuento de motivos, el verbo borroso, dirección del argumento, la lata «partly full». Sin tocar: la condena sin fecha (ya declarada) y repeticiones | no |
+| kearney-schmidt-1957 | cifra/hora | BAJA (cotejo con D192): «el resumen de la primera página» ya no casa con el visor oficial, que abre con dos hojas de trámite; es la primera página del informe | no |
+| kearney-schmidt-1957 | léxico/voz | BAJA: la cita literal reproduce la errata «definitley» sin marcarla; se añade [sic] | no |
 | sunchubamba-cajamarca-1957 | clasificación | ALTA: tier S → A: teodolito de una empresa privada y operador con el nombre tachado en Blue Book (precisión 6); la capa de texto de PURSUE D202 lo nombra (John F. Withrow) y apunta a la Sra. Hildebrand como testigo del 7 nov, pero solo por OCR; decisión del orquestador, conservadora | no |
 | sunchubamba-cajamarca-1957 | atribución | ALTA: la reserva sobre la dirección es del 28 oct y de las 12:51 del 29; a las 13:39 da «moving slowly to approximately 300°-310°» (BB p. 3) | no |
 | sunchubamba-cajamarca-1957 | atribución | MEDIA: «un movimiento hacia el noroeste que las tablas no muestran» no lo dice ninguna fuente, y las tablas no lo contradicen | no |
@@ -413,6 +421,8 @@ Conteo hecho a mano a partir de los informes de los verificadores (17-18 nov 202
 | sunchubamba-cajamarca-1957 | atribución | BAJA: «durante nuestra estancia», sin decir cuántos días | no |
 | sunchubamba-cajamarca-1957 | omisión | MEDIA: la ficha decía que no se podía saber si el observador era Schnell; la capa de texto de la copia de PURSUE lo nombra (Withrow): se dice, con la reserva de que no se cotejó sobre la imagen | no |
 | sunchubamba-cajamarca-1957 | lectura | ES 7,5/10 (lector ciego). Corregido: frase del 28 oct, frase de la Luna y la hora GMT, «minuto a minuto» frente a 48 + 10 lecturas, jerga «capa de texto», el día equivocado del memorando. Sin tocar: códigos y repeticiones | no |
+| sunchubamba-cajamarca-1957 | atribución | MEDIA (cotejo con D202): la ficha daba por hecho que Withrow «no es» el Schnell de Deffebach; D202 atribuye las observaciones a «qualified weather observers» (p. 4) y D200 dice que Schnell dirigía una estación en la zona (p. 3): no se puede cerrar | no |
+| sunchubamba-cajamarca-1957 | proceso | BAJA: dos documentos del visor sin `license` | no |
 | aawsap-skinwalker-2008 | cifra/hora | ALTA (documentos de la entrega 08): D188 no da por positivas «todas las reseñas de los 26»: solo se reseñaron 13 (p. 1, «highlighted… are the ones that were reviewed») | no |
 | aawsap-skinwalker-2008 | atribución | MEDIA: D185 no es una respuesta de la DIA a Reid, sino un dictamen para la oficina de Programas Especiales del subsecretario de Inteligencia | no |
 | aawsap-skinwalker-2008 | atribución | MEDIA: en la carta de Reid (D183), la «protección extraordinaria» la requerirían los avances futuros, no los hallazgos | no |
@@ -420,6 +430,11 @@ Conteo hecho a mano a partir de los informes de los verificadores (17-18 nov 202
 | aawsap-skinwalker-2008 | cifra/hora | MEDIA (perfil reid): el dinero llegó en la ley suplementaria del año fiscal 2008 a propuesta de Reid e Inouye (D186), no en 2007 con Stevens | no |
 | washington-dc-1952 | omisión | MEDIA: la descripción de D026 omitía que Tauss veía probable que también los menos de 100 sin explicar se explicaran con información completa | no |
 | aawsap-skinwalker-2008 | atribución | BAJA: tres matices de D186 y D188 (Burgess «sugirió», D188 sin firma y «apparently», nada marca D186 como «final») | no |
+| aawsap-skinwalker-2008 | lectura | MEDIA (D172, informe de diez meses de BAASS): «cada una con otra forma»; los seis vieron cuatro formas: 2 rectángulos, 2 círculos, un óvalo y un rombo (p. 161) | no |
+| aawsap-skinwalker-2008 | omisión | MEDIA (D172): faltaba la explicación ordinaria del propio parte, un visor nocturno grande en trípode, probada y juzgada improbable (pp. 160–161) | no |
+| aawsap-skinwalker-2008 | lectura | MEDIA (D172): la descripción del documento repetía el error de las formas | no |
+| aawsap-skinwalker-2008 | atribución | BAJA (D172): las huellas «de intrusos» se daban como hecho; el informe lo infiere («leading us to believe», «likely», p. 161) | no |
+| aawsap-skinwalker-2008 | léxico/voz | BAJA (D172): el ES perdía «a tiempo completo» frente al EN, y la comparación con Bigelow lo necesita (p. 4) | no |
 | ube-f86d-1956 | cifra/hora | BAJA: D198 escribe «ZZONJAIN (Phonetic)» y el vacío se forma en parte de la superficie | no |
 | detroit-dome-object-1958 | atribución | BAJA: en D197 el Mando de Defensa Aérea es el origen, no el destinatario; la regla de testimonio único no está en el documento | no |
 | tremonton-film-1952 | cifra/hora | BAJA: D025 sí lleva «1952» escrito a mano en las pp. 1 y 11 | no |
@@ -442,12 +457,24 @@ Conteo hecho a mano a partir de los informes de los verificadores (17-18 nov 202
 | orogrande-stokes-1957 | léxico/voz | BAJA: «diligent» suelto en la prosa en español | sí |
 | orogrande-stokes-1957 | omisión | BAJA: el OCR dice que nadie más informó de un avistamiento así | no |
 | orogrande-stokes-1957 | lectura | ES 7/10 (lector ciego). Corregido: fecha del mensaje del ATIC, dirección del objeto, «cuando volvió al auto», distancias y alturas sin unidad (informe: 3 a 5 millas del primer auto), sujeto de Kearney, Orogrande sin situar, «único testigo identificado», quién retiró lo de la quemadura. Sin tocar: repeticiones; edad y número de autos de las fuentes | no |
+| orogrande-stokes-1957 | lectura | MEDIA (cotejo con el escaneo de D194): la emisora de El Paso no «se oía mal»; el informe dice «gives good reception in a rather spotty area» (p. 2) | no |
+| orogrande-stokes-1957 | atribución | MEDIA (D194): el informe no da los nombres de los dos conductores; los anotó Stokes y no se los encontró (p. 3) | no |
+| orogrande-stokes-1957 | omisión | BAJA (D194): faltaba que Stokes lo describió «sharply outlined», sin cambiar de forma ni parpadear (p. 3), que pesa contra el fenómeno óptico | no |
+| orogrande-stokes-1957 | cifra/hora | BAJA (D194): «capa alta que cubría casi todo el cielo» exageraba el «broken high overcast» (p. 3) | no |
+| orogrande-stokes-1957 | atribución | BAJA (mensaje del ATIC, 10 nov 1957): la fuente del camión parado de Kearney no es «un granjero» sino «another source in area» | no |
 | white-sands-1957 | cifra/hora | BAJA (hallado al verificar orogrande-stokes-1957): la p. 3 del informe FY2024 de la AARO dice «prosaic objects», no «conventional objects»; la cita del classBasis no era literal. También en palos-verdes-1965 | no |
 | kirtland-afb-1957 | cifra/hora | ALTA (documento D195 de la entrega 08, leído por su texto digital): la fecha «8 Nov 57» está en la cabecera revuelta y no se sabe a qué campo pertenece; D195 puede ser la carta del 8 nov o el informe del 13 que cita McDonald. Se quita la fecha y se devuelve a McDonald su «carta» | no |
 | kirtland-afb-1957 | atribución | MEDIA: D195 cita el radar «N-16 Surface» de la estación de Kirtland, no la unidad de aproximación de la CAA; «la misma declaración» pasa a «una declaración parecida» | no |
 | kirtland-afb-1957 | omisión | BAJA: McDonald dice que Shere no consultó al personal de radar y D195 sí registra una consulta; y la meteorología de D195 difiere del techo alto de Condon. Sin tocar en la prosa | no |
 | kirtland-afb-1957 | atribución | BAJA: solo los puntos b y c de la cita de McDonald son legibles en D195 | no |
 | kirtland-afb-1957 | léxico/voz | BAJA: comillas simples en el name_en de la fuente | no |
+| kirtland-afb-1957 | lectura | MEDIA (cotejo con D195): el informe de 1957 cuenta la llamada al radar tras el primer avistamiento, sin hora; «al principio» y «la diferencia decide qué siguió el radar» exageraban el contraste con McDonald | no |
+| kirtland-afb-1957 | omisión | MEDIA (McDonald 1969): la ficha decía que la parada no consta en 1957, pero McDonald escribe que el interrogatorio de 1957 la hacía durar «rather more than a minute» | no |
+| kirtland-afb-1957 | atribución | MEDIA: el informe del 13 nov no es «la versión más cercana al suceso»; el télex del 6 y el mensaje de la 34.ª División del 8 son anteriores | no |
+| kirtland-afb-1957 | atribución | MEDIA (McDonald 1969): quien había muerto era la persona que Kaser «thought was actually on the CPN-18», y el informe de 1957 sí recoge un eco | no |
+| kirtland-afb-1957 | atribución | BAJA: Condon no nombra el radar de aproximación de la CAA | no |
+| kirtland-afb-1957 | atribución | BAJA: la altura del búnker (15–20 pies) es estimación de McDonald por sus fotos aéreas, no de la FAA | no |
+| kirtland-afb-1957 | léxico/voz | BAJA: «Drumhead» y «Área D» parecían dos lugares; McDonald los identifica («Area D (Drumhead Area…)») | no |
 
 **Lectura (18 nov 2026, tras la sexta ficha):** de 42 filas, `caso:check` habría marcado 4 (ninguna de Puddy; sus avisos eran falsos positivos) y 2 más con la regla ampliada. Las categorías **atribución, omisión, cifra/hora y ausencia** aparecieron en las cinco últimas fichas (Moody a Puddy): el paso 0.5 y el autochequeo **no las redujeron**. El léxico (3 de 5) sí era mecánico y pasó a E62. Puddy es una ficha más difícil que las anteriores (tres episodios, manuscritos de la RAAF, tres versiones de los investigadores), así que no es un experimento limpio: la comparación solo valdrá con tres fichas más.
 
