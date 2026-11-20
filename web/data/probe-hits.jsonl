@@ -26,3 +26,5 @@
 {"date":"2026-11-20","probe":"audit-consistency","rule":"E39","where":"app/releases/[release]/page.tsx"}
 {"date":"2026-11-20","probe":"audit-consistency","rule":"E45","where":"data/retired-nums.json"}
 {"date":"2026-11-20","probe":"audit-consistency","rule":"E63","where":"data/cases"}
+{"date":"2026-11-20","probe":"audit-consistency","rule":"E57","where":"data/cases"}
+{"date":"2026-11-20","probe":"validate-schema","rule":"objectDetail inválido \"…\" para la clase \"…\" (avion|helicopte","where":"cases/la-jolla-1949.json"}

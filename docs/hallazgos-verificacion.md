@@ -334,6 +334,10 @@ Conteo hecho a mano a partir de los informes de los verificadores (17-18 nov 202
 | bolido-sur-california-1957 | lectura | BAJA: «su director de Inteligencia» podía leerse como el del ATIC; era el del cuartel general de la Fuerza Aérea | no |
 | bolido-sur-california-1957 | lectura | BAJA: el título decía «seis testigos ven cruzar» con la misma duda de la hora; pasa a «seis personas avisan» | no |
 | bolido-sur-california-1957 | lectura | EN 6/10 (lector ciego). Corregido: entradilla críptica sobre la hora del marinero, «five people» frente a «six», «below his line of sight» (30° bajo la horizontal, télex), frase con demasiados incisos, párrafo de la etapa del Sputnik 1 colgando, orden de los cazas, Departamento de Guerra y PURSUE | no |
+| middle-east-two-contrasts-2026 | pendiente | Fila provisional del redactor (ficha 573); el orquestador la sustituye por los hallazgos del verificador | no |
+| middle-east-ir-contrast-2020 | pendiente | Fila provisional del redactor; la sustituye el orquestador por los hallazgos del verificador | no |
+| middle-east-eoir-track-2023 | pendiente | Fila provisional del redactor (ficha 574); el orquestador la sustituye por los hallazgos del verificador | no |
+| la-jolla-1949 | pendiente | Fila provisional del redactor (20 nov 2026); el orquestador la sustituye por los hallazgos del verificador | no |
 
 **Lectura (18 nov 2026, tras la sexta ficha):** de 42 filas, `caso:check` habría marcado 4 (ninguna de Puddy; sus avisos eran falsos positivos) y 2 más con la regla ampliada. Las categorías **atribución, omisión, cifra/hora y ausencia** aparecieron en las cinco últimas fichas (Moody a Puddy): el paso 0.5 y el autochequeo **no las redujeron**. El léxico (3 de 5) sí era mecánico y pasó a E62. Puddy es una ficha más difícil que las anteriores (tres episodios, manuscritos de la RAAF, tres versiones de los investigadores), así que no es un experimento limpio: la comparación solo valdrá con tres fichas más.
 
