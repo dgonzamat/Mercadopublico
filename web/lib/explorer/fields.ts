@@ -161,13 +161,13 @@ export const MEASURES: MeasureDef[] = [
   {
     key: "evidenceCount",
     label: { es: "Ítems de evidencia", en: "Evidence items" },
-    value: (c) => c.evidence?.length ?? 0,
+    value: (c) => c.evidence?.length ?? c.evidenceCount ?? 0,
     aggs: ["sum", "avg", "median", "max"],
   },
   {
     key: "sourcesCount",
     label: { es: "Fuentes citadas", en: "Cited sources" },
-    value: (c) => c.sources?.length ?? 0,
+    value: (c) => c.sources?.length ?? c.sourcesCount ?? 0,
     aggs: ["sum", "avg", "median", "max"],
   },
   {

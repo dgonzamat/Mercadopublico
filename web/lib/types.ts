@@ -240,6 +240,10 @@ export interface UAPCase {
   evidence?: string[];       // bullet list of documented evidence items
   evidence_en?: string[];    // English translation
   sources?: CaseSource[];    // citations / primary documents
+  // Solo en data/cases-client.json (scripts/build-cases.mjs): el cliente recibe el
+  // número de ítems de evidencia y de fuentes en lugar de los arrays enteros.
+  evidenceCount?: number;
+  sourcesCount?: number;
   primaryDocument?: CaseDocument; // optional primary-source image (PD/CC only)
   // MODELO MECE (en migración): distribución sobre explicaciones excluyentes,
   // suma 1. Opcional hasta recodificar las fichas. Mientras esté ausente,

@@ -134,6 +134,18 @@
       "description_en": "Recording from the ATFLIR infrared sensor of the same squadron, released by To The Stars Academy in March 2018 and officially by the Department of Defense on April 27, 2020. It appears to show a fast object skimming the sea; in February 2025 AARO concluded, from this public 34-second version, that the object was at about 13,000 feet, measured one meter or less and was traveling downwind at no anomalous speed, without being able to identify it. The Navy dates it to January 21, 2015."
     },
     {
+      "role": "documento",
+      "src": "/pursue/ODNI-Preliminary-Assessment-UAP-2021.pdf",
+      "type": "pdf",
+      "title": "Evaluación preliminar de la ODNI sobre fenómenos aéreos no identificados (25 de junio de 2021)",
+      "title_en": "ODNI preliminary assessment of unidentified aerial phenomena (June 25, 2021)",
+      "description": "Informe de nueve páginas de la Oficina del Director de Inteligencia Nacional de EE. UU. (ODNI), redactado con el grupo de trabajo del Pentágono sobre estos fenómenos (UAPTF) para las comisiones de inteligencia y de las Fuerzas Armadas del Congreso. No nombra ningún incidente, pero su muestra es del tipo de este caso: 144 informes de fuentes del gobierno entre 2004 y 2021, sobre todo de aviadores militares, 80 de ellos con varios sensores y uno solo identificado, un globo grande que se desinflaba (pág. 4). Recoge que no hubo un canal normalizado para notificar estos encuentros hasta que la Marina lo creó en marzo de 2019 (pág. 4); que en 18 incidentes, descritos en 21 informes, los objetos parecían quedarse inmóviles con viento en altura, moverse contra el viento, maniobrar de golpe o ir muy rápido sin propulsión visible (pág. 5); que hay 11 informes de pilotos que estuvieron a punto de chocar con uno (pág. 6), y que la mayoría de los datos procede de la Marina (pág. 7).",
+      "description_en": "Nine-page report from the U.S. Office of the Director of National Intelligence (ODNI), drafted with the Pentagon's task force on these phenomena (UAPTF) for the congressional intelligence and armed services committees. It names no incidents, but its sample is of this case's kind: 144 reports from government sources between 2004 and 2021, mostly from military aviators, 80 of them involving several sensors and only one identified, a large deflating balloon (p. 4). It notes that there was no standard channel for reporting these encounters until the Navy created one in March 2019 (p. 4); that in 18 incidents, described in 21 reports, the objects seemed to stay still in winds aloft, move against the wind, maneuver abruptly or travel very fast with no visible propulsion (p. 5); that there are 11 reports of pilots who nearly collided with one (p. 6); and that most of the data comes from the Navy (p. 7).",
+      "source": "Oficina del Director de Inteligencia Nacional de EE. UU. (ODNI)",
+      "license": "Dominio público · obra del Gobierno de EE. UU.",
+      "fallbackUrl": "https://www.dni.gov/files/ODNI/documents/assessments/Prelimary-Assessment-UAP-20210625.pdf"
+    },
+    {
       "role": "contexto",
       "src": "/pursue/roosevelt-2014-context.jpg",
       "type": "image",

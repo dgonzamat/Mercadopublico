@@ -74,7 +74,7 @@ export async function PostDetailPage(
           ]}
           locale={locale}
         />
-        <ShareButton title={p.title} locale={locale} />
+        <ShareButton title={locale === "es" ? p.title : p.title_en ?? p.title} locale={locale} />
       </div>
 
       <header className="space-y-4 border-b-2 border-text pb-6">

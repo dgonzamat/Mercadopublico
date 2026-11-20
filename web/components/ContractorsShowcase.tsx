@@ -1,6 +1,6 @@
 import { LocaleLink } from "@/components/LocaleLink";
 
-import { getCase } from "@/lib/data";
+import { getCase, getResearcher } from "@/lib/data";
 import { researchersForCase } from "@/lib/researcherCases";
 import { T } from "@/components/T";
 import { countryEn } from "@/lib/i18n-geo";
@@ -13,21 +13,35 @@ import { countryEn } from "@/lib/i18n-geo";
  */
 const CONTRACTOR_IDS = [
   "aawsap-skinwalker-2008",
-  "battelle-special-report-1952",
+];
+
+// Contratistas cuyo informe ya no tiene ficha propia: el documento vive en el
+// perfil del actor que lo respalda (Battelle → Special Report 14 en el perfil de
+// Zeidman, oct 2026), así que la tarjeta lleva a ese perfil.
+const CONTRACTOR_PROFILES = [
+  {
+    researcherId: "zeidman",
+    es: "Battelle Memorial Institute · Special Report n.º 14",
+    en: "Battelle Memorial Institute · Special Report No. 14",
+    country_name: "Estados Unidos",
+    year: 1955,
+  },
 ];
 
 export function ContractorsShowcase({ locale }: { locale: "es" | "en" }) {
   const contractors = CONTRACTOR_IDS.map((id) => getCase(id)).filter(
     (c): c is NonNullable<ReturnType<typeof getCase>> => Boolean(c),
   );
-  if (contractors.length === 0) return null;
+  const profiles = CONTRACTOR_PROFILES.filter((p) => getResearcher(p.researcherId));
+  const total = contractors.length + profiles.length;
+  if (total === 0) return null;
 
   return (
     <section className="space-y-3">
       <h2 className="font-mono text-xs text-muted">
         <T
-          es={`Contratistas del fenómeno (${contractors.length})`}
-          en={`Contractors of the phenomenon (${contractors.length})`}
+          es={`Contratistas del fenómeno (${total})`}
+          en={`Contractors of the phenomenon (${total})`}
           locale={locale}
         />
       </h2>
@@ -62,6 +76,23 @@ export function ContractorsShowcase({ locale }: { locale: "es" | "en" }) {
             </LocaleLink>
           );
         })}
+        {profiles.map((p) => (
+          <LocaleLink
+            key={p.researcherId}
+            href={`/researchers/${p.researcherId}`}
+            className="block border border-border bg-panel p-4 transition hover:border-accent/50"
+          >
+            <div className="flex items-baseline gap-2">
+              <h3 className="text-sm font-medium text-text">
+                <T es={p.es} en={p.en} locale={locale} />
+              </h3>
+            </div>
+            <p className="mt-1 font-mono text-[11px] text-muted">
+              <T es={p.country_name} en={countryEn(p.country_name)} locale={locale} /> · {p.year}
+            </p>
+            <p className="mt-2 text-xs text-muted">{getResearcher(p.researcherId)!.name}</p>
+          </LocaleLink>
+        ))}
       </div>
     </section>
   );

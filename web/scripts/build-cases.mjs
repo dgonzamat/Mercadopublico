@@ -20,9 +20,23 @@ console.log(`build-cases: aggregated ${cases.length} cases → data/cases.json`)
 // browser and wrecked LCP. lib/dataClient.ts imports this slim file; server
 // components keep using the full cases.json via lib/data.ts.
 const HEAVY_PROSE = ["whatHappened", "whatHappened_en", "whyMatters", "whyMatters_en"];
+// Nov 2026: el archivo seguía en 5,5 MB porque desde julio se sumaron campos que
+// ningún componente cliente lee (documentos con su descripción, porqué de clase,
+// resúmenes, SEO, la evidencia en inglés). El laboratorio solo usa la CANTIDAD de
+// evidencias y de fuentes, así que viajan como conteo (`evidenceCount`,
+// `sourcesCount`, que lee lib/explorer/fields.ts). Si un componente cliente
+// necesita uno de estos campos, se proyecta aquí en vez de devolverlo entero.
+const CLIENT_UNUSED = [
+  "summary", "summary_en", "classBasis", "documents", "primaryDocument", "featuredDoc",
+  "seoTitle", "seoTitle_en", "seoDescription", "seoDescription_en", "evidence_en",
+];
 const clientCases = cases.map((c) => {
   const slim = { ...c };
-  for (const k of HEAVY_PROSE) delete slim[k];
+  for (const k of [...HEAVY_PROSE, ...CLIENT_UNUSED]) delete slim[k];
+  slim.evidenceCount = c.evidence?.length ?? 0;
+  slim.sourcesCount = c.sources?.length ?? 0;
+  delete slim.evidence;
+  delete slim.sources;
   return slim;
 });
 const clientOutFile = path.join(__dirname, "..", "data", "cases-client.json");
