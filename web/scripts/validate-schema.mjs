@@ -225,7 +225,7 @@ function validateDocEmbeds(w, docs) {
         if (isStr(d.src) && d.type === "image" && !/\.(jpe?g|png|webp|gif)$/i.test(d.src))
           err(dw, `type "image" exige src con extensión de imagen (.jpg/.png/.webp/.gif): "${d.src}"`);
         if (!isStr(d.title)) err(dw, "title obligatorio (string)");
-        for (const f of ["title_en", "description", "description_en", "source", "license"])
+        for (const f of ["title_en", "description", "description_en", "source", "source_en", "license"])
           if (d[f] !== undefined && !isStr(d[f])) err(dw, `${f} debe ser string`);
         if (d.fallbackUrl !== undefined && !isHttpUrl(d.fallbackUrl))
           err(dw, `fallbackUrl malformada: "${d.fallbackUrl}"`);
