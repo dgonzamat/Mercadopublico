@@ -4,6 +4,9 @@
   "name": "Levelland · conductores ven una luz y se les paran los motores",
   "name_en": "Levelland · drivers see a light as their engines stall",
   "year_start": 1957,
+  "pursueReleases": [
+    8
+  ],
   "country": "US",
   "country_name": "Estados Unidos",
   "flag": "🇺🇸",
@@ -34,22 +37,24 @@
     "Declaraciones de Saucedo, Long, Martin y Wright: fallo de motor y faros con recuperación al alejarse la luz",
     "Observación del sheriff Clem y su ayudante: una luz oval que iluminó el pavimento unos dos segundos",
     "Expediente de Blue Book: llovizna, techo bajo y tormentas previas; conclusión «rayo en bola»; un distribuidor defectuoso comprobado",
-    "Declaración de McDonald ante el Congreso (1968): sin tormentas cerca de Levelland según los datos que consultó y según Clem"
+    "Declaración de McDonald ante el Congreso (1968): sin tormentas cerca de Levelland según los datos que consultó y según Clem",
+    "Informe AISS-UFOB-386-57 del 1006.º AISS (8 nov 1957): seis declaraciones, comprobaciones negativas de tráfico aéreo, globos y cables caídos, y juicio final «forwarded as unresolved», frente al «probablemente rayo en bola» del resumen de ATIC"
   ],
   "evidence_en": [
     "About fifteen calls to police and the sheriff between 23:00 and 01:30 (Patrolman A. J. Fowler, press of November 3-4)",
     "Statements by Saucedo, Long, Martin and Wright: engine and headlight failure, recovering as the light moved away",
     "Observation by Sheriff Clem and his deputy: an oval light that lit up the pavement for about two seconds",
     "Blue Book file: drizzle, low ceiling and prior thunderstorms; \"ball lightning\" conclusion; one faulty distributor confirmed",
-    "McDonald's statement to Congress (1968): no thunderstorms near Levelland according to the data he checked and to Clem"
+    "McDonald's statement to Congress (1968): no thunderstorms near Levelland according to the data he checked and to Clem",
+    "1006th AISS report AISS-UFOB-386-57 (Nov 8, 1957): six statements, negative checks for air traffic, balloons and downed power lines, and a final judgment \"forwarded as unresolved,\" against the \"probably ball lightning\" of the ATIC summary"
   ],
   "sources": [
     {
       "name": "Project Blue Book — expediente «Vicinity Levelland, Texas», 2-3 nov 1957 (archive.org)",
       "name_en": "Project Blue Book — 'Vicinity Levelland, Texas' file, 2-3 Nov 1957 (archive.org)",
       "url": "https://archive.org/details/1957-11-7229541-VicinityLevelland-Texas",
-      "note": "Fuente primaria: ficha de registro («rayo en bola»), télex preliminar del 1006.º AISS, resumen de la ATIC con los partes meteorológicos, recortes de prensa de la época y la carta sobre el sargento Barth.",
-      "note_en": "Primary source: record card (\"ball lightning\"), preliminary telex from the 1006th AISS, ATIC summary with the weather data, contemporary press clippings and the letter about Sgt. Barth."
+      "note": "Fuente primaria: ficha de registro («rayo en bola»), télex preliminar del 1006.º AISS, resumen de la ATIC con los partes meteorológicos, recortes de prensa de la época, la carta sobre el sargento Barth y el informe completo del 1006.º AISS (AISS-UFOB-386-57).",
+      "note_en": "Primary source: record card (\"ball lightning\"), preliminary telex from the 1006th AISS, ATIC summary with the weather data, contemporary press clippings, the letter about Sgt. Barth and the full 1006th AISS report (AISS-UFOB-386-57)."
     },
     {
       "name": "Project Blue Book — expediente «Levelland, Texas», 7 nov 1957 (archive.org)",
@@ -57,6 +62,13 @@
       "url": "https://archive.org/details/1957-11-6781581-Levelland-Texas",
       "note": "Fuente primaria: avistamiento posterior en la zona, evaluado como Venus y posible sugestión por la publicidad del 2 de noviembre.",
       "note_en": "Primary source: a later sighting in the area, evaluated as Venus and possible suggestion from the November 2 publicity."
+    },
+    {
+      "name": "war.gov/UFO — DOW-UAP-D191, «Air Intelligence Information Report, Texas, 1957» (PURSUE Release 08)",
+      "name_en": "war.gov/UFO — DOW-UAP-D191, 'Air Intelligence Information Report, Texas, 1957' (PURSUE Release 08)",
+      "url": "https://www.war.gov/medialink/ufo/release-08/documents/DOW-UAP-D191-Air_Intelligence_Information_Report_Texas-1957.pdf",
+      "note": "Documento primario: el informe AISS-UFOB-386-57 del 1006.º AISS, de 19 páginas. El visor de este caso muestra la copia del expediente de Blue Book, que trae el mismo informe.",
+      "note_en": "Primary document: the 19-page 1006th AISS report AISS-UFOB-386-57. This case's viewer shows the copy in the Blue Book file, which holds the same report."
     },
     {
       "name": "McDonald, J. E. — «Statement on Unidentified Flying Objects», Comité de Ciencia y Astronáutica de la Cámara (1968)",
@@ -80,6 +92,19 @@
     "indet": 0.32
   },
   "documents": [
+    {
+      "role": "documento",
+      "src": "/pursue/levelland-1957-bluebook-1957-11-7229541-aiss-386.pdf",
+      "type": "pdf",
+      "title": "Informe AISS-UFOB-386-57 del 1006.º AISS sobre Levelland (8 de noviembre de 1957): declaraciones de seis testigos, croquis, mapa, comprobaciones y juicio final, 19 págs.",
+      "title_en": "1006th AISS report AISS-UFOB-386-57 on Levelland (November 8, 1957): six witness statements, sketches, map, checks and final judgment, 19 pp.",
+      "description": "Es el informe completo de la investigación de campo de la Fuerza Aérea, que termina remitiendo el caso «as unresolved» (sin resolver) y no como rayo en bola. Lo forma el «Air Intelligence Information Report» AISS-UFOB-386-57 del 1006.º Escuadrón de Servicio de Inteligencia Aérea (Ent AFB, Colorado), firmado el 8 de noviembre de 1957 por el teniente coronel William P. Brunson y aprobado por el coronel John W. Meador; investigó sobre el terreno, del 4 al 6 de noviembre, el sargento Norman P. Barth. En esta copia los nombres de los testigos están tachados. Por la hora, la carretera y el objeto, los dos primeros relatos son los de Wright y Saucedo: un estudiante de Texas Tech de 19 años que a las 00:05 del 3 de noviembre, en la carretera 116 a unas cuatro millas al oeste de Smyer, vio la aguja del amperímetro saltar a descarga, el motor pararse y apagarse luces y radio, y solo después, al bajar a buscar ayuda, vio un óvalo blanco, de tinte verdoso quizá por el parabrisas, de 75 a 100 pies; el motor arrancó cuando el objeto se fue, unos cinco minutos más tarde. El otro es un barbero de 30 años que a las 23:00 del 2 de noviembre vio «a big flame», un «torpedo» de unos 200 pies que le apagó el motor y las luces. Siguen un conductor de 43 años que salió a buscar los objetos y a la 01:30 vio «just a streak of light one time»; un patrullero de carreteras de 24 años que a la 01:15 vio un destello rojo anaranjado de una fracción de segundo; un sargento técnico de Lubbock que a las 23:35, cerca de Shallowater, se quedó sin luces ni radio de uno a tres segundos con un destello que tomó por «a strong bolt of lightning»; y un vecino de Whiteface que el 4 de noviembre, al norte de Sundown, vio una luz roja oscilar colgada de algo «similar to a balloon». Hay declaraciones firmadas en copia certificada, tres croquis de memoria y un mapa de la zona con los campos petroleros. Las comprobaciones de tráfico aéreo, globos meteorológicos y cables caídos dieron negativo; las petroleras dijeron que se quemaba poco gas; Reese AFB y la oficina meteorológica de Lubbock dieron techo de 400 pies, visibilidad de 3 millas y llovizna durante todo el periodo. El astrónomo Ralph S. Underwood, de Texas Tech, propuso fuego de San Telmo o gas quemado reflejado en las nubes bajas, y advirtió que la probabilidad de que un rayo pare un auto baja cuantos más casos hay. El oficial que redacta no da crédito al relato del barbero («cannot be relied upon»), tiene el del estudiante por el más importante y separa el de Whiteface; enumera como posibles el fuego de San Telmo, el rayo en bola y el reflejo de gas quemado, y concluye: «insufficient knowledge of the above phenomena exists at this organization to completely resolve this sighting. Therefore, this sighting is forwarded as unresolved». El Release 08 de PURSUE publicó el mismo informe como DOW-UAP-D191; esta copia son las páginas 57 a 66 y 68 a 76 del expediente de Blue Book en archive.org (la 67 es un télex intercalado).",
+      "description_en": "This is the full report of the Air Force's field investigation, which ends by forwarding the case \"as unresolved,\" not as ball lightning. It is the \"Air Intelligence Information Report\" AISS-UFOB-386-57 of the 1006th Air Intelligence Service Squadron (Ent AFB, Colorado), signed on November 8, 1957 by Lt. Col. William P. Brunson and approved by Col. John W. Meador; Staff Sergeant Norman P. Barth investigated on the ground from November 4 to 6. In this copy the witnesses' names are blacked out. By the time, the road and the object, the first two accounts are those of Wright and Saucedo: a 19-year-old Texas Tech student who at 00:05 on November 3, on Highway 116 about four miles west of Smyer, saw the ammeter jump to discharge, the engine die and the lights and radio go out, and only afterwards, when he got out to look for help, saw a white oval, its greenish tint perhaps from the windshield, 75 to 100 feet long; the engine started when the object left, about five minutes later. The other is a 30-year-old barber who at 23:00 on November 2 saw \"a big flame,\" a \"torpedo\" about 200 feet long that killed his engine and lights. Then come a 43-year-old driver who went out looking for the objects and at 01:30 saw \"just a streak of light one time\"; a 24-year-old highway patrolman who at 01:15 saw a red-orange flash lasting a fraction of a second; a technical sergeant from Lubbock who at 23:35, near Shallowater, lost his lights and radio for one to three seconds with a flash he took for \"a strong bolt of lightning\"; and a Whiteface man who on November 4, north of Sundown, saw a red light swinging from something \"similar to a balloon.\" There are signed statements in certified copies, three memory sketches and a map of the area with the oil fields. Checks for air traffic, weather balloons and downed power lines came back negative; the oil companies said little gas was being burned; Reese AFB and the Lubbock weather office reported a 400-foot ceiling, 3-mile visibility and drizzle throughout the period. Astronomer Ralph S. Underwood of Texas Tech suggested St. Elmo's fire or burning gas reflected off the low clouds, and noted that the chance of lightning stalling a car falls as the number of such incidents rises. The preparing officer gives no credit to the barber's account (\"cannot be relied upon\"), rates the student's as the most important and sets the Whiteface one apart; he lists St. Elmo's fire, ball lightning and reflected gas flares as possibilities and concludes: \"insufficient knowledge of the above phenomena exists at this organization to completely resolve this sighting. Therefore, this sighting is forwarded as unresolved.\" PURSUE Release 08 published the same report as DOW-UAP-D191; this copy is pages 57 to 66 and 68 to 76 of the Blue Book file on archive.org (page 67 is an interleaved teletype).",
+      "source": "Project Blue Book, expediente 1957-11-7229541 (archive.org); el mismo informe figura en PURSUE Release 08 como DOW-UAP-D191",
+      "source_en": "Project Blue Book, file 1957-11-7229541 (archive.org); the same report appears in PURSUE Release 08 as DOW-UAP-D191",
+      "license": "Dominio público · obra del Gobierno de EE. UU.",
+      "fallbackUrl": "https://archive.org/details/1957-11-7229541-VicinityLevelland-Texas"
+    },
     {
       "role": "documento",
       "src": "/pursue/levelland-1957-blue-book.pdf",
@@ -108,8 +133,8 @@
   ],
   "evidenceReviewed": "2026-09-28",
   "classBasis": {
-    "es": "Resumen de ATIC en el expediente de Blue Book: «Se concluye que la causa de los avistamientos del 2 de noviembre de 1957 se debió probablemente a un fenómeno conocido como “rayo en bola”». Se apoya en que la zona había sufrido fuertes tormentas «justo antes» de los avistamientos, con llovizna durante el periodo. Para la capa de los motores parados propone humedad depositada en los distribuidores.",
-    "en": "ATIC summary in the Blue Book file: \"It is concluded that the cause of the sightings on 2 November 1957, was probably due to a phenomena known as 'Ball Lightning'.\" It rests on the area having been \"subjected to heavy thunderstorms just prior to the sightings,\" with drizzle during the period. For the stalled-engine layer it proposes moisture deposited on distributor parts.",
+    "es": "Resumen de ATIC en el expediente de Blue Book: «Se concluye que la causa de los avistamientos del 2 de noviembre de 1957 se debió probablemente a un fenómeno conocido como “rayo en bola”». Se apoya en que la zona había sufrido fuertes tormentas «justo antes» de los avistamientos, con llovizna durante el periodo. Para la capa de los motores parados propone humedad depositada en los distribuidores. El informe de campo del 1006.º AISS (AISS-UFOB-386-57) no llega a esa conclusión: pone el rayo en bola entre otras posibilidades y remite el caso «as unresolved».",
+    "en": "ATIC summary in the Blue Book file: \"It is concluded that the cause of the sightings on 2 November 1957, was probably due to a phenomena known as 'Ball Lightning'.\" It rests on the area having been \"subjected to heavy thunderstorms just prior to the sightings,\" with drizzle during the period. For the stalled-engine layer it proposes moisture deposited on distributor parts. The 1006th AISS field report (AISS-UFOB-386-57) does not reach that conclusion: it lists ball lightning among other possibilities and forwards the case \"as unresolved.\"",
     "source": "Project Blue Book — expediente «Vicinity Levelland, Texas», 2-3 nov 1957",
     "source_en": "Project Blue Book — file “Vicinity Levelland, Texas,” 2-3 Nov 1957",
     "url": "https://archive.org/details/1957-11-7229541-VicinityLevelland-Texas"
