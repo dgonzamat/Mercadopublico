@@ -95,6 +95,18 @@
       "source": "Skeptical Inquirer, vol. 17 (invierno de 1993), pp. 180-187 · Center for Inquiry"
     },
     {
+      "role": "documento",
+      "src": "/pursue/dow-uap-d49-launch-summary-february-2000.pdf",
+      "type": "pdf",
+      "title": "Registro oficial de lanzamientos de Vandenberg, 1958-2000 (DOW-UAP-D49)",
+      "title_en": "Official Vandenberg launch registry, 1958-2000 (DOW-UAP-D49)",
+      "description": "Registro de todos los lanzamientos importantes desde la Base Aérea de Vandenberg entre el 16 de diciembre de 1958 y febrero de 2000, compilado por la Oficina de Historia de la 30.ª Ala Espacial (113 páginas, al día del 3 de febrero de 2000). En la página 35, la entrada 395 anota el 22 de septiembre de 1964, en hora local de Vandenberg, el lanzamiento de un Atlas D llamado «BUZZING BEE» desde la plataforma 4300 A-3, para el Mando Aéreo Estratégico, con el programa «NIKE TARGET» (blanco Nike). Coinciden la fecha y el nombre que da el ingeniero Kingston A. George para el vuelo que filmó el telescopio de Big Sur. La entrada solo da esos datos: nada sobre la filmación. El Departamento de Guerra lo publicó en 2026 en la primera entrega de PURSUE.",
+      "description_en": "Registry of every major launch from Vandenberg Air Force Base between December 16, 1958, and February 2000, compiled by the 30th Space Wing Office of History (113 pages, current as of February 3, 2000). On page 35, entry 395 records on September 22, 1964, in Vandenberg local time, the launch of an Atlas D named \"BUZZING BEE\" from pad 4300 A-3, for Strategic Air Command, under the program \"NIKE TARGET.\" The date and name match those given by engineer Kingston A. George for the flight the Big Sur telescope filmed. The entry gives only those details, nothing about the filming. The Department of War released it in 2026 in the first PURSUE release.",
+      "source": "30.ª Ala Espacial, Oficina de Historia, vía Departamento de Guerra (PURSUE, primera entrega)",
+      "license": "Dominio público · obra del Gobierno de EE. UU.",
+      "fallbackUrl": "https://archive.org/details/pursue-uap-documents-2026"
+    },
+    {
       "role": "contexto",
       "src": "/pursue/big-sur-vandenberg-1964-context.jpg",
       "type": "image",

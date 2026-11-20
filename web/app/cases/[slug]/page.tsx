@@ -1,6 +1,6 @@
 import { LocaleLink } from "@/components/LocaleLink";
 import { notFound } from "next/navigation";
-import { cases, getEntityMorphology } from "@/lib/data";
+import { cases, getEntityMorphology, getResearcher } from "@/lib/data";
 import { CATEGORY_META, DOC_TIER_META, TIER_META } from "@/lib/ui";
 import { posteriorFor } from "@/lib/meceModel";
 import { PROSAIC_CLASSES, prosaicKey, objectDetailDef, shortLabel } from "@/lib/meceClasses";
@@ -31,6 +31,26 @@ export function generateStaticParams() {
 // mantiene data-free y sin coste por render.
 const NAME_BY_SLUG_ES = new Map(cases.map((c) => [c.id, c.name]));
 const NAME_BY_SLUG_EN = new Map(cases.map((c) => [c.id, c.name_en ?? c.name]));
+// Alias de fichas retiradas que hoy llevan a un perfil o a una entrega: sin su
+// nombre en el mapa, el enlace se pintaba como un «↗» suelto con el slug crudo de
+// título (once enlaces en nov 2026). Se nombran con el destino.
+for (const [slug, target] of Object.entries(CASE_ALIASES)) {
+  if (!target.startsWith("/")) continue;
+  const person = target.match(/^\/researchers\/([a-z0-9-]+)$/);
+  const release = target.match(/^\/releases\/(\d+)$/);
+  const name = person ? getResearcher(person[1])?.name : undefined;
+  const es = name ?? (release ? `Entrega ${release[1]} de PURSUE` : undefined);
+  const en = name ?? (release ? `PURSUE Release ${release[1]}` : undefined);
+  if (es && en) {
+    NAME_BY_SLUG_ES.set(slug, es);
+    NAME_BY_SLUG_EN.set(slug, en);
+  }
+}
+// Un alias que apunta a otra ficha cuenta como cita de esa ficha.
+const resolveRef = (slug: string) => {
+  const t = CASE_ALIASES[slug];
+  return t && !t.startsWith("/") ? t : slug;
+};
 
 // Grafo INVERSO de citas: para cada caso, qué otros casos lo citan en su prosa vía
 // el markup "[[slug]]" (el mismo que linkCaseRefs enlaza hacia adelante). El grafo
@@ -47,7 +67,7 @@ const BACKLINKS = (() => {
   const map = new Map<string, Set<string>>();
   for (const c of cases) {
     for (const m of proseOf(c).matchAll(CASE_REF)) {
-      const target = m[1];
+      const target = resolveRef(m[1]);
       if (target === c.id) continue; // no auto-citas
       if (!map.has(target)) map.set(target, new Set());
       map.get(target)!.add(c.id);
@@ -197,7 +217,7 @@ export async function CaseDetailPage(
   // quien llega por un video viral (Anchorage 2026) casos del FBI y de drones
   // militares (nov 2026). Los que además citan a éste quedan en «Citado por».
   const citesBack = BACKLINKS.get(c.id) ?? new Set<string>();
-  const cited = [...new Set([...proseOf(c).matchAll(CASE_REF)].map((m) => m[1]))]
+  const cited = [...new Set([...proseOf(c).matchAll(CASE_REF)].map((m) => resolveRef(m[1])))]
     .filter((id) => id !== c.id && !citesBack.has(id))
     .map((id) => cases.find((x) => x.id === id))
     .filter((x): x is NonNullable<typeof x> => Boolean(x) && x!.category !== "document")
@@ -311,7 +331,7 @@ export async function CaseDetailPage(
             { es: `nº ${c.num}`, en: `No. ${c.num}` },
           ]}
         />
-        <ShareButton title={c.name} locale={locale} />
+        <ShareButton title={locale === "es" ? c.name : c.name_en ?? c.name} locale={locale} />
       </div>
 
       {/* ────────── ZONE A — HERO EDITORIAL ────────── */}

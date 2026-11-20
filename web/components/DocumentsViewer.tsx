@@ -78,7 +78,7 @@ export function DocumentsViewer({ docs, locale, heading }: { docs: DocEmbed[]; l
               // eslint-disable-next-line @next/next/no-img-element
               <img
                 src={doc.src}
-                alt={doc.title}
+                alt={locale === "es" ? doc.title : doc.title_en ?? doc.title}
                 loading="lazy"
                 className="w-full border border-text/15 bg-surface-2"
               />
