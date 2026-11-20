@@ -6471,5 +6471,86 @@
         "note_en": "Biographical data and works."
       }
     ]
+  },
+  {
+    "id": "cooper",
+    "name": "Helene Cooper",
+    "flag": "🇺🇸",
+    "born": 1966,
+    "section": "D",
+    "section_label": "Periodistas investigativos",
+    "section_label_en": "Investigative journalists",
+    "credentials": "Corresponsal de The New York Times en el Pentágono + antes corresponsal en la Casa Blanca y corresponsal diplomática del diario + equipo ganador del Pulitzer de Información Internacional 2015 (ébola) + coautora del reportaje del NYT del 16 dic 2017 sobre el AATIP",
+    "credentials_en": "Pentagon correspondent for The New York Times + previously the paper's White House and diplomatic correspondent + member of the team that won the 2015 Pulitzer Prize for International Reporting (Ebola) + co-author of the NYT report on AATIP (December 16, 2017)",
+    "bio_short": "Periodista nacida en Monrovia (Liberia), es corresponsal de The New York Times en el Pentágono; antes fue la corresponsal del diario en la Casa Blanca y su corresponsal diplomática. En 2015 integró el equipo del Times que ganó el Pulitzer de Información Internacional por la cobertura de la epidemia de ébola en África occidental. Con Ralph Blumenthal y Leslie Kean firmó el reportaje del 16 de diciembre de 2017 que reveló el AATIP, un programa del Pentágono que investigaba informes de ovnis, y el de mayo de 2019 sobre los objetos que pilotos de la Marina dijeron ver frente a la costa este entre el verano de 2014 y marzo de 2015.",
+    "bio_short_en": "Born in Monrovia, Liberia, she is the Pentagon correspondent for The New York Times; before that she was the paper's White House correspondent and its diplomatic correspondent. In 2015 she was part of the Times team that won the Pulitzer Prize for International Reporting for its coverage of the Ebola epidemic in West Africa. With Ralph Blumenthal and Leslie Kean she wrote the December 16, 2017 report that revealed AATIP, a Pentagon program that investigated UFO reports, and the May 2019 story on objects that Navy pilots said they saw off the East Coast from the summer of 2014 to March 2015.",
+    "works": [
+      {
+        "year": 2017,
+        "title": "«Glowing Auras and “Black Money”: The Pentagon's Mysterious U.F.O. Program» (NYT, con Ralph Blumenthal y Leslie Kean)",
+        "title_en": "\"Glowing Auras and 'Black Money': The Pentagon's Mysterious U.F.O. Program\" (NYT, with Ralph Blumenthal and Leslie Kean)",
+        "contribution": "Reportaje que reveló el AATIP, el programa del Pentágono que investigaba informes de ovnis",
+        "contribution_en": "Report that revealed AATIP, the Pentagon program that investigated UFO reports"
+      },
+      {
+        "year": 2019,
+        "title": "«“Wow, What Is That?” Navy Pilots Report Unexplained Flying Objects» (NYT, con Ralph Blumenthal y Leslie Kean)",
+        "title_en": "\"'Wow, What Is That?' Navy Pilots Report Unexplained Flying Objects\" (NYT, with Ralph Blumenthal and Leslie Kean)",
+        "contribution": "Testimonios de pilotos de cazas del portaaviones Theodore Roosevelt sobre objetos que vieron casi a diario frente a la costa este entre el verano de 2014 y marzo de 2015",
+        "contribution_en": "Accounts from fighter pilots of the carrier Theodore Roosevelt about objects they saw almost daily off the East Coast from the summer of 2014 to March 2015"
+      }
+    ],
+    "sources": [
+      {
+        "name": "Helene Cooper, Ralph Blumenthal y Leslie Kean, «Glowing Auras and “Black Money”: The Pentagon's Mysterious U.F.O. Program», The New York Times (16 dic 2017)",
+        "name_en": "Helene Cooper, Ralph Blumenthal and Leslie Kean, \"Glowing Auras and 'Black Money': The Pentagon's Mysterious U.F.O. Program,\" The New York Times (December 16, 2017)",
+        "url": "https://www.nytimes.com/2017/12/16/us/politics/pentagon-program-ufo-harry-reid.html",
+        "note": "Reportaje original que reveló el AATIP, con la firma de los tres autores.",
+        "note_en": "Original report that revealed AATIP, under the three authors' byline."
+      },
+      {
+        "name": "WRAL, «Are UFOs real? A Pentagon program tried to find out» (17 dic 2017)",
+        "name_en": "WRAL, \"Are UFOs real? A Pentagon program tried to find out\" (December 17, 2017)",
+        "url": "https://www.wral.com/are-ufos-real-a-pentagon-program-tried-to-find-out/17194859/",
+        "note": "Copia del reportaje de 2017 distribuida por el servicio de noticias del New York Times, con la firma de Cooper, Blumenthal y Kean.",
+        "note_en": "Copy of the 2017 report distributed by the New York Times news service, under the byline of Cooper, Blumenthal and Kean."
+      },
+      {
+        "name": "SBS News, «“Wow, what is that?”: US Navy pilots report unexplained flying objects» (29 may 2019)",
+        "name_en": "SBS News, \"'Wow, what is that?': US Navy pilots report unexplained flying objects\" (May 29, 2019)",
+        "url": "https://www.sbs.com.au/news/wow-what-is-that-us-navy-pilots-report-unexplained-flying-objects",
+        "note": "Reproducción del artículo del New York Times de mayo de 2019 firmado por Kean, Cooper y Blumenthal, con los testimonios de los pilotos Ryan Graves y Danny Accoin.",
+        "note_en": "Reprint of the May 2019 New York Times article by Kean, Cooper and Blumenthal, with the accounts of pilots Ryan Graves and Danny Accoin."
+      },
+      {
+        "name": "Wikipedia, «Advanced Aerospace Threat Identification Program»",
+        "url": "https://en.wikipedia.org/wiki/Advanced_Aerospace_Threat_Identification_Program",
+        "note": "Recoge las fechas y las firmas de los artículos del New York Times de diciembre de 2017 y del 26 de mayo de 2019.",
+        "note_en": "Lists the dates and bylines of the New York Times articles of December 2017 and May 26, 2019."
+      },
+      {
+        "name": "Wikipedia, «Helene Cooper»",
+        "url": "https://en.wikipedia.org/wiki/Helene_Cooper",
+        "note": "Fecha y lugar de nacimiento, trayectoria en The Wall Street Journal y en The New York Times, Pulitzer de 2015 y libros.",
+        "note_en": "Date and place of birth, career at The Wall Street Journal and The New York Times, 2015 Pulitzer and books."
+      },
+      {
+        "name": "Harry Walker Agency, perfil de Helene Cooper",
+        "name_en": "Harry Walker Agency, Helene Cooper profile",
+        "url": "https://harrywalker.com/speakers/helene-cooper",
+        "note": "Biografía profesional: corresponsal del Times en el Pentágono, antes en la Casa Blanca y corresponsal diplomática; Pulitzer de 2015 por la cobertura del ébola.",
+        "note_en": "Professional biography: the Times' Pentagon correspondent, previously White House and diplomatic correspondent; 2015 Pulitzer for Ebola coverage."
+      },
+      {
+        "name": "Eric Lagatta, USA TODAY, «From conspiracy theories to congressional hearings: How UFOs became mainstream in America» (2023)",
+        "name_en": "Eric Lagatta, USA TODAY, \"From conspiracy theories to congressional hearings: How UFOs became mainstream in America\" (2023)",
+        "url": "https://www.yahoo.com/news/conspiracy-theories-congressional-hearings-ufos-001511637.html",
+        "note": "Presenta a Cooper como la corresponsal del Times en el Pentágono al relatar cómo se reveló el AATIP en 2017.",
+        "note_en": "Describes Cooper as the Times' Pentagon correspondent when recounting how AATIP was revealed in 2017."
+      }
+    ],
+    "photo": "https://commons.wikimedia.org/wiki/Special:FilePath/Helene%20Cooper%20(47743127201).jpg?width=400",
+    "photo_credit": "Ben P L (Flickr), 2019",
+    "photo_license": "CC-BY-SA 2.0"
   }
 ]

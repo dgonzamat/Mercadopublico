@@ -14,7 +14,7 @@ Principios de trabajo por defecto. Aplican a toda tarea, no solo a este repo.
 ## Estilo de comunicación
 
 - Hablar con el usuario en **español neutro**, no rioplatense/argentino (preferencia explícita del usuario). Evitar voseo y modismos: nada de «vos/tenés/dale/acá/che» — usar «tú/tienes/de acuerdo/aquí». Aplica solo a la conversación; el contenido editorial del corpus mantiene su propia línea.
-- **Cuando queden decisiones del dueño, preguntárselas con la herramienta de preguntas (`AskUserQuestion`) y con la recomendación marcada como primera opción** (decisión del dueño, 20 nov 2026): dejarlas al final de un mensaje como «decisiones tuyas» obligaba a pedir cada vez «recomienda» antes de poder elegir. Una pregunta por decisión, con su porqué en la descripción de cada opción.
+- **Cuando queden decisiones del dueño, preguntárselas con la herramienta de preguntas (`AskUserQuestion`) y con la recomendación marcada como primera opción** (decisión del dueño, 20 nov 2026): dejarlas al final de un mensaje como «decisiones tuyas» obligaba a pedir cada vez «recomienda» antes de poder elegir. Una pregunta por decisión, con su porqué en la descripción de cada opción. Vale también al cerrar un resumen, un informe o una tabla de avances: terminar con «siguen pendientes…» sin la pregunta es el mismo error (se repitió el mismo 20 nov 2026, ya con la regla escrita).
 
 ---
 
@@ -105,7 +105,7 @@ web/
     posts/              # blog posts (mismo patrón que cases)
     patterns.json
     frameworks.json
-    researchers.json    # 139 actores (nov 2026; cifra viva = su .length)
+    researchers.json    # 140 actores (nov 2026; cifra viva = su .length)
   scripts/
     build-cases.mjs     # agrega data/cases/*.json → data/cases.json
     build-posts.mjs     # agrega data/posts/*.json → data/posts.json
@@ -371,5 +371,5 @@ Historia, registro y vías de reparación: [`docs/bitacora-reglas.md`](docs/bita
 
 ## Deuda pendiente · fotos de actores
 
-54/139 actores con foto (20 nov 2026). El techo es la licencia, no la búsqueda. El campo `photo` es `https://commons.wikimedia.org/wiki/Special:FilePath/<filename exacto>?width=400`, con el nombre verificado, nunca adivinado. Vías que funcionan: la ficha de la página de Wikipedia del actor (también las locales) y la búsqueda de archivos de Commons por nombre entre comillas (en HTML, no por la API); si la API de Commons o de Wikipedia da 429 a la sesión, la página `File:` sigue respondiendo por WebFetch (nov 2026). Lee siempre la descripción: los homónimos abundan y «fair use» no es libre. Barrido hecho (NO re-buscar): [`docs/registros.md`](docs/registros.md#fotos-de-actores--barrido-de-commons); historia: [`docs/bitacora-reglas.md`](docs/bitacora-reglas.md#fotos-de-actores).
+55/140 actores con foto (20 nov 2026). El techo es la licencia, no la búsqueda. El campo `photo` es `https://commons.wikimedia.org/wiki/Special:FilePath/<filename exacto>?width=400`, con el nombre verificado, nunca adivinado. Vías que funcionan: la ficha de la página de Wikipedia del actor (también las locales) y la búsqueda de archivos de Commons por nombre entre comillas (en HTML, no por la API); si la API de Commons o de Wikipedia da 429 a la sesión, la página `File:` sigue respondiendo por WebFetch (nov 2026). Lee siempre la descripción: los homónimos abundan y «fair use» no es libre. Barrido hecho (NO re-buscar): [`docs/registros.md`](docs/registros.md#fotos-de-actores--barrido-de-commons); historia: [`docs/bitacora-reglas.md`](docs/bitacora-reglas.md#fotos-de-actores).
 
