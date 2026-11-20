@@ -29,4 +29,18 @@ if ! out=$(node scripts/validate-schema.mjs 2>&1); then
   } >&2
   exit 2
 fi
+
+# Con el schema sano, la auditoría (~2 s): prosa (E7, E52, E56, E59…) y proceso
+# (E45, E63), que hasta ahora solo saltaban si alguien la corría o en el CI.
+# Solo se devuelven los ERROR; los WARN agregados no frenan el turno.
+if ! out=$(node scripts/audit-consistency.mjs 2>&1); then
+  {
+    echo "$out" | awk '/ERROR/{p=1} /WARN/{p=0} p' | head -60
+    echo ""
+    echo "⛔ audit-consistency da ERROR con datos modificados en esta sesión:"
+    echo "$changed"
+    echo "Corrige lo que sea de esta sesión. Si un ERROR no lo causó ella (p. ej. E45 por el num de otra rama), dilo al usuario en vez de tocarlo."
+  } >&2
+  exit 2
+fi
 exit 0
