@@ -32,6 +32,8 @@ export interface SourceAppearance {
 
 export interface AggregatedSource {
   name: string;
+  /** Nombre en inglés: /fuentes es bilingüe y lo muestra con <T>. */
+  nameEn?: string;
   url?: string;
   note?: string;
   category: SourceCategory;
@@ -204,7 +206,7 @@ export function getAllSources(): AggregatedSource[] {
   const map = new Map<string, AggregatedSource>();
 
   function add(
-    s: { name: string; url?: string; note?: string },
+    s: { name: string; name_en?: string; url?: string; note?: string },
     appearance: SourceAppearance,
   ) {
     const key = sourceKey(s);
@@ -217,6 +219,7 @@ export function getAllSources(): AggregatedSource[] {
     }
     map.set(key, {
       name: s.name,
+      nameEn: s.name_en,
       url: s.url,
       note: s.note,
       category: categorize(s),
@@ -246,6 +249,7 @@ export function getAllSources(): AggregatedSource[] {
       add(
         {
           name: `${w.title} (${w.year})`,
+          name_en: `${w.title_en ?? w.title} (${w.year})`,
           note: w.contribution,
         },
         appearance,
@@ -258,10 +262,12 @@ export function getAllSources(): AggregatedSource[] {
     add(
       {
         name: `${f.name} — ${f.author}`,
+        name_en: `${f.name_en ?? f.name} — ${f.author}`,
         note: f.one_sentence_es,
       },
       {
-        label: "Framework teórico",
+        label: "Marco teórico",
+        labelEn: "Theoretical framework",
         href: "/frameworks",
       },
     );

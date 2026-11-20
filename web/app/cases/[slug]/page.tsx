@@ -110,7 +110,7 @@ export async function generateMetadata(props: { params: Promise<{ slug: string }
       // Si el caso tiene documento primario (escaneo FOIA, foto oficial),
       // úsalo como tarjeta social: identifica el caso mejor que el OG genérico.
       images: c.primaryDocument?.url
-        ? [{ url: c.primaryDocument.url, alt: c.primaryDocument.alt ?? c.name }]
+        ? [{ url: c.primaryDocument.url, alt: c.primaryDocument.alt_en ?? c.primaryDocument.caption_en ?? c.name_en ?? c.name }]
         : [{ url: "/og.png", width: 1200, height: 630 }],
     },
     twitter: {

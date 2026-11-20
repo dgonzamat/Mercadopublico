@@ -38,6 +38,26 @@ const read = (p) => JSON.parse(fs.readFileSync(path.join(root, p), "utf-8"));
 const errors = [];
 const err = (where, msg) => errors.push(`${where}: ${msg}`);
 
+// Listas blancas de claves de los subobjetos (nov 2026). CASE_KEYS solo cubría
+// la raíz de un caso: la ficha 566 llevaba `alt_en` en primaryDocument cuando
+// ningún render lo leía, y el validador daba verde. Una clave nueva se añade
+// aquí y en lib/types.ts a la vez, junto con quien la lee.
+const SUB_KEYS = {
+  location: ["lat", "lng", "place", "place_en", "precision"],
+  documents: ["role", "src", "type", "title", "title_en", "description", "description_en", "source", "source_en", "license", "fallbackUrl", "page"],
+  sources: ["name", "name_en", "url", "note", "note_en"],
+  primaryDocument: ["role", "url", "alt", "alt_en", "caption", "caption_en", "source", "source_en", "license", "href"],
+  featuredDoc: ["role", "label", "label_en", "url", "note", "note_en"],
+  researcher: ["id", "name", "flag", "born", "death", "section", "section_label", "section_label_en", "credentials", "credentials_en", "framework", "bio_short", "bio_short_en", "bio", "bio_en", "works", "sources", "documents", "photo", "photo_credit", "photo_license", "seoTitle", "seoDescription"],
+  works: ["year", "title", "title_en", "contribution", "contribution_en"],
+};
+function onlyKeys(w, obj, kind) {
+  if (!obj || typeof obj !== "object" || Array.isArray(obj)) return;
+  const extra = Object.keys(obj).filter((k) => !SUB_KEYS[kind].includes(k));
+  if (extra.length)
+    err(w, `claves no reconocidas en ${kind} [${extra}] — ningún render las lee; si es un campo nuevo, añádelo a lib/types.ts, a su lector y a SUB_KEYS`);
+}
+
 // Taxonomía prosaica: se PARSEA de lib/meceClasses.ts (node-plain, no puede
 // importar TS) en vez de duplicarla — un segundo diccionario sería un segundo
 // origen de verdad. Si el parseo rinde de menos, se aborta: una sonda que no
@@ -107,6 +127,9 @@ const seenResearcherIds = new Set();
 researchers.forEach((r, i) => {
   const w = `researchers[${i}]${r.id ? ` (${r.id})` : ""}`;
   validateDocEmbeds(w, r.documents);
+  onlyKeys(w, r, "researcher");
+  (isArr(r.sources) ? r.sources : []).forEach((s, j) => onlyKeys(`${w}.sources[${j}]`, s, "sources"));
+  (isArr(r.works) ? r.works : []).forEach((x, j) => onlyKeys(`${w}.works[${j}]`, x, "works"));
   if (!isStr(r.id)) err(w, "id obligatorio (string)");
   else if (seenResearcherIds.has(r.id)) err(w, `id duplicado "${r.id}"`);
   else seenResearcherIds.add(r.id);
@@ -198,6 +221,7 @@ function validateDocEmbeds(w, docs) {
     else
       docs.forEach((d, j) => {
         const dw = `${w}.documents[${j}]`;
+        onlyKeys(dw, d, "documents");
         const isDvids = isStr(d.src) && d.src.startsWith(DVIDS_EMBED);
         const isFb = isFacebookVideo(d.src) || isXVideo(d.src);
         if (!isStr(d.src)) err(dw, "src obligatorio (string)");
@@ -408,6 +432,10 @@ for (const file of caseFiles) {
   // con DENY: el embed es deliberado). La garantía perdida la cubre la sonda
   // viva `check-dvids-embeds.mjs`, no el build (que es offline a propósito).
   validateDocEmbeds(w, c.documents);
+  onlyKeys(w + ".location", c.location, "location");
+  onlyKeys(w + ".primaryDocument", c.primaryDocument, "primaryDocument");
+  onlyKeys(w + ".featuredDoc", c.featuredDoc, "featuredDoc");
+  (isArr(c.sources) ? c.sources : []).forEach((s, j) => onlyKeys(`${w}.sources[${j}]`, s, "sources"));
 
   // BIBLIOGRAFÍA: todo caso debe citar al menos una fuente; url bien formada
   if (!isArr(c.sources) || c.sources.length === 0) {

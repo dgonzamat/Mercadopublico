@@ -32,10 +32,10 @@ export function SourceList({ items }: { items: AggregatedSource[] }) {
                           rel="noopener noreferrer"
                           className="text-text underline decoration-text/30 underline-offset-4 hover:text-accent hover:decoration-accent"
                         >
-                          {s.name} <span aria-hidden>↗</span>
+                          <T es={s.name} en={s.nameEn ?? s.name} /> <span aria-hidden>↗</span>
                         </a>
                       ) : (
-                        <span className="text-text">{s.name}</span>
+                        <span className="text-text"><T es={s.name} en={s.nameEn ?? s.name} /></span>
                       )}
                     </p>
                     <p className="flex flex-wrap items-baseline gap-x-2 gap-y-1 pt-1 text-xs text-muted">

@@ -1355,6 +1355,19 @@ if (fs.existsSync(localeLinkPath) && fs.existsSync(esDir)) {
   }
 }
 
+// E32b (nov 2026): `seoTitle`/`seoDescription` están en ESPAÑOL y solo los
+// lee la ruta /es/. /researchers/[slug] los servía en la ruta inglesa (siete
+// perfiles con <title> en español), el mismo bug que antes tuvo /cases/[slug].
+{
+  for (const rel of ["cases/[slug]/page.tsx", "researchers/[slug]/page.tsx", "blog/[slug]/page.tsx"]) {
+    const file = path.join(root, "app", rel);
+    if (!fs.existsSync(file)) continue;
+    const src = fs.readFileSync(file, "utf-8").replace(/\/\/.*$/gm, "");
+    if (/\.\s*seo(Title|Description)\b(?!_en)/.test(src))
+      record("ERROR", file, 0, `E32b metadata: la ruta inglesa /${rel.replace("/page.tsx", "")}/ lee \`seoTitle\`/\`seoDescription\` (español) → el <title> o la descripción salen en español en el sitio EN. Usa el par \`_en\` o el nombre; el campo ES va en app/es/.`);
+  }
+}
+
 // ─── 9r-quater. RULE E33: JSON-LD consume pares bilingües crudos (ERROR) ──
 //
 // Tercera aparición del mismo anti-pattern: un campo del corpus que TIENE par
