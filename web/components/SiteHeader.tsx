@@ -50,7 +50,7 @@ export function SiteHeader() {
       }`}
     >
       <nav
-        aria-label="Navegación principal"
+        aria-label={locale === "es" ? "Navegación principal" : "Main navigation"}
         className={`mx-auto flex items-stretch justify-between gap-x-2 px-4 sm:gap-x-6 sm:px-6 ${
           user ? "max-w-screen-2xl" : "max-w-7xl"
         }`}

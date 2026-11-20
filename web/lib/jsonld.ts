@@ -102,6 +102,8 @@ const localePrefix = (locale: JsonLdLocale) => (locale === "es" ? "/es" : "");
 
 export function caseJsonLd(c: UAPCase, locale: JsonLdLocale) {
   const url = `${SITE_URL}${localePrefix(locale)}/cases/${c.id}/`;
+  const place =
+    locale === "es" ? c.location.place : c.location.place_en ?? c.location.place;
   // Article needs a year-anchored date. We don't track a real publish date
   // per case, so we anchor on year_start (the historical year of the case)
   // and treat the current build time as dateModified. Google accepts that
@@ -122,7 +124,8 @@ export function caseJsonLd(c: UAPCase, locale: JsonLdLocale) {
         headline: locale === "es" ? c.name : c.name_en ?? c.name,
         description: locale === "es" ? c.summary : c.summary_en ?? c.summary,
         articleSection: "UAP institutional cases",
-        inLanguage: c.whatHappened_en ? ["es", "en"] : ["es"],
+        // Cada URL sirve un solo idioma (la inglesa cae al español sin traducción).
+        inLanguage: locale === "en" && !c.whatHappened_en ? "es" : locale,
         url,
         datePublished,
         dateModified,
@@ -138,18 +141,24 @@ export function caseJsonLd(c: UAPCase, locale: JsonLdLocale) {
         contentLocation: {
           "@type": "Place",
           name:
-            c.location.place ||
+            place ||
             (locale === "es" ? c.country_name : countryEn(c.country_name)),
           address: {
             "@type": "PostalAddress",
             addressCountry: c.country,
-            addressLocality: c.location.place || undefined,
+            addressLocality: place || undefined,
           },
-          geo: {
-            "@type": "GeoCoordinates",
-            latitude: c.location.lat,
-            longitude: c.location.lng,
-          },
+          // Sin coordenadas si el lugar no se reveló o no está en la Tierra:
+          // las de la ficha son un relleno y afirmarían un lugar.
+          ...(c.location.precision === "none"
+            ? {}
+            : {
+                geo: {
+                  "@type": "GeoCoordinates",
+                  latitude: c.location.lat,
+                  longitude: c.location.lng,
+                },
+              }),
         },
         ...(c.sources && c.sources.length > 0
           ? {
@@ -177,7 +186,7 @@ export function postJsonLd(p: Post, locale: JsonLdLocale) {
     "@id": `${url}#post`,
     headline: locale === "es" ? p.title : p.title_en ?? p.title,
     description: locale === "es" ? p.summary : p.summary_en ?? p.summary,
-    inLanguage: p.body_en ? ["es", "en"] : ["es"],
+    inLanguage: locale === "en" && !p.body_en ? "es" : locale,
     url,
     datePublished: p.date,
     dateModified: p.date,
@@ -207,7 +216,9 @@ export function researcherJsonLd(r: Researcher, locale: JsonLdLocale) {
       locale === "es" ? r.bio_short : r.bio_short_en ?? r.bio_short,
     url,
     ...(r.photo ? { image: r.photo } : {}),
-    ...(r.credentials ? { jobTitle: r.credentials } : {}),
+    ...(r.credentials
+      ? { jobTitle: locale === "es" ? r.credentials : r.credentials_en ?? r.credentials }
+      : {}),
     ...(r.born ? { birthDate: String(r.born) } : {}),
     ...(r.death ? { deathDate: String(r.death) } : {}),
     subjectOf: { "@id": `${SITE_URL}/#website` },

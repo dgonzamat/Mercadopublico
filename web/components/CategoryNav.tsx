@@ -25,7 +25,7 @@ export function CategoryNav({
   locale: "es" | "en";
 }) {
   return (
-    <nav aria-label="Índice de secciones" className="space-y-3">
+    <nav aria-label={locale === "es" ? "Índice de secciones" : "Section index"} className="space-y-3">
       <p className="font-mono text-xs uppercase tracking-widest text-muted">
         <T es={label.es} en={label.en} locale={locale} />
       </p>
