@@ -2,7 +2,8 @@
   "id": "detroit-dome-object-1958",
   "num": 289,
   "pursueReleases": [
-    1
+    1,
+    8
   ],
   "name": "Detroit · un joven ve un objeto circular con una cúpula",
   "name_en": "Detroit · a young man sees a circular object with a dome",
@@ -42,6 +43,19 @@
       "fallbackUrl": "https://www.war.gov/medialink/ufo/release_1/65_hs1-101634279_100-de-18221_serial_844.pdf",
       "description": "Memorándum de una página (Standard Form 64) del agente especial Robert Ross Reynolds al jefe de la oficina del FBI en Detroit, con fecha 17 de abril de 1958 y asunto «Unidentified Flying Objects». Recoge la llamada de un testigo de 23 años que vio un objeto circular con una cúpula de tipo cristal, y termina con la recomendación «Advise proper air force authorities». Lleva un sello de la oficina de Detroit del 17 de abril de 1958, el número de archivo 100-18221-844 una anotación manuscrita («Lt Col (Bernie) E Prater advised 4/17/58 no letter nec.»), otro número de archivo escrito a lápiz (100-26505) y un sello FOIA/PA que prohibía destruir la pieza antes de marzo de 1989. Fue examinado por los Archivos Nacionales (NARA) en noviembre de 2025 antes de su publicación.",
       "description_en": "One-page memorandum (Standard Form 64) from Special Agent Robert Ross Reynolds to the head of the FBI's Detroit office, dated April 17, 1958, with the subject \"Unidentified Flying Objects.\" It records the call of a 23-year-old witness who saw a circular object with a crystal-type dome, and ends with the recommendation \"Advise proper air force authorities.\" It bears a Detroit-office stamp of April 17, 1958, the file number 100-18221-844 a handwritten note (\"Lt Col (Bernie) E Prater advised 4/17/58 no letter nec.\"), a second file number written in pencil (100-26505) and a FOIA/PA stamp barring destruction of the serial before March 1989. It was screened by the National Archives (NARA) in November 2025 before release."
+    },
+    {
+      "role": "contexto",
+      "src": "/pursue/DOW-UAP-D197-Air_Intelligence_Information_Report_Michigan-1957.pdf",
+      "type": "pdf",
+      "title": "DOW-UAP-D197 — Informe de inteligencia aérea sobre otro objeto, visto en Monroe (Michigan) en octubre de 1957",
+      "title_en": "DOW-UAP-D197 — Air intelligence report on another object, seen at Monroe, Michigan, in October 1957",
+      "description": "Es otro aviso, no un registro del suceso de Detroit: a las 22:05 del 13 de octubre de 1957, en Indian Trails, a orillas del lago Erie (condado de Monroe, al suroeste de Detroit), dos estudiantes de 15 años, Harry Poe Jr. y Dale Smith, vieron pasar un objeto en forma de campana. Miraban las constelaciones cuando vieron caer algo blanco que «parecía un meteorito»; según el informe, se niveló a unos 1.500 pies, pasó a 150 yardas de ellos de sur-suroeste a nor-noreste, a unas 225 millas por hora, y se perdió tras las copas de los árboles en 8 a 10 segundos. Lo describieron gris plateado, del tamaño de un balón de baloncesto, con cuatro luces que quizá eran ojos de buey, una línea gruesa entre la parte de arriba y la de abajo y un zumbido agudo «como un generador eléctrico». El informe es un formulario AF 112 de dos páginas, fechado el 22 de octubre de 1957 y preparado para el Mando de Defensa Aérea por un sargento técnico de reclutamiento, Rudy Gold; sitúa el lugar a 3 a 5 millas al este-noreste de la central atómica Enrico Fermi y no trae evaluación ni comentario del oficial. Lo acompañan dos dibujos a lápiz firmados por Dale Smith, la trayectoria y un disco con cúpula y ojos de buey al que dio 120 pies de ancho, y lo preceden las dos caras de la hoja de control de distribución del archivo de inteligencia (siete páginas en total). Los dos chicos estaban juntos, así que cuentan como un solo testimonio. Se incluye aquí porque es el aviso más cercano a este caso por lugar y fecha: un disco con cúpula en la zona de Detroit seis meses antes.",
+      "description_en": "This is a different report, not a record of the Detroit sighting: at 10:05 p.m. on October 13, 1957, at Indian Trails on the shore of Lake Erie (Monroe County, southwest of Detroit), two 15-year-old students, Harry Poe Jr. and Dale Smith, watched a bell-shaped object go by. They were looking at the constellations when they saw something white falling that \"looked like a meteorite\"; according to the report, it leveled off at about 1,500 ft, passed 150 yards from them heading from south-southwest to north-northeast at about 225 mph, and was lost behind the treetops after 8 to 10 seconds. They described it as silver gray, the size of a basketball, with four lights that were possibly portholes, a heavy line dividing top and bottom, and a high-pitched hum \"like an electric generator.\" The report is a two-page AF Form 112, dated October 22, 1957 and prepared for Air Defense Command by a recruiting technical sergeant, Rudy Gold; it places the site 3 to 5 miles east-northeast of the Enrico Fermi atomic plant and carries no evaluation or comment from the preparing officer. It comes with two pencil drawings signed by Dale Smith, the flight path and a domed disk with portholes that he gave a width of 120 ft, and it is preceded by both sides of the intelligence archive's distribution control record (seven pages in all). The two boys were together, so they count as a single account. It is included here because it is the report closest to this case in place and date: a domed disk in the Detroit area six months earlier.",
+      "source": "Fuerza Aérea de EE. UU., Mando de Defensa Aérea (PURSUE Release 08)",
+      "source_en": "U.S. Air Force, Air Defense Command (PURSUE Release 08)",
+      "license": "Dominio público · obra del Gobierno de EE. UU.",
+      "fallbackUrl": "https://www.war.gov/medialink/ufo/release-08/documents/DOW-UAP-D197-Air_Intelligence_Information_Report_Michigan-1957.pdf"
     }
   ],
   "patterns": [],
