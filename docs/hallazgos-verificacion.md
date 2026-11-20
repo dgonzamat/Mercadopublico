@@ -363,7 +363,18 @@ Conteo hecho a mano a partir de los informes de los verificadores (17-18 nov 202
 | la-jolla-1949 | omisión | BAJA: el cuestionario de Glendale lleva la anotación «A/C» y el de La Jolla no | no |
 | la-jolla-1949 | cifra/hora | BAJA: la descripción del documento enumeraba 16 de las 17 páginas | no |
 | la-jolla-1949 | lectura | ES 7/10 (lector ciego). Corregido: referente ambiguo de la evaluación, cadena de llamadas, 11.º Distrito Naval y 18.º Distrito de la OSI sin situar, números 372 y 372A, «las dos copias» sin presentar. Sin tocar: repeticiones; contradicciones de la fuente ya declaradas | no |
-| palos-verdes-1965 | pendiente | Fila provisional del redactor; la sustituye el orquestador con los hallazgos del verificador | no |
+| palos-verdes-1965 | ausencia | MEDIA: «nadie anotó hacia dónde miraban»: los tres papeles de la época sitúan el objeto sobre Catalina (D208 pp. 1, 4, 5); solo falta el azimut numérico | no |
+| palos-verdes-1965 | clasificación | MEDIA: el registro refuta Marte (Catalina a 173–213°, Marte a 246–248° y 15–17° de altura a la hora de los partes; la nota de 260° corresponde a la hora errónea de la tarjeta; dos objetos). Segundo paso con otro agente: pasa a sin_propuesta, mundano 0,58 e indet 0,35 | no |
+| palos-verdes-1965 | omisión | MEDIA: el chico contestó que no podía estimar la velocidad y que la cabeza de un fósforo tapaba «The whole object» (pp. 9-10) | no |
+| palos-verdes-1965 | cifra/hora | BAJA: la línea del saludo de la carta de Quintanilla está tachada, no ausente | no |
+| palos-verdes-1965 | atribución | BAJA: «se consultó a un hombre» está en pasiva; no dice quién llamó ni cómo | no |
+| palos-verdes-1965 | cifra/hora | BAJA: el literal es «Traviling back and forth» | no |
+| palos-verdes-1965 | lectura | BAJA: el resumen hablaba de «la nota» y de «esa hora» sin presentarlas | no |
+| palos-verdes-1965 | cifra/hora | BAJA: posición de la nota mecanografiada en la tarjeta | no |
+| palos-verdes-1965 | atribución | BAJA: el extracto lo remite la oficina administrativa a nombre del teniente Ruane | no |
+| palos-verdes-1965 | atribución | BAJA: el parte dice «round object, red, white and blue flashing lights», no «luz redonda» | no |
+| palos-verdes-1965 | léxico/voz | BAJA: el título no decía lo mismo en ES y EN | no |
+| palos-verdes-1965 | cifra/hora | BAJA: la tarjeta dice «Civilians», no «fuente civil» | no |
 | abingdon-1957 | omisión | MEDIA: la nota del analista junto a los croquis tiene una palabra añadida encima de «Definitely same object» que parece «not»; la ficha citaba solo «all 3 diff». El verificador lo leyó «not» con seguridad y el redactor no: van las dos cosas | no |
 | abingdon-1957 | cifra/hora | MEDIA: el avión iluminado por el sol a más de 6.000 m solo vale para las 17:35; cinco minutos después hacían falta unos 12.000 m | no |
 | abingdon-1957 | atribución | MEDIA: Cooms no negó que el objeto fuera una estela: dijo que su cola no se parecía a una (p. 6) | no |
