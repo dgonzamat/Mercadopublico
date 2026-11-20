@@ -17,7 +17,8 @@
   },
   "tier": "B",
   "epistemicStatus": "documented",
-  "mundanoType": "sin_propuesta",
+  "mundanoType": "natural",
+  "objectDetail": "optico",
   "posterior": {
     "mundano_natural": 0.72,
     "humana_clasificada": 0.04,
@@ -116,21 +117,14 @@
       "url": "https://archive.org/details/1957-11-7230046-Kearney-Nebraska",
       "note": "Recorte «Visitor to Saucer Is Former Convict» (p. 64), con las declaraciones de McCurdy sobre Stokes.",
       "note_en": "Clipping \"Visitor to Saucer Is Former Convict\" (p. 64), with McCurdy's statements on Stokes."
-    },
-    {
-      "name": "AARO — «Fiscal Year 2024 Consolidated Annual Report on Unidentified Anomalous Phenomena» (noviembre de 2024), copia de la ODNI",
-      "name_en": "AARO — Fiscal Year 2024 Consolidated Annual Report on Unidentified Anomalous Phenomena (November 2024), ODNI copy",
-      "url": "https://odni.gov/files/ODNI/documents/assessments/DOD-AARO-Consolidated-Annual-Report-on-UAP-Nov2024.pdf",
-      "note": "Tasa base que usa el porqué de la clase: la mayoría de los casos que la AARO no resuelve quedan abiertos por falta de datos (p. 13).",
-      "note_en": "Base rate used by the class basis: most cases AARO does not resolve stay open for lack of data (p. 13)."
     }
   ],
   "classBasis": {
-    "es": "Ninguna fuente que se lea en su escaneo propone una causa del objeto. El mensaje del ATIC del 10 de noviembre de 1957 solo pesa contra el testigo: el hospital no halló quemaduras, Stokes admitió cortes de radio anteriores en la zona, sus testigos no aparecieron y los investigadores lo juzgaron poco fiable. Según el texto digital del informe AISS-UFOB-438-57, el oficial que lo preparó apuntó a un posible fenómeno óptico, sin decir qué se reflejó. Que no haya causa no prueba nada contra una ordinaria: en 2024, la AARO cerró 118 casos y otros 174 pendientes, todos como objetos convencionales (globos, aves, drones), aunque «muchos otros casos siguen sin resolver».",
-    "en": "No source that can be read in its scan proposes a cause for the object. The ATIC message of November 10, 1957, weighs only against the witness: the hospital found no burns, Stokes admitted earlier radio fade-outs in the area, his witnesses were not found, and investigators rated him unreliable. According to the digital text of report AISS-UFOB-438-57, the officer who prepared it pointed to a possible optical phenomenon, without saying what was reflected. The lack of a cause proves nothing against an ordinary one: in 2024, AARO closed 118 cases and another 174 pending ones, all as \"prosaic objects\" such as balloons, birds and drones, though \"many other cases remain unresolved.\"",
-    "source": "Mensaje del ATIC del 10 de noviembre de 1957 (expediente de Blue Book 1957-11-7228923, p. 18) · informe AISS-UFOB-438-57 del 1006.º AISS, parte tres (DOW-UAP-D194, texto digital) · AARO — Fiscal Year 2024 Consolidated Annual Report on UAP (14 nov 2024), p. 3, tasa base",
-    "source_en": "ATIC message of November 10, 1957 (Blue Book file 1957-11-7228923, p. 18) · report AISS-UFOB-438-57 of the 1006th AISS, part three (DOW-UAP-D194, digital text) · AARO — Fiscal Year 2024 Consolidated Annual Report on UAP (Nov 14, 2024), p. 3, base rate",
-    "url": "https://archive.org/details/1957-11-7228923-WhiteSands-NewMexico"
+    "es": "El oficial que preparó el informe AISS-UFOB-438-57 opinó que Stokes «possibly witnessed an optical phenomenon» y añadió que, en aquel terreno llano de arena blanca, «mirages cannot be considered unusual occurrences». Es una propuesta débil, pero el expediente no la refuta. El oficial no dijo qué pudo reflejarse, y el mismo informe anota un día gris, con nubes dispersas a 1.400 pies y una capa alta a 2.500, y un objeto a unos 35 grados sobre el horizonte. El mensaje del ATIC del 10 de noviembre de 1957 pesa contra el testigo: el hospital no halló quemaduras, sus testigos no aparecieron y los investigadores lo juzgaron poco fiable.",
+    "en": "The officer who prepared report AISS-UFOB-438-57 gave his opinion that Stokes \"possibly witnessed an optical phenomenon\" and added that, on that flat white sandy terrain, \"mirages cannot be considered unusual occurrences.\" It is a weak proposal, but the file does not refute it. The officer did not say what might have been reflected, and the same report notes a dull day, with scattered clouds at 1,400 feet and a high overcast at 2,500, and an object about 35 degrees above the horizon. The ATIC message of November 10, 1957, weighs against the witness: the hospital found no burns, his witnesses were not found, and investigators rated him unreliable.",
+    "source": "Informe AISS-UFOB-438-57 del 1006.º AISS, 12 de noviembre de 1957 (DOW-UAP-D194), parte tres, p. 6, y pp. 3 y 5 · mensaje del ATIC del 10 de noviembre de 1957 (expediente de Blue Book 1957-11-7228923, p. 18)",
+    "source_en": "Report AISS-UFOB-438-57 of the 1006th AISS, November 12, 1957 (DOW-UAP-D194), part three, p. 6, and pp. 3 and 5 · ATIC message of November 10, 1957 (Blue Book file 1957-11-7228923, p. 18)",
+    "url": "https://www.war.gov/medialink/ufo/release-08/documents/DOW-UAP-D194-Air_Intelligence_Information_Report_New_Mexico-1957.pdf"
   },
   "evidenceReviewed": "2026-11-20"
 }
