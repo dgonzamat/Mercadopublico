@@ -432,6 +432,22 @@ Conteo hecho a mano a partir de los informes de los verificadores (17-18 nov 202
 | levelland-1957 | omisión | BAJA: Underwood (profesor de Matemáticas y Astronomía) admitió que un rayo podía parar un auto; los globos «not likely to be in the area»; cielo cubierto e inversión | no |
 | levelland-1957 | cifra/hora | BAJA: seis relatos y cinco declaraciones firmadas | no |
 | levelland-1957 | omisión | MEDIA: la prosa no decía que el informe final de la unidad remitió el caso sin resolver tras barajar causas convencionales; añadido al párrafo de Barth | no |
+| orogrande-stokes-1957 | clasificación | ALTA: la clase «natural/óptico» descansaba solo en la conclusión del oficial de D194, legible solo en el OCR; por la regla del dueño no decide la clase: pasa a sin_propuesta (mundano 0,72, indet 0,18, probability 23) con la tasa base de la AARO | no |
+| orogrande-stokes-1957 | omisión | MEDIA: Stokes dijo que él y otros científicos tenían su propia teoría, que no explicó, y que el objeto «had nothing to do with missile work» (teletipo, p. 33) | no |
+| orogrande-stokes-1957 | atribución | MEDIA: el télex dice «AF investigators», sin identificarlos con el 1006.º AISS | no |
+| orogrande-stokes-1957 | atribución | MEDIA: el OCR no rebaja los diez autos de la prensa: habla de un primer auto y de dos conductores con los que habló | no |
+| orogrande-stokes-1957 | atribución | BAJA: retractación en pasiva y sin decir ante quién; las patrullas de White Sands son del mensaje del 10, no del 8; la cifra de 500 pies es de Stokes; «under examination» ambiguo | no |
+| orogrande-stokes-1957 | cifra/hora | BAJA: el teletipo y el despacho de UP son del mismo día; los diez autos están en la p. 25, el Daily News dice «several other cars» | no |
+| orogrande-stokes-1957 | ausencia | BAJA: «no hay otra copia en Blue Book» pasa a forma impersonal | sí |
+| orogrande-stokes-1957 | léxico/voz | BAJA: «diligent» suelto en la prosa en español | sí |
+| orogrande-stokes-1957 | omisión | BAJA: el OCR dice que nadie más informó de un avistamiento así | no |
+| orogrande-stokes-1957 | lectura | ES 7/10 (lector ciego). Corregido: fecha del mensaje del ATIC, dirección del objeto, «cuando volvió al auto», distancias y alturas sin unidad (informe: 3 a 5 millas del primer auto), sujeto de Kearney, Orogrande sin situar, «único testigo identificado», quién retiró lo de la quemadura. Sin tocar: repeticiones; edad y número de autos de las fuentes | no |
+| white-sands-1957 | cifra/hora | BAJA (hallado al verificar orogrande-stokes-1957): la p. 3 del informe FY2024 de la AARO dice «prosaic objects», no «conventional objects»; la cita del classBasis no era literal. También en palos-verdes-1965 | no |
+| kirtland-afb-1957 | cifra/hora | ALTA (documento D195 de la entrega 08, leído por su texto digital): la fecha «8 Nov 57» está en la cabecera revuelta y no se sabe a qué campo pertenece; D195 puede ser la carta del 8 nov o el informe del 13 que cita McDonald. Se quita la fecha y se devuelve a McDonald su «carta» | no |
+| kirtland-afb-1957 | atribución | MEDIA: D195 cita el radar «N-16 Surface» de la estación de Kirtland, no la unidad de aproximación de la CAA; «la misma declaración» pasa a «una declaración parecida» | no |
+| kirtland-afb-1957 | omisión | BAJA: McDonald dice que Shere no consultó al personal de radar y D195 sí registra una consulta; y la meteorología de D195 difiere del techo alto de Condon. Sin tocar en la prosa | no |
+| kirtland-afb-1957 | atribución | BAJA: solo los puntos b y c de la cita de McDonald son legibles en D195 | no |
+| kirtland-afb-1957 | léxico/voz | BAJA: comillas simples en el name_en de la fuente | no |
 
 **Lectura (18 nov 2026, tras la sexta ficha):** de 42 filas, `caso:check` habría marcado 4 (ninguna de Puddy; sus avisos eran falsos positivos) y 2 más con la regla ampliada. Las categorías **atribución, omisión, cifra/hora y ausencia** aparecieron en las cinco últimas fichas (Moody a Puddy): el paso 0.5 y el autochequeo **no las redujeron**. El léxico (3 de 5) sí era mecánico y pasó a E62. Puddy es una ficha más difícil que las anteriores (tres episodios, manuscritos de la RAAF, tres versiones de los investigadores), así que no es un experimento limpio: la comparación solo valdrá con tres fichas más.
 
