@@ -40,6 +40,10 @@ const EN: Record<string, string> = {
   "Dominio público (PD-USGov-POTUS)": "Public domain (PD-USGov-POTUS)",
   "Dominio público (CC0)": "Public domain (CC0)",
   "Dominio público en EE.UU. (PD-US)": "Public domain in the US (PD-US)",
+  "Dominio público (gobierno de EE. UU.)": "Public domain (US Government)",
+  "Dominio público en EE. UU. (publicada entre 1931 y 1963 sin renovar el copyright)":
+    "Public domain in the US (published between 1931 and 1963 without copyright renewal)",
+  "Dominio público (Public Domain Mark 1.0)": "Public domain (Public Domain Mark 1.0)",
   "Open Government Licence v3.0 (Crown copyright, Ministerio de Defensa)": "Open Government Licence v3.0 (Crown copyright, Ministry of Defence)",
   "Dominio público (obra del gobierno de EE. UU., 17 U.S.C. § 105)": "Public domain (US Government work, 17 U.S.C. § 105)",
   "Dominio público (PD-USGov, obra de la Marina de EE. UU.)": "Public domain (PD-USGov, US Navy work)",
