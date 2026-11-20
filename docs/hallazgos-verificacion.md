@@ -458,6 +458,13 @@ Conteo hecho a mano a partir de los informes de los verificadores (17-18 nov 202
 | kirtland-afb-1957 | omisión | BAJA: McDonald dice que Shere no consultó al personal de radar y D195 sí registra una consulta; y la meteorología de D195 difiere del techo alto de Condon. Sin tocar en la prosa | no |
 | kirtland-afb-1957 | atribución | BAJA: solo los puntos b y c de la cita de McDonald son legibles en D195 | no |
 | kirtland-afb-1957 | léxico/voz | BAJA: comillas simples en el name_en de la fuente | no |
+| kirtland-afb-1957 | lectura | MEDIA (cotejo con D195): el informe de 1957 cuenta la llamada al radar tras el primer avistamiento, sin hora; «al principio» y «la diferencia decide qué siguió el radar» exageraban el contraste con McDonald | no |
+| kirtland-afb-1957 | omisión | MEDIA (McDonald 1969): la ficha decía que la parada no consta en 1957, pero McDonald escribe que el interrogatorio de 1957 la hacía durar «rather more than a minute» | no |
+| kirtland-afb-1957 | atribución | MEDIA: el informe del 13 nov no es «la versión más cercana al suceso»; el télex del 6 y el mensaje de la 34.ª División del 8 son anteriores | no |
+| kirtland-afb-1957 | atribución | MEDIA (McDonald 1969): quien había muerto era la persona que Kaser «thought was actually on the CPN-18», y el informe de 1957 sí recoge un eco | no |
+| kirtland-afb-1957 | atribución | BAJA: Condon no nombra el radar de aproximación de la CAA | no |
+| kirtland-afb-1957 | atribución | BAJA: la altura del búnker (15–20 pies) es estimación de McDonald por sus fotos aéreas, no de la FAA | no |
+| kirtland-afb-1957 | léxico/voz | BAJA: «Drumhead» y «Área D» parecían dos lugares; McDonald los identifica («Area D (Drumhead Area…)») | no |
 
 **Lectura (18 nov 2026, tras la sexta ficha):** de 42 filas, `caso:check` habría marcado 4 (ninguna de Puddy; sus avisos eran falsos positivos) y 2 más con la regla ampliada. Las categorías **atribución, omisión, cifra/hora y ausencia** aparecieron en las cinco últimas fichas (Moody a Puddy): el paso 0.5 y el autochequeo **no las redujeron**. El léxico (3 de 5) sí era mecánico y pasó a E62. Puddy es una ficha más difícil que las anteriores (tres episodios, manuscritos de la RAAF, tres versiones de los investigadores), así que no es un experimento limpio: la comparación solo valdrá con tres fichas más.
 
