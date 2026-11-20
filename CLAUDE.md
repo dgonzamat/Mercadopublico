@@ -65,7 +65,7 @@ Cada regla vive en **un solo hogar**, según lo que gobierna; los demás archivo
 | 5 | **Visuales y documentos** | `### Visor de documentos` y `### Visuales y documentos` | E17, E20, E21, E53; E63 para fichas nuevas |
 | 6 | **Selección de casos**: cobertura, virales, anti-relleno | `/proximo-caso` | ninguno mecánico: criterio del dueño |
 | 7 | **Proceso de una ficha**: orden de pasos y quién los hace | `/nuevo-caso` | E63 (fila en el registro); `### Proceso y agentes` |
-| 8 | **Código del sitio**: Next, i18n, SEO, UI | `### Código del sitio` y `## Convenciones de UI` | E15, E18, E23, E27, E31, E32, E33, E40, `tsc` |
+| 8 | **Código del sitio**: Next, i18n, SEO, UI | `.claude/rules/codigo-sitio.md` (carga por ruta) | E15, E18, E23, E27, E31, E32, E33, E40, `tsc` |
 | 9 | **Operación**: git, PR, deploy, almacenamiento, visitas, enlaces | `## Branch protocol`, `## Deploy`, `## Contador de visitas`, `## Fuentes rotas` | gate semanal de enlaces, E38, sonda viva de visitas |
 | 10 | **Memoria**: cómo se aprenden y mantienen las reglas | `## Protocolo de aprendizaje` | `/learn`, `/retro`, `/blindar`, `/curar-memoria` y su sonda de duplicados (`npm run audit:reglas`) |
 
@@ -254,14 +254,10 @@ Cada narrativa bundlea **objeto + postura institucional**: `mundano_natural` (mi
 
 ## Convenciones de UI
 
-- Server components puros donde sea posible (zero JS shipped).
+Las convenciones de código y de UI que no tocan los datos (componentes, tokens, «Qué fue», rótulos) viven en [`.claude/rules/codigo-sitio.md`](.claude/rules/codigo-sitio.md), que Claude carga solo al leer `web/app`, `web/components` o `web/lib`. Aquí queda lo que también gobierna los datos de una ficha:
+
 - **Ficha de caso: un orden fijo y un solo criterio (especificación de la ficha, 24 oct 2026, decisión del dueño).** El orden es: cabecera (lugar, título, resumen entero), tier, «Qué fue», **registro del suceso**, «Qué pasó» y «Por qué importa», «Documentos y fuentes», contexto y relaciones. Cada elemento visual (`documents[]`, `primaryDocument`, `featuredDoc`) lleva `role`: `prueba` (registra el suceso; va antes del relato, hasta dos), `documento` (papel sobre el caso; va después del relato) o `contexto` (lugar, avión, persona; va al final). La página ordena **solo** por `role` (`lib/caseVisuals.ts`), nunca por el campo ni por el tipo. Así se hizo porque los arreglos sueltos rompían la lógica: al bajar el visor, la foto de Trent quedó entre el papeleo mientras la entrada del rancho Skinwalker iba arriba, y la tarjeta destacada se quedó encima del relato. *(enforzado: `audit-consistency.mjs` **E53**, ERROR si un elemento no tiene `role` válido; **E52**, ERROR desde el 31 oct 2026 (cerró la capa 2: las 396 fichas pasaron por redactor y verificador) con los límites de la guía `/redaccion`; `npm run qa:relato` (on-demand, no gate del build; aborta si `out/` está rancio) mide en móvil todas las fichas y falla si el primer contenido del caso pasa de 2,5 pantallas o si se cuela algo entre la cabecera y él. Controles negativos corridos.)*
-- **«Qué fue»: la cifra grande es la de la explicación que más pesa (15 nov 2026, decisión del dueño; reemplaza la regla del 13 nov).** La cifra grande es siempre la de la explicación con más peso dentro del grupo mayor, pase o no del 50 % («32 % tecnología humana clasificada»), debajo va una sola frase corta, sin cifras («La explicación más probable», «Ninguna explicación llega a la mitad», «La evidencia no alcanza para decidir»), y las cifras viven en una barra de hasta tres tramos con leyenda: la explicación que más pesa, el resto de su grupo y el otro grupo (diseño limpio, 16 nov 2026, decisión del dueño). Ponerlas en la prosa sumó seis cifras en Shag Harbour, dos repetidas con distinto sentido (35 % sin decidir y 35 % origen terrestre), y llamó «causa conocida» a una causa sin identificar. El porqué de clase va plegado tras una línea que nombra la causa («Causa ordinaria que proponen las fuentes: dron» o «Por qué no se identifica una causa ordinaria»), nunca «lo más probable es»; solo si manda lo indeterminado, que no es una explicación, la cifra grande es la del grupo. El grupo de las causas conocidas se rotula «Origen terrestre (humano o natural)» / «Earthly origin (human or natural)»: «Causa natural o humana» se leía como «era natural» en Skinwalker, donde lo que más pesa es la tecnología clasificada. Lógica en `CasePosterior` (`components/MeceChart.tsx`). La misma regla (primero el grupo que más pesa, luego la explicación mayor dentro de él, eligiendo sin fundir las dos no humanas) clasifica cada caso en `/cases`, `/probabilidades`, la portada y el laboratorio: `modalHypothesis` (`lib/meceModel.ts`) y `dominantNarrative` (`lib/meceClasses.ts`). Con el argmax simple, 26 fichas caían bajo una explicación distinta de la que mostraba su ficha (16 nov 2026).
 - **«Dónde ocurrió»: mapa de la región (16 nov 2026, decisión del dueño).** Un SVG estático por ficha e idioma que genera `scripts/build-maps.mjs` en el prebuild (`public/maps/`, gitignored; Natural Earth 1:50m vía `world-atlas`, estados de EE. UU. vía `us-atlas` y hasta seis ciudades de referencia de Natural Earth *populated places*, reducidas en `scripts/data/ne-populated-places.json` y colocadas sin pisar el lugar ni los rótulos; sin teselas ni JS), y que `components/RegionMap.tsx` coloca al cierre de «Qué pasó», para no retrasar «Qué fue» ni el relato. Obedece `location.precision`: `exact` dibuja el punto, `approx` una zona y `none` (lugar no revelado, órbita, la Luna) no lleva mapa. Al revisar las coordenadas para el mapa, 32 fichas sin lugar revelado tenían coordenadas de relleno (Oriente Medio en 33, 44, Bagdad) y Mantell estaba en el centro de Kentucky: un punto en el mapa afirma un lugar, así que la precisión va antes que el dibujo. *(enforzado: `validate-schema.mjs` exige `precision`; `audit-consistency.mjs` **E61**, ERROR si un lugar no revelado o fuera de la Tierra no es `none` o un punto `exact` tiene coordenadas enteras; controles negativos corridos.)*
-- Headers de section: el componente `Eyebrow` (`text-sm font-semibold text-muted`, en minúsculas). Hasta oct 2026 iban en `font-mono uppercase tracking-widest`, y la ficha acumulaba ~17 rótulos en mayúsculas que competían con el contenido; no volver a las mayúsculas para rótulos de sección.
-- Theme tokens en `tailwind.config.ts`: `bg`, `panel`, `border`, `text`, `muted`, `accent`, `tierS/A/B`.
-- Badges: usar el static lookup `TIER_META` de `lib/ui.ts` (Tailwind JIT no compila clases dinámicas como `bg-${color}/10`).
-- max-w container del detalle: `mx-auto max-w-3xl`.
 
 ## Deploy
 
@@ -340,31 +336,6 @@ Detalle e historia: [`docs/bitacora-reglas.md`](docs/bitacora-reglas.md#contador
 - **No** dar a un agente rutas relativas ni un nombre de lote sin comprobar que está libre: un agente escribió `rewrite/` en la raíz del repo en vez de en el scratchpad, y tres encontraron `parche-B14.json`, `B16` y `verif-B15.md` de lotes anteriores e improvisaron otros nombres (oct 2026). El brief lleva rutas absolutas y un nombre de lote nuevo; antes de publicar, `git status` no debe mostrar nada fuera de `web/`.
 
 - **No** reportar el estado de la deuda solo con lo que mide la auditoría, ni arrastrar una lista anterior sin volver a comprobarla: la deuda que se lleva a mano (documentos sin caso, duplicados, decisiones del dueño) desaparece en silencio, y la ya resuelta sigue apareciendo como pendiente. Pasó las dos cosas en la misma semana (oct 2026): desde el 3 de octubre las listas solo mostraban E21/E42/E41/E38, y el dueño tuvo que preguntar por qué había cambiado la lista; además se le presentaron como pendientes tres decisiones suyas que ya estaban resueltas (Coyne, Sandia, «desechos aéreos»). Cada lista de deuda arrastra todos los puntos de la anterior, cada uno con su estado **verificado hoy**. Y ninguna cifra se copia de una lista anterior: **`npm run deuda`** (`web/scripts/debt-report.mjs`) mide en el momento lo medible (WARN de la auditoría, muletillas de prosa por tier, licencias mezcladas) y lee lo no medible de `data/debt-manual.json`, que no admite cifras (el script avisa si aparece una). Las cifras arrastradas a mano daban 71 fichas Tier A pendientes cuando eran 68, unas 197 Tier B cuando eran 182, y callaban 10 Tier S (oct 2026).
-
-### Código del sitio
-
-- **No** importar `fs` desde `lib/data.ts` (lo importa un client component y webpack falla). *(E18a)*
-- **No** importar el corpus en un módulo alcanzable desde un componente cliente, ni de forma transitiva (embute los MB de `cases.json` en cada página: 5,23→0,92 MB de JS al arreglarlo, jul 2026). Precalcula el agregado en build y, para una visualización, proyecta un dataset con solo sus campos (`atlas-points.json`). *(E18d, parcial)*
-- **No** adivinar el componente culpable del bundle: traza el grafo de módulos desde cada `"use client"`.
-- **No** re-exportar una const y usarla en el mismo módulo sin importarla (el re-export no crea binding). Verifica con `tsc -p tsconfig.json --noEmit` y control negativo: `tsc <archivos>` no chequea nada (TS5112) y `--ignoreConfig` mata el alias `@/`.
-- **No** hardcodear conteos ni recencia del corpus («la entrega más reciente»): se derivan (`STATS`, `Math.max`). Excepción: `CORPUS_START_YEAR = 1947` es un ancla editorial, no el mínimo del corpus. *(E39)*
-- **No** usar el esquema `node:` en imports de Next (`fs`, no `node:fs`). *(E18b)*
-- **Inglés es el idioma primario**: la raíz sirve inglés y el espejo español vive en `/es`; cada URL sirve un solo idioma (`locale` en `<T>`; el chrome lo toma de `chromeLocale(pathname)`).
-- **No** renderizar crudo un campo con par `_en`: son cuatro superficies, el render (`<T>`), la metadata, el JSON-LD (`lib/jsonld.ts`, E33) y el índice de búsqueda (E40).
-- **No** alimentar la metadata de la ruta inglesa con `seoTitle`/`seoDescription`, que son la variante ES: usa `seoTitle_en` o `name_en`.
-- **No** declarar `alternates.languages` sin espejo real, ni omitirlo cuando existe: el hreflang es recíproco. *(E31)*
-- **No** escribir a mano la metadata de una sección: `pageMeta` (Next no hace deep-merge de `openGraph`). *(E32)*
-- **No** asumir `name_en` en `cases-client.json`: un `_en` nuevo en cliente va al dataset slim de la ruta que lo usa; en un `<select>`, `useLocale()`.
-- **No** desalinear el set `MIRRORED` de `LocaleLink.tsx` y los directorios `app/es/*`. *(E23)*
-- **No** agregar una ruta pública sin sumarla a `staticRoutes` de `app/sitemap.ts` o marcarla `noindex`. *(E27)*
-- **No** emitir `Event` JSON-LD en casos: `Article` + `contentLocation: Place`. *(E15)*
-- **No** proponer una vista nueva en `/innovar` sin listar `app/*/page.tsx` y grepear `lib/` (casi se duplicó `/cobertura`).
-- **No** medir prosa contando `<p>`: las landings usan `Lede`/`H1`/`Eyebrow`.
-- **No** fijar un `grid-template-columns` único con ítems `hidden <bp>:inline`: `grid-cols` responsivo por breakpoint.
-- **No** dejar una cifra de `STATS` atada a una forma del dato que puede desaparecer (la portada dijo «0 documentos» cuatro días). *(E51)*
-- **No** volver a `next/font/google`: las fuentes son locales en `web/app/fonts/` (el CI falló al descargarlas, oct 2026).
-
-Causa e historia de cada línea: [`docs/bitacora-reglas.md`](docs/bitacora-reglas.md#código-del-sitio).
 
 ### Operación
 
