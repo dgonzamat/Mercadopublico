@@ -228,5 +228,15 @@
         "state": "no generado por decisión del dueño; la herramienta está lista"
       }
     ]
+  },
+  {
+    "group": "Reglas y agentes (nov 2026)",
+    "items": [
+      {
+        "id": "L1",
+        "title": "Prueba A/B del lector ciego (tools/lector-ciego) frente a un lector que recibe CLAUDE.md: la calibración de /auditar-prosa §2 se midió con el lector que veía la guía, así que la tasa de detección del ciego no está medida",
+        "state": "pendiente desde el 20 nov: en la próxima tanda de /nuevo-caso, el paso 5d corre los dos lectores sobre las mismas fichas y el mismo idioma (el segundo, un subagente general-purpose); el dueño decide qué lista se parece más a lo que corregiría. Si el ciego sale peor, se restaura .claude/agents/ficha-lector.md desde git y se revierten los punteros de nuevo-caso y auditar-prosa"
+      }
+    ]
   }
 ]
