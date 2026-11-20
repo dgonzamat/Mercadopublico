@@ -420,6 +420,11 @@ Conteo hecho a mano a partir de los informes de los verificadores (17-18 nov 202
 | aawsap-skinwalker-2008 | cifra/hora | MEDIA (perfil reid): el dinero llegó en la ley suplementaria del año fiscal 2008 a propuesta de Reid e Inouye (D186), no en 2007 con Stevens | no |
 | washington-dc-1952 | omisión | MEDIA: la descripción de D026 omitía que Tauss veía probable que también los menos de 100 sin explicar se explicaran con información completa | no |
 | aawsap-skinwalker-2008 | atribución | BAJA: tres matices de D186 y D188 (Burgess «sugirió», D188 sin firma y «apparently», nada marca D186 como «final») | no |
+| aawsap-skinwalker-2008 | lectura | MEDIA (D172, informe de diez meses de BAASS): «cada una con otra forma»; los seis vieron cuatro formas: 2 rectángulos, 2 círculos, un óvalo y un rombo (p. 161) | no |
+| aawsap-skinwalker-2008 | omisión | MEDIA (D172): faltaba la explicación ordinaria del propio parte, un visor nocturno grande en trípode, probada y juzgada improbable (pp. 160–161) | no |
+| aawsap-skinwalker-2008 | lectura | MEDIA (D172): la descripción del documento repetía el error de las formas | no |
+| aawsap-skinwalker-2008 | atribución | BAJA (D172): las huellas «de intrusos» se daban como hecho; el informe lo infiere («leading us to believe», «likely», p. 161) | no |
+| aawsap-skinwalker-2008 | léxico/voz | BAJA (D172): el ES perdía «a tiempo completo» frente al EN, y la comparación con Bigelow lo necesita (p. 4) | no |
 | ube-f86d-1956 | cifra/hora | BAJA: D198 escribe «ZZONJAIN (Phonetic)» y el vacío se forma en parte de la superficie | no |
 | detroit-dome-object-1958 | atribución | BAJA: en D197 el Mando de Defensa Aérea es el origen, no el destinatario; la regla de testimonio único no está en el documento | no |
 | tremonton-film-1952 | cifra/hora | BAJA: D025 sí lleva «1952» escrito a mano en las pp. 1 y 11 | no |
