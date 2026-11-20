@@ -11,6 +11,7 @@ import {
   type VisitorsStatsData,
 } from "@/components/VisitorsStats";
 import { VisitorsPages, type PageRow } from "@/components/VisitorsPages";
+import { VisitorsReferrers, type ReferrerRow } from "@/components/VisitorsReferrers";
 import {
   VisitorsSubscribers,
   type VisitorsSubscribersData,
@@ -80,6 +81,7 @@ export function VisitorsPanel() {
   const [countryRows, setCountryRows] = useState<CountryRow[]>([]);
   const [dayRows, setDayRows] = useState<DayRow[]>([]);
   const [pageRowsRaw, setPageRowsRaw] = useState<PageRow[]>([]);
+  const [referrerRows, setReferrerRows] = useState<ReferrerRow[]>([]);
   const [subDayRows, setSubDayRows] = useState<DayRow[]>([]);
   const [subTotal, setSubTotal] = useState<number | null>(null);
   // Clics en «Apoya UAP Codex» (migración 0009): mide la intención de aportar
@@ -156,6 +158,18 @@ export function VisitorsPanel() {
             })),
           );
         });
+
+      // Origen (migración 0011). Si la función aún no existe, el error deja la
+      // lista vacía y el bloque dice que no hay datos.
+      void sb.rpc("visits_referrer_agg", { p_since: since }).then(({ data }) => {
+        if (!alive) return;
+        setReferrerRows(
+          ((data ?? []) as Array<{ domain: string; count: unknown }>).map((r) => ({
+            domain: r.domain,
+            count: num(r.count),
+          })),
+        );
+      });
 
       void sb.rpc("subscriber_day_agg", { p_since: since }).then(({ data }) => {
         if (!alive || !data) return;
@@ -392,6 +406,9 @@ export function VisitorsPanel() {
 
       {/* Páginas más visitadas */}
       <VisitorsPages rows={pageRows} />
+
+      {/* De dónde llegan (dominio de la página de entrada) */}
+      <VisitorsReferrers rows={referrerRows} />
 
       {updatedAt && (
         <p className="font-mono text-[11px] uppercase tracking-widest text-muted">

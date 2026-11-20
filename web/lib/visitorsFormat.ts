@@ -46,12 +46,20 @@ const SECTION_LABEL: Record<string, { es: string; en: string }> = {
   cases: { es: "Casos", en: "Cases" },
   probabilidades: { es: "Probabilidades", en: "Probabilities" },
   atlas: { es: "Atlas", en: "Atlas" },
-  patterns: { es: "Patrones", en: "Patterns" },
-  researchers: { es: "Investigadores", en: "Researchers" },
-  frameworks: { es: "Frameworks", en: "Frameworks" },
-  about: { es: "Acerca", en: "About" },
+  researchers: { es: "Actores", en: "Actors" },
+  frameworks: { es: "Marcos teóricos", en: "Frameworks" },
+  about: { es: "Metodología", en: "Methodology" },
   resumen: { es: "Resumen", en: "Summary" },
   visitantes: { es: "Visitantes", en: "Visitors" },
+  blog: { es: "Blog", en: "Blog" },
+  releases: { es: "Entregas", en: "Releases" },
+  entities: { es: "Entidades", en: "Entities" },
+  cobertura: { es: "Cobertura", en: "Coverage" },
+  fuentes: { es: "Fuentes", en: "Sources" },
+  contact: { es: "Contacto", en: "Contact" },
+  laboratorio: { es: "Laboratorio", en: "Data Lab" },
+  // Rutas retiradas que siguen en el histórico de visitas.
+  patterns: { es: "Patrones", en: "Patterns" },
   posts: { es: "Blog", en: "Blog" },
 };
 
@@ -68,12 +76,16 @@ function prettySlug(slug: string): string {
  */
 export function pageLabel(path: string, locale: "es" | "en"): string {
   const clean = path.split("?")[0].split("#")[0];
-  const parts = clean.split("/").filter(Boolean); // ["cases","slug"]
+  const all = clean.split("/").filter(Boolean); // ["cases","slug"]
+  // Espejo español: /es/cases/x → «Casos · X (ES)», para distinguirlo de su
+  // gemela inglesa en la lista (nov 2026: salía la ruta cruda).
+  const isEs = all[0] === "es";
+  const parts = isEs ? all.slice(1) : all;
   const section = SECTION_LABEL[parts[0] ?? ""];
   if (!section) return clean || "/";
   const head = section[locale];
-  if (parts.length <= 1) return head;
-  return `${head} · ${prettySlug(parts.slice(1).join("/"))}`;
+  const label = parts.length <= 1 ? head : `${head} · ${prettySlug(parts.slice(1).join("/"))}`;
+  return isEs ? `${label} (ES)` : label;
 }
 
 /** Día (YYYY-MM-DD) → "25 jun" en es/en, fijado a UTC para no desfasar. */

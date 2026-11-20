@@ -1,5 +1,3 @@
-"use client";
-
 import Link from "next/link";
 import { T } from "@/components/T";
 import { pageLabel, fmtNum } from "@/lib/visitorsFormat";
