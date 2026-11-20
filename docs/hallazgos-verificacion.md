@@ -402,6 +402,8 @@ Conteo hecho a mano a partir de los informes de los verificadores (17-18 nov 202
 | kearney-schmidt-1957 | léxico/voz | BAJA: fórmula vacía sobre la salud mental; el diagnóstico está tachado y la prensa citó a los psiquiatras | no |
 | kearney-schmidt-1957 | cifra/hora | BAJA: el rotor se cambió diez días antes según el informe y «day before» según el mensaje del ATIC | no |
 | kearney-schmidt-1957 | lectura | EN 8/10 (lector ciego). Corregido: medidas del casco, recuento de motivos, el verbo borroso, dirección del argumento, la lata «partly full». Sin tocar: la condena sin fecha (ya declarada) y repeticiones | no |
+| kearney-schmidt-1957 | cifra/hora | BAJA (cotejo con D192): «el resumen de la primera página» ya no casa con el visor oficial, que abre con dos hojas de trámite; es la primera página del informe | no |
+| kearney-schmidt-1957 | léxico/voz | BAJA: la cita literal reproduce la errata «definitley» sin marcarla; se añade [sic] | no |
 | sunchubamba-cajamarca-1957 | clasificación | ALTA: tier S → A: teodolito de una empresa privada y operador con el nombre tachado en Blue Book (precisión 6); la capa de texto de PURSUE D202 lo nombra (John F. Withrow) y apunta a la Sra. Hildebrand como testigo del 7 nov, pero solo por OCR; decisión del orquestador, conservadora | no |
 | sunchubamba-cajamarca-1957 | atribución | ALTA: la reserva sobre la dirección es del 28 oct y de las 12:51 del 29; a las 13:39 da «moving slowly to approximately 300°-310°» (BB p. 3) | no |
 | sunchubamba-cajamarca-1957 | atribución | MEDIA: «un movimiento hacia el noroeste que las tablas no muestran» no lo dice ninguna fuente, y las tablas no lo contradicen | no |
@@ -413,6 +415,8 @@ Conteo hecho a mano a partir de los informes de los verificadores (17-18 nov 202
 | sunchubamba-cajamarca-1957 | atribución | BAJA: «durante nuestra estancia», sin decir cuántos días | no |
 | sunchubamba-cajamarca-1957 | omisión | MEDIA: la ficha decía que no se podía saber si el observador era Schnell; la capa de texto de la copia de PURSUE lo nombra (Withrow): se dice, con la reserva de que no se cotejó sobre la imagen | no |
 | sunchubamba-cajamarca-1957 | lectura | ES 7,5/10 (lector ciego). Corregido: frase del 28 oct, frase de la Luna y la hora GMT, «minuto a minuto» frente a 48 + 10 lecturas, jerga «capa de texto», el día equivocado del memorando. Sin tocar: códigos y repeticiones | no |
+| sunchubamba-cajamarca-1957 | atribución | MEDIA (cotejo con D202): la ficha daba por hecho que Withrow «no es» el Schnell de Deffebach; D202 atribuye las observaciones a «qualified weather observers» (p. 4) y D200 dice que Schnell dirigía una estación en la zona (p. 3): no se puede cerrar | no |
+| sunchubamba-cajamarca-1957 | proceso | BAJA: dos documentos del visor sin `license` | no |
 | aawsap-skinwalker-2008 | cifra/hora | ALTA (documentos de la entrega 08): D188 no da por positivas «todas las reseñas de los 26»: solo se reseñaron 13 (p. 1, «highlighted… are the ones that were reviewed») | no |
 | aawsap-skinwalker-2008 | atribución | MEDIA: D185 no es una respuesta de la DIA a Reid, sino un dictamen para la oficina de Programas Especiales del subsecretario de Inteligencia | no |
 | aawsap-skinwalker-2008 | atribución | MEDIA: en la carta de Reid (D183), la «protección extraordinaria» la requerirían los avances futuros, no los hallazgos | no |
