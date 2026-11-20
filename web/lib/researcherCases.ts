@@ -110,8 +110,9 @@ export const RESEARCHER_CASES: Record<string, string[]> = {
     "mantell-1948",
     "washington-dc-1952",
   ],
-  grusch: [
-    ],
+  grusch: ["varginha-1996"],
+  lianza: ["aguadilla-2013", "bariloche-1995", "campo-de-mayo-1972"],
+  sanchez: ["fh227-pluna-1975"],
   elizondo: ["aawsap-skinwalker-2008"],
   fravor: ["nimitz-2004"],
   dietrich: ["nimitz-2004"],
@@ -132,10 +133,13 @@ export const RESEARCHER_CASES: Record<string, string[]> = {
   burlison: ["yemen-orb-2024"],
   reid: ["aawsap-skinwalker-2008"],
   luna: ["yemen-orb-2024"],
+  gillibrand: ["mystery-drones-east-coast-2024"],
+  burchett: ["varginha-1996"],
+  moskowitz: ["varginha-1996"],
+  rebelo: ["varginha-1996"],
 
   // D — periodistas
-  coulthart: [
-    ],
+  coulthart: ["nimitz-2004", "varginha-1996"],
   kean: ["nimitz-2004", "kecksburg-1965"],
   knapp: ["aawsap-skinwalker-2008", "uss-omaha-2019"],
   corbell: ["uss-omaha-2019", "spherical-afghanistan-2020"],

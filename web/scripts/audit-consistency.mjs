@@ -196,25 +196,37 @@ for (const file of sourceFiles) {
 
 // ─── 9c. RULE E9: researcher ↔ case association coverage ─────────────────
 //
-// No existe un vínculo estructurado investigador↔caso (los casos no tienen
-// campo `researchers`). Esta regla mide la red IMPLÍCITA: un investigador se
-// considera "asociado" si su nombre completo, o su apellido (≥4 letras),
-// aparece como substring en el texto de algún expediente. La búsqueda por
-// substring es deliberadamente conservadora: prefiere falsos positivos de
-// asociación (no marcar un huérfano dudoso) antes que marcar erróneamente
-// como huérfano a alguien que sí está citado. Los huérfanos se reportan en
-// un único WARN agregado: son candidatos a enlazar con un caso o a revisar.
+// Mide lo mismo que muestra el sitio: el perfil lista solo los casos del mapa
+// curado `RESEARCHER_CASES` (lib/researcherCases.ts). Hasta nov 2026 la regla
+// contaba menciones del nombre o del apellido en el texto de los casos, y daba
+// 139/139 mientras 23 perfiles no mostraban ningún caso (Grusch y Coulthart
+// con la lista vacía; «Nell» contaba por aparecer dentro de otras palabras).
+// Un actor cuenta como vinculado si el mapa le da ≥1 caso que existe, o si
+// embebe documentos propios (los que respaldan al actor y no a un incidente).
+// Los que una ficha nombra con su nombre completo sin estar en el mapa se
+// listan aparte como candidatos a enlazar (WARN, no ERROR).
+const researcherCasesSrc = fs.readFileSync(path.join(root, "lib", "researcherCases.ts"), "utf8");
+const researcherCasesBody = researcherCasesSrc.slice(
+  researcherCasesSrc.indexOf("RESEARCHER_CASES"),
+  researcherCasesSrc.indexOf("export function"),
+);
+const curatedCases = {};
+for (const m of researcherCasesBody.matchAll(/(?:"([^"]+)"|([A-Za-z][\w-]*))\s*:\s*\[([^\]]*)\]/g)) {
+  curatedCases[m[1] || m[2]] = [...m[3].matchAll(/"([^"]+)"/g)].map((x) => x[1]);
+}
+const caseIdSet = new Set(caseFileNames.map((f) => f.replace(/\.json$/, "")));
+// Actores que una ficha nombra solo de pasada: revisado y decidido no enlazar.
+const MENCION_SIN_PAPEL = {
+  "matthew-brown": "borland-langley-triangle-2012 y nuccetelli-vandenberg-2003 solo cuentan la organización que cofundó en 2026 (20 nov 2026)",
+};
 const orphanResearchers = [];
+const unlinkedMentioned = [];
 for (const r of researchers) {
-  const full = (r.name || "").trim();
-  const surname = full.split(/\s+/).pop() || "";
-  const linked =
-    (full.length >= 4 && caseCorpusText.includes(full)) ||
-    (surname.length >= 4 && caseCorpusText.includes(surname)) ||
-    // Un actor que embebe documentos propios (los que respaldan al actor y no
-    // a un incidente) ya tiene su respaldo en el perfil.
-    (r.documents?.length ?? 0) > 0;
+  const curated = (curatedCases[r.id] ?? []).filter((id) => caseIdSet.has(id));
+  const linked = curated.length > 0 || (r.documents?.length ?? 0) > 0;
   if (!linked) orphanResearchers.push(r.id);
+  const full = (r.name || "").trim();
+  if (!curated.length && !MENCION_SIN_PAPEL[r.id] && full.length >= 4 && caseCorpusText.includes(full)) unlinkedMentioned.push(r.id);
 }
 const linkedCount = researchers.length - orphanResearchers.length;
 if (orphanResearchers.length > 0) {
@@ -222,7 +234,15 @@ if (orphanResearchers.length > 0) {
     "WARN",
     path.join(root, "data", "researchers.json"),
     0,
-    `${orphanResearchers.length}/${researchers.length} investigadores sin mención en ningún caso (heurística por nombre): ${orphanResearchers.join(", ")} — candidatos a enlazar o revisar`,
+    `${orphanResearchers.length}/${researchers.length} investigadores sin casos en RESEARCHER_CASES ni documentos propios (su perfil no lleva a nada): ${orphanResearchers.join(", ")}`,
+  );
+}
+if (unlinkedMentioned.length > 0) {
+  record(
+    "WARN",
+    path.join(root, "lib", "researcherCases.ts"),
+    0,
+    `${unlinkedMentioned.length} investigadores que una ficha nombra con su nombre completo no tienen casos en RESEARCHER_CASES: ${unlinkedMentioned.join(", ")} — enlazar si su papel en la ficha es real`,
   );
 }
 
