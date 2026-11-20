@@ -299,6 +299,7 @@ Conteo hecho a mano a partir de los informes de los verificadores (17-18 nov 202
 | ube-f86d-1956 | omisión | BAJA: la nota del expediente de Blue Book omitía la foto (p. 2) y la ficha Keyhoe-1960 (p. 3) | no |
 | ube-f86d-1956 | omisión | BAJA: 43.ª (télex) frente a 41.ª División Aérea (informe de febrero) sin comentar | no |
 | ube-f86d-1956 | clasificación | BAJA: el error de lugar de Gregory no deshace el globo (Tsushima y Corea siguen al oeste, de donde venía el viento); el orquestador quitó esa objeción del classBasis al recortarlo bajo 700 | no |
+| ube-f86d-1956 | lectura | ES 6/10 (lector ciego). Corregido: posiciones de reloj leídas como horas, «a unas 50 millas» sin referente (la estación de tierra), frase elíptica de las 7 y 12 millas, frase de las coordenadas de Gregory (detalle a evidence), «parte alta de la pantalla» sin explicar (quitada) | no |
 | fontana-goc-1956 | atribución | MEDIA: «demasiado separadas para luces de ala» era lo que informó la testigo de La Jolla, no un juicio del télex (D207 p. 4: «REPORTED THAT THE LIGHTS WERE TO FAR APART…»); en classBasis y whyMatters | no |
 | fontana-goc-1956 | atribución | MEDIA: la ficha asignaba «observador jefe» y «ayudante» al marido y a la esposa; el télex dice «ASST AND CHIEF OBS» sin precisar cuál era cada uno (D207 p. 2, 6.A) | no |
 | fontana-goc-1956 | atribución | BAJA: la cola «como la de un reactor con posquemador» es del relato de los testigos que transcribe el télex, no una comparación del télex (D207 pp. 3-4) | no |
@@ -307,6 +308,7 @@ Conteo hecho a mano a partir de los informes de los verificadores (17-18 nov 202
 | fontana-goc-1956 | cifra/hora | BAJA: el télex da dos horas para el primer aviso, 0225Z (parte 1) y 0223Z (parte 4); se añadió la segunda en evidence | no |
 | fontana-goc-1956 | cifra/hora | BAJA: lecturas de la descripción de D207: la tarjeta pone «1,1and2» (no «1, land2») y el télex cierra en «23/18ØØZ» (no un dígito ilegible) | no |
 | fontana-goc-1956 | omisión | BAJA: faltaban en la descripción de D211 la fecha local de la tarjeta (21 ago), el grupo fecha-hora M 242240Z, los sellos del 27 ago y el lugar del observador (orquestador, comprobado sobre la imagen) | no |
+| fontana-goc-1956 | lectura | ES 7/10 (lector ciego). Corregido: «en la misma calle» colgando, sujeto implícito del télex, la frase abstracta de los 115 nudos, Departamento de Guerra y PURSUE sin presentar | no |
 | agoura-kelly-johnson-1953 | atribución | MEDIA: el ES daba a Thoren la frase «Look out, there's a flying saucer»; según su memorando la dijo Wimmer (D206 p. 9), y «Hey, look at the flying saucer!» es de Wimmer (p. 11) | no |
 | agoura-kelly-johnson-1953 | atribución | MEDIA: Colman no rechazó la nube por el contorno sino por el paralaje entre el rancho y el avión (D206 p. 12) | no |
 | agoura-kelly-johnson-1953 | omisión | MEDIA: «ninguno sabía a qué distancia estaba»: Wimmer la estimó en 50 o 60 millas o más y Thoren en siete, «probablemente mucho mayor» (pp. 9, 11); pasa a «nadie la midió» | no |
@@ -319,6 +321,7 @@ Conteo hecho a mano a partir de los informes de los verificadores (17-18 nov 202
 | agoura-kelly-johnson-1953 | léxico/voz | BAJA: comillas simples en dos `name_en` de las fuentes | no |
 | agoura-kelly-johnson-1953 | cifra/hora | BAJA: «1700 local time» en evidence_en; «5:00 p.m.» | no |
 | agoura-kelly-johnson-1953 | léxico/voz | BAJA: cita de Putt en inglés sin glosa en ES | no |
+| agoura-kelly-johnson-1953 | lectura | EN 7/10 (lector ciego). Corregido: «Phil Colman himself» sin presentar, «four Lockheed men» frente a cinco a bordo, «remains to be seen» por la contradicción Putt/carta, la esposa como observadora (D206 p. 6), las 5:05 sin situar, Departamento de Guerra y PURSUE | no |
 | bolido-sur-california-1957 | atribución | MEDIA: el télex de Ventura transmite una sola valoración (el centro ADCC dice que el monte Wilson creía que era un meteoro), no dos (D210 p. 15, punto 11) | no |
 | bolido-sur-california-1957 | atribución | MEDIA: «LOOKED LIKE HUGE METEOR» no se atribuye al piloto en ningún télex (pp. 6, 8); con nombre solo Heryford («suggest meteors», p. 10) | no |
 | bolido-sur-california-1957 | lectura | MEDIA: «la vieron seis personas» chocaba con la duda de la hora del marinero, que la propia ficha plantea; pasa a «avisaron de una luz así» | no |
@@ -330,6 +333,7 @@ Conteo hecho a mano a partir de los informes de los verificadores (17-18 nov 202
 | bolido-sur-california-1957 | omisión | BAJA: los dos cazas de North Island salieron «earlier» (p. 15) | no |
 | bolido-sur-california-1957 | lectura | BAJA: «su director de Inteligencia» podía leerse como el del ATIC; era el del cuartel general de la Fuerza Aérea | no |
 | bolido-sur-california-1957 | lectura | BAJA: el título decía «seis testigos ven cruzar» con la misma duda de la hora; pasa a «seis personas avisan» | no |
+| bolido-sur-california-1957 | lectura | EN 6/10 (lector ciego). Corregido: entradilla críptica sobre la hora del marinero, «five people» frente a «six», «below his line of sight» (30° bajo la horizontal, télex), frase con demasiados incisos, párrafo de la etapa del Sputnik 1 colgando, orden de los cazas, Departamento de Guerra y PURSUE | no |
 
 **Lectura (18 nov 2026, tras la sexta ficha):** de 42 filas, `caso:check` habría marcado 4 (ninguna de Puddy; sus avisos eran falsos positivos) y 2 más con la regla ampliada. Las categorías **atribución, omisión, cifra/hora y ausencia** aparecieron en las cinco últimas fichas (Moody a Puddy): el paso 0.5 y el autochequeo **no las redujeron**. El léxico (3 de 5) sí era mecánico y pasó a E62. Puddy es una ficha más difícil que las anteriores (tres episodios, manuscritos de la RAAF, tres versiones de los investigadores), así que no es un experimento limpio: la comparación solo valdrá con tres fichas más.
 
