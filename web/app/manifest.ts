@@ -1,4 +1,5 @@
 import type { MetadataRoute } from "next";
+import { STATS } from "@/lib/siteStats";
 
 // Web App Manifest. App Router lo cablea automáticamente como
 // <link rel="manifest" href="/manifest.webmanifest">.
@@ -7,17 +8,18 @@ export const dynamic = "force-static";
 
 export default function manifest(): MetadataRoute.Manifest {
   return {
-    name: "UAP Codex — Análisis institucional del fenómeno UAP",
+    // En inglés como la raíz del sitio (<html lang="en">); /es es un espejo.
+    name: "UAP Codex — Institutional analysis of the UAP phenomenon",
     short_name: "UAP Codex",
     description:
-      "Cuaderno de investigación abierto sobre UAP institucionales, 1947–2026.",
+      `Open research notebook on institutional UAP cases, ${STATS.startYear}–${STATS.endYear}.`,
     start_url: "/",
     // "browser" (no "standalone"): es un sitio de lectura, no una app.
     // Evita el prompt de instalación PWA en móvil; conserva ícono y theme-color.
     display: "browser",
     background_color: "#f7f2e8",
     theme_color: "#c41e3a",
-    lang: "es",
+    lang: "en",
     icons: [
       {
         src: "/icon.svg",

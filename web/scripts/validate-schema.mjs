@@ -435,6 +435,32 @@ for (const file of caseFiles) {
   onlyKeys(w + ".location", c.location, "location");
   onlyKeys(w + ".primaryDocument", c.primaryDocument, "primaryDocument");
   onlyKeys(w + ".featuredDoc", c.featuredDoc, "featuredDoc");
+  // primaryDocument y featuredDoc (nov 2026): tenían lista blanca de claves pero
+  // no tipos ni origen. La imagen se sirve con <img>, así que su url es /pursue/
+  // o una miniatura de Commons de ≤960 px (desde el contenedor el original y
+  // ?width=1280 dan 429, y el sitio enlaza miniaturas). featuredDoc es una
+  // tarjeta de enlace: cualquier https.
+  if (c.primaryDocument !== undefined) {
+    const p = c.primaryDocument, pw = w + ".primaryDocument";
+    for (const f of ["url", "alt", "caption", "caption_en", "source", "license"])
+      if (!isStr(p[f])) err(pw, `${f} obligatorio (string)`);
+    for (const f of ["alt_en", "source_en"])
+      if (p[f] !== undefined && !isStr(p[f])) err(pw, `${f} debe ser string`);
+    if (p.href !== undefined && !isHttpUrl(p.href)) err(pw, `href malformada: "${p.href}"`);
+    if (isStr(p.url)) {
+      const commons = /^https:\/\/commons\.wikimedia\.org\/wiki\/Special:FilePath\/[^?]+\?(?:page=\d+&)?width=(\d+)$/.exec(p.url);
+      if (!p.url.startsWith("/pursue/") && !commons)
+        err(pw, `url debe ser /pursue/… o una miniatura de Commons (Special:FilePath/…?width=N): "${p.url}"`);
+      else if (commons && Number(commons[1]) > 960)
+        err(pw, `miniatura de Commons de ${commons[1]} px: el máximo es 960`);
+    }
+  }
+  if (c.featuredDoc !== undefined) {
+    const f = c.featuredDoc, fw = w + ".featuredDoc";
+    for (const k of ["label", "label_en"]) if (!isStr(f[k])) err(fw, `${k} obligatorio (string)`);
+    if (!isHttpUrl(f.url)) err(fw, `url malformada: "${f.url}"`);
+    for (const k of ["note", "note_en"]) if (f[k] !== undefined && !isStr(f[k])) err(fw, `${k} debe ser string`);
+  }
   (isArr(c.sources) ? c.sources : []).forEach((s, j) => onlyKeys(`${w}.sources[${j}]`, s, "sources"));
 
   // BIBLIOGRAFÍA: todo caso debe citar al menos una fuente; url bien formada

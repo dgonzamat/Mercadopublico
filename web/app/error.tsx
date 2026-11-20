@@ -1,6 +1,6 @@
 "use client";
 
-import Link from "next/link";
+import { LocaleLink } from "@/components/LocaleLink";
 import { T } from "@/components/T";
 import { useChunkReload } from "@/lib/chunkReload";
 
@@ -44,12 +44,12 @@ export default function RootError({
         >
           {chunk ? <T es="Recargar" en="Reload" /> : <T es="Reintentar" en="Try again" />}
         </button>
-        <Link
+        <LocaleLink
           href="/cases"
           className="inline-flex min-h-[44px] items-center border border-border bg-panel px-5 text-text hover:border-accent/50"
         >
           <T es="Ver los casos →" en="See the cases →" />
-        </Link>
+        </LocaleLink>
       </div>
     </div>
   );

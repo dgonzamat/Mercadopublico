@@ -1,10 +1,15 @@
 import type { Metadata } from "next";
-import Link from "next/link";
+import { LocaleLink } from "@/components/LocaleLink";
+import { T } from "@/components/T";
 import { STATS } from "@/lib/siteStats";
 
+// GitHub Pages sirve este 404.html para cualquier URL inexistente, en la raíz
+// inglesa y en /es/. Por eso va bilingüe con <T> sin locale (el chrome fija
+// data-locale según la URL pedida) y con LocaleLink, que en /es/ apunta al
+// espejo. Hasta nov 2026 estaba entero en español.
 export const metadata: Metadata = {
-  title: "Página no encontrada (404)",
-  description: "La página que buscas no existe o cambió de dirección.",
+  title: "Page not found (404)",
+  description: "The page you are looking for does not exist or has moved.",
   robots: { index: false, follow: false },
 };
 
@@ -12,28 +17,30 @@ export default function NotFound() {
   return (
     <div className="mx-auto max-w-md py-20 text-center">
       <p className="font-mono text-xs uppercase tracking-widest text-accent">
-        Error 404 · Página no encontrada
+        <T es="Error 404 · Página no encontrada" en="Error 404 · Page not found" />
       </p>
       <h1 className="mt-4 font-display text-4xl font-medium leading-tight text-text">
-        Esta entrada no existe en el corpus.
+        <T es="Esta entrada no existe en el corpus." en="This entry does not exist in the corpus." />
       </h1>
       <p className="mt-4 text-muted">
-        O lo borramos al limpiar el archivo. Si buscabas un caso específico,
-        prueba la lista completa de los {STATS.cases}.
+        <T
+          es={`O lo borramos al limpiar el archivo. Si buscabas un caso específico, prueba la lista completa de los ${STATS.cases}.`}
+          en={`Or we removed it while cleaning up the archive. If you were looking for a specific case, try the full list of ${STATS.cases}.`}
+        />
       </p>
       <div className="mt-8 flex flex-wrap justify-center gap-3">
-        <Link
+        <LocaleLink
           href="/"
           className="rounded-none bg-accent px-4 py-2 text-sm font-medium text-bg hover:bg-text"
         >
-          Volver al inicio
-        </Link>
-        <Link
+          <T es="Volver al inicio" en="Back to home" />
+        </LocaleLink>
+        <LocaleLink
           href="/cases"
           className="rounded-none border border-border px-4 py-2 text-sm text-text hover:bg-panel"
         >
-          Ver los {STATS.cases} casos
-        </Link>
+          <T es={`Ver los ${STATS.cases} casos`} en={`See the ${STATS.cases} cases`} />
+        </LocaleLink>
       </div>
     </div>
   );

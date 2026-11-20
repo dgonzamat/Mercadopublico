@@ -26,7 +26,8 @@ const Y_TOP = 12; // heterogeneidad = 1.0
 const Y_BOT = 120; // heterogeneidad = 0.0
 const yFor = (h: number) => Y_BOT - h * (Y_BOT - Y_TOP);
 
-export function HeterogeneityByDecade() {
+export function HeterogeneityByDecade({ locale = "en" }: { locale?: "es" | "en" } = {}) {
+  const es = locale === "es";
   const rows = meceByDecade();
   const step = rows.length > 1 ? (X1 - X0) / (rows.length - 1) : 0;
   const pts = rows.map((r, i) => ({ ...r, x: X0 + i * step, y: yFor(r.heterogeneity) }));
@@ -50,7 +51,11 @@ export function HeterogeneityByDecade() {
         viewBox={`0 0 ${W} ${H}`}
         className="h-auto w-full max-w-2xl"
         role="img"
-        aria-label={`Heterogeneidad del corpus por década, ${rows[0]?.decade}s a ${rows[rows.length - 1]?.decade}s: la fracción de cada década que resiste explicación mundana, de ${(minH * 100).toFixed(0)}% a ${(maxH * 100).toFixed(0)}%.`}
+        aria-label={
+          es
+            ? `Heterogeneidad del corpus por década, ${rows[0]?.decade}s a ${rows[rows.length - 1]?.decade}s: la fracción de cada década que resiste explicación mundana, de ${(minH * 100).toFixed(0)}% a ${(maxH * 100).toFixed(0)}%.`
+            : `Corpus heterogeneity by decade, ${rows[0]?.decade}s to ${rows[rows.length - 1]?.decade}s: the share of each decade that resists a mundane explanation, from ${(minH * 100).toFixed(0)}% to ${(maxH * 100).toFixed(0)}%.`
+        }
       >
         {/* Referencias horizontales: 0, 50%, 100% */}
         {[0, 0.5, 1].map((h) => (
@@ -78,7 +83,7 @@ export function HeterogeneityByDecade() {
         {pts.map((p) => (
           <g key={p.decade}>
             <circle cx={p.x} cy={p.y} r={3.2} fill={ACCENT}>
-              <title>{`${p.decade}s · ${p.n} casos · heterogeneidad ${(p.heterogeneity * 100).toFixed(0)}%`}</title>
+              <title>{es ? `${p.decade}s · ${p.n} casos · heterogeneidad ${(p.heterogeneity * 100).toFixed(0)}%` : `${p.decade}s · ${p.n} cases · heterogeneity ${(p.heterogeneity * 100).toFixed(0)}%`}</title>
             </circle>
             {labeled.has(p) && (
               <text
