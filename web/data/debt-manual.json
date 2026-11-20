@@ -235,7 +235,7 @@
       {
         "id": "L1",
         "title": "Prueba A/B del lector ciego (tools/lector-ciego) frente a un lector que recibe CLAUDE.md: la calibración de /auditar-prosa §2 se midió con el lector que veía la guía, así que la tasa de detección del ciego no está medida",
-        "state": "pendiente desde el 20 nov: en la próxima tanda de /nuevo-caso, el paso 5d corre los dos lectores sobre las mismas fichas y el mismo idioma (el segundo, un subagente general-purpose); el dueño decide qué lista se parece más a lo que corregiría. Si el ciego sale peor, se restaura .claude/agents/ficha-lector.md desde git y se revierten los punteros de nuevo-caso y auditar-prosa"
+        "state": "cerrado el 20 nov por decisión del dueño: queda el lector ciego. A/B sobre las mismas fichas y el mismo idioma (uruguay-luces-starlink-2026, roosevelt-2014, woomera-1952-1954, three-objects-fixed-formation-2023, seymour-indiana-1953): los dos lectores coinciden en la mayoría de los defectos y en la nota (diferencia máxima de un punto); el ciego halló además más referentes sin sujeto y datos sin situar, y el lector con CLAUDE.md, menos hallazgos propios, a mayor costo"
       },
       {
         "id": "L2",
