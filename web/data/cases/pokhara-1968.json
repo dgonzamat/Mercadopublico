@@ -108,6 +108,7 @@
       "description": "Informe de información de la CIA de cuatro páginas, sin evaluación definitiva y con la fuente suprimida, con la tabla de los avistamientos del 19 de febrero al 25 de marzo de 1968: fecha, hora local, lugar, rumbo y descripción de cada uno. La última página describe el objeto en llamas sobre Kaski y la pieza metálica hallada en un cráter cerca de Pokhara. La copia publicada en 2026 trae además un recorte de revista y una hoja de índice que aquí no se reproducen.",
       "description_en": "Four-page CIA information report, not finally evaluated and with the source redacted, with the table of sightings from February 19 to March 25, 1968: date, local time, place, direction and description of each. The last page describes the blazing object over Kaski and the metal piece found in a crater near Pokhara. The copy published in 2026 also includes a magazine clipping and an index sheet that are not reproduced here.",
       "source": "CIA, CIA-UAP-016 (PURSUE, tercera entrega), vía archive.org",
+      "source_en": "CIA, CIA-UAP-016 (PURSUE, Release 03), via archive.org",
       "license": "Dominio público · obra del Gobierno de EE. UU.",
       "fallbackUrl": "https://archive.org/details/pursue-uap-documents-2026"
     },
@@ -120,6 +121,7 @@
       "description": "Cuatro documentos de los Archivos Nacionales de EE. UU. publicados por el National Security Archive: el memorando del 25 de junio de 1968 sobre el interés de la Fuerza Aérea en los fragmentos; el cable del 28 de agosto de 1968 con las conclusiones de los técnicos de Defensa («possibly Cosmos 208»); el del 12 de agosto de 1971, en el que Nepal acepta que se corte una tira de un fragmento; y el del 1 de marzo de 1972, que anuncia su devolución.",
       "description_en": "Four U.S. National Archives documents published by the National Security Archive: the memo of June 25, 1968, on the Air Force's interest in the fragments; the cable of August 28, 1968, with the Defense technicians' findings (\"possibly Cosmos 208\"); the cable of August 12, 1971, in which Nepal agrees that a strip may be cut from a fragment; and the cable of March 1, 1972, announcing its return.",
       "source": "Departamento de Estado de EE. UU. (NARA, RG 59), vía National Security Archive",
+      "source_en": "U.S. Department of State (NARA, RG 59), via National Security Archive",
       "license": "Dominio público · obra del Gobierno de EE. UU.",
       "fallbackUrl": "https://nsarchive.gwu.edu/briefing-book/intelligence/2018-01-31/scavenging-intelligence-us-governments-secret-search-foreign-objects-during-cold-war"
     }

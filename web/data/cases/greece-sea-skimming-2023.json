@@ -50,6 +50,7 @@
       "description": "Grabación del sensor infrarrojo de la misión del 27 de octubre de 2023, de 2 minutos y 57 segundos. Según la descripción de la AARO, el sensor sigue el contraste, lo fija con una retícula y aplica un filtro de contraste, hasta que a los 2:22 el objeto se confundió con el fondo y la cámara dejó de seguirlo.",
       "description_en": "Infrared sensor footage from the October 27, 2023 mission, 2 minutes 57 seconds long. According to AARO's description, the sensor tracks the area of contrast, locks it with a reticle and applies a contrast filter, until at 2:22 the object blended into the background and the camera stopped tracking it.",
       "source": "US Department of War vía DVIDS (PURSUE Release 01)",
+      "source_en": "US Department of War via DVIDS (PURSUE Release 01)",
       "license": "Dominio público · obra del Gobierno de EE. UU.",
       "fallbackUrl": "https://www.dvidshub.net/video/1006080"
     },
@@ -62,6 +63,7 @@
       "description": "Grabación del sensor de la misión del 29 de octubre de 2023, de 24 segundos. La AARO anota que el contraste se confundió con el fondo justo cuando el fondo pasó del agua a la tierra.",
       "description_en": "Sensor footage from the October 29, 2023 mission, 24 seconds long. AARO notes that the area of contrast blended into the background just as the background shifted from water to land.",
       "source": "US Department of War vía DVIDS (PURSUE Release 01)",
+      "source_en": "US Department of War via DVIDS (PURSUE Release 01)",
       "license": "Dominio público · obra del Gobierno de EE. UU.",
       "fallbackUrl": "https://www.dvidshub.net/video/1006082"
     },

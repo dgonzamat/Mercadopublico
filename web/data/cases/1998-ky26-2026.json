@@ -151,6 +151,7 @@
       "description": "Figura 1 del estudio de Farnocchia y otros (The Astrophysical Journal Letters, 2025): las cuatro curvas muestran, a lo largo de una vuelta al Sol, el empuje que la presión de la luz y la emisión de calor ejercen sobre el asteroide según el modelo: hacia fuera del Sol (R, azul), a lo largo de la órbita (T, rojo), perpendicular a ella (N, negro) y en la dirección del eje de giro (S, verde). Las cifras están en unidades astronómicas por día al cuadrado, multiplicadas por 10⁻¹¹.",
       "description_en": "Figure 1 of the study by Farnocchia and colleagues (The Astrophysical Journal Letters, 2025): over one trip around the Sun, the four curves show the push that light pressure and heat emission exert on the asteroid according to the model: away from the Sun (R, blue), along the orbit (T, red), perpendicular to it (N, black) and along the spin axis (S, green). Values are in astronomical units per day squared, times 10⁻¹¹.",
       "source": "Farnocchia, D. y otros, The Astrophysical Journal Letters 993, L9 (2025), figura 1",
+      "source_en": "Farnocchia, D. et al., The Astrophysical Journal Letters 993, L9 (2025), figure 1",
       "license": "CC BY 4.0",
       "fallbackUrl": "https://iopscience.iop.org/article/10.3847/2041-8213/ae10b8"
     },

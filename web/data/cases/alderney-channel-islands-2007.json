@@ -105,6 +105,7 @@
       "description": "Primera página de la tabla «UFO Reports 2007» del Ministerio de Defensa del Reino Unido. La entrada del 23 de abril de 2007 a las 14:09, «en el aire cerca de Alderney», Islas del Canal, consigna como informantes a «dos pilotos, aviones diferentes» (columna «ocupación del informante») y resume el caso: «El primer objeto era naranja/amarillo brillante. Había un hueco en la luz o una zona más oscura. El segundo objeto era idéntico». Es la línea con que la lista resume el caso; según el informe de 2008 (p. 121), hacia el 20 de mayo de 2007 el ministerio publicó además el archivo completo, con los papeles de los testigos. La tabla completa tiene 7 páginas.",
       "description_en": "First page of the UK Ministry of Defence table \"UFO Reports 2007.\" The entry for April 23, 2007 at 14:09, \"In the air nr Alderney,\" Channel Islands, lists the reporters as \"Two Pilots, different planes\" (column \"Occupation of reporter\") and summarizes the case: \"First object was bright orange/yellow. There was a gap in light or darker area. Second object was identical.\" It is the line the list uses to summarize the case; according to the 2008 report (p. 121), around May 20, 2007 the ministry also published the full case file, with the witnesses' papers. The full table has 7 pages.",
       "source": "Ministerio de Defensa del Reino Unido, «UFO reports in the UK» (GOV.UK), pág. 1 de 7",
+      "source_en": "UK Ministry of Defence, “UFO reports in the UK” (GOV.UK), p. 1 of 7",
       "license": "Open Government Licence v3.0 (Crown copyright, Ministerio de Defensa)",
       "fallbackUrl": "https://www.gov.uk/government/publications/ufo-reports-in-the-uk"
     },
@@ -117,6 +118,7 @@
       "description": "Informe independiente de 181 páginas, de febrero de 2008. Contiene la transcripción de las grabaciones del control de Jersey, la reconstrucción de la geometría del avistamiento, el análisis de radar, el estudio meteorológico, la puntuación de 16 hipótesis y, en los apéndices, los papeles de la época (informe de seguridad aérea de Bowyer, informe de Kelly, carta de Patterson, correo del MoD) y las entrevistas a los testigos. Sus autores no permiten reproducirlo, y por eso aquí solo se enlaza.",
       "description_en": "Independent 181-page report from February 2008. It holds the transcript of the Jersey control recordings, the reconstruction of the sighting geometry, the radar analysis, the weather study, the scoring of 16 hypotheses and, in the appendices, the papers of the time (Bowyer's air safety report, Kelly's report, Patterson's letter, the MoD e-mail) and the witness interviews. Its authors do not allow reproduction, which is why it is only linked here.",
       "source": "Baure, Clarke, Fuller y Shough, febrero de 2008 (nicap.org)",
+      "source_en": "Baure, Clarke, Fuller and Shough, February 2008 (nicap.org)",
       "license": "© los autores (2008); no se reproduce",
       "fallbackUrl": "http://www.nicap.org/reports/070423channel_islands.pdf"
     }

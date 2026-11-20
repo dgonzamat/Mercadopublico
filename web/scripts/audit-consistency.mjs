@@ -1228,13 +1228,15 @@ if (fs.existsSync(localeLinkPath) && fs.existsSync(esDir)) {
   // Pies de atribución del visor (nov 2026): `source` de cada documento se
   // mostraba crudo en la ruta inglesa (361 en español). El visor usa
   // `source_en ?? source`; aquí se cuentan los que parecen español y no tienen
-  // par. WARN porque el detector es léxico: un nombre propio con tilde puede
-  // saltar sin ser español (se resuelve con su `source_en`).
-  const ES_SOURCE = /[áéíóúñ]|\b(vía|Fuente|Archivos?|Biblioteca|Fuerza|Departamento|Mando|Armada|Ejército|entrega|transferid[oa]|Proyecto|del|de la|de los|de las)\b/u;
+  // par. El detector es léxico (palabras de atribución en español, no tildes:
+  // «Attaché» o «études» son nombres propios) y no mira el nombre de archivo de
+  // Commons, que es literal. WARN porque una palabra suelta puede fallar.
+  const ES_SOURCE = /(^|[^\p{L}])(vía|Fuente|Archivos?|Biblioteca|Fuerza|Departamento|Mando|Armada|Ejército|entrega|transferid[oa]|Proyecto|copia|escaneo|págs?\.|n\.º|del|de la|de los|de las)(?![\p{L}])/u;
+  const sinArchivo = (s) => s.replace(/^.*\.(jpe?g|png|tiff?|svg|webp|gif)\s*·\s*Wikimedia Commons$/i, "Wikimedia Commons");
   const pendientes = [];
   for (const x of [...cases, ...researchers])
     for (const d of [...(x.documents || []), x.primaryDocument, x.featuredDoc].filter(Boolean))
-      if (d.source && !d.source_en && ES_SOURCE.test(d.source)) pendientes.push(x.id);
+      if (d.source && !d.source_en && ES_SOURCE.test(sinArchivo(d.source))) pendientes.push(x.id);
   if (pendientes.length)
     record("WARN", casesDir, 0, `E26 i18n pies de documento: ${pendientes.length} \`source\` en español sin \`source_en\` → el visor lo muestra en español en el sitio EN (${[...new Set(pendientes)].slice(0, 8).join(", ")}${new Set(pendientes).size > 8 ? "…" : ""}).`);
 }

@@ -87,6 +87,7 @@
       "description": "La Estación Espacial Internacional fotografiada desde el transbordador Atlantis tras desacoplarse, el 23 de mayo de 2010. Sus grandes paneles solares reflejan la luz del Sol y la hacen uno de los objetos más brillantes del cielo nocturno. No es una imagen del fenómeno.",
       "description_en": "The International Space Station photographed from the shuttle Atlantis after undocking, on May 23, 2010. Its large solar arrays reflect sunlight and make it one of the brightest objects in the night sky. It is not an image of the phenomenon.",
       "source": "International Space Station after undocking of STS-132.jpg (NASA/tripulación del STS-132) · Wikimedia Commons",
+      "source_en": "International Space Station after undocking of STS-132.jpg (NASA/STS-132 crew) · Wikimedia Commons",
       "license": "Dominio público (NASA)",
       "fallbackUrl": "https://commons.wikimedia.org/wiki/File:International_Space_Station_after_undocking_of_STS-132.jpg"
     },
@@ -98,7 +99,8 @@
       "title_en": "SEFAA (Chilean DGAC) report, case no. 1014, Punta Arenas, 17 December 2019",
       "description": "Informe de tres páginas de la sección oficial de fenómenos aéreos anómalos. Resume el parte del control de Punta Arenas y el audio, sitúa el vuelo LAN 081 junto al punto BODOM, compara el primer parte con el formulario del capitán, revisa los objetos en órbita con Stellarium y CelesTrak y concluye que lo más probable fue la Estación Espacial Internacional; lo clasifica como «Resuelto». Obra de la DGAC sin licencia abierta: se enlaza, no se aloja.",
       "description_en": "Three-page report by the official anomalous aerial phenomena section. It summarizes the Punta Arenas control report and audio, places flight LAN 081 near the BODOM waypoint, compares the first report with the captain's form, reviews the orbiting objects with Stellarium and CelesTrak and concludes that the International Space Station was most probable; it classifies the case as \"Resolved.\" A DGAC work with no open license, so it is linked rather than hosted.",
-      "source": "SEFAA, Dirección General de Aeronáutica Civil de Chile"
+      "source": "SEFAA, Dirección General de Aeronáutica Civil de Chile",
+      "source_en": "SEFAA, Chile's Directorate General of Civil Aviation (DGAC)"
     }
   ],
   "classBasis": {
