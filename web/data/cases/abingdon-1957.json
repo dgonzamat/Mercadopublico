@@ -23,14 +23,14 @@
   "misidSubtype": "aeronave",
   "objectDetail": "avion",
   "posterior": {
-    "mundano_natural": 0.72,
+    "mundano_natural": 0.67,
     "humana_clasificada": 0.04,
     "adversaria": 0.01,
     "nohumano_encubierto": 0.01,
     "nohumano_abierto": 0.02,
-    "indet": 0.2
+    "indet": 0.25
   },
-  "probability": 23,
+  "probability": 28,
   "summary": "Hacia las 17:35 del 6 de noviembre de 1957, poco después de la puesta del sol, tres personas del suroeste de Virginia vieron un objeto rojo anaranjado muy alto que avanzó hacia el norte o el noroeste durante unos cinco minutos; los dos testigos de Abingdon lo vieron bajar hasta perderse en el horizonte. Charles N. Booth y su vecino Harry L. Cooms lo vieron juntos en Abingdon; Margaret C. Mast, a unos 23 km, en Lebanon. Cada uno lo dibujó con otra forma. La Oficina de Investigaciones Especiales de la Fuerza Aérea los entrevistó una semana después, y Project Blue Book lo cerró como posible avión iluminado por el sol poniente.",
   "summary_en": "At about 5:35 p.m. on November 6, 1957, shortly after sunset, three people in southwestern Virginia saw a red-orange object high in the sky that moved north or northwest for about five minutes; the two Abingdon witnesses watched it sink until it was lost below the horizon. Charles N. Booth and his neighbor Harry L. Cooms saw it together in Abingdon; Margaret C. Mast saw it about 23 km away, in Lebanon. Each drew it with a different shape. The Air Force Office of Special Investigations interviewed them a week later, and Project Blue Book closed the case as a possible aircraft lit by the setting sun.",
   "patterns": [],
@@ -118,8 +118,8 @@
     }
   ],
   "classBasis": {
-    "es": "La tarjeta de Blue Book lo cierra como «Possibly Aircraft»: Abingdon estaba casi debajo de una aerovía principal, rumbo al noreste, y la forma y el color se debían al reflejo del sol poniente. Es una propuesta discutida, no refutada: en sus declaraciones, Booth dio el rumbo noroeste y Mast el norte, no el de la aerovía (el noreste solo figura en el primer aviso, de segunda mano); los tres dieron formas distintas, y Cooms dijo que la cola no se parecía a una estela. Pero nadie midió la altura ni la velocidad, y, según un cálculo hecho para este caso, a las 17:35 un avión a más de unos 6.000 metros seguía recibiendo la luz del sol, aunque cinco minutos después necesitaba volar a unos 12.000.",
-    "en": "The Blue Book card closes it as \"Possibly Aircraft\": Abingdon lay almost under a major airway, heading northeast, and the shape and color came from the reflection of the setting sun. It is a disputed proposal, not a refuted one: in their statements, Booth gave the heading as northwest and Mast as north, not the airway's (northeast appears only in the first, secondhand report); the three gave different shapes, and Cooms said the tail did not look like a contrail. But no one measured the altitude or speed, and, by a calculation made for this case, at 5:35 p.m. an aircraft above about 6,000 m was still in sunlight, though five minutes later it would have needed to fly at about 12,000 m.",
+    "es": "La tarjeta de Blue Book lo cierra como «Possibly Aircraft»: Abingdon estaba casi debajo de una aerovía principal que corría al noreste, y la forma y el color se debían al reflejo del sol poniente. Es una propuesta discutida, no refutada. Ningún testigo dio el noreste: Booth habló del noroeste, «predominately North», y Mast, de un objeto que iba de Carolina del Norte hacia St. Paul, un rumbo que, según un cálculo hecho para este caso, queda entre el oeste-noroeste y el norte; el expediente no señala ningún vuelo concreto. Pero nadie midió la altura ni la velocidad, y a las 17:35 un avión a más de unos 6.000 metros seguía recibiendo la luz del sol; cinco minutos después necesitaba unos 12.000.",
+    "en": "The Blue Book card closes it as \"Possibly Aircraft\": Abingdon lay almost under a major airway running northeast, and the shape and color came from the reflection of the setting sun. It is a disputed proposal, not a refuted one. No witness gave northeast: Booth spoke of the northwest, \"predominately North,\" and Mast of an object going from North Carolina toward St. Paul, a heading that, by a calculation made for this case, lies between west-northwest and north; the file names no specific flight. But no one measured the altitude or speed, and at 5:35 p.m. an aircraft above about 6,000 m was still in sunlight; five minutes later it needed about 12,000 m.",
     "source": "Project Blue Book — tarjeta «Project 10073 Record Card» y nota manuscrita de análisis, expediente 1957-11-6779552; informe IR-1-57 (PURSUE, DOW-UAP-D204)",
     "source_en": "Project Blue Book — \"Project 10073 Record Card\" and handwritten analysis note, file 1957-11-6779552; report IR-1-57 (PURSUE, DOW-UAP-D204)",
     "url": "https://archive.org/details/1957-11-6779552-Abington-WestVirginia"
