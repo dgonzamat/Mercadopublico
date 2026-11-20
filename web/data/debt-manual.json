@@ -241,6 +241,11 @@
         "id": "L2",
         "title": "Actores sin casos enlazados en su perfil: los que solo se respaldan con documentos propios (Mellon, DeLonge, Schumer, Sheehan, Farah, Villarroel, Barber, Ziegel, McConnell, Ramirez, Greer, Hellyer, Kono, Matthew Brown) y Karl Nell, que no tiene ni casos ni documentos",
         "state": "cerrado el 20 nov: los actores con documentos propios se dejan así por decisión del dueño (su respaldo es el documento); Nell tiene ya un documento propio, la grabación oficial de SALT iConnections de mayo de 2024, y su perfil corrige el año del panel (era 2024, no 2023) y quita afirmaciones sin fuente. E9 mide el mapa RESEARCHER_CASES y queda sin huérfanos"
+      },
+      {
+        "id": "L3",
+        "title": "PDF primarios de public/pursue que ninguna ficha usa y que no tienen ficha donde embeberse: informes técnicos de los Gemini 5 y 9 (NASA), expedientes del FBI de Newark y de Washington, correspondencia del Congreso y la Casa Blanca, documentos del DOE y expedientes de los archivos nacionales (NARA). La sonda E17c los lista",
+        "state": "anotado el 20 nov por decisión del dueño: se conservan como material para fichas nuevas (/proximo-caso puede partir de ellos) y se borran solo si el presupuesto de almacenamiento (E38) vuelve a apretar; quedan en el historial de git. Los duplicados exactos se borraron y los que respaldan fichas existentes se embeben aparte"
       }
     ]
   }

@@ -54,6 +54,9 @@ const AUS_EN = /[^.]*\b(no record (from|of)|has not been found|have not been fou
 // Cuánto circula una versión: es una afirmación sobre el mundo y necesita fuente.
 // En la serie 547–556 salió en tres fichas («la versión que más circula», «apenas
 // circula fuera del archivo») y solo la vieron el verificador o los lectores.
+// «Cálculo propio»: no dice de qué datos sale el cálculo (/redaccion §7; los dos
+// lectores de Woomera releyeron la frase, nov 2026).
+const CALCULO_PROPIO = /[^.]*(c[aá]lculo propio|razonamiento propio|lectura propia|deducci[oó]n propia|own calculation|our own (reasoning|reading)|\(own deduction\))[^.]*\./giu;
 const DIFUSION = /[^.]*\b(que m[aá]s circula|apenas circula|circula poco|(versi[oó]n|explicaci[oó]n) m[aá]s difundida|most widely circulated|circulates (the )?most|barely circulates|version that circulates most)[^.]*\./gi;
 // 2. Voz del redactor (la guía /redaccion la prohíbe).
 // Límites de palabra Unicode: con `\b`, que es solo ASCII, la «í» contaba como
@@ -124,6 +127,7 @@ for (const id of targets) {
   const aus = [...(esN.match(AUS_ES) || []), ...(enN.match(AUS_EN) || [])].map((s) => s.trim().replace(/\s+/g, " "));
   for (const s of aus) { out.push(["WARN", "ausencia", s.length > 170 ? s.slice(0, 170) + "…" : s]); bump("ausencia"); }
   // WARN: difusión de una versión sin fuente
+  for (const s of [...(esN.match(CALCULO_PROPIO) || []), ...(enN.match(CALCULO_PROPIO) || [])].map((s) => s.trim().replace(/\s+/g, " "))) { out.push(["WARN", "cálculo", `${s.length > 170 ? s.slice(0, 170) + "…" : s} («según un cálculo hecho para este caso», con sus datos si la frase no los deja claros)`]); bump("cálculo"); }
   for (const s of [...(esN.match(DIFUSION) || []), ...(enN.match(DIFUSION) || [])].map((s) => s.trim().replace(/\s+/g, " "))) { out.push(["WARN", "difusión", `${s.length > 170 ? s.slice(0, 170) + "…" : s} (¿qué fuente dice cuánto circula?)`]); bump("difusión"); }
   // WARN: voz del redactor
   for (const m of new Set([...(esN.match(VOZ_ES) || []), ...(enN.match(VOZ_EN) || [])])) { out.push(["WARN", "voz", `«${m}» (voz del redactor)`]); bump("voz"); }
