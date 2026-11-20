@@ -22,3 +22,7 @@
 {"date":"2026-11-20","probe":"audit-consistency","rule":"E52","where":"data/cases"}
 {"date":"2026-11-20","probe":"audit-consistency","rule":"E59","where":"data/cases"}
 {"date":"2026-11-20","probe":"audit-consistency","rule":"E34","where":"data/cases/persian-gulf-mq9-2020.json"}
+{"date":"2026-11-20","probe":"audit-consistency","rule":"E39","where":"app/releases/page.tsx"}
+{"date":"2026-11-20","probe":"audit-consistency","rule":"E39","where":"app/releases/[release]/page.tsx"}
+{"date":"2026-11-20","probe":"audit-consistency","rule":"E45","where":"data/retired-nums.json"}
+{"date":"2026-11-20","probe":"audit-consistency","rule":"E63","where":"data/cases"}

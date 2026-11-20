@@ -103,6 +103,14 @@ const RELEASE_META: Record<
     blurbEn:
       "Twenty-eight documents and no video: the black triangle three federal agents saw in 2026 at a sensitive site in the western U.S. (the FBI statement and the AARO memorandum), papers from the BAASS/AAWSAP program and the Utah ranch investigation (2008-2010), fifteen Air Force files from 1949 to 1957 (Saudi Arabia, Guam, Sassari, Prince George, Berlin, Morocco, Alaska, Hässleholm, Seymour, Catalina Island), Howard McCoy's service record, and 1962-1964 White House, NASA and Defense correspondence on space-vehicle fragments.",
   },
+  8: {
+    es: "PURSUE · Octava entrega",
+    en: "PURSUE · Eighth release",
+    blurbEs:
+      "Cuarenta documentos y tres vídeos: la serie de 1952 de la Oficina de Inteligencia Científica de la CIA que llevó al Panel Robertson, papeles de 2008 a 2010 del programa AAWSAP con la correspondencia del senador Harry Reid, informes de inteligencia aérea de la Fuerza Aérea de 1956 y 1957 (Levelland, White Sands, Kirtland, Perú, Irán, Japón), expedientes de California de 1949 a 1966, una lámina de la AARO sobre una detección de radar de 2023 y tres clips de sensor de CENTCOM.",
+    blurbEn:
+      "Forty documents and three videos: the CIA Office of Scientific Intelligence's 1952 series that led to the Robertson Panel, 2008-2010 papers from the AAWSAP program with Senator Harry Reid's correspondence, Air Force air intelligence reports from 1956 and 1957 (Levelland, White Sands, Kirtland, Peru, Iran, Japan), California files from 1949 to 1966, an AARO slide on a 2023 radar detection, and three CENTCOM sensor clips.",
+  },
 };
 
 export function generateStaticParams() {

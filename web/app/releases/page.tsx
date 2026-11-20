@@ -25,6 +25,7 @@ const LABELS: Record<number, { es: string; en: string }> = {
   5: { es: "FBI/DoW · Puerto Rico, Bahía, Golfo de Omán, triángulos 2011-2026", en: "FBI/DoW · Puerto Rico, Bahia, Gulf of Oman, 2011-2026 triangles" },
   6: { es: "AAWSAP · contrato y 37 DIRD, Tremonton 1952, Ruppelt, mar Amarillo", en: "AAWSAP · contract and 37 DIRDs, Tremonton 1952, Ruppelt, Yellow Sea" },
   7: { es: "Triángulo negro 2026 (FBI y AARO), BAASS y el rancho de Utah, expedientes USAF 1949-1957", en: "Black triangle 2026 (FBI and AARO), BAASS and the Utah ranch, USAF files 1949-1957" },
+  8: { es: "CIA 1952, AAWSAP y el senador Reid, oleada de noviembre de 1957, California 1949-1966", en: "CIA 1952, AAWSAP and Senator Reid, the November 1957 wave, California 1949-1966" },
 };
 
 export default function ReleasesIndex() {
