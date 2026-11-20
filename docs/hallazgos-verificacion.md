@@ -375,6 +375,7 @@ Conteo hecho a mano a partir de los informes de los verificadores (17-18 nov 202
 | palos-verdes-1965 | atribución | BAJA: el parte dice «round object, red, white and blue flashing lights», no «luz redonda» | no |
 | palos-verdes-1965 | léxico/voz | BAJA: el título no decía lo mismo en ES y EN | no |
 | palos-verdes-1965 | cifra/hora | BAJA: la tarjeta dice «Civilians», no «fuente civil» | no |
+| palos-verdes-1965 | lectura | ES 6/10 (lector ciego). Corregido: la tarjeta en el resumen sin presentar, cuentas de husos horarios, el hombre consultado sin presentar, la nota del formulario sin situar, referente de «la nota», recuento de páginas. Sin tocar: repeticiones; contradicciones de la fuente ya declaradas | no |
 | abingdon-1957 | omisión | MEDIA: la nota del analista junto a los croquis tiene una palabra añadida encima de «Definitely same object» que parece «not»; la ficha citaba solo «all 3 diff». El verificador lo leyó «not» con seguridad y el redactor no: van las dos cosas | no |
 | abingdon-1957 | cifra/hora | MEDIA: el avión iluminado por el sol a más de 6.000 m solo vale para las 17:35; cinco minutos después hacían falta unos 12.000 m | no |
 | abingdon-1957 | atribución | MEDIA: Cooms no negó que el objeto fuera una estela: dijo que su cola no se parecía a una (p. 6) | no |
@@ -384,6 +385,7 @@ Conteo hecho a mano a partir de los informes de los verificadores (17-18 nov 202
 | abingdon-1957 | omisión | BAJA: Booth dice que el objeto «seemed to maintain its position» mientras bajaba | no |
 | abingdon-1957 | cifra/hora | BAJA: la tarjeta dice «Often considerable traffic», no «mucho tráfico» | no |
 | abingdon-1957 | cifra/hora | BAJA: la nota de la p. 2 dice «Airline/airports» | no |
+| abingdon-1957 | lectura | EN 6/10 (lector ciego). Corregido: rumbo, recuento de testigos de la casa de Cooms, testigo tachado, 17:30 frente a 17:35, la comprobación imposible del Sputnik 1. Sin tocar: duraciones de la fuente, siglas y repeticiones | no |
 | white-sands-1957 | atribución | ALTA: el mensaje del ATIC del 10 nov no propone la Luna para la segunda patrulla: repite por teléfono los datos del escuadrón con las patrullas numeradas al revés (pp. 19 y 30); y los soldados vieron la Luna a la vez que la luz (p. 6) | no |
 | white-sands-1957 | clasificación | ALTA: segundo paso con otro agente: la Luna cubre solo la primera luz; la segunda queda sin propuesta (Venus refutada) y su masa va a lo ordinario por tasa base: mundano 0,68, indet 0,21, probability 25 | no |
 | white-sands-1957 | atribución | MEDIA: Barlow miraba hacia la zona de impacto oeste, que no contradice a Venus; la refutación es por la hora | no |
@@ -393,11 +395,13 @@ Conteo hecho a mano a partir de los informes de los verificadores (17-18 nov 202
 | white-sands-1957 | cifra/hora | BAJA: el índice dice «DR. MENSEL'S EVALUATION» y la página impresa da la Luna «roughly half full» (estaba al 84 %) | no |
 | white-sands-1957 | léxico/voz | BAJA: muletilla «es decir» | sí |
 | white-sands-1957 | cifra/hora | BAJA: «la siguieron» por «viewed»; las estrellas visibles en el télex frente a «no stars» de Toy; Barlow la vio varias veces; el ATIC evaluó a Stokes «UNRELIABLE» | no |
+| white-sands-1957 | lectura | ES 6/10 (lector ciego). Corregido: «hacia la puerta sur», «esa misma noche» para la patrulla de la tarde, el párrafo del ATIC, el relato «idéntico» frente a declaraciones juradas distintas, Sirio. Sin tocar: códigos de archivo y repeticiones | no |
 | kearney-schmidt-1957 | omisión | MEDIA: el mismo legajo trae el veredicto de engaño («The incident was adjudged a Hoax», p. 45; «obviously a "hoax"», p. 17); el classBasis solo daba la alucinación | no |
 | kearney-schmidt-1957 | omisión | MEDIA: el jefe de policía dijo ver también las marcas de las patas (télex de la OSI del 7 nov, p. 22) | no |
 | kearney-schmidt-1957 | atribución | MEDIA: fue el fiscal del condado quien dijo que la lata del maletero estaba «partly filled», no «a medio llenar» (p. 50) | no |
 | kearney-schmidt-1957 | léxico/voz | BAJA: fórmula vacía sobre la salud mental; el diagnóstico está tachado y la prensa citó a los psiquiatras | no |
 | kearney-schmidt-1957 | cifra/hora | BAJA: el rotor se cambió diez días antes según el informe y «day before» según el mensaje del ATIC | no |
+| kearney-schmidt-1957 | lectura | EN 8/10 (lector ciego). Corregido: medidas del casco, recuento de motivos, el verbo borroso, dirección del argumento, la lata «partly full». Sin tocar: la condena sin fecha (ya declarada) y repeticiones | no |
 | sunchubamba-cajamarca-1957 | clasificación | ALTA: tier S → A: teodolito de una empresa privada y operador con el nombre tachado en Blue Book (precisión 6); la capa de texto de PURSUE D202 lo nombra (John F. Withrow) y apunta a la Sra. Hildebrand como testigo del 7 nov, pero solo por OCR; decisión del orquestador, conservadora | no |
 | sunchubamba-cajamarca-1957 | atribución | ALTA: la reserva sobre la dirección es del 28 oct y de las 12:51 del 29; a las 13:39 da «moving slowly to approximately 300°-310°» (BB p. 3) | no |
 | sunchubamba-cajamarca-1957 | atribución | MEDIA: «un movimiento hacia el noroeste que las tablas no muestran» no lo dice ninguna fuente, y las tablas no lo contradicen | no |
@@ -408,6 +412,7 @@ Conteo hecho a mano a partir de los informes de los verificadores (17-18 nov 202
 | sunchubamba-cajamarca-1957 | cifra/hora | BAJA: el telegrama de Andahuaylas es del 29 oct y el expediente trae solo la primera hoja del IR-350-57 | no |
 | sunchubamba-cajamarca-1957 | atribución | BAJA: «durante nuestra estancia», sin decir cuántos días | no |
 | sunchubamba-cajamarca-1957 | omisión | MEDIA: la ficha decía que no se podía saber si el observador era Schnell; la capa de texto de la copia de PURSUE lo nombra (Withrow): se dice, con la reserva de que no se cotejó sobre la imagen | no |
+| sunchubamba-cajamarca-1957 | lectura | ES 7,5/10 (lector ciego). Corregido: frase del 28 oct, frase de la Luna y la hora GMT, «minuto a minuto» frente a 48 + 10 lecturas, jerga «capa de texto», el día equivocado del memorando. Sin tocar: códigos y repeticiones | no |
 | aawsap-skinwalker-2008 | cifra/hora | ALTA (documentos de la entrega 08): D188 no da por positivas «todas las reseñas de los 26»: solo se reseñaron 13 (p. 1, «highlighted… are the ones that were reviewed») | no |
 | aawsap-skinwalker-2008 | atribución | MEDIA: D185 no es una respuesta de la DIA a Reid, sino un dictamen para la oficina de Programas Especiales del subsecretario de Inteligencia | no |
 | aawsap-skinwalker-2008 | atribución | MEDIA: en la carta de Reid (D183), la «protección extraordinaria» la requerirían los avances futuros, no los hallazgos | no |
