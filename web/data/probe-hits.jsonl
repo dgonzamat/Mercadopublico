@@ -19,3 +19,4 @@
 {"date":"2026-11-19","probe":"validate-schema","rule":"objectDetail \"…\" no admitido: la clase \"…\" no tiene detalle ","where":"cases/budapest-1947.json"}
 {"date":"2026-11-19","probe":"audit-consistency","rule":"E52","where":"data/cases"}
 {"date":"2026-11-19","probe":"audit-consistency","rule":"E57","where":"data/cases"}
+{"date":"2026-11-20","probe":"audit-consistency","rule":"E52","where":"data/cases"}
