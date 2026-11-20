@@ -364,7 +364,16 @@ Conteo hecho a mano a partir de los informes de los verificadores (17-18 nov 202
 | la-jolla-1949 | cifra/hora | BAJA: la descripción del documento enumeraba 16 de las 17 páginas | no |
 | la-jolla-1949 | lectura | ES 7/10 (lector ciego). Corregido: referente ambiguo de la evaluación, cadena de llamadas, 11.º Distrito Naval y 18.º Distrito de la OSI sin situar, números 372 y 372A, «las dos copias» sin presentar. Sin tocar: repeticiones; contradicciones de la fuente ya declaradas | no |
 | palos-verdes-1965 | pendiente | Fila provisional del redactor; la sustituye el orquestador con los hallazgos del verificador | no |
-| abingdon-1957 | pendiente | Fila provisional del redactor; la sustituye el orquestador con los hallazgos del verificador | no |
+| abingdon-1957 | omisión | MEDIA: la nota del analista junto a los croquis tiene una palabra añadida encima de «Definitely same object» que parece «not»; la ficha citaba solo «all 3 diff». El verificador lo leyó «not» con seguridad y el redactor no: van las dos cosas | no |
+| abingdon-1957 | cifra/hora | MEDIA: el avión iluminado por el sol a más de 6.000 m solo vale para las 17:35; cinco minutos después hacían falta unos 12.000 m | no |
+| abingdon-1957 | atribución | MEDIA: Cooms no negó que el objeto fuera una estela: dijo que su cola no se parecía a una (p. 6) | no |
+| abingdon-1957 | omisión | BAJA: Cooms no dio rumbo y el analista lo anotó al margen | no |
+| abingdon-1957 | omisión | BAJA: la forma de rombo de Mast está también en el texto mecanografiado (p. 8) | no |
+| abingdon-1957 | omisión | BAJA: Booth sacó a su esposa y, con probabilidad, a un hijo (p. 6); a evidence | no |
+| abingdon-1957 | omisión | BAJA: Booth dice que el objeto «seemed to maintain its position» mientras bajaba | no |
+| abingdon-1957 | cifra/hora | BAJA: la tarjeta dice «Often considerable traffic», no «mucho tráfico» | no |
+| abingdon-1957 | cifra/hora | BAJA: la nota de la p. 2 dice «Airline/airports» | no |
+| white-sands-1957 | pendiente | Fila provisional del redactor; la sustituye el orquestador con los hallazgos del verificador | no |
 | aawsap-skinwalker-2008 | cifra/hora | ALTA (documentos de la entrega 08): D188 no da por positivas «todas las reseñas de los 26»: solo se reseñaron 13 (p. 1, «highlighted… are the ones that were reviewed») | no |
 | aawsap-skinwalker-2008 | atribución | MEDIA: D185 no es una respuesta de la DIA a Reid, sino un dictamen para la oficina de Programas Especiales del subsecretario de Inteligencia | no |
 | aawsap-skinwalker-2008 | atribución | MEDIA: en la carta de Reid (D183), la «protección extraordinaria» la requerirían los avances futuros, no los hallazgos | no |
