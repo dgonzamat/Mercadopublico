@@ -1,6 +1,7 @@
 import { cases } from "@/lib/data";
 import { pageMeta, hreflangFor } from "@/lib/seo";
 import { STATS } from "@/lib/siteStats";
+import { countryEn } from "@/lib/i18n-geo";
 import { T } from "@/components/T";
 import { Eyebrow, H1, Lede } from "@/lib/typography";
 
@@ -38,7 +39,7 @@ export function CoberturaView({ locale }: { locale: "es" | "en" }) {
   for (const c of cases) {
     let row = map.get(c.country);
     if (!row) {
-      row = { code: c.country, name: c.country_name.split(" · ")[0], flag: c.flag, total: 0, byDecade: {} };
+      row = { code: c.country, name: (locale === "es" ? c.country_name : countryEn(c.country_name)).split(" · ")[0], flag: c.flag, total: 0, byDecade: {} };
       map.set(c.country, row);
     }
     const d = decadeOf(c.year_start);

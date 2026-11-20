@@ -160,7 +160,7 @@ export async function EntityDetailPage(
       </section>
 
       <PrevNext
-        label="Navegación entre formas"
+        label={locale === "es" ? "Navegación entre formas" : "Shape navigation"}
         locale={locale}
         prev={
           prev

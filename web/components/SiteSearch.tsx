@@ -2,7 +2,8 @@
 
 import { useEffect, useRef, useState } from "react";
 import Link from "next/link";
-import { useRouter } from "next/navigation";
+import { usePathname, useRouter } from "next/navigation";
+import { localizeHref } from "@/components/LocaleLink";
 import Fuse from "fuse.js";
 import { T } from "@/components/T";
 
@@ -101,6 +102,9 @@ function SearchIcon() {
 
 export function SiteSearch({ variant = "default", onSelect, dark = false }: Props = {}) {
   const router = useRouter();
+  const pathname = usePathname();
+  // En el árbol /es/ los resultados abren la versión española de la página.
+  const linkFor = (e: IndexEntry) => localizeHref(hrefFor(e), pathname);
   const isMobile = variant === "mobile";
   const [query, setQuery] = useState("");
   const [open, setOpen] = useState(false); // results panel visible (query >= 2)
@@ -132,6 +136,7 @@ export function SiteSearch({ variant = "default", onSelect, dark = false }: Prop
         new Fuse(data, {
           keys: [
             { name: "name", weight: 0.45 },
+            { name: "name_en", weight: 0.45 },
             { name: "subtitle", weight: 0.15 },
             { name: "subtitle_en", weight: 0.1 },
             { name: "summary", weight: 0.15 },
@@ -198,7 +203,7 @@ export function SiteSearch({ variant = "default", onSelect, dark = false }: Prop
     setQuery("");
     inputRef.current?.blur();
     onSelect?.();
-    router.push(hrefFor(r));
+    router.push(linkFor(r));
   }
 
   function handleKeyDown(e: React.KeyboardEvent<HTMLInputElement>) {
@@ -263,7 +268,7 @@ export function SiteSearch({ variant = "default", onSelect, dark = false }: Prop
           {results.map((r, i) => (
             <li key={`${r.type}-${r.id}`} role="option" aria-selected={i === selected}>
               <Link
-                href={hrefFor(r)}
+                href={linkFor(r)}
                 onClick={() => {
                   closeSearch();
                   setQuery("");

@@ -1,6 +1,8 @@
 "use client";
 
 import { useEffect, useState } from "react";
+import { usePathname } from "next/navigation";
+import { chromeLocale } from "@/components/LocaleLink";
 import { T } from "@/components/T";
 
 /**
@@ -35,6 +37,7 @@ function updateConsent(value: "granted" | "denied") {
 
 export function CookieConsent() {
   const [show, setShow] = useState(false);
+  const pathname = usePathname();
 
   useEffect(() => {
     let consent: string | null = null;
@@ -67,7 +70,7 @@ export function CookieConsent() {
   return (
     <div
       role="dialog"
-      aria-label="Consentimiento de cookies"
+      aria-label={chromeLocale(pathname) === "es" ? "Consentimiento de cookies" : "Cookie consent"}
       className="fixed inset-x-0 bottom-0 z-50 border-t-2 border-text bg-panel"
     >
       <div className="mx-auto flex max-w-6xl flex-col gap-3 px-4 py-4 sm:flex-row sm:items-center sm:justify-between">

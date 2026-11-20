@@ -2,6 +2,8 @@
 // Build-time RSS 2.0 feed for the blog → public/feed.xml.
 // Source of truth = data/posts/*.json. Mirrors build-search-index.mjs:
 // a generated static artifact served as-is (works with output: "export").
+// En inglés: el feed se anuncia en el layout raíz (inglés) y enlaza las URL
+// inglesas /blog/<id>; los 7 posts tienen title_en y summary_en.
 import fs from "fs";
 import path from "path";
 import { fileURLToPath } from "url";
@@ -32,11 +34,11 @@ const items = posts
   .map((p) => {
     const url = `${SITE_URL}/blog/${p.id}`;
     return `    <item>
-      <title>${esc(p.title)}</title>
+      <title>${esc(p.title_en ?? p.title)}</title>
       <link>${url}</link>
       <guid isPermaLink="true">${url}</guid>
       <pubDate>${new Date(p.date).toUTCString()}</pubDate>
-      <description>${esc(p.summary)}</description>
+      <description>${esc(p.summary_en ?? p.summary)}</description>
     </item>`;
   })
   .join("\n");
@@ -47,8 +49,8 @@ const xml = `<?xml version="1.0" encoding="UTF-8"?>
     <title>UAP Codex — Blog</title>
     <link>${SITE_URL}/blog</link>
     <atom:link href="${SITE_URL}/feed.xml" rel="self" type="application/rss+xml" />
-    <description>Notas de método y avances del cuaderno de investigación UAP Codex.</description>
-    <language>es</language>
+    <description>Method notes and progress from the UAP Codex research notebook.</description>
+    <language>en</language>
     <lastBuildDate>${new Date().toUTCString()}</lastBuildDate>
 ${items}
   </channel>

@@ -118,7 +118,7 @@ export function AboutView({ locale }: { locale: "es" | "en" }) {
           </Lede>
         </header>
 
-        <nav aria-label="Índice de capítulos" className="space-y-3 border-y-2 border-text/15 py-6 lg:hidden">
+        <nav aria-label={locale === "es" ? "Índice de capítulos" : "Chapter index"} className="space-y-3 border-y-2 border-text/15 py-6 lg:hidden">
           <p className="font-mono text-[11px] text-muted">
             <T es="Saltar a capítulo" en="Jump to chapter" locale={locale} />
           </p>

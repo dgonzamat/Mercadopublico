@@ -301,7 +301,7 @@ export async function ResearcherDetailPage({
       </Caption>
 
       <PrevNext
-        label="Navegación entre investigadores"
+        label={locale === "es" ? "Navegación entre investigadores" : "Researcher navigation"}
         prev={
           prev
             ? {

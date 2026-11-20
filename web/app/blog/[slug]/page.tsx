@@ -95,7 +95,7 @@ export async function PostDetailPage(
       </div>
 
       <PrevNext
-        label="Navegación entre posts"
+        label={locale === "es" ? "Navegación entre posts" : "Post navigation"}
         locale={locale}
         prev={
           prev

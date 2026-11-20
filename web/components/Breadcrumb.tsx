@@ -17,7 +17,7 @@ export function Breadcrumb({
 }) {
   return (
     <nav
-      aria-label="Ruta de navegación"
+      aria-label={locale === "es" ? "Ruta de navegación" : "Breadcrumb"}
       className="text-sm text-muted"
     >
       <ol className="flex flex-wrap items-center gap-x-2 gap-y-1">

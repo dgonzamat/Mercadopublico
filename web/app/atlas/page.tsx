@@ -50,8 +50,8 @@ export default function AtlasPage() {
         </H1>
         <Lede className="max-w-3xl text-muted">
           <T
-            es={`Cada marcador abre su caso. Los ${STATS.offMap} casos ocurridos en órbita o rumbo a la Luna no tienen marcador.`}
-            en={`Each marker opens its case. The ${STATS.offMap} cases that took place in orbit or on the way to the Moon have no marker.`}
+            es={`Cada marcador abre su caso. Los ${STATS.offMap} casos cuyo lugar no se ha revelado o no está en la Tierra no tienen marcador.`}
+            en={`Each marker opens its case. The ${STATS.offMap} cases whose location is undisclosed or not on Earth have no marker.`}
           />
         </Lede>
       </header>
