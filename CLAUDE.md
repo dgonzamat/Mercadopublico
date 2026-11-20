@@ -14,6 +14,7 @@ Principios de trabajo por defecto. Aplican a toda tarea, no solo a este repo.
 ## Estilo de comunicación
 
 - Hablar con el usuario en **español neutro**, no rioplatense/argentino (preferencia explícita del usuario). Evitar voseo y modismos: nada de «vos/tenés/dale/acá/che» — usar «tú/tienes/de acuerdo/aquí». Aplica solo a la conversación; el contenido editorial del corpus mantiene su propia línea.
+- **Cuando queden decisiones del dueño, preguntárselas con la herramienta de preguntas (`AskUserQuestion`) y con la recomendación marcada como primera opción** (decisión del dueño, 20 nov 2026): dejarlas al final de un mensaje como «decisiones tuyas» obligaba a pedir cada vez «recomienda» antes de poder elegir. Una pregunta por decisión, con su porqué en la descripción de cada opción.
 
 ---
 

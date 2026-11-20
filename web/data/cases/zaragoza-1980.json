@@ -65,8 +65,8 @@
       "name": "OpenStreetMap: Academia General Militar (nodo 11003276874) y aeropuerto y base aérea de Zaragoza (vía 174775672)",
       "name_en": "OpenStreetMap: General Military Academy (node 11003276874) and Zaragoza airport and air base (way 174775672)",
       "url": "https://www.openstreetmap.org/node/11003276874",
-      "note": "Coordenadas para el cálculo propio de distancias y rumbos. Se midió desde el centro del aeródromo (vía 174775672), no desde la antena del radar GCA, cuya posición no da el expediente.",
-      "note_en": "Coordinates for our own calculation of distances and bearings. Measured from the center of the airfield (way 174775672), not from the GCA radar antenna, whose position the file does not give."
+      "note": "Coordenadas con las que se calcularon las distancias y los rumbos. Se midió desde el centro del aeródromo (vía 174775672), no desde la antena del radar GCA, cuya posición no da el expediente.",
+      "note_en": "Coordinates used to calculate the distances and bearings. Measured from the center of the airfield (way 174775672), not from the GCA radar antenna, whose position the file does not give."
     }
   ],
   "posterior": {
