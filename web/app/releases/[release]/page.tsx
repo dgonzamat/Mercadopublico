@@ -299,63 +299,87 @@ export async function ReleasePage({
         ))}
       </section>
 
-      {videos.length > 0 && (
+      {(videos.length > 0 || docs.length > 0) && (
         <section className="space-y-3 border-t border-border pt-6">
           <Eyebrow>
             <T
-              es={docs.length > 0 ? "vídeos y documentos sin ficha propia" : "vídeos sin ficha propia"}
-              en={docs.length > 0 ? "videos and documents without a case of their own" : "videos without a case of their own"}
+              es={
+                videos.length > 0 && docs.length > 0
+                  ? "vídeos y documentos sin ficha propia"
+                  : videos.length > 0
+                    ? "vídeos sin ficha propia"
+                    : "documentos sin ficha propia"
+              }
+              en={
+                videos.length > 0 && docs.length > 0
+                  ? "videos and documents without a case of their own"
+                  : videos.length > 0
+                    ? "videos without a case of their own"
+                    : "documents without a case of their own"
+              }
               locale={locale}
             />
           </Eyebrow>
-          <p className="max-w-3xl text-sm leading-relaxed text-text">
-            <T
-              es={`Estos ${videos.length} vídeos de la entrega no tienen ficha: lo que traen no basta para sostener un caso. Se listan con el título, la fecha de grabación y la procedencia que da DVIDS, donde se pueden ver.`}
-              en={`These ${videos.length} videos from the release have no case page: what they contain is not enough to support one. They are listed with the title, recording date and origin given by DVIDS, where they can be watched.`}
-              locale={locale}
-            />
-            {n === 2 && (
-              <>
-                {" "}
+          {videos.length > 0 && (
+            <>
+              <p className="max-w-3xl text-sm leading-relaxed text-text">
                 <T
-                  es="Proceden de una red clasificada y, según la AARO, «Many of these materials lack a substantiated chain-of-custody» (muchos carecen de una cadena de custodia demostrada); el título entre comillas lo puso quien subió el archivo."
-                  en="They come from a classified network and, according to AARO, “Many of these materials lack a substantiated chain-of-custody”; the title in quotation marks was given by whoever uploaded the file."
+                  es={`Estos ${videos.length} vídeos de la entrega no tienen ficha: lo que traen no basta para sostener un caso. Se listan con el título, la fecha de grabación y la procedencia que da DVIDS, donde se pueden ver.`}
+                  en={`These ${videos.length} videos from the release have no case page: what they contain is not enough to support one. They are listed with the title, recording date and origin given by DVIDS, where they can be watched.`}
                   locale={locale}
                 />
-              </>
-            )}
-          </p>
-          <ul className="divide-y divide-border border-y border-border">
-            {videos.map((v) => (
-              <li key={v.dvidsId} className="py-2">
-                <a
-                  href={`https://www.dvidshub.net/video/${v.dvidsId}`}
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="inline-flex min-h-[44px] flex-wrap items-center text-sm text-text hover:text-accent"
-                >
-                  <span className="mr-2 font-mono text-xs text-muted">{v.code}</span>
-                  {n === 2 ? (locale === "es" ? `«${v.label}»` : `“${v.label}”`) : v.label} ↗
-                </a>
-                <p className="font-mono text-xs text-muted">
-                  {videoDate(v.date, locale)}
-                  {v.submittedBy ? ` · ${v.submittedBy}` : ""}
-                  {v.reports && docsFor(v.code).length === 0 ? ` · ${v.reports.join(", ")}` : ""}
-                </p>
-                {docsFor(v.code).map((d) => (
-                  <p key={d.code} className="pl-4">
-                    {docLine(d)}
-                  </p>
+                {n === 2 && (
+                  <>
+                    {" "}
+                    <T
+                      es="Proceden de una red clasificada y, según la AARO, «Many of these materials lack a substantiated chain-of-custody» (muchos carecen de una cadena de custodia demostrada); el título entre comillas lo puso quien subió el archivo."
+                      en="They come from a classified network and, according to AARO, “Many of these materials lack a substantiated chain-of-custody”; the title in quotation marks was given by whoever uploaded the file."
+                      locale={locale}
+                    />
+                  </>
+                )}
+              </p>
+              <ul className="divide-y divide-border border-y border-border">
+                {videos.map((v) => (
+                  <li key={v.dvidsId} className="py-2">
+                    <a
+                      href={`https://www.dvidshub.net/video/${v.dvidsId}`}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="inline-flex min-h-[44px] flex-wrap items-center text-sm text-text hover:text-accent"
+                    >
+                      <span className="mr-2 font-mono text-xs text-muted">{v.code}</span>
+                      {n === 2 ? (locale === "es" ? `«${v.label}»` : `“${v.label}”`) : v.label} ↗
+                    </a>
+                    <p className="font-mono text-xs text-muted">
+                      {videoDate(v.date, locale)}
+                      {v.submittedBy ? ` · ${v.submittedBy}` : ""}
+                      {v.reports && docsFor(v.code).length === 0 ? ` · ${v.reports.join(", ")}` : ""}
+                    </p>
+                    {docsFor(v.code).map((d) => (
+                      <p key={d.code} className="pl-4">
+                        {docLine(d)}
+                      </p>
+                    ))}
+                  </li>
                 ))}
-              </li>
-            ))}
-          </ul>
+              </ul>
+            </>
+          )}
           {looseDocs.length > 0 && (
             <>
-              <p className="max-w-3xl pt-3 text-sm leading-relaxed text-text">
+              <p className={`max-w-3xl text-sm leading-relaxed text-text${videos.length > 0 ? " pt-3" : ""}`}>
                 <T
-                  es={`Y ${looseDocs.length} informes de la entrega sin vídeo publicado ni ficha, con la fecha y el lugar que se leen en el propio documento:`}
-                  en={`And ${looseDocs.length} reports from the release with no published video or case page, with the date and place read in the document itself:`}
+                  es={
+                    videos.length > 0
+                      ? `Y ${looseDocs.length} documentos de la entrega sin vídeo publicado ni ficha, con lo que se lee en el propio documento:`
+                      : `Estos ${looseDocs.length} documentos de la entrega no respaldan ningún caso ni perfil del sitio. Se listan con lo que se lee en el propio documento:`
+                  }
+                  en={
+                    videos.length > 0
+                      ? `And ${looseDocs.length} documents from the release with no published video or case page, with what the document itself says:`
+                      : `These ${looseDocs.length} documents from the release support no case or profile on the site. They are listed with what the document itself says:`
+                  }
                   locale={locale}
                 />
               </p>

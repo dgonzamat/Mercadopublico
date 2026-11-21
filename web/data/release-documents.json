@@ -28,8 +28,8 @@
   "date": null,
   "type": "Informe de misión (MISREP)",
   "type_en": "Mission report (MISREP)",
-  "place": "sin fecha; cuadrículas del Egeo (el título dice golfo Arábigo)",
-  "place_en": "undated; Aegean grids (the title says Arabian Gulf)",
+  "place": "sin fecha; cuadrículas del mar Jónico y del mar Negro (el título dice golfo Arábigo)",
+  "place_en": "undated; Ionian Sea and Black Sea grids (the title says Arabian Gulf)",
   "videos": null
  },
  {
@@ -39,8 +39,8 @@
   "date": null,
   "type": "Informe de misión (MISREP)",
   "type_en": "Mission report (MISREP)",
-  "place": "sin fecha; cuadrícula ilegible",
-  "place_en": "undated; illegible grid",
+  "place": "sin fecha; cuadrícula incompleta (3SKT…)",
+  "place_en": "undated; incomplete grid (3SKT…)",
   "videos": null
  },
  {
@@ -61,8 +61,8 @@
   "date": null,
   "type": "Informe de misión (MISREP)",
   "type_en": "Mission report (MISREP)",
-  "place": "sin fecha; cuadrícula del Egeo (el título dice Yibuti)",
-  "place_en": "undated; Aegean grid (the title says Djibouti)",
+  "place": "sin fecha; cuadrícula del Mediterráneo oriental, entre Creta y Chipre (el título dice Yibuti)",
+  "place_en": "undated; eastern Mediterranean grid, between Crete and Cyprus (the title says Djibouti)",
   "videos": null
  },
  {
@@ -96,10 +96,10 @@
   "code": "DOW-UAP-PR20",
   "src": "/pursue/dow-uap-pr20.pdf",
   "date": "2022-05",
-  "type": "Imagen fija infrarroja",
-  "type_en": "Infrared still image",
-  "place": "Kuwait o Irak; va con D12",
-  "place_en": "Kuwait or Iraq; goes with D12",
+  "type": "Imagen fija",
+  "type_en": "Still image",
+  "place": "Irak, según D12, con el que va",
+  "place_en": "Iraq, according to D12, which it goes with",
   "videos": [
    "DOW-UAP-PR26"
   ]
@@ -108,11 +108,11 @@
   "release": 1,
   "code": "DOW-UAP-D14",
   "src": "/pursue/dow-uap-d14-mission-report-iraq-may-2022.pdf",
-  "date": "2022-05-29",
+  "date": "2022-05-30",
   "type": "Informe de misión (MISREP)",
   "type_en": "Mission report (MISREP)",
-  "place": "Al Asad (Irak)",
-  "place_en": "Al Asad (Iraq)",
+  "place": "Mediterráneo oriental, frente a la costa siria",
+  "place_en": "eastern Mediterranean, off the Syrian coast",
   "videos": [
    "DOW-UAP-PR21"
   ]
@@ -121,7 +121,7 @@
   "release": 1,
   "code": "DOW-UAP-D16",
   "src": "/pursue/dow-uap-d16-mission-report-syria-july-2022.pdf",
-  "date": "2022-07-30",
+  "date": "2022-07-31",
   "type": "Informe de misión (MISREP)",
   "type_en": "Mission report (MISREP)",
   "place": "Siria",
@@ -161,8 +161,8 @@
   "date": "2023-03-31",
   "type": "Informe de misión (MISREP)",
   "type_en": "Mission report (MISREP)",
-  "place": "Irak",
-  "place_en": "Iraq",
+  "place": "noreste de Siria",
+  "place_en": "northeastern Syria",
   "videos": null
  },
  {
@@ -172,8 +172,8 @@
   "date": "2023-10-24",
   "type": "Informe de misión (MISREP)",
   "type_en": "Mission report (MISREP)",
-  "place": "golfo de Omán",
-  "place_en": "Gulf of Oman",
+  "place": "golfo Pérsico, frente a Irán",
+  "place_en": "Persian Gulf, off Iran",
   "videos": [
    "DOW-UAP-PR27"
   ]
@@ -213,8 +213,8 @@
   "date": "2025-04-10",
   "type": "Correspondencia por correo",
   "type_en": "Email correspondence",
-  "place": "INDOPACOM",
-  "place_en": "INDOPACOM",
+  "place": "INDOPACOM; dos avistamientos, el 10 y el 11 de abril",
+  "place_en": "INDOPACOM; two sightings, on April 10 and 11",
   "videos": null
  },
  {
@@ -246,8 +246,8 @@
   "date": "2020-10-27",
   "type": "Informe de range fouler",
   "type_en": "Range fouler debrief",
-  "place": "lugar tachado",
-  "place_en": "place redacted",
+  "place": "lugar no consignado (solo el punto de referencia ZIM 248/17)",
+  "place_en": "place not recorded (only the reference point ZIM 248/17)",
   "videos": null
  },
  {
@@ -257,8 +257,8 @@
   "date": "2023-11-09",
   "type": "Informe de misión (MISREP)",
   "type_en": "Mission report (MISREP)",
-  "place": "Siria",
-  "place_en": "Syria",
+  "place": "frontera entre Siria e Irak",
+  "place_en": "Syria–Iraq border",
   "videos": null
  },
  {
@@ -270,6 +270,215 @@
   "type_en": "Range fouler debrief",
   "place": "el texto dice golfo de Adén; la cuadrícula, mar Arábigo frente a Omán",
   "place_en": "the text says Gulf of Aden; the grid, Arabian Sea off Oman",
+  "videos": null
+ },
+ {
+  "release": 1,
+  "code": "059UAP00011",
+  "src": "/pursue/059uap00011.pdf",
+  "date": "2001-10-30",
+  "type": "Cable del Departamento de Estado",
+  "type_en": "State Department cable",
+  "place": "Moscú, sobre el desfiladero de Kodori (Georgia); «UFOs» va en sentido irónico",
+  "place_en": "Moscow, on the Kodori Gorge (Georgia); «UFOs» is used ironically",
+  "videos": null
+ },
+ {
+  "release": 1,
+  "code": "059UAP00012",
+  "src": "/pursue/059uap00012.pdf",
+  "date": "2004-11-12",
+  "type": "Cable del Departamento de Estado",
+  "type_en": "State Department cable",
+  "place": "Asjabad, sobre una asociación de ufólogos de Turkmenistán",
+  "place_en": "Ashgabat, on a ufologists' association in Turkmenistan",
+  "videos": null
+ },
+ {
+  "release": 1,
+  "code": "59_214434",
+  "src": "/pursue/59_214434_sp_16_1963.pdf",
+  "date": "1963-07-18",
+  "type": "Memorando de Maxwell Hunter",
+  "type_en": "Memorandum by Maxwell Hunter",
+  "place": "qué política seguir ante una raza extraterrestre",
+  "place_en": "what policy to follow toward an alien race",
+  "videos": null
+ },
+ {
+  "release": 2,
+  "code": "DOE-UAP-D003",
+  "src": "/pursue/DOE-UAP-D003_Pajarito_Astronomers.pdf",
+  "date": "1986",
+  "type": "Invitación de los Pajarito Astronomers",
+  "type_en": "Pajarito Astronomers invitation",
+  "place": "Los Álamos",
+  "place_en": "Los Alamos",
+  "videos": null
+ },
+ {
+  "release": 3,
+  "code": "CIA-UAP-004",
+  "src": "/pursue/CIA-UAP-004-CASE_17708_CLOSED_AND_DR_LEON_DAVIDSON.pdf",
+  "date": "1958-01-09",
+  "type": "Documento de la CIA",
+  "type_en": "CIA document",
+  "place": "caso 17708 cerrado y Leon Davidson",
+  "place_en": "case 17708 closed and Leon Davidson",
+  "videos": null
+ },
+ {
+  "release": 3,
+  "code": "CIA-UAP-005",
+  "src": "/pursue/CIA-UAP-005-GERMAN_SCIENTISTS_ARTICLE_ON_FLYING_DISCS.pdf",
+  "date": "1950",
+  "type": "Documento de la CIA",
+  "type_en": "CIA document",
+  "place": "artículo de Eduard Ludwig (Chile) sobre discos voladores de científicos alemanes",
+  "place_en": "article by Eduard Ludwig (Chile) on German scientists' flying discs",
+  "videos": null
+ },
+ {
+  "release": 3,
+  "code": "CIA-UAP-008",
+  "src": "/pursue/CIA-UAP-008_SPECULATIVE_PAPER_BY_N_KARDASHEV_AND_A_SAKHAROV.pdf",
+  "date": "1971",
+  "type": "Documento de la CIA",
+  "type_en": "CIA document",
+  "place": "artículo especulativo de Kardashev y Sájarov (física teórica)",
+  "place_en": "speculative paper by Kardashev and Sakharov (theoretical physics)",
+  "videos": null
+ },
+ {
+  "release": 3,
+  "code": "CIA-UAP-009",
+  "src": "/pursue/CIA-UAP-009-UNKNOWN-FLYING_OBJECTS_OBERVED_OVER_BUDAPEST.pdf",
+  "date": null,
+  "type": "Documento de la CIA",
+  "type_en": "CIA document",
+  "place": "objetos sobre Budapest; el escaneo publicado es ilegible",
+  "place_en": "objects over Budapest; the published scan is illegible",
+  "videos": null
+ },
+ {
+  "release": 3,
+  "code": "CIA-UAP-010",
+  "src": "/pursue/CIA-UAP-010_REPORT_ON_CONVERSATIONS_WITH_SOVIET_SCIENTISTS_ON_SUBJECT_OF_UNIDENTIFIED_FLYING_OBJECTS_IS_THE_USSR.pdf",
+  "date": "1967",
+  "type": "Documento de la CIA",
+  "type_en": "CIA document",
+  "place": "conversaciones con científicos soviéticos sobre los ovnis",
+  "place_en": "conversations with Soviet scientists about UFOs",
+  "videos": null
+ },
+ {
+  "release": 3,
+  "code": "CIA-UAP-012",
+  "src": "/pursue/CIA-UAP-012-Combatting_Fatigue_in_Crewmembers.pdf",
+  "date": "1976",
+  "type": "Documento de la CIA",
+  "type_en": "CIA document",
+  "place": "fatiga de las tripulaciones de Aeroflot; un párrafo sobre ovnis",
+  "place_en": "fatigue in Aeroflot crews; one paragraph on UFOs",
+  "videos": null
+ },
+ {
+  "release": 3,
+  "code": "CIA-UAP-013",
+  "src": "/pursue/CIA-UAP-013-Report_of_Unusual_Flying_Object_Sightings_and_Attendant_Scientific_Activity.pdf",
+  "date": "1956-04-17",
+  "type": "Informe de información de la CIA",
+  "type_en": "CIA information report",
+  "place": "Budapest, 1955–1956, de segunda mano y sin evaluar; gemelo de CIA-UAP-018",
+  "place_en": "Budapest, 1955–1956, secondhand and unevaluated; twin of CIA-UAP-018",
+  "videos": null
+ },
+ {
+  "release": 3,
+  "code": "CIA-UAP-018",
+  "src": "/pursue/CIA-UAP-018_Report_of_Unusual_Flying_Object_Sightings_and_Attendant_Scientific_Activity.pdf",
+  "date": "1956-04-17",
+  "type": "Informe de información de la CIA",
+  "type_en": "CIA information report",
+  "place": "Budapest, 1955–1956, de segunda mano y sin evaluar; gemelo de CIA-UAP-013",
+  "place_en": "Budapest, 1955–1956, secondhand and unevaluated; twin of CIA-UAP-013",
+  "videos": null
+ },
+ {
+  "release": 3,
+  "code": "FBI-UAP-D011",
+  "src": "/pursue/FBI-UAP-D011_DFBI-Correspondence-Referral_1949.pdf",
+  "date": "1949",
+  "type": "Correspondencia del FBI",
+  "type_en": "FBI correspondence",
+  "place": "carta sobre haces de luz vistos sobre las Cascadas en mayo de 1948",
+  "place_en": "letter on light beams seen over the Cascades in May 1948",
+  "videos": null
+ },
+ {
+  "release": 3,
+  "code": "FBI-UAP-D012",
+  "src": "/pursue/FBI-UAP-D012_Newark-Field-Office_1952-1967.pdf",
+  "date": null,
+  "type": "Expediente del FBI",
+  "type_en": "FBI file",
+  "place": "oficina de Newark, 1952–1967: avisos sueltos de Nueva Jersey",
+  "place_en": "Newark field office, 1952–1967: scattered New Jersey reports",
+  "videos": null
+ },
+ {
+  "release": 3,
+  "code": "FBI-UAP-D013",
+  "src": "/pursue/FBI-UAP-D013_WA-UFO-Investigation_1952-1960.pdf",
+  "date": null,
+  "type": "Expediente del FBI",
+  "type_en": "FBI file",
+  "place": "oficina de Seattle, 1952–1960: avisos sueltos del estado de Washington",
+  "place_en": "Seattle field office, 1952–1960: scattered Washington State reports",
+  "videos": null
+ },
+ {
+  "release": 4,
+  "code": "FBI-UAP-D014",
+  "src": "/pursue/FBI-UAP-D014_Correspondence-Relating-to-UFO-Sightings_1967_1974.pdf",
+  "date": null,
+  "type": "Correspondencia del FBI",
+  "type_en": "FBI correspondence",
+  "place": "Chicago, 1967 y 1974",
+  "place_en": "Chicago, 1967 and 1974",
+  "videos": null
+ },
+ {
+  "release": 3,
+  "code": "NASA-UAP-D019",
+  "src": "/pursue/NASA-UAP-D019_Gemini-5-Technical-Debriefing_Part1_1965.pdf",
+  "date": "1965",
+  "type": "Debriefing técnico de la NASA",
+  "type_en": "NASA technical debriefing",
+  "place": "Gemini 5, parte 1; sin avistamientos",
+  "place_en": "Gemini 5, part 1; no sightings",
+  "videos": null
+ },
+ {
+  "release": 3,
+  "code": "NASA-UAP-D020",
+  "src": "/pursue/NASA-UAP-D020_Gemini-5-Technical-Debriefing_Part2_1965.pdf",
+  "date": "1965",
+  "type": "Debriefing técnico de la NASA",
+  "type_en": "NASA technical debriefing",
+  "place": "Gemini 5, parte 2; sin avistamientos",
+  "place_en": "Gemini 5, part 2; no sightings",
+  "videos": null
+ },
+ {
+  "release": 3,
+  "code": "NASA-UAP-D022",
+  "src": "/pursue/NASA-UAP-D022_Gemini-9-Debriefing_1966.pdf",
+  "date": "1966",
+  "type": "Debriefing de la NASA",
+  "type_en": "NASA debriefing",
+  "place": "Gemini 9; sin avistamientos",
+  "place_en": "Gemini 9; no sightings",
   "videos": null
  }
 ]
