@@ -7,6 +7,9 @@ import { ShareButton } from "@/components/ShareButton";
 import { pageMeta, hreflangFor } from "@/lib/seo";
 import { cases } from "@/lib/data";
 import releaseVideos from "@/data/release-videos.json";
+import releaseDocuments from "@/data/release-documents.json";
+
+const basePath = process.env.NEXT_PUBLIC_BASE_PATH ?? "";
 import { CaseRow } from "@/components/CaseRow";
 import { T } from "@/components/T";
 import { Eyebrow, H1, Lede } from "@/lib/typography";
@@ -34,6 +37,21 @@ type ReleaseVideo = {
   date: string;
   submittedBy: string | null;
   reports: string[] | null;
+};
+
+// Informes de la entrega que no respaldan ningún caso del corpus (los PDF de la
+// ficha retirada dow-centcom-2020, nov 2026). `videos` son los vídeos de DVIDS
+// con los que forman pareja; los que no tienen pareja se listan aparte.
+type ReleaseDocument = {
+  release: number;
+  code: string;
+  src: string;
+  date: string | null;
+  type: string;
+  type_en: string;
+  place: string;
+  place_en: string;
+  videos: string[] | null;
 };
 
 // DVIDS pone el día 1 cuando solo se sabe el mes, y el 1 de enero cuando solo
@@ -187,6 +205,26 @@ export async function ReleasePage({
   const t = { S: 0, A: 0, B: 0 };
   for (const c of list) t[c.tier] += 1;
   const videos = (releaseVideos as ReleaseVideo[]).filter((v) => v.release === n);
+  const docs = (releaseDocuments as ReleaseDocument[]).filter((d) => d.release === n);
+  const docsFor = (code: string) => docs.filter((d) => d.videos?.includes(code));
+  const looseDocs = docs.filter((d) => !d.videos);
+  const docLine = (d: ReleaseDocument) => (
+    <>
+      <a
+        href={`${basePath}${d.src}`}
+        target="_blank"
+        rel="noopener noreferrer"
+        className="inline-flex min-h-[44px] items-center text-sm text-text underline decoration-dotted hover:text-accent"
+      >
+        {d.code} · <T es={d.type} en={d.type_en} locale={locale} /> (PDF)
+      </a>
+      <span className="font-mono text-xs text-muted">
+        {" · "}
+        {d.date ? `${videoDate(d.date, locale)} · ` : ""}
+        <T es={d.place} en={d.place_en} locale={locale} />
+      </span>
+    </>
+  );
   const meta = RELEASE_META[n] ?? {
     es: `PURSUE · Release ${pad(n)}`,
     en: `PURSUE · Release ${pad(n)}`,
@@ -264,7 +302,11 @@ export async function ReleasePage({
       {videos.length > 0 && (
         <section className="space-y-3 border-t border-border pt-6">
           <Eyebrow>
-            <T es="vídeos sin ficha propia" en="videos without a case of their own" locale={locale} />
+            <T
+              es={docs.length > 0 ? "vídeos y documentos sin ficha propia" : "vídeos sin ficha propia"}
+              en={docs.length > 0 ? "videos and documents without a case of their own" : "videos without a case of their own"}
+              locale={locale}
+            />
           </Eyebrow>
           <p className="max-w-3xl text-sm leading-relaxed text-text">
             <T
@@ -298,11 +340,34 @@ export async function ReleasePage({
                 <p className="font-mono text-xs text-muted">
                   {videoDate(v.date, locale)}
                   {v.submittedBy ? ` · ${v.submittedBy}` : ""}
-                  {v.reports ? ` · ${v.reports.join(", ")}` : ""}
+                  {v.reports && docsFor(v.code).length === 0 ? ` · ${v.reports.join(", ")}` : ""}
                 </p>
+                {docsFor(v.code).map((d) => (
+                  <p key={d.code} className="pl-4">
+                    {docLine(d)}
+                  </p>
+                ))}
               </li>
             ))}
           </ul>
+          {looseDocs.length > 0 && (
+            <>
+              <p className="max-w-3xl pt-3 text-sm leading-relaxed text-text">
+                <T
+                  es={`Y ${looseDocs.length} informes de la entrega sin vídeo publicado ni ficha, con la fecha y el lugar que se leen en el propio documento:`}
+                  en={`And ${looseDocs.length} reports from the release with no published video or case page, with the date and place read in the document itself:`}
+                  locale={locale}
+                />
+              </p>
+              <ul className="divide-y divide-border border-y border-border">
+                {looseDocs.map((d) => (
+                  <li key={d.code} className="py-1">
+                    {docLine(d)}
+                  </li>
+                ))}
+              </ul>
+            </>
+          )}
         </section>
       )}
 
