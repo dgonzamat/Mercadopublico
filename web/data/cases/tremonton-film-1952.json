@@ -228,6 +228,32 @@
       "source_en": "Central Intelligence Agency, CIA (PURSUE Release 08)",
       "license": "Dominio público · obra del Gobierno de EE. UU.",
       "fallbackUrl": "https://www.war.gov/medialink/ufo/release-08/documents/CIA-UAP-D024-Approval_in_Principle_Research_Concerned_with_UFOs-1952.pdf"
+    },
+    {
+      "role": "documento",
+      "src": "/pursue/CIA-UAP-014_British_Activity_in_the_Field_of_Unidentified_Flying_Objects.pdf",
+      "type": "pdf",
+      "title": "CIA-UAP-014 — la CIA sobre la actividad británica en materia de ovnis (18 de diciembre de 1952)",
+      "title_en": "CIA-UAP-014 — the CIA on British activity regarding UFOs (December 18, 1952)",
+      "description": "Documento que menciona el film de Tremonton un mes antes del Panel Robertson, aunque no es un registro del film: memorando secreto del 18 de diciembre de 1952 de H. Marshall Chadwell, director adjunto de Inteligencia Científica de la CIA, con lo que un mensajero llegado de Gran Bretaña contó el 15 de diciembre de sus conversaciones con el físico R. V. Jones, de la inteligencia científica británica. Según el memorando, los británicos tenían desde hacía unos dieciséis meses un comité permanente sobre los platillos, que había concluido que no eran aviones enemigos; un «perfect flying saucer» visto por altos mandos de la Real Fuerza Aérea británica (RAF) y por sus pilotos durante una exhibición en Yorkshire, diez o doce días antes según el texto, había llegado a la prensa, y el mensajero habló a Jones del film que un suboficial de la Marina tomó en Tremonton, del que quizá pediría una copia. Jones recordó también el caso sueco, «presumably» el de 1946. La segunda página, sin encabezado, enumera los peligros que se veían en los avistamientos: retrasos en la alerta temprana, una histeria colectiva provocada por un enemigo y la saturación de las comunicaciones de emergencia. Son dos páginas, publicadas en la tercera entrega de PURSUE.",
+      "description_en": "A document that mentions the Tremonton film a month before the Robertson Panel, though it is not a record of the film: a secret memo of December 18, 1952 by H. Marshall Chadwell, the CIA's Assistant Director for Scientific Intelligence, setting down what a messenger just back from Britain reported on December 15 about his talks with the physicist R. V. Jones, of British scientific intelligence. According to the memo, the British had had a standing committee on flying saucers for about sixteen months, which had concluded they were not enemy aircraft; a \"perfect flying saucer\" seen by senior Royal Air Force (RAF) officials and RAF pilots during a demonstration in Yorkshire, ten to twelve days earlier according to the text, had reached the press; and the messenger told Jones about the film a Navy petty officer took at Tremonton, of which Jones might ask for a copy. Jones also recalled the Swedish incident, \"presumably\" the one in 1946. The second page, with no heading, lists the dangers seen in the sightings: delays to early warning, mass hysteria stirred up by an enemy, and overloaded emergency communications. Two pages, released in the third PURSUE release.",
+      "source": "Central Intelligence Agency (PURSUE Release 03)",
+      "source_en": "Central Intelligence Agency (PURSUE Release 03)",
+      "license": "Dominio público · obra del Gobierno de EE. UU.",
+      "fallbackUrl": "https://www.war.gov/medialink/ufo/061226/release_03/documents/CIA-UAP-014_British_Activity_in_the_Field_of_Unidentified_Flying_Objects.pdf"
+    },
+    {
+      "role": "contexto",
+      "src": "/pursue/CIA-UAP-007_Current_Status_of_Unidentified_Flying_Objects_UFO_Project.pdf",
+      "type": "pdf",
+      "title": "CIA-UAP-007 — la CIA repasa el estado del asunto ovni un año después del Panel Robertson (17 de diciembre de 1953)",
+      "title_en": "CIA-UAP-007 — the CIA reviews the state of the UFO question a year after the Robertson Panel (December 17, 1953)",
+      "description": "Documento relacionado con el Panel Robertson, no un registro del film de Tremonton: memorando secreto del 17 de diciembre de 1953 en el que Todos M. Odarenko, jefe de la división de Física y Electrónica de la oficina de inteligencia científica de la CIA, resume para su director adjunto el estado de los ovnis un año después del panel. Cuenta que la oficina se limitaba a seguir lo que hacían otras agencias; que en el centro de inteligencia técnica de la Fuerza Aérea (ATIC) Project Blue Book lo llevaban un oficial, un aviador y una secretaria, que ya no investigaban sobre el terreno, y que el proyecto pasaba al Mando de Defensa Aérea; y que se habían comprado cien cámaras con red de difracción para fotografiar los ovnis, se habían repartido 74 y el 90 % de las redes se había despegado de su soporte. Dice que la caída de los avistamientos de 1953 frente a 1952 podía atribuirse a las recomendaciones del panel de enero de 1953, y menciona dos libros recientes, el de Donald Keyhoe y «Flying Saucers Have Landed», de Leslie y Adamski, este último «so nonsensical and obviously fraudulent» que podía ayudar a calmar al público. Los pasajes sobre Canadá, Gran Bretaña y Suecia tienen partes tachadas; de Gran Bretaña se lee que su única actividad era archivar los informes que recibía la RAF. Son tres páginas, publicadas en la tercera entrega de PURSUE.",
+      "description_en": "A document related to the Robertson Panel, not a record of the Tremonton film: a secret memo of December 17, 1953 in which Todos M. Odarenko, head of the Physics and Electronics Division of the CIA's Office of Scientific Intelligence, sums up for his assistant director where the UFO question stood a year after the panel. It says the office was only keeping track of what other agencies did; that at the Air Force's technical intelligence center (ATIC) Project Blue Book was run by one officer, one airman and a secretary, who no longer did field investigations, and that the project was being handed to Air Defense Command; and that a hundred cameras with diffraction gratings had been bought to photograph UFOs, 74 had been handed out, and 90 percent of the gratings had come loose from their mounts. It says the drop in sightings in 1953 compared with 1952 could be attributed to the panel's January 1953 recommendations, and mentions two recent books, Donald Keyhoe's and Leslie and Adamski's \"Flying Saucers Have Landed,\" the latter \"so nonsensical and obviously fraudulent\" that it might help calm the public. The passages on Canada, Britain and Sweden are partly redacted; on Britain, the visible text says its only activity was filing the reports the RAF received. Three pages, released in the third PURSUE release.",
+      "source": "Central Intelligence Agency (PURSUE Release 03)",
+      "source_en": "Central Intelligence Agency (PURSUE Release 03)",
+      "license": "Dominio público · obra del Gobierno de EE. UU.",
+      "fallbackUrl": "https://www.war.gov/medialink/ufo/061226/release_03/documents/CIA-UAP-007_Current_Status_of_Unidentified_Flying_Objects_UFO_Project.pdf"
     }
   ],
   "misidSubtype": "animal",
@@ -240,6 +266,7 @@
     "url": "https://archive.org/details/cia-readingroom-document-cia-rdp79b00752a000300100010-4"
   },
   "pursueReleases": [
+    3,
     6,
     8
   ],

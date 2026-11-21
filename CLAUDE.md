@@ -335,6 +335,8 @@ Las líneas que terminan en ↪ tienen su relato completo (casos, cifras, diagn�
 
 - **No** usar un subagente como lector ciego: recibe `CLAUDE.md` entero, con la guía de redacción y el modelo MECE, y el antiguo `ficha-lector` citaba la E56 de memoria (20 nov 2026). La prueba del lector corre con `tools/lector-ciego/lector.mjs`, fuera del repo y con `--setting-sources local`, que deja fuera también el `CLAUDE.md` global.
 
+- **No** proponer al dueño montar un documento en una ficha, ni dárselo a un agente, sin buscar antes su código en `docs/registros.md`: D44 se había sacado el 15 nov 2026 del caso del golfo de Adén porque su cuadrícula cae frente a Omán, y el 21 nov se volvió a proponer como «mismo golfo», se aprobó y hubo que revertirlo.
+
 - **No** lanzar más de ~4 agentes pesados a la vez ni poner dos a editar el mismo fichero: con seis simultáneos la sesión chocó con el límite de uso y dos murieron sin editar nada; y los commits WIP periódicos del Stop hook recogen a medias el trabajo de un agente que sigue escribiendo. Tandas de 4 correctores, y el verificador de una tanda solo cuando su corrector terminó. *(sep 2026)*
 
 - **No** dar a un agente rutas relativas ni un nombre de lote sin comprobar que está libre: un agente escribió `rewrite/` en la raíz del repo en vez de en el scratchpad, y tres encontraron `parche-B14.json`, `B16` y `verif-B15.md` de lotes anteriores e improvisaron otros nombres (oct 2026). El brief lleva rutas absolutas y un nombre de lote nuevo; antes de publicar, `git status` no debe mostrar nada fuera de `web/`.

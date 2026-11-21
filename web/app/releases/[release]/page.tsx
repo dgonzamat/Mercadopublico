@@ -6,8 +6,13 @@ import { ShareButton } from "@/components/ShareButton";
 
 import { pageMeta, hreflangFor } from "@/lib/seo";
 import { cases } from "@/lib/data";
+import releaseVideos from "@/data/release-videos.json";
+import releaseDocuments from "@/data/release-documents.json";
+
+const basePath = process.env.NEXT_PUBLIC_BASE_PATH ?? "";
 import { CaseRow } from "@/components/CaseRow";
 import { T } from "@/components/T";
+import DvidsVideo from "@/components/DvidsVideo";
 import { Eyebrow, H1, Lede } from "@/lib/typography";
 
 // Releases del PURSUE/AARO presentes en el corpus (deriva del campo
@@ -17,6 +22,48 @@ const RELEASES: number[] = Array.from(
 ).sort((a, b) => a - b);
 
 const pad = (n: number) => String(n).padStart(2, "0");
+
+// Videos de DVIDS de cada entrega que no sostienen un caso propio. Vivían en
+// fichas de catálogo que se retiraron el 15 oct 2026 (ningún documento tiene
+// ficha propia) y quedaron fuera del sitio; aquí se listan con el título, la
+// fecha y la procedencia que da DVIDS (nov 2026).
+type ReleaseVideo = {
+  release: number;
+  code: string;
+  dvidsId: string;
+  title: string;
+  // El título sin el código; en la 02 es el del uploader, sin comillas (DVIDS
+  // deja abierta la de 18 de ellos), y las pone la página.
+  label: string;
+  date: string;
+  submittedBy: string | null;
+  reports: string[] | null;
+};
+
+// Informes de la entrega que no respaldan ningún caso del corpus (los PDF de la
+// ficha retirada dow-centcom-2020, nov 2026). `videos` son los vídeos de DVIDS
+// con los que forman pareja; los que no tienen pareja se listan aparte.
+type ReleaseDocument = {
+  release: number;
+  code: string;
+  src: string;
+  date: string | null;
+  type: string;
+  type_en: string;
+  place: string;
+  place_en: string;
+  videos: string[] | null;
+};
+
+// DVIDS pone el día 1 cuando solo se sabe el mes, y el 1 de enero cuando solo
+// se sabe el año: los datos guardan AAAA, AAAA-MM o AAAA-MM-DD.
+function videoDate(d: string, locale: "es" | "en") {
+  if (d.length === 4) return d;
+  const [y, m, day] = d.split("-").map(Number);
+  const opts: Intl.DateTimeFormatOptions =
+    day ? { day: "numeric", month: "long", year: "numeric", timeZone: "UTC" } : { month: "long", year: "numeric", timeZone: "UTC" };
+  return new Date(Date.UTC(y, m - 1, day || 1)).toLocaleDateString(locale === "es" ? "es" : "en-US", opts);
+}
 
 // La "más reciente" se DERIVA del conjunto, nunca se escribe en el copy:
 // el blurb de la quinta entrega siguió proclamándose la más reciente seis
@@ -158,6 +205,26 @@ export async function ReleasePage({
     .sort((a, b) => b.num - a.num);
   const t = { S: 0, A: 0, B: 0 };
   for (const c of list) t[c.tier] += 1;
+  const videos = (releaseVideos as ReleaseVideo[]).filter((v) => v.release === n);
+  const docs = (releaseDocuments as ReleaseDocument[]).filter((d) => d.release === n);
+  const docsFor = (code: string) => docs.filter((d) => d.videos?.includes(code));
+  const looseDocs = docs.filter((d) => !d.videos);
+  const docLine = (d: ReleaseDocument) => (
+    <>
+      <a
+        href={`${basePath}${d.src}`}
+        target="_blank"
+        rel="noopener noreferrer"
+        className="inline-flex min-h-[44px] items-center text-sm leading-snug text-text underline decoration-dotted hover:text-accent"
+      >
+        {d.code} · <T es={d.type} en={d.type_en} locale={locale} /> (PDF)
+      </a>
+      <span className="block font-mono text-xs text-muted">
+        {d.date ? `${videoDate(d.date, locale)} · ` : ""}
+        <T es={d.place} en={d.place_en} locale={locale} />
+      </span>
+    </>
+  );
   const meta = RELEASE_META[n] ?? {
     es: `PURSUE · Release ${pad(n)}`,
     en: `PURSUE · Release ${pad(n)}`,
@@ -231,6 +298,106 @@ export async function ReleasePage({
           <CaseRow key={c.id} caseData={c} locale={locale} />
         ))}
       </section>
+
+      {(videos.length > 0 || docs.length > 0) && (
+        <section className="space-y-3 border-t border-border pt-6">
+          <Eyebrow>
+            <T
+              es={
+                videos.length > 0 && docs.length > 0
+                  ? "vídeos y documentos sin ficha propia"
+                  : videos.length > 0
+                    ? "vídeos sin ficha propia"
+                    : "documentos sin ficha propia"
+              }
+              en={
+                videos.length > 0 && docs.length > 0
+                  ? "videos and documents without a case of their own"
+                  : videos.length > 0
+                    ? "videos without a case of their own"
+                    : "documents without a case of their own"
+              }
+              locale={locale}
+            />
+          </Eyebrow>
+          {videos.length > 0 && (
+            <>
+              <p className="max-w-3xl text-sm leading-relaxed text-text">
+                <T
+                  es={`Estos ${videos.length} vídeos de la entrega no tienen ficha: lo que traen no basta para sostener un caso. Se muestran con el reproductor de DVIDS y con el título, la fecha de grabación y la procedencia que da DVIDS.`}
+                  en={`These ${videos.length} videos from the release have no case page: what they contain is not enough to support one. They are shown with the DVIDS player and with the title, recording date and origin given by DVIDS.`}
+                  locale={locale}
+                />
+                {n === 2 && (
+                  <>
+                    {" "}
+                    <T
+                      es="Proceden de una red clasificada y, según la AARO, «Many of these materials lack a substantiated chain-of-custody» (muchos carecen de una cadena de custodia demostrada); el título entre comillas lo puso quien subió el archivo."
+                      en="They come from a classified network and, according to AARO, “Many of these materials lack a substantiated chain-of-custody”; the title in quotation marks was given by whoever uploaded the file."
+                      locale={locale}
+                    />
+                  </>
+                )}
+              </p>
+              <ul className="grid gap-x-6 gap-y-8 border-t border-border pt-4 md:grid-cols-2">
+                {videos.map((v) => (
+                  <li key={v.dvidsId} className="space-y-1">
+                    <DvidsVideo
+                      src={`https://www.dvidshub.net/video/embed/${v.dvidsId}`}
+                      title={`${v.code} · ${v.label}`}
+                    />
+                    <a
+                      href={`https://www.dvidshub.net/video/${v.dvidsId}`}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="inline-flex min-h-[44px] flex-wrap items-center text-sm text-text hover:text-accent"
+                    >
+                      <span className="mr-2 font-mono text-xs text-muted">{v.code}</span>
+                      {n === 2 ? (locale === "es" ? `«${v.label}»` : `“${v.label}”`) : v.label} ↗
+                    </a>
+                    <p className="font-mono text-xs text-muted">
+                      {videoDate(v.date, locale)}
+                      {v.submittedBy ? ` · ${v.submittedBy}` : ""}
+                      {v.reports && docsFor(v.code).length === 0 ? ` · ${v.reports.join(", ")}` : ""}
+                    </p>
+                    {docsFor(v.code).map((d) => (
+                      <p key={d.code} className="pl-4">
+                        {docLine(d)}
+                      </p>
+                    ))}
+                  </li>
+                ))}
+              </ul>
+            </>
+          )}
+          {looseDocs.length > 0 && (
+            <>
+              <p className={`max-w-3xl text-sm leading-relaxed text-text${videos.length > 0 ? " pt-3" : ""}`}>
+                <T
+                  es={
+                    videos.length > 0
+                      ? `Y ${looseDocs.length} documentos de la entrega sin vídeo publicado ni ficha, con lo que se lee en el propio documento:`
+                      : `Estos ${looseDocs.length} documentos de la entrega no respaldan ningún caso ni perfil del sitio. Se listan con lo que se lee en el propio documento:`
+                  }
+                  en={
+                    videos.length > 0
+                      ? `And ${looseDocs.length} documents from the release with no published video or case page, with what the document itself says:`
+                      : `These ${looseDocs.length} documents from the release support no case or profile on the site. They are listed with what the document itself says:`
+                  }
+                  locale={locale}
+                />
+              </p>
+              <ul className="divide-y divide-border border-y border-border">
+                {looseDocs.map((d) => (
+                  <li key={d.code} className="py-1">
+                    {docLine(d)}
+                  </li>
+                ))}
+              </ul>
+            </>
+          )}
+        </section>
+      )}
 
       <PrevNext
         label={locale === "es" ? "Navegación entre entregas" : "Release navigation"}

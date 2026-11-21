@@ -15,6 +15,9 @@
     "precision": "exact"
   },
   "tier": "A",
+  "pursueReleases": [
+    3
+  ],
   "mundanoType": "misid",
   "misidSubtype": "animal",
   "classBasis": {
@@ -113,6 +116,20 @@
       "source_en": "National Archives of Australia, A703 580/1/1 Part 3, pp. 160, 152 and 154 of the PDF (The Black Vault mirror, with the NAA's permission); the witness statement and the letter from a private individual are omitted",
       "license": "Dominio público (obra del Gobierno de Australia anterior a 1975)",
       "fallbackUrl": "https://documents.theblackvault.com/documents/ufos/australia/A703_580-1-1_Part%203_756666.pdf"
+    },
+    {
+      "role": "documento",
+      "src": "/pursue/CIA-UAP-019-Australian_Dept_of_Defense_Scientific_and_Intel_Aspects_of_the_UFO_Problem.pdf",
+      "page": 13,
+      "type": "pdf",
+      "title": "CIA-UAP-019 — copia del Turner Report publicada por la CIA: minuta de la inteligencia de Defensa australiana del 27 de mayo de 1971 (19 págs.)",
+      "title_en": "CIA-UAP-019 — copy of the Turner Report released by the CIA: Australian defence intelligence minute of May 27, 1971 (19 pp.)",
+      "description": "Copia de 19 páginas del Turner Report, la minuta «Scientific and Intelligence Aspects of the UFO Problem» que O. H. Turner, jefe de la rama nuclear de la Joint Intelligence Organisation (JIO), el servicio de inteligencia del Departamento de Defensa australiano, firmó el 27 de mayo de 1971; la publicó la CIA y sus páginas llevan el pie del Archivo Nacional de Australia (A13693, 3092/2/000). Trae la carátula de expediente cerrado, la minuta de envío al director con anotaciones a mano, el resumen y el informe sobre la actitud oficial de EE. UU. ante los ovnis, con una cronología en apéndice; una página sale dos veces, y falta el segundo documento que la minuta dice adjuntar, sobre supuestos sistemas de armas de los ovnis. En la página 13 del PDF, la sección sobre la Real Fuerza Aérea Australiana (RAAF) critica la lista de identificaciones de todos los avistamientos de 1960 a 1965: da por inválidas sus 15 atribuciones a Venus y solo ve posibles 9 de sus 37 atribuciones a meteoros, sin nombrar casos. A diferencia del expediente completo del archivo australiano, esta copia no incluye los mensajes sobre Mt Hale. Se publicó en la tercera entrega de PURSUE.",
+      "description_en": "A 19-page copy of the Turner Report, the minute \"Scientific and Intelligence Aspects of the UFO Problem\" signed on May 27, 1971 by O. H. Turner, head of the Nuclear Branch of the Joint Intelligence Organisation (JIO), the intelligence service of Australia's Department of Defence; it was released by the CIA and its pages carry the footer of the National Archives of Australia (A13693, 3092/2/000). It has the closed-file cover, the cover minute to the director with handwritten notes, the summary and the report on the official U.S. attitude to UFOs, with a chronology in an appendix; one page appears twice, and the second document the minute says is attached, on alleged UFO weapon systems, is missing. On page 13 of the PDF, the section on the Royal Australian Air Force (RAAF) criticizes the list of identifications of all sightings from 1960 to 1965: it rejects all 15 of its attributions to Venus and finds only 9 of its 37 meteor attributions possible, without naming cases. Unlike the full file in the Australian archive, this copy does not include the messages about Mt Hale. It was released in the third PURSUE release.",
+      "source": "Central Intelligence Agency (PURSUE Release 03)",
+      "source_en": "Central Intelligence Agency (PURSUE Release 03)",
+      "license": "Dominio público (obra del Gobierno de Australia anterior a 1975)",
+      "fallbackUrl": "https://www.war.gov/medialink/ufo/061226/release_03/documents/CIA-UAP-019-Australian_Dept_of_Defense_Scientific_and_Intel_Aspects_of_the_UFO_Problem.pdf"
     },
     {
       "role": "documento",
