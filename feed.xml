@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>UAP Codex — Blog</title>
+    <link>https://uapcodex.org/blog</link>
+    <atom:link href="https://uapcodex.org/feed.xml" rel="self" type="application/rss+xml" />
+    <description>Method notes and progress from the UAP Codex research notebook.</description>
+    <language>en</language>
+    <lastBuildDate>Sat, 21 Nov 2026 19:43:53 GMT</lastBuildDate>
+    <item>
+      <title>How to put a probability on a UAP case</title>
+      <link>https://uapcodex.org/blog/como-se-pone-probabilidad-caso-uap</link>
+      <guid isPermaLink="true">https://uapcodex.org/blog/como-se-pone-probabilidad-caso-uap</guid>
+      <pubDate>Sun, 21 Jun 2026 00:00:00 GMT</pubDate>
+      <description>The UAP debate tends to be binary: believer versus skeptic. This project uses a different tool —splitting each case's 100% of probability across six mutually exclusive explanations— to make the 200 cases the corpus held in June 2026 comparable without faking certainty. Here is how it works, and what the numbers say.</description>
+    </item>
+    <item>
+      <title>The disclosure cycle 2017-2026: from leak to infrastructure</title>
+      <link>https://uapcodex.org/blog/ciclo-disclosure-2017-2026</link>
+      <guid isPermaLink="true">https://uapcodex.org/blog/ciclo-disclosure-2017-2026</guid>
+      <pubDate>Tue, 16 Jun 2026 00:00:00 GMT</pubDate>
+      <description>In less than a decade the UAP topic went from a leaked news story to a federal portal with a presidential mandate. But more release is not more evidence: the corpus separates the change of channel from the change of proof.</description>
+    </item>
+    <item>
+      <title>Radar-visual cases: the hard subset</title>
+      <link>https://uapcodex.org/blog/casos-radar-visual-subconjunto-duro</link>
+      <guid isPermaLink="true">https://uapcodex.org/blog/casos-radar-visual-subconjunto-duro</guid>
+      <pubDate>Mon, 15 Jun 2026 00:00:00 GMT</pubDate>
+      <description>When an object appears at once on a radar screen and to a pilot's eyes, the easy explanations run out of room. It is the corpus's most resistant subset — and the smallest.</description>
+    </item>
+    <item>
+      <title>The most-witnessed event is not the most anomalous</title>
+      <link>https://uapcodex.org/blog/mas-presenciado-no-es-mas-anomalo</link>
+      <guid isPermaLink="true">https://uapcodex.org/blog/mas-presenciado-no-es-mas-anomalo</guid>
+      <pubDate>Mon, 15 Jun 2026 00:00:00 GMT</pubDate>
+      <description>Hundreds or thousands of witnesses impress, but the number of observers measures notoriety, not rarity. Three of the corpus's most massive sightings have prosaic explanations — and that is why they are in.</description>
+    </item>
+    <item>
+      <title>The Latin American model: when civil aviation studies UAP</title>
+      <link>https://uapcodex.org/blog/comisiones-uap-latinoamerica</link>
+      <guid isPermaLink="true">https://uapcodex.org/blog/comisiones-uap-latinoamerica</guid>
+      <pubDate>Mon, 15 Jun 2026 00:00:00 GMT</pubDate>
+      <description>While the United States treated the phenomenon as a problem of secrecy, several South American countries institutionalized it through aviation —air-force and civil-aviation commissions that investigate openly. The corpus documents that model with unusual density.</description>
+    </item>
+    <item>
+      <title>How to read the corpus probabilities</title>
+      <link>https://uapcodex.org/blog/leer-icd203</link>
+      <guid isPermaLink="true">https://uapcodex.org/blog/leer-icd203</guid>
+      <pubDate>Sat, 20 Jun 2026 00:00:00 GMT</pubDate>
+      <description>Why the site splits 100% of each case among six explanations, what it means for probabilities to be &quot;comparable&quot;, and why that is not the same as truth.</description>
+    </item>
+    <item>
+      <title>Why an open notebook on UAP</title>
+      <link>https://uapcodex.org/blog/cuaderno-abierto</link>
+      <guid isPermaLink="true">https://uapcodex.org/blog/cuaderno-abierto</guid>
+      <pubDate>Thu, 15 Jan 2026 00:00:00 GMT</pubDate>
+      <description>UAP Codex is neither a believers' nor a skeptics' site: it is a research notebook with its reasoning on display. This explains what it is for.</description>
+    </item>
+  </channel>
+</rss>
