@@ -215,12 +215,11 @@ export async function ReleasePage({
         href={`${basePath}${d.src}`}
         target="_blank"
         rel="noopener noreferrer"
-        className="inline-flex min-h-[44px] items-center text-sm text-text underline decoration-dotted hover:text-accent"
+        className="inline-flex min-h-[44px] items-center text-sm leading-snug text-text underline decoration-dotted hover:text-accent"
       >
         {d.code} · <T es={d.type} en={d.type_en} locale={locale} /> (PDF)
       </a>
-      <span className="font-mono text-xs text-muted">
-        {" · "}
+      <span className="block font-mono text-xs text-muted">
         {d.date ? `${videoDate(d.date, locale)} · ` : ""}
         <T es={d.place} en={d.place_en} locale={locale} />
       </span>

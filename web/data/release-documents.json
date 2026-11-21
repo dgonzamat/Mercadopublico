@@ -480,5 +480,27 @@
   "place": "Gemini 9; un meteoro brillante y ningún objeto sin identificar",
   "place_en": "Gemini 9; one bright meteor and no unidentified objects",
   "videos": null
+ },
+ {
+  "release": 1,
+  "code": "RG 341 (USAFE)",
+  "src": "/pursue/341_110448_records_relating_to_the_collection_and_dissemination_of_intelligence_1948-1955-ts_cont_no.2_2-5300-2-5399.pdf",
+  "date": "1948-11-04",
+  "type": "Parte de inteligencia de la USAFE",
+  "type_en": "USAFE intelligence report",
+  "place": "Suecia: platillos y un cráter en un lago, con la búsqueda submarina en curso; no menciona los cohetes fantasma de 1946",
+  "place_en": "Sweden: saucers and a crater in a lake, with the underwater search under way; it does not mention the 1946 ghost rockets",
+  "videos": null
+ },
+ {
+  "release": 1,
+  "code": "RG 18 (1948, vol. 1)",
+  "src": "/pursue/18_6369445_general_1948_vol_1.pdf",
+  "date": null,
+  "type": "Archivo del Estado Mayor de la Fuerza Aérea",
+  "type_en": "Air Staff file",
+  "place": "1948: arranque del proyecto Sign, la propuesta de cazas en alerta rechazada en marzo y avisos sueltos",
+  "place_en": "1948: the start of Project Sign, the fighter-alert proposal rejected in March and scattered reports",
+  "videos": null
  }
 ]
