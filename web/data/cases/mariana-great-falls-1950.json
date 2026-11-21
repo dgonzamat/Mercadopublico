@@ -1,6 +1,9 @@
 {
   "id": "mariana-great-falls-1950",
   "num": 216,
+  "pursueReleases": [
+    5
+  ],
   "name": "Great Falls · un gerente de béisbol filma dos objetos plateados",
   "name_en": "Great Falls · a baseball manager films two silver objects",
   "year_start": 1950,
@@ -117,6 +120,19 @@
   },
   "evidenceReviewed": "2026-10-02",
   "documents": [
+    {
+      "role": "documento",
+      "src": "/pursue/DOW-UAP-D098_Film-Analysis-of-Unidentified-Objects_1953.pdf",
+      "type": "pdf",
+      "title": "DOW-UAP-D098 · informe final del laboratorio de interpretación fotográfica de la Marina sobre las películas de Utah y Montana (4 de mayo de 1953): extracto de 7 páginas (PURSUE Release 05)",
+      "title_en": "DOW-UAP-D098 · final report of the Navy photographic interpretation laboratory on the Utah and Montana films (May 4, 1953): 7-page extract (PURSUE Release 05)",
+      "source": "Department of War · PURSUE Release 05 (U.S. Naval Photographic Interpretation Center)",
+      "source_en": "Department of War · PURSUE Release 05 (U.S. Naval Photographic Interpretation Center)",
+      "license": "Dominio público · obra del Gobierno de EE. UU. (17 USC §105)",
+      "fallbackUrl": "https://www.war.gov/medialink/ufo/080726/release_05/documents/DOW-UAP-D098_Film-Analysis-of-Unidentified-Objects_1953.pdf",
+      "description": "Informe del 4 de mayo de 1953 del jefe del Centro de Interpretación Fotográfica de la Marina de EE. UU., en Washington, L. W. Keith, al director de Inteligencia Naval sobre las películas de objetos no identificados de Utah (2 de julio de 1952) y Montana (1950), que la Fuerza Aérea había pedido analizar. Aquí van sus siete páginas de texto; el original, de 23 páginas, añade la hoja de ruta de la Oficina de Aeronáutica de la Marina y los gráficos de posiciones y densidades, que están en el enlace oficial. Sustituye al informe del 5 de diciembre de 1952 y admite sus límites: la película estudiada era «un duplicado de una copia», seca y quebradiza, y la sonda del densitómetro no medía bien objetos de tamaño cambiante. Concluye que un brillo sin parpadeo durante unos 90 segundos y 60 grados de arco hace improbable un reflejo, que la mayoría del grupo los considera fuentes de luz y que las velocidades y aceleraciones descartan aves, aviones y globos. Esas cifras (de 378 a 2.457 mph y hasta 965 g en Utah; hasta 1.374 mph en Montana, donde objetos del terreno sirvieron de referencia) parten de suponer los objetos a cinco millas, una hipótesis que el informe llama arbitraria. Cierra diciendo que no se intentó corroborar las opiniones, que faltaron equipo, dinero y personal, y que estaba en preparación un análisis espectrofotométrico de la película de Utah pedido por la Fuerza Aérea el 16 de febrero de 1953.",
+      "description_en": "A May 4, 1953 report from L. W. Keith, officer in charge of the U.S. Naval Photographic Interpretation Center in Washington, to the Director of Naval Intelligence on the films of unidentified objects taken in Utah (July 2, 1952) and Montana (1950), which the Air Force had asked the Navy to analyze. This file holds its seven pages of text; the 23-page original adds a routing sheet from the Navy's Bureau of Aeronautics and the charts of positions and densities, available at the official link. It supersedes the report of December 5, 1952 and admits its limits: the film studied was \"a duplicate of a copy,\" dry and brittle, and the densitometer probe could not properly measure objects whose size kept changing. It concludes that steady, non-blinking light over about 90 seconds and 60 degrees of arc makes a reflection improbable, that the majority of the group considers the objects light sources, and that their speeds and accelerations rule out birds, aircraft and balloons. Those figures (378 to 2,457 mph and up to 965 g in Utah; up to 1,374 mph in Montana, where objects on the ground served as reference) rest on assuming the objects were five miles away, an assumption the report calls arbitrary. It closes by saying that no attempt was made to corroborate the opinions, that equipment, money and personnel were lacking, and that a spectrophotometric analysis of the Utah film, requested by the Air Force on February 16, 1953, was being planned."
+    },
     {
       "role": "documento",
       "src": "/pursue/CIA-UAP-002_Scientific-Advisory-Panel-on-Unidentified-Flying-Objects_Report_1952-1953.pdf",
