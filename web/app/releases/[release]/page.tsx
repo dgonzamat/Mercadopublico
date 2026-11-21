@@ -212,12 +212,12 @@ export async function ReleasePage({
   const docLine = (d: ReleaseDocument) => (
     <>
       <a
-        href={`${basePath}${d.src}`}
+        href={d.src.startsWith("http") ? d.src : `${basePath}${d.src}`}
         target="_blank"
         rel="noopener noreferrer"
         className="inline-flex min-h-[44px] items-center text-sm leading-snug text-text underline decoration-dotted hover:text-accent"
       >
-        {d.code} · <T es={d.type} en={d.type_en} locale={locale} /> (PDF)
+        {d.code} · <T es={d.type} en={d.type_en} locale={locale} /> {d.src.startsWith("http") ? "(PDF, archive.org)" : "(PDF)"}
       </a>
       <span className="block font-mono text-xs text-muted">
         {d.date ? `${videoDate(d.date, locale)} · ` : ""}
