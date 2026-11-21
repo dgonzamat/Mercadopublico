@@ -280,7 +280,7 @@
   "type": "Cable del Departamento de Estado",
   "type_en": "State Department cable",
   "place": "Moscú, sobre el desfiladero de Kodori (Georgia); «UFOs» va en sentido irónico",
-  "place_en": "Moscow, on the Kodori Gorge (Georgia); «UFOs» is used ironically",
+  "place_en": "Moscow, on the Kodori Gorge (Georgia); \"UFOs\" is used ironically",
   "videos": null
  },
  {
@@ -290,8 +290,8 @@
   "date": "2004-11-12",
   "type": "Cable del Departamento de Estado",
   "type_en": "State Department cable",
-  "place": "Asjabad, sobre una asociación de ufólogos de Turkmenistán",
-  "place_en": "Ashgabat, on a ufologists' association in Turkmenistan",
+  "place": "Asjabad, sobre la Unión de Ufólogos de Turkmenabat",
+  "place_en": "Ashgabat, on the Union of UFOlogists of Turkmenabat",
   "videos": null
  },
  {
@@ -309,7 +309,7 @@
   "release": 2,
   "code": "DOE-UAP-D003",
   "src": "/pursue/DOE-UAP-D003_Pajarito_Astronomers.pdf",
-  "date": "1986",
+  "date": "1986-05-20",
   "type": "Invitación de los Pajarito Astronomers",
   "type_en": "Pajarito Astronomers invitation",
   "place": "Los Álamos",
@@ -331,22 +331,22 @@
   "release": 3,
   "code": "CIA-UAP-005",
   "src": "/pursue/CIA-UAP-005-GERMAN_SCIENTISTS_ARTICLE_ON_FLYING_DISCS.pdf",
-  "date": "1950",
+  "date": "1950-07-31",
   "type": "Documento de la CIA",
   "type_en": "CIA document",
-  "place": "artículo de Eduard Ludwig (Chile) sobre discos voladores de científicos alemanes",
-  "place_en": "article by Eduard Ludwig (Chile) on German scientists' flying discs",
+  "place": "artículo del científico alemán Eduard Ludwig, en Santiago de Chile, sobre los «discos voladores»",
+  "place_en": "article by German scientist Eduard Ludwig, in Santiago, Chile, on the \"flying discs\"",
   "videos": null
  },
  {
   "release": 3,
   "code": "CIA-UAP-008",
   "src": "/pursue/CIA-UAP-008_SPECULATIVE_PAPER_BY_N_KARDASHEV_AND_A_SAKHAROV.pdf",
-  "date": "1971",
+  "date": "1972-04-10",
   "type": "Documento de la CIA",
   "type_en": "CIA document",
-  "place": "artículo especulativo de Kardashev y Sájarov (física teórica)",
-  "place_en": "speculative paper by Kardashev and Sakharov (theoretical physics)",
+  "place": "Ereván, 6–8 de septiembre de 1971: artículo especulativo de Kardashev y Sájarov (física teórica)",
+  "place_en": "Yerevan, September 6–8, 1971: speculative paper by Kardashev and Sakharov (theoretical physics)",
   "videos": null
  },
  {
@@ -389,8 +389,8 @@
   "date": "1956-04-17",
   "type": "Informe de información de la CIA",
   "type_en": "CIA information report",
-  "place": "Budapest, 1955–1956, de segunda mano y sin evaluar; gemelo de CIA-UAP-018",
-  "place_en": "Budapest, 1955–1956, secondhand and unevaluated; twin of CIA-UAP-018",
+  "place": "Budapest, 1955, de segunda mano y sin evaluar; una página, sin la carta que trae CIA-UAP-018",
+  "place_en": "Budapest, 1955, secondhand and unevaluated; one page, without the letter in CIA-UAP-018",
   "videos": null
  },
  {
@@ -400,15 +400,15 @@
   "date": "1956-04-17",
   "type": "Informe de información de la CIA",
   "type_en": "CIA information report",
-  "place": "Budapest, 1955–1956, de segunda mano y sin evaluar; gemelo de CIA-UAP-013",
-  "place_en": "Budapest, 1955–1956, secondhand and unevaluated; twin of CIA-UAP-013",
+  "place": "Budapest, 1955, de segunda mano y sin evaluar; el informe de CIA-UAP-013 con la carta traducida",
+  "place_en": "Budapest, 1955, secondhand and unevaluated; the CIA-UAP-013 report with the translated letter",
   "videos": null
  },
  {
   "release": 3,
   "code": "FBI-UAP-D011",
   "src": "/pursue/FBI-UAP-D011_DFBI-Correspondence-Referral_1949.pdf",
-  "date": "1949",
+  "date": "1949-01-31",
   "type": "Correspondencia del FBI",
   "type_en": "FBI correspondence",
   "place": "carta sobre haces de luz vistos sobre las Cascadas en mayo de 1948",
@@ -453,10 +453,10 @@
   "code": "NASA-UAP-D019",
   "src": "/pursue/NASA-UAP-D019_Gemini-5-Technical-Debriefing_Part1_1965.pdf",
   "date": "1965",
-  "type": "Debriefing técnico de la NASA",
+  "type": "Informe técnico posvuelo de la NASA",
   "type_en": "NASA technical debriefing",
-  "place": "Gemini 5, parte 1; sin avistamientos",
-  "place_en": "Gemini 5, part 1; no sightings",
+  "place": "Gemini 5, parte 1 (relato operativo); ningún objeto sin identificar",
+  "place_en": "Gemini 5, part 1 (operational account); no unidentified objects",
   "videos": null
  },
  {
@@ -464,10 +464,10 @@
   "code": "NASA-UAP-D020",
   "src": "/pursue/NASA-UAP-D020_Gemini-5-Technical-Debriefing_Part2_1965.pdf",
   "date": "1965",
-  "type": "Debriefing técnico de la NASA",
+  "type": "Informe técnico posvuelo de la NASA",
   "type_en": "NASA technical debriefing",
-  "place": "Gemini 5, parte 2; sin avistamientos",
-  "place_en": "Gemini 5, part 2; no sightings",
+  "place": "Gemini 5, parte 2; un objeto que la tripulación no llegó a identificar («no sé si era un satélite»)",
+  "place_en": "Gemini 5, part 2; one object the crew could not identify (\"I don't even know if it was a satellite\")",
   "videos": null
  },
  {
@@ -475,10 +475,10 @@
   "code": "NASA-UAP-D022",
   "src": "/pursue/NASA-UAP-D022_Gemini-9-Debriefing_1966.pdf",
   "date": "1966",
-  "type": "Debriefing de la NASA",
-  "type_en": "NASA debriefing",
-  "place": "Gemini 9; sin avistamientos",
-  "place_en": "Gemini 9; no sightings",
+  "type": "Expediente de la NASA sobre el informe posvuelo",
+  "type_en": "NASA file on the debriefing",
+  "place": "Gemini 9; un meteoro brillante y ningún objeto sin identificar",
+  "place_en": "Gemini 9; one bright meteor and no unidentified objects",
   "videos": null
  }
 ]
