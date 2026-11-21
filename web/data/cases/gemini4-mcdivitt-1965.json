@@ -15,6 +15,9 @@
     "precision": "none"
   },
   "tier": "A",
+  "pursueReleases": [
+    3
+  ],
   "mundanoType": "misid",
   "epistemicStatus": "documented",
   "probability": 34,
@@ -147,6 +150,20 @@
       "fallbackUrl": "https://www.war.gov/medialink/ufo/061226/release_03/documents/NASA-UAP-D018_Gemini-4_Experiment-Debriefing_1967.pdf",
       "description": "Compilación de la NASA sobre los experimentos de Gemini 4. Abre con el memorando del 1 de junio de 1965 que añadió al plan de vuelo el paseo espacial, la unidad de propulsión individual y una aproximación a la segunda etapa del cohete, en la que se instalaron luces intermitentes para la prueba; sigue con la descripción de los experimentos fotográficos la transcripción del interrogatorio posterior sobre ellos y otros papeles de la misión, como hojas del plan de vuelo y télex.",
       "description_en": "A NASA compilation on the Gemini 4 experiments. It opens with the June 1, 1965 memorandum that added to the flight plan the spacewalk, the one-man propulsion unit and a rendezvous with the rocket's second stage, which was fitted with flashing lights for the test; it continues with descriptions of the photographic experiments the transcript of the debriefing on them, and other mission papers such as flight-plan sheets and telegraphic messages."
+    },
+    {
+      "role": "documento",
+      "src": "/pursue/USG-UAP-D001_Congress-WhiteHouse-UFO-Correspondence_1998.pdf",
+      "page": 6,
+      "type": "pdf",
+      "title": "USG-UAP-D001 — correspondencia de la NASA de 1998 con el Congreso y la Casa Blanca, con el artículo de James Oberg sobre los ovnis de los astronautas (86 págs.)",
+      "title_en": "USG-UAP-D001 — NASA's 1998 correspondence with Congress and the White House, with James Oberg's article on astronaut UFOs (86 pp.)",
+      "description": "Expediente de 86 páginas de la oficina de asuntos legislativos de la NASA con sus respuestas de 1998 a senadores, representantes y la Casa Blanca, que le reenviaban cartas de ciudadanos sobre ovnis; en las páginas 6 a 31 del PDF incluye una copia del artículo «Astronauts & UFOs: The Whole Story!», que el especialista en vuelo espacial James Oberg publicó en la revista SEARCH en el invierno de 1976. La NASA lo adjuntó a su carta del 4 de septiembre de 1998 al senador Charles Grassley, firmada por Edward Heffernan, que dice que la mayoría de los objetos vistos por los astronautas se identificaron después como material de los cohetes o de las naves. El artículo dedica su parte central al avistamiento de McDivitt: sostiene que vio la segunda etapa de su propio cohete Titan; cita a un alto cargo espacial que el 1 de julio de 1965 escribió «We believe it to be a rocket tank or spent second stage of a rocket» y a un portavoz del mando de defensa aérea de Norteamérica (NORAD) que en febrero de 1976 dio por lógica esa explicación, y cuenta que McDivitt, al recibir el manuscrito, respondió que no había podido leerlo a fondo ni podía comentarlo. Trata también otros casos, como una foto vinculada a Gemini 7 que Oberg califica de falsificación. El resto son cartas, fichas de seguimiento y la hoja informativa de la NASA sobre el gobierno de EE. UU. y los ovnis. Se publicó en la tercera entrega de PURSUE.",
+      "description_en": "An 86-page file from NASA's Office of Legislative Affairs with its 1998 replies to senators, representatives and the White House, who forwarded citizens' letters about UFOs; pages 6 to 31 of the PDF hold a copy of \"Astronauts & UFOs: The Whole Story!,\" the article that spaceflight specialist James Oberg published in SEARCH magazine in the winter of 1976. NASA enclosed it with its September 4, 1998 letter to Senator Charles Grassley, signed by Edward Heffernan, which says that most objects seen by astronauts were later identified as material from launch vehicles or spacecraft. The core of the article is the McDivitt sighting: it argues he saw the second stage of his own Titan rocket; it quotes a senior space official who wrote on July 1, 1965, \"We believe it to be a rocket tank or spent second stage of a rocket,\" and a spokesman for the North American Air Defense Command (NORAD) who in February 1976 called that explanation logical; and it says McDivitt, sent the manuscript, replied that he had not been able to read it thoroughly and could not comment. It also covers other cases, such as a photo tied to Gemini 7 that Oberg calls a forgery. The rest is letters, tracking sheets and NASA's fact sheet on the U.S. government and UFOs. It was released in the third PURSUE release.",
+      "source": "NASA (PURSUE Release 03)",
+      "source_en": "NASA (PURSUE Release 03)",
+      "license": "Dominio público · obra del Gobierno de EE. UU.",
+      "fallbackUrl": "https://www.war.gov/medialink/ufo/061226/release_03/documents/USG-UAP-D001_Congress-WhiteHouse-UFO-Correspondence_1998.pdf"
     }
   ],
   "misidSubtype": "espacial",
