@@ -33,3 +33,5 @@
 {"date":"2026-11-20","probe":"audit-consistency","rule":"E56","where":"data/cases"}
 {"date":"2026-11-20","probe":"audit-consistency","rule":"E62","where":"data/cases"}
 {"date":"2026-11-20","probe":"audit-consistency","rule":"E48","where":"data/cases/orogrande-stokes-1957.json"}
+{"date":"2026-11-21","probe":"audit-consistency","rule":"E52","where":"data/cases"}
+{"date":"2026-11-21","probe":"audit-consistency","rule":"E59","where":"data/cases"}
