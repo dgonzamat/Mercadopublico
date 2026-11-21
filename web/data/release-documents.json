@@ -260,5 +260,16 @@
   "place": "Siria",
   "place_en": "Syria",
   "videos": null
+ },
+ {
+  "release": 1,
+  "code": "DOW-UAP-D44",
+  "src": "/pursue/dow-uap-d44-range-fouler-arabian-sea-october-2020.pdf",
+  "date": "2020-10-15",
+  "type": "Informe de range fouler",
+  "type_en": "Range fouler debrief",
+  "place": "el texto dice golfo de Adén; la cuadrícula, mar Arábigo frente a Omán",
+  "place_en": "the text says Gulf of Aden; the grid, Arabian Sea off Oman",
+  "videos": null
  }
 ]
