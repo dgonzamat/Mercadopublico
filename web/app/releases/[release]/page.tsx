@@ -12,6 +12,7 @@ import releaseDocuments from "@/data/release-documents.json";
 const basePath = process.env.NEXT_PUBLIC_BASE_PATH ?? "";
 import { CaseRow } from "@/components/CaseRow";
 import { T } from "@/components/T";
+import DvidsVideo from "@/components/DvidsVideo";
 import { Eyebrow, H1, Lede } from "@/lib/typography";
 
 // Releases del PURSUE/AARO presentes en el corpus (deriva del campo
@@ -324,8 +325,8 @@ export async function ReleasePage({
             <>
               <p className="max-w-3xl text-sm leading-relaxed text-text">
                 <T
-                  es={`Estos ${videos.length} vídeos de la entrega no tienen ficha: lo que traen no basta para sostener un caso. Se listan con el título, la fecha de grabación y la procedencia que da DVIDS, donde se pueden ver.`}
-                  en={`These ${videos.length} videos from the release have no case page: what they contain is not enough to support one. They are listed with the title, recording date and origin given by DVIDS, where they can be watched.`}
+                  es={`Estos ${videos.length} vídeos de la entrega no tienen ficha: lo que traen no basta para sostener un caso. Se muestran con el reproductor de DVIDS y con el título, la fecha de grabación y la procedencia que da DVIDS.`}
+                  en={`These ${videos.length} videos from the release have no case page: what they contain is not enough to support one. They are shown with the DVIDS player and with the title, recording date and origin given by DVIDS.`}
                   locale={locale}
                 />
                 {n === 2 && (
@@ -339,9 +340,13 @@ export async function ReleasePage({
                   </>
                 )}
               </p>
-              <ul className="divide-y divide-border border-y border-border">
+              <ul className="grid gap-x-6 gap-y-8 border-t border-border pt-4 md:grid-cols-2">
                 {videos.map((v) => (
-                  <li key={v.dvidsId} className="py-2">
+                  <li key={v.dvidsId} className="space-y-1">
+                    <DvidsVideo
+                      src={`https://www.dvidshub.net/video/embed/${v.dvidsId}`}
+                      title={`${v.code} · ${v.label}`}
+                    />
                     <a
                       href={`https://www.dvidshub.net/video/${v.dvidsId}`}
                       target="_blank"
