@@ -6,6 +6,7 @@ import { ShareButton } from "@/components/ShareButton";
 
 import { pageMeta, hreflangFor } from "@/lib/seo";
 import { cases } from "@/lib/data";
+import releaseVideos from "@/data/release-videos.json";
 import { CaseRow } from "@/components/CaseRow";
 import { T } from "@/components/T";
 import { Eyebrow, H1, Lede } from "@/lib/typography";
@@ -17,6 +18,33 @@ const RELEASES: number[] = Array.from(
 ).sort((a, b) => a - b);
 
 const pad = (n: number) => String(n).padStart(2, "0");
+
+// Videos de DVIDS de cada entrega que no sostienen un caso propio. Vivían en
+// fichas de catálogo que se retiraron el 15 oct 2026 (ningún documento tiene
+// ficha propia) y quedaron fuera del sitio; aquí se listan con el título, la
+// fecha y la procedencia que da DVIDS (nov 2026).
+type ReleaseVideo = {
+  release: number;
+  code: string;
+  dvidsId: string;
+  title: string;
+  // El título sin el código; en la 02 es el del uploader, sin comillas (DVIDS
+  // deja abierta la de 18 de ellos), y las pone la página.
+  label: string;
+  date: string;
+  submittedBy: string | null;
+  reports: string[] | null;
+};
+
+// DVIDS pone el día 1 cuando solo se sabe el mes, y el 1 de enero cuando solo
+// se sabe el año: los datos guardan AAAA, AAAA-MM o AAAA-MM-DD.
+function videoDate(d: string, locale: "es" | "en") {
+  if (d.length === 4) return d;
+  const [y, m, day] = d.split("-").map(Number);
+  const opts: Intl.DateTimeFormatOptions =
+    day ? { day: "numeric", month: "long", year: "numeric", timeZone: "UTC" } : { month: "long", year: "numeric", timeZone: "UTC" };
+  return new Date(Date.UTC(y, m - 1, day || 1)).toLocaleDateString(locale === "es" ? "es" : "en-US", opts);
+}
 
 // La "más reciente" se DERIVA del conjunto, nunca se escribe en el copy:
 // el blurb de la quinta entrega siguió proclamándose la más reciente seis
@@ -158,6 +186,7 @@ export async function ReleasePage({
     .sort((a, b) => b.num - a.num);
   const t = { S: 0, A: 0, B: 0 };
   for (const c of list) t[c.tier] += 1;
+  const videos = (releaseVideos as ReleaseVideo[]).filter((v) => v.release === n);
   const meta = RELEASE_META[n] ?? {
     es: `PURSUE · Release ${pad(n)}`,
     en: `PURSUE · Release ${pad(n)}`,
@@ -231,6 +260,51 @@ export async function ReleasePage({
           <CaseRow key={c.id} caseData={c} locale={locale} />
         ))}
       </section>
+
+      {videos.length > 0 && (
+        <section className="space-y-3 border-t border-border pt-6">
+          <Eyebrow>
+            <T es="vídeos sin ficha propia" en="videos without a case of their own" locale={locale} />
+          </Eyebrow>
+          <p className="max-w-3xl text-sm leading-relaxed text-text">
+            <T
+              es={`Estos ${videos.length} vídeos de la entrega no tienen ficha: lo que traen no basta para sostener un caso. Se listan con el título, la fecha de grabación y la procedencia que da DVIDS, donde se pueden ver.`}
+              en={`These ${videos.length} videos from the release have no case page: what they contain is not enough to support one. They are listed with the title, recording date and origin given by DVIDS, where they can be watched.`}
+              locale={locale}
+            />
+            {n === 2 && (
+              <>
+                {" "}
+                <T
+                  es="Proceden de una red clasificada y, según la AARO, «Many of these materials lack a substantiated chain-of-custody» (muchos carecen de una cadena de custodia demostrada); el título entre comillas lo puso quien subió el archivo."
+                  en="They come from a classified network and, according to AARO, “Many of these materials lack a substantiated chain-of-custody”; the title in quotation marks was given by whoever uploaded the file."
+                  locale={locale}
+                />
+              </>
+            )}
+          </p>
+          <ul className="divide-y divide-border border-y border-border">
+            {videos.map((v) => (
+              <li key={v.dvidsId} className="py-2">
+                <a
+                  href={`https://www.dvidshub.net/video/${v.dvidsId}`}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="inline-flex min-h-[44px] flex-wrap items-center text-sm text-text hover:text-accent"
+                >
+                  <span className="mr-2 font-mono text-xs text-muted">{v.code}</span>
+                  {n === 2 ? (locale === "es" ? `«${v.label}»` : `“${v.label}”`) : v.label} ↗
+                </a>
+                <p className="font-mono text-xs text-muted">
+                  {videoDate(v.date, locale)}
+                  {v.submittedBy ? ` · ${v.submittedBy}` : ""}
+                  {v.reports ? ` · ${v.reports.join(", ")}` : ""}
+                </p>
+              </li>
+            ))}
+          </ul>
+        </section>
+      )}
 
       <PrevNext
         label={locale === "es" ? "Navegación entre entregas" : "Release navigation"}

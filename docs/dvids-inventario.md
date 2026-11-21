@@ -20,6 +20,8 @@ Esto obligó a corregir 4 casos que este mismo documento había marcado `[x]` co
 | **Release 03** | 12 jun 2026 | 6 | 6 |
 | | | **117** | **117** |
 
+**Actualización (21 nov 2026)**: el 15 oct 2026 (PR #1103) se retiraron las fichas de catálogo (`dow-centcom-2020`, `dow-uap-release02-catalog-2023`, `dow-uap-release04-05-catalog-2025`, `pursue-release-2026`, `reeves-foia-classified-network-2023`) por la regla de que ningún documento tiene ficha propia; sus 72 vídeos sin caso propio (18 de la 01, 36 de la 02, 14 de la 04 y 4 de la 05) quedaron fuera del sitio hasta el 21 nov, cuando pasaron a la sección «vídeos sin ficha propia» de cada `/releases/NN`, con el título, la fecha y la procedencia de DVIDS (`web/data/release-videos.json`). Donde abajo dice «→ catálogo», léase esa sección.
+
 **Las cinco entregas de PURSUE están 100% mapeadas** (ago 2026): todo video con caso individual verificado tiene su propia ficha narrativa; el resto —sin informe acompañante, comentario técnico, admisión de edición, morfología distintiva ni duración atípica— está embebido en uno de tres catálogos agregadores para que ninguno quede fuera del sitio: `dow-centcom-2020` (Release 01), `dow-uap-release02-catalog-2023` (Release 02, red clasificada) y `dow-uap-release04-05-catalog-2025` (Release 04-05, procedencia institucional directa). Ver la nota de cierre al final de esta sección.
 
 **Tabla completa (todas las series de DVIDS mapeadas en el corpus, no solo PURSUE numerado)** — 158 documentos de video embebidos en 43 casos al cierre de esta sesión (ago 2026):

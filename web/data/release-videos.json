@@ -1,0 +1,742 @@
+[
+ {
+  "release": 1,
+  "code": "DOW-UAP-PR37",
+  "dvidsId": "1006087",
+  "title": "DOW-UAP-PR37, Unresolved UAP Report, Middle East, 2020",
+  "date": "2020",
+  "submittedBy": "U.S. Central Command",
+  "reports": null,
+  "label": "Unresolved UAP Report, Middle East, 2020"
+ },
+ {
+  "release": 1,
+  "code": "DOW-UAP-PR39",
+  "dvidsId": "1006089",
+  "title": "DOW-UAP-PR39, Unresolved UAP Report, Middle East, 2020",
+  "date": "2020",
+  "submittedBy": "U.S. Central Command",
+  "reports": null,
+  "label": "Unresolved UAP Report, Middle East, 2020"
+ },
+ {
+  "release": 1,
+  "code": "DOW-UAP-PR41",
+  "dvidsId": "1006094",
+  "title": "DOW-UAP-PR41, Unresolved UAP Report, Middle East, 2020",
+  "date": "2020",
+  "submittedBy": "U.S. Central Command",
+  "reports": null,
+  "label": "Unresolved UAP Report, Middle East, 2020"
+ },
+ {
+  "release": 1,
+  "code": "DOW-UAP-PR42",
+  "dvidsId": "1006097",
+  "title": "DOW-UAP-PR42, Unresolved UAP Report, Middle East, 2020",
+  "date": "2020",
+  "submittedBy": "U.S. Central Command",
+  "reports": null,
+  "label": "Unresolved UAP Report, Middle East, 2020"
+ },
+ {
+  "release": 1,
+  "code": "DOW-UAP-PR44",
+  "dvidsId": "1006104",
+  "title": "DOW-UAP-PR44, Unresolved UAP Report, Middle East, 2020",
+  "date": "2020",
+  "submittedBy": "U.S. Central Command",
+  "reports": null,
+  "label": "Unresolved UAP Report, Middle East, 2020"
+ },
+ {
+  "release": 1,
+  "code": "DOW-UAP-PR36",
+  "dvidsId": "1006083",
+  "title": "DOW-UAP-PR36, Unresolved UAP Report, Middle East, May 2020",
+  "date": "2020-05",
+  "submittedBy": "U.S. Central Command",
+  "reports": [
+   "DoW-UAP-D38"
+  ],
+  "label": "Unresolved UAP Report, Middle East, May 2020"
+ },
+ {
+  "release": 1,
+  "code": "DOW-UAP-PR19",
+  "dvidsId": "1006056",
+  "title": "DOW-UAP-PR19, Unresolved UAP Report, Middle East, May 2022",
+  "date": "2022-05",
+  "submittedBy": "U.S. Central Command",
+  "reports": [
+   "DoW-UAP-D10"
+  ],
+  "label": "Unresolved UAP Report, Middle East, May 2022"
+ },
+ {
+  "release": 1,
+  "code": "DOW-UAP-PR21",
+  "dvidsId": "1006059",
+  "title": "DOW-UAP-PR21, Unresolved UAP Report, Iraq, May 2022",
+  "date": "2022-05",
+  "submittedBy": "U.S. Central Command",
+  "reports": [
+   "DoW-UAP-D14"
+  ],
+  "label": "Unresolved UAP Report, Iraq, May 2022"
+ },
+ {
+  "release": 1,
+  "code": "DOW-UAP-PR22",
+  "dvidsId": "1006060",
+  "title": "DOW-UAP-PR22, Unresolved UAP Report, Syria, July 2022",
+  "date": "2022-07",
+  "submittedBy": "U.S. Central Command",
+  "reports": [
+   "DoW-UAP-D16"
+  ],
+  "label": "Unresolved UAP Report, Syria, July 2022"
+ },
+ {
+  "release": 1,
+  "code": "DOW-UAP-PR23",
+  "dvidsId": "1006062",
+  "title": "DOW-UAP-PR23, Unresolved UAP Report, Iraq, December 2022",
+  "date": "2022-12",
+  "submittedBy": "U.S. Central Command",
+  "reports": [
+   "DoW-UAP-D18"
+  ],
+  "label": "Unresolved UAP Report, Iraq, December 2022"
+ },
+ {
+  "release": 1,
+  "code": "DOW-UAP-PR26",
+  "dvidsId": "1006063",
+  "title": "DOW-UAP-PR26, Unresolved UAP Report, United Arab Emirates, October 2023",
+  "date": "2023-10",
+  "submittedBy": "U.S. Central Command",
+  "reports": [
+   "DoW-UAP-D12"
+  ],
+  "label": "Unresolved UAP Report, United Arab Emirates, October 2023"
+ },
+ {
+  "release": 1,
+  "code": "DOW-UAP-PR27",
+  "dvidsId": "1006067",
+  "title": "DOW-UAP-PR27, Unresolved UAP Report, United Arab Emirates, October 2023",
+  "date": "2023-10",
+  "submittedBy": "U.S. Central Command",
+  "reports": [
+   "DoW-UAP-D23"
+  ],
+  "label": "Unresolved UAP Report, United Arab Emirates, October 2023"
+ },
+ {
+  "release": 1,
+  "code": "DOW-UAP-PR48",
+  "dvidsId": "1006110",
+  "title": "DOW-UAP-PR48, Unresolved UAP Report, INDOPACOM, 2024",
+  "date": "2024",
+  "submittedBy": "U.S. Indo-Pacific Command",
+  "reports": null,
+  "label": "Unresolved UAP Report, INDOPACOM, 2024"
+ },
+ {
+  "release": 1,
+  "code": "DOW-UAP-PR31",
+  "dvidsId": "1006076",
+  "title": "DOW-UAP-PR31, Unresolved UAP Report, Syria, October 2024",
+  "date": "2024-10",
+  "submittedBy": "U.S. Central Command",
+  "reports": [
+   "DoW-UAP-D32"
+  ],
+  "label": "Unresolved UAP Report, Syria, October 2024"
+ },
+ {
+  "release": 1,
+  "code": "DOW-UAP-PR32",
+  "dvidsId": "1006078",
+  "title": "DOW-UAP-PR32, Unresolved UAP Report, Syria, October 2024",
+  "date": "2024-10",
+  "submittedBy": "U.S. Central Command",
+  "reports": [
+   "DoW-UAP-D32"
+  ],
+  "label": "Unresolved UAP Report, Syria, October 2024"
+ },
+ {
+  "release": 1,
+  "code": "DOW-UAP-PR33",
+  "dvidsId": "1006079",
+  "title": "DOW-UAP-PR33, Unresolved UAP Report, Syria, October 2024",
+  "date": "2024-10",
+  "submittedBy": "U.S. Central Command",
+  "reports": [
+   "DoW-UAP-D32"
+  ],
+  "label": "Unresolved UAP Report, Syria, October 2024"
+ },
+ {
+  "release": 1,
+  "code": "DOW-UAP-PR43",
+  "dvidsId": "1006159",
+  "title": "DOW-UAP-PR43, Unresolved UAP Report, Africa, 2025",
+  "date": "2025",
+  "submittedBy": "U.S. Africa Command",
+  "reports": null,
+  "label": "Unresolved UAP Report, Africa, 2025"
+ },
+ {
+  "release": 1,
+  "code": "DOW-UAP-PR49",
+  "dvidsId": "1006111",
+  "title": "DOW-UAP-PR49, Unresolved UAP Report, Department of the Army, 2026",
+  "date": "2026",
+  "submittedBy": "U.S. Department of the Army",
+  "reports": null,
+  "label": "Unresolved UAP Report, Department of the Army, 2026"
+ },
+ {
+  "release": 2,
+  "code": "DOW-UAP-PR064",
+  "dvidsId": "1007741",
+  "title": "DOW-UAP-PR064, \"AFSOC Kabul UAP Jul 2017\"",
+  "date": "2017-07",
+  "submittedBy": null,
+  "reports": null,
+  "label": "AFSOC Kabul UAP Jul 2017"
+ },
+ {
+  "release": 2,
+  "code": "DOW-UAP-PR096",
+  "dvidsId": "1007726",
+  "title": "DOW-UAP-PR096, \"HH11 03 July 2018 UAPs",
+  "date": "2018-07-03",
+  "submittedBy": null,
+  "reports": null,
+  "label": "HH11 03 July 2018 UAPs"
+ },
+ {
+  "release": 2,
+  "code": "DOW-UAP-PR098",
+  "dvidsId": "1007737",
+  "title": "DOW-UAP-PR098, \"UFOs in formation over Persian Gulf?",
+  "date": "2019",
+  "submittedBy": null,
+  "reports": null,
+  "label": "UFOs in formation over Persian Gulf?"
+ },
+ {
+  "release": 2,
+  "code": "DOW-UAP-PR099",
+  "dvidsId": "1007738",
+  "title": "DOW-UAP-PR099, \"Hi-Res: [CALLSIGN] Observes UAP on 25SEP19 at 1715Z",
+  "date": "2019-09-23",
+  "submittedBy": null,
+  "reports": null,
+  "label": "Hi-Res: [CALLSIGN] Observes UAP on 25SEP19 at 1715Z"
+ },
+ {
+  "release": 2,
+  "code": "DOW-UAP-PR097",
+  "dvidsId": "1007728",
+  "title": "DOW-UAP-PR097, \"Hi-Res: [CALLSIGN] Observes UAP on 25SEP19 at 2135Z\"",
+  "date": "2019-09-25",
+  "submittedBy": null,
+  "reports": null,
+  "label": "Hi-Res: [CALLSIGN] Observes UAP on 25SEP19 at 2135Z"
+ },
+ {
+  "release": 2,
+  "code": "DOW-UAP-PR086",
+  "dvidsId": "1007797",
+  "title": "DOW-UAP-PR086, \"UAP from Dec 2019 (East Coast)",
+  "date": "2019-12",
+  "submittedBy": null,
+  "reports": null,
+  "label": "UAP from Dec 2019 (East Coast)"
+ },
+ {
+  "release": 2,
+  "code": "DOW-UAP-PR068",
+  "dvidsId": "1007780",
+  "title": "DOW-UAP-PR068, \"IIR 1 666 S0151 23/Video Footage of Unidentified Aerial Phenomenon (UAP) captured by fifth generation aircraft on 20 Jan 23\"",
+  "date": "2020-01-23",
+  "submittedBy": null,
+  "reports": null,
+  "label": "IIR 1 666 S0151 23/Video Footage of Unidentified Aerial Phenomenon (UAP) captured by fifth generation aircraft on 20 Jan 23"
+ },
+ {
+  "release": 2,
+  "code": "DOW-UAP-PR094",
+  "dvidsId": "1007722",
+  "title": "DOW-UAP-PR094, \"[CALLSIGN] (Mission) - HD 2020-02-13",
+  "date": "2020-02-13",
+  "submittedBy": null,
+  "reports": null,
+  "label": "[CALLSIGN] (Mission) - HD 2020-02-13"
+ },
+ {
+  "release": 2,
+  "code": "DOW-UAP-PR093",
+  "dvidsId": "1007721",
+  "title": "DOW-UAP-PR093, \"May 05 2020 Gulf of Arabia [CALLSIGN] (Platform) Dual UAP",
+  "date": "2020-05-05",
+  "submittedBy": null,
+  "reports": null,
+  "label": "May 05 2020 Gulf of Arabia [CALLSIGN] (Platform) Dual UAP"
+ },
+ {
+  "release": 2,
+  "code": "DOW-UAP-PR095",
+  "dvidsId": "1007725",
+  "title": "DOW-UAP-PR095, \"May 05 2020 Gulf of Arabia [CALLSIGN] (Platform) Dual UAP\"",
+  "date": "2020-05-05",
+  "submittedBy": null,
+  "reports": null,
+  "label": "May 05 2020 Gulf of Arabia [CALLSIGN] (Platform) Dual UAP"
+ },
+ {
+  "release": 2,
+  "code": "DOW-UAP-PR059",
+  "dvidsId": "1007727",
+  "title": "DOW-UAP-PR059, \"NAG UAP 1 Jun 20\"",
+  "date": "2020-06",
+  "submittedBy": null,
+  "reports": null,
+  "label": "NAG UAP 1 Jun 20"
+ },
+ {
+  "release": 2,
+  "code": "DOW-UAP-PR092",
+  "dvidsId": "1007715",
+  "title": "DOW-UAP-PR092, \"08 AUG 2020 [CALLSIGN] [CALLSIGN] UAP observation",
+  "date": "2020-08-08",
+  "submittedBy": null,
+  "reports": null,
+  "label": "08 AUG 2020 [CALLSIGN] [CALLSIGN] UAP observation"
+ },
+ {
+  "release": 2,
+  "code": "DOW-UAP-PR091",
+  "dvidsId": "1007716",
+  "title": "DOW-UAP-PR091, \"21 AUG [CALLSIGN] Observes UAP in Persian Gulf",
+  "date": "2020-08-21",
+  "submittedBy": null,
+  "reports": null,
+  "label": "21 AUG [CALLSIGN] Observes UAP in Persian Gulf"
+ },
+ {
+  "release": 2,
+  "code": "DOW-UAP-PR090",
+  "dvidsId": "1007719",
+  "title": "DOW-UAP-PR090, \"24 AUG 2020 [CALLSIGN] (Mission) Observes UAP",
+  "date": "2020-08-24",
+  "submittedBy": null,
+  "reports": null,
+  "label": "24 AUG 2020 [CALLSIGN] (Mission) Observes UAP"
+ },
+ {
+  "release": 2,
+  "code": "DOW-UAP-PR088",
+  "dvidsId": "1007800",
+  "title": "DOW-UAP-PR088, \"31 AUG [CALLSIGN] [CALLSIGN] Observes UAP",
+  "date": "2020-08-31",
+  "submittedBy": null,
+  "reports": null,
+  "label": "31 AUG [CALLSIGN] [CALLSIGN] Observes UAP"
+ },
+ {
+  "release": 2,
+  "code": "DOW-UAP-PR089",
+  "dvidsId": "1007712",
+  "title": "DOW-UAP-PR089, \"31 AUG [CALLSIGN] [CALLSIGN] Observes UAP part2\"",
+  "date": "2020-08-31",
+  "submittedBy": null,
+  "reports": null,
+  "label": "31 AUG [CALLSIGN] [CALLSIGN] Observes UAP part2"
+ },
+ {
+  "release": 2,
+  "code": "DOW-UAP-PR087",
+  "dvidsId": "1007799",
+  "title": "DOW-UAP-PR087, \"05 September 2020 [CALLSIGN] UAP",
+  "date": "2020-09-05",
+  "submittedBy": null,
+  "reports": null,
+  "label": "05 September 2020 [CALLSIGN] UAP"
+ },
+ {
+  "release": 2,
+  "code": "DOW-UAP-PR085",
+  "dvidsId": "1007796",
+  "title": "DOW-UAP-PR085, \"16 Sept 2020 [CALLSIGN] [CALLSIGN] observes UAP",
+  "date": "2020-09-16",
+  "submittedBy": null,
+  "reports": null,
+  "label": "16 Sept 2020 [CALLSIGN] [CALLSIGN] observes UAP"
+ },
+ {
+  "release": 2,
+  "code": "DOW-UAP-PR084",
+  "dvidsId": "1007810",
+  "title": "DOW-UAP-PR084, \"17 Sept 2020 [CALLSIGN] observes UAP",
+  "date": "2020-09-17",
+  "submittedBy": null,
+  "reports": null,
+  "label": "17 Sept 2020 [CALLSIGN] observes UAP"
+ },
+ {
+  "release": 2,
+  "code": "DOW-UAP-PR083",
+  "dvidsId": "1007808",
+  "title": "DOW-UAP-PR083, \"7 October 2020 [CALLSIGN] observes UAP",
+  "date": "2020-10-07",
+  "submittedBy": null,
+  "reports": null,
+  "label": "7 October 2020 [CALLSIGN] observes UAP"
+ },
+ {
+  "release": 2,
+  "code": "DOW-UAP-PR082",
+  "dvidsId": "1007807",
+  "title": "DOW-UAP-PR082, \"16 OCT 2020 [CALLSIGN] views UAP",
+  "date": "2020-10-16",
+  "submittedBy": null,
+  "reports": null,
+  "label": "16 OCT 2020 [CALLSIGN] views UAP"
+ },
+ {
+  "release": 2,
+  "code": "DOW-UAP-PR081",
+  "dvidsId": "1007805",
+  "title": "DOW-UAP-PR081, \"18 Oct 2020 [CALLSIGN] observes UAP",
+  "date": "2020-10-18",
+  "submittedBy": null,
+  "reports": null,
+  "label": "18 Oct 2020 [CALLSIGN] observes UAP"
+ },
+ {
+  "release": 2,
+  "code": "DOW-UAP-PR080",
+  "dvidsId": "1007803",
+  "title": "DOW-UAP-PR080, \"20 October 2020 [CALLSIGN] [CALLSIGN] Observes UAP",
+  "date": "2020-10-20",
+  "submittedBy": null,
+  "reports": null,
+  "label": "20 October 2020 [CALLSIGN] [CALLSIGN] Observes UAP"
+ },
+ {
+  "release": 2,
+  "code": "DOW-UAP-PR077",
+  "dvidsId": "1007809",
+  "title": "DOW-UAP-PR077, \"2 November 2020 [CALLSIGN] [CALLSIGN] Observes and tracks UAP 1 of 2\"",
+  "date": "2020-11-02",
+  "submittedBy": null,
+  "reports": null,
+  "label": "2 November 2020 [CALLSIGN] [CALLSIGN] Observes and tracks UAP 1 of 2"
+ },
+ {
+  "release": 2,
+  "code": "DOW-UAP-PR078",
+  "dvidsId": "1007812",
+  "title": "DOW-UAP-PR078, \"2 November 2020 [CALLSIGN] [CALLSIGN] Observes and tracks UAP 2 of 2\"",
+  "date": "2020-11-02",
+  "submittedBy": null,
+  "reports": null,
+  "label": "2 November 2020 [CALLSIGN] [CALLSIGN] Observes and tracks UAP 2 of 2"
+ },
+ {
+  "release": 2,
+  "code": "DOW-UAP-PR076",
+  "dvidsId": "1007804",
+  "title": "DOW-UAP-PR076, \"03 January 2021 [CALLSIGN] (Mission) observes UAP\"",
+  "date": "2021-01-03",
+  "submittedBy": null,
+  "reports": null,
+  "label": "03 January 2021 [CALLSIGN] (Mission) observes UAP"
+ },
+ {
+  "release": 2,
+  "code": "DOW-UAP-PR075",
+  "dvidsId": "1007795",
+  "title": "DOW-UAP-PR075, \"09JUN2021 [Platform] observed UAP in the ECS\"",
+  "date": "2021-06-09",
+  "submittedBy": null,
+  "reports": null,
+  "label": "09JUN2021 [Platform] observed UAP in the ECS"
+ },
+ {
+  "release": 2,
+  "code": "DOW-UAP-PR069",
+  "dvidsId": "1007781",
+  "title": "DOW-UAP-PR069, \"F/A-18 FLIR UAP\"",
+  "date": "2022",
+  "submittedBy": null,
+  "reports": null,
+  "label": "F/A-18 FLIR UAP"
+ },
+ {
+  "release": 2,
+  "code": "DOW-UAP-PR072",
+  "dvidsId": "1007788",
+  "title": "DOW-UAP-PR072, \"ADMINISTRATIVE REVISION: IIR 1777 J0032 22 Kazakhstan - UAP in the vicinity of Karaganda International Airport\"",
+  "date": "2022-03",
+  "submittedBy": null,
+  "reports": null,
+  "label": "ADMINISTRATIVE REVISION: IIR 1777 J0032 22 Kazakhstan - UAP in the vicinity of Karaganda International Airport"
+ },
+ {
+  "release": 2,
+  "code": "DOW-UAP-PR067",
+  "dvidsId": "1007779",
+  "title": "DOW-UAP-PR067, \"Multiple Spherical UAP USO near Sub. [CALLSIGN] 2022/03/25 in and out of water\"",
+  "date": "2022-03-25",
+  "submittedBy": null,
+  "reports": null,
+  "label": "Multiple Spherical UAP USO near Sub. [CALLSIGN] 2022/03/25 in and out of water"
+ },
+ {
+  "release": 2,
+  "code": "DOW-UAP-PR074",
+  "dvidsId": "1007791",
+  "title": "DOW-UAP-PR074, \"[CALLSIGN] (Mission)HD_20220613\"",
+  "date": "2022-06",
+  "submittedBy": null,
+  "reports": null,
+  "label": "[CALLSIGN] (Mission)HD_20220613"
+ },
+ {
+  "release": 2,
+  "code": "DOW-UAP-PR053",
+  "dvidsId": "1007709",
+  "title": "DOW-UAP-PR053, \"Cigar Shaped or Fast Spherical UAP clip 15 OCT 22\"",
+  "date": "2022-10-15",
+  "submittedBy": null,
+  "reports": null,
+  "label": "Cigar Shaped or Fast Spherical UAP clip 15 OCT 22"
+ },
+ {
+  "release": 2,
+  "code": "DOW-UAP-PR073",
+  "dvidsId": "1007790",
+  "title": "DOW-UAP-PR073, IIR 1 655 S0053 23/Several Unidentified Aerial Phenomenon Encountered In The Vicinity of Columbus OH\"",
+  "date": "2022-11",
+  "submittedBy": null,
+  "reports": null,
+  "label": "IIR 1 655 S0053 23/Several Unidentified Aerial Phenomenon Encountered In The Vicinity of Columbus OH"
+ },
+ {
+  "release": 2,
+  "code": "DOW-UAP-PR057a",
+  "dvidsId": "1007720",
+  "title": "DOW-UAP-PR057a, \"Spherical UAP in clouds\"",
+  "date": "2023",
+  "submittedBy": null,
+  "reports": null,
+  "label": "Spherical UAP in clouds"
+ },
+ {
+  "release": 2,
+  "code": "DOW-UAP-PR070",
+  "dvidsId": "1007783",
+  "title": "DOW-UAP-PR070, \"IIR 1 655 S0301 23/Eglin AFB Aircrew Observed Unidentified Aerial Phenomena (UAP) on 13 Feb 23\"",
+  "date": "2023-02-13",
+  "submittedBy": null,
+  "reports": null,
+  "label": "IIR 1 655 S0301 23/Eglin AFB Aircrew Observed Unidentified Aerial Phenomena (UAP) on 13 Feb 23"
+ },
+ {
+  "release": 2,
+  "code": "DOW-UAP-PR056",
+  "dvidsId": "1007718",
+  "title": "DOW-UAP-PR056, \"Spherical UAP pulsing over water [CALLSIGN]\"",
+  "date": "2024-06",
+  "submittedBy": null,
+  "reports": null,
+  "label": "Spherical UAP pulsing over water [CALLSIGN]"
+ },
+ {
+  "release": 4,
+  "code": "DOW-UAP-PR113",
+  "dvidsId": "1014119",
+  "title": "DOW-UAP-PR113, Unresolved UAP Report, Western United States, 1996",
+  "date": "1996",
+  "submittedBy": "U.S. Navy UAP Task Force",
+  "reports": null,
+  "label": "Unresolved UAP Report, Western United States, 1996"
+ },
+ {
+  "release": 4,
+  "code": "DOW-UAP-PR109",
+  "dvidsId": "1014108",
+  "title": "DOW-UAP-PR109, Unresolved UAP Report, Eastern United States, 2015",
+  "date": "2015",
+  "submittedBy": "U.S. Navy UAP Task Force",
+  "reports": null,
+  "label": "Unresolved UAP Report, Eastern United States, 2015"
+ },
+ {
+  "release": 4,
+  "code": "DOW-UAP-PR114",
+  "dvidsId": "1014121",
+  "title": "DOW-UAP-PR114, Unresolved UAP Report, Atlantic Ocean, 2016",
+  "date": "2016",
+  "submittedBy": "U.S. Northern Command",
+  "reports": null,
+  "label": "Unresolved UAP Report, Atlantic Ocean, 2016"
+ },
+ {
+  "release": 4,
+  "code": "DOW-UAP-PR107",
+  "dvidsId": "1014105",
+  "title": "DOW-UAP-PR107, Unresolved UAP Report, Eastern United States, 2020",
+  "date": "2020",
+  "submittedBy": "U.S. Northern Command",
+  "reports": null,
+  "label": "Unresolved UAP Report, Eastern United States, 2020"
+ },
+ {
+  "release": 4,
+  "code": "DOW-UAP-PR108",
+  "dvidsId": "1014106",
+  "title": "DOW-UAP-PR108, Unresolved UAP Report, Western United States, 2020",
+  "date": "2020",
+  "submittedBy": "U.S. Northern Command",
+  "reports": null,
+  "label": "Unresolved UAP Report, Western United States, 2020"
+ },
+ {
+  "release": 4,
+  "code": "DOW-UAP-PR110",
+  "dvidsId": "1014112",
+  "title": "DOW-UAP-PR110, Unresolved UAP Report, Eastern United States, 2020",
+  "date": "2020",
+  "submittedBy": "U.S. Northern Command",
+  "reports": null,
+  "label": "Unresolved UAP Report, Eastern United States, 2020"
+ },
+ {
+  "release": 4,
+  "code": "DOW-UAP-PR111",
+  "dvidsId": "1014114",
+  "title": "DOW-UAP-PR111, Unresolved UAP Report, Eastern United States, 2020",
+  "date": "2020",
+  "submittedBy": "U.S. Northern Command",
+  "reports": null,
+  "label": "Unresolved UAP Report, Eastern United States, 2020"
+ },
+ {
+  "release": 4,
+  "code": "DOW-UAP-PR024",
+  "dvidsId": "1014100",
+  "title": "DOW-UAP-PR024, Unresolved UAP Report, Middle East, 2023",
+  "date": "2023",
+  "submittedBy": "U.S. Central Command",
+  "reports": null,
+  "label": "Unresolved UAP Report, Middle East, 2023"
+ },
+ {
+  "release": 4,
+  "code": "DOW-UAP-PR030",
+  "dvidsId": "1014102",
+  "title": "DOW-UAP-PR030, Unresolved UAP Report, Middle East, 2023",
+  "date": "2023",
+  "submittedBy": "U.S. Central Command",
+  "reports": null,
+  "label": "Unresolved UAP Report, Middle East, 2023"
+ },
+ {
+  "release": 4,
+  "code": "DOW-UAP-PR100",
+  "dvidsId": "1014096",
+  "title": "DOW-UAP-PR100, Unresolved UAP Report, Yellow Sea, 2023",
+  "date": "2023",
+  "submittedBy": "U.S. Indo-Pacific Command",
+  "reports": null,
+  "label": "Unresolved UAP Report, Yellow Sea, 2023"
+ },
+ {
+  "release": 4,
+  "code": "DOW-UAP-PR101",
+  "dvidsId": "1014097",
+  "title": "DOW-UAP-PR101, Unresolved UAP Report, South China Sea, 2024",
+  "date": "2024",
+  "submittedBy": "U.S. Indo-Pacific Command",
+  "reports": null,
+  "label": "Unresolved UAP Report, South China Sea, 2024"
+ },
+ {
+  "release": 4,
+  "code": "DOW-UAP-PR102",
+  "dvidsId": "1014098",
+  "title": "DOW-UAP-PR102, Unresolved UAP Report, East China Sea, 2024",
+  "date": "2024",
+  "submittedBy": "U.S. Indo-Pacific Command",
+  "reports": null,
+  "label": "Unresolved UAP Report, East China Sea, 2024"
+ },
+ {
+  "release": 4,
+  "code": "DOW-UAP-PR103",
+  "dvidsId": "1014099",
+  "title": "DOW-UAP-PR103, Unresolved UAP Report, East China Sea, 2024",
+  "date": "2024",
+  "submittedBy": "U.S. Indo-Pacific Command",
+  "reports": null,
+  "label": "Unresolved UAP Report, East China Sea, 2024"
+ },
+ {
+  "release": 4,
+  "code": "DOW-UAP-PR105",
+  "dvidsId": "1014103",
+  "title": "DOW-UAP-PR105, Unresolved UAP Report, East China Sea, 2025",
+  "date": "2025",
+  "submittedBy": "U.S. Indo-Pacific Command",
+  "reports": null,
+  "label": "Unresolved UAP Report, East China Sea, 2025"
+ },
+ {
+  "release": 5,
+  "code": "DOW-UAP-PR136",
+  "dvidsId": "1017796",
+  "title": "DOW-UAP-PR136, Unresolved UAP Report, Middle East, 2023",
+  "date": "2023",
+  "submittedBy": "U.S. Central Command",
+  "reports": null,
+  "label": "Unresolved UAP Report, Middle East, 2023"
+ },
+ {
+  "release": 5,
+  "code": "DOW-UAP-PR149",
+  "dvidsId": "1017799",
+  "title": "DOW-UAP-PR149, Unresolved UAP Report, Middle East, 2023",
+  "date": "2023",
+  "submittedBy": "U.S. Central Command",
+  "reports": null,
+  "label": "Unresolved UAP Report, Middle East, 2023"
+ },
+ {
+  "release": 5,
+  "code": "DOW-UAP-PR134",
+  "dvidsId": "1017792",
+  "title": "DOW-UAP-PR134, Unresolved UAP Report, Middle East, 2025",
+  "date": "2025",
+  "submittedBy": "U.S. Central Command",
+  "reports": null,
+  "label": "Unresolved UAP Report, Middle East, 2025"
+ },
+ {
+  "release": 5,
+  "code": "DOW-UAP-PR142",
+  "dvidsId": "1017797",
+  "title": "DOW-UAP-PR142, Unresolved UAP Report, Middle East, 2025",
+  "date": "2025",
+  "submittedBy": "U.S. Central Command",
+  "reports": null,
+  "label": "Unresolved UAP Report, Middle East, 2025"
+ }
+]
