@@ -972,8 +972,8 @@
   "date": "2023",
   "type": "Lámina de análisis preliminar de la AARO",
   "type_en": "AARO preliminary analysis slide",
-  "place": "oeste de EE. UU., sin lugar exacto: un radar civil registra 8 detecciones en 84 segundos a 55.000–70.000 pies",
-  "place_en": "western U.S., no exact location: a civilian radar records 8 detections in 84 seconds at 55,000–70,000 feet",
+  "place": "EE. UU., sin lugar: un radar civil de vigilancia aérea registra 8 detecciones en 84 segundos a una altitud estimada de 55.000–70.000 pies",
+  "place_en": "U.S., no location given: a civilian air-surveillance radar records 8 detections in 84 seconds at an estimated altitude of 55,000–70,000 feet",
   "videos": null
  },
  {
@@ -981,10 +981,10 @@
   "code": "CIA-UAP-D029",
   "src": "https://archive.org/download/pursue-uap-documents-2026/Release_08/CIA-UAP-D029-Official_Diary_Entry_on_Flying_Saucers-1952.pdf",
   "date": "1952-10-28",
-  "type": "Página del diario oficial de la CIA",
-  "type_en": "CIA official diary page",
-  "place": "Washington; una sola entrada sobre los avistamientos y una sesión informativa a la Fuerza Aérea",
-  "place_en": "Washington; a single entry on the sightings and a briefing for the Air Force",
+  "type": "Entrada del diario oficial de la CIA",
+  "type_en": "CIA official diary entry",
+  "place": "Washington; de los asuntos del día, uno trata de los platillos: Clark propone una sesión informativa y avisar a la Fuerza Aérea y a la R&DB",
+  "place_en": "Washington; one of the day's items concerns flying saucers: Clark proposes a briefing and alerting the Air Force and the R&DB",
   "videos": null
  },
  {
@@ -1027,8 +1027,8 @@
   "date": "1957-10-23",
   "type": "Informe de inteligencia aérea (AIR)",
   "type_en": "Air intelligence information report (AIR)",
-  "place": "Teherán; un objeto muy alto que deja una estela durante 3,5 minutos",
-  "place_en": "Tehran; a very high object leaving a trail for 3.5 minutes",
+  "place": "Teherán; una estela de vapor a más de 60.000 pies cruza de este a oeste durante 3,5 minutos y el objeto no se ve",
+  "place_en": "Tehran; a vapor trail above 60,000 feet crosses east to west for 3.5 minutes; the object itself is not seen",
   "videos": null
  },
  {
@@ -1049,8 +1049,8 @@
   "date": "1957-09",
   "type": "Informe de inteligencia aérea (AIR)",
   "type_en": "Air intelligence information report (AIR)",
-  "place": "Upland (California); el propio informe dice que sus datos no bastan para ningún análisis",
-  "place_en": "Upland (California); the report itself says its data are not enough for any analysis",
+  "place": "Upland (California); el oficial que lo prepara escribe que la información recibida no basta para ningún análisis",
+  "place_en": "Upland (California); the preparing officer writes that the information received is not enough for any analysis",
   "videos": null
  },
  {
