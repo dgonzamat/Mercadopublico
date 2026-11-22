@@ -46,6 +46,8 @@ export function CoberturaView({ locale }: { locale: "es" | "en" }) {
       row = { code: c.country, name: names[c.country][locale], flag: c.flag, total: 0, byDecade: {}, firstId: c.id };
       map.set(c.country, row);
     }
+    // Una ficha sin lugar revelado lleva un globo; la fila del país usa su bandera.
+    if (/[🌍🌎🌏]/u.test(row.flag) && !/[🌍🌎🌏]/u.test(c.flag)) row.flag = c.flag;
     const d = decadeOf(c.year_start);
     row.byDecade[d] = (row.byDecade[d] ?? 0) + 1;
     row.total += 1;
