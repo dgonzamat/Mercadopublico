@@ -436,6 +436,10 @@ Conteo hecho a mano a partir de los informes de los verificadores (17-18 nov 202
 | aawsap-skinwalker-2008 | lectura | MEDIA (D172): la descripción del documento repetía el error de las formas | no |
 | aawsap-skinwalker-2008 | atribución | BAJA (D172): las huellas «de intrusos» se daban como hecho; el informe lo infiere («leading us to believe», «likely», p. 161) | no |
 | aawsap-skinwalker-2008 | léxico/voz | BAJA (D172): el ES perdía «a tiempo completo» frente al EN, y la comparación con Bigelow lo necesita (p. 4) | no |
+| aawsap-skinwalker-2008 | atribución | MEDIA (D172, pp. 488–490, 22 nov): «según fuentes que no nombra»; es el propio informe el que afirma que EE. UU. guarda el material y dice que lo saben contactos suyos | no |
+| aawsap-skinwalker-2008 | omisión | MEDIA (D172, p. 490): la búsqueda de tejido «EBE» era condicional («under the hypothesis that biological material… has been recovered») y se daba como objetivo sin condición | no |
+| aawsap-skinwalker-2008 | cifra/hora | BAJA (D171 frente a D172, p. 3): los planos de la bóveda en junio según D171 y en mayo según D172; se escriben las dos | no |
+| aawsap-skinwalker-2008 | omisión | BAJA: las pp. 488–490 no se citaban y la nota decía que el extracto traía todas las páginas citadas | no |
 | ube-f86d-1956 | cifra/hora | BAJA: D198 escribe «ZZONJAIN (Phonetic)» y el vacío se forma en parte de la superficie | no |
 | detroit-dome-object-1958 | atribución | BAJA: en D197 el Mando de Defensa Aérea es el origen, no el destinatario; la regla de testimonio único no está en el documento | no |
 | tremonton-film-1952 | cifra/hora | BAJA: D025 sí lleva «1952» escrito a mano en las pp. 1 y 11 | no |
