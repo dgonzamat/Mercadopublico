@@ -563,6 +563,7 @@ Regla: solo cambia lo que se repite en al menos 3 de las 10 fichas. Notas de los
 | suva-1963 | léxico/voz | BAJA: la firma se citaba compuesta; se citan sus trozos literales | no |
 | suva-1963 | cifra/hora | BAJA: «Apr 3, 1963» encabeza el recorte del East Anglian Times con la fecha del suceso; no es la fecha de la nota | no |
 | suva-1963 | léxico/voz | BAJA (aerograma: «streamers were emitted»): «chispas» no traducía bien; pasa a «estelas» | no |
+| suva-1963 | lectura | lector ciego ES (Opus, nota 6): releyó «entonces colonia británica» (parecía el buque), la frase de tres fuentes y tres horas, «ganó cerca de la mitad de su brillo», «rastro aparente» y el cierre «cabe en un catálogo»; corregidas. Anotados sin tocar: el recuento de testigos y los 180 frente a 200 km (son distancias distintas) | no |
 | mayaguana-1963 | clasificación | ALTA (tarjeta, casilla 11: «Possibility of satellite or missile not ruled out but substantiating data not available at this time»): la tarjeta deja abierto también un satélite tras la consulta a NORAD; la ficha solo respondía al misil. Va a la revisión de clase en dos pasos | no |
 | mayaguana-1963 | cifra/hora | ALTA: el rumbo de los testigos es hacia dónde vieron bajar la luz, no la trayectoria; la comparación con la inclinación del Blok-I no lo descarta | no |
 | mayaguana-1963 | cifra/hora | MEDIA (GCAT S00521, tipo R3): el Blok-I es la tercera etapa, no «la etapa superior» | no |
@@ -572,6 +573,7 @@ Regla: solo cambia lo que se repite en al menos 3 de las 10 fichas. Notas de los
 | mayaguana-1963 | cifra/hora | BAJA (mensaje «22/1929Z JAN»): es la fecha de salida; la llegada a Blue Book no está fechada | no |
 | mayaguana-1963 | ausencia | BAJA: los diez lanzamientos de enero de 1963 sin día en el GCAT salieron de White Sands o Kapustin Yar; salvedad añadida en `evidence` | no |
 | mayaguana-1963 | clasificación | segundo paso de la revisión de clase: el satélite que deja abierto la tarjeta es propuesta débil, no refutada (el misil y el meteorito sí lo están); pasa de `sin_propuesta` a misid/espacial/satélite, probability 22 → 19; el segundo paso añade en contra que la etapa soviética reentrada ese día figuraba en el catálogo de NORAD | no |
+| mayaguana-1963 | lectura | lector ciego ES (Opus, nota 7): releyó el «descartaron los satélites conocidos» frente a «no se excluía un satélite», la frase que mezclaba etapa y sonda, la del rumbo y el «locally» entre paréntesis; corregidas | no |
 | belgrado-1954 | clasificación | ALTA (Gross, página del despacho de Belgrado: epígrafe «Meteor saucers over Europe, 1954»): la ficha decía que ninguna fuente proponía causa; el compilador archiva el propio despacho bajo meteoros, y la misma página trae relatos de bólido. Va a la revisión de clase en dos pasos | no |
 | belgrado-1954 | omisión | MEDIA (tportal.hr, Benić 2011: «u uzročno-posljedičnoj korelaciji s invazijom vanzemaljaca na medije»): propone una causa social para este suceso que la ficha omitía | no |
 | belgrado-1954 | atribución | MEDIA (Blue Book, hojas 1 y 2: «Followed immediately after considerable publicity by French press»): el documento da la secuencia, no la causa; la idea del contagio era del redactor | no |
@@ -582,3 +584,4 @@ Regla: solo cambia lo que se repite en al menos 3 de las 10 fichas. Notas de los
 | belgrado-1954 | léxico/voz | BAJA: la divergencia de fechas de la primera noticia no decía qué implica | no |
 | belgrado-1954 | ausencia | BAJA: «todo lo que se conserva del caso en ese archivo» afirmaba más que la copia digitalizada vista | no |
 | belgrado-1954 | clasificación | segundo paso de la revisión de clase: el epígrafe de Gross es una propuesta débil, no refutada; pasa de `sin_propuesta` a misid/astronómico/meteoro, `indet` 0,16 → 0,13 y probability 22 → 18; nuevo `classBasis` | no |
+| belgrado-1954 | lectura | lector ciego EN (Opus, nota 6): releyó la frase de los siete objetos, a quién se refería «without saying when» y «the note about the French press»; corregidas. Anotados sin tocar: repeticiones del primer párrafo y los enlaces a Quarouble y Florencia sin contexto | no |
