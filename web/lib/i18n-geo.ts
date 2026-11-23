@@ -86,6 +86,7 @@ const COUNTRY_EN: Record<string, string> = {
   "Unión Soviética (Ucrania)": "Soviet Union (Ukraine)",
   "Egipto": "Egypt",
   "Sudán": "Sudan",
+  "Burkina Faso": "Burkina Faso",
   "Filipinas": "Philippines",
   "Rumanía": "Romania",
   "Cuba": "Cuba",

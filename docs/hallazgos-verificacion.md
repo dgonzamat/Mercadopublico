@@ -522,3 +522,4 @@ Regla: solo cambia lo que se repite en al menos 3 de las 10 fichas. Notas de los
 | plesetsk-medusa-2026 | atribución | BAJA (Gazeta Metro): el título citado era el `<title>` HTML y la identificación la toma de RBK y Fontanka | no |
 | plesetsk-medusa-2026 | léxico/voz | BAJA: «Esa mañana» en `classBasis` no tenía fecha a la que remitir; pasa a «la mañana del 18 de septiembre» | no |
 | plesetsk-medusa-2026 | lectura | lector ciego EN (Opus, nota 7): releyó la frase de Zak sobre el aviso de 24 horas (sintaxis rota) y vio contradicción entre «days earlier» y «24 hours before»; se corrigieron las dos. Anotados sin tocar: exceso de horas de publicación, repeticiones de la hora de McDowell y la duda de si el Sol ilumina el gas dos horas después del ocaso (el párrafo anterior lo explica) | no |
+| uagadugu-1962 | pendiente | provisional del redactor; la sustituye el orquestador con los hallazgos del verificador | no |
