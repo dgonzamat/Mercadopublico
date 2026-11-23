@@ -585,3 +585,35 @@ Regla: solo cambia lo que se repite en al menos 3 de las 10 fichas. Notas de los
 | belgrado-1954 | ausencia | BAJA: «todo lo que se conserva del caso en ese archivo» afirmaba más que la copia digitalizada vista | no |
 | belgrado-1954 | clasificación | segundo paso de la revisión de clase: el epígrafe de Gross es una propuesta débil, no refutada; pasa de `sin_propuesta` a misid/astronómico/meteoro, `indet` 0,16 → 0,13 y probability 22 → 18; nuevo `classBasis` | no |
 | belgrado-1954 | lectura | lector ciego EN (Opus, nota 6): releyó la frase de los siete objetos, a quién se refería «without saying when» y «the note about the French press»; corregidas. Anotados sin tocar: repeticiones del primer párrafo y los enlaces a Quarouble y Florencia sin contexto | no |
+| truk-1953 | omisión | MEDIA (tarjeta: «C-47 was in area, landing at 0235Z»): la ficha decía que ninguna hoja situaba al C-47; la tarjeta de 1963 lo da por el mismo avión, aunque ningún mensaje de 1953 dice dónde estaba | no |
+| truk-1953 | cifra/hora | MEDIA (Yap, mensaje «P 051125Z», «AT 2045 LOCAL», 190° → 280°): el avistamiento fue la noche del 5 de agosto, no el 6, y la luz se movió hacia el norte; Venus a 250° no iba «por el mismo rumbo» | no |
+| truk-1953 | léxico/voz | MEDIA: «el único de los tres en que la explicación se puede contrastar» era falso (Yap y 1960 también tienen documentos que la contrastan) | no |
+| truk-1953 | atribución | BAJA: «Guam queda al noroeste» es deducción de coordenadas; se dice de dónde sale | no |
+| truk-1953 | cifra/hora | BAJA: la envergadura de 29 m no tenía fuente; se deja solo la proporción | no |
+| truk-1953 | atribución | BAJA (mensaje «VIA FLEET WEATHER CENTRAL GUAM»): un solo parte por esa vía no prueba la costumbre ni «la base más cercana» | no |
+| truk-1953 | atribución | BAJA: la hoja 5 no dice quién la escribió; solo cita los archivos de la FTD | no |
+| truk-1953 | cifra/hora | BAJA: 3–4 millas son 5–6,5 km, no 5–6 | no |
+| truk-1953 | lectura | lector ciego ES (Opus, nota 7): no supo si el jefe de la oficina era civil o el «oficial de la Fuerza Aérea» de la hoja de análisis, ni a qué se oponía «dice lo contrario»; corregidas. Anotados sin tocar: la cadena de documentos del final y el argumento del rumbo desde Guam | no |
+| seria-1953 | ausencia | MEDIA: «todo lo que se sabe del suceso sale de una sola hoja» generalizaba al caso lo que solo vale para Blue Book (la prensa de 1953 no se buscó en una superficie enumerable); se acota al expediente | no |
+| seria-1953 | ausencia | MEDIA: «no figuran en el archivo de Blue Book» iba más allá de la búsqueda, que solo miró títulos; se acota a «no tienen allí un expediente propio con ese nombre» | no |
+| seria-1953 | atribución | MEDIA (ATIC 108383, sin medio ni agencia): «el periódico» daba por hecho un origen de prensa escrita; pasa a «el medio» | no |
+| seria-1953 | léxico/voz | MEDIA: la primera frase del resumen tenía unas 60 palabras y cinco incisos; se parte | no |
+| seria-1953 | léxico/voz | BAJA (ATIC: «have been reported»): «se habían visto» no traducía bien | no |
+| seria-1953 | atribución | BAJA (ATIC: «appeared to be rotating»): el título afirmaba el giro | no |
+| seria-1953 | atribución | BAJA (tarjeta, casilla 11: «Observed several times on previous occasions», sin sujeto): «el mismo objeto» era una lectura presentada como cita | no |
+| seria-1953 | cifra/hora | BAJA: el trazo sobre la segunda línea se describía con más seguridad de la que permite la imagen | no |
+| seria-1953 | léxico/voz | BAJA: citas en inglés sin glosar en `evidence` | no |
+| seria-1953 | cifra/hora | BAJA: Brunéi está en la costa noroeste de Borneo, no la norte | no |
+| seria-1953 | lectura | lector ciego ES (Opus, nota 6): leyó «las dos lecturas» como lecturas sucesivas; pasa a «interpretaciones». Anotado sin tocar: la materia es mínima y el texto da vueltas a lo que no se sabe | no |
+| barbados-1958 | omisión | MEDIA (nota de inteligencia naval, 1 ago 1958: «Encl: (1) ltr… 9 May 1958… (2) ltr… of 15 Apr 1958»; lápiz «Apr 8», «5-10»): el «8 APR 2145» puede ser de la otra carta, y no es la única anotación con esa fecha | no |
+| barbados-1958 | atribución | MEDIA (Crimson: «Ten minutes later word came from the Barbados Islands»): los diez minutos son de la llegada de la noticia, no de la observación | no |
+| barbados-1958 | ausencia | MEDIA: «el testigo no escribió a ninguna autoridad» no lo respalda el expediente, que solo muestra la carta al cuñado | no |
+| barbados-1958 | atribución | MEDIA: «lo que otros vieron esa noche» afirmaba que el informe de Barbados del Crimson era de otros testigos y de esa misma noche | no |
+| barbados-1958 | cifra/hora | BAJA: el cálculo no decía el huso de Barbados (UTC−4 en 1958) y confundía la hora de la noticia con la del avistamiento | no |
+| barbados-1958 | omisión | BAJA (GCAT, 1958-A28, Bomarc A, 2 abr): faltaba en la nota de la fuente | no |
+| barbados-1958 | ausencia | BAJA: «el GCAT recoge también los misiles de prueba» suponía que es completo | no |
+| barbados-1958 | cifra/hora | BAJA: «si la carta es del 15, el domingo fue el 13» elegía en silencio; pasa a «lo más probable» | no |
+| barbados-1958 | atribución | BAJA: la hoja 7 es la parte mecanografiada de la carta que remitió el cuñado, y las notas a lápiz no tienen firma | no |
+| barbados-1958 | léxico/voz | BAJA (hoja 3: «Maj Byrne»): «comandante» pasa a «mayor» | no |
+| barbados-1958 | omisión | BAJA (hoja 2, Bolieu: «possible aircraft»): el `classBasis` no recogía la tercera explicación del expediente | no |
+| barbados-1958 | lectura | lector ciego EN (Opus, nota 6): no situó la «hoja de envío del 8 de agosto» frente a la recepción del 12, ni «the one that stayed on the card»; corregidas. Anotados sin tocar: densidad de fechas y husos en la segunda mitad | no |
