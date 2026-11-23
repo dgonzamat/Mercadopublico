@@ -563,7 +563,14 @@ Regla: solo cambia lo que se repite en al menos 3 de las 10 fichas. Notas de los
 | suva-1963 | léxico/voz | BAJA: la firma se citaba compuesta; se citan sus trozos literales | no |
 | suva-1963 | cifra/hora | BAJA: «Apr 3, 1963» encabeza el recorte del East Anglian Times con la fecha del suceso; no es la fecha de la nota | no |
 | suva-1963 | léxico/voz | BAJA (aerograma: «streamers were emitted»): «chispas» no traducía bien; pasa a «estelas» | no |
-| mayaguana-1963 | pendiente | provisional del redactor; leídas sobre la imagen las cifras tenues del teletipo (50 millas, 150–200 pies, 2.5_0 mph; la tarjeta da 2,550), y los cálculos de Sol y de la órbita del Blok-I son propios del caso | no |
+| mayaguana-1963 | clasificación | ALTA (tarjeta, casilla 11: «Possibility of satellite or missile not ruled out but substantiating data not available at this time»): la tarjeta deja abierto también un satélite tras la consulta a NORAD; la ficha solo respondía al misil. Va a la revisión de clase en dos pasos | no |
+| mayaguana-1963 | cifra/hora | ALTA: el rumbo de los testigos es hacia dónde vieron bajar la luz, no la trayectoria; la comparación con la inclinación del Blok-I no lo descarta | no |
+| mayaguana-1963 | cifra/hora | MEDIA (GCAT S00521, tipo R3): el Blok-I es la tercera etapa, no «la etapa superior» | no |
+| mayaguana-1963 | omisión | MEDIA (tarjeta «2,550 mph» frente al teletipo «2,5__»): la discrepancia de velocidad no estaba en la prosa | no |
+| mayaguana-1963 | atribución | BAJA: el número de estación sale del mensaje («STATION NUMBER 6, OF AMR»), no de Cleary | no |
+| mayaguana-1963 | atribución | BAJA (Cleary: «Pan American World Services and RCA»): eran dos compañías; «la compañía que operaba la estación» era inexacto | no |
+| mayaguana-1963 | cifra/hora | BAJA (mensaje «22/1929Z JAN»): es la fecha de salida; la llegada a Blue Book no está fechada | no |
+| mayaguana-1963 | ausencia | BAJA: los diez lanzamientos de enero de 1963 sin día en el GCAT salieron de White Sands o Kapustin Yar; salvedad añadida en `evidence` | no |
 | belgrado-1954 | clasificación | ALTA (Gross, página del despacho de Belgrado: epígrafe «Meteor saucers over Europe, 1954»): la ficha decía que ninguna fuente proponía causa; el compilador archiva el propio despacho bajo meteoros, y la misma página trae relatos de bólido. Va a la revisión de clase en dos pasos | no |
 | belgrado-1954 | omisión | MEDIA (tportal.hr, Benić 2011: «u uzročno-posljedičnoj korelaciji s invazijom vanzemaljaca na medije»): propone una causa social para este suceso que la ficha omitía | no |
 | belgrado-1954 | atribución | MEDIA (Blue Book, hojas 1 y 2: «Followed immediately after considerable publicity by French press»): el documento da la secuencia, no la causa; la idea del contagio era del redactor | no |
