@@ -585,6 +585,13 @@ Regla: solo cambia lo que se repite en al menos 3 de las 10 fichas. Notas de los
 | belgrado-1954 | ausencia | BAJA: «todo lo que se conserva del caso en ese archivo» afirmaba más que la copia digitalizada vista | no |
 | belgrado-1954 | clasificación | segundo paso de la revisión de clase: el epígrafe de Gross es una propuesta débil, no refutada; pasa de `sin_propuesta` a misid/astronómico/meteoro, `indet` 0,16 → 0,13 y probability 22 → 18; nuevo `classBasis` | no |
 | belgrado-1954 | lectura | lector ciego EN (Opus, nota 6): releyó la frase de los siete objetos, a quién se refería «without saying when» y «the note about the French press»; corregidas. Anotados sin tocar: repeticiones del primer párrafo y los enlaces a Quarouble y Florencia sin contexto | no |
-| truk-1953 | pendiente | provisional del redactor; la sustituye el orquestador con los hallazgos del verificador | no |
+| truk-1953 | omisión | MEDIA (tarjeta: «C-47 was in area, landing at 0235Z»): la ficha decía que ninguna hoja situaba al C-47; la tarjeta de 1963 lo da por el mismo avión, aunque ningún mensaje de 1953 dice dónde estaba | no |
+| truk-1953 | cifra/hora | MEDIA (Yap, mensaje «P 051125Z», «AT 2045 LOCAL», 190° → 280°): el avistamiento fue la noche del 5 de agosto, no el 6, y la luz se movió hacia el norte; Venus a 250° no iba «por el mismo rumbo» | no |
+| truk-1953 | léxico/voz | MEDIA: «el único de los tres en que la explicación se puede contrastar» era falso (Yap y 1960 también tienen documentos que la contrastan) | no |
+| truk-1953 | atribución | BAJA: «Guam queda al noroeste» es deducción de coordenadas; se dice de dónde sale | no |
+| truk-1953 | cifra/hora | BAJA: la envergadura de 29 m no tenía fuente; se deja solo la proporción | no |
+| truk-1953 | atribución | BAJA (mensaje «VIA FLEET WEATHER CENTRAL GUAM»): un solo parte por esa vía no prueba la costumbre ni «la base más cercana» | no |
+| truk-1953 | atribución | BAJA: la hoja 5 no dice quién la escribió; solo cita los archivos de la FTD | no |
+| truk-1953 | cifra/hora | BAJA: 3–4 millas son 5–6,5 km, no 5–6 | no |
 | seria-1953 | pendiente | provisional del redactor; la sustituye el orquestador con los hallazgos del verificador | no |
 | barbados-1958 | pendiente | provisional del redactor; la sustituye el orquestador con los hallazgos del verificador | no |
