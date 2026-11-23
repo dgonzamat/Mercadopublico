@@ -111,7 +111,6 @@ const COUNTRY_EN: Record<string, string> = {
   "Brunéi": "Brunei",
   "Jamaica": "Jamaica",
   "Belice": "Belize",
-  "Maldivas": "Maldives",
   "Bahamas": "Bahamas",
   "Yugoslavia (Serbia)": "Yugoslavia (Serbia)",
   "Ghana": "Ghana",
