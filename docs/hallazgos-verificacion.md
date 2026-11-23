@@ -617,5 +617,12 @@ Regla: solo cambia lo que se repite en al menos 3 de las 10 fichas. Notas de los
 | barbados-1958 | léxico/voz | BAJA (hoja 3: «Maj Byrne»): «comandante» pasa a «mayor» | no |
 | barbados-1958 | omisión | BAJA (hoja 2, Bolieu: «possible aircraft»): el `classBasis` no recogía la tercera explicación del expediente | no |
 | barbados-1958 | lectura | lector ciego EN (Opus, nota 6): no situó la «hoja de envío del 8 de agosto» frente a la recepción del 12, ni «the one that stayed on the card»; corregidas. Anotados sin tocar: densidad de fechas y husos en la segunda mitad | no |
-| belice-1962 | pendiente | provisional del redactor; sustituir por los hallazgos del verificador y del lector | no |
+| belice-1962 | clasificación | ALTA (tarjeta: «the possibility of a Satellite sighting is evident. However, Echo would have passed the area half an hour earlier…»): la tarjeta propone un satélite y sus reparos van contra el Echo y el crepúsculo, no contra cualquier satélite; propuesta débil, no refutada. Va a la revisión de clase en dos pasos | no |
+| belice-1962 | omisión | ALTA (tarjeta: «difficult to determine whether obj was approaching or going away fm obsvr»): la ficha decía que la tarjeta no comentaba el cambio de sentido, y lo atribuye a la distancia; «un satélite cruza en un solo sentido» era un argumento propio | no |
+| belice-1962 | cifra/hora | MEDIA: a −13° el Sol aún está en el crepúsculo náutico-astronómico; «ya era de noche» era inexacto, y «ninguno explica el relato completo» insinuaba una explicación parcial (Luna o Venus) que ninguna fuente propone | no |
+| belice-1962 | cifra/hora | MEDIA: el día del sello del SAC es tenue (20 o 28); la ficha y el registro daban el 20 por seguro | no |
+| belice-1962 | atribución | BAJA: la despedida sobre la tachadura parece «(Signed,»; la hoja podría ser una copia y no el original | no |
+| belice-1962 | ausencia | BAJA: «el único expediente de Honduras Británica» se acota a los títulos de la colección | no |
+| belice-1962 | atribución | BAJA: «la isla más grande… junto a la frontera con México» no tenía fuente | no |
+| belice-1962 | léxico/voz | BAJA: frase sin verbo en `evidence` | no |
 | ocho-rios-1959 | pendiente | provisional del redactor; sustituir por los hallazgos del verificador y del lector | no |
