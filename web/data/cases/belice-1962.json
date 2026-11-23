@@ -16,21 +16,23 @@
   },
   "tier": "B",
   "epistemicStatus": "documented",
-  "mundanoType": "sin_propuesta",
+  "mundanoType": "misid",
+  "misidSubtype": "espacial",
+  "objectDetail": "satelite",
   "posterior": {
-    "mundano_natural": 0.72,
+    "mundano_natural": 0.74,
     "humana_clasificada": 0.03,
     "adversaria": 0.02,
     "nohumano_encubierto": 0.01,
     "nohumano_abierto": 0.03,
-    "indet": 0.19
+    "indet": 0.17
   },
-  "probability": 23,
+  "probability": 21,
   "classBasis": {
-    "es": "Ninguna fuente propone una causa que se sostenga. La tarjeta de Blue Book considera un satélite porque todo el movimiento seguía la línea noreste-suroeste, pero en el mismo comentario le opone que el Echo habría pasado media hora antes y que con la luz del crepúsculo quizá no se habría visto; concluye «Insufficient Data for Evaluation». La falta de un análisis no es prueba contra una causa ordinaria: en su informe del año fiscal 2024, la AARO del Pentágono dio por resueltos 174 casos, todos como objetos convencionales, aunque «muchos otros casos siguen sin resolver».",
-    "en": "No source proposes a cause that holds up. The Blue Book card considers a satellite because all the movement ran along a northeast-southwest line, but in the same comment it objects that Echo would have passed half an hour earlier and that in the twilight it might not have been visible; it concludes \"Insufficient Data for Evaluation.\" The absence of an analysis is not evidence against an ordinary cause: in its fiscal year 2024 report, the Pentagon's AARO resolved \"all 174 cases\" to \"prosaic objects,\" though \"many other cases remain unresolved.\"",
-    "source": "Proyecto Blue Book — expediente 1962-07-8678995, British Honduras (tarjeta de registro, nota del Mando Aéreo Estratégico y carta de la testigo), archive.org · AARO, Fiscal Year 2024 Consolidated Annual Report on UAP (14 nov 2024), pág. 3, tasa base",
-    "source_en": "Project Blue Book — file 1962-07-8678995, British Honduras (record card, Strategic Air Command cover note and the witness's letter), archive.org · AARO, Fiscal Year 2024 Consolidated Annual Report on UAP (November 14, 2024), p. 3, base rate",
+    "es": "La tarjeta de Blue Book plantea un satélite: «Since all movement was NE-SW oriented w/the final flight to the NE the possibility of a Satellite sighting is evident», y atribuye a la distancia el aparente ir y volver del objeto. La misma tarjeta objeta que el Echo habría pasado media hora antes y que con la luz del crepúsculo quizá no se habría visto, y concluye «Insufficient Data for Evaluation». Según un cálculo hecho para este caso, el Sol estaba unos 13° bajo el horizonte, así que un satélite a más de unos 180 km de altura seguía al sol. En contra queda la carta: el objeto se detuvo a unos 20° de altura antes de apagarse, y no da la duración.",
+    "en": "The Blue Book card raises a satellite: \"Since all movement was NE-SW oriented w/the final flight to the NE the possibility of a Satellite sighting is evident,\" and puts the object's apparent back-and-forth down to distance. The same card objects that Echo would have passed half an hour earlier and that in the twilight it might not have been visible, and concludes \"Insufficient Data for Evaluation.\" By a calculation made for this case, the Sun was about 13° below the horizon, so a satellite more than about 180 km up was still in sunlight. Against it stands the letter: the object stopped about 20° above the horizon before fading, and it gives no duration.",
+    "source": "Proyecto Blue Book, expediente 1962-07-8678995, British Honduras (tarjeta de registro ATIC 329, casilla 11, y carta de la testigo), archive.org",
+    "source_en": "Project Blue Book, file 1962-07-8678995, British Honduras (ATIC Form 329 record card, box 11, and the witness's letter), archive.org",
     "url": "https://archive.org/details/1962-07-8678995-BritishHonduras-CentralAmerica"
   },
   "summary": "El 8 de julio de 1962, a las 19:30, una mujer que estaba en Cayo Ambergris, en Honduras Británica (hoy Belice), vio en el cielo del suroeste un objeto brillante que avanzaba hacia el sur-suroeste. Fue por unos binoculares y lo halló casi en el mismo sitio; luego giró al norte-noreste, pasó sobre su cabeza, quedó quieto a unos 20° de altura y se apagó poco a poco. Según su carta, sus padres y su hermano mayor también lo vieron. La carta llegó al Proyecto Blue Book por el Mando Aéreo Estratégico, y Blue Book la cerró por datos insuficientes.",

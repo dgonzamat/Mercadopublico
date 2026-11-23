@@ -625,4 +625,5 @@ Regla: solo cambia lo que se repite en al menos 3 de las 10 fichas. Notas de los
 | belice-1962 | ausencia | BAJA: «el único expediente de Honduras Británica» se acota a los títulos de la colección | no |
 | belice-1962 | atribución | BAJA: «la isla más grande… junto a la frontera con México» no tenía fuente | no |
 | belice-1962 | léxico/voz | BAJA: frase sin verbo en `evidence` | no |
+| belice-1962 | clasificación | segundo paso de la revisión de clase: el satélite que la tarjeta da por «evident» es propuesta débil, no refutada (sus reparos van contra el Echo y el crepúsculo, y el Sol a −13° deja al sol cualquier satélite por encima de unos 180 km); pasa de `sin_propuesta` a misid/espacial/satélite, probability 23 → 21 | no |
 | ocho-rios-1959 | pendiente | provisional del redactor; sustituir por los hallazgos del verificador y del lector | no |
