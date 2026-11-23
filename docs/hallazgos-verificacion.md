@@ -585,3 +585,6 @@ Regla: solo cambia lo que se repite en al menos 3 de las 10 fichas. Notas de los
 | belgrado-1954 | ausencia | BAJA: «todo lo que se conserva del caso en ese archivo» afirmaba más que la copia digitalizada vista | no |
 | belgrado-1954 | clasificación | segundo paso de la revisión de clase: el epígrafe de Gross es una propuesta débil, no refutada; pasa de `sin_propuesta` a misid/astronómico/meteoro, `indet` 0,16 → 0,13 y probability 22 → 18; nuevo `classBasis` | no |
 | belgrado-1954 | lectura | lector ciego EN (Opus, nota 6): releyó la frase de los siete objetos, a quién se refería «without saying when» y «the note about the French press»; corregidas. Anotados sin tocar: repeticiones del primer párrafo y los enlaces a Quarouble y Florencia sin contexto | no |
+| truk-1953 | pendiente | provisional del redactor; la sustituye el orquestador con los hallazgos del verificador | no |
+| seria-1953 | pendiente | provisional del redactor; la sustituye el orquestador con los hallazgos del verificador | no |
+| barbados-1958 | pendiente | provisional del redactor; la sustituye el orquestador con los hallazgos del verificador | no |
