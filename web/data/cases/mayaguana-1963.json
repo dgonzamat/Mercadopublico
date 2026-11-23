@@ -16,21 +16,23 @@
   },
   "tier": "B",
   "epistemicStatus": "documented",
-  "mundanoType": "sin_propuesta",
+  "mundanoType": "misid",
+  "misidSubtype": "espacial",
+  "objectDetail": "satelite",
   "posterior": {
-    "mundano_natural": 0.71,
+    "mundano_natural": 0.74,
     "humana_clasificada": 0.05,
     "adversaria": 0.02,
-    "nohumano_encubierto": 0.02,
-    "nohumano_abierto": 0.04,
-    "indet": 0.16
+    "nohumano_encubierto": 0.01,
+    "nohumano_abierto": 0.03,
+    "indet": 0.15
   },
-  "probability": 22,
+  "probability": 19,
   "classBasis": {
-    "es": "Las causas que menciona el expediente no resisten lo que él mismo dice. El centro de pruebas de misiles de la base Patrick solo veía posible un meteorito, pero un bólido «usually lasts only a few seconds» (Sociedad Americana de Meteoros) y la luz duró cuatro minutos; NORAD descartó los satélites conocidos. La tarjeta de Blue Book dejó abierto un misil, pero el catálogo GCAT no registra ningún lanzamiento el 5 de enero de 1963. Que nadie proponga otra causa no prueba nada contra una ordinaria: en 2024, la AARO resolvió 174 casos, todos como objetos convencionales, aunque «muchos otros casos siguen sin resolver».",
-    "en": "The causes the file mentions do not survive what the file itself says. The missile test center at Patrick saw only a meteorite as possible, but a fireball \"usually lasts only a few seconds\" (American Meteor Society) and the light lasted four minutes; NORAD ruled out known satellites. The Blue Book card left a missile open, but the GCAT catalog lists no launch on January 5, 1963. That no one proposes another cause is no evidence against an ordinary one: in 2024, AARO resolved 174 cases, all as ordinary objects, though \"many other cases remain unresolved.\"",
-    "source": "Proyecto Blue Book, expediente «1963-01-9316566, Mayaguana, Bahama Islands» (tarjeta y mensaje del AFMTC del 22 ene 1963) · J. McDowell, GCAT (launch.tsv y satcat.tsv) · American Meteor Society, Fireball FAQs · AARO, Fiscal Year 2024 Consolidated Annual Report on UAP (14 nov 2024), pág. 3, tasa base",
-    "source_en": "Project Blue Book, file \"1963-01-9316566, Mayaguana, Bahama Islands\" (record card and AFMTC message of Jan 22, 1963) · J. McDowell, GCAT (launch.tsv and satcat.tsv) · American Meteor Society, Fireball FAQs · AARO, Fiscal Year 2024 Consolidated Annual Report on UAP (Nov 14, 2024), p. 3, base rate",
+    "es": "La tarjeta de Blue Book deja abierta una causa: «Possibility of satellite or missile not ruled out but substantiating data not available at this time». El misil no encaja: el catálogo GCAT no registra ningún lanzamiento el 5 de enero de 1963. Contra el satélite está NORAD, que descartó los satélites conocidos, y la etapa soviética que según el GCAT reentró ese día, sin hora, figura con el número 00521 del catálogo de NORAD. El meteorito, la única causa que veía el centro de la base Patrick, no cuadra con cuatro minutos: un bólido «usually lasts only a few seconds» (Sociedad Americana de Meteoros).",
+    "en": "The Blue Book card leaves one cause open: \"Possibility of satellite or missile not ruled out but substantiating data not available at this time.\" A missile does not fit: the GCAT catalog lists no launch on January 5, 1963. Against a satellite stands NORAD, which ruled out known satellites, and the Soviet stage that the GCAT says reentered that day, with no time, is listed as number 00521 in the NORAD catalog. A meteorite, the only cause the center at Patrick saw, does not match four minutes: a fireball \"usually lasts only a few seconds\" (American Meteor Society).",
+    "source": "Proyecto Blue Book, expediente «1963-01-9316566, Mayaguana, Bahama Islands» (tarjeta ATIC 329, casilla 11, y mensaje del AFMTC del 22 ene 1963) · J. McDowell, GCAT (launch.tsv y satcat.tsv) · American Meteor Society, Fireball FAQs",
+    "source_en": "Project Blue Book, file \"1963-01-9316566, Mayaguana, Bahama Islands\" (ATIC Form 329 card, box 11, and AFMTC message of Jan 22, 1963) · J. McDowell, GCAT (launch.tsv and satcat.tsv) · American Meteor Society, Fireball FAQs",
     "url": "https://archive.org/details/1963-01-9316566-Mayaguana-BAHAMA-ISLANDS"
   },
   "summary": "El 5 de enero de 1963, a las 11:24 de Greenwich, poco antes de salir el sol, dos empleados de Pan American, una de las dos compañías que operaban la estación de seguimiento de misiles de la isla de Mayaguana, en las Bahamas, vieron sobre la pista de aterrizaje un punto de luz parecido a una estrella grande. Descendía hacia el este y a los cuatro minutos se perdió en el horizonte. Diecisiete días después, el centro de pruebas de misiles de la Fuerza Aérea informó de que no había objetos espaciales previstos a esa hora. El Proyecto Blue Book cerró el caso por falta de datos.",
