@@ -538,6 +538,8 @@ const VISUAL_CERRADO_POR_LICENCIA = {
   // Decisión del dueño del 19 nov 2026 (D1): los extractos de licencia dudosa pasan a enlace (detalle en docs/registros.md):
   "aalborg-haesum-1976": "el archivo OVNI del FTK danés se publicó sin licencia declarada y la ley danesa (art. 9) no consta que cubra cuestionarios militares internos; queda como enlace al espejo de UFOScans",
   "clarenville-1978": "el RG 77 de Biblioteca y Archivos de Canadá no declara licencia para reproducir; queda como enlace a la copia de archive.org (CanadaUFO)",
+  // Ficha nueva del 23 nov 2026 (detalle en docs/registros.md):
+  "plesetsk-medusa-2026": "los videos de la «medusa» son de particulares y prensa con copyright; el video del Ministerio de Defensa (solo el despegue) está en Telegram sin licencia y mil.ru no responde; Commons y archive.org secos",
 };
 
 // Guard: la exención no puede volverse un desván. Si un caso exento consiguió
