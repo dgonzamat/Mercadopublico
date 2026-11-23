@@ -1,0 +1,160 @@
+{
+  "id": "haifa-larga-marcha-2021",
+  "num": 595,
+  "name": "Haifa · filman un punto de luz que cruza el cielo antes del alba",
+  "name_en": "Haifa · a point of light filmed crossing the sky before dawn",
+  "year_start": 2021,
+  "country": "IL",
+  "country_name": "Israel",
+  "flag": "🇮🇱",
+  "location": {
+    "lat": 32.79,
+    "lng": 34.99,
+    "place": "Haifa, Israel",
+    "place_en": "Haifa, Israel",
+    "precision": "approx"
+  },
+  "tier": "A",
+  "probability": 1,
+  "posterior": {
+    "mundano_natural": 0.97,
+    "humana_clasificada": 0.01,
+    "adversaria": 0.01,
+    "nohumano_encubierto": 0,
+    "nohumano_abierto": 0,
+    "indet": 0.01
+  },
+  "mundanoType": "misid",
+  "misidSubtype": "espacial",
+  "objectDetail": "reentrada",
+  "classBasis": {
+    "es": "Quien publicó el video lo presentó como la etapa del cohete chino: «#CZ5B Confirmed sighting from Haifa Israel opprox 2:11 UTC». Jonathan McDowell escribió en su Jonathan's Space Report n.º 792 (10 de mayo de 2021) que la etapa central del Larga Marcha 5B «reentered over Saudi Arabia at about 0214 UTC May 9, just after passing directly over Riyadh» (reentró sobre Arabia Saudí hacia las 02:14 UTC, justo después de pasar sobre Riad), y el Escuadrón 18 de Control Espacial de EE. UU. dio la reentrada a las 02:14 UTC, según Space-Track.",
+    "en": "The person who posted the video presented it as the Chinese rocket stage: \"#CZ5B Confirmed sighting from Haifa Israel opprox 2:11 UTC.\" Jonathan McDowell wrote in his Jonathan's Space Report No. 792 (May 10, 2021) that the Long March 5B core stage \"reentered over Saudi Arabia at about 0214 UTC May 9, just after passing directly over Riyadh,\" and the U.S. 18th Space Control Squadron put the reentry at 02:14 UTC, according to Space-Track.",
+    "source": "@CYA90930064, publicación en X (9 may 2021); Jonathan McDowell, Jonathan's Space Report n.º 792 (10 may 2021); Space-Track, publicación en X (9 may 2021)",
+    "source_en": "@CYA90930064, post on X (May 9, 2021); Jonathan McDowell, Jonathan's Space Report No. 792 (May 10, 2021); Space-Track, post on X (May 9, 2021)",
+    "url": "https://planet4589.org/space/jsr/back/news.792.txt"
+  },
+  "summary": "Hacia las 05:11 del 9 de mayo de 2021 (02:11 UTC), alguien filmó desde Haifa un punto de luz que cruzaba el cielo antes del alba y publicó el video en X como la etapa central del cohete chino Larga Marcha 5B, que caía sin control diez días después de lanzar el módulo Tianhe. En esa media hora circularon también videos de Al Qurayyat, en Arabia Saudí, y de Omán. El ejército de EE. UU. situó la reentrada sobre la península arábiga hacia las 02:14 UTC, y China, la caída de los restos en el océano Índico, cerca de las Maldivas, a las 02:24 UTC.",
+  "summary_en": "At around 5:11 a.m. on May 9, 2021 (02:11 UTC), someone in Haifa filmed a point of light crossing the sky before dawn and posted the video on X as the core stage of China's Long March 5B rocket, which was falling uncontrolled ten days after launching the Tianhe module. Videos from Al Qurayyat, in Saudi Arabia, and from Oman also circulated in that half hour. The U.S. military placed the reentry over the Arabian Peninsula at around 02:14 UTC, and China put the fall of the debris in the Indian Ocean, near the Maldives, at 02:24 UTC.",
+  "patterns": [
+    "8e"
+  ],
+  "category": "incident",
+  "epistemicStatus": "documented",
+  "whatHappened": "El 29 de abril de 2021, un cohete chino Larga Marcha 5B despegó de Wenchang, en la isla de Hainan, con Tianhe, el módulo central de la estación espacial china. Según el astrofísico Jonathan McDowell, del Centro de Astrofísica Harvard-Smithsonian, que publica el boletín Jonathan's Space Report y el catálogo de objetos espaciales GCAT, el módulo se separó a las 03:31 UTC y dejó en órbita la etapa central del cohete, vacía y de unas 21 toneladas, a entre 170 y 375 kilómetros de altura. La etapa no tenía cómo dirigir su caída. Durante diez días el roce con el aire la fue frenando, y agencias espaciales y rastreadores de satélites publicaron predicciones de cuándo y dónde caería.\n\nLa madrugada del domingo 9 de mayo, en su última vuelta, la etapa cruzó Oriente Medio de noroeste a sureste. A las 02:11:32 UTC, las 05:11 en Israel y en Jordania, la cuenta de X @nadavision escribió en mayúsculas que acababa de verla sobre Israel: «HARD TO SEE ON VIDEO BUT IT WAS HUGE AND VERY VERY LOW VISIBLE FIRE» (difícil de ver en video, pero era enorme, muy, muy baja, con fuego visible). Esa cuenta hoy es privada, y su texto se conoce por el Jerusalem Post, que lo citó esa mañana advirtiendo que los detalles no estaban confirmados. A las 02:17 UTC, la cuenta del diario digital Al Bawaba (@albwaabh) publicó un clip de 12 segundos que, según su texto, circulaba en redes y mostraba el paso de los restos del cohete chino sobre Al Qurayyat, una ciudad saudí cercana a la frontera con Jordania. Se ve un punto de luz sobre unas palmeras, en un cielo azul de alba.\n\nA las 02:40 UTC, otra cuenta sin nombre, @CYA90930064, publicó un video de 30 segundos dirigido a McDowell: «#CZ5B Confirmed sighting from Haifa Israel opprox 2:11 UTC» (avistamiento confirmado desde Haifa, Israel, hacia las 02:11 UTC). Añadía que había pasado «a little bit early and northern than predicted» (algo antes y más al norte de lo previsto) y que el objeto brillante de la izquierda era Júpiter. La palabra «confirmado» es del propio autor, que no dice quién lo confirmó; el nombre de quien filmó no figura en la publicación. El video muestra un cielo azul oscuro, con árboles y edificios iluminados abajo, y una cámara que se mueve siguiendo un punto de luz débil.\n\nA las 02:42 UTC, una tercera cuenta, @0_F_0, publicó un clip de algo más de cuatro segundos con el texto «Chinese Rocket while crossing the skies of #Oman». Está grabado de día, sobre unas azoteas, y muestra una raya blanca corta en el cielo. McDowell lo citó poco después: «Claimed observation from Oman which if genuine would imply the reentry was underway with impact over the Indian Ocean» (si esta observación atribuida a Omán es auténtica, la reentrada estaba en marcha y la caída sería en el océano Índico). Dos horas después, el Centro Internacional de Astronomía (IAC), de Abu Dabi, difundió el mismo clip como un video de Omán que mostraba «el comienzo de su entrada en la atmósfera». Según Sky News Arabia, el centro publicó también un video de unos 42 segundos grabado en Amán, la capital jordana, por un miembro de su programa de seguimiento de caídas de satélites.\n\nA las 04:04 UTC, Space-Track, el sitio por el que la Fuerza Espacial de EE. UU. publica sus datos de seguimiento, anunció que el Escuadrón 18 de Control Espacial confirmaba la reentrada de la etapa a las 02:14 UTC. Dio una posición en el interior de Arabia Saudí, aunque el mismo mensaje decía que la etapa había caído en el océano Índico, al norte de las Maldivas: la posición es la de la reentrada, y el océano, el destino de los restos. El Comando Espacial de EE. UU. comunicó que la etapa había reentrado sobre la península arábiga hacia las 02:15 UTC y que no se sabía si los restos habían caído en tierra o en el agua.\n\nLa Oficina de Ingeniería Espacial Tripulada de China dio otra hora y otro lugar: los restos reentraron a las 02:24 UTC, las 10:24 en Pekín, y cayeron al mar cerca de las Maldivas después de quemarse casi por completo. Ese día, Lassina Zerbo, secretario ejecutivo de la Organización del Tratado de Prohibición Completa de los Ensayos Nucleares, informó que una estación de infrasonido de la organización en Yibuti había captado una señal compatible con la reentrada sobre la península arábiga. Al día siguiente, McDowell escribió en su boletín que la etapa reentró sobre Arabia Saudí hacia las 02:14 UTC, justo después de pasar sobre Riad, y que los restos cayeron cerca de las Maldivas unos diez minutos después.",
+  "whatHappened_en": "On April 29, 2021, a Chinese Long March 5B rocket lifted off from Wenchang, on Hainan Island, carrying Tianhe, the core module of China's space station. According to astrophysicist Jonathan McDowell, of the Harvard-Smithsonian Center for Astrophysics, who publishes the newsletter Jonathan's Space Report and the GCAT catalog of space objects, the module separated at 03:31 UTC and left the rocket's core stage in orbit, empty and weighing about 21 tons, between 170 and 375 kilometers up. The stage had no way to steer its fall. For ten days, drag from the air slowed it down, and space agencies and satellite trackers published predictions of when and where it would come down.\n\nBefore dawn on Sunday, May 9, on its last orbit, the stage crossed the Middle East from northwest to southeast. At 02:11:32 UTC, 5:11 a.m. in Israel and Jordan, the X account @nadavision wrote in capital letters that it had just seen it over Israel: \"HARD TO SEE ON VIDEO BUT IT WAS HUGE AND VERY VERY LOW VISIBLE FIRE.\" That account is now private, and its text is known from the Jerusalem Post, which quoted it that morning with a warning that the details were unconfirmed. At 02:17 UTC, the account of the online newspaper Al Bawaba (@albwaabh) posted a 12-second clip that, according to its text, was circulating on social media and showed the debris of the Chinese rocket passing over Al Qurayyat, a Saudi town near the border with Jordan. It shows a point of light above some palm trees, in a blue dawn sky.\n\nAt 02:40 UTC, another anonymous account, @CYA90930064, posted a 30-second video addressed to McDowell: \"#CZ5B Confirmed sighting from Haifa Israel opprox 2:11 UTC.\" It added that the object had come \"a little bit early and northern than predicted\" and that the bright object on the left was Jupiter. The word \"confirmed\" is the poster's own, and the post does not say who confirmed it; the name of the person who filmed it does not appear in the post. The video shows a dark blue sky, with trees and lit buildings below, and a camera moving to follow a faint point of light.\n\nAt 02:42 UTC, a third account, @0_F_0, posted a clip of just over four seconds with the text \"Chinese Rocket while crossing the skies of #Oman.\" It was filmed in daylight, above some rooftops, and shows a short white streak in the sky. McDowell quoted it shortly afterward: \"Claimed observation from Oman which if genuine would imply the reentry was underway with impact over the Indian Ocean.\" Two hours later, the International Astronomical Center (IAC), based in Abu Dhabi, shared the same clip as a video from Oman showing \"the beginning of its entry into the atmosphere.\" According to Sky News Arabia, the center also posted a video of about 42 seconds filmed in Amman, the Jordanian capital, by a member of its satellite reentry tracking program.\n\nAt 04:04 UTC, Space-Track, the site through which the U.S. Space Force publishes its tracking data, announced that the 18th Space Control Squadron confirmed the stage's reentry at 02:14 UTC. It gave a position inside Saudi Arabia, even though the same message said the stage had fallen into the Indian Ocean north of the Maldives: the position is that of the reentry, and the ocean is where the debris ended up. U.S. Space Command stated that the stage had reentered over the Arabian Peninsula at about 02:15 UTC and that it was unknown whether the debris had hit land or water.\n\nThe China Manned Space Engineering Office gave a different time and place: the remains reentered at 02:24 UTC, 10:24 a.m. in Beijing, and fell into the sea near the Maldives after almost entirely burning up. That day, Lassina Zerbo, executive secretary of the Comprehensive Nuclear-Test-Ban Treaty Organization, reported that one of the organization's infrasound stations, in Djibouti, had picked up a signal consistent with the reentry over the Arabian Peninsula. The next day, McDowell wrote in his newsletter that the stage reentered over Saudi Arabia at around 02:14 UTC, just after passing over Riyadh, and that the debris fell near the Maldives about ten minutes later.",
+  "whyMatters": "Las horas de los videos encajan con la trayectoria. Según un cálculo hecho para este caso con la inclinación de la órbita que da el GCAT, 41,5 grados, y el paso sobre Riad a las 02:14 que da McDowell, la etapa pasó a unos 125 kilómetros de Haifa hacia las 02:10:40 UTC, y a unos 90 de Amán y unos 100 de Al Qurayyat en el minuto siguiente. La misma trayectoria pasa a unos 20 kilómetros de la posición del Escuadrón 18 hacia las 02:15 y a unos 35 del punto de caída que dio China. La hora que escribió el autor del video de Haifa, hacia las 02:11 UTC, y el mensaje de @nadavision a las 02:11:32 coinciden con ese paso con un margen de un minuto.\n\nLo que muestra el video de Haifa también encaja. A las 05:11 en Haifa el Sol estaba unos siete grados y medio bajo el horizonte y el cielo empezaba a clarear. Según el mismo cálculo, a esa hora la sombra de la Tierra solo cubría hasta unos 60 o 70 kilómetros de altura bajo la trayectoria, así que la etapa, aún en órbita y más alta, recibía la luz del Sol, como los satélites que se ven al amanecer. Vista desde Haifa, cruzó el cielo de oeste a sureste y bajó por debajo de Júpiter, que estaba a unos 33 grados sobre el horizonte, en el sureste: encaja con el planeta brillante a la izquierda del que hablaba el autor. El rastreador de satélites neerlandés Marco Langbroek, que publicó la trayectoria final en su blog, escribió que las imágenes de Jordania sugerían que el objeto seguía entero al pasar por allí.\n\nEl clip de Omán encaja peor. Según el mismo cálculo, la etapa cruzó el sur de Omán, por la región de Dhofar, hacia las 02:16 UTC; eran las 06:16 en ese país y el Sol estaba ya unos diez grados sobre el horizonte de Mascate. La trayectoria pasó a unos 200 kilómetros de Salalah y a unos 650 de Mascate, y el clip no dice en qué lugar de Omán se grabó. Si el video era auténtico, escribió Langbroek, indicaría que la etapa empezaba a destruirse sobre el sur de Arabia; él y McDowell lo dieron por no verificado. El IAC escribió que, según fuentes estadounidenses, la etapa entró en la atmósfera a las 02:14 al pasar sobre Omán, pero la posición de esa hora que dio Space-Track está en Arabia Saudí, y según el cálculo la etapa llegó a Omán unos dos minutos después.\n\nLas dos horas oficiales difieren en diez minutos. La estadounidense, de las 02:14 a las 02:15, sitúa la entrada en la atmósfera sobre Arabia; la china, las 02:24, va con una zona de caída en el mar, a más de 3.000 kilómetros de allí. El boletín de McDowell las encaja en una sola secuencia: la etapa reentró sobre Arabia Saudí y sus restos cayeron cerca de las Maldivas unos diez minutos después; la estación de infrasonido de Yibuti describe lo mismo. El catálogo GCAT junta las dos y registra la caída a las 02:14, con destino en 72,5° E y 2,7° N. Todos los videos de esa madrugada se publicaron en la media hora que siguió al paso de una etapa de cohete conocida, cuya caída seguían agencias de varios países.",
+  "whyMatters_en": "The times of the videos match the path. By a calculation made for this case from the orbital inclination given in GCAT, 41.5 degrees, and the pass over Riyadh at 02:14 given by McDowell, the stage passed about 125 kilometers from Haifa at around 02:10:40 UTC, and about 90 from Amman and about 100 from Al Qurayyat in the following minute. The same path passes about 20 kilometers from the 18th Squadron's position at around 02:15 and about 35 from the fall point China gave. The time written by the person who posted the Haifa video, \"approx 2:11 UTC,\" and the @nadavision message at 02:11:32 match that pass to within a minute.\n\nWhat the Haifa video shows also fits. At 5:11 a.m. in Haifa the Sun was about seven and a half degrees below the horizon and the sky was starting to brighten. By the same calculation, at that time the Earth's shadow reached only about 60 to 70 kilometers up beneath the path, so the stage, still in orbit and higher than that, was lit by the Sun, like the satellites seen at dawn. Seen from Haifa, it crossed the sky from west to southeast and sank below Jupiter, which stood about 33 degrees above the southeastern horizon: this fits the bright planet on the left that the poster mentioned. Dutch satellite tracker Marco Langbroek, who published the final path on his blog, wrote that the imagery from Jordan suggested the object was still intact when it passed over there.\n\nThe Oman clip fits less well. By the same calculation, the stage crossed southern Oman, over the Dhofar region, at around 02:16 UTC; it was 6:16 a.m. there and the Sun was already about ten degrees above the horizon in Muscat. The path passed about 200 kilometers from Salalah and about 650 from Muscat, and the clip does not say where in Oman it was filmed. If the video was genuine, Langbroek wrote, it would suggest the stage was starting to break up over southern Arabia; he and McDowell treated it as unverified. The IAC wrote that, according to U.S. sources, the stage entered the atmosphere at 02:14 while passing over Oman, but the position Space-Track gave for that time is in Saudi Arabia, and by the calculation the stage reached Oman about two minutes later.\n\nThe two official times differ by ten minutes. The American one, 02:14 to 02:15, places the entry into the atmosphere over Arabia; the Chinese one, 02:24, comes with a fall zone at sea, more than 3,000 kilometers away. McDowell's newsletter fits them into a single sequence: the stage reentered over Saudi Arabia and its debris fell near the Maldives about ten minutes later; the Djibouti infrasound station describes the same. The GCAT catalog combines the two, recording the fall at 02:14 with its destination at 72.5° E, 2.7° N. All the videos of that morning were posted in the half hour after the pass of a known rocket stage whose fall agencies in several countries were tracking.",
+  "evidence": [
+    "La publicación de @CYA90930064 en X, a las 02:40:05 UTC del 9 de mayo de 2021, trae un video de 30 segundos y el texto «#CZ5B Confirmed sighting from Haifa Israel opprox 2:11 UTC», con la mención de Júpiter a la izquierda y la dirigida a McDowell; el nombre de quien filmó no figura.",
+    "La cuenta @nadavision publicó a las 02:11:32 UTC que acababa de ver el objeto sobre Israel; la cuenta es hoy privada y el texto se conoce por el Jerusalem Post del 9 de mayo de 2021, que lo dio como no confirmado. La hora sale del identificador de la publicación.",
+    "Space-Track publicó a las 04:04 UTC que el Escuadrón 18 de Control Espacial confirmaba la reentrada de la etapa 48275 (2021-035B) a las 02:14 UTC, en 22,2° N y 50,0° E. El Comando Espacial de EE. UU. dio las 22:15 del 8 de mayo, hora del este (02:15 UTC), sobre la península arábiga.",
+    "La Oficina de Ingeniería Espacial Tripulada de China dio la reentrada de los restos a las 10:24 de Pekín (02:24 UTC) del 9 de mayo, con zona de caída en torno a 72,47° E y 2,65° N, y dijo que casi todo se quemó al reentrar.",
+    "Jonathan's Space Report n.º 792 (10 de mayo de 2021): la etapa, de unas 21 toneladas y en una órbita de 170 por 375 kilómetros, reentró sobre Arabia Saudí hacia las 02:14 UTC, justo después de pasar sobre Riad, y sus restos cayeron cerca de las Maldivas unos diez minutos después. El GCAT registra la caída a las 02:14 y una inclinación de 41,48 grados.",
+    "Lassina Zerbo, secretario ejecutivo de la CTBTO, informó el 9 de mayo de 2021 que la estación de infrasonido IS19, en Yibuti, registró una señal compatible con la reentrada sobre la península arábiga hacia las 02:15 UTC.",
+    "El clip de Omán (@0_F_0, 02:42 UTC) dura algo más de cuatro segundos, está grabado de día y no dice en qué lugar de Omán; McDowell lo citó como «claimed observation» y el IAC lo difundió después como el comienzo de la reentrada."
+  ],
+  "evidence_en": [
+    "The post by @CYA90930064 on X, at 02:40:05 UTC on May 9, 2021, carries a 30-second video and the text \"#CZ5B Confirmed sighting from Haifa Israel opprox 2:11 UTC,\" with the mention of Jupiter on the left and the tag addressed to McDowell; the name of the person who filmed it does not appear.",
+    "The account @nadavision posted at 02:11:32 UTC that it had just seen the object over Israel; the account is now private and the text is known from the Jerusalem Post of May 9, 2021, which reported it as unconfirmed. The time comes from the post's identifier.",
+    "Space-Track posted at 04:04 UTC that the 18th Space Control Squadron confirmed the reentry of stage 48275 (2021-035B) at 02:14 UTC, at 22.2° N, 50.0° E. U.S. Space Command gave 10:15 p.m. Eastern time on May 8 (02:15 UTC), over the Arabian Peninsula.",
+    "The China Manned Space Engineering Office gave the reentry of the remains at 10:24 a.m. Beijing time (02:24 UTC) on May 9, with the fall zone around 72.47° E, 2.65° N, and said almost all of it burned up on reentry.",
+    "Jonathan's Space Report No. 792 (May 10, 2021): the stage, weighing about 21 tons and in a 170 by 375 kilometer orbit, reentered over Saudi Arabia at around 02:14 UTC, just after passing over Riyadh, and its debris fell near the Maldives about ten minutes later. GCAT records the fall at 02:14 and an inclination of 41.48 degrees.",
+    "Lassina Zerbo, executive secretary of the CTBTO, reported on May 9, 2021, that infrasound station IS19, in Djibouti, recorded a signal consistent with the reentry over the Arabian Peninsula at around 02:15 UTC.",
+    "The Oman clip (@0_F_0, 02:42 UTC) lasts just over four seconds, was filmed in daylight and does not say where in Oman; McDowell quoted it as a \"claimed observation\" and the IAC later shared it as the start of the reentry."
+  ],
+  "sources": [
+    {
+      "name": "@CYA90930064, publicación en X con video (9 may 2021, 02:40 UTC)",
+      "name_en": "@CYA90930064, post on X with video (May 9, 2021, 02:40 UTC)",
+      "url": "https://x.com/CYA90930064/status/1391221407053459459",
+      "note": "Fuente primaria del avistamiento de Haifa: video de 30 segundos y texto del autor, que no da su nombre.",
+      "note_en": "Primary source for the Haifa sighting: a 30-second video and the poster's text; the poster gives no name."
+    },
+    {
+      "name": "Jonathan McDowell, Jonathan's Space Report n.º 792 (10 may 2021), sección «Tianhe»",
+      "name_en": "Jonathan McDowell, Jonathan's Space Report No. 792 (May 10, 2021), \"Tianhe\" section",
+      "url": "https://planet4589.org/space/jsr/back/news.792.txt",
+      "note": "Lanzamiento, separación del módulo a las 03:31 UTC, órbita y masa de la etapa, y reentrada sobre Arabia Saudí hacia las 02:14 UTC tras pasar sobre Riad.",
+      "note_en": "Launch, module separation at 03:31 UTC, the stage's orbit and mass, and reentry over Saudi Arabia at around 02:14 UTC after passing over Riyadh."
+    },
+    {
+      "name": "Jonathan McDowell, General Catalog of Artificial Space Objects (GCAT), catálogo de satélites, entrada S48275 (2021-035B)",
+      "name_en": "Jonathan McDowell, General Catalog of Artificial Space Objects (GCAT), satellite catalog, entry S48275 (2021-035B)",
+      "url": "https://planet4589.org/space/gcat/tsv/cat/satcat.tsv",
+      "note": "Caída el 9 de mayo de 2021 a las 02:14, destino 72.5E 2.7N, masa de 21.600 kg, inclinación de 41,48 grados.",
+      "note_en": "Fall on May 9, 2021, at 02:14, destination 72.5E 2.7N, mass of 21,600 kg, inclination of 41.48 degrees."
+    },
+    {
+      "name": "Space-Track (@SpaceTrackOrg), publicación en X (9 may 2021, 04:04 UTC)",
+      "name_en": "Space-Track (@SpaceTrackOrg), post on X (May 9, 2021, 04:04 UTC)",
+      "url": "https://x.com/SpaceTrackOrg/status/1391242612569300993",
+      "note": "Fuente primaria: el Escuadrón 18 de Control Espacial confirma la reentrada a las 02:14Z en «lat 22.2, long 50.0», y en la misma frase la caída «into the Indian ocean north of the Maldives».",
+      "note_en": "Primary source: the 18th Space Control Squadron confirms the reentry at 02:14Z at \"lat 22.2, long 50.0,\" and in the same sentence the fall \"into the Indian ocean north of the Maldives.\""
+    },
+    {
+      "name": "Comando Espacial de EE. UU., «Chinese Long March 5B re-enters over Arabian Peninsula» (9 may 2021)",
+      "name_en": "U.S. Space Command, \"Chinese Long March 5B re-enters over Arabian Peninsula\" (May 9, 2021)",
+      "url": "https://www.spacecom.mil/Newsroom/News/Article-Display/Article/2600853/chinese-long-march-5b-re-enters-over-arabian-peninsula/",
+      "note": "Fuente primaria. La página no respondió al consultarla; su texto (reentrada sobre la península arábiga hacia las 22:15 EDT del 8 de mayo, y «It's unknown if the debris impacted land or water») se toma de Space.com y del Oman Observer, que lo citan.",
+      "note_en": "Primary source. The page did not respond when consulted; its text (reentry over the Arabian Peninsula at about 10:15 p.m. EDT on May 8, and \"It's unknown if the debris impacted land or water\") is taken from Space.com and the Oman Observer, which quote it."
+    },
+    {
+      "name": "Oficina de Ingeniería Espacial Tripulada de China, aviso del 9 may 2021, reproducido por China Youth Daily en The Paper (10 may 2021)",
+      "name_en": "China Manned Space Engineering Office, notice of May 9, 2021, reproduced by China Youth Daily in The Paper (May 10, 2021)",
+      "url": "https://www.thepaper.cn/newsDetail_forward_12606995",
+      "note": "«2021年5月9日10时24分，长征五号B遥二运载火箭末级残骸已再入大气层，落区位于东经72.47°、北纬2.65°周边海域»: reentrada a las 10:24 de Pekín y zona de caída en el mar en torno a esas coordenadas.",
+      "note_en": "\"2021年5月9日10时24分，长征五号B遥二运载火箭末级残骸已再入大气层，落区位于东经72.47°、北纬2.65°周边海域\": reentry at 10:24 a.m. Beijing time and a fall zone at sea around those coordinates."
+    },
+    {
+      "name": "Lassina Zerbo (@SinaZerbo), secretario ejecutivo de la CTBTO, publicación en X (9 may 2021, 11:35 UTC)",
+      "name_en": "Lassina Zerbo (@SinaZerbo), CTBTO executive secretary, post on X (May 9, 2021, 11:35 UTC)",
+      "url": "https://x.com/SinaZerbo/status/1391356201972207621",
+      "note": "La estación de infrasonido IS19, en Yibuti, registró una señal compatible con la reentrada sobre la península arábiga hacia las 02:15 UTC.",
+      "note_en": "Infrasound station IS19, in Djibouti, recorded a signal consistent with the reentry over the Arabian Peninsula at around 02:15 UTC."
+    },
+    {
+      "name": "Jonathan McDowell (@planet4589), publicación en X (9 may 2021, 02:53 UTC)",
+      "name_en": "Jonathan McDowell (@planet4589), post on X (May 9, 2021, 02:53 UTC)",
+      "url": "https://x.com/planet4589/status/1391224699682762752",
+      "note": "Cita el clip de Omán de @0_F_0 (02:42 UTC) como «claimed observation» y dice qué implicaría si fuera auténtico.",
+      "note_en": "Quotes the Oman clip by @0_F_0 (02:42 UTC) as a \"claimed observation\" and says what it would imply if genuine."
+    },
+    {
+      "name": "Al Bawaba (@albwaabh), publicación en X con video (9 may 2021, 02:17 UTC)",
+      "name_en": "Al Bawaba (@albwaabh), post on X with video (May 9, 2021, 02:17 UTC)",
+      "url": "https://x.com/albwaabh/status/1391215736832630790",
+      "note": "Clip de 12 segundos presentado como «مقطع متداول» (un video que circula) del paso de los restos sobre Al Qurayyat; no da el autor.",
+      "note_en": "A 12-second clip presented as \"مقطع متداول\" (a circulating video) of the debris passing over Al Qurayyat; it does not name the author."
+    },
+    {
+      "name": "Centro Internacional de Astronomía (@AstronomyCenter), publicación en X con video (9 may 2021, 04:39 UTC)",
+      "name_en": "International Astronomical Center (@AstronomyCenter), post on X with video (May 9, 2021, 04:39 UTC)",
+      "url": "https://x.com/AstronomyCenter/status/1391251363300999174",
+      "note": "Difunde el clip de Omán, el mismo de @0_F_0, como el comienzo de la entrada en la atmósfera, y sitúa la reentrada de las 02:14 «sobre Omán».",
+      "note_en": "Shares the Oman clip, the same one posted by @0_F_0, as the start of the entry into the atmosphere, and places the 02:14 reentry \"over Oman.\""
+    },
+    {
+      "name": "Sky News Arabia, «فوق دولتين عربيتين.. شاهد الصاروخ الصيني قبل دقائق من سقوطه» (9 may 2021)",
+      "name_en": "Sky News Arabia, \"فوق دولتين عربيتين.. شاهد الصاروخ الصيني قبل دقائق من سقوطه\" (May 9, 2021)",
+      "url": "https://www.skynewsarabia.com/middle-east/1436003-%D8%B9%D8%A7%D8%B5%D9%85%D8%A9-%D8%A7%D9%84%D8%A7%D9%94%D8%B1%D8%AF%D9%86-%D8%B4%D8%A7%D9%87%D8%AF-%D8%A7%D9%84%D8%B5%D8%A7%D8%B1%D9%88%D8%AE-%D8%A7%D9%84%D8%B5%D9%8A%D9%86%D9%8A-%D8%AF%D9%82%D8%A7%D9%8A%D9%94%D9%82-%D8%B3%D9%82%D9%88%D8%B7%D9%87",
+      "note": "Describe los dos videos del IAC: el de Amán, de unos 42 segundos y grabado por un miembro del programa de seguimiento de caídas de satélites del centro, y el de Omán.",
+      "note_en": "Describes the IAC's two videos: the one from Amman, about 42 seconds long and filmed by a member of the center's satellite reentry tracking program, and the one from Oman."
+    },
+    {
+      "name": "The Jerusalem Post, «Israel in risk zone for Chinese rocket hurtling towards earth» (9 may 2021)",
+      "name_en": "The Jerusalem Post, \"Israel in risk zone for Chinese rocket hurtling towards earth\" (May 9, 2021)",
+      "url": "https://www.jpost.com/international/israel-in-risk-zone-for-chinese-rocket-hurtling-towards-earth-667634",
+      "note": "Reproduce el texto de @nadavision, hoy privado, y las publicaciones de Haifa, Al Qurayyat y McDowell.",
+      "note_en": "Reproduces the text by @nadavision, now private, and the posts from Haifa, Al Qurayyat and McDowell."
+    },
+    {
+      "name": "Marco Langbroek, SatTrackCam Leiden, «Reentry predictions for the Chinese CZ-5B rocket stage 2021-035B» (6 may 2021, actualizado el 9 may)",
+      "name_en": "Marco Langbroek, SatTrackCam Leiden, \"Reentry predictions for the Chinese CZ-5B rocket stage 2021-035B\" (May 6, 2021, updated May 9)",
+      "url": "https://sattrackcam.blogspot.com/2021/05/reentry-predictions-for-chinese-cz-5b.html",
+      "note": "Trayectoria final, paso sobre Riad, imágenes de Jordania que sugieren el objeto entero y el video de Omán como no verificado.",
+      "note_en": "Final path, pass over Riyadh, imagery from Jordan suggesting the object was intact, and the Oman video as unverified."
+    }
+  ],
+  "evidenceReviewed": "2026-11-23"
+}

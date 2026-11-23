@@ -635,3 +635,4 @@ Regla: solo cambia lo que se repite en al menos 3 de las 10 fichas. Notas de los
 | ocho-rios-1959 | omisión | BAJA (mensajes de la Guardia Costera): faltaban la demora 300 del Esso Stockholm, la hora de posición 01:30Z del Caltex Auckland y el «OVER VESSEL» del Allobrogia | no |
 | ocho-rios-1959 | atribución | BAJA: las págs. 9 y 10 son la hoja de resumen del mismo cuestionario, no una carta aparte | no |
 | ocho-rios-1959 | lectura | lector ciego ES (Opus, nota 6): no situó «las 01:00 y las 01:10» de la tarjeta, el avión cisterna que aparecía sin contexto y la posición frente al rumbo de la luz; corregidos. Anotados sin tocar: horas en dos sistemas, grados y repeticiones | no |
+| haifa-larga-marcha-2021 | pendiente | provisional del redactor; sustituir por los hallazgos del verificador | no |

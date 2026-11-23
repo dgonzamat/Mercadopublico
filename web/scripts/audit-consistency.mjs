@@ -540,6 +540,7 @@ const VISUAL_CERRADO_POR_LICENCIA = {
   "clarenville-1978": "el RG 77 de Biblioteca y Archivos de Canadá no declara licencia para reproducir; queda como enlace a la copia de archive.org (CanadaUFO)",
   // Ficha nueva del 23 nov 2026 (detalle en docs/registros.md):
   "plesetsk-medusa-2026": "los videos de la «medusa» son de particulares y prensa con copyright; el video del Ministerio de Defensa (solo el despegue) está en Telegram sin licencia y mil.ru no responde; Commons y archive.org secos",
+  "haifa-larga-marcha-2021": "los videos de Haifa, Al Qurayyat y Omán son de cuentas de X sin licencia; Space-Track, la CTBTO y la CMSE no publicaron imagen del paso; en Commons solo hay fotos del lanzamiento y un gráfico de un usuario; archive.org seco",
 };
 
 // Guard: la exención no puede volverse un desván. Si un caso exento consiguió
