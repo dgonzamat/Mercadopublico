@@ -580,3 +580,4 @@ Regla: solo cambia lo que se repite en al menos 3 de las 10 fichas. Notas de los
 | belgrado-1954 | cifra/hora | BAJA: no hay despacho de Praga; la noticia de Radio Praga llega en uno de Viena | no |
 | belgrado-1954 | léxico/voz | BAJA: la divergencia de fechas de la primera noticia no decía qué implica | no |
 | belgrado-1954 | ausencia | BAJA: «todo lo que se conserva del caso en ese archivo» afirmaba más que la copia digitalizada vista | no |
+| belgrado-1954 | clasificación | segundo paso de la revisión de clase: el epígrafe de Gross es una propuesta débil, no refutada; pasa de `sin_propuesta` a misid/astronómico/meteoro, `indet` 0,16 → 0,13 y probability 22 → 18; nuevo `classBasis` | no |

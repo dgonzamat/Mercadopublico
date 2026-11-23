@@ -16,22 +16,24 @@
   },
   "tier": "B",
   "epistemicStatus": "documented",
-  "mundanoType": "sin_propuesta",
+  "mundanoType": "misid",
+  "misidSubtype": "astronomico",
+  "objectDetail": "meteoro",
   "posterior": {
-    "mundano_natural": 0.72,
+    "mundano_natural": 0.76,
     "humana_clasificada": 0.03,
     "adversaria": 0.03,
     "nohumano_encubierto": 0.02,
-    "nohumano_abierto": 0.04,
-    "indet": 0.16
+    "nohumano_abierto": 0.03,
+    "indet": 0.13
   },
-  "probability": 22,
+  "probability": 18,
   "classBasis": {
-    "es": "Ninguna fuente analiza qué vieron los vecinos de Belgrado. Blue Book concluye «Insufficient data for evaluation» y anota que la racha de informes siguió de inmediato a la publicidad de la prensa francesa; si eso explica algo, es cuántos hubo, no qué se vio. Kristian Benić (2011) menciona la explicación popular de los globos meteorológicos y relaciona la oleada, «probablemente», con los relatos de ovnis que ese año llenaban la prensa yugoslava, como un reportaje por entregas de la revista Globus; no da fuente ni análisis. Patrick Gross publica su transcripción del despacho de Belgrado bajo el epígrafe «Soucoupes météores en Europe, 1954» (platillos meteoros en Europa), sin analizar los relatos yugoslavos, y llama «descripciones evidentes de meteoros» a relatos italianos de la misma mañana. La falta de análisis no es prueba contra una causa ordinaria: la AARO dio por resueltos en 2024 sus 174 casos cerrados, todos como objetos convencionales, aunque «muchos otros casos siguen sin resolver».",
-    "en": "No source analyzes what the Belgrade residents saw. Blue Book concludes \"Insufficient data for evaluation\" and notes that the rash of reports came right after publicity in the French press; if that explains anything, it is how many there were, not what was seen. Kristian Benić (2011) mentions the popular weather-balloon explanation and links the wave, \"probably,\" to the UFO stories that filled the Yugoslav press that year, such as a serialized report in the magazine Globus; he gives no source or analysis. Patrick Gross files his transcription of the Belgrade dispatch under the heading \"Meteor saucers over Europe, 1954,\" without analyzing the Yugoslav accounts, and calls Italian accounts from the same morning \"obvious descriptions of meteors.\" The absence of an analysis is not evidence against an ordinary cause: AARO finalized \"all 174 cases\" closed in 2024 as \"resolved to prosaic objects,\" though \"many other cases remain unresolved.\"",
-    "source": "Proyecto Blue Book — expediente 1954-10-8727186, Belgrade, Yugoslavia (tarjeta y resumen del IR-793-54), archive.org · K. Benić, tportal.hr (2011) · P. Gross, transcripción de Le Provençal del 26 oct 1954 · AARO, Fiscal Year 2024 Consolidated Annual Report on UAP (14 nov 2024), p. 3, tasa base",
-    "source_en": "Project Blue Book — file 1954-10-8727186, Belgrade, Yugoslavia (record card and abstract of IR-793-54), archive.org · K. Benić, tportal.hr (2011) · P. Gross, transcription of Le Provençal of Oct 26, 1954 · AARO, Fiscal Year 2024 Consolidated Annual Report on UAP (Nov 14, 2024), p. 3, base rate",
-    "url": "https://archive.org/details/1954-10-8727186-BELGRADE-YUGOSLAVIA"
+    "es": "Patrick Gross publica el despacho de Belgrado bajo el epígrafe «Soucoupes météores en Europe, 1954» (platillos meteoros en Europa), sin analizar los relatos yugoslavos. Lo que cuenta el despacho encaja con un bólido matutino: grandes esferas con estela verde fluorescente sobre ciudades lejanas. Se le oponen datos del folletín de 2021, que no nombra testigos: objetos en formación, a unos 3.000 metros y a unos 5.000 km/h, muy por debajo de la velocidad de un meteoro, y un segundo grupo que habría vuelto a los veinte minutos. Blue Book no propone causa, y Kristian Benić (2011) relaciona la oleada con los relatos de ovnis de la prensa, lo que explicaría cuántos informes hubo, no qué se vio.",
+    "en": "Patrick Gross files his transcription of the Belgrade dispatch under the heading \"Meteor saucers over Europe, 1954,\" without analyzing the Yugoslav accounts. What the dispatch describes fits an early-morning fireball: large spheres with a fluorescent green trail over distant cities. Against it stand details from the 2021 newspaper serial, naming no witnesses: objects in formation, at about 3,000 meters and about 5,000 km/h, far below a meteor's speed, and a second group said to have come back after about twenty minutes. Blue Book proposes no cause, and Kristian Benić (2011) links the wave to the UFO stories in the press, which would explain how many reports there were, not what was seen.",
+    "source": "P. Gross, transcripción de Le Berry Républicain del 26 oct 1954 (epígrafe «Soucoupes météores en Europe, 1954») · D. Vujičić, Večernje novosti (23 may 2021) · Proyecto Blue Book — expediente 1954-10-8727186, archive.org · K. Benić, tportal.hr (2011)",
+    "source_en": "P. Gross, transcription of Le Berry Républicain of Oct 26, 1954 (heading \"Meteor saucers over Europe, 1954\") · D. Vujičić, Večernje novosti (May 23, 2021) · Project Blue Book — file 1954-10-8727186, archive.org · K. Benić, tportal.hr (2011)",
+    "url": "https://ufology.patrickgross.org/press/berryrepublicain26oct1954.htm"
   },
   "summary": "La madrugada del lunes 25 de octubre de 1954, según la prensa de la época, se vieron grandes esferas luminosas con una estela verde sobre Zagreb, Belgrado y otras ciudades de Yugoslavia, y hacia las seis de la mañana vecinos de Belgrado vieron objetos extraños a gran altura. Ninguna crónica conocida nombra a un testigo. La oficina del agregado aéreo de EE. UU. en Belgrado envió los artículos traducidos en un informe del 24 de noviembre, y el Proyecto Blue Book lo archivó con datos insuficientes para evaluarlo, señalando que la racha siguió a la publicidad de la prensa francesa.",
   "summary_en": "In the early hours of Monday, October 25, 1954, according to the press of the time, large glowing spheres trailing green were seen over Zagreb, Belgrade and other cities in Yugoslavia, and around six in the morning Belgrade residents saw strange objects at great height. No known account names a witness. The office of the U.S. air attaché in Belgrade sent the translated articles in a report dated November 24, and Project Blue Book filed it as insufficient data for evaluation, noting that the rash followed publicity in the French press.",
