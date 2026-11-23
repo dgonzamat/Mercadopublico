@@ -554,3 +554,34 @@ Regla: solo cambia lo que se repite en al menos 3 de las 10 fichas. Notas de los
 | kenema-monrovia-1963 | atribución | BAJA, resuelto por el orquestador: «el nombre que el presidente Johnson dio a Cabo Cañaveral» y «Hector Quintanilla dirigía entonces Blue Book» no tenían fuente en `sources` (la Orden Ejecutiva 11129 renombra las instalaciones, no el cabo); se reducen a lo que dicen las hojas | no |
 | kenema-monrovia-1963 | atribución | BAJA, sin parche: «agregado de EE. UU.» es inferencia (la cabecera dice «ATTACHE - MONROVIA») y la carta del 19 dic es una copia sin firma | no |
 | kenema-monrovia-1963 | lectura | lector ciego ES (Opus, nota 7): releyó «la carta que resume en la hora», el condicional escondido del curso «W» y «a entre 700 y 1.000 km»; corregidos. Anotados sin tocar: la firma de Quintanilla sin contexto, los 1.150 km frente a los 180 km entre ciudades y la flecha de enlace | no |
+| suva-1963 | cifra/hora | MEDIA (acta, apdo. 3: «2 or 3 seconds» y «approximately eight seconds to move from his bedroom to the lounge window»): Pickford no lo tuvo a la vista diez segundos; el paso duró al menos unos diez y volvió a verlo a los ocho | no |
+| suva-1963 | cifra/hora | MEDIA (Fiji Times: HMS Cook «off Round Island… northern Yasawa Group»): los 180 km eran a Suva, no a Beqa (unos 200 km); la cota mínima de altura se mantiene | no |
+| suva-1963 | clasificación | MEDIA (acta, hoja 2: «9 APR 63» a la izquierda del bloque de firma, sin tapar): la fecha del acta queda asentada y con ella el tier A (6 días); el redactor la daba por dudosa | no |
+| suva-1963 | atribución | MEDIA (acta firmada «(Sgd) F. Rowe … Air Intelligence Officer»): el informe no lo dejó Pickford, es un acta de la base que recoge su relato | no |
+| suva-1963 | léxico/voz | BAJA: «testigos de varias islas»: todos los de tierra estaban en Viti Levu; el otro era un buque | no |
+| suva-1963 | cifra/hora | BAJA: «At 3 a.m.» está en el apartado 2 (NARRATIVE), no en el primero | no |
+| suva-1963 | léxico/voz | BAJA: la firma se citaba compuesta; se citan sus trozos literales | no |
+| suva-1963 | cifra/hora | BAJA: «Apr 3, 1963» encabeza el recorte del East Anglian Times con la fecha del suceso; no es la fecha de la nota | no |
+| suva-1963 | léxico/voz | BAJA (aerograma: «streamers were emitted»): «chispas» no traducía bien; pasa a «estelas» | no |
+| suva-1963 | lectura | lector ciego ES (Opus, nota 6): releyó «entonces colonia británica» (parecía el buque), la frase de tres fuentes y tres horas, «ganó cerca de la mitad de su brillo», «rastro aparente» y el cierre «cabe en un catálogo»; corregidas. Anotados sin tocar: el recuento de testigos y los 180 frente a 200 km (son distancias distintas) | no |
+| mayaguana-1963 | clasificación | ALTA (tarjeta, casilla 11: «Possibility of satellite or missile not ruled out but substantiating data not available at this time»): la tarjeta deja abierto también un satélite tras la consulta a NORAD; la ficha solo respondía al misil. Va a la revisión de clase en dos pasos | no |
+| mayaguana-1963 | cifra/hora | ALTA: el rumbo de los testigos es hacia dónde vieron bajar la luz, no la trayectoria; la comparación con la inclinación del Blok-I no lo descarta | no |
+| mayaguana-1963 | cifra/hora | MEDIA (GCAT S00521, tipo R3): el Blok-I es la tercera etapa, no «la etapa superior» | no |
+| mayaguana-1963 | omisión | MEDIA (tarjeta «2,550 mph» frente al teletipo «2,5__»): la discrepancia de velocidad no estaba en la prosa | no |
+| mayaguana-1963 | atribución | BAJA: el número de estación sale del mensaje («STATION NUMBER 6, OF AMR»), no de Cleary | no |
+| mayaguana-1963 | atribución | BAJA (Cleary: «Pan American World Services and RCA»): eran dos compañías; «la compañía que operaba la estación» era inexacto | no |
+| mayaguana-1963 | cifra/hora | BAJA (mensaje «22/1929Z JAN»): es la fecha de salida; la llegada a Blue Book no está fechada | no |
+| mayaguana-1963 | ausencia | BAJA: los diez lanzamientos de enero de 1963 sin día en el GCAT salieron de White Sands o Kapustin Yar; salvedad añadida en `evidence` | no |
+| mayaguana-1963 | clasificación | segundo paso de la revisión de clase: el satélite que deja abierto la tarjeta es propuesta débil, no refutada (el misil y el meteorito sí lo están); pasa de `sin_propuesta` a misid/espacial/satélite, probability 22 → 19; el segundo paso añade en contra que la etapa soviética reentrada ese día figuraba en el catálogo de NORAD | no |
+| mayaguana-1963 | lectura | lector ciego ES (Opus, nota 7): releyó el «descartaron los satélites conocidos» frente a «no se excluía un satélite», la frase que mezclaba etapa y sonda, la del rumbo y el «locally» entre paréntesis; corregidas | no |
+| belgrado-1954 | clasificación | ALTA (Gross, página del despacho de Belgrado: epígrafe «Meteor saucers over Europe, 1954»): la ficha decía que ninguna fuente proponía causa; el compilador archiva el propio despacho bajo meteoros, y la misma página trae relatos de bólido. Va a la revisión de clase en dos pasos | no |
+| belgrado-1954 | omisión | MEDIA (tportal.hr, Benić 2011: «u uzročno-posljedičnoj korelaciji s invazijom vanzemaljaca na medije»): propone una causa social para este suceso que la ficha omitía | no |
+| belgrado-1954 | atribución | MEDIA (Blue Book, hojas 1 y 2: «Followed immediately after considerable publicity by French press»): el documento da la secuencia, no la causa; la idea del contagio era del redactor | no |
+| belgrado-1954 | atribución | MEDIA (folletín: «u ono vreme dopisnik»): no dice que Knežević anotara aquello en 1954 | no |
+| belgrado-1954 | omisión | MEDIA (La Croix, 27 oct 1954: «often in formations»): la formación ya está en la prensa de 1954; el contraste con 2021 estaba mal planteado | no |
+| belgrado-1954 | cifra/hora | BAJA: las cifras del folletín pasaban al indicativo sin atribución | no |
+| belgrado-1954 | cifra/hora | BAJA: no hay despacho de Praga; la noticia de Radio Praga llega en uno de Viena | no |
+| belgrado-1954 | léxico/voz | BAJA: la divergencia de fechas de la primera noticia no decía qué implica | no |
+| belgrado-1954 | ausencia | BAJA: «todo lo que se conserva del caso en ese archivo» afirmaba más que la copia digitalizada vista | no |
+| belgrado-1954 | clasificación | segundo paso de la revisión de clase: el epígrafe de Gross es una propuesta débil, no refutada; pasa de `sin_propuesta` a misid/astronómico/meteoro, `indet` 0,16 → 0,13 y probability 22 → 18; nuevo `classBasis` | no |
+| belgrado-1954 | lectura | lector ciego EN (Opus, nota 6): releyó la frase de los siete objetos, a quién se refería «without saying when» y «the note about the French press»; corregidas. Anotados sin tocar: repeticiones del primer párrafo y los enlaces a Quarouble y Florencia sin contexto | no |

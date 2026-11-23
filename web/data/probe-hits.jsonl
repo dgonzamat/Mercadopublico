@@ -39,3 +39,4 @@
 {"date":"2026-11-22","probe":"audit-consistency","rule":"E59","where":"data/cases"}
 {"date":"2026-11-23","probe":"audit-consistency","rule":"E63","where":"data/cases"}
 {"date":"2026-11-23","probe":"audit-consistency","rule":"E52","where":"data/cases"}
+{"date":"2026-11-23","probe":"audit-consistency","rule":"E45","where":"data/retired-nums.json"}
