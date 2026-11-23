@@ -618,3 +618,4 @@ Regla: solo cambia lo que se repite en al menos 3 de las 10 fichas. Notas de los
 | barbados-1958 | omisión | BAJA (hoja 2, Bolieu: «possible aircraft»): el `classBasis` no recogía la tercera explicación del expediente | no |
 | barbados-1958 | lectura | lector ciego EN (Opus, nota 6): no situó la «hoja de envío del 8 de agosto» frente a la recepción del 12, ni «the one that stayed on the card»; corregidas. Anotados sin tocar: densidad de fechas y husos en la segunda mitad | no |
 | belice-1962 | pendiente | provisional del redactor; sustituir por los hallazgos del verificador y del lector | no |
+| ocho-rios-1959 | pendiente | provisional del redactor; sustituir por los hallazgos del verificador y del lector | no |
