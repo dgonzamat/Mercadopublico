@@ -57,7 +57,7 @@ const COUNTRY_REGION: Record<string, Region> = {
   CO: "latinoamerica", CR: "latinoamerica", EC: "latinoamerica", PE: "latinoamerica",
   UY: "latinoamerica", VE: "latinoamerica", PA: "latinoamerica", GT: "latinoamerica",
   CU: "latinoamerica", SV: "latinoamerica", NI: "latinoamerica", HN: "latinoamerica",
-  HT: "latinoamerica", TT: "latinoamerica",
+  HT: "latinoamerica", TT: "latinoamerica", SR: "latinoamerica",
   // Europa
   BE: "europa", CZ: "europa", ES: "europa", FR: "europa", GB: "europa", IT: "europa",
   NO: "europa", SE: "europa", DE: "europa", NL: "europa", PT: "europa", IE: "europa",
@@ -76,7 +76,7 @@ const COUNTRY_REGION: Record<string, Region> = {
   // Oceanía
   AU: "oceania", NZ: "oceania", PG: "oceania", FJ: "oceania", GU: "oceania", KI: "oceania",
   // África
-  DZ: "africa", AO: "africa", CD: "africa", SD: "africa", TN: "africa", ZW: "africa", ZA: "africa", NG: "africa", NE: "africa", GH: "africa", KE: "africa", MA: "africa", LY: "africa", BF: "africa",
+  DZ: "africa", AO: "africa", CD: "africa", SD: "africa", TN: "africa", ZW: "africa", ZA: "africa", NG: "africa", NE: "africa", GH: "africa", KE: "africa", MA: "africa", LY: "africa", BF: "africa", SL: "africa", ZM: "africa",
   TZ: "africa", MG: "africa", SO: "africa",
 };
 
