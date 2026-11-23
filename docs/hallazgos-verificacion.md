@@ -564,4 +564,12 @@ Regla: solo cambia lo que se repite en al menos 3 de las 10 fichas. Notas de los
 | suva-1963 | cifra/hora | BAJA: «Apr 3, 1963» encabeza el recorte del East Anglian Times con la fecha del suceso; no es la fecha de la nota | no |
 | suva-1963 | léxico/voz | BAJA (aerograma: «streamers were emitted»): «chispas» no traducía bien; pasa a «estelas» | no |
 | mayaguana-1963 | pendiente | provisional del redactor; leídas sobre la imagen las cifras tenues del teletipo (50 millas, 150–200 pies, 2.5_0 mph; la tarjeta da 2,550), y los cálculos de Sol y de la órbita del Blok-I son propios del caso | no |
-| belgrado-1954 | pendiente | provisional del redactor; el expediente de Blue Book tiene solo dos hojas (tarjeta y resumen del IR-793-54, de «OAIRA», no «OIR/USAIRA»), sin los artículos traducidos; el relato yugoslavo sale de despachos de 1954 transcritos por Patrick Gross y de dos textos de 2011 y 2021 | no |
+| belgrado-1954 | clasificación | ALTA (Gross, página del despacho de Belgrado: epígrafe «Meteor saucers over Europe, 1954»): la ficha decía que ninguna fuente proponía causa; el compilador archiva el propio despacho bajo meteoros, y la misma página trae relatos de bólido. Va a la revisión de clase en dos pasos | no |
+| belgrado-1954 | omisión | MEDIA (tportal.hr, Benić 2011: «u uzročno-posljedičnoj korelaciji s invazijom vanzemaljaca na medije»): propone una causa social para este suceso que la ficha omitía | no |
+| belgrado-1954 | atribución | MEDIA (Blue Book, hojas 1 y 2: «Followed immediately after considerable publicity by French press»): el documento da la secuencia, no la causa; la idea del contagio era del redactor | no |
+| belgrado-1954 | atribución | MEDIA (folletín: «u ono vreme dopisnik»): no dice que Knežević anotara aquello en 1954 | no |
+| belgrado-1954 | omisión | MEDIA (La Croix, 27 oct 1954: «often in formations»): la formación ya está en la prensa de 1954; el contraste con 2021 estaba mal planteado | no |
+| belgrado-1954 | cifra/hora | BAJA: las cifras del folletín pasaban al indicativo sin atribución | no |
+| belgrado-1954 | cifra/hora | BAJA: no hay despacho de Praga; la noticia de Radio Praga llega en uno de Viena | no |
+| belgrado-1954 | léxico/voz | BAJA: la divergencia de fechas de la primera noticia no decía qué implica | no |
+| belgrado-1954 | ausencia | BAJA: «todo lo que se conserva del caso en ese archivo» afirmaba más que la copia digitalizada vista | no |
