@@ -603,4 +603,14 @@ Regla: solo cambia lo que se repite en al menos 3 de las 10 fichas. Notas de los
 | seria-1953 | cifra/hora | BAJA: el trazo sobre la segunda línea se describía con más seguridad de la que permite la imagen | no |
 | seria-1953 | léxico/voz | BAJA: citas en inglés sin glosar en `evidence` | no |
 | seria-1953 | cifra/hora | BAJA: Brunéi está en la costa noroeste de Borneo, no la norte | no |
-| barbados-1958 | pendiente | provisional del redactor; la sustituye el orquestador con los hallazgos del verificador | no |
+| barbados-1958 | omisión | MEDIA (nota de inteligencia naval, 1 ago 1958: «Encl: (1) ltr… 9 May 1958… (2) ltr… of 15 Apr 1958»; lápiz «Apr 8», «5-10»): el «8 APR 2145» puede ser de la otra carta, y no es la única anotación con esa fecha | no |
+| barbados-1958 | atribución | MEDIA (Crimson: «Ten minutes later word came from the Barbados Islands»): los diez minutos son de la llegada de la noticia, no de la observación | no |
+| barbados-1958 | ausencia | MEDIA: «el testigo no escribió a ninguna autoridad» no lo respalda el expediente, que solo muestra la carta al cuñado | no |
+| barbados-1958 | atribución | MEDIA: «lo que otros vieron esa noche» afirmaba que el informe de Barbados del Crimson era de otros testigos y de esa misma noche | no |
+| barbados-1958 | cifra/hora | BAJA: el cálculo no decía el huso de Barbados (UTC−4 en 1958) y confundía la hora de la noticia con la del avistamiento | no |
+| barbados-1958 | omisión | BAJA (GCAT, 1958-A28, Bomarc A, 2 abr): faltaba en la nota de la fuente | no |
+| barbados-1958 | ausencia | BAJA: «el GCAT recoge también los misiles de prueba» suponía que es completo | no |
+| barbados-1958 | cifra/hora | BAJA: «si la carta es del 15, el domingo fue el 13» elegía en silencio; pasa a «lo más probable» | no |
+| barbados-1958 | atribución | BAJA: la hoja 7 es la parte mecanografiada de la carta que remitió el cuñado, y las notas a lápiz no tienen firma | no |
+| barbados-1958 | léxico/voz | BAJA (hoja 3: «Maj Byrne»): «comandante» pasa a «mayor» | no |
+| barbados-1958 | omisión | BAJA (hoja 2, Bolieu: «possible aircraft»): el `classBasis` no recogía la tercera explicación del expediente | no |
