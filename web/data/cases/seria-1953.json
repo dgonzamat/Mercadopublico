@@ -1,0 +1,99 @@
+{
+  "id": "seria-1953",
+  "num": 592,
+  "name": "Seria · cientos ven un objeto que gira y suelta dos estelas",
+  "name_en": "Seria · hundreds watch a rotating object trailing two vapor jets",
+  "year_start": 1953,
+  "country": "BN",
+  "country_name": "Brunéi",
+  "flag": "🇧🇳",
+  "location": {
+    "lat": 4.607,
+    "lng": 114.323,
+    "place": "Seria, pueblo petrolero de la costa de Brunéi",
+    "place_en": "Seria, an oil town on the coast of Brunei",
+    "precision": "approx"
+  },
+  "tier": "B",
+  "epistemicStatus": "documented",
+  "mundanoType": "sin_propuesta",
+  "posterior": {
+    "mundano_natural": 0.74,
+    "humana_clasificada": 0.03,
+    "adversaria": 0.02,
+    "nohumano_encubierto": 0.01,
+    "nohumano_abierto": 0.03,
+    "indet": 0.17
+  },
+  "probability": 21,
+  "classBasis": {
+    "es": "Ninguna fuente propone una causa. La tarjeta de Blue Book concluye «Insufficient Data for Evaluation» (datos insuficientes para evaluar), que no nombra ningún objeto, y el documento ATIC 108383, la única fuente del caso, no da la hora, la dirección ni el nombre de un testigo con que cotejarlo. La falta de un análisis no es prueba contra una causa ordinaria: en su informe del año fiscal 2024, la AARO del Pentágono dio por resueltos 174 casos, todos como objetos convencionales, aunque «muchos otros casos siguen sin resolver».",
+    "en": "No source proposes a cause. The Blue Book card concludes \"Insufficient Data for Evaluation,\" which names no object, and ATIC document 108383, the case's only source, gives no time, direction or witness name to check it against. The absence of an analysis is not evidence against an ordinary cause: in its fiscal year 2024 report, the Pentagon's AARO resolved \"all 174 cases\" to \"prosaic objects,\" though \"many other cases remain unresolved.\"",
+    "source": "Proyecto Blue Book — expediente 1953-02-9555238, Borneo (tarjeta y documento ATIC 108383), archive.org · AARO, Fiscal Year 2024 Consolidated Annual Report on UAP (14 nov 2024), pág. 3, tasa base",
+    "source_en": "Project Blue Book — file 1953-02-9555238, Borneo (record card and ATIC document 108383), archive.org · AARO, Fiscal Year 2024 Consolidated Annual Report on UAP (November 14, 2024), p. 3, base rate",
+    "url": "https://archive.org/details/1953-02-9555238-Borneo"
+  },
+  "summary": "Según un texto con forma de despacho de prensa, recogido en un documento de la Fuerza Aérea de EE. UU. del 25 de febrero de 1953, cientos de curiosos vieron sobre Seria, el pueblo petrolero de Brunéi, entonces protectorado británico, un objeto brillante como una estrella que parecía girar y soltaba dos chorros de vapor. Según el texto, lo situaron a unos 30.000 pies (9.100 m) y lo vieron durante 40 minutos. No da la hora, el periódico ni el nombre de ningún testigo, y el Proyecto Blue Book lo cerró por datos insuficientes.",
+  "summary_en": "According to a text written like a press dispatch, kept in a U.S. Air Force document dated February 25, 1953, hundreds of curious onlookers in Seria, the oil town of Brunei, then a British protectorate, watched a bright, star-like object that seemed to rotate and gave off two jets of vapor. According to the text, they put it at about 30,000 feet (9,100 m) and watched it for 40 minutes. It gives no time, no newspaper and no witness's name, and Project Blue Book closed it for insufficient data.",
+  "patterns": [],
+  "category": "incident",
+  "whatHappened": "En 1953, Brunéi era un protectorado británico en la costa norte de Borneo, y Seria era el pueblo de su yacimiento de petróleo, en la costa. Todo lo que se sabe del suceso sale de una sola hoja del Proyecto Blue Book, el programa de la Fuerza Aérea de EE. UU. que recogía los informes de objetos voladores no identificados. Es el documento 108383 del Centro de Inteligencia Técnica Aérea (ATIC) de esa fuerza, fechado el 25 de febrero de 1953 y titulado «Flying Saucer» (platillo volador). Su texto es un solo párrafo escrito como un despacho de prensa, pero no dice de qué periódico o agencia viene ni quién lo envió al ATIC.\n\nEl párrafo cuenta que ese día, «today», cientos de curiosos de Borneo estiraron el cuello para mirar sobre Seria un objeto brillante, parecido a una estrella, que parecía girar y soltaba dos chorros de vapor. Los espectadores lo llamaron «platillo volador», dice el texto, «a falta de una explicación mejor». Según el mismo texto, calcularon que volaba a unos 30.000 pies, unos 9.100 metros, y dijeron que estuvo a la vista 40 minutos. El párrafo termina con una frase sobre la región, no sobre Seria: fenómenos parecidos se habían visto sobre Borneo «varias veces» en los últimos tiempos.\n\nNada más consta en la hoja sobre el suceso. El texto no da la hora del día, la dirección en que estaba el objeto, su tamaño ni su forma, aparte de que parecía una estrella, ni el nombre de ningún testigo; los cientos de espectadores son una cifra del despacho, no un recuento de declaraciones. Tampoco dice qué día se escribió: «today» es el día del despacho, que la hoja no fecha.\n\nAños después, alguien del archivo resumió el caso en una tarjeta de registro de Blue Book. Esa tarjeta está impresa en una edición del formulario fechada en septiembre de 1963, así que se llenó por lo menos diez años después del suceso. Da como fecha el 25 de febrero de 1953, la del documento del ATIC, y como lugar solo «Borneo». Anota una fuente civil, un objeto, 40 minutos de observación desde tierra, ninguna foto y ningún resto físico. Su resumen dice, en inglés, que se vio un objeto brillante como una estrella que parecía girar a una altitud calculada de 30.000 pies, con dos estelas de vapor, y que se había visto «varias veces en ocasiones anteriores». La conclusión, escrita dos veces en la casilla, es «Insufficient Data for Evaluation»: datos insuficientes para evaluar el caso.",
+  "whatHappened_en": "In 1953, Brunei was a British protectorate on the north coast of Borneo, and Seria was the town of its oil field, on the coast. Everything known about the event comes from a single sheet in Project Blue Book, the U.S. Air Force program that collected reports of unidentified flying objects. It is document 108383 of the Air Force's Air Technical Intelligence Center (ATIC), dated February 25, 1953, and titled \"Flying Saucer.\" Its text is one paragraph written like a press dispatch, but it does not say which newspaper or agency it came from or who sent it to ATIC.\n\nThe paragraph says that \"today\" hundreds of curious people in Borneo craned their necks to watch a bright, star-like object over Seria that seemed to rotate and gave off two jets of vapor. The onlookers called it a \"Flying Saucer,\" the text says, \"for want of a better explanation.\" According to the same text, they estimated it was flying at about 30,000 feet, some 9,100 meters, and said it was in sight for 40 minutes. The paragraph ends with a sentence about the region, not about Seria: similar phenomena had been reported over Borneo \"several times recently.\"\n\nThe sheet records nothing else about the event. The text gives no time of day, no direction in which the object stood, no size and no shape beyond its looking like a star, and no witness's name; the hundreds of onlookers are the dispatch's figure, not a count of statements. Nor does it say what day it was written: \"today\" is the day of the dispatch, which the sheet does not date.\n\nYears later, someone at the archive summed up the case on a Blue Book record card. The card is printed on an edition of the form dated September 1963, so it was filled in at least ten years after the event. It gives the date as February 25, 1953, the date of the ATIC document, and the place only as \"Borneo.\" It records a civilian source, one object, 40 minutes of observation from the ground, no photos and no physical evidence. Its summary says that a bright, star-like object was seen appearing to rotate at an estimated altitude of 30,000 feet, with twin vapor trails, and that it had been \"observed several times on previous occasions.\" The conclusion, typed twice in the box, is \"Insufficient Data for Evaluation.\"",
+  "whyMatters": "El caso descansa en un párrafo sin autor. Ni la hoja del ATIC ni la tarjeta nombran a un testigo, el periódico de donde salió el texto o la hora del suceso, y la conclusión de Blue Book, datos insuficientes, no propone ningún objeto. Ningún documento del legajo, que tiene solo esas dos hojas, explica qué se vio. Sin hora ni dirección, el relato no se puede cotejar con ningún registro de la época.\n\nLa tarjeta cambia dos cosas del texto que resume. El despacho decía que en Borneo se habían visto fenómenos parecidos; la tarjeta dice que el mismo objeto se había observado «varias veces en ocasiones anteriores», y así convierte otros avistamientos sin detalle en repeticiones del de Seria. Y en la casilla del rumbo anota «Maneuvering», que maniobraba, cuando el texto solo dice que el objeto parecía girar y no describe ningún cambio de rumbo. Las dos lecturas de la tarjeta añaden al caso más de lo que dice su única fuente.\n\nTampoco la fecha es segura. La tarjeta da el 25 de febrero, que es la fecha del documento del ATIC; el texto dice «today» sin fechar el despacho, así que el avistamiento fue el 25 solo si el ATIC fechó el documento el mismo día en que se escribió la noticia. Las otras observaciones sobre Borneo que menciona el despacho no figuran en el archivo de Blue Book en archive.org, que titula cada expediente por su lugar: este es el único con Borneo, Brunéi o Sarawak en el título.",
+  "whyMatters_en": "The case rests on a paragraph with no author. Neither the ATIC sheet nor the card names a witness, the newspaper the text came from or the time of the event, and Blue Book's conclusion, insufficient data, proposes no object. No document in the file, which holds only those two sheets, explains what was seen. With no time and no direction, the account cannot be checked against any record from the period.\n\nThe card changes two things in the text it sums up. The dispatch said that similar phenomena had been seen over Borneo; the card says the same object had been \"observed several times on previous occasions,\" turning other, undescribed sightings into repeats of the one at Seria. And in the course box it types \"Maneuvering,\" when the text only says the object seemed to rotate and describes no change of course. Both readings on the card add more to the case than its only source says.\n\nThe date is not certain either. The card gives February 25, which is the date of the ATIC document; the text says \"today\" without dating the dispatch, so the sighting was on the 25th only if ATIC dated the document on the same day the news was written. The other sightings over Borneo that the dispatch mentions are not in the Blue Book archive at archive.org, which titles each file by place: this is the only one with Borneo, Brunei or Sarawak in the title.",
+  "evidence": [
+    "Documento ATIC 108383, «25 Feb 53, Flying Saucer» (expediente de Blue Book 1953-02-9555238, pág. 2): un párrafo sin autor ni medio, escrito como despacho de prensa. Dice que «today» cientos de curiosos de Borneo vieron sobre Seria un objeto brillante «star-like» que parecía girar y emitía «twin jets of vapor»; que lo llamaron «Flying Saucer» «for want of a better explanation»; que estimaron su altura en «30,000'» y lo vieron 40 minutos.",
+    "El mismo párrafo cierra: «Similar phenomena have been reported over Borneo several times recently». No da hora, dirección, forma ni el nombre de ningún testigo.",
+    "Marcas de la hoja del ATIC: «25 FEB 53» escrito a mano arriba a la izquierda; «UNCLASSIFIED» arriba y abajo, junto a dos barras negras que tapan otras marcas; sello «DOWNGRADED AT 3 YEAR INTERVALS; DECLASSIFIED AFTER 12 YEARS. DOD DIR 5200.10». Una raya cruza las palabras «ppeared to be» de la segunda línea; la tarjeta las conserva («appearing to rotate»).",
+    "Tarjeta de registro de Blue Book (pág. 1), impresa en el formulario «FTD SEP 63 0-329 (TDE)», es decir, llenada después de septiembre de 1963: fecha «25 Feb 53»; lugar «Borneo»; fuente «Civilian»; un objeto; «40 Min.»; observación «Ground-Visual»; rumbo «Maneuvering» (mecanografía tenue); sin fotos ni restos físicos.",
+    "Casilla 10 de la tarjeta, la conclusión, escrita dos veces: «Insufficient Data for Evaluation». Casilla 11: «Bright star-like obj in sky appearing to rotate at estimated alt of 30,000'. Twin vapor trails. Observed several times on previous occasions.»",
+    "En la colección «project-blue-book» de archive.org, que titula cada expediente por su lugar, el 1953-02-9555238 es el único con Borneo, Brunéi, Seria o Sarawak en el título (búsqueda por identificador del 23 de noviembre de 2026)."
+  ],
+  "evidence_en": [
+    "ATIC document 108383, \"25 Feb 53, Flying Saucer\" (Blue Book file 1953-02-9555238, p. 2): one paragraph with no author or outlet, written like a press dispatch. It says that \"today\" hundreds of curious Borneans watched over Seria a bright \"star-like\" object that seemed to rotate and gave off \"twin jets of vapor\"; that they called it a \"Flying Saucer\" \"for want of a better explanation\"; that they estimated its height at \"30,000'\" and watched it for 40 minutes.",
+    "The same paragraph ends: \"Similar phenomena have been reported over Borneo several times recently.\" It gives no time, direction, shape or witness's name.",
+    "Markings on the ATIC sheet: \"25 FEB 53\" handwritten at top left; \"UNCLASSIFIED\" at top and bottom, next to two black bars that cover other markings; stamp \"DOWNGRADED AT 3 YEAR INTERVALS; DECLASSIFIED AFTER 12 YEARS. DOD DIR 5200.10.\" A line runs through the words \"ppeared to be\" in the second line; the card keeps them (\"appearing to rotate\").",
+    "Blue Book record card (p. 1), printed on form \"FTD SEP 63 0-329 (TDE),\" so filled in after September 1963: date \"25 Feb 53\"; place \"Borneo\"; source \"Civilian\"; one object; \"40 Min.\"; observation \"Ground-Visual\"; course \"Maneuvering\" (faint typing); no photos and no physical evidence.",
+    "Box 10 of the card, the conclusion, typed twice: \"Insufficient Data for Evaluation.\" Box 11: \"Bright star-like obj in sky appearing to rotate at estimated alt of 30,000'. Twin vapor trails. Observed several times on previous occasions.\"",
+    "In archive.org's \"project-blue-book\" collection, which titles each file by place, 1953-02-9555238 is the only one with Borneo, Brunei, Seria or Sarawak in the title (identifier search of November 23, 2026)."
+  ],
+  "sources": [
+    {
+      "name": "Proyecto Blue Book (NARA), expediente 1953-02-9555238, «Borneo» (tarjeta de registro y documento ATIC 108383), 2 págs., espejo en archive.org",
+      "name_en": "Project Blue Book (NARA), file 1953-02-9555238, \"Borneo\" (record card and ATIC document 108383), 2 pp., archive.org mirror",
+      "url": "https://archive.org/details/1953-02-9555238-Borneo",
+      "note": "Documento primario, embebido en el visor de este caso. Pág. 1: tarjeta de registro en el formulario de septiembre de 1963; pág. 2: documento ATIC 108383 del 25 de febrero de 1953, la única fuente del relato.",
+      "note_en": "Primary document, embedded in this case's viewer. P. 1: record card on the September 1963 form; p. 2: ATIC document 108383 of February 25, 1953, the only source for the account."
+    },
+    {
+      "name": "Internet Archive, colección «project-blue-book» (índice de expedientes por identificador)",
+      "name_en": "Internet Archive, \"project-blue-book\" collection (index of files by identifier)",
+      "url": "https://archive.org/details/project-blue-book",
+      "note": "Búsqueda por identificador del 23 de noviembre de 2026: ningún otro expediente lleva Borneo, Brunéi, Seria, Sarawak, Labuan, Kuching ni Miri en el título.",
+      "note_en": "Identifier search of November 23, 2026: no other file has Borneo, Brunei, Seria, Sarawak, Labuan, Kuching or Miri in its title."
+    },
+    {
+      "name": "All-domain Anomaly Resolution Office (AARO), Fiscal Year 2024 Consolidated Annual Report on Unidentified Anomalous Phenomena (14 nov 2024)",
+      "name_en": "All-domain Anomaly Resolution Office (AARO), Fiscal Year 2024 Consolidated Annual Report on Unidentified Anomalous Phenomena (Nov 14, 2024)",
+      "url": "https://odni.gov/files/ODNI/documents/assessments/DOD-AARO-Consolidated-Annual-Report-on-UAP-Nov2024.pdf",
+      "note": "Tasa base (pág. 3): los 174 casos cerrados se resolvieron como objetos convencionales; muchos otros siguen sin resolver.",
+      "note_en": "Base rate (p. 3): the 174 closed cases were resolved to prosaic objects; many others remain unresolved."
+    }
+  ],
+  "documents": [
+    {
+      "role": "documento",
+      "src": "/pursue/seria-1953-bluebook.pdf",
+      "type": "pdf",
+      "title": "Expediente de Blue Book sobre Seria (febrero de 1953): tarjeta de registro y documento ATIC 108383, 2 págs.",
+      "title_en": "Blue Book file on Seria (February 1953): record card and ATIC document 108383, 2 pp.",
+      "source": "Proyecto Blue Book (NARA), vía archive.org",
+      "source_en": "Project Blue Book (NARA), via archive.org",
+      "license": "Dominio público · obra del Gobierno de EE. UU.",
+      "fallbackUrl": "https://archive.org/details/1953-02-9555238-Borneo",
+      "description": "Las dos hojas del expediente 1953-02-9555238 del Proyecto Blue Book, con el único relato del suceso y la conclusión de la Fuerza Aérea. La primera es la tarjeta de registro, en una edición del formulario de septiembre de 1963: 25 de febrero de 1953, «Borneo», fuente civil, un objeto, 40 minutos, y la conclusión «Insufficient Data for Evaluation». La segunda es el documento ATIC 108383, del 25 de febrero de 1953, titulado «Flying Saucer»: un párrafo sin autor escrito como despacho de prensa, con la fecha a mano arriba, dos barras negras que tapan marcas y el sello de desclasificación. Copia del original de archive.org.",
+      "description_en": "The two sheets of Project Blue Book file 1953-02-9555238, with the only account of the event and the Air Force's conclusion. The first is the record card, on a September 1963 edition of the form: February 25, 1953, \"Borneo,\" civilian source, one object, 40 minutes, and the conclusion \"Insufficient Data for Evaluation.\" The second is ATIC document 108383, dated February 25, 1953, and titled \"Flying Saucer\": an unsigned paragraph written like a press dispatch, with the date handwritten at the top, two black bars covering markings and the declassification stamp. Copy of the archive.org original."
+    }
+  ],
+  "evidenceReviewed": "2026-11-23"
+}
