@@ -626,4 +626,10 @@ Regla: solo cambia lo que se repite en al menos 3 de las 10 fichas. Notas de los
 | belice-1962 | atribución | BAJA: «la isla más grande… junto a la frontera con México» no tenía fuente | no |
 | belice-1962 | léxico/voz | BAJA: frase sin verbo en `evidence` | no |
 | belice-1962 | clasificación | segundo paso de la revisión de clase: el satélite que la tarjeta da por «evident» es propuesta débil, no refutada (sus reparos van contra el Echo y el crepúsculo, y el Sol a −13° deja al sol cualquier satélite por encima de unos 180 km); pasa de `sin_propuesta` a misid/espacial/satélite, probability 23 → 21 | no |
-| ocho-rios-1959 | pendiente | provisional del redactor; sustituir por los hallazgos del verificador y del lector | no |
+| ocho-rios-1959 | omisión | MEDIA (cuestionario, preg. 11e: «Change brightness? Yes… as it approached then receded»; posdata del 4 ago: «I felt it had been much brighter, more similar to one of the planets»): la ficha daba el brillo constante de segunda magnitud y omitía lo que el mismo capitán corrigió | no |
+| ocho-rios-1959 | atribución | MEDIA: «los nombres están tachados» era falso para cuatro hojas del original; el visor mostraba en dos de ellas los nombres del capitán y del primer oficial. Por decisión del dueño (23 nov 2026) se taparon en la copia del visor, rasterizando esas páginas | no |
+| ocho-rios-1959 | cifra/hora | MEDIA: el cálculo de trayectoria no decía que el rumbo de 120° sale de la posición del Esso Stockholm (el GCAT no da azimut) y presentaba como coincidencia lo que es parcial (al primer acimut del capitán el modelo da unos 17°) | no |
+| ocho-rios-1959 | léxico/voz | BAJA (carta del 10 jul: «a course slightly East of South»): «parecía venir hacia el sur» era mala traducción | no |
+| ocho-rios-1959 | atribución | BAJA (tarjeta: «subsequent missile sightings», «downrange shots»): la paráfrasis añadía «sudeste» y omitía «posteriores» | no |
+| ocho-rios-1959 | omisión | BAJA (mensajes de la Guardia Costera): faltaban la demora 300 del Esso Stockholm, la hora de posición 01:30Z del Caltex Auckland y el «OVER VESSEL» del Allobrogia | no |
+| ocho-rios-1959 | atribución | BAJA: las págs. 9 y 10 son la hoja de resumen del mismo cuestionario, no una carta aparte | no |
