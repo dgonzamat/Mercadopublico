@@ -513,3 +513,4 @@ Regla: solo cambia lo que se repite en al menos 3 de las 10 fichas. Notas de los
 | iss-bola-de-fuego-africa-2026 | omisión | BAJA (EOL 540224, 22:41:18 GMT, 15,0 N 4,7 E): faltaba en `evidence` la hora de la foto acreditada a Williams | no |
 | iss-bola-de-fuego-africa-2026 | léxico/voz | BAJA: la nota de la fuente de X sugería que la publicación de X y la de Instagram eran la misma | no |
 | iss-bola-de-fuego-africa-2026 | lectura | lector ciego ES (Opus, nota 6,5): releyó cuatro frases y se corrigieron (las dos horas finales de la serie, 22:41:16 frente a 22:41:31, sin situar; «la órbita iba de 157 a 169 km»; «la del lanzamiento hacia ella»; «deja el límite de una buena foto a la vista»). Anotados sin tocar: repeticiones entre la entrada y el relato, y el párrafo del lanzamiento como bajón de interés | no |
+| plesetsk-medusa-2026 | pendiente | provisional del redactor; la sustituye el orquestador con los hallazgos del verificador | no |
