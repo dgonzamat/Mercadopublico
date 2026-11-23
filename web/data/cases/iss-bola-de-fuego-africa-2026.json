@@ -1,0 +1,153 @@
+{
+  "id": "iss-bola-de-fuego-africa-2026",
+  "num": 581,
+  "name": "Níger · un astronauta fotografía desde órbita una bola de fuego",
+  "name_en": "Niger · an astronaut photographs a fireball from orbit",
+  "year_start": 2026,
+  "country": "NE",
+  "country_name": "Níger",
+  "flag": "🇳🇪",
+  "location": {
+    "lat": 14.9,
+    "lng": 4.6,
+    "place": "Alta atmósfera sobre Níger, África occidental",
+    "place_en": "Upper atmosphere over Niger, West Africa",
+    "precision": "approx"
+  },
+  "tier": "S",
+  "probability": 2,
+  "posterior": {
+    "mundano_natural": 0.96,
+    "humana_clasificada": 0.01,
+    "adversaria": 0.01,
+    "nohumano_encubierto": 0,
+    "nohumano_abierto": 0,
+    "indet": 0.02
+  },
+  "mundanoType": "misid",
+  "misidSubtype": "espacial",
+  "objectDetail": "reentrada",
+  "classBasis": {
+    "es": "Space.com (artículo de Mike Wall, 3 de mayo de 2026) escribió que la etapa alta del cohete Soyuz que lanzó la nave de carga Progress 95 «apparently reentered at the right time and place to generate the sky show» (al parecer reentró en el momento y el lugar justos para producir el espectáculo). La NASA tituló una de las fotos «A piece of unidentified space debris» (un trozo de basura espacial sin identificar), y su Earth Observatory dejó abiertas otras causas convencionales: los restos de otro cohete, un satélite, otra basura espacial o un meteoro. El catálogo de Jonathan McDowell da la caída de esa etapa a las 22:41 UTC, sobre Níger.",
+    "en": "Space.com (an article by Mike Wall, May 3, 2026) wrote that the upper stage of the Soyuz rocket that launched the Progress 95 cargo ship \"apparently reentered at the right time and place to generate the sky show.\" NASA titled one of the photos \"A piece of unidentified space debris,\" and its Earth Observatory left other conventional causes open: the remains of another rocket, a satellite, other space junk or a meteor. Jonathan McDowell's catalog puts the fall of that stage at 22:41 UTC, over Niger.",
+    "source": "Space.com, Mike Wall (3 may 2026); NASA Earth Observatory, «Great Balls of Fire» (18 may 2026)",
+    "source_en": "Space.com, Mike Wall (May 3, 2026); NASA Earth Observatory, \"Great Balls of Fire\" (May 18, 2026)",
+    "url": "https://www.space.com/space-exploration/international-space-station/it-was-quite-a-light-show-nasa-astronaut-spies-dramatic-fireball-from-the-international-space-station-photos"
+  },
+  "summary": "La noche del 27 de abril de 2026, el astronauta de la NASA Chris Williams buscaba desde la Estación Espacial Internacional una nave de carga rusa que llegaba cuando vio, según contó él mismo, un objeto brillante justo debajo que cruzaba la alta atmósfera sobre África occidental y se partía en una lluvia de fragmentos. Sus fotos lo muestran entre las 22:39:47 y las 22:41:16 UTC, mientras la estación pasaba de Benín a Níger. La NASA lo describió como basura espacial sin identificar y no descartó un meteoro. El catálogo del astrofísico Jonathan McDowell da la caída de la etapa del cohete que lanzó la nave de carga a las 22:41 UTC, sobre Níger.",
+  "summary_en": "On the night of April 27, 2026, NASA astronaut Chris Williams was looking out from the International Space Station for an incoming Russian cargo ship when, by his own account, he saw a bright object directly below streak through the upper atmosphere over West Africa and break into a shower of fragments. His photos show it from 22:39:47 to 22:41:16 UTC, as the station passed from Benin over Niger. NASA described it as unidentified space junk and did not rule out a meteor. The catalog kept by astrophysicist Jonathan McDowell puts the fall of the stage of the rocket that launched the cargo ship at 22:41 UTC, over Niger.",
+  "patterns": [
+    "8e"
+  ],
+  "category": "incident",
+  "epistemicStatus": "documented",
+  "whatHappened": "El sábado 25 de abril de 2026, a las 22:21 UTC, un cohete ruso Soyuz-2.1a despegó del cosmódromo de Baikonur, en Kazajistán, con la nave de carga Progress MS-34, que la NASA llama Progress 95, rumbo a la Estación Espacial Internacional. Según el catálogo de objetos espaciales del astrofísico Jonathan McDowell, la tercera etapa del cohete, llamada Blok-I, se separó de la nave nueve minutos después. Era un cilindro de 6,7 metros de largo y 2.350 kilogramos, y quedó en una órbita baja con casi la misma inclinación que la estación, 51,6 grados. El aire la fue frenando: el 27 de abril, según el catálogo, el punto más bajo de su órbita estaba ya a 157 kilómetros de altura y el más alto a 169, y ese mismo día cayó.\n\nEl lunes 27 de abril, la Progress se acercaba a la estación para acoplarse. El astronauta de la NASA Chris Williams, a bordo desde el 27 de noviembre de 2025 en su primera misión, estaba en la cúpula, el módulo de ventanas que mira hacia la Tierra, y buscaba la nave con la vista. Según contó él mismo días después en Instagram y en X, «at about 10:40 PM GMT» (hacia las 22:40 UTC), cuando la estación pasaba sobre África occidental, vio un objeto brillante «directly below us» (justo debajo de nosotros) que cruzaba la alta atmósfera. «I saw its tail grow and then split apart into a shower of smaller pieces», escribió (vi crecer su cola y luego partirse en una lluvia de fragmentos más pequeños). Pensó que era basura espacial o un satélite que se rompía al entrar en la atmósfera, y lo resumió así: «It was quite a light show!» (fue todo un espectáculo de luces).\n\nWilliams lo fotografió con una cámara Nikon Z9 y un objetivo de 200 milímetros, sosteniéndola en la mano. La base de datos de fotos de astronautas de la NASA guarda cada imagen con la hora de la cámara y el punto de la Tierra que la estación tenía debajo, y registra la serie entera, de la ISS074-E-540106 a la ISS074-E-540252, entre las 22:39:47 y las 22:41:31 UTC; el objeto encendido se ve hasta la foto de las 22:41:16. El Earth Observatory de la NASA publicó tres de esas fotos en secuencia, tomadas a las 22:39:47, a las 22:40:28 y a las 22:40:57 UTC. En la primera se ve una bola de luz blanca con una cola anaranjada; en las otras dos, una estela que se deshace en muchos fragmentos. Una cuarta foto, de las 22:41:16, muestra solo la lluvia de fragmentos anaranjados.\n\nA las 22:41:16, según la misma base de datos, la estación volaba a 413 kilómetros de altura sobre el oeste de Níger, y en ese punto el Sol estaba muy por debajo del horizonte. Abajo era de noche cerrada: la luz de las fotos venía del propio objeto al calentarse en el aire, no del Sol. La Progress no fue la causa, según el Earth Observatory: se acopló a la estación sin problemas el 27 de abril, como estaba previsto. El catálogo de McDowell da el acoplamiento a las 00:00 UTC del 28 de abril; en Estados Unidos aún era la noche del 27.\n\nWilliams publicó tres fotos y un video breve en X el jueves 30 de abril, según Space.com. La NASA difundió en su web otra foto de la serie, la ISS074-E-540224, con el título «A piece of unidentified space debris is pictured from the International Space Station» (un trozo de basura espacial sin identificar, fotografiado desde la Estación Espacial Internacional) y un texto que lo describe ardiendo sobre África. El 18 de mayo, el Earth Observatory hizo de la foto de las 22:41:16 su imagen del día, con el título «Great Balls of Fire».",
+  "whatHappened_en": "On Saturday, April 25, 2026, at 22:21 UTC, a Russian Soyuz-2.1a rocket lifted off from the Baikonur Cosmodrome in Kazakhstan carrying the Progress MS-34 cargo ship, which NASA calls Progress 95, bound for the International Space Station. According to the catalog of space objects kept by astrophysicist Jonathan McDowell, the rocket's third stage, called the Blok-I, separated from the ship nine minutes later. It was a cylinder 6.7 meters long weighing 2,350 kilograms, and it was left in a low orbit at almost the same inclination as the station, 51.6 degrees. The air kept slowing it down: by April 27, according to the catalog, the lowest point of its orbit was already just 157 kilometers up and the highest 169, and it fell that same day.\n\nOn Monday, April 27, the Progress was closing in on the station to dock. NASA astronaut Chris Williams, on his first mission and aboard since November 27, 2025, was in the Cupola, the module of windows that faces the Earth, trying to spot the ship. As he told it days later on Instagram and X, \"at about 10:40 PM GMT\" (22:40 UTC), as the station was passing over West Africa, he saw a bright object \"directly below us\" streaking through the upper atmosphere. \"I saw its tail grow and then split apart into a shower of smaller pieces,\" he wrote. He thought it was a piece of space junk or a satellite breaking up as it entered the atmosphere, and he summed it up: \"It was quite a light show!\"\n\nWilliams photographed it with a handheld Nikon Z9 camera and a 200 millimeter lens. NASA's database of astronaut photos stores each image with the camera's time and the point on Earth directly below the station, and it lists the whole series, from ISS074-E-540106 to ISS074-E-540252, between 22:39:47 and 22:41:31 UTC; the object is visible alight up to the 22:41:16 photo. NASA's Earth Observatory published three of those photos in sequence, taken at 22:39:47, 22:40:28 and 22:40:57 UTC. The first shows a ball of white light with an orange tail; the other two show a trail breaking up into many fragments. A fourth photo, from 22:41:16, shows only the shower of orange fragments.\n\nAt 22:41:16, according to the same database, the station was flying 413 kilometers up over western Niger, and the Sun was far below the horizon at that point. It was deep night below: the light in the photos came from the object itself as it heated up in the air, not from the Sun. The Progress was not the cause, according to the Earth Observatory: it docked with the station safely on April 27, as planned. McDowell's catalog puts the docking at 00:00 UTC on April 28; in the United States it was still the evening of the 27th.\n\nWilliams posted three photos and a short video on X on Thursday, April 30, according to Space.com. NASA released another photo from the series, ISS074-E-540224, on its website under the title \"A piece of unidentified space debris is pictured from the International Space Station,\" with a caption describing it burning up over Africa. On May 18, the Earth Observatory made the 22:41:16 photo its Image of the Day, under the title \"Great Balls of Fire.\"",
+  "whyMatters": "La NASA no identificó el objeto. Su página sobre la foto ISS074-E-540224 habla de basura espacial sin identificar, y el Earth Observatory amplió las posibilidades: el astronauta pudo ver la reentrada y la ruptura del cohete que lanzó la Progress, la de otro cuerpo de cohete, un satélite u otra basura espacial, y también era posible que la luz la produjera material de un meteoro. Un científico de la oficina de observación de la Tierra de la estación (Crew Earth Observations) añadió que, sin saber exactamente hacia dónde apuntaba la cámara, que Williams llevaba en la mano, es difícil determinar la fuente. La base de datos de fotos deja en blanco el punto de la Tierra al que mira cada imagen: solo da el que la estación tenía debajo.\n\nLa hipótesis concreta la publicó Space.com. En su artículo del 3 de mayo, Mike Wall escribió que la etapa alta del Soyuz que lanzó la Progress «apparently reentered at the right time and place to generate the sky show» (al parecer reentró en el momento y el lugar justos para producir el espectáculo), y enlazaba como apoyo una publicación de un usuario de X. El catálogo de McDowell da para esa etapa una caída a las 22:41 UTC del 27 de abril, en el centro de Níger: el mismo minuto de la foto de las 22:41:16.\n\nEl lugar también encaja. Según un cálculo hecho para este caso con las coordenadas del catálogo y las de la base de datos de fotos, ese punto queda a unos 280 kilómetros del que la estación tenía debajo a las 22:41:16, casi en la dirección en que avanzaba. Como se lanzó para alcanzar la estación, la etapa daba vueltas a la Tierra en una órbita casi tan inclinada como la suya, y eso hace verosímil que cayera bajo su ruta. Dos límites pesan sobre esta coincidencia: el catálogo redondea el punto al grado, con un margen de decenas de kilómetros, y no dice de dónde salen la hora y el lugar. Queda por ver si son independientes de las propias fotos.\n\nLa duración apunta en la misma dirección. Las fotos con el objeto encendido abarcan al menos 89 segundos, de las 22:39:47 a las 22:41:16. Un meteoro arde mucho menos: según el informe de la Desert Fireball Network australiana sobre otra reentrada de un Soyuz, un bólido típico dura unos seis segundos, y aquella etapa, que entró casi en horizontal desde una órbita baja, fue seguida durante 68 segundos por dos cámaras de esa red ([[victoria-soyuz-reentrada-2023]]). El suceso muestra además hasta dónde llega una buena foto: hora al segundo, testigo con nombre y posición exacta del fotógrafo no bastaron a la NASA para decir qué era. La respuesta más cercana la da el catálogo de objetos en órbita.",
+  "whyMatters_en": "NASA did not identify the object. Its page for photo ISS074-E-540224 speaks of unidentified space debris, and the Earth Observatory widened the possibilities: the astronaut may have seen the reentry and breakup of the rocket that launched the Progress, of another rocket body, a satellite or other space junk, and it was also possible that meteoric material produced the light. A scientist with the station's Earth-observation office (Crew Earth Observations) added that, without knowing exactly where the camera Williams was holding was pointed, it is hard to determine the source. The photo database leaves blank the point on Earth each image looks at: it only gives the point directly below the station.\n\nThe specific hypothesis came from Space.com. In his May 3 article, Mike Wall wrote that the upper stage of the Soyuz that launched the Progress \"apparently reentered at the right time and place to generate the sky show,\" and linked a post by an X user as support. McDowell's catalog gives that stage a fall at 22:41 UTC on April 27, in central Niger: the same minute as the 22:41:16 photo.\n\nThe place fits as well. By a calculation made for this case from the catalog's coordinates and those in the photo database, that point lies about 280 kilometers from the spot below the station at 22:41:16, almost in the direction the station was heading. Because it was launched to reach the station, the stage circled Earth in an orbit tilted almost like the station's, which makes it plausible that it fell beneath the station's path. Two limits weigh on this match: the catalog rounds the point to the nearest degree, a margin of tens of kilometers, and it does not say where the time and place come from. Whether they are independent of the photos themselves remains to be seen.\n\nThe duration points the same way. The photos with the object alight span at least 89 seconds, from 22:39:47 to 22:41:16. A meteor burns far more briefly: according to the Australian Desert Fireball Network's report on another Soyuz reentry, a typical fireball lasts about six seconds, while that stage, which came in almost horizontally from a low orbit, was followed for 68 seconds by two of the network's cameras ([[victoria-soyuz-reentrada-2023]]). The event also shows how far a good photo can go: a time to the second, a named witness and the exact position of the photographer were not enough for NASA to say what it was. The closest answer comes from the catalog of objects in orbit.",
+  "evidence": [
+    "Base de datos de fotos de astronautas de la NASA (Gateway to Astronaut Photography of Earth): fotos ISS074-E-540106 a ISS074-E-540252, tomadas el 27 de abril de 2026 entre las 22:39:47 y las 22:41:31 UTC con una Nikon Z9 y un objetivo de 200 mm. La ISS074-E-540214, de las 22:41:16, tiene el punto bajo la estación en 14,9° N y 4,6° E, a 413 km de altura, con el Sol 58 grados bajo el horizonte.",
+    "NASA Earth Observatory, «Great Balls of Fire» (18 de mayo de 2026): tres fotos tomadas a las 22:39:47, 22:40:28 y 22:40:57 UTC muestran un objeto que se rompe en la atmósfera; la foto de las 22:41:16 muestra la lluvia de fragmentos. Las tomó «a member of the Expedition 74 crew» mientras buscaba la Progress 95.",
+    "El mismo artículo del Earth Observatory deja abierta la causa: la reentrada del cohete que lanzó la Progress, otro cuerpo de cohete, un satélite, otra basura espacial o material de un meteoro; y recoge que, según un científico de Crew Earth Observations, sin saber hacia dónde apuntaba la cámara es difícil determinar la fuente.",
+    "Chris Williams, publicación en Instagram (citada por la NASA) y en X el 30 de abril de 2026 (citada por Space.com): hacia las 22:40 GMT del 27 de abril, sobre África occidental, vio un objeto brillante justo debajo cuya cola creció y se partió en fragmentos; pensó que era basura espacial o un satélite que se rompía.",
+    "NASA, página de la imagen ISS074-E-540224 (crédito NASA/Chris Williams): «A piece of unidentified space debris is pictured from the International Space Station as it reenters Earth's atmosphere and burns up over Africa». Según la base de datos de fotos de astronautas, se tomó a las 22:41:18 UTC.",
+    "Catálogo GCAT de Jonathan McDowell: la etapa Blok-I del Soyuz-2-1a que lanzó la Progress MS-34 (designación 2026-093B) se separó el 25 de abril de 2026 a las 22:30:32 UTC, el 27 de abril tenía una órbita de 157 por 169 km, inclinada 51,65 grados, y reentró ese día a las 22:41 UTC, hacia los 6° E y 17° N.",
+    "Space.com, artículo de Mike Wall (3 de mayo de 2026): la etapa alta del Soyuz que llevó la Progress 95 a la órbita «apparently reentered at the right time and place to generate the sky show»."
+  ],
+  "evidence_en": [
+    "NASA's database of astronaut photos (Gateway to Astronaut Photography of Earth): photos ISS074-E-540106 to ISS074-E-540252, taken on April 27, 2026, between 22:39:47 and 22:41:31 UTC with a Nikon Z9 and a 200 mm lens. ISS074-E-540214, from 22:41:16, has the point below the station at 14.9° N, 4.6° E, at an altitude of 413 km, with the Sun 58 degrees below the horizon.",
+    "NASA Earth Observatory, \"Great Balls of Fire\" (May 18, 2026): three photos taken at 22:39:47, 22:40:28 and 22:40:57 UTC show an object breaking up in the atmosphere; the 22:41:16 photo shows the shower of fragments. They were taken by \"a member of the Expedition 74 crew\" who was looking for Progress 95.",
+    "The same Earth Observatory article leaves the cause open: the reentry of the rocket that launched the Progress, another rocket body, a satellite, other space junk or meteoric material; and it reports that, according to a Crew Earth Observations scientist, without knowing where the camera was pointed it is hard to determine the source.",
+    "Chris Williams, post on Instagram (cited by NASA) and on X on April 30, 2026 (cited by Space.com): at about 22:40 GMT on April 27, over West Africa, he saw a bright object directly below whose tail grew and split into fragments; he thought it was space junk or a satellite breaking up.",
+    "NASA, image page for ISS074-E-540224 (credit NASA/Chris Williams): \"A piece of unidentified space debris is pictured from the International Space Station as it reenters Earth's atmosphere and burns up over Africa.\" According to the astronaut photo database, it was taken at 22:41:18 UTC.",
+    "Jonathan McDowell's GCAT catalog: the Blok-I stage of the Soyuz-2-1a that launched Progress MS-34 (designation 2026-093B) separated on April 25, 2026, at 22:30:32 UTC, was in a 157 by 169 km orbit inclined 51.65 degrees on April 27, and reentered that day at 22:41 UTC, near 6° E, 17° N.",
+    "Space.com, article by Mike Wall (May 3, 2026): the upper stage of the Soyuz that carried Progress 95 to orbit \"apparently reentered at the right time and place to generate the sky show.\""
+  ],
+  "documents": [
+    {
+      "role": "prueba",
+      "src": "/pursue/iss-bola-de-fuego-africa-2026-triptico.jpg",
+      "type": "image",
+      "title": "Tres fotos del objeto al romperse, 22:39:47 a 22:40:57 UTC (27 abr 2026)",
+      "title_en": "Three photos of the object breaking up, 22:39:47 to 22:40:57 UTC (Apr 27, 2026)",
+      "description": "Tres fotos tomadas desde la cúpula de la Estación Espacial Internacional en 70 segundos: a las 22:39:47 UTC, una bola de luz blanca con una cola anaranjada; a las 22:40:28 y a las 22:40:57, una estela que se deshace en fragmentos. Montaje del Earth Observatory de la NASA (Lauren Dauphin) con las fotos ISS074-E-540109 a ISS074-E-540179; la NASA recortó las imágenes, realzó su contraste y eliminó artefactos de la lente. Las horas impresas son las de la cámara.",
+      "description_en": "Three photos taken from the International Space Station's Cupola over 70 seconds: at 22:39:47 UTC, a ball of white light with an orange tail; at 22:40:28 and 22:40:57, a trail breaking up into fragments. A NASA Earth Observatory composite (Lauren Dauphin) of photos ISS074-E-540109 to ISS074-E-540179; NASA cropped the images, enhanced their contrast and removed lens artifacts. The printed times are the camera's.",
+      "source": "NASA Earth Observatory, «Great Balls of Fire» (18 may 2026)",
+      "source_en": "NASA Earth Observatory, \"Great Balls of Fire\" (May 18, 2026)",
+      "license": "Dominio público (NASA)",
+      "fallbackUrl": "https://science.nasa.gov/earth/earth-observatory/great-balls-of-fire/"
+    },
+    {
+      "role": "prueba",
+      "src": "/pursue/iss-bola-de-fuego-africa-2026-iss074-e-540214.jpg",
+      "type": "image",
+      "title": "ISS074-E-540214 · la lluvia de fragmentos a las 22:41:16 UTC (27 abr 2026)",
+      "title_en": "ISS074-E-540214 · the shower of fragments at 22:41:16 UTC (Apr 27, 2026)",
+      "description": "La foto principal del artículo del Earth Observatory de la NASA: una estela de fragmentos anaranjados que cruza la alta atmósfera, de noche, a las 22:41:16 UTC. Según la base de datos de fotos de astronautas de la NASA, la estación volaba entonces a 413 km sobre el oeste de Níger (14,9° N, 4,6° E). Tomada con una Nikon Z9 y un objetivo de 200 mm por un tripulante de la Expedición 74; la NASA atribuye a Chris Williams otra foto de la misma serie, la ISS074-E-540224. La NASA recortó la imagen, realzó su contraste y eliminó artefactos de la lente.",
+      "description_en": "The main photo in NASA's Earth Observatory article: a trail of orange fragments crossing the upper atmosphere, at night, at 22:41:16 UTC. According to NASA's database of astronaut photos, the station was then flying 413 km above western Niger (14.9° N, 4.6° E). Taken with a Nikon Z9 and a 200 mm lens by an Expedition 74 crew member; NASA credits another photo in the same series, ISS074-E-540224, to Chris Williams. NASA cropped the image, enhanced its contrast and removed lens artifacts.",
+      "source": "NASA Earth Observatory · foto de astronauta ISS074-E-540214",
+      "source_en": "NASA Earth Observatory · astronaut photo ISS074-E-540214",
+      "license": "Dominio público (NASA)",
+      "fallbackUrl": "https://eol.jsc.nasa.gov/SearchPhotos/photo.pl?mission=ISS074&roll=E&frame=540214"
+    }
+  ],
+  "sources": [
+    {
+      "name": "NASA Earth Observatory, «Great Balls of Fire», imagen del día (18 may 2026)",
+      "name_en": "NASA Earth Observatory, \"Great Balls of Fire,\" Image of the Day (May 18, 2026)",
+      "url": "https://science.nasa.gov/earth/earth-observatory/great-balls-of-fire/",
+      "note": "Fuente primaria: las fotos con su hora, la cámara, el objetivo, la búsqueda de la Progress 95 y las causas posibles que deja abiertas la NASA. No nombra al tripulante.",
+      "note_en": "Primary source: the photos with their times, the camera, the lens, the search for Progress 95 and the possible causes NASA leaves open. It does not name the crew member."
+    },
+    {
+      "name": "NASA, «A piece of unidentified space debris is pictured from the International Space Station» (imagen ISS074-E-540224)",
+      "name_en": "NASA, \"A piece of unidentified space debris is pictured from the International Space Station\" (image ISS074-E-540224)",
+      "url": "https://www.nasa.gov/image-detail/amf-iss074e0540224/",
+      "note": "Fuente primaria: atribuye la foto a Chris Williams y cita entero su relato publicado en Instagram.",
+      "note_en": "Primary source: credits the photo to Chris Williams and quotes his full account posted on Instagram."
+    },
+    {
+      "name": "NASA, Gateway to Astronaut Photography of Earth, foto ISS074-E-540214",
+      "name_en": "NASA, Gateway to Astronaut Photography of Earth, photo ISS074-E-540214",
+      "url": "https://eol.jsc.nasa.gov/SearchPhotos/photo.pl?mission=ISS074&roll=E&frame=540214",
+      "note": "Fuente primaria: hora de la foto, punto de la Tierra bajo la estación, altura y elevación del Sol. Las páginas de las demás fotos de la serie (540106 a 540252) dan los mismos datos.",
+      "note_en": "Primary source: the time of the photo, the point on Earth below the station, the altitude and the Sun's elevation. The pages for the other photos in the series (540106 to 540252) give the same data."
+    },
+    {
+      "name": "Jonathan McDowell, General Catalog of Artificial Space Objects (GCAT), catálogo de satélites, objeto S68838 «Soyuz-2-1a Blok-I» (2026-093B)",
+      "name_en": "Jonathan McDowell, General Catalog of Artificial Space Objects (GCAT), satellite catalog, object S68838 \"Soyuz-2-1a Blok-I\" (2026-093B)",
+      "url": "https://planet4589.org/space/gcat/tsv/cat/satcat.tsv",
+      "note": "Catálogo de referencia: separación, órbita, masa, dimensiones, hora y lugar de la reentrada de la etapa, y acoplamiento de la Progress MS-34. El catálogo no indica de dónde salen la hora y el lugar de la reentrada.",
+      "note_en": "Reference catalog: the stage's separation, orbit, mass, dimensions and the time and place of its reentry, and the docking of Progress MS-34. The catalog does not state where the reentry time and place come from."
+    },
+    {
+      "name": "Jonathan McDowell, GCAT, registro de lanzamientos, 2026-093",
+      "name_en": "Jonathan McDowell, GCAT, launch log, 2026-093",
+      "url": "https://planet4589.org/space/gcat/tsv/launch/launch.tsv",
+      "note": "Catálogo de referencia: hora del lanzamiento (22:21:47 UTC del 25 de abril de 2026) y rampa, en Baikonur.",
+      "note_en": "Reference catalog: the launch time (22:21:47 UTC on April 25, 2026) and the pad, at Baikonur."
+    },
+    {
+      "name": "Mike Wall, «'It was quite a light show!' NASA astronaut spies dramatic fireball from the International Space Station (photos)», Space.com (3 may 2026)",
+      "name_en": "Mike Wall, \"'It was quite a light show!' NASA astronaut spies dramatic fireball from the International Space Station (photos),\" Space.com (May 3, 2026)",
+      "url": "https://www.space.com/space-exploration/international-space-station/it-was-quite-a-light-show-nasa-astronaut-spies-dramatic-fireball-from-the-international-space-station-photos",
+      "note": "Prensa: el relato de Williams en X del 30 de abril, su llegada a la estación y la hipótesis de la etapa del Soyuz, apoyada en una publicación de la cuenta @_starbase_ en X.",
+      "note_en": "Press: Williams's April 30 account on X, his arrival at the station and the Soyuz stage hypothesis, based on a post by the @_starbase_ account on X."
+    },
+    {
+      "name": "Chris Williams (@Astro_ChrisW), publicación en X (30 abr 2026)",
+      "name_en": "Chris Williams (@Astro_ChrisW), post on X (Apr 30, 2026)",
+      "url": "https://x.com/Astro_ChrisW/status/2049950775736951244",
+      "note": "Fuente primaria: relato del astronauta con tres fotos y un video. Su texto se conoce por Space.com y por la página de la NASA, que cita el mismo texto publicado en Instagram.",
+      "note_en": "Primary source: the astronaut's account with three photos and a video. Its text is known from Space.com and from NASA's page, which quotes the same text as posted on Instagram."
+    },
+    {
+      "name": "Harry Baker, «'Quite a light show': NASA astronaut snaps atmospheric fireball as Russian rocket explodes over West Africa», Live Science (3 nov 2026)",
+      "name_en": "Harry Baker, \"'Quite a light show': NASA astronaut snaps atmospheric fireball as Russian rocket explodes over West Africa,\" Live Science (Nov 3, 2026)",
+      "url": "https://www.livescience.com/planet-earth/quite-a-light-show-nasa-astronaut-snaps-atmospheric-fireball-as-russian-rocket-explodes-over-west-africa-earth-from-space",
+      "note": "Prensa: da por hecha la identificación con el cohete Soyuz citando a Space.com. Atribuye la bola de fuego a la cofia y al propulsor del cohete, que caen durante el ascenso; el catálogo de McDowell da la reentrada de la tercera etapa. Atribuye además a la NASA que la causa más probable era el cohete, algo que el artículo del Earth Observatory al que enlaza no dice.",
+      "note_en": "Press: treats the Soyuz identification as fact, citing Space.com. It attributes the fireball to the rocket's fairing and booster, which fall during the ascent; McDowell's catalog gives the reentry of the third stage. It also says NASA judged the rocket the more likely cause, which the Earth Observatory article it links to does not say."
+    }
+  ],
+  "evidenceReviewed": "2026-11-23"
+}
