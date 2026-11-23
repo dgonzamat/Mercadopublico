@@ -109,6 +109,8 @@ const COUNTRY_EN: Record<string, string> = {
   "Estados Federados de Micronesia": "Federated States of Micronesia",
   "Barbados": "Barbados",
   "Brunéi": "Brunei",
+  "Jamaica": "Jamaica",
+  "Belice": "Belize",
   "Bahamas": "Bahamas",
   "Yugoslavia (Serbia)": "Yugoslavia (Serbia)",
   "Ghana": "Ghana",
