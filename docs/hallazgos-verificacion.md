@@ -593,5 +593,14 @@ Regla: solo cambia lo que se repite en al menos 3 de las 10 fichas. Notas de los
 | truk-1953 | atribución | BAJA (mensaje «VIA FLEET WEATHER CENTRAL GUAM»): un solo parte por esa vía no prueba la costumbre ni «la base más cercana» | no |
 | truk-1953 | atribución | BAJA: la hoja 5 no dice quién la escribió; solo cita los archivos de la FTD | no |
 | truk-1953 | cifra/hora | BAJA: 3–4 millas son 5–6,5 km, no 5–6 | no |
-| seria-1953 | pendiente | provisional del redactor; la sustituye el orquestador con los hallazgos del verificador | no |
+| seria-1953 | ausencia | MEDIA: «todo lo que se sabe del suceso sale de una sola hoja» generalizaba al caso lo que solo vale para Blue Book (la prensa de 1953 no se buscó en una superficie enumerable); se acota al expediente | no |
+| seria-1953 | ausencia | MEDIA: «no figuran en el archivo de Blue Book» iba más allá de la búsqueda, que solo miró títulos; se acota a «no tienen allí un expediente propio con ese nombre» | no |
+| seria-1953 | atribución | MEDIA (ATIC 108383, sin medio ni agencia): «el periódico» daba por hecho un origen de prensa escrita; pasa a «el medio» | no |
+| seria-1953 | léxico/voz | MEDIA: la primera frase del resumen tenía unas 60 palabras y cinco incisos; se parte | no |
+| seria-1953 | léxico/voz | BAJA (ATIC: «have been reported»): «se habían visto» no traducía bien | no |
+| seria-1953 | atribución | BAJA (ATIC: «appeared to be rotating»): el título afirmaba el giro | no |
+| seria-1953 | atribución | BAJA (tarjeta, casilla 11: «Observed several times on previous occasions», sin sujeto): «el mismo objeto» era una lectura presentada como cita | no |
+| seria-1953 | cifra/hora | BAJA: el trazo sobre la segunda línea se describía con más seguridad de la que permite la imagen | no |
+| seria-1953 | léxico/voz | BAJA: citas en inglés sin glosar en `evidence` | no |
+| seria-1953 | cifra/hora | BAJA: Brunéi está en la costa noroeste de Borneo, no la norte | no |
 | barbados-1958 | pendiente | provisional del redactor; la sustituye el orquestador con los hallazgos del verificador | no |
