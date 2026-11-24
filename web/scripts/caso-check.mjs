@@ -92,6 +92,15 @@ const TECNICOS = [
 ];
 const MAX_TECNICOS = 3;
 
+// 6. Atribución a un medio: «dijo a BioBioChile», «contó a T13», «told Reuters».
+//    El verbo afirma que el medio habló con la persona; muchas veces el medio solo
+//    reproduce sus palabras («aseveró», «según publicó…»). En el bólido de Chile
+//    (nov 2026) el verificador tumbó dos así; la atribución es la categoría que más
+//    se repite en docs/hallazgos-verificacion.md. Solo se avisa cuando el destinatario
+//    es una fuente citada en `sources` (un medio), no una persona.
+const A_MEDIO_ES = /(?<![\p{L}])(dijo|dijeron|cont[oó]|contaron|declar[oó]|declararon|explic[oó]|explicaron|asegur[oó]|confirm[oó]|confirmaron) (?:al |a la |a los |a |ante )(?:(?:diario|agencia|canal|radio|cadena|revista|sitio|peri[oó]dico) )?([A-ZÁÉÍÓÚ0-9][\p{L}0-9.&-]+)/gu;
+const A_MEDIO_EN = /\b(told|said to|explained to|confirmed to) (?:the )?(?:(?:newspaper|agency|channel|outlet|station|magazine|website|broadcaster) )?([A-Z0-9][\p{L}0-9.&-]+)/gu;
+
 const maxRemote = (() => {
   const files = sh("git ls-tree -r origin/main --name-only").split("\n").filter((f) => /^web\/data\/cases\/.*\.json$/.test(f));
   if (!files.length) return null;
@@ -129,6 +138,17 @@ for (const id of targets) {
   // WARN: difusión de una versión sin fuente
   for (const s of [...(esN.match(CALCULO_PROPIO) || []), ...(enN.match(CALCULO_PROPIO) || [])].map((s) => s.trim().replace(/\s+/g, " "))) { out.push(["WARN", "cálculo", `${s.length > 170 ? s.slice(0, 170) + "…" : s} («según un cálculo hecho para este caso», con sus datos si la frase no los deja claros)`]); bump("cálculo"); }
   for (const s of [...(esN.match(DIFUSION) || []), ...(enN.match(DIFUSION) || [])].map((s) => s.trim().replace(/\s+/g, " "))) { out.push(["WARN", "difusión", `${s.length > 170 ? s.slice(0, 170) + "…" : s} (¿qué fuente dice cuánto circula?)`]); bump("difusión"); }
+  // WARN: atribución a un medio citado
+  const srcTxt = (c.sources || []).map((x) => `${x.name || ""} ${x.url || ""}`).join(" ").toLowerCase();
+  const seen = new Set();
+  for (const re of [A_MEDIO_ES, A_MEDIO_EN]) {
+    for (const m of (re === A_MEDIO_ES ? es : en).matchAll(re)) {
+      const who = m[2].replace(/[.,;:]+$/, "");
+      if (who.length < 3 || /^(el|la|los|las|the|del)$/i.test(who) || seen.has(m[0]) || !srcTxt.includes(who.toLowerCase())) continue;
+      seen.add(m[0]);
+      out.push(["WARN", "atribución", `«${m[0]}»: ¿dice ${who} que habló con esa persona? Si solo reproduce sus palabras, «según ${who}»`]); bump("atribución");
+    }
+  }
   // WARN: voz del redactor
   for (const m of new Set([...(esN.match(VOZ_ES) || []), ...(enN.match(VOZ_EN) || [])])) { out.push(["WARN", "voz", `«${m}» (voz del redactor)`]); bump("voz"); }
   // WARN: párrafos largos
@@ -165,5 +185,5 @@ for (const id of targets) {
 }
 
 console.log("\nResumen por categoría:", Object.keys(tally).length ? JSON.stringify(tally) : "sin avisos");
-console.log("Recuerda: atribución y omisiones no se miden aquí; las revisa el verificador independiente.");
+console.log("Recuerda: la atribución solo se avisa en el caso «dijo a [medio]»; el resto de la atribución y las omisiones las revisa el verificador independiente.");
 if (strict && errors) process.exit(1);
