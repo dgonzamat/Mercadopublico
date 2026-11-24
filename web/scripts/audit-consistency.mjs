@@ -528,6 +528,8 @@ const VISUAL_CERRADO_POR_LICENCIA = {
   "victoria-soyuz-reentrada-2023": "el post de la ASA trae una foto de autor no identificado (no es video); el informe de la DFN no declara licencia; Commons seco",
   // Ficha nueva del 17 nov 2026 (detalle en docs/registros.md):
   "malasia-reentrada-swift-2026": "MOSTI y MYSA no publicaron imagen ni video propios; los videos de Threads y de la prensa tienen copyright; la NASA solo tiene imágenes de contexto",
+  // Ficha nueva del 24 nov 2026 (detalle en docs/registros.md):
+  "bolido-centro-sur-chile-2026": "RedGeoChile, la seremi y Red de Emergencia no publicaron imagen propia; los videos de X y de la prensa son de usuarios, con copyright; la NOAA solo publica datos del GLM, no imagen; Commons seco",
   // Ficha nueva del 18 nov 2026 (detalle en docs/registros.md):
   "las-vegas-patio-2023": "los videos de la LVMPD están en YouTube, sin licencia y fuera de los reproductores del visor; los datos de la AMS prohíben redistribuir; Commons y archive.org secos",
   // Serie de abducciones, barrido del 19 nov 2026 (detalle en docs/registros.md):
