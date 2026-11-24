@@ -89,6 +89,7 @@ const COUNTRY_EN: Record<string, string> = {
   "Burkina Faso": "Burkina Faso",
   "Filipinas": "Philippines",
   "Rumanía": "Romania",
+  "Moldavia": "Moldova",
   "Cuba": "Cuba",
   "Antártida · Isla Decepción (bases AR/CL/UK)": "Antarctica · Deception Island (AR/CL/UK bases)",
   "Antártida · Isla Robert (expedición chilena)": "Antarctica · Robert Island (Chilean expedition)",
