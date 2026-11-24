@@ -543,6 +543,8 @@ const VISUAL_CERRADO_POR_LICENCIA = {
   "hong-kong-2010": "las fotos de la cámara de Cheung Chau son del Observatorio de Hong Kong, que solo autoriza reproducirlas con fines no comerciales y previa aceptación de sus condiciones; quedan como enlace; Commons y archive.org secos",
   "angren-starlink-2025": "el clip de Angren es de suscriptores de Kun.uz, publicado por el diario con su logotipo y sin licencia; Uzbekcosmos no publicó imagen; Commons y archive.org secos",
   "haifa-larga-marcha-2021": "los videos de Haifa, Al Qurayyat y Omán son de cuentas de X sin licencia; Space-Track, la CTBTO y la CMSE no publicaron imagen del paso; en Commons solo hay fotos del lanzamiento y un gráfico de un usuario; archive.org seco",
+  // Ficha nueva del 24 nov 2026 (detalle en docs/registros.md):
+  "soroca-globo-2023": "ni el Ministerio de Defensa rumano ni la Autoridad Aeronáutica Civil moldava publicaron imagen del objeto; el video que circuló no tiene autor ni licencia; Commons y archive.org secos",
 };
 
 // Guard: la exención no puede volverse un desván. Si un caso exento consiguió
