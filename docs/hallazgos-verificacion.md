@@ -679,4 +679,8 @@ Regla: solo cambia lo que se repite en al menos 3 de las 10 fichas. Notas de los
 | bolido-centro-sur-chile-2026 | atribución | BAJA: McDowell «de Harvard» (retirado del CfA); «la prensa internacional» sin fuente en `sources` (Al Jazeera con AP y Reuters, en la nota) | no |
 | bolido-centro-sur-chile-2026 | léxico/voz | BAJA (T13 y Excélsior: «se transforma en una bola de fuego»): «estalló» exageraba; «videos de México» eran reportes; la altura de Herrera era condicional («se habría producido») | no |
 | bolido-centro-sur-chile-2026 | lectura | lector ciego EN (Opus, nota 6): no supo si GHGSat-C1 quedaba descartado, le chocó «called for calm: "We want to call for calm"» y la cadena de «according to»; «put … down to» le sonó británico. Corregidos el satélite, la cita y el verbo. Anotado sin tocar: el primer párrafo se repite en el segundo y el bloque del Starship pesa para el lector de móvil | no |
-| bolido-tennessee-2026 | pendiente | provisional del redactor; la sustituye la verificación independiente | no |
+| bolido-tennessee-2026 | ausencia | MEDIA (GCAT satcat y auxcat, Dest: S45695 «79E 38S», A11995 «Koonibba»): «ninguna dice dónde cayó el objeto» era falso para dos entradas; solo las cercanas en hora (Starlink 36253, Henan-1) no dan lugar | no |
+| bolido-tennessee-2026 | omisión | BAJA (cuadro y video de Huntsville 01A): el meteoro sale en las cuatro cámaras, no en tres; en Huntsville es un punto cerca del borde | no |
+| bolido-tennessee-2026 | omisión | BAJA: la lista del GCAT omitía etapas y cofias del Chang Zheng 2C y del Gushenxing-2; Daily Galaxy da 120 millas frente a los ~150 km calculados | no |
+| bolido-tennessee-2026 | cifra/hora | BAJA: «cámaras separadas por cientos de kilómetros» sin fuente (Huntsville y Tullahoma están a ~75 km) | no |
+| bolido-tennessee-2026 | léxico/voz | BAJA: «No meteorite is known to have been found» calcaba la pasiva impersonal | no |
