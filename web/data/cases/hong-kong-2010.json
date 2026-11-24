@@ -1,0 +1,133 @@
+{
+  "id": "hong-kong-2010",
+  "num": 596,
+  "name": "Hong Kong · ocho avisos de ovni en una noche de tormenta",
+  "name_en": "Hong Kong · eight UFO reports on a night of thunderstorms",
+  "year_start": 2010,
+  "country": "HK",
+  "country_name": "Hong Kong",
+  "flag": "🇭🇰",
+  "location": {
+    "lat": 22.4204,
+    "lng": 114.0636,
+    "place": "Hong Kong: entrada del túnel de Tai Lam e isla de Cheung Chau",
+    "place_en": "Hong Kong: Tai Lam Tunnel entrance and Cheung Chau island",
+    "precision": "approx"
+  },
+  "tier": "B",
+  "probability": 7,
+  "posterior": {
+    "mundano_natural": 0.9,
+    "humana_clasificada": 0.02,
+    "adversaria": 0.01,
+    "nohumano_encubierto": 0.01,
+    "nohumano_abierto": 0.01,
+    "indet": 0.05
+  },
+  "mundanoType": "misid",
+  "misidSubtype": "luces_tierra",
+  "classBasis": {
+    "es": "El Observatorio de Hong Kong, en su comunicado del 10 de septiembre de 2010, identificó como un farol del alumbrado lo que señalaban tres avisos cerca del túnel de Tai Lam y atribuyó la luz de la foto de su cámara de Cheung Chau al reflejo de una lámpara cercana en el vidrio que protege la cámara, un efecto que se ve también en días normales. La clase cubre esos cuatro avisos. Los otros cuatro llegaron sin foto ni detalles y el Observatorio no pudo estudiarlos. Para ellos solo hay una explicación general: según un artículo de prensa del 13 de septiembre que cita a RTHK, el Observatorio dijo que en las tormentas la mayoría toma por ovnis las luces de la calle.",
+    "en": "In its statement of September 10, 2010, the Hong Kong Observatory identified as a street lamp what three reports near the Tai Lam Tunnel pointed to, and put the light on the photo from its Cheung Chau camera down to a nearby lamp reflected in the glass that protects the camera, an effect that also appears on normal days. The class covers those four reports. The other four came with no photo or details, and the Observatory could not study them. For those, there is only a general explanation: according to a press article of September 13 that cites RTHK, the Observatory said that during storms most people mistake street lights for UFOs.",
+    "source": "Observatorio de Hong Kong, «Public's reports of unidentified flying objects», comunicado del 10 sep 2010",
+    "source_en": "Hong Kong Observatory, \"Public's reports of unidentified flying objects,\" statement of Sep 10, 2010",
+    "url": "https://www.info.gov.hk/gia/general/201009/10/P201009100305_print.htm"
+  },
+  "summary": "El Observatorio de Hong Kong recibió ocho avisos de ovnis vistos la noche del miércoles 8 de septiembre de 2010, la misma en que una tormenta eléctrica batió el récord de rayos en una hora. Dos días después publicó su respuesta. Tres avisos, cerca de la entrada del túnel de Tai Lam, señalaban un farol del alumbrado. La luz que alguien vio en una foto de la cámara del Observatorio en Cheung Chau era el reflejo de una lámpara en el vidrio protector, visible también la noche siguiente. Los otros cuatro llegaron sin foto ni detalles y no se pudieron estudiar.",
+  "summary_en": "The Hong Kong Observatory received eight reports of UFOs seen on the night of Wednesday, September 8, 2010, the same night a thunderstorm set the record for lightning in one hour. Two days later it published its answer. Three reports, near the entrance of the Tai Lam Tunnel, pointed to a street lamp. The light someone saw on a photo from the Observatory's camera on Cheung Chau was a lamp reflected in the protective glass, also visible the next night. The other four came with no photo or details and could not be studied.",
+  "patterns": ["8e"],
+  "category": "incident",
+  "epistemicStatus": "documented",
+  "whatHappened": "La noche del miércoles 8 de septiembre de 2010 cayó sobre Hong Kong una tormenta eléctrica que batió el récord de rayos en una hora del Observatorio de Hong Kong, el servicio meteorológico del territorio. Hong Kong es una región administrativa especial de China desde 1997. Según el balance que el Observatorio publicó al día siguiente, en las seis horas que empezaron a las 21:00 su red detectó más de 25.000 rayos entre las nubes y el suelo, la mayoría sobre el oeste de los Nuevos Territorios (Yuen Long, Tuen Mun y Tsuen Wan), la isla de Lantau y el sur de la isla de Hong Kong. En la hora que siguió a la medianoche cayeron 13.102, la cifra más alta en una hora desde que el Observatorio empezó a registrar rayos, en 2005.\n\nEsa noche, varias personas en Hong Kong creyeron ver ovnis y lo avisaron al Observatorio. El viernes 10 de septiembre, a las 20:05, el Observatorio publicó un comunicado breve, en inglés y en chino, con lo que había averiguado. Había recibido ocho avisos de supuestos objetos voladores no identificados vistos durante la noche del miércoles 8; según la versión china, los avisos llegaron en los dos días previos al comunicado, el jueves y el viernes. El comunicado no dice quiénes avisaron, a qué hora vieron lo que vieron ni qué forma, color o movimiento tenía, y reparte los ocho avisos en tres grupos.\n\nTres avisos se referían a algo visto cerca de la entrada del túnel de Tai Lam, un túnel de carretera de los Nuevos Territorios. El Observatorio lo identificó como un farol del alumbrado público y, para que cualquiera pudiera comprobarlo, incluyó en el comunicado un enlace a la vista de Google Street View de ese punto. El texto no explica cómo llegó a esa identificación.\n\nUn cuarto aviso señalaba un supuesto ovni en una foto meteorológica que la cámara del Observatorio en Cheung Chau, una isla al suroeste de la isla de Hong Kong, había tomado el 8 de septiembre. Tras investigarlo, el Observatorio concluyó que la luz venía de una lámpara cercana reflejada en el vidrio que protege la cámara, y que el mismo efecto aparece en días normales. Para mostrarlo adjuntó dos imágenes de esa cámara. La primera lleva impresa la hora 21:00:09 del miércoles 8 de septiembre; la segunda, la hora 21:00:07 del jueves 9. En las dos, una mancha ovalada y brillante ocupa el mismo lugar del cielo, a la derecha y por encima de las luces de la costa.\n\nSobre los cuatro avisos restantes, el comunicado dice que llegaron sin foto ni información detallada y que por eso el Observatorio no pudo estudiarlos.\n\nLa prensa de esos días añade algo de contexto, de segunda mano. Un artículo firmado por Bijoy Bora el 13 de septiembre, en un diario del que el recorte conservado solo deja leer «Chronicle», cita a la radiotelevisión pública Radio Television Hong Kong (RTHK). El boletín UFO Newsclipping Service, que reunía recortes de prensa sobre ovnis, lo reprodujo en octubre de 2010.\n\nSegún el artículo, el Observatorio recibió «muchas» llamadas en la primera hora después de la medianoche, ya el jueves, de personas que decían haber visto ovnis durante la tormenta cerca del túnel de Tai Lam y en los barrios de Wan Chai y Happy Valley. Cita además al Observatorio: en otras tormentas hubo quien vio o fotografió ovnis, y la mayoría confundía con ovnis las luces de la calle. También recoge que Moon Fong, presidenta del Hong Kong UFO Club, confirmó que en el sitio web del club había avisos de esa noche. El artículo no dice cuántas llamadas hubo, y su hora no vale para todos los avisos: la foto de Cheung Chau que motivó uno de ellos se tomó a las 21:00, tres horas antes de la medianoche.",
+  "whatHappened_en": "On the night of Wednesday, September 8, 2010, a thunderstorm broke over Hong Kong and set the one-hour lightning record of the Hong Kong Observatory, the territory's weather service. Hong Kong has been a special administrative region of China since 1997. According to the summary the Observatory published the next day, in the six hours from 9 p.m. its network detected more than 25,000 cloud-to-ground lightning strokes, most of them over the western New Territories (Yuen Long, Tuen Mun and Tsuen Wan), Lantau Island and the south of Hong Kong Island. In the hour after midnight, 13,102 strokes hit the ground, the highest count in a single hour since the Observatory began recording lightning in 2005.\n\nThat night, several people in Hong Kong thought they saw UFOs and reported them to the Observatory. On Friday, September 10, at 8:05 p.m., the Observatory issued a short statement, in English and Chinese, with what it had found. It had received eight reports of suspected unidentified flying objects seen during the night of Wednesday, September 8; according to the Chinese version, the reports came in over the two days before the statement, Thursday and Friday. The statement does not say who reported, at what time they saw what they saw, or what shape, color or movement it had, and it sorts the eight reports into three groups.\n\nThree reports concerned something seen near the entrance of the Tai Lam Tunnel, a road tunnel in the New Territories. The Observatory identified it as a street lamp and, so that anyone could check, included in the statement a link to the Google Street View image of the spot. The text does not explain how it reached that identification.\n\nA fourth report pointed to a supposed UFO on a weather photo that the Observatory's camera on Cheung Chau, an island southwest of Hong Kong Island, had taken on September 8. After looking into it, the Observatory concluded that the light came from a nearby lamp reflected in the glass that protects the camera, and that the same effect appears on normal days. To show this, it attached two images from that camera. The first bears the printed time 21:00:09 on Wednesday, September 8; the second, 21:00:07 on Thursday, September 9. In both, a bright oval spot sits in the same place in the sky, to the right of and above the lights along the shore.\n\nOf the remaining four reports, the statement says they came with no photo or detailed information, so the Observatory could not study them.\n\nThe press of those days adds some context, at second hand. An article by Bijoy Bora dated September 13, in a newspaper of which the surviving clipping shows only \"Chronicle\", cites the public broadcaster Radio Television Hong Kong (RTHK). The UFO Newsclipping Service, a bulletin that collected press clippings on UFOs, reprinted it in October 2010.\n\nAccording to the article, the Observatory received \"many\" calls in the first hour after midnight, by then Thursday, from people who said they had seen UFOs during the storm near the Tai Lam Tunnel and in the Wan Chai and Happy Valley districts. It also quotes the Observatory: in earlier storms some people had seen or photographed UFOs, and most mistook street lights for UFOs. It also reports that Moon Fong, chairwoman of the Hong Kong UFO Club, confirmed that the club's website had reports from that night. The article does not say how many calls there were, and its timing does not hold for every report: the Cheung Chau photo behind one of them was taken at 9 p.m., three hours before midnight.",
+  "whyMatters": "El comunicado es una respuesta oficial, rápida y comprobable a una racha de avisos. Dos días después de la tormenta, el servicio meteorológico de Hong Kong no se limitó a decir que los ovnis tenían explicación: dio el punto exacto del farol de Tai Lam para que se pudiera ver en Street View, y puso junto a la foto del aviso otra de la noche siguiente, tomada con la misma cámara casi a la misma hora. Esa segunda imagen funciona como un control: si la mancha vuelve a salir en el mismo lugar una noche después, la produce algo fijo respecto a la cámara, como un reflejo en su vidrio.\n\nEl comunicado declara también sus límites. Explica cuatro de los ocho avisos: tres que señalaban el mismo lugar y uno que se refería a una imagen del propio Observatorio. Los otros cuatro quedaron sin estudiar porque no traían fotos ni detalles, y el texto no conserva nada de lo que describieron esas personas. Tampoco relaciona los avisos con la tormenta: esa relación la hace el artículo que cita a RTHK, que se la atribuye al Observatorio.\n\nLas cifras de años posteriores muestran que el Observatorio recibe avisos de ovnis con regularidad y los lleva contados. En una respuesta escrita al legislador Chan Chi-chuen, dentro del examen del presupuesto de 2019-20 del Consejo Legislativo de Hong Kong, el Observatorio contó 88 avisos del público entre 2014 y 2018, entre 10 y 24 por año. El distrito con más avisos fue Sai Kung, con 9, y la franja horaria más frecuente, la de 18:00 a 19:59, con 19 avisos. Frente a esa tasa, ocho avisos en una sola noche son muchos, y esa noche fue también la del récord de rayos.",
+  "whyMatters_en": "The statement is a fast, official and checkable answer to a burst of reports. Two days after the storm, Hong Kong's weather service did more than say the UFOs had an explanation: it gave the exact spot of the Tai Lam lamp so that anyone could look at it on Street View, and it set beside the photo in the report another one from the following night, taken by the same camera at almost the same time. That second image works as a control: if the spot shows up in the same place a night later, something fixed relative to the camera is producing it, such as a reflection in its glass.\n\nThe statement also states its own limits. It explains four of the eight reports: three that pointed to the same place and one that concerned an image from the Observatory itself. The other four went unstudied because they brought no photos or details, and the text keeps nothing of what those people described. Nor does it link the reports to the storm: that link comes from the article that cites RTHK, which attributes it to the Observatory.\n\nFigures from later years show that the Observatory receives UFO reports regularly and keeps count of them. In a written reply to legislator Chan Chi-chuen, during the Legislative Council of Hong Kong's examination of the 2019-20 budget, the Observatory counted 88 reports from the public between 2014 and 2018, between 10 and 24 a year. The district with the most reports was Sai Kung, with 9, and the most frequent time slot was 6:00 to 7:59 p.m., with 19 reports. Against that rate, eight reports in a single night are a lot, and that night was also the night of the lightning record.",
+  "evidence": [
+    "Comunicado del Observatorio de Hong Kong «Public's reports of unidentified flying objects», emitido el viernes 10 de septiembre de 2010 a las 20:05 (la versión china, a las 20:04): ocho avisos de supuestos ovnis vistos la noche del miércoles 8 de septiembre; los tres de la entrada del túnel de Tai Lam eran un farol del alumbrado, con enlace a Google Street View; los cuatro restantes no traían foto ni información detallada y no se pudieron estudiar.",
+    "Adjuntos 1 y 2 del mismo comunicado: dos imágenes de la cámara meteorológica del Observatorio en Cheung Chau, con la hora impresa «Wed Sep 8 2010 21:00:09» y «Thu Sep 9 2010 21:00:07»; en las dos aparece la misma mancha brillante en el mismo sitio, que el Observatorio atribuye a una lámpara cercana reflejada en el vidrio protector de la cámara.",
+    "Comunicado del Observatorio del 9 de septiembre de 2010, a las 18:22: lluvia intensa y tormentas activas durante la noche del 8; más de 25.000 rayos entre nubes y suelo en las seis horas desde las 21:00, concentrados en el oeste de los Nuevos Territorios, Lantau y el sur de la isla de Hong Kong; 13.102 en la hora siguiente a la medianoche, el máximo en una hora desde 2005.",
+    "Balance de septiembre de 2010 del Observatorio, publicado el 5 de octubre de 2010: tormentas fuertes el 8 y el 9 de septiembre y más de 50 milímetros de lluvia en general en el territorio el día 9.",
+    "Artículo de Bijoy Bora del 13 de septiembre de 2010 (diario de nombre parcialmente legible, «Chronicle»), reproducido en el UFO Newsclipping Service n.º 495, de octubre de 2010: citando a RTHK, «muchas» llamadas al Observatorio en la primera hora tras la medianoche por ovnis vistos cerca del túnel de Tai Lam, en Wan Chai y en Happy Valley; el Observatorio, según el artículo, dijo que la mayoría tomaba por ovnis las luces de la calle.",
+    "Respuestas escritas del Observatorio al Consejo Legislativo, a preguntas de Chan Chi-chuen: 88 avisos de ovnis del público entre 2014 y 2018 (examen del presupuesto 2019-20, respuesta CEDB(CIT)265) y 79 entre 2015 y 2019 (presupuesto 2020-21, respuesta CEDB(CIT)262)."
+  ],
+  "evidence_en": [
+    "Hong Kong Observatory statement \"Public's reports of unidentified flying objects,\" issued on Friday, September 10, 2010, at 8:05 p.m. (the Chinese version at 8:04 p.m.): eight reports of suspected UFOs seen on the night of Wednesday, September 8; the three at the entrance of the Tai Lam Tunnel were a street lamp, with a link to Google Street View; the remaining four brought no photo or detailed information and could not be studied.",
+    "Attachments 1 and 2 of the same statement: two images from the Observatory's weather camera on Cheung Chau, with the printed times \"Wed Sep 8 2010 21:00:09\" and \"Thu Sep 9 2010 21:00:07\"; both show the same bright spot in the same place, which the Observatory attributes to a nearby lamp reflected in the camera's protective glass.",
+    "Observatory statement of September 9, 2010, at 6:22 p.m.: heavy rain and active thunderstorms during the night of the 8th; more than 25,000 cloud-to-ground lightning strokes in the six hours from 9 p.m., concentrated over the western New Territories, Lantau and the south of Hong Kong Island; 13,102 in the hour after midnight, the highest in one hour since 2005.",
+    "The Observatory's summary of September 2010, published on October 5, 2010: severe thunderstorms on September 8 and 9 and more than 50 millimeters of rain generally across the territory on the 9th.",
+    "Article by Bijoy Bora dated September 13, 2010 (newspaper name partly legible, \"Chronicle\"), reprinted in UFO Newsclipping Service no. 495, October 2010: citing RTHK, \"many\" calls to the Observatory in the first hour after midnight about UFOs seen near the Tai Lam Tunnel, in Wan Chai and in Happy Valley; according to the article, the Observatory said most people mistook street lights for UFOs.",
+    "The Observatory's written replies to the Legislative Council, to questions from Chan Chi-chuen: 88 UFO reports from the public between 2014 and 2018 (2019-20 budget examination, reply CEDB(CIT)265) and 79 between 2015 and 2019 (2020-21 budget, reply CEDB(CIT)262)."
+  ],
+  "documents": [
+    {
+      "role": "documento",
+      "src": "https://www.hko.gov.hk/en/press/pre20100910e.htm",
+      "type": "link",
+      "title": "Comunicado del Observatorio de Hong Kong del 10 de septiembre de 2010, con las dos fotos de la cámara de Cheung Chau",
+      "title_en": "Hong Kong Observatory statement of September 10, 2010, with the two photos from the Cheung Chau camera",
+      "source": "Fuente: Observatorio de Hong Kong (hko.gov.hk); las imágenes son del Gobierno de Hong Kong, que solo permite reproducirlas sin fines comerciales y con condiciones, así que quedan enlazadas",
+      "source_en": "Source: Hong Kong Observatory (hko.gov.hk); the images belong to the Hong Kong government, which allows them to be reproduced only for non-commercial purposes and under conditions, so they stay linked",
+      "description": "La página del Observatorio con el texto del comunicado y sus dos figuras: la foto de la cámara meteorológica de Cheung Chau del 8 de septiembre a las 21:00:09, en la que alguien vio un ovni, y la de la noche siguiente a las 21:00:07, con la misma mancha brillante en el mismo sitio. El Observatorio la atribuye a una lámpara cercana reflejada en el vidrio que protege la cámara. La página incluye también el enlace a Google Street View del farol de la entrada del túnel de Tai Lam.",
+      "description_en": "The Observatory's page with the text of the statement and its two figures: the photo from the Cheung Chau weather camera on September 8 at 21:00:09, in which someone saw a UFO, and the one from the next night at 21:00:07, with the same bright spot in the same place. The Observatory attributes it to a nearby lamp reflected in the glass that protects the camera. The page also includes the Google Street View link to the street lamp at the entrance of the Tai Lam Tunnel."
+    }
+  ],
+  "sources": [
+    {
+      "name": "Observatorio de Hong Kong, «Public's reports of unidentified flying objects», comunicado del 10 sep 2010 (Servicio de Información del Gobierno, versión para imprimir)",
+      "name_en": "Hong Kong Observatory, \"Public's reports of unidentified flying objects,\" statement of Sep 10, 2010 (Government Information Services, print version)",
+      "url": "https://www.info.gov.hk/gia/general/201009/10/P201009100305_print.htm",
+      "note": "Fuente primaria: el comunicado entero, emitido a las 20:05 del viernes 10 de septiembre. La versión con los dos adjuntos de Cheung Chau está en P201009100305.htm.",
+      "note_en": "Primary source: the full statement, issued at 8:05 p.m. on Friday, September 10. The version with the two Cheung Chau attachments is at P201009100305.htm."
+    },
+    {
+      "name": "Observatorio de Hong Kong, «市民目睹不明飛行物體報告», versión china del comunicado (10 sep 2010)",
+      "name_en": "Hong Kong Observatory, \"市民目睹不明飛行物體報告,\" Chinese version of the statement (Sep 10, 2010)",
+      "url": "https://www.info.gov.hk/gia/general/201009/10/P201009100302.htm",
+      "note": "Fuente primaria: emitida a las 20:04. Añade que los ocho avisos llegaron en los dos días anteriores y sitúa lo visto en la noche del miércoles 8.",
+      "note_en": "Primary source: issued at 8:04 p.m. It adds that the eight reports came in over the previous two days and places what was seen on the night of Wednesday, September 8."
+    },
+    {
+      "name": "Observatorio de Hong Kong, página del comunicado con las figuras 1 y 2 (10 sep 2010)",
+      "name_en": "Hong Kong Observatory, statement page with figures 1 and 2 (Sep 10, 2010)",
+      "url": "https://www.hko.gov.hk/en/press/pre20100910e.htm",
+      "note": "Las dos fotos de la cámara de Cheung Chau, del 8 y del 9 de septiembre, con su hora impresa.",
+      "note_en": "The two photos from the Cheung Chau camera, of September 8 and 9, with their printed times."
+    },
+    {
+      "name": "Observatorio de Hong Kong, «The Observatory registers record-breaking number of lightning strokes» (9 sep 2010)",
+      "name_en": "Hong Kong Observatory, \"The Observatory registers record-breaking number of lightning strokes\" (Sep 9, 2010)",
+      "url": "https://www.info.gov.hk/gia/general/201009/09/P201009090250_print.htm",
+      "note": "Fuente primaria: los rayos de la noche del 8 de septiembre, su reparto por zonas y el récord de la hora tras la medianoche.",
+      "note_en": "Primary source: the lightning on the night of September 8, where it fell, and the record for the hour after midnight."
+    },
+    {
+      "name": "Observatorio de Hong Kong, «A wet September with record-breaking lightning activity» (5 oct 2010)",
+      "name_en": "Hong Kong Observatory, \"A wet September with record-breaking lightning activity\" (Oct 5, 2010)",
+      "url": "https://www.info.gov.hk/gia/general/201010/05/P201010050225_print.htm",
+      "note": "Balance del mes: tormentas fuertes el 8 y el 9 de septiembre.",
+      "note_en": "Monthly summary: severe thunderstorms on September 8 and 9."
+    },
+    {
+      "name": "Bijoy Bora, «UFO spotted in Hong Kong» (13 sep 2010), en UFO Newsclipping Service n.º 495 (oct 2010), Internet Archive",
+      "name_en": "Bijoy Bora, \"UFO spotted in Hong Kong\" (Sep 13, 2010), in UFO Newsclipping Service no. 495 (Oct 2010), Internet Archive",
+      "url": "https://archive.org/details/UFO_Newsclipping_Service_2010_10_no_495",
+      "note": "Prensa de la época, de segunda mano: cita a RTHK. Está en la página 14 del PDF; el nombre del diario se lee solo en parte («Chronicle»).",
+      "note_en": "Press of the time, at second hand: it cites RTHK. It is on page 14 of the PDF; the newspaper's name is only partly legible (\"Chronicle\")."
+    },
+    {
+      "name": "Observatorio de Hong Kong, respuesta CEDB(CIT)265 al Consejo Legislativo, examen del presupuesto 2019-20",
+      "name_en": "Hong Kong Observatory, reply CEDB(CIT)265 to the Legislative Council, 2019-20 budget examination",
+      "url": "https://www.hko.gov.hk/en/abouthko/legco/files/4733e-265.pdf",
+      "note": "88 avisos de ovnis del público entre 2014 y 2018, por distrito y por franja horaria, en respuesta a Chan Chi-chuen.",
+      "note_en": "88 UFO reports from the public between 2014 and 2018, by district and by time slot, in reply to Chan Chi-chuen."
+    },
+    {
+      "name": "Observatorio de Hong Kong, respuesta CEDB(CIT)262 al Consejo Legislativo, examen del presupuesto 2020-21",
+      "name_en": "Hong Kong Observatory, reply CEDB(CIT)262 to the Legislative Council, 2020-21 budget examination",
+      "url": "https://www.hko.gov.hk/en/abouthko/legco/files/3886e-262.pdf",
+      "note": "79 avisos de ovnis del público entre 2015 y 2019, con el mismo desglose.",
+      "note_en": "79 UFO reports from the public between 2015 and 2019, with the same breakdown."
+    }
+  ],
+  "evidenceReviewed": "2026-11-24"
+}
