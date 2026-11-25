@@ -248,8 +248,19 @@ const CASE_KEYS = new Set([
   "seoTitle", "seoDescription", "seoTitle_en", "seoDescription_en", "featuredDoc", "documents",
   "patterns", "entityMorphology", "category", "whatHappened", "whatHappened_en", "whyMatters",
   "whyMatters_en", "evidence", "evidence_en", "sources", "primaryDocument", "posterior",
-  "posteriorCripto", "cryptidClass",
+  "posteriorCripto", "cryptidClass", "cryptid",
 ]);
+// Categorías y criaturas de los críptidos: único hogar en data/cryptid-taxonomy.json.
+const CRYPTID_TAX = JSON.parse(fs.readFileSync(path.join(root, "data", "cryptid-taxonomy.json"), "utf8"));
+const CRYPTID_GROUP_IDS = new Set(CRYPTID_TAX.groups.map((g) => g.id));
+const CRYPTID_IDS = new Set();
+for (const k of CRYPTID_TAX.creatures) {
+  const w = `cryptid-taxonomy.json:${k.id}`;
+  if (CRYPTID_IDS.has(k.id)) err(w, "criatura duplicada");
+  CRYPTID_IDS.add(k.id);
+  if (!CRYPTID_GROUP_IDS.has(k.group)) err(w, `grupo "${k.group}" no existe en groups`);
+  if (!k.es || !k.en) err(w, "la criatura necesita nombre es y en");
+}
 const casesDir = path.join(root, "data", "cases");
 const caseFiles = fs.readdirSync(casesDir).filter((f) => f.endsWith(".json"));
 const seenCaseIds = new Set();
@@ -396,8 +407,10 @@ for (const file of caseFiles) {
       err(w, `cryptidClass obligatorio en un críptido, uno de ${CRIPTO_KEYS.join("|")} (es "${c.cryptidClass ?? "ausente"}")`);
     else if ((c.cryptidClass === "ordinaria" || c.cryptidClass === "fraude") && c.classBasis === undefined)
       err(w, `cryptidClass "${c.cryptidClass}" exige classBasis {es, en, source}: la clase la nombra una fuente`);
-  } else if (c.posteriorCripto !== undefined || c.cryptidClass !== undefined) {
-    err(w, "posteriorCripto/cryptidClass solo valen en category \"cryptid\"");
+    if (!CRYPTID_IDS.has(c.cryptid))
+      err(w, `cryptid obligatorio en un críptido: una criatura de data/cryptid-taxonomy.json (es "${c.cryptid ?? "ausente"}"); si es nueva, súmala allí con su categoría`);
+  } else if (c.posteriorCripto !== undefined || c.cryptidClass !== undefined || c.cryptid !== undefined) {
+    err(w, "posteriorCripto/cryptidClass/cryptid solo valen en category \"cryptid\"");
   }
   if (isCryptid) {
     /* sin posterior UAP */

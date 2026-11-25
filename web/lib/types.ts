@@ -264,6 +264,9 @@ export interface UAPCase {
   posteriorCripto?: PosteriorCripto;
   /** Solo en críptidos: la explicación que la evidencia sostiene. */
   cryptidClass?: CryptidClassId;
+  /** Solo en críptidos: id de la criatura en data/cryptid-taxonomy.json, que
+   *  fija también su categoría. */
+  cryptid?: string;
 }
 
 export interface Pattern {

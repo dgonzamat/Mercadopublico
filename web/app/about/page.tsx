@@ -17,6 +17,7 @@ import { STATS } from "@/lib/siteStats";
 import { cases } from "@/lib/data";
 import { TIER_META } from "@/lib/ui";
 import { CRYPTID_CLASSES } from "@/lib/cryptidClasses";
+import { CRYPTID_GROUPS } from "@/lib/cryptidTaxonomy";
 
 // Ejemplos de cada tier. Se filtran por el tier real de la ficha, así que la
 // tabla no puede contradecir a los casos: si un tier cambia, el ejemplo sale
@@ -472,6 +473,18 @@ export function AboutView({ locale }: { locale: "es" | "en" }) {
                   locale={locale}
                 />
               </Body>
+              <Body className="text-muted">
+                <T
+                  es="Cada expediente se agrupa por categoría y, dentro, por criatura (Bigfoot, yeti…). Las categorías no son propias: son términos que la criptozoología usa desde hace décadas, como los homínidos peludos de la hominología, las serpientes marinas que clasificó Bernard Heuvelmans en 1968, los globsters que nombró Ivan Sanderson en 1962 y los taxones Lázaro, especies extintas que se dicen vivas:"
+                  en="Each file is grouped by category and, within it, by creature (Bigfoot, the yeti…). The categories are not our own: they are terms cryptozoology has used for decades, such as the hairy hominids of hominology, the sea serpents Bernard Heuvelmans classified in 1968, the globsters Ivan Sanderson named in 1962 and Lazarus taxa, extinct species said to survive:"
+                  locale={locale}
+                />
+              </Body>
+              <ul className="list-disc space-y-1 pl-5 text-base text-text">
+                {CRYPTID_GROUPS.map((g) => (
+                  <li key={g.id}><T es={g.es} en={g.en} locale={locale} /></li>
+                ))}
+              </ul>
               <p className="text-sm">
                 <LocaleLink href="/cryptids" className="text-accent underline-offset-4 hover:underline">
                   <T es="Ver el archivo de críptidos →" en="See the cryptid files →" locale={locale} />
