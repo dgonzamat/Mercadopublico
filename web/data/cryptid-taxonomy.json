@@ -21,6 +21,7 @@
     { "id": "okapi", "group": "descubiertos", "es": "Okapi", "en": "Okapi" },
     { "id": "saola", "group": "descubiertos", "es": "Saola", "en": "Saola" },
     { "id": "takahe", "group": "lazaro", "es": "Takahē", "en": "Takahē" },
-    { "id": "sengi-somali", "group": "lazaro", "es": "Sengi somalí", "en": "Somali sengi" }
+    { "id": "sengi-somali", "group": "lazaro", "es": "Sengi somalí", "en": "Somali sengi" },
+    { "id": "chupacabras", "group": "chupacabras", "es": "Chupacabras", "en": "Chupacabra" }
   ]
 }
