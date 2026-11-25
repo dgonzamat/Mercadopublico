@@ -11,8 +11,17 @@ const __dirname = path.dirname(fileURLToPath(import.meta.url));
 const casesDir = path.join(__dirname, "..", "data", "cases");
 const outFile = path.join(__dirname, "..", "data", "cases.json");
 
-const cases = aggregateJsonFiles(casesDir, outFile);
-console.log(`build-cases: aggregated ${cases.length} cases → data/cases.json`);
+// Críptidos (25 nov 2026, decisión del dueño): colección aparte, con su propio
+// modelo y fuera de todo total UAP. Este es el único punto de corte: cases.json
+// (y de ahí cases-client, el atlas y site-stats) no los lleva; van a
+// data/cryptids.json, que lee lib/data.ts como `cryptids`.
+const all = aggregateJsonFiles(casesDir, outFile);
+const isCryptid = (c) => c.category === "cryptid";
+const cases = all.filter((c) => !isCryptid(c));
+const cryptids = all.filter(isCryptid);
+fs.writeFileSync(outFile, JSON.stringify(cases, null, 2) + "\n");
+fs.writeFileSync(path.join(__dirname, "..", "data", "cryptids.json"), JSON.stringify(cryptids, null, 2) + "\n");
+console.log(`build-cases: aggregated ${cases.length} cases → data/cases.json; ${cryptids.length} cryptids → data/cryptids.json`);
 
 // Client bundle: same corpus WITHOUT the heavy narrative prose. Client
 // components (map, explorer) never render whatHappened/whyMatters, but importing
@@ -95,6 +104,20 @@ const atlasOutFile = path.join(__dirname, "..", "data", "atlas-points.json");
 fs.writeFileSync(atlasOutFile, JSON.stringify(atlasPoints) + "\n");
 console.log(`build-cases: atlas points (${atlasPoints.length}) → data/atlas-points.json`);
 
+// Capa de críptidos del atlas (25 nov 2026, decisión del dueño): apagada por
+// defecto en /atlas y en su propio archivo, para que el conteo y los filtros
+// del mapa sigan siendo solo UAP. Misma proyección mínima y misma regla de
+// marcador (sin `precision: "none"`); el cliente nunca importa cryptids.json.
+const atlasCryptids = cryptids
+  .filter((c) => !offMap(c) && c.location && typeof c.location.lat === "number")
+  .map((c) => {
+    const p = { location: { lat: c.location.lat, lng: c.location.lng } };
+    for (const k of ATLAS_FIELDS) p[k] = c[k];
+    return p;
+  });
+fs.writeFileSync(path.join(__dirname, "..", "data", "atlas-cryptids.json"), JSON.stringify(atlasCryptids) + "\n");
+console.log(`build-cases: atlas cryptids (${atlasCryptids.length}) → data/atlas-cryptids.json`);
+
 // Site stats: a tiny JSON of the aggregate corpus counts that lib/siteStats.ts
 // exposes as STATS. It exists so siteStats — which MobileNav (a CLIENT component
 // in the global layout) imports for a single number — does NOT pull the full
@@ -141,6 +164,8 @@ const siteStats = {
   startYear: CORPUS_START_YEAR,
   endYear: corpusEndYear,
   years: corpusEndYear - CORPUS_START_YEAR,
+  // Críptidos: colección aparte; su cifra solo la usa el menú.
+  cryptids: cryptids.length,
 };
 const statsOutFile = path.join(dataDir, "site-stats.json");
 fs.writeFileSync(statsOutFile, JSON.stringify(siteStats, null, 2) + "\n");

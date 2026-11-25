@@ -2,11 +2,12 @@ import { LocaleLink } from "@/components/LocaleLink";
 import { metaDescription } from "@/lib/seo";
 import { PrevNext } from "@/components/PrevNext";
 import { notFound } from "next/navigation";
-import { cases, getEntityMorphology, getResearcher } from "@/lib/data";
+import { cases, cryptids, getEntityMorphology, getResearcher } from "@/lib/data";
 import { CATEGORY_META, DOC_TIER_META, TIER_META } from "@/lib/ui";
 import { posteriorFor } from "@/lib/meceModel";
 import { PROSAIC_CLASSES, prosaicKey, objectDetailDef, shortLabel } from "@/lib/meceClasses";
 import { CasePosterior } from "@/components/MeceChart";
+import { CryptidPosterior } from "@/components/CryptidPosterior";
 import { T } from "@/components/T";
 import { countryEn } from "@/lib/i18n-geo";
 import { Breadcrumb } from "@/components/Breadcrumb";
@@ -31,8 +32,14 @@ export function generateStaticParams() {
 // "[[slug]]" que linkCaseRefs enlaza en la prosa. Se construye una vez a nivel de
 // módulo desde el corpus ya importado (server component), así el helper se
 // mantiene data-free y sin coste por render.
-const NAME_BY_SLUG_ES = new Map(cases.map((c) => [c.id, c.name]));
-const NAME_BY_SLUG_EN = new Map(cases.map((c) => [c.id, c.name_en ?? c.name]));
+// Los críptidos (colección aparte, 25 nov 2026) comparten el detalle: un
+// [[slug]] puede apuntar a una ficha de cualquiera de las dos, y la de un
+// críptido enlaza a /cryptids/.
+const ALL_ENTRIES = [...cases, ...cryptids];
+const CRYPTID_IDS: ReadonlySet<string> = new Set(cryptids.map((c) => c.id));
+const hrefFor = (id: string) => `/${CRYPTID_IDS.has(id) ? "cryptids" : "cases"}/${id}`;
+const NAME_BY_SLUG_ES = new Map(ALL_ENTRIES.map((c) => [c.id, c.name]));
+const NAME_BY_SLUG_EN = new Map(ALL_ENTRIES.map((c) => [c.id, c.name_en ?? c.name]));
 // Alias de fichas retiradas que hoy llevan a un perfil o a una entrega: sin su
 // nombre en el mapa, el enlace se pintaba como un «↗» suelto con el slug crudo de
 // título (once enlaces en nov 2026). Se nombran con el destino.
@@ -67,7 +74,7 @@ const proseOf = (c: (typeof cases)[number]) =>
   ].filter(Boolean).join("\n");
 const BACKLINKS = (() => {
   const map = new Map<string, Set<string>>();
-  for (const c of cases) {
+  for (const c of ALL_ENTRIES) {
     for (const m of proseOf(c).matchAll(CASE_REF)) {
       const target = resolveRef(m[1]);
       if (target === c.id) continue; // no auto-citas
@@ -129,11 +136,15 @@ export async function CaseDetailPage(
   props: {
     params: Promise<{ slug: string }>;
     locale?: "es" | "en";
+    /** Colección: los críptidos reutilizan este detalle desde /cryptids/. */
+    collection?: "cases" | "cryptids";
   }
 ) {
   const params = await props.params;
   const locale = props.locale ?? "en";
-  const alias = CASE_ALIASES[params.slug];
+  const isCryptidPage = props.collection === "cryptids";
+  const pool = isCryptidPage ? cryptids : cases;
+  const alias = isCryptidPage ? undefined : CASE_ALIASES[params.slug];
   if (alias) {
     // Ficha fusionada: la ruta relativa conserva el basePath y el prefijo /es.
     return (
@@ -145,7 +156,7 @@ export async function CaseDetailPage(
       </div>
     );
   }
-  const c = cases.find((x) => x.id === params.slug);
+  const c = pool.find((x) => x.id === params.slug);
   if (!c) notFound();
 
   const caseResearchers = researchersForCase(c.id);
@@ -161,12 +172,14 @@ export async function CaseDetailPage(
         // Un documento que respalda varios casos y ningún actor no cuelga de
         // ninguno, y la lista de /cases ya no lo incluye: la miga va directa.
         ? null
-        : { href: "/cases", es: "Casos", en: "Cases" };
+        : isCryptidPage
+          ? { href: "/cryptids", es: "Críptidos", en: "Cryptids" }
+          : { href: "/cases", es: "Casos", en: "Cases" };
   // «Anterior / siguiente» recorre solo sucesos (un documento no es un caso) y va
   // por fecha, no por número de registro: el número es el orden de carga y sus
   // vecinos no tenían relación (Nueva Zelanda 1909 entre Brooklyn 1989 y Aztec
   // 1948). Dentro de un mismo año desempata `num`, que ahí ya es indiferente.
-  const sortedByDate = cases
+  const sortedByDate = pool
     .filter((x) => x.category !== "document")
     .sort((a, b) => a.year_start - b.year_start || a.num - b.num);
   const idx = sortedByDate.findIndex((x) => x.id === c.id);
@@ -221,7 +234,7 @@ export async function CaseDetailPage(
   const citesBack = BACKLINKS.get(c.id) ?? new Set<string>();
   const cited = [...new Set([...proseOf(c).matchAll(CASE_REF)].map((m) => resolveRef(m[1])))]
     .filter((id) => id !== c.id && !citesBack.has(id))
-    .map((id) => cases.find((x) => x.id === id))
+    .map((id) => ALL_ENTRIES.find((x) => x.id === id))
     .filter((x): x is NonNullable<typeof x> => Boolean(x) && x!.category !== "document")
     .map((x) => ({
       caseData: x,
@@ -238,7 +251,7 @@ export async function CaseDetailPage(
   // Backlinks: casos que CITAN a éste en su prosa (grafo inverso de [[slug]]).
   // Distinto de `similar` (heurístico por patrones/país): esto es cita explícita.
   const backlinks = [...(BACKLINKS.get(c.id) ?? [])]
-    .map((id) => cases.find((x) => x.id === id))
+    .map((id) => ALL_ENTRIES.find((x) => x.id === id))
     .filter((x): x is NonNullable<typeof x> => Boolean(x))
     .sort((a, b) => b.year_start - a.year_start);
 
@@ -376,13 +389,13 @@ export async function CaseDetailPage(
           const sum = splitLead(locale === "es" ? c.summary : c.summary_en ?? c.summary, 450);
           return (
             <div className="space-y-3">
-              <p className={summaryClass}>{linkCaseRefs(sum.lead, (locale === "es" ? NAME_BY_SLUG_ES : NAME_BY_SLUG_EN))}</p>
+              <p className={summaryClass}>{linkCaseRefs(sum.lead, (locale === "es" ? NAME_BY_SLUG_ES : NAME_BY_SLUG_EN), CRYPTID_IDS)}</p>
               {sum.rest && (
                 <details className="group">
                   <summary className="cursor-pointer text-sm text-accent">
                     <T locale={locale} es="Seguir leyendo el resumen" en="Read the rest of the summary" />
                   </summary>
-                  <p className="mt-2 text-lg leading-relaxed text-text">{linkCaseRefs(sum.rest, (locale === "es" ? NAME_BY_SLUG_ES : NAME_BY_SLUG_EN))}</p>
+                  <p className="mt-2 text-lg leading-relaxed text-text">{linkCaseRefs(sum.rest, (locale === "es" ? NAME_BY_SLUG_ES : NAME_BY_SLUG_EN), CRYPTID_IDS)}</p>
                 </details>
               )}
             </div>
@@ -434,7 +447,8 @@ export async function CaseDetailPage(
           />
         </Caption>
         )}
-        {!isLinkedDoc && c.category !== "document" && (
+        {c.category === "cryptid" && <CryptidPosterior c={c} locale={locale} />}
+        {!isLinkedDoc && c.category !== "document" && c.category !== "cryptid" && (
           <section className="space-y-4">
             <Eyebrow>
               <T locale={locale} es="Qué fue" en="What it was" />
@@ -489,7 +503,7 @@ export async function CaseDetailPage(
                           : "text-lg leading-relaxed text-text md:text-xl"
                       }
                     >
-                      {linkCaseRefs(para, NAME_BY_SLUG_ES)}
+                      {linkCaseRefs(para, NAME_BY_SLUG_ES, CRYPTID_IDS)}
                     </p>
                   </div>
                 ))}
@@ -508,7 +522,7 @@ export async function CaseDetailPage(
                           : "text-lg leading-relaxed text-text md:text-xl"
                       }
                     >
-                      {linkCaseRefs(para, NAME_BY_SLUG_EN)}
+                      {linkCaseRefs(para, NAME_BY_SLUG_EN, CRYPTID_IDS)}
                     </p>
                   ))}
                 </div>
@@ -532,7 +546,7 @@ export async function CaseDetailPage(
               <div lang="es" data-lang="es" className="space-y-6">
                 {c.whyMatters.split("\n\n").map((para, i) => (
                   <p key={i} className={wmClass}>
-                    {linkCaseRefs(para, NAME_BY_SLUG_ES)}
+                    {linkCaseRefs(para, NAME_BY_SLUG_ES, CRYPTID_IDS)}
                   </p>
                 ))}
               </div>
@@ -541,7 +555,7 @@ export async function CaseDetailPage(
               <div lang="en" data-lang="en" className="space-y-6">
                 {(c.whyMatters_en ?? c.whyMatters).split("\n\n").map((para, i) => (
                   <p key={i} className={wmClass}>
-                    {linkCaseRefs(para, NAME_BY_SLUG_EN)}
+                    {linkCaseRefs(para, NAME_BY_SLUG_EN, CRYPTID_IDS)}
                   </p>
                 ))}
               </div>
@@ -587,8 +601,8 @@ export async function CaseDetailPage(
                       </span>
                       <span>
                         <T locale={locale}
-                          es={linkCaseRefs(item, NAME_BY_SLUG_ES)}
-                          en={linkCaseRefs(c.evidence_en?.[i] ?? item, NAME_BY_SLUG_EN)}
+                          es={linkCaseRefs(item, NAME_BY_SLUG_ES, CRYPTID_IDS)}
+                          en={linkCaseRefs(c.evidence_en?.[i] ?? item, NAME_BY_SLUG_EN, CRYPTID_IDS)}
                         />
                       </span>
                     </li>
@@ -707,7 +721,7 @@ export async function CaseDetailPage(
               </LocaleLink>
               {similarExpandido && (
                 <LocaleLink
-                  href={`/cases/${similarExpandido.caseData.id}`}
+                  href={hrefFor(similarExpandido.caseData.id)}
                   className="inline-flex min-h-[44px] items-center border-2 border-accent bg-bg px-4 py-2 font-mono text-sm text-accent transition-colors hover:bg-accent hover:text-bg"
                 >
                   <T locale={locale}
@@ -776,7 +790,7 @@ export async function CaseDetailPage(
             {backlinks.map((b) => (
               <li key={b.id} className="flex">
                 <LocaleLink
-                  href={`/cases/${b.id}`}
+                  href={hrefFor(b.id)}
                   className="group flex w-full flex-col gap-1 bg-bg p-4 hover:bg-text hover:text-bg"
                 >
                   <p className="font-display text-lg font-medium leading-tight text-text group-hover:text-bg">
@@ -837,7 +851,7 @@ export async function CaseDetailPage(
               return (
                 <LocaleLink
                   key={s.caseData.id}
-                  href={`/cases/${s.caseData.id}`}
+                  href={hrefFor(s.caseData.id)}
                   className="group flex flex-col gap-2 bg-bg p-5 hover:bg-text hover:text-bg"
                 >
                   <p className="text-xs text-muted group-hover:text-bg/60">
@@ -901,7 +915,7 @@ export async function CaseDetailPage(
           prev={
             prev
               ? {
-                  href: `/cases/${prev.id}`,
+                  href: hrefFor(prev.id),
                   es: `← Anterior · ${prev.year_start}`,
                   en: `← Earlier · ${prev.year_start}`,
                   title: <T locale={locale} es={prev.name} en={prev.name_en ?? prev.name} />,
@@ -911,7 +925,7 @@ export async function CaseDetailPage(
           next={
             next
               ? {
-                  href: `/cases/${next.id}`,
+                  href: hrefFor(next.id),
                   es: `Posterior · ${next.year_start} →`,
                   en: `Later · ${next.year_start} →`,
                   title: <T locale={locale} es={next.name} en={next.name_en ?? next.name} />,

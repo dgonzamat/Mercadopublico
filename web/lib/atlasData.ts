@@ -1,4 +1,5 @@
 import atlasPointsData from "@/data/atlas-points.json";
+import atlasCryptidsData from "@/data/atlas-cryptids.json";
 
 /**
  * Dataset MÍNIMO para el mapa del Atlas (WorldMap, client component).
@@ -23,3 +24,7 @@ export type AtlasPoint = {
 };
 
 export const atlasPoints = atlasPointsData as AtlasPoint[];
+
+/** Capa de críptidos (apagada por defecto en /atlas): misma proyección, en su
+ *  propio archivo (data/atlas-cryptids.json) para no mezclarla con los casos. */
+export const atlasCryptids = atlasCryptidsData as unknown as AtlasPoint[];

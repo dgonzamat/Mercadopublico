@@ -110,7 +110,9 @@ function regionMap(c, locale) {
   const pad = deg(RADIUS_KM * 1.8);
   const landHere = { type: "FeatureCollection", features: landParts.filter((f) => near(f.bbox, lat, lng, pad)) };
   const bordersHere = { type: "MultiLineString", coordinates: borderParts.filter((l) => near(l.bbox, lat, lng, pad)).map((l) => l.coordinates) };
-  const nearCases = cases.filter((o) => o.id !== c.id && o.location?.precision === "exact" && geoDistance(center, [o.location.lng, o.location.lat]) * R_EARTH < RADIUS_KM * 1.3)
+  // Los puntos vecinos son casos UAP: un críptido tiene su mapa, pero no se
+  // dibuja como vecino de otra ficha (colección aparte, 25 nov 2026).
+  const nearCases = cases.filter((o) => o.id !== c.id && o.category !== "cryptid" && o.location?.precision === "exact" && geoDistance(center, [o.location.lng, o.location.lat]) * R_EARTH < RADIUS_KM * 1.3)
     .map((o) => proj([o.location.lng, o.location.lat]))
     .filter((pt) => pt && pt[0] > 4 && pt[0] < W - 4 && pt[1] > 4 && pt[1] < H - 4);
 

@@ -258,6 +258,13 @@ Cada narrativa bundlea **objeto + postura institucional**: `mundano_natural` (mi
 
 **Lección viva** (sep 2026): un test sobre valores crudos no cubre lo que el usuario lee en pantalla; `test-chart.mjs` asserta los enteros impresos (`pctParts()` reparte por *largest remainder*).
 
+### Críptidos (25 nov 2026, decisión del dueño)
+
+- Colección aparte en `data/cases/` con `category: "cryptid"`: mismo formato, `/redaccion`, reglas de evidencia y tier (precisión: un análisis de laboratorio con procedencia conocida —pelo, ADN, molde de huella— es registro instrumental aunque identifique un animal corriente). El `num` sigue la secuencia común.
+- Sin `posterior`: llevan `posteriorCripto` (`ordinaria`, `fraude`, `no_catalogada`, `extraterrestre`, `interdimensional`, `indet`; suma 1) y `cryptidClass`; `classBasis` obligatorio si la clase es `ordinaria` o `fraude`; ni `mundanoType`, `misidSubtype` ni `objectDetail`. *(validate-schema)*
+- `probability` («sin explicar») = `Math.round(100 × (no_catalogada + extraterrestre + interdimensional + indet))`. *(E43c)*
+- Fuera de todo total UAP: `build-cases.mjs` los saca de `cases.json` (y de ahí del cliente, el atlas y `site-stats`) y los escribe en `data/cryptids.json`; en `audit-consistency.mjs` las reglas del modelo y de los totales usan `uapCases`, y las de prosa, roles, lugar, E25 y E63 el corpus entero. Se publican en `/cryptids` y en una capa del atlas apagada por defecto; método en `/about#criptidos`.
+
 ## Convenciones de UI
 
 Las convenciones de código y de UI que no tocan los datos (componentes, tokens, «Qué fue», rótulos) viven en [`.claude/rules/codigo-sitio.md`](.claude/rules/codigo-sitio.md), que Claude carga solo al leer `web/app`, `web/components` o `web/lib`. Aquí queda lo que también gobierna los datos de una ficha:

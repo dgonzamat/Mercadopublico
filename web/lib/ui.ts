@@ -81,4 +81,5 @@ export const CATEGORY_META: Record<
   // el rótulo dice qué tipo de caso es.
   contactee: { icon: "🧑", label: "Relato de contacto", label_en: "Contact account" },
   crop_circle: { icon: "🌾", label: "Círculo de cultivo", label_en: "Crop circle" },
+  cryptid: { icon: "🐾", label: "Críptido", label_en: "Cryptid" },
 };

@@ -36,6 +36,13 @@ const NAV_LINKS = [
     en: { label: "Atlas", sub: "Global case map" },
   },
   {
+    // Colección aparte, fuera de los totales UAP (25 nov 2026, decisión del
+    // dueño). La cifra sale de site-stats.json, no del corpus (E18d).
+    href: "/cryptids",
+    es: { label: "Críptidos", sub: `${STATS.cryptids} ${STATS.cryptids === 1 ? "expediente oficial" : "expedientes oficiales"} · colección aparte` },
+    en: { label: "Cryptids", sub: `${STATS.cryptids} official ${STATS.cryptids === 1 ? "file" : "files"} · separate collection` },
+  },
+  {
     href: "/researchers",
     es: { label: "Actores", sub: "El ecosistema de la divulgación" },
     en: { label: "Actors", sub: "The disclosure ecosystem" },

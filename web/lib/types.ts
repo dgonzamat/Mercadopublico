@@ -1,6 +1,11 @@
 export type Tier = "S" | "A" | "B";
 export type EpistemicStatus = "documented";
-export type Category = "incident" | "document" | "contactee" | "crop_circle";
+export type Category = "incident" | "document" | "contactee" | "crop_circle" | "cryptid";
+
+/** Modelo de los críptidos (25 nov 2026, decisión del dueño): seis
+ *  explicaciones que suman 1, fuera de todo total UAP. */
+export type CryptidClassId = "ordinaria" | "fraude" | "no_catalogada" | "extraterrestre" | "interdimensional" | "indet";
+export type PosteriorCripto = Record<CryptidClassId, number>;
 /** Sub-tipo de la explicación prosaica (abre la narrativa mundano/natural). */
 /** `instrumento` = la anomalía la produjo el equipo (película, sensor, radar,
  *  avería); `psicosocial` = contagio colectivo, sugestión, parálisis del sueño;
@@ -254,6 +259,11 @@ export interface UAPCase {
   // suma 1. Opcional hasta recodificar las fichas. Mientras esté ausente,
   // lib/meceModel.ts deriva un posterior provisional desde los campos legacy.
   posterior?: Posterior;
+  /** Solo en críptidos (category "cryptid"): reparto sobre las seis
+   *  explicaciones de `CryptidClassId`, suma 1. Sustituye a `posterior`. */
+  posteriorCripto?: PosteriorCripto;
+  /** Solo en críptidos: la explicación que la evidencia sostiene. */
+  cryptidClass?: CryptidClassId;
 }
 
 export interface Pattern {

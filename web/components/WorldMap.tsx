@@ -10,7 +10,7 @@ import {
   useMap,
 } from "react-leaflet";
 import "leaflet/dist/leaflet.css";
-import { atlasPoints as cases } from "@/lib/atlasData";
+import { atlasPoints as cases, atlasCryptids } from "@/lib/atlasData";
 import { T } from "@/components/T";
 import { countryEn } from "@/lib/i18n-geo";
 import { useLocale } from "@/components/explorer/useLocale";
@@ -65,6 +65,9 @@ export default function WorldMap({
     B: true,
   });
   const [country, setCountry] = useState<string>("all");
+  // Capa de críptidos: colección aparte, apagada por defecto (25 nov 2026).
+  // No entra en el conteo ni en los filtros de casos; solo respeta el país.
+  const [showCryptids, setShowCryptids] = useState(false);
   const router = useRouter();
   // <option> solo admite texto: el dual-span de <T> no sirve ahí.
   const locale = useLocale();
@@ -91,6 +94,9 @@ export default function WorldMap({
   const points = shown.map(
     (c) => [c.location.lat, c.location.lng] as [number, number],
   );
+  const shownCryptids = showCryptids
+    ? atlasCryptids.filter((c) => country === "all" || c.country === country)
+    : [];
   const assocResearchers =
     country === "all" ? [] : countryResearchers[country] ?? [];
   const depKey = `${country}|${active.S ? 1 : 0}${active.A ? 1 : 0}${active.B ? 1 : 0}`;
@@ -134,6 +140,26 @@ export default function WorldMap({
             </span>
           </button>
         ))}
+        {atlasCryptids.length > 0 && (
+          <button
+            type="button"
+            onClick={() => setShowCryptids((v) => !v)}
+            aria-pressed={showCryptids}
+            className={`inline-flex min-h-[44px] items-center gap-2 border px-3 py-1.5 font-mono transition focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-accent ${
+              showCryptids
+                ? "border-accent/40 bg-panel text-text"
+                : "border-border/40 bg-transparent text-muted"
+            }`}
+          >
+            <span aria-hidden className="h-3 w-3 rounded-full border-2 border-accent bg-bg" />
+            <span>
+              <T
+                es={`Mostrar críptidos${showCryptids ? ` · +${atlasCryptids.length} ${atlasCryptids.length === 1 ? "críptido" : "críptidos"}` : ""}`}
+                en={`Show cryptids${showCryptids ? ` · +${atlasCryptids.length} ${atlasCryptids.length === 1 ? "cryptid" : "cryptids"}` : ""}`}
+              />
+            </span>
+          </button>
+        )}
         </div>
       </div>
 
@@ -237,6 +263,33 @@ export default function WorldMap({
               </Tooltip>
             </CircleMarker>
           ))}
+          {/* Críptidos: anillo en acento sobre fondo crema, distinto de los
+              puntos llenos de los casos; abre /cryptids/<id>/. */}
+          {shownCryptids.map((c) => (
+            <CircleMarker
+              key={`cryptid-${c.id}`}
+              center={[c.location.lat, c.location.lng]}
+              radius={7}
+              pathOptions={{ color: "#c41e3a", fillColor: "#f7f2e8", fillOpacity: 1, weight: 3 }}
+              eventHandlers={{
+                click: () => {
+                  router.push(`${locale === "es" ? "/es" : ""}/cryptids/${c.id}/`);
+                },
+              }}
+            >
+              <Tooltip>
+                <div style={{ fontFamily: "monospace", fontSize: 12 }}>
+                  <T es="Críptido" en="Cryptid" /> ·{" "}
+                  <strong>
+                    <T es={c.name} en={c.name_en ?? c.name} />
+                  </strong>
+                  <br />
+                  <T es={c.country_name} en={countryEn(c.country_name)} /> ·{" "}
+                  {c.year_start} · Tier {c.tier}
+                </div>
+              </Tooltip>
+            </CircleMarker>
+          ))}
         </MapContainer>
       </div>
 
@@ -246,6 +299,9 @@ export default function WorldMap({
           es="○ tamaño = probabilidad del caso · color = nivel de evidencia"
           en="○ size = case probability · color = evidence level"
         />
+        {showCryptids && (
+          <T es=" · ◎ anillo rojo = críptido (colección aparte)" en=" · ◎ red ring = cryptid (separate collection)" />
+        )}
       </p>
 
       {country !== "all" && (

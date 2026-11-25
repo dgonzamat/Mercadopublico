@@ -74,6 +74,8 @@ export const CATEGORY_LABEL: Record<UAPCase["category"], Bilingual> = {
   document: { es: "Documento", en: "Document" },
   contactee: { es: "Contactado", en: "Contactee" },
   crop_circle: { es: "Agroglifo", en: "Crop circle" },
+  // Nunca llega al laboratorio (build-cases saca los críptidos de cases-client).
+  cryptid: { es: "Críptido", en: "Cryptid" },
 };
 
 /** Década a partir del año de inicio: 1952 → "1950s". */

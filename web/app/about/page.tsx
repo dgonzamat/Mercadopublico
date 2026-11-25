@@ -16,6 +16,7 @@ import { T } from "@/components/T";
 import { STATS } from "@/lib/siteStats";
 import { cases } from "@/lib/data";
 import { TIER_META } from "@/lib/ui";
+import { CRYPTID_CLASSES } from "@/lib/cryptidClasses";
 
 // Ejemplos de cada tier. Se filtran por el tier real de la ficha, así que la
 // tabla no puede contradecir a los casos: si un tier cambia, el ejemplo sale
@@ -425,6 +426,57 @@ export function AboutView({ locale }: { locale: "es" | "en" }) {
                   />
                 </Body>
               </div>
+            </div>
+          </details>
+        </section>
+
+        {/* Críptidos (25 nov 2026, decisión del dueño): colección aparte con su
+            propio modelo, fuera de todo total UAP. */}
+        <section id="criptidos" className="scroll-mt-20">
+          <details className="group border-b border-text/15 pb-6">
+            <summary className="cursor-pointer list-none space-y-3 hover:opacity-80">
+              <Eyebrow><T es="Colección aparte" en="Separate collection" locale={locale} /></Eyebrow>
+              <H2><T es="Cómo se clasifican los críptidos" en="How cryptids are classified" locale={locale} /></H2>
+              <p className="font-mono text-xs text-muted">
+                <span className="normal-case tracking-normal">
+                  <T
+                    es="Seis explicaciones propias, el mismo método de evidencia y fuera de los totales UAP."
+                    en="Six explanations of their own, the same evidence method and outside the UAP totals."
+                    locale={locale}
+                  />
+                </span>
+                <span aria-hidden className="ml-2 inline-block text-accent transition-transform group-open:rotate-180">▾</span>
+              </p>
+            </summary>
+            <div className="mt-6 space-y-6">
+              <Body className="text-muted">
+                <T
+                  es="Los expedientes sobre críptidos (Bigfoot y otros) usan el mismo formato de ficha, la misma guía de redacción y las mismas reglas de evidencia que los casos UAP, pero forman una colección aparte: no cuentan en el número de casos, en /probabilidades, en la portada, en el laboratorio ni en ningún otro total UAP. Cada expediente reparte el 100 % entre seis explicaciones:"
+                  en="Cryptid files (Bigfoot and others) use the same file format, the same writing guide and the same evidence rules as the UAP cases, but they form a separate collection: they do not count in the number of cases, in /probabilities, on the home page, in the data lab or in any other UAP total. Each file splits 100% across six explanations:"
+                  locale={locale}
+                />
+              </Body>
+              <ul className="space-y-2 text-base text-text">
+                {CRYPTID_CLASSES.map((k) => (
+                  <li key={k.id}>
+                    <strong className="font-semibold"><T es={k.label} en={k.labelEn} locale={locale} /></strong>
+                    {": "}
+                    <T es={k.gloss} en={k.glossEn} locale={locale} />
+                  </li>
+                ))}
+              </ul>
+              <Body className="text-muted">
+                <T
+                  es="La cifra «sin explicar» de cada expediente es la suma de especie no catalogada, extraterrestre, interdimensional e indeterminado. Las reglas de tier son las mismas que las de los casos, con una precisión: un análisis de laboratorio con procedencia conocida (pelo, ADN, molde de huella) cuenta como registro instrumental aunque identifique un animal corriente."
+                  en="Each file's «unexplained» figure is the sum of uncatalogued species, extraterrestrial, interdimensional and indeterminate. The tier rules are the same as for the cases, with one precision: a laboratory analysis with known provenance (hair, DNA, a track cast) counts as an instrumental record even when it identifies an ordinary animal."
+                  locale={locale}
+                />
+              </Body>
+              <p className="text-sm">
+                <LocaleLink href="/cryptids" className="text-accent underline-offset-4 hover:underline">
+                  <T es="Ver el archivo de críptidos →" en="See the cryptid files →" locale={locale} />
+                </LocaleLink>
+              </p>
             </div>
           </details>
         </section>

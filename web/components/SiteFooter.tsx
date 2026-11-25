@@ -85,6 +85,7 @@ export function SiteFooter() {
             <FooterColumn label={{ es: "Explorar", en: "Explore" }} locale={locale}>
               <FooterLink href="/cases" es="Casos" en="Cases" locale={locale} />
               <FooterLink href="/atlas" es="Atlas" en="Atlas" locale={locale} />
+              <FooterLink href="/cryptids" es="Críptidos" en="Cryptids" locale={locale} />
               <FooterLink href="/probabilidades" es="Probabilidades" en="Probabilities" locale={locale} />
               <FooterLink href="/cobertura" es="Cobertura" en="Coverage" locale={locale} />
               <FooterLink href="/releases" es="Releases PURSUE" en="PURSUE releases" locale={locale} />

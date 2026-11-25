@@ -28,6 +28,8 @@ const REF = /\[\[([a-z0-9-]+)\]\]/g;
 export function linkCaseRefs(
   text: string | undefined | null,
   nameBySlug: Map<string, string>,
+  /** Slugs de la colección de críptidos (25 nov 2026): enlazan a /cryptids/. */
+  cryptidSlugs?: ReadonlySet<string>,
 ): ReactNode {
   if (!text) return text ?? "";
   const src = String(text);
@@ -47,7 +49,7 @@ export function linkCaseRefs(
     parts.push(
       <LocaleLink
         key={key++}
-        href={CASE_ALIASES[slug]?.startsWith("/") ? CASE_ALIASES[slug] : `/cases/${CASE_ALIASES[slug] ?? slug}`}
+        href={CASE_ALIASES[slug]?.startsWith("/") ? CASE_ALIASES[slug] : `/${cryptidSlugs?.has(CASE_ALIASES[slug] ?? slug) ? "cryptids" : "cases"}/${CASE_ALIASES[slug] ?? slug}`}
         title={name}
         aria-label={name}
         className="whitespace-nowrap font-medium text-accent underline decoration-accent/40 underline-offset-2 transition-colors hover:decoration-accent"

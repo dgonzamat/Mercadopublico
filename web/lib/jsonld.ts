@@ -101,7 +101,9 @@ export type JsonLdLocale = "es" | "en";
 const localePrefix = (locale: JsonLdLocale) => (locale === "es" ? "/es" : "");
 
 export function caseJsonLd(c: UAPCase, locale: JsonLdLocale) {
-  const url = `${SITE_URL}${localePrefix(locale)}/cases/${c.id}/`;
+  // Los críptidos viven en su propia sección (25 nov 2026).
+  const section = c.category === "cryptid" ? "cryptids" : "cases";
+  const url = `${SITE_URL}${localePrefix(locale)}/${section}/${c.id}/`;
   const place =
     locale === "es" ? c.location.place : c.location.place_en ?? c.location.place;
   // Article needs a year-anchored date. We don't track a real publish date
@@ -123,7 +125,7 @@ export function caseJsonLd(c: UAPCase, locale: JsonLdLocale) {
         "@id": `${url}#article`,
         headline: locale === "es" ? c.name : c.name_en ?? c.name,
         description: locale === "es" ? c.summary : c.summary_en ?? c.summary,
-        articleSection: "UAP institutional cases",
+        articleSection: section === "cryptids" ? "Cryptid files" : "UAP institutional cases",
         // Cada URL sirve un solo idioma (la inglesa cae al español sin traducción).
         inLanguage: locale === "en" && !c.whatHappened_en ? "es" : locale,
         url,
