@@ -4,7 +4,7 @@ import { esMeta } from "@/lib/seo";
 /** Archivo de críptidos en español (/es/cryptids/). */
 export const metadata = esMeta({
   title: "Archivo de críptidos",
-  description: "Expedientes oficiales sobre críptidos como Bigfoot: una colección aparte con su propio modelo de seis explicaciones, fuera de todo total UAP.",
+  description: "Bigfoot, el yeti, monstruos marinos y momias «no humanas»: qué encontraron los laboratorios, las fiscalías y las agencias del Estado al examinarlos, caso por caso, con documentos oficiales y estudios científicos.",
   enPath: "/cryptids/",
 });
 

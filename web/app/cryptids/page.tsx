@@ -15,7 +15,7 @@ import { pageMeta } from "@/lib/seo";
 export const metadata = {
   ...pageMeta({
     title: "Cryptid files",
-    description: "Official files on cryptids such as Bigfoot: a separate collection with its own six-explanation model, kept outside every UAP total.",
+    description: "Bigfoot, the yeti, sea monsters and \"nonhuman\" mummies: what laboratories, prosecutors and government agencies found when they examined them, case by case, from official documents and scientific studies.",
     path: "/cryptids/",
   }),
   alternates: {
@@ -34,7 +34,7 @@ export function CryptidsView({ locale }: { locale: "es" | "en" }) {
     <div className="space-y-12 py-8">
       <header className="space-y-4">
         <Eyebrow>
-          <T locale={locale} es="Colección aparte" en="Separate collection" />
+          <T locale={locale} es="Críptidos" en="Cryptids" />
         </Eyebrow>
         <H1>
           <T locale={locale} es="Archivo de críptidos" en="Cryptid files" />
@@ -42,11 +42,12 @@ export function CryptidsView({ locale }: { locale: "es" | "en" }) {
         <Lede className="max-w-3xl text-muted">
           <T
             locale={locale}
-            es="Expedientes oficiales sobre críptidos como Bigfoot, con el mismo formato, las mismas fuentes primarias y las mismas reglas de evidencia que los casos UAP. Tienen su propio modelo de seis explicaciones y no cuentan en ningún total UAP del sitio."
-            en="Official files on cryptids such as Bigfoot, with the same format, the same primary sources and the same evidence rules as the UAP cases. They have their own six-explanation model and do not count in any UAP total on the site."
+            es="Bigfoot, el yeti, monstruos marinos y momias presentadas como no humanas: qué encontraron los laboratorios, las fiscalías y las agencias del Estado cuando tuvieron que examinarlos. Cada ficha cuenta un caso a partir de sus documentos oficiales o de estudios científicos, y dice qué explicación sostiene la evidencia."
+            en="Bigfoot, the yeti, sea monsters and mummies presented as nonhuman: what laboratories, prosecutors and government agencies found when they had to examine them. Each entry tells one case from its official documents or scientific studies, and says which explanation the evidence supports."
           />
         </Lede>
         <p className="text-sm">
+          <span className="text-muted"><T locale={locale} es="Es una colección aparte: sus cifras no se suman a las de los casos UAP." en="This is a separate collection: its figures are not added to those of the UAP cases." /></span>{" "}
           <LocaleLink href="/about#criptidos" className="text-accent underline-offset-4 hover:underline">
             <T locale={locale} es="Cómo se clasifican →" en="How they are classified →" />
           </LocaleLink>
