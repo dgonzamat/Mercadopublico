@@ -543,7 +543,6 @@ const VISUAL_CERRADO_POR_LICENCIA = {
   // Ficha nueva del 24 nov 2026 (detalle en docs/registros.md):
   "bolido-centro-sur-chile-2026": "RedGeoChile, la seremi y Red de Emergencia no publicaron imagen propia; los videos de X y de la prensa son de usuarios, con copyright; la NOAA solo publica datos del GLM, no imagen; Commons seco",
   // Ficha nueva del 25 nov 2026 (detalle en docs/registros.md):
-  "mancha-chile-2003": "el artículo de Pierce (2004) es CC BY-NC-SA 3.0, solo no comercial, y su foto de la playa es © Elsa Cabrera: va como enlace; las fotos del CCC son «todos los derechos reservados»; Wikipedia usa la foto de Cabrera como uso legítimo; Commons, Openverse y archive.org secos",
   // Ficha nueva del 25 nov 2026 (detalle en docs/registros.md):
   "momias-lima-peritaje-2024": "las fotos del Ministerio de Cultura en gob.pe no declaran licencia y gob.pe no publica condiciones de reutilización; Andina, EFE, AP y la prensa tienen copyright; Commons solo trae momias antiguas de la cultura Nazca",
   // Ficha nueva del 18 nov 2026 (detalle en docs/registros.md):

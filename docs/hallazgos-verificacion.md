@@ -709,4 +709,11 @@ Regla: solo cambia lo que se repite en al menos 3 de las 10 fichas. Notas de los
 | momias-lima-peritaje-2024 | léxico/voz | BAJA (gob.pe: «en distintos cementerios del país»): «cementerios de todo el país» exageraba | no |
 | yeti-adn-2017 | pendiente | provisional del redactor; la sustituye la verificación independiente | no |
 | atacama-ata-2018 | pendiente | provisional del redactor; la sustituye la verificación independiente | no |
-| mancha-chile-2003 | pendiente | provisional del redactor; la sustituye la verificación independiente | no |
+| mancha-chile-2003 | cifra/hora | ALTA (nota del CCC del 7 jul 2003: «el pasado 23 de Julio»): «un día posterior a la propia nota» eran dieciséis días | no |
+| mancha-chile-2003 | omisión | MEDIA (resumen del artículo, p. 125; resumen de la SICB; comunicado de la USF): las tres fuentes de la universidad sitúan el varamiento en julio, no solo el «26 July» del cuerpo del artículo | no |
+| mancha-chile-2003 | cifra/hora | MEDIA (figura 5, p. 131; GenBank AY582747 frente a X72203): el texto dice un nucleótido distinto y la figura marca dos | no |
+| mancha-chile-2003 | atribución | MEDIA (nota del CCC del 21 jul, sección «Más antecedentes», «Fuente: The Scientist – Dr. Sidney Pierce – CCC»): la explicación de la ballena que flota no estaba en la entrevista | no |
+| mancha-chile-2003 | omisión | MEDIA (artículo, p. 126; CCC 21 jul): «solo el microscopio y el ADN lo revelan» callaba que los científicos chilenos ya la identificaron como ballena en la playa | no |
+| mancha-chile-2003 | omisión | BAJA: el CCC llegó a dar por «confirmado» el cefalópodo gigante (1 jul); la SICB solo traía los primeros resultados; las otras cuatro masas no llegaron a especie; la licencia de BioStor es CC BY-NC 3.0, no NC-SA | no |
+| mancha-chile-2003 | léxico/voz | BAJA: «no la lanzó un diario sensacionalista, sino…» (fórmula vetada y sin fuente); «no todos la compartían» con referente equívoco | no |
+| mancha-chile-2003 | clasificación | BAJA (artículo: «we have not found any evidence that any of the blobs are… sea monsters of unknown species»): el 1 % de especie no catalogada se apoyaba en la hipótesis del pulpo, refutada por dos análisis de ADN («propuesta refutada»); pasa a indeterminado. «Sin explicar» sigue en 2 % | no |
