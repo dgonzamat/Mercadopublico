@@ -57,6 +57,9 @@
  *       vista rotula su método, la home remite a /calidad, y las cuatro usan
  *       corpusPosteriors con keepIndet — si una vuelve a sumar documentos, los
  *       denominadores divergen.
+ *   E43c (ERROR) Críptidos: probability = no_catalogada + extraterrestre +
+ *       interdimensional + indet (las reglas del modelo MECE y los totales
+ *       usan `uapCases`; las de prosa, roles, lugar y E63, el corpus entero).
  *   M2  (ERROR) mundanoType obligatorio con masa mundano ≥ 15 %. La antigua
  *       M1 (posterior presente, 6 claves, suma 1) vive en validate-schema.mjs.
  *
@@ -105,13 +108,22 @@ const readJsonList = (file, key) => {
 const patternList = readJsonList("patterns.json", "patterns");
 const frameworkList = readJsonList("frameworks.json", "frameworks");
 
+// Críptidos (25 nov 2026, decisión del dueño): colección aparte con su propio
+// modelo (`posteriorCripto`) y fuera de todo total UAP. `cases` sigue siendo
+// el corpus entero —las reglas de prosa, roles, lugar, fuentes y E63 valen
+// para los dos—; las reglas atadas al modelo MECE o a los totales del sitio
+// usan `uapCases`.
+const isCryptid = (c) => c.category === "cryptid";
+const uapCases = cases.filter((c) => !isCryptid(c));
+const cryptidCases = cases.filter(isCryptid);
+
 const STATS = {
-  cases: cases.length,
-  countries: new Set(cases.map((c) => c.country)).size,
-  tierS: cases.filter((c) => c.tier === "S").length,
-  tierA: cases.filter((c) => c.tier === "A").length,
-  tierB: cases.filter((c) => c.tier === "B").length,
-  years: Math.max(...cases.map((c) => c.year_start)) - 1947,
+  cases: uapCases.length,
+  countries: new Set(uapCases.map((c) => c.country)).size,
+  tierS: uapCases.filter((c) => c.tier === "S").length,
+  tierA: uapCases.filter((c) => c.tier === "A").length,
+  tierB: uapCases.filter((c) => c.tier === "B").length,
+  years: Math.max(...uapCases.map((c) => c.year_start)) - 1947,
   researchers: researchers.length,
   patterns: patternList.length,
   frameworks: frameworkList.length,
@@ -630,7 +642,7 @@ const MECE_CLASSES_AUDIT = [
 ];
 let mecePosteriorCount = 0;
 const meceAgg = Object.fromEntries(MECE_CLASSES_AUDIT.map((k) => [k, 0]));
-for (const c of cases) {
+for (const c of uapCases) {
   const file = path.join(casesDir, c.id + ".json");
   const p = c.posterior;
   // Forma inválida: la reporta validate-schema.mjs (corre antes en el prebuild).
@@ -1842,7 +1854,7 @@ if (fs.existsSync(regionsPath)) {
   const byTier = { S: 0, A: 0, B: 0 };
   let pending = 0, reviewed = 0;
   for (const c of cases) {
-    if (!c.posterior) continue;
+    if (!c.posterior && !c.posteriorCripto) continue;
     if (c.evidenceReviewed) { reviewed++; continue; }
     pending++; byTier[c.tier] = (byTier[c.tier] || 0) + 1;
   }
@@ -2025,6 +2037,27 @@ const HYPE_REVIEWED = new Set(["lakenheath-bentwaters-1956", "morocco-gendarmeri
   }
   if (bad.length) {
     record("ERROR", casesDir, 0, `E43 probabilidad: ${bad.length} caso(s) con \`probability\` distinta de la derivada del posterior (indet + no humano): ${bad.slice(0, 8).join(", ")}${bad.length > 8 ? "…" : ""}. No se escribe a mano: recalcúlala desde el reparto.`);
+  }
+}
+
+// ─── 9zb-bis. RULE E43c: la cifra «sin explicar» de un críptido ──────────
+//
+// Mismo principio que E43 con el modelo de los críptidos (25 nov 2026,
+// decisión del dueño): `probability` es la parte que ninguna causa ordinaria
+// ni el fraude explican, no_catalogada + extraterrestre + interdimensional +
+// indet, redondeada con Math.round. ERROR si difiere. La forma de
+// posteriorCripto la valida validate-schema.mjs.
+{
+  const bad = [];
+  for (const c of cryptidCases) {
+    const p = c.posteriorCripto;
+    if (!p || typeof p !== "object") continue;
+    const tot = Object.values(p).reduce((a, b) => a + b, 0);
+    const derived = Math.round((100 * (p.no_catalogada + p.extraterrestre + p.interdimensional + p.indet)) / tot);
+    if (c.probability !== derived) bad.push(`${c.id} (${c.probability}≠${derived})`);
+  }
+  if (bad.length) {
+    record("ERROR", casesDir, 0, `E43c probabilidad de críptido: ${bad.length} ficha(s) con \`probability\` distinta de la derivada de posteriorCripto (no_catalogada + extraterrestre + interdimensional + indet): ${bad.join(", ")}. No se escribe a mano.`);
   }
 }
 
