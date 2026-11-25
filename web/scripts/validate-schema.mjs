@@ -231,7 +231,11 @@ researchers.forEach((r, i) => {
 const TIERS = new Set(["S", "A", "B"]);
 // Sin "document": desde el 15 oct 2026 ningún documento tiene ficha propia; vive
 // embebido en el visor del caso o del actor que respalda (decisión del dueño).
-const CATEGORIES = new Set(["incident", "contactee", "crop_circle"]);
+// "cryptid" (25 nov 2026, decisión del dueño): colección aparte, con su propio
+// modelo (`posteriorCripto`) y fuera de todo total UAP.
+const CATEGORIES = new Set(["incident", "contactee", "crop_circle", "cryptid"]);
+// Modelo de los críptidos: seis explicaciones que suman 1.
+const CRIPTO_KEYS = ["ordinaria", "fraude", "no_catalogada", "extraterrestre", "interdimensional", "indet"];
 // Claves de primer nivel admitidas en una ficha: las de `UAPCase` (lib/types.ts)
 // que el corpus usa. Una clave fuera de la lista es un campo que ningún render
 // lee —el caso de `sources_en`, 89 fichas con 81 traducciones que nunca se
@@ -244,6 +248,7 @@ const CASE_KEYS = new Set([
   "seoTitle", "seoDescription", "seoTitle_en", "seoDescription_en", "featuredDoc", "documents",
   "patterns", "entityMorphology", "category", "whatHappened", "whatHappened_en", "whyMatters",
   "whyMatters_en", "evidence", "evidence_en", "sources", "primaryDocument", "posterior",
+  "posteriorCripto", "cryptidClass",
 ]);
 const casesDir = path.join(root, "data", "cases");
 const caseFiles = fs.readdirSync(casesDir).filter((f) => f.endsWith(".json"));
@@ -369,7 +374,34 @@ for (const file of caseFiles) {
   // posterior (modelo MECE): obligatorio en toda ficha (ya no hay documentos),
   // con las 6 claves numéricas y suma ≈ 1. Es P(narrativa|objeto). Antes lo
   // repetía M1 en audit-consistency; desde nov 2026 vive solo aquí.
-  if (c.posterior === undefined || c.posterior === null || typeof c.posterior !== "object" || Array.isArray(c.posterior)) {
+  // Los críptidos no llevan posterior UAP: llevan posteriorCripto y cryptidClass.
+  const isCryptid = c.category === "cryptid";
+  if (isCryptid) {
+    for (const k of ["posterior", "mundanoType", "misidSubtype", "objectDetail"])
+      if (c[k] !== undefined) err(w, `${k} no se usa en un críptido (su modelo es posteriorCripto + cryptidClass)`);
+    const pc = c.posteriorCripto;
+    if (pc === undefined || pc === null || typeof pc !== "object" || Array.isArray(pc)) {
+      err(w, `posteriorCripto obligatorio en un críptido (objeto con las 6 explicaciones: ${CRIPTO_KEYS.join("|")})`);
+    } else {
+      const miss = CRIPTO_KEYS.filter((k) => typeof pc[k] !== "number");
+      const extra = Object.keys(pc).filter((k) => !CRIPTO_KEYS.includes(k));
+      if (miss.length || extra.length)
+        err(w, `posteriorCripto con claves inválidas (faltan/no-numéricas [${miss}], sobran [${extra}])`);
+      else {
+        const tot = CRIPTO_KEYS.reduce((acc, k) => acc + pc[k], 0);
+        if (Math.abs(tot - 1) > 0.005) err(w, `posteriorCripto suma ${tot.toFixed(4)} (debe ser 1)`);
+      }
+    }
+    if (!CRIPTO_KEYS.includes(c.cryptidClass))
+      err(w, `cryptidClass obligatorio en un críptido, uno de ${CRIPTO_KEYS.join("|")} (es "${c.cryptidClass ?? "ausente"}")`);
+    else if ((c.cryptidClass === "ordinaria" || c.cryptidClass === "fraude") && c.classBasis === undefined)
+      err(w, `cryptidClass "${c.cryptidClass}" exige classBasis {es, en, source}: la clase la nombra una fuente`);
+  } else if (c.posteriorCripto !== undefined || c.cryptidClass !== undefined) {
+    err(w, "posteriorCripto/cryptidClass solo valen en category \"cryptid\"");
+  }
+  if (isCryptid) {
+    /* sin posterior UAP */
+  } else if (c.posterior === undefined || c.posterior === null || typeof c.posterior !== "object" || Array.isArray(c.posterior)) {
     err(w, "posterior obligatorio (objeto con las 6 narrativas MECE)");
   } else {
     const MECE_KEYS = ["mundano_natural", "humana_clasificada", "adversaria", "nohumano_encubierto", "nohumano_abierto", "indet"];
