@@ -42,7 +42,9 @@ export function HeaderNav({ dark = false }: { dark?: boolean } = {}) {
   };
 
   const linkClass = (active: boolean) =>
-    `inline-flex items-center border-l px-3 font-display text-base font-medium ${
+    // px-2 (antes px-3): con «Críptidos» (25 nov 2026) la fila no cabía en el
+    // contenedor de 1280 px y «PURSUE 2026» y «Sign in» partían en dos líneas.
+    `inline-flex items-center whitespace-nowrap border-l px-2 font-display text-base font-medium ${
       dark
         ? `border-bg/15 hover:bg-bg hover:text-text ${active ? "text-accent-bright" : "text-bg/85"}`
         : `border-text/15 hover:bg-text hover:text-bg ${active ? "text-accent" : "text-text"}`
@@ -66,7 +68,7 @@ export function HeaderNav({ dark = false }: { dark?: boolean } = {}) {
         <Link
           href="/laboratorio"
           aria-current={isActive("/laboratorio") ? "page" : undefined}
-          className={`inline-flex items-center gap-1.5 border-l px-3 font-display text-base font-medium ${
+          className={`inline-flex items-center gap-1.5 whitespace-nowrap border-l px-2 font-display text-base font-medium ${
             dark
               ? "border-bg/15 text-accent-bright hover:bg-bg hover:text-text"
               : "border-text/15 text-accent hover:bg-text hover:text-bg"

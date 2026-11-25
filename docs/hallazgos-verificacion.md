@@ -686,3 +686,4 @@ Regla: solo cambia lo que se repite en al menos 3 de las 10 fichas. Notas de los
 | bolido-tennessee-2026 | léxico/voz | BAJA: «No meteorite is known to have been found» calcaba la pasiva impersonal | no |
 | bolido-tennessee-2026 | lectura | lector ciego ES (Opus, nota 6): tuvo que hacer la cuenta de husos para situar el Henan-1, chirrió «piezas de un cohete lanzado después», el bólido de Chile apareció sin contexto y el tamaño, el peso y la altura se repetían hasta en el cierre. Corregidos el párrafo del catálogo, la mención de Chile y el cierre. Anotado sin tocar: el primer párrafo resume casi toda la ficha y Tellus y PARI no tienen lugar (ninguna fuente lo da) | no |
 | fbi-pelos-bigfoot-1976 | pendiente | provisional del redactor; la sustituye la verificación independiente | no |
+| umatilla-huellas-1982 | pendiente | provisional del redactor; la sustituye la verificación independiente | no |

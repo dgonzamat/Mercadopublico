@@ -76,7 +76,7 @@ export function SiteHeader() {
           </span>
         </Link>
 
-        <div className={`hidden items-stretch gap-3 ${user ? "2xl:flex" : "xl:flex"}`}>
+        <div className={`hidden items-stretch gap-2 ${user ? "2xl:flex" : "xl:flex"}`}>
           <div className="flex items-center gap-2">
             <SiteSearch dark={dark} />
             <ShareButton variant="icon" dark={dark} />

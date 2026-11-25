@@ -43,3 +43,4 @@
 {"date":"2026-11-23","probe":"validate-schema","rule":"category inválida \"…\"","where":"cases/truk-1953.json"}
 {"date":"2026-11-23","probe":"validate-schema","rule":"patterns debe ser array","where":"cases/truk-1953.json"}
 {"date":"2026-11-25","probe":"audit-consistency","rule":"E63","where":"data/cases"}
+{"date":"2026-11-25","probe":"validate-schema","rule":"num duplicado N","where":"cases/zz-cryptid-control.json"}
