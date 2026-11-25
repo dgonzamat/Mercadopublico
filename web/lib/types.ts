@@ -267,6 +267,9 @@ export interface UAPCase {
   /** Solo en críptidos: id de la criatura en data/cryptid-taxonomy.json, que
    *  fija también su categoría. */
   cryptid?: string;
+  /** Solo en críptidos: la especie ya está descrita (el críptido resultó ser un
+   *  animal real). `no_catalogada` deja de sumar a la cifra «sin explicar». */
+  speciesDescribed?: boolean;
 }
 
 export interface Pattern {

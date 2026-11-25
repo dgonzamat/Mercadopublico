@@ -31,10 +31,13 @@ export function cryptidClassDef(id: CryptidClassId | undefined) {
 }
 
 /** Cifra «sin explicar»: no_catalogada + extraterrestre + interdimensional +
- *  indet, en %, con Math.round (la misma que exige E43c). */
-export function cryptidUnexplained(p: PosteriorCripto): number {
+ *  indet, en %, con Math.round (la misma que exige E43c). Si la especie ya está
+ *  descrita (`speciesDescribed`), no_catalogada no suma. */
+export function cryptidUnexplained(p: PosteriorCripto, speciesDescribed = false): number {
   const tot = CRYPTID_CLASSES.reduce((a, k) => a + p[k.id], 0);
-  const u = CRYPTID_CLASSES.filter((k) => k.unexplained).reduce((a, k) => a + p[k.id], 0);
+  const u = CRYPTID_CLASSES
+    .filter((k) => k.unexplained && !(speciesDescribed && k.id === "no_catalogada"))
+    .reduce((a, k) => a + p[k.id], 0);
   return Math.round((100 * u) / tot);
 }
 

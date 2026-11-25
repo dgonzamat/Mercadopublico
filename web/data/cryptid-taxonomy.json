@@ -7,6 +7,7 @@
     { "id": "globsters", "es": "Globsters", "en": "Globsters", "origin": "globsters (Sanderson, 1962)" },
     { "id": "felinos", "es": "Grandes felinos fuera de su zona", "en": "Alien big cats", "origin": "alien big cats" },
     { "id": "lazaro", "es": "Taxones Lázaro", "en": "Lazarus taxa", "origin": "Lazarus taxa" },
+    { "id": "descubiertos", "es": "Especies descubiertas", "en": "Discovered species", "origin": "former cryptids confirmed as species (okapi, giant squid, mountain gorilla)" },
     { "id": "chupacabras", "es": "Chupacabras", "en": "Chupacabras", "origin": "chupacabra" },
     { "id": "extraterrestres", "es": "Seres presuntamente extraterrestres", "en": "Alleged extraterrestrial beings", "origin": "alleged extraterrestrial beings (Wikipedia, Category:Cryptids)" }
   ],
@@ -15,6 +16,11 @@
     { "id": "yeti", "group": "hominidos", "es": "Yeti", "en": "Yeti" },
     { "id": "pulpo-pinuno", "group": "globsters", "es": "Pulpo gigante de Pinuno", "en": "Chilean Blob" },
     { "id": "ata", "group": "extraterrestres", "es": "Ata, el esqueleto de Atacama", "en": "Ata, the Atacama skeleton" },
-    { "id": "momias-nazca", "group": "extraterrestres", "es": "Momias de Nazca", "en": "Nazca mummies" }
+    { "id": "momias-nazca", "group": "extraterrestres", "es": "Momias de Nazca", "en": "Nazca mummies" },
+    { "id": "celacanto", "group": "lazaro", "es": "Celacanto", "en": "Coelacanth" },
+    { "id": "okapi", "group": "descubiertos", "es": "Okapi", "en": "Okapi" },
+    { "id": "saola", "group": "descubiertos", "es": "Saola", "en": "Saola" },
+    { "id": "takahe", "group": "lazaro", "es": "Takahē", "en": "Takahē" },
+    { "id": "sengi-somali", "group": "lazaro", "es": "Sengi somalí", "en": "Somali sengi" }
   ]
 }

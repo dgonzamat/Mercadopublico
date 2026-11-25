@@ -2048,15 +2048,19 @@ const HYPE_REVIEWED = new Set(["lakenheath-bentwaters-1956", "morocco-gendarmeri
 // Mismo principio que E43 con el modelo de los críptidos (25 nov 2026,
 // decisión del dueño): `probability` es la parte que ninguna causa ordinaria
 // ni el fraude explican, no_catalogada + extraterrestre + interdimensional +
-// indet, redondeada con Math.round. ERROR si difiere. La forma de
-// posteriorCripto la valida validate-schema.mjs.
+// indet, redondeada con Math.round. ERROR si difiere. Excepción (25 nov 2026,
+// decisión del dueño): con `speciesDescribed: true` (el críptido resultó ser un
+// animal real) no_catalogada no suma. La forma de posteriorCripto la valida
+// validate-schema.mjs.
 {
   const bad = [];
   for (const c of cryptidCases) {
     const p = c.posteriorCripto;
     if (!p || typeof p !== "object") continue;
     const tot = Object.values(p).reduce((a, b) => a + b, 0);
-    const derived = Math.round((100 * (p.no_catalogada + p.extraterrestre + p.interdimensional + p.indet)) / tot);
+    // Si la especie ya está descrita (speciesDescribed), no_catalogada no suma.
+    const noCat = c.speciesDescribed === true ? 0 : p.no_catalogada;
+    const derived = Math.round((100 * (noCat + p.extraterrestre + p.interdimensional + p.indet)) / tot);
     if (c.probability !== derived) bad.push(`${c.id} (${c.probability}≠${derived})`);
   }
   if (bad.length) {

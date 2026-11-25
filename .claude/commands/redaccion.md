@@ -3,7 +3,7 @@ description: Guía de redacción de UAP Codex, en español y en inglés con el m
 argument-hint: "[id de ficha o campo a redactar/revisar; vacío = aplica la guía al trabajo en curso]"
 ---
 
-Estás escribiendo para **UAP Codex**, un archivo serio de casos OVNI/UAP basado en fuentes primarias. El sitio es bilingüe y **los dos idiomas valen lo mismo**: el inglés es la versión principal del sitio y el español es su espejo, pero ninguno es una traducción de segunda. Un texto que en un idioma se entiende y en el otro no está mal en los dos.
+Estás escribiendo para **UAP Codex**, un archivo serio de casos OVNI/UAP basado en fuentes primarias, y de su colección de **críptidos** (`category: "cryptid"`), que se escribe con esta misma guía y el mismo nivel de exigencia: el animal es el objeto y el documento o el laboratorio, el testigo. El sitio es bilingüe y **los dos idiomas valen lo mismo**: el inglés es la versión principal del sitio y el español es su espejo, pero ninguno es una traducción de segunda. Un texto que en un idioma se entiende y en el otro no está mal en los dos.
 
 Esta guía nació de un fallo real (oct 2026): la ficha de Skinwalker había crecido a 41.500 caracteres contando entrega tras entrega de documentos, y 23 títulos decían cosas como «Corea · un F-94 engancha con su radar un blanco en la cola», que un lector no entiende. Si dudas, vuelve a esta pregunta: **¿lo entiende a la primera alguien culto que no sabe nada del tema y lo lee en el móvil?**
 
@@ -82,14 +82,14 @@ Aviones muy conocidos (B-52, DC-3) pueden ir en el título si son el centro del 
 - **Herramientas del redactor**: «conector», «extractor», «OCR», «barrido», «techo de extracción».
 - **Tareas pendientes**: «lo que el corpus debe…». Si algo queda abierto: «queda por ver si…».
 - **Rankings dentro del archivo**: «el primer caso del corpus en…», «la mejor foto del corpus». Caducan con la próxima ficha.
-- **El reparto o la probabilidad en la prosa**: «el posterior carga…», «probabilidad baja». Son números derivados.
+- **El reparto o la probabilidad en la prosa**: «el posterior carga…», «probabilidad baja». Son números derivados (en un críptido, también `posteriorCripto`: «el 95 % es ordinaria» no se escribe; se explica la evidencia).
 - **Muletillas**: «Conviene…», «Es decir», «Tres matices son necesarios», «honesto/honestamente», «no es X, es Y» como fórmula, «El valor de este caso…», «Es uno de los…».
 - **Formato**: nada de markdown (`**`, «- », `#`), ni código entre comillas invertidas, ni rayas (—) para incisos. Enlaces a otros casos: `[[slug]]`. Párrafos separados por `\n\n`.
 - **Exagerar el misterio**: cada maniobra, cifra o testigo con nombre necesita su fuente primaria. Si fue una luz, se dice «una luz».
 
 ## 8. Antes de entregar
 
-0. Si tu texto cambia la evidencia que recoge la ficha (un dato corregido, uno nuevo comprobado en la fuente, una objeción que vuelve o que sale), dilo en tu informe: esa ficha pasa después por la revisión de la clasificación (`posterior`, `classBasis`), que tú no tocas.
+0. Si tu texto cambia la evidencia que recoge la ficha (un dato corregido, uno nuevo comprobado en la fuente, una objeción que vuelve o que sale), dilo en tu informe: esa ficha pasa después por la revisión de la clasificación (`posterior`, o `posteriorCripto` y `cryptidClass` en un críptido, y `classBasis`), que tú no tocas.
 
 1. Lee el título y el resumen como si no supieras nada: ¿se entienden a la primera?
 2. Lee el relato en voz alta: ¿hay alguna frase que tengas que releer? Reescríbela.

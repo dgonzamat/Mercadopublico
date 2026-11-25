@@ -468,8 +468,8 @@ export function AboutView({ locale }: { locale: "es" | "en" }) {
               </ul>
               <Body className="text-muted">
                 <T
-                  es="La cifra «sin explicar» de cada expediente es la suma de especie no catalogada, extraterrestre, interdimensional e indeterminado. Las reglas de tier son las mismas que las de los casos, con una precisión: un análisis de laboratorio con procedencia conocida (pelo, ADN, molde de huella) cuenta como registro instrumental aunque identifique un animal corriente."
-                  en="Each file's «unexplained» figure is the sum of uncatalogued species, extraterrestrial, interdimensional and indeterminate. The tier rules are the same as for the cases, with one precision: a laboratory analysis with known provenance (hair, DNA, a track cast) counts as an instrumental record even when it identifies an ordinary animal."
+                  es="La cifra «sin explicar» de cada expediente es la suma de especie no catalogada, extraterrestre, interdimensional e indeterminado; si la especie ya está descrita (el críptido resultó ser un animal real), la especie no catalogada no suma. Las reglas de tier son las mismas que las de los casos, con una precisión: un análisis de laboratorio con procedencia conocida (pelo, ADN, molde de huella) cuenta como registro instrumental aunque identifique un animal corriente."
+                  en="Each file's «unexplained» figure is the sum of uncatalogued species, extraterrestrial, interdimensional and indeterminate; if the species is already described (the cryptid turned out to be a real animal), uncatalogued species does not count. The tier rules are the same as for the cases, with one precision: a laboratory analysis with known provenance (hair, DNA, a track cast) counts as an instrumental record even when it identifies an ordinary animal."
                   locale={locale}
                 />
               </Body>
