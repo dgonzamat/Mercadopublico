@@ -86,6 +86,16 @@ export const CASE_ALIASES: Readonly<Record<string, string>> = {
   "cia-historical-uap-archive": "/releases/03",
   "reeves-foia-classified-network-2023": "/releases/02",
   "disclosure-project-2001": "/researchers/greer",
+  // Retirados sin alias hasta el 25 nov 2026, cuando el panel de visitas mostró
+  // sus URL viejas cayendo en el 404 (unas 140 vistas entre las 31 sin alias).
+  // Solo los que tienen destino: las tres fichas de Campeche se fusionaron en una
+  // (#939), las órbitas del FBI en su suceso (4 oct) y las dos fusiones de 2026
+  // anotadas en retired-nums. Los documentos «borrados sin caso» siguen en el 404.
+  "campeche-fam-2004": "campeche-2004",
+  "mexico-flir-2004": "campeche-2004",
+  "fbi-northeast-orbs-2024": "northeastern-us-orbs-2021-2025",
+  "pampa-joya-1980": "la-joya-arequipa-1980",
+  "geipan-cnes-1977": "/researchers/poher",
 };
 
 /** Ruta canónica (raíz inglesa) del destino de un alias. */

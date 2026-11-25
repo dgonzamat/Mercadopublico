@@ -13,17 +13,30 @@ export const metadata: Metadata = {
   robots: { index: false, follow: false },
 };
 
-// Rutas en español que el sitio nunca tuvo pero que la gente escribe o comparte:
-// /casos/<id> (y /es/casos/, /caso/) llegaban aquí; en el panel de visitas del
-// 25 nov 2026, /casos/catalina-1953 era la página más vista, con 5 de 38. El
-// espejo español vive en /es/cases/<id>/, así que el 404 reenvía allí antes de
-// pintarse. Script en línea y no un client component: corre sin hidratar.
-const SPANISH_PATH_REDIRECT = `(function(){var m=location.pathname.match(/^\\/(?:es\\/)?casos?\\/([a-z0-9-]+)\\/?$/);if(m)location.replace("/es/cases/"+m[1]+"/"+location.search+location.hash);})();`;
+// Rutas que el sitio nunca tuvo, o ya no tiene, pero que la gente escribe o comparte
+// (panel de visitas, 25 nov 2026: 243 de 8.091 vistas habían caído en el 404).
+// El 404 las reenvía antes de pintarse, con un script en línea que corre sin
+// hidratar. Cada regla exige una forma que la página de destino no repite, para
+// que un destino inexistente no vuelva a reenviarse en bucle:
+//   /casos/<id>, /caso/<id>, /es/casos/<id> → /es/cases/<id>/ (el espejo español;
+//     /casos/catalina-1953 era la página más vista del panel, con 5 de 38)
+//   /case/<id>, /es/case/<id>              → /cases/<id>/, /es/cases/<id>/
+//   /cases/[<id>…, /cases/<id>/<basura>    → /cases/<id>/ (enlaces mal pegados)
+//   /<id-con-año>                          → /cases/<id>/ (sin el /cases/)
+//   /patterns/…, /es/patterns/…            → /laboratorio/ (sección retirada en
+//     oct 2026; el campo patterns vive en el laboratorio)
+const LEGACY_PATH_REDIRECT = `(function(){var p=location.pathname,s=location.search+location.hash,m,t;
+if(m=p.match(/^\\/(?:es\\/)?casos?\\/([a-z0-9-]+)\\/?$/))t="/es/cases/"+m[1]+"/";
+else if(m=p.match(/^\\/(es\\/)?case\\/([a-z0-9-]+)\\/?$/))t="/"+(m[1]||"")+"cases/"+m[2]+"/";
+else if(m=p.match(/^\\/(es\\/)?cases\\/(?:\\[|%5B)([a-z0-9-]+)/i)||p.match(/^\\/(es\\/)?cases\\/([a-z0-9-]+)\\/[^/]+/))t="/"+(m[1]||"")+"cases/"+m[2]+"/";
+else if(m=p.match(/^\\/([a-z0-9-]+-\\d{4})\\/?$/))t="/cases/"+m[1]+"/";
+else if(/^\\/(?:es\\/)?patterns(?:\\/|$)/.test(p))t="/laboratorio/";
+if(t&&t!==p)location.replace(t+s);})();`;
 
 export default function NotFound() {
   return (
     <div className="mx-auto max-w-md py-20 text-center">
-      <script dangerouslySetInnerHTML={{ __html: SPANISH_PATH_REDIRECT }} />
+      <script dangerouslySetInnerHTML={{ __html: LEGACY_PATH_REDIRECT }} />
       <p className="font-mono text-xs uppercase tracking-widest text-accent">
         <T es="Error 404 · Página no encontrada" en="Error 404 · Page not found" />
       </p>
