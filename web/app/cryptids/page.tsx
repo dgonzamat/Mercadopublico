@@ -47,7 +47,6 @@ export function CryptidsView({ locale }: { locale: "es" | "en" }) {
           />
         </Lede>
         <p className="text-sm">
-          <span className="text-muted"><T locale={locale} es="Es una colección aparte: sus cifras no se suman a las de los casos UAP." en="This is a separate collection: its figures are not added to those of the UAP cases." /></span>{" "}
           <LocaleLink href="/about#criptidos" className="text-accent underline-offset-4 hover:underline">
             <T locale={locale} es="Cómo se clasifican →" en="How they are classified →" />
           </LocaleLink>
