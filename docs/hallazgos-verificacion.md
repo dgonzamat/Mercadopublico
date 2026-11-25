@@ -685,5 +685,11 @@ Regla: solo cambia lo que se repite en al menos 3 de las 10 fichas. Notas de los
 | bolido-tennessee-2026 | cifra/hora | BAJA: «cámaras separadas por cientos de kilómetros» sin fuente (Huntsville y Tullahoma están a ~75 km) | no |
 | bolido-tennessee-2026 | léxico/voz | BAJA: «No meteorite is known to have been found» calcaba la pasiva impersonal | no |
 | bolido-tennessee-2026 | lectura | lector ciego ES (Opus, nota 6): tuvo que hacer la cuenta de husos para situar el Henan-1, chirrió «piezas de un cohete lanzado después», el bólido de Chile apareció sin contexto y el tamaño, el peso y la altura se repetían hasta en el cierre. Corregidos el párrafo del catálogo, la mención de Chile y el cierre. Anotado sin tocar: el primer párrafo resume casi toda la ficha y Tellus y PARI no tienen lugar (ninguna fuente lo da) | no |
-| fbi-pelos-bigfoot-1976 | pendiente | provisional del redactor; la sustituye la verificación independiente | no |
+| fbi-pelos-bigfoot-1976 | atribución | MEDIA (memorando del 22 feb 1977, p. 20: «delivered to the Laboratory by Mr. Howard S. Curtis»): el resumen decía que Byrne envió los pelos al FBI; los llevó la Academy of Applied Science | no |
+| fbi-pelos-bigfoot-1976 | omisión | MEDIA (Washington Post 2019, subtítulo: las cartas «never made it to him»; carta del 24 feb, p. 18: solo «1 - Mr. Peter Byrne» como copia): la ficha daba a entender que Byrne recibió el resultado | no |
+| fbi-pelos-bigfoot-1976 | atribución | MEDIA: «la prensa de la época confundía dos análisis» sin fuente; el segundo análisis siguió en cartas internas hasta 2018 | no |
+| fbi-pelos-bigfoot-1976 | ausencia | MEDIA (p. 7: «in our files»; p. 15: «no records or recollection»): «no aparece en ninguna parte» iba más allá del legajo | no |
+| fbi-pelos-bigfoot-1976 | atribución | BAJA (carta de Byrne, p. 6, sin mención del atlas): el vínculo entre el atlas y la consulta lo hace el FBI; «editor del atlas» solo lo dice el memorando del 13 dic | no |
+| fbi-pelos-bigfoot-1976 | cifra/hora | BAJA (portada FOIA, 14 may 2018: «previously processed documents»): la entrega de 2018 quizá no fue la primera; en 2019 el FBI publicó en su Vault, no «entregó» | no |
+| fbi-pelos-bigfoot-1976 | léxico/voz | BAJA: «supuestas muestras» (literal del atlas), «pelos de origen conocido» y no «de su colección», «también encontró pelos» sin lugar, «la carta anotaba una copia» | no |
 | umatilla-huellas-1982 | pendiente | provisional del redactor; la sustituye la verificación independiente | no |
