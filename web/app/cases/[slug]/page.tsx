@@ -19,6 +19,7 @@ import { RegionMap } from "@/components/RegionMap";
 import { caseVisuals } from "@/lib/caseVisuals";
 import { splitLead } from "@/lib/splitLead";
 import { Eyebrow, H1, Caption } from "@/lib/typography";
+import { creatureOf, groupOf } from "@/lib/cryptidTaxonomy";
 import { caseJsonLd, serializeJsonLd } from "@/lib/jsonld";
 import { BreadcrumbJsonLd } from "@/components/BreadcrumbJsonLd";
 import { linkCaseRefs } from "@/lib/caseRefs";
@@ -374,6 +375,15 @@ export async function CaseDetailPage(
                 <T locale={locale} es={c.country_name} en={countryEn(c.country_name)} />
               )}
             </p>
+            {isCryptidPage && groupOf(c.cryptid) && (
+              <p className="text-sm text-muted">
+                <LocaleLink href={`/cryptids#${groupOf(c.cryptid)!.id}`} className="text-accent underline-offset-4 hover:underline">
+                  <T locale={locale} es={groupOf(c.cryptid)!.es} en={groupOf(c.cryptid)!.en} />
+                </LocaleLink>
+                <span className="mx-2 text-text/30">·</span>
+                <T locale={locale} es={creatureOf(c.cryptid)!.es} en={creatureOf(c.cryptid)!.en} />
+              </p>
+            )}
             <H1>
               <span className="sr-only">
                 <T locale={locale} es={c.country_name} en={countryEn(c.country_name)} />.

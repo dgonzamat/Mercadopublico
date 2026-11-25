@@ -1,0 +1,20 @@
+{
+  "_comment": "Categorías de los críptidos (25 nov 2026, decisión del dueño). Cada categoría usa un término establecido de la criptozoología (columna origin); debajo va la criatura, que cada ficha nombra en su campo `cryptid`. Lo leen lib/cryptidTaxonomy.ts y validate-schema.mjs: es el único hogar de la lista.",
+  "groups": [
+    { "id": "hominidos", "es": "Homínidos peludos", "en": "Hairy hominids", "origin": "hominology / hairy humanoids" },
+    { "id": "lacustres", "es": "Monstruos lacustres", "en": "Lake monsters", "origin": "lake monsters (dracontology)" },
+    { "id": "serpientes_marinas", "es": "Serpientes marinas", "en": "Sea serpents", "origin": "sea serpents (Heuvelmans, 1968)" },
+    { "id": "globsters", "es": "Globsters", "en": "Globsters", "origin": "globsters (Sanderson, 1962)" },
+    { "id": "felinos", "es": "Grandes felinos fuera de su zona", "en": "Alien big cats", "origin": "alien big cats" },
+    { "id": "lazaro", "es": "Taxones Lázaro", "en": "Lazarus taxa", "origin": "Lazarus taxa" },
+    { "id": "chupacabras", "es": "Chupacabras", "en": "Chupacabras", "origin": "chupacabra" },
+    { "id": "extraterrestres", "es": "Seres presuntamente extraterrestres", "en": "Alleged extraterrestrial beings", "origin": "alleged extraterrestrial beings (Wikipedia, Category:Cryptids)" }
+  ],
+  "creatures": [
+    { "id": "bigfoot", "group": "hominidos", "es": "Bigfoot", "en": "Bigfoot" },
+    { "id": "yeti", "group": "hominidos", "es": "Yeti", "en": "Yeti" },
+    { "id": "pulpo-pinuno", "group": "globsters", "es": "Pulpo gigante de Pinuno", "en": "Chilean Blob" },
+    { "id": "ata", "group": "extraterrestres", "es": "Ata, el esqueleto de Atacama", "en": "Ata, the Atacama skeleton" },
+    { "id": "momias-nazca", "group": "extraterrestres", "es": "Momias de Nazca", "en": "Nazca mummies" }
+  ]
+}

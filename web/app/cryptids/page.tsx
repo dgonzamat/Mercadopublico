@@ -4,6 +4,7 @@ import { LocaleLink } from "@/components/LocaleLink";
 import { T } from "@/components/T";
 import { Eyebrow, H1, Lede } from "@/lib/typography";
 import { pageMeta } from "@/lib/seo";
+import { CRYPTID_GROUPS, CREATURES } from "@/lib/cryptidTaxonomy";
 
 /**
  * Archivo de críptidos (/cryptids/): colección aparte dentro del sitio (25 nov
@@ -54,10 +55,38 @@ export function CryptidsView({ locale }: { locale: "es" | "en" }) {
       </header>
 
       {list.length > 0 ? (
-        <div className="border-t-2 border-text pt-2">
-          {list.map((c) => (
-            <CaseRow key={c.id} caseData={c} locale={locale} section="cryptids" />
-          ))}
+        // Agrupado por categoría (términos establecidos de la criptozoología) y,
+        // dentro, por criatura, en el orden de data/cryptid-taxonomy.json; solo
+        // aparecen las categorías con fichas.
+        <div className="space-y-12">
+          {CRYPTID_GROUPS.map((g) => {
+            const kinds = CREATURES.filter((k) => k.group === g.id)
+              .map((k) => ({ k, items: list.filter((c) => c.cryptid === k.id) }))
+              .filter((x) => x.items.length > 0);
+            if (!kinds.length) return null;
+            return (
+              <section key={g.id} id={g.id} className="scroll-mt-24 space-y-4">
+                <h2 className="flex items-baseline justify-between border-b-2 border-text pb-2 font-display text-2xl text-text">
+                  <T locale={locale} es={g.es} en={g.en} />
+                  <span className="text-sm font-normal tabular-nums text-muted">
+                    {kinds.reduce((a, x) => a + x.items.length, 0)}
+                  </span>
+                </h2>
+                {kinds.map(({ k, items }) => (
+                  <div key={k.id} id={k.id} className="scroll-mt-24">
+                    <Eyebrow>
+                      <T locale={locale} es={k.es} en={k.en} />
+                    </Eyebrow>
+                    <div className="mt-1">
+                      {items.map((c) => (
+                        <CaseRow key={c.id} caseData={c} locale={locale} section="cryptids" />
+                      ))}
+                    </div>
+                  </div>
+                ))}
+              </section>
+            );
+          })}
         </div>
       ) : (
         <p className="text-muted">
