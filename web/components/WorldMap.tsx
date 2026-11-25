@@ -65,19 +65,18 @@ export default function WorldMap({
     B: true,
   });
   const [country, setCountry] = useState<string>("all");
-  // Capa de críptidos: colección aparte, apagada por defecto (25 nov 2026).
-  // No entra en el conteo ni en los filtros de casos; solo respeta el país.
+  // Dos colecciones con su propio interruptor (25 nov 2026, decisión del dueño):
+  // casos UAP encendidos y críptidos apagados al abrir. El tier y el país
+  // filtran a las dos; las cifras van por colección, porque los críptidos no
+  // entran en ningún total UAP.
+  const [showUap, setShowUap] = useState(true);
   const [showCryptids, setShowCryptids] = useState(false);
   const router = useRouter();
   // <option> solo admite texto: el dual-span de <T> no sirve ahí.
   const locale = useLocale();
-  const counts: Record<Tier, number> = {
-    S: cases.filter((c) => c.tier === "S").length,
-    A: cases.filter((c) => c.tier === "A").length,
-    B: cases.filter((c) => c.tier === "B").length,
-  };
+  const tierCount = (list: typeof cases, t: Tier) => list.filter((c) => c.tier === t).length;
   const countryOptions = Object.values(
-    cases.reduce<
+    [...(showUap ? cases : []), ...(showCryptids ? atlasCryptids : [])].reduce<
       Record<string, { code: string; name: string; n: number }>
     >((by, c) => {
       (by[c.country] ??= {
@@ -88,22 +87,67 @@ export default function WorldMap({
       return by;
     }, {}),
   ).sort((a, b) => b.n - a.n || a.name.localeCompare(b.name));
-  const shown = cases.filter(
-    (c) => active[c.tier] && (country === "all" || c.country === country),
-  );
-  const points = shown.map(
+  const inFilter = (c: (typeof cases)[number]) =>
+    active[c.tier] && (country === "all" || c.country === country);
+  const shown = showUap ? cases.filter(inFilter) : [];
+  const shownCryptids = showCryptids ? atlasCryptids.filter(inFilter) : [];
+  const points = [...shown, ...shownCryptids].map(
     (c) => [c.location.lat, c.location.lng] as [number, number],
   );
-  const shownCryptids = showCryptids
-    ? atlasCryptids.filter((c) => country === "all" || c.country === country)
-    : [];
   const assocResearchers =
     country === "all" ? [] : countryResearchers[country] ?? [];
-  const depKey = `${country}|${active.S ? 1 : 0}${active.A ? 1 : 0}${active.B ? 1 : 0}`;
+  const depKey = `${country}|${active.S ? 1 : 0}${active.A ? 1 : 0}${active.B ? 1 : 0}|${showUap ? 1 : 0}${showCryptids ? 1 : 0}`;
+  // Cifra de un tier por colección encendida: «48 casos + 9 críptidos».
+  const tierLabel = (t: Tier, lang: "es" | "en") => {
+    const parts: string[] = [];
+    if (showUap) parts.push(`${tierCount(cases, t)} ${lang === "es" ? "casos" : "cases"}`);
+    if (showCryptids) parts.push(`${tierCount(atlasCryptids, t)} ${lang === "es" ? "críptidos" : "cryptids"}`);
+    return parts.length ? parts.join(" + ") : "—";
+  };
+  const collectionBtn = (on: boolean) =>
+    `inline-flex min-h-[44px] items-center gap-2 border px-3 py-1.5 font-mono transition focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-accent ${
+      on ? "border-accent/40 bg-panel text-text" : "border-border/40 bg-transparent text-muted/40"
+    }`;
   const toggle = (t: Tier) => setActive((a) => ({ ...a, [t]: !a[t] }));
 
   return (
     <div className="space-y-3">
+      <div className="space-y-2">
+        <span className="text-sm font-semibold text-muted">
+          <T es="Mostrar en el mapa" en="Show on the map" />
+        </span>
+        <div
+          className="flex flex-wrap gap-2 text-xs"
+          role="group"
+          aria-label={locale === "es" ? "Colecciones" : "Collections"}
+        >
+          <button
+            type="button"
+            onClick={() => setShowUap((v) => !v)}
+            aria-pressed={showUap}
+            className={collectionBtn(showUap)}
+          >
+            <span aria-hidden className="h-3 w-3 rounded-full bg-text" style={{ opacity: showUap ? 0.7 : 0.25 }} />
+            <span className={showUap ? "" : "line-through"}>
+              <T es={`Casos UAP · ${cases.length}`} en={`UAP cases · ${cases.length}`} />
+            </span>
+          </button>
+          {atlasCryptids.length > 0 && (
+            <button
+              type="button"
+              onClick={() => setShowCryptids((v) => !v)}
+              aria-pressed={showCryptids}
+              className={collectionBtn(showCryptids)}
+            >
+              <span aria-hidden className="h-3 w-3 rounded-full border-2 border-accent bg-bg" style={{ opacity: showCryptids ? 1 : 0.4 }} />
+              <span className={showCryptids ? "" : "line-through"}>
+                <T es={`Críptidos · ${atlasCryptids.length}`} en={`Cryptids · ${atlasCryptids.length}`} />
+              </span>
+            </button>
+          )}
+        </div>
+      </div>
+
       <div className="space-y-2">
         <span className="text-sm font-semibold text-muted">
           <T es="Filtrar por nivel de evidencia" en="Filter by evidence level" />
@@ -134,32 +178,12 @@ export default function WorldMap({
             />
             <span className={active[t.key] ? "" : "line-through"}>
               <T
-                es={`${t.es} · ${counts[t.key]} casos`}
-                en={`${t.en} · ${counts[t.key]} cases`}
+                es={`${t.es} · ${tierLabel(t.key, "es")}`}
+                en={`${t.en} · ${tierLabel(t.key, "en")}`}
               />
             </span>
           </button>
         ))}
-        {atlasCryptids.length > 0 && (
-          <button
-            type="button"
-            onClick={() => setShowCryptids((v) => !v)}
-            aria-pressed={showCryptids}
-            className={`inline-flex min-h-[44px] items-center gap-2 border px-3 py-1.5 font-mono transition focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-accent ${
-              showCryptids
-                ? "border-accent/40 bg-panel text-text"
-                : "border-border/40 bg-transparent text-muted"
-            }`}
-          >
-            <span aria-hidden className="h-3 w-3 rounded-full border-2 border-accent bg-bg" />
-            <span>
-              <T
-                es={`Mostrar críptidos${showCryptids ? ` · +${atlasCryptids.length} ${atlasCryptids.length === 1 ? "críptido" : "críptidos"}` : ""}`}
-                en={`Show cryptids${showCryptids ? ` · +${atlasCryptids.length} ${atlasCryptids.length === 1 ? "cryptid" : "cryptids"}` : ""}`}
-              />
-            </span>
-          </button>
-        )}
         </div>
       </div>
 
@@ -176,7 +200,7 @@ export default function WorldMap({
           onChange={(e) => setCountry(e.target.value)}
           className="block w-full max-w-xs border border-border bg-panel px-3 py-2 font-mono text-sm text-text focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-accent"
         >
-          <option value="all">{`${locale === "es" ? "Todos" : "All"} · ${cases.length}`}</option>
+          <option value="all">{`${locale === "es" ? "Todos" : "All"} · ${(showUap ? cases.length : 0) + (showCryptids ? atlasCryptids.length : 0)}`}</option>
           {countryOptions.map((o) => (
             <option key={o.code} value={o.code}>
               {`${locale === "es" ? o.name : countryEn(o.name)} · ${o.n}`}
@@ -300,7 +324,7 @@ export default function WorldMap({
           en="○ size = case probability · color = evidence level"
         />
         {showCryptids && (
-          <T es=" · ◎ anillo rojo = críptido (colección aparte)" en=" · ◎ red ring = cryptid (separate collection)" />
+          <T es=" · ◎ anillo rojo = críptido (colección aparte; el tier filtra también los críptidos)" en=" · ◎ red ring = cryptid (separate collection; the tier filters cryptids too)" />
         )}
       </p>
 

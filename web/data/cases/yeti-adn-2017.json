@@ -18,7 +18,7 @@
     "place_en": "Himalayas and Tibetan Plateau (samples from Nepal, India and the plateau)",
     "precision": "approx"
   },
-  "tier": "A",
+  "tier": "S",
   "probability": 5,
   "posteriorCripto": {
     "ordinaria": 0.95,
