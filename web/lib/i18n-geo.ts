@@ -60,6 +60,7 @@ const COUNTRY_EN: Record<string, string> = {
   México: "Mexico",
   Noruega: "Norway",
   "Nueva Zelanda": "New Zealand",
+  Yibuti: "Djibouti",
   Panamá: "Panama",
   "Papúa Nueva Guinea": "Papua New Guinea",
   "Países Bajos": "Netherlands",

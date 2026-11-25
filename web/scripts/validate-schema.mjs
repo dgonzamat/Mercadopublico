@@ -248,7 +248,7 @@ const CASE_KEYS = new Set([
   "seoTitle", "seoDescription", "seoTitle_en", "seoDescription_en", "featuredDoc", "documents",
   "patterns", "entityMorphology", "category", "whatHappened", "whatHappened_en", "whyMatters",
   "whyMatters_en", "evidence", "evidence_en", "sources", "primaryDocument", "posterior",
-  "posteriorCripto", "cryptidClass", "cryptid",
+  "posteriorCripto", "cryptidClass", "cryptid", "speciesDescribed",
 ]);
 // Categorías y criaturas de los críptidos: único hogar en data/cryptid-taxonomy.json.
 const CRYPTID_TAX = JSON.parse(fs.readFileSync(path.join(root, "data", "cryptid-taxonomy.json"), "utf8"));
@@ -409,8 +409,12 @@ for (const file of caseFiles) {
       err(w, `cryptidClass "${c.cryptidClass}" exige classBasis {es, en, source}: la clase la nombra una fuente`);
     if (!CRYPTID_IDS.has(c.cryptid))
       err(w, `cryptid obligatorio en un críptido: una criatura de data/cryptid-taxonomy.json (es "${c.cryptid ?? "ausente"}"); si es nueva, súmala allí con su categoría`);
-  } else if (c.posteriorCripto !== undefined || c.cryptidClass !== undefined || c.cryptid !== undefined) {
-    err(w, "posteriorCripto/cryptidClass/cryptid solo valen en category \"cryptid\"");
+    // speciesDescribed (25 nov 2026, decisión del dueño): la especie ya está
+    // descrita y no_catalogada no suma a «sin explicar». Solo true: ausente es falso.
+    if (c.speciesDescribed !== undefined && c.speciesDescribed !== true)
+      err(w, "speciesDescribed solo puede ser true (ausente significa que la especie no está descrita)");
+  } else if (c.posteriorCripto !== undefined || c.cryptidClass !== undefined || c.cryptid !== undefined || c.speciesDescribed !== undefined) {
+    err(w, "posteriorCripto/cryptidClass/cryptid/speciesDescribed solo valen en category \"cryptid\"");
   }
   if (isCryptid) {
     /* sin posterior UAP */

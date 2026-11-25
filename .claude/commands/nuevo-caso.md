@@ -1,6 +1,6 @@
 ---
-description: Crea un caso UAP nuevo cumpliendo el schema UAPCase, num secuencial, posterior MECE=1 y el estándar editorial (~550 palabras ES+EN), con investigación de fuentes primarias
-argument-hint: "[nombre del caso + año/país/pista de qué pasó; ej: 'Trindade Brasil 1958, foto naval del portaaviones']"
+description: Crea un caso UAP o un críptido nuevo cumpliendo el schema UAPCase, num secuencial, posterior MECE=1 (en un críptido, posteriorCripto=1) y el estándar editorial (~550 palabras ES+EN), con investigación de fuentes primarias
+argument-hint: "[nombre del caso + año/país/pista de qué pasó; ej: 'Trindade Brasil 1958, foto naval del portaaviones'; para un críptido, su fila de docs/inventario-criptidos.md, ej: 'celacanto 1938, Nature 143:455']"
 ---
 
 Estás creando un **caso nuevo** para el corpus UAP Codex. La fuente de verdad es un archivo `web/data/cases/<id>.json` (uno por caso); el build agregado lo recoge después. Un caso nuevo **nace cumpliendo el estándar** — no se admite un stub telegráfico. Sigue el schema de `lib/types.ts` y las reglas de `CLAUDE.md` (secciones *Schema UAPCase*, *Línea editorial* y *Modelo MECE*).
@@ -11,6 +11,8 @@ Estás creando un **caso nuevo** para el corpus UAP Codex. La fuente de verdad e
 
 ## 0. Investigación primero (no relleno)
 El estándar es prosa con **investigación caso por caso, fuentes primarias**. Antes de escribir: busca el caso (WebSearch), identifica ≥2-3 fuentes verificables (informe oficial, prensa de la época, investigación seria) y extrae los hechos. Si no puedes documentarlo, dilo — es mejor no crear el caso que rellenarlo.
+
+**Un críptido** (`category: "cryptid"`) sale de una fila de [`docs/inventario-criptidos.md`](../../docs/inventario-criptidos.md), cuya columna «Verificada» dice si la fuente se abrió: una fila «parcial» o «no» no se redacta hasta que este paso abra la fuente y lea la parte que decide el caso. Solo entra lo anclado a un documento oficial, policial, judicial, de museo o laboratorio, o a un artículo científico; la prensa es pista, no fuente. Al terminar, actualiza la fila (o pásala a «Descartados» con el motivo). Las reglas del modelo viven en `CLAUDE.md` › Críptidos; el §3b de este skill dice qué cambia en el flujo.
 
 **Redacción:** todo el texto de la ficha (ES y EN) sigue el skill `/redaccion` (`.claude/commands/redaccion.md`): léelo antes de escribir y repasa su lista final («Antes de entregar») antes de entregar.
 
@@ -40,25 +42,35 @@ Cuatro más, de lo que se repitió en las cuatro fichas del piloto (nov 2026; re
 `id, num, name, year_start, country, country_name, flag, location{lat,lng}, tier, probability, summary, summary_en, patterns, category`.
 - **flag**: emoji de bandera de país (dos indicadores regionales, ej. 🇧🇷).
 - **location**: `{lat, lng}` reales del ancla terrestre — lat ∈ [-90,90], lng ∈ [-180,180], **nunca (0,0)** (null island). Opcional `place`.
-- **tier**: `S` | `A` | `B`. **category**: `incident` | `contactee` | `crop_circle` (no hay `document`: un documento va embebido en `documents[]` del caso o actor que respalda).
-- **probability**: number (0-100), **derivado, no a mano**: `round(100 × (indet + nohumano_encubierto + nohumano_abierto))` del `posterior` (audit E43, ERROR si difiere).
+- **tier**: `S` | `A` | `B`. **category**: `incident` | `contactee` | `crop_circle` (y `cryptid`, solo para un críptido del §3b: un caso OVNI/UAP nunca la lleva) (no hay `document`: un documento va embebido en `documents[]` del caso o actor que respalda).
+- **probability**: number (0-100), **derivado, no a mano**: `round(100 × (indet + nohumano_encubierto + nohumano_abierto))` del `posterior` (audit E43, ERROR si difiere). En un críptido es `round(100 × (no_catalogada + extraterrestre + interdimensional + indet))` de `posteriorCripto` (E43c); si la especie ya está descrita (`speciesDescribed: true`), `no_catalogada` no suma.
 - **patterns**: array de ids que **deben existir** en `data/patterns.json` (verifícalos; array vacío `[]` es válido si ninguno aplica).
 
 ## 3. posterior (modelo MECE) — invariante de validate-schema.mjs (antigua M1)
 Distribución sobre 6 narrativas; la definición y el invariante (suma 1) viven en `CLAUDE.md` › Modelo de probabilidad:
 `mundano_natural, humana_clasificada, adversaria, nohumano_encubierto, nohumano_abierto, indet`.
-- **OBLIGATORIO** en toda ficha (`incident`, `contactee`, `crop_circle`).
+- **OBLIGATORIO** en toda ficha (`incident`, `contactee`, `crop_circle`). **Un críptido no lleva `posterior`**: ver §3b.
 - Es un juicio analítico estructurado, no una frecuencia: reparte según cómo la evidencia distribuye la explicación. Ver `lib/meceModel.ts`.
 - **Se asigna según `CLAUDE.md` › Modelo de probabilidad** (solo después de leer la evidencia primaria). Si no la pudiste leer, no clasifiques: dilo y deja el caso sin crear o con la limitación declarada. Al terminar, pon `evidenceReviewed: "AAAA-MM-DD"` (regla E42).
 - **Verificación independiente antes de publicar:** otro agente revisa el caso con la sección «New cases: fixed brief» de [`docs/brief-verificacion.md`](../../docs/brief-verificacion.md), sin reescribirla (el registro compara fichas, y un brief distinto en cada una mide el brief y no la ficha) (afirmaciones, eliminaciones y omisiones del mismo expediente). No se fusiona sin ese paso. **La revisión de la clasificación va en esa misma pasada** (categoría G del brief): no se lanza un agente aparte. Solo si el verificador propone cambiar `posterior`, `tier` o `mundanoType`, su propuesta es el primer paso del método de dos pasos de `CLAUDE.md` › Modelo de probabilidad y otro agente la verifica.
 - Si el reparto es una misidentificación, pon `misidSubtype` con el objeto concreto: el sitio ya no muestra la categoría «Misidentificación».
+
+## 3b. Críptidos (`category: "cryptid"`; 25 nov 2026, decisión del dueño)
+Misma ficha, mismo estándar de prosa y mismas reglas de evidencia y de tier; cambia el modelo de clase. Las reglas viven en `CLAUDE.md` › Críptidos; aquí, lo que cambia en el flujo:
+- **En lugar de `posterior`**: `posteriorCripto` con las seis explicaciones (`ordinaria`, `fraude`, `no_catalogada`, `extraterrestre`, `interdimensional`, `indet`; suma 1), `cryptidClass` (la dominante) y `cryptid` (el id de una criatura de `data/cryptid-taxonomy.json`, que fija su categoría; una criatura nueva se suma allí con una categoría **establecida** de la criptozoología, no inventada). Sobran, y el schema las rechaza: `posterior`, `mundanoType`, `misidSubtype`, `objectDetail`.
+- **`classBasis` `{es, en, source}`** es obligatorio si la clase es `ordinaria` o `fraude`, y cita la fuente que nombra esa clase (la clase no la pone el redactor).
+- **Como los demás**: `patterns: []` es válido, `epistemicStatus` y `evidenceReviewed` (fecha en que se leyó la fuente primaria) se rellenan, y el `num` sigue la secuencia común del §1.
+- **Tier**: reglas S/A/B de `CLAUDE.md`, con la precisión de la colección: un análisis de laboratorio de procedencia conocida (pelo, ADN, molde de huella) es registro instrumental aunque identifique un animal corriente. Un S exige haber leído la procedencia de las muestras; si no, A. **Ejemplar físico (decisión del dueño, 25 nov 2026):** S si tiene un análisis publicado (morfología o ADN) con operadores identificados que lo firman; A si solo hay descripción o testimonio. Un cambio de tier pasa por el método de dos pasos.
+- **Si el críptido resultó ser una especie real** (celacanto, okapi, saola, takahē, sengi): pon `speciesDescribed: true` (la cifra «sin explicar» deja de contar `no_catalogada`). Su grupo es «Taxones Lázaro» solo si se daba por extinto o perdido y reapareció; si nunca se había descrito (okapi, saola), «Especies descubiertas».- **Verificación independiente**: el mismo brief fijo, sin tocarlo (§3). Su categoría G se lee aquí con `posteriorCripto`, `cryptidClass` y `classBasis` en lugar de `mundanoType`; el orquestador lo dice en el encargo.
+- **Plantillas reales**: las seis fichas 601–606 (`yeti-adn-2017` es la más completa en `classBasis`).
+- **Qué se valida**: `validate-schema.mjs` (modelo, taxonomía, `classBasis`) y `audit-consistency.mjs` (E43c, E42, prosa, E63). Los críptidos quedan fuera de todo total UAP: `build-cases.mjs` los escribe en `data/cryptids.json`.
 
 ## 4. Rich content — estándar editorial (obligatorio para el estándar)
 `whatHappened(_en)` + `whyMatters(_en)` deben alcanzar la longitud mínima de `/redaccion` §3 en español E inglés (prosa; `evidence`/`sources` no cuentan; la mide E13). Separa párrafos con `\n\n`.
 - `whatHappened` / `whatHappened_en`: cronología + contexto documentado.
 - `whyMatters` / `whyMatters_en`: significancia analítica.
 - `evidence` / `evidence_en`: array de 3-8 ítems documentados.
-- `sources` / `sources_en`: array de `{name, url?, note?}`, **≥1 fuente** (obligatorio por schema). El `_en` suele reusar los mismos objetos.
+- `sources`: array de `{name, url?, note?, note_en?}`, **≥1 fuente** (obligatorio por schema). No existe `sources_en`: el schema lo rechaza como clave no reconocida; el inglés va en `note_en` (y `name_en` si hace falta) dentro de cada fuente. Una nota ES sin su `note_en` la marca E26.
 
 Escribe la versión ES y traduce a EN con fidelidad (no resumas la EN por debajo del umbral — el auditor E13 mide ambas).
 
@@ -97,4 +109,4 @@ Una lectura por tanda, al final, con dos lectores ciegos (modelo Opus), uno en e
 **El build lo exige** (`audit-consistency.mjs` E63): toda ficha nueva necesita al menos una fila en el registro (o una fila «sin hallazgos»), y desde el `num` 535 un visual embebido o una exención con su barrido en `docs/registros.md`.
 
 ## 6. Confirmar
-Muestra al usuario: `id`, `num`, `tier`, categoría, longitud de prosa ES/EN (chars), suma del posterior y nº de fuentes. No commitees ni pushees salvo que el usuario lo pida.
+Muestra al usuario: `id`, `num`, `tier`, categoría, longitud de prosa ES/EN (chars), suma del posterior (en un críptido: la de `posteriorCripto`, más `cryptid` y su grupo) y nº de fuentes. No commitees ni pushees salvo que el usuario lo pida.

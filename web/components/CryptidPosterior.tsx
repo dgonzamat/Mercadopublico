@@ -23,13 +23,37 @@ export function CryptidPosterior({ c, locale }: { c: UAPCase; locale: "es" | "en
   const p = c.posteriorCripto;
   if (!p) return null;
   const parts = cryptidPctParts(p);
-  const all = CRYPTID_CLASSES.map((k, i) => ({ ...k, pct: parts[i], zero: parts[i] === 0 }));
+  // Si la especie ya está descrita (el críptido resultó ser un animal real),
+  // «especie no catalogada» deja de ser una explicación sin resolver: pasa al
+  // grupo de la causa conocida, con su propio rótulo (25 nov 2026, decisión del dueño).
+  const described = c.speciesDescribed === true;
+  const all = CRYPTID_CLASSES.map((k, i) => {
+    const asDescribed = described && k.id === "no_catalogada";
+    return {
+      ...k,
+      ...(asDescribed
+        ? {
+            label: "Especie real, ya descrita",
+            labelEn: "Real species, now described",
+            gloss: "Un animal real que la ciencia no conocía y que ya está descrito.",
+            glossEn: "A real animal science did not know, now described.",
+            unexplained: false,
+          }
+        : {}),
+      pct: parts[i],
+      zero: parts[i] === 0,
+    };
+  });
   const sub = (items: typeof all) => items.reduce((a, r) => a + r.pct, 0);
   const byPct = (items: typeof all) => [...items].sort((a, b) => b.pct - a.pct);
   const known = all.filter((r) => !r.unexplained);
   const unknown = all.filter((r) => r.unexplained);
   const groups = [
-    { id: "known", es: "Causa conocida (ordinaria o fraude)", en: "Known cause (ordinary or hoax)", lead: { es: "causa conocida", en: "known cause" }, items: known, sub: sub(known) },
+    {
+      id: "known",
+      es: described ? "Causa conocida (ordinaria, fraude o especie ya descrita)" : "Causa conocida (ordinaria o fraude)",
+      en: described ? "Known cause (ordinary, hoax or species now described)" : "Known cause (ordinary or hoax)",
+      lead: { es: "causa conocida", en: "known cause" }, items: known, sub: sub(known) },
     { id: "unknown", es: "Sin explicar", en: "Unexplained", lead: { es: "sin explicar", en: "unexplained" }, items: unknown, sub: sub(unknown) },
   ].sort((a, b) => b.sub - a.sub);
   const lead = groups[0];
@@ -61,7 +85,7 @@ export function CryptidPosterior({ c, locale }: { c: UAPCase; locale: "es" | "en
 
   const b = c.classBasis;
   const src = b ? (locale === "es" ? b.source : b.source_en ?? b.source) : "";
-  const cls = CRYPTID_CLASSES.find((k) => k.id === c.cryptidClass);
+  const cls = all.find((k) => k.id === c.cryptidClass);
   const why = cls && !cls.unexplained
     ? { es: `Causa que proponen las fuentes: ${lc(cls.label)}`, en: `Cause the sources propose: ${lc(cls.labelEn)}` }
     : { es: "Por qué no se identifica una causa conocida", en: "Why no known cause is identified" };
