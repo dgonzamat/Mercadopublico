@@ -1,4 +1,5 @@
 import casesData from "@/data/cases.json";
+import cryptidsData from "@/data/cryptids.json";
 import patternsData from "@/data/patterns.json";
 import frameworksData from "@/data/frameworks.json";
 import researchersData from "@/data/researchers.json";
@@ -6,6 +7,10 @@ import entityMorphologyData from "@/data/entity-morphology.json";
 import type { UAPCase, Pattern, Framework, Researcher, EntityMorphology } from "./types";
 
 export const cases = casesData as UAPCase[];
+/** Críptidos: colección aparte (category "cryptid"), con su propio modelo
+ *  (`posteriorCripto`). build-cases.mjs los saca de cases.json, así que
+ *  `cases` nunca los incluye y ningún total UAP los cuenta. */
+export const cryptids = cryptidsData as unknown as UAPCase[];
 export const patterns = patternsData as Pattern[];
 export const frameworks = frameworksData as Framework[];
 export const researchers = researchersData as Researcher[];
@@ -16,6 +21,10 @@ export const TOTAL_CASES = cases.filter((c) => c.category !== "document").length
 
 export function getResearcher(id: string): Researcher | undefined {
   return researchers.find((r) => r.id === id);
+}
+
+export function getCryptid(id: string): UAPCase | undefined {
+  return cryptids.find((c) => c.id === id);
 }
 
 export function getCase(id: string): UAPCase | undefined {

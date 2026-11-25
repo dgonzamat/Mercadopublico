@@ -7,9 +7,12 @@ import { countryEn } from "@/lib/i18n-geo";
 export function CaseRow({
   caseData,
   locale,
+  section = "cases",
 }: {
   caseData: UAPCase;
   locale: "es" | "en";
+  /** Sección del detalle: los críptidos viven en /cryptids/. */
+  section?: "cases" | "cryptids";
 }) {
   const tierColor = TIER_META[caseData.tier].color;
   const year = caseData.year_end
@@ -17,7 +20,7 @@ export function CaseRow({
     : caseData.year_start.toString();
   return (
     <LocaleLink
-      href={`/cases/${caseData.id}`}
+      href={`/${section}/${caseData.id}`}
       className="cr group"
     >
       <span className="cr-num">

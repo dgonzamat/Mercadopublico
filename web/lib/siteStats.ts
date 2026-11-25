@@ -35,4 +35,6 @@ export const STATS = statsData as {
   startYear: number;
   endYear: number;
   years: number;
+  /** Críptidos: colección aparte, fuera de todos los totales UAP. */
+  cryptids: number;
 };

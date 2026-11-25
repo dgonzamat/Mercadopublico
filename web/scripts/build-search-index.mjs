@@ -47,7 +47,10 @@ const countryEn = (name) => COUNTRY_EN[name] ?? name;
 const cases = fs
   .readdirSync(casesDir)
   .filter((f) => f.endsWith(".json"))
-  .map((f) => JSON.parse(fs.readFileSync(path.join(casesDir, f), "utf-8")));
+  .map((f) => JSON.parse(fs.readFileSync(path.join(casesDir, f), "utf-8")))
+  // Los críptidos son una colección aparte (25 nov 2026): fuera del índice de
+  // casos, que /cases usa también como filtro. Su sección se busca por nombre.
+  .filter((c) => c.category !== "cryptid");
 
 const caseEntries = cases
   .map((c) => ({
@@ -180,6 +183,16 @@ const pageEntries = [
     summary: "Todos los casos del corpus, con filtros por tier, país y década.",
     summary_en: "Every case in the corpus, filterable by tier, country and decade.",
     keywords: "casos cases archivo archive incidentes incidents listado",
+  },
+  {
+    id: "cryptids",
+    name: "Críptidos",
+    name_en: "Cryptids",
+    subtitle: "Colección aparte",
+    subtitle_en: "Separate collection",
+    summary: "Expedientes oficiales sobre críptidos (Bigfoot y otros), con su propio modelo y fuera de los totales UAP.",
+    summary_en: "Official files on cryptids (Bigfoot and others), with their own model and outside the UAP totals.",
+    keywords: "criptidos críptidos cryptids bigfoot sasquatch yeti criptozoologia cryptozoology",
   },
   {
     id: "researchers",

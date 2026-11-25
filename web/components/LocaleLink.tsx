@@ -14,6 +14,7 @@ import type { ComponentProps } from "react";
 const MIRRORED = new Set([
   "",
   "cases",
+  "cryptids",
   "blog",
   "researchers",
   "about",

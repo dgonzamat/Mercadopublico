@@ -11,8 +11,17 @@ const __dirname = path.dirname(fileURLToPath(import.meta.url));
 const casesDir = path.join(__dirname, "..", "data", "cases");
 const outFile = path.join(__dirname, "..", "data", "cases.json");
 
-const cases = aggregateJsonFiles(casesDir, outFile);
-console.log(`build-cases: aggregated ${cases.length} cases → data/cases.json`);
+// Críptidos (25 nov 2026, decisión del dueño): colección aparte, con su propio
+// modelo y fuera de todo total UAP. Este es el único punto de corte: cases.json
+// (y de ahí cases-client, el atlas y site-stats) no los lleva; van a
+// data/cryptids.json, que lee lib/data.ts como `cryptids`.
+const all = aggregateJsonFiles(casesDir, outFile);
+const isCryptid = (c) => c.category === "cryptid";
+const cases = all.filter((c) => !isCryptid(c));
+const cryptids = all.filter(isCryptid);
+fs.writeFileSync(outFile, JSON.stringify(cases, null, 2) + "\n");
+fs.writeFileSync(path.join(__dirname, "..", "data", "cryptids.json"), JSON.stringify(cryptids, null, 2) + "\n");
+console.log(`build-cases: aggregated ${cases.length} cases → data/cases.json; ${cryptids.length} cryptids → data/cryptids.json`);
 
 // Client bundle: same corpus WITHOUT the heavy narrative prose. Client
 // components (map, explorer) never render whatHappened/whyMatters, but importing
@@ -141,6 +150,8 @@ const siteStats = {
   startYear: CORPUS_START_YEAR,
   endYear: corpusEndYear,
   years: corpusEndYear - CORPUS_START_YEAR,
+  // Críptidos: colección aparte; su cifra solo la usa el menú.
+  cryptids: cryptids.length,
 };
 const statsOutFile = path.join(dataDir, "site-stats.json");
 fs.writeFileSync(statsOutFile, JSON.stringify(siteStats, null, 2) + "\n");

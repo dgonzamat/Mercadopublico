@@ -2,7 +2,7 @@ import { execSync } from "child_process";
 import fs from "fs";
 import path from "path";
 import type { MetadataRoute } from "next";
-import { cases, researchers, entityMorphologies } from "@/lib/data";
+import { cases, cryptids, researchers, entityMorphologies } from "@/lib/data";
 import { posts } from "@/lib/posts";
 import { SITE_URL } from "@/lib/site";
 
@@ -63,6 +63,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
   const staticRoutes = [
     "/",
     "/cases/",
+    "/cryptids/",
     "/probabilidades/",
     "/cobertura/",
     "/atlas/",
@@ -94,6 +95,15 @@ export default function sitemap(): MetadataRoute.Sitemap {
     lastModified: dateFor(`data/cases/${c.id}.json`),
     changeFrequency: "monthly" as const,
     priority: 0.6,
+  }));
+
+  // Críptidos: colección aparte (25 nov 2026), con sus propias URL; no entran
+  // en caseRoutes ni en ningún conteo de casos.
+  const cryptidRoutes = cryptids.map((c) => ({
+    url: `${SITE_URL}/cryptids/${c.id}/`,
+    lastModified: dateFor(`data/cases/${c.id}.json`),
+    changeFrequency: "monthly" as const,
+    priority: 0.5,
   }));
 
   // Solo formas `present: true` tienen página — mismo criterio que
@@ -135,6 +145,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
   return withSpanishMirrors([
     ...staticRoutes,
     ...caseRoutes,
+    ...cryptidRoutes,
     ...entityRoutes,
     ...researcherRoutes,
     ...postRoutes,

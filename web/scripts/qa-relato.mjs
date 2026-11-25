@@ -71,7 +71,10 @@ const server = http.createServer((q, r) => {
 }).listen(0);
 const port = server.address().port;
 
-const ids = fs.readdirSync(path.join(root, "data", "cases")).filter((f) => f.endsWith(".json")).map((f) => f.slice(0, -5));
+// Los críptidos viven en /es/cryptids/<id>/ (colección aparte, 25 nov 2026).
+const ids = fs.readdirSync(path.join(root, "data", "cases")).filter((f) => f.endsWith(".json"))
+  .filter((f) => JSON.parse(fs.readFileSync(path.join(root, "data", "cases", f), "utf8")).category !== "cryptid")
+  .map((f) => f.slice(0, -5));
 const browser = await chromium.launch();
 const page = await (await browser.newContext({ javaScriptEnabled: false, viewport: { width: 390, height: H }, isMobile: true })).newPage();
 const rows = [];
