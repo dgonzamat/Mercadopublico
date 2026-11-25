@@ -20,6 +20,8 @@ import { useAuth } from "@/components/auth/AuthProvider";
 const NAV: Array<{ href: string; es: string; en: string }> = [
   { href: "/cases", es: "Casos", en: "Cases" },
   { href: "/atlas", es: "Atlas", en: "Atlas" },
+  // Colección aparte, fuera de los totales UAP (25 nov 2026, decisión del dueño).
+  { href: "/cryptids", es: "Críptidos", en: "Cryptids" },
   { href: "/researchers", es: "Actores", en: "Actors" },
   // NA-1 · la puerta de entrada para el visitante nuevo, visible en desktop
   { href: "/resumen", es: "Resumen", en: "Summary" },

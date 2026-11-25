@@ -2090,7 +2090,9 @@ const HYPE_REVIEWED = new Set(["lakenheath-bentwaters-1956", "morocco-gendarmeri
     record("WARN", path.join("data", "site-stats.json"), 0, "E51 cifras del sitio: data/site-stats.json no existe (corre build-cases.mjs antes); la regla está ciega.");
   } else {
     const stats = JSON.parse(fs.readFileSync(p, "utf8"));
-    const zero = Object.entries(stats).filter(([, v]) => typeof v === "number" && v <= 0).map(([k]) => k);
+    // `cryptids` se exime: la colección aparte (25 nov 2026) nace vacía y puede
+    // estarlo con todas sus derivaciones sanas.
+    const zero = Object.entries(stats).filter(([k, v]) => k !== "cryptids" && typeof v === "number" && v <= 0).map(([k]) => k);
     if (zero.length) {
       record("ERROR", path.join("scripts", "build-cases.mjs"), 0, `E51 cifra del sitio en 0: ${zero.join(", ")}. La derivación de site-stats perdió su fuente; revisa cómo la calcula build-cases.mjs.`);
     }

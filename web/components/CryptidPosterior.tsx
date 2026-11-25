@@ -1,4 +1,5 @@
 import { T } from "@/components/T";
+import { LocaleLink } from "@/components/LocaleLink";
 import { Eyebrow } from "@/lib/typography";
 import { CRYPTID_CLASSES, cryptidClassDef, cryptidPctParts, cryptidUnexplained } from "@/lib/cryptidClasses";
 import type { UAPCase } from "@/lib/types";
@@ -62,7 +63,10 @@ export function CryptidPosterior({ c, locale }: { c: UAPCase; locale: "es" | "en
             es="especie no catalogada, extraterrestre, interdimensional o indeterminado."
             en="uncatalogued species, extraterrestrial, interdimensional or indeterminate."
           />
-        </span>
+        </span>{" "}
+        <LocaleLink href="/about#criptidos" className="text-accent underline-offset-4 hover:underline">
+          <T locale={locale} es="Cómo se reparte →" en="How it is split →" />
+        </LocaleLink>
       </p>
       {b && (
         <details className="text-sm text-text">

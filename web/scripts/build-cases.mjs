@@ -104,6 +104,20 @@ const atlasOutFile = path.join(__dirname, "..", "data", "atlas-points.json");
 fs.writeFileSync(atlasOutFile, JSON.stringify(atlasPoints) + "\n");
 console.log(`build-cases: atlas points (${atlasPoints.length}) → data/atlas-points.json`);
 
+// Capa de críptidos del atlas (25 nov 2026, decisión del dueño): apagada por
+// defecto en /atlas y en su propio archivo, para que el conteo y los filtros
+// del mapa sigan siendo solo UAP. Misma proyección mínima y misma regla de
+// marcador (sin `precision: "none"`); el cliente nunca importa cryptids.json.
+const atlasCryptids = cryptids
+  .filter((c) => !offMap(c) && c.location && typeof c.location.lat === "number")
+  .map((c) => {
+    const p = { location: { lat: c.location.lat, lng: c.location.lng } };
+    for (const k of ATLAS_FIELDS) p[k] = c[k];
+    return p;
+  });
+fs.writeFileSync(path.join(__dirname, "..", "data", "atlas-cryptids.json"), JSON.stringify(atlasCryptids) + "\n");
+console.log(`build-cases: atlas cryptids (${atlasCryptids.length}) → data/atlas-cryptids.json`);
+
 // Site stats: a tiny JSON of the aggregate corpus counts that lib/siteStats.ts
 // exposes as STATS. It exists so siteStats — which MobileNav (a CLIENT component
 // in the global layout) imports for a single number — does NOT pull the full
