@@ -27,8 +27,8 @@ const PRIMARY_CTA = {
 const NAV_LINKS = [
   {
     href: "/cases",
-    es: { label: "Casos", sub: `${STATS.cases} institucionales · 1947–2026` },
-    en: { label: "Cases", sub: `${STATS.cases} institutional · 1947–2026` },
+    es: { label: "Casos UAP", sub: `${STATS.cases} institucionales · 1947–2026` },
+    en: { label: "UAP cases", sub: `${STATS.cases} institutional · 1947–2026` },
   },
   {
     href: "/atlas",
@@ -39,8 +39,8 @@ const NAV_LINKS = [
     // Colección aparte, fuera de los totales UAP (25 nov 2026, decisión del
     // dueño). La cifra sale de site-stats.json, no del corpus (E18d).
     href: "/cryptids",
-    es: { label: "Críptidos", sub: `${STATS.cryptids} ${STATS.cryptids === 1 ? "expediente oficial" : "expedientes oficiales"} · colección aparte` },
-    en: { label: "Cryptids", sub: `${STATS.cryptids} official ${STATS.cryptids === 1 ? "file" : "files"} · separate collection` },
+    es: { label: "Casos de críptidos", sub: `${STATS.cryptids} ${STATS.cryptids === 1 ? "expediente oficial" : "expedientes oficiales"} · colección aparte` },
+    en: { label: "Cryptid cases", sub: `${STATS.cryptids} official ${STATS.cryptids === 1 ? "file" : "files"} · separate collection` },
   },
   {
     href: "/researchers",
@@ -263,7 +263,7 @@ export function MobileNav({ dark = false }: { dark?: boolean } = {}) {
 
               {/* NAV PRINCIPAL */}
               <p className="mt-10 font-mono text-xs uppercase tracking-widest text-bg/60">
-                <T es={`Explorar los ${STATS.cases} casos`} en={`Explore the ${STATS.cases} cases`} locale={tLocale} />
+                <T es="Explora el archivo" en="Explore the archive" locale={tLocale} />
               </p>
               <ul className="mt-4 divide-y divide-bg/15 border-y border-bg/15">
                 {user && (

@@ -83,9 +83,9 @@ export function SiteFooter() {
               aria-label en el idioma de la URL (sin espejo: inglés). */}
           <div className="grid grid-cols-2 gap-8 sm:grid-cols-3">
             <FooterColumn label={{ es: "Explorar", en: "Explore" }} locale={locale}>
-              <FooterLink href="/cases" es="Casos" en="Cases" locale={locale} />
+              <FooterLink href="/cases" es="Casos UAP" en="UAP cases" locale={locale} />
               <FooterLink href="/atlas" es="Atlas" en="Atlas" locale={locale} />
-              <FooterLink href="/cryptids" es="Críptidos" en="Cryptids" locale={locale} />
+              <FooterLink href="/cryptids" es="Casos de críptidos" en="Cryptid cases" locale={locale} />
               <FooterLink href="/probabilidades" es="Probabilidades" en="Probabilities" locale={locale} />
               <FooterLink href="/cobertura" es="Cobertura" en="Coverage" locale={locale} />
               <FooterLink href="/releases" es="Releases PURSUE" en="PURSUE releases" locale={locale} />
