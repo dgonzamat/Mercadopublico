@@ -545,6 +545,7 @@ const VISUAL_CERRADO_POR_LICENCIA = {
   // Ficha nueva del 25 nov 2026 (detalle en docs/registros.md):
   // Ficha nueva del 25 nov 2026 (detalle en docs/registros.md):
   // Ficha nueva del 26 nov 2026 (detalle en docs/registros.md):
+  "ness-nessiteras-1975": "las fotos de 1972 y 1975 son de la Academy of Applied Science y las revistas que las publicaron (Nature, Technology Review, Science News, Skeptical Inquirer) tienen copyright; las dos copias de Commons están subidas como obra propia por un tercero y no se admiten",
   "arteaga-hombre-pajaro-2021": "la foto de La Prensa de Coahuila y el video de Vanguardia tienen derechos del medio; sin comunicado oficial con imagen; Commons solo trae fotos de usuarios del pueblo y archive.org nada del suceso",
   "plains-huellas-2003": "el único documento es un artículo del Clark Fork Valley Press con fotos de sus autores (copyright), que el Servicio Forestal publicó en su sala FOIA; va como enlace; Commons y archive.org secos, Openverse dio 429",
   "momias-lima-peritaje-2024": "las fotos del Ministerio de Cultura en gob.pe no declaran licencia y gob.pe no publica condiciones de reutilización; Andina, EFE, AP y la prensa tienen copyright; Commons solo trae momias antiguas de la cultura Nazca",

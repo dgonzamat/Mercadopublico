@@ -28,6 +28,8 @@
     { "id": "hombre-pajaro", "group": "humanoides_alados", "es": "Hombre pájaro", "en": "Birdman" },
     { "id": "serpiente-gloucester", "group": "serpientes_marinas", "es": "Serpiente marina de Gloucester", "en": "Gloucester sea serpent" },
     { "id": "calamar-gigante", "group": "descubiertos", "es": "Calamar gigante (kraken)", "en": "Giant squid (kraken)" },
-    { "id": "monstruo-san-agustin", "group": "globsters", "es": "Monstruo de San Agustín", "en": "St. Augustine monster" }
+    { "id": "monstruo-san-agustin", "group": "globsters", "es": "Monstruo de San Agustín", "en": "St. Augustine monster" },
+    { "id": "nessie", "group": "lacustres", "es": "Monstruo del lago Ness (Nessie)", "en": "Loch Ness Monster (Nessie)" },
+    { "id": "gran-felino-britanico", "group": "felinos", "es": "Grandes felinos británicos", "en": "British big cats" }
   ]
 }
