@@ -42,8 +42,9 @@ export const RESEARCHER_CASES: Record<string, string[]> = {
   poher: ["trans-en-provence-1981"],
   "taylor-t": ["aawsap-skinwalker-2008"],
   loeb: ["oumuamua-2017", "3i-atlas-2025"],
-  // Ata, presentado como extraterrestre en su documental «Sirius» (2013); críptido (26 nov 2026).
-  greer: ["atacama-ata-2018"],
+  // Ata, presentado como extraterrestre en su documental «Sirius» (2013), y el fechado
+  // de la esfera de Buga que difundió en 2025 (26 nov 2026).
+  greer: ["atacama-ata-2018", "buga-esfera-2025"],
   haines: ["lago-de-cote-1971", "chicago-ohare-2006"],
   maccabee: ["jal1628-1986", "kaikoura-1978"],
   hastings: ["malmstrom-1967", "minot-afb-1968", "loring-afb-1975", "big-sur-vandenberg-1964"],

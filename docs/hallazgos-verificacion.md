@@ -909,3 +909,4 @@ Regla: solo cambia lo que se repite en al menos 3 de las 10 fichas. Notas de los
 | tecolutla-monstruo-casitas-1969 | atribución | BAJA (cuatro): Naish explica los «cuernos» por la mandíbula, que Villa dice que no existía; «sobre todo» la musculatura del lomo; «el artículo de Villa» sin elegir año; título de la nota de NOAA | no |
 | tecolutla-monstruo-casitas-1969 | clasificación | Tier S confirmado (análisis morfológico publicado del ejemplar, firmado por Villa). Ordinaria 0,98. Visual exento por licencia | no |
 | tecolutla-monstruo-casitas-1969 | lectura | Lector ciego EN (Opus, 6/10): corregidos la frase del machete con el objeto al final, «más de 54 años» sin punto de partida, el nombre de la cooperativa y «neither point». Anotado y no tocado: el arranque que repite el resumen y los párrafos de erudición | no |
+| buga-esfera-2025 | pendiente | Fila provisional del redactor (E63): a la espera del verificador independiente | no |
