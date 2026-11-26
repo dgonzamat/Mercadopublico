@@ -7,7 +7,7 @@
     { "id": "globsters", "es": "Globsters", "en": "Globsters", "origin": "globsters (Sanderson, 1962)" },
     { "id": "felinos", "es": "Grandes felinos fuera de su zona", "en": "Alien big cats", "origin": "alien big cats" },
     { "id": "lazaro", "es": "Taxones Lázaro", "en": "Lazarus taxa", "origin": "Lazarus taxa" },
-    { "id": "descubiertos", "es": "Especies descubiertas", "en": "Discovered species", "origin": "former cryptids confirmed as species (okapi, giant squid, mountain gorilla)" },
+    { "id": "descubiertos", "es": "Especies descubiertas", "en": "Discovered species", "origin": "former cryptids confirmed as species, or known to science only from remains until seen alive (okapi, giant squid, mountain gorilla)" },
     { "id": "chupacabras", "es": "Chupacabras", "en": "Chupacabras", "origin": "chupacabra" },
     { "id": "extraterrestres", "es": "Seres presuntamente extraterrestres", "en": "Alleged extraterrestrial beings", "origin": "alleged extraterrestrial beings (Wikipedia, Category:Cryptids)" },
     { "id": "humanoides_alados", "es": "Humanoides alados", "en": "Winged humanoids", "origin": "winged humanoids (Fortean Times 156, 2002; Coleman, Mothman and Other Curious Encounters, 2002; Strickler, Mothman Dynasty: Chicago's Winged Humanoids, 2017)" }
@@ -25,6 +25,9 @@
     { "id": "sengi-somali", "group": "lazaro", "es": "Sengi somalí", "en": "Somali sengi" },
     { "id": "chupacabras", "group": "chupacabras", "es": "Chupacabras", "en": "Chupacabra" },
     { "id": "mothman", "group": "humanoides_alados", "es": "Mothman (hombre polilla)", "en": "Mothman" },
-    { "id": "hombre-pajaro", "group": "humanoides_alados", "es": "Hombre pájaro", "en": "Birdman" }
+    { "id": "hombre-pajaro", "group": "humanoides_alados", "es": "Hombre pájaro", "en": "Birdman" },
+    { "id": "serpiente-gloucester", "group": "serpientes_marinas", "es": "Serpiente marina de Gloucester", "en": "Gloucester sea serpent" },
+    { "id": "calamar-gigante", "group": "descubiertos", "es": "Calamar gigante (kraken)", "en": "Giant squid (kraken)" },
+    { "id": "monstruo-san-agustin", "group": "globsters", "es": "Monstruo de San Agustín", "en": "St. Augustine monster" }
   ]
 }
