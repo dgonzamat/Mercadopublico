@@ -203,9 +203,18 @@ export function SiteSearch({ variant = "default", onSelect, dark = false }: Prop
     return () => window.removeEventListener("keydown", onKey);
   }, [isMobile]); // eslint-disable-line react-hooks/exhaustive-deps
 
+  // UAP y críptidos se buscan por separado (26 nov 2026, decisión del dueño):
+  // dentro de /cryptids la lupa solo busca críptidos; en el resto del sitio,
+  // nunca los muestra.
+  const cryptidScope = /^(\/es)?\/cryptids(\/|$)/.test(pathname ?? "");
+  const limit = isMobile ? 8 : 6;
   const results =
     fuse && query.length >= 2
-      ? fuse.search(query, { limit: isMobile ? 8 : 6 }).map((r) => r.item)
+      ? fuse
+          .search(query, { limit: limit * 4 })
+          .map((r) => r.item)
+          .filter((e) => (e.type === "cryptid") === cryptidScope)
+          .slice(0, limit)
       : [];
 
   function selectAt(i: number) {
@@ -255,12 +264,18 @@ export function SiteSearch({ variant = "default", onSelect, dark = false }: Prop
     ? "border-t border-bg/15 bg-text px-4 py-2 font-mono text-[10px] uppercase tracking-widest text-bg/60"
     : "border-t border-border bg-panel px-4 py-2 font-mono text-[10px] uppercase tracking-widest text-muted";
 
-  const placeholder =
-    locale === "es"
+  const placeholder = cryptidScope
+    ? locale === "es"
+      ? "Buscar críptido, país, año…"
+      : "Search cryptid, country, year…"
+    : locale === "es"
       ? "Buscar caso, persona, país, año…"
       : "Search case, person, country, year…";
-  const srLabel =
-    locale === "es"
+  const srLabel = cryptidScope
+    ? locale === "es"
+      ? "Buscar críptido, país, año"
+      : "Search cryptid, country, year"
+    : locale === "es"
       ? "Buscar caso, persona, país, año"
       : "Search case, person, country, year";
 
