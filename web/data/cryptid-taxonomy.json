@@ -36,6 +36,8 @@
     { "id": "globster-terranova", "group": "globsters", "es": "Monstruo marino de Terranova", "en": "Newfoundland sea monster" },
     { "id": "pez-remo", "group": "serpientes_marinas", "es": "Pez remo («serpiente marina»)", "en": "Oarfish (\"sea serpent\")" },
     { "id": "ser-metepec", "group": "extraterrestres", "es": "Ser de Metepec", "en": "Metepec creature" },
-    { "id": "pterodactilo-juarez", "group": "pterosaurios_vivos", "es": "Pterodáctilo de Ciudad Juárez", "en": "Ciudad Juárez pterodactyl" }
+    { "id": "pterodactilo-juarez", "group": "pterosaurios_vivos", "es": "Pterodáctilo de Ciudad Juárez", "en": "Ciudad Juárez pterodactyl" },
+    { "id": "monstruo-casitas", "group": "globsters", "es": "Monstruo de Casitas", "en": "Casitas monster" },
+    { "id": "onza", "group": "felinos", "es": "Onza", "en": "Onza" }
   ]
 }
