@@ -30,6 +30,9 @@
     { "id": "calamar-gigante", "group": "descubiertos", "es": "Calamar gigante (kraken)", "en": "Giant squid (kraken)" },
     { "id": "monstruo-san-agustin", "group": "globsters", "es": "Monstruo de San Agustín", "en": "St. Augustine monster" },
     { "id": "nessie", "group": "lacustres", "es": "Monstruo del lago Ness (Nessie)", "en": "Loch Ness Monster (Nessie)" },
-    { "id": "gran-felino-britanico", "group": "felinos", "es": "Grandes felinos británicos", "en": "British big cats" }
+    { "id": "gran-felino-britanico", "group": "felinos", "es": "Grandes felinos británicos", "en": "British big cats" },
+    { "id": "serpiente-daedalus", "group": "serpientes_marinas", "es": "Serpiente marina del Daedalus", "en": "Daedalus sea serpent" },
+    { "id": "globster-terranova", "group": "globsters", "es": "Monstruo marino de Terranova", "en": "Newfoundland sea monster" },
+    { "id": "pez-remo", "group": "serpientes_marinas", "es": "Pez remo («serpiente marina»)", "en": "Oarfish (\"sea serpent\")" }
   ]
 }
