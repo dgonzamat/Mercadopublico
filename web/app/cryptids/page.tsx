@@ -61,7 +61,18 @@ export function CryptidsView({ locale }: { locale: "es" | "en" }) {
         // dentro, por criatura, en el orden de data/cryptid-taxonomy.json; solo
         // aparecen las categorías con fichas.
         <div className="space-y-12">
-          <CryptidSearch locale={locale} />
+          <CryptidSearch
+            locale={locale}
+            groups={CRYPTID_GROUPS.filter((g) =>
+              CREATURES.some((k) => k.group === g.id && list.some((c) => c.cryptid === k.id)),
+            ).map((g) => ({
+              id: g.id,
+              es: g.es,
+              en: g.en,
+              count: list.filter((c) => CREATURES.some((k) => k.id === c.cryptid && k.group === g.id)).length,
+            }))}
+            tierCounts={Object.fromEntries((["S", "A", "B"] as const).map((t) => [t, list.filter((c) => c.tier === t).length]))}
+          />
           {CRYPTID_GROUPS.map((g) => {
             const kinds = CREATURES.filter((k) => k.group === g.id)
               .map((k) => ({ k, items: list.filter((c) => c.cryptid === k.id) }))
@@ -86,6 +97,8 @@ export function CryptidsView({ locale }: { locale: "es" | "en" }) {
                         <div
                           key={c.id}
                           data-cryptid-row
+                          data-group={g.id}
+                          data-tier={c.tier}
                           data-search={[c.name, c.name_en, k.es, k.en, g.es, g.en, c.country_name, countryEn(c.country_name), c.year_start].join(" ")}
                         >
                           <CaseRow caseData={c} locale={locale} section="cryptids" />
