@@ -1,6 +1,6 @@
 "use client";
 
-import { useEffect, useRef, useState } from "react";
+import { Fragment, useEffect, useRef, useState } from "react";
 import Link from "next/link";
 import { usePathname, useRouter } from "next/navigation";
 import { chromeLocale, localizeHref } from "@/components/LocaleLink";
@@ -203,19 +203,17 @@ export function SiteSearch({ variant = "default", onSelect, dark = false }: Prop
     return () => window.removeEventListener("keydown", onKey);
   }, [isMobile]); // eslint-disable-line react-hooks/exhaustive-deps
 
-  // UAP y críptidos se buscan por separado (26 nov 2026, decisión del dueño):
-  // dentro de /cryptids la lupa solo busca críptidos; en el resto del sitio,
-  // nunca los muestra.
-  const cryptidScope = /^(\/es)?\/cryptids(\/|$)/.test(pathname ?? "");
+  // El buscador del menú es global, pero UAP y críptidos no se mezclan
+  // (26 nov 2026, decisiones del dueño): los resultados van en dos grupos con
+  // título propio, primero lo UAP (casos, personas, blog, páginas) y después
+  // los críptidos. `results` los concatena en ese orden para el teclado.
   const limit = isMobile ? 8 : 6;
-  const results =
-    fuse && query.length >= 2
-      ? fuse
-          .search(query, { limit: limit * 4 })
-          .map((r) => r.item)
-          .filter((e) => (e.type === "cryptid") === cryptidScope)
-          .slice(0, limit)
-      : [];
+  const hits =
+    fuse && query.length >= 2 ? fuse.search(query, { limit: limit * 4 }).map((r) => r.item) : [];
+  const uapResults = hits.filter((e) => e.type !== "cryptid").slice(0, limit);
+  const cryptidResults = hits.filter((e) => e.type === "cryptid").slice(0, 3);
+  const results = [...uapResults, ...cryptidResults];
+  const grouped = uapResults.length > 0 && cryptidResults.length > 0;
 
   function selectAt(i: number) {
     const r = results[i];
@@ -264,20 +262,14 @@ export function SiteSearch({ variant = "default", onSelect, dark = false }: Prop
     ? "border-t border-bg/15 bg-text px-4 py-2 font-mono text-[10px] uppercase tracking-widest text-bg/60"
     : "border-t border-border bg-panel px-4 py-2 font-mono text-[10px] uppercase tracking-widest text-muted";
 
-  const placeholder = cryptidScope
-    ? locale === "es"
-      ? "Buscar críptido, país, año…"
-      : "Search cryptid, country, year…"
-    : locale === "es"
-      ? "Buscar caso, persona, país, año…"
-      : "Search case, person, country, year…";
-  const srLabel = cryptidScope
-    ? locale === "es"
-      ? "Buscar críptido, país, año"
-      : "Search cryptid, country, year"
-    : locale === "es"
-      ? "Buscar caso, persona, país, año"
-      : "Search case, person, country, year";
+  const placeholder =
+    locale === "es"
+      ? "Buscar caso, críptido, persona, país, año…"
+      : "Search case, cryptid, person, country, year…";
+  const srLabel =
+    locale === "es"
+      ? "Buscar caso, críptido, persona, país, año"
+      : "Search case, cryptid, person, country, year";
 
   // Shared results list (used by both variants).
   const resultsList =
@@ -293,7 +285,13 @@ export function SiteSearch({ variant = "default", onSelect, dark = false }: Prop
       ) : (
         <ul role="listbox" className={isMobile ? "" : "max-h-[60vh] overflow-y-auto"}>
           {results.map((r, i) => (
-            <li key={`${r.type}-${r.id}`} role="option" aria-selected={i === selected}>
+            <Fragment key={`${r.type}-${r.id}`}>
+            {grouped && (i === 0 || i === uapResults.length) && (
+              <li role="presentation" className={`${emptyClass} !py-2`}>
+                {i === 0 ? <T es="UAP" en="UAP" /> : <T es="Críptidos" en="Cryptids" />}
+              </li>
+            )}
+            <li role="option" aria-selected={i === selected}>
               <Link
                 href={linkFor(r)}
                 onClick={() => {
@@ -326,6 +324,7 @@ export function SiteSearch({ variant = "default", onSelect, dark = false }: Prop
                 </p>
               </Link>
             </li>
+            </Fragment>
           ))}
         </ul>
       )
