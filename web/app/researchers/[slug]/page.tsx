@@ -280,7 +280,7 @@ export async function ResearcherDetailPage({
           </Eyebrow>
           <div>
             {relatedCases.map((c) => (
-              <CaseRow key={c.id} caseData={c} locale={locale} />
+              <CaseRow key={c.id} caseData={c} locale={locale} section={c.category === "cryptid" ? "cryptids" : "cases"} />
             ))}
           </div>
         </section>

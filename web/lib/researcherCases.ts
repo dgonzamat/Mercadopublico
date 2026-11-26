@@ -1,4 +1,4 @@
-import { cases, researchers } from "./data";
+import { cases, cryptids, researchers } from "./data";
 import type { UAPCase, Researcher } from "./types";
 
 /**
@@ -147,7 +147,9 @@ export const RESEARCHER_CASES: Record<string, string[]> = {
   blumenthal: ["nimitz-2004"],
   cooper: ["aawsap-skinwalker-2008", "nimitz-2004", "roosevelt-2014"],
   gevaerd: ["varginha-1996", "colares-1977", "noite-oficial-1986"],
-  maussan: ["mexico-eclipse-1991", "campeche-2004", "popocatepetl-1992", "maussan-congreso-mexico-2023"],
+  // Críptidos que difundió (26 nov 2026, decisión del dueño): las momias de Nazca
+  // presentadas en el Congreso de Perú y peritadas en Lima, Metepec y Ciudad Juárez.
+  maussan: ["mexico-eclipse-1991", "campeche-2004", "popocatepetl-1992", "maussan-congreso-mexico-2023", "momias-lima-peritaje-2024"],
 
   // E — psicología analítica
   jung: ["nuremberg-1561", "basel-1566"],
@@ -211,11 +213,13 @@ export const RESEARCHER_CASES: Record<string, string[]> = {
   adamski: ["adamski-desert-center-1952", "vilas-boas-1957"],
 };
 
-/** Casos asociados a un investigador (resueltos a objetos UAPCase, en orden). */
+/** Casos asociados a un investigador (resueltos a objetos UAPCase, en orden).
+ *  Incluye los críptidos (26 nov 2026): viven fuera de `cases` y su fila
+ *  enlaza a /cryptids según `category`. */
 export function casesForResearcher(researcherId: string): UAPCase[] {
   const ids = RESEARCHER_CASES[researcherId] ?? [];
   return ids
-    .map((id) => cases.find((c) => c.id === id))
+    .map((id) => cases.find((c) => c.id === id) ?? cryptids.find((c) => c.id === id))
     .filter((c): c is UAPCase => Boolean(c));
 }
 
