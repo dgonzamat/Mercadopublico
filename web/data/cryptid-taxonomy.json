@@ -9,7 +9,8 @@
     { "id": "lazaro", "es": "Taxones Lázaro", "en": "Lazarus taxa", "origin": "Lazarus taxa" },
     { "id": "descubiertos", "es": "Especies descubiertas", "en": "Discovered species", "origin": "former cryptids confirmed as species (okapi, giant squid, mountain gorilla)" },
     { "id": "chupacabras", "es": "Chupacabras", "en": "Chupacabras", "origin": "chupacabra" },
-    { "id": "extraterrestres", "es": "Seres presuntamente extraterrestres", "en": "Alleged extraterrestrial beings", "origin": "alleged extraterrestrial beings (Wikipedia, Category:Cryptids)" }
+    { "id": "extraterrestres", "es": "Seres presuntamente extraterrestres", "en": "Alleged extraterrestrial beings", "origin": "alleged extraterrestrial beings (Wikipedia, Category:Cryptids)" },
+    { "id": "humanoides_alados", "es": "Humanoides alados", "en": "Winged humanoids", "origin": "winged humanoids (Fortean Times 156, 2002; Coleman, Mothman and Other Curious Encounters, 2002; Strickler, Mothman Dynasty: Chicago's Winged Humanoids, 2017)" }
   ],
   "creatures": [
     { "id": "bigfoot", "group": "hominidos", "es": "Bigfoot", "en": "Bigfoot" },
@@ -22,6 +23,7 @@
     { "id": "saola", "group": "descubiertos", "es": "Saola", "en": "Saola" },
     { "id": "takahe", "group": "lazaro", "es": "Takahē", "en": "Takahē" },
     { "id": "sengi-somali", "group": "lazaro", "es": "Sengi somalí", "en": "Somali sengi" },
-    { "id": "chupacabras", "group": "chupacabras", "es": "Chupacabras", "en": "Chupacabra" }
+    { "id": "chupacabras", "group": "chupacabras", "es": "Chupacabras", "en": "Chupacabra" },
+    { "id": "mothman", "group": "humanoides_alados", "es": "Mothman (hombre polilla)", "en": "Mothman" }
   ]
 }

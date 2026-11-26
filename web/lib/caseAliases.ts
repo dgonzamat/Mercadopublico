@@ -16,6 +16,8 @@ export const CASE_ALIASES: Readonly<Record<string, string>> = {
   "jellyfish-iraq-2018": "al-taqaddum-balloons-2017",
   // Identificadores con el año equivocado: el caso es de 1972 y de 1985 (oct 2026).
   "fort-beaufort-1971": "fort-beaufort-1972",
+  // Pasó a la colección de críptidos: es una criatura, no un objeto aéreo (26 nov 2026, decisión del dueño).
+  "mothman-1966": "/cryptids/mothman-1966",
   "greece-haf-radar-1990": "greece-haf-radar-1985",
   // Fichas-documento integradas en lo que respaldan (decisión del dueño, oct
   // 2026: ningún documento con ficha propia). Los catálogos de clips de PURSUE

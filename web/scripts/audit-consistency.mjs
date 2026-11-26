@@ -1185,6 +1185,8 @@ if (fs.existsSync(localeLinkPath) && fs.existsSync(esDir)) {
     const ok = to.startsWith("/researchers/") ? researcherIds.has(to.slice(13))
       : to.startsWith("/releases/") ? releases.has(to.slice(10))
       : to === "/releases" ? releases.size > 0
+      // Una ficha que pasó a la colección de críptidos (el Mothman, 26 nov 2026).
+      : to.startsWith("/cryptids/") ? cases.some((c) => c.category === "cryptid" && c.id === to.slice(10))
       : !to.startsWith("/") && cases.some((c) => c.id === to);
     if (!ok) record("ERROR", path.join(root, "lib/caseAliases.ts"), 0, `E25 alias: «${from}» redirige a «${to}», que no existe (enlace a 404).`);
   }
