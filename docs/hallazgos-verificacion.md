@@ -887,3 +887,4 @@ Regla: solo cambia lo que se repite en al menos 3 de las 10 fichas. Notas de los
 | puerto-rico-chupacabras-1995 | atribución | BAJA (cinco): Skeptical Inquirer de mayo-junio de 2025; páginas 58-63 de Gámez; «traumatismos»; la transcripción de Princeton con sus anotaciones; seoDescription atribuida | no |
 | puerto-rico-chupacabras-1995 | clasificación | Tier B confirmado (regla de entrada: prensa de la época con nombres; ningún ejemplar analizado) | no |
 | puerto-rico-chupacabras-1995 | lectura | Lector ciego ES (Opus, 6/10): corregidos la frase de Rapoport con cuatro incisos (partida en dos) y «que lo discutía» (Martín rebatía la conclusión). Anotado y no tocado: la cadena de «según X, que cita a Y», propia de un caso sin documento oficial, y las fechas de Tolentino, El Vocero y el nombre, que la fuente no ordena mejor | no |
+| ciudad-juarez-pterodactilo-2026 | pendiente | Fila provisional del redactor (E63): a la espera del verificador independiente | no |

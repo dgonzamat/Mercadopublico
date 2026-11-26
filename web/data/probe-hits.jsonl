@@ -54,3 +54,4 @@
 {"date":"2026-11-26","probe":"audit-consistency","rule":"E56","where":"data/cases"}
 {"date":"2026-11-26","probe":"audit-consistency","rule":"E57","where":"data/cases"}
 {"date":"2026-11-26","probe":"validate-schema","rule":"JSON inválido: Expected ',' or '}' after property value in J","where":"cases/catalina-pez-remo-2013.json"}
+{"date":"2026-11-26","probe":"audit-consistency","rule":"E7","where":"data/cases/metepec-ser-2007.json"}
