@@ -10,7 +10,7 @@ Se buscó en la web (WebSearch, EE. UU.) y se abrió la fuente desde el contened
 |---|---|
 | Memorando del Servicio Forestal de EE. UU. sobre huellas de Bigfoot, Mill Creek, bosque nacional Umatilla, 18 jun 1982 (Paul Freeman) | en redacción |
 | Análisis del FBI de pelos de «Bigfoot» para Peter Byrne, 1976–77 (ciervo) | en redacción; ya existe `web/data/cases/fbi-pelos-bigfoot-1976.json` en el árbol |
-| Huellas junto al aserradero de Jim Rohweder, Plains (Montana), 3 ene 2003; artículo del *Clark Fork Valley Press* del 15 ene 2003, publicado por el Servicio Forestal el 15 oct 2026 · verificada: sí (imagen leída) | en redacción (26 nov 2026, decisión del dueño), tier B por la regla de entrada (prensa de la época) |
+| Huellas junto al aserradero de Jim Rohweder, Plains (Montana), 3 ene 2003; artículo del *Clark Fork Valley Press* del 15 ene 2003, publicado por el Servicio Forestal el 15 oct 2026 · verificada: sí (imagen leída) | ficha `plains-huellas-2003` (26 nov 2026, decisión del dueño), tier B por la regla de entrada (prensa de la época) |
 
 ## Tabla principal (35 candidatos, por prioridad)
 
