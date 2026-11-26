@@ -25,6 +25,9 @@
     { "id": "sengi-somali", "group": "lazaro", "es": "Sengi somalí", "en": "Somali sengi" },
     { "id": "chupacabras", "group": "chupacabras", "es": "Chupacabras", "en": "Chupacabra" },
     { "id": "mothman", "group": "humanoides_alados", "es": "Mothman (hombre polilla)", "en": "Mothman" },
-    { "id": "hombre-pajaro", "group": "humanoides_alados", "es": "Hombre pájaro", "en": "Birdman" }
+    { "id": "hombre-pajaro", "group": "humanoides_alados", "es": "Hombre pájaro", "en": "Birdman" },
+    { "id": "serpiente-gloucester", "group": "serpientes_marinas", "es": "Serpiente marina de Gloucester", "en": "Gloucester sea serpent" },
+    { "id": "calamar-gigante", "group": "descubiertos", "es": "Calamar gigante (kraken)", "en": "Giant squid (kraken)" },
+    { "id": "monstruo-san-agustin", "group": "globsters", "es": "Monstruo de San Agustín", "en": "St. Augustine monster" }
   ]
 }
