@@ -544,6 +544,8 @@ const VISUAL_CERRADO_POR_LICENCIA = {
   "bolido-centro-sur-chile-2026": "RedGeoChile, la seremi y Red de Emergencia no publicaron imagen propia; los videos de X y de la prensa son de usuarios, con copyright; la NOAA solo publica datos del GLM, no imagen; Commons seco",
   // Ficha nueva del 25 nov 2026 (detalle en docs/registros.md):
   // Ficha nueva del 25 nov 2026 (detalle en docs/registros.md):
+  // Ficha nueva del 26 nov 2026 (detalle en docs/registros.md):
+  "plains-huellas-2003": "el único documento es un artículo del Clark Fork Valley Press con fotos de sus autores (copyright), que el Servicio Forestal publicó en su sala FOIA; va como enlace; Commons y archive.org secos, Openverse dio 429",
   "momias-lima-peritaje-2024": "las fotos del Ministerio de Cultura en gob.pe no declaran licencia y gob.pe no publica condiciones de reutilización; Andina, EFE, AP y la prensa tienen copyright; Commons solo trae momias antiguas de la cultura Nazca",
   // Ficha nueva del 18 nov 2026 (detalle en docs/registros.md):
   "las-vegas-patio-2023": "los videos de la LVMPD están en YouTube, sin licencia y fuera de los reproductores del visor; los datos de la AMS prohíben redistribuir; Commons y archive.org secos",
