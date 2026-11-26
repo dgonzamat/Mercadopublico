@@ -65,7 +65,13 @@ export function CryptidsView({ locale }: { locale: "es" | "en" }) {
             locale={locale}
             groups={CRYPTID_GROUPS.filter((g) =>
               CREATURES.some((k) => k.group === g.id && list.some((c) => c.cryptid === k.id)),
-            ).map((g) => ({ id: g.id, es: g.es, en: g.en }))}
+            ).map((g) => ({
+              id: g.id,
+              es: g.es,
+              en: g.en,
+              count: list.filter((c) => CREATURES.some((k) => k.id === c.cryptid && k.group === g.id)).length,
+            }))}
+            tierCounts={Object.fromEntries((["S", "A", "B"] as const).map((t) => [t, list.filter((c) => c.tier === t).length]))}
           />
           {CRYPTID_GROUPS.map((g) => {
             const kinds = CREATURES.filter((k) => k.group === g.id)
