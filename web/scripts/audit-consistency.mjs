@@ -545,6 +545,7 @@ const VISUAL_CERRADO_POR_LICENCIA = {
   // Ficha nueva del 25 nov 2026 (detalle en docs/registros.md):
   // Ficha nueva del 25 nov 2026 (detalle en docs/registros.md):
   // Ficha nueva del 26 nov 2026 (detalle en docs/registros.md):
+  "sinaloa-onza-1986": "las fotos del ejemplar (ISC Newsletter 1986, Dratch et al. 1996) son © International Society of Cryptozoology y los ítems de archive.org no traen licencia; Commons solo da pumas genéricos y Openverse dio error",
   "ciudad-juarez-pterodactilo-2026": "los videos son de Maussan Televisión, Canal 3.3 y usuarios de redes, sin licencia; Commons dio 429, Openverse limitado y archive.org sin resultados del caso",
   "metepec-ser-2007": "las imágenes del ser son de Maussan y del documental de Channel 4 (Wild Dream Films), con copyright; Commons y Openverse sin resultados del caso, archive.org solo material ajeno o sin licencia",
   "ness-nessiteras-1975": "las fotos de 1972 y 1975 son de la Academy of Applied Science y las revistas que las publicaron (Nature, Technology Review, Science News, Skeptical Inquirer) tienen copyright; las dos copias de Commons están subidas como obra propia por un tercero y no se admiten",
