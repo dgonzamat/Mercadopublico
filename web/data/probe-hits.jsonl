@@ -49,3 +49,4 @@
 {"date":"2026-11-25","probe":"audit-consistency","rule":"E60","where":"data/cases"}
 {"date":"2026-11-26","probe":"audit-consistency","rule":"E63","where":"data/cases"}
 {"date":"2026-11-26","probe":"audit-consistency","rule":"E52","where":"data/cases"}
+{"date":"2026-11-26","probe":"validate-schema","rule":"cryptid obligatorio en un críptido: una criatura de data/cry","where":"cases/arteaga-hombre-pajaro-2021.json"}
