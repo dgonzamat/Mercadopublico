@@ -160,6 +160,7 @@ const COUNTRY_EN: Record<string, string> = {
   Groenlandia: "Greenland",
   Islandia: "Iceland",
   Nicaragua: "Nicaragua",
+  Namibia: "Namibia",
   "Taiwán": "Taiwan",
 };
 
