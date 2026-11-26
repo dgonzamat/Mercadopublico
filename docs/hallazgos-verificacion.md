@@ -810,3 +810,7 @@ Regla: solo cambia lo que se repite en al menos 3 de las 10 fichas. Notas de los
 | arteaga-hombre-pajaro-2021 | cifra/hora | BAJA: «lo contaron dos medios» y luego nombraba tres | no |
 | arteaga-hombre-pajaro-2021 | clasificación | Tier B confirmado (prensa de la época con fecha, lugar y un funcionario con nombre); la clase ordinaria (alucinación) la nombra el director en Vanguardia, como apreciación y no dictamen. Primer suceso latinoamericano de «Humanoides alados» | no |
 | arteaga-hombre-pajaro-2021 | lectura | Lector ciego ES (Opus, 6/10): corregidos «vecino de Saltillo por el este (Coahuila)» (ambiguo), «sus generales» sin glosar, la frase sobre la presencia de la Fiscalía y «un funcionario con nombre», que sonaba a lista de control. Anotado y no tocado: el arranque que repite el resumen y la segunda mitad, de tono de verificación | no |
+| san-agustin-globster-1896 | pendiente | Fila provisional del redactor (E63): a la espera del verificador independiente | no |
+| gloucester-serpiente-marina-1817 | pendiente | Fila provisional del redactor (E63): a la espera del verificador independiente | no |
+| alecton-calamar-gigante-1861 | pendiente | Fila provisional del redactor (E63): a la espera del verificador independiente | no |
+| sykes-pelos-anomalos-2014 | pendiente | Fila provisional del redactor (E63): a la espera del verificador independiente | no |
