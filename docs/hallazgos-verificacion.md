@@ -874,3 +874,4 @@ Regla: solo cambia lo que se repite en al menos 3 de las 10 fichas. Notas de los
 | daedalus-serpiente-marina-1848 | atribución | BAJA (cinco): firmas de los grabados (Smyth grabador, Weedon dibujante); el dibujo de la cabeza se hizo en octubre, dos meses después; la distancia entre las dos posiciones (~39 km); «se vio» y no «Drummond lo vio» cinco minutos; «casi todo lo publicado» sin base | no |
 | daedalus-serpiente-marina-1848 | clasificación | Tier B confirmado (regla 8 y plazo/regla 10; el diario de Drummond es privado y del mismo grupo). Reparto con frase de fuente en cada parte; la foca de Owen, discutida y no refutada. País NA por la costa más cercana (~530 km) | no |
 | catalina-pez-remo-2013 | pendiente | Fila provisional del redactor (E63): a la espera del verificador independiente | no |
+| puerto-rico-chupacabras-1995 | pendiente | Fila provisional del redactor (E63): a la espera del verificador independiente | no |
