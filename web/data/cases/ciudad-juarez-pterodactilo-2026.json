@@ -68,6 +68,18 @@
   ],
   "documents": [
     {
+      "role": "prueba",
+      "type": "video",
+      "src": "https://platform.twitter.com/embed/Tweet.html?id=2120549096859570543&theme=light",
+      "title": "Video que difundió Jaime Maussan en X (11 nov 2026, 32 s)",
+      "title_en": "Video Jaime Maussan shared on X (Nov 11, 2026, 32 s)",
+      "description": "Primera publicación del caso en X que se conoce: un fragmento de 32 segundos de Maussan Televisión, de noche, con una figura alada ante una ladera con casas iluminadas, y el texto «¿Acaso criatura recientemente grabada en el Valle de Juárez, es evidencia de que ahí se encuentra un portal dimensional?». Es el video que analizó EFE Verifica, que descartó que muestre un pterodáctilo. Se reproduce desde X; el sitio no aloja una copia.",
+      "description_en": "The earliest known post of the case on X: a 32-second excerpt from Maussan Televisión, at night, showing a winged figure against a hillside with lit houses, with the text \"¿Acaso criatura recientemente grabada en el Valle de Juárez, es evidencia de que ahí se encuentra un portal dimensional?\" (Is the creature recently filmed in the Juárez Valley evidence of a dimensional portal there?). It is the video EFE Verifica analyzed and ruled out as a pterodactyl. It plays from X; the site hosts no copy.",
+      "fallbackUrl": "https://x.com/jaimemaussan1/status/2120549096859570543",
+      "source": "X",
+      "license": "© Jaime Maussan / Maussan Televisión"
+    },
+    {
       "role": "documento",
       "type": "link",
       "src": "https://verifica.efe.com/no-es-dinosaurio-sobrevolando-cielo-mexico-es-contenido-entretenimiento/",
