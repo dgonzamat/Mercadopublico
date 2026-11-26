@@ -899,3 +899,4 @@ Regla: solo cambia lo que se repite en al menos 3 de las 10 fichas. Notas de los
 | metepec-ser-2007 | atribución | BAJA (cinco): Maussan «mostró fotos» en Laughlin; «contactó», no «llamó»; Naish «creía» que se emitió en Science Channel; «no es más que un mono tití» es del periodista, no cita de Núñez; ausencias en forma impersonal | no |
 | metepec-ser-2007 | clasificación | Tier B por decisión del dueño (26 nov 2026): no hay prensa de 2007; lo primero legible es de 2011, y la ficha lo dice. Fraude 0,95 (Sutcliffe: «confessed hoax», «turned out to be a marmoset»). Visual exento por licencia | no |
 | sinaloa-onza-1986 | pendiente | Fila provisional del redactor (E63): a la espera del verificador independiente | no |
+| tecolutla-monstruo-casitas-1969 | pendiente | Fila provisional del redactor (E63): a la espera del verificador independiente | no |
