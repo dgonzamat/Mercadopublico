@@ -22,18 +22,18 @@
   "tier": "A",
   "probability": 3,
   "posteriorCripto": {
-    "ordinaria": 0.6,
-    "fraude": 0.37,
+    "ordinaria": 0.48,
+    "fraude": 0.49,
     "no_catalogada": 0,
     "extraterrestre": 0,
     "interdimensional": 0,
     "indet": 0.03
   },
-  "cryptidClass": "ordinaria",
+  "cryptidClass": "fraude",
   "cryptid": "gran-felino-britanico",
   "classBasis": {
-    "es": "El animal era un puma (Puma concolor), especie de América. Según el Glasgow Herald del 31 de octubre de 1980, Eddie Orbell, director del Highland Wildlife Park, dijo que estaba acostumbrado al cautiverio, que solo podía llevar horas en libertad y que estaba bien alimentado y muy fofo. El Museo de Inverness añade que no comía conejos sin despellejar y que la autopsia de 1985 le calculó unos 20 años, lo que apoyaba que había sido una mascota. Las fuentes dejan abiertas dos vías: que escapara o lo abandonaran (causa ordinaria) o que alguien lo pusiera en la trampa como engaño, lo que Orbell llamó «una broma muy sucia» y lo que la policía dijo investigar.",
-    "en": "The animal was a puma (Puma concolor), an American species. According to the Glasgow Herald of October 31, 1980, Eddie Orbell, director of the Highland Wildlife Park, said it was used to captivity, could have been at liberty only for hours, and was well fed and very flabby. Inverness Museum adds that she would not eat unskinned rabbits and that the 1985 autopsy put her age at about 20, which supported the view that she had been a pet. The sources leave two routes open: that she escaped or was abandoned (an ordinary cause), or that someone put her in the trap as a hoax, what Orbell called \"a very nasty trick\" and what the police said they would look into.",
+    "es": "El animal era un puma (Puma concolor), especie de América. Según el Glasgow Herald del 31 de octubre de 1980, Eddie Orbell, director del Highland Wildlife Park, dijo que estaba acostumbrado al cautiverio, que solo podía llevar horas en libertad y que estaba bien alimentado y muy fofo. El Museo de Inverness añade que no comía conejos sin despellejar y que la autopsia de 1985 le calculó unos 20 años, lo que apoyaba que había sido una mascota. Las fuentes dejan abiertas dos vías sin poner una por delante: que alguien lo pusiera en la trampa como engaño, lo que Orbell llamó «una broma muy sucia» y lo que la policía dijo investigar, o que escapara o lo abandonaran.",
+    "en": "The animal was a puma (Puma concolor), an American species. According to the Glasgow Herald of October 31, 1980, Eddie Orbell, director of the Highland Wildlife Park, said it was used to captivity, could have been at liberty only for hours, and was well fed and very flabby. Inverness Museum adds that she would not eat unskinned rabbits and that the 1985 autopsy put her age at about 20, which supported the view that she had been a pet. The sources leave two routes open without ranking them: that someone put her in the trap as a hoax, what Orbell called \"a very nasty trick\" and what the police said they would look into, or that she escaped or was abandoned.",
     "source": "Glasgow Herald, «Puma mystery has a tame ending», 31 de octubre de 1980, pág. 1; Museo y Galería de Arte de Inverness, «Felicity the Puma»",
     "source_en": "Glasgow Herald, \"Puma mystery has a tame ending,\" October 31, 1980, p. 1; Inverness Museum and Art Gallery, \"Felicity the Puma\"",
     "url": "https://news.google.com/newspapers?nid=GGgVawPscysC&dat=19801031&printsec=frontpage&hl=en"
