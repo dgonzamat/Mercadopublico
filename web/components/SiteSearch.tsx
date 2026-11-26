@@ -21,14 +21,14 @@ import { T } from "@/components/T";
  *   tiene que volver a `right-0`.
  * - Mobile: an always-visible input inside the nav drawer.
  * - Lazy-loads /search-index.json on first open (no impact on First Load JS).
- * - Fuse.js fuzzy match; indexes cases, researchers, posts, patterns,
+ * - Fuse.js fuzzy match; indexes cases, cryptids, researchers, posts, patterns,
  *   frameworks and static pages; each entry's `type` decides route + badge.
  * - Keyboard: `/` or Cmd/Ctrl+K to open, ↑↓ to navigate, Enter to open,
  *   Esc to close. (Mobile variant skips the hotkey listener.)
  */
 
 interface IndexEntry {
-  type: "case" | "researcher" | "post" | "pattern" | "framework" | "entity" | "page";
+  type: "case" | "cryptid" | "researcher" | "post" | "pattern" | "framework" | "entity" | "page";
   id: string;
   num: number;
   name: string;
@@ -52,6 +52,8 @@ interface Props {
 
 function hrefFor(e: IndexEntry): string {
   switch (e.type) {
+    case "cryptid":
+      return `/cryptids/${e.id}`;
     case "researcher":
       return `/researchers/${e.id}`;
     case "post":
@@ -69,6 +71,8 @@ function hrefFor(e: IndexEntry): string {
 
 function badgeLabelFor(type: IndexEntry["type"]): { es: string; en: string } {
   switch (type) {
+    case "cryptid":
+      return { es: "CRÍPTIDO", en: "CRYPTID" };
     case "researcher":
       return { es: "PERSONA", en: "PERSON" };
     case "post":

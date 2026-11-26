@@ -136,7 +136,10 @@ export function CasesFilter({
     try {
       const [{ default: Fuse }, res] = await Promise.all([import("fuse.js"), fetch("/search-index.json")]);
       if (!res.ok) return;
-      const data = ((await res.json()) as IndexCase[]).filter((e) => e.type === "case");
+      // Los críptidos también se sugieren (llevan a /cryptids), para que buscar
+      // «chupacabras» aquí no quede en blanco (26 nov 2026); la tabla sigue
+      // siendo solo de casos UAP.
+      const data = ((await res.json()) as IndexCase[]).filter((e) => e.type === "case" || e.type === "cryptid");
       setFuse(
         new Fuse(data, {
           keys: [
@@ -163,10 +166,14 @@ export function CasesFilter({
   const fuzzySuggest =
     fuse && query.trim().length >= 2
       ? fuse.search(query.trim(), { limit: 6 }).map(({ item }) => ({
-          href: `${locale === "es" ? "/es" : ""}/cases/${item.id}`,
+          href: `${locale === "es" ? "/es" : ""}/${item.type === "cryptid" ? "cryptids" : "cases"}/${item.id}`,
           title: locale === "es" ? item.name : item.name_en ?? item.name,
           flag: item.flag,
-          meta: [locale === "es" ? item.subtitle : item.subtitle_en ?? item.subtitle, item.year].filter(Boolean).join(" · "),
+          meta: [
+            item.type === "cryptid" ? (locale === "es" ? "Críptido" : "Cryptid") : "",
+            locale === "es" ? item.subtitle : item.subtitle_en ?? item.subtitle,
+            item.year,
+          ].filter(Boolean).join(" · "),
         }))
       : null;
   const shown: Array<{ href: string; title: string; flag: string; meta?: string }> = fuzzySuggest ?? suggest;
