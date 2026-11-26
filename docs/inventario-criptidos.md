@@ -10,6 +10,7 @@ Se buscó en la web (WebSearch, EE. UU.) y se abrió la fuente desde el contened
 |---|---|
 | Memorando del Servicio Forestal de EE. UU. sobre huellas de Bigfoot, Mill Creek, bosque nacional Umatilla, 18 jun 1982 (Paul Freeman) | en redacción |
 | Análisis del FBI de pelos de «Bigfoot» para Peter Byrne, 1976–77 (ciervo) | en redacción; ya existe `web/data/cases/fbi-pelos-bigfoot-1976.json` en el árbol |
+| Huellas junto al aserradero de Jim Rohweder, Plains (Montana), 3 ene 2003; artículo del *Clark Fork Valley Press* del 15 ene 2003, publicado por el Servicio Forestal el 15 oct 2026 · verificada: sí (imagen leída) | en redacción (26 nov 2026, decisión del dueño), tier B por la regla de entrada (prensa de la época) |
 
 ## Tabla principal (35 candidatos, por prioridad)
 
@@ -154,7 +155,7 @@ Siguiendo la regla de que ningún documento tiene ficha propia, estos documentos
 
 | Candidato | Motivo |
 |---|---|
-| Petty Creek, bosque nacional Lolo (Montana, 1980) | No se halló ningún documento del Servicio Forestal ni cobertura que lo ubique; posible confusión con Mill Creek 1982. |
+| Petty Creek, bosque nacional Lolo (Montana, 1940 o 1941; relato de 1980) | El documento existe: «What do you know about Petty Creek? Leo T. Kinney's version», historia local mecanografiada de 1980 que el Servicio Forestal publicó el 15 oct 2026 (`Kinney_whatdoyouknow_MT.pdf`, pág. 3: huellas de un ser bípedo que se llevó un alce, olor y gruñidos, en 1940 o 1941; el último dígito no se lee). Fuera por decisión del dueño (26 nov 2026): recuerdo escrito unos 40 años después, no prensa de la época ni documento oficial. |
 | Chupacabras de Puerto Rico (Canóvanas, 1995) | **Ya no es descarte** con la regla de entrada del 25 nov 2026: prensa de la época (El Tiempo, EFE) basta para tier B. Pasa a candidato #69. |
 | Chupacabras de Chile (Calama, 2000) | Sin informe del SAG; solo sitios de ufología. |
 | Chupacabras de Elmendorf (Texas, 2004, UC Davis) | No se halló el análisis ni su comunicado. |
@@ -170,7 +171,7 @@ Siguiendo la regla de que ningún documento tiene ficha propia, estos documentos
 | Estudio de ADN de Ketchum (2013) | Publicado en una revista creada para ese artículo; no es revisión por pares. |
 | Hombre de hielo de Minnesota (1968–69) | La declaración de Napier por la Smithsonian solo consta en fuentes secundarias; queda pendiente de buscar en los archivos de la Smithsonian. |
 | Molde de Skookum (2000) | Solo la BFRO y opiniones de investigadores; sin informe institucional. |
-| Publicaciones oficiales sobre Bigfoot de 2025–2026 | No se halló ninguna; las noticias de noviembre de 2026 (Colorado, Idaho) son relatos sin documento. |
+| Publicaciones oficiales sobre Bigfoot de 2025–2026 | **Corregido (26 nov 2026):** sí hay una: el 15 oct 2026 el Servicio Forestal publicó en su sala de lectura FOIA «Bigfoot/Sasquatch Records», con tres PDF (Umatilla 1982, ya ficha; el artículo del *Clark Fork Valley Press* de 2003, ficha `plains-huellas-2003`; y la historia de Petty Creek de Leo T. Kinney, descartada). Las noticias de noviembre de 2026 de Colorado e Idaho siguen siendo relatos sin documento, y lo de la arqueóloga Kathy Strain (charla y entrevistas, sin documento ni prensa de la época; un perfil del *Modesto Bee* de 2008, reproducido en un blog y sin abrir el original, decía que nunca había visto uno) no cumple la regla de entrada. |
 | Los dos cuerpos de la audiencia en la Cámara de Diputados de México (12 sep 2023) como ficha de críptidos | Duplicaría el caso UAP `maussan-congreso-mexico-2023` (num 249): se enlaza, no se crea otra ficha (ver «Ampliación»). |
 | «Criatura de Metepec» (Estado de México, 2007; Maussan) | No se halló ningún análisis de laboratorio ni documento oficial; la confesión del taxidermista y la especie (tití o mono ardilla) solo constan en wikis y prensa, que se contradicen. |
 | «Gigante de Kandahar» (Afganistán, supuestamente 2002) | No hay fuente primaria. El relato viene de un contratista anónimo («Mr. K») entrevistado por L. A. Marzulli. La única respuesta oficial conocida es la que el Departamento de Defensa dio a Snopes en 2016 («no tenemos registro ni información»), y llega de segunda mano. No se halló respuesta FOIA de USASOC ni de SOCOM. |
