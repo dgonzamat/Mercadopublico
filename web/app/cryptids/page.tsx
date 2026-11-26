@@ -5,6 +5,8 @@ import { T } from "@/components/T";
 import { Eyebrow, H1, Lede } from "@/lib/typography";
 import { pageMeta } from "@/lib/seo";
 import { CRYPTID_GROUPS, CREATURES } from "@/lib/cryptidTaxonomy";
+import { CryptidSearch } from "@/components/CryptidSearch";
+import { countryEn } from "@/lib/i18n-geo";
 
 /**
  * Archivo de críptidos (/cryptids/): colección aparte dentro del sitio (25 nov
@@ -59,13 +61,14 @@ export function CryptidsView({ locale }: { locale: "es" | "en" }) {
         // dentro, por criatura, en el orden de data/cryptid-taxonomy.json; solo
         // aparecen las categorías con fichas.
         <div className="space-y-12">
+          <CryptidSearch locale={locale} />
           {CRYPTID_GROUPS.map((g) => {
             const kinds = CREATURES.filter((k) => k.group === g.id)
               .map((k) => ({ k, items: list.filter((c) => c.cryptid === k.id) }))
               .filter((x) => x.items.length > 0);
             if (!kinds.length) return null;
             return (
-              <section key={g.id} id={g.id} className="scroll-mt-24 space-y-4">
+              <section key={g.id} id={g.id} data-cryptid-group className="scroll-mt-24 space-y-4">
                 <h2 className="flex items-baseline justify-between border-b-2 border-text pb-2 font-display text-2xl text-text">
                   <T locale={locale} es={g.es} en={g.en} />
                   <span className="text-sm font-normal tabular-nums text-muted">
@@ -73,13 +76,20 @@ export function CryptidsView({ locale }: { locale: "es" | "en" }) {
                   </span>
                 </h2>
                 {kinds.map(({ k, items }) => (
-                  <div key={k.id} id={k.id} className="scroll-mt-24">
+                  <div key={k.id} id={k.id} data-cryptid-kind className="scroll-mt-24">
                     <Eyebrow>
                       <T locale={locale} es={k.es} en={k.en} />
                     </Eyebrow>
                     <div className="mt-1">
                       {items.map((c) => (
-                        <CaseRow key={c.id} caseData={c} locale={locale} section="cryptids" />
+                        // Texto que lee CryptidSearch: nombre, criatura, país y año en los dos idiomas.
+                        <div
+                          key={c.id}
+                          data-cryptid-row
+                          data-search={[c.name, c.name_en, k.es, k.en, g.es, g.en, c.country_name, countryEn(c.country_name), c.year_start].join(" ")}
+                        >
+                          <CaseRow caseData={c} locale={locale} section="cryptids" />
+                        </div>
                       ))}
                     </div>
                   </div>

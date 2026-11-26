@@ -44,13 +44,13 @@ if (Object.keys(COUNTRY_EN).length < 50) {
 const countryEn = (name) => COUNTRY_EN[name] ?? name;
 
 // ── CASES ────────────────────────────────────────────────────────────────
-const cases = fs
+const allCases = fs
   .readdirSync(casesDir)
   .filter((f) => f.endsWith(".json"))
-  .map((f) => JSON.parse(fs.readFileSync(path.join(casesDir, f), "utf-8")))
-  // Los críptidos son una colección aparte (25 nov 2026): fuera del índice de
-  // casos, que /cases usa también como filtro. Su sección se busca por nombre.
-  .filter((c) => c.category !== "cryptid");
+  .map((f) => JSON.parse(fs.readFileSync(path.join(casesDir, f), "utf-8")));
+// Los críptidos son una colección aparte (25 nov 2026): fuera de las entradas
+// `case`, que /cases usa también como filtro. Van con su propio tipo (abajo).
+const cases = allCases.filter((c) => c.category !== "cryptid");
 
 const caseEntries = cases
   .map((c) => ({
@@ -71,6 +71,38 @@ const caseEntries = cases
     summary_en: c.summary_en,
     keywords: (c.patterns || []).join(" "),
   }))
+  .sort((a, b) => a.num - b.num);
+
+// ── CRYPTIDS ─────────────────────────────────────────────────────────────
+// Tipo propio para que el buscador del header los encuentre (antes solo se
+// indexaba la página /cryptids y «chupacabras» no devolvía nada, 26 nov 2026)
+// sin colarse en el filtro de /cases, que se queda con `type === "case"`. La
+// criatura (Bigfoot, Yeti…) entra como palabra clave en los dos idiomas.
+const taxonomy = JSON.parse(fs.readFileSync(path.join(dataDir, "cryptid-taxonomy.json"), "utf-8"));
+const creatureById = Object.fromEntries(taxonomy.creatures.map((c) => [c.id, c]));
+const cryptidEntries = allCases
+  .filter((c) => c.category === "cryptid")
+  .map((c) => {
+    const creature = creatureById[c.cryptid];
+    return {
+      type: "cryptid",
+      id: c.id,
+      num: c.num,
+      name: c.name,
+      name_en: c.name_en,
+      subtitle: c.country_name,
+      subtitle_en: countryEn(c.country_name),
+      meta:
+        (c.year_end ? `${c.year_start}–${c.year_end}` : String(c.year_start)) +
+        ` · Tier ${c.tier}`,
+      flag: c.flag,
+      year: c.year_end ? `${c.year_start}–${c.year_end}` : String(c.year_start),
+      year_start: c.year_start,
+      summary: c.summary,
+      summary_en: c.summary_en,
+      keywords: [c.cryptid, creature?.es, creature?.en, "criptido críptido cryptid"].filter(Boolean).join(" "),
+    };
+  })
   .sort((a, b) => a.num - b.num);
 
 // ── RESEARCHERS ──────────────────────────────────────────────────────────
@@ -334,6 +366,7 @@ const pageEntries = [
 // ── EMIT ─────────────────────────────────────────────────────────────────
 const index = [
   ...caseEntries,
+  ...cryptidEntries,
   ...researcherEntries,
   ...postEntries,
   ...frameworkEntries,
@@ -345,5 +378,5 @@ fs.writeFileSync(outFile, JSON.stringify(index));
 
 const sizeKb = (fs.statSync(outFile).size / 1024).toFixed(1);
 console.log(
-  `build-search-index: ${caseEntries.length} cases + ${researcherEntries.length} researchers + ${postEntries.length} posts + ${frameworkEntries.length} frameworks + ${entityEntries.length} entities + ${pageEntries.length} pages → public/search-index.json (${sizeKb} KB)`,
+  `build-search-index: ${caseEntries.length} cases + ${cryptidEntries.length} cryptids + ${researcherEntries.length} researchers + ${postEntries.length} posts + ${frameworkEntries.length} frameworks + ${entityEntries.length} entities + ${pageEntries.length} pages → public/search-index.json (${sizeKb} KB)`,
 );
